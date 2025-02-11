@@ -613,7 +613,7 @@ export declare namespace Word {
          */
         readonly parentSectionOrNullObject: Word.Section;
         /**
-         * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+         * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -3208,6 +3208,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets the active window for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activeWindow: Word.Window;
+        /**
          * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
          *
          * @remarks
@@ -3249,6 +3257,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         readonly settings: Word.SettingCollection;
+        /**
+         * Gets the collection of `Word.Window` objects for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly windows: Word.WindowCollection;
         /**
          * Specifies the ChangeTracking mode.
          *
@@ -5697,6 +5713,425 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.NoteItemCollectionData;
     }
     /**
+     * Represents a page in the document. `Page` objects manage the page layout and content.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Page extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the height, in points, of the paper defined in the Page Setup dialog box.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly height: number;
+        /**
+         * Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly index: number;
+        /**
+         * Gets the width, in points, of the paper defined in the Page Setup dialog box.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly width: number;
+        /**
+         * Gets the next page in the pane. Throws an `ItemNotFound` error if this page is the last one.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNext(): Word.Page;
+        /**
+         * Gets the next page. If this page is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNextOrNullObject(): Word.Page;
+        /**
+         * Gets the whole page, or the starting or ending point of the page, as a range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Start', or 'End'.
+         */
+        getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" | "End"): Word.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.PageLoadOptions): Word.Page;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Page;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Page;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Page;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Page;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Page` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.PageData;
+    }
+    /**
+     * Represents the collection of page.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class PageCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Page[];
+        /**
+         * Gets the first page in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.Page;
+        /**
+         * Gets the first page in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirstOrNullObject(): Word.Page;
+        /**
+         * Gets a Page object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a Page object.
+         */
+        getItem(index: number): Word.Page;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.PageCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.PageCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.PageCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.PageCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.PageCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.PageCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.PageCollectionData;
+    }
+    /**
+     * Represents a window pane. The `Pane` object is a member of the pane collection. The pane collection includes all the window panes for a single window.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Pane extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the collection of pages in the pane.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly pages: Word.PageCollection;
+        /**
+         * Gets the `PageCollection` shown in the viewport of the pane. If a page is partially visible in the pane, the whole page is returned.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly pagesEnclosingViewport: Word.PageCollection;
+        /**
+         * Gets the next pane in the window. Throws an `ItemNotFound` error if this pane is the last one.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNext(): Word.Pane;
+        /**
+         * Gets the next pane. If this pane is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNextOrNullObject(): Word.Pane;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Pane;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Pane;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Pane;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Pane;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Pane` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.PaneData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.PaneData;
+    }
+    /**
+     * Represents the collection of pane.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class PaneCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Pane[];
+        /**
+         * Gets the first pane in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.Pane;
+        /**
+         * Gets the first pane in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirstOrNullObject(): Word.Pane;
+        /**
+         * Gets a Pane object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a Pane object.
+         */
+        getItem(index: number): Word.Pane;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.PaneCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.PaneCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.PaneCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.PaneCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.PaneCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.PaneCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.PaneCollectionData;
+    }
+    /**
+     * Represents the window that displays the document. A window can be split to contain multiple reading panes.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Window extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the active pane in the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activePane: Word.Pane;
+        /**
+         * Gets the collection of panes in the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly panes: Word.PaneCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Window;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Window;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Window;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Window;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Window` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.WindowData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.WindowData;
+    }
+    /**
+     * Represents the collection of window objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class WindowCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Window[];
+        /**
+         * Gets the first window in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.Window;
+        /**
+         * Gets the first window in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirstOrNullObject(): Word.Window;
+        /**
+         * Gets a Window object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a Window object.
+         */
+        getItem(index: number): Word.Window;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.WindowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.WindowCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.WindowCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.WindowCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.WindowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.WindowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.WindowCollectionData;
+    }
+    /**
      * Represents a single paragraph in a selection, range, content control, or document body.
      *
      * @remarks
@@ -5825,7 +6260,7 @@ export declare namespace Word {
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+         * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6141,6 +6576,16 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         /**
+         * Inserts a floating canvas in front of text with its anchor at the beginning of the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param insertShapeOptions - Optional. The location and size of canvas. The default location and size is (0, 0, 300, 200).
+         */
+        insertCanvas(insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        /**
          * Wraps the Paragraph object with a content control.
          *
          * @remarks
@@ -6165,7 +6610,7 @@ export declare namespace Word {
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
         /**
-         * Inserts a geometric shape with its anchor at the beginning of the paragraph.
+         * Inserts a geometric shape in front of text with its anchor at the beginning of the paragraph.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6176,7 +6621,7 @@ export declare namespace Word {
          */
         insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
-         * Inserts a geometric shape with its anchor at the beginning of the paragraph.
+         * Inserts a geometric shape in front of text with its anchor at the beginning of the paragraph.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6227,7 +6672,7 @@ export declare namespace Word {
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
         /**
-         * Inserts a floating picture with its anchor at the beginning of the paragraph.
+         * Inserts a floating picture in front of text with its anchor at the beginning of the paragraph.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6260,7 +6705,7 @@ export declare namespace Word {
          */
         insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
         /**
-         * Inserts a floating text box with its anchor at the beginning of the paragraph.
+         * Inserts a floating text box in front of text with its anchor at the beginning of the paragraph.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6689,6 +7134,14 @@ export declare namespace Word {
          */
         readonly lists: Word.ListCollection;
         /**
+         * Gets the collection of pages in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly pages: Word.PageCollection;
+        /**
          * Gets the collection of paragraph objects in the range.
          *
          * @remarks
@@ -6747,7 +7200,7 @@ export declare namespace Word {
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+         * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6991,6 +7444,16 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         /**
+         * Inserts a floating canvas in front of text with its anchor at the beginning of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param insertShapeOptions - Optional. The location and size of the canvas. The default location and size is (0, 0, 300, 200).
+         */
+        insertCanvas(insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        /**
          * Insert a comment on the range.
          *
          * @remarks
@@ -7095,7 +7558,7 @@ export declare namespace Word {
          */
         insertFootnote(insertText?: string): Word.NoteItem;
         /**
-         * Inserts a geometric shape with its anchor at the beginning of the range.
+         * Inserts a geometric shape in front of text with its anchor at the beginning of the range.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -7106,7 +7569,7 @@ export declare namespace Word {
          */
         insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
-         * Inserts a geometric shape with its anchor at the beginning of the range.
+         * Inserts a geometric shape in front of text with its anchor at the beginning of the range.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -7157,7 +7620,7 @@ export declare namespace Word {
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
         /**
-         * Inserts a floating picture with its anchor at the beginning of the range.
+         * Inserts a floating picture in front of text with its anchor at the beginning of the range.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -7190,7 +7653,7 @@ export declare namespace Word {
          */
         insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
         /**
-         * Inserts a floating text box with its anchor at the beginning of the range.
+         * Inserts a floating text box in front of text with its anchor at the beginning of the range.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -9952,7 +10415,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TrackedChangeCollectionData;
     }
     /**
-     * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+     * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -9970,7 +10433,31 @@ export declare namespace Word {
          */
         readonly body: Word.Body;
         /**
-         * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+         * Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "Canvas". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly canvas: Word.Canvas;
+        /**
+         * Returns the fill formatting of this shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fill: Word.ShapeFill;
+        /**
+         * Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentCanvas: Word.Shape;
+        /**
+         * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -9985,6 +10472,14 @@ export declare namespace Word {
          * @beta
          */
         readonly shapeGroup: Word.ShapeGroup;
+        /**
+         * Gets the text frame object of the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly textFrame: Word.TextFrame;
         /**
          * The geometric shape type of the shape. It will be null if isn't a geometric shape.
          *
@@ -10018,7 +10513,7 @@ export declare namespace Word {
          */
         readonly isChild: boolean;
         /**
-         * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
+         * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -10050,7 +10545,7 @@ export declare namespace Word {
          */
         relativeVerticalPosition: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
         /**
-         * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set.
+         * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -10058,13 +10553,13 @@ export declare namespace Word {
          */
         top: number;
         /**
-         * Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+         * Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly type: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture";
+        readonly type: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture" | "Canvas";
         /**
          * The width, in points, of the shape.
          *
@@ -10173,7 +10668,7 @@ export declare namespace Word {
          */
         readonly shape: Word.Shape;
         /**
-         * Gets the collection of Shape objects. Currently, only text boxes and geometric shapes are supported.
+         * Gets the collection of Shape objects. Currently, only text boxes, geometric shapes, and pictures are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -10240,7 +10735,84 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ShapeGroupData;
     }
     /**
-     * Contains a collection of {@link Word.Shape} objects. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+     * Represents a canvas in the document. To get the corresponding Shape object, use Canvas.shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Canvas extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the Shape object associated with the canvas.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shape: Word.Shape;
+        /**
+         * Gets the collection of Shape objects. Currently, only text boxes, pictures, and geometric shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shapes: Word.ShapeCollection;
+        /**
+         * Gets an integer that represents the canvas identifier.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CanvasUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Canvas): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CanvasLoadOptions): Word.Canvas;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Canvas;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Canvas;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Canvas;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Canvas;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Canvas` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CanvasData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CanvasData;
+    }
+    /**
+     * Contains a collection of {@link Word.Shape} objects. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -10366,6 +10938,242 @@ export declare namespace Word {
         * Whereas the original `Word.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Word.Interfaces.ShapeCollectionData;
+    }
+    /**
+     * Represents the fill formatting of a shape object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ShapeFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the shape fill background color. You can provide the value in the '#RRGGBB' format or the color name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        backgroundColor: string;
+        /**
+         * Specifies the shape fill foreground color. You can provide the value in the '#RRGGBB' format or the color name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        foregroundColor: string;
+        /**
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Returns the fill type of the shape. See `Word.ShapeFillType` for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "Picture" | "Texture" | "Mixed";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ShapeFill): void;
+        /**
+         * Clears the fill formatting of this shape and set it to `Word.ShapeFillType.NoFill`;
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clear(): void;
+        /**
+         * Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Word.ShapeFillType.Solid`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param color - A string that represents the fill foreground color. You can provide the value in the '#RRGGBB' format or the color name.
+         */
+        setSolidColor(color: string): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ShapeFillLoadOptions): Word.ShapeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ShapeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ShapeFill;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ShapeFill;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ShapeFill;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.ShapeFillData;
+    }
+    /**
+     * Represents the text frame of a shape object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TextFrame extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoSizeSetting: Word.ShapeAutoSize | "None" | "TextToFitShape" | "ShapeToFitText" | "Mixed";
+        /**
+         * Represents the bottom margin, in points, of the text frame.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomMargin: number;
+        /**
+         * Specifies if the text frame contains text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hasText: boolean;
+        /**
+         * Represents the left margin, in points, of the text frame.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftMargin: number;
+        /**
+         * Returns True if text in the text frame shouldn't rotate when the shape is rotated.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noTextRotation: boolean;
+        /**
+         * Represents the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        orientation: Word.ShapeTextOrientation | "None" | "Horizontal" | "EastAsianVertical" | "Vertical270" | "Vertical" | "EastAsianHorizontalRotated" | "Mixed";
+        /**
+         * Represents the right margin, in points, of the text frame.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightMargin: number;
+        /**
+         * Represents the top margin, in points, of the text frame.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topMargin: number;
+        /**
+         * Represents the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalAlignment: Word.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom";
+        /**
+         * Determines whether lines break automatically to fit text inside the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wordWrap: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TextFrameUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.TextFrame): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.TextFrameLoadOptions): Word.TextFrame;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.TextFrame;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.TextFrame;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.TextFrame;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.TextFrame;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TextFrameData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.TextFrameData;
     }
     /**
      * ChangeTracking mode.
@@ -11648,6 +12456,8 @@ export declare namespace Word {
         svg = "Svg",
     }
     /**
+     * Represents the location of a range. You can get range by calling getRange on different objects such as {@link Word.Paragraph} and {@link Word.ContentControl}.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
@@ -11659,25 +12469,25 @@ export declare namespace Word {
          */
         whole = "Whole",
         /**
-         * The starting point of the object. For content control, it is the point after the opening tag.
+         * The starting point of the object. For content control, it's the point after the opening tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         start = "Start",
         /**
-         * The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the point before the closing tag.
+         * The ending point of the object. For paragraph, it's the point before the EOP (end of paragraph). For content control, it is the point before the closing tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         end = "End",
         /**
-         * For content control only. It is the point before the opening tag.
+         * For content control only. It's the point before the opening tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         before = "Before",
         /**
-         * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
+         * The point after the object. If the object is a paragraph content control or table content control, it's the point after the EOP or Table characters.
          * @remarks
          * [Api set: WordApi 1.3]
          */
@@ -14387,6 +15197,13 @@ export declare namespace Word {
          * @beta
          */
         picture = "Picture",
+        /**
+         * Canvas shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        canvas = "Canvas",
     }
     /**
      * Represents what the horizontal position of a shape is relative to.
@@ -15768,6 +16585,189 @@ export declare namespace Word {
          */
         chartPlus = "ChartPlus",
     }
+    /**
+     * Specifies a shape's fill type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeFillType {
+        /**
+         * No fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noFill = "NoFill",
+        /**
+         * Solid fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solid = "Solid",
+        /**
+         * Gradient fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gradient = "Gradient",
+        /**
+         * Pattern fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pattern = "Pattern",
+        /**
+         * Picture fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        picture = "Picture",
+        /**
+         * Texture fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture = "Texture",
+        /**
+         * Mixed fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+    }
+    /**
+     * Specifies the vertical alignment for the text frame in a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeTextVerticalAlignment {
+        /**
+         * Anchor the text at the top of the bounding rectangle.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top = "Top",
+        /**
+         * Anchor the text at the middle of the bounding rectangle.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        middle = "Middle",
+        /**
+         * Anchor the text at the bottom of the bounding rectangle.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom = "Bottom",
+    }
+    /**
+     * Specifies the orientation for the text frame in a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeTextOrientation {
+        /**
+         * No orientation, such as in a new geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Horizontal text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontal = "Horizontal",
+        /**
+         * A special version of vertical text, where some fonts are displayed as if rotated.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eastAsianVertical = "EastAsianVertical",
+        /**
+         * Determines if all of the text is vertical orientation (each line is 270 degrees rotated clockwise).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical270 = "Vertical270",
+        /**
+         * Determines if all of the text is vertical orientation (each line is 90 degrees rotated clockwise).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical = "Vertical",
+        /**
+         * A special version of vertical text, where some fonts are displayed as if rotated.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eastAsianHorizontalRotated = "EastAsianHorizontalRotated",
+        /**
+         * A combination of automatic orientation is used.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+    }
+    /**
+     * Determines the type of automatic sizing allowed.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeAutoSize {
+        /**
+         * No autosizing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * The text is adjusted to fit the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textToFitShape = "TextToFitShape",
+        /**
+         * The shape is adjusted to fit the text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shapeToFitText = "ShapeToFitText",
+        /**
+         * A combination of automatic sizing schemes are used.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -16560,27 +17560,39 @@ export declare namespace Word {
             items?: Word.Interfaces.NoteItemData[];
         }
         /** An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`. */
+        /** An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`. */
+        export interface PageCollectionUpdateData {
+            items?: Word.Interfaces.PageData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Word.Interfaces.PaneData[];
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Word.Interfaces.WindowData[];
+        }
         export interface ParagraphUpdateData {
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontUpdateData;
             /**
-            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItem?: Word.Interfaces.ListItemUpdateData;
             /**
-            * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItemOrNullObject?: Word.Interfaces.ListItemUpdateData;
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -17307,7 +18319,31 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyUpdateData;
             /**
-             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             * Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "Canvas". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            canvas?: Word.Interfaces.CanvasUpdateData;
+            /**
+             * Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: Word.Interfaces.ShapeFillUpdateData;
+            /**
+             * Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentCanvas?: Word.Interfaces.ShapeUpdateData;
+            /**
+             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17322,6 +18358,14 @@ export declare namespace Word {
              * @beta
              */
             shapeGroup?: Word.Interfaces.ShapeGroupUpdateData;
+            /**
+             * Gets the text frame object of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textFrame?: Word.Interfaces.TextFrameUpdateData;
             /**
              * The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -17339,7 +18383,7 @@ export declare namespace Word {
              */
             height?: number;
             /**
-             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
+             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17371,7 +18415,7 @@ export declare namespace Word {
              */
             relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set.
+             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17398,9 +18442,122 @@ export declare namespace Word {
             */
             shape?: Word.Interfaces.ShapeUpdateData;
         }
+        /** An interface for updating data on the `Canvas` object, for use in `canvas.set({ ... })`. */
+        export interface CanvasUpdateData {
+            /**
+            * Gets the Shape object associated with the canvas.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: Word.Interfaces.ShapeUpdateData;
+        }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: Word.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
+        export interface ShapeFillUpdateData {
+            /**
+             * Specifies the shape fill background color. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundColor?: string;
+            /**
+             * Specifies the shape fill foreground color. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundColor?: string;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface for updating data on the `TextFrame` object, for use in `textFrame.set({ ... })`. */
+        export interface TextFrameUpdateData {
+            /**
+             * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoSizeSetting?: Word.ShapeAutoSize | "None" | "TextToFitShape" | "ShapeToFitText" | "Mixed";
+            /**
+             * Represents the bottom margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomMargin?: number;
+            /**
+             * Represents the left margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftMargin?: number;
+            /**
+             * Returns True if text in the text frame shouldn't rotate when the shape is rotated.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noTextRotation?: boolean;
+            /**
+             * Represents the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            orientation?: Word.ShapeTextOrientation | "None" | "Horizontal" | "EastAsianVertical" | "Vertical270" | "Vertical" | "EastAsianHorizontalRotated" | "Mixed";
+            /**
+             * Represents the right margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightMargin?: number;
+            /**
+             * Represents the top margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topMargin?: number;
+            /**
+             * Represents the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalAlignment?: Word.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom";
+            /**
+             * Determines whether lines break automatically to fit text inside the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            wordWrap?: boolean;
         }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
@@ -17480,7 +18637,7 @@ export declare namespace Word {
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-            * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+            * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18007,47 +19164,63 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the active window for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            activeWindow?: Word.Interfaces.WindowData;
+            /**
+             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
-            * Gets the custom XML parts in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the custom XML parts in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             customXmlParts?: Word.Interfaces.CustomXmlPartData[];
             /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the properties of the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
-            * Gets the collection of section objects in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of section objects in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             sections?: Word.Interfaces.SectionData[];
             /**
-            * Gets the add-in's settings in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the add-in's settings in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             settings?: Word.Interfaces.SettingData[];
+            /**
+             * Gets the collection of `Word.Window` objects for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windows?: Word.Interfaces.WindowData[];
             /**
              * Specifies the ChangeTracking mode.
              *
@@ -18640,6 +19813,67 @@ export declare namespace Word {
         export interface NoteItemCollectionData {
             items?: Word.Interfaces.NoteItemData[];
         }
+        /** An interface describing the data returned by calling `page.toJSON()`. */
+        export interface PageData {
+            /**
+             * Gets the height, in points, of the paper defined in the Page Setup dialog box.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: number;
+            /**
+             * Gets the width, in points, of the paper defined in the Page Setup dialog box.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+        }
+        /** An interface describing the data returned by calling `pageCollection.toJSON()`. */
+        export interface PageCollectionData {
+            items?: Word.Interfaces.PageData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            /**
+             * Gets the collection of pages in the pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pages?: Word.Interfaces.PageData[];
+            /**
+             * Gets the `PageCollection` shown in the viewport of the pane. If a page is partially visible in the pane, the whole page is returned.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pagesEnclosingViewport?: Word.Interfaces.PageData[];
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Word.Interfaces.PaneData[];
+        }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Word.Interfaces.WindowData[];
+        }
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             /**
@@ -18678,7 +19912,7 @@ export declare namespace Word {
              */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
             /**
-             * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+             * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18934,7 +20168,15 @@ export declare namespace Word {
              */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-             * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+             * Gets the collection of pages in the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pages?: Word.Interfaces.PageData[];
+            /**
+             * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -19660,7 +20902,31 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyData;
             /**
-             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             * Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "Canvas". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            canvas?: Word.Interfaces.CanvasData;
+            /**
+             * Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: Word.Interfaces.ShapeFillData;
+            /**
+             * Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentCanvas?: Word.Interfaces.ShapeData;
+            /**
+             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -19675,6 +20941,14 @@ export declare namespace Word {
              * @beta
              */
             shapeGroup?: Word.Interfaces.ShapeGroupData;
+            /**
+             * Gets the text frame object of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textFrame?: Word.Interfaces.TextFrameData;
             /**
              * The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -19708,7 +20982,7 @@ export declare namespace Word {
              */
             isChild?: boolean;
             /**
-             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
+             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -19740,7 +21014,7 @@ export declare namespace Word {
              */
             relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set.
+             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -19748,13 +21022,13 @@ export declare namespace Word {
              */
             top?: number;
             /**
-             * Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+             * Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            type?: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture";
+            type?: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture" | "Canvas";
             /**
              * The width, in points, of the shape.
              *
@@ -19775,7 +21049,7 @@ export declare namespace Word {
              */
             shape?: Word.Interfaces.ShapeData;
             /**
-             * Gets the collection of Shape objects. Currently, only text boxes and geometric shapes are supported.
+             * Gets the collection of Shape objects. Currently, only text boxes, geometric shapes, and pictures are supported.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -19791,9 +21065,154 @@ export declare namespace Word {
              */
             id?: number;
         }
+        /** An interface describing the data returned by calling `canvas.toJSON()`. */
+        export interface CanvasData {
+            /**
+             * Gets the Shape object associated with the canvas.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shape?: Word.Interfaces.ShapeData;
+            /**
+             * Gets the collection of Shape objects. Currently, only text boxes, pictures, and geometric shapes are supported.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shapes?: Word.Interfaces.ShapeData[];
+            /**
+             * Gets an integer that represents the canvas identifier.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: number;
+        }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: Word.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
+        export interface ShapeFillData {
+            /**
+             * Specifies the shape fill background color. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundColor?: string;
+            /**
+             * Specifies the shape fill foreground color. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundColor?: string;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Returns the fill type of the shape. See `Word.ShapeFillType` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "Picture" | "Texture" | "Mixed";
+        }
+        /** An interface describing the data returned by calling `textFrame.toJSON()`. */
+        export interface TextFrameData {
+            /**
+             * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoSizeSetting?: Word.ShapeAutoSize | "None" | "TextToFitShape" | "ShapeToFitText" | "Mixed";
+            /**
+             * Represents the bottom margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomMargin?: number;
+            /**
+             * Specifies if the text frame contains text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasText?: boolean;
+            /**
+             * Represents the left margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftMargin?: number;
+            /**
+             * Returns True if text in the text frame shouldn't rotate when the shape is rotated.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noTextRotation?: boolean;
+            /**
+             * Represents the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            orientation?: Word.ShapeTextOrientation | "None" | "Horizontal" | "EastAsianVertical" | "Vertical270" | "Vertical" | "EastAsianHorizontalRotated" | "Mixed";
+            /**
+             * Represents the right margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightMargin?: number;
+            /**
+             * Represents the top margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topMargin?: number;
+            /**
+             * Represents the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalAlignment?: Word.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom";
+            /**
+             * Determines whether lines break automatically to fit text inside the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            wordWrap?: boolean;
         }
         /**
          * Represents an annotation wrapper around critique displayed in the document.
@@ -22068,6 +23487,80 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
+         * Represents a page in the document. `Page` objects manage the page layout and content.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface PageLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the height, in points, of the paper defined in the Page Setup dialog box.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+            /**
+             * Gets the width, in points, of the paper defined in the Page Setup dialog box.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
+        /**
+         * Represents the collection of page.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface PageCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the height, in points, of the paper defined in the Page Setup dialog box.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the width, in points, of the paper defined in the Page Setup dialog box.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
+        /**
          * Represents a single paragraph in a selection, range, content control, or document body.
          *
          * @remarks
@@ -24175,7 +25668,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+         * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24195,7 +25688,31 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
-             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             * Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "Canvas". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            canvas?: Word.Interfaces.CanvasLoadOptions;
+            /**
+             * Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: Word.Interfaces.ShapeFillLoadOptions;
+            /**
+             * Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentCanvas?: Word.Interfaces.ShapeLoadOptions;
+            /**
+             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24210,6 +25727,14 @@ export declare namespace Word {
              * @beta
              */
             shapeGroup?: Word.Interfaces.ShapeGroupLoadOptions;
+            /**
+            * Gets the text frame object of the shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textFrame?: Word.Interfaces.TextFrameLoadOptions;
             /**
              * The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -24243,7 +25768,7 @@ export declare namespace Word {
              */
             isChild?: boolean;
             /**
-             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
+             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24275,7 +25800,7 @@ export declare namespace Word {
              */
             relativeVerticalPosition?: boolean;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set.
+             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24283,7 +25808,7 @@ export declare namespace Word {
              */
             top?: boolean;
             /**
-             * Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+             * Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24329,7 +25854,36 @@ export declare namespace Word {
             id?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.Shape} objects. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+         * Represents a canvas in the document. To get the corresponding Shape object, use Canvas.shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CanvasLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the Shape object associated with the canvas.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shape?: Word.Interfaces.ShapeLoadOptions;
+            /**
+             * Gets an integer that represents the canvas identifier.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Shape} objects. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24349,7 +25903,31 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             * For EACH ITEM in the collection: Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "Canvas". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            canvas?: Word.Interfaces.CanvasLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: Word.Interfaces.ShapeFillLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentCanvas?: Word.Interfaces.ShapeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24364,6 +25942,14 @@ export declare namespace Word {
              * @beta
              */
             shapeGroup?: Word.Interfaces.ShapeGroupLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the text frame object of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textFrame?: Word.Interfaces.TextFrameLoadOptions;
             /**
              * For EACH ITEM in the collection: The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -24397,7 +25983,7 @@ export declare namespace Word {
              */
             isChild?: boolean;
             /**
-             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24429,7 +26015,7 @@ export declare namespace Word {
              */
             relativeVerticalPosition?: boolean;
             /**
-             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set.
+             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24437,7 +26023,7 @@ export declare namespace Word {
              */
             top?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
+             * For EACH ITEM in the collection: Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -24452,6 +26038,144 @@ export declare namespace Word {
              * @beta
              */
             width?: boolean;
+        }
+        /**
+         * Represents the fill formatting of a shape object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShapeFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the shape fill background color. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundColor?: boolean;
+            /**
+             * Specifies the shape fill foreground color. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundColor?: boolean;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             * Returns the fill type of the shape. See `Word.ShapeFillType` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents the text frame of a shape object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TextFrameLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoSizeSetting?: boolean;
+            /**
+             * Represents the bottom margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomMargin?: boolean;
+            /**
+             * Specifies if the text frame contains text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasText?: boolean;
+            /**
+             * Represents the left margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftMargin?: boolean;
+            /**
+             * Returns True if text in the text frame shouldn't rotate when the shape is rotated.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noTextRotation?: boolean;
+            /**
+             * Represents the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            orientation?: boolean;
+            /**
+             * Represents the right margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightMargin?: boolean;
+            /**
+             * Represents the top margin, in points, of the text frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topMargin?: boolean;
+            /**
+             * Represents the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalAlignment?: boolean;
+            /**
+             * Determines whether lines break automatically to fit text inside the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            wordWrap?: boolean;
         }
     }
 }

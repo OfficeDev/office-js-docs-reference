@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeFillData
+uid: 'word!Word.Interfaces.ShapeFillData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeFillData
+summary: An interface describing the data returned by calling `shapeFill.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: backgroundColor
+    uid: 'word!Word.Interfaces.ShapeFillData#backgroundColor:member'
+    package: word!
+    fullName: backgroundColor
+    summary: 'Specifies the shape fill background color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'backgroundColor?: string;'
+      return:
+        type: string
+  - name: foregroundColor
+    uid: 'word!Word.Interfaces.ShapeFillData#foregroundColor:member'
+    package: word!
+    fullName: foregroundColor
+    summary: 'Specifies the shape fill foreground color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor?: string;'
+      return:
+        type: string
+  - name: transparency
+    uid: 'word!Word.Interfaces.ShapeFillData#transparency:member'
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'word!Word.Interfaces.ShapeFillData#type:member'
+    package: word!
+    fullName: type
+    summary: Returns the fill type of the shape. See `Word.ShapeFillType` for details.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "Picture" | "Texture" | "Mixed";'
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeFillType:enum" /> | "NoFill" | "Solid" | "Gradient" | "Pattern" | "Picture" |
+          "Texture" | "Mixed"

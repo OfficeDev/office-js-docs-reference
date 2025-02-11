@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShapeLoadOptions
 summary: >-
   Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text
-  boxes, geometric, grouped, and picture.
+  boxes, geometric shapes, groups, pictures and canvases.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -37,6 +37,34 @@ properties:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: canvas
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#canvas:member'
+    package: word!
+    fullName: canvas
+    summary: >-
+      Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't "Canvas". For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'canvas?: Word.Interfaces.CanvasLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CanvasLoadOptions:interface" />'
+  - name: fill
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#fill:member'
+    package: word!
+    fullName: fill
+    summary: Returns the fill formatting of this shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fill?: Word.Interfaces.ShapeFillLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeFillLoadOptions:interface" />'
   - name: geometricShapeType
     uid: 'word!Word.Interfaces.ShapeLoadOptions#geometricShapeType:member'
     package: word!
@@ -92,7 +120,7 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the horizontal relative position, see
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline shape, it
-      will return 0 and can't be set.
+      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -112,11 +140,23 @@ properties:
       content: 'name?: boolean;'
       return:
         type: boolean
+  - name: parentCanvas
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#parentCanvas:member'
+    package: word!
+    fullName: parentCanvas
+    summary: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentCanvas?: Word.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeLoadOptions:interface" />'
   - name: parentGroup
     uid: 'word!Word.Interfaces.ShapeLoadOptions#parentGroup:member'
     package: word!
     fullName: parentGroup
-    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -168,6 +208,18 @@ properties:
       content: 'shapeGroup?: Word.Interfaces.ShapeGroupLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.ShapeGroupLoadOptions:interface" />'
+  - name: textFrame
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#textFrame:member'
+    package: word!
+    fullName: textFrame
+    summary: Gets the text frame object of the shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textFrame?: Word.Interfaces.TextFrameLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TextFrameLoadOptions:interface" />'
   - name: top
     uid: 'word!Word.Interfaces.ShapeLoadOptions#top:member'
     package: word!
@@ -175,7 +227,7 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the vertical relative position, see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline shape, it
-      will return 0 and can't be set.
+      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -188,8 +240,8 @@ properties:
     package: word!
     fullName: type
     summary: >-
-      Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric, grouped, and
-      picture.
+      Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups,
+      pictures, and canvases.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
