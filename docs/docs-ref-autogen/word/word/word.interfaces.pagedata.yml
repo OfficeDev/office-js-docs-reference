@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Interfaces.PageData
+uid: 'word!Word.Interfaces.PageData:interface'
+package: word!
+fullName: Word.Interfaces.PageData
+summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: 'word!Word.Interfaces.PageData#height:member'
+    package: word!
+    fullName: height
+    summary: 'Gets the height, in points, of the paper defined in the Page Setup dialog box.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: index
+    uid: 'word!Word.Interfaces.PageData#index:member'
+    package: word!
+    fullName: index
+    summary: Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'index?: number;'
+      return:
+        type: number
+  - name: width
+    uid: 'word!Word.Interfaces.PageData#width:member'
+    package: word!
+    fullName: width
+    summary: 'Gets the width, in points, of the paper defined in the Page Setup dialog box.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

@@ -21,6 +21,34 @@ properties:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
+  - name: canvas
+    uid: 'word!Word.Interfaces.ShapeUpdateData#canvas:member'
+    package: word!
+    fullName: canvas
+    summary: >-
+      Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't "Canvas". For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'canvas?: Word.Interfaces.CanvasUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CanvasUpdateData:interface" />'
+  - name: fill
+    uid: 'word!Word.Interfaces.ShapeUpdateData#fill:member'
+    package: word!
+    fullName: fill
+    summary: Returns the fill formatting of this shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fill?: Word.Interfaces.ShapeFillUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeFillUpdateData:interface" />'
   - name: geometricShapeType
     uid: 'word!Word.Interfaces.ShapeUpdateData#geometricShapeType:member'
     package: word!
@@ -115,7 +143,7 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the horizontal relative position, see
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline shape, it
-      will return 0 and can't be set.
+      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -135,11 +163,23 @@ properties:
       content: 'name?: string;'
       return:
         type: string
+  - name: parentCanvas
+    uid: 'word!Word.Interfaces.ShapeUpdateData#parentCanvas:member'
+    package: word!
+    fullName: parentCanvas
+    summary: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentCanvas?: Word.Interfaces.ShapeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'
   - name: parentGroup
     uid: 'word!Word.Interfaces.ShapeUpdateData#parentGroup:member'
     package: word!
     fullName: parentGroup
-    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -199,6 +239,18 @@ properties:
       content: 'shapeGroup?: Word.Interfaces.ShapeGroupUpdateData;'
       return:
         type: '<xref uid="word!Word.Interfaces.ShapeGroupUpdateData:interface" />'
+  - name: textFrame
+    uid: 'word!Word.Interfaces.ShapeUpdateData#textFrame:member'
+    package: word!
+    fullName: textFrame
+    summary: Gets the text frame object of the shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textFrame?: Word.Interfaces.TextFrameUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TextFrameUpdateData:interface" />'
   - name: top
     uid: 'word!Word.Interfaces.ShapeUpdateData#top:member'
     package: word!
@@ -206,7 +258,7 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the vertical relative position, see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline shape, it
-      will return 0 and can't be set.
+      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

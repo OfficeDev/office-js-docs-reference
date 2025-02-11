@@ -72,13 +72,25 @@ properties:
       content: 'isEmpty?: boolean;'
       return:
         type: boolean
+  - name: pages
+    uid: 'word!Word.Interfaces.RangeData#pages:member'
+    package: word!
+    fullName: pages
+    summary: Gets the collection of pages in the range.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pages?: Word.Interfaces.PageData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.PageData:interface" />[]'
   - name: shapes
     uid: 'word!Word.Interfaces.RangeData#shapes:member'
     package: word!
     fullName: shapes
     summary: >-
       Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently,
-      only the following shapes are supported: text boxes, geometric, grouped, and picture.
+      only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

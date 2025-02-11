@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ShapeCollection
 summary: >-
   Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only the following shapes are
-  supported: text boxes, geometric, grouped, and picture.
+  supported: text boxes, geometric shapes, groups, pictures, and canvases.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false

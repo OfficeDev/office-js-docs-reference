@@ -8,6 +8,14 @@ remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-
 isPreview: true
 isDeprecated: false
 fields:
+  - name: canvas
+    uid: 'word!Word.ShapeType.canvas:member'
+    package: word!
+    summary: |-
+      Canvas shape.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Canvas"'
   - name: geometricShape
     uid: 'word!Word.ShapeType.geometricShape:member'
     package: word!

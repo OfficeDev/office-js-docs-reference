@@ -395,7 +395,7 @@ export declare namespace Word {
     
     
     /**
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -835,7 +835,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -5492,36 +5492,44 @@ export declare namespace Word {
         evenPages = "EvenPages",
     }
     /**
+     * Represents the types of body objects.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
     enum BodyType {
         /**
+         * Unknown body type.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         unknown = "Unknown",
         /**
+         * Main document body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         mainDoc = "MainDoc",
         /**
+         * Section body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         section = "Section",
         /**
+         * Header body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         header = "Header",
         /**
+         * Footer body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         footer = "Footer",
         /**
+         * Table cell body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
@@ -5555,6 +5563,8 @@ export declare namespace Word {
     }
     
     /**
+     * Represents the location of a range. You can get range by calling getRange on different objects such as {@link Word.Paragraph} and {@link Word.ContentControl}.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
@@ -5566,25 +5576,25 @@ export declare namespace Word {
          */
         whole = "Whole",
         /**
-         * The starting point of the object. For content control, it is the point after the opening tag.
+         * The starting point of the object. For content control, it's the point after the opening tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         start = "Start",
         /**
-         * The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the point before the closing tag.
+         * The ending point of the object. For paragraph, it's the point before the EOP (end of paragraph). For content control, it's the point before the closing tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         end = "End",
         /**
-         * For content control only. It is the point before the opening tag.
+         * For content control only. It's the point before the opening tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         before = "Before",
         /**
-         * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
+         * The point after the object. If the object is a paragraph content control or table content control, it's the point after the EOP or Table characters.
          * @remarks
          * [Api set: WordApi 1.3]
          */
@@ -9378,7 +9388,7 @@ export declare namespace Word {
         
         
         /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -9545,7 +9555,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
