@@ -40,6 +40,18 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: activeWindow
+    uid: 'word!Word.Document#activeWindow:member'
+    package: word!
+    fullName: activeWindow
+    summary: Gets the active window for the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeWindow: Word.Window;'
+      return:
+        type: '<xref uid="word!Word.Window:class" />'
   - name: body
     uid: 'word!Word.Document#body:member'
     package: word!
@@ -236,6 +248,18 @@ properties:
       content: 'readonly settings: Word.SettingCollection;'
       return:
         type: '<xref uid="word!Word.SettingCollection:class" />'
+  - name: windows
+    uid: 'word!Word.Document#windows:member'
+    package: word!
+    fullName: windows
+    summary: Gets the collection of `Word.Window` objects for the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly windows: Word.WindowCollection;'
+      return:
+        type: '<xref uid="word!Word.WindowCollection:class" />'
 methods:
   - name: 'addStyle(name, type)'
     uid: 'word!Word.Document#addStyle:member(1)'

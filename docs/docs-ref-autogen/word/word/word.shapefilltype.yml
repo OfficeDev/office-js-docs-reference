@@ -1,0 +1,66 @@
+### YamlMime:TSEnum
+name: Word.ShapeFillType
+uid: 'word!Word.ShapeFillType:enum'
+package: word!
+fullName: Word.ShapeFillType
+summary: Specifies a shape's fill type.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: gradient
+    uid: 'word!Word.ShapeFillType.gradient:member'
+    package: word!
+    summary: |-
+      Gradient fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Gradient"'
+  - name: mixed
+    uid: 'word!Word.ShapeFillType.mixed:member'
+    package: word!
+    summary: |-
+      Mixed fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: noFill
+    uid: 'word!Word.ShapeFillType.noFill:member'
+    package: word!
+    summary: |-
+      No fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"NoFill"'
+  - name: pattern
+    uid: 'word!Word.ShapeFillType.pattern:member'
+    package: word!
+    summary: |-
+      Pattern fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pattern"'
+  - name: picture
+    uid: 'word!Word.ShapeFillType.picture:member'
+    package: word!
+    summary: |-
+      Picture fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Picture"'
+  - name: solid
+    uid: 'word!Word.ShapeFillType.solid:member'
+    package: word!
+    summary: |-
+      Solid fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Solid"'
+  - name: texture
+    uid: 'word!Word.ShapeFillType.texture:member'
+    package: word!
+    summary: |-
+      Texture fill.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Texture"'

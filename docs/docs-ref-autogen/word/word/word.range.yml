@@ -189,6 +189,18 @@ properties:
       content: 'readonly lists: Word.ListCollection;'
       return:
         type: '<xref uid="word!Word.ListCollection:class" />'
+  - name: pages
+    uid: 'word!Word.Range#pages:member'
+    package: word!
+    fullName: pages
+    summary: Gets the collection of pages in the range.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly pages: Word.PageCollection;'
+      return:
+        type: '<xref uid="word!Word.PageCollection:class" />'
   - name: paragraphs
     uid: 'word!Word.Range#paragraphs:member'
     package: word!
@@ -363,7 +375,7 @@ properties:
     fullName: shapes
     summary: >-
       Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently,
-      only the following shapes are supported: text boxes, geometric, grouped, and picture.
+      only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -1266,6 +1278,23 @@ methods:
       return:
         type: void
         description: ''
+  - name: insertCanvas(insertShapeOptions)
+    uid: 'word!Word.Range#insertCanvas:member(1)'
+    package: word!
+    fullName: insertCanvas(insertShapeOptions)
+    summary: Inserts a floating canvas in front of text with its anchor at the beginning of the range.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertCanvas(insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;'
+      parameters:
+        - id: insertShapeOptions
+          description: 'Optional. The location and size of the canvas. The default location and size is (0, 0, 300, 200).'
+          type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
   - name: insertComment(commentText)
     uid: 'word!Word.Range#insertComment:member(1)'
     package: word!
@@ -1660,7 +1689,7 @@ methods:
     uid: 'word!Word.Range#insertGeometricShape:member(1)'
     package: word!
     fullName: 'insertGeometricShape(geometricShapeType, insertShapeOptions)'
-    summary: Inserts a geometric shape with its anchor at the beginning of the range.
+    summary: Inserts a geometric shape in front of text with its anchor at the beginning of the range.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -1682,7 +1711,7 @@ methods:
     uid: 'word!Word.Range#insertGeometricShape:member(2)'
     package: word!
     fullName: 'insertGeometricShape(geometricShapeTypeString, insertShapeOptions)'
-    summary: Inserts a geometric shape with its anchor at the beginning of the range.
+    summary: Inserts a geometric shape in front of text with its anchor at the beginning of the range.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -1920,7 +1949,7 @@ methods:
     uid: 'word!Word.Range#insertPictureFromBase64:member(1)'
     package: word!
     fullName: 'insertPictureFromBase64(base64EncodedImage, insertShapeOptions)'
-    summary: Inserts a floating picture with its anchor at the beginning of the range.
+    summary: Inserts a floating picture in front of text with its anchor at the beginning of the range.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -2015,7 +2044,7 @@ methods:
     uid: 'word!Word.Range#insertTextBox:member(1)'
     package: word!
     fullName: 'insertTextBox(text, insertShapeOptions)'
-    summary: Inserts a floating text box with its anchor at the beginning of the range.
+    summary: Inserts a floating text box in front of text with its anchor at the beginning of the range.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

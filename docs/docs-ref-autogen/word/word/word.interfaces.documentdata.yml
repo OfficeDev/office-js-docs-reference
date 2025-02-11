@@ -9,6 +9,18 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: activeWindow
+    uid: 'word!Word.Interfaces.DocumentData#activeWindow:member'
+    package: word!
+    fullName: activeWindow
+    summary: Gets the active window for the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activeWindow?: Word.Interfaces.WindowData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.WindowData:interface" />'
   - name: body
     uid: 'word!Word.Interfaces.DocumentData#body:member'
     package: word!
@@ -111,3 +123,15 @@ properties:
       content: 'settings?: Word.Interfaces.SettingData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.SettingData:interface" />[]'
+  - name: windows
+    uid: 'word!Word.Interfaces.DocumentData#windows:member'
+    package: word!
+    fullName: windows
+    summary: Gets the collection of `Word.Window` objects for the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'windows?: Word.Interfaces.WindowData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.WindowData:interface" />[]'

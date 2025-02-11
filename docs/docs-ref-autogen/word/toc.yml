@@ -105,6 +105,14 @@ items:
                 uid: 'word!Word.SelectionMode:enum'
               - name: ShadingTextureType
                 uid: 'word!Word.ShadingTextureType:enum'
+              - name: ShapeAutoSize
+                uid: 'word!Word.ShapeAutoSize:enum'
+              - name: ShapeFillType
+                uid: 'word!Word.ShapeFillType:enum'
+              - name: ShapeTextOrientation
+                uid: 'word!Word.ShapeTextOrientation:enum'
+              - name: ShapeTextVerticalAlignment
+                uid: 'word!Word.ShapeTextVerticalAlignment:enum'
               - name: ShapeType
                 uid: 'word!Word.ShapeType:enum'
               - name: StyleType
@@ -141,6 +149,8 @@ items:
             uid: 'word!Word.Border:class'
           - name: BorderCollection
             uid: 'word!Word.BorderCollection:class'
+          - name: Canvas
+            uid: 'word!Word.Canvas:class'
           - name: CheckboxContentControl
             uid: 'word!Word.CheckboxContentControl:class'
           - name: ComboBoxContentControl
@@ -239,6 +249,14 @@ items:
             uid: 'word!Word.NoteItem:class'
           - name: NoteItemCollection
             uid: 'word!Word.NoteItemCollection:class'
+          - name: Page
+            uid: 'word!Word.Page:class'
+          - name: PageCollection
+            uid: 'word!Word.PageCollection:class'
+          - name: Pane
+            uid: 'word!Word.Pane:class'
+          - name: PaneCollection
+            uid: 'word!Word.PaneCollection:class'
           - name: Paragraph
             uid: 'word!Word.Paragraph:class'
           - name: ParagraphAddedEventArgs
@@ -273,6 +291,8 @@ items:
             uid: 'word!Word.Shape:class'
           - name: ShapeCollection
             uid: 'word!Word.ShapeCollection:class'
+          - name: ShapeFill
+            uid: 'word!Word.ShapeFill:class'
           - name: ShapeGroup
             uid: 'word!Word.ShapeGroup:class'
           - name: Style
@@ -295,10 +315,16 @@ items:
             uid: 'word!Word.TableRowCollection:class'
           - name: TableStyle
             uid: 'word!Word.TableStyle:class'
+          - name: TextFrame
+            uid: 'word!Word.TextFrame:class'
           - name: TrackedChange
             uid: 'word!Word.TrackedChange:class'
           - name: TrackedChangeCollection
             uid: 'word!Word.TrackedChangeCollection:class'
+          - name: Window
+            uid: 'word!Word.Window:class'
+          - name: WindowCollection
+            uid: 'word!Word.WindowCollection:class'
       - name: Common APIs
         uid: office!
         items:
