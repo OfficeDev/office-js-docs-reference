@@ -1,13 +1,13 @@
 ---
 title: Tokens element in the manifest file
 description: Specifies tokens or wildcards that can be used with URL templates in the the manifest.
-ms.date: 11/06/2020
+ms.date: 02/12/2025
 ms.localizationpriority: medium
 ---
 
 # Tokens element
 
-Defines tokens that could be used in template URLs. For more information about the use of this element, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
+Defines tokens that could be used in template URLs.
 
 **Add-in type:** Task pane
 
