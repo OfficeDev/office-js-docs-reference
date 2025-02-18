@@ -934,9 +934,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see
+         * **Important**:
+         *
+         * - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see
          * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
          *
+         * - Attachments added using the **Upload and share** option aren't returned.
          */
         attachments: AttachmentDetails[];
         /**
@@ -3382,10 +3385,13 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned.
+         * **Important**:
+         *
+         * - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned.
          * For more information, see
          * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
          *
+         * - Attachments added using the **Upload and share** option aren't returned.
          */
         attachments: AttachmentDetails[];
         /**

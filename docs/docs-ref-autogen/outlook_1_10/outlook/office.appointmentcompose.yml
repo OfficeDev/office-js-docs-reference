@@ -2016,16 +2016,7 @@ methods:
     uid: 'outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(1)'
     package: outlook!
     fullName: 'getAttachmentContentAsync(attachmentId, options, callback)'
-    summary: >-
-      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-
-
-      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
-      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
-      starts composing an inline form then subsequently pops out the form to continue in a separate window.
+    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2038,6 +2029,24 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**:
+
+
+      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a
+      best practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same
+      session, use that identifier to retrieve the attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->,
+      `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
 
 
       **Errors**:
@@ -2117,16 +2126,7 @@ methods:
     uid: 'outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(2)'
     package: outlook!
     fullName: 'getAttachmentContentAsync(attachmentId, callback)'
-    summary: >-
-      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-
-
-      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
-      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
-      starts composing an inline form then subsequently pops out the form to continue in a separate window.
+    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2139,6 +2139,24 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**:
+
+
+      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a
+      best practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same
+      session, use that identifier to retrieve the attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->,
+      `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
 
 
       **Errors**:
@@ -2188,6 +2206,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and
+      share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However,
+      since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
 
 
       #### Examples
@@ -2283,6 +2306,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and
+      share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However,
+      since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
     isPreview: false
     isDeprecated: false
     syntax:
