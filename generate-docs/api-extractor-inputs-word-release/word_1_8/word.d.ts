@@ -182,7 +182,7 @@ export declare namespace Word {
          */
         untrack(): Word.CritiqueAnnotation;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.CritiqueAnnotation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CritiqueAnnotationData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.CritiqueAnnotationData;
@@ -295,7 +295,7 @@ export declare namespace Word {
          */
         untrack(): Word.Annotation;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Annotation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.AnnotationData;

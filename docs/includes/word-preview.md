@@ -77,10 +77,11 @@
 ||[onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)|Occurs when a comment is selected.|
 ||[pages](/javascript/api/word/word.range#word-word-range-pages-member)|Gets the collection of pages in the range.|
 ||[shapes](/javascript/api/word/word.range#word-word-range-shapes-member)|Gets the collection of shape objects anchored in the range, including both inline and floating shapes.|
-|[Shape](/javascript/api/word/word.shape)|[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Represents the body object of the shape.|
+|[Shape](/javascript/api/word/word.shape)|[allowOverlap](/javascript/api/word/word.shape#word-word-shape-allowoverlap-member)|Specifies whether a given shape can overlap other shapes.|
+||[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Represents the body object of the shape.|
 ||[canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)|Gets the canvas associated with the shape.|
 ||[delete()](/javascript/api/word/word.shape#word-word-shape-delete-member(1))|Deletes the shape and its content.|
-||[fill](/javascript/api/word/word.shape#word-word-shape-fill-member)|Returns the fill formatting of this shape.|
+||[fill](/javascript/api/word/word.shape#word-word-shape-fill-member)|Returns the fill formatting of the shape.|
 ||[geometricShapeType](/javascript/api/word/word.shape#word-word-shape-geometricshapetype-member)|The geometric shape type of the shape.|
 ||[height](/javascript/api/word/word.shape#word-word-shape-height-member)|The height, in points, of the shape.|
 ||[id](/javascript/api/word/word.shape#word-word-shape-id-member)|Gets an integer that represents the shape identifier.|
@@ -96,6 +97,7 @@
 ||[select(selectMultipleShapes?: boolean)](/javascript/api/word/word.shape#word-word-shape-select-member(1))|Selects the shape.|
 ||[shapeGroup](/javascript/api/word/word.shape#word-word-shape-shapegroup-member)|Gets the shape group associated with the shape.|
 ||[textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)|Gets the text frame object of the shape.|
+||[textWrap](/javascript/api/word/word.shape#word-word-shape-textwrap-member)|Returns the text wrap formatting of the shape.|
 ||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|The distance, in points, from the top edge of the shape to the vertical relative position, see Word.RelativeVerticalPosition.|
 ||[type](/javascript/api/word/word.shape#word-word-shape-type-member)|Gets the shape type.|
 ||[width](/javascript/api/word/word.shape#word-word-shape-width-member)|The width, in points, of the shape.|
@@ -119,6 +121,12 @@
 ||[shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)|Gets the Shape object associated with the group.|
 ||[shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member)|Gets the collection of Shape objects.|
 ||[ungroup()](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))|Ungroups any grouped shapes in the specified shape group.|
+|[ShapeTextWrap](/javascript/api/word/word.shapetextwrap)|[bottomDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-bottomdistance-member)|Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.|
+||[leftDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-leftdistance-member)|Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.|
+||[rightDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-rightdistance-member)|Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding the specified shape.|
+||[side](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-side-member)|Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.|
+||[topDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-topdistance-member)|Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.|
+||[type](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-type-member)|Specifies the text wrap type around the shape.|
 |[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
 |[TextFrame](/javascript/api/word/word.textframe)|[autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)|The automatic sizing settings for the text frame.|
 ||[bottomMargin](/javascript/api/word/word.textframe#word-word-textframe-bottommargin-member)|Represents the bottom margin, in points, of the text frame.|

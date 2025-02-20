@@ -10441,7 +10441,7 @@ export declare namespace Word {
          */
         readonly canvas: Word.Canvas;
         /**
-         * Returns the fill formatting of this shape.
+         * Returns the fill formatting of the shape.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -10480,6 +10480,22 @@ export declare namespace Word {
          * @beta
          */
         readonly textFrame: Word.TextFrame;
+        /**
+         * Returns the text wrap formatting of the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly textWrap: Word.ShapeTextWrap;
+        /**
+         * Specifies whether a given shape can overlap other shapes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowOverlap: boolean;
         /**
          * The geometric shape type of the shape. It will be null if isn't a geometric shape.
          *
@@ -11174,6 +11190,107 @@ export declare namespace Word {
          * Whereas the original `Word.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TextFrameData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.TextFrameData;
+    }
+    /**
+     * Represents all the properties for wrapping text around a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ShapeTextWrap extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomDistance: number;
+        /**
+         * Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftDistance: number;
+        /**
+         * Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding the specified shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightDistance: number;
+        /**
+         * Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        side: Word.ShapeTextWrapSide | "None" | "Both" | "Left" | "Right" | "Largest";
+        /**
+         * Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topDistance: number;
+        /**
+         * Specifies the text wrap type around the shape. See `Word.ShapeTextWrapType` for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeTextWrapUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ShapeTextWrap): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ShapeTextWrapLoadOptions): Word.ShapeTextWrap;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ShapeTextWrap;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ShapeTextWrap;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ShapeTextWrap;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ShapeTextWrap;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ShapeTextWrap` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeTextWrapData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.ShapeTextWrapData;
     }
     /**
      * ChangeTracking mode.
@@ -16768,6 +16885,108 @@ export declare namespace Word {
          */
         mixed = "Mixed",
     }
+    /**
+     * Specifies how to wrap document text around a shape. For more details, see the "Text Wrapping" tab of {@link https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc | Layout options}.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeTextWrapType {
+        /**
+         * Places the shape in line with text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inline = "Inline",
+        /**
+         * Wraps text squarely around the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        square = "Square",
+        /**
+         * Wraps text close to the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tight = "Tight",
+        /**
+         * Wraps text around and through the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        through = "Through",
+        /**
+         * Places text above and below the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topBottom = "TopBottom",
+        /**
+         * Places shape behind text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        behind = "Behind",
+        /**
+         * Places shape in front of text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        front = "Front",
+    }
+    /**
+     * Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farther from the respective page margin.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeTextWrapSide {
+        /**
+         * Has no wrap side property, such as those for inline shapes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Both left and right sides of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        both = "Both",
+        /**
+         * Left side of the shape only.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Right side of the shape only.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+        /**
+         * Side of the shape that's farther from the respective page margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largest = "Largest",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -17559,7 +17778,6 @@ export declare namespace Word {
         export interface NoteItemCollectionUpdateData {
             items?: Word.Interfaces.NoteItemData[];
         }
-        /** An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`. */
         /** An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`. */
         export interface PageCollectionUpdateData {
             items?: Word.Interfaces.PageData[];
@@ -17572,6 +17790,7 @@ export declare namespace Word {
         export interface WindowCollectionUpdateData {
             items?: Word.Interfaces.WindowData[];
         }
+        /** An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
             /**
              * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
@@ -18327,7 +18546,7 @@ export declare namespace Word {
              */
             canvas?: Word.Interfaces.CanvasUpdateData;
             /**
-             * Returns the fill formatting of this shape.
+             * Returns the fill formatting of the shape.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18366,6 +18585,22 @@ export declare namespace Word {
              * @beta
              */
             textFrame?: Word.Interfaces.TextFrameUpdateData;
+            /**
+             * Returns the text wrap formatting of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textWrap?: Word.Interfaces.ShapeTextWrapUpdateData;
+            /**
+             * Specifies whether a given shape can overlap other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowOverlap?: boolean;
             /**
              * The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -18558,6 +18793,57 @@ export declare namespace Word {
              * @beta
              */
             wordWrap?: boolean;
+        }
+        /** An interface for updating data on the `ShapeTextWrap` object, for use in `shapeTextWrap.set({ ... })`. */
+        export interface ShapeTextWrapUpdateData {
+            /**
+             * Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomDistance?: number;
+            /**
+             * Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftDistance?: number;
+            /**
+             * Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightDistance?: number;
+            /**
+             * Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            side?: Word.ShapeTextWrapSide | "None" | "Both" | "Left" | "Right" | "Largest";
+            /**
+             * Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topDistance?: number;
+            /**
+             * Specifies the text wrap type around the shape. See `Word.ShapeTextWrapType` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
         }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
@@ -20176,7 +20462,7 @@ export declare namespace Word {
              */
             pages?: Word.Interfaces.PageData[];
             /**
-             * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+             * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -20910,7 +21196,7 @@ export declare namespace Word {
              */
             canvas?: Word.Interfaces.CanvasData;
             /**
-             * Returns the fill formatting of this shape.
+             * Returns the fill formatting of the shape.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -20949,6 +21235,22 @@ export declare namespace Word {
              * @beta
              */
             textFrame?: Word.Interfaces.TextFrameData;
+            /**
+             * Returns the text wrap formatting of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textWrap?: Word.Interfaces.ShapeTextWrapData;
+            /**
+             * Specifies whether a given shape can overlap other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowOverlap?: boolean;
             /**
              * The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -21213,6 +21515,57 @@ export declare namespace Word {
              * @beta
              */
             wordWrap?: boolean;
+        }
+        /** An interface describing the data returned by calling `shapeTextWrap.toJSON()`. */
+        export interface ShapeTextWrapData {
+            /**
+             * Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomDistance?: number;
+            /**
+             * Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftDistance?: number;
+            /**
+             * Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightDistance?: number;
+            /**
+             * Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            side?: Word.ShapeTextWrapSide | "None" | "Both" | "Left" | "Right" | "Largest";
+            /**
+             * Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topDistance?: number;
+            /**
+             * Specifies the text wrap type around the shape. See `Word.ShapeTextWrapType` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
         }
         /**
          * Represents an annotation wrapper around critique displayed in the document.
@@ -24215,60 +24568,60 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent body of the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the parent body of the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the currently supported content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the currently supported content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
@@ -25668,7 +26021,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+         * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -25696,7 +26049,7 @@ export declare namespace Word {
              */
             canvas?: Word.Interfaces.CanvasLoadOptions;
             /**
-             * Returns the fill formatting of this shape.
+             * Returns the fill formatting of the shape.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -25735,6 +26088,22 @@ export declare namespace Word {
             * @beta
             */
             textFrame?: Word.Interfaces.TextFrameLoadOptions;
+            /**
+             * Returns the text wrap formatting of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textWrap?: Word.Interfaces.ShapeTextWrapLoadOptions;
+            /**
+             * Specifies whether a given shape can overlap other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowOverlap?: boolean;
             /**
              * The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -25911,7 +26280,7 @@ export declare namespace Word {
              */
             canvas?: Word.Interfaces.CanvasLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
+             * For EACH ITEM in the collection: Returns the fill formatting of the shape.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -25950,6 +26319,22 @@ export declare namespace Word {
              * @beta
              */
             textFrame?: Word.Interfaces.TextFrameLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns the text wrap formatting of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textWrap?: Word.Interfaces.ShapeTextWrapLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies whether a given shape can overlap other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowOverlap?: boolean;
             /**
              * For EACH ITEM in the collection: The geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
@@ -26176,6 +26561,67 @@ export declare namespace Word {
              * @beta
              */
             wordWrap?: boolean;
+        }
+        /**
+         * Represents all the properties for wrapping text around a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShapeTextWrapLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomDistance?: boolean;
+            /**
+             * Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftDistance?: boolean;
+            /**
+             * Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightDistance?: boolean;
+            /**
+             * Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            side?: boolean;
+            /**
+             * Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topDistance?: boolean;
+            /**
+             * Specifies the text wrap type around the shape. See `Word.ShapeTextWrapType` for details.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
     }
 }
