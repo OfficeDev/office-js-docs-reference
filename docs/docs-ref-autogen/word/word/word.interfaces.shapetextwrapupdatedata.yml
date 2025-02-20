@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeTextWrapUpdateData
+uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeTextWrapUpdateData
+summary: 'An interface for updating data on the `ShapeTextWrap` object, for use in `shapeTextWrap.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottomDistance
+    uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData#bottomDistance:member'
+    package: word!
+    fullName: bottomDistance
+    summary: >-
+      Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding
+      the specified shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bottomDistance?: number;'
+      return:
+        type: number
+  - name: leftDistance
+    uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData#leftDistance:member'
+    package: word!
+    fullName: leftDistance
+    summary: >-
+      Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding
+      the specified shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftDistance?: number;'
+      return:
+        type: number
+  - name: rightDistance
+    uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData#rightDistance:member'
+    package: word!
+    fullName: rightDistance
+    summary: >-
+      Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding
+      the specified shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightDistance?: number;'
+      return:
+        type: number
+  - name: side
+    uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData#side:member'
+    package: word!
+    fullName: side
+    summary: >-
+      Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right
+      side only, or on the side of the shape that's farthest from the page margin.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'side?: Word.ShapeTextWrapSide | "None" | "Both" | "Left" | "Right" | "Largest";'
+      return:
+        type: '<xref uid="word!Word.ShapeTextWrapSide:enum" /> | "None" | "Both" | "Left" | "Right" | "Largest"'
+  - name: topDistance
+    uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData#topDistance:member'
+    package: word!
+    fullName: topDistance
+    summary: >-
+      Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding
+      the specified shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'topDistance?: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'word!Word.Interfaces.ShapeTextWrapUpdateData#type:member'
+    package: word!
+    fullName: type
+    summary: Specifies the text wrap type around the shape. See `Word.ShapeTextWrapType` for details.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";'
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeTextWrapType:enum" /> | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" |
+          "Behind" | "Front"

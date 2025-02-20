@@ -11,6 +11,18 @@ isPreview: true
 isDeprecated: false
 type: class
 properties:
+  - name: allowOverlap
+    uid: 'word!Word.Shape#allowOverlap:member'
+    package: word!
+    fullName: allowOverlap
+    summary: Specifies whether a given shape can overlap other shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowOverlap: boolean;'
+      return:
+        type: boolean
   - name: body
     uid: 'word!Word.Shape#body:member'
     package: word!
@@ -57,7 +69,7 @@ properties:
     uid: 'word!Word.Shape#fill:member'
     package: word!
     fullName: fill
-    summary: Returns the fill formatting of this shape.
+    summary: Returns the fill formatting of the shape.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -291,6 +303,18 @@ properties:
       content: 'readonly textFrame: Word.TextFrame;'
       return:
         type: '<xref uid="word!Word.TextFrame:class" />'
+  - name: textWrap
+    uid: 'word!Word.Shape#textWrap:member'
+    package: word!
+    fullName: textWrap
+    summary: Returns the text wrap formatting of the shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly textWrap: Word.ShapeTextWrap;'
+      return:
+        type: '<xref uid="word!Word.ShapeTextWrap:class" />'
   - name: top
     uid: 'word!Word.Shape#top:member'
     package: word!
