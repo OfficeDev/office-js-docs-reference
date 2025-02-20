@@ -25,6 +25,18 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: allowOverlap
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#allowOverlap:member'
+    package: word!
+    fullName: allowOverlap
+    summary: 'For EACH ITEM in the collection: Specifies whether a given shape can overlap other shapes.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowOverlap?: boolean;'
+      return:
+        type: boolean
   - name: body
     uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#body:member'
     package: word!
@@ -60,7 +72,7 @@ properties:
     uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#fill:member'
     package: word!
     fullName: fill
-    summary: 'For EACH ITEM in the collection: Returns the fill formatting of this shape.'
+    summary: 'For EACH ITEM in the collection: Returns the fill formatting of the shape.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -231,6 +243,18 @@ properties:
       content: 'textFrame?: Word.Interfaces.TextFrameLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.TextFrameLoadOptions:interface" />'
+  - name: textWrap
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#textWrap:member'
+    package: word!
+    fullName: textWrap
+    summary: 'For EACH ITEM in the collection: Returns the text wrap formatting of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textWrap?: Word.Interfaces.ShapeTextWrapLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeTextWrapLoadOptions:interface" />'
   - name: top
     uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#top:member'
     package: word!

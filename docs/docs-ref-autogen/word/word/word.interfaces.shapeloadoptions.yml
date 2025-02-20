@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShapeLoadOptions
 summary: >-
   Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text
-  boxes, geometric shapes, groups, pictures and canvases.
+  boxes, geometric shapes, groups, pictures, and canvases.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -23,6 +23,18 @@ properties:
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: allowOverlap
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#allowOverlap:member'
+    package: word!
+    fullName: allowOverlap
+    summary: Specifies whether a given shape can overlap other shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowOverlap?: boolean;'
       return:
         type: boolean
   - name: body
@@ -57,7 +69,7 @@ properties:
     uid: 'word!Word.Interfaces.ShapeLoadOptions#fill:member'
     package: word!
     fullName: fill
-    summary: Returns the fill formatting of this shape.
+    summary: Returns the fill formatting of the shape.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -220,6 +232,18 @@ properties:
       content: 'textFrame?: Word.Interfaces.TextFrameLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.TextFrameLoadOptions:interface" />'
+  - name: textWrap
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#textWrap:member'
+    package: word!
+    fullName: textWrap
+    summary: Returns the text wrap formatting of the shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textWrap?: Word.Interfaces.ShapeTextWrapLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeTextWrapLoadOptions:interface" />'
   - name: top
     uid: 'word!Word.Interfaces.ShapeLoadOptions#top:member'
     package: word!

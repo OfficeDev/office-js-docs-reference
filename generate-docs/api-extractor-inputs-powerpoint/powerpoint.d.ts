@@ -704,7 +704,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly containedType: ShapeType | null;
+        readonly containedType: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
         /**
          * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
          *
@@ -5258,7 +5258,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            containedType?: ShapeType | null;
+            containedType?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
             /**
              * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
              *

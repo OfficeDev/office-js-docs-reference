@@ -23,9 +23,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'containedType?: ShapeType | null;'
+      content: >-
+        containedType?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" |
+        "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" |
+        "Placeholder" | "SmartArt" | "TextBox" | null;
       return:
-        type: '<xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | null'
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" |
+          "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" |
+          "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null
   - name: type
     uid: 'powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#type:member'
     package: powerpoint!

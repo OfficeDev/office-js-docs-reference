@@ -113,6 +113,10 @@ items:
                 uid: 'word!Word.ShapeTextOrientation:enum'
               - name: ShapeTextVerticalAlignment
                 uid: 'word!Word.ShapeTextVerticalAlignment:enum'
+              - name: ShapeTextWrapSide
+                uid: 'word!Word.ShapeTextWrapSide:enum'
+              - name: ShapeTextWrapType
+                uid: 'word!Word.ShapeTextWrapType:enum'
               - name: ShapeType
                 uid: 'word!Word.ShapeType:enum'
               - name: StyleType
@@ -295,6 +299,8 @@ items:
             uid: 'word!Word.ShapeFill:class'
           - name: ShapeGroup
             uid: 'word!Word.ShapeGroup:class'
+          - name: ShapeTextWrap
+            uid: 'word!Word.ShapeTextWrap:class'
           - name: Style
             uid: 'word!Word.Style:class'
           - name: StyleCollection
