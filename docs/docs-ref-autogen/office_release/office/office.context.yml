@@ -23,6 +23,24 @@ remarks: >-
   </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Not
   applicable </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td> Supported
   </td><td> Supported </td><td> Not applicable </td></tr> </table>
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Get the Office host, version, and platform in which the add-in is running.
+
+  const contextInfo = Office.context.diagnostics;
+
+  console.log("Office application: " + contextInfo.host);
+
+  console.log("Office version: " + contextInfo.version);
+
+  console.log("Platform: " + contextInfo.platform);
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
