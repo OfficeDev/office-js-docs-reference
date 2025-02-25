@@ -9347,7 +9347,7 @@ Office.MeetingSuggestion,"meetingString",Property,Deprecated,false
 Office.MeetingSuggestion,"start",Property,Deprecated,false
 Office.MeetingSuggestion,"subject",Property,Deprecated,false
 Office.Message,N/A,Class,Good,false
-Office.MessageCompose,N/A,Class,Good,false
+Office.MessageCompose,N/A,Class,Good,true
 Office.MessageCompose,"bcc",Property,Good,true
 Office.MessageCompose,"body",Property,Good,true
 Office.MessageCompose,"categories",Property,Good,true
