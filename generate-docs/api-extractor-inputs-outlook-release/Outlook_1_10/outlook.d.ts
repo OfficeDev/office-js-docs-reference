@@ -1732,15 +1732,24 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
-         * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
-         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
+         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
+         *
+         * - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body| Body API} methods, such as `prependAsync`, `setSignatureAsync`, or `setAsync`.
+         * If you use `Office.context.mailbox.item.body.setAsync` to insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+         * Otherwise, the image won't render in the body once it's inserted. For an example, see the
+         * {@link https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml | Add inline Base64-encoded image to message or appointment body (Compose)}
+         * sample in {@link https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab | Script Lab}.
          *
          * **Errors**:
          *
@@ -1749,11 +1758,6 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-         *
-         * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
-         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
-         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          *
          * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -1775,15 +1779,24 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
-         * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
-         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
+         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
+         *
+         * - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body| Body API} methods, such as `prependAsync`, `setSignatureAsync`, or `setAsync`.
+         * If you use `Office.context.mailbox.item.body.setAsync` to insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+         * Otherwise, the image won't render in the body once it's inserted. For an example, see the
+         * {@link https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml | Add inline Base64-encoded image to message or appointment body (Compose)}
+         * sample in {@link https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab | Script Lab}.
          *
          * **Errors**:
          *
@@ -1793,11 +1806,6 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
-         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
-         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
-         * 
          * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -7466,10 +7474,12 @@ export declare namespace Office {
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
          *
-         * - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
-         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
-         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
+         * - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body| Body API} methods, such as `prependAsync`, `setSignatureAsync`, or `setAsync`.
+         * If you use `Office.context.mailbox.item.body.setAsync` to insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+         * Otherwise, the image won't render in the body once it's inserted. For an example, see the
+         * {@link https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml | Add inline Base64-encoded image to message or appointment body (Compose)}
+         * sample in {@link https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab | Script Lab}.
          *
          * **Errors**:
          *
@@ -7512,10 +7522,12 @@ export declare namespace Office {
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
          *
-         * - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
-         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
-         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
+         * - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body| Body API} methods, such as `prependAsync`, `setSignatureAsync`, or `setAsync`.
+         * If you use `Office.context.mailbox.item.body.setAsync` to insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+         * Otherwise, the image won't render in the body once it's inserted. For an example, see the
+         * {@link https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml | Add inline Base64-encoded image to message or appointment body (Compose)}
+         * sample in {@link https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab | Script Lab}.
          *
          * **Errors**:
          *
@@ -8068,7 +8080,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox (applies to classic Outlook on Windows only)**
+         * b. **Shared mailbox**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -8111,7 +8123,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox (applies to classic Outlook on Windows only)**
+         * b. **Shared mailbox**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *

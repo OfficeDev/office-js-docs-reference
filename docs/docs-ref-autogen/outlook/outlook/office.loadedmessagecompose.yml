@@ -1212,7 +1212,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. **Shared mailbox**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
@@ -1291,7 +1291,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to Outlook on Windows only)**
+      b. **Shared mailbox**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.

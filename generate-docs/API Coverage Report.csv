@@ -6907,8 +6907,8 @@ Office.CoercionType,"SlideRange",EnumField,Good,false
 Office.CoercionType,"Table",EnumField,Good,false
 Office.CoercionType,"Text",EnumField,Good,false
 Office.CoercionType,"XmlSvg",EnumField,Good,false
-Office.Context,N/A,Class,Good,false
-Office.Context,"auth",Property,Fine,false
+Office.Context,N/A,Class,Good,true
+Office.Context,"auth",Property,Fine,true
 Office.Context,"commerceAllowed",Property,Good,true
 Office.Context,"contentLanguage",Property,Good,true
 Office.Context,"diagnostics",Property,Good,true
@@ -6995,13 +6995,13 @@ Office.DevicePermissionType,N/A,Enum,Good,true
 Office.DevicePermissionType,"camera",EnumField,Fine,false
 Office.DevicePermissionType,"geolocation",EnumField,Fine,false
 Office.DevicePermissionType,"microphone",EnumField,Fine,false
-Office.Dialog,N/A,Class,Good,false
+Office.Dialog,N/A,Class,Good,true
 Office.Dialog,"addEventHandler(eventType, handler)",Method,Fine,true
 Office.Dialog,"close()",Method,Good,true
 Office.Dialog,"messageChild(message, messageOptions)",Method,Fine,true
 Office.Dialog,"sendMessage(name)",Method,Poor,false
 Office.DialogMessageOptions,N/A,Class,Good,false
-Office.DialogMessageOptions,"targetOrigin",Property,Good,false
+Office.DialogMessageOptions,"targetOrigin",Property,Good,true
 Office.DialogOptions,N/A,Class,Fine,false
 Office.DialogOptions,"asyncContext",Property,Fine,false
 Office.DialogOptions,"displayInIframe",Property,Good,false
@@ -9347,7 +9347,7 @@ Office.MeetingSuggestion,"meetingString",Property,Deprecated,false
 Office.MeetingSuggestion,"start",Property,Deprecated,false
 Office.MeetingSuggestion,"subject",Property,Deprecated,false
 Office.Message,N/A,Class,Good,false
-Office.MessageCompose,N/A,Class,Good,false
+Office.MessageCompose,N/A,Class,Good,true
 Office.MessageCompose,"bcc",Property,Good,true
 Office.MessageCompose,"body",Property,Good,true
 Office.MessageCompose,"categories",Property,Good,true
@@ -10083,12 +10083,18 @@ PowerPoint.ShapeFillType,"pictureAndTexture",EnumField,Fine,false
 PowerPoint.ShapeFillType,"slideBackground",EnumField,Fine,false
 PowerPoint.ShapeFillType,"solid",EnumField,Fine,false
 PowerPoint.ShapeFont,N/A,Class,Good,true
+PowerPoint.ShapeFont,"allCaps",Property,Good,false
 PowerPoint.ShapeFont,"bold",Property,Good,false
 PowerPoint.ShapeFont,"color",Property,Good,true
 PowerPoint.ShapeFont,"context",Property,Good,false
+PowerPoint.ShapeFont,"doubleStrikethrough",Property,Good,false
 PowerPoint.ShapeFont,"italic",Property,Good,false
 PowerPoint.ShapeFont,"name",Property,Good,false
 PowerPoint.ShapeFont,"size",Property,Good,false
+PowerPoint.ShapeFont,"smallCaps",Property,Good,false
+PowerPoint.ShapeFont,"strikethrough",Property,Good,false
+PowerPoint.ShapeFont,"subscript",Property,Good,false
+PowerPoint.ShapeFont,"superscript",Property,Good,false
 PowerPoint.ShapeFont,"underline",Property,Good,false
 PowerPoint.ShapeFont,"load(options)",Method,Poor,false
 PowerPoint.ShapeFont,"load(propertyNames)",Method,Poor,false

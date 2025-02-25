@@ -28,7 +28,31 @@ summary: >-
 
 
   - [Message](xref:outlook!Office.Message:interface)
-remarks: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+
+  const attachmentUrl = $("#attachmentUrl")
+    .val()
+    .toString();
+  Office.context.mailbox.item.addFileAttachmentAsync(
+    attachmentUrl,
+    getFileName(attachmentUrl),
+    { isInline: false },
+    (result) => {
+      console.log(result);
+    }
+  );
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -1359,13 +1383,14 @@ methods:
       `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first
-      get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
-      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
-      render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
-      -->.
+      - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the [Body
+      API](https://learn.microsoft.com/javascript/api/outlook/office.body) methods, such as `prependAsync`<!-- -->,
+      `setSignatureAsync`<!-- -->, or `setAsync`<!-- -->. If you use `Office.context.mailbox.item.body.setAsync` to
+      insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+      Otherwise, the image won't render in the body once it's inserted. For an example, see the [Add inline
+      Base64-encoded image to message or appointment body
+      (Compose)](https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml)
+      sample in [Script Lab](https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab)<!-- -->.
 
 
       **Errors**:
@@ -1507,13 +1532,14 @@ methods:
       `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first
-      get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
-      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
-      render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
-      -->.
+      - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the [Body
+      API](https://learn.microsoft.com/javascript/api/outlook/office.body) methods, such as `prependAsync`<!-- -->,
+      `setSignatureAsync`<!-- -->, or `setAsync`<!-- -->. If you use `Office.context.mailbox.item.body.setAsync` to
+      insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+      Otherwise, the image won't render in the body once it's inserted. For an example, see the [Add inline
+      Base64-encoded image to message or appointment body
+      (Compose)](https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml)
+      sample in [Script Lab](https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab)<!-- -->.
 
 
       **Errors**:
@@ -3253,7 +3279,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. **Shared mailbox**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
@@ -3335,7 +3361,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. **Shared mailbox**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
