@@ -2348,7 +2348,27 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+         * Specifies whether the text in the `TextRange` is set to use the **All Caps** attribute which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+         *
+         * - `true`: All the text has the **All Caps** attribute.
+         *
+         * - `false`: None of the text has the **All Caps** attribute.
+         *
+         * - `null`: Returned if some, but not all, of the text has the **All Caps** attribute.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allCaps: boolean | null;
+        /**
+         * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+         *
+         * - `true`: All the text is bold.
+         *
+         * - `false`: None of the text is bold.
+         *
+         * - `null`: Returned if some, but not all, of the text is bold.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -2362,7 +2382,27 @@ export declare namespace PowerPoint {
          */
         color: string | null;
         /**
-         * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+         * Specifies whether the text in the `TextRange` is set to use the **Double strikethrough** attribute. The possible values are as follows:
+         *
+         * - `true`: All the text has the **Double strikethrough** attribute.
+         *
+         * - `false`: None of the text has the **Double strikethrough** attribute.
+         *
+         * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doubleStrikethrough: boolean | null;
+        /**
+         * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+         *
+         * - `true`: All the text is italicized.
+         *
+         * - `false`: None of the text is italicized.
+         *
+         * - `null`: Returned if some, but not all, of the text is italicized.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -2382,6 +2422,62 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         size: number | null;
+        /**
+         * Specifies whether the text in the `TextRange` is set to use the **Small Caps** attribute which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+         *
+         * - `true`: All the text has the **Small Caps** attribute.
+         *
+         * - `false`: None of the text has the **Small Caps** attribute.
+         *
+         * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallCaps: boolean | null;
+        /**
+         * Specifies whether the text in the `TextRange` is set to use the **Strikethrough** attribute. The possible values are as follows:
+         *
+         * - `true`: All the text has the **Strikethrough** attribute.
+         *
+         * - `false`: None of the text has the **Strikethrough** attribute.
+         *
+         * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        strikethrough: boolean | null;
+        /**
+         * Specifies whether the text in the `TextRange` is set to use the **Subscript** attribute. The possible values are as follows:
+         *
+         * - `true`: All the text has the **Subscript** attribute.
+         *
+         * - `false`: None of the text has the **Subscript** attribute.
+         *
+         * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subscript: boolean | null;
+        /**
+         * Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute. The possible values are as follows:
+         *
+         * - `true`: All the text has the **Superscript** attribute.
+         *
+         * - `false`: None of the text has the **Superscript** attribute.
+         *
+         * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        superscript: boolean | null;
         /**
          * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
          *
@@ -4870,7 +4966,27 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
             /**
-             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **All Caps** attribute which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+             *
+             * - `true`: All the text has the **All Caps** attribute.
+             *
+             * - `false`: None of the text has the **All Caps**attribute.
+             *
+             * - `null`: Some, but not all, of the text has the **All Caps** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allCaps?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+             *
+             * - `true`: All the text is bold.
+             *
+             * - `false`: None of the text is bold.
+             *
+             * - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -4884,7 +5000,27 @@ export declare namespace PowerPoint {
              */
             color?: string | null;
             /**
-             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **Double strikethrough** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Double strikethrough** attribute.
+             *
+             * - `false`: None of the text has the **Double strikethrough** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            doubleStrikethrough?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+             *
+             * - `true`: All the text is italicized.
+             *
+             * - `false`: None of the text is italicized.
+             *
+             * - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -4904,6 +5040,62 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             size?: number | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Small Caps** attribute which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Small Caps** attribute.
+             *
+             * - `false`: None of the text has the **Small Caps** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            smallCaps?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Strikethrough** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Strikethrough** attribute.
+             *
+             * - `false`: None of the text has the **Strikethrough** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Subscript** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Subscript** attribute.
+             *
+             * - `false`: None of the text has the **Subscript** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Superscript** attribute.
+             *
+             * - `false`: None of the text has the **Superscript** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean | null;
             /**
              * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
@@ -5316,7 +5508,27 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             /**
-             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **All Caps** attribute which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+             *
+             * - `true`: All the text has the **All Caps** attribute.
+             *
+             * - `false`: None of the text has the **All Caps**attribute.
+             *
+             * - `null`: Some, but not all, of the text has the **All Caps** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allCaps?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+             *
+             * - `true`: All the text is bold.
+             *
+             * - `false`: None of the text is bold.
+             *
+             * - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -5330,7 +5542,27 @@ export declare namespace PowerPoint {
              */
             color?: string | null;
             /**
-             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **Double strikethrough** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Double strikethrough** attribute.
+             *
+             * - `false`: None of the text has the **Double strikethrough** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            doubleStrikethrough?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+             *
+             * - `true`: All the text is italicized.
+             *
+             * - `false`: None of the text is italicized.
+             *
+             * - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -5350,6 +5582,62 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             size?: number | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Small Caps** attribute which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Small Caps** attribute.
+             *
+             * - `false`: None of the text has the **Small Caps** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            smallCaps?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Strikethrough** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Strikethrough** attribute.
+             *
+             * - `false`: None of the text has the **Strikethrough** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Subscript** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Subscript** attribute.
+             *
+             * - `false`: None of the text has the **Subscript** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean | null;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Superscript** attribute.
+             *
+             * - `false`: None of the text has the **Superscript** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean | null;
             /**
              * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
@@ -6031,7 +6319,27 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **All Caps** attribute which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+             *
+             * - `true`: All the text has the **All Caps** attribute.
+             *
+             * - `false`: None of the text has the **All Caps**attribute.
+             *
+             * - `null`: Some, but not all, of the text has the **All Caps** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allCaps?: boolean;
+            /**
+             * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+             *
+             * - `true`: All the text is bold.
+             *
+             * - `false`: None of the text is bold.
+             *
+             * - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6045,7 +6353,27 @@ export declare namespace PowerPoint {
              */
             color?: boolean;
             /**
-             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **Double strikethrough** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Double strikethrough** attribute.
+             *
+             * - `false`: None of the text has the **Double strikethrough** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            doubleStrikethrough?: boolean;
+            /**
+             * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+             *
+             * - `true`: All the text is italicized.
+             *
+             * - `false`: None of the text is italicized.
+             *
+             * - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6065,6 +6393,56 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             size?: boolean;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Small Caps** attribute which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Small Caps** attribute.
+             *
+             * - `false`: None of the text has the **Small Caps** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            smallCaps?: boolean;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Strikethrough** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Strikethrough** attribute.
+             *
+             * - `false`: None of the text has the **Strikethrough** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean;
+            /**
+             * Specifies whether the text in the `TextRange` is set to use the **Subscript** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Subscript** attribute.
+             *
+             * - `false`: None of the text has the **Subscript** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean;
+            /**
+             * Specifies the superscript status of the font. Returns `null` if the `TextRange` contains both superscript and non-superscript text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean;
             /**
              * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
