@@ -4,8 +4,8 @@ uid: 'word!Word.Window:class'
 package: word!
 fullName: Word.Window
 summary: Represents the window that displays the document. A window can be split to contain multiple reading panes.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -14,8 +14,8 @@ properties:
     package: word!
     fullName: activePane
     summary: Gets the active pane in the window.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly activePane: Word.Pane;'
@@ -29,7 +29,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: panes
     summary: Gets the collection of panes in the window.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly panes: Word.PaneCollection;'
@@ -56,7 +56,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Window;'
@@ -75,7 +75,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -107,7 +107,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.WindowData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.WindowData;'
@@ -127,7 +127,7 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.Window;'
@@ -144,7 +144,7 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.Window;'

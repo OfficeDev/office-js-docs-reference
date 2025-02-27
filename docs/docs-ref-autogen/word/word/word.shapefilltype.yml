@@ -4,8 +4,8 @@ uid: 'word!Word.ShapeFillType:enum'
 package: word!
 fullName: Word.ShapeFillType
 summary: Specifies a shape's fill type.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 fields:
   - name: gradient
@@ -14,7 +14,7 @@ fields:
     summary: |-
       Gradient fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Gradient"'
   - name: mixed
     uid: 'word!Word.ShapeFillType.mixed:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Mixed fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: noFill
     uid: 'word!Word.ShapeFillType.noFill:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       No fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NoFill"'
   - name: pattern
     uid: 'word!Word.ShapeFillType.pattern:member'
@@ -38,7 +38,7 @@ fields:
     summary: |-
       Pattern fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pattern"'
   - name: picture
     uid: 'word!Word.ShapeFillType.picture:member'
@@ -46,7 +46,7 @@ fields:
     summary: |-
       Picture fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Picture"'
   - name: solid
     uid: 'word!Word.ShapeFillType.solid:member'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       Solid fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Solid"'
   - name: texture
     uid: 'word!Word.ShapeFillType.texture:member'
@@ -62,5 +62,5 @@ fields:
     summary: |-
       Texture fill.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Texture"'

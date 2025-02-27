@@ -1,0 +1,279 @@
+### YamlMime:TSType
+name: Word.ShapeFill
+uid: 'word!Word.ShapeFill:class'
+package: word!
+fullName: Word.ShapeFill
+summary: Represents the fill formatting of a shape object.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: backgroundColor
+    uid: 'word!Word.ShapeFill#backgroundColor:member'
+    package: word!
+    fullName: backgroundColor
+    summary: 'Specifies the shape fill background color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backgroundColor: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'word!Word.ShapeFill#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: foregroundColor
+    uid: 'word!Word.ShapeFill#foregroundColor:member'
+    package: word!
+    fullName: foregroundColor
+    summary: 'Specifies the shape fill foreground color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor: string;'
+      return:
+        type: string
+  - name: transparency
+    uid: 'word!Word.ShapeFill#transparency:member'
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'word!Word.ShapeFill#type:member'
+    package: word!
+    fullName: type
+    summary: Returns the fill type of the shape. See `Word.ShapeFillType` for details.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: Word.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "Picture" | "Texture" |
+        "Mixed";
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeFillType:enum" /> | "NoFill" | "Solid" | "Gradient" | "Pattern" | "Picture" |
+          "Texture" | "Mixed"
+methods:
+  - name: clear()
+    uid: 'word!Word.ShapeFill#clear:member(1)'
+    package: word!
+    fullName: clear()
+    summary: Clears the fill formatting of this shape and set it to `Word.ShapeFillType.NoFill`<!-- -->;
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.ShapeFill#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.ShapeFillLoadOptions): Word.ShapeFill;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.ShapeFillLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.ShapeFill:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.ShapeFill#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ShapeFill;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.ShapeFill:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.ShapeFill#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ShapeFill;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.ShapeFill:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.ShapeFill#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ShapeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.ShapeFillUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.ShapeFill#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ShapeFill): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.ShapeFill:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'word!Word.ShapeFill#setSolidColor:member(1)'
+    package: word!
+    fullName: setSolidColor(color)
+    summary: >-
+      Sets the fill formatting of the shape to a uniform color. This changes the fill type to
+      `Word.ShapeFillType.Solid`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: >-
+            A string that represents the fill foreground color. You can provide the value in the '\#RRGGBB' format or
+            the color name.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.ShapeFill#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.ShapeFill` object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ShapeFillData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ShapeFillData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeFillData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.ShapeFill#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ShapeFill;'
+      return:
+        type: '<xref uid="word!Word.ShapeFill:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.ShapeFill#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ShapeFill;'
+      return:
+        type: '<xref uid="word!Word.ShapeFill:class" />'
+        description: ''
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

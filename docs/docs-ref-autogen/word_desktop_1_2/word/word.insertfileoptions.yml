@@ -1,0 +1,141 @@
+### YamlMime:TSType
+name: Word.InsertFileOptions
+uid: 'word!Word.InsertFileOptions:interface'
+package: word!
+fullName: Word.InsertFileOptions
+summary: Specifies the options to determine what to copy when inserting a file.
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+  // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
+
+  await Word.run(async (context) => {
+    // Use the Base64-encoded string representation of the selected .docx file.
+    context.document.insertFileFromBase64(externalDocument, "Replace", {
+      importTheme: true,
+      importStyles: true,
+      importParagraphSpacing: true,
+      importPageColor: true,
+      importChangeTrackingMode: true,
+      importCustomProperties: true,
+      importCustomXmlParts: true,
+      importDifferentOddEvenPages: true
+    });
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: importChangeTrackingMode
+    uid: 'word!Word.InsertFileOptions#importChangeTrackingMode:member'
+    package: word!
+    fullName: importChangeTrackingMode
+    summary: Represents whether the change tracking mode status from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importChangeTrackingMode?: boolean;'
+      return:
+        type: boolean
+  - name: importCustomProperties
+    uid: 'word!Word.InsertFileOptions#importCustomProperties:member'
+    package: word!
+    fullName: importCustomProperties
+    summary: >-
+      Represents whether the custom properties from the source document should be imported. Overwrites existing
+      properties with the same name.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importCustomProperties?: boolean;'
+      return:
+        type: boolean
+  - name: importCustomXmlParts
+    uid: 'word!Word.InsertFileOptions#importCustomXmlParts:member'
+    package: word!
+    fullName: importCustomXmlParts
+    summary: Represents whether the custom XML parts from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importCustomXmlParts?: boolean;'
+      return:
+        type: boolean
+  - name: importDifferentOddEvenPages
+    uid: 'word!Word.InsertFileOptions#importDifferentOddEvenPages:member'
+    package: word!
+    fullName: importDifferentOddEvenPages
+    summary: >-
+      Represents whether to import the Different Odd and Even Pages setting for the header and footer from the source
+      document.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importDifferentOddEvenPages?: boolean;'
+      return:
+        type: boolean
+  - name: importPageColor
+    uid: 'word!Word.InsertFileOptions#importPageColor:member'
+    package: word!
+    fullName: importPageColor
+    summary: Represents whether the page color and other background information from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importPageColor?: boolean;'
+      return:
+        type: boolean
+  - name: importParagraphSpacing
+    uid: 'word!Word.InsertFileOptions#importParagraphSpacing:member'
+    package: word!
+    fullName: importParagraphSpacing
+    summary: Represents whether the paragraph spacing from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importParagraphSpacing?: boolean;'
+      return:
+        type: boolean
+  - name: importStyles
+    uid: 'word!Word.InsertFileOptions#importStyles:member'
+    package: word!
+    fullName: importStyles
+    summary: Represents whether the styles from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importStyles?: boolean;'
+      return:
+        type: boolean
+  - name: importTheme
+    uid: 'word!Word.InsertFileOptions#importTheme:member'
+    package: word!
+    fullName: importTheme
+    summary: Represents whether the theme from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importTheme?: boolean;'
+      return:
+        type: boolean

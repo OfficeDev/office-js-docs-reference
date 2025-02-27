@@ -12328,7 +12328,6 @@ Word.PageCollection,"context",Property,Good,false
 Word.PageCollection,"items",Property,Fine,false
 Word.PageCollection,"getFirst()",Method,Poor,false
 Word.PageCollection,"getFirstOrNullObject()",Method,Poor,false
-Word.PageCollection,"getItem(index)",Method,Poor,false
 Word.PageCollection,"load(options)",Method,Poor,false
 Word.PageCollection,"load(propertyNames)",Method,Poor,false
 Word.PageCollection,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -12351,7 +12350,6 @@ Word.PaneCollection,"context",Property,Good,false
 Word.PaneCollection,"items",Property,Fine,false
 Word.PaneCollection,"getFirst()",Method,Poor,false
 Word.PaneCollection,"getFirstOrNullObject()",Method,Poor,false
-Word.PaneCollection,"getItem(index)",Method,Poor,false
 Word.PaneCollection,"load(propertyNames)",Method,Poor,false
 Word.PaneCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.PaneCollection,"toJSON()",Method,Poor,false
@@ -13235,7 +13233,6 @@ Word.WindowCollection,"context",Property,Good,false
 Word.WindowCollection,"items",Property,Fine,false
 Word.WindowCollection,"getFirst()",Method,Poor,false
 Word.WindowCollection,"getFirstOrNullObject()",Method,Poor,false
-Word.WindowCollection,"getItem(index)",Method,Poor,false
 Word.WindowCollection,"load(propertyNames)",Method,Poor,false
 Word.WindowCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.WindowCollection,"toJSON()",Method,Poor,false

@@ -1,0 +1,490 @@
+### YamlMime:TSEnum
+name: Word.FieldType
+uid: 'word!Word.FieldType:enum'
+package: word!
+fullName: Word.FieldType
+summary: Represents the type of Field.
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+  // Inserts a Date field before selection.
+
+  await Word.run(async (context) => {
+    const range: Word.Range = context.document.getSelection().getRange();
+
+    const field: Word.Field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+    field.load("result,code");
+    await context.sync();
+
+    if (field.isNullObject) {
+      console.log("There are no fields in this document.");
+    } else {
+      console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
+    }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: addin
+    uid: 'word!Word.FieldType.addin:member'
+    package: word!
+    summary: Represents that the field type is Add-in.
+    value: '"Addin"'
+  - name: addressBlock
+    uid: 'word!Word.FieldType.addressBlock:member'
+    package: word!
+    summary: Represents that the field type is AddressBlock.
+    value: '"AddressBlock"'
+  - name: advance
+    uid: 'word!Word.FieldType.advance:member'
+    package: word!
+    summary: Represents that the field type is Advance.
+    value: '"Advance"'
+  - name: ask
+    uid: 'word!Word.FieldType.ask:member'
+    package: word!
+    summary: Represents that the field type is Ask.
+    value: '"Ask"'
+  - name: author
+    uid: 'word!Word.FieldType.author:member'
+    package: word!
+    summary: Represents that the field type is Author.
+    value: '"Author"'
+  - name: autoText
+    uid: 'word!Word.FieldType.autoText:member'
+    package: word!
+    summary: Represents that the field type is AutoText.
+    value: '"AutoText"'
+  - name: autoTextList
+    uid: 'word!Word.FieldType.autoTextList:member'
+    package: word!
+    summary: Represents that the field type is AutoTextList.
+    value: '"AutoTextList"'
+  - name: barCode
+    uid: 'word!Word.FieldType.barCode:member'
+    package: word!
+    summary: Represents that the field type is Barcode.
+    value: '"BarCode"'
+  - name: bibliography
+    uid: 'word!Word.FieldType.bibliography:member'
+    package: word!
+    summary: Represents that the field type is Bibliography.
+    value: '"Bibliography"'
+  - name: bidiOutline
+    uid: 'word!Word.FieldType.bidiOutline:member'
+    package: word!
+    summary: Represents that the field type is BidiOutline.
+    value: '"BidiOutline"'
+  - name: citation
+    uid: 'word!Word.FieldType.citation:member'
+    package: word!
+    summary: Represents that the field type is Citation.
+    value: '"Citation"'
+  - name: comments
+    uid: 'word!Word.FieldType.comments:member'
+    package: word!
+    summary: Represents that the field type is Comments.
+    value: '"Comments"'
+  - name: compare
+    uid: 'word!Word.FieldType.compare:member'
+    package: word!
+    summary: Represents that the field type is Compare.
+    value: '"Compare"'
+  - name: createDate
+    uid: 'word!Word.FieldType.createDate:member'
+    package: word!
+    summary: Represents that the field type is CreateDate.
+    value: '"CreateDate"'
+  - name: data
+    uid: 'word!Word.FieldType.data:member'
+    package: word!
+    summary: Represents that the field type is Data.
+    value: '"Data"'
+  - name: database
+    uid: 'word!Word.FieldType.database:member'
+    package: word!
+    summary: Represents that the field type is Database.
+    value: '"Database"'
+  - name: date
+    uid: 'word!Word.FieldType.date:member'
+    package: word!
+    summary: Represents that the field type is Date.
+    value: '"Date"'
+  - name: displayBarcode
+    uid: 'word!Word.FieldType.displayBarcode:member'
+    package: word!
+    summary: Represents that the field type is DisplayBarcode.
+    value: '"DisplayBarcode"'
+  - name: docProperty
+    uid: 'word!Word.FieldType.docProperty:member'
+    package: word!
+    summary: Represents that the field type is DocumentProperty
+    value: '"DocProperty"'
+  - name: docVariable
+    uid: 'word!Word.FieldType.docVariable:member'
+    package: word!
+    summary: Represents that the field type is DocumentVariable.
+    value: '"DocVariable"'
+  - name: editTime
+    uid: 'word!Word.FieldType.editTime:member'
+    package: word!
+    summary: Represents that the field type is EditTime.
+    value: '"EditTime"'
+  - name: embedded
+    uid: 'word!Word.FieldType.embedded:member'
+    package: word!
+    summary: Represents that the field type is Embedded.
+    value: '"Embedded"'
+  - name: empty
+    uid: 'word!Word.FieldType.empty:member'
+    package: word!
+    summary: Represents that the field type is Empty.
+    value: '"Empty"'
+  - name: eq
+    uid: 'word!Word.FieldType.eq:member'
+    package: word!
+    summary: Represents that the field type is Equation.
+    value: '"EQ"'
+  - name: expression
+    uid: 'word!Word.FieldType.expression:member'
+    package: word!
+    summary: Represents that the field type is Expression.
+    value: '"Expression"'
+  - name: fileName
+    uid: 'word!Word.FieldType.fileName:member'
+    package: word!
+    summary: Represents that the field type is FileName.
+    value: '"FileName"'
+  - name: fileSize
+    uid: 'word!Word.FieldType.fileSize:member'
+    package: word!
+    summary: Represents that the field type is FileSize.
+    value: '"FileSize"'
+  - name: fillIn
+    uid: 'word!Word.FieldType.fillIn:member'
+    package: word!
+    summary: Represents that the field type is FillIn.
+    value: '"FillIn"'
+  - name: formCheckbox
+    uid: 'word!Word.FieldType.formCheckbox:member'
+    package: word!
+    summary: Represents that the field type is FormCheckbox.
+    value: '"FormCheckbox"'
+  - name: formDropdown
+    uid: 'word!Word.FieldType.formDropdown:member'
+    package: word!
+    summary: Represents that the field type is FormDropdown.
+    value: '"FormDropdown"'
+  - name: formText
+    uid: 'word!Word.FieldType.formText:member'
+    package: word!
+    summary: Represents that the field type is FormText.
+    value: '"FormText"'
+  - name: gotoButton
+    uid: 'word!Word.FieldType.gotoButton:member'
+    package: word!
+    summary: Represents that the field type is GotoButton.
+    value: '"GotoButton"'
+  - name: greetingLine
+    uid: 'word!Word.FieldType.greetingLine:member'
+    package: word!
+    summary: Represents that the field type is GreetingLine.
+    value: '"GreetingLine"'
+  - name: hyperlink
+    uid: 'word!Word.FieldType.hyperlink:member'
+    package: word!
+    summary: Represents that the field type is Hyperlink.
+    value: '"Hyperlink"'
+  - name: if
+    uid: 'word!Word.FieldType.if:member'
+    package: word!
+    summary: Represents that the field type is If.
+    value: '"If"'
+  - name: import
+    uid: 'word!Word.FieldType.import:member'
+    package: word!
+    summary: Represents that the field type is Import.
+    value: '"Import"'
+  - name: include
+    uid: 'word!Word.FieldType.include:member'
+    package: word!
+    summary: Represents that the field type is Include.
+    value: '"Include"'
+  - name: includePicture
+    uid: 'word!Word.FieldType.includePicture:member'
+    package: word!
+    summary: Represents that the field type is IncludePicture.
+    value: '"IncludePicture"'
+  - name: includeText
+    uid: 'word!Word.FieldType.includeText:member'
+    package: word!
+    summary: Represents that the field type is IncludeText.
+    value: '"IncludeText"'
+  - name: index
+    uid: 'word!Word.FieldType.index:member'
+    package: word!
+    summary: Represents that the field type is Index.
+    value: '"Index"'
+  - name: info
+    uid: 'word!Word.FieldType.info:member'
+    package: word!
+    summary: Represents that the field type is Information.
+    value: '"Info"'
+  - name: keywords
+    uid: 'word!Word.FieldType.keywords:member'
+    package: word!
+    summary: Represents that the field type is Keywords.
+    value: '"Keywords"'
+  - name: lastSavedBy
+    uid: 'word!Word.FieldType.lastSavedBy:member'
+    package: word!
+    summary: Represents that the field type is LastSavedBy.
+    value: '"LastSavedBy"'
+  - name: link
+    uid: 'word!Word.FieldType.link:member'
+    package: word!
+    summary: Represents that the field type is Link.
+    value: '"Link"'
+  - name: listNum
+    uid: 'word!Word.FieldType.listNum:member'
+    package: word!
+    summary: Represents that the field type is ListNumber.
+    value: '"ListNum"'
+  - name: macroButton
+    uid: 'word!Word.FieldType.macroButton:member'
+    package: word!
+    summary: Represents that the field type is MacroButton.
+    value: '"MacroButton"'
+  - name: mergeBarcode
+    uid: 'word!Word.FieldType.mergeBarcode:member'
+    package: word!
+    summary: Represents that the field type is MergeBarcode.
+    value: '"MergeBarcode"'
+  - name: mergeField
+    uid: 'word!Word.FieldType.mergeField:member'
+    package: word!
+    summary: Represents that the field type is MergeField.
+    value: '"MergeField"'
+  - name: mergeRec
+    uid: 'word!Word.FieldType.mergeRec:member'
+    package: word!
+    summary: Represents that the field type is MergeRecord.
+    value: '"MergeRec"'
+  - name: mergeSeq
+    uid: 'word!Word.FieldType.mergeSeq:member'
+    package: word!
+    summary: Represents that the field type is MergeSequence.
+    value: '"MergeSeq"'
+  - name: next
+    uid: 'word!Word.FieldType.next:member'
+    package: word!
+    summary: Represents that the field type is Next.
+    value: '"Next"'
+  - name: nextIf
+    uid: 'word!Word.FieldType.nextIf:member'
+    package: word!
+    summary: Represents that the field type is NextIf.
+    value: '"NextIf"'
+  - name: noteRef
+    uid: 'word!Word.FieldType.noteRef:member'
+    package: word!
+    summary: Represents that the field type is NoteReference.
+    value: '"NoteRef"'
+  - name: numChars
+    uid: 'word!Word.FieldType.numChars:member'
+    package: word!
+    summary: Represents that the field type is NumberOfCharacters.
+    value: '"NumChars"'
+  - name: numPages
+    uid: 'word!Word.FieldType.numPages:member'
+    package: word!
+    summary: Represents that the field type is NumberOfPages.
+    value: '"NumPages"'
+  - name: numWords
+    uid: 'word!Word.FieldType.numWords:member'
+    package: word!
+    summary: Represents that the field type is NumberOfWords.
+    value: '"NumWords"'
+  - name: ocx
+    uid: 'word!Word.FieldType.ocx:member'
+    package: word!
+    summary: Represents that the field type is ActiveXControl.
+    value: '"OCX"'
+  - name: others
+    uid: 'word!Word.FieldType.others:member'
+    package: word!
+    summary: Represents the field types not supported by the Office JavaScript API.
+    value: '"Others"'
+  - name: page
+    uid: 'word!Word.FieldType.page:member'
+    package: word!
+    summary: Represents that the field type is Page.
+    value: '"Page"'
+  - name: pageRef
+    uid: 'word!Word.FieldType.pageRef:member'
+    package: word!
+    summary: Represents that the field type is PageReference.
+    value: '"PageRef"'
+  - name: print
+    uid: 'word!Word.FieldType.print:member'
+    package: word!
+    summary: Represents that the field type is Print.
+    value: '"Print"'
+  - name: printDate
+    uid: 'word!Word.FieldType.printDate:member'
+    package: word!
+    summary: Represents that the field type is PrintDate.
+    value: '"PrintDate"'
+  - name: private
+    uid: 'word!Word.FieldType.private:member'
+    package: word!
+    summary: Represents that the field type is Private.
+    value: '"Private"'
+  - name: quote
+    uid: 'word!Word.FieldType.quote:member'
+    package: word!
+    summary: Represents that the field type is Quote.
+    value: '"Quote"'
+  - name: rd
+    uid: 'word!Word.FieldType.rd:member'
+    package: word!
+    summary: Represents that the field type is ReferencedDocument.
+    value: '"RD"'
+  - name: ref
+    uid: 'word!Word.FieldType.ref:member'
+    package: word!
+    summary: Represents that the field type is Reference.
+    value: '"Ref"'
+  - name: revNum
+    uid: 'word!Word.FieldType.revNum:member'
+    package: word!
+    summary: Represents that the field type is RevisionNumber.
+    value: '"RevNum"'
+  - name: saveDate
+    uid: 'word!Word.FieldType.saveDate:member'
+    package: word!
+    summary: Represents that the field type is SaveDate.
+    value: '"SaveDate"'
+  - name: section
+    uid: 'word!Word.FieldType.section:member'
+    package: word!
+    summary: Represents that the field type is Section.
+    value: '"Section"'
+  - name: sectionPages
+    uid: 'word!Word.FieldType.sectionPages:member'
+    package: word!
+    summary: Represents that the field type is SectionPages.
+    value: '"SectionPages"'
+  - name: seq
+    uid: 'word!Word.FieldType.seq:member'
+    package: word!
+    summary: Represents that the field type is Sequence.
+    value: '"Seq"'
+  - name: set
+    uid: 'word!Word.FieldType.set:member'
+    package: word!
+    summary: Represents that the field type is Set.
+    value: '"Set"'
+  - name: shape
+    uid: 'word!Word.FieldType.shape:member'
+    package: word!
+    summary: Represents that the field type is Shape.
+    value: '"Shape"'
+  - name: skipIf
+    uid: 'word!Word.FieldType.skipIf:member'
+    package: word!
+    summary: Represents that the field type is SkipIf.
+    value: '"SkipIf"'
+  - name: styleRef
+    uid: 'word!Word.FieldType.styleRef:member'
+    package: word!
+    summary: Represents that the field type is StyleReference.
+    value: '"StyleRef"'
+  - name: subject
+    uid: 'word!Word.FieldType.subject:member'
+    package: word!
+    summary: Represents that the field type is Subject.
+    value: '"Subject"'
+  - name: subscriber
+    uid: 'word!Word.FieldType.subscriber:member'
+    package: word!
+    summary: Represents that the field type is Subscriber.
+    value: '"Subscriber"'
+  - name: symbol
+    uid: 'word!Word.FieldType.symbol:member'
+    package: word!
+    summary: Represents that the field type is Symbol.
+    value: '"Symbol"'
+  - name: ta
+    uid: 'word!Word.FieldType.ta:member'
+    package: word!
+    summary: Represents that the field type is TableOfAuthoritiesEntry.
+    value: '"TA"'
+  - name: tc
+    uid: 'word!Word.FieldType.tc:member'
+    package: word!
+    summary: Represents that the field type is TableOfContentsEntry.
+    value: '"TC"'
+  - name: template
+    uid: 'word!Word.FieldType.template:member'
+    package: word!
+    summary: Represents that the field type is Template.
+    value: '"Template"'
+  - name: time
+    uid: 'word!Word.FieldType.time:member'
+    package: word!
+    summary: Represents that the field type is Time.
+    value: '"Time"'
+  - name: title
+    uid: 'word!Word.FieldType.title:member'
+    package: word!
+    summary: Represents that the field type is Title.
+    value: '"Title"'
+  - name: toa
+    uid: 'word!Word.FieldType.toa:member'
+    package: word!
+    summary: Represents that the field type is TableOfAuthorities.
+    value: '"TOA"'
+  - name: toc
+    uid: 'word!Word.FieldType.toc:member'
+    package: word!
+    summary: Represents that the field type is TableOfContents.
+    value: '"TOC"'
+  - name: undefined
+    uid: 'word!Word.FieldType.undefined:member'
+    package: word!
+    summary: Represents that the field type is Undefined.
+    value: '"Undefined"'
+  - name: userAddress
+    uid: 'word!Word.FieldType.userAddress:member'
+    package: word!
+    summary: Represents that the field type is UserAddress.
+    value: '"UserAddress"'
+  - name: userInitials
+    uid: 'word!Word.FieldType.userInitials:member'
+    package: word!
+    summary: Represents that the field type is UserInitials.
+    value: '"UserInitials"'
+  - name: userName
+    uid: 'word!Word.FieldType.userName:member'
+    package: word!
+    summary: Represents that the field type is UserName.
+    value: '"UserName"'
+  - name: xe
+    uid: 'word!Word.FieldType.xe:member'
+    package: word!
+    summary: Represents that the field type is IndexEntry.
+    value: '"XE"'

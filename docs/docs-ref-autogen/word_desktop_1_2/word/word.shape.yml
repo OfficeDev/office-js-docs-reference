@@ -1,0 +1,859 @@
+### YamlMime:TSType
+name: Word.Shape
+uid: 'word!Word.Shape:class'
+package: word!
+fullName: Word.Shape
+summary: >-
+  Represents a shape in the header, footer or document body. Currently, only the following shapes are supported: text
+  boxes, geometric shapes, groups, pictures and canvases.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: allowOverlap
+    uid: 'word!Word.Shape#allowOverlap:member'
+    package: word!
+    fullName: allowOverlap
+    summary: Specifies whether a given shape can overlap other shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowOverlap: boolean;'
+      return:
+        type: boolean
+  - name: altTextDescription
+    uid: 'word!Word.Shape#altTextDescription:member'
+    package: word!
+    fullName: altTextDescription
+    summary: Specifies a string that represents the alternative text associated with the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type: string
+  - name: body
+    uid: 'word!Word.Shape#body:member'
+    package: word!
+    fullName: body
+    summary: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly body: Word.Body;'
+      return:
+        type: '<xref uid="word!Word.Body:class" />'
+  - name: canvas
+    uid: 'word!Word.Shape#canvas:member'
+    package: word!
+    fullName: canvas
+    summary: >-
+      Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't "Canvas". For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly canvas: Word.Canvas;'
+      return:
+        type: '<xref uid="word!Word.Canvas:class" />'
+  - name: context
+    uid: 'word!Word.Shape#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: fill
+    uid: 'word!Word.Shape#fill:member'
+    package: word!
+    fullName: fill
+    summary: Returns the fill formatting of the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fill: Word.ShapeFill;'
+      return:
+        type: '<xref uid="word!Word.ShapeFill:class" />'
+  - name: geometricShapeType
+    uid: 'word!Word.Shape#geometricShapeType:member'
+    package: word!
+    fullName: geometricShapeType
+    summary: The geometric shape type of the shape. It will be null if isn't a geometric shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        geometricShapeType: Word.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
+      return:
+        type: >-
+          <xref uid="word!Word.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle"
+          | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+          "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
+          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
+          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
+          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
+          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
+          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
+          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
+          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
+          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
+          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
+          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
+          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
+          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
+          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
+          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
+          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
+          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
+          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
+          "ChartPlus"
+  - name: height
+    uid: 'word!Word.Shape#height:member'
+    package: word!
+    fullName: height
+    summary: 'The height, in points, of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
+  - name: heightRelative
+    uid: 'word!Word.Shape#heightRelative:member'
+    package: word!
+    fullName: heightRelative
+    summary: >-
+      The percentage of shape height to vertical relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'heightRelative: number;'
+      return:
+        type: number
+  - name: id
+    uid: 'word!Word.Shape#id:member'
+    package: word!
+    fullName: id
+    summary: Gets an integer that represents the shape identifier.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type: number
+  - name: isChild
+    uid: 'word!Word.Shape#isChild:member'
+    package: word!
+    fullName: isChild
+    summary: Check whether this shape is a child of a group shape or a canvas shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isChild: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'word!Word.Shape#left:member'
+    package: word!
+    fullName: left
+    summary: >-
+      The distance, in points, from the left side of the shape to the horizontal relative position, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline shape, it
+      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left: number;'
+      return:
+        type: number
+  - name: leftRelative
+    uid: 'word!Word.Shape#leftRelative:member'
+    package: word!
+    fullName: leftRelative
+    summary: >-
+      The relative left position as a percentage from the left side of the shape to the horizontal relative position,
+      see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline or
+      child shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftRelative: number;'
+      return:
+        type: number
+  - name: lockAspectRatio
+    uid: 'word!Word.Shape#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: Specifies if the aspect ratio of this shape is locked.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'word!Word.Shape#name:member'
+    package: word!
+    fullName: name
+    summary: The name of the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: parentCanvas
+    uid: 'word!Word.Shape#parentCanvas:member'
+    package: word!
+    fullName: parentCanvas
+    summary: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentCanvas: Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+  - name: parentGroup
+    uid: 'word!Word.Shape#parentGroup:member'
+    package: word!
+    fullName: parentGroup
+    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentGroup: Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+  - name: relativeHorizontalPosition
+    uid: 'word!Word.Shape#relativeHorizontalPosition:member'
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: >-
+      The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalPosition: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" |
+        "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
+          "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeHorizontalSize
+    uid: 'word!Word.Shape#relativeHorizontalSize:member'
+    package: word!
+    fullName: relativeHorizontalSize
+    summary: >-
+      The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalSize: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
+  - name: relativeVerticalPosition
+    uid: 'word!Word.Shape#relativeVerticalPosition:member'
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: >-
+      The relative vertical position of the shape. For an inline shape, it can't be set. For details, See
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalPosition: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin"
+        | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
+          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalSize
+    uid: 'word!Word.Shape#relativeVerticalSize:member'
+    package: word!
+    fullName: relativeVerticalSize
+    summary: >-
+      The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalSize: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
+  - name: rotation
+    uid: 'word!Word.Shape#rotation:member'
+    package: word!
+    fullName: rotation
+    summary: 'Specifies the rotation, in degrees, of the shape. Not applicable to Canvas shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rotation: number;'
+      return:
+        type: number
+  - name: shapeGroup
+    uid: 'word!Word.Shape#shapeGroup:member'
+    package: word!
+    fullName: shapeGroup
+    summary: >-
+      Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't "GroupShape". For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapeGroup: Word.ShapeGroup;'
+      return:
+        type: '<xref uid="word!Word.ShapeGroup:class" />'
+  - name: textFrame
+    uid: 'word!Word.Shape#textFrame:member'
+    package: word!
+    fullName: textFrame
+    summary: Gets the text frame object of the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly textFrame: Word.TextFrame;'
+      return:
+        type: '<xref uid="word!Word.TextFrame:class" />'
+  - name: textWrap
+    uid: 'word!Word.Shape#textWrap:member'
+    package: word!
+    fullName: textWrap
+    summary: Returns the text wrap formatting of the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly textWrap: Word.ShapeTextWrap;'
+      return:
+        type: '<xref uid="word!Word.ShapeTextWrap:class" />'
+  - name: top
+    uid: 'word!Word.Shape#top:member'
+    package: word!
+    fullName: top
+    summary: >-
+      The distance, in points, from the top edge of the shape to the vertical relative position, See
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline shape, it
+      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top: number;'
+      return:
+        type: number
+  - name: topRelative
+    uid: 'word!Word.Shape#topRelative:member'
+    package: word!
+    fullName: topRelative
+    summary: >-
+      The relative top position as a percentage from the top edge of the shape to the vertical relative position, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline or child
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topRelative: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'word!Word.Shape#type:member'
+    package: word!
+    fullName: type
+    summary: >-
+      Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups,
+      pictures, and canvases.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture" | "Canvas";'
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeType:enum" /> | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture" |
+          "Canvas"
+  - name: visible
+    uid: 'word!Word.Shape#visible:member'
+    package: word!
+    fullName: visible
+    summary: Specifies if the shape is visible. Not applicable to inline shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Shape#width:member'
+    package: word!
+    fullName: width
+    summary: 'The width, in points, of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+  - name: widthRelative
+    uid: 'word!Word.Shape#widthRelative:member'
+    package: word!
+    fullName: widthRelative
+    summary: >-
+      The percentage of shape width to horizontal relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'widthRelative: number;'
+      return:
+        type: number
+methods:
+  - name: delete()
+    uid: 'word!Word.Shape#delete:member(1)'
+    package: word!
+    fullName: delete()
+    summary: Deletes the shape and its content.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.Shape#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.ShapeLoadOptions): Word.Shape;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.ShapeLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.Shape#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Shape;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.Shape#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Shape;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: moveHorizontally(distance)
+    uid: 'word!Word.Shape#moveHorizontally:member(1)'
+    package: word!
+    fullName: moveHorizontally(distance)
+    summary: Moves the shape horizontally by the number of points.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'moveHorizontally(distance: number): void;'
+      parameters:
+        - id: distance
+          description: >-
+            Required. Specifies how far the shape is to be moved horizontally, in points. Use a positive value to move
+            the shape right. Use a negative value to move the shape left.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: moveVertically(distance)
+    uid: 'word!Word.Shape#moveVertically:member(1)'
+    package: word!
+    fullName: moveVertically(distance)
+    summary: Moves the shape vertically by the number of points.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'moveVertically(distance: number): void;'
+      parameters:
+        - id: distance
+          description: >-
+            Required. Specifies how far the shape is to be moved vertically, in points. Use a positive value to move the
+            shape up. Use a negative value to move the shape down.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    uid: 'word!Word.Shape#scaleHeight:member(1)'
+    package: word!
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    summary: >-
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaleHeight(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom): void;'
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
+          type: number
+        - id: scaleType
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '<xref uid="word!Word.ShapeScaleType:enum" />'
+        - id: scaleFrom
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '<xref uid="word!Word.ShapeScaleFrom:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
+    uid: 'word!Word.Shape#scaleHeight:member(2)'
+    package: word!
+    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
+    summary: >-
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?:
+        "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
+          type: number
+        - id: scaleTypeString
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '"CurrentSize" | "OriginalSize"'
+        - id: scaleFromString
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
+      return:
+        type: void
+        description: ''
+  - name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    uid: 'word!Word.Shape#scaleWidth:member(1)'
+    package: word!
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    summary: >-
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaleWidth(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom): void;'
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
+          type: number
+        - id: scaleType
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '<xref uid="word!Word.ShapeScaleType:enum" />'
+        - id: scaleFrom
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '<xref uid="word!Word.ShapeScaleFrom:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
+    uid: 'word!Word.Shape#scaleWidth:member(2)'
+    package: word!
+    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
+    summary: >-
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?:
+        "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
+          type: number
+        - id: scaleTypeString
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '"CurrentSize" | "OriginalSize"'
+        - id: scaleFromString
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
+      return:
+        type: void
+        description: ''
+  - name: select(selectMultipleShapes)
+    uid: 'word!Word.Shape#select:member(1)'
+    package: word!
+    fullName: select(selectMultipleShapes)
+    summary: Selects the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'select(selectMultipleShapes?: boolean): void;'
+      parameters:
+        - id: selectMultipleShapes
+          description: Optional. Whether to select multiple floating shapes. The default value is false.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.Shape#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.Shape#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Shape): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.Shape:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Shape#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Shape` object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ShapeData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.Shape#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.Shape#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

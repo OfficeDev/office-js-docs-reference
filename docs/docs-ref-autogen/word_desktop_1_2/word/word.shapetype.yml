@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: Word.ShapeType
+uid: 'word!Word.ShapeType:enum'
+package: word!
+fullName: Word.ShapeType
+summary: Represents the shape type.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: canvas
+    uid: 'word!Word.ShapeType.canvas:member'
+    package: word!
+    summary: Canvas shape.
+    value: '"Canvas"'
+  - name: geometricShape
+    uid: 'word!Word.ShapeType.geometricShape:member'
+    package: word!
+    summary: Geometric shape.
+    value: '"GeometricShape"'
+  - name: group
+    uid: 'word!Word.ShapeType.group:member'
+    package: word!
+    summary: Group shape.
+    value: '"Group"'
+  - name: picture
+    uid: 'word!Word.ShapeType.picture:member'
+    package: word!
+    summary: Picture shape.
+    value: '"Picture"'
+  - name: textBox
+    uid: 'word!Word.ShapeType.textBox:member'
+    package: word!
+    summary: Text box shape.
+    value: '"TextBox"'
+  - name: unsupported
+    uid: 'word!Word.ShapeType.unsupported:member'
+    package: word!
+    summary: Unsupported shape type.
+    value: '"Unsupported"'

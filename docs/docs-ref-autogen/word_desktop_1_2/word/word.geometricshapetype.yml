@@ -1,0 +1,895 @@
+### YamlMime:TSEnum
+name: Word.GeometricShapeType
+uid: 'word!Word.GeometricShapeType:enum'
+package: word!
+fullName: Word.GeometricShapeType
+summary: Specifies the shape type for a `GeometricShape` object.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accentBorderCallout1
+    uid: 'word!Word.GeometricShapeType.accentBorderCallout1:member'
+    package: word!
+    summary: Accent border callout 1 geometric shape.
+    value: '"AccentBorderCallout1"'
+  - name: accentBorderCallout2
+    uid: 'word!Word.GeometricShapeType.accentBorderCallout2:member'
+    package: word!
+    summary: Accent border callout 2 geometric shape.
+    value: '"AccentBorderCallout2"'
+  - name: accentBorderCallout3
+    uid: 'word!Word.GeometricShapeType.accentBorderCallout3:member'
+    package: word!
+    summary: Accent border callout 3 geometric shape.
+    value: '"AccentBorderCallout3"'
+  - name: accentCallout1
+    uid: 'word!Word.GeometricShapeType.accentCallout1:member'
+    package: word!
+    summary: Accent callout 1 geometric shape.
+    value: '"AccentCallout1"'
+  - name: accentCallout2
+    uid: 'word!Word.GeometricShapeType.accentCallout2:member'
+    package: word!
+    summary: Accent callout 2 geometric shape.
+    value: '"AccentCallout2"'
+  - name: accentCallout3
+    uid: 'word!Word.GeometricShapeType.accentCallout3:member'
+    package: word!
+    summary: Accent callout 3 geometric shape.
+    value: '"AccentCallout3"'
+  - name: actionButtonBackPrevious
+    uid: 'word!Word.GeometricShapeType.actionButtonBackPrevious:member'
+    package: word!
+    summary: Action button back previous geometric shape.
+    value: '"ActionButtonBackPrevious"'
+  - name: actionButtonBeginning
+    uid: 'word!Word.GeometricShapeType.actionButtonBeginning:member'
+    package: word!
+    summary: Action button beginning geometric shape.
+    value: '"ActionButtonBeginning"'
+  - name: actionButtonBlank
+    uid: 'word!Word.GeometricShapeType.actionButtonBlank:member'
+    package: word!
+    summary: Action button blank geometric shape.
+    value: '"ActionButtonBlank"'
+  - name: actionButtonDocument
+    uid: 'word!Word.GeometricShapeType.actionButtonDocument:member'
+    package: word!
+    summary: Action button document geometric shape.
+    value: '"ActionButtonDocument"'
+  - name: actionButtonEnd
+    uid: 'word!Word.GeometricShapeType.actionButtonEnd:member'
+    package: word!
+    summary: Action button end geometric shape.
+    value: '"ActionButtonEnd"'
+  - name: actionButtonForwardNext
+    uid: 'word!Word.GeometricShapeType.actionButtonForwardNext:member'
+    package: word!
+    summary: Action button forward next geometric shape.
+    value: '"ActionButtonForwardNext"'
+  - name: actionButtonHelp
+    uid: 'word!Word.GeometricShapeType.actionButtonHelp:member'
+    package: word!
+    summary: Action button help geometric shape.
+    value: '"ActionButtonHelp"'
+  - name: actionButtonHome
+    uid: 'word!Word.GeometricShapeType.actionButtonHome:member'
+    package: word!
+    summary: Action button home geometric shape.
+    value: '"ActionButtonHome"'
+  - name: actionButtonInformation
+    uid: 'word!Word.GeometricShapeType.actionButtonInformation:member'
+    package: word!
+    summary: Action button information geometric shape.
+    value: '"ActionButtonInformation"'
+  - name: actionButtonMovie
+    uid: 'word!Word.GeometricShapeType.actionButtonMovie:member'
+    package: word!
+    summary: Action button movie geometric shape.
+    value: '"ActionButtonMovie"'
+  - name: actionButtonReturn
+    uid: 'word!Word.GeometricShapeType.actionButtonReturn:member'
+    package: word!
+    summary: Action button return geometric shape.
+    value: '"ActionButtonReturn"'
+  - name: actionButtonSound
+    uid: 'word!Word.GeometricShapeType.actionButtonSound:member'
+    package: word!
+    summary: Action button sound geometric shape.
+    value: '"ActionButtonSound"'
+  - name: arc
+    uid: 'word!Word.GeometricShapeType.arc:member'
+    package: word!
+    summary: Arc geometric shape.
+    value: '"Arc"'
+  - name: bentArrow
+    uid: 'word!Word.GeometricShapeType.bentArrow:member'
+    package: word!
+    summary: Bent arrow geometric shape.
+    value: '"BentArrow"'
+  - name: bentUpArrow
+    uid: 'word!Word.GeometricShapeType.bentUpArrow:member'
+    package: word!
+    summary: Bent up arrow geometric shape.
+    value: '"BentUpArrow"'
+  - name: bevel
+    uid: 'word!Word.GeometricShapeType.bevel:member'
+    package: word!
+    summary: Bevel geometric shape.
+    value: '"Bevel"'
+  - name: blockArc
+    uid: 'word!Word.GeometricShapeType.blockArc:member'
+    package: word!
+    summary: Block arc geometric shape.
+    value: '"BlockArc"'
+  - name: borderCallout1
+    uid: 'word!Word.GeometricShapeType.borderCallout1:member'
+    package: word!
+    summary: Border callout 1 geometric shape.
+    value: '"BorderCallout1"'
+  - name: borderCallout2
+    uid: 'word!Word.GeometricShapeType.borderCallout2:member'
+    package: word!
+    summary: Border callout 2 geometric shape.
+    value: '"BorderCallout2"'
+  - name: borderCallout3
+    uid: 'word!Word.GeometricShapeType.borderCallout3:member'
+    package: word!
+    summary: Border callout 3 geometric shape.
+    value: '"BorderCallout3"'
+  - name: bracePair
+    uid: 'word!Word.GeometricShapeType.bracePair:member'
+    package: word!
+    summary: Brace pair geometric shape.
+    value: '"BracePair"'
+  - name: bracketPair
+    uid: 'word!Word.GeometricShapeType.bracketPair:member'
+    package: word!
+    summary: Bracket pair geometric shape.
+    value: '"BracketPair"'
+  - name: callout1
+    uid: 'word!Word.GeometricShapeType.callout1:member'
+    package: word!
+    summary: Callout 1 geometric shape.
+    value: '"Callout1"'
+  - name: callout2
+    uid: 'word!Word.GeometricShapeType.callout2:member'
+    package: word!
+    summary: Callout 2 geometric shape.
+    value: '"Callout2"'
+  - name: callout3
+    uid: 'word!Word.GeometricShapeType.callout3:member'
+    package: word!
+    summary: Callout 3 geometric shape.
+    value: '"Callout3"'
+  - name: can
+    uid: 'word!Word.GeometricShapeType.can:member'
+    package: word!
+    summary: Can geometric shape.
+    value: '"Can"'
+  - name: chartPlus
+    uid: 'word!Word.GeometricShapeType.chartPlus:member'
+    package: word!
+    summary: Chart plus geometric shape.
+    value: '"ChartPlus"'
+  - name: chartStar
+    uid: 'word!Word.GeometricShapeType.chartStar:member'
+    package: word!
+    summary: Chart star geometric shape.
+    value: '"ChartStar"'
+  - name: chartX
+    uid: 'word!Word.GeometricShapeType.chartX:member'
+    package: word!
+    summary: Chart X geometric shape.
+    value: '"ChartX"'
+  - name: chevron
+    uid: 'word!Word.GeometricShapeType.chevron:member'
+    package: word!
+    summary: Chevron geometric shape.
+    value: '"Chevron"'
+  - name: chord
+    uid: 'word!Word.GeometricShapeType.chord:member'
+    package: word!
+    summary: Chord geometric shape.
+    value: '"Chord"'
+  - name: circularArrow
+    uid: 'word!Word.GeometricShapeType.circularArrow:member'
+    package: word!
+    summary: Circular arrow geometric shape.
+    value: '"CircularArrow"'
+  - name: cloud
+    uid: 'word!Word.GeometricShapeType.cloud:member'
+    package: word!
+    summary: Cloud geometric shape.
+    value: '"Cloud"'
+  - name: cloudCallout
+    uid: 'word!Word.GeometricShapeType.cloudCallout:member'
+    package: word!
+    summary: Cloud callout geometric shape.
+    value: '"CloudCallout"'
+  - name: corner
+    uid: 'word!Word.GeometricShapeType.corner:member'
+    package: word!
+    summary: Corner geometric shape.
+    value: '"Corner"'
+  - name: cornerTabs
+    uid: 'word!Word.GeometricShapeType.cornerTabs:member'
+    package: word!
+    summary: Corner tabs geometric shape.
+    value: '"CornerTabs"'
+  - name: cube
+    uid: 'word!Word.GeometricShapeType.cube:member'
+    package: word!
+    summary: Cube geometric shape.
+    value: '"Cube"'
+  - name: curvedDownArrow
+    uid: 'word!Word.GeometricShapeType.curvedDownArrow:member'
+    package: word!
+    summary: Curved down arrow geometric shape.
+    value: '"CurvedDownArrow"'
+  - name: curvedLeftArrow
+    uid: 'word!Word.GeometricShapeType.curvedLeftArrow:member'
+    package: word!
+    summary: Curved left arrow geometric shape.
+    value: '"CurvedLeftArrow"'
+  - name: curvedRightArrow
+    uid: 'word!Word.GeometricShapeType.curvedRightArrow:member'
+    package: word!
+    summary: Curved right arrow geometric shape.
+    value: '"CurvedRightArrow"'
+  - name: curvedUpArrow
+    uid: 'word!Word.GeometricShapeType.curvedUpArrow:member'
+    package: word!
+    summary: Curved up arrow geometric shape.
+    value: '"CurvedUpArrow"'
+  - name: decagon
+    uid: 'word!Word.GeometricShapeType.decagon:member'
+    package: word!
+    summary: Decagon geometric shape.
+    value: '"Decagon"'
+  - name: diagonalStripe
+    uid: 'word!Word.GeometricShapeType.diagonalStripe:member'
+    package: word!
+    summary: Diagonal stripe geometric shape.
+    value: '"DiagonalStripe"'
+  - name: diamond
+    uid: 'word!Word.GeometricShapeType.diamond:member'
+    package: word!
+    summary: Diamond geometric shape.
+    value: '"Diamond"'
+  - name: dodecagon
+    uid: 'word!Word.GeometricShapeType.dodecagon:member'
+    package: word!
+    summary: Dodecagon geometric shape.
+    value: '"Dodecagon"'
+  - name: donut
+    uid: 'word!Word.GeometricShapeType.donut:member'
+    package: word!
+    summary: Donut geometric shape.
+    value: '"Donut"'
+  - name: doubleWave
+    uid: 'word!Word.GeometricShapeType.doubleWave:member'
+    package: word!
+    summary: Double wave geometric shape.
+    value: '"DoubleWave"'
+  - name: downArrow
+    uid: 'word!Word.GeometricShapeType.downArrow:member'
+    package: word!
+    summary: Down arrow geometric shape.
+    value: '"DownArrow"'
+  - name: downArrowCallout
+    uid: 'word!Word.GeometricShapeType.downArrowCallout:member'
+    package: word!
+    summary: Down arrow callout geometric shape.
+    value: '"DownArrowCallout"'
+  - name: ellipse
+    uid: 'word!Word.GeometricShapeType.ellipse:member'
+    package: word!
+    summary: Ellipse geometric shape.
+    value: '"Ellipse"'
+  - name: ellipseRibbon
+    uid: 'word!Word.GeometricShapeType.ellipseRibbon:member'
+    package: word!
+    summary: Ellipse ribbon geometric shape.
+    value: '"EllipseRibbon"'
+  - name: ellipseRibbon2
+    uid: 'word!Word.GeometricShapeType.ellipseRibbon2:member'
+    package: word!
+    summary: Ellipse ribbon 2 geometric shape.
+    value: '"EllipseRibbon2"'
+  - name: flowChartAlternateProcess
+    uid: 'word!Word.GeometricShapeType.flowChartAlternateProcess:member'
+    package: word!
+    summary: Flow chart alternate process geometric shape.
+    value: '"FlowChartAlternateProcess"'
+  - name: flowChartCollate
+    uid: 'word!Word.GeometricShapeType.flowChartCollate:member'
+    package: word!
+    summary: Flow chart collate geometric shape.
+    value: '"FlowChartCollate"'
+  - name: flowChartConnector
+    uid: 'word!Word.GeometricShapeType.flowChartConnector:member'
+    package: word!
+    summary: Flow chart connector geometric shape.
+    value: '"FlowChartConnector"'
+  - name: flowChartDecision
+    uid: 'word!Word.GeometricShapeType.flowChartDecision:member'
+    package: word!
+    summary: Flow chart decision geometric shape.
+    value: '"FlowChartDecision"'
+  - name: flowChartDelay
+    uid: 'word!Word.GeometricShapeType.flowChartDelay:member'
+    package: word!
+    summary: Flow chart delay geometric shape.
+    value: '"FlowChartDelay"'
+  - name: flowChartDisplay
+    uid: 'word!Word.GeometricShapeType.flowChartDisplay:member'
+    package: word!
+    summary: Flow chart display geometric shape.
+    value: '"FlowChartDisplay"'
+  - name: flowChartDocument
+    uid: 'word!Word.GeometricShapeType.flowChartDocument:member'
+    package: word!
+    summary: Flow chart document geometric shape.
+    value: '"FlowChartDocument"'
+  - name: flowChartExtract
+    uid: 'word!Word.GeometricShapeType.flowChartExtract:member'
+    package: word!
+    summary: Flow chart extract geometric shape.
+    value: '"FlowChartExtract"'
+  - name: flowChartInputOutput
+    uid: 'word!Word.GeometricShapeType.flowChartInputOutput:member'
+    package: word!
+    summary: Flow chart input-output geometric shape.
+    value: '"FlowChartInputOutput"'
+  - name: flowChartInternalStorage
+    uid: 'word!Word.GeometricShapeType.flowChartInternalStorage:member'
+    package: word!
+    summary: Flow chart internal storage geometric shape.
+    value: '"FlowChartInternalStorage"'
+  - name: flowChartMagneticDisk
+    uid: 'word!Word.GeometricShapeType.flowChartMagneticDisk:member'
+    package: word!
+    summary: Flow chart magnetic disk geometric shape.
+    value: '"FlowChartMagneticDisk"'
+  - name: flowChartMagneticDrum
+    uid: 'word!Word.GeometricShapeType.flowChartMagneticDrum:member'
+    package: word!
+    summary: Flow chart magnetic drum geometric shape.
+    value: '"FlowChartMagneticDrum"'
+  - name: flowChartMagneticTape
+    uid: 'word!Word.GeometricShapeType.flowChartMagneticTape:member'
+    package: word!
+    summary: Flow chart magnetic tape geometric shape.
+    value: '"FlowChartMagneticTape"'
+  - name: flowChartManualInput
+    uid: 'word!Word.GeometricShapeType.flowChartManualInput:member'
+    package: word!
+    summary: Flow chart manual input geometric shape.
+    value: '"FlowChartManualInput"'
+  - name: flowChartManualOperation
+    uid: 'word!Word.GeometricShapeType.flowChartManualOperation:member'
+    package: word!
+    summary: Flow chart manual operation geometric shape.
+    value: '"FlowChartManualOperation"'
+  - name: flowChartMerge
+    uid: 'word!Word.GeometricShapeType.flowChartMerge:member'
+    package: word!
+    summary: Flow chart merge geometric shape.
+    value: '"FlowChartMerge"'
+  - name: flowChartMultidocument
+    uid: 'word!Word.GeometricShapeType.flowChartMultidocument:member'
+    package: word!
+    summary: Flow chart multidocument geometric shape.
+    value: '"FlowChartMultidocument"'
+  - name: flowChartOfflineStorage
+    uid: 'word!Word.GeometricShapeType.flowChartOfflineStorage:member'
+    package: word!
+    summary: Flow chart offline storage geometric shape.
+    value: '"FlowChartOfflineStorage"'
+  - name: flowChartOffpageConnector
+    uid: 'word!Word.GeometricShapeType.flowChartOffpageConnector:member'
+    package: word!
+    summary: Flow chart off-page connector geometric shape.
+    value: '"FlowChartOffpageConnector"'
+  - name: flowChartOnlineStorage
+    uid: 'word!Word.GeometricShapeType.flowChartOnlineStorage:member'
+    package: word!
+    summary: Flow chart online storage geometric shape.
+    value: '"FlowChartOnlineStorage"'
+  - name: flowChartOr
+    uid: 'word!Word.GeometricShapeType.flowChartOr:member'
+    package: word!
+    summary: Flow chart OR geometric shape.
+    value: '"FlowChartOr"'
+  - name: flowChartPredefinedProcess
+    uid: 'word!Word.GeometricShapeType.flowChartPredefinedProcess:member'
+    package: word!
+    summary: Flow chart predefined process geometric shape.
+    value: '"FlowChartPredefinedProcess"'
+  - name: flowChartPreparation
+    uid: 'word!Word.GeometricShapeType.flowChartPreparation:member'
+    package: word!
+    summary: Flow chart preparation geometric shape.
+    value: '"FlowChartPreparation"'
+  - name: flowChartProcess
+    uid: 'word!Word.GeometricShapeType.flowChartProcess:member'
+    package: word!
+    summary: Flow chart process geometric shape.
+    value: '"FlowChartProcess"'
+  - name: flowChartPunchedCard
+    uid: 'word!Word.GeometricShapeType.flowChartPunchedCard:member'
+    package: word!
+    summary: Flow chart punched card geometric shape.
+    value: '"FlowChartPunchedCard"'
+  - name: flowChartPunchedTape
+    uid: 'word!Word.GeometricShapeType.flowChartPunchedTape:member'
+    package: word!
+    summary: Flow chart punched tape geometric shape.
+    value: '"FlowChartPunchedTape"'
+  - name: flowChartSort
+    uid: 'word!Word.GeometricShapeType.flowChartSort:member'
+    package: word!
+    summary: Flow chart sort geometric shape.
+    value: '"FlowChartSort"'
+  - name: flowChartSummingJunction
+    uid: 'word!Word.GeometricShapeType.flowChartSummingJunction:member'
+    package: word!
+    summary: Flow chart summing junction geometric shape.
+    value: '"FlowChartSummingJunction"'
+  - name: flowChartTerminator
+    uid: 'word!Word.GeometricShapeType.flowChartTerminator:member'
+    package: word!
+    summary: Flow chart terminator geometric shape.
+    value: '"FlowChartTerminator"'
+  - name: foldedCorner
+    uid: 'word!Word.GeometricShapeType.foldedCorner:member'
+    package: word!
+    summary: Folded corner geometric shape.
+    value: '"FoldedCorner"'
+  - name: frame
+    uid: 'word!Word.GeometricShapeType.frame:member'
+    package: word!
+    summary: Frame geometric shape.
+    value: '"Frame"'
+  - name: funnel
+    uid: 'word!Word.GeometricShapeType.funnel:member'
+    package: word!
+    summary: Funnel geometric shape.
+    value: '"Funnel"'
+  - name: gear6
+    uid: 'word!Word.GeometricShapeType.gear6:member'
+    package: word!
+    summary: Gear 6 geometric shape.
+    value: '"Gear6"'
+  - name: gear9
+    uid: 'word!Word.GeometricShapeType.gear9:member'
+    package: word!
+    summary: Gear 9 geometric shape.
+    value: '"Gear9"'
+  - name: halfFrame
+    uid: 'word!Word.GeometricShapeType.halfFrame:member'
+    package: word!
+    summary: Half frame geometric shape.
+    value: '"HalfFrame"'
+  - name: heart
+    uid: 'word!Word.GeometricShapeType.heart:member'
+    package: word!
+    summary: Heart geometric shape.
+    value: '"Heart"'
+  - name: heptagon
+    uid: 'word!Word.GeometricShapeType.heptagon:member'
+    package: word!
+    summary: Heptagon geometric shape.
+    value: '"Heptagon"'
+  - name: hexagon
+    uid: 'word!Word.GeometricShapeType.hexagon:member'
+    package: word!
+    summary: Hexagon geometric shape.
+    value: '"Hexagon"'
+  - name: homePlate
+    uid: 'word!Word.GeometricShapeType.homePlate:member'
+    package: word!
+    summary: Home plate geometric shape.
+    value: '"HomePlate"'
+  - name: horizontalScroll
+    uid: 'word!Word.GeometricShapeType.horizontalScroll:member'
+    package: word!
+    summary: Horizontal scroll geometric shape.
+    value: '"HorizontalScroll"'
+  - name: irregularSeal1
+    uid: 'word!Word.GeometricShapeType.irregularSeal1:member'
+    package: word!
+    summary: Irregular seal 1 geometric shape.
+    value: '"IrregularSeal1"'
+  - name: irregularSeal2
+    uid: 'word!Word.GeometricShapeType.irregularSeal2:member'
+    package: word!
+    summary: Irregular seal 2 geometric shape.
+    value: '"IrregularSeal2"'
+  - name: leftArrow
+    uid: 'word!Word.GeometricShapeType.leftArrow:member'
+    package: word!
+    summary: Left arrow geometric shape.
+    value: '"LeftArrow"'
+  - name: leftArrowCallout
+    uid: 'word!Word.GeometricShapeType.leftArrowCallout:member'
+    package: word!
+    summary: Left arrow callout geometric shape.
+    value: '"LeftArrowCallout"'
+  - name: leftBrace
+    uid: 'word!Word.GeometricShapeType.leftBrace:member'
+    package: word!
+    summary: Left brace geometric shape.
+    value: '"LeftBrace"'
+  - name: leftBracket
+    uid: 'word!Word.GeometricShapeType.leftBracket:member'
+    package: word!
+    summary: Left bracket geometric shape.
+    value: '"LeftBracket"'
+  - name: leftCircularArrow
+    uid: 'word!Word.GeometricShapeType.leftCircularArrow:member'
+    package: word!
+    summary: Left circular arrow geometric shape.
+    value: '"LeftCircularArrow"'
+  - name: leftRightArrow
+    uid: 'word!Word.GeometricShapeType.leftRightArrow:member'
+    package: word!
+    summary: Left-right arrow geometric shape.
+    value: '"LeftRightArrow"'
+  - name: leftRightArrowCallout
+    uid: 'word!Word.GeometricShapeType.leftRightArrowCallout:member'
+    package: word!
+    summary: Left-right arrow callout geometric shape.
+    value: '"LeftRightArrowCallout"'
+  - name: leftRightCircularArrow
+    uid: 'word!Word.GeometricShapeType.leftRightCircularArrow:member'
+    package: word!
+    summary: Left-right circular arrow geometric shape.
+    value: '"LeftRightCircularArrow"'
+  - name: leftRightRibbon
+    uid: 'word!Word.GeometricShapeType.leftRightRibbon:member'
+    package: word!
+    summary: Left-right ribbon geometric shape.
+    value: '"LeftRightRibbon"'
+  - name: leftRightUpArrow
+    uid: 'word!Word.GeometricShapeType.leftRightUpArrow:member'
+    package: word!
+    summary: Left-right-up arrow geometric shape.
+    value: '"LeftRightUpArrow"'
+  - name: leftUpArrow
+    uid: 'word!Word.GeometricShapeType.leftUpArrow:member'
+    package: word!
+    summary: Left-up arrow geometric shape.
+    value: '"LeftUpArrow"'
+  - name: lightningBolt
+    uid: 'word!Word.GeometricShapeType.lightningBolt:member'
+    package: word!
+    summary: Lightning bolt geometric shape.
+    value: '"LightningBolt"'
+  - name: lineInverse
+    uid: 'word!Word.GeometricShapeType.lineInverse:member'
+    package: word!
+    summary: Line inverse geometric shape.
+    value: '"LineInverse"'
+  - name: mathDivide
+    uid: 'word!Word.GeometricShapeType.mathDivide:member'
+    package: word!
+    summary: Math divide geometric shape.
+    value: '"MathDivide"'
+  - name: mathEqual
+    uid: 'word!Word.GeometricShapeType.mathEqual:member'
+    package: word!
+    summary: Math equal geometric shape.
+    value: '"MathEqual"'
+  - name: mathMinus
+    uid: 'word!Word.GeometricShapeType.mathMinus:member'
+    package: word!
+    summary: Math minus geometric shape.
+    value: '"MathMinus"'
+  - name: mathMultiply
+    uid: 'word!Word.GeometricShapeType.mathMultiply:member'
+    package: word!
+    summary: Math multiply geometric shape.
+    value: '"MathMultiply"'
+  - name: mathNotEqual
+    uid: 'word!Word.GeometricShapeType.mathNotEqual:member'
+    package: word!
+    summary: Math not equal geometric shape.
+    value: '"MathNotEqual"'
+  - name: mathPlus
+    uid: 'word!Word.GeometricShapeType.mathPlus:member'
+    package: word!
+    summary: Math plus geometric shape.
+    value: '"MathPlus"'
+  - name: moon
+    uid: 'word!Word.GeometricShapeType.moon:member'
+    package: word!
+    summary: Moon geometric shape.
+    value: '"Moon"'
+  - name: nonIsoscelesTrapezoid
+    uid: 'word!Word.GeometricShapeType.nonIsoscelesTrapezoid:member'
+    package: word!
+    summary: Non-isosceles trapezoid geometric shape.
+    value: '"NonIsoscelesTrapezoid"'
+  - name: noSmoking
+    uid: 'word!Word.GeometricShapeType.noSmoking:member'
+    package: word!
+    summary: No smoking geometric shape.
+    value: '"NoSmoking"'
+  - name: notchedRightArrow
+    uid: 'word!Word.GeometricShapeType.notchedRightArrow:member'
+    package: word!
+    summary: Notched right arrow geometric shape.
+    value: '"NotchedRightArrow"'
+  - name: octagon
+    uid: 'word!Word.GeometricShapeType.octagon:member'
+    package: word!
+    summary: Octagon geometric shape.
+    value: '"Octagon"'
+  - name: parallelogram
+    uid: 'word!Word.GeometricShapeType.parallelogram:member'
+    package: word!
+    summary: Parallelogram geometric shape.
+    value: '"Parallelogram"'
+  - name: pentagon
+    uid: 'word!Word.GeometricShapeType.pentagon:member'
+    package: word!
+    summary: Pentagon geometric shape.
+    value: '"Pentagon"'
+  - name: pie
+    uid: 'word!Word.GeometricShapeType.pie:member'
+    package: word!
+    summary: Pie geometric shape.
+    value: '"Pie"'
+  - name: pieWedge
+    uid: 'word!Word.GeometricShapeType.pieWedge:member'
+    package: word!
+    summary: Pie wedge geometric shape.
+    value: '"PieWedge"'
+  - name: plaque
+    uid: 'word!Word.GeometricShapeType.plaque:member'
+    package: word!
+    summary: Plaque geometric shape.
+    value: '"Plaque"'
+  - name: plaqueTabs
+    uid: 'word!Word.GeometricShapeType.plaqueTabs:member'
+    package: word!
+    summary: Plaque tabs geometric shape.
+    value: '"PlaqueTabs"'
+  - name: plus
+    uid: 'word!Word.GeometricShapeType.plus:member'
+    package: word!
+    summary: Plus geometric shape.
+    value: '"Plus"'
+  - name: quadArrow
+    uid: 'word!Word.GeometricShapeType.quadArrow:member'
+    package: word!
+    summary: Quad arrow geometric shape.
+    value: '"QuadArrow"'
+  - name: quadArrowCallout
+    uid: 'word!Word.GeometricShapeType.quadArrowCallout:member'
+    package: word!
+    summary: Quad arrow callout geometric shape.
+    value: '"QuadArrowCallout"'
+  - name: rectangle
+    uid: 'word!Word.GeometricShapeType.rectangle:member'
+    package: word!
+    summary: Rectangle geometric shape.
+    value: '"Rectangle"'
+  - name: ribbon
+    uid: 'word!Word.GeometricShapeType.ribbon:member'
+    package: word!
+    summary: Ribbon geometric shape.
+    value: '"Ribbon"'
+  - name: ribbon2
+    uid: 'word!Word.GeometricShapeType.ribbon2:member'
+    package: word!
+    summary: Ribbon 2 geometric shape.
+    value: '"Ribbon2"'
+  - name: rightArrow
+    uid: 'word!Word.GeometricShapeType.rightArrow:member'
+    package: word!
+    summary: Right arrow geometric shape.
+    value: '"RightArrow"'
+  - name: rightArrowCallout
+    uid: 'word!Word.GeometricShapeType.rightArrowCallout:member'
+    package: word!
+    summary: Right arrow callout geometric shape.
+    value: '"RightArrowCallout"'
+  - name: rightBrace
+    uid: 'word!Word.GeometricShapeType.rightBrace:member'
+    package: word!
+    summary: Right brace geometric shape.
+    value: '"RightBrace"'
+  - name: rightBracket
+    uid: 'word!Word.GeometricShapeType.rightBracket:member'
+    package: word!
+    summary: Right bracket geometric shape.
+    value: '"RightBracket"'
+  - name: rightTriangle
+    uid: 'word!Word.GeometricShapeType.rightTriangle:member'
+    package: word!
+    summary: Right triangle geometric shape.
+    value: '"RightTriangle"'
+  - name: round1Rectangle
+    uid: 'word!Word.GeometricShapeType.round1Rectangle:member'
+    package: word!
+    summary: Round one rectangle geometric shape.
+    value: '"Round1Rectangle"'
+  - name: round2DiagonalRectangle
+    uid: 'word!Word.GeometricShapeType.round2DiagonalRectangle:member'
+    package: word!
+    summary: Round two diagonal rectangle geometric shape.
+    value: '"Round2DiagonalRectangle"'
+  - name: round2SameRectangle
+    uid: 'word!Word.GeometricShapeType.round2SameRectangle:member'
+    package: word!
+    summary: Round two same rectangle geometric shape.
+    value: '"Round2SameRectangle"'
+  - name: roundRectangle
+    uid: 'word!Word.GeometricShapeType.roundRectangle:member'
+    package: word!
+    summary: Round rectangle geometric shape.
+    value: '"RoundRectangle"'
+  - name: smileyFace
+    uid: 'word!Word.GeometricShapeType.smileyFace:member'
+    package: word!
+    summary: Smiley face geometric shape.
+    value: '"SmileyFace"'
+  - name: snip1Rectangle
+    uid: 'word!Word.GeometricShapeType.snip1Rectangle:member'
+    package: word!
+    summary: Snip one rectangle geometric shape.
+    value: '"Snip1Rectangle"'
+  - name: snip2DiagonalRectangle
+    uid: 'word!Word.GeometricShapeType.snip2DiagonalRectangle:member'
+    package: word!
+    summary: Snip two diagonal rectangle geometric shape.
+    value: '"Snip2DiagonalRectangle"'
+  - name: snip2SameRectangle
+    uid: 'word!Word.GeometricShapeType.snip2SameRectangle:member'
+    package: word!
+    summary: Snip two same rectangle geometric shape.
+    value: '"Snip2SameRectangle"'
+  - name: snipRoundRectangle
+    uid: 'word!Word.GeometricShapeType.snipRoundRectangle:member'
+    package: word!
+    summary: Snip round rectangle geometric shape.
+    value: '"SnipRoundRectangle"'
+  - name: squareTabs
+    uid: 'word!Word.GeometricShapeType.squareTabs:member'
+    package: word!
+    summary: Square tabs geometric shape.
+    value: '"SquareTabs"'
+  - name: star10
+    uid: 'word!Word.GeometricShapeType.star10:member'
+    package: word!
+    summary: Star 10-point geometric shape.
+    value: '"Star10"'
+  - name: star12
+    uid: 'word!Word.GeometricShapeType.star12:member'
+    package: word!
+    summary: Star 12-point geometric shape.
+    value: '"Star12"'
+  - name: star16
+    uid: 'word!Word.GeometricShapeType.star16:member'
+    package: word!
+    summary: Star 16-point geometric shape.
+    value: '"Star16"'
+  - name: star24
+    uid: 'word!Word.GeometricShapeType.star24:member'
+    package: word!
+    summary: Star 24-point geometric shape.
+    value: '"Star24"'
+  - name: star32
+    uid: 'word!Word.GeometricShapeType.star32:member'
+    package: word!
+    summary: Star 32-point geometric shape.
+    value: '"Star32"'
+  - name: star4
+    uid: 'word!Word.GeometricShapeType.star4:member'
+    package: word!
+    summary: Star 4-point geometric shape.
+    value: '"Star4"'
+  - name: star5
+    uid: 'word!Word.GeometricShapeType.star5:member'
+    package: word!
+    summary: Star 5-point geometric shape.
+    value: '"Star5"'
+  - name: star6
+    uid: 'word!Word.GeometricShapeType.star6:member'
+    package: word!
+    summary: Star 6-point geometric shape.
+    value: '"Star6"'
+  - name: star7
+    uid: 'word!Word.GeometricShapeType.star7:member'
+    package: word!
+    summary: Star 7-point geometric shape.
+    value: '"Star7"'
+  - name: star8
+    uid: 'word!Word.GeometricShapeType.star8:member'
+    package: word!
+    summary: Star 8-point geometric shape.
+    value: '"Star8"'
+  - name: stripedRightArrow
+    uid: 'word!Word.GeometricShapeType.stripedRightArrow:member'
+    package: word!
+    summary: Striped right arrow geometric shape.
+    value: '"StripedRightArrow"'
+  - name: sun
+    uid: 'word!Word.GeometricShapeType.sun:member'
+    package: word!
+    summary: Sun geometric shape.
+    value: '"Sun"'
+  - name: swooshArrow
+    uid: 'word!Word.GeometricShapeType.swooshArrow:member'
+    package: word!
+    summary: Swoosh arrow geometric shape.
+    value: '"SwooshArrow"'
+  - name: teardrop
+    uid: 'word!Word.GeometricShapeType.teardrop:member'
+    package: word!
+    summary: Teardrop geometric shape.
+    value: '"Teardrop"'
+  - name: trapezoid
+    uid: 'word!Word.GeometricShapeType.trapezoid:member'
+    package: word!
+    summary: Trapezoid geometric shape.
+    value: '"Trapezoid"'
+  - name: triangle
+    uid: 'word!Word.GeometricShapeType.triangle:member'
+    package: word!
+    summary: Triangle geometric shape.
+    value: '"Triangle"'
+  - name: upArrow
+    uid: 'word!Word.GeometricShapeType.upArrow:member'
+    package: word!
+    summary: Up arrow geometric shape.
+    value: '"UpArrow"'
+  - name: upArrowCallout
+    uid: 'word!Word.GeometricShapeType.upArrowCallout:member'
+    package: word!
+    summary: Up arrow callout geometric shape.
+    value: '"UpArrowCallout"'
+  - name: upDownArrow
+    uid: 'word!Word.GeometricShapeType.upDownArrow:member'
+    package: word!
+    summary: Up-down arrow geometric shape.
+    value: '"UpDownArrow"'
+  - name: upDownArrowCallout
+    uid: 'word!Word.GeometricShapeType.upDownArrowCallout:member'
+    package: word!
+    summary: Up-down arrow callout geometric shape.
+    value: '"UpDownArrowCallout"'
+  - name: uturnArrow
+    uid: 'word!Word.GeometricShapeType.uturnArrow:member'
+    package: word!
+    summary: U-turn arrow geometric shape.
+    value: '"UturnArrow"'
+  - name: verticalScroll
+    uid: 'word!Word.GeometricShapeType.verticalScroll:member'
+    package: word!
+    summary: Vertical scroll geometric shape.
+    value: '"VerticalScroll"'
+  - name: wave
+    uid: 'word!Word.GeometricShapeType.wave:member'
+    package: word!
+    summary: Wave geometric shape.
+    value: '"Wave"'
+  - name: wedgeEllipseCallout
+    uid: 'word!Word.GeometricShapeType.wedgeEllipseCallout:member'
+    package: word!
+    summary: Wedge ellipse callout geometric shape.
+    value: '"WedgeEllipseCallout"'
+  - name: wedgeRectCallout
+    uid: 'word!Word.GeometricShapeType.wedgeRectCallout:member'
+    package: word!
+    summary: Wedge rectangle callout geometric shape.
+    value: '"WedgeRectCallout"'
+  - name: wedgeRRectCallout
+    uid: 'word!Word.GeometricShapeType.wedgeRRectCallout:member'
+    package: word!
+    summary: Wedge rounded rectangle callout geometric shape.
+    value: '"WedgeRRectCallout"'

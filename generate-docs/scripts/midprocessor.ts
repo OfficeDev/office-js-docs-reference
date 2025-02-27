@@ -203,6 +203,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_2/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_1/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_5_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_4_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
