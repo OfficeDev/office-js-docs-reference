@@ -9616,6 +9616,8 @@ Office.SpamReportingEventArgs,"freeText",Property,Good,false
 Office.SpamReportingEventArgs,"options",Property,Good,false
 Office.SpamReportingEventArgs,"type",Property,Good,false
 Office.SpamReportingEventCompletedOptions,N/A,Class,Good,true
+Office.SpamReportingEventCompletedOptions,"commandId",Property,Good,false
+Office.SpamReportingEventCompletedOptions,"contextData",Property,Good,false
 Office.SpamReportingEventCompletedOptions,"folderName",Property,Good,false
 Office.SpamReportingEventCompletedOptions,"moveItemTo",Property,Good,false
 Office.SpamReportingEventCompletedOptions,"onErrorDeleteItem",Property,Good,false
