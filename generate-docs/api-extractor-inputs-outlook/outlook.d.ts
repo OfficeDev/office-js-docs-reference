@@ -14722,6 +14722,73 @@ export declare namespace Office {
     export interface SpamReportingEventCompletedOptions {
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
+         * this property specifies the ID of the task pane that opens after the message is processed.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `commandId` option is currently in preview in Outlook on the web and on Windows (new and classic). To preview this feature in classic Outlook on Windows,
+         * install Version 2411 (Build 18227.20034) or later. Then, join the
+         * {@link https://techcommunity.microsoft.com/blog/microsoft365insiderblog/join-the-microsoft-365-insider-program-on-windows/4206638 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option. To learn how to implement this in your spam-reporting add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message-preview | Open a task pane after reporting a message (preview)}.
+         *
+         * - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In an add-in only manifest,
+         * the ID is specified in the `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element that represents the task pane.
+         * The `commandId` property isn't currently supported in a spam-reporting add-in that uses a unified manifest for Microsoft 365.
+         *
+         * - If you configure the `commandId` option in the `event.completed` call, a post-processing dialog isn't shown to the user
+         * even if the `showPostProcessingDialog` option is specified in the call.
+         *
+         * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+         *
+         * @beta
+         */
+        commandId?: string;
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
+         * this property specifies any JSON data passed to the add-in's task pane after the message is processed.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `contextData` option is currently in preview in Outlook on the web and on Windows (new and classic). To preview this feature in classic Outlook on Windows,
+         * install Version 2411 (Build 18227.20034) or later. Then, join the
+         * {@link https://techcommunity.microsoft.com/blog/microsoft365insiderblog/join-the-microsoft-365-insider-program-on-windows/4206638 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option. To learn how to implement this in your spam-reporting add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message-preview | Open a task pane after reporting a message (preview)}.
+         *
+         * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
+         * Otherwise, the JSON data assigned to `contextData` is ignored.
+         *
+         * - If you configure the `commandId` and `contextData` options in the `event.completed` call, a post-processing dialog isn't shown to the user
+         * even if the `showPostProcessingDialog` option is specified in the call.
+         *
+         * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+         *
+         * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
+         * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
+         * `JSON.parse()` once you retrieve it.
+         *
+         * @beta
+         */
+        contextData?: any;
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies the Outlook mailbox folder to which the message will be moved.
          *
          * @remarks
@@ -14762,6 +14829,9 @@ export declare namespace Office {
          * - If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
          * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to
          * `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the **Junk Email** folder.
+         *
+         * - If you configure the `commandId` and `contextData` options in the `event.completed` call to open a task pane after a user selects the **Report** option from the preprocessing dialog,
+         * you must set the `moveItemTo` option to `Office.MailboxEnums.MoveSpamItemTo.NoMove`. Otherwise, the task pane won't open.
          */
         moveItemTo?: MailboxEnums.MoveSpamItemTo;
         /**
@@ -14823,6 +14893,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: If you configure the `commandId` and `contextData` options in the `event.completed` call to open a task pane after a user selects the **Report** option from the preprocessing dialog,
+         * a post-processing dialog isn't shown to the user. This behavior applies even if the `showPostProcessingDialog` is specified in the `event.completed` call.
          */
         showPostProcessingDialog?: object;
     }
