@@ -1,7 +1,7 @@
 ---
 title: ReportingOptions element in the manifest file
 description: The ReportingOptions element specifies the reporting options listed in the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 06/12/2024
+ms.date: 02/27/2025
 ms.localizationpriority: medium
 ---
 
@@ -29,14 +29,18 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ## Attributes
 
-None.
+| Attribute | Required | Description |
+|:-----|:-----:|:-----|
+| **inputType** (preview)* | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. You can only use one input type in the dialog. |
+
+> \* The `inputType` attribute is currently in preview in Outlook on the web and on Windows (new and classic). To preview this feature in classic Outlook on Windows, install Version 2411 (Build 18227.20034) or later. Then, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/join-the-microsoft-365-insider-program-on-windows/4206638) and select the **Beta Channel** option.
 
 ## Child elements
 
 | Element | Required | Description |
 | :------ | :------: | :------ |
 | **Title** | Yes | Specifies a custom title for the reporting options in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
-| **Option** | Yes | Specifies a custom option with a checkbox that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
+| **Option** | Yes | Specifies a custom option that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
 
 ## Example
 
