@@ -1927,12 +1927,12 @@ Office.SpamReportingEventCompletedOptions#commandId:member:
         // Run operations to process the reported message.
 
         /**
-        * Signals that the spam-reporting event has completed processing.
-        * A task pane is opened instead of showing a post-processing dialog.
-        * Context data is then passed to the task pane for processing.
-        * To ensure that the task pane opens and receives the context data,
-        * the reported message mustn't be moved from the folder in which it resides.
-        */
+         * Signals that the spam-reporting event has completed processing.
+         * A task pane is opened instead of showing a post-processing dialog.
+         * Context data is then passed to the task pane for processing.
+         * To ensure that the task pane opens and receives the context data,
+         * the reported message mustn't be moved from the folder in which it resides.
+         */
         event.completed({
             commandId: "msgReadOpenPaneButton",
             contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
