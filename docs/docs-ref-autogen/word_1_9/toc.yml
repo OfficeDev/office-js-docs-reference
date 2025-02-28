@@ -609,6 +609,8 @@ items:
             href: ../../manifest/action.md
           - name: AllFormFactors
             href: ../../manifest/allformfactors.md
+          - name: CommandSurface
+            href: ../../manifest/commandsurface.md
           - name: Control
             href: ../../manifest/control.md
           - name: Control (Button)
