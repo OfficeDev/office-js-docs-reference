@@ -43,20 +43,32 @@ fields:
   - name: added
     uid: 'word!Word.TrackedChangeType.added:member'
     package: word!
-    summary: Add change.
+    summary: |-
+      Add change.
+
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Added"'
   - name: deleted
     uid: 'word!Word.TrackedChangeType.deleted:member'
     package: word!
-    summary: Delete change.
+    summary: |-
+      Delete change.
+
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Deleted"'
   - name: formatted
     uid: 'word!Word.TrackedChangeType.formatted:member'
     package: word!
-    summary: Format change.
+    summary: |-
+      Format change.
+
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Formatted"'
   - name: none
     uid: 'word!Word.TrackedChangeType.none:member'
     package: word!
-    summary: No revision.
+    summary: |-
+      No revision.
+
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'

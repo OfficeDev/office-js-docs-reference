@@ -42,45 +42,72 @@ fields:
   - name: endnote
     uid: 'word!Word.BodyType.endnote:member'
     package: word!
-    summary: Endnote body.
+    summary: |-
+      Endnote body.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Endnote"'
   - name: footer
     uid: 'word!Word.BodyType.footer:member'
     package: word!
-    summary: Footer body.
+    summary: |-
+      Footer body.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footer"'
   - name: footnote
     uid: 'word!Word.BodyType.footnote:member'
     package: word!
-    summary: Footnote body.
+    summary: |-
+      Footnote body.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footnote"'
   - name: header
     uid: 'word!Word.BodyType.header:member'
     package: word!
-    summary: Header body.
+    summary: |-
+      Header body.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Header"'
   - name: mainDoc
     uid: 'word!Word.BodyType.mainDoc:member'
     package: word!
-    summary: Main document body.
+    summary: |-
+      Main document body.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MainDoc"'
   - name: noteItem
     uid: 'word!Word.BodyType.noteItem:member'
     package: word!
-    summary: 'Note body e.g., endnote, footnote.'
+    summary: |-
+      Note body e.g., endnote, footnote.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NoteItem"'
   - name: section
     uid: 'word!Word.BodyType.section:member'
     package: word!
-    summary: Section body.
+    summary: |-
+      Section body.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Section"'
   - name: tableCell
     uid: 'word!Word.BodyType.tableCell:member'
     package: word!
-    summary: Table cell body.
+    summary: |-
+      Table cell body.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TableCell"'
   - name: unknown
     uid: 'word!Word.BodyType.unknown:member'
     package: word!
-    summary: Unknown body type.
+    summary: |-
+      Unknown body type.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unknown"'

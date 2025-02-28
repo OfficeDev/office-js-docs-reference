@@ -417,4 +417,4 @@ methods:
       return:
         type: '<xref uid="word!Word.TrackedChange:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

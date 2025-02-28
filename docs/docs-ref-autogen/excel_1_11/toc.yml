@@ -1688,13 +1688,13 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
-          - name: WordApiDesktop 1.1 requirement set
+          - name: WordApiDesktop 1.2 requirement set
             href: >-
-              ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
+              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.1 requirement set
             href: >-
-              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
+              ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
             displayName: Word
           - name: WordApi 1.9 requirement set
             href: ../../requirement-sets/word/word-api-1-9-requirement-set.md

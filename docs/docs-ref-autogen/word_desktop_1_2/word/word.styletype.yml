@@ -54,20 +54,32 @@ fields:
   - name: character
     uid: 'word!Word.StyleType.character:member'
     package: word!
-    summary: Represents that the style is a character style.
+    summary: |-
+      Represents that the style is a character style.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Character"'
   - name: list
     uid: 'word!Word.StyleType.list:member'
     package: word!
-    summary: Represents that the style is a list style. Currently supported on desktop.
+    summary: |-
+      Represents that the style is a list style. Currently supported on desktop.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"List"'
   - name: paragraph
     uid: 'word!Word.StyleType.paragraph:member'
     package: word!
-    summary: Represents that the style is a paragraph style.
+    summary: |-
+      Represents that the style is a paragraph style.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'
   - name: table
     uid: 'word!Word.StyleType.table:member'
     package: word!
-    summary: Represents that the style is a table style.
+    summary: |-
+      Represents that the style is a table style.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Table"'

@@ -825,7 +825,7 @@ methods:
             document.
           type: '<xref uid="word!Word.ImportedStylesConflictBehavior:enum" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: 'importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)'
     uid: 'word!Word.Document#importStylesFromJson:member(2)'
@@ -852,7 +852,7 @@ methods:
             document.
           type: '"Ignore" | "Overwrite" | "CreateNew"'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
     uid: 'word!Word.Document#insertFileFromBase64:member(1)'
@@ -1172,7 +1172,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1306,7 +1306,7 @@ events:
       content: 'readonly onAnnotationClicked: OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
   - name: onAnnotationHovered
     uid: 'word!Word.Document#onAnnotationHovered:member'
@@ -1365,7 +1365,7 @@ events:
       content: 'readonly onAnnotationHovered: OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
   - name: onAnnotationInserted
     uid: 'word!Word.Document#onAnnotationInserted:member'
@@ -1431,7 +1431,7 @@ events:
       content: 'readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
   - name: onAnnotationPopupAction
     uid: 'word!Word.Document#onAnnotationPopupAction:member'
@@ -1492,7 +1492,7 @@ events:
       content: 'readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.AnnotationPopupActionEventArgs:interface" />&gt;
   - name: onAnnotationRemoved
     uid: 'word!Word.Document#onAnnotationRemoved:member'
@@ -1548,7 +1548,7 @@ events:
       content: 'readonly onAnnotationRemoved: OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
   - name: onContentControlAdded
     uid: 'word!Word.Document#onContentControlAdded:member'
@@ -1596,7 +1596,7 @@ events:
       content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
   - name: onParagraphAdded
     uid: 'word!Word.Document#onParagraphAdded:member'
@@ -1642,7 +1642,7 @@ events:
       content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
   - name: onParagraphChanged
     uid: 'word!Word.Document#onParagraphChanged:member'
@@ -1688,7 +1688,7 @@ events:
       content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
   - name: onParagraphDeleted
     uid: 'word!Word.Document#onParagraphDeleted:member'
@@ -1734,6 +1734,6 @@ events:
       content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
