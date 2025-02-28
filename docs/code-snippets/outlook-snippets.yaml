@@ -1903,12 +1903,12 @@ Office.SpamReportingEventCompletedOptions:interface:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-            * and shows a post-processing dialog to the user.
-            * If an error occurs while the message is being processed, the `onErrorDeleteItem`
-            * property determines whether the message will be deleted.
-            */
+             * Signals that the spam-reporting event has completed processing.
+             * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+             * and shows a post-processing dialog to the user.
+             * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+             * property determines whether the message will be deleted.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
@@ -1945,12 +1945,12 @@ Office.SpamReportingEventCompletedOptions#contextData:member:
         // Run operations to process the reported message.
 
         /**
-        * Signals that the spam-reporting event has completed processing.
-        * A task pane is opened instead of showing a post-processing dialog.
-        * Context data is then passed to the task pane for processing.
-        * To ensure that the task pane opens and receives the context data,
-        * the reported message mustn't be moved from the folder in which it resides.
-        */
+         * Signals that the spam-reporting event has completed processing.
+         * A task pane is opened instead of showing a post-processing dialog.
+         * Context data is then passed to the task pane for processing.
+         * To ensure that the task pane opens and receives the context data,
+         * the reported message mustn't be moved from the folder in which it resides.
+         */
         event.completed({
             commandId: "msgReadOpenPaneButton",
             contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
@@ -1971,10 +1971,10 @@ Office.SpamReportingEventCompletedOptions#postProcessingAction:member:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-            * post-processing dialog to the user.
-            */
+             * Signals that the spam-reporting event has completed processing.
+             * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+             * post-processing dialog to the user.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 postProcessingAction: "moveToSpamFolder",
