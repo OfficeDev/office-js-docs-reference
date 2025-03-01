@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentReplyData
+uid: 'word!Word.Interfaces.CommentReplyData:interface'
+package: word!
+fullName: Word.Interfaces.CommentReplyData
+summary: An interface describing the data returned by calling `commentReply.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: authorEmail
+    uid: 'word!Word.Interfaces.CommentReplyData#authorEmail:member'
+    package: word!
+    fullName: authorEmail
+    summary: Gets the email of the comment reply's author.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorEmail?: string;'
+      return:
+        type: string
+  - name: authorName
+    uid: 'word!Word.Interfaces.CommentReplyData#authorName:member'
+    package: word!
+    fullName: authorName
+    summary: Gets the name of the comment reply's author.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorName?: string;'
+      return:
+        type: string
+  - name: content
+    uid: 'word!Word.Interfaces.CommentReplyData#content:member'
+    package: word!
+    fullName: content
+    summary: Specifies the comment reply's content. The string is plain text.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string;'
+      return:
+        type: string
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentReplyData#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Specifies the commentReply's content range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeData:interface" />'
+  - name: creationDate
+    uid: 'word!Word.Interfaces.CommentReplyData#creationDate:member'
+    package: word!
+    fullName: creationDate
+    summary: Gets the creation date of the comment reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type: Date
+  - name: id
+    uid: 'word!Word.Interfaces.CommentReplyData#id:member'
+    package: word!
+    fullName: id
+    summary: Gets the ID of the comment reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: parentComment
+    uid: 'word!Word.Interfaces.CommentReplyData#parentComment:member'
+    package: word!
+    fullName: parentComment
+    summary: Gets the parent comment of this reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentComment?: Word.Interfaces.CommentData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentData:interface" />'

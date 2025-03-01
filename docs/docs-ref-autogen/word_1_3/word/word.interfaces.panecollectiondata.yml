@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.PaneCollectionData
+uid: 'word!Word.Interfaces.PaneCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.PaneCollectionData
+summary: An interface describing the data returned by calling `paneCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.PaneCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.PaneData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.PaneData:interface" />[]'

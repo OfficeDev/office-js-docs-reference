@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.ComboBoxContentControlData
+uid: 'word!Word.Interfaces.ComboBoxContentControlData:interface'
+package: word!
+fullName: Word.Interfaces.ComboBoxContentControlData
+summary: An interface describing the data returned by calling `comboBoxContentControl.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

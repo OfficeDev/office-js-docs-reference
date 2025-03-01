@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentReplyCollectionData
+uid: 'word!Word.Interfaces.CommentReplyCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.CommentReplyCollectionData
+summary: An interface describing the data returned by calling `commentReplyCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.CommentReplyCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.CommentReplyData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentReplyData:interface" />[]'

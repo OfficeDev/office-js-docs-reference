@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: Word.Interfaces.TrackedChangeData
+uid: 'word!Word.Interfaces.TrackedChangeData:interface'
+package: word!
+fullName: Word.Interfaces.TrackedChangeData
+summary: An interface describing the data returned by calling `trackedChange.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: author
+    uid: 'word!Word.Interfaces.TrackedChangeData#author:member'
+    package: word!
+    fullName: author
+    summary: Gets the author of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'author?: string;'
+      return:
+        type: string
+  - name: date
+    uid: 'word!Word.Interfaces.TrackedChangeData#date:member'
+    package: word!
+    fullName: date
+    summary: Gets the date of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date?: Date;'
+      return:
+        type: Date
+  - name: text
+    uid: 'word!Word.Interfaces.TrackedChangeData#text:member'
+    package: word!
+    fullName: text
+    summary: Gets the text of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'word!Word.Interfaces.TrackedChangeData#type:member'
+    package: word!
+    fullName: type
+    summary: Gets the type of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
+      return:
+        type: '<xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"'

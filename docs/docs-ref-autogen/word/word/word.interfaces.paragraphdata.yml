@@ -201,9 +201,9 @@ properties:
     fullName: shapes
     summary: >-
       Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes.
-      Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+      Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'shapes?: Word.Interfaces.ShapeData[];'

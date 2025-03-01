@@ -1,0 +1,63 @@
+### YamlMime:TSEnum
+name: Word.ChangeTrackingMode
+uid: 'word!Word.ChangeTrackingMode:enum'
+package: word!
+fullName: Word.ChangeTrackingMode
+summary: ChangeTracking mode.
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+  // Gets the current change tracking mode.
+
+  await Word.run(async (context) => {
+    const document: Word.Document = context.document;
+    document.load("changeTrackingMode");
+    await context.sync();
+
+    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+      console.log("Only my changes are being tracked.");
+    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+      console.log("Everyone's changes are being tracked.");
+    } else {
+      console.log("No changes are being tracked.");
+    }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: 'off'
+    uid: 'word!Word.ChangeTrackingMode.off:member'
+    package: word!
+    summary: |-
+      ChangeTracking is turned off.
+
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Off"'
+  - name: trackAll
+    uid: 'word!Word.ChangeTrackingMode.trackAll:member'
+    package: word!
+    summary: |-
+      ChangeTracking is turned on for everyone.
+
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TrackAll"'
+  - name: trackMineOnly
+    uid: 'word!Word.ChangeTrackingMode.trackMineOnly:member'
+    package: word!
+    summary: |-
+      Tracking is turned on for my changes only.
+
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TrackMineOnly"'

@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.ContentControlListItemData
+uid: 'word!Word.Interfaces.ContentControlListItemData:interface'
+package: word!
+fullName: Word.Interfaces.ContentControlListItemData
+summary: An interface describing the data returned by calling `contentControlListItem.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

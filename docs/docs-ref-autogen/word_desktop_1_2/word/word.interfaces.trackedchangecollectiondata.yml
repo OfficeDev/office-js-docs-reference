@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.TrackedChangeCollectionData
+uid: 'word!Word.Interfaces.TrackedChangeCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.TrackedChangeCollectionData
+summary: An interface describing the data returned by calling `trackedChangeCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.TrackedChangeCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.TrackedChangeData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TrackedChangeData:interface" />[]'
