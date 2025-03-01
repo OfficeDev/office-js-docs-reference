@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 02/29/2024
+ms.date: 02/28/2025
 ms.localizationpriority: medium
 ---
 
@@ -49,11 +49,11 @@ The valid child elements very depending on the value of the `xsi:type` parameter
 
 |  Element |  Description  |
 |:-----|:-----|
-|  [FunctionName](#functionname) |    Specifies the name of the function to execute. |
+|  [FunctionName](#functionname) |    Specifies the name of the function to run. |
 
 #### FunctionName
 
-Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of the function to execute. The function is contained in the file specified in the [FunctionFile](functionfile.md) element.
+Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of the function to run. The function is contained in the file specified in the [FunctionFile](functionfile.md) element. The value specified in the **\<FunctionName\>** element must match the value passed to the `actionId` parameter of the [Office.actions.associate](/javascript/api/office/office.actions) call in the file that contains the function. This ensures that the correct function is invoked when the button or menu item control is selected. To learn more see, [Create add-in commands with the add-in only manifest](/office/dev/add-ins/develop/create-addin-commands#sample-code-for-function-commands).
 
 ```xml
 <Action xsi:type="ExecuteFunction">
