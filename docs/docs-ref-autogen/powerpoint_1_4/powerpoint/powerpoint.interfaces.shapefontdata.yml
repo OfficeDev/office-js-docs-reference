@@ -13,9 +13,14 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontData#bold:member'
     package: powerpoint!
     fullName: bold
-    summary: >-
-      Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text
-      fragments.
+    summary: |-
+      Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+
+      - `true`<!-- -->: All the text is bold.
+
+      - `false`<!-- -->: None of the text is bold.
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is bold.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -41,9 +46,14 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontData#italic:member'
     package: powerpoint!
     fullName: italic
-    summary: >-
-      Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text
-      fragments.
+    summary: |-
+      Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+
+      - `true`<!-- -->: All the text is italicized.
+
+      - `false`<!-- -->: None of the text is italicized.
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is italicized.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

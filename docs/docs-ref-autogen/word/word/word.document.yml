@@ -865,8 +865,8 @@ methods:
       \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
-      Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
+      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
 
       #### Examples

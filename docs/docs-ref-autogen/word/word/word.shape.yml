@@ -23,6 +23,18 @@ properties:
       content: 'allowOverlap: boolean;'
       return:
         type: boolean
+  - name: altTextDescription
+    uid: 'word!Word.Shape#altTextDescription:member'
+    package: word!
+    fullName: altTextDescription
+    summary: Specifies a string that represents the alternative text associated with the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type: string
   - name: body
     uid: 'word!Word.Shape#body:member'
     package: word!
@@ -164,6 +176,20 @@ properties:
       content: 'height: number;'
       return:
         type: number
+  - name: heightRelative
+    uid: 'word!Word.Shape#heightRelative:member'
+    package: word!
+    fullName: heightRelative
+    summary: >-
+      The percentage of shape height to vertical relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'heightRelative: number;'
+      return:
+        type: number
   - name: id
     uid: 'word!Word.Shape#id:member'
     package: word!
@@ -203,6 +229,33 @@ properties:
       content: 'left: number;'
       return:
         type: number
+  - name: leftRelative
+    uid: 'word!Word.Shape#leftRelative:member'
+    package: word!
+    fullName: leftRelative
+    summary: >-
+      The relative left position as a percentage from the left side of the shape to the horizontal relative position,
+      see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline or
+      child shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftRelative: number;'
+      return:
+        type: number
+  - name: lockAspectRatio
+    uid: 'word!Word.Shape#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: Specifies if the aspect ratio of this shape is locked.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio: boolean;'
+      return:
+        type: boolean
   - name: name
     uid: 'word!Word.Shape#name:member'
     package: word!
@@ -257,6 +310,24 @@ properties:
         type: >-
           <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
           "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeHorizontalSize
+    uid: 'word!Word.Shape#relativeHorizontalSize:member'
+    package: word!
+    fullName: relativeHorizontalSize
+    summary: >-
+      The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalSize: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
   - name: relativeVerticalPosition
     uid: 'word!Word.Shape#relativeVerticalPosition:member'
     package: word!
@@ -275,6 +346,36 @@ properties:
         type: >-
           <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
           "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalSize
+    uid: 'word!Word.Shape#relativeVerticalSize:member'
+    package: word!
+    fullName: relativeVerticalSize
+    summary: >-
+      The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalSize: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
+  - name: rotation
+    uid: 'word!Word.Shape#rotation:member'
+    package: word!
+    fullName: rotation
+    summary: 'Specifies the rotation, in degrees, of the shape. Not applicable to Canvas shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rotation: number;'
+      return:
+        type: number
   - name: shapeGroup
     uid: 'word!Word.Shape#shapeGroup:member'
     package: word!
@@ -330,6 +431,21 @@ properties:
       content: 'top: number;'
       return:
         type: number
+  - name: topRelative
+    uid: 'word!Word.Shape#topRelative:member'
+    package: word!
+    fullName: topRelative
+    summary: >-
+      The relative top position as a percentage from the top edge of the shape to the vertical relative position, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline or child
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topRelative: number;'
+      return:
+        type: number
   - name: type
     uid: 'word!Word.Shape#type:member'
     package: word!
@@ -346,6 +462,18 @@ properties:
         type: >-
           <xref uid="word!Word.ShapeType:enum" /> | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture" |
           "Canvas"
+  - name: visible
+    uid: 'word!Word.Shape#visible:member'
+    package: word!
+    fullName: visible
+    summary: Specifies if the shape is visible. Not applicable to inline shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type: boolean
   - name: width
     uid: 'word!Word.Shape#width:member'
     package: word!
@@ -356,6 +484,20 @@ properties:
     isDeprecated: false
     syntax:
       content: 'width: number;'
+      return:
+        type: number
+  - name: widthRelative
+    uid: 'word!Word.Shape#widthRelative:member'
+    package: word!
+    fullName: widthRelative
+    summary: >-
+      The percentage of shape width to horizontal relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'widthRelative: number;'
       return:
         type: number
 methods:
@@ -474,6 +616,130 @@ methods:
             Required. Specifies how far the shape is to be moved vertically, in points. Use a positive value to move the
             shape up. Use a negative value to move the shape down.
           type: number
+      return:
+        type: void
+        description: ''
+  - name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    uid: 'word!Word.Shape#scaleHeight:member(1)'
+    package: word!
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    summary: >-
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaleHeight(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom): void;'
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
+          type: number
+        - id: scaleType
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '<xref uid="word!Word.ShapeScaleType:enum" />'
+        - id: scaleFrom
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '<xref uid="word!Word.ShapeScaleFrom:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
+    uid: 'word!Word.Shape#scaleHeight:member(2)'
+    package: word!
+    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
+    summary: >-
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?:
+        "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
+          type: number
+        - id: scaleTypeString
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '"CurrentSize" | "OriginalSize"'
+        - id: scaleFromString
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
+      return:
+        type: void
+        description: ''
+  - name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    uid: 'word!Word.Shape#scaleWidth:member(1)'
+    package: word!
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    summary: >-
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaleWidth(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom): void;'
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
+          type: number
+        - id: scaleType
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '<xref uid="word!Word.ShapeScaleType:enum" />'
+        - id: scaleFrom
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '<xref uid="word!Word.ShapeScaleFrom:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
+    uid: 'word!Word.Shape#scaleWidth:member(2)'
+    package: word!
+    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
+    summary: >-
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?:
+        "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
+          type: number
+        - id: scaleTypeString
+          description: >-
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
+          type: '"CurrentSize" | "OriginalSize"'
+        - id: scaleFromString
+          description: >-
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents that the shape's upper left corner retains its position.
+          type: '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
       return:
         type: void
         description: ''
