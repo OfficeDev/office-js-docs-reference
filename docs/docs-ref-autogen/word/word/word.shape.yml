@@ -5,9 +5,9 @@ package: word!
 fullName: Word.Shape
 summary: >-
   Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text
-  boxes, geometric shapes, groups, pictures and canvases.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+  boxes, geometric shapes, groups, pictures, and canvases.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -16,8 +16,8 @@ properties:
     package: word!
     fullName: allowOverlap
     summary: Specifies whether a given shape can overlap other shapes.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'allowOverlap: boolean;'
@@ -28,8 +28,8 @@ properties:
     package: word!
     fullName: body
     summary: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly body: Word.Body;'
@@ -44,8 +44,8 @@ properties:
       returned if the shape type isn't "Canvas". For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly canvas: Word.Canvas;'
@@ -59,7 +59,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -70,8 +70,8 @@ properties:
     package: word!
     fullName: fill
     summary: Returns the fill formatting of the shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly fill: Word.ShapeFill;'
@@ -82,8 +82,8 @@ properties:
     package: word!
     fullName: geometricShapeType
     summary: The geometric shape type of the shape. It will be null if isn't a geometric shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -157,8 +157,8 @@ properties:
     package: word!
     fullName: height
     summary: 'The height, in points, of the shape.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'height: number;'
@@ -169,8 +169,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets an integer that represents the shape identifier.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly id: number;'
@@ -181,8 +181,8 @@ properties:
     package: word!
     fullName: isChild
     summary: Check whether this shape is a child of a group shape or a canvas shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly isChild: boolean;'
@@ -196,8 +196,8 @@ properties:
       The distance, in points, from the left side of the shape to the horizontal relative position, see
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline shape, it
       will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'left: number;'
@@ -208,8 +208,8 @@ properties:
     package: word!
     fullName: name
     summary: The name of the shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string;'
@@ -220,8 +220,8 @@ properties:
     package: word!
     fullName: parentCanvas
     summary: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly parentCanvas: Word.Shape;'
@@ -232,8 +232,8 @@ properties:
     package: word!
     fullName: parentGroup
     summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly parentGroup: Word.Shape;'
@@ -246,8 +246,8 @@ properties:
     summary: >-
       The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -264,8 +264,8 @@ properties:
     summary: >-
       The relative vertical position of the shape. For an inline shape, it can't be set. For details, see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -284,8 +284,8 @@ properties:
       returned if the shape type isn't "GroupShape". For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly shapeGroup: Word.ShapeGroup;'
@@ -296,8 +296,8 @@ properties:
     package: word!
     fullName: textFrame
     summary: Gets the text frame object of the shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly textFrame: Word.TextFrame;'
@@ -308,8 +308,8 @@ properties:
     package: word!
     fullName: textWrap
     summary: Returns the text wrap formatting of the shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly textWrap: Word.ShapeTextWrap;'
@@ -323,8 +323,8 @@ properties:
       The distance, in points, from the top edge of the shape to the vertical relative position, see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline shape, it
       will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'top: number;'
@@ -337,8 +337,8 @@ properties:
     summary: >-
       Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric shapes, groups,
       pictures, and canvases.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly type: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape" | "Group" | "Picture" | "Canvas";'
@@ -351,8 +351,8 @@ properties:
     package: word!
     fullName: width
     summary: 'The width, in points, of the shape.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'width: number;'
@@ -364,8 +364,8 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the shape and its content.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -380,7 +380,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(options?: Word.Interfaces.ShapeLoadOptions): Word.Shape;'
@@ -399,7 +399,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Shape;'
@@ -418,7 +418,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -444,8 +444,8 @@ methods:
     package: word!
     fullName: moveHorizontally(distance)
     summary: Moves the shape horizontally by the number of points.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'moveHorizontally(distance: number): void;'
@@ -463,8 +463,8 @@ methods:
     package: word!
     fullName: moveVertically(distance)
     summary: Moves the shape vertically by the number of points.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'moveVertically(distance: number): void;'
@@ -482,8 +482,8 @@ methods:
     package: word!
     fullName: select(selectMultipleShapes)
     summary: Selects the shape.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'select(selectMultipleShapes?: boolean): void;'
@@ -502,7 +502,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
@@ -524,7 +524,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Word.Shape): void;'
@@ -546,7 +546,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.ShapeData;'
@@ -566,7 +566,7 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.Shape;'
@@ -583,7 +583,7 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.Shape;'

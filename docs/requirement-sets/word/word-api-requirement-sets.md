@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 12/09/2024
+ms.date: 02/27/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -23,6 +23,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)) |
 | [WordApiOnline 1.1](word-api-online-requirement-set.md) | Latest (see [requirement set page](word-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
+| [WordApiDesktop 1.2](word-api-desktop-1.2-requirement-set.md) | Not applicable | Version nnnn (Build xxxxx.yyyyy) | Not available | Version xx.yy (nnnnnnnn) | Version xx.yy |
 | [WordApiDesktop 1.1](word-api-desktop-1.1-requirement-set.md) | Not applicable | Version 2408 (Build 17928.20114) | Office 2024: Version 2408 (Build 17928.20114) | Version 16.88 (24081116) | Version 16.88 |
 | [WordApiHiddenDocument 1.5](word-api-1.5-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2302 (Build 16130.20332) | Office 2024: Version 2302 (Build 16130.20332) | Version 16.70 (23021201) | Not applicable |
 | [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2208 (Build 15601.20148) | Office 2024: Version 2208 (Build 15601.20148) | Version 16.64 (22081401) | Not applicable |
