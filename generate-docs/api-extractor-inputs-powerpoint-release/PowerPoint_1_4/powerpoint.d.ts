@@ -1757,7 +1757,13 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+         * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+         *
+         * - `true`: All the text is bold.
+         *
+         * - `false`: None of the text is bold.
+         *
+         * - `null`: Returned if some, but not all, of the text is bold.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -1771,7 +1777,13 @@ export declare namespace PowerPoint {
          */
         color: string | null;
         /**
-         * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+         * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+         *
+         * - `true`: All the text is italicized.
+         *
+         * - `false`: None of the text is italicized.
+         *
+         * - `null`: Returned if some, but not all, of the text is italicized.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -3238,7 +3250,13 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
             /**
-             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+             * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+             *
+             * - `true`: All the text is bold.
+             *
+             * - `false`: None of the text is bold.
+             *
+             * - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3252,7 +3270,13 @@ export declare namespace PowerPoint {
              */
             color?: string | null;
             /**
-             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+             * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+             *
+             * - `true`: All the text is italicized.
+             *
+             * - `false`: None of the text is italicized.
+             *
+             * - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3559,7 +3583,13 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             /**
-             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+             * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+             *
+             * - `true`: All the text is bold.
+             *
+             * - `false`: None of the text is bold.
+             *
+             * - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3573,7 +3603,13 @@ export declare namespace PowerPoint {
              */
             color?: string | null;
             /**
-             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+             * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+             *
+             * - `true`: All the text is italicized.
+             *
+             * - `false`: None of the text is italicized.
+             *
+             * - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3965,7 +4001,13 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
+             * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
+             *
+             * - `true`: All the text is bold.
+             *
+             * - `false`: None of the text is bold.
+             *
+             * - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3979,7 +4021,13 @@ export declare namespace PowerPoint {
              */
             color?: boolean;
             /**
-             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
+             * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
+             *
+             * - `true`: All the text is italicized.
+             *
+             * - `false`: None of the text is italicized.
+             *
+             * - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -4019,25 +4067,25 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Returns the fill formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the line formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * For EACH ITEM in the collection: Returns the line formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the text frame object of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * For EACH ITEM in the collection: Returns the text frame object of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
@@ -4474,25 +4522,25 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * Returns the fill formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * Returns the line formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * Returns the line formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * Returns the text frame object of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * Returns the text frame object of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
              * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.

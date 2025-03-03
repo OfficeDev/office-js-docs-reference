@@ -9786,7 +9786,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TrackedChangeCollectionData;
     }
     /**
-     * Represents a shape in the header, footer or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+     * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
      *
      * @remarks
      * [Api set: WordApiDesktop 1.2]
@@ -9942,7 +9942,7 @@ export declare namespace Word {
          */
         relativeHorizontalSize: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
         /**
-         * The relative vertical position of the shape. For an inline shape, it can't be set. For details, See {@link Word.RelativeVerticalPosition}.
+         * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -9963,7 +9963,7 @@ export declare namespace Word {
          */
         rotation: number;
         /**
-         * The distance, in points, from the top edge of the shape to the vertical relative position, See {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+         * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -10200,9 +10200,9 @@ export declare namespace Word {
          */
         untrack(): Word.ShapeGroup;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.ShapeGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeGroupData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ShapeGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeGroupData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ShapeGroupData;
     }
     /**
@@ -10279,7 +10279,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.CanvasData;
     }
     /**
-     * Contains a collection of {@link Word.Shape} objects. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+     * Contains a collection of {@link Word.Shape} objects. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
      *
      * @remarks
      * [Api set: WordApiDesktop 1.2]
@@ -17689,7 +17689,7 @@ export declare namespace Word {
              */
             relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, See {@link Word.RelativeVerticalPosition}.
+             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -17710,7 +17710,7 @@ export declare namespace Word {
              */
             rotation?: number;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position, See {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -17748,11 +17748,11 @@ export declare namespace Word {
         /** An interface for updating data on the `ShapeGroup` object, for use in `shapeGroup.set({ ... })`. */
         export interface ShapeGroupUpdateData {
             /**
-            * Gets the Shape object associated with the group.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.2]
-            */
+             * Gets the Shape object associated with the group.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
             shape?: Word.Interfaces.ShapeUpdateData;
         }
         /** An interface for updating data on the `Canvas` object, for use in `canvas.set({ ... })`. */
@@ -19211,7 +19211,7 @@ export declare namespace Word {
              */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
             /**
-             * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+             * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -20329,7 +20329,7 @@ export declare namespace Word {
              */
             relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, See {@link Word.RelativeVerticalPosition}.
+             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -20350,7 +20350,7 @@ export declare namespace Word {
              */
             rotation?: number;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position, See {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -20395,18 +20395,18 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
         export interface ShapeGroupData {
             /**
-            * Gets the Shape object associated with the group.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.2]
-            */
+             * Gets the Shape object associated with the group.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
             shape?: Word.Interfaces.ShapeData;
             /**
-            * Gets the collection of Shape objects. Currently, only text boxes, geometric shapes, and pictures are supported.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.2]
-            */
+             * Gets the collection of Shape objects. Currently, only text boxes, geometric shapes, and pictures are supported.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
             shapes?: Word.Interfaces.ShapeData[];
             /**
              * Gets an integer that represents the shape group identifier.
@@ -20419,18 +20419,18 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `canvas.toJSON()`. */
         export interface CanvasData {
             /**
-            * Gets the Shape object associated with the canvas.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.2]
-            */
+             * Gets the Shape object associated with the canvas.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
             shape?: Word.Interfaces.ShapeData;
             /**
-            * Gets the collection of Shape objects. Currently, only text boxes, pictures, and geometric shapes are supported.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.2]
-            */
+             * Gets the collection of Shape objects. Currently, only text boxes, pictures, and geometric shapes are supported.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
             shapes?: Word.Interfaces.ShapeData[];
             /**
              * Gets an integer that represents the canvas identifier.
@@ -24951,7 +24951,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Represents a shape in the header, footer or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+         * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -25018,11 +25018,11 @@ export declare namespace Word {
              */
             textWrap?: Word.Interfaces.ShapeTextWrapLoadOptions;
             /**
-              * Specifies whether a given shape can overlap other shapes.
-              *
-              * @remarks
-              * [Api set: WordApiDesktop 1.2]
-              */
+             * Specifies whether a given shape can overlap other shapes.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
             allowOverlap?: boolean;
             /**
              * Specifies a string that represents the alternative text associated with the shape.
@@ -25109,7 +25109,7 @@ export declare namespace Word {
              */
             relativeHorizontalSize?: boolean;
             /**
-             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, See {@link Word.RelativeVerticalPosition}.
+             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -25130,7 +25130,7 @@ export declare namespace Word {
              */
             rotation?: boolean;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position, See {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -25383,7 +25383,7 @@ export declare namespace Word {
              */
             relativeHorizontalSize?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative vertical position of the shape. For an inline shape, it can't be set. For details, See {@link Word.RelativeVerticalPosition}.
+             * For EACH ITEM in the collection: The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -25404,7 +25404,7 @@ export declare namespace Word {
              */
             rotation?: boolean;
             /**
-             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative position, See {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]

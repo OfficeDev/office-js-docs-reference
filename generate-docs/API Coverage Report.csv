@@ -12594,6 +12594,13 @@ Word.RelativeHorizontalPosition,"margin",EnumField,Fine,false
 Word.RelativeHorizontalPosition,"outsideMargin",EnumField,Fine,false
 Word.RelativeHorizontalPosition,"page",EnumField,Fine,false
 Word.RelativeHorizontalPosition,"rightMargin",EnumField,Fine,false
+Word.RelativeSize,N/A,Enum,Good,false
+Word.RelativeSize,"bottomMargin",EnumField,Fine,false
+Word.RelativeSize,"insideMargin",EnumField,Fine,false
+Word.RelativeSize,"margin",EnumField,Fine,false
+Word.RelativeSize,"outsideMargin",EnumField,Fine,false
+Word.RelativeSize,"page",EnumField,Fine,false
+Word.RelativeSize,"topMargin",EnumField,Fine,false
 Word.RelativeVerticalPosition,N/A,Enum,Good,false
 Word.RelativeVerticalPosition,"bottomMargin",EnumField,Fine,false
 Word.RelativeVerticalPosition,"insideMargin",EnumField,Fine,false
@@ -12737,32 +12744,46 @@ Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
 Word.Shape,N/A,Class,Good,false
 Word.Shape,"allowOverlap",Property,Good,false
+Word.Shape,"altTextDescription",Property,Good,false
 Word.Shape,"body",Property,Good,false
 Word.Shape,"canvas",Property,Good,false
 Word.Shape,"context",Property,Good,false
 Word.Shape,"fill",Property,Good,false
 Word.Shape,"geometricShapeType",Property,Good,false
 Word.Shape,"height",Property,Good,false
+Word.Shape,"heightRelative",Property,Good,false
 Word.Shape,"id",Property,Good,false
 Word.Shape,"isChild",Property,Good,false
 Word.Shape,"left",Property,Good,false
+Word.Shape,"leftRelative",Property,Good,false
+Word.Shape,"lockAspectRatio",Property,Good,false
 Word.Shape,"name",Property,Good,false
 Word.Shape,"parentCanvas",Property,Good,false
 Word.Shape,"parentGroup",Property,Good,false
 Word.Shape,"relativeHorizontalPosition",Property,Good,false
+Word.Shape,"relativeHorizontalSize",Property,Good,false
 Word.Shape,"relativeVerticalPosition",Property,Good,false
+Word.Shape,"relativeVerticalSize",Property,Good,false
+Word.Shape,"rotation",Property,Good,false
 Word.Shape,"shapeGroup",Property,Good,false
 Word.Shape,"textFrame",Property,Good,false
 Word.Shape,"textWrap",Property,Good,false
 Word.Shape,"top",Property,Good,false
+Word.Shape,"topRelative",Property,Good,false
 Word.Shape,"type",Property,Good,false
+Word.Shape,"visible",Property,Good,false
 Word.Shape,"width",Property,Good,false
+Word.Shape,"widthRelative",Property,Good,false
 Word.Shape,"delete()",Method,Poor,false
 Word.Shape,"load(options)",Method,Poor,false
 Word.Shape,"load(propertyNames)",Method,Poor,false
 Word.Shape,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.Shape,"moveHorizontally(distance)",Method,Poor,false
 Word.Shape,"moveVertically(distance)",Method,Poor,false
+Word.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Fine,false
+Word.Shape,"scaleHeight(scaleFactor, scaleTypeString, scaleFromString)",Method,Fine,false
+Word.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Fine,false
+Word.Shape,"scaleWidth(scaleFactor, scaleTypeString, scaleFromString)",Method,Fine,false
 Word.Shape,"select(selectMultipleShapes)",Method,Poor,false
 Word.Shape,"set(properties, options)",Method,Poor,false
 Word.Shape,"set(properties)",Method,Poor,false
@@ -12830,6 +12851,13 @@ Word.ShapeGroup,"toJSON()",Method,Poor,false
 Word.ShapeGroup,"track()",Method,Poor,false
 Word.ShapeGroup,"ungroup()",Method,Poor,false
 Word.ShapeGroup,"untrack()",Method,Poor,false
+Word.ShapeScaleFrom,N/A,Enum,Good,false
+Word.ShapeScaleFrom,"scaleFromBottomRight",EnumField,Fine,false
+Word.ShapeScaleFrom,"scaleFromMiddle",EnumField,Fine,false
+Word.ShapeScaleFrom,"scaleFromTopLeft",EnumField,Fine,false
+Word.ShapeScaleType,N/A,Enum,Good,false
+Word.ShapeScaleType,"currentSize",EnumField,Fine,false
+Word.ShapeScaleType,"originalSize",EnumField,Good,false
 Word.ShapeTextOrientation,N/A,Enum,Good,false
 Word.ShapeTextOrientation,"eastAsianHorizontalRotated",EnumField,Fine,false
 Word.ShapeTextOrientation,"eastAsianVertical",EnumField,Fine,false

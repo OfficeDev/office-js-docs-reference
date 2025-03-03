@@ -81,7 +81,7 @@ fields:
     package: word!
     summary: >-
       The ending point of the object. For paragraph, it's the point before the EOP (end of paragraph). For content
-      control, it is the point before the closing tag.
+      control, it's the point before the closing tag.
 
 
       * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

@@ -277,7 +277,7 @@ properties:
     fullName: relativeVerticalPosition
     summary: >-
       For EACH ITEM in the collection: The relative vertical position of the shape. For an inline shape, it can't be
-      set. For details, See [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
+      set. For details, see [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
     remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -359,7 +359,7 @@ properties:
     fullName: top
     summary: >-
       For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative
-      position, See [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline
+      position, see [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline
       shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left
       corner.
     remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

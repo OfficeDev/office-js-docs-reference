@@ -21,6 +21,18 @@ properties:
       content: 'allowOverlap?: boolean;'
       return:
         type: boolean
+  - name: altTextDescription
+    uid: 'word!Word.Interfaces.ShapeUpdateData#altTextDescription:member'
+    package: word!
+    fullName: altTextDescription
+    summary: Specifies a string that represents the alternative text associated with the shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type: string
   - name: body
     uid: 'word!Word.Interfaces.ShapeUpdateData#body:member'
     package: word!
@@ -148,6 +160,20 @@ properties:
       content: 'height?: number;'
       return:
         type: number
+  - name: heightRelative
+    uid: 'word!Word.Interfaces.ShapeUpdateData#heightRelative:member'
+    package: word!
+    fullName: heightRelative
+    summary: >-
+      The percentage of shape height to vertical relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'heightRelative?: number;'
+      return:
+        type: number
   - name: left
     uid: 'word!Word.Interfaces.ShapeUpdateData#left:member'
     package: word!
@@ -163,6 +189,33 @@ properties:
       content: 'left?: number;'
       return:
         type: number
+  - name: leftRelative
+    uid: 'word!Word.Interfaces.ShapeUpdateData#leftRelative:member'
+    package: word!
+    fullName: leftRelative
+    summary: >-
+      The relative left position as a percentage from the left side of the shape to the horizontal relative position,
+      see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline or
+      child shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftRelative?: number;'
+      return:
+        type: number
+  - name: lockAspectRatio
+    uid: 'word!Word.Interfaces.ShapeUpdateData#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: Specifies if the aspect ratio of this shape is locked.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type: boolean
   - name: name
     uid: 'word!Word.Interfaces.ShapeUpdateData#name:member'
     package: word!
@@ -217,6 +270,24 @@ properties:
         type: >-
           <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
           "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeHorizontalSize
+    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member'
+    package: word!
+    fullName: relativeHorizontalSize
+    summary: >-
+      The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
   - name: relativeVerticalPosition
     uid: 'word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member'
     package: word!
@@ -235,6 +306,36 @@ properties:
         type: >-
           <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
           "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalSize
+    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member'
+    package: word!
+    fullName: relativeVerticalSize
+    summary: >-
+      The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
+  - name: rotation
+    uid: 'word!Word.Interfaces.ShapeUpdateData#rotation:member'
+    package: word!
+    fullName: rotation
+    summary: 'Specifies the rotation, in degrees, of the shape. Not applicable to Canvas shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rotation?: number;'
+      return:
+        type: number
   - name: shapeGroup
     uid: 'word!Word.Interfaces.ShapeUpdateData#shapeGroup:member'
     package: word!
@@ -290,6 +391,33 @@ properties:
       content: 'top?: number;'
       return:
         type: number
+  - name: topRelative
+    uid: 'word!Word.Interfaces.ShapeUpdateData#topRelative:member'
+    package: word!
+    fullName: topRelative
+    summary: >-
+      The relative top position as a percentage from the top edge of the shape to the vertical relative position, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline or child
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topRelative?: number;'
+      return:
+        type: number
+  - name: visible
+    uid: 'word!Word.Interfaces.ShapeUpdateData#visible:member'
+    package: word!
+    fullName: visible
+    summary: Specifies if the shape is visible. Not applicable to inline shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
   - name: width
     uid: 'word!Word.Interfaces.ShapeUpdateData#width:member'
     package: word!
@@ -300,5 +428,19 @@ properties:
     isDeprecated: false
     syntax:
       content: 'width?: number;'
+      return:
+        type: number
+  - name: widthRelative
+    uid: 'word!Word.Interfaces.ShapeUpdateData#widthRelative:member'
+    package: word!
+    fullName: widthRelative
+    summary: >-
+      The percentage of shape width to horizontal relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'widthRelative?: number;'
       return:
         type: number
