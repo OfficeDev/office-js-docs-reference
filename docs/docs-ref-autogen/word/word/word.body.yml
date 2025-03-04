@@ -467,8 +467,8 @@ properties:
     summary: >-
       Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only the
       following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly shapes: Word.ShapeCollection;'
@@ -1112,8 +1112,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
-      Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
+      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
 
       #### Examples

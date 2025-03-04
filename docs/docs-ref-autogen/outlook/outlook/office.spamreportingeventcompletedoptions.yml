@@ -39,12 +39,12 @@ remarks: >-
           // Run additional processing operations here.
 
           /**
-          * Signals that the spam-reporting event has completed processing.
-          * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-          * and shows a post-processing dialog to the user.
-          * If an error occurs while the message is being processed, the `onErrorDeleteItem`
-          * property determines whether the message will be deleted.
-          */
+           * Signals that the spam-reporting event has completed processing.
+           * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+           * and shows a post-processing dialog to the user.
+           * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+           * property determines whether the message will be deleted.
+           */
           const event = asyncResult.asyncContext;
           event.completed({
               moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
@@ -112,6 +112,31 @@ properties:
 
       - If you implement a task pane to open after a reported message is processed, when the `event.completed` call
       occurs, any task pane that's open or pinned is closed.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function onSpamReport(event) {
+          // Run operations to process the reported message.
+
+          /**
+           * Signals that the spam-reporting event has completed processing.
+           * A task pane is opened instead of showing a post-processing dialog.
+           * Context data is then passed to the task pane for processing.
+           * To ensure that the task pane opens and receives the context data,
+           * the reported message mustn't be moved from the folder in which it resides.
+           */
+          event.completed({
+              commandId: "msgReadOpenPaneButton",
+              contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
+          });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -170,6 +195,31 @@ properties:
       `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane. If
       you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
       string using `JSON.parse()` once you retrieve it.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function onSpamReport(event) {
+          // Run operations to process the reported message.
+
+          /**
+           * Signals that the spam-reporting event has completed processing.
+           * A task pane is opened instead of showing a post-processing dialog.
+           * Context data is then passed to the task pane for processing.
+           * To ensure that the task pane opens and receives the context data,
+           * the reported message mustn't be moved from the folder in which it resides.
+           */
+          event.completed({
+              commandId: "msgReadOpenPaneButton",
+              contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
+          });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -362,10 +412,10 @@ properties:
               // Run additional processing operations here.
 
               /**
-              * Signals that the spam-reporting event has completed processing.
-              * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-              * post-processing dialog to the user.
-              */
+               * Signals that the spam-reporting event has completed processing.
+               * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+               * post-processing dialog to the user.
+               */
               const event = asyncResult.asyncContext;
               event.completed({
                   postProcessingAction: "moveToSpamFolder",

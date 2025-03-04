@@ -97,6 +97,8 @@ items:
                 uid: 'word!Word.RangeLocation:enum'
               - name: RelativeHorizontalPosition
                 uid: 'word!Word.RelativeHorizontalPosition:enum'
+              - name: RelativeSize
+                uid: 'word!Word.RelativeSize:enum'
               - name: RelativeVerticalPosition
                 uid: 'word!Word.RelativeVerticalPosition:enum'
               - name: SaveBehavior
@@ -109,6 +111,10 @@ items:
                 uid: 'word!Word.ShapeAutoSize:enum'
               - name: ShapeFillType
                 uid: 'word!Word.ShapeFillType:enum'
+              - name: ShapeScaleFrom
+                uid: 'word!Word.ShapeScaleFrom:enum'
+              - name: ShapeScaleType
+                uid: 'word!Word.ShapeScaleType:enum'
               - name: ShapeTextOrientation
                 uid: 'word!Word.ShapeTextOrientation:enum'
               - name: ShapeTextVerticalAlignment
@@ -693,6 +699,8 @@ items:
             href: ../../manifest/action.md
           - name: AllFormFactors
             href: ../../manifest/allformfactors.md
+          - name: CommandSurface
+            href: ../../manifest/commandsurface.md
           - name: Control
             href: ../../manifest/control.md
           - name: Control (Button)
@@ -1165,6 +1173,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.2 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.1 requirement set
             href: >-
