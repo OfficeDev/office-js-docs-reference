@@ -140,8 +140,8 @@ properties:
     summary: >-
       Accesses the cell control applied to this range. If the range has multiple cell controls, this returns
       `EmptyCellControl`<!-- -->.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'control: CellControl;'
@@ -868,8 +868,8 @@ methods:
       range contains only blank values and controls set to their default value, then the values and control formatting
       are removed. Otherwise, this sets the cells with controls to their default value and clears the values of the
       other cells in the range.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearOrResetContents(): void;'

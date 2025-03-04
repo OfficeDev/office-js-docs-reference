@@ -121,6 +121,18 @@ properties:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
         type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />[]'
+  - name: notes
+    uid: 'excel!Excel.Interfaces.WorksheetData#notes:member'
+    package: excel!
+    fullName: notes
+    summary: Returns a collection of all the notes objects in the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'notes?: Excel.Interfaces.NoteData[];'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.NoteData:interface" />[]'
   - name: pageLayout
     uid: 'excel!Excel.Interfaces.WorksheetData#pageLayout:member'
     package: excel!

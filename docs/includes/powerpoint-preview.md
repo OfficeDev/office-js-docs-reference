@@ -1,9 +1,18 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[PlaceholderFormat](/javascript/api/powerpoint/powerpoint.placeholderformat)|[containedType](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-containedtype-member)|Gets the type of the shape contained within the placeholder.|
+||[type](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-type-member)|Returns the type of this placeholder.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[group](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-group-member)|Returns the `ShapeGroup` associated with the shape.|
 ||[level](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-level-member)|Returns the level of the specified shape.|
 ||[parentGroup](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-parentgroup-member)|Returns the parent group of this shape.|
+||[placeholderFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-placeholderformat-member)|Returns the properties that apply specifically to this placeholder.|
 |[ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection)|[addGroup(values: Array<string \| Shape>)](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgroup-member(1))|Create a shape group for several shapes.|
+|[ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont)|[allCaps](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-allcaps-member)|Specifies whether the text in the `TextRange` is set to use the **All Caps** attribute which makes lowercase letters appear as uppercase letters.|
+||[doubleStrikethrough](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-doublestrikethrough-member)|Specifies whether the text in the `TextRange` is set to use the **Double strikethrough** attribute.|
+||[smallCaps](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-smallcaps-member)|Specifies whether the text in the `TextRange` is set to use the **Small Caps** attribute which makes lowercase letters appear as small uppercase letters.|
+||[strikethrough](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-strikethrough-member)|Specifies whether the text in the `TextRange` is set to use the **Strikethrough** attribute.|
+||[subscript](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-subscript-member)|Specifies whether the text in the `TextRange` is set to use the **Subscript** attribute.|
+||[superscript](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-superscript-member)|Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute.|
 |[ShapeGroup](/javascript/api/powerpoint/powerpoint.shapegroup)|[id](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-id-member)|Gets the unique ID of the shape group.|
 ||[shape](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shape-member)|Returns the `Shape` object associated with the group.|
 ||[shapes](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shapes-member)|Returns the collection of `Shape` objects in the group.|

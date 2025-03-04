@@ -87,3 +87,13 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RemoveHyperlinks"'
+  - name: resetContents
+    uid: 'excel!Excel.ClearApplyTo.resetContents:member'
+    package: excel!
+    summary: >-
+      Sets all cells in the range to their default state. Cells with cell controls are set to the default value defined
+      by each control. Cells without cell controls are set to blank.
+
+
+      * \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"ResetContents"'

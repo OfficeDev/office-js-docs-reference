@@ -93,7 +93,7 @@ tryCatch(async () => {
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
-    const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
+    const hostVersionMap = [{host: "excel", versions: 19}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 15},
                             {host: "powerpoint", versions: 8},
@@ -119,6 +119,7 @@ tryCatch(async () => {
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
     // Special case for WordApi Desktop
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop_1_2`), tocWithReleaseCommon, "word", 9.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop_1_1`), tocWithReleaseCommon, "word", 8.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_5_hidden_document`), tocWithReleaseCommon, "word", 5.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);

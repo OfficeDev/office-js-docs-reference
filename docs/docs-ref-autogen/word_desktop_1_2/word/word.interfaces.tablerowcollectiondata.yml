@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableRowCollectionData
+uid: 'word!Word.Interfaces.TableRowCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.TableRowCollectionData
+summary: An interface describing the data returned by calling `tableRowCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.TableRowCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.TableRowData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableRowData:interface" />[]'

@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableBorderData
+uid: 'word!Word.Interfaces.TableBorderData:interface'
+package: word!
+fullName: Word.Interfaces.TableBorderData
+summary: An interface describing the data returned by calling `tableBorder.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'word!Word.Interfaces.TableBorderData#color:member'
+    package: word!
+    fullName: color
+    summary: Specifies the table border color.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'word!Word.Interfaces.TableBorderData#type:member'
+    package: word!
+    fullName: type
+    summary: Specifies the type of the table border.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" |
+        "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
+      return:
+        type: >-
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" |
+          "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+          "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" |
+          "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
+  - name: width
+    uid: 'word!Word.Interfaces.TableBorderData#width:member'
+    package: word!
+    fullName: width
+    summary: 'Specifies the width, in points, of the table border. Not applicable to table border types that have fixed widths.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

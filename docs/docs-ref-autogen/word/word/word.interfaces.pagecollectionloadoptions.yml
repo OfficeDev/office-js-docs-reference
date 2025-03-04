@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: Word.Interfaces.PageCollectionLoadOptions
+uid: 'word!Word.Interfaces.PageCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.PageCollectionLoadOptions
+summary: Represents the collection of page.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.PageCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'word!Word.Interfaces.PageCollectionLoadOptions#height:member'
+    package: word!
+    fullName: height
+    summary: 'For EACH ITEM in the collection: Gets the height, in points, of the paper defined in the Page Setup dialog box.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: 'word!Word.Interfaces.PageCollectionLoadOptions#index:member'
+    package: word!
+    fullName: index
+    summary: >-
+      For EACH ITEM in the collection: Gets the index of the page. The page index is 1-based and independent of the
+      user's custom page numbering.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.PageCollectionLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: 'For EACH ITEM in the collection: Gets the width, in points, of the paper defined in the Page Setup dialog box.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean
