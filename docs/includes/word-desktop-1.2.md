@@ -1,16 +1,45 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[shapes](/javascript/api/word/word.body#word-word-body-shapes-member)|Gets the collection of shape objects in the body, including both inline and floating shapes.|
+|[Annotation](/javascript/api/word/word.annotation)|||
+|[Application](/javascript/api/word/word.application)|||
+|[Body](/javascript/api/word/word.body)|[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.body#word-word-body-search-member(1))|Performs a search with the specified SearchOptions on the scope of the body object.|
+||[shapes](/javascript/api/word/word.body#word-word-body-shapes-member)|Gets the collection of shape objects in the body, including both inline and floating shapes.|
+|[Border](/javascript/api/word/word.border)|||
 |[Canvas](/javascript/api/word/word.canvas)|[id](/javascript/api/word/word.canvas#word-word-canvas-id-member)|Gets an integer that represents the canvas identifier.|
 ||[shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)|Gets the Shape object associated with the canvas.|
 ||[shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)|Gets the collection of Shape objects.|
+|[CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol)|||
+|[Comment](/javascript/api/word/word.comment)|||
+|[CommentContentRange](/javascript/api/word/word.commentcontentrange)|||
+|[CommentReply](/javascript/api/word/word.commentreply)|||
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))|Performs a search with the specified SearchOptions on the scope of the content control object.|
+|[CritiqueAnnotation](/javascript/api/word/word.critiqueannotation)|||
+|[CustomProperty](/javascript/api/word/word.customproperty)|||
+|[CustomXmlPart](/javascript/api/word/word.customxmlpart)|[deleteAttribute(xpath: string, namespaceMappings: { [key: string]: string }, name: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteattribute-member(1))|Deletes an attribute with the given name from the element identified by xpath.|
+||[deleteElement(xpath: string, namespaceMappings: { [key: string]: string })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteelement-member(1))|Deletes the element identified by xpath.|
+||[insertAttribute(xpath: string, namespaceMappings: { [key: string]: string }, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertattribute-member(1))|Inserts an attribute with the given name and value to the element identified by xpath.|
+||[insertElement(xpath: string, xml: string, namespaceMappings: { [key: string]: string }, index?: number)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertelement-member(1))|Inserts the given XML under the parent element identified by xpath at child position index.|
+||[query(xpath: string, namespaceMappings: { [key: string]: string })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-query-member(1))|Queries the XML content of the custom XML part.|
+||[updateAttribute(xpath: string, namespaceMappings: { [key: string]: string }, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateattribute-member(1))|Updates the value of an attribute with the given name of the element identified by xpath.|
+||[updateElement(xpath: string, xml: string, namespaceMappings: { [key: string]: string })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateelement-member(1))|Updates the XML of the element identified by xpath.|
 |[Document](/javascript/api/word/word.document)|[activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)|Gets the active window for the document.|
 ||[compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions)](/javascript/api/word/word.document#word-word-document-comparefrombase64-member(1))|Displays revision marks that indicate where the specified document differs from another document.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.document#word-word-document-search-member(1))|Performs a search with the specified search options on the scope of the whole document.|
 ||[windows](/javascript/api/word/word.document#word-word-document-windows-member)|Gets the collection of `Word.Window` objects for the document.|
+|[DocumentCreated](/javascript/api/word/word.documentcreated)|||
+|[DocumentProperties](/javascript/api/word/word.documentproperties)|||
+|[Field](/javascript/api/word/word.field)|||
+|[Font](/javascript/api/word/word.font)|||
+|[InlinePicture](/javascript/api/word/word.inlinepicture)|||
 |[InsertShapeOptions](/javascript/api/word/word.insertshapeoptions)|[height](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-height-member)|Represents the height of the shape being inserted.|
 ||[left](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-left-member)|Represents the left position of the shape being inserted.|
 ||[top](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-top-member)|Represents the top position of the shape being inserted.|
 ||[width](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-width-member)|Represents the width of the shape being inserted.|
+|[List](/javascript/api/word/word.list)|||
+|[ListItem](/javascript/api/word/word.listitem)|||
+|[ListLevel](/javascript/api/word/word.listlevel)|||
+|[ListTemplate](/javascript/api/word/word.listtemplate)|||
+|[NoteItem](/javascript/api/word/word.noteitem)|||
 |[Page](/javascript/api/word/word.page)|[getNext()](/javascript/api/word/word.page#word-word-page-getnext-member(1))|Gets the next page in the pane.|
 ||[getNextOrNullObject()](/javascript/api/word/word.page#word-word-page-getnextornullobject-member(1))|Gets the next page.|
 ||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| "Whole" \| "Start" \| "End")](/javascript/api/word/word.page#word-word-page-getrange-member(1))|Gets the whole page, or the starting or ending point of the page, as a range.|
@@ -27,17 +56,25 @@
 |[PaneCollection](/javascript/api/word/word.panecollection)|[getFirst()](/javascript/api/word/word.panecollection#word-word-panecollection-getfirst-member(1))|Gets the first pane in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.panecollection#word-word-panecollection-getfirstornullobject-member(1))|Gets the first pane in this collection.|
 ||[items](/javascript/api/word/word.panecollection#word-word-panecollection-items-member)|Gets the loaded child items in this collection.|
-|[Paragraph](/javascript/api/word/word.paragraph)|[insertCanvas(insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1))|Inserts a floating canvas in front of text with its anchor at the beginning of the paragraph.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[getText(options?: Word.GetTextOptions \| { IncludeHiddenText?: boolean IncludeTextMarkedAsDeleted?: boolean })](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))|Returns the text of the paragraph.|
+||[insertCanvas(insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1))|Inserts a floating canvas in front of text with its anchor at the beginning of the paragraph.|
 ||[insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))|Inserts a geometric shape in front of text with its anchor at the beginning of the paragraph.|
 ||[insertPictureFromBase64(base64EncodedImage: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertpicturefrombase64-member(1))|Inserts a floating picture in front of text with its anchor at the beginning of the paragraph.|
 ||[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))|Inserts a floating text box in front of text with its anchor at the beginning of the paragraph.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))|Performs a search with the specified SearchOptions on the scope of the paragraph object.|
 ||[shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)|Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes.|
+|[ParagraphFormat](/javascript/api/word/word.paragraphformat)|||
 |[Range](/javascript/api/word/word.range)|[insertCanvas(insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1))|Inserts a floating canvas in front of text with its anchor at the beginning of the range.|
 ||[insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1))|Inserts a geometric shape in front of text with its anchor at the beginning of the range.|
 ||[insertPictureFromBase64(base64EncodedImage: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertpicturefrombase64-member(1))|Inserts a floating picture in front of text with its anchor at the beginning of the range.|
 ||[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))|Inserts a floating text box in front of text with its anchor at the beginning of the range.|
 ||[pages](/javascript/api/word/word.range#word-word-range-pages-member)|Gets the collection of pages in the range.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.range#word-word-range-search-member(1))|Performs a search with the specified SearchOptions on the scope of the range object.|
 ||[shapes](/javascript/api/word/word.range#word-word-range-shapes-member)|Gets the collection of shape objects anchored in the range, including both inline and floating shapes.|
+|[SearchOptions](/javascript/api/word/word.searchoptions)|||
+|[Section](/javascript/api/word/word.section)|||
+|[Setting](/javascript/api/word/word.setting)|||
+|[Shading](/javascript/api/word/word.shading)|||
 |[Shape](/javascript/api/word/word.shape)|[allowOverlap](/javascript/api/word/word.shape#word-word-shape-allowoverlap-member)|Specifies whether a given shape can overlap other shapes.|
 ||[altTextDescription](/javascript/api/word/word.shape#word-word-shape-alttextdescription-member)|Specifies a string that represents the alternative text associated with the shape.|
 ||[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Represents the body object of the shape.|
@@ -100,6 +137,12 @@
 ||[side](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-side-member)|Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.|
 ||[topDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-topdistance-member)|Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.|
 ||[type](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-type-member)|Specifies the text wrap type around the shape.|
+|[Style](/javascript/api/word/word.style)|||
+|[Table](/javascript/api/word/word.table)|[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.table#word-word-table-search-member(1))|Performs a search with the specified SearchOptions on the scope of the table object.|
+|[TableBorder](/javascript/api/word/word.tableborder)|||
+|[TableCell](/javascript/api/word/word.tablecell)|||
+|[TableRow](/javascript/api/word/word.tablerow)|[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.tablerow#word-word-tablerow-search-member(1))|Performs a search with the specified SearchOptions on the scope of the row.|
+|[TableStyle](/javascript/api/word/word.tablestyle)|||
 |[TextFrame](/javascript/api/word/word.textframe)|[autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)|The automatic sizing settings for the text frame.|
 ||[bottomMargin](/javascript/api/word/word.textframe#word-word-textframe-bottommargin-member)|Represents the bottom margin, in points, of the text frame.|
 ||[hasText](/javascript/api/word/word.textframe#word-word-textframe-hastext-member)|Specifies if the text frame contains text.|
@@ -110,6 +153,7 @@
 ||[topMargin](/javascript/api/word/word.textframe#word-word-textframe-topmargin-member)|Represents the top margin, in points, of the text frame.|
 ||[verticalAlignment](/javascript/api/word/word.textframe#word-word-textframe-verticalalignment-member)|Represents the vertical alignment of the text frame.|
 ||[wordWrap](/javascript/api/word/word.textframe#word-word-textframe-wordwrap-member)|Determines whether lines break automatically to fit text inside the shape.|
+|[TrackedChange](/javascript/api/word/word.trackedchange)|||
 |[Window](/javascript/api/word/word.window)|[activePane](/javascript/api/word/word.window#word-word-window-activepane-member)|Gets the active pane in the window.|
 ||[panes](/javascript/api/word/word.window#word-word-window-panes-member)|Gets the collection of panes in the window.|
 |[WindowCollection](/javascript/api/word/word.windowcollection)|[getFirst()](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirst-member(1))|Gets the first window in this collection.|

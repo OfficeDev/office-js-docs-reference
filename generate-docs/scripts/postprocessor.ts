@@ -56,8 +56,7 @@ interface IMembers {
 
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
-const manifestRefPath = path.resolve("../../docs/manifest");
-const requirementSetRefPath = path.resolve("../../docs/requirement-sets");
+const tocTemplateLocation = path.resolve("../../docs");
 
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
@@ -68,16 +67,8 @@ tryCatch(async () => {
         .filter(filename => filename !== "overview" && filename !== "images")
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
-    console.log(`Creating global TOC`);
-    let globalToc = <Toc>{items: [{name: "API reference"}]};
-    globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
-                                {"name": "Excel", "href": "/javascript/api/excel"},
-                                {"name": "OneNote", "href": "/javascript/api/onenote"},
-                                {"name": "Outlook", "href": "/javascript/api/outlook"},
-                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint"},
-                                {"name": "Visio", "href": "/javascript/api/visio"},
-                                {"name": "Word", "href": "/javascript/api/word"},
-                                {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
+    console.log(`Loading global TOC template`);
+    let globalToc = jsyaml.safeLoad(fsx.readFileSync(`${tocTemplateLocation}/toc.yml`).toString()) as Toc;
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
@@ -220,14 +211,14 @@ function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: stri
     if (!hostName) {
         latestToc = fixCommonToc(tocPath, globalToc);
     } else {
-        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber, hostName === "visio");
+        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber);
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
     return latestToc;
 }
 
-function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number, addNonApiRef: boolean): Toc {
+function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
@@ -335,10 +326,6 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
         });
     });
 
-    if (addNonApiRef) { 
-        addNonRefTocInformation(newToc);
-    }
-
     return newToc;
 }
 
@@ -420,16 +407,5 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         });
     });
 
-    addNonRefTocInformation(newToc);
     return newToc;
-}
-
-function addNonRefTocInformation(toc: Toc) {
-    // Add manifest TOC
-    let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
-    toc.items.push(manifestYml[0]);
-
-    // Add requirement sets TOC
-    let requirementSetYml = jsyaml.safeLoad(fsx.readFileSync(`${requirementSetRefPath}/toc.yml`).toString());
-    toc.items.push(requirementSetYml[0]);
 }
