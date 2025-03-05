@@ -72,6 +72,11 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
+    
+    
     /**
      *
      * Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
@@ -1689,6 +1694,7 @@ export declare namespace Excel {
         type: "WorkbookAutoSaveSettingChanged";
     }
     
+    
     /**
      * Provides information about the details of a `WorksheetChangedEvent` or `TableChangedEvent`.
      *
@@ -2996,6 +3002,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly names: Excel.NamedItemCollection;
+        
         /**
          * Represents a collection of PivotTableStyles associated with the workbook.
          *
@@ -3442,6 +3449,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.4]
          */
         readonly names: Excel.NamedItemCollection;
+        
         /**
          * Gets the `PageLayout` object of the worksheet.
          *
@@ -4442,6 +4450,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly columnIndex: number;
+        
         /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
@@ -4681,7 +4690,8 @@ export declare namespace Excel {
          *
          * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        
         /**
          * Converts the range cells with data types into text.
          *
@@ -5524,7 +5534,8 @@ export declare namespace Excel {
          *
          * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        
         /**
          * Converts all cells in the `RangeAreas` with data types into text.
          *
@@ -5683,6 +5694,7 @@ export declare namespace Excel {
          * @param valuesOnly - Whether to only consider cells with values as used cells.
          */
         getUsedRangeAreasOrNullObject(valuesOnly?: boolean): Excel.RangeAreas;
+        
         /**
          * Sets the `RangeAreas` to be recalculated when the next recalculation occurs.
          *
@@ -6045,6 +6057,7 @@ export declare namespace Excel {
          */
         weight?: boolean;
     }
+    
     /**
      * Represents the `format.protection` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.protection` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
      *
@@ -24438,8 +24451,8 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        removeHyperlinks = "RemoveHyperlinks"
-    }
+        removeHyperlinks = "RemoveHyperlinks",
+            }
     /**
      * Represents the format options for a data bar axis.
      *
@@ -29026,6 +29039,8 @@ export declare namespace Excel {
     }
     
     
+    
+    
     /**
      * An object containing the result of a function-evaluation operation
      *
@@ -33079,6 +33094,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             columnHidden?: boolean;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -37562,6 +37578,17 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface for updating data on the `NoteCollection` object, for use in `noteCollection.set({ ... })`. */
+        export interface NoteCollectionUpdateData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface for updating data on the `Note` object, for use in `note.set({ ... })`. */
+        export interface NoteUpdateData {
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             
@@ -37719,6 +37746,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             names?: Excel.Interfaces.NamedItemData[];
+            
             /**
             * Represents a collection of PivotTableStyles associated with the workbook.
             *
@@ -37920,6 +37948,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.4]
             */
             names?: Excel.Interfaces.NamedItemData[];
+            
             /**
             * Gets the `PageLayout` object of the worksheet.
             *
@@ -38136,6 +38165,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: number;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -43866,6 +43896,18 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `noteCollection.toJSON()`. */
+        export interface NoteCollectionData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface describing the data returned by calling `note.toJSON()`. */
+        export interface NoteData {
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -44489,6 +44531,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -52469,6 +52512,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -54352,6 +54396,8 @@ export declare namespace Excel {
              */
             name?: boolean;
         }
+        
+        
         
         
         /**

@@ -1259,6 +1259,8 @@ items:
             href: ../../manifest/action.md
           - name: AllFormFactors
             href: ../../manifest/allformfactors.md
+          - name: CommandSurface
+            href: ../../manifest/commandsurface.md
           - name: Control
             href: ../../manifest/control.md
           - name: Control (Button)
@@ -1378,6 +1380,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.18 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-18-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.17 requirement set
             href: ../../requirement-sets/excel/excel-api-1-17-requirement-set.md
@@ -1728,6 +1733,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.2 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.1 requirement set
             href: >-

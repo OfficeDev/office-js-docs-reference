@@ -3,10 +3,12 @@ name: Office.SessionData
 uid: 'outlook!Office.SessionData:interface'
 package: outlook!
 fullName: Office.SessionData
-summary: |-
+summary: >-
   Provides methods to manage an item's session data.
 
-  **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+
+  Session data is specific to a single mail item. It isn't shared among multiple items even if the same add-in is used
+  to set or retrieve data.
 remarks: >-
   \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -19,6 +21,9 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+
+
+  **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
 isPreview: false
 isDeprecated: false
 type: interface
@@ -150,13 +155,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAllAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'getAllAsync(callback: (asyncResult: Office.AsyncResult<object>) => void): void;'
       parameters:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;object&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -315,10 +320,7 @@ methods:
     uid: 'outlook!Office.SessionData#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(name, value, options, callback)'
-    summary: |-
-      Sets a session data key-value pair.
-
-      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+    summary: Sets a session data key-value pair.
     remarks: >-
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -331,6 +333,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
 
 
       #### Examples
@@ -384,10 +389,7 @@ methods:
     uid: 'outlook!Office.SessionData#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(name, value, callback)'
-    summary: |-
-      Sets a session data key-value pair.
-
-      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+    summary: Sets a session data key-value pair.
     remarks: >-
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -400,6 +402,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
     isPreview: false
     isDeprecated: false
     syntax:

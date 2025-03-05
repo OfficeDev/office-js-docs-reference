@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 01/23/2025
+ms.date: 03/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -283,7 +283,7 @@ This extension point puts buttons on the ribbon for the form that's displayed to
 
 ### Module
 
-This extension point puts buttons on the ribbon for the module extension.
+This extension point adds a module extension add-in to the Outlook navigation bar. It also adds buttons to a custom tab on the ribbon for the module extension. To learn how to create module extensions, see [Module extension Outlook add-ins](/office/dev/add-ins/outlook/extension-module-outlook-add-ins).
 
 > [!IMPORTANT]
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
@@ -292,8 +292,41 @@ This extension point puts buttons on the ribbon for the module extension.
 
 |  Element |  Description  |
 |:-----|:-----|
-|  [OfficeTab](officetab.md) |  Adds the command(s) to the default ribbon tab.  |
-|  [CustomTab](customtab.md) |  Adds the command(s) to the custom ribbon tab.  |
+| [SourceLocation](customfunctionssourcelocation.md) | Specifies the location of the HTML file that sets up the main user interface of the add-in. |
+| Label | Specifies the label of the module extension. Its **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the [ShortStrings](shortstrings.md) element. |
+| [CommandSurface](commandsurface.md) | Adds a group of add-in buttons to a custom tab on the ribbon. |
+
+#### Example
+
+```xml
+<ExtensionPoint xsi:type="Module">
+  <SourceLocation resid="residExtensionPointUrl"/>
+  <Label resid="residExtensionPointLabel"/>
+  <CommandSurface>
+    <CustomTab id="idTab">
+      <Group id="idGroup">
+        <Label resid="residGroupLabel"/>
+        <Control xsi:type="Button" id="group.changeToAssociate">
+          <Label resid="residChangeToAssociateLabel"/>
+          <Supertip>
+            <Title resid="residChangeToAssociateLabel"/>
+            <Description resid="residChangeToAssociateDesc"/>
+          </Supertip>
+          <Icon>
+            <bt:Image size="16" resid="residAssociateIcon16"/>
+            <bt:Image size="32" resid="residAssociateIcon32"/>
+            <bt:Image size="80" resid="residAssociateIcon80"/>
+          </Icon>
+          <Action xsi:type="ExecuteFunction">
+            <FunctionName>changeToAssociateRate</FunctionName>
+          </Action>
+        </Control>
+      </Group>
+      <Label resid="residCustomTabLabel"/>
+    </CustomTab>
+  </CommandSurface>
+</ExtensionPoint>
+```
 
 ### MobileMessageReadCommandSurface
 

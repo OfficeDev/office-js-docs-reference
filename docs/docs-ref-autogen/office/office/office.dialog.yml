@@ -9,6 +9,45 @@ summary: >-
 remarks: >-
   **Requirement set**:
   [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example shows how to open a dialog with a specified size. It also shows
+
+  // how to register a function to handle the message when Office.UI.messageParent() is called
+
+  // in the dialog and how to use that handler to close the dialog.
+
+
+  Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+      (asyncResult) => {
+          const dialog = asyncResult.value;
+          dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+              dialog.close();
+              // Do something to process the message.
+          });
+      }
+  );
+
+
+  // The following example does the same thing in TypeScript.
+
+
+  Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+      (asyncResult: Office.AsyncResult) => {
+          const dialog: Office.Dialog = asyncResult.value;
+          dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
+              dialog.close();
+              // Do something to process the message.
+          });
+      }
+  );
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

@@ -505,9 +505,9 @@ properties:
     fullName: shapes
     summary: >-
       Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes.
-      Currently, only text boxes and geometric shapes are supported.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+      Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures and canvases.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly shapes: Word.ShapeCollection;'
@@ -967,7 +967,13 @@ methods:
     package: word!
     fullName: getAnnotations()
     summary: Gets annotations set on this Paragraph object.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: This API requires a Microsoft 365 subscription in order to work properly because of an underlying
+      service's requirement. For more about this, see [GitHub issue
+      4953](https://github.com/OfficeDev/office-js/issues/4953)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1363,6 +1369,11 @@ methods:
       \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+      Important: This API requires a Microsoft 365 subscription in order to work properly because of an underlying
+      service's requirement. For more about this, see [GitHub issue
+      4953](https://github.com/OfficeDev/office-js/issues/4953)<!-- -->.
+
+
       #### Examples
 
 
@@ -1513,6 +1524,23 @@ methods:
       return:
         type: void
         description: ''
+  - name: insertCanvas(insertShapeOptions)
+    uid: 'word!Word.Paragraph#insertCanvas:member(1)'
+    package: word!
+    fullName: insertCanvas(insertShapeOptions)
+    summary: Inserts a floating canvas in front of text with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insertCanvas(insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;'
+      parameters:
+        - id: insertShapeOptions
+          description: 'Optional. The location and size of canvas. The default location and size is (0, 0, 300, 200).'
+          type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
   - name: insertContentControl(contentControlType)
     uid: 'word!Word.Paragraph#insertContentControl:member(1)'
     package: word!
@@ -1620,8 +1648,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
-      Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
+      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1644,9 +1672,9 @@ methods:
     uid: 'word!Word.Paragraph#insertGeometricShape:member(1)'
     package: word!
     fullName: 'insertGeometricShape(geometricShapeType, insertShapeOptions)'
-    summary: Inserts a geometric shape with its anchor at the beginning of the paragraph.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: Inserts a geometric shape in front of text with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1657,7 +1685,7 @@ methods:
           description: The geometric type of the shape to insert.
           type: '<xref uid="word!Word.GeometricShapeType:enum" />'
         - id: insertShapeOptions
-          description: 'Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).'
+          description: 'Optional. The location and size of the geometric shape. The default location and size is (0, 0, 100, 100).'
           type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
       return:
         type: '<xref uid="word!Word.Shape:class" />'
@@ -1666,9 +1694,9 @@ methods:
     uid: 'word!Word.Paragraph#insertGeometricShape:member(2)'
     package: word!
     fullName: 'insertGeometricShape(geometricShapeTypeString, insertShapeOptions)'
-    summary: Inserts a geometric shape with its anchor at the beginning of the paragraph.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: Inserts a geometric shape in front of text with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1739,7 +1767,7 @@ methods:
             "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual"
             | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"
         - id: insertShapeOptions
-          description: 'Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).'
+          description: 'Optional. The location and size of the geometric shape. The default location and size is (0, 0, 100, 100).'
           type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
       return:
         type: '<xref uid="word!Word.Shape:class" />'
@@ -1903,6 +1931,28 @@ methods:
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
+  - name: 'insertPictureFromBase64(base64EncodedImage, insertShapeOptions)'
+    uid: 'word!Word.Paragraph#insertPictureFromBase64:member(1)'
+    package: word!
+    fullName: 'insertPictureFromBase64(base64EncodedImage, insertShapeOptions)'
+    summary: Inserts a floating picture in front of text with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insertPictureFromBase64(base64EncodedImage: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;'
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The Base64-encoded image to be inserted.
+          type: string
+        - id: insertShapeOptions
+          description: >-
+            Optional. The location and size of the picture. The default location is (0, 0) and the default size is the
+            image's original size.
+          type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
   - name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     uid: 'word!Word.Paragraph#insertTable:member(1)'
     package: word!
@@ -1983,9 +2033,9 @@ methods:
     uid: 'word!Word.Paragraph#insertTextBox:member(1)'
     package: word!
     fullName: 'insertTextBox(text, insertShapeOptions)'
-    summary: Inserts a floating text box with its anchor at the beginning of the paragraph.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: Inserts a floating text box in front of text with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;'
@@ -1994,7 +2044,7 @@ methods:
           description: Optional. The text to insert into the text box.
           type: string
         - id: insertShapeOptions
-          description: 'Optional. The size and location of the text box. The default location and size is (0, 0, 100, 100).'
+          description: 'Optional. The location and size of the text box. The default location and size is (0, 0, 100, 100).'
           type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
       return:
         type: '<xref uid="word!Word.Shape:class" />'

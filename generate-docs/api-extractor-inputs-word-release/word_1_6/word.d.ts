@@ -182,6 +182,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly parentSectionOrNullObject: Word.Section;
+        
         /**
          * Gets the collection of table objects in the body.
          *
@@ -933,7 +934,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.CommentReplyCollectionData;
     }
     /**
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -1471,7 +1472,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -2231,6 +2232,7 @@ export declare namespace Word {
     export class Document extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
          *
@@ -2273,6 +2275,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         readonly settings: Word.SettingCollection;
+        
         /**
          * Specifies the ChangeTracking mode.
          *
@@ -2337,6 +2340,7 @@ export declare namespace Word {
          * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
         close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        
         
         /**
          * Deletes a bookmark, if it exists, from the document.
@@ -4061,6 +4065,12 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.NoteItemCollectionData;
     }
+    
+    
+    
+    
+    
+    
     /**
      * Represents a single paragraph in a selection, range, content control, or document body.
      *
@@ -4189,6 +4199,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
+        
         /**
          * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
          *
@@ -4465,6 +4476,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
+        
         /**
          * Wraps the Paragraph object with a content control.
          *
@@ -4489,6 +4501,8 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        
+        
         /**
          * Inserts HTML into the paragraph at the specified location.
          *
@@ -4529,6 +4543,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
+        
         /**
          * Inserts a table with the specified number of rows and columns.
          *
@@ -4551,6 +4566,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        
         /**
          * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
          *
@@ -4919,6 +4935,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
+        
         /**
          * Gets the collection of paragraph objects in the range.
          *
@@ -4977,6 +4994,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
+        
         /**
          * Gets the collection of table objects in the range.
          *
@@ -5206,6 +5224,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
+        
         /**
          * Insert a comment on the range.
          *
@@ -5310,6 +5329,8 @@ export declare namespace Word {
          * @param insertText - Optional. Text to be inserted into the footnote body. The default is "".
          */
         insertFootnote(insertText?: string): Word.NoteItem;
+        
+        
         /**
          * Inserts HTML at the specified location.
          *
@@ -5350,6 +5371,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
+        
         /**
          * Inserts a table with the specified number of rows and columns.
          *
@@ -5372,6 +5394,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        
         /**
          * Returns a new range as the intersection of this range with another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges aren't overlapped or adjacent.
          *
@@ -5531,6 +5554,7 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.RangeCollectionData;
     }
+    
     /**
      * Specifies the options to determine what to copy when inserting a file.
      *
@@ -7902,6 +7926,13 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.TrackedChangeCollectionData;
     }
+    
+    
+    
+    
+    
+    
+    
     /**
      * ChangeTracking mode.
      *
@@ -8776,51 +8807,62 @@ export declare namespace Word {
         evenPages = "EvenPages",
     }
     /**
+     * Represents the types of body objects.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
     enum BodyType {
         /**
+         * Unknown body type.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         unknown = "Unknown",
         /**
+         * Main document body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         mainDoc = "MainDoc",
         /**
+         * Section body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         section = "Section",
         /**
+         * Header body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         header = "Header",
         /**
+         * Footer body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         footer = "Footer",
         /**
+         * Table cell body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         tableCell = "TableCell",
         /**
+         * Footnote body.
          * @remarks
          * [Api set: WordApi 1.5]
          */
         footnote = "Footnote",
         /**
+         * Endnote body.
          * @remarks
          * [Api set: WordApi 1.5]
          */
         endnote = "Endnote",
         /**
+         * Note body e.g., endnote, footnote.
          * @remarks
          * [Api set: WordApi 1.5]
          */
@@ -8854,6 +8896,8 @@ export declare namespace Word {
     }
     
     /**
+     * Represents the location of a range. You can get range by calling getRange on different objects such as {@link Word.Paragraph} and {@link Word.ContentControl}.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
@@ -8865,25 +8909,25 @@ export declare namespace Word {
          */
         whole = "Whole",
         /**
-         * The starting point of the object. For content control, it is the point after the opening tag.
+         * The starting point of the object. For content control, it's the point after the opening tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         start = "Start",
         /**
-         * The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the point before the closing tag.
+         * The ending point of the object. For paragraph, it's the point before the EOP (end of paragraph). For content control, it's the point before the closing tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         end = "End",
         /**
-         * For content control only. It is the point before the opening tag.
+         * For content control only. It's the point before the opening tag.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         before = "Before",
         /**
-         * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
+         * The point after the object. If the object is a paragraph content control or table content control, it's the point after the EOP or Table characters.
          * @remarks
          * [Api set: WordApi 1.3]
          */
@@ -10828,6 +10872,19 @@ export declare namespace Word {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -11430,6 +11487,18 @@ export declare namespace Word {
         /** An interface for updating data on the `NoteItemCollection` object, for use in `noteItemCollection.set({ ... })`. */
         export interface NoteItemCollectionUpdateData {
             items?: Word.Interfaces.NoteItemData[];
+        }
+        /** An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`. */
+        export interface PageCollectionUpdateData {
+            items?: Word.Interfaces.PageData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Word.Interfaces.PaneData[];
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Word.Interfaces.WindowData[];
         }
         /** An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
@@ -12132,6 +12201,75 @@ export declare namespace Word {
         export interface TrackedChangeCollectionUpdateData {
             items?: Word.Interfaces.TrackedChangeData[];
         }
+        /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
+        export interface ShapeUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ShapeGroup` object, for use in `shapeGroup.set({ ... })`. */
+        export interface ShapeGroupUpdateData {
+            
+        }
+        /** An interface for updating data on the `Canvas` object, for use in `canvas.set({ ... })`. */
+        export interface CanvasUpdateData {
+            
+        }
+        /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
+        export interface ShapeCollectionUpdateData {
+            items?: Word.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
+        export interface ShapeFillUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the `TextFrame` object, for use in `textFrame.set({ ... })`. */
+        export interface TextFrameUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ShapeTextWrap` object, for use in `shapeTextWrap.set({ ... })`. */
+        export interface ShapeTextWrapUpdateData {
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
             
@@ -12191,6 +12329,7 @@ export declare namespace Word {
              * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
              */
             paragraphs?: Word.Interfaces.ParagraphData[];
+            
             /**
              * Gets the collection of table objects in the body.
              *
@@ -12638,48 +12777,50 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
+            
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
-            * Gets the custom XML parts in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the custom XML parts in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             customXmlParts?: Word.Interfaces.CustomXmlPartData[];
             /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the properties of the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
-            * Gets the collection of section objects in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of section objects in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             sections?: Word.Interfaces.SectionData[];
             /**
-            * Gets the add-in's settings in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the add-in's settings in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             settings?: Word.Interfaces.SettingData[];
+            
             /**
              * Specifies the ChangeTracking mode.
              *
@@ -13132,6 +13273,32 @@ export declare namespace Word {
         export interface NoteItemCollectionData {
             items?: Word.Interfaces.NoteItemData[];
         }
+        /** An interface describing the data returned by calling `page.toJSON()`. */
+        export interface PageData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `pageCollection.toJSON()`. */
+        export interface PageCollectionData {
+            items?: Word.Interfaces.PageData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Word.Interfaces.PaneData[];
+        }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Word.Interfaces.WindowData[];
+        }
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             /**
@@ -13169,6 +13336,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
+            
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
@@ -13417,6 +13585,8 @@ export declare namespace Word {
              * [Api set: WordApi 1.2]
              */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
+            
+            
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
@@ -14081,6 +14251,84 @@ export declare namespace Word {
         export interface TrackedChangeCollectionData {
             items?: Word.Interfaces.TrackedChangeData[];
         }
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
+        export interface ShapeData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
+        export interface ShapeGroupData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `canvas.toJSON()`. */
+        export interface CanvasData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
+        export interface ShapeCollectionData {
+            items?: Word.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
+        export interface ShapeFillData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `textFrame.toJSON()`. */
+        export interface TextFrameData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shapeTextWrap.toJSON()`. */
+        export interface ShapeTextWrapData {
+            
+            
+            
+            
+            
+            
+        }
         
         
         
@@ -14480,7 +14728,7 @@ export declare namespace Word {
             id?: boolean;
         }
         /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -14647,7 +14895,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -15834,6 +16082,8 @@ export declare namespace Word {
              */
             type?: boolean;
         }
+        
+        
         /**
          * Represents a single paragraph in a selection, range, content control, or document body.
          *
@@ -17877,6 +18127,13 @@ export declare namespace Word {
              */
             type?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
     }
 }
 export declare namespace Word {

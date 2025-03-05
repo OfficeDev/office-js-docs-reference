@@ -23,6 +23,24 @@ remarks: >-
   </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Not
   applicable </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td> Supported
   </td><td> Supported </td><td> Not applicable </td></tr> </table>
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Get the Office host, version, and platform in which the add-in is running.
+
+  const contextInfo = Office.context.diagnostics;
+
+  console.log("Office application: " + contextInfo.host);
+
+  console.log("Office version: " + contextInfo.version);
+
+  console.log("Platform: " + contextInfo.platform);
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -39,6 +57,24 @@ properties:
       content: 'auth: Auth;'
       return:
         type: '<xref uid="office!Office.Auth:interface" />'
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Get an access token.
+          const authContext = Office.context.auth;
+          authContext.getAccessTokenAsync((result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.log("Error obtaining token", result.error);
+                  return;
+              }
+
+              const token = result.value;
+              console.log(token);
+          });
+          ```
   - name: commerceAllowed
     uid: 'office!Office.Context#commerceAllowed:member'
     package: office!

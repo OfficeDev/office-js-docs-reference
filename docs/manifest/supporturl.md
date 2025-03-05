@@ -1,7 +1,7 @@
 ---
 title: SupportUrl element in the manifest file
 description: The SupportUrl element specifies the URL of a page that provides support information for your add-in.
-ms.date: 10/09/2018
+ms.date: 01/28/2025
 ms.localizationpriority: medium
 ---
 
@@ -9,18 +9,17 @@ ms.localizationpriority: medium
 
 Specifies the URL of a page that provides support information for your add-in.
 
+> [!NOTE]
+> In Outlook, the URL specified in the **\<SupportUrl\>** element isn't shown in the add-in or client. It's only shown in the **Support** section of the add-in when it's published to [AppSource](https://appsource.microsoft.com/).
+
 ## Syntax
 
 ```XML
 <OfficeApp>
 ...
-  <IconUrl DefaultValue="https://contoso.com/assets/icon-32.png" />
+  <IconUrl DefaultValue="https://contoso.com/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://contoso.com/assets/hi-res-icon.png"/>
-  
-  
-  <SupportUrl DefaultValue="https://contoso.com/support " />
-  
-  
+  <SupportUrl DefaultValue="https://contoso.com/support"/>
   <AppDomains>
   ...
   </AppDomains>
@@ -36,7 +35,7 @@ Specifies the URL of a page that provides support information for your add-in.
 
 |  Element | Required | Description  |
 |:-----|:-----:|:-----|
-|  [Override](override.md)   | No | Specifies the setting for additional locale urls |
+| [Override](override.md) | No | Specifies the setting for additional locale URLs. |
 
 ## Attributes
 

@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.PlaceholderFormatLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.PlaceholderFormatLoadOptions
+summary: Represents the properties of a `placeholder` shape.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: containedType
+    uid: 'powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions#containedType:member'
+    package: powerpoint!
+    fullName: containedType
+    summary: >-
+      Gets the type of the shape contained within the placeholder. See
+      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details. Returns `null` if the placeholder
+      is empty.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'containedType?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      Returns the type of this placeholder. See
+      [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum) for details.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
