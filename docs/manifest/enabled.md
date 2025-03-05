@@ -1,7 +1,7 @@
 ---
 title: Enabled element in the manifest file
 description: Learn how to specify that an Add-in Command is disabled when the add-in launches.
-ms.date: 01/23/2025
+ms.date: 03/11/2025
 ms.localizationpriority: medium
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Context Menu API requirement sets
 description: Learn more about the Context Menu API requirement sets and the platforms it supports.
-ms.date: 01/23/2025
+ms.date: 03/11/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -16,7 +16,7 @@ Use the Context Menu API requirement set to configure the availability of custom
 
 | Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| ContextMenuApi 1.1 | Supported | TBD | TBD | Not supported | TBD | Not supported | Not supported |
+| ContextMenuApi 1.1 | Supported | Version 2502 (Build 18526.20144) | Version 2502 (Build 18526.20144) | Not supported | Version 16.94 (25020927) | Not supported | Not supported |
 
 To find out more about versions and build numbers, see:
 
@@ -28,7 +28,7 @@ For information about Common API requirement sets, see [Office Common API requir
 
 ## ContextMenuApi 1.1
 
-To learn how to programmatically configure the availability of custom items on a context menu, see [Enable or disable add-in commands](/office/dev/add-ins/design/disable-add-in-commands). For details about the API, see [Office.ContextMenu](/javascript/api/office/office.contextmenu).
+To learn how to programmatically configure the availability of custom items on a context menu, see [Change the availability of add-in commands](/office/dev/add-ins/design/disable-add-in-commands). For details about the API, see [Office.ContextMenu](/javascript/api/office/office.contextmenu).
 
 ## See also
 
