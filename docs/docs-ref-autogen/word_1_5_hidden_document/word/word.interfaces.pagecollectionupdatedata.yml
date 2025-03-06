@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.PageCollectionUpdateData
+uid: 'word!Word.Interfaces.PageCollectionUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.PageCollectionUpdateData
+summary: 'An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.PageCollectionUpdateData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.PageData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.PageData:interface" />[]'
