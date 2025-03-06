@@ -68,8 +68,10 @@ tryCatch(async () => {
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
     console.log(`Loading global TOC template`);
-    let globalToc = jsyaml.safeLoad(fsx.readFileSync(`${tocTemplateLocation}/toc.yml`).toString()) as Toc;
-
+    let globalTocString =  fsx.readFileSync(`${tocTemplateLocation}/toc.yml`).toString();
+    
+    globalTocString = globalTocString.replace(/href:\s*(.*)\.md/g, "href: ../$1.md");
+    let globalToc = jsyaml.safeLoad(globalTocString) as Toc;
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
     fsx.readdirSync(docsSource)
