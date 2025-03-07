@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Item object model.
-ms.date: 11/19/2024
+ms.date: 03/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -184,6 +184,8 @@ ms.localizationpriority: medium
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-removehandlerasync-member(1)) | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 | saveAsync([options], callback) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-saveasync-member(1)) | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-saveasync-member(1)) | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
+| sendAsync([options], [callback]) | **read/write mailbox** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.15&preserve-view=true#outlook-office-appointmentcompose-sendasync-member(1)) | [1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md) |
+| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.15&preserve-view=true#outlook-office-messagecompose-sendasync-member(1)) | [1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md) |
 | setSelectedDataAsync(data, [options], callback) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-setselecteddataasync-member(1)) | [1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-setselecteddataasync-member(1)) | [1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md) |
 
