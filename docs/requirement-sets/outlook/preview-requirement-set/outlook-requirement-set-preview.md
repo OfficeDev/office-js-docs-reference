@@ -101,40 +101,6 @@ Added a new object that represents the properties and methods of a selected mess
 
 ---
 
-### Programmatically send a message or appointment
-
-#### [Office.context.mailbox.item.sendAsync](office.context.mailbox.item.md#methods)
-
-Added a new method to programmatically send a message or appointment. For a sample implementation of the `sendAsync` method, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#programmatically-send-the-item-from-the-task-pane-optional-preview).
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Smart Alerts improvements
-
-#### [Implement the Take Action button in the dialog](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)
-
-Updated the implementation of the `cancelLabel` and `commandId` options of the `event.completed` method. The updated implementation adds a **Take Action** button to the Smart Alerts dialog.
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.SmartAlertsEventCompletedOptions.errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member)
-
-Added an `event.completed` option to format a message in a Smart Alerts dialog using Markdown. To learn more, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough) and [Limitations to formatting the dialog message using Markdown](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#limitations-to-formatting-the-dialog-message-using-markdown).
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
 ### Temporarily set the body or subject displayed in read mode
 
 #### [Office.context.mailbox.item.display](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-display-member)
