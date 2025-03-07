@@ -5,8 +5,8 @@ package: office!
 fullName: Office.Control
 summary: Represents an individual control or command and the state it should have.
 remarks: >-
-  For code samples showing how to use a `Control` object and its properties, see [Enable and Disable Add-in
-  Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
+  For code samples showing how to use a `Control` object and its properties, see [Change the availability of add-in
+  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
   tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
 
 
