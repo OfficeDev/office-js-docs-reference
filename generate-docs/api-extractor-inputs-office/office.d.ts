@@ -237,6 +237,10 @@ export declare namespace Office {
      */
     const auth: Auth;
     /**
+     * Represents the context menu object associated with the Office application.
+     */
+    const contextMenu: ContextMenu;
+    /**
      * Represents the Device Permission interface.
      */
     const devicePermission: DevicePermission;
@@ -4792,11 +4796,70 @@ export declare namespace Office {
         version: string;
     }
     /**
+     * Provides options to manage the state of the Office context menu.
+     *
+     * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands}.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+     */
+    export interface ContextMenu {
+        /**
+         * Sends a request to Office to update the context menu.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+         *
+         * **Important**: This API is only used to request an update. The actual UI update to the context menu is controlled by the Office application,
+         * so the exact timing of the context menu update (or refresh) can't be determined by the completion of this API.
+         *
+         * @param input - Represents the updates to be made to the context menu controls. Only the changes specified in the `control` parameter are made.
+         *                Other context menu controls that aren't specified remain as is in the Office application.
+         */
+        requestUpdate(input: ContextMenuUpdaterData): Promise<void>;
+    }
+    /**
+     * Represents an individual context menu control and its state.
+     *
+     * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands}.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+     */
+    export interface ContextMenuControl {
+        /**
+         * Identifier of the context menu control as specified in the manifest.
+         */
+        id: string;
+        /**
+         * Indicates whether the control is available on the context menu.
+         */
+        enabled?: boolean;
+    }
+    /**
+     * Represents the changes to the context menu.
+     *
+     * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands}.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+     */
+    export interface ContextMenuUpdaterData {
+        /**
+         * Collection of context menu controls whose state is set using `Office.contextMenu.requestUpdate`.
+         */
+        controls: ContextMenuControl[];
+    }
+    /**
      * Represents an individual control or command and the state it should have.
      *
      * @remarks
      *
-     * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+     * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
@@ -7236,7 +7299,7 @@ export declare namespace Office {
          *
          * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
          * 
-         * For code examples, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+         * For code examples, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
          *
          * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.
          */
@@ -7783,7 +7846,7 @@ export declare namespace Office {
         size: number;
     }
     /**
-     * Represents an individual tab and the state it should have. For code examples, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+     * Represents an individual tab and the state it should have. For code examples, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
      * @remarks
      *
