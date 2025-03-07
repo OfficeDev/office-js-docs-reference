@@ -50,10 +50,8 @@ properties:
     package: powerpoint!
     fullName: customXmlParts
     summary: Returns a collection of custom XML parts in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly customXmlParts: PowerPoint.CustomXmlPartCollection;'
@@ -83,6 +81,20 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: index
+    uid: 'powerpoint!PowerPoint.Slide#index:member'
+    package: powerpoint!
+    fullName: index
+    summary: Returns the zero-based index of the slide representing its position in the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type: number
   - name: layout
     uid: 'powerpoint!PowerPoint.Slide#layout:member'
     package: powerpoint!
@@ -132,6 +144,27 @@ properties:
       return:
         type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
 methods:
+  - name: applyLayout(slideLayout)
+    uid: 'powerpoint!PowerPoint.Slide#applyLayout:member(1)'
+    package: powerpoint!
+    fullName: applyLayout(slideLayout)
+    summary: 'Applies the specified layout to the slide, changing its design and structure according to the chosen layout.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyLayout(slideLayout: PowerPoint.SlideLayout): void;'
+      parameters:
+        - id: slideLayout
+          description: >-
+            The layout to be applied to the slide. This is typically an instance of a predefined layout from the slide
+            master.
+          type: '<xref uid="powerpoint!PowerPoint.SlideLayout:class" />'
+      return:
+        type: void
+        description: ''
   - name: delete()
     uid: 'powerpoint!PowerPoint.Slide#delete:member(1)'
     package: powerpoint!
@@ -276,6 +309,25 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: ''
+  - name: moveTo(slideIndex)
+    uid: 'powerpoint!PowerPoint.Slide#moveTo:member(1)'
+    package: powerpoint!
+    fullName: moveTo(slideIndex)
+    summary: Moves the slide to a new position within the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'moveTo(slideIndex: number): void;'
+      parameters:
+        - id: slideIndex
+          description: The zero-based index where the slide should be moved.
+          type: number
+      return:
+        type: void
+        description: ''
   - name: setSelectedShapes(shapeIds)
     uid: 'powerpoint!PowerPoint.Slide#setSelectedShapes:member(1)'
     package: powerpoint!
@@ -343,7 +395,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.

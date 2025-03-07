@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 ms.localizationpriority: high
-ms.date: 10/07/2024
+ms.date: 03/03/2025
 ---
 
 # Office Add-ins JavaScript API reference
@@ -24,6 +24,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <ul>
             <li><a href="/javascript/api/excel?view=excel-js-preview&preserve-view=true">ExcelApi Preview</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-online&preserve-view=true">ExcelApiOnline 1.1</a></li>
+            <li><a href="/javascript/api/excel?view=excel-js-1.18&preserve-view=true">ExcelApi 1.18</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.17&preserve-view=true">ExcelApi 1.17</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.16&preserve-view=true">ExcelApi 1.16</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.15&preserve-view=true">ExcelApi 1.15</a></li>
@@ -72,6 +73,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <ul>
             <li><a href="/javascript/api/word?view=word-js-preview&preserve-view=true">WordApi Preview</a></li>
             <li><a href="/javascript/api/word?view=word-js-online&preserve-view=true">WordApiOnline 1.1</a></li>
+            <li><a href="/javascript/api/word?view=word-js-desktop-1.2&preserve-view=true">WordApiDesktop 1.2</a></li>
             <li><a href="/javascript/api/word?view=word-js-desktop-1.1&preserve-view=true">WordApiDesktop 1.1</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.5-hidden-document&preserve-view=true">WordApiHiddenDocument 1.5</a> (Desktop only)</li>
             <li><a href="/javascript/api/word?view=word-js-1.4-hidden-document&preserve-view=true">WordApiHiddenDocument 1.4</a> (Desktop only)</li>
@@ -93,6 +95,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <h3>PowerPoint APIs</h3>
         <ul>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true">PowerPointApi Preview</a></li>
+            <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.7&preserve-view=true">PowerPointApi 1.7</a></li>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.6&preserve-view=true">PowerPointApi 1.6</a></li>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.5&preserve-view=true">PowerPointApi 1.5</a></li>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.4&preserve-view=true">PowerPointApi 1.4</a></li>
@@ -132,6 +135,7 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
 
 - `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
 - `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)
+- `WordApiDesktop 1.2`: [Word JavaScript API desktop-only requirement set 1.2](/javascript/api/requirement-sets/word/word-api-desktop-1.2-requirement-set)
 - `WordApiDesktop 1.1`: [Word JavaScript API desktop-only requirement set 1.1](/javascript/api/requirement-sets/word/word-api-desktop-1.1-requirement-set)
 - `WordApiHiddenDocument 1.5`: [Word JavaScript API desktop-only (hidden document) requirement set 1.5](/javascript/api/requirement-sets/word/word-api-1.5-hidden-document-requirement-set)
 - `WordApiHiddenDocument 1.4`: [Word JavaScript API desktop-only (hidden document) requirement set 1.4](/javascript/api/requirement-sets/word/word-api-1.4-hidden-document-requirement-set)

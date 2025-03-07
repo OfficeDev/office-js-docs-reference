@@ -28,7 +28,31 @@ summary: >-
 
 
   - [Message](xref:outlook!Office.Message:interface)
-remarks: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+
+  const attachmentUrl = $("#attachmentUrl")
+    .val()
+    .toString();
+  Office.context.mailbox.item.addFileAttachmentAsync(
+    attachmentUrl,
+    getFileName(attachmentUrl),
+    { isInline: false },
+    (result) => {
+      console.log(result);
+    }
+  );
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

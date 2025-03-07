@@ -207,6 +207,27 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
         description: The newly inserted shape.
+  - name: addGroup(values)
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addGroup:member(1)'
+    package: powerpoint!
+    fullName: addGroup(values)
+    summary: Create a shape group for several shapes.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addGroup(values: Array<string | Shape>): PowerPoint.Shape;'
+      parameters:
+        - id: values
+          description: An array of shape IDs or `Shape` objects.
+          type: 'Array&lt;string | <xref uid="powerpoint!PowerPoint.Shape:class" />&gt;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: >-
+          A `Shape` object that represents the shape group. Use the `Shape.group` property to access the `ShapeGroup`
+          object for the group.
   - name: 'addLine(connectorType, options)'
     uid: 'powerpoint!PowerPoint.ShapeCollection#addLine:member(1)'
     package: powerpoint!
@@ -542,7 +563,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.

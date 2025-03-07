@@ -517,6 +517,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "excel-js-1.18",
+        "src": "docs-ref-autogen/excel_1_18",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "excel-js-1.18",
+        "src": "docs-ref-autogen/excel_1_18",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "excel-js-online",
         "src": "docs-ref-autogen/excel_online",
         "dest": "api/office-js-docs-reference"
@@ -621,6 +633,18 @@
         "files": ["**/*.md", "**/*.yml"],
         "group": "powerpoint-js-1.6",
         "src": "docs-ref-autogen/powerpoint_1_6",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.7",
+        "src": "docs-ref-autogen/powerpoint_1_7",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "powerpoint-js-1.7",
+        "src": "docs-ref-autogen/powerpoint_1_7",
         "dest": "api"
       },
       {
@@ -801,6 +825,18 @@
         "files": ["**/*.md", "**/*.yml"],
         "group": "word-js-1.9",
         "src": "docs-ref-autogen/word_1_9",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "word-js-desktop-1.2",
+        "src": "docs-ref-autogen/word_desktop_1_2",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-desktop-1.2",
+        "src": "docs-ref-autogen/word_desktop_1_2",
         "dest": "api"
       },
       {
@@ -962,7 +998,11 @@
       "excel-js-1.17": {
         "dest": "excel-js-1.17",
         "moniker_range": "excel-js-1.17"
-      },      
+      },
+      "excel-js-1.18": {
+        "dest": "excel-js-1.18",
+        "moniker_range": "excel-js-1.18"
+      }, 
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
@@ -998,6 +1038,10 @@
       "powerpoint-js-1.6": {
         "dest": "powerpoint-js-1.6",
         "moniker_range": "powerpoint-js-1.6"
+      },
+      "powerpoint-js-1.7": {
+        "dest": "powerpoint-js-1.7",
+        "moniker_range": "powerpoint-js-1.7"
       },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
@@ -1059,6 +1103,10 @@
         "dest": "word-js-1.9",
         "moniker_range": "word-js-1.9"
       },
+      "word-js-desktop-1.2": {
+        "dest": "word-js-desktop-1.2",
+        "moniker_range": "word-js-desktop-1.2"
+      },
       "word-js-online": {
         "dest": "word-js-online",
         "moniker_range": "word-js-online"
@@ -1106,7 +1154,7 @@
       "feedback_product_url": "/answers/tags/321/office-development",
       "open_source_feedback_contributorGuideUrl": "https://github.com/OfficeDev/office-js-docs-reference/blob/main/Contributing.md",
       "open_source_feedback_issueTitle": "",
-      "open_source_feedback_issueUrl": "https://github.com/OfficeDev/office-js-docs-reference/issues/new?template=3-customer-feedback.yml",
+      "open_source_feedback_issueUrl": "https://github.com/OfficeDev/office-js-docs-reference/issues/new?template=3_customer-feedback.yml",
       "open_source_feedback_productName": "Office Add-ins",
       "titleSuffix": "Office Add-ins",
       "ms.devlang": "javascript",
@@ -1135,6 +1183,7 @@
         "docs-ref-autogen/excel_1_15/**": "excel",
         "docs-ref-autogen/excel_1_16/**": "excel",
         "docs-ref-autogen/excel_1_17/**": "excel",
+        "docs-ref-autogen/excel_1_18/**": "excel",
         "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/onenote/**": "onenote",
         "docs-ref-autogen/outlook/**": "outlook",
@@ -1159,6 +1208,7 @@
         "docs-ref-autogen/powerpoint_1_4/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_5/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_6/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_7/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
         "docs-ref-autogen/word_1_1/**": "word",
@@ -1175,6 +1225,7 @@
         "docs-ref-autogen/word_1_4_hidden_document/**": "word",
         "docs-ref-autogen/word_1_5_hidden_document/**": "word",
         "docs-ref-autogen/word_desktop_1_1/**": "word",
+        "docs-ref-autogen/word_desktop_1_2/**": "word",
         "requirement-sets/excel/**": "excel",
         "requirement-sets/onenote/**": "onenote",
         "requirement-sets/outlook/**": "outlook",
@@ -1208,7 +1259,7 @@
         ]
       },
       "ms.topic": {
-        "docs-ref-autogen/**": "language-reference"
+        "docs-ref-autogen/**": "generated-reference"
       }
     },
     "template": [],

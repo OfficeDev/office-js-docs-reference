@@ -1,0 +1,15 @@
+### YamlMime:TSEnum
+name: PowerPoint.ErrorCodes
+uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
+package: powerpoint!
+fullName: PowerPoint.ErrorCodes
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: generalException
+    uid: 'powerpoint!PowerPoint.ErrorCodes.generalException:member'
+    package: powerpoint!
+    summary: ''
+    value: '"GeneralException"'

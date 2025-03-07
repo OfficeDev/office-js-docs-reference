@@ -672,6 +672,62 @@ Office.InfobarClickedEventArgs:interface:
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
     }
+Office.LoadedMessageCompose:interface:
+  - |-
+    // Gets the sender's email address of each selected message.
+    async function getSenderEmailAddress(item) {
+        const itemId = item.itemId;
+        await new Promise((resolve) => {
+            Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.log(result.error.message);
+                    return;
+                }
+
+                const loadedItem = result.value;
+                const sender = loadedItem.from.emailAddress;
+                console.log(sender);
+
+                // Unload the current message before processing another selected message.
+                loadedItem.unloadAsync((asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    resolve();
+                });
+            });
+        });
+    }
+Office.LoadedMessageRead:interface:
+  - |-
+    // Gets the sender's email address of each selected message.
+    async function getSenderEmailAddress(item) {
+        const itemId = item.itemId;
+        await new Promise((resolve) => {
+            Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.log(result.error.message);
+                    return;
+                }
+
+                const loadedItem = result.value;
+                const sender = loadedItem.from.emailAddress;
+                console.log(sender);
+
+                // Unload the current message before processing another selected message.
+                loadedItem.unloadAsync((asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    resolve();
+                });
+            });
+        });
+    }
 Office.Location#getAsync:member(1):
   - |-
     const userContext = { value : 1 };
@@ -1847,12 +1903,12 @@ Office.SpamReportingEventCompletedOptions:interface:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-            * and shows a post-processing dialog to the user.
-            * If an error occurs while the message is being processed, the `onErrorDeleteItem`
-            * property determines whether the message will be deleted.
-            */
+             * Signals that the spam-reporting event has completed processing.
+             * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+             * and shows a post-processing dialog to the user.
+             * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+             * property determines whether the message will be deleted.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
@@ -1863,6 +1919,42 @@ Office.SpamReportingEventCompletedOptions:interface:
                     description: "Thank you for reporting this message.",
                 },
             });
+        });
+    }
+Office.SpamReportingEventCompletedOptions#commandId:member:
+  - |-
+    function onSpamReport(event) {
+        // Run operations to process the reported message.
+
+        /**
+         * Signals that the spam-reporting event has completed processing.
+         * A task pane is opened instead of showing a post-processing dialog.
+         * Context data is then passed to the task pane for processing.
+         * To ensure that the task pane opens and receives the context data,
+         * the reported message mustn't be moved from the folder in which it resides.
+         */
+        event.completed({
+            commandId: "msgReadOpenPaneButton",
+            contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+            moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
+        });
+    }
+Office.SpamReportingEventCompletedOptions#contextData:member:
+  - |-
+    function onSpamReport(event) {
+        // Run operations to process the reported message.
+
+        /**
+         * Signals that the spam-reporting event has completed processing.
+         * A task pane is opened instead of showing a post-processing dialog.
+         * Context data is then passed to the task pane for processing.
+         * To ensure that the task pane opens and receives the context data,
+         * the reported message mustn't be moved from the folder in which it resides.
+         */
+        event.completed({
+            commandId: "msgReadOpenPaneButton",
+            contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+            moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
         });
     }
 Office.SpamReportingEventCompletedOptions#postProcessingAction:member:
@@ -1879,10 +1971,10 @@ Office.SpamReportingEventCompletedOptions#postProcessingAction:member:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-            * post-processing dialog to the user.
-            */
+             * Signals that the spam-reporting event has completed processing.
+             * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+             * post-processing dialog to the user.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 postProcessingAction: "moveToSpamFolder",

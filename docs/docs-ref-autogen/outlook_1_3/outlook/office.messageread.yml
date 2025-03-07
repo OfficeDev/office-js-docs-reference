@@ -71,9 +71,15 @@ properties:
       -->**: Message Read
 
 
-      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
-      returned. For more information, see [Blocked attachments in
+      **Important**:
+
+
+      - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned.
+      For more information, see [Blocked attachments in
       Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!-- -->.
+
+
+      - Attachments added using the **Upload and share** option aren't returned.
 
 
       #### Examples

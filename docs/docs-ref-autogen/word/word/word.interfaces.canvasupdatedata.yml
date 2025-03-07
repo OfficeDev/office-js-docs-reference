@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.CanvasUpdateData
+uid: 'word!Word.Interfaces.CanvasUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.CanvasUpdateData
+summary: 'An interface for updating data on the `Canvas` object, for use in `canvas.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: shape
+    uid: 'word!Word.Interfaces.CanvasUpdateData#shape:member'
+    package: word!
+    fullName: shape
+    summary: Gets the Shape object associated with the canvas.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shape?: Word.Interfaces.ShapeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'

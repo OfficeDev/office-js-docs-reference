@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.RangeCollectionData
+uid: 'word!Word.Interfaces.RangeCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.RangeCollectionData
+summary: An interface describing the data returned by calling `rangeCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.RangeCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.RangeData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.RangeData:interface" />[]'

@@ -1,0 +1,438 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeCollectionLoadOptions
+uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ShapeCollectionLoadOptions
+summary: >-
+  Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only the following shapes are
+  supported: text boxes, geometric shapes, groups, pictures and canvases.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: allowOverlap
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#allowOverlap:member'
+    package: word!
+    fullName: allowOverlap
+    summary: 'For EACH ITEM in the collection: Specifies whether a given shape can overlap other shapes.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowOverlap?: boolean;'
+      return:
+        type: boolean
+  - name: altTextDescription
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#altTextDescription:member'
+    package: word!
+    fullName: altTextDescription
+    summary: >-
+      For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the
+      shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type: boolean
+  - name: body
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#body:member'
+    package: word!
+    fullName: body
+    summary: >-
+      For EACH ITEM in the collection: Represents the body object of the shape. Only applies to text boxes and geometric
+      shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: canvas
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#canvas:member'
+    package: word!
+    fullName: canvas
+    summary: >-
+      For EACH ITEM in the collection: Gets the canvas associated with the shape. An object with its `isNullObject`
+      property set to `true` will be returned if the shape type isn't "Canvas". For further information, see
+      [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canvas?: Word.Interfaces.CanvasLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CanvasLoadOptions:interface" />'
+  - name: fill
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#fill:member'
+    package: word!
+    fullName: fill
+    summary: 'For EACH ITEM in the collection: Returns the fill formatting of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fill?: Word.Interfaces.ShapeFillLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeFillLoadOptions:interface" />'
+  - name: geometricShapeType
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#geometricShapeType:member'
+    package: word!
+    fullName: geometricShapeType
+    summary: >-
+      For EACH ITEM in the collection: The geometric shape type of the shape. It will be null if isn't a geometric
+      shape.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'geometricShapeType?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#height:member'
+    package: word!
+    fullName: height
+    summary: 'For EACH ITEM in the collection: The height, in points, of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: heightRelative
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#heightRelative:member'
+    package: word!
+    fullName: heightRelative
+    summary: >-
+      For EACH ITEM in the collection: The percentage of shape height to vertical relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'heightRelative?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#id:member'
+    package: word!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Gets an integer that represents the shape identifier.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isChild
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#isChild:member'
+    package: word!
+    fullName: isChild
+    summary: 'For EACH ITEM in the collection: Check whether this shape is a child of a group shape or a canvas shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isChild?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#left:member'
+    package: word!
+    fullName: left
+    summary: >-
+      For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the horizontal
+      relative position, see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+      For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to
+      the top left corner.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: leftRelative
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#leftRelative:member'
+    package: word!
+    fullName: leftRelative
+    summary: >-
+      For EACH ITEM in the collection: The relative left position as a percentage from the left side of the shape to the
+      horizontal relative position, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline or child
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftRelative?: boolean;'
+      return:
+        type: boolean
+  - name: lockAspectRatio
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: 'For EACH ITEM in the collection: Specifies if the aspect ratio of this shape is locked.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#name:member'
+    package: word!
+    fullName: name
+    summary: 'For EACH ITEM in the collection: The name of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: parentCanvas
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#parentCanvas:member'
+    package: word!
+    fullName: parentCanvas
+    summary: >-
+      For EACH ITEM in the collection: Gets the top-level parent canvas shape of this child shape. It will be null if it
+      isn't a child shape of a canvas.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentCanvas?: Word.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeLoadOptions:interface" />'
+  - name: parentGroup
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#parentGroup:member'
+    package: word!
+    fullName: parentGroup
+    summary: >-
+      For EACH ITEM in the collection: Gets the top-level parent group shape of this child shape. It will be null if it
+      isn't a child shape of a group.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentGroup?: Word.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeLoadOptions:interface" />'
+  - name: relativeHorizontalPosition
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#relativeHorizontalPosition:member'
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: >-
+      For EACH ITEM in the collection: The relative horizontal position of the shape. For an inline shape, it can't be
+      set. For details, see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relativeHorizontalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: relativeHorizontalSize
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#relativeHorizontalSize:member'
+    package: word!
+    fullName: relativeHorizontalSize
+    summary: >-
+      For EACH ITEM in the collection: The relative horizontal size of the shape. For an inline or child shape, it can't
+      be set. For details, see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relativeHorizontalSize?: boolean;'
+      return:
+        type: boolean
+  - name: relativeVerticalPosition
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#relativeVerticalPosition:member'
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: >-
+      For EACH ITEM in the collection: The relative vertical position of the shape. For an inline shape, it can't be
+      set. For details, see [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relativeVerticalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: relativeVerticalSize
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#relativeVerticalSize:member'
+    package: word!
+    fullName: relativeVerticalSize
+    summary: >-
+      For EACH ITEM in the collection: The relative vertical size of the shape. For an inline or child shape, it can't
+      be set. For details, see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relativeVerticalSize?: boolean;'
+      return:
+        type: boolean
+  - name: rotation
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#rotation:member'
+    package: word!
+    fullName: rotation
+    summary: 'For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape. Not applicable to Canvas shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rotation?: boolean;'
+      return:
+        type: boolean
+  - name: shapeGroup
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#shapeGroup:member'
+    package: word!
+    fullName: shapeGroup
+    summary: >-
+      For EACH ITEM in the collection: Gets the shape group associated with the shape. An object with its `isNullObject`
+      property set to `true` will be returned if the shape type isn't "GroupShape". For further information, see
+      [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shapeGroup?: Word.Interfaces.ShapeGroupLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeGroupLoadOptions:interface" />'
+  - name: textFrame
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#textFrame:member'
+    package: word!
+    fullName: textFrame
+    summary: 'For EACH ITEM in the collection: Gets the text frame object of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textFrame?: Word.Interfaces.TextFrameLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TextFrameLoadOptions:interface" />'
+  - name: textWrap
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#textWrap:member'
+    package: word!
+    fullName: textWrap
+    summary: 'For EACH ITEM in the collection: Returns the text wrap formatting of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textWrap?: Word.Interfaces.ShapeTextWrapLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeTextWrapLoadOptions:interface" />'
+  - name: top
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#top:member'
+    package: word!
+    fullName: top
+    summary: >-
+      For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative
+      position, see [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline
+      shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left
+      corner.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: topRelative
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#topRelative:member'
+    package: word!
+    fullName: topRelative
+    summary: >-
+      For EACH ITEM in the collection: The relative top position as a percentage from the top edge of the shape to the
+      vertical relative position, see [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
+      -->. For an inline or child shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topRelative?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: >-
+      For EACH ITEM in the collection: Gets the shape type. Currently, only the following shapes are supported: text
+      boxes, geometric shapes, groups, pictures, and canvases.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#visible:member'
+    package: word!
+    fullName: visible
+    summary: 'For EACH ITEM in the collection: Specifies if the shape is visible. Not applicable to inline shapes.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: 'For EACH ITEM in the collection: The width, in points, of the shape.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean
+  - name: widthRelative
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#widthRelative:member'
+    package: word!
+    fullName: widthRelative
+    summary: >-
+      For EACH ITEM in the collection: The percentage of shape width to horizontal relative size, see
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'widthRelative?: boolean;'
+      return:
+        type: boolean

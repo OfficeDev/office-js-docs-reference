@@ -1,0 +1,75 @@
+### YamlMime:TSEnum
+name: Word.ErrorCodes
+uid: 'word!Word.ErrorCodes:enum'
+package: word!
+fullName: Word.ErrorCodes
+summary: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+  async function tryCatch(callback) {
+    try {
+      await callback();
+    } catch (error) {
+      // Note: In a production add-in, you'd want to notify the user through your add-in's UI.
+      if (error.code === Word.ErrorCodes.itemNotFound) {
+        console.warn("No checkbox content control is currently selected.");
+      } else {
+        console.error(error);
+      }
+    }
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessDenied
+    uid: 'word!Word.ErrorCodes.accessDenied:member'
+    package: word!
+    summary: ''
+    value: '"AccessDenied"'
+  - name: generalException
+    uid: 'word!Word.ErrorCodes.generalException:member'
+    package: word!
+    summary: ''
+    value: '"GeneralException"'
+  - name: invalidArgument
+    uid: 'word!Word.ErrorCodes.invalidArgument:member'
+    package: word!
+    summary: ''
+    value: '"InvalidArgument"'
+  - name: itemNotFound
+    uid: 'word!Word.ErrorCodes.itemNotFound:member'
+    package: word!
+    summary: ''
+    value: '"ItemNotFound"'
+  - name: notAllowed
+    uid: 'word!Word.ErrorCodes.notAllowed:member'
+    package: word!
+    summary: ''
+    value: '"NotAllowed"'
+  - name: notImplemented
+    uid: 'word!Word.ErrorCodes.notImplemented:member'
+    package: word!
+    summary: ''
+    value: '"NotImplemented"'
+  - name: searchDialogIsOpen
+    uid: 'word!Word.ErrorCodes.searchDialogIsOpen:member'
+    package: word!
+    summary: ''
+    value: '"SearchDialogIsOpen"'
+  - name: searchStringInvalidOrTooLong
+    uid: 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
+    package: word!
+    summary: ''
+    value: '"SearchStringInvalidOrTooLong"'

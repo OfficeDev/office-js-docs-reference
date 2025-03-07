@@ -163,6 +163,23 @@ methods:
         description: >-
           The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to
           true is returned.
+  - name: group()
+    uid: 'powerpoint!PowerPoint.ShapeScopedCollection#group:member(1)'
+    package: powerpoint!
+    fullName: group()
+    summary: >-
+      Groups all shapes in this collection into a single shape. If the collection contains fewer than two shapes, then
+      this method returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'group(): PowerPoint.Shape;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: 'The newly created grouped shape as a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->.'
   - name: load(options)
     uid: 'powerpoint!PowerPoint.ShapeScopedCollection#load:member(1)'
     package: powerpoint!
@@ -232,7 +249,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `PowerPoint.ShapeScopedCollection` object is an API object, the `toJSON`
       method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeScopedCollectionData`<!-- -->) that
       contains an "items" array with shallow copies of any loaded properties from the collection's items.

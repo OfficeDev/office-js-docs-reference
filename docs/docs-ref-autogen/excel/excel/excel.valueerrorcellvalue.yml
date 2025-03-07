@@ -77,11 +77,10 @@ properties:
         "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" |
         "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" |
         "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" |
-        "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadreplacement" | "MRegexMatchlimit" |
-        "MRegexNosubstring" | "MRegexNouniquesubstring" | "MRegexDepthlimit" | "MRegexBadrepescape" |
-        "MRegexRepmissingbrace" | "MRegexBadsubstitution" | "MRegexBadsubspattern" | "MRegexRecurseLoop" |
-        "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" |
-        "TranslateUnsupportedTargetLanguage";
+        "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadReplacement" | "MRegexMatchLimit" |
+        "MRegexNoSubstring" | "MRegexDepthLimit" | "MRegexBadReplacementEscape" | "MRegexReplacementMissingBrace" |
+        "MRegexBadSubstitution" | "MRegexRecursiveLoop" | "ERegexErrorGeneric" | "ERegexNoCaptureGroups" |
+        "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" | "TranslateUnsupportedTargetLanguage";
       return:
         type: >-
           <xref uid="excel!Excel.ValueErrorCellValueSubType:enum" /> | "Unknown" | "VlookupColumnIndexLessThanOne" |
@@ -116,11 +115,10 @@ properties:
           "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" |
           "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" |
           "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" |
-          "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadreplacement" | "MRegexMatchlimit" |
-          "MRegexNosubstring" | "MRegexNouniquesubstring" | "MRegexDepthlimit" | "MRegexBadrepescape" |
-          "MRegexRepmissingbrace" | "MRegexBadsubstitution" | "MRegexBadsubspattern" | "MRegexRecurseLoop" |
-          "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage"
-          | "TranslateUnsupportedTargetLanguage"
+          "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadReplacement" | "MRegexMatchLimit" |
+          "MRegexNoSubstring" | "MRegexDepthLimit" | "MRegexBadReplacementEscape" | "MRegexReplacementMissingBrace" |
+          "MRegexBadSubstitution" | "MRegexRecursiveLoop" | "ERegexErrorGeneric" | "ERegexNoCaptureGroups" |
+          "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" | "TranslateUnsupportedTargetLanguage"
   - name: errorType
     uid: 'excel!Excel.ValueErrorCellValue#errorType:member'
     package: excel!

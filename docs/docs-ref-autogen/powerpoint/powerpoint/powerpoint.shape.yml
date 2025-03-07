@@ -58,10 +58,8 @@ properties:
     package: powerpoint!
     fullName: customXmlParts
     summary: Returns a collection of custom XML parts in the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly customXmlParts: PowerPoint.CustomXmlPartCollection;'
@@ -105,6 +103,22 @@ properties:
       content: 'readonly fill: PowerPoint.ShapeFill;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeFill:class" />'
+  - name: group
+    uid: 'powerpoint!PowerPoint.Shape#group:member'
+    package: powerpoint!
+    fullName: group
+    summary: >-
+      Returns the `ShapeGroup` associated with the shape. If the shape type isn't `group`<!-- -->, then this method
+      returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly group: PowerPoint.ShapeGroup;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeGroup:class" />'
   - name: height
     uid: 'powerpoint!PowerPoint.Shape#height:member'
     package: powerpoint!
@@ -215,6 +229,27 @@ properties:
       content: 'left: number;'
       return:
         type: number
+  - name: level
+    uid: 'powerpoint!PowerPoint.Shape#level:member'
+    package: powerpoint!
+    fullName: level
+    summary: |-
+      Returns the level of the specified shape.
+
+      - A level of 0 means the shape isn't part of a group.
+
+      - A level of 1 means the shape is part of a top-level group.
+
+      - A level greater than 1 indicates the shape is a nested group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly level: number;'
+      return:
+        type: number
   - name: lineFormat
     uid: 'powerpoint!PowerPoint.Shape#lineFormat:member'
     package: powerpoint!
@@ -239,6 +274,38 @@ properties:
       content: 'name: string;'
       return:
         type: string
+  - name: parentGroup
+    uid: 'powerpoint!PowerPoint.Shape#parentGroup:member'
+    package: powerpoint!
+    fullName: parentGroup
+    summary: >-
+      Returns the parent group of this shape. If the shape isn't part of a group, then this method returns the
+      `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentGroup: PowerPoint.Shape;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+  - name: placeholderFormat
+    uid: 'powerpoint!PowerPoint.Shape#placeholderFormat:member'
+    package: powerpoint!
+    fullName: placeholderFormat
+    summary: >-
+      Returns the properties that apply specifically to this placeholder. If the shape type isn't `placeholder`<!-- -->,
+      then this method returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly placeholderFormat: PowerPoint.PlaceholderFormat;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />'
   - name: tags
     uid: 'powerpoint!PowerPoint.Shape#tags:member'
     package: powerpoint!
@@ -620,7 +687,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `PowerPoint.Shape` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.

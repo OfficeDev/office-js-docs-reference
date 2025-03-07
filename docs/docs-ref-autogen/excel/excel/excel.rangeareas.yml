@@ -267,8 +267,8 @@ methods:
       the ranges contain only blank values and controls set to their default value, then the values and control
       formatting are removed. Otherwise, this sets the cells with controls to their default value and clears the values
       of the other cells in the ranges.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearOrResetContents(): void;'
@@ -729,6 +729,19 @@ methods:
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
+  - name: select()
+    uid: 'excel!Excel.RangeAreas#select:member(1)'
+    package: excel!
+    fullName: select()
+    summary: Selects the specified range areas in the Excel UI.
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.RangeAreas#set:member(1)'
     package: excel!
@@ -789,7 +802,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Excel.RangeAreas` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.
@@ -828,7 +841,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

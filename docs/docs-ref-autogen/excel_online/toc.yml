@@ -60,6 +60,8 @@ items:
                 uid: 'excel!Excel.CalculationState:enum'
               - name: CalculationType
                 uid: 'excel!Excel.CalculationType:enum'
+              - name: CellControlType
+                uid: 'excel!Excel.CellControlType:enum'
               - name: CellValueType
                 uid: 'excel!Excel.CellValueType:enum'
               - name: ChartAxisCategoryType
@@ -461,6 +463,8 @@ items:
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
             uid: 'excel!Excel.CellBorderCollection:interface'
+          - name: CellControl
+            uid: 'excel!Excel.CellControl:type'
           - name: CellProperties
             uid: 'excel!Excel.CellProperties:interface'
           - name: CellPropertiesBorderLoadOptions
@@ -599,6 +603,8 @@ items:
             uid: 'excel!Excel.ChartTrendlineLabel:class'
           - name: ChartTrendlineLabelFormat
             uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
+          - name: CheckboxCellControl
+            uid: 'excel!Excel.CheckboxCellControl:interface'
           - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:class'
           - name: ColumnProperties
@@ -707,6 +713,8 @@ items:
             uid: 'excel!Excel.DocumentProperties:class'
           - name: DoubleCellValue
             uid: 'excel!Excel.DoubleCellValue:interface'
+          - name: EmptyCellControl
+            uid: 'excel!Excel.EmptyCellControl:interface'
           - name: EmptyCellValue
             uid: 'excel!Excel.EmptyCellValue:interface'
           - name: EntityCardLayout
@@ -779,6 +787,8 @@ items:
             uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
+          - name: MixedCellControl
+            uid: 'excel!Excel.MixedCellControl:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemArrayValues
@@ -793,6 +803,10 @@ items:
             uid: 'excel!Excel.NameErrorCellValue:interface'
           - name: NotAvailableErrorCellValue
             uid: 'excel!Excel.NotAvailableErrorCellValue:interface'
+          - name: Note
+            uid: 'excel!Excel.Note:class'
+          - name: NoteCollection
+            uid: 'excel!Excel.NoteCollection:class'
           - name: NullErrorCellValue
             uid: 'excel!Excel.NullErrorCellValue:interface'
           - name: NumberFormatInfo
@@ -875,6 +889,8 @@ items:
             uid: 'excel!Excel.RangeReference:interface'
           - name: RangeSort
             uid: 'excel!Excel.RangeSort:class'
+          - name: RangeTextRun
+            uid: 'excel!Excel.RangeTextRun:interface'
           - name: RangeView
             uid: 'excel!Excel.RangeView:class'
           - name: RangeViewCollection
@@ -1005,6 +1021,8 @@ items:
             uid: 'excel!Excel.TimelineStyleCollection:class'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
+          - name: UnknownCellControl
+            uid: 'excel!Excel.UnknownCellControl:interface'
           - name: ValueErrorCellValue
             uid: 'excel!Excel.ValueErrorCellValue:interface'
           - name: ValueTypeNotAvailableCellValue
@@ -1443,6 +1461,8 @@ items:
             href: ../../manifest/action.md
           - name: AllFormFactors
             href: ../../manifest/allformfactors.md
+          - name: CommandSurface
+            href: ../../manifest/commandsurface.md
           - name: Control
             href: ../../manifest/control.md
           - name: Control (Button)
@@ -1562,6 +1582,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.18 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-18-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.17 requirement set
             href: ../../requirement-sets/excel/excel-api-1-17-requirement-set.md
@@ -1874,6 +1897,10 @@ items:
           - name: PowerPoint preview APIs
             href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
             displayName: PowerPoint
+          - name: PowerPointApi 1.7 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-7-requirement-set.md
+            displayName: PowerPoint
           - name: PowerPointApi 1.6 requirement set
             href: >-
               ../../requirement-sets/powerpoint/powerpoint-api-1-6-requirement-set.md
@@ -1908,6 +1935,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.2 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.1 requirement set
             href: >-

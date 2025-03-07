@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomPropertyCollectionUpdateData
+uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomPropertyCollectionUpdateData
+summary: >-
+  An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({
+  ... })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+    package: powerpoint!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.CustomPropertyData[];'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface" />[]'

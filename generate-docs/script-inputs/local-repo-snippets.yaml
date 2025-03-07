@@ -2520,6 +2520,26 @@ Office.CoercionType:enum:
             }
         });
     }
+Office.Context:interface:
+  - |-
+    // Get the Office host, version, and platform in which the add-in is running.
+    const contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
+    console.log("Office version: " + contextInfo.version);
+    console.log("Platform: " + contextInfo.platform);
+Office.Context#auth:member:
+  - |-
+    // Get an access token.
+    const authContext = Office.context.auth;
+    authContext.getAccessTokenAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log("Error obtaining token", result.error);
+            return;
+        }
+
+        const token = result.value;
+        console.log(token);
+    });
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -3304,6 +3324,33 @@ Office.DevicePermissionType:enum:
     } else {
         console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
     }
+Office.Dialog:interface:
+  - |-
+    // The following example shows how to open a dialog with a specified size. It also shows
+    // how to register a function to handle the message when Office.UI.messageParent() is called
+    // in the dialog and how to use that handler to close the dialog.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                // Do something to process the message.
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
+                dialog.close();
+                // Do something to process the message.
+            });
+        }
+    );
 Office.Dialog#addEventHandler:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -3374,6 +3421,10 @@ Office.Dialog#messageChild:member(1):
         const messageToDialog = JSON.stringify(currentWorksheet);
         dialog.messageChild(messageToDialog);
     }
+Office.DialogMessageOptions#targetOrigin:member:
+  - |-
+    // The following example shows how to send a message to the domain of the parent runtime.
+    Office.context.ui.messageParent("Some message", { targetOrigin: "https://resource.contoso.com" });
 Office.DialogOptions#height:member:
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -5400,6 +5451,23 @@ Office.DocumentMode:enum:
   - |-
     const mode : Office.DocumentMode = Office.context.document.mode;
     console.log("Document mode: " + mode);
+Office.DocumentSelectionChangedEventArgs:interface:
+  - |-
+    // The following example adds an event handler for the SelectionChanged event of a document.
+    function addSelectionChangedEventHandler() {
+        Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+    }
+
+    // The SelectionChanged event handler.
+    function MyHandler(eventArgs: Office.DocumentSelectionChangedEventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithDocument(eventArgs.document);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.EventType:enum:
   - |-
     // This sample shows how to register an event handler in Outlook.
@@ -5487,6 +5555,14 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.RequirementSetSupport:interface:
+  - |-
+    const requirements : Office.RequirementSetSupport = Office.context.requirements; 
+    if (requirements.isSetSupported('Mailbox', '1.14')) {
+        // Code that uses APIs from the 'Mailbox 1.14' requirement set.
+    } else {
+        // An alternate path (such as a message to the user) when the requirement set isn't supported.
+    }
 Office.Ribbon#requestCreateControls:member(1):
   - |-
     // Registers a custom contextual tab with Office.
@@ -8281,6 +8357,62 @@ Office.InfobarClickedEventArgs:interface:
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
     }
+Office.LoadedMessageCompose:interface:
+  - |-
+    // Gets the sender's email address of each selected message.
+    async function getSenderEmailAddress(item) {
+        const itemId = item.itemId;
+        await new Promise((resolve) => {
+            Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.log(result.error.message);
+                    return;
+                }
+
+                const loadedItem = result.value;
+                const sender = loadedItem.from.emailAddress;
+                console.log(sender);
+
+                // Unload the current message before processing another selected message.
+                loadedItem.unloadAsync((asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    resolve();
+                });
+            });
+        });
+    }
+Office.LoadedMessageRead:interface:
+  - |-
+    // Gets the sender's email address of each selected message.
+    async function getSenderEmailAddress(item) {
+        const itemId = item.itemId;
+        await new Promise((resolve) => {
+            Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.log(result.error.message);
+                    return;
+                }
+
+                const loadedItem = result.value;
+                const sender = loadedItem.from.emailAddress;
+                console.log(sender);
+
+                // Unload the current message before processing another selected message.
+                loadedItem.unloadAsync((asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    resolve();
+                });
+            });
+        });
+    }
 Office.Location#getAsync:member(1):
   - |-
     const userContext = { value : 1 };
@@ -9456,12 +9588,12 @@ Office.SpamReportingEventCompletedOptions:interface:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-            * and shows a post-processing dialog to the user.
-            * If an error occurs while the message is being processed, the `onErrorDeleteItem`
-            * property determines whether the message will be deleted.
-            */
+             * Signals that the spam-reporting event has completed processing.
+             * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+             * and shows a post-processing dialog to the user.
+             * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+             * property determines whether the message will be deleted.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
@@ -9472,6 +9604,42 @@ Office.SpamReportingEventCompletedOptions:interface:
                     description: "Thank you for reporting this message.",
                 },
             });
+        });
+    }
+Office.SpamReportingEventCompletedOptions#commandId:member:
+  - |-
+    function onSpamReport(event) {
+        // Run operations to process the reported message.
+
+        /**
+         * Signals that the spam-reporting event has completed processing.
+         * A task pane is opened instead of showing a post-processing dialog.
+         * Context data is then passed to the task pane for processing.
+         * To ensure that the task pane opens and receives the context data,
+         * the reported message mustn't be moved from the folder in which it resides.
+         */
+        event.completed({
+            commandId: "msgReadOpenPaneButton",
+            contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+            moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
+        });
+    }
+Office.SpamReportingEventCompletedOptions#contextData:member:
+  - |-
+    function onSpamReport(event) {
+        // Run operations to process the reported message.
+
+        /**
+         * Signals that the spam-reporting event has completed processing.
+         * A task pane is opened instead of showing a post-processing dialog.
+         * Context data is then passed to the task pane for processing.
+         * To ensure that the task pane opens and receives the context data,
+         * the reported message mustn't be moved from the folder in which it resides.
+         */
+        event.completed({
+            commandId: "msgReadOpenPaneButton",
+            contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+            moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
         });
     }
 Office.SpamReportingEventCompletedOptions#postProcessingAction:member:
@@ -9488,10 +9656,10 @@ Office.SpamReportingEventCompletedOptions#postProcessingAction:member:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-            * post-processing dialog to the user.
-            */
+             * Signals that the spam-reporting event has completed processing.
+             * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+             * post-processing dialog to the user.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 postProcessingAction: "moveToSpamFolder",

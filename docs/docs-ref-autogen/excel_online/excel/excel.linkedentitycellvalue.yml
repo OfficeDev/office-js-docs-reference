@@ -71,16 +71,12 @@ properties:
     syntax:
       content: |-
         properties?: {
-                    [key: string]: CellValue & {
-                        propertyMetadata?: CellValuePropertyMetadata;
-                    };
+                    [key: string]: EntityPropertyType;
                 };
       return:
         type: |-
           {
-                      [key: string]: <xref uid="excel!Excel.CellValue:type" /> & {
-                          propertyMetadata?: <xref uid="excel!Excel.CellValuePropertyMetadata:interface" />;
-                      };
+                      [key: string]: <xref uid="excel!Excel.EntityPropertyType:type" />;
                   }
   - name: provider
     uid: 'excel!Excel.LinkedEntityCellValue#provider:member'

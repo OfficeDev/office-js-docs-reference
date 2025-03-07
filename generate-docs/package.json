@@ -4,6 +4,6 @@
   "dependencies": {
     "@microsoft/api-extractor": "^7.39.0",
     "@microsoft/api-documenter": "^7.23.15",
-    "reference-coverage-tester": "^0.0.3"
+    "reference-coverage-tester": "^0.0.5"
   }
 }

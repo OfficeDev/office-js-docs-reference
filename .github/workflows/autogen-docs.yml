@@ -32,6 +32,22 @@ jobs:
         run: |
           echo "Undoing script file chmod"
           chmod -x ./GenerateDocs.sh
+      - name: Get whether autogen-docs branch exists
+        run: |
+          echo "Getting whether autogen-docs branch exists"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          {
+            echo 'git_ls_remote_origin_autogen_docs<<EOF'
+            git ls-remote origin autogen-docs
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+        id: run_git_ls_remote_origin_autogen_docs
+      - name: Delete autogen-docs if it exists
+        if: ${{ contains(steps.run_git_ls_remote_origin_autogen_docs.outputs.git_ls_remote_origin_autogen_docs, '/autogen-docs') }}
+        run: |
+          echo "Deleting remote autogen-docs branch"
+          git push origin --delete autogen-docs
       - name: Add any changes
         run: |
           echo "Determining if there are any changes"
