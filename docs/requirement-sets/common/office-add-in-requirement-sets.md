@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 10/17/2024
+ms.date: 03/11/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -53,6 +53,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports output to Office Open XML (OOXML) format as a byte array<br>(Office.FileType.Compressed) when using the Document.getFileAsync method. |
+
+---
+
+### ContextMenuApi
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Context Menu API requirement sets](context-menu-api-requirement-sets.md). | <ul><li>Office.contextMenu.requestUpdate</li></ul> |
 
 ---
 
