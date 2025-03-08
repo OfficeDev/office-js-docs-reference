@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.Interfaces.CheckboxContentControlUpdateData
+uid: 'word!Word.Interfaces.CheckboxContentControlUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.CheckboxContentControlUpdateData
+summary: >-
+  An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ...
+  })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isChecked
+    uid: 'word!Word.Interfaces.CheckboxContentControlUpdateData#isChecked:member'
+    package: word!
+    fullName: isChecked
+    summary: Specifies the current state of the checkbox.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isChecked?: boolean;'
+      return:
+        type: boolean

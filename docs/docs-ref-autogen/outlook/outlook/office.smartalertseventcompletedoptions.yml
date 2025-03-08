@@ -250,6 +250,9 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: The error message must be 500 characters or less.
     isPreview: false
     isDeprecated: false
     syntax:

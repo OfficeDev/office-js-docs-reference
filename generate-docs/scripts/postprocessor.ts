@@ -56,8 +56,7 @@ interface IMembers {
 
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
-const manifestRefPath = path.resolve("../../docs/manifest");
-const requirementSetRefPath = path.resolve("../../docs/requirement-sets");
+const tocTemplateLocation = path.resolve("../../docs");
 
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
@@ -68,17 +67,11 @@ tryCatch(async () => {
         .filter(filename => filename !== "overview" && filename !== "images")
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
-    console.log(`Creating global TOC`);
-    let globalToc = <Toc>{items: [{name: "API reference"}]};
-    globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
-                                {"name": "Excel", "href": "/javascript/api/excel"},
-                                {"name": "OneNote", "href": "/javascript/api/onenote"},
-                                {"name": "Outlook", "href": "/javascript/api/outlook"},
-                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint"},
-                                {"name": "Visio", "href": "/javascript/api/visio"},
-                                {"name": "Word", "href": "/javascript/api/word"},
-                                {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
-
+    console.log(`Loading global TOC template`);
+    let globalTocString =  fsx.readFileSync(`${tocTemplateLocation}/toc.yml`).toString();
+    
+    globalTocString = globalTocString.replace(/href:\s*(.*)\.md/g, "href: ../../$1.md");
+    let globalToc = jsyaml.safeLoad(globalTocString) as Toc;
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
     fsx.readdirSync(docsSource)
@@ -93,7 +86,7 @@ tryCatch(async () => {
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
-    const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
+    const hostVersionMap = [{host: "excel", versions: 19}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 16},
                             {host: "powerpoint", versions: 8},
@@ -119,6 +112,7 @@ tryCatch(async () => {
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
     // Special case for WordApi Desktop
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop_1_2`), tocWithReleaseCommon, "word", 9.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop_1_1`), tocWithReleaseCommon, "word", 8.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_5_hidden_document`), tocWithReleaseCommon, "word", 5.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);
@@ -176,12 +170,14 @@ tryCatch(async () => {
                             
                             fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString()
                                 .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                                .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
                                 .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
                         
                         fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                            .replace(/description: \\\*[\r\n]/g, "description:") // Remove descriptions that are just "\*".
                             .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                     }
                 });
@@ -217,14 +213,14 @@ function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: stri
     if (!hostName) {
         latestToc = fixCommonToc(tocPath, globalToc);
     } else {
-        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber, hostName === "visio");
+        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber);
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
     return latestToc;
 }
 
-function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number, addNonApiRef: boolean): Toc {
+function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
@@ -332,10 +328,6 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
         });
     });
 
-    if (addNonApiRef) { 
-        addNonRefTocInformation(newToc);
-    }
-
     return newToc;
 }
 
@@ -417,16 +409,5 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         });
     });
 
-    addNonRefTocInformation(newToc);
     return newToc;
-}
-
-function addNonRefTocInformation(toc: Toc) {
-    // Add manifest TOC
-    let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
-    toc.items.push(manifestYml[0]);
-
-    // Add requirement sets TOC
-    let requirementSetYml = jsyaml.safeLoad(fsx.readFileSync(`${requirementSetRefPath}/toc.yml`).toString());
-    toc.items.push(requirementSetYml[0]);
 }

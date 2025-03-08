@@ -4,7 +4,7 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 17;
+const CURRENT_EXCEL_RELEASE = 18;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 15;
 const CURRENT_WORD_RELEASE = 9;
@@ -203,6 +203,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_2/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_1/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_5_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_4_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
@@ -261,6 +262,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle WordApiDesktop 1.2 case.
+        console.log(`\nStarting ${host}_desktop_1_2...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_2/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_2/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_2`);
         // Handle WordApiDesktop 1.1 case.
         console.log(`\nStarting ${host}_desktop_1_1...`);
         json = fsx.readFileSync(`${jsonPath}_desktop_1_1/${fileName}`).toString();

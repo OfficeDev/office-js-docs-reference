@@ -1,0 +1,171 @@
+### YamlMime:TSType
+name: PowerPoint.ShapeGroup
+uid: 'powerpoint!PowerPoint.ShapeGroup:class'
+package: powerpoint!
+fullName: PowerPoint.ShapeGroup
+summary: 'Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`<!-- -->.'
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.ShapeGroup#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: id
+    uid: 'powerpoint!PowerPoint.ShapeGroup#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Gets the unique ID of the shape group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: shape
+    uid: 'powerpoint!PowerPoint.ShapeGroup#shape:member'
+    package: powerpoint!
+    fullName: shape
+    summary: Returns the `Shape` object associated with the group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shape: PowerPoint.Shape;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+  - name: shapes
+    uid: 'powerpoint!PowerPoint.ShapeGroup#shapes:member'
+    package: powerpoint!
+    fullName: shapes
+    summary: Returns the collection of `Shape` objects in the group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapes: PowerPoint.ShapeScopedCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeScopedCollection:class" />'
+methods:
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.ShapeGroup#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: PowerPoint.Interfaces.ShapeGroupLoadOptions): PowerPoint.ShapeGroup;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeGroup:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.ShapeGroup#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.ShapeGroup;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeGroup:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.ShapeGroup#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.ShapeGroup;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeGroup:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.ShapeGroup#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `PowerPoint.ShapeGroup` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeGroupData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.ShapeGroupData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface" />'
+        description: ''
+  - name: ungroup()
+    uid: 'powerpoint!PowerPoint.ShapeGroup#ungroup:member(1)'
+    package: powerpoint!
+    fullName: ungroup()
+    summary: Ungroups any grouped shapes in the specified shape group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type: void
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

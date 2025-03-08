@@ -1,13 +1,16 @@
 ---
 title: ExtendedOverrides element in the manifest file
 description: Specifies the URLs for a JSON-formatted extension of the manifest.
-ms.date: 02/23/2021
+ms.date: 02/12/2025
 ms.localizationpriority: medium
 ---
 
 # ExtendedOverrides element
 
-Specifies the full URLs for JSON-formatted files that extend the manifest. For detailed information about the use of this element and its descendent elements, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
+Specifies the full URLs for JSON-formatted files that extend the manifest.
+
+> [!NOTE]
+> The keyboard shortcut feature requires an extended override. To learn more, see [Add custom keyboard shortcuts to your Office Add-ins](/office/dev/add-ins/design/keyboard-shortcuts).
 
 **Add-in type:** Task pane
 

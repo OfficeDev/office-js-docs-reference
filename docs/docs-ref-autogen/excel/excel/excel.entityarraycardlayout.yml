@@ -26,8 +26,8 @@ properties:
     package: excel!
     fullName: columnsToReport
     summary: >-
-      Represents the count of columns which the card claims are in the array. A card may report a different number of
-      columns than it actually has to display smaller amounts of preview data.
+      Represents the count of columns which the card claims are in the array. A card may report fewer columns than
+      actually exist to display a smaller amount of preview data.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -76,8 +76,8 @@ properties:
     package: excel!
     fullName: rowsToReport
     summary: >-
-      Represents the count of rows which the card claims are in the array. A card may report a different number of rows
-      than it actually has to display smaller amounts of preview data.
+      Represents the count of rows which the card claims are in the array. A card may report fewer rows than actually
+      exist to display a smaller amount of preview data.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

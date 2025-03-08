@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.7
 description: Details about the WordApi 1.7 requirement set.
-ms.date: 01/25/2024
+ms.date: 01/16/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -9,6 +9,9 @@ ms.localizationpriority: medium
 # What's new in Word JavaScript API 1.7
 
 WordApi 1.7 mainly added support for writing assistance.
+
+> [!IMPORTANT]
+> Annotation APIs require a Microsoft 365 subscription in order to work properly because of an underlying service's requirement. For more about this, see [GitHub issue 4953](https://github.com/OfficeDev/office-js/issues/4953).
 
 ## API list
 

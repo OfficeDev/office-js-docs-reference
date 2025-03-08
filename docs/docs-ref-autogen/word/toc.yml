@@ -69,6 +69,8 @@ items:
                 uid: 'word!Word.FieldKind:enum'
               - name: FieldType
                 uid: 'word!Word.FieldType:enum'
+              - name: GeometricShapeType
+                uid: 'word!Word.GeometricShapeType:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat
@@ -93,12 +95,36 @@ items:
                 uid: 'word!Word.OutlineLevel:enum'
               - name: RangeLocation
                 uid: 'word!Word.RangeLocation:enum'
+              - name: RelativeHorizontalPosition
+                uid: 'word!Word.RelativeHorizontalPosition:enum'
+              - name: RelativeSize
+                uid: 'word!Word.RelativeSize:enum'
+              - name: RelativeVerticalPosition
+                uid: 'word!Word.RelativeVerticalPosition:enum'
               - name: SaveBehavior
                 uid: 'word!Word.SaveBehavior:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
               - name: ShadingTextureType
                 uid: 'word!Word.ShadingTextureType:enum'
+              - name: ShapeAutoSize
+                uid: 'word!Word.ShapeAutoSize:enum'
+              - name: ShapeFillType
+                uid: 'word!Word.ShapeFillType:enum'
+              - name: ShapeScaleFrom
+                uid: 'word!Word.ShapeScaleFrom:enum'
+              - name: ShapeScaleType
+                uid: 'word!Word.ShapeScaleType:enum'
+              - name: ShapeTextOrientation
+                uid: 'word!Word.ShapeTextOrientation:enum'
+              - name: ShapeTextVerticalAlignment
+                uid: 'word!Word.ShapeTextVerticalAlignment:enum'
+              - name: ShapeTextWrapSide
+                uid: 'word!Word.ShapeTextWrapSide:enum'
+              - name: ShapeTextWrapType
+                uid: 'word!Word.ShapeTextWrapType:enum'
+              - name: ShapeType
+                uid: 'word!Word.ShapeType:enum'
               - name: StyleType
                 uid: 'word!Word.StyleType:enum'
               - name: TrackedChangeType
@@ -133,6 +159,8 @@ items:
             uid: 'word!Word.Border:class'
           - name: BorderCollection
             uid: 'word!Word.BorderCollection:class'
+          - name: Canvas
+            uid: 'word!Word.Canvas:class'
           - name: CheckboxContentControl
             uid: 'word!Word.CheckboxContentControl:class'
           - name: ComboBoxContentControl
@@ -213,6 +241,8 @@ items:
             uid: 'word!Word.InlinePictureCollection:class'
           - name: InsertFileOptions
             uid: 'word!Word.InsertFileOptions:interface'
+          - name: InsertShapeOptions
+            uid: 'word!Word.InsertShapeOptions:interface'
           - name: List
             uid: 'word!Word.List:class'
           - name: ListCollection
@@ -229,6 +259,14 @@ items:
             uid: 'word!Word.NoteItem:class'
           - name: NoteItemCollection
             uid: 'word!Word.NoteItemCollection:class'
+          - name: Page
+            uid: 'word!Word.Page:class'
+          - name: PageCollection
+            uid: 'word!Word.PageCollection:class'
+          - name: Pane
+            uid: 'word!Word.Pane:class'
+          - name: PaneCollection
+            uid: 'word!Word.PaneCollection:class'
           - name: Paragraph
             uid: 'word!Word.Paragraph:class'
           - name: ParagraphAddedEventArgs
@@ -259,6 +297,16 @@ items:
             uid: 'word!Word.SettingCollection:class'
           - name: Shading
             uid: 'word!Word.Shading:class'
+          - name: Shape
+            uid: 'word!Word.Shape:class'
+          - name: ShapeCollection
+            uid: 'word!Word.ShapeCollection:class'
+          - name: ShapeFill
+            uid: 'word!Word.ShapeFill:class'
+          - name: ShapeGroup
+            uid: 'word!Word.ShapeGroup:class'
+          - name: ShapeTextWrap
+            uid: 'word!Word.ShapeTextWrap:class'
           - name: Style
             uid: 'word!Word.Style:class'
           - name: StyleCollection
@@ -279,10 +327,16 @@ items:
             uid: 'word!Word.TableRowCollection:class'
           - name: TableStyle
             uid: 'word!Word.TableStyle:class'
+          - name: TextFrame
+            uid: 'word!Word.TextFrame:class'
           - name: TrackedChange
             uid: 'word!Word.TrackedChange:class'
           - name: TrackedChangeCollection
             uid: 'word!Word.TrackedChangeCollection:class'
+          - name: Window
+            uid: 'word!Word.Window:class'
+          - name: WindowCollection
+            uid: 'word!Word.WindowCollection:class'
       - name: Common APIs
         uid: office!
         items:
@@ -382,6 +436,12 @@ items:
                 uid: 'office!Office.Context:interface'
               - name: ContextInformation
                 uid: 'office!Office.ContextInformation:interface'
+              - name: ContextMenu
+                uid: 'office!Office.ContextMenu:interface'
+              - name: ContextMenuControl
+                uid: 'office!Office.ContextMenuControl:interface'
+              - name: ContextMenuUpdaterData
+                uid: 'office!Office.ContextMenuUpdaterData:interface'
               - name: Control
                 uid: 'office!Office.Control:interface'
               - name: CustomXmlNode
@@ -645,6 +705,8 @@ items:
             href: ../../manifest/action.md
           - name: AllFormFactors
             href: ../../manifest/allformfactors.md
+          - name: CommandSurface
+            href: ../../manifest/commandsurface.md
           - name: Control
             href: ../../manifest/control.md
           - name: Control (Button)
@@ -764,6 +826,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.18 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-18-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.17 requirement set
             href: ../../requirement-sets/excel/excel-api-1-17-requirement-set.md
@@ -1130,6 +1195,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.2 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.1 requirement set
             href: >-

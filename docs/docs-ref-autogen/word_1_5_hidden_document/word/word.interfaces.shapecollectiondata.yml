@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeCollectionData
+uid: 'word!Word.Interfaces.ShapeCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeCollectionData
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.ShapeCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.ShapeData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeData:interface" />[]'

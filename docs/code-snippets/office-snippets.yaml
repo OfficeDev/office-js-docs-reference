@@ -979,6 +979,26 @@ Office.CoercionType:enum:
             }
         });
     }
+Office.Context:interface:
+  - |-
+    // Get the Office host, version, and platform in which the add-in is running.
+    const contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
+    console.log("Office version: " + contextInfo.version);
+    console.log("Platform: " + contextInfo.platform);
+Office.Context#auth:member:
+  - |-
+    // Get an access token.
+    const authContext = Office.context.auth;
+    authContext.getAccessTokenAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log("Error obtaining token", result.error);
+            return;
+        }
+
+        const token = result.value;
+        console.log(token);
+    });
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -1763,6 +1783,33 @@ Office.DevicePermissionType:enum:
     } else {
         console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
     }
+Office.Dialog:interface:
+  - |-
+    // The following example shows how to open a dialog with a specified size. It also shows
+    // how to register a function to handle the message when Office.UI.messageParent() is called
+    // in the dialog and how to use that handler to close the dialog.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                // Do something to process the message.
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
+                dialog.close();
+                // Do something to process the message.
+            });
+        }
+    );
 Office.Dialog#addEventHandler:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -1833,6 +1880,10 @@ Office.Dialog#messageChild:member(1):
         const messageToDialog = JSON.stringify(currentWorksheet);
         dialog.messageChild(messageToDialog);
     }
+Office.DialogMessageOptions#targetOrigin:member:
+  - |-
+    // The following example shows how to send a message to the domain of the parent runtime.
+    Office.context.ui.messageParent("Some message", { targetOrigin: "https://resource.contoso.com" });
 Office.DialogOptions#height:member:
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -3859,6 +3910,23 @@ Office.DocumentMode:enum:
   - |-
     const mode : Office.DocumentMode = Office.context.document.mode;
     console.log("Document mode: " + mode);
+Office.DocumentSelectionChangedEventArgs:interface:
+  - |-
+    // The following example adds an event handler for the SelectionChanged event of a document.
+    function addSelectionChangedEventHandler() {
+        Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+    }
+
+    // The SelectionChanged event handler.
+    function MyHandler(eventArgs: Office.DocumentSelectionChangedEventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithDocument(eventArgs.document);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.EventType:enum:
   - |-
     // This sample shows how to register an event handler in Outlook.
@@ -3946,6 +4014,14 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.RequirementSetSupport:interface:
+  - |-
+    const requirements : Office.RequirementSetSupport = Office.context.requirements; 
+    if (requirements.isSetSupported('Mailbox', '1.14')) {
+        // Code that uses APIs from the 'Mailbox 1.14' requirement set.
+    } else {
+        // An alternate path (such as a message to the user) when the requirement set isn't supported.
+    }
 Office.Ribbon#requestCreateControls:member(1):
   - |-
     // Registers a custom contextual tab with Office.

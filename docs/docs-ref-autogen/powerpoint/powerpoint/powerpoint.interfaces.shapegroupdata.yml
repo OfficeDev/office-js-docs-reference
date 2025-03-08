@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeGroupData
+uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.ShapeGroupData
+summary: An interface describing the data returned by calling `shapeGroup.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupData#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Gets the unique ID of the shape group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string

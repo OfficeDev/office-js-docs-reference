@@ -133,6 +133,35 @@ properties:
       content: 'readonly shapes: PowerPoint.ShapeCollection;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeCollection:class" />'
+  - name: type
+    uid: 'powerpoint!PowerPoint.SlideLayout#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: Returns the type of the slide layout.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: PowerPoint.SlideLayoutType | "Blank" | "Chart" | "ChartAndText" | "ClipArtAndText" |
+        "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" | "LargeObject" |
+        "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" | "ObjectOverText" |
+        "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" | "TextAndChart" |
+        "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" | "TextOverObject" | "Title" |
+        "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" | "TwoObjectsAndText" |
+        "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" | "VerticalTitleAndTextOverChart";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.SlideLayoutType:enum" /> | "Blank" | "Chart" | "ChartAndText" |
+          "ClipArtAndText" | "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" |
+          "LargeObject" | "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" |
+          "ObjectOverText" | "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" |
+          "TextAndChart" | "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" |
+          "TextOverObject" | "Title" | "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" |
+          "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" |
+          "VerticalTitleAndTextOverChart"
 methods:
   - name: load(options)
     uid: 'powerpoint!PowerPoint.SlideLayout#load:member(1)'

@@ -8,7 +8,6 @@
 |[CalcErrorCellValue](/javascript/api/excel/excel.calcerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)|Represents the type of `CalcErrorCellValue`.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
-|[CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)|[type](/javascript/api/excel/excel.checkboxcellcontrol#excel-excel-checkboxcellcontrol-type-member)|Represents an interactable control inside of a cell.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
@@ -57,7 +56,6 @@
 |[EmailIdentity](/javascript/api/excel/excel.emailidentity)|[displayName](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-displayname-member)|Represents the user's display name.|
 ||[email](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-email-member)|Represents the user's email.|
 ||[id](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-id-member)|Represents the user's unique ID.|
-|[EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol)|[type](/javascript/api/excel/excel.emptycellcontrol#excel-excel-emptycellcontrol-type-member)||
 |[EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)|[arrayProperty](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-arrayproperty-member)|Represents name of the property that contains the array shown in the card.|
 ||[columnsToReport](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-columnstoreport-member)|Represents the count of columns which the card claims are in the array.|
 ||[displayName](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-displayname-member)|Represents name of the property that contains the array shown in the card.|
@@ -103,7 +101,6 @@
 ||[provider](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-provider-member)|Represents information that describes the entity or individual who provided the image.|
 ||[type](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-type-member)|Represents the type of this cell value.|
 |[LocalImageCellValueCacheId](/javascript/api/excel/excel.localimagecellvaluecacheid)|[cachedUid](/javascript/api/excel/excel.localimagecellvaluecacheid#excel-excel-localimagecellvaluecacheid-cacheduid-member)|Represents the image's UID as it appears in the cache.|
-|[MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol)|[type](/javascript/api/excel/excel.mixedcellcontrol#excel-excel-mixedcellcontrol-type-member)||
 |[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)|Represents the type of `NameErrorCellValue`.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)|Represents the type of `NotAvailableErrorCellValue`.|
@@ -117,11 +114,8 @@
 |[Query](/javascript/api/excel/excel.query)|[delete()](/javascript/api/excel/excel.query#excel-excel-query-delete-member(1))|Deletes the query and associated connection.|
 ||[refresh()](/javascript/api/excel/excel.query#excel-excel-query-refresh-member(1))|Refreshes the query.|
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
-|[Range](/javascript/api/excel/excel.range)|[clearOrResetContents()](/javascript/api/excel/excel.range#excel-excel-range-clearorresetcontents-member(1))|Clears the values of the cells in the range, with special consideration given to cells containing controls.|
-||[control](/javascript/api/excel/excel.range#excel-excel-range-control-member)|Accesses the cell control applied to this range.|
-|[RangeAreas](/javascript/api/excel/excel.rangeareas)|[clearOrResetContents()](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clearorresetcontents-member(1))|Clears the values of the cells in the ranges, with special consideration given to cells containing controls.|
-|[RangeTextRun](/javascript/api/excel/excel.rangetextrun)|[font](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-font-member)||
-||[text](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-text-member)||
+|[Range](/javascript/api/excel/excel.range)|[getDisplayedCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions)](/javascript/api/excel/excel.range#excel-excel-range-getdisplayedcellproperties-member(1))|Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.|
+|[RangeAreas](/javascript/api/excel/excel.rangeareas)|||
 |[RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue)|[errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)|Represents the type of `RefErrorCellValue`.|
 |[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-refreshmode-member)|The linked data type refresh mode.|
 ||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-serviceid-member)|The unique ID of the object whose refresh mode was changed.|
@@ -151,7 +145,6 @@
 ||[errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)|Represents the type of `TimeoutErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
-|[UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol)|[type](/javascript/api/excel/excel.unknowncellcontrol#excel-excel-unknowncellcontrol-type-member)||
 |[ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)|Represents the type of `ValueErrorCellValue`.|
 |[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|

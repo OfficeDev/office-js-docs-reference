@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListItemData
+uid: 'word!Word.Interfaces.ListItemData:interface'
+package: word!
+fullName: Word.Interfaces.ListItemData
+summary: An interface describing the data returned by calling `listItem.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: level
+    uid: 'word!Word.Interfaces.ListItemData#level:member'
+    package: word!
+    fullName: level
+    summary: Specifies the level of the item in the list.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'level?: number;'
+      return:
+        type: number
+  - name: listString
+    uid: 'word!Word.Interfaces.ListItemData#listString:member'
+    package: word!
+    fullName: listString
+    summary: 'Gets the list item bullet, number, or picture as a string.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listString?: string;'
+      return:
+        type: string
+  - name: siblingIndex
+    uid: 'word!Word.Interfaces.ListItemData#siblingIndex:member'
+    package: word!
+    fullName: siblingIndex
+    summary: Gets the list item order number in relation to its siblings.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'siblingIndex?: number;'
+      return:
+        type: number

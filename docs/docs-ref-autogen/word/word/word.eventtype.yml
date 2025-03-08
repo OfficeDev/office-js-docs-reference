@@ -27,6 +27,22 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
+  - name: annotationAdded
+    uid: 'word!Word.EventType.annotationAdded:member'
+    package: word!
+    summary: |-
+      AnnotationAdded represents the event an annotation has been added to the document.
+
+      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationAdded"'
+  - name: annotationChanged
+    uid: 'word!Word.EventType.annotationChanged:member'
+    package: word!
+    summary: |-
+      AnnotationChanged represents the event an annotation has been updated in the document.
+
+      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationChanged"'
   - name: annotationClicked
     uid: 'word!Word.EventType.annotationClicked:member'
     package: word!
@@ -35,6 +51,14 @@ fields:
 
       * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationClicked"'
+  - name: annotationDeleted
+    uid: 'word!Word.EventType.annotationDeleted:member'
+    package: word!
+    summary: |-
+      AnnotationDeleted represents the event an annotation has been deleted from the document.
+
+      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationDeleted"'
   - name: annotationHovered
     uid: 'word!Word.EventType.annotationHovered:member'
     package: word!
@@ -155,6 +179,16 @@ fields:
 
       * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlSelectionChanged"'
+  - name: documentWordCountChanged
+    uid: 'word!Word.EventType.documentWordCountChanged:member'
+    package: word!
+    summary: >-
+      Represents that a word count has been changed.
+
+
+      * \[ [API set: WordApi Unknown Version, this API may or may not work on a client. This API may not be released to
+      3rd parties.](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DocumentWordCountChanged"'
   - name: paragraphAdded
     uid: 'word!Word.EventType.paragraphAdded:member'
     package: word!

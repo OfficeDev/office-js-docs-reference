@@ -1222,9 +1222,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see
+         * **Important**:
+         *
+         * - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see
          * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
          *
+         * - Attachments added using the **Upload and share** option aren't returned.
          */
         attachments: AttachmentDetails[];
         /**
@@ -4416,10 +4419,13 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned.
+         * **Important**:
+         *
+         * - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned.
          * For more information, see
          * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
          *
+         * - Attachments added using the **Upload and share** option aren't returned.
          */
         attachments: AttachmentDetails[];
         /**
@@ -5647,9 +5653,10 @@ export declare namespace Office {
      * your add-in has persisted changes.
      * The persisted changes will not be available until the task pane (or item in the case of UI-less add-ins) is closed and reopened.
      *
-     * - When set and saved through Outlook on Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} or classic) or on Mac,
-     * these settings are reflected in Outlook on the web only after a browser refresh.
-     * 
+     * - In classic Outlook on Windows, if roaming settings were configured on another Outlook client, the desktop client doesn't need to be restarted.
+     * However, the add-in needs to be reloaded to access these settings. In Outlook on the web, on Mac, and in the new Outlook on Windows,
+     * you must refresh the browser or restart the client to access roaming settings set on another client.
+     *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -5993,8 +6000,6 @@ export declare namespace Office {
         /**
          * Gets the account type of the user associated with the mailbox.
          *
-         * **Note**: This member is currently only supported in Outlook on Mac starting in Version 16.9 (17121200).
-         *
          * @remarks
          * [Api set: Mailbox 1.6]
          *
@@ -6026,8 +6031,15 @@ export declare namespace Office {
          *     <td>The mailbox is associated with a personal Outlook.com account.</td>
          *   </tr>
          * </table>
-         * 
-         * **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted.
+         *
+         * **Important**:
+         *
+         * - Volume-licensed perpetual Outlook 2016 doesn’t support the `accountType` property.
+         * To work around this, use Exchange Web Services (EWS) to call the
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/resolvenames-operation | ResolveNames}
+         * operation on the Exchange on-premise server.
+         *
+         * - For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted.
          * If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's hosted on 
          * Exchange Online, the account type value is **office365**.
          */

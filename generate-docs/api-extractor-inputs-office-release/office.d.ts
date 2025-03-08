@@ -237,6 +237,10 @@ export declare namespace Office {
      */
     const auth: Auth;
     /**
+     * Represents the context menu object associated with the Office application.
+     */
+    const contextMenu: ContextMenu;
+    /**
      * Represents the Device Permission interface.
      */
     const devicePermission: DevicePermission;
@@ -3672,7 +3676,7 @@ export declare namespace Office {
          *
          * 1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
          * 
-         * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
+         * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the <kbd>Esc</kbd> key.
          *
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * @param handler - The event handler that is called when the dialog is cancelled.
@@ -4740,11 +4744,70 @@ export declare namespace Office {
         version: string;
     }
     /**
+     * Provides options to manage the state of the Office context menu.
+     *
+     * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands}.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+     */
+    export interface ContextMenu {
+        /**
+         * Sends a request to Office to update the context menu.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+         *
+         * **Important**: This API is only used to request an update. The actual UI update to the context menu is controlled by the Office application,
+         * so the exact timing of the context menu update (or refresh) can't be determined by the completion of this API.
+         *
+         * @param input - Represents the updates to be made to the context menu controls. Only the changes specified in the `control` parameter are made.
+         *                Other context menu controls that aren't specified remain as is in the Office application.
+         */
+        requestUpdate(input: ContextMenuUpdaterData): Promise<void>;
+    }
+    /**
+     * Represents an individual context menu control and its state.
+     *
+     * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands}.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+     */
+    export interface ContextMenuControl {
+        /**
+         * Identifier of the context menu control as specified in the manifest.
+         */
+        id: string;
+        /**
+         * Indicates whether the control is available on the context menu.
+         */
+        enabled?: boolean;
+    }
+    /**
+     * Represents the changes to the context menu.
+     *
+     * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands}.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets | ContextMenuApi 1.1}
+     */
+    export interface ContextMenuUpdaterData {
+        /**
+         * Collection of context menu controls whose state is set using `Office.contextMenu.requestUpdate`.
+         */
+        controls: ContextMenuControl[];
+    }
+    /**
      * Represents an individual control or command and the state it should have.
      *
      * @remarks
      *
-     * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+     * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
@@ -7184,7 +7247,7 @@ export declare namespace Office {
          *
          * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
          * 
-         * For code examples, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+         * For code examples, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
          *
          * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.
          */
@@ -7731,7 +7794,7 @@ export declare namespace Office {
         size: number;
     }
     /**
-     * Represents an individual tab and the state it should have. For code examples, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+     * Represents an individual tab and the state it should have. For code examples, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Change the availability of add-in commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
      * @remarks
      *
@@ -8377,10 +8440,9 @@ export declare namespace Office {
      */
     export interface TextBinding extends Binding { }
     /**
-     * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
+     * Provides objects and methods to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
      *
-     * Visit "{@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}"
-     * for more information.
+     * For guidance on how to configure dialog boxes, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}.
      */
     export interface UI {
         /**
@@ -8431,60 +8493,23 @@ export declare namespace Office {
          * if you're using the add-in only manifest. If you're using the unified manifest for Microsoft 365, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
-         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
+         * **Important**:
+         *
+         * - The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
          *
-         * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
+         * - Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
          *
-         * **Design considerations**:
+         * - To learn about rules, limitations, and best practices for the Office Dialog API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-best-practices | Best practices and rules for the Office dialog API}.
          *
-         * The following design considerations apply to dialog boxes.
+         * - For information on errors and how to handle them, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-handle-errors-events | Handle errors and events in the Office dialog box}.
          *
-         * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
-         * Commands (custom ribbon buttons or menu items).
+         * - In Outlook on the web and new Outlook on Windows, don't set the {@link https://developer.mozilla.org/docs/Web/API/Window/name | window.name} property
+         * when configuring a dialog in your add-in. The `window.name` property is used by these Outlook clients to maintain functionality across page redirects.
          *
-         * - Every dialog box can be moved and resized by the user.
-         *
-         * - Every dialog box is centered on the screen when opened.
-         *
-         * - Dialog boxes appear on top of the application and in the order in which they were created.
-         *
-         * Use a dialog box to:
-         *
-         * - Display authentication pages to collect user credentials.
-         *
-         * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
-         *
-         * - Temporarily increase the surface area that a user has available to complete a task.
-         *
-         * Do not use a dialog box to interact with a document. Use a task pane instead.
-         *
-         * **displayDialogAsync Errors**
-         *
-         * <table>
-         *   <tr>
-         *     <th>Code number</th>
-         *     <th>Meaning</th>
-         *   </tr>
-         *   <tr>
-         *     <td>12004</td>
-         *     <td>The domain of the URL passed to displayDialogAsync isn't trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
-         *   </tr>
-         *   <tr>
-         *     <td>12005</td>
-         *     <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td>
-         *   </tr>
-         *   <tr>
-         *     <td>12007</td>
-         *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
-         *   </tr>
-         *   <tr>
-         *     <td>12009</td>
-         *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
-         *   </tr>
-         * </table>
-         *
-         * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
+         * - In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
          * following information.
          *
          * <table>
@@ -8534,60 +8559,23 @@ export declare namespace Office {
          * if you're using the add-in only manifest. If you're using the unified manifest for Microsoft 365, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
-         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
+         * **Important**:
+         *
+         * - The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
          *
-         * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
+         * - Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
          *
-         * **Design considerations**:
+         * - To learn about rules, limitations, and best practices for the Office Dialog API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-best-practices | Best practices and rules for the Office dialog API}.
          *
-         * The following design considerations apply to dialog boxes.
+         * - For information on errors and how to handle them, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-handle-errors-events | Handle errors and events in the Office dialog box}.
          *
-         * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
-         * Commands (custom ribbon buttons or menu items).
+         * - In Outlook on the web and new Outlook on Windows, don't set the {@link https://developer.mozilla.org/docs/Web/API/Window/name | window.name} property
+         * when configuring a dialog in your add-in. The `window.name` property is used by these Outlook clients to maintain functionality across page redirects.
          *
-         * - Every dialog box can be moved and resized by the user.
-         *
-         * - Every dialog box is centered on the screen when opened.
-         *
-         * - Dialog boxes appear on top of the application and in the order in which they were created.
-         *
-         * Use a dialog box to:
-         *
-         * - Display authentication pages to collect user credentials.
-         *
-         * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
-         *
-         * - Temporarily increase the surface area that a user has available to complete a task.
-         *
-         * Do not use a dialog box to interact with a document. Use a task pane instead.
-         *
-         * **displayDialogAsync Errors**
-         *
-         * <table>
-         *   <tr>
-         *     <th>Code number</th>
-         *     <th>Meaning</th>
-         *   </tr>
-         *   <tr>
-         *     <td>12004</td>
-         *     <td>The domain of the URL passed to displayDialogAsync isn't trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
-         *   </tr>
-         *   <tr>
-         *     <td>12005</td>
-         *     <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td>
-         *   </tr>
-         *   <tr>
-         *     <td>12007</td>
-         *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
-         *   </tr>
-         *   <tr>
-         *     <td>12009</td>
-         *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
-         *   </tr>
-         * </table>
-         *
-         * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
+         * - In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
          * following information.
          *
          * <table>
@@ -8666,7 +8654,7 @@ export declare namespace Office {
          * 
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
          *  
-         * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.
+         * @param url - The full URL to be opened including protocol (http or https), and port number, if any. Other protocols like mailto aren't supported.
          */
         openBrowserWindow(url: string): void;
     }

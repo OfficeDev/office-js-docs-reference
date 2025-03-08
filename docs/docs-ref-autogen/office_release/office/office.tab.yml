@@ -4,8 +4,8 @@ uid: 'office!Office.Tab:interface'
 package: office!
 fullName: Office.Tab
 summary: >-
-  Represents an individual tab and the state it should have. For code examples, see [Enable and Disable Add-in
-  Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
+  Represents an individual tab and the state it should have. For code examples, see [Change the availability of add-in
+  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
   tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
 remarks: >-
   **Requirement set**: [RibbonAPI

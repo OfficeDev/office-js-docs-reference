@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeFillLoadOptions
+uid: 'word!Word.Interfaces.ShapeFillLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ShapeFillLoadOptions
+summary: Represents the fill formatting of a shape object.
+remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ShapeFillLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: backgroundColor
+    uid: 'word!Word.Interfaces.ShapeFillLoadOptions#backgroundColor:member'
+    package: word!
+    fullName: backgroundColor
+    summary: 'Specifies the shape fill background color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backgroundColor?: boolean;'
+      return:
+        type: boolean
+  - name: foregroundColor
+    uid: 'word!Word.Interfaces.ShapeFillLoadOptions#foregroundColor:member'
+    package: word!
+    fullName: foregroundColor
+    summary: 'Specifies the shape fill foreground color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor?: boolean;'
+      return:
+        type: boolean
+  - name: transparency
+    uid: 'word!Word.Interfaces.ShapeFillLoadOptions#transparency:member'
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.ShapeFillLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: Returns the fill type of the shape. See `Word.ShapeFillType` for details.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

@@ -207,6 +207,27 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
         description: The newly inserted shape.
+  - name: addGroup(values)
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addGroup:member(1)'
+    package: powerpoint!
+    fullName: addGroup(values)
+    summary: Create a shape group for several shapes.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addGroup(values: Array<string | Shape>): PowerPoint.Shape;'
+      parameters:
+        - id: values
+          description: An array of shape IDs or `Shape` objects.
+          type: 'Array&lt;string | <xref uid="powerpoint!PowerPoint.Shape:class" />&gt;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: >-
+          A `Shape` object that represents the shape group. Use the `Shape.group` property to access the `ShapeGroup`
+          object for the group.
   - name: 'addLine(connectorType, options)'
     uid: 'powerpoint!PowerPoint.ShapeCollection#addLine:member(1)'
     package: powerpoint!
