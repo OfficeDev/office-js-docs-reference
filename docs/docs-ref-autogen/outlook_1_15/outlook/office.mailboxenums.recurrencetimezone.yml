@@ -1,0 +1,753 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.RecurrenceTimeZone
+uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'
+package: outlook!
+fullName: Office.MailboxEnums.RecurrenceTimeZone
+summary: Specifies the time zone applied to the recurrence.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+  // Important: Can only set the recurrence pattern of an appointment series.
+
+
+  const currentDate = new Date();
+
+  let seriesTimeObject: Office.SeriesTime;
+
+  // Set series start date to tomorrow.
+
+  seriesTimeObject.setStartDate(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay() + 1);
+
+  // Set series end date to one year from now.
+
+  seriesTimeObject.setEndDate(currentDate.getFullYear() + 1, currentDate.getMonth() + 1, currentDate.getDay());
+
+  // Set start time to 1:30 PM.
+
+  seriesTimeObject.setStartTime(13, 30);
+
+  // Set duration to 30 minutes.
+
+  seriesTimeObject.setDuration(30);
+
+
+  const pattern: Office.Recurrence = {
+    seriesTime: seriesTimeObject,
+    recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+    recurrenceProperties: {
+      interval: 1,
+      dayOfWeek: Office.MailboxEnums.Days.Tue,
+      weekNumber: Office.MailboxEnums.WeekNumber.Second,
+      month: Office.MailboxEnums.Month.Sep
+    },
+    recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+  };
+
+
+  Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+      console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+      return;
+    }
+    console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: AfghanistanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AfghanistanStandardTime:member'
+    package: outlook!
+    summary: Afghanistan Standard Time
+    value: '"Afghanistan Standard Time"'
+  - name: AlaskanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AlaskanStandardTime:member'
+    package: outlook!
+    summary: Alaskan Standard Time
+    value: '"Alaskan Standard Time"'
+  - name: AleutianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AleutianStandardTime:member'
+    package: outlook!
+    summary: Aleutian Standard Time
+    value: '"Aleutian Standard Time"'
+  - name: AltaiStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AltaiStandardTime:member'
+    package: outlook!
+    summary: Altai Standard Time
+    value: '"Altai Standard Time"'
+  - name: ArabStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArabStandardTime:member'
+    package: outlook!
+    summary: Arab Standard Time
+    value: '"Arab Standard Time"'
+  - name: ArabianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArabianStandardTime:member'
+    package: outlook!
+    summary: Arabian Standard Time
+    value: '"Arabian Standard Time"'
+  - name: ArabicStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArabicStandardTime:member'
+    package: outlook!
+    summary: Arabic Standard Time
+    value: '"Arabic Standard Time"'
+  - name: ArgentinaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArgentinaStandardTime:member'
+    package: outlook!
+    summary: Argentina Standard Time
+    value: '"Argentina Standard Time"'
+  - name: AstrakhanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AstrakhanStandardTime:member'
+    package: outlook!
+    summary: Astrakhan Standard Time
+    value: '"Astrakhan Standard Time"'
+  - name: AtlanticStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AtlanticStandardTime:member'
+    package: outlook!
+    summary: Atlantic Standard Time
+    value: '"Atlantic Standard Time"'
+  - name: AUSCentralStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AUSCentralStandardTime:member'
+    package: outlook!
+    summary: Australia Central Standard Time
+    value: '"AUS Central Standard Time"'
+  - name: AusCentralW_StandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AusCentralW_StandardTime:member'
+    package: outlook!
+    summary: Australia Central West Standard Time
+    value: '"Aus Central W. Standard Time"'
+  - name: AUSEasternStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AUSEasternStandardTime:member'
+    package: outlook!
+    summary: AUS Eastern Standard Time
+    value: '"AUS Eastern Standard Time"'
+  - name: AzerbaijanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AzerbaijanStandardTime:member'
+    package: outlook!
+    summary: Azerbaijan Standard Time
+    value: '"Azerbaijan Standard Time"'
+  - name: AzoresStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.AzoresStandardTime:member'
+    package: outlook!
+    summary: Azores Standard Time
+    value: '"Azores Standard Time"'
+  - name: BahiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.BahiaStandardTime:member'
+    package: outlook!
+    summary: Bahia Standard Time
+    value: '"Bahia Standard Time"'
+  - name: BangladeshStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.BangladeshStandardTime:member'
+    package: outlook!
+    summary: Bangladesh Standard Time
+    value: '"Bangladesh Standard Time"'
+  - name: BelarusStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.BelarusStandardTime:member'
+    package: outlook!
+    summary: Belarus Standard Time
+    value: '"Belarus Standard Time"'
+  - name: BougainvilleStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.BougainvilleStandardTime:member'
+    package: outlook!
+    summary: Bougainville Standard Time
+    value: '"Bougainville Standard Time"'
+  - name: CanadaCentralStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CanadaCentralStandardTime:member'
+    package: outlook!
+    summary: Canada Central Standard Time
+    value: '"Canada Central Standard Time"'
+  - name: CapeVerdeStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CapeVerdeStandardTime:member'
+    package: outlook!
+    summary: Cape Verde Standard Time
+    value: '"Cape Verde Standard Time"'
+  - name: CaucasusStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CaucasusStandardTime:member'
+    package: outlook!
+    summary: Caucasus Standard Time
+    value: '"Caucasus Standard Time"'
+  - name: CenAustraliaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CenAustraliaStandardTime:member'
+    package: outlook!
+    summary: Central Australia Standard Time
+    value: '"Cen. Australia Standard Time"'
+  - name: CentralAmericaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralAmericaStandardTime:member'
+    package: outlook!
+    summary: Central America Standard Time
+    value: '"Central America Standard Time"'
+  - name: CentralAsiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralAsiaStandardTime:member'
+    package: outlook!
+    summary: Central Asia Standard Time
+    value: '"Central Asia Standard Time"'
+  - name: CentralBrazilianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralBrazilianStandardTime:member'
+    package: outlook!
+    summary: Central Brazilian Standard Time
+    value: '"Central Brazilian Standard Time"'
+  - name: CentralEuropeStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeStandardTime:member'
+    package: outlook!
+    summary: Central Europe Standard Time
+    value: '"Central Europe Standard Time"'
+  - name: CentralEuropeanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeanStandardTime:member'
+    package: outlook!
+    summary: Central European Standard Time
+    value: '"Central European Standard Time"'
+  - name: CentralPacificStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralPacificStandardTime:member'
+    package: outlook!
+    summary: Central Pacific Standard Time
+    value: '"Central Pacific Standard Time"'
+  - name: CentralStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime:member'
+    package: outlook!
+    summary: Central Standard Time
+    value: '"Central Standard Time"'
+  - name: CentralStandardTime_Mexico
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime_Mexico:member'
+    package: outlook!
+    summary: Central Standard Time (Mexico)
+    value: '"Central Standard Time (Mexico)"'
+  - name: ChathamIslandsStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ChathamIslandsStandardTime:member'
+    package: outlook!
+    summary: Chatham Islands Standard Time
+    value: '"Chatham Islands Standard Time"'
+  - name: ChinaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ChinaStandardTime:member'
+    package: outlook!
+    summary: China Standard Time
+    value: '"China Standard Time"'
+  - name: CubaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CubaStandardTime:member'
+    package: outlook!
+    summary: Cuba Standard Time
+    value: '"Cuba Standard Time"'
+  - name: DatelineStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.DatelineStandardTime:member'
+    package: outlook!
+    summary: Dateline Standard Time
+    value: '"Dateline Standard Time"'
+  - name: E_AfricaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.E_AfricaStandardTime:member'
+    package: outlook!
+    summary: East Africa Standard Time
+    value: '"E. Africa Standard Time"'
+  - name: E_AustraliaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.E_AustraliaStandardTime:member'
+    package: outlook!
+    summary: East Australia Standard Time
+    value: '"E. Australia Standard Time"'
+  - name: E_EuropeStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.E_EuropeStandardTime:member'
+    package: outlook!
+    summary: East Europe Standard Time
+    value: '"E. Europe Standard Time"'
+  - name: E_SouthAmericaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.E_SouthAmericaStandardTime:member'
+    package: outlook!
+    summary: East South America Standard Time
+    value: '"E. South America Standard Time"'
+  - name: EasterIslandStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.EasterIslandStandardTime:member'
+    package: outlook!
+    summary: Easter Island Standard Time
+    value: '"Easter Island Standard Time"'
+  - name: EasternStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime:member'
+    package: outlook!
+    summary: Eastern Standard Time
+    value: '"Eastern Standard Time"'
+  - name: EasternStandardTime_Mexico
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime_Mexico:member'
+    package: outlook!
+    summary: Eastern Standard Time (Mexico)
+    value: '"Eastern Standard Time (Mexico)"'
+  - name: EgyptStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.EgyptStandardTime:member'
+    package: outlook!
+    summary: Egypt Standard Time
+    value: '"Egypt Standard Time"'
+  - name: EkaterinburgStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.EkaterinburgStandardTime:member'
+    package: outlook!
+    summary: Ekaterinburg Standard Time
+    value: '"Ekaterinburg Standard Time"'
+  - name: FijiStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.FijiStandardTime:member'
+    package: outlook!
+    summary: Fiji Standard Time
+    value: '"Fiji Standard Time"'
+  - name: FLEStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.FLEStandardTime:member'
+    package: outlook!
+    summary: FLE Standard Time
+    value: '"FLE Standard Time"'
+  - name: GeorgianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.GeorgianStandardTime:member'
+    package: outlook!
+    summary: Georgian Standard Time
+    value: '"Georgian Standard Time"'
+  - name: GMTStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.GMTStandardTime:member'
+    package: outlook!
+    summary: GMT Standard Time
+    value: '"GMT Standard Time"'
+  - name: GreenlandStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.GreenlandStandardTime:member'
+    package: outlook!
+    summary: Greenland Standard Time
+    value: '"Greenland Standard Time"'
+  - name: GreenwichStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.GreenwichStandardTime:member'
+    package: outlook!
+    summary: Greenwich Standard Time
+    value: '"Greenwich Standard Time"'
+  - name: GTBStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.GTBStandardTime:member'
+    package: outlook!
+    summary: GTB Standard Time
+    value: '"GTB Standard Time"'
+  - name: HaitiStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.HaitiStandardTime:member'
+    package: outlook!
+    summary: Haiti Standard Time
+    value: '"Haiti Standard Time"'
+  - name: HawaiianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.HawaiianStandardTime:member'
+    package: outlook!
+    summary: Hawaiian Standard Time
+    value: '"Hawaiian Standard Time"'
+  - name: IndiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.IndiaStandardTime:member'
+    package: outlook!
+    summary: India Standard Time
+    value: '"India Standard Time"'
+  - name: IranStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.IranStandardTime:member'
+    package: outlook!
+    summary: Iran Standard Time
+    value: '"Iran Standard Time"'
+  - name: IsraelStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.IsraelStandardTime:member'
+    package: outlook!
+    summary: Israel Standard Time
+    value: '"Israel Standard Time"'
+  - name: JordanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.JordanStandardTime:member'
+    package: outlook!
+    summary: Jordan Standard Time
+    value: '"Jordan Standard Time"'
+  - name: KaliningradStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.KaliningradStandardTime:member'
+    package: outlook!
+    summary: Kaliningrad Standard Time
+    value: '"Kaliningrad Standard Time"'
+  - name: KamchatkaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.KamchatkaStandardTime:member'
+    package: outlook!
+    summary: Kamchatka Standard Time
+    value: '"Kamchatka Standard Time"'
+  - name: KoreaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.KoreaStandardTime:member'
+    package: outlook!
+    summary: Korea Standard Time
+    value: '"Korea Standard Time"'
+  - name: LibyaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.LibyaStandardTime:member'
+    package: outlook!
+    summary: Libya Standard Time
+    value: '"Libya Standard Time"'
+  - name: LineIslandsStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.LineIslandsStandardTime:member'
+    package: outlook!
+    summary: Line Islands Standard Time
+    value: '"Line Islands Standard Time"'
+  - name: LordHoweStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.LordHoweStandardTime:member'
+    package: outlook!
+    summary: Lord Howe Standard Time
+    value: '"Lord Howe Standard Time"'
+  - name: MagadanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MagadanStandardTime:member'
+    package: outlook!
+    summary: Magadan Standard Time
+    value: '"Magadan Standard Time"'
+  - name: MagallanesStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MagallanesStandardTime:member'
+    package: outlook!
+    summary: Magallanes Standard Time
+    value: '"Magallanes Standard Time"'
+  - name: MarquesasStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MarquesasStandardTime:member'
+    package: outlook!
+    summary: Marquesas Standard Time
+    value: '"Marquesas Standard Time"'
+  - name: MauritiusStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MauritiusStandardTime:member'
+    package: outlook!
+    summary: Mauritius Standard Time
+    value: '"Mauritius Standard Time"'
+  - name: MidAtlanticStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MidAtlanticStandardTime:member'
+    package: outlook!
+    summary: Mid-Atlantic Standard Time
+    value: '"Mid-Atlantic Standard Time"'
+  - name: MiddleEastStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MiddleEastStandardTime:member'
+    package: outlook!
+    summary: Middle East Standard Time
+    value: '"Middle East Standard Time"'
+  - name: MontevideoStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MontevideoStandardTime:member'
+    package: outlook!
+    summary: Montevideo Standard Time
+    value: '"Montevideo Standard Time"'
+  - name: MoroccoStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MoroccoStandardTime:member'
+    package: outlook!
+    summary: Morocco Standard Time
+    value: '"Morocco Standard Time"'
+  - name: MountainStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime:member'
+    package: outlook!
+    summary: Mountain Standard Time
+    value: '"Mountain Standard Time"'
+  - name: MountainStandardTime_Mexico
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime_Mexico:member'
+    package: outlook!
+    summary: Mountain Standard Time (Mexico)
+    value: '"Mountain Standard Time (Mexico)"'
+  - name: MyanmarStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.MyanmarStandardTime:member'
+    package: outlook!
+    summary: Myanmar Standard Time
+    value: '"Myanmar Standard Time"'
+  - name: N_CentralAsiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.N_CentralAsiaStandardTime:member'
+    package: outlook!
+    summary: North Central Asia Standard Time
+    value: '"N. Central Asia Standard Time"'
+  - name: NamibiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NamibiaStandardTime:member'
+    package: outlook!
+    summary: Namibia Standard Time
+    value: '"Namibia Standard Time"'
+  - name: NepalStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NepalStandardTime:member'
+    package: outlook!
+    summary: Nepal Standard Time
+    value: '"Nepal Standard Time"'
+  - name: NewZealandStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NewZealandStandardTime:member'
+    package: outlook!
+    summary: New Zealand Standard Time
+    value: '"New Zealand Standard Time"'
+  - name: NewfoundlandStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NewfoundlandStandardTime:member'
+    package: outlook!
+    summary: Newfoundland Standard Time
+    value: '"Newfoundland Standard Time"'
+  - name: NorfolkStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NorfolkStandardTime:member'
+    package: outlook!
+    summary: Norfolk Standard Time
+    value: '"Norfolk Standard Time"'
+  - name: NorthAsiaEastStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaEastStandardTime:member'
+    package: outlook!
+    summary: North Asia East Standard Time
+    value: '"North Asia East Standard Time"'
+  - name: NorthAsiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaStandardTime:member'
+    package: outlook!
+    summary: North Asia Standard Time
+    value: '"North Asia Standard Time"'
+  - name: NorthKoreaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NorthKoreaStandardTime:member'
+    package: outlook!
+    summary: North Korea Standard Time
+    value: '"North Korea Standard Time"'
+  - name: OmskStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.OmskStandardTime:member'
+    package: outlook!
+    summary: Omsk Standard Time
+    value: '"Omsk Standard Time"'
+  - name: PacificSAStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.PacificSAStandardTime:member'
+    package: outlook!
+    summary: Pacific SA Standard Time
+    value: '"Pacific SA Standard Time"'
+  - name: PacificStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime:member'
+    package: outlook!
+    summary: Pacific Standard Time
+    value: '"Pacific Standard Time"'
+  - name: PacificStandardTimeMexico
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTimeMexico:member'
+    package: outlook!
+    summary: Pacific Standard Time (Mexico)
+    value: '"Pacific Standard Time (Mexico)"'
+  - name: PakistanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.PakistanStandardTime:member'
+    package: outlook!
+    summary: Pakistan Standard Time
+    value: '"Pakistan Standard Time"'
+  - name: ParaguayStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ParaguayStandardTime:member'
+    package: outlook!
+    summary: Paraguay Standard Time
+    value: '"Paraguay Standard Time"'
+  - name: RomanceStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RomanceStandardTime:member'
+    package: outlook!
+    summary: Romance Standard Time
+    value: '"Romance Standard Time"'
+  - name: RussiaTimeZone10
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone10:member'
+    package: outlook!
+    summary: Russia Time Zone 10
+    value: '"Russia Time Zone 10"'
+  - name: RussiaTimeZone11
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone11:member'
+    package: outlook!
+    summary: Russia Time Zone 11
+    value: '"Russia Time Zone 11"'
+  - name: RussiaTimeZone3
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone3:member'
+    package: outlook!
+    summary: Russia Time Zone 3
+    value: '"Russia Time Zone 3"'
+  - name: RussianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussianStandardTime:member'
+    package: outlook!
+    summary: Russian Standard Time
+    value: '"Russian Standard Time"'
+  - name: SAEasternStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAEasternStandardTime:member'
+    package: outlook!
+    summary: SA Eastern Standard Time
+    value: '"SA Eastern Standard Time"'
+  - name: SAPacificStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAPacificStandardTime:member'
+    package: outlook!
+    summary: SA Pacific Standard Time
+    value: '"SA Pacific Standard Time"'
+  - name: SAWesternStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAWesternStandardTime:member'
+    package: outlook!
+    summary: SA Western Standard Time
+    value: '"SA Western Standard Time"'
+  - name: SaintPierreStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SaintPierreStandardTime:member'
+    package: outlook!
+    summary: Saint Pierre Standard Time
+    value: '"Saint Pierre Standard Time"'
+  - name: SakhalinStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SakhalinStandardTime:member'
+    package: outlook!
+    summary: Sakhalin Standard Time
+    value: '"Sakhalin Standard Time"'
+  - name: SamoaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SamoaStandardTime:member'
+    package: outlook!
+    summary: Samoa Standard Time
+    value: '"Samoa Standard Time"'
+  - name: SaratovStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SaratovStandardTime:member'
+    package: outlook!
+    summary: Saratov Standard Time
+    value: '"Saratov Standard Time"'
+  - name: SEAsiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SEAsiaStandardTime:member'
+    package: outlook!
+    summary: Southeast Asia Standard Time
+    value: '"SE Asia Standard Time"'
+  - name: SingaporeStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SingaporeStandardTime:member'
+    package: outlook!
+    summary: Singapore Standard Time
+    value: '"Singapore Standard Time"'
+  - name: SouthAfricaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SouthAfricaStandardTime:member'
+    package: outlook!
+    summary: South Africa Standard Time
+    value: '"South Africa Standard Time"'
+  - name: SriLankaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SriLankaStandardTime:member'
+    package: outlook!
+    summary: Sri Lanka Standard Time
+    value: '"Sri Lanka Standard Time"'
+  - name: SudanStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SudanStandardTime:member'
+    package: outlook!
+    summary: Sudan Standard Time
+    value: '"Sudan Standard Time"'
+  - name: SyriaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SyriaStandardTime:member'
+    package: outlook!
+    summary: Syria Standard Time
+    value: '"Syria Standard Time"'
+  - name: TaipeiStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TaipeiStandardTime:member'
+    package: outlook!
+    summary: Taipei Standard Time
+    value: '"Taipei Standard Time"'
+  - name: TasmaniaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TasmaniaStandardTime:member'
+    package: outlook!
+    summary: Tasmania Standard Time
+    value: '"Tasmania Standard Time"'
+  - name: TocantinsStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TocantinsStandardTime:member'
+    package: outlook!
+    summary: Tocantins Standard Time
+    value: '"Tocantins Standard Time"'
+  - name: TokyoStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TokyoStandardTime:member'
+    package: outlook!
+    summary: Tokyo Standard Time
+    value: '"Tokyo Standard Time"'
+  - name: TomskStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TomskStandardTime:member'
+    package: outlook!
+    summary: Tomsk Standard Time
+    value: '"Tomsk Standard Time"'
+  - name: TongaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TongaStandardTime:member'
+    package: outlook!
+    summary: Tonga Standard Time
+    value: '"Tonga Standard Time"'
+  - name: TransbaikalStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TransbaikalStandardTime:member'
+    package: outlook!
+    summary: Transbaikal Standard Time
+    value: '"Transbaikal Standard Time"'
+  - name: TurkeyStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TurkeyStandardTime:member'
+    package: outlook!
+    summary: Turkey Standard Time
+    value: '"Turkey Standard Time"'
+  - name: TurksAndCaicosStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.TurksAndCaicosStandardTime:member'
+    package: outlook!
+    summary: Turks And Caicos Standard Time
+    value: '"Turks And Caicos Standard Time"'
+  - name: UlaanbaatarStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UlaanbaatarStandardTime:member'
+    package: outlook!
+    summary: Ulaanbaatar Standard Time
+    value: '"Ulaanbaatar Standard Time"'
+  - name: USEasternStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.USEasternStandardTime:member'
+    package: outlook!
+    summary: United States Eastern Standard Time
+    value: '"US Eastern Standard Time"'
+  - name: USMountainStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.USMountainStandardTime:member'
+    package: outlook!
+    summary: United States Mountain Standard Time
+    value: '"US Mountain Standard Time"'
+  - name: UTC
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTC:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC)
+    value: '"UTC"'
+  - name: UTCPLUS12
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS12:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) + 12 hours
+    value: '"UTC+12"'
+  - name: UTCPLUS13
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS13:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) + 13 hours
+    value: '"UTC+13"'
+  - name: UTCMINUS02
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS02:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) - 2 hours
+    value: '"UTC-02"'
+  - name: UTCMINUS08
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS08:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) - 8 hours
+    value: '"UTC-08"'
+  - name: UTCMINUS09
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS09:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) - 9 hours
+    value: '"UTC-09"'
+  - name: UTCMINUS11
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS11:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) - 11 hours
+    value: '"UTC-11"'
+  - name: VenezuelaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.VenezuelaStandardTime:member'
+    package: outlook!
+    summary: Venezuela Standard Time
+    value: '"Venezuela Standard Time"'
+  - name: VladivostokStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.VladivostokStandardTime:member'
+    package: outlook!
+    summary: Vladivostok Standard Time
+    value: '"Vladivostok Standard Time"'
+  - name: W_AustraliaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.W_AustraliaStandardTime:member'
+    package: outlook!
+    summary: West Australia Standard Time
+    value: '"W. Australia Standard Time"'
+  - name: W_CentralAfricaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.W_CentralAfricaStandardTime:member'
+    package: outlook!
+    summary: West Central Africa Standard Time
+    value: '"W. Central Africa Standard Time"'
+  - name: W_EuropeStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.W_EuropeStandardTime:member'
+    package: outlook!
+    summary: West Europe Standard Time
+    value: '"W. Europe Standard Time"'
+  - name: W_MongoliaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.W_MongoliaStandardTime:member'
+    package: outlook!
+    summary: West Mongolia Standard Time
+    value: '"W. Mongolia Standard Time"'
+  - name: WestAsiaStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.WestAsiaStandardTime:member'
+    package: outlook!
+    summary: West Asia Standard Time
+    value: '"West Asia Standard Time"'
+  - name: WestBankStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.WestBankStandardTime:member'
+    package: outlook!
+    summary: West Bank Standard Time
+    value: '"West Bank Standard Time"'
+  - name: WestPacificStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.WestPacificStandardTime:member'
+    package: outlook!
+    summary: West Pacific Standard Time
+    value: '"West Pacific Standard Time"'
+  - name: YakutskStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.YakutskStandardTime:member'
+    package: outlook!
+    summary: Yakutsk Standard Time
+    value: '"Yakutsk Standard Time"'

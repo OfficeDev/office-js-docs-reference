@@ -1,7 +1,7 @@
 ---
 title: PreProcessingDialog element in the manifest file
 description: The PreProcessingDialog element configures the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 02/27/2025
+ms.date: 03/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -37,12 +37,10 @@ None.
 | :------ | :------: | :------ |
 | **Title** | Yes | Specifies the custom title of the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
 | **Description** | Yes | Specifies the custom text that appears in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [LongStrings](longstrings.md) element under the [Resources](resources.md) element. |
-| **NeverShowAgainOption** (preview)* | No | When set to `true`, adds a "Don't show me this message again" checkbox to prevent the preprocessing dialog from appearing again. Consider specifying this element in your manifest when the preprocessing dialog of your spam-reporting add-in doesn't require user input. If you set this element to `true` and also specify the **\<ReportingOptions\>** and **\<FreeTextLabel\>** elements, the "Don't show me this message again" checkbox isn't shown on the preprocessing dialog. |
+| **NeverShowAgainOption** | No | When set to `true`, adds a "Don't show me this message again" checkbox to prevent the preprocessing dialog from appearing again. Consider specifying this element in your manifest when the preprocessing dialog of your spam-reporting add-in doesn't require user input. If you set this element to `true` and also specify the **\<ReportingOptions\>** and **\<FreeTextLabel\>** elements, the "Don't show me this message again" checkbox isn't shown on the preprocessing dialog.<br><br>**Important**: The **\<NeverShowAgainOption\>** element was introduced in [requirement set 1.15](../requirement-sets/outlook/requirement-set-1.15/outlook-requirement-set-1.15.md). Learn more about its [supported clients and platforms](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets).|
 | [ReportingOptions](reportingoptions.md) | No | Lists up to five options a user can select from the preprocessing dialog to provide a reason for reporting a message. |
 | **FreeTextLabel** | No | Adds a text box to the preprocessing dialog to allow users to provide additional information on the message they're reporting. Its **resid** attribute sets the title of the text box. The **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
 | [MoreInfo](moreinfo.md) | No | Specifies the custom text and URL to provide informational resources to the users. The custom text and URL configured in this element appear below the text provided in the **\<Description\>** element. |
-
-> \* The **\<NeverShowAgainOption\>** element is currently in preview in Outlook on the web and on Windows (new and classic). To preview this feature in classic Outlook on Windows, install Version 2411 (Build 18227.20034) or later. Then, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/join-the-microsoft-365-insider-program-on-windows/4206638) and select the **Beta Channel** option.
 
 ## Example
 

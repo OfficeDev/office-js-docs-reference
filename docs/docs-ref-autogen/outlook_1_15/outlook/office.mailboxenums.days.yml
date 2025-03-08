@@ -1,0 +1,123 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.Days
+uid: 'outlook!Office.MailboxEnums.Days:enum'
+package: outlook!
+fullName: Office.MailboxEnums.Days
+summary: Specifies the day of week or type of day.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+  // Important: Can only set the recurrence pattern of an appointment series.
+
+
+  const currentDate = new Date();
+
+  let seriesTimeObject: Office.SeriesTime;
+
+  // Set series start date to tomorrow.
+
+  seriesTimeObject.setStartDate(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay() + 1);
+
+  // Set series end date to one year from now.
+
+  seriesTimeObject.setEndDate(currentDate.getFullYear() + 1, currentDate.getMonth() + 1, currentDate.getDay());
+
+  // Set start time to 1:30 PM.
+
+  seriesTimeObject.setStartTime(13, 30);
+
+  // Set duration to 30 minutes.
+
+  seriesTimeObject.setDuration(30);
+
+
+  const pattern: Office.Recurrence = {
+    seriesTime: seriesTimeObject,
+    recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+    recurrenceProperties: {
+      interval: 1,
+      dayOfWeek: Office.MailboxEnums.Days.Tue,
+      weekNumber: Office.MailboxEnums.WeekNumber.Second,
+      month: Office.MailboxEnums.Month.Sep
+    },
+    recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+  };
+
+
+  Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+      console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+      return;
+    }
+    console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Mon
+    uid: 'outlook!Office.MailboxEnums.Days.Mon:member'
+    package: outlook!
+    summary: Monday
+    value: '"mon"'
+  - name: Tue
+    uid: 'outlook!Office.MailboxEnums.Days.Tue:member'
+    package: outlook!
+    summary: Tuesday
+    value: '"tue"'
+  - name: Wed
+    uid: 'outlook!Office.MailboxEnums.Days.Wed:member'
+    package: outlook!
+    summary: Wednesday
+    value: '"wed"'
+  - name: Thu
+    uid: 'outlook!Office.MailboxEnums.Days.Thu:member'
+    package: outlook!
+    summary: Thursday
+    value: '"thu"'
+  - name: Fri
+    uid: 'outlook!Office.MailboxEnums.Days.Fri:member'
+    package: outlook!
+    summary: Friday
+    value: '"fri"'
+  - name: Sat
+    uid: 'outlook!Office.MailboxEnums.Days.Sat:member'
+    package: outlook!
+    summary: Saturday
+    value: '"sat"'
+  - name: Sun
+    uid: 'outlook!Office.MailboxEnums.Days.Sun:member'
+    package: outlook!
+    summary: Sunday
+    value: '"sun"'
+  - name: Weekday
+    uid: 'outlook!Office.MailboxEnums.Days.Weekday:member'
+    package: outlook!
+    summary: 'Week day (excludes weekend days): ''Mon'', ''Tue'', ''Wed'', ''Thu'', and ''Fri''.'
+    value: '"weekday"'
+  - name: WeekendDay
+    uid: 'outlook!Office.MailboxEnums.Days.WeekendDay:member'
+    package: outlook!
+    summary: 'Weekend day: ''Sat'' and ''Sun''.'
+    value: '"weekendDay"'
+  - name: Day
+    uid: 'outlook!Office.MailboxEnums.Days.Day:member'
+    package: outlook!
+    summary: Day of week.
+    value: '"day"'

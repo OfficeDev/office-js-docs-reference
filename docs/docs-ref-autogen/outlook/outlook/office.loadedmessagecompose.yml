@@ -7,7 +7,7 @@ summary: >-
   Represents a message in compose mode that's currently loaded. A `LoadedMessageCompose` object is returned when
   `Office.context.mailbox.loadItemByIdAsync` is called on a message in compose mode.
 remarks: >-
-  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -67,7 +67,7 @@ remarks: >-
   }
 
   ```
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -98,7 +98,7 @@ properties:
 
       - Depending on the Outlook client and platform, limits may apply on how many recipients you can get. For more
       information, see the [Recipients](xref:outlook!Office.Recipients:interface) object.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bcc: Recipients;'
@@ -124,7 +124,7 @@ properties:
 
 
       **Important**: Only the `getAsync` and `getTypeAsync` methods of the Body object are supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'body: Body;'
@@ -147,7 +147,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'categories: Categories;'
@@ -177,7 +177,7 @@ properties:
 
       - Depending on the Outlook client and platform, limits may apply on how many recipients you can get. For more
       information, see the [Recipients](xref:outlook!Office.Recipients:interface) object.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'cc: Recipients;'
@@ -206,7 +206,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'conversationId: string;'
@@ -232,7 +232,7 @@ properties:
 
 
       **Important**: Only the `getAsync` method of the DelayDeliveryTime object is supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delayDeliveryTime: DelayDeliveryTime;'
@@ -255,7 +255,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'from: From;'
@@ -289,7 +289,7 @@ properties:
 
       - The `inReplyTo` property returns `null` for new messages and meeting invites being forwarded by a user who's
       also the meeting organizer.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inReplyTo: string;'
@@ -320,7 +320,7 @@ properties:
 
 
       **Important**: Only the `getAsync` method of the InternetHeaders object is supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'internetHeaders: InternetHeaders;'
@@ -345,7 +345,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
@@ -370,11 +370,8 @@ properties:
       -->**: Message Compose
 
 
-      **Important**:
-
-
-      - Only the `getAllAsync` method of the NotificationMessages object is supported.
-    isPreview: true
+      **Important**: Only the `getAllAsync` method of the NotificationMessages object is supported.
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notificationMessages: NotificationMessages;'
@@ -411,7 +408,7 @@ properties:
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
       message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivityLabel: SensitivityLabel;'
@@ -451,7 +448,7 @@ properties:
 
       The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
       items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'seriesId: string;'
@@ -477,7 +474,7 @@ properties:
 
 
       **Important**: Only the `getAsync` method of the Subject object is supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subject: Subject;'
@@ -509,7 +506,7 @@ properties:
 
       - Depending on the Outlook client and platform, limits may apply on how many recipients you can get. For more
       information, see the [Recipients](xref:outlook!Office.Recipients:interface) object.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'to: Recipients;'
@@ -562,7 +559,7 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -634,7 +631,7 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -677,7 +674,7 @@ methods:
       **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and
       share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However,
       since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -722,7 +719,7 @@ methods:
       **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and
       share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However,
       since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getAttachmentsAsync(callback?: (asyncResult: Office.AsyncResult<AttachmentDetailsCompose[]>) => void): void;'
@@ -757,7 +754,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -797,7 +794,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getComposeTypeAsync(callback: (asyncResult: Office.AsyncResult<any>) => void): void;'
@@ -832,7 +829,7 @@ methods:
 
       **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
       contents to provide context for the current message being composed.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -874,7 +871,7 @@ methods:
 
       **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
       contents to provide context for the current message being composed.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getConversationIndexAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -907,7 +904,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -947,7 +944,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getInitializationContextAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -994,7 +991,7 @@ methods:
       requests</td> </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td>
       </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr>
       </table>
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1048,7 +1045,7 @@ methods:
       requests</td> </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td>
       </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr>
       </table>
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemClassAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -1104,7 +1101,7 @@ methods:
 
 
       - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is saved.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1157,7 +1154,7 @@ methods:
 
 
       - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is saved.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemIdAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -1226,7 +1223,7 @@ methods:
 
       The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared
       properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1305,7 +1302,7 @@ methods:
 
       The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared
       properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSharedPropertiesAsync(callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;'
@@ -1347,7 +1344,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1393,7 +1390,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isClientSignatureEnabledAsync(callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;'
@@ -1438,7 +1435,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1517,7 +1514,7 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1595,7 +1592,7 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -1617,7 +1614,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be
       loaded for processing.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1639,7 +1636,7 @@ methods:
 
       - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after
       processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1667,7 +1664,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be
       loaded for processing.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1689,7 +1686,7 @@ methods:
 
       - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after
       processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'unloadAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'

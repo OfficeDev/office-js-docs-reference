@@ -6233,7 +6233,7 @@ export declare namespace Office {
      * A `LoadedMessageCompose` object is returned when `Office.context.mailbox.loadItemByIdAsync` is called on a message in compose mode.
      *
      * @remarks
-     * [Api set: Mailbox preview]
+     * [Api set: Mailbox 1.15]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
      *
@@ -6247,8 +6247,6 @@ export declare namespace Office {
      *
      * - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`, you must call `unloadAsync` after processing the item.
      * This must be done before calling `loadItemByIdAsync` on another item.
-     *
-     * @beta
      */
     export interface LoadedMessageCompose {
         /**
@@ -6406,9 +6404,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**:
-         *
-         * - Only the `getAllAsync` method of the NotificationMessages object is supported.
+         * **Important**: Only the `getAllAsync` method of the NotificationMessages object is supported.
          */
         notificationMessages: NotificationMessages;
         /**
@@ -7118,7 +7114,7 @@ export declare namespace Office {
          * When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be loaded for processing.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -7135,15 +7131,13 @@ export declare namespace Office {
          * @param options - An object literal that contains the `asyncContext` property. Assign any object you wish to access in the callback function to the `asyncContext` property.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`,
          *                   which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         unloadAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be loaded for processing.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -7159,8 +7153,6 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`,
          *                   which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         unloadAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
@@ -7169,7 +7161,7 @@ export declare namespace Office {
      * A `LoadedMessageRead` object is returned when `Office.context.mailbox.loadItemByIdAsync` is called on a message in read mode.
      *
      * @remarks
-     * [Api set: Mailbox preview]
+     * [Api set: Mailbox 1.15]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
      *
@@ -7183,8 +7175,6 @@ export declare namespace Office {
      *
      * - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`, you must call `unloadAsync` after processing the item.
      * This must be done before calling `loadItemByIdAsync` on another item.
-     *
-     * @beta
      */
     export interface LoadedMessageRead {
         /**
@@ -8029,7 +8019,7 @@ export declare namespace Office {
          * When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be loaded for processing.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -8046,15 +8036,13 @@ export declare namespace Office {
          * @param options - An object literal that contains the `asyncContext` property. Assign any object you wish to access in the callback function to the `asyncContext` property.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`,
          *                   which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         unloadAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be loaded for processing.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -8070,8 +8058,6 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`,
          *                   which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         unloadAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
@@ -9284,12 +9270,12 @@ export declare namespace Office {
          * Then, gets an object that provides the properties and methods of the loaded item.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         * 
+         *
          * **Important**:
          *
          * - This method only applies to messages.
@@ -9311,8 +9297,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *        `asyncResult`, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or `LoadedMessageRead` object is returned
          *        in the `asyncResult.value` property. This object provides the properties of the selected item that's currently loaded.
-         *
-         * @beta
          */
         loadItemByIdAsync(itemId: string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<LoadedMessageCompose | LoadedMessageRead>) => void): void;
         /**
@@ -9320,12 +9304,12 @@ export declare namespace Office {
          * Then, gets an object that provides the properties and methods of the loaded item.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         * 
+         *
          * **Important**:
          *
          * - This method only applies to messages.
@@ -9345,8 +9329,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *        `asyncResult`, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or `LoadedMessageRead` object is returned
          *        in the `asyncResult.value` property. This object provides the properties of the selected item that's currently loaded.
-         *
-         * @beta
          */
         loadItemByIdAsync(itemId: string, callback: (asyncResult: CommonAPI.AsyncResult<LoadedMessageCompose | LoadedMessageRead>) => void): void;
         /**
@@ -14622,7 +14604,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
@@ -14637,8 +14619,6 @@ export declare namespace Office {
          *
          * - If you format the dialog message using the `errorMessageMarkdown` property, we recommend you also add a plaintext version of the message using the `errorMessage` property.
          * This ensures that the message is displayed properly in Outlook clients that don't support Markdown.
-         *
-         * @beta
          */
         errorMessageMarkdown?: string;
         /**
