@@ -1,7 +1,7 @@
 ---
 title: OfficeMenu element in the manifest file
 description: The OfficeMenu element defines a collection of controls to be added to the Office context menu.
-ms.date: 08/13/2024
+ms.date: 03/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -34,15 +34,15 @@ Although its official data type is string, this attribute effectively functions 
 - `ContextMenuText` - Displays the item on the context menu when text is selected and the user opens that menu (e.g., right-clicks) on the selected text. Applies to Word, Excel, PowerPoint, and OneNote.
 - `ContextMenuCell` - Displays the item on the context menu when the user opens that menu (e.g., right-clicks) on a cell on the spreadsheet. Applies to Excel.
 
-
 ## Child elements
 
-|  Element |  Required  |  Description  |
+| Element | Required | Description |
 |:-----|:-----:|:-----|
-|  [Control of type Button](control-button.md)    | Yes |  A single **Button** control object.  |
+| [Control of type Button](control-button.md) | Yes | A single **Button** control object. |
+| [Control of type Menu](control-menu.md) | Yes | A single **Menu** control object. |
 
 > [!NOTE]
-> There can be only one child control and it must be type **Button**.
+> There can be only one child control.
 
 ## Example
 

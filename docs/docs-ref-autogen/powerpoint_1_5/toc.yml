@@ -190,6 +190,12 @@ items:
                 uid: 'office!Office.Context:interface'
               - name: ContextInformation
                 uid: 'office!Office.ContextInformation:interface'
+              - name: ContextMenu
+                uid: 'office!Office.ContextMenu:interface'
+              - name: ContextMenuControl
+                uid: 'office!Office.ContextMenuControl:interface'
+              - name: ContextMenuUpdaterData
+                uid: 'office!Office.ContextMenuUpdaterData:interface'
               - name: Control
                 uid: 'office!Office.Control:interface'
               - name: CustomXmlNode
