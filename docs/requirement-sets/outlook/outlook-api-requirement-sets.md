@@ -166,7 +166,7 @@ The following table lists version support for more recent Mailbox requirement se
 | 1.12 | Version 2206 (Build 15330.20196) |
 | 1.13 | Version 2304 (Build 16327.20248) |
 | 1.14 | Version 2404 (Build 17530.15000) |
-| 1.15 | Version 24XX (Build XXXXX.XXXXX) |
+| 1.15 | Version 2412 (Build 18324.20172) |
 
 For more details about your client version, see the update history page for [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) or [Office 2024](/officeupdates/update-history-office-2024) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 
