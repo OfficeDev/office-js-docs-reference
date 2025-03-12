@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Item object model.
-ms.date: 11/19/2024
+ms.date: 03/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -184,6 +184,8 @@ ms.localizationpriority: medium
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-removehandlerasync-member(1)) | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 | saveAsync([options], callback) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-saveasync-member(1)) | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-saveasync-member(1)) | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
+| sendAsync([options], [callback]) | **read/write mailbox** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.15&preserve-view=true#outlook-office-appointmentcompose-sendasync-member(1)) | [1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md) |
+| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.15&preserve-view=true#outlook-office-messagecompose-sendasync-member(1)) | [1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md) |
 | setSelectedDataAsync(data, [options], callback) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-setselecteddataasync-member(1)) | [1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-setselecteddataasync-member(1)) | [1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md) |
 
@@ -197,6 +199,7 @@ You can subscribe to and unsubscribe from the following events using `addHandler
 |`AttachmentsChanged`| An attachment has been added to or removed from the item. Only available with task pane implementation. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 |`EnhancedLocationsChanged`| The location of the selected appointment has changed. Only available with task pane implementation. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 |`InfobarClicked`| An action has been selected from a notification message. Only available with task pane implementation. | [1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md) |
+|`InitializationContextChanged`| The task pane of an add-in has been opened from an actionable message, `InsightMessage` notification, Smart Alerts dialog, or integrated spam-reporting dialog. Only available with task pane implementation. | [1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md) |
 |`RecipientsChanged`| The recipient list of the selected item or appointment location has changed. Only available with task pane implementation. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 |`RecurrenceChanged`| The recurrence pattern of the selected series has changed. Only available with task pane implementation. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 |`SensitivityLabelChanged`| The sensitivity label of a message or appointment in compose mode has changed. Only available with task pane implementation. | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |

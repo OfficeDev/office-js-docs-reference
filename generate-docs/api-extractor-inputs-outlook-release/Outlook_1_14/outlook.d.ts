@@ -96,9 +96,23 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum AttachmentType {
+                        /**
+             * The attachment is stored in a cloud location, such as OneDrive.
+             *
+             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
+             * contains a URL to the file.
+             * From requirement set 1.8, the `url` property included in the attachment's {@link Office.AttachmentDetailsCompose | details} object
+             * contains a URL to the file in Compose mode.
+             *
+             * The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+             * `displayReplyForm`, and `displayReplyFormAsync` methods.
+             */
+            Cloud = "cloud",
             /**
              * The attachment is a file.
              */
@@ -106,17 +120,7 @@ export declare namespace Office {
             /**
              * The attachment is an Exchange item.
              */
-            Item = "item",
-            /**
-             * The attachment is stored in a cloud location, such as OneDrive.
-             *
-             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
-             * contains a URL to the file.
-             * From requirement set 1.8, the `url` property included in the attachment's
-             * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object
-             * contains a URL to the file in Compose mode.
-             */
-            Cloud = "cloud"
+            Item = "item"
         }
         /**
          * Specifies the category color.
@@ -2670,6 +2674,8 @@ export declare namespace Office {
          *                   which is an `Office.AsyncResult` object. The EWS appointment ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Asynchronously inserts data into the body or subject of a message.
          *
@@ -5698,6 +5704,7 @@ export declare namespace Office {
          */
         infobarType: MailboxEnums.InfobarType;
     }
+    
     /**
      * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
      * and is converted to a MIME message.
@@ -5951,6 +5958,8 @@ export declare namespace Office {
      */
     export interface ItemRead extends Item {
     }
+    
+    
     /**
      * Represents a date and time in the local client's time zone. Read mode only.
      *
@@ -6709,9 +6718,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -6756,9 +6766,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -6807,9 +6818,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -7156,6 +7168,8 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        
+        
         /**
          * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.
          *
@@ -8112,6 +8126,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
+         * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
          * **Errors**:
          *
          * - `The operation was cancelled by the user`: The user selects **Cancel** from the save dialog and the `discardItem` property isn't defined or is set to `false`.
@@ -8143,6 +8161,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * **Errors**:
          *
@@ -9016,6 +9038,8 @@ export declare namespace Office {
          *                   which is an `Office.AsyncResult` object. The EWS message ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Asynchronously inserts data into the body or subject of a message.
          *
@@ -11179,29 +11203,40 @@ export declare namespace Office {
      */
     export interface ReplyFormAttachment {
         /**
-         * Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+         * Indicates the type of attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `base64` attachment type was introduced in Mailbox requirement set 1.15. It's only supported by the `displayReplyAllForm`, `displayReplyAllFormAsync`, `displayReplyForm`, and
+         * `displayReplyFormAsync` methods.
+         *
+         * - The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+         * `displayReplyForm`, and `displayReplyFormAsync` methods.
          */
-        type: string;
+        type: MailboxEnums.AttachmentType;
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
          */
         name: string;
         /**
-         * Only used if type is set to file. The URI of the location for the file.
+         * The URI of the location for the file. Only use if `type` is set to `file`.
          *
-         * **Important**: This link must be publicly accessible, without need for authentication by Exchange Online servers. However, with
+         * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
          */
         url?: string;
         /**
-         * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be
-         * displayed in the attachment list.
+         * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
+         * Only use if `type` is set to `file`.
          */
         inLine?: boolean;
         /**
-         * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
+         * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
          */
         itemId?: string;
+        
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
@@ -11212,7 +11247,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**
@@ -12180,10 +12215,10 @@ export declare namespace Office {
         allowEvent?: boolean;
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters or less.
+         * this property customizes the text of a button in the Smart Alerts dialog. Custom text must be 20 characters or less.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
@@ -12192,14 +12227,29 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * The customizable button in the Smart Alerts dialog varies depending on the Outlook client and its version.
+         *
+         * - In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button.
+         * The **Take Action** button only appears on the Smart Alerts dialog if the `commandId` option is configured in the `event.completed` call. The option must be configured
+         * if you want to customize the text of the dialog button. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
+         * If you previously customized the text of the **Don't Send** button without assigning it a task pane or function command, your custom text won't take effect in the latest Outlook client versions.
+         * If you previously assigned a task pane or function command to the **Don't Send** button, no additional action is needed to implement the **Take Action** button in the latest versions.
+         * The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes are needed, we recommend notifying users of this updated experience.
+         *
+         * - In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
+         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
+         * and Outlook on Mac (preview), the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
          */
         cancelLabel?: string;
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property specifies the ID of the task pane or function that runs when the **Don't Send** button is selected from the Smart Alerts dialog.
+         * this property specifies the ID of the task pane or function that runs from a button in the Smart Alerts dialog.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
@@ -12218,13 +12268,29 @@ export declare namespace Office {
          *
          * - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the "controls" array.
          *
+         * The button in the Smart Alerts dialog that opens a task pane or runs a function varies depending on the Outlook client and version.
+         * In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the **Take Action** button opens a
+         * task pane or runs a function. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
+         * In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
+         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
+         * and Outlook on Mac (preview), the **Don't Send** button opens a task pane or runs a function.
+         *
+         * If you customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows,
+         * no additional action is needed to implement the **Take Action** button in the latest supported versions. The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog.
+         * Although no implementation changes are needed, we recommend notifying users of this updated experience.
+         *
+         * If you specify a command ID that doesn't exist, depending on your Outlook client, the **Take Action** or **Don't Send** button simply cancels the item being sent.
+         *
          * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
+         *
+         * When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client.
+         * Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
          */
         commandId?: string;
         /**
-         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from the Smart Alerts dialog.
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to
+         * signal completion of an event handler and set its `allowEvent` property to `false`, this property specifies any JSON data passed to the add-in for processing when the applicable button is selected from the Smart Alerts dialog.
          *
          * @remarks
          *
@@ -12239,12 +12305,18 @@ export declare namespace Office {
          * - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier versions of Outlook on Windows, only the `string`
          * type is supported.
          *
-         * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
+         * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
+         *
+         * - The dialog button that passes the `contextData` value to the add-in varies depending on the Outlook client and its version. For more information, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional | Customize the text and functionality of a button in the dialog}.
          *
          * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
          * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
          * `JSON.parse()` once you retrieve it.
+         *
+         * - When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client.
+         * Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
          */
         contextData?: any;
         /**
@@ -12263,6 +12335,7 @@ export declare namespace Office {
          * **Important**: The error message must be 500 characters or less.
          */
         errorMessage?: string;
+        
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
          * and set its `allowEvent` property to `false`, this property overrides the
@@ -12342,6 +12415,8 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
      */
     export interface SpamReportingEventCompletedOptions {
+        
+        
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies the Outlook mailbox folder to which the message will be moved.

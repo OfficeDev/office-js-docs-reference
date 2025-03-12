@@ -14,9 +14,23 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum AttachmentType {
+                        /**
+             * The attachment is stored in a cloud location, such as OneDrive.
+             *
+             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
+             * contains a URL to the file.
+             * From requirement set 1.8, the `url` property included in the attachment's {@link Office.AttachmentDetailsCompose | details} object
+             * contains a URL to the file in Compose mode.
+             *
+             * The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+             * `displayReplyForm`, and `displayReplyFormAsync` methods.
+             */
+            Cloud = "cloud",
             /**
              * The attachment is a file.
              */
@@ -24,17 +38,7 @@ export declare namespace Office {
             /**
              * The attachment is an Exchange item.
              */
-            Item = "item",
-            /**
-             * The attachment is stored in a cloud location, such as OneDrive.
-             *
-             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
-             * contains a URL to the file.
-             * From requirement set 1.8, the `url` property included in the attachment's
-             * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object
-             * contains a URL to the file in Compose mode.
-             */
-            Cloud = "cloud"
+            Item = "item"
         }
         
         
@@ -799,6 +803,8 @@ export declare namespace Office {
          *                 If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         
         
         
@@ -2288,6 +2294,7 @@ export declare namespace Office {
     
     
     
+    
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment.
      * You can determine the type of the item by using the `itemType` property.
@@ -2343,6 +2350,8 @@ export declare namespace Office {
      */
     export interface ItemRead extends Item {
     }
+    
+    
     /**
      * Represents a date and time in the local client's time zone. Read mode only.
      *
@@ -2906,6 +2915,8 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        
+        
         /**
          * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.
          *
@@ -3522,6 +3533,8 @@ export declare namespace Office {
          *                 with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         
         
         
@@ -4488,29 +4501,40 @@ export declare namespace Office {
      */
     export interface ReplyFormAttachment {
         /**
-         * Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+         * Indicates the type of attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `base64` attachment type was introduced in Mailbox requirement set 1.15. It's only supported by the `displayReplyAllForm`, `displayReplyAllFormAsync`, `displayReplyForm`, and
+         * `displayReplyFormAsync` methods.
+         *
+         * - The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+         * `displayReplyForm`, and `displayReplyFormAsync` methods.
          */
-        type: string;
+        type: MailboxEnums.AttachmentType;
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
          */
         name: string;
         /**
-         * Only used if type is set to file. The URI of the location for the file.
+         * The URI of the location for the file. Only use if `type` is set to `file`.
          *
-         * **Important**: This link must be publicly accessible, without need for authentication by Exchange Online servers. However, with
+         * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
          */
         url?: string;
         /**
-         * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be
-         * displayed in the attachment list.
+         * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
+         * Only use if `type` is set to `file`.
          */
         inLine?: boolean;
         /**
-         * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
+         * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
          */
         itemId?: string;
+        
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
@@ -4521,7 +4545,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**

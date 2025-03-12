@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 02/27/2025
+ms.date: 03/11/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -20,7 +20,7 @@ To use preview APIs:
 
 - You may need to configure the **Targeted release** option on your Microsoft 365 tenant to preview features in Outlook on the web. For more information, see the "Targeted release" section of [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
 
-The preview requirement set includes all of the features of [requirement set 1.14](../requirement-set-1.14/outlook-requirement-set-1.14.md).
+The preview requirement set includes all of the features of [requirement set 1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md).
 
 > [!IMPORTANT]
 > This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
@@ -68,72 +68,6 @@ Added a new object that represents the all-day event property of an appointment 
 Added a new property that represents if an appointment is an all-day event.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Item multi-select: Get additional message properties and run operations on multiple selected messages
-
-#### [Office.context.mailbox.loadItemByIdAsync](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-loaditembyidasync-member(1))
-
-Added a new method to get additional properties and run operations on selected messages.
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose?view=outlook-js-preview&preserve-view=true)
-
-Added a new object that represents the properties and methods of a selected message in compose mode.
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread?view=outlook-js-preview&preserve-view=true)
-
-Added a new object that represents the properties and methods of a selected message in read mode.
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Smart Alerts: Format the dialog message using Markdown
-
-#### [Office.SmartAlertsEventCompletedOptions.errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member)
-
-Added an `event.completed` option to format a message in a Smart Alerts dialog using Markdown. To learn more, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough) and [Limitations to formatting the dialog message using Markdown](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#limitations-to-formatting-the-dialog-message-using-markdown).
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Spam reporting improvements
-
-#### Suppress the preprocessing dialog
-
-Added the [NeverShowAgainOption](/javascript/api/manifest/preprocessingdialog?view=outlook-js-preview&preserve-view=true#child-elements) element as a child of the **\<PreProcessingDialog\>** element. This element adds a "Don't show me this message again" checkbox to the preprocessing dialog to prevent it from appearing again.
-
-**Available in**: Outlook on the web and on Windows (new and classic) (Microsoft 365 subscription)
-
-#### Use radio buttons for reporting options
-
-Added the `inputType` attribute to the [ReportingOptions](/javascript/api/manifest/reportingoptions?view=outlook-js-preview&preserve-view=true#attributes) element. This attribute uses radio buttons for the reporting options of a preprocessing dialog.
-
-**Available in**: Outlook on the web and on Windows (new and classic) (Microsoft 365 subscription)
-
-#### Open a task pane from the preprocessing dialog
-
-Added the [commandId](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-commandid-member) and [contextData](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-contextdata-member) options to the `event.completed` call. These options configure a task pane to open after a user selects **Report** from the preprocessing dialog.
-
-**Available in**: Outlook on the web and on Windows (new and classic) (Microsoft 365 subscription)
 
 <br>
 

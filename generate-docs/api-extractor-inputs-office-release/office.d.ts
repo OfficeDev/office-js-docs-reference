@@ -648,6 +648,22 @@ export declare namespace Office {
          */
         InfobarClicked,
         /**
+         * Occurs in Outlook when an add-in's task pane is opened from an {@link https://learn.microsoft.com/outlook/actionable-messages | actionable message},
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage} notification,
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts} dialog, or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} dialog.
+         * This event prevents an add-in from relaunching if its task pane is already open in Outlook.
+         *
+         * **Important**: The `InitializationContextChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
+         *
+         * To add an event handler for the `InitializationContextChanged` event, use the `addHandlerAsync` method of the `Item` object.
+         * The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15 | Office.InitializationContextChangedEventArgs}.
+         *
+         * [Api set: Mailbox 1.15]
+         */
+        InitializationContextChanged,
+        /**
          * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
          *
          * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.

@@ -1,0 +1,65 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ItemNotificationMessageType
+uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ItemNotificationMessageType
+summary: Specifies the notification message type for an appointment or message.
+remarks: >-
+  \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+  // Adds an error notification to the mail item.
+
+  const id = $("#notificationId").val().toString();
+
+  const details =
+    {
+      type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
+      message: "Error notification message with id = " + id
+    };
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ProgressIndicator
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
+    package: outlook!
+    summary: The notification message is a progress indicator.
+    value: '"progressIndicator"'
+  - name: InformationalMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
+    package: outlook!
+    summary: The notification message is an informational message.
+    value: '"informationalMessage"'
+  - name: ErrorMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
+    package: outlook!
+    summary: |-
+      The notification message is an error message.
+
+      **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
+    value: '"errorMessage"'
+  - name: InsightMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member'
+    package: outlook!
+    summary: |-
+      The notification message is an informational message with actions.
+
+      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"insightMessage"'

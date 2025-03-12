@@ -45,8 +45,8 @@ properties:
     package: outlook!
     fullName: attachments
     summary: >-
-      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are either file or item
-      attachments.
+      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are Base64-encoded
+      files, Exchange items, or file attachments.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -1,0 +1,98 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.WeekNumber
+uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
+package: outlook!
+fullName: Office.MailboxEnums.WeekNumber
+summary: Specifies the week of the month.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+  // Important: Can only set the recurrence pattern of an appointment series.
+
+
+  const currentDate = new Date();
+
+  let seriesTimeObject: Office.SeriesTime;
+
+  // Set series start date to tomorrow.
+
+  seriesTimeObject.setStartDate(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay() + 1);
+
+  // Set series end date to one year from now.
+
+  seriesTimeObject.setEndDate(currentDate.getFullYear() + 1, currentDate.getMonth() + 1, currentDate.getDay());
+
+  // Set start time to 1:30 PM.
+
+  seriesTimeObject.setStartTime(13, 30);
+
+  // Set duration to 30 minutes.
+
+  seriesTimeObject.setDuration(30);
+
+
+  const pattern: Office.Recurrence = {
+    seriesTime: seriesTimeObject,
+    recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+    recurrenceProperties: {
+      interval: 1,
+      dayOfWeek: Office.MailboxEnums.Days.Tue,
+      weekNumber: Office.MailboxEnums.WeekNumber.Second,
+      month: Office.MailboxEnums.Month.Sep
+    },
+    recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+  };
+
+
+  Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+      console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+      return;
+    }
+    console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: First
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.First:member'
+    package: outlook!
+    summary: First week of the month.
+    value: '"first"'
+  - name: Second
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
+    package: outlook!
+    summary: Second week of the month.
+    value: '"second"'
+  - name: Third
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
+    package: outlook!
+    summary: Third week of the month.
+    value: '"third"'
+  - name: Fourth
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
+    package: outlook!
+    summary: Fourth week of the month.
+    value: '"fourth"'
+  - name: Last
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
+    package: outlook!
+    summary: Last week of the month.
+    value: '"last"'

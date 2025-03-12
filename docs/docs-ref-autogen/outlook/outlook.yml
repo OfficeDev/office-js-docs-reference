@@ -32,6 +32,7 @@ interfaces:
   - 'outlook!Office.From:interface'
   - 'outlook!Office.InfobarClickedEventArgs:interface'
   - 'outlook!Office.InfobarDetails:interface'
+  - 'outlook!Office.InitializationContextChangedEventArgs:interface'
   - 'outlook!Office.InternetHeaders:interface'
   - 'outlook!Office.IsAllDayEvent:interface'
   - 'outlook!Office.Item:interface'

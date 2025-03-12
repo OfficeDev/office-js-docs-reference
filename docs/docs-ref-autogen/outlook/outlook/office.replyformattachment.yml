@@ -38,13 +38,25 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: base64File
+    uid: 'outlook!Office.ReplyFormAttachment#base64File:member'
+    package: outlook!
+    fullName: base64File
+    summary: The Base64-encoded string of the file to be attached. Only use if `type` is set to `base64`<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'base64File?: string;'
+      return:
+        type: string
   - name: inLine
     uid: 'outlook!Office.ReplyFormAttachment#inLine:member'
     package: outlook!
     fullName: inLine
     summary: >-
-      Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
-      and should not be displayed in the attachment list.
+      If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the
+      attachment list. Only use if `type` is set to `file`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,7 +68,9 @@ properties:
     uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
     package: outlook!
     fullName: itemId
-    summary: Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
+    summary: >-
+      The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`<!--
+      -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -80,26 +94,34 @@ properties:
     uid: 'outlook!Office.ReplyFormAttachment#type:member'
     package: outlook!
     fullName: type
-    summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
-    remarks: ''
+    summary: Indicates the type of attachment.
+    remarks: >-
+      **Important**:
+
+
+      - The `base64` attachment type was introduced in Mailbox requirement set 1.15. It's only supported by the
+      `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->, `displayReplyForm`<!-- -->, and
+      `displayReplyFormAsync` methods.
+
+
+      - The `cloud` attachment type isn't supported by the `displayNewMessageForm`<!-- -->,
+      `displayNewMessageFormAsync`<!-- -->, `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->,
+      `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: string;'
+      content: 'type: MailboxEnums.AttachmentType;'
       return:
-        type: string
+        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" />'
   - name: url
     uid: 'outlook!Office.ReplyFormAttachment#url:member'
     package: outlook!
     fullName: url
-    summary: >-
-      Only used if type is set to file. The URI of the location for the file.
-
-
-      **Important**: This link must be publicly accessible, without need for authentication by Exchange Online
+    summary: The URI of the location for the file. Only use if `type` is set to `file`<!-- -->.
+    remarks: >-
+      **Important**: This link must be publicly accessible without need for authentication by Exchange Online
       servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it doesn't
       need further authentication.
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
