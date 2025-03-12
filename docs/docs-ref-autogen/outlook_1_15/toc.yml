@@ -115,6 +115,8 @@ items:
             uid: 'outlook!Office.InfobarClickedEventArgs:interface'
           - name: InfobarDetails
             uid: 'outlook!Office.InfobarDetails:interface'
+          - name: InitializationContextChangedEventArgs
+            uid: 'outlook!Office.InitializationContextChangedEventArgs:interface'
           - name: InternetHeaders
             uid: 'outlook!Office.InternetHeaders:interface'
           - name: Item
@@ -310,6 +312,12 @@ items:
                 uid: 'office!Office.Context:interface'
               - name: ContextInformation
                 uid: 'office!Office.ContextInformation:interface'
+              - name: ContextMenu
+                uid: 'office!Office.ContextMenu:interface'
+              - name: ContextMenuControl
+                uid: 'office!Office.ContextMenuControl:interface'
+              - name: ContextMenuUpdaterData
+                uid: 'office!Office.ContextMenuUpdaterData:interface'
               - name: Control
                 uid: 'office!Office.Control:interface'
               - name: CustomXmlNode
@@ -573,6 +581,8 @@ items:
             href: ../../manifest/action.md
           - name: AllFormFactors
             href: ../../manifest/allformfactors.md
+          - name: CommandSurface
+            href: ../../manifest/commandsurface.md
           - name: Control
             href: ../../manifest/control.md
           - name: Control (Button)
@@ -693,6 +703,9 @@ items:
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
             displayName: Excel
+          - name: ExcelApi 1.18 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-18-requirement-set.md
+            displayName: Excel
           - name: ExcelApi 1.17 requirement set
             href: ../../requirement-sets/excel/excel-api-1-17-requirement-set.md
             displayName: Excel
@@ -771,22 +784,6 @@ items:
               - name: Office.context.mailbox.item
                 href: >-
                   ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
-          - name: Mailbox requirement set 1.15
-            items:
-              - name: Overview
-                href: >-
-                  ../../requirement-sets/outlook/requirement-set-1.15/outlook-requirement-set-1.15.md
-              - name: Office
-                href: ../../requirement-sets/outlook/requirement-set-1.15/office.md
-              - name: Office.context
-                href: >-
-                  ../../requirement-sets/outlook/requirement-set-1.15/Office.context.md
-              - name: Office.context.mailbox
-                href: >-
-                  ../../requirement-sets/outlook/requirement-set-1.15/Office.context.mailbox.md
-              - name: Office.context.mailbox.item
-                href: >-
-                  ../../requirement-sets/outlook/requirement-set-1.15/Office.context.mailbox.item.md
           - name: Mailbox requirement set 1.14
             items:
               - name: Overview
@@ -1058,6 +1055,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.2 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.1 requirement set
             href: >-

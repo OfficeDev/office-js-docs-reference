@@ -96,17 +96,20 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum AttachmentType {
             /**
-             * The attachment is a file.
+             * The attachment is a Base64-encoded file.
+             *
+             * **Important**: The `base64` attachment type is only supported by the `displayReplyAllForm`, `displayReplyAllFormAsync`, `displayReplyForm`, and
+             * `displayReplyFormAsync` methods.
+             *
+             * [Api set: Mailbox 1.15]
              */
-            File = "file",
-            /**
-             * The attachment is an Exchange item.
-             */
-            Item = "item",
+            Base64 = "base64",
             /**
              * The attachment is stored in a cloud location, such as OneDrive.
              *
@@ -114,8 +117,19 @@ export declare namespace Office {
              * contains a URL to the file.
              * From requirement set 1.8, the `url` property included in the attachment's {@link Office.AttachmentDetailsCompose | details} object
              * contains a URL to the file in Compose mode.
+             *
+             * The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+             * `displayReplyForm`, and `displayReplyFormAsync` methods.
              */
-            Cloud = "cloud"
+            Cloud = "cloud",
+            /**
+             * The attachment is a file.
+             */
+            File = "file",
+            /**
+             * The attachment is an Exchange item.
+             */
+            Item = "item"
         }
         /**
          * Specifies the category color.
@@ -2678,6 +2692,74 @@ export declare namespace Office {
          *                   which is an `Office.AsyncResult` object. The EWS appointment ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Sends the appointment being composed.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
+         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
+         *                  callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         */
+        sendAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Sends the appointment being composed.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         */
+        sendAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Asynchronously inserts data into the body or subject of a message.
          *
@@ -5960,6 +6042,33 @@ export declare namespace Office {
         infobarType: MailboxEnums.InfobarType;
     }
     /**
+     * Provides data from an {@link https://learn.microsoft.com/outlook/actionable-messages | actionable message},
+     * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage} notification,
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts} dialog, or
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} dialog when the
+     * `Office.EventType.InitializationContextChanged` event occurs.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.15]
+     */
+    export interface InitializationContextChangedEventArgs {
+        /**
+         * Represents the data to be passed to an add-in's task pane from an actionable message, notification message, Smart Alerts dialog, or integrated
+         * spam-reporting dialog.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         */
+        initializationContextData: string;
+        /**
+         * Represents the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         */
+        type: "olkInitializationContextChanged";
+    }
+    /**
      * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
      * and is converted to a MIME message.
      *
@@ -8818,9 +8927,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -8865,9 +8975,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -8916,9 +9027,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -9291,12 +9403,12 @@ export declare namespace Office {
          *
          * - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
          *
-         * @param itemId - The EWS ID of a selected item.
+         * @param itemId - The EWS ID of a mail item.
          * @param options - An object literal that contains the `asyncContext` property.
          *        In this property, provide any object you wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *        `asyncResult`, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or `LoadedMessageRead` object is returned
-         *        in the `asyncResult.value` property. This object provides the properties of the selected item that's currently loaded.
+         *        in the `asyncResult.value` property. This object provides the properties of the item that's currently loaded.
          */
         loadItemByIdAsync(itemId: string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<LoadedMessageCompose | LoadedMessageRead>) => void): void;
         /**
@@ -9325,10 +9437,10 @@ export declare namespace Office {
          *
          * - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
          *
-         * @param itemId - The EWS ID of a selected item.
+         * @param itemId - The EWS ID of a mail item.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *        `asyncResult`, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or `LoadedMessageRead` object is returned
-         *        in the `asyncResult.value` property. This object provides the properties of the selected item that's currently loaded.
+         *        in the `asyncResult.value` property. This object provides the properties of the item that's currently loaded.
          */
         loadItemByIdAsync(itemId: string, callback: (asyncResult: CommonAPI.AsyncResult<LoadedMessageCompose | LoadedMessageRead>) => void): void;
         /**
@@ -10286,6 +10398,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
+         * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
          * **Errors**:
          *
          * - `The operation was cancelled by the user`: The user selects **Cancel** from the save dialog and the `discardItem` property isn't defined or is set to `false`.
@@ -10317,6 +10433,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * **Errors**:
          *
@@ -11190,6 +11310,74 @@ export declare namespace Office {
          *                   which is an `Office.AsyncResult` object. The EWS message ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Sends the message being composed.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
+         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
+         *                  callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         */
+        sendAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Sends the message being composed.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         */
+        sendAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Asynchronously inserts data into the body or subject of a message.
          *
@@ -13503,29 +13691,49 @@ export declare namespace Office {
      */
     export interface ReplyFormAttachment {
         /**
-         * Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+         * Indicates the type of attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `base64` attachment type was introduced in Mailbox requirement set 1.15. It's only supported by the `displayReplyAllForm`, `displayReplyAllFormAsync`, `displayReplyForm`, and
+         * `displayReplyFormAsync` methods.
+         *
+         * - The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+         * `displayReplyForm`, and `displayReplyFormAsync` methods.
          */
-        type: string;
+        type: MailboxEnums.AttachmentType;
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
          */
         name: string;
         /**
-         * Only used if type is set to file. The URI of the location for the file.
+         * The URI of the location for the file. Only use if `type` is set to `file`.
          *
-         * **Important**: This link must be publicly accessible, without need for authentication by Exchange Online servers. However, with
+         * @remarks
+         *
+         * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
          */
         url?: string;
         /**
-         * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be
-         * displayed in the attachment list.
+         * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
+         * Only use if `type` is set to `file`.
          */
         inLine?: boolean;
         /**
-         * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
+         * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
          */
         itemId?: string;
+        /**
+         * The Base64-encoded string of the file to be attached. Only use if `type` is set to `base64`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.15]
+         */
+        base64File?: string;
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
@@ -13536,7 +13744,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**
@@ -14514,10 +14722,10 @@ export declare namespace Office {
         allowEvent?: boolean;
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters or less.
+         * this property customizes the text of a button in the Smart Alerts dialog. Custom text must be 20 characters or less.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
@@ -14526,14 +14734,29 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * The customizable button in the Smart Alerts dialog varies depending on the Outlook client and its version.
+         *
+         * - In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button.
+         * The **Take Action** button only appears on the Smart Alerts dialog if the `commandId` option is configured in the `event.completed` call. The option must be configured
+         * if you want to customize the text of the dialog button. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
+         * If you previously customized the text of the **Don't Send** button without assigning it a task pane or function command, your custom text won't take effect in the latest Outlook client versions.
+         * If you previously assigned a task pane or function command to the **Don't Send** button, no additional action is needed to implement the **Take Action** button in the latest versions.
+         * The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes are needed, we recommend notifying users of this updated experience.
+         *
+         * - In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
+         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
+         * and Outlook on Mac (preview), the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
          */
         cancelLabel?: string;
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property specifies the ID of the task pane or function that runs when the **Don't Send** button is selected from the Smart Alerts dialog.
+         * this property specifies the ID of the task pane or function that runs from a button in the Smart Alerts dialog.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
@@ -14552,13 +14775,29 @@ export declare namespace Office {
          *
          * - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the "controls" array.
          *
+         * The button in the Smart Alerts dialog that opens a task pane or runs a function varies depending on the Outlook client and version.
+         * In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the **Take Action** button opens a
+         * task pane or runs a function. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
+         * In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
+         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
+         * and Outlook on Mac (preview), the **Don't Send** button opens a task pane or runs a function.
+         *
+         * If you customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows,
+         * no additional action is needed to implement the **Take Action** button in the latest supported versions. The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog.
+         * Although no implementation changes are needed, we recommend notifying users of this updated experience.
+         *
+         * If you specify a command ID that doesn't exist, depending on your Outlook client, the **Take Action** or **Don't Send** button simply cancels the item being sent.
+         *
          * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
+         *
+         * When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client.
+         * Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
          */
         commandId?: string;
         /**
-         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from the Smart Alerts dialog.
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to
+         * signal completion of an event handler and set its `allowEvent` property to `false`, this property specifies any JSON data passed to the add-in for processing when the applicable button is selected from the Smart Alerts dialog.
          *
          * @remarks
          *
@@ -14573,12 +14812,18 @@ export declare namespace Office {
          * - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier versions of Outlook on Windows, only the `string`
          * type is supported.
          *
-         * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
+         * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
+         *
+         * - The dialog button that passes the `contextData` value to the add-in varies depending on the Outlook client and its version. For more information, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional | Customize the text and functionality of a button in the dialog}.
          *
          * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
          * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
          * `JSON.parse()` once you retrieve it.
+         *
+         * - When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client.
+         * Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
          */
         contextData?: any;
         /**
@@ -14706,7 +14951,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
@@ -14714,11 +14959,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `commandId` option is currently in preview in Outlook on the web and on Windows (new and classic). To preview this feature in classic Outlook on Windows,
-         * install Version 2411 (Build 18227.20034) or later. Then, join the
-         * {@link https://techcommunity.microsoft.com/blog/microsoft365insiderblog/join-the-microsoft-365-insider-program-on-windows/4206638 | Microsoft 365 Insider program}
-         * and select the **Beta Channel** option. To learn how to implement this in your spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message-preview | Open a task pane after reporting a message (preview)}.
+         * - To learn how to implement the `commandId` property in your spam-reporting add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message | Open a task pane after reporting a message}.
          *
          * - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In an add-in only manifest,
          * the ID is specified in the `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element that represents the task pane.
@@ -14727,9 +14969,10 @@ export declare namespace Office {
          * - If you configure the `commandId` option in the `event.completed` call, a post-processing dialog isn't shown to the user
          * even if the `showPostProcessingDialog` option is specified in the call.
          *
-         * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+         * - To ensure that the task pane of your spam-reporting add-in opens after a message is reported, you must set the `moveItemTo` option of the `event.completed` call to
+         * `Office.MailboxEnums.MoveSpamItemTo.NoMove`.
          *
-         * @beta
+         * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
          */
         commandId?: string;
         /**
@@ -14738,7 +14981,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.15]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
@@ -14746,11 +14989,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `contextData` option is currently in preview in Outlook on the web and on Windows (new and classic). To preview this feature in classic Outlook on Windows,
-         * install Version 2411 (Build 18227.20034) or later. Then, join the
-         * {@link https://techcommunity.microsoft.com/blog/microsoft365insiderblog/join-the-microsoft-365-insider-program-on-windows/4206638 | Microsoft 365 Insider program}
-         * and select the **Beta Channel** option. To learn how to implement this in your spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message-preview | Open a task pane after reporting a message (preview)}.
+         * - To learn how to implement the `contextData` property in your spam-reporting add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message | Open a task pane after reporting a message}.
          *
          * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
@@ -14758,13 +14998,14 @@ export declare namespace Office {
          * - If you configure the `commandId` and `contextData` options in the `event.completed` call, a post-processing dialog isn't shown to the user
          * even if the `showPostProcessingDialog` option is specified in the call.
          *
+         * - To ensure that the task pane of your spam-reporting add-in opens and receives context data after a message is reported, you must set the `moveItemTo` option of the `event.completed` call to
+         * `Office.MailboxEnums.MoveSpamItemTo.NoMove`.
+         *
          * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
          *
          * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
          * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
          * `JSON.parse()` once you retrieve it.
-         *
-         * @beta
          */
         contextData?: any;
         /**

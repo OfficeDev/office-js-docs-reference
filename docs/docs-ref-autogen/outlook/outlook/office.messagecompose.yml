@@ -1952,6 +1952,11 @@ methods:
       -->**: Message Compose
 
 
+      **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It
+      isn't supported in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or
+      [item multi-select scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -2011,6 +2016,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It
+      isn't supported in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or
+      [item multi-select scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -4026,6 +4036,133 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The EWS message ID is returned in
             the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'sendAsync(options, callback)'
+    uid: 'outlook!Office.MessageCompose#sendAsync:member(1)'
+    package: outlook!
+    fullName: 'sendAsync(options, callback)'
+    summary: Sends the message being composed.
+    remarks: >-
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write mailbox**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported
+      in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or [item multi-select
+      scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
+      - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the
+      appointment being composed is successfully sent. This is because the `sendAsync` method is an asynchronous API and
+      events outside the add-in's control (for example, events handled by a separately installed [Smart Alerts
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->)
+      could block the item from being sent. Since you can't rely on the status returned in `asyncResult.status` to run
+      certain operations, you should only call the
+      [event.completed](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      method in the callback function. The `event.completed` call signals that the add-in has completed processing.
+      Other than this call, other code in the callback function isn't guaranteed to run. We recommend processing other
+      operations before calling `sendAsync`<!-- -->.
+
+
+      - In a task pane implementation, any code included to run when `asyncResult.status` is
+      `Office.AsyncResultStatus.Success` isn't guaranteed to be processed. This is because the item may have already
+      been sent and the add-in has completed processing. We recommend processing other operations before calling
+      `sendAsync`<!-- -->.
+
+
+      - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
+      the `sendAsync` call.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        sendAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any
+            object you want to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: sendAsync(callback)
+    uid: 'outlook!Office.MessageCompose#sendAsync:member(2)'
+    package: outlook!
+    fullName: sendAsync(callback)
+    summary: Sends the message being composed.
+    remarks: >-
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write mailbox**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported
+      in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or [item multi-select
+      scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
+      - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the
+      appointment being composed is successfully sent. This is because the `sendAsync` method is an asynchronous API and
+      events outside the add-in's control (for example, events handled by a separately installed [Smart Alerts
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->)
+      could block the item from being sent. Since you can't rely on the status returned in `asyncResult.status` to run
+      certain operations, you should only call the
+      [event.completed](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      method in the callback function. The `event.completed` call signals that the add-in has completed processing.
+      Other than this call, other code in the callback function isn't guaranteed to run. We recommend processing other
+      operations before calling `sendAsync`<!-- -->.
+
+
+      - In a task pane implementation, any code included to run when `asyncResult.status` is
+      `Office.AsyncResultStatus.Success` isn't guaranteed to be processed. This is because the item may have already
+      been sent and the add-in has completed processing. We recommend processing other operations before calling
+      `sendAsync`<!-- -->.
+
+
+      - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
+      the `sendAsync` call.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sendAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

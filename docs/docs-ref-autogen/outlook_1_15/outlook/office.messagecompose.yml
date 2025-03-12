@@ -28,7 +28,31 @@ summary: >-
 
 
   - [Message](xref:outlook!Office.Message:interface)
-remarks: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+
+  const attachmentUrl = $("#attachmentUrl")
+    .val()
+    .toString();
+  Office.context.mailbox.item.addFileAttachmentAsync(
+    attachmentUrl,
+    getFileName(attachmentUrl),
+    { isInline: false },
+    (result) => {
+      console.log(result);
+    }
+  );
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -1359,13 +1383,14 @@ methods:
       `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first
-      get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
-      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
-      render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
-      -->.
+      - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the [Body
+      API](https://learn.microsoft.com/javascript/api/outlook/office.body) methods, such as `prependAsync`<!-- -->,
+      `setSignatureAsync`<!-- -->, or `setAsync`<!-- -->. If you use `Office.context.mailbox.item.body.setAsync` to
+      insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+      Otherwise, the image won't render in the body once it's inserted. For an example, see the [Add inline
+      Base64-encoded image to message or appointment body
+      (Compose)](https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml)
+      sample in [Script Lab](https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab)<!-- -->.
 
 
       **Errors**:
@@ -1507,13 +1532,14 @@ methods:
       `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first
-      get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
-      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
-      render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
-      -->.
+      - To add an inline Base64-encoded image to the body of a message or appointment being composed, use the [Body
+      API](https://learn.microsoft.com/javascript/api/outlook/office.body) methods, such as `prependAsync`<!-- -->,
+      `setSignatureAsync`<!-- -->, or `setAsync`<!-- -->. If you use `Office.context.mailbox.item.body.setAsync` to
+      insert the image, first call `Office.context.mailbox.item.body.getAsync` to get the current body of the item.
+      Otherwise, the image won't render in the body once it's inserted. For an example, see the [Add inline
+      Base64-encoded image to message or appointment body
+      (Compose)](https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/outlook/20-item-body/add-inline-base64-image.yaml)
+      sample in [Script Lab](https://learn.microsoft.com/office/dev/add-ins/overview/explore-with-script-lab)<!-- -->.
 
 
       **Errors**:
@@ -1926,6 +1952,11 @@ methods:
       -->**: Message Compose
 
 
+      **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It
+      isn't supported in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or
+      [item multi-select scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -1985,6 +2016,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It
+      isn't supported in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or
+      [item multi-select scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -2171,16 +2207,7 @@ methods:
     uid: 'outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)'
     package: outlook!
     fullName: 'getAttachmentContentAsync(attachmentId, options, callback)'
-    summary: >-
-      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-
-
-      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
-      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
-      starts composing an inline form then subsequently pops out the form to continue in a separate window.
+    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2193,6 +2220,24 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**:
+
+
+      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a
+      best practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same
+      session, use that identifier to retrieve the attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->,
+      `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
 
 
       **Errors**:
@@ -2272,16 +2317,7 @@ methods:
     uid: 'outlook!Office.MessageCompose#getAttachmentContentAsync:member(2)'
     package: outlook!
     fullName: 'getAttachmentContentAsync(attachmentId, callback)'
-    summary: >-
-      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-
-
-      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
-      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
-      starts composing an inline form then subsequently pops out the form to continue in a separate window.
+    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2294,6 +2330,24 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**:
+
+
+      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a
+      best practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same
+      session, use that identifier to retrieve the attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->,
+      `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
 
 
       **Errors**:
@@ -2343,6 +2397,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and
+      share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However,
+      since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
 
 
       #### Examples
@@ -2438,6 +2497,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and
+      share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However,
+      since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3225,7 +3289,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. **Shared mailbox**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
@@ -3307,7 +3371,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. **Shared mailbox**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
@@ -3972,6 +4036,133 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The EWS message ID is returned in
             the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'sendAsync(options, callback)'
+    uid: 'outlook!Office.MessageCompose#sendAsync:member(1)'
+    package: outlook!
+    fullName: 'sendAsync(options, callback)'
+    summary: Sends the message being composed.
+    remarks: >-
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write mailbox**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported
+      in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or [item multi-select
+      scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
+      - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the
+      appointment being composed is successfully sent. This is because the `sendAsync` method is an asynchronous API and
+      events outside the add-in's control (for example, events handled by a separately installed [Smart Alerts
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->)
+      could block the item from being sent. Since you can't rely on the status returned in `asyncResult.status` to run
+      certain operations, you should only call the
+      [event.completed](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      method in the callback function. The `event.completed` call signals that the add-in has completed processing.
+      Other than this call, other code in the callback function isn't guaranteed to run. We recommend processing other
+      operations before calling `sendAsync`<!-- -->.
+
+
+      - In a task pane implementation, any code included to run when `asyncResult.status` is
+      `Office.AsyncResultStatus.Success` isn't guaranteed to be processed. This is because the item may have already
+      been sent and the add-in has completed processing. We recommend processing other operations before calling
+      `sendAsync`<!-- -->.
+
+
+      - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
+      the `sendAsync` call.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        sendAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any
+            object you want to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: sendAsync(callback)
+    uid: 'outlook!Office.MessageCompose#sendAsync:member(2)'
+    package: outlook!
+    fullName: sendAsync(callback)
+    summary: Sends the message being composed.
+    remarks: >-
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write mailbox**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported
+      in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or [item multi-select
+      scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
+      - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the
+      appointment being composed is successfully sent. This is because the `sendAsync` method is an asynchronous API and
+      events outside the add-in's control (for example, events handled by a separately installed [Smart Alerts
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->)
+      could block the item from being sent. Since you can't rely on the status returned in `asyncResult.status` to run
+      certain operations, you should only call the
+      [event.completed](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      method in the callback function. The `event.completed` call signals that the add-in has completed processing.
+      Other than this call, other code in the callback function isn't guaranteed to run. We recommend processing other
+      operations before calling `sendAsync`<!-- -->.
+
+
+      - In a task pane implementation, any code included to run when `asyncResult.status` is
+      `Office.AsyncResultStatus.Success` isn't guaranteed to be processed. This is because the item may have already
+      been sent and the add-in has completed processing. We recommend processing other operations before calling
+      `sendAsync`<!-- -->.
+
+
+      - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
+      the `sendAsync` call.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sendAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

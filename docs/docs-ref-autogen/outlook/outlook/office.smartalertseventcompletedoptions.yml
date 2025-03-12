@@ -104,12 +104,11 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters
-      or less.
+      customizes the text of a button in the Smart Alerts dialog. Custom text must be 20 characters or less.
 
 
       For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional)<!--
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -123,6 +122,32 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      The customizable button in the Smart Alerts dialog varies depending on the Outlook client and its version.
+
+
+      - In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build
+      18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button. The **Take
+      Action** button only appears on the Smart Alerts dialog if the `commandId` option is configured in the
+      `event.completed` call. The option must be configured if you want to customize the text of the dialog button. In
+      this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't
+      be customized. If you previously customized the text of the **Don't Send** button without assigning it a task
+      pane or function command, your custom text won't take effect in the latest Outlook client versions. If you
+      previously assigned a task pane or function command to the **Don't Send** button, no additional action is
+      needed to implement the **Take Action** button in the latest versions. The default or customized **Take
+      Action** button will automatically appear the next time a user receives a Smart Alerts dialog. Although no
+      implementation changes are needed, we recommend notifying users of this updated experience.
+
+
+      - In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000)
+      that support [Mailbox requirement set
+      1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
+      -->), and Outlook on Mac (preview), the `cancelLabel` property customizes the text of the **Don't Send**
+      button. The **Don't Send** button cancels the item being sent.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,12 +162,11 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      specifies the ID of the task pane or function that runs when the **Don't Send** button is selected from the
-      Smart Alerts dialog.
+      specifies the ID of the task pane or function that runs from a button in the Smart Alerts dialog.
 
 
       For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional)<!--
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -174,8 +198,34 @@ properties:
       "controls" array.
 
 
+      The button in the Smart Alerts dialog that opens a task pane or runs a function varies depending on the Outlook
+      client and version. In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in
+      Version 2412 (Build 18324.20000), the **Take Action** button opens a task pane or runs a function. In this
+      implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be
+      customized. In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build
+      18324.20000) that support [Mailbox requirement set
+      1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
+      -->), and Outlook on Mac (preview), the **Don't Send** button opens a task pane or runs a function.
+
+
+      If you customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to
+      Version 2412 (Build 18324.20000) of classic Outlook on Windows, no additional action is needed to implement the
+      **Take Action** button in the latest supported versions. The default or customized **Take Action** button
+      will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes
+      are needed, we recommend notifying users of this updated experience.
+
+
+      If you specify a command ID that doesn't exist, depending on your Outlook client, the **Take Action** or
+      **Don't Send** button simply cancels the item being sent.
+
+
       If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or
       function ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+
+
+      When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added
+      to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user runs
+      the function from the Smart Alerts dialog.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,8 +240,8 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from
-      the Smart Alerts dialog.
+      specifies any JSON data passed to the add-in for processing when the applicable button is selected from the Smart
+      Alerts dialog.
     remarks: >-
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -213,14 +263,25 @@ properties:
       versions of Outlook on Windows, only the `string` type is supported.
 
 
-      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to
-      the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or
+      function ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+
+
+      - The dialog button that passes the `contextData` value to the add-in varies depending on the Outlook client and
+      its version. For more information, see [Customize the text and functionality of a button in the
+      dialog](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
+      -->.
 
 
       - To retrieve the value of the `contextData` property, you must call
       `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane. If
       you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
       string using `JSON.parse()` once you retrieve it.
+
+
+      - When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also
+      added to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user
+      runs the function from the Smart Alerts dialog.
     isPreview: false
     isDeprecated: false
     syntax:

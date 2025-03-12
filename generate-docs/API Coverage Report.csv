@@ -7091,6 +7091,7 @@ Office.EventType,"DialogParentMessageReceived",EnumField,Good,false
 Office.EventType,"DocumentSelectionChanged",EnumField,Good,false
 Office.EventType,"EnhancedLocationsChanged",EnumField,Excellent,false
 Office.EventType,"InfobarClicked",EnumField,Excellent,false
+Office.EventType,"InitializationContextChanged",EnumField,Excellent,false
 Office.EventType,"ItemChanged",EnumField,Excellent,false
 Office.EventType,"NodeDeleted",EnumField,Fine,false
 Office.EventType,"NodeInserted",EnumField,Fine,false
@@ -8717,6 +8718,8 @@ Office.AppointmentCompose,"removeHandlerAsync(eventType, options, callback)",Met
 Office.AppointmentCompose,"removeHandlerAsync(eventType, callback)",Method,Excellent,true
 Office.AppointmentCompose,"saveAsync(options, callback)",Method,Good,true
 Office.AppointmentCompose,"saveAsync(callback)",Method,Good,true
+Office.AppointmentCompose,"sendAsync(options, callback)",Method,Poor,true
+Office.AppointmentCompose,"sendAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 Office.AppointmentCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
 Office.AppointmentForm,N/A,Interface,Unknown,false
@@ -8896,6 +8899,9 @@ Office.InfobarClickedEventArgs,"type",Property,Fine,false
 Office.InfobarDetails,N/A,Interface,Unknown,true
 Office.InfobarDetails,"actionType",Property,Fine,false
 Office.InfobarDetails,"infobarType",Property,Fine,false
+Office.InitializationContextChangedEventArgs,N/A,Interface,Unknown,false
+Office.InitializationContextChangedEventArgs,"initializationContextData",Property,Good,false
+Office.InitializationContextChangedEventArgs,"type",Property,Fine,false
 Office.InternetHeaders,N/A,Interface,Excellent,true
 Office.InternetHeaders,"getAsync(names, options, callback)",Method,Excellent,true
 Office.InternetHeaders,"getAsync(names, callback)",Method,Excellent,false
@@ -9068,9 +9074,10 @@ Office.MailboxEnums.AttachmentStatus,N/A,Interface,Fine,true
 Office.MailboxEnums.AttachmentStatus,"Added",EnumField,Poor,false
 Office.MailboxEnums.AttachmentStatus,"Removed",EnumField,Poor,false
 Office.MailboxEnums.AttachmentType,N/A,Interface,Unknown,true
+Office.MailboxEnums.AttachmentType,"Base64",EnumField,Good,false
+Office.MailboxEnums.AttachmentType,"Cloud",EnumField,Excellent,false
 Office.MailboxEnums.AttachmentType,"File",EnumField,Poor,false
 Office.MailboxEnums.AttachmentType,"Item",EnumField,Poor,false
-Office.MailboxEnums.AttachmentType,"Cloud",EnumField,Great,false
 Office.MailboxEnums.CategoryColor,N/A,Interface,Missing,true
 Office.MailboxEnums.CategoryColor,"None",EnumField,Fine,false
 Office.MailboxEnums.CategoryColor,"Preset0",EnumField,Missing,false
@@ -9430,6 +9437,8 @@ Office.MessageCompose,"removeHandlerAsync(eventType, options, callback)",Method,
 Office.MessageCompose,"removeHandlerAsync(eventType, callback)",Method,Excellent,true
 Office.MessageCompose,"saveAsync(options, callback)",Method,Fine,true
 Office.MessageCompose,"saveAsync(callback)",Method,Fine,true
+Office.MessageCompose,"sendAsync(options, callback)",Method,Poor,true
+Office.MessageCompose,"sendAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
 Office.MessageRead,N/A,Interface,Unknown,true
@@ -9556,11 +9565,12 @@ Office.RecurrenceTimeZone,N/A,Interface,Unknown,true
 Office.RecurrenceTimeZone,"name",Property,Poor,false
 Office.RecurrenceTimeZone,"offset",Property,Excellent,false
 Office.ReplyFormAttachment,N/A,Interface,Unknown,true
-Office.ReplyFormAttachment,"inLine",Property,Great,false
-Office.ReplyFormAttachment,"itemId",Property,Excellent,false
+Office.ReplyFormAttachment,"base64File",Property,Great,false
+Office.ReplyFormAttachment,"inLine",Property,Good,false
+Office.ReplyFormAttachment,"itemId",Property,Great,false
 Office.ReplyFormAttachment,"name",Property,Good,false
-Office.ReplyFormAttachment,"type",Property,Fine,false
-Office.ReplyFormAttachment,"url",Property,Great,false
+Office.ReplyFormAttachment,"type",Property,Poor,false
+Office.ReplyFormAttachment,"url",Property,Good,false
 Office.ReplyFormData,N/A,Interface,Unknown,true
 Office.ReplyFormData,"attachments",Property,Good,false
 Office.ReplyFormData,"callback",Property,Excellent,false

@@ -5,6 +5,9 @@ package: outlook!
 fullName: Office.MailboxEnums.AttachmentType
 summary: Specifies the attachment's type.
 remarks: >-
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
@@ -66,16 +69,19 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: File
-    uid: 'outlook!Office.MailboxEnums.AttachmentType.File:member'
+  - name: Base64
+    uid: 'outlook!Office.MailboxEnums.AttachmentType.Base64:member'
     package: outlook!
-    summary: The attachment is a file.
-    value: '"file"'
-  - name: Item
-    uid: 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
-    package: outlook!
-    summary: The attachment is an Exchange item.
-    value: '"item"'
+    summary: >-
+      The attachment is a Base64-encoded file.
+
+
+      **Important**: The `base64` attachment type is only supported by the `displayReplyAllForm`<!-- -->,
+      `displayReplyAllFormAsync`<!-- -->, `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
+
+
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"base64"'
   - name: Cloud
     uid: 'outlook!Office.MailboxEnums.AttachmentType.Cloud:member'
     package: outlook!
@@ -86,6 +92,21 @@ fields:
       **Important**: In Read mode, the `id` property of the attachment's
       [details](xref:outlook!Office.AttachmentDetails:interface) object contains a URL to the file. From requirement set
       1.8, the `url` property included in the attachment's
-      [details](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8)
-      object contains a URL to the file in Compose mode.
+      [details](xref:outlook!Office.AttachmentDetailsCompose:interface) object contains a URL to the file in Compose
+      mode.
+
+
+      The `cloud` attachment type isn't supported by the `displayNewMessageForm`<!-- -->,
+      `displayNewMessageFormAsync`<!-- -->, `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->,
+      `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
     value: '"cloud"'
+  - name: File
+    uid: 'outlook!Office.MailboxEnums.AttachmentType.File:member'
+    package: outlook!
+    summary: The attachment is a file.
+    value: '"file"'
+  - name: Item
+    uid: 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
+    package: outlook!
+    summary: The attachment is an Exchange item.
+    value: '"item"'
