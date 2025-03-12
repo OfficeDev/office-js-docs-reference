@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ItemType
+uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ItemType
+summary: Specifies an item's type.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+
+  const itemType = Office.context.mailbox.item.itemType;
+
+  switch (itemType) {
+      case Office.MailboxEnums.ItemType.Appointment:
+          console.log(`Current item is an ${itemType}.`);
+          break;
+      case Office.MailboxEnums.ItemType.Message:
+          console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+          break;
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Message
+    uid: 'outlook!Office.MailboxEnums.ItemType.Message:member'
+    package: outlook!
+    summary: 'An email, meeting request, meeting response, or meeting cancellation.'
+    value: '"message"'
+  - name: Appointment
+    uid: 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
+    package: outlook!
+    summary: An appointment item.
+    value: '"appointment"'

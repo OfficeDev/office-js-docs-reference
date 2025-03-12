@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Office.LocationIdentifier
+uid: 'outlook!Office.LocationIdentifier:interface'
+package: outlook!
+fullName: Office.LocationIdentifier
+summary: Represents the ID of a location.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  const locations = [
+      {
+          "id": "Contoso",
+          "type": Office.MailboxEnums.LocationType.Custom
+      }
+  ];
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'outlook!Office.LocationIdentifier#id:member'
+    package: outlook!
+    fullName: id
+    summary: |-
+      The location's unique ID.
+
+      For `Room` type, it's the room's email address.
+
+      For `Custom` type, it's the `displayName`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'outlook!Office.LocationIdentifier#type:member'
+    package: outlook!
+    fullName: type
+    summary: The location's type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: MailboxEnums.LocationType | string;'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.LocationType:enum" /> | string'

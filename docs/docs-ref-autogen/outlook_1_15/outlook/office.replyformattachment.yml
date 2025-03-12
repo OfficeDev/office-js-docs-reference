@@ -1,0 +1,133 @@
+### YamlMime:TSType
+name: Office.ReplyFormAttachment
+uid: 'outlook!Office.ReplyFormAttachment:interface'
+package: outlook!
+fullName: Office.ReplyFormAttachment
+summary: A file or item attachment. Used when displaying a reply form.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+  // The async version is only available starting with requirement set 1.9.
+
+  // It provides a callback when the new appointment form has been created.
+
+  Office.context.mailbox.item.displayReplyFormAsync(
+    {
+      htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
+      attachments: [
+        { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
+        { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
+      ]
+    },
+    (asyncResult) => {
+      console.log(JSON.stringify(asyncResult));
+    }
+  );
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: base64File
+    uid: 'outlook!Office.ReplyFormAttachment#base64File:member'
+    package: outlook!
+    fullName: base64File
+    summary: The Base64-encoded string of the file to be attached. Only use if `type` is set to `base64`<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'base64File?: string;'
+      return:
+        type: string
+  - name: inLine
+    uid: 'outlook!Office.ReplyFormAttachment#inLine:member'
+    package: outlook!
+    fullName: inLine
+    summary: >-
+      If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the
+      attachment list. Only use if `type` is set to `file`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inLine?: boolean;'
+      return:
+        type: boolean
+  - name: itemId
+    uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
+    package: outlook!
+    fullName: itemId
+    summary: >-
+      The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`<!--
+      -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemId?: string;'
+      return:
+        type: string
+  - name: name
+    uid: 'outlook!Office.ReplyFormAttachment#name:member'
+    package: outlook!
+    fullName: name
+    summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'outlook!Office.ReplyFormAttachment#type:member'
+    package: outlook!
+    fullName: type
+    summary: Indicates the type of attachment.
+    remarks: >-
+      **Important**:
+
+
+      - The `base64` attachment type was introduced in Mailbox requirement set 1.15. It's only supported by the
+      `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->, `displayReplyForm`<!-- -->, and
+      `displayReplyFormAsync` methods.
+
+
+      - The `cloud` attachment type isn't supported by the `displayNewMessageForm`<!-- -->,
+      `displayNewMessageFormAsync`<!-- -->, `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->,
+      `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: MailboxEnums.AttachmentType;'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" />'
+  - name: url
+    uid: 'outlook!Office.ReplyFormAttachment#url:member'
+    package: outlook!
+    fullName: url
+    summary: >-
+      The URI of the location for the file. Only use if `type` is set to `file`<!-- -->.
+
+
+      **Important**: This link must be publicly accessible without need for authentication by Exchange Online
+      servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it doesn't
+      need further authentication.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url?: string;'
+      return:
+        type: string

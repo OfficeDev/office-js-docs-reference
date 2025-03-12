@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.OpenLocation
+uid: 'outlook!Office.MailboxEnums.OpenLocation:enum'
+package: outlook!
+fullName: Office.MailboxEnums.OpenLocation
+summary: Specifies the location from which an add-in wants to access data.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose, Read
+
+
+  **Important**: This enum is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn
+  more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile
+  devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Checks if the add-in can access data from the device's photo library.
+
+  const isOpenFromPhotoLibraryAllowed =
+  Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
+
+  if (isOpenFromPhotoLibraryAllowed) {
+      console.log("Access to the photo library is allowed.");
+      // Do something.
+  } else {
+      console.log("Access to the photo library isn't allowed.");
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: AccountDocument
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.AccountDocument:member'
+    package: outlook!
+    summary: A location associated with an account within an add-in.
+  - name: Camera
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.Camera:member'
+    package: outlook!
+    summary: The device's camera.
+  - name: Local
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.Local:member'
+    package: outlook!
+    summary: Local storage on a device.
+  - name: OnedriveForBusiness
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.OnedriveForBusiness:member'
+    package: outlook!
+    summary: |-
+      OneDrive for Business.
+
+      **Important**: For OneDrive Personal, use OTHER.
+  - name: Other
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.Other:member'
+    package: outlook!
+    summary: 'Other cloud storage providers, including OneDrive Personal.'
+  - name: PhotoLibrary
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.PhotoLibrary:member'
+    package: outlook!
+    summary: The device's photo library.
+  - name: SharePoint
+    uid: 'outlook!Office.MailboxEnums.OpenLocation.SharePoint:member'
+    package: outlook!
+    summary: >-
+      SharePoint. Includes both SharePoint Online and SharePoint on-premises (if accessed with a Microsoft Entra ID
+      account).

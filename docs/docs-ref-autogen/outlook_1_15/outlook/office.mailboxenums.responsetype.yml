@@ -1,0 +1,86 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ResponseType
+uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ResponseType
+summary: Specifies the type of response to a meeting invitation.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-all-attendees.yaml
+
+
+  function organizeByResponse(attendees) {
+    const accepted = [];
+    const declined = [];
+    const noResponse = [];
+    const tentative = [];
+    attendees.forEach(attendee => {
+      switch (attendee.appointmentResponse) {
+        case Office.MailboxEnums.ResponseType.Accepted:
+          accepted.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.Declined:
+          declined.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.None:
+          noResponse.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.Tentative:
+          tentative.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.Organizer:
+          console.log(`Organizer: ${attendee.displayName}, ${attendee.emailAddress}`);
+          break;
+      } 
+    });
+
+    // List attendees by their response.
+    console.log("Accepted: ");
+    printAttendees(accepted);
+    console.log("Declined: ");
+    printAttendees(declined);
+    console.log("Tentative: ");
+    printAttendees(tentative);
+    console.log("No response: ");
+    printAttendees(noResponse);
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: None
+    uid: 'outlook!Office.MailboxEnums.ResponseType.None:member'
+    package: outlook!
+    summary: There has been no response from the attendee.
+    value: '"none"'
+  - name: Organizer
+    uid: 'outlook!Office.MailboxEnums.ResponseType.Organizer:member'
+    package: outlook!
+    summary: The attendee is the meeting organizer.
+    value: '"organizer"'
+  - name: Tentative
+    uid: 'outlook!Office.MailboxEnums.ResponseType.Tentative:member'
+    package: outlook!
+    summary: The meeting request was tentatively accepted by the attendee.
+    value: '"tentative"'
+  - name: Accepted
+    uid: 'outlook!Office.MailboxEnums.ResponseType.Accepted:member'
+    package: outlook!
+    summary: The meeting request was accepted by the attendee.
+    value: '"accepted"'
+  - name: Declined
+    uid: 'outlook!Office.MailboxEnums.ResponseType.Declined:member'
+    package: outlook!
+    summary: The meeting request was declined by the attendee.
+    value: '"declined"'

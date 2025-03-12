@@ -165,6 +165,30 @@ fields:
 
 
       \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  - name: InitializationContextChanged
+    uid: 'office!Office.EventType.InitializationContextChanged:member'
+    package: office!
+    summary: >-
+      Occurs in Outlook when an add-in's task pane is opened from an [actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->,
+      [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
+      notification, [Smart
+      Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) dialog, or
+      [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) dialog. This
+      event prevents an add-in from relaunching if its task pane is already open in Outlook.
+
+
+      **Important**: The `InitializationContextChanged` event can only be handled in a task pane. Function commands
+      can't register a handler for this event.
+
+
+      To add an event handler for the `InitializationContextChanged` event, use the `addHandlerAsync` method of the
+      `Item` object. The event handler receives an argument of type
+      [Office.InitializationContextChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15)<!--
+      -->.
+
+
+      \[ [API set: Mailbox 1.15](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: ItemChanged
     uid: 'office!Office.EventType.ItemChanged:member'
     package: office!

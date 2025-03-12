@@ -7,7 +7,7 @@ summary: >-
   Represents a message in read mode that's currently loaded. A `LoadedMessageRead` object is returned when
   `Office.context.mailbox.loadItemByIdAsync` is called on a message in read mode.
 remarks: >-
-  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -67,7 +67,7 @@ remarks: >-
   }
 
   ```
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -96,7 +96,7 @@ properties:
 
 
       - Attachments added using the **Upload and share** option aren't returned.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachments: AttachmentDetails[];'
@@ -122,7 +122,7 @@ properties:
 
 
       **Important**: Only the `getAsync` and `getTypeAsync` methods of the Body object are supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'body: Body;'
@@ -145,7 +145,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'categories: Categories;'
@@ -177,7 +177,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'cc: EmailAddressDetails[];'
@@ -203,7 +203,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'conversationId: string;'
@@ -223,7 +223,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'dateTimeCreated: Date;'
@@ -251,7 +251,7 @@ properties:
       **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on
       supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'dateTimeModified: Date;'
@@ -280,7 +280,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'end: Date;'
@@ -313,7 +313,7 @@ properties:
 
 
       - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'from: EmailAddressDetails;'
@@ -339,7 +339,7 @@ properties:
       sent items. In that case, consider using [Exchange Web
       Services](https://learn.microsoft.com/office/dev/add-ins/outlook/web-services) to get this [property from the
       server](https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid)<!-- -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'internetMessageId: string;'
@@ -378,7 +378,7 @@ properties:
 
 
       You can create custom classes that extend a default item class. For example, `IPM.Note.Contoso`<!-- -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'itemClass: string;'
@@ -417,7 +417,7 @@ properties:
       -->. The `itemId` property isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
       making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
       -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'itemId: string;'
@@ -442,7 +442,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
@@ -465,7 +465,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'location: string;'
@@ -491,7 +491,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'normalizedSubject: string;'
@@ -520,7 +520,7 @@ properties:
 
 
       - Only the `getAllAsync` method of the NotificationMessages object is supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notificationMessages: NotificationMessages;'
@@ -563,7 +563,7 @@ properties:
 
 
       - Only the propeties and the `getAsync` method of the Recurrence object are supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'recurrence: Recurrence;'
@@ -593,7 +593,7 @@ properties:
 
 
       - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sender: EmailAddressDetails;'
@@ -636,7 +636,7 @@ properties:
 
       - The `seriesId` property returns `null` for items that don't have parent items such as single appointments,
       series items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'seriesId: string;'
@@ -661,7 +661,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'start: Date;'
@@ -689,7 +689,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subject: string;'
@@ -722,7 +722,7 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'to: EmailAddressDetails[];'
@@ -764,7 +764,7 @@ methods:
       - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
       attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
       UI. If this isn't possible, then no error message is thrown.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -825,7 +825,7 @@ methods:
       - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
       attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
       UI. If this isn't possible, then no error message is thrown.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -881,7 +881,7 @@ methods:
       - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
       attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
       UI. If this isn't possible, then no error message is thrown.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -942,7 +942,7 @@ methods:
       - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
       attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
       UI. If this isn't possible, then no error message is thrown.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -985,7 +985,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1030,7 +1030,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getAllInternetHeadersAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -1063,7 +1063,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1102,7 +1102,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getAsFileAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -1164,7 +1164,7 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1237,7 +1237,7 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1277,7 +1277,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1317,7 +1317,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getInitializationContextAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -1369,7 +1369,7 @@ methods:
       should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
       expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead,
       use the `Body.getAsync` method to retrieve the entire body.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRegExMatches(): any;'
@@ -1421,7 +1421,7 @@ methods:
       should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
       expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead,
       use the `Body.getAsync` method to retrieve the entire body.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRegExMatchesByName(name: string): string[];'
@@ -1475,7 +1475,7 @@ methods:
       should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
       expression such as .* to obtain the entire body of an item doesn't always return the expected results. Instead,
       use the `Body.getAsync` method to retrieve the entire body.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelectedRegExMatches(): any;'
@@ -1510,7 +1510,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1556,7 +1556,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSharedPropertiesAsync(callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;'
@@ -1607,7 +1607,7 @@ methods:
 
 
       **Important**: Only the `get` and `getAll` methods of the CustomProperties object are supported.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1637,7 +1637,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be
       loaded for processing.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1659,7 +1659,7 @@ methods:
 
       - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after
       processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1687,7 +1687,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be
       loaded for processing.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1709,7 +1709,7 @@ methods:
 
       - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after
       processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'unloadAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'

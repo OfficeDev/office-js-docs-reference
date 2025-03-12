@@ -1596,11 +1596,12 @@ methods:
             `htmlBody`<!-- -->: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
 
 
-            `attachments`<!-- -->: An array of JSON objects that are either file or item attachments.
+            `attachments`<!-- -->: An array of JSON objects that are either file or Exchange item attachments.
 
 
-            `attachments.type`<!-- -->: Indicates the type of attachment. Must be `file` for a file attachment or `item`
-            for an item attachment.
+            `attachments.type`<!-- -->: Indicates the type of attachment. Must be
+            `Office.MailboxEnums.AttachmentType.File` for a file attachment or `Office.MailboxEnums.AttachmentType.Item`
+            for an Exchange item attachment.
 
 
             `attachments.name`<!-- -->: A string that contains the name of the attachment, up to 255 characters in
@@ -1721,11 +1722,12 @@ methods:
             `htmlBody`<!-- -->: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
 
 
-            `attachments`<!-- -->: An array of JSON objects that are either file or item attachments.
+            `attachments`<!-- -->: An array of JSON objects that are either file or Exchange item attachments.
 
 
-            `attachments.type`<!-- -->: Indicates the type of attachment. Must be `file` for a file attachment or `item`
-            for an item attachment.
+            `attachments.type`<!-- -->: Indicates the type of attachment. Must be
+            `Office.MailboxEnums.AttachmentType.File` for a file attachment or `Office.MailboxEnums.AttachmentType.Item`
+            for an Exchange item attachment.
 
 
             `attachments.name`<!-- -->: A string that contains the name of the attachment, up to 255 characters in
@@ -1820,11 +1822,12 @@ methods:
             `htmlBody`<!-- -->: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
 
 
-            `attachments`<!-- -->: An array of JSON objects that are either file or item attachments.
+            `attachments`<!-- -->: An array of JSON objects that are either file or Exchange item attachments.
 
 
-            `attachments.type`<!-- -->: Indicates the type of attachment. Must be `file` for a file attachment or `item`
-            for an item attachment.
+            `attachments.type`<!-- -->: Indicates the type of attachment. Must be
+            `Office.MailboxEnums.AttachmentType.File` for a file attachment or `Office.MailboxEnums.AttachmentType.Item`
+            for an Exchange item attachment.
 
 
             `attachments.name`<!-- -->: A string that contains the name of the attachment, up to 255 characters in
@@ -2562,7 +2565,7 @@ methods:
       Loads a single mail item by its Exchange Web Services (EWS) ID. Then, gets an object that provides the properties
       and methods of the loaded item.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2598,7 +2601,7 @@ methods:
 
 
       - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2606,7 +2609,7 @@ methods:
         Office.AsyncResult<LoadedMessageCompose | LoadedMessageRead>) => void): void;
       parameters:
         - id: itemId
-          description: The EWS ID of a selected item.
+          description: The EWS ID of a mail item.
           type: string
         - id: options
           description: >-
@@ -2618,7 +2621,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or
             `LoadedMessageRead` object is returned in the `asyncResult.value` property. This object provides the
-            properties of the selected item that's currently loaded.
+            properties of the item that's currently loaded.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.LoadedMessageCompose:interface" /> | <xref
@@ -2634,7 +2637,7 @@ methods:
       Loads a single mail item by its Exchange Web Services (EWS) ID. Then, gets an object that provides the properties
       and methods of the loaded item.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2670,7 +2673,7 @@ methods:
 
 
       - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2678,14 +2681,14 @@ methods:
         LoadedMessageRead>) => void): void;
       parameters:
         - id: itemId
-          description: The EWS ID of a selected item.
+          description: The EWS ID of a mail item.
           type: string
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or
             `LoadedMessageRead` object is returned in the `asyncResult.value` property. This object provides the
-            properties of the selected item that's currently loaded.
+            properties of the item that's currently loaded.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.LoadedMessageCompose:interface" /> | <xref

@@ -1,0 +1,133 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.Month
+uid: 'outlook!Office.MailboxEnums.Month:enum'
+package: outlook!
+fullName: Office.MailboxEnums.Month
+summary: Specifies the month.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+  // Important: Can only set the recurrence pattern of an appointment series.
+
+
+  const currentDate = new Date();
+
+  let seriesTimeObject: Office.SeriesTime;
+
+  // Set series start date to tomorrow.
+
+  seriesTimeObject.setStartDate(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay() + 1);
+
+  // Set series end date to one year from now.
+
+  seriesTimeObject.setEndDate(currentDate.getFullYear() + 1, currentDate.getMonth() + 1, currentDate.getDay());
+
+  // Set start time to 1:30 PM.
+
+  seriesTimeObject.setStartTime(13, 30);
+
+  // Set duration to 30 minutes.
+
+  seriesTimeObject.setDuration(30);
+
+
+  const pattern: Office.Recurrence = {
+    seriesTime: seriesTimeObject,
+    recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+    recurrenceProperties: {
+      interval: 1,
+      dayOfWeek: Office.MailboxEnums.Days.Tue,
+      weekNumber: Office.MailboxEnums.WeekNumber.Second,
+      month: Office.MailboxEnums.Month.Sep
+    },
+    recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+  };
+
+
+  Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+      console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+      return;
+    }
+    console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Jan
+    uid: 'outlook!Office.MailboxEnums.Month.Jan:member'
+    package: outlook!
+    summary: January
+    value: '"jan"'
+  - name: Feb
+    uid: 'outlook!Office.MailboxEnums.Month.Feb:member'
+    package: outlook!
+    summary: February
+    value: '"feb"'
+  - name: Mar
+    uid: 'outlook!Office.MailboxEnums.Month.Mar:member'
+    package: outlook!
+    summary: March
+    value: '"mar"'
+  - name: Apr
+    uid: 'outlook!Office.MailboxEnums.Month.Apr:member'
+    package: outlook!
+    summary: April
+    value: '"apr"'
+  - name: May
+    uid: 'outlook!Office.MailboxEnums.Month.May:member'
+    package: outlook!
+    summary: May
+    value: '"may"'
+  - name: Jun
+    uid: 'outlook!Office.MailboxEnums.Month.Jun:member'
+    package: outlook!
+    summary: June
+    value: '"jun"'
+  - name: Jul
+    uid: 'outlook!Office.MailboxEnums.Month.Jul:member'
+    package: outlook!
+    summary: July
+    value: '"jul"'
+  - name: Aug
+    uid: 'outlook!Office.MailboxEnums.Month.Aug:member'
+    package: outlook!
+    summary: August
+    value: '"aug"'
+  - name: Sep
+    uid: 'outlook!Office.MailboxEnums.Month.Sep:member'
+    package: outlook!
+    summary: September
+    value: '"sep"'
+  - name: Oct
+    uid: 'outlook!Office.MailboxEnums.Month.Oct:member'
+    package: outlook!
+    summary: October
+    value: '"oct"'
+  - name: Nov
+    uid: 'outlook!Office.MailboxEnums.Month.Nov:member'
+    package: outlook!
+    summary: November
+    value: '"nov"'
+  - name: Dec
+    uid: 'outlook!Office.MailboxEnums.Month.Dec:member'
+    package: outlook!
+    summary: December
+    value: '"dec"'

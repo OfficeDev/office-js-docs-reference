@@ -1952,6 +1952,11 @@ methods:
       -->**: Message Compose
 
 
+      **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It
+      isn't supported in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or
+      [item multi-select scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -2011,6 +2016,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It
+      isn't supported in [event-based handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) or
+      [item multi-select scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
