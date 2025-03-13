@@ -75,9 +75,11 @@ export declare namespace Office {
                         /**
              * The attachment is stored in a cloud location, such as OneDrive.
              *
-             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
+             * **Important**: In Read mode, the `id` property of the attachment's
+             * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetails | AttachmentDetails} object
              * contains a URL to the file.
-             * From requirement set 1.8, the `url` property included in the attachment's {@link Office.AttachmentDetailsCompose | details} object
+             * From requirement set 1.8, the `url` property included in the attachment's
+             * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose | AttachmentDetailsCompose} object
              * contains a URL to the file in Compose mode.
              *
              * The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
@@ -1666,6 +1668,8 @@ export declare namespace Office {
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
+         *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
          * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
@@ -1712,6 +1716,8 @@ export declare namespace Office {
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
          *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
          * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
@@ -7417,6 +7423,8 @@ export declare namespace Office {
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
+         *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
          * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
@@ -7462,6 +7470,8 @@ export declare namespace Office {
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
          *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
          * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
