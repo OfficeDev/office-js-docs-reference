@@ -300,6 +300,12 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.15",
+        "src": "docs-ref-autogen/outlook_1_15",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.15",
         "src": "docs-ref-autogen/outlook_1_15",
