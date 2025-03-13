@@ -90,10 +90,10 @@ fields:
 
 
       **Important**: In Read mode, the `id` property of the attachment's
-      [details](xref:outlook!Office.AttachmentDetails:interface) object contains a URL to the file. From requirement set
-      1.8, the `url` property included in the attachment's
-      [details](xref:outlook!Office.AttachmentDetailsCompose:interface) object contains a URL to the file in Compose
-      mode.
+      [AttachmentDetails](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetails) object contains a
+      URL to the file. From requirement set 1.8, the `url` property included in the attachment's
+      [AttachmentDetailsCompose](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose)
+      object contains a URL to the file in Compose mode.
 
 
       The `cloud` attachment type isn't supported by the `displayNewMessageForm`<!-- -->,
