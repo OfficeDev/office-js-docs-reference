@@ -38,3 +38,10 @@ Specifies source location and control settings that apply when your mail add-in 
 ## Contained in
 
 - [Form](form.md)
+
+## Child elements
+
+| Element | Required | Description |
+|:-----|:-----:|:-----|
+| [SourceLocation element](sourcelocation.md) | Yes | The location of your add-in's source files. |
+| [RequestedHeight element](requestedheight.md) | Yes | The initial height of your add-in.<br><br>**Important**: The **\<RequestedHeight\>** element is only required if the `xsi:type` of the parent **\<Form\>** element is `ItemRead`. |
