@@ -8357,6 +8357,24 @@ Office.InfobarClickedEventArgs:interface:
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
     }
+Office.InitializationContextChangedEventArgs:interface:
+  - |-
+    // This sample adds an event handler for the InitializationContextChanged event.
+    Office.context.mailbox.addHandlerAsync(Office.EventType.InitializationContextChanged, initializationContextChangedHandler, (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+            return;
+        }
+
+        console.log("Event handler added successfully.");
+    });
+
+    // Handles the InitializationContextChanged event.
+    function initializationContextChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const data = event.initializationContextData;
+        console.log(`Data: ${data}`);
+    }
 Office.LoadedMessageCompose:interface:
   - |-
     // Gets the sender's email address of each selected message.
@@ -9539,10 +9557,7 @@ Office.SmartAlertsEventCompletedOptions:interface:
                         commandId: "msgComposeOpenPaneButton",
                         contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
                         errorMessage: "Don't forget to add a meeting location.",
-                        errorMessageMarkdown: `
-                            Don't forget to add a meeting location.\n\n
-                            **Tip**: For a list of locations,
-                            see [Meeting Locations]("https://www.contoso.com/meeting-locations).`,
+                        errorMessageMarkdown: "Don't forget to add a meeting location.\n\n**Tip**: For a list of locations, see [Meeting Locations]("https://www.contoso.com/meeting-locations).",
                         sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
                     }
                 );

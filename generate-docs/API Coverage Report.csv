@@ -8899,7 +8899,7 @@ Office.InfobarClickedEventArgs,"type",Property,Fine,false
 Office.InfobarDetails,N/A,Interface,Unknown,true
 Office.InfobarDetails,"actionType",Property,Fine,false
 Office.InfobarDetails,"infobarType",Property,Fine,false
-Office.InitializationContextChangedEventArgs,N/A,Interface,Unknown,false
+Office.InitializationContextChangedEventArgs,N/A,Interface,Unknown,true
 Office.InitializationContextChangedEventArgs,"initializationContextData",Property,Good,false
 Office.InitializationContextChangedEventArgs,"type",Property,Fine,false
 Office.InternetHeaders,N/A,Interface,Excellent,true
