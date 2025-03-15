@@ -10,7 +10,37 @@ summary: >-
   Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) dialog, or
   [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) dialog when the
   `Office.EventType.InitializationContextChanged` event occurs.
-remarks: '\[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // This sample adds an event handler for the InitializationContextChanged event.
+
+  Office.context.mailbox.addHandlerAsync(Office.EventType.InitializationContextChanged,
+  initializationContextChangedHandler, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+          return;
+      }
+
+      console.log("Event handler added successfully.");
+  });
+
+
+  // Handles the InitializationContextChanged event.
+
+  function initializationContextChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+      const data = event.initializationContextData;
+      console.log(`Data: ${data}`);
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
