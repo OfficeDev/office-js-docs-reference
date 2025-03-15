@@ -47,23 +47,6 @@ Office.AppointmentCompose#body:member:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.AppointmentCompose#end:member:
-  - |-
-    // The following example sets the end time of an appointment in compose mode by
-    // using the `setAsync` method of the `Time` object.
-    const endTime = new Date("3/14/2015");
-    const options = {
-        // Pass information that can be used in the callback.
-        asyncContext: {verb: "Set"}
-    };
-    Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
-        if (result.error) {
-            console.debug(result.error);
-        } else {
-            // Access the asyncContext that was passed to the setAsync method.
-            console.debug("End Time " + result.asyncContext.verb);
-        }
-    });
 Office.AppointmentCompose#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
@@ -91,24 +74,6 @@ Office.AppointmentCompose#getSelectedDataAsync:member(1):
 
         console.log(`Selected text in ${prop}: ${text}`);
     }
-Office.AppointmentCompose#location:member:
-  - |-
-    const userContext = { value : 1 };
-    Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
-
-    function callback(asyncResult) {
-        const context = asyncResult.context;
-        const location = asyncResult.value;
-    }
-Office.AppointmentCompose#optionalAttendees:member:
-  - |-
-    Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.optionalAttendees.getAsync(callback);
-
-    function callback(asyncResult) {
-        const arrayOfOptionalAttendeesRecipients = asyncResult.value;
-    }
 Office.AppointmentCompose#removeHandlerAsync:member(2):
   - |-
     Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
@@ -119,16 +84,6 @@ Office.AppointmentCompose#removeHandlerAsync:member(2):
 
         console.log("Event handler removed successfully.");
     });
-Office.AppointmentCompose#requiredAttendees:member:
-  - |-
-    Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.requiredAttendees.getAsync(callback);
-
-    function callback(asyncResult) {
-        const arrayOfRequiredAttendeesRecipients = asyncResult.value;
-        console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
-    }
 Office.AppointmentCompose#saveAsync:member(2):
   - |-
     Office.context.mailbox.item.saveAsync(
@@ -161,26 +116,6 @@ Office.AppointmentRead#addHandlerAsync:member(1):
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
-Office.AppointmentRead#attachments:member:
-  - |-
-    // The following code builds an HTML string with details of all attachments on the current item.
-    const item = Office.context.mailbox.item;
-    let outputString = "";
-
-    if (item.attachments.length > 0) {
-        for (let i = 0 ; i < item.attachments.length ; i++) {
-            const attachment = item.attachments[i];
-            outputString += "<BR>" + i + ". Name: ";
-            outputString += attachment.name;
-            outputString += "<BR>ID: " + attachment.id;
-            outputString += "<BR>contentType: " + attachment.contentType;
-            outputString += "<BR>size: " + attachment.size;
-            outputString += "<BR>attachmentType: " + attachment.attachmentType;
-            outputString += "<BR>isInline: " + attachment.isInline;
-        }
-    }
-
-    console.log(outputString);
 Office.AppointmentRead#body:member:
   - |-
     // This example gets the body of the item as plain text.
@@ -198,71 +133,6 @@ Office.AppointmentRead#body:member:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.AppointmentRead#displayReplyAllForm:member(1):
-  - |-
-    // The following code passes a string to the `displayReplyAllForm` method.
-    Office.context.mailbox.item.displayReplyAllForm('hello there');
-    Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
-
-    // Reply with an empty body.
-    Office.context.mailbox.item.displayReplyAllForm({});
-
-    // Reply with just a body.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-    'htmlBody' : 'hi'
-    });
-
-    // Reply with a body and a file attachment.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-            'type' : Office.MailboxEnums.AttachmentType.File,
-            'name' : 'squirrel.png',
-            'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-            }
-        ]
-    });
-
-    // Reply with a body and an item attachment.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-            'type' : 'item',
-            'name' : 'rand',
-            'itemId' : Office.context.mailbox.item.itemId
-            }
-        ]
-    });
-
-    // Reply with a body, file attachment, item attachment, and a callback.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-                'type' : Office.MailboxEnums.AttachmentType.File,
-                'name' : 'squirrel.png',
-                'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-            },
-            {
-                'type' : 'item',
-                'name' : 'rand',
-                'itemId' : Office.context.mailbox.item.itemId
-            }
-        ],
-        'callback' : function(asyncResult)
-        {
-            console.log(asyncResult.value);
-        }
-    });
 Office.AppointmentRead#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
@@ -279,71 +149,6 @@ Office.AppointmentRead#getInitializationContextAsync:member(1):
             // Handle the error.
         }
     });
-Office.AppointmentRead#getRegExMatches:member(1):
-  - |-
-    // Consider an add-in manifest has the following `Rule` element:
-    //<Rule xsi:type="RuleCollection" Mode="And">
-    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-    //  <Rule xsi:type="RuleCollection" Mode="Or">
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //  </Rule>
-    //</Rule>
-
-    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-    //{
-    //'fruits': ['apple','banana','Banana','coconut'],
-    //'veggies': ['tomato','onion','spinach','broccoli']
-    //}
-
-    // The following example shows how to access the array of
-    // matches for the regular expression rule elements `fruits`
-    // and `veggies`, which are specified in the manifest.
-    const allMatches = Office.context.mailbox.item.getRegExMatches();
-    const fruits = allMatches.fruits;
-    const veggies = allMatches.veggies;
-Office.AppointmentRead#getRegExMatchesByName:member(1):
-  - |-
-    // Consider an add-in manifest has the following `Rule` element:
-    //<Rule xsi:type="RuleCollection" Mode="And">
-    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-    //  <Rule xsi:type="RuleCollection" Mode="Or">
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //  </Rule>
-    //</Rule>
-
-    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-    //{
-    //'fruits': ['apple','banana','Banana','coconut'],
-    //'veggies': ['tomato','onion','spinach','broccoli']
-    //}
-
-    const fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
-    const veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
-Office.AppointmentRead#getSelectedRegExMatches:member(1):
-  - |-
-    // Consider an add-in manifest has the following `Rule` element:
-    //<Rule xsi:type="RuleCollection" Mode="And">
-    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-    //  <Rule xsi:type="RuleCollection" Mode="Or">
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //  </Rule>
-    //</Rule>
-
-    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-    //{
-    //'fruits': ['apple','banana','Banana','coconut'],
-    //'veggies': ['tomato','onion','spinach','broccoli']
-    //}
-
-    // The following example shows how to access the array of matches for the
-    // regular expression rule elements `fruits` and `veggies`, which are
-    // specified in the manifest.
-    const selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
-    const fruits = selectedMatches.fruits;
-    const veggies = selectedMatches.veggies;
 Office.AppointmentRead#isAllDayEvent:member:
   - |-
     const isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
@@ -362,10 +167,6 @@ Office.AppointmentRead#itemId:member:
             itemId = result.value;
         });
     }
-Office.AppointmentRead#location:member:
-  - |-
-    const location = Office.context.mailbox.item.location;
-    console.log("location: " + location);
 Office.AppointmentRead#removeHandlerAsync:member(2):
   - |-
     Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
@@ -448,27 +249,6 @@ Office.AttachmentContent#format:member:
                 // Handle attachment formats that are not supported.
         }
     }
-Office.AttachmentDetails:interface:
-  - |-
-    // The following code builds an HTML string with details
-    // of all attachments on the current item.
-    const item = Office.context.mailbox.item;
-    let outputString = "";
-
-    if (item.attachments.length > 0) {
-        for (let i = 0 ; i < item.attachments.length ; i++) {
-            const attachment = item.attachments[i];
-            outputString += "<BR>" + i + ". Name: ";
-            outputString += attachment.name;
-            outputString += "<BR>ID: " + attachment.id;
-            outputString += "<BR>contentType: " + attachment.contentType;
-            outputString += "<BR>size: " + attachment.size;
-            outputString += "<BR>attachmentType: " + attachment.attachmentType;
-            outputString += "<BR>isInline: " + attachment.isInline;
-        }
-    }
-
-    console.log(outputString);
 Office.Body#getAsync:member(1):
   - |-
     // This example gets the body of the item as plain text.
@@ -868,47 +648,6 @@ Office.Mailbox#getIsSaveToLocationAllowed:member(1):
     } else {
         console.log("Saving to SharePoint isn't allowed.");
     }
-Office.Mailbox#makeEwsRequestAsync:member(1):
-  - |-
-    function getSubjectRequest(id) {
-        // Return a GetItem operation request for the subject of the specified item.
-        const request =
-            '<?xml version="1.0" encoding="utf-8"?>' +
-            '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
-            '               xmlns:xsd="http://www.w3.org/2001/XMLSchema"' +
-            '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
-            '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
-            '  <soap:Header>' +
-            '    <RequestServerVersion Version="Exchange2016" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
-            '  </soap:Header>' +
-            '  <soap:Body>' +
-            '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
-            '      <ItemShape>' +
-            '        <t:BaseShape>IdOnly</t:BaseShape>' +
-            '        <t:AdditionalProperties>' +
-            '            <t:FieldURI FieldURI="item:Subject"/>' +
-            '        </t:AdditionalProperties>' +
-            '      </ItemShape>' +
-            '      <ItemIds><t:ItemId Id="' + id + '"/></ItemIds>' +
-            '    </GetItem>' +
-            '  </soap:Body>' +
-            '</soap:Envelope>';
-
-        return request;
-    }
-
-    function sendRequest() {
-        // Create a local variable that contains the mailbox.
-        Office.context.mailbox.makeEwsRequestAsync(
-            getSubjectRequest(mailbox.item.itemId), callback);
-    }
-
-    function callback(asyncResult)  {
-        const result = asyncResult.value;
-        const context = asyncResult.asyncContext;
-
-        // Process the returned response here.
-    }
 Office.Mailbox#removeHandlerAsync:member(2):
   - |-
     Office.context.mailbox.removeHandlerAsync(Office.EventType.OfficeThemeChanged, (asyncResult) => {
@@ -1195,15 +934,6 @@ Office.MessageCompose#addItemAttachmentAsync:member(1):
             console.log("var2: " + result.asyncContext.var2);
         });
     }
-Office.MessageCompose#bcc:member:
-  - |-
-    Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.bcc.getAsync(callback);
-
-    function callback(asyncResult) {
-        const arrayOfBccRecipients = asyncResult.value;
-    }
 Office.MessageCompose#body:member:
   - |-
     // This example gets the body of the item as plain text.
@@ -1219,15 +949,6 @@ Office.MessageCompose#body:member:
         "value": "TEXT of whole body (including threads below)",
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
-    }
-Office.MessageCompose#cc:member:
-  - |-
-    Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.cc.getAsync(callback);
-
-    function callback(asyncResult) {
-        const arrayOfCcRecipients = asyncResult.value;
     }
 Office.MessageCompose#getInitializationContextAsync:member(1):
   - |-
@@ -1287,33 +1008,6 @@ Office.MessageCompose#setSelectedDataAsync:member(1):
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-Office.MessageCompose#to:member:
-  - |-
-    Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.to.getAsync(callback);
-
-    function callback(asyncResult) {
-        const arrayOfToRecipients = asyncResult.value;
-    }
-Office.MessageRead:interface:
- - |-
-   // The following code builds an HTML string with details of all attachments on the current item.
-    const item = Office.context.mailbox.item;
-    let outputString = "";
-    if (item.attachments.length > 0) {
-        for (let i = 0 ; i < item.attachments.length ; i++) {
-            const attachment = item.attachments[i];
-            outputString += "<BR>" + i + ". Name: ";
-            outputString += attachment.name;
-            outputString += "<BR>ID: " + attachment.id;
-            outputString += "<BR>contentType: " + attachment.contentType;
-            outputString += "<BR>size: " + attachment.size;
-            outputString += "<BR>attachmentType: " + attachment.attachmentType;
-            outputString += "<BR>isInline: " + attachment.isInline;
-        }
-    }
-    console.log(outputString);
 Office.MessageRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
@@ -1325,26 +1019,6 @@ Office.MessageRead#addHandlerAsync:member(1):
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
-Office.MessageRead#attachments:member:
-  - |-
-    // The following code builds an HTML string with details of all attachments on the current item.
-    const item = Office.context.mailbox.item;
-    let outputString = "";
-
-    if (item.attachments.length > 0) {
-        for (let i = 0 ; i < item.attachments.length ; i++) {
-            const attachment = item.attachments[i];
-            outputString += "<BR>" + i + ". Name: ";
-            outputString += attachment.name;
-            outputString += "<BR>ID: " + attachment.id;
-            outputString += "<BR>contentType: " + attachment.contentType;
-            outputString += "<BR>size: " + attachment.size;
-            outputString += "<BR>attachmentType: " + attachment.attachmentType;
-            outputString += "<BR>isInline: " + attachment.isInline;
-        }
-    }
-
-    console.log(outputString);
 Office.MessageRead#body:member:
   - |-
     // This example gets the body of the item as plain text.
@@ -1361,71 +1035,6 @@ Office.MessageRead#body:member:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.MessageRead#displayReplyAllForm:member(1):
-  - |-
-    // The following code passes a string to the `displayReplyAllForm` method.
-    Office.context.mailbox.item.displayReplyAllForm('hello there');
-    Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
-
-    // Reply with an empty body.
-    Office.context.mailbox.item.displayReplyAllForm({});
-
-    // Reply with just a body.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-    'htmlBody' : 'hi'
-    });
-
-    // Reply with a body and a file attachment.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-            'type' : Office.MailboxEnums.AttachmentType.File,
-            'name' : 'squirrel.png',
-            'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-            }
-        ]
-    });
-
-    // Reply with a body and an item attachment.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-            'type' : 'item',
-            'name' : 'rand',
-            'itemId' : Office.context.mailbox.item.itemId
-            }
-        ]
-    });
-
-    // Reply with a body, file attachment, item attachment, and a callback.
-    Office.context.mailbox.item.displayReplyAllForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-                'type' : Office.MailboxEnums.AttachmentType.File,
-                'name' : 'squirrel.png',
-                'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-            },
-            {
-                'type' : 'item',
-                'name' : 'rand',
-                'itemId' : Office.context.mailbox.item.itemId
-            }
-        ],
-        'callback' : function(asyncResult)
-        {
-            console.log(asyncResult.value);
-        }
-    });
 Office.MessageRead#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
@@ -1442,71 +1051,6 @@ Office.MessageRead#getInitializationContextAsync:member(1):
             // Handle the error.
         }
     });
-Office.MessageRead#getRegExMatches:member(1):
-  - |-
-    // Consider an add-in manifest has the following `Rule` element:
-    //<Rule xsi:type="RuleCollection" Mode="And">
-    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-    //  <Rule xsi:type="RuleCollection" Mode="Or">
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //  </Rule>
-    //</Rule>
-
-    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-    //{
-    //'fruits': ['apple','banana','Banana','coconut'],
-    //'veggies': ['tomato','onion','spinach','broccoli']
-    //}
-
-    // The following example shows how to access the array of
-    // matches for the regular expression rule elements `fruits`
-    // and `veggies`, which are specified in the manifest.
-    const allMatches = Office.context.mailbox.item.getRegExMatches();
-    const fruits = allMatches.fruits;
-    const veggies = allMatches.veggies;
-Office.MessageRead#getRegExMatchesByName:member(1):
-  - |-
-    // Consider an add-in manifest has the following `Rule` element:
-    //<Rule xsi:type="RuleCollection" Mode="And">
-    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-    //  <Rule xsi:type="RuleCollection" Mode="Or">
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //  </Rule>
-    //</Rule>
-
-    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-    //{
-    //'fruits': ['apple','banana','Banana','coconut'],
-    //'veggies': ['tomato','onion','spinach','broccoli']
-    //}
-
-    const fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
-    const veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
-Office.MessageRead#getSelectedRegExMatches:member(1):
-  - |-
-    // Consider an add-in manifest has the following `Rule` element:
-    //<Rule xsi:type="RuleCollection" Mode="And">
-    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-    //  <Rule xsi:type="RuleCollection" Mode="Or">
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    //  </Rule>
-    //</Rule>
-
-    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-    //{
-    //'fruits': ['apple','banana','Banana','coconut'],
-    //'veggies': ['tomato','onion','spinach','broccoli']
-    //}
-
-    // The following example shows how to access the array of matches for the
-    // regular expression rule elements `fruits` and `veggies`, which are
-    // specified in the manifest.
-    const selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
-    const fruits = selectedMatches.fruits;
-    const veggies = selectedMatches.veggies;
 Office.MessageRead#itemId:member:
   - |-
     // The following code checks for the presence of an item
@@ -2023,21 +1567,6 @@ Office.TaskSuggestion:interface:
     taskSuggestions.forEach(function (taskSuggestion) {
         console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
         console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
-    });
-Office.Time#setAsync:member(1):
-  - |-
-    const startTime = new Date("3/14/2015");
-    const options = {
-        // Pass information that can be used in the callback.
-        asyncContext: {verb: "Set"}
-    };
-    Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-        if (result.error) {
-            console.debug(result.error);
-        } else {
-            // Access the asyncContext that was passed to the setAsync method.
-            console.debug("Start Time " + result.asyncContext.verb);
-        }
     });
 Office.UserProfile#accountType:member:
   - |-

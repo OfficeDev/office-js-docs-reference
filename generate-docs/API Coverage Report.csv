@@ -8785,7 +8785,7 @@ Office.AppointmentTimeChangedEventArgs,"type",Property,Fine,false
 Office.AttachmentContent,N/A,Interface,Good,false
 Office.AttachmentContent,"content",Property,Fine,false
 Office.AttachmentContent,"format",Property,Excellent,true
-Office.AttachmentDetails,N/A,Interface,Good,true
+Office.AttachmentDetails,N/A,Interface,Good,false
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
 Office.AttachmentDetails,"contentType",Property,Deprecated,false
 Office.AttachmentDetails,"id",Property,Good,false
@@ -9441,7 +9441,7 @@ Office.MessageCompose,"sendAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"sendAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
-Office.MessageRead,N/A,Interface,Unknown,true
+Office.MessageRead,N/A,Interface,Unknown,false
 Office.MessageRead,"attachments",Property,Fine,true
 Office.MessageRead,"body",Property,Great,true
 Office.MessageRead,"categories",Property,Great,true

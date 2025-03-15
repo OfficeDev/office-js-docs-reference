@@ -28,29 +28,7 @@ summary: >-
 
 
   - [Message](xref:outlook!Office.Message:interface)
-remarks: |-
-
-
-  #### Examples
-
-  ```TypeScript
-  // The following code builds an HTML string with details of all attachments on the current item.
-   const item = Office.context.mailbox.item;
-   let outputString = "";
-   if (item.attachments.length > 0) {
-       for (let i = 0 ; i < item.attachments.length ; i++) {
-           const attachment = item.attachments[i];
-           outputString += "<BR>" + i + ". Name: ";
-           outputString += attachment.name;
-           outputString += "<BR>ID: " + attachment.id;
-           outputString += "<BR>contentType: " + attachment.contentType;
-           outputString += "<BR>size: " + attachment.size;
-           outputString += "<BR>attachmentType: " + attachment.attachmentType;
-           outputString += "<BR>isInline: " + attachment.isInline;
-       }
-   }
-   console.log(outputString);
-  ```
+remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
@@ -84,33 +62,6 @@ properties:
 
       #### Examples
 
-
-      ```TypeScript
-
-      // The following code builds an HTML string with details of all attachments on the current item.
-
-      const item = Office.context.mailbox.item;
-
-      let outputString = "";
-
-
-      if (item.attachments.length > 0) {
-          for (let i = 0 ; i < item.attachments.length ; i++) {
-              const attachment = item.attachments[i];
-              outputString += "<BR>" + i + ". Name: ";
-              outputString += attachment.name;
-              outputString += "<BR>ID: " + attachment.id;
-              outputString += "<BR>contentType: " + attachment.contentType;
-              outputString += "<BR>size: " + attachment.size;
-              outputString += "<BR>attachmentType: " + attachment.attachmentType;
-              outputString += "<BR>isInline: " + attachment.isInline;
-          }
-      }
-
-
-      console.log(outputString);
-
-      ```
 
       ```TypeScript
 
@@ -1528,92 +1479,6 @@ methods:
 
       ```TypeScript
 
-      // The following code passes a string to the `displayReplyAllForm` method.
-
-      Office.context.mailbox.item.displayReplyAllForm('hello there');
-
-      Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
-
-
-      // Reply with an empty body.
-
-      Office.context.mailbox.item.displayReplyAllForm({});
-
-
-      // Reply with just a body.
-
-      Office.context.mailbox.item.displayReplyAllForm(
-
-      {
-
-      'htmlBody' : 'hi'
-
-      });
-
-
-      // Reply with a body and a file attachment.
-
-      Office.context.mailbox.item.displayReplyAllForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-              'type' : Office.MailboxEnums.AttachmentType.File,
-              'name' : 'squirrel.png',
-              'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              }
-          ]
-      });
-
-
-      // Reply with a body and an item attachment.
-
-      Office.context.mailbox.item.displayReplyAllForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-              'type' : 'item',
-              'name' : 'rand',
-              'itemId' : Office.context.mailbox.item.itemId
-              }
-          ]
-      });
-
-
-      // Reply with a body, file attachment, item attachment, and a callback.
-
-      Office.context.mailbox.item.displayReplyAllForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : Office.MailboxEnums.AttachmentType.File,
-                  'name' : 'squirrel.png',
-                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              },
-              {
-                  'type' : 'item',
-                  'name' : 'rand',
-                  'itemId' : Office.context.mailbox.item.itemId
-              }
-          ],
-          'callback' : function(asyncResult)
-          {
-              console.log(asyncResult.value);
-          }
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
@@ -2690,52 +2555,6 @@ methods:
 
       ```TypeScript
 
-      // Consider an add-in manifest has the following `Rule` element:
-
-      //<Rule xsi:type="RuleCollection" Mode="And">
-
-      //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-
-      //  <Rule xsi:type="RuleCollection" Mode="Or">
-
-      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut"
-      PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-
-      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies"
-      RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-
-      //  </Rule>
-
-      //</Rule>
-
-
-      // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-
-      //{
-
-      //'fruits': ['apple','banana','Banana','coconut'],
-
-      //'veggies': ['tomato','onion','spinach','broccoli']
-
-      //}
-
-
-      // The following example shows how to access the array of
-
-      // matches for the regular expression rule elements `fruits`
-
-      // and `veggies`, which are specified in the manifest.
-
-      const allMatches = Office.context.mailbox.item.getRegExMatches();
-
-      const fruits = allMatches.fruits;
-
-      const veggies = allMatches.veggies;
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
@@ -2806,44 +2625,6 @@ methods:
 
       #### Examples
 
-
-      ```TypeScript
-
-      // Consider an add-in manifest has the following `Rule` element:
-
-      //<Rule xsi:type="RuleCollection" Mode="And">
-
-      //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-
-      //  <Rule xsi:type="RuleCollection" Mode="Or">
-
-      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut"
-      PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-
-      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies"
-      RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-
-      //  </Rule>
-
-      //</Rule>
-
-
-      // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-
-      //{
-
-      //'fruits': ['apple','banana','Banana','coconut'],
-
-      //'veggies': ['tomato','onion','spinach','broccoli']
-
-      //}
-
-
-      const fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
-
-      const veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
-
-      ```
 
       ```TypeScript
 
@@ -2954,52 +2735,6 @@ methods:
 
       #### Examples
 
-
-      ```TypeScript
-
-      // Consider an add-in manifest has the following `Rule` element:
-
-      //<Rule xsi:type="RuleCollection" Mode="And">
-
-      //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-
-      //  <Rule xsi:type="RuleCollection" Mode="Or">
-
-      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut"
-      PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-
-      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies"
-      RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-
-      //  </Rule>
-
-      //</Rule>
-
-
-      // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-
-      //{
-
-      //'fruits': ['apple','banana','Banana','coconut'],
-
-      //'veggies': ['tomato','onion','spinach','broccoli']
-
-      //}
-
-
-      // The following example shows how to access the array of matches for the
-
-      // regular expression rule elements `fruits` and `veggies`, which are
-
-      // specified in the manifest.
-
-      const selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
-
-      const fruits = selectedMatches.fruits;
-
-      const veggies = selectedMatches.veggies;
-
-      ```
 
       ```TypeScript
 
