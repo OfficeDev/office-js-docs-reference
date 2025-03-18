@@ -6816,9 +6816,9 @@ Office.Addin,"hide()",Method,Missing,false
 Office.Addin,"onVisibilityModeChanged(handler)",Method,Fine,true
 Office.Addin,"setStartupBehavior(behavior)",Method,Great,true
 Office.Addin,"showAsTaskpane()",Method,Poor,false
-Office.AddinCommands.Event,N/A,Interface,Great,false
+Office.AddinCommands.Event,N/A,Interface,Unknown,false
 Office.AddinCommands.Event,"source",Property,Fine,true
-Office.AddinCommands.Event,"completed(options)",Method,Excellent,true
+Office.AddinCommands.Event,"completed(options)",Method,Good,true
 Office.AddinCommands.EventCompletedOptions,N/A,Interface,Excellent,false
 Office.AddinCommands.EventCompletedOptions,"allowEvent",Property,Excellent,true
 Office.AddinCommands.Source,N/A,Interface,Fine,false
@@ -8785,7 +8785,7 @@ Office.AppointmentTimeChangedEventArgs,"type",Property,Fine,false
 Office.AttachmentContent,N/A,Interface,Good,false
 Office.AttachmentContent,"content",Property,Fine,false
 Office.AttachmentContent,"format",Property,Excellent,true
-Office.AttachmentDetails,N/A,Interface,Good,false
+Office.AttachmentDetails,N/A,Interface,Good,true
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
 Office.AttachmentDetails,"contentType",Property,Deprecated,false
 Office.AttachmentDetails,"id",Property,Good,false
@@ -9441,7 +9441,7 @@ Office.MessageCompose,"sendAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"sendAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
-Office.MessageRead,N/A,Interface,Unknown,false
+Office.MessageRead,N/A,Interface,Unknown,true
 Office.MessageRead,"attachments",Property,Fine,true
 Office.MessageRead,"body",Property,Great,true
 Office.MessageRead,"categories",Property,Great,true
@@ -9565,7 +9565,7 @@ Office.RecurrenceTimeZone,N/A,Interface,Unknown,true
 Office.RecurrenceTimeZone,"name",Property,Poor,false
 Office.RecurrenceTimeZone,"offset",Property,Excellent,false
 Office.ReplyFormAttachment,N/A,Interface,Unknown,true
-Office.ReplyFormAttachment,"base64File",Property,Great,false
+Office.ReplyFormAttachment,"base64file",Property,Great,false
 Office.ReplyFormAttachment,"inLine",Property,Good,false
 Office.ReplyFormAttachment,"itemId",Property,Great,false
 Office.ReplyFormAttachment,"name",Property,Good,false

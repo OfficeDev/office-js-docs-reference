@@ -4114,6 +4114,27 @@ methods:
 
       - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
       the `sendAsync` call.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/send-async.yaml
+
+
+      // This snippet sends the current message or appointment being composed.
+
+      Office.context.mailbox.item.sendAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

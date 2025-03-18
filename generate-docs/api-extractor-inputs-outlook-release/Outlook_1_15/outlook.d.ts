@@ -13266,7 +13266,7 @@ export declare namespace Office {
         url?: string;
         /**
          * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
-         * Only use if `type` is set to `file`.
+         * Only use if `type` is set to `base64` or `file`.
          */
         inLine?: boolean;
         /**
@@ -13280,7 +13280,7 @@ export declare namespace Office {
          *
          * [Api set: Mailbox 1.15]
          */
-        base64File?: string;
+        base64file?: string;
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
