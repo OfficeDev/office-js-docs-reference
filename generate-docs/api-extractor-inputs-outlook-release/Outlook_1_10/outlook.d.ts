@@ -10560,7 +10560,7 @@ export declare namespace Office {
         url?: string;
         /**
          * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
-         * Only use if `type` is set to `file`.
+         * Only use if `type` is set to `base64` or `file`.
          */
         inLine?: boolean;
         /**

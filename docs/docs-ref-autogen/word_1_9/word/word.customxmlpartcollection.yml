@@ -75,10 +75,8 @@ methods:
         settings.add("ContosoReviewXmlPartIdNS", customXmlPart.id);
 
         await context.sync();
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
 
       // Adds a custom XML part.
@@ -220,10 +218,8 @@ methods:
         } else {
           console.warn("Didn't find custom XML part to query.");
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
 
       // Original XML:

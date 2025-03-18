@@ -349,7 +349,7 @@ function consolidateMappedSnippets(snippets: string[]): string[] {
     if (snippets.length > 1) {
         snippets.forEach((snippet, index) => {
             if (index > 0) {
-                consolidatedSnippets[0] = consolidatedSnippets[0] + snippet.replace(/\/\/ Link to full sample: https:\/\/.*.yaml/gm, "\n\n...");
+                consolidatedSnippets[0] = consolidatedSnippets[0] + snippet.replace(/\/\/ Link to full sample: https:\/\/.*.yaml\n\/\/Try out this sample in Script Lab (https:\/\/aka.ms\/scriptlab)./gm, "\n\n...");
             }
         });
     }

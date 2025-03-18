@@ -24,10 +24,8 @@ remarks: >-
     await context.sync();
 
     console.log("Added event handler for when content is changed in paragraphs.");
-  });
-
-
-  ...
+  });// Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onchanged-event.yaml
 
 
   async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {

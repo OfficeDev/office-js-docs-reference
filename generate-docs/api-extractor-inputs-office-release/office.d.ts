@@ -3358,11 +3358,13 @@ export declare namespace Office {
              *
              * This method must be called at the end of a function which was invoked by the following:
              *
-             * - A function command button (that is, an add-in command defined with an **\<Action\>** element, where the `xsi:type` attribute is set to `ExecuteFunction`).
+             * - A {@link https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands | function command} button.
              *
-             * - An {@link https://learn.microsoft.com/javascript/api/manifest/event | event} defined in the
-             * {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point} of an on-send add-in in Outlook.
-             * For example, an `ItemSend` event.
+             * - An {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send add-in} in Outlook.
+             *
+             * - An {@link https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting | online-meeting provider add-in} in Outlook.
+             *
+             * - A {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments | note-logging add-in} in Outlook on mobile devices.
              *
              * @remarks
              *
@@ -3374,16 +3376,20 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              *
-             * **Important**: The `options` parameter only applies to Outlook add-ins that implement the
-             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send feature}. It was introduced in Mailbox 1.8.
+             * **Important**: The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
+             * Mailbox 1.5, the `options` parameter is supported in online-meeting provider and note-logging mobile add-ins. For more information on API support in
+             * Outlook on mobile devices, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
              *
-             * @param options - Optional. An object that specifies the behavior of an on-send add-in in Outlook when it completes processing an `ItemSend` event.
+             * @param options - Optional. In Outlook, an object that specifies the behavior of an on-send add-in, online-meeting provider add-in, or note-logging mobile add-in
+             * when it completes processing an event.
              */
             completed(options?: EventCompletedOptions): void;
         }
         /**
-         * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send} add-in in Outlook
-         * when it completes processing an `ItemSend` event.
+         * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send add-in},
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting | online-meeting provider add-in}, or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments | note-logging mobile add-in}
+         * when it completes processing an event in Outlook.
          *
          * @remarks
          *
@@ -3392,6 +3398,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
+         * note-logging mobile add-ins. For more information on API support in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         export interface EventCompletedOptions {
             /**

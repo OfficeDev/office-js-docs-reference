@@ -346,10 +346,8 @@ events:
           await context.sync();
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
 
       async function commentAdded(event: Excel.CommentAddedEventArgs) {
@@ -410,10 +408,8 @@ events:
           await context.sync();
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
 
       async function commentChanged(event: Excel.CommentChangedEventArgs) {
@@ -474,10 +470,8 @@ events:
           await context.sync();
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
 
       async function commentDeleted(event: Excel.CommentDeletedEventArgs) {

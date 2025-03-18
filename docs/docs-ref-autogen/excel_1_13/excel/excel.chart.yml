@@ -754,10 +754,8 @@ events:
           await context.sync();
 
           console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
 
 
       async function chartActivated(event) {
@@ -813,10 +811,8 @@ events:
           await context.sync();
 
           console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
 
 
       async function chartDeactivated(event) {

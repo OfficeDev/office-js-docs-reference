@@ -309,10 +309,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
 
       const masterCategoriesToAdd = [
@@ -329,10 +327,8 @@ properties:
         } else {
           console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
 
       const masterCategoriesToRemove = ["TestCategory"];
@@ -1859,10 +1855,8 @@ methods:
         }
 
         console.log(getUID(result.value));
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
 
 
       const request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

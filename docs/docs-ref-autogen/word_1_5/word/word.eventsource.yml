@@ -32,10 +32,8 @@ remarks: >-
     await context.sync();
 
     console.log("Event handlers registered.");
-  });
-
-
-  ...
+  });// Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
 
 
   async function onEventHandler(event: Word.CommentEventArgs) {

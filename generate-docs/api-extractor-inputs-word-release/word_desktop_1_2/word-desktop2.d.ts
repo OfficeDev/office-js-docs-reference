@@ -16119,7 +16119,7 @@ export declare namespace Word {
         /** An interface for updating data on the `Body` object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**
-             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             * Gets the text format of the body. Use this to get and set font name, size, color, and other properties.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -18001,7 +18001,7 @@ export declare namespace Word {
              */
             fields?: Word.Interfaces.FieldData[];
             /**
-             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             * Gets the text format of the body. Use this to get and set font name, size, color, and other properties.
              *
              * @remarks
              * [Api set: WordApi 1.1]

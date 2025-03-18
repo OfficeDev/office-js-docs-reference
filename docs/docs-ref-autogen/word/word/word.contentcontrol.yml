@@ -2129,10 +2129,8 @@ events:
 
           console.log("Added event handlers for when data is changed in content controls.");
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
 
 
       async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
@@ -2188,10 +2186,8 @@ events:
 
           console.log("Added event handlers for when content controls are deleted.");
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
 
       async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
@@ -2245,10 +2241,8 @@ events:
 
           console.log("Added event handlers for when the cursor is placed in content controls.");
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
 
 
       async function contentControlEntered(event: Word.ContentControlEnteredEventArgs) {
@@ -2302,10 +2296,8 @@ events:
 
           console.log("Added event handlers for when the cursor is removed from within content controls.");
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
 
 
       async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
@@ -2358,10 +2350,8 @@ events:
 
           console.log("Added event handlers for when selections are changed in content controls.");
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
 
 
       async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {

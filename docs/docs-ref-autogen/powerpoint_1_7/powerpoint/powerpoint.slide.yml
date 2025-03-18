@@ -262,10 +262,8 @@ methods:
         await context.sync();
         slide1.setSelectedShapes(savedShapeSelection);
         await context.sync();
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
 
       // Selects the first two shapes on slide 1.

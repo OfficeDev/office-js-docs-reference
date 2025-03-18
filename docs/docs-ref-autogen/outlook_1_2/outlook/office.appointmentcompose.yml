@@ -117,10 +117,8 @@ properties:
           return;
         }
         console.log(`Appointment ends: ${result.value}`);
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
 
 
       Office.context.mailbox.item.start.getAsync((result) => {
@@ -229,10 +227,8 @@ properties:
           return;
         }
         console.log(`Appointment location: ${result.value}`);
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
 
       const location = "my office";
@@ -301,10 +297,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
 
       const email = $("#emailOptional")
@@ -376,10 +370,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
 
 
       const email = $("#emailRequired")
@@ -446,10 +438,8 @@ properties:
           return;
         }
         console.log(`Appointment starts: ${result.value}`);
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
 
       const start = new Date(); // Represents current date and time.
@@ -507,10 +497,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
 
       let subject = "Hello World!";

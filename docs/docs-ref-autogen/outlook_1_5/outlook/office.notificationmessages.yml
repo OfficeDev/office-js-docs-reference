@@ -78,10 +78,8 @@ methods:
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
-
-
-      ...
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
 
       // Adds an informational notification to the mail item.
@@ -95,10 +93,8 @@ methods:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
-
-
-      ...
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
 
       // Adds a persistent information notification to the mail item.
@@ -112,10 +108,8 @@ methods:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
-
-
-      ...
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
 
       // Adds an error notification to the mail item.

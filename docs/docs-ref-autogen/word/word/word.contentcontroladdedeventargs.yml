@@ -24,10 +24,8 @@ remarks: >-
     await context.sync();
 
     console.log("Added event handler for when content controls are added.");
-  });
-
-
-  ...
+  });// Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
 
 
   async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {

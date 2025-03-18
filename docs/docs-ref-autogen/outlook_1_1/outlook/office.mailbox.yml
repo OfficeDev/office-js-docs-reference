@@ -1105,10 +1105,8 @@ methods:
         }
 
         console.log(getUID(result.value));
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
 
 
       const request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

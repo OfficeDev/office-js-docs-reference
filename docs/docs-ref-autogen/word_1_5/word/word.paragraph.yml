@@ -1788,10 +1788,8 @@ methods:
         context.document.body.paragraphs.getLast().select();
 
         await context.sync();
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
 
       await Word.run(async (context) => {
@@ -1876,10 +1874,8 @@ methods:
             });
 
             await context.sync();
-          });
-
-
-          ...
+          });// Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
 
           await Word.run(async (context) => {

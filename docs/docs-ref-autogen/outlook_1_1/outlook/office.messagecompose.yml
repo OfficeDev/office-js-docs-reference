@@ -101,10 +101,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
 
       const email = $("#emailBcc")
@@ -218,10 +216,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
 
       const email = $("#emailCc")
@@ -372,10 +368,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
 
       let subject = "Hello World!";
@@ -438,10 +432,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
 
       const email = $("#emailTo")

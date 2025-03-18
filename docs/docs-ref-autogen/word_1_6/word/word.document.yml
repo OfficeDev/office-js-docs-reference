@@ -1083,10 +1083,8 @@ events:
         await context.sync();
 
         console.log("Added event handler for when content controls are added.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
 
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
@@ -1129,10 +1127,8 @@ events:
         await context.sync();
 
         console.log("Added event handler for when paragraphs are added.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
 
 
       async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
@@ -1175,10 +1171,8 @@ events:
         await context.sync();
 
         console.log("Added event handler for when content is changed in paragraphs.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onchanged-event.yaml
 
 
       async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
@@ -1221,10 +1215,8 @@ events:
         await context.sync();
 
         console.log("Added event handlers for when paragraphs are deleted.");
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
 
 
       async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {

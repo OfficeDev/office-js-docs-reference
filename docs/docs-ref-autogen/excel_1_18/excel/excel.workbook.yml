@@ -768,10 +768,8 @@ methods:
 
       // Read the file as a data URL so that we can parse the Base64-encoded string.
 
-      reader.readAsDataURL(myFile.files[0]);
-
-
-      ...
+      reader.readAsDataURL(myFile.files[0]);// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
 
 
       await Excel.run(async (context) => {
@@ -1011,10 +1009,8 @@ events:
           // Callback function for when the workbook is activated.
           console.log("The workbook was activated.");
         });
-      }
-
-
-      ...
+      }// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
 
 
       await Excel.run(async (context) => {

@@ -35,10 +35,8 @@ remarks: >-
 
       console.log("Added event handlers for when the cursor is removed from within content controls.");
     }
-  });
-
-
-  ...
+  });// Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
 
 
   async function contentControlExited(event: Word.ContentControlExitedEventArgs) {

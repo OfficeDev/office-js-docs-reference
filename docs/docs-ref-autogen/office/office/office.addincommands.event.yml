@@ -289,13 +289,18 @@ methods:
       This method must be called at the end of a function which was invoked by the following:
 
 
-      - A function command button (that is, an add-in command defined with an **<!-- -->&lt;<!-- -->Action<!--
-      -->&gt;<!-- -->** element, where the `xsi:type` attribute is set to `ExecuteFunction`<!-- -->).
+      - A [function command](https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands) button.
 
 
-      - An [event](https://learn.microsoft.com/javascript/api/manifest/event) defined in the [Events extension
-      point](https://learn.microsoft.com/javascript/api/manifest/extensionpoint#events) of an on-send add-in in Outlook.
-      For example, an `ItemSend` event.
+      - An [on-send add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins) in Outlook.
+
+
+      - An [online-meeting provider add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting) in
+      Outlook.
+
+
+      - A [note-logging add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments) in
+      Outlook on mobile devices.
     remarks: >-
       The following outlines support information for Outlook.
 
@@ -313,9 +318,11 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**: The `options` parameter only applies to Outlook add-ins that implement the [on-send
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)<!-- -->. It was introduced
-      in Mailbox 1.8.
+      **Important**: The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8.
+      Although Outlook on Android and on iOS support up to Mailbox 1.5, the `options` parameter is supported in
+      online-meeting provider and note-logging mobile add-ins. For more information on API support in Outlook on mobile
+      devices, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -363,8 +370,8 @@ methods:
       parameters:
         - id: options
           description: >-
-            Optional. An object that specifies the behavior of an on-send add-in in Outlook when it completes processing
-            an `ItemSend` event.
+            Optional. In Outlook, an object that specifies the behavior of an on-send add-in, online-meeting provider
+            add-in, or note-logging mobile add-in when it completes processing an event.
           type: '<xref uid="office!Office.AddinCommands.EventCompletedOptions:interface" />'
       return:
         type: void

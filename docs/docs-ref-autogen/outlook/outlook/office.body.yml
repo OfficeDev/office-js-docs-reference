@@ -1561,10 +1561,8 @@ methods:
             console.error(`addFileAttachmentFromBase64Async: ${result.error}`);
           }
         }
-      );
-
-
-      ...
+      );// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
 
       // Set the signature for the current item.

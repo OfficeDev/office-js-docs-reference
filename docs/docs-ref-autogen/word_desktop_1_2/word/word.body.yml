@@ -1605,10 +1605,8 @@ methods:
         }
 
         await context.sync();
-      });
-
-
-      ...
+      });// Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
 
       // Does a wildcard search and highlights matches in the document.
