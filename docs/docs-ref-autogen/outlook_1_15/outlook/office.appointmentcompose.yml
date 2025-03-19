@@ -211,30 +211,6 @@ properties:
 
       ```TypeScript
 
-      // The following example sets the end time of an appointment in compose mode by
-
-      // using the `setAsync` method of the `Time` object.
-
-      const endTime = new Date("3/14/2015");
-
-      const options = {
-          // Pass information that can be used in the callback.
-          asyncContext: {verb: "Set"}
-      };
-
-      Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
-          if (result.error) {
-              console.debug(result.error);
-          } else {
-              // Access the asyncContext that was passed to the setAsync method.
-              console.debug("End Time " + result.asyncContext.verb);
-          }
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
 
@@ -449,20 +425,6 @@ properties:
 
       ```TypeScript
 
-      const userContext = { value : 1 };
-
-      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
-
-
-      function callback(asyncResult) {
-          const context = asyncResult.context;
-          const location = asyncResult.value;
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
@@ -644,21 +606,6 @@ properties:
 
       #### Examples
 
-
-      ```TypeScript
-
-      Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          const arrayOfOptionalAttendeesRecipients = asyncResult.value;
-      }
-
-      ```
 
       ```TypeScript
 
@@ -893,22 +840,6 @@ properties:
 
       #### Examples
 
-
-      ```TypeScript
-
-      Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.requiredAttendees.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          const arrayOfRequiredAttendeesRecipients = asyncResult.value;
-          console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
-      }
-
-      ```
 
       ```TypeScript
 
@@ -3771,6 +3702,27 @@ methods:
 
       - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
       the `sendAsync` call.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/send-async.yaml
+
+
+      // This snippet sends the current message or appointment being composed.
+
+      Office.context.mailbox.item.sendAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

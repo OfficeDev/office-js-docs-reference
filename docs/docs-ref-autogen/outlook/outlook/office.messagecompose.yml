@@ -87,21 +87,6 @@ properties:
 
       ```TypeScript
 
-      Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.bcc.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          const arrayOfBccRecipients = asyncResult.value;
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
@@ -325,21 +310,6 @@ properties:
 
       #### Examples
 
-
-      ```TypeScript
-
-      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.cc.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          const arrayOfCcRecipients = asyncResult.value;
-      }
-
-      ```
 
       ```TypeScript
 
@@ -1084,21 +1054,6 @@ properties:
 
       #### Examples
 
-
-      ```TypeScript
-
-      Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.to.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          const arrayOfToRecipients = asyncResult.value;
-      }
-
-      ```
 
       ```TypeScript
 
@@ -4159,6 +4114,27 @@ methods:
 
       - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after
       the `sendAsync` call.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/send-async.yaml
+
+
+      // This snippet sends the current message or appointment being composed.
+
+      Office.context.mailbox.item.sendAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
