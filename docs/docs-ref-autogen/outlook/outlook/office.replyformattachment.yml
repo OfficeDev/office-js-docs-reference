@@ -38,16 +38,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: base64File
-    uid: 'outlook!Office.ReplyFormAttachment#base64File:member'
+  - name: base64file
+    uid: 'outlook!Office.ReplyFormAttachment#base64file:member'
     package: outlook!
-    fullName: base64File
+    fullName: base64file
     summary: The Base64-encoded string of the file to be attached. Only use if `type` is set to `base64`<!-- -->.
     remarks: '\[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'base64File?: string;'
+      content: 'base64file?: string;'
       return:
         type: string
   - name: inLine
@@ -56,7 +56,7 @@ properties:
     fullName: inLine
     summary: >-
       If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the
-      attachment list. Only use if `type` is set to `file`<!-- -->.
+      attachment list. Only use if `type` is set to `base64` or `file`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
