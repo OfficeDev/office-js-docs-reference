@@ -27,7 +27,7 @@ remarks: >-
   const details = {
     type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
     message: "This is an insight notification with id = " + id,
-    icon: "icon1",
+    icon: "PG.Icon.16",
     actions: [
       {
         actionText: "Open insight",
