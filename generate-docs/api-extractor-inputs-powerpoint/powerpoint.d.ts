@@ -32,6 +32,14 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a collection of bindings that are associated with the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly bindings: PowerPoint.BindingCollection;
+        /**
          * Returns a collection of custom XML parts that are associated with the presentation.
          *
          * @remarks
@@ -179,6 +187,22 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         slideMasterId?: string;
+    }
+    /**
+     * Binding type enumeration.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum BindingType {
+        /**
+         * Represents a shape binding.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shape = "Shape",
     }
     /**
      * Represents a custom XML part object.
@@ -2193,6 +2217,16 @@ export declare namespace PowerPoint {
          */
         clear(): void;
         /**
+         * Sets the fill formatting of the shape to an image. This changes the fill type to `PictureAndTexture`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param base64EncodedImage - A string that is a Base64 encoding of the image data.
+         */
+        setImage(base64EncodedImage: string): void;
+        /**
          * Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`.
          *
          * @remarks
@@ -2409,7 +2443,7 @@ export declare namespace PowerPoint {
          */
         italic: boolean | null;
         /**
-         * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
+         * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -2513,6 +2547,136 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeFontData;
     }
     /**
+     * Represents the font attributes, such as font name, size, and color.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface FontProperties {
+        /**
+         * Represents whether the font uses all caps, where lowercase letters are shown as capital letters.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allCaps?: boolean | undefined;
+        /**
+         * Represents the bold status of font.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bold?: boolean | undefined;
+        /**
+         * Represents the HTML color in the hexadecimal format (e.g., "#FF0000" represents red) or as a named HTML color value (e.g., "red").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        color?: string | undefined;
+        /**
+         * Represents the double-strikethrough status of the font.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doubleStrikethrough?: boolean | undefined;
+        /**
+         * Represents the italic status of font.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        italic?: boolean | undefined;
+        /**
+         * Represents the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name?: string | undefined;
+        /**
+         * Represents the font size in points (e.g., 11).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size?: number | undefined;
+        /**
+         * Represents whether the text uses small caps, where lowercase letters are shown as small capital letters.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallCaps?: boolean | undefined;
+        /**
+         * Represents the strikethrough status of the font.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        strikethrough?: boolean | undefined;
+        /**
+         * Represents the subscript status of the font.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subscript?: boolean | undefined;
+        /**
+         * Represents the superscript status of the font.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        superscript?: boolean | undefined;
+        /**
+         * Type of underline applied to the font. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | undefined;
+    }
+    /**
+     * Represents a sequence of one or more characters with the same font attributes.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TextRun {
+        /**
+         * The font attributes (such as font name, font size, and color) applied to this text run.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        font?: PowerPoint.FontProperties;
+        /**
+         * The text of this text run.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text: string;
+    }
+    /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
                 If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
                 To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment}.
@@ -2557,6 +2721,685 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         bottomCentered = "BottomCentered",
+    }
+    /**
+     * Represents a table.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TableCell extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the number of table columns this cell spans across.
+                    Will be greater than or equal to 1.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly columnCount: number;
+        /**
+         * Gets the zero-based column index of the cell within the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly columnIndex: number;
+        /**
+         * Gets the number of table rows this cell spans across.
+                    Will be greater than or equal to 1.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rowCount: number;
+        /**
+         * Gets the zero-based row index of the cell within the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rowIndex: number;
+        /**
+         * Specifies the text content of the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TableCellLoadOptions): PowerPoint.TableCell;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.TableCell;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.TableCell;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.TableCellData;
+    }
+    /**
+     * Represents a collection of table cells.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TableCellCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.TableCell[];
+        /**
+         * Gets the number of table cells in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of table cells in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets the table cell using its zero-based index in the collection. If the `TableCell` does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link [https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties) | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param row - Row index value of the table cell to be retrieved, as a zero-based index.
+         * @param column - Column index value of the table cell to be retrieved, as a zero-based index.
+         * @returns The `TableCell` object.
+         */
+        getItemAtOrNullObject(row: number, column: number): PowerPoint.TableCell;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TableCellCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.TableCellCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.TableCellCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TableCellCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): PowerPoint.Interfaces.TableCellCollectionData;
+    }
+    /**
+     * Represents the fill formatting of a table cell.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface FillProperties {
+        /**
+         * Represents the shape fill color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        color?: string | undefined;
+        /**
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency?: number | undefined;
+    }
+    /**
+     * Represents the properties for a table cell border.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface BorderProperties {
+        /**
+         * Represents the line color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        color?: string | undefined;
+        /**
+         * Represents the dash style of the line.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot" | undefined;
+        /**
+         * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency?: number | undefined;
+        /**
+         * Represents the weight of the line, in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        weight?: number | undefined;
+    }
+    /**
+     * Represents the borders of a table cell.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableCellBorders {
+        /**
+         * Represents the bottom border.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom?: PowerPoint.BorderProperties;
+        /**
+         * Represents the diagonal border (top-left to bottom-right).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalDown?: PowerPoint.BorderProperties;
+        /**
+         * Represents the diagonal border (bottom-left to top-right).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalUp?: PowerPoint.BorderProperties;
+        /**
+         * Represents the left border.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left?: PowerPoint.BorderProperties;
+        /**
+         * Represents the right border.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right?: PowerPoint.BorderProperties;
+        /**
+         * Represents the top border.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top?: PowerPoint.BorderProperties;
+    }
+    /**
+     * Represents the margins of a table cell.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableCellMargins {
+        /**
+         * Specifies the bottom margin in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom?: number | undefined;
+        /**
+         * Specifies the left margin in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left?: number | undefined;
+        /**
+         * Specifies the right margin in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right?: number | undefined;
+        /**
+         * Specifies the top margin in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top?: number | undefined;
+    }
+    /**
+     * Represents the table cell properties to update.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableCellProperties {
+        /**
+         * Specifies the border formatting of the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        borders?: PowerPoint.TableCellBorders;
+        /**
+         * Specifies the fill formatting of the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fill?: PowerPoint.FillProperties;
+        /**
+         * Specifies the font formatting of the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        font?: PowerPoint.FontProperties;
+        /**
+         * Represents the horizontal alignment of the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | undefined;
+        /**
+         * Represents the indent level of the text in the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indentLevel?: number | undefined;
+        /**
+         * Specifies the margin settings in the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        margins?: PowerPoint.TableCellMargins;
+        /**
+         * Specifies the text content of the table cell.
+                    
+                    If a portion of the text requires different formatting, use the `textRuns` property instead.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text?: string;
+        /**
+         * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+                    Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textRuns?: PowerPoint.TextRun[];
+        /**
+         * Represents the vertical alignment of the table cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" | undefined;
+    }
+    /**
+     * Represents a table.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Table extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the number of columns in the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly columnCount: number;
+        /**
+         * Gets the number of rows in the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rowCount: number;
+        /**
+         * Gets all of the values in the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly values: string[][];
+        /**
+         * Gets the cell at the specified `rowIndex` and `columnIndex`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param rowIndex - The zero-based row index of the cell.
+         * @param columnIndex - The zero-based column index of the cell.
+         * @returns The cell at the specified row and column. If the cell is part of a merged area and not the top left cell of the merged area, an object with the `isNullObject` property set to `true` is returned.
+         */
+        getCellOrNullObject(rowIndex: number, columnIndex: number): PowerPoint.TableCell;
+        /**
+         * Gets a collection of cells that represent the merged areas of the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns a `TableCellCollection` with cells that represent the merged areas of the table.
+         */
+        getMergedAreas(): PowerPoint.TableCellCollection;
+        /**
+         * Gets the shape object for the table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getShape(): PowerPoint.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TableLoadOptions): PowerPoint.Table;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Table;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Table;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.TableData;
+    }
+    /**
+     * Provides the table column properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableColumnProperties {
+        /**
+         * Represents the desired width of each column in points, or is undefined.
+                    
+                    When a table is being added, for columns whose width is undefined,
+                    the column width will be calculated by evenly dividing the remaining width
+                    of the table amongst those columns. If the table does not have a defined width,
+                    a default column width will be used.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        columnWidth?: number | undefined;
+    }
+    /**
+     * Represents the properties of a merged area of cells in a table.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableMergedAreaProperties {
+        /**
+         * Specifies the number of columns for the merged cells area.
+                    Must be 1 or greater.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        columnCount: number;
+        /**
+         * Specifies the zero-based index of the column of the top left cell of the merged area.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        columnIndex: number;
+        /**
+         * Specifies the number of rows for the merged cells area.
+                    Must be 1 or greater.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rowCount: number;
+        /**
+         * Specifies the zero-based index of the row of the top left cell of the merged area.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rowIndex: number;
+    }
+    /**
+     * Provides the table row properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableRowProperties {
+        /**
+         * Represents the desired height of each row in points, or is undefined.
+                    
+                    When a table is being added, for rows whose height is undefined,
+                    the row height will be calculated by evenly dividing the remaining height
+                    of the table amongst those rows. If the table does not have a defined height,
+                    a default row height will be used.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rowHeight?: number | undefined;
+    }
+    /**
+     * Represents the available options when adding a table.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TableAddOptions {
+        /**
+         * If provided, specifies properties for each column in the table.
+                    The array length must be equal to the number of columns in the table.
+                    Specify an empty object for columns that should use the default formatting.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        columns?: PowerPoint.TableColumnProperties[];
+        /**
+         * Specifies the height, in points, of the table.
+                    A default value is used when this parameter is not provided.
+                    Throws an `InvalidArgument` exception when set with a negative value.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height?: number | undefined;
+        /**
+         * Specifies the distance, in points, from the left side of the table to the left side of the slide.
+                    The table is centered horizontally when this parameter is not provided.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left?: number | undefined;
+        /**
+         * If specified, represents an rectangular area where multiple cells appear as a single cell.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mergedAreas?: PowerPoint.TableMergedAreaProperties[];
+        /**
+         * If provided, specifies properties for each row in the table.
+                    The array length must be equal to the number of rows in the table.
+                    Specify an empty object for rows that should use the default formatting.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rows?: PowerPoint.TableRowProperties[];
+        /**
+         * If provided, specifies properties for each cell in the table.
+                    
+                    This should be an 2D array with the same number of rows and columns as the table.
+                    If a cell does not require specific formatting, specify an empty object for that cell.
+                    Only the top left cell of a merged are can have properties specified, which will be applied
+                    to the entire merged area. For the other cells in the merged area, an empty object should be provided.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        specificCellProperties?: PowerPoint.TableCellProperties[][];
+        /**
+         * Specifies the distance, in points, from the top edge of the table to the top edge of the slide.
+                    A default value is used when this parameter is not provided.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top?: number | undefined;
+        /**
+         * Specifies the formatting which applies uniformly to all of the table cells.
+                    
+                    To apply specific formatting to individual cells, use specificCellProperties.
+                    
+                    If both uniformCellProperties and specificCellProperties are undefined, the default formatting
+                    will be used, and the default table style will be applied. The table will have the same
+                    appearance as when the user adds a table through the PowerPoint UI.
+                    
+                    To provide a plain appearance for the table, set this property to an empty object
+                    and do not specify specificCellProperties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        uniformCellProperties?: PowerPoint.TableCellProperties;
+        /**
+         * If provided, specifies the values for the table.
+                    
+                    When the table contains areas of merged cells,
+                    only the top left cell of each merged area can have a
+                    non-empty string value. The other cells
+                    in the merged area must be an empty string.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        values?: string[][];
+        /**
+         * Specifies the width, in points, of the table.
+                    A default value is used when this parameter is not provided.
+                    Throws an `InvalidArgument` exception when set with a negative value.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width?: number | undefined;
     }
     /**
      * Represents the collection of shapes.
@@ -2624,6 +3467,20 @@ export declare namespace PowerPoint {
          * @returns The newly inserted shape.
          */
         addLine(connectorTypeString?: "Straight" | "Elbow" | "Curve", options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;
+        /**
+         * Adds a table to the slide. Returns a `Shape` object that represents the new table.
+                    Use the `Shape.table` property to get the `Table` object for the shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param rowCount - Number of rows in the table. Must be 1 or greater.
+         * @param columnCount - Number of columns in the table. Must be 1 or greater.
+         * @param options - Provides options describing the new table.
+         * @returns The newly inserted shape.
+         */
+        addTable(rowCount: number, columnCount: number, options?: PowerPoint.TableAddOptions): PowerPoint.Shape;
         /**
          * Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the new text box.
          *
@@ -4103,6 +4960,43 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.TextFrameData;
     }
     /**
+     * Use with `setZOrder` to move the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeZOrder {
+        /**
+         * Brings the shape forward one spot in the z-order.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bringForward = "BringForward",
+        /**
+         * Brings the shape to the front of the z-order.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bringToFront = "BringToFront",
+        /**
+         * Sends the shape backward one spot in the z-order.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sendBackward = "SendBackward",
+        /**
+         * Sends the shape to the back of the z-order.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sendToBack = "SendToBack",
+    }
+    /**
      * Represents a single shape in the slide.
      *
      * @remarks
@@ -4237,6 +5131,15 @@ export declare namespace PowerPoint {
          */
         width: number;
         /**
+         * Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but
+                    each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly zOrderPosition: number;
+        /**
          * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
          *
          * @remarks
@@ -4286,6 +5189,34 @@ export declare namespace PowerPoint {
          */
         getParentSlideOrNullObject(): PowerPoint.Slide;
         /**
+         * Returns the `Table` object if this shape is a table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getTable(): PowerPoint.Table;
+        /**
+         * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param position - Specifies how to move the shape within the z-order stack. Uses the `ShapeZOrder` enum.
+         */
+        setZOrder(position: PowerPoint.ShapeZOrder): void;
+        /**
+         * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param positionString - Specifies how to move the shape within the z-order stack. Uses the `ShapeZOrder` enum.
+         */
+        setZOrder(positionString: "BringForward" | "BringToFront" | "SendBackward" | "SendToBack"): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -4311,6 +5242,198 @@ export declare namespace PowerPoint {
          * Whereas the original `PowerPoint.Shape` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): PowerPoint.Interfaces.ShapeData;
+    }
+    /**
+     * Represents an Office.js binding that is defined in the presentation.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Binding extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Represents the binding identifier.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Returns the type of the binding. See `BindingType` for details.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: PowerPoint.BindingType | "Shape";
+        /**
+         * Deletes the binding.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Returns the shape represented by the binding. Will throw an error if the binding is not of the correct type.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getShape(): PowerPoint.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.BindingLoadOptions): PowerPoint.Binding;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Binding;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Binding;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Binding` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.BindingData;
+    }
+    /**
+     * Represents the collection of all the binding objects that are part of the presentation.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class BindingCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.Binding[];
+        /**
+         * Adds a new binding to a particular Shape. If the provided ID is already being used by a binding, the existing binding will be overwritten.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param shape - Shape to which the binding is added.
+         * @param bindingType - Type of binding. See `BindingType`.
+         * @param id - ID of the binding.
+         */
+        add(shape: PowerPoint.Shape, bindingType: PowerPoint.BindingType, id: string): PowerPoint.Binding;
+        /**
+         * Adds a new binding to a particular Shape. If the provided ID is already being used by a binding, the existing binding will be overwritten.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param shape - Shape to which the binding is added.
+         * @param bindingTypeString - Type of binding. See `BindingType`.
+         * @param id - ID of the binding.
+         */
+        add(shape: PowerPoint.Shape, bindingTypeString: "Shape", id: string): PowerPoint.Binding;
+        /**
+         * Adds a new binding based on the current selection.
+                             If the selection has multiple areas, the `InvalidReference` error will be returned.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param bindingType - Type of binding. See `BindingType`.
+         * @param id - ID of the binding.
+         */
+        addFromSelection(bindingType: PowerPoint.BindingType, id: string): PowerPoint.Binding;
+        /**
+         * Adds a new binding based on the current selection.
+                             If the selection has multiple areas, the `InvalidReference` error will be returned.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param bindingTypeString - Type of binding. See `BindingType`.
+         * @param id - ID of the binding.
+         */
+        addFromSelection(bindingTypeString: "Shape", id: string): PowerPoint.Binding;
+        /**
+         * Gets the number of bindings in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a binding object by ID. Throws an ItemNotFoundException if there's no binding with that ID.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - ID of the binding object to be retrieved.
+         */
+        getItem(key: string): PowerPoint.Binding;
+        /**
+         * Gets a binding object based on its position in the items array. Throws an InvalidArgumentException if the index less than 0, or greater than or equal to the count of items in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): PowerPoint.Binding;
+        /**
+         * Gets a binding object by ID. If the binding object doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+                             For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID of the binding object to be retrieved.
+         */
+        getItemOrNullObject(id: string): PowerPoint.Binding;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.BindingCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.BindingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.BindingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.BindingCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): PowerPoint.Interfaces.BindingCollectionData;
     }
     /**
      * Specifies the document property type for custom properties.
@@ -5104,6 +6227,21 @@ export declare namespace PowerPoint {
              */
             underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
         }
+        /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
+        export interface TableCellUpdateData {
+            /**
+             * Specifies the text content of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+        }
+        /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
+        export interface TableCellCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableCellData[];
+        }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -5310,6 +6448,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `BindingCollection` object, for use in `bindingCollection.set({ ... })`. */
+        export interface BindingCollectionUpdateData {
+            items?: PowerPoint.Interfaces.BindingData[];
         }
         /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
@@ -5646,6 +6788,82 @@ export declare namespace PowerPoint {
              */
             underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
         }
+        /** An interface describing the data returned by calling `tableCell.toJSON()`. */
+        export interface TableCellData {
+            /**
+             * Gets the number of table columns this cell spans across.
+                        Will be greater than or equal to 1.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnCount?: number;
+            /**
+             * Gets the zero-based column index of the cell within the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnIndex?: number;
+            /**
+             * Gets the number of table rows this cell spans across.
+                        Will be greater than or equal to 1.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowCount?: number;
+            /**
+             * Gets the zero-based row index of the cell within the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowIndex?: number;
+            /**
+             * Specifies the text content of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+        }
+        /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
+        export interface TableCellCollectionData {
+            items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling `table.toJSON()`. */
+        export interface TableData {
+            /**
+             * Gets the number of columns in the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnCount?: number;
+            /**
+             * Gets the number of rows in the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowCount?: number;
+            /**
+             * Gets all of the values in the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            values?: string[][];
+        }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -5965,6 +7183,38 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: number;
+            /**
+             * Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but
+                        each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zOrderPosition?: number;
+        }
+        /** An interface describing the data returned by calling `binding.toJSON()`. */
+        export interface BindingData {
+            /**
+             * Represents the binding identifier.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             * Returns the type of the binding. See `BindingType` for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.BindingType | "Shape";
+        }
+        /** An interface describing the data returned by calling `bindingCollection.toJSON()`. */
+        export interface BindingCollectionData {
+            items?: PowerPoint.Interfaces.BindingData[];
         }
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
@@ -6436,7 +7686,13 @@ export declare namespace PowerPoint {
              */
             subscript?: boolean;
             /**
-             * Specifies the superscript status of the font. Returns `null` if the `TextRange` contains both superscript and non-superscript text fragments.
+             * Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute. The possible values are as follows:
+             *
+             * - `true`: All the text has the **Superscript** attribute.
+             *
+             * - `false`: None of the text has the **Superscript** attribute.
+             *
+             * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -6450,6 +7706,153 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             underline?: boolean;
+        }
+        /**
+         * Represents a table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TableCellLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the number of table columns this cell spans across.
+                        Will be greater than or equal to 1.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnCount?: boolean;
+            /**
+             * Gets the zero-based column index of the cell within the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnIndex?: boolean;
+            /**
+             * Gets the number of table rows this cell spans across.
+                        Will be greater than or equal to 1.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowCount?: boolean;
+            /**
+             * Gets the zero-based row index of the cell within the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowIndex?: boolean;
+            /**
+             * Specifies the text content of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+        }
+        /**
+         * Represents a collection of table cells.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TableCellCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the number of table columns this cell spans across.
+                        Will be greater than or equal to 1.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnCount?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the zero-based column index of the cell within the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnIndex?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the number of table rows this cell spans across.
+                        Will be greater than or equal to 1.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowCount?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the zero-based row index of the cell within the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowIndex?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the text content of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+        }
+        /**
+         * Represents a table.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TableLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the number of columns in the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnCount?: boolean;
+            /**
+             * Gets the number of rows in the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowCount?: boolean;
+            /**
+             * Gets all of the values in the table.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            values?: boolean;
         }
         /**
          * Represents the collection of shapes.
@@ -6573,6 +7976,15 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but
+                        each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zOrderPosition?: boolean;
         }
         /**
          * Represents the layout of a slide.
@@ -6883,6 +8295,15 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but
+                        each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zOrderPosition?: boolean;
         }
         /**
          * Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`.
@@ -7258,6 +8679,73 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+            /**
+             * Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but
+                        each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zOrderPosition?: boolean;
+        }
+        /**
+         * Represents an Office.js binding that is defined in the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BindingLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Represents the binding identifier.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * Returns the type of the binding. See `BindingType` for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents the collection of all the binding objects that are part of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BindingCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Represents the binding identifier.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the type of the binding. See `BindingType` for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Represents a custom property.

@@ -1790,7 +1790,7 @@ export declare namespace PowerPoint {
          */
         italic: boolean | null;
         /**
-         * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
+         * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]

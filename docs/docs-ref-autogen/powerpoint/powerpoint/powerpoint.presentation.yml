@@ -38,6 +38,20 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: bindings
+    uid: 'powerpoint!PowerPoint.Presentation#bindings:member'
+    package: powerpoint!
+    fullName: bindings
+    summary: Returns a collection of bindings that are associated with the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly bindings: PowerPoint.BindingCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BindingCollection:class" />'
   - name: context
     uid: 'powerpoint!PowerPoint.Presentation#context:member'
     package: powerpoint!
