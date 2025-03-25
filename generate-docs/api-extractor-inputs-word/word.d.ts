@@ -4452,8 +4452,7 @@ export declare namespace Word {
          * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.2]
          */
         hidden: boolean;
         /**
@@ -17357,8 +17356,7 @@ export declare namespace Word {
              * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.2]
              */
             hidden?: boolean;
             /**
@@ -19642,8 +19640,7 @@ export declare namespace Word {
              * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.2]
              */
             hidden?: boolean;
             /**
@@ -23060,8 +23057,7 @@ export declare namespace Word {
              * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.2]
              */
             hidden?: boolean;
             /**

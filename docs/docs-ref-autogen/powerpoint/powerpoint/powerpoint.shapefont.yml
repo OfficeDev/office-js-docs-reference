@@ -173,7 +173,7 @@ properties:
     fullName: name
     summary: >-
       Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
-      corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text
+      corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text
       fragments with different font names.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false

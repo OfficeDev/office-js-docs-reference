@@ -7,6 +7,7 @@
 |[Document](/javascript/api/word/word.document)|[activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)|Gets the active window for the document.|
 ||[compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions)](/javascript/api/word/word.document#word-word-document-comparefrombase64-member(1))|Displays revision marks that indicate where the specified document differs from another document.|
 ||[windows](/javascript/api/word/word.document#word-word-document-windows-member)|Gets the collection of `Word.Window` objects for the document.|
+|[Font](/javascript/api/word/word.font)|[hidden](/javascript/api/word/word.font#word-word-font-hidden-member)|Specifies a value that indicates whether the font is tagged as hidden.|
 |[InsertShapeOptions](/javascript/api/word/word.insertshapeoptions)|[height](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-height-member)|Represents the height of the shape being inserted.|
 ||[left](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-left-member)|Represents the left position of the shape being inserted.|
 ||[top](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-top-member)|Represents the top position of the shape being inserted.|
