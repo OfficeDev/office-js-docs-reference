@@ -10,9 +10,9 @@ export declare namespace Excel {
     /**
      * Represents an unknown cell control.
      * This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
-     * 
+     *
      * @remarks
-     * [Api set: ExcelApi 1.18]    
+     * [Api set: ExcelApi 1.18]
      */
     export interface UnknownCellControl {
         type: CellControlType.unknown;
@@ -20,9 +20,9 @@ export declare namespace Excel {
     /**
      * Represents an empty cell control.
      * This represents the state where a cell does not have a control.
-     * 
+     *
      * @remarks
-     * [Api set: ExcelApi 1.18]  
+     * [Api set: ExcelApi 1.18]
      */
     export interface EmptyCellControl {
         type: CellControlType.empty;
@@ -30,28 +30,28 @@ export declare namespace Excel {
     /**
      * Represents the result of a query that resulted in multiple cell controls.
      * If the result has multiple controls, then they can't be represented as a single result.
-     * 
+     *
      * @remarks
-     * [Api set: ExcelApi 1.18]  
+     * [Api set: ExcelApi 1.18]
      */
     export interface MixedCellControl {
         type: CellControlType.mixed;
     }
     /**
-     * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
-     * 
-     * @remarks
-     * [Api set: ExcelApi 1.18]  
-     */
+    * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.18]
+    */
     export interface CheckboxCellControl {
         type: CellControlType.checkbox;
     }
     /**
-     * Represents an interactable control inside of a cell.
-     * 
-     * @remarks
-     * [Api set: ExcelApi 1.18]  
-     */
+    * Represents an interactable control inside of a cell.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.18]
+    */
     export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;
     /**
      * Represents a 2D array of cell values.
@@ -13695,24 +13695,24 @@ export declare namespace Excel {
     }
     /**
      * Represents a sequence of one or more characters that share the same font attributes in a cell. Can be used as the `textRuns` properties of `getCellProperties` or the `textRuns` input parameter of `setCellProperties`.
-     * 
+     *
      * @remarks
      * [Api set: ExcelApi 1.18]
      */
     export interface RangeTextRun {
         /**
          * The font attributes (such as font name, font size, and color) applied to this text run.
-         * 
+         *
          * @remarks
          * [Api set: ExcelApi 1.18]
          */
         font?: Excel.CellPropertiesFont;
         /**
          * The text of this text run.
-         * 
+         *
          * @remarks
          * [Api set: ExcelApi 1.18]
-         */        
+         */
         text: string;
     }
     /**
@@ -41538,6 +41538,7 @@ export declare namespace Excel {
         pivotTableRangeConflict = "PivotTableRangeConflict",
         powerQueryRefreshResourceChallenge = "PowerQueryRefreshResourceChallenge",
         rangeExceedsLimit = "RangeExceedsLimit",
+        rangeImageExceedsLimit = "RangeImageExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
         responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",

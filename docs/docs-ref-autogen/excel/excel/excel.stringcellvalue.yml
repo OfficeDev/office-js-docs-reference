@@ -33,6 +33,62 @@ properties:
       content: 'basicValue: string;'
       return:
         type: string
+  - name: layouts
+    uid: 'excel!Excel.StringCellValue#layouts:member'
+    package: excel!
+    fullName: layouts
+    summary: Represents layout information for views of this string value.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'layouts?: BasicViewLayouts;'
+      return:
+        type: '<xref uid="excel!Excel.BasicViewLayouts:interface" />'
+  - name: properties
+    uid: 'excel!Excel.StringCellValue#properties:member'
+    package: excel!
+    fullName: properties
+    summary: Represents additional properties of this string value.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        properties?: {
+                    [key: string]: EntityPropertyType;
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: <xref uid="excel!Excel.EntityPropertyType:type" />;
+                  }
+  - name: provider
+    uid: 'excel!Excel.StringCellValue#provider:member'
+    package: excel!
+    fullName: provider
+    summary: >-
+      Represents information that describes the service that provided the data in this `StringCellValue`<!-- -->. This
+      information can be used for branding in card view.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: '<xref uid="excel!Excel.CellValueProviderAttributes:interface" />'
+  - name: referencedValues
+    uid: 'excel!Excel.StringCellValue#referencedValues:member'
+    package: excel!
+    fullName: referencedValues
+    summary: Represents the cell values which are referenced within `StringCellValue.properties`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: '<xref uid="excel!Excel.ReferencedValue:type" />[]'
   - name: type
     uid: 'excel!Excel.StringCellValue#type:member'
     package: excel!
@@ -42,6 +98,8 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: CellValueType.string | "String";'
+      content: 'type: CellValueType.string | ReferenceValueType.string | "String";'
       return:
-        type: '<xref uid="excel!Excel.CellValueType.string:member" /> | "String"'
+        type: >-
+          <xref uid="excel!Excel.CellValueType.string:member" /> | <xref
+          uid="excel!Excel.ReferenceValueType.string:member" /> | "String"

@@ -207,10 +207,7 @@ properties:
       // Adds the provided list item to the first combo box content control in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-add")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
@@ -293,10 +290,7 @@ properties:
       // Adds the provided list item to the first dropdown list content control in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-add")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
@@ -1899,7 +1893,7 @@ methods:
       // Sets the state of the first content control.
 
       await Word.run(async (context) => {
-        const state = ($("#state-to-set").val() as unknown) as Word.ContentControlState;
+        const state = ((document.getElementById("state-to-set") as HTMLSelectElement).value as unknown) as Word.ContentControlState;
         let firstContentControl = context.document.contentControls.getFirstOrNullObject();
         await context.sync();
 

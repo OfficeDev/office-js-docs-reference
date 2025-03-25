@@ -484,9 +484,8 @@ properties:
       // The set content will remain visible until the user switches to a different message in the Reading Pane or
       closes the window of the current message.
 
-      const bodyText = $("#body-text-field")
-        .val()
-        .toString();
+      const bodyText = (document.getElementById("body-text-field") as HTMLInputElement).value;
+
       Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
           console.log(`Action failed with error: ${asyncResult.error.message}`);
@@ -908,7 +907,7 @@ properties:
 
       // Adds a progress indicator to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
 
       const details =
         {
@@ -923,7 +922,7 @@ properties:
 
       // Adds an informational notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
 
       const details =
         {
@@ -940,7 +939,7 @@ properties:
 
       // Adds a persistent information notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
 
       const details =
         {
@@ -972,7 +971,7 @@ properties:
 
       // Replaces a notification message of a given key with another message.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
@@ -989,7 +988,7 @@ properties:
 
       // Removes a notification message from the current mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 

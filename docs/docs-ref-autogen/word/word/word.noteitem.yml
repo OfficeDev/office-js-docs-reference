@@ -24,7 +24,7 @@ remarks: >-
     footnotes.load("items/body");
     await context.sync();
 
-    const referenceNumber = $("#input-reference").val();
+    const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
     const mark = (referenceNumber as number) - 1;
     const footnoteBody: Word.Range = footnotes.items[mark].body.getRange();
     footnoteBody.load("text");
@@ -63,7 +63,7 @@ properties:
         footnotes.load("items/body");
         await context.sync();
 
-        const referenceNumber = $("#input-reference").val();
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
         const mark = (referenceNumber as number) - 1;
         const footnoteBody: Word.Range = footnotes.items[mark].body.getRange();
         footnoteBody.load("text");
@@ -118,7 +118,7 @@ properties:
         footnotes.load("items/reference");
         await context.sync();
 
-        const referenceNumber = $("#input-reference").val();
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
         const mark = (referenceNumber as number) - 1;
         const item: Word.NoteItem = footnotes.items[mark];
         const reference: Word.Range = item.reference;
@@ -160,7 +160,7 @@ properties:
         footnotes.load("items");
         await context.sync();
 
-        const referenceNumber = $("#input-reference").val();
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
         const mark = (referenceNumber as number) - 1;
         const item: Word.NoteItem = footnotes.items[mark];
         console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
@@ -204,7 +204,7 @@ methods:
         footnotes.load("items");
         await context.sync();
 
-        const referenceNumber = $("#input-reference").val();
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
         const mark = (referenceNumber as number) - 1;
         footnotes.items[mark].delete();
         await context.sync();
@@ -245,7 +245,7 @@ methods:
         footnotes.load("items/reference");
         await context.sync();
 
-        const referenceNumber = $("#input-reference").val();
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
         const mark = (referenceNumber as number) - 1;
         const reference: Word.Range = footnotes.items[mark].getNext().reference;
         reference.select();

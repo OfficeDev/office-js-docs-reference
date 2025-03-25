@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: Excel.BasicCardLayout
+uid: 'excel!Excel.BasicCardLayout:interface'
+package: excel!
+fullName: Excel.BasicCardLayout
+summary: 'Represents a card layout used for the boolean, double, and string basic types.'
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: layout
+    uid: 'excel!Excel.BasicCardLayout#layout:member'
+    package: excel!
+    fullName: layout
+    summary: Represents the type of this layout.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'layout?: EntityCardLayoutType.entity | "Entity";'
+      return:
+        type: '<xref uid="excel!Excel.EntityCardLayoutType.entity:member" /> | "Entity"'
+extends: '<xref uid="excel!Excel.CardLayoutStandardProperties:interface" />'

@@ -67,10 +67,7 @@ properties:
       // Deletes the provided list item from the first combo box content control in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-delete")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-delete") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
@@ -141,10 +138,7 @@ methods:
       // Adds the provided list item to the first combo box content control in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-add")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({

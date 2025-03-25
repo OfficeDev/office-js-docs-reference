@@ -530,7 +530,7 @@ properties:
       // Applies the specified style to a paragraph.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name-to-use").val() as string;
+        const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to apply.");
           return;
