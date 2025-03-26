@@ -126,6 +126,18 @@ properties:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface" />'
+  - name: showDataTypeIcons
+    uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showDataTypeIcons:member'
+    package: excel!
+    fullName: showDataTypeIcons
+    summary: 'Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showDataTypeIcons?: boolean;'
+      return:
+        type: boolean
   - name: showGridlines
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
     package: excel!

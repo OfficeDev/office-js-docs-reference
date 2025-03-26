@@ -307,9 +307,8 @@ properties:
       ...
 
 
-      const email = $("#emailOptional")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailOptional") as HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.optionalAttendees.setAsync(emailArray, function(asyncResult) {
@@ -382,9 +381,8 @@ properties:
       ...
 
 
-      const email = $("#emailRequired")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailRequired") as HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.requiredAttendees.setAsync(emailArray, function(asyncResult) {
@@ -602,9 +600,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      const attachmentUrl = $("#attachmentUrl")
-        .val()
-        .toString();
+      const attachmentUrl = (document.getElementById("attachmentUrl") as HTMLInputElement).value;
+
       Office.context.mailbox.item.addFileAttachmentAsync(
         attachmentUrl,
         getFileName(attachmentUrl),
@@ -1173,9 +1170,7 @@ methods:
 
 
       Office.context.mailbox.item.removeAttachmentAsync(
-        $("#attachmentId")
-          .val()
-          .toString(),
+        (document.getElementById("attachmentId") as HTMLInputElement).value,
         (result) => {
           if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(result.error.message);

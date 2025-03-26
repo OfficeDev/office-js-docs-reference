@@ -19,7 +19,7 @@ remarks: >-
 
   // Adds an informational message with actions to the mail item.
 
-  const id = $("#notificationId").val().toString();
+  const id = (document.getElementById("notificationId") as HTMLInputElement).value;
 
 
   const itemId = Office.context.mailbox.item.itemId;

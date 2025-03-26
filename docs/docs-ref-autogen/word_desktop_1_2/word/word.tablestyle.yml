@@ -19,9 +19,8 @@ remarks: >-
 
   // Gets the table style properties and displays them in the form.
 
-  const styleName = $("#style-name")
-    .val()
-    .toString();
+  const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+
   if (styleName == "") {
     console.warn("Please input a table style name.");
     return;
@@ -39,13 +38,13 @@ remarks: >-
     }
 
     console.log(tableStyle);
-    $("#alignment").val(tableStyle.alignment);
-    $("#allow-break-across-page").val(tableStyle.allowBreakAcrossPage.toString());
-    $("#top-cell-margin").val(tableStyle.topCellMargin);
-    $("#bottom-cell-margin").val(tableStyle.bottomCellMargin);
-    $("#left-cell-margin").val(tableStyle.leftCellMargin);
-    $("#right-cell-margin").val(tableStyle.rightCellMargin);
-    $("#cell-spacing").val(tableStyle.cellSpacing);
+    (document.getElementById("alignment") as HTMLInputElement).value = tableStyle.alignment;
+    (document.getElementById("allow-break-across-page") as HTMLInputElement).value = tableStyle.allowBreakAcrossPage.toString();
+    (document.getElementById("top-cell-margin") as HTMLInputElement).value = tableStyle.topCellMargin;
+    (document.getElementById("bottom-cell-margin") as HTMLInputElement).value = tableStyle.bottomCellMargin;
+    (document.getElementById("left-cell-margin") as HTMLInputElement).value = tableStyle.leftCellMargin;
+    (document.getElementById("right-cell-margin") as HTMLInputElement).value = tableStyle.rightCellMargin;
+    (document.getElementById("cell-spacing") as HTMLInputElement).value = tableStyle.cellSpacing;
   });
 
   ```

@@ -888,7 +888,8 @@ methods:
 
           // NOTE: If no match is found, an ItemNotFound error
           // is thrown when Range.find is evaluated.
-          const foundRange = searchRange.find($("#searchText").val().toString(), {
+          const searchText = (document.getElementById("searchText") as HTMLTextAreaElement).value;
+          const foundRange = searchRange.find(searchText, {
               completeMatch: isCompleteMatchToggle,
               matchCase: isMatchCaseToggle,
               searchDirection: searchDirectionToggle
@@ -946,7 +947,8 @@ methods:
           const sheet = context.workbook.worksheets.getItem("Sample");
           const table = sheet.tables.getItem("ExpensesTable");
           const searchRange = table.getRange();
-          const foundRange = searchRange.findOrNullObject($("#searchText").val().toString(), {
+          const searchText = (document.getElementById("searchText") as HTMLTextAreaElement).value;
+          const foundRange = searchRange.findOrNullObject(searchText, {
               completeMatch: isCompleteMatchToggle,
               matchCase: isMatchCaseToggle,
               searchDirection: searchDirectionToggle

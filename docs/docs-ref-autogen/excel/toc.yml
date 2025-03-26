@@ -238,6 +238,8 @@ items:
                 uid: 'excel!Excel.FilterOn:enum'
               - name: FilterOperator
                 uid: 'excel!Excel.FilterOperator:enum'
+              - name: FunctionCellValueType
+                uid: 'excel!Excel.FunctionCellValueType:enum'
               - name: GeometricShapeType
                 uid: 'excel!Excel.GeometricShapeType:enum'
               - name: GroupOption
@@ -260,6 +262,8 @@ items:
                 uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
               - name: LinkedDataTypeState
                 uid: 'excel!Excel.LinkedDataTypeState:enum'
+              - name: LinkedEntityDataDomainRefreshMode
+                uid: 'excel!Excel.LinkedEntityDataDomainRefreshMode:enum'
               - name: LoadToType
                 uid: 'excel!Excel.LoadToType:enum'
               - name: NamedItemScope
@@ -451,8 +455,14 @@ items:
             uid: 'excel!Excel.AutoFilter:class'
           - name: Base64EncodedImage
             uid: 'excel!Excel.Base64EncodedImage:interface'
+          - name: BasicCardLayout
+            uid: 'excel!Excel.BasicCardLayout:interface'
+          - name: BasicCompactLayout
+            uid: 'excel!Excel.BasicCompactLayout:interface'
           - name: BasicDataValidation
             uid: 'excel!Excel.BasicDataValidation:interface'
+          - name: BasicViewLayouts
+            uid: 'excel!Excel.BasicViewLayouts:interface'
           - name: Binding
             uid: 'excel!Excel.Binding:class'
           - name: BindingCollection
@@ -483,6 +493,8 @@ items:
             uid: 'excel!Excel.CardLayoutStandardProperties:interface'
           - name: CardLayoutTableSection
             uid: 'excel!Excel.CardLayoutTableSection:interface'
+          - name: CardLayoutTwoColumnSection
+            uid: 'excel!Excel.CardLayoutTwoColumnSection:interface'
           - name: CellBorder
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
@@ -557,6 +569,8 @@ items:
             uid: 'excel!Excel.ChartCollection:class'
           - name: ChartDataLabel
             uid: 'excel!Excel.ChartDataLabel:class'
+          - name: ChartDataLabelAnchor
+            uid: 'excel!Excel.ChartDataLabelAnchor:class'
           - name: ChartDataLabelFormat
             uid: 'excel!Excel.ChartDataLabelFormat:class'
           - name: ChartDataLabels
@@ -583,6 +597,10 @@ items:
             uid: 'excel!Excel.ChartGridlines:class'
           - name: ChartGridlinesFormat
             uid: 'excel!Excel.ChartGridlinesFormat:class'
+          - name: ChartLeaderLines
+            uid: 'excel!Excel.ChartLeaderLines:class'
+          - name: ChartLeaderLinesFormat
+            uid: 'excel!Excel.ChartLeaderLinesFormat:class'
           - name: ChartLegend
             uid: 'excel!Excel.ChartLegend:class'
           - name: ChartLegendEntry
@@ -791,6 +809,8 @@ items:
             uid: 'excel!Excel.FormattedNumberCellValue:interface'
           - name: FormulaChangedEventDetail
             uid: 'excel!Excel.FormulaChangedEventDetail:interface'
+          - name: FunctionCellValue
+            uid: 'excel!Excel.FunctionCellValue:type'
           - name: FunctionResult
             uid: 'excel!Excel.FunctionResult:class'
           - name: Functions
@@ -817,6 +837,8 @@ items:
             uid: 'excel!Excel.InsertWorksheetOptions:interface'
           - name: IterativeCalculation
             uid: 'excel!Excel.IterativeCalculation:class'
+          - name: JavaScriptCustomFunctionReferenceCellValue
+            uid: 'excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface'
           - name: Line
             uid: 'excel!Excel.Line:class'
           - name: LinkedDataType
@@ -827,8 +849,28 @@ items:
             uid: 'excel!Excel.LinkedDataTypeCollection:class'
           - name: LinkedEntityCellValue
             uid: 'excel!Excel.LinkedEntityCellValue:interface'
+          - name: LinkedEntityDataDomain
+            uid: 'excel!Excel.LinkedEntityDataDomain:class'
+          - name: LinkedEntityDataDomainAddedEventArgs
+            uid: 'excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface'
+          - name: LinkedEntityDataDomainCollection
+            uid: 'excel!Excel.LinkedEntityDataDomainCollection:class'
+          - name: LinkedEntityDataDomainCreateOptions
+            uid: 'excel!Excel.LinkedEntityDataDomainCreateOptions:interface'
+          - name: LinkedEntityDataDomainRefreshCompletedEventArgs
+            uid: >-
+              excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface
+          - name: LinkedEntityDataDomainRefreshModeChangedEventArgs
+            uid: >-
+              excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface
           - name: LinkedEntityId
             uid: 'excel!Excel.LinkedEntityId:interface'
+          - name: LinkedEntityIdCulture
+            uid: 'excel!Excel.LinkedEntityIdCulture:interface'
+          - name: LinkedEntityLoadServiceRequest
+            uid: 'excel!Excel.LinkedEntityLoadServiceRequest:interface'
+          - name: LinkedEntityLoadServiceResult
+            uid: 'excel!Excel.LinkedEntityLoadServiceResult:interface'
           - name: LinkedWorkbook
             uid: 'excel!Excel.LinkedWorkbook:class'
           - name: LinkedWorkbookCollection

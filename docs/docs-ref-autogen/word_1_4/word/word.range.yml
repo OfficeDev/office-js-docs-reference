@@ -1128,9 +1128,7 @@ methods:
       // Sets a comment on the selected content.
 
       await Word.run(async (context) => {
-        const text = $("#comment-text")
-          .val()
-          .toString();
+        const text = (document.getElementById("comment-text") as HTMLInputElement).value;
         const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
         // Load object to log in the console.

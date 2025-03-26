@@ -17987,6 +17987,7 @@ export declare namespace Excel {
         pivotTableRangeConflict = "PivotTableRangeConflict",
         powerQueryRefreshResourceChallenge = "PowerQueryRefreshResourceChallenge",
         rangeExceedsLimit = "RangeExceedsLimit",
+        rangeImageExceedsLimit = "RangeImageExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
         responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",
