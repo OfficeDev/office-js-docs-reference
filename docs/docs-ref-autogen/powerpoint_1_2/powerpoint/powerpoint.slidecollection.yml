@@ -17,9 +17,9 @@ remarks: >-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
 
 
-  const chosenMaster = $("#master-id").val() as string;
+  const chosenMaster = (document.getElementById("master-id") as HTMLInputElement).value;
 
-  const chosenLayout = $("#layout-id").val() as string;
+  const chosenLayout = (document.getElementById("layout-id") as HTMLInputElement).value;
 
 
   await PowerPoint.run(async function(context) {

@@ -888,7 +888,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
 
 
-      const itemId = $("#itemId").val();
+      const itemId = (document.getElementById("itemId") as HTMLInputElement).value;
 
       Office.context.mailbox.displayAppointmentForm(itemId);
 
@@ -954,7 +954,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
 
 
-      const itemId = $("#itemId").val();
+      const itemId = (document.getElementById("itemId") as HTMLInputElement).value;
 
 
       // The async version will return error 9049 if the item is not found.
@@ -1100,7 +1100,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
 
 
-      const itemId = $("#itemId").val();
+      const itemId = (document.getElementById("itemId") as HTMLInputElement).value;
 
       Office.context.mailbox.displayMessageForm(itemId);
 
@@ -1167,7 +1167,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
 
 
-      const itemId = $("#itemId").val();
+      const itemId = (document.getElementById("itemId") as HTMLInputElement).value;
 
 
       // The async version will return error 9049 if the item is not found.

@@ -768,7 +768,7 @@ methods:
 
       // Retrieve the file and set up an HTML FileReader element. 
 
-      const myFile = <HTMLInputElement>document.getElementById("file");
+      const myFile = document.getElementById("file") as HTMLInputElement;
 
       const reader = new FileReader();
 

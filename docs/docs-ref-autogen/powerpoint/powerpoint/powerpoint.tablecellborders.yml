@@ -1,0 +1,97 @@
+### YamlMime:TSType
+name: PowerPoint.TableCellBorders
+uid: 'powerpoint!PowerPoint.TableCellBorders:interface'
+package: powerpoint!
+fullName: PowerPoint.TableCellBorders
+summary: Represents the borders of a table cell.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: bottom
+    uid: 'powerpoint!PowerPoint.TableCellBorders#bottom:member'
+    package: powerpoint!
+    fullName: bottom
+    summary: Represents the bottom border.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bottom?: PowerPoint.BorderProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+  - name: diagonalDown
+    uid: 'powerpoint!PowerPoint.TableCellBorders#diagonalDown:member'
+    package: powerpoint!
+    fullName: diagonalDown
+    summary: Represents the diagonal border (top-left to bottom-right).
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'diagonalDown?: PowerPoint.BorderProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+  - name: diagonalUp
+    uid: 'powerpoint!PowerPoint.TableCellBorders#diagonalUp:member'
+    package: powerpoint!
+    fullName: diagonalUp
+    summary: Represents the diagonal border (bottom-left to top-right).
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'diagonalUp?: PowerPoint.BorderProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+  - name: left
+    uid: 'powerpoint!PowerPoint.TableCellBorders#left:member'
+    package: powerpoint!
+    fullName: left
+    summary: Represents the left border.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: PowerPoint.BorderProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+  - name: right
+    uid: 'powerpoint!PowerPoint.TableCellBorders#right:member'
+    package: powerpoint!
+    fullName: right
+    summary: Represents the right border.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'right?: PowerPoint.BorderProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+  - name: top
+    uid: 'powerpoint!PowerPoint.TableCellBorders#top:member'
+    package: powerpoint!
+    fullName: top
+    summary: Represents the top border.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: PowerPoint.BorderProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'

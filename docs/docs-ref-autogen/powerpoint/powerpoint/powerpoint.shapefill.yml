@@ -91,8 +91,13 @@ properties:
           rectangle.fill.foregroundColor = generateRandomHexColor();
         }
         finalTable += "Done<br>";
-        $("#slide-tags").empty();
-        $("#slide-tags").append(finalTable);
+        const slideTags = document.getElementById("slide-tags");
+        if (slideTags) {
+          slideTags.innerHTML = "";
+          slideTags.innerHTML += finalTable;
+        } else {
+          console.warn('Element with ID "slide-tags" not found.');
+        }
       });
 
       ```
@@ -245,6 +250,25 @@ methods:
                     }
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeFill:class" />'
+        description: ''
+  - name: setImage(base64EncodedImage)
+    uid: 'powerpoint!PowerPoint.ShapeFill#setImage:member(1)'
+    package: powerpoint!
+    fullName: setImage(base64EncodedImage)
+    summary: Sets the fill formatting of the shape to an image. This changes the fill type to `PictureAndTexture`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setImage(base64EncodedImage: string): void;'
+      parameters:
+        - id: base64EncodedImage
+          description: A string that is a Base64 encoding of the image data.
+          type: string
+      return:
+        type: void
         description: ''
   - name: setSolidColor(color)
     uid: 'powerpoint!PowerPoint.ShapeFill#setSolidColor:member(1)'

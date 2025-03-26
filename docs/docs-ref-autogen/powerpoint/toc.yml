@@ -15,6 +15,8 @@ items:
           - name: Enums
             uid: ''
             items:
+              - name: BindingType
+                uid: 'powerpoint!PowerPoint.BindingType:enum'
               - name: ConnectorType
                 uid: 'powerpoint!PowerPoint.ConnectorType:enum'
               - name: DocumentPropertyType
@@ -41,6 +43,8 @@ items:
                 uid: 'powerpoint!PowerPoint.ShapeLineStyle:enum'
               - name: ShapeType
                 uid: 'powerpoint!PowerPoint.ShapeType:enum'
+              - name: ShapeZOrder
+                uid: 'powerpoint!PowerPoint.ShapeZOrder:enum'
               - name: SlideLayoutType
                 uid: 'powerpoint!PowerPoint.SlideLayoutType:enum'
               - name: TextVerticalAlignment
@@ -49,6 +53,12 @@ items:
             uid: 'powerpoint!PowerPoint.AddSlideOptions:interface'
           - name: Application
             uid: 'powerpoint!PowerPoint.Application:class'
+          - name: Binding
+            uid: 'powerpoint!PowerPoint.Binding:class'
+          - name: BindingCollection
+            uid: 'powerpoint!PowerPoint.BindingCollection:class'
+          - name: BorderProperties
+            uid: 'powerpoint!PowerPoint.BorderProperties:interface'
           - name: BulletFormat
             uid: 'powerpoint!PowerPoint.BulletFormat:class'
           - name: CustomProperty
@@ -63,6 +73,10 @@ items:
             uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
           - name: DocumentProperties
             uid: 'powerpoint!PowerPoint.DocumentProperties:class'
+          - name: FillProperties
+            uid: 'powerpoint!PowerPoint.FillProperties:interface'
+          - name: FontProperties
+            uid: 'powerpoint!PowerPoint.FontProperties:interface'
           - name: Hyperlink
             uid: 'powerpoint!PowerPoint.Hyperlink:class'
           - name: HyperlinkCollection
@@ -109,6 +123,26 @@ items:
             uid: 'powerpoint!PowerPoint.SlideMasterCollection:class'
           - name: SlideScopedCollection
             uid: 'powerpoint!PowerPoint.SlideScopedCollection:class'
+          - name: Table
+            uid: 'powerpoint!PowerPoint.Table:class'
+          - name: TableAddOptions
+            uid: 'powerpoint!PowerPoint.TableAddOptions:interface'
+          - name: TableCell
+            uid: 'powerpoint!PowerPoint.TableCell:class'
+          - name: TableCellBorders
+            uid: 'powerpoint!PowerPoint.TableCellBorders:interface'
+          - name: TableCellCollection
+            uid: 'powerpoint!PowerPoint.TableCellCollection:class'
+          - name: TableCellMargins
+            uid: 'powerpoint!PowerPoint.TableCellMargins:interface'
+          - name: TableCellProperties
+            uid: 'powerpoint!PowerPoint.TableCellProperties:interface'
+          - name: TableColumnProperties
+            uid: 'powerpoint!PowerPoint.TableColumnProperties:interface'
+          - name: TableMergedAreaProperties
+            uid: 'powerpoint!PowerPoint.TableMergedAreaProperties:interface'
+          - name: TableRowProperties
+            uid: 'powerpoint!PowerPoint.TableRowProperties:interface'
           - name: Tag
             uid: 'powerpoint!PowerPoint.Tag:class'
           - name: TagCollection
@@ -117,6 +151,8 @@ items:
             uid: 'powerpoint!PowerPoint.TextFrame:class'
           - name: TextRange
             uid: 'powerpoint!PowerPoint.TextRange:class'
+          - name: TextRun
+            uid: 'powerpoint!PowerPoint.TextRun:interface'
       - name: Visio
         href: /javascript/api/visio
       - name: Word

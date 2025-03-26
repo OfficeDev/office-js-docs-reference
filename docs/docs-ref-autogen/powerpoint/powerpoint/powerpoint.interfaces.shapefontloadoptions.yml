@@ -234,8 +234,17 @@ properties:
     package: powerpoint!
     fullName: superscript
     summary: >-
-      Specifies the superscript status of the font. Returns `null` if the `TextRange` contains both superscript and
-      non-superscript text fragments.
+      Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text has the **Superscript** attribute.
+
+
+      - `false`<!-- -->: None of the text has the **Superscript** attribute.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text has the **Superscript** attribute.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]

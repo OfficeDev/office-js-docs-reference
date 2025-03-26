@@ -220,7 +220,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
 
 
-      const myFile = <HTMLInputElement>document.getElementById("selectedFile");
+      const myFile = document.getElementById("selectedFile") as HTMLInputElement;
 
       const reader = new FileReader();
 

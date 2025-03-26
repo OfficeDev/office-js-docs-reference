@@ -20,10 +20,7 @@ remarks: >-
   // Deletes the provided list item from the first dropdown list content control in the selection.
 
   await Word.run(async (context) => {
-    const listItemText = $("#item-to-delete")
-      .val()
-      .toString()
-      .trim();
+    const listItemText = (document.getElementById("item-to-delete") as HTMLInputElement).value.trim();
     const selectedRange: Word.Range = context.document.getSelection();
     let selectedContentControl = selectedRange
       .getContentControls({
@@ -103,10 +100,7 @@ properties:
       // Deletes the provided list item from the first dropdown list content control in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-delete")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-delete") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
@@ -199,10 +193,7 @@ methods:
       // Deletes the provided list item from the first combo box content control in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-delete")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-delete") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({

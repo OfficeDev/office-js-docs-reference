@@ -38,6 +38,20 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: bindings
+    uid: 'powerpoint!PowerPoint.Presentation#bindings:member'
+    package: powerpoint!
+    fullName: bindings
+    summary: Returns a collection of bindings that are associated with the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly bindings: PowerPoint.BindingCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BindingCollection:class" />'
   - name: context
     uid: 'powerpoint!PowerPoint.Presentation#context:member'
     package: powerpoint!
@@ -200,8 +214,9 @@ methods:
           finalTable += "<tr><td>" + index + "</td><td>" + shape.id + "</td></tr>";
         });
         finalTable += "</table>";
-        $("#outputSpan").empty();
-        $("#outputSpan").append(finalTable);
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = "";
+        outputSpan.innerHTML += finalTable;
       });
 
 
@@ -273,9 +288,11 @@ methods:
           allSlidesList[slide.id] = `Slide ${index + 1}`;
         });
 
-        if ($("#id-check-usenative").is(":checked")) {
+        const checkbox = document.getElementById("id-check-usenative") as HTMLInputElement;
+        if (checkbox && checkbox.checked) {
           context.presentation.load("tags");
         }
+
         const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
         const slideCount = slides.getCount();
         slides.load("items");
@@ -287,8 +304,9 @@ methods:
           finalTable += "<tr><td>" + index + " - " + allSlidesList[slide.id] + "</td><td>" + slide.id + "</td></tr>";
         });
         finalTable += "</table>";
-        $("#outputSpan").empty();
-        $("#outputSpan").append(finalTable);
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = ""
+        outputSpan.innerHTML += finalTable;
       });
 
 
@@ -315,8 +333,9 @@ methods:
           savedSlideSelection.push(slide.id);
         });
         finalTable += "</table>";
-        $("#outputSpan").empty();
-        $("#outputSpan").append(finalTable);
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = ""
+        outputSpan.innerHTML += finalTable;
       });
 
       ```
@@ -378,8 +397,9 @@ methods:
         finalTable += "<tr><td>Start</td><td>" + textRange.start + "</td></tr>";
         finalTable += "<tr><td>Length</td><td>" + textRange.length + "</td></tr>";
         finalTable += "</table>";
-        $("#outputSpan").empty();
-        $("#outputSpan").append(finalTable);
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = ""
+        outputSpan.innerHTML += finalTable;
       });
 
 

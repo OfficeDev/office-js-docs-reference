@@ -99,7 +99,7 @@ methods:
       // Adds a new style.
 
       await Word.run(async (context) => {
-        const newStyleName = $("#new-style-name").val() as string;
+        const newStyleName = (document.getElementById("new-style-name") as HTMLInputElement).value;
         if (newStyleName == "") {
           console.warn("Enter a style name to add.");
           return;
@@ -116,7 +116,7 @@ methods:
           return;
         }
 
-        const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
+        const newStyleType = ((document.getElementById("new-style-type") as HTMLSelectElement).value as unknown) as Word.StyleType;
         context.document.addStyle(newStyleName, newStyleType);
         await context.sync();
 

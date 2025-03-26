@@ -72,7 +72,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#get-property-name").val();
+      const propertyName = (document.getElementById("get-property-name") as HTMLInputElement).value;
 
       const propertyValue = customProps.get(propertyName);
 
@@ -120,7 +120,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#remove-property-name").val();
+      const propertyName = (document.getElementById("remove-property-name") as HTMLInputElement).value;
 
       customProps.remove(propertyName);
 
@@ -284,9 +284,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#set-property-name").val();
+      const propertyName = (document.getElementById("set-property-name") as HTMLInputElement).value;
 
-      const propertyValue = $("#property-value").val();
+      const propertyValue = (document.getElementById("property-value") as HTMLInputElement).value;
 
       customProps.set(propertyName, propertyValue);
 

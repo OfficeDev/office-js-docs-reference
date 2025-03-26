@@ -133,6 +133,11 @@ fields:
     package: excel!
     summary: ''
     value: '"RangeExceedsLimit"'
+  - name: rangeImageExceedsLimit
+    uid: 'excel!Excel.ErrorCodes.rangeImageExceedsLimit:member'
+    package: excel!
+    summary: ''
+    value: '"RangeImageExceedsLimit"'
   - name: refreshWorkbookLinksBlocked
     uid: 'excel!Excel.ErrorCodes.refreshWorkbookLinksBlocked:member'
     package: excel!

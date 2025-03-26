@@ -1,0 +1,193 @@
+### YamlMime:TSType
+name: PowerPoint.FontProperties
+uid: 'powerpoint!PowerPoint.FontProperties:interface'
+package: powerpoint!
+fullName: PowerPoint.FontProperties
+summary: 'Represents the font attributes, such as font name, size, and color.'
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: allCaps
+    uid: 'powerpoint!PowerPoint.FontProperties#allCaps:member'
+    package: powerpoint!
+    fullName: allCaps
+    summary: 'Represents whether the font uses all caps, where lowercase letters are shown as capital letters.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allCaps?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: bold
+    uid: 'powerpoint!PowerPoint.FontProperties#bold:member'
+    package: powerpoint!
+    fullName: bold
+    summary: Represents the bold status of font.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: color
+    uid: 'powerpoint!PowerPoint.FontProperties#color:member'
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      Represents the HTML color in the hexadecimal format (e.g., "\#FF0000" represents red) or as a named HTML color
+      value (e.g., "red").
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: string | undefined;'
+      return:
+        type: string | undefined
+  - name: doubleStrikethrough
+    uid: 'powerpoint!PowerPoint.FontProperties#doubleStrikethrough:member'
+    package: powerpoint!
+    fullName: doubleStrikethrough
+    summary: Represents the double-strikethrough status of the font.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'doubleStrikethrough?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: italic
+    uid: 'powerpoint!PowerPoint.FontProperties#italic:member'
+    package: powerpoint!
+    fullName: italic
+    summary: Represents the italic status of font.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: name
+    uid: 'powerpoint!PowerPoint.FontProperties#name:member'
+    package: powerpoint!
+    fullName: name
+    summary: >-
+      Represents the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it's the Latin font name.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string | undefined;'
+      return:
+        type: string | undefined
+  - name: size
+    uid: 'powerpoint!PowerPoint.FontProperties#size:member'
+    package: powerpoint!
+    fullName: size
+    summary: 'Represents the font size in points (e.g., 11).'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size?: number | undefined;'
+      return:
+        type: number | undefined
+  - name: smallCaps
+    uid: 'powerpoint!PowerPoint.FontProperties#smallCaps:member'
+    package: powerpoint!
+    fullName: smallCaps
+    summary: 'Represents whether the text uses small caps, where lowercase letters are shown as small capital letters.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'smallCaps?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: strikethrough
+    uid: 'powerpoint!PowerPoint.FontProperties#strikethrough:member'
+    package: powerpoint!
+    fullName: strikethrough
+    summary: Represents the strikethrough status of the font.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'strikethrough?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: subscript
+    uid: 'powerpoint!PowerPoint.FontProperties#subscript:member'
+    package: powerpoint!
+    fullName: subscript
+    summary: Represents the subscript status of the font.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subscript?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: superscript
+    uid: 'powerpoint!PowerPoint.FontProperties#superscript:member'
+    package: powerpoint!
+    fullName: superscript
+    summary: Represents the superscript status of the font.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'superscript?: boolean | undefined;'
+      return:
+        type: boolean | undefined
+  - name: underline
+    uid: 'powerpoint!PowerPoint.FontProperties#underline:member'
+    package: powerpoint!
+    fullName: underline
+    summary: >-
+      Type of underline applied to the font. See
+      [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum) for details.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
+        "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
+        | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | undefined;
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" |
+          "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
+          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | undefined
