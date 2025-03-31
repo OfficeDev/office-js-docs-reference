@@ -1,7 +1,7 @@
 ---
 title: Image element in the manifest file
 description: The Image element enables you to specify the URL of an image used for an icon.
-ms.date: 02/07/2023
+ms.date: 03/28/2025
 ms.localizationpriority: medium
 ---
 
@@ -49,6 +49,7 @@ The following image file formats are supported.
 >
 > - If the image is your add-in's representative icon, see [Create effective listings in AppSource and within Office](/partner-center/marketplace-offers/create-effective-office-store-listings#create-an-icon-for-your-add-in) for size and other requirements.
 > - Office Add-ins require the ability to cache image resources for performance purposes. For this reason, the server hosting an image resource must not add any CACHE-CONTROL directives to the response header. These directives result in Office automatically substituting a generic or default image. To force the use of new icons on your development computer, [Clear the Office cache](/office/dev/add-ins/testing/clear-cache). To force the use of new icons on your end-user's computers, you must give the new icons different URLs from the old ones.
+> - The ICO format isn't supported. Using it in your manifest will fail manifest validation and prevent your add-in from appearing in the ribbon or action bar.
 
 ## Child elements
 
