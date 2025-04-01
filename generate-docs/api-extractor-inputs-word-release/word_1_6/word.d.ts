@@ -329,7 +329,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -1275,7 +1275,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -2810,8 +2810,8 @@ export declare namespace Word {
      *
      * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
      * Support for managing fields is similar to what's available in the Word UI.
-     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields,
      * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
@@ -3006,10 +3006,10 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.4]
      *
-     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
      * Support for managing fields is similar to what's available in the Word UI.
-     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields,
      * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
@@ -5070,7 +5070,7 @@ export declare namespace Word {
          */
         delete(): void;
         /**
-         * Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
+         * Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges don't have a union.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -5263,19 +5263,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Important:
-         *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
-         *
-         * In Word on the web, the API supports inserting and managing the following field types.
-         *
-         * - `Word.FieldType.addin`
-         *
-         * - `Word.FieldType.date`
-         *
-         * - `Word.FieldType.hyperlink`
-         *
-         * - `Word.FieldType.toc`
+         * Important: In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
+         * In Word on the web, fields are mainly read-only. To learn more, see {@link  https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance | Use fields in your Word add-in}.
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
@@ -5289,19 +5278,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Important:
-         *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
-         *
-         * In Word on the web, the API supports inserting and managing the following field types.
-         *
-         * - `Word.FieldType.addin`
-         *
-         * - `Word.FieldType.date`
-         *
-         * - `Word.FieldType.hyperlink`
-         *
-         * - `Word.FieldType.toc`
+         * Important: In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
+         * In Word on the web, fields are mainly read-only. To learn more, see {@link  https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance | Use fields in your Word add-in}.
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
@@ -5315,7 +5293,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.

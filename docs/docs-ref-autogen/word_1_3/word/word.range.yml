@@ -558,7 +558,7 @@ methods:
     fullName: expandTo(range)
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range isn't
-      changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
+      changed. Throws an `ItemNotFound` error if the two ranges don't have a union.
     remarks: >-
       \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -1028,8 +1028,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
+      Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
 
       #### Examples

@@ -3,7 +3,7 @@ name: PowerPoint.BindingType
 uid: 'powerpoint!PowerPoint.BindingType:enum'
 package: powerpoint!
 fullName: PowerPoint.BindingType
-summary: Binding type enumeration.
+summary: Represents the possible binding types.
 remarks: >-
   \[ [API set: PowerPointApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]

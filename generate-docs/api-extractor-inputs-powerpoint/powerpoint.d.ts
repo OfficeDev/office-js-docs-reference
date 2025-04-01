@@ -189,7 +189,7 @@ export declare namespace PowerPoint {
         slideMasterId?: string;
     }
     /**
-     * Binding type enumeration.
+     * Represents the possible binding types.
      *
      * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
