@@ -765,7 +765,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -2037,7 +2037,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -3463,7 +3463,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -3765,7 +3765,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiHiddenDocument 1.5]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -4150,8 +4150,8 @@ export declare namespace Word {
      *
      * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
      * Support for managing fields is similar to what's available in the Word UI.
-     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields,
      * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
@@ -4352,10 +4352,10 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.4]
      *
-     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
      * Support for managing fields is similar to what's available in the Word UI.
-     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields,
      * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
@@ -4729,7 +4729,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
@@ -6542,7 +6542,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -7422,19 +7422,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Important:
-         *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
-         *
-         * In Word on the web, the API supports inserting and managing the following field types.
-         *
-         * - `Word.FieldType.addin`
-         *
-         * - `Word.FieldType.date`
-         *
-         * - `Word.FieldType.hyperlink`
-         *
-         * - `Word.FieldType.toc`
+         * Important: In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
+         * In Word on the web, fields are mainly read-only. To learn more, see {@link  https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance | Use fields in your Word add-in}.
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
@@ -7448,19 +7437,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Important:
-         *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
-         *
-         * In Word on the web, the API supports inserting and managing the following field types.
-         *
-         * - `Word.FieldType.addin`
-         *
-         * - `Word.FieldType.date`
-         *
-         * - `Word.FieldType.hyperlink`
-         *
-         * - `Word.FieldType.toc`
+         * Important: In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
+         * In Word on the web, fields are mainly read-only. To learn more, see {@link  https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance | Use fields in your Word add-in}.
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
@@ -7474,7 +7452,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -11414,24 +11392,6 @@ export declare namespace Word {
          */
         contentControlAdded = "ContentControlAdded",
         /**
-         * AnnotationAdded represents the event an annotation has been added to the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationAdded = "AnnotationAdded",
-        /**
-         * AnnotationChanged represents the event an annotation has been updated in the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationChanged = "AnnotationChanged",
-        /**
-         * AnnotationDeleted represents the event an annotation has been deleted from the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationDeleted = "AnnotationDeleted",
-        /**
          * Represents that one or more comments were deleted.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -11478,12 +11438,6 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         contentControlExited = "ContentControlExited",
-        /**
-         * Represents that a word count has been changed.
-         * @remarks
-         * [Api set: WordApi Unknown Version, this API may or may not work on a client. This API may not be released to 3rd parties.]
-         */
-        documentWordCountChanged = "DocumentWordCountChanged",
         /**
          * Represents that one or more new paragraphs were added.
          * @remarks
@@ -11564,7 +11518,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -11593,7 +11547,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -11622,7 +11576,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -11651,7 +11605,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -11680,7 +11634,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -11709,7 +11663,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -11745,7 +11699,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -11774,7 +11728,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -11803,7 +11757,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -11851,7 +11805,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
     }
     /**
      * A structure for the ID and reply IDs of this comment.
@@ -22793,8 +22747,8 @@ export declare namespace Word {
          *
          * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
          * Support for managing fields is similar to what's available in the Word UI.
-         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+         * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+         * To learn more about Word UI clients that more fully support fields,
          * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldLoadOptions {
@@ -22909,10 +22863,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
          * Support for managing fields is similar to what's available in the Word UI.
-         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+         * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+         * To learn more about Word UI clients that more fully support fields,
          * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldCollectionLoadOptions {
