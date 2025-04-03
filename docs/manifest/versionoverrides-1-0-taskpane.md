@@ -1,7 +1,7 @@
 ---
 title: VersionOverrides 1.0 element in the manifest file for a task pane add-in
 description: Reference documentation of the VersionOverrides element (task pane) for Office Add-ins manifest (XML) files.
-ms.date: 02/18/2022
+ms.date: 04/03/2025
 ms.localizationpriority: medium
 ---
 
@@ -36,8 +36,8 @@ The following table applies only to version 1.0 of **\<VersionOverrides\>** elem
 |:-----|:-----:|:-----|
 |  [Description](#description)    |  No   |  Describes the add-in. |
 |  [Requirements](requirements.md)  |  No   |  Specifies the minimum requirement sets that must be supported in order for the markup in the parent **\<VersionOverrides\>** to take effect. This should always be *more* restrictive than the **\<Requirements\>** element in the base portion of the manifest.|
-|  [Hosts](hosts.md)                |  Yes  |  Specifies a collection of Office applications. The child Hosts element overrides the Hosts element in the parent portion of the manifest.  |
-|  [Resources](resources.md)    |  Yes  | Defines a collection of resources (strings, URLs, and images) that other manifest elements reference.|
+|  [Hosts](hosts.md)                |  No  |  Specifies a collection of Office applications. The child Hosts element overrides the Hosts element in the parent portion of the manifest.  |
+|  [Resources](resources.md)    |  No  | Defines a collection of resources (strings, URLs, and images) that other manifest elements reference.|
 |  [EquivalentAddins](equivalentaddins.md)    |  No  | Specifies the native (COM/XLL) add-ins that are equivalent to the web add-in. The web add-in isn't activated if an equivalent native add-in is installed.|
 |  **\<VersionOverrides\>**    |  No  | Not currently usable in VersionOverrides 1.0 for taskpane add-ins. |
 |  [WebApplicationInfo](webapplicationinfo.md)    |  No  | Specifies details about the add-in's registration with secure token issuers, such as Azure Active Directory V2.0. |
