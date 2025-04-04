@@ -706,7 +706,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to
       cover another range. This range isn't changed. Throws an `ItemNotFound`
-      error if the two ranges do not have a union.
+      error if the two ranges don't have a union.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1371,9 +1371,7 @@ methods:
       // Sets a comment on the selected content.
 
       await Word.run(async (context) => {
-        const text = $("#comment-text")
-          .val()
-          .toString();
+        const text = (document.getElementById("comment-text") as HTMLInputElement).value;
         const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
         // Load object to log in the console.
@@ -1487,7 +1485,7 @@ methods:
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an
+      Insertion isn't supported if the document being inserted contains an
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.

@@ -3,28 +3,7 @@ uid: excel!Excel.CellValue:type
 package: excel!
 fullName: Excel.CellValue
 summary: Represents the value in a cell.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  This type is a union of the following types: 
-
-
-  <xref uid="excel!Excel.= :interface" />,<xref uid="excel!Excel.|
-  BooleanCellValue:interface" />,<xref uid="excel!Excel.|
-  DoubleCellValue:interface" />,<xref uid="excel!Excel.|
-  EntityCellValue:interface" />,<xref uid="excel!Excel.|
-  EmptyCellValue:interface" />,<xref uid="excel!Excel.|
-  ErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  ExternalCodeServiceObjectCellValue:interface" />,<xref uid="excel!Excel.|
-  FormattedNumberCellValue:interface" />,<xref uid="excel!Excel.|
-  LinkedEntityCellValue:interface" />,<xref uid="excel!Excel.|
-  LocalImageCellValue:interface" />,<xref uid="excel!Excel.|
-  ReferenceCellValue:interface" />,<xref uid="excel!Excel.|
-  StringCellValue:interface" />,<xref uid="excel!Excel.|
-  ValueTypeNotAvailableCellValue:interface" />,<xref uid="excel!Excel.|
-  WebImageCellValue:interface" />
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= :interface\" />, <xref uid=\"excel!Excel.| BooleanCellValue:interface\" />, <xref uid=\"excel!Excel.| DoubleCellValue:interface\" />, <xref uid=\"excel!Excel.| EntityCellValue:interface\" />, <xref uid=\"excel!Excel.| EmptyCellValue:interface\" />, <xref uid=\"excel!Excel.| ErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| ExternalCodeServiceObjectCellValue:interface\" />, <xref uid=\"excel!Excel.| FormattedNumberCellValue:interface\" />, <xref uid=\"excel!Excel.| FunctionCellValue:interface\" />, <xref uid=\"excel!Excel.| LinkedEntityCellValue:interface\" />, <xref uid=\"excel!Excel.| LocalImageCellValue:interface\" />, <xref uid=\"excel!Excel.| ReferenceCellValue:interface\" />, <xref uid=\"excel!Excel.| StringCellValue:interface\" />, <xref uid=\"excel!Excel.| ValueTypeNotAvailableCellValue:interface\" />, <xref uid=\"excel!Excel.| WebImageCellValue:interface\" />"
 
 isPreview: false
 isDeprecated: false
@@ -32,6 +11,6 @@ syntax: >-
   export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue |
   EntityCellValue | EmptyCellValue | ErrorCellValue |
   ExternalCodeServiceObjectCellValue | FormattedNumberCellValue |
-  LinkedEntityCellValue | LocalImageCellValue | ReferenceCellValue |
-  StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) &
-  CellValueExtraProperties;
+  FunctionCellValue | LinkedEntityCellValue | LocalImageCellValue |
+  ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue |
+  WebImageCellValue) & CellValueExtraProperties;

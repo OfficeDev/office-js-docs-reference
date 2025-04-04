@@ -64,6 +64,26 @@ properties:
           <xref
           uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface"
           />
+  - name: geometricShapeType
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsLoadOptions#geometricShapeType:member
+    package: excel!
+    fullName: geometricShapeType
+    summary: >-
+      Gets or sets the geometric shape type of the data labels. See
+      `Excel.GeometricShapeType` for more details. Value is `null` if the data
+      labels are not geometric shapes.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'geometricShapeType?: boolean;'
+      return:
+        type: boolean
   - name: horizontalAlignment
     uid: >-
       excel!Excel.Interfaces.ChartDataLabelsLoadOptions#horizontalAlignment:member
@@ -83,6 +103,24 @@ properties:
       content: 'horizontalAlignment?: boolean;'
       return:
         type: boolean
+  - name: leaderLines
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#leaderLines:member
+    package: excel!
+    fullName: leaderLines
+    summary: Gets an object that represents the leader lines of the data labels.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leaderLines?: Excel.Interfaces.ChartLeaderLinesLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLeaderLinesLoadOptions:interface" />
   - name: linkNumberFormat
     uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#linkNumberFormat:member
     package: excel!
@@ -147,6 +185,30 @@ properties:
       content: 'separator?: boolean;'
       return:
         type: boolean
+  - name: showAsStickyCallout
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showAsStickyCallout:member
+    package: excel!
+    fullName: showAsStickyCallout
+    summary: >-
+      Gets a value that indicates whether the data labels are shown as a callout
+      with the tail anchor attached to the data point. If `true`<!-- -->, the
+      callout is one of the following values: "AccentCallout1",
+      "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout",
+      "WedgeRRectCallout" or "WedgeEllipseCallout". See
+      [GeometricShapeType](xref:excel!Excel.GeometricShapeType:enum) for more
+      details.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showAsStickyCallout?: boolean;'
+      return:
+        type: boolean
   - name: showBubbleSize
     uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member
     package: excel!
@@ -175,6 +237,25 @@ properties:
     isDeprecated: false
     syntax:
       content: 'showCategoryName?: boolean;'
+      return:
+        type: boolean
+  - name: showLeaderLines
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLeaderLines:member
+    package: excel!
+    fullName: showLeaderLines
+    summary: >-
+      Gets or sets a value that indicates whether leader lines are displayed for
+      the data labels. `true` if leader lines are shown; otherwise, `false`<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showLeaderLines?: boolean;'
       return:
         type: boolean
   - name: showLegendKey

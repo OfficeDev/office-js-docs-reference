@@ -25,7 +25,7 @@ remarks: >-
     footnotes.load("items");
     await context.sync();
 
-    const referenceNumber = $("#input-reference").val();
+    const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
     const mark = (referenceNumber as number) - 1;
     const item: Word.NoteItem = footnotes.items[mark];
     console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);

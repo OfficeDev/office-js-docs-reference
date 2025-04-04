@@ -71,24 +71,22 @@ properties:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" |
         "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-        "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
-        "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" |
+        "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
         "CommentDeselected" | "CommentChanged" | "CommentAdded" |
-        "ContentControlEntered" | "ContentControlExited" |
-        "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" |
-        "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-        "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
+        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" |
+        "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" |
+        "AnnotationPopupAction";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
           "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-          "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
-          "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" |
+          "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
           "CommentDeselected" | "CommentChanged" | "CommentAdded" |
-          "ContentControlEntered" | "ContentControlExited" |
-          "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" |
-          "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
+          "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
+          "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" |
+          "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" |
+          "AnnotationPopupAction"
   - name: ids
     uid: word!Word.ContentControlEnteredEventArgs#ids:member
     package: word!

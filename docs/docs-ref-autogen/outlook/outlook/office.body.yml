@@ -168,7 +168,8 @@ methods:
       // This snippet appends text to the end of the message or appointment's
       body once it's sent.
 
-      const text = $("#text-field").val();
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
       // It's recommended to call getTypeAsync and pass its returned value to
@@ -758,7 +759,8 @@ methods:
         When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
-      const text = $("#text-field").val().toString();
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
       // It's recommended to call getTypeAsync and pass its returned value to
@@ -1018,7 +1020,8 @@ methods:
       // This snippet prepends text to the beginning of the message or
       appointment's body once it's sent.
 
-      const text = $("#text-field").val().toString();
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
       // It's recommended to call getTypeAsync and pass its returned value to
@@ -1574,7 +1577,8 @@ methods:
         If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
-      const text = $("#text-field").val().toString();
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
       // It's recommended to call getTypeAsync and pass its returned value to
@@ -1823,7 +1827,7 @@ methods:
         { isInline: true },
         function(result) {
           if (result.status == Office.AsyncResultStatus.Succeeded) {
-            const signature = $("#signature").val() + "<img src='cid:myImage.png'>";
+            const signature = (document.getElementById("signature") as HTMLInputElement).value + "<img src='cid:myImage.png'>";
             console.log(`Setting signature to "${signature}".`);
             Office.context.mailbox.item.body.setSignatureAsync(
               signature,
@@ -1844,7 +1848,8 @@ methods:
 
       // Set the signature for the current item.
 
-      const signature = $("#signature").val();
+      const signature = (document.getElementById("signature") as
+      HTMLInputElement).value;
 
       console.log(`Setting signature to "${signature}".`);
 

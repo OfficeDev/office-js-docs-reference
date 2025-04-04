@@ -77,7 +77,8 @@ methods:
 
       // Adds a progress indicator to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
@@ -93,13 +94,14 @@ methods:
 
       // Adds an informational notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Non-persistent informational notification message with id = " + id,
-          icon: "icon1",
+          icon: "PG.Icon.16",
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -111,13 +113,14 @@ methods:
 
       // Adds a persistent information notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Persistent informational notification message with id = " + id,
-          icon: "icon1",
+          icon: "PG.Icon.16",
           persistent: true
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -129,7 +132,8 @@ methods:
 
       // Adds an error notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
@@ -394,7 +398,8 @@ methods:
 
       // Removes a notification message from the current mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id,
       handleResult);
@@ -506,7 +511,8 @@ methods:
 
       // Replaces a notification message of a given key with another message.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,

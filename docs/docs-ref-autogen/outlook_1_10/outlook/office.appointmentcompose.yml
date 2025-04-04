@@ -514,7 +514,8 @@ properties:
 
       // Adds a progress indicator to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
@@ -530,13 +531,14 @@ properties:
 
       // Adds an informational notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Non-persistent informational notification message with id = " + id,
-          icon: "icon1",
+          icon: "PG.Icon.16",
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -548,13 +550,14 @@ properties:
 
       // Adds a persistent information notification to the mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Persistent informational notification message with id = " + id,
-          icon: "icon1",
+          icon: "PG.Icon.16",
           persistent: true
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -583,7 +586,8 @@ properties:
 
       // Replaces a notification message of a given key with another message.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
@@ -600,7 +604,8 @@ properties:
 
       // Removes a notification message from the current mail item.
 
-      const id = $("#notificationId").val().toString();
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id,
       handleResult);
@@ -671,9 +676,9 @@ properties:
       ...
 
 
-      const email = $("#emailOptional")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailOptional") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.optionalAttendees.setAsync(emailArray,
@@ -924,9 +929,9 @@ properties:
       ...
 
 
-      const email = $("#emailRequired")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailRequired") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.requiredAttendees.setAsync(emailArray,
@@ -1239,9 +1244,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      const attachmentUrl = $("#attachmentUrl")
-        .val()
-        .toString();
+      const attachmentUrl = (document.getElementById("attachmentUrl") as
+      HTMLInputElement).value;
+
       Office.context.mailbox.item.addFileAttachmentAsync(
         attachmentUrl,
         getFileName(attachmentUrl),
@@ -1511,7 +1516,7 @@ methods:
         { isInline: true },
         function(result) {
           if (result.status == Office.AsyncResultStatus.Succeeded) {
-            const signature = $("#signature").val() + "<img src='cid:myImage.png'>";
+            const signature = (document.getElementById("signature") as HTMLInputElement).value + "<img src='cid:myImage.png'>";
             console.log(`Setting signature to "${signature}".`);
             Office.context.mailbox.item.body.setSignatureAsync(
               signature,
@@ -3420,9 +3425,7 @@ methods:
 
 
       Office.context.mailbox.item.removeAttachmentAsync(
-        $("#attachmentId")
-          .val()
-          .toString(),
+        (document.getElementById("attachmentId") as HTMLInputElement).value,
         (result) => {
           if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(result.error.message);

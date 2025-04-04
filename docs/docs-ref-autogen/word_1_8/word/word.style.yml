@@ -20,7 +20,7 @@ remarks: >-
   // Applies the specified style to a paragraph.
 
   await Word.run(async (context) => {
-    const styleName = $("#style-name-to-use").val() as string;
+    const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
     if (styleName == "") {
       console.warn("Enter a style name to apply.");
       return;
@@ -127,7 +127,7 @@ properties:
       // Updates font properties (e.g., color, size) of the specified style.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name").val() as string;
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to update font properties.");
           return;
@@ -212,7 +212,7 @@ properties:
       // Applies the specified style to a paragraph.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name-to-use").val() as string;
+        const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to apply.");
           return;
@@ -294,7 +294,7 @@ properties:
       the left indent size and the alignment.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name").val() as string;
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to update its paragraph format.");
           return;
@@ -376,7 +376,7 @@ properties:
       specified style.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name").val() as string;
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to update shading properties.");
           return;
@@ -503,7 +503,7 @@ methods:
       // Deletes the custom style.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name-to-delete").val() as string;
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to delete.");
           return;

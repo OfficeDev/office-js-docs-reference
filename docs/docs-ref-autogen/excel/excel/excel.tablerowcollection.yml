@@ -115,7 +115,7 @@ methods:
             are shifted downwards. Zero-indexed.
           type: number
         - id: values
-          description: Optional. A 2D array of unformatted values of the table row.
+          description: ''
           type: >-
             Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean |
             string | number
@@ -163,7 +163,7 @@ methods:
             are shifted downwards. Zero-indexed.
           type: number
         - id: values
-          description: Optional. A 2D array of cell values of the table row.
+          description: ''
           type: <xref uid="excel!Excel.CellValue:type" />[][]
         - id: alwaysInsert
           description: >-

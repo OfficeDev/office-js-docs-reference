@@ -767,7 +767,7 @@ methods:
       </td><td><code>Compressed</code>, <code>Pdf</code>,
       <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>,
       <code>Text</code></td><td> Not supported </td></tr> <tr><td><strong>
-      PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>
+      PowerPoint </strong></td><td><code>Compressed</code>
       </td><td><code>Compressed</code>, <code>Pdf</code>
       </td><td><code>Compressed</code>, <code>Pdf</code>
       </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
@@ -953,7 +953,7 @@ methods:
       </td><td><code>Compressed</code>, <code>Pdf</code>,
       <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>,
       <code>Text</code></td><td> Not supported </td></tr> <tr><td><strong>
-      PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>
+      PowerPoint </strong></td><td><code>Compressed</code>
       </td><td><code>Compressed</code>, <code>Pdf</code>
       </td><td><code>Compressed</code>, <code>Pdf</code>
       </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>

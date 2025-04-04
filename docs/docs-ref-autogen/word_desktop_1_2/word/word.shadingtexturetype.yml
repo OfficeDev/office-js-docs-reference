@@ -25,7 +25,7 @@ remarks: >-
   style.
 
   await Word.run(async (context) => {
-    const styleName = $("#style-name").val() as string;
+    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
     if (styleName == "") {
       console.warn("Enter a style name to update shading properties.");
       return;

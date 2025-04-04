@@ -44,9 +44,9 @@ remarks: >-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-  const attachmentUrl = $("#attachmentUrl")
-    .val()
-    .toString();
+  const attachmentUrl = (document.getElementById("attachmentUrl") as
+  HTMLInputElement).value;
+
   Office.context.mailbox.item.addFileAttachmentAsync(
     attachmentUrl,
     getFileName(attachmentUrl),
@@ -116,9 +116,9 @@ properties:
       ...
 
 
-      const email = $("#emailBcc")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailBcc") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult)
@@ -241,9 +241,9 @@ properties:
       ...
 
 
-      const email = $("#emailCc")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailCc") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult)
@@ -478,9 +478,9 @@ properties:
       ...
 
 
-      const email = $("#emailTo")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailTo") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult)
@@ -583,9 +583,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      const attachmentUrl = $("#attachmentUrl")
-        .val()
-        .toString();
+      const attachmentUrl = (document.getElementById("attachmentUrl") as
+      HTMLInputElement).value;
+
       Office.context.mailbox.item.addFileAttachmentAsync(
         attachmentUrl,
         getFileName(attachmentUrl),
@@ -1260,9 +1260,7 @@ methods:
 
 
       Office.context.mailbox.item.removeAttachmentAsync(
-        $("#attachmentId")
-          .val()
-          .toString(),
+        (document.getElementById("attachmentId") as HTMLInputElement).value,
         (result) => {
           if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(result.error.message);

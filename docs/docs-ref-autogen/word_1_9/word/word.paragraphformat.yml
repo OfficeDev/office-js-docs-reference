@@ -21,7 +21,7 @@ remarks: >-
   left indent size and the alignment.
 
   await Word.run(async (context) => {
-    const styleName = $("#style-name").val() as string;
+    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
     if (styleName == "") {
       console.warn("Enter a style name to update its paragraph format.");
       return;
@@ -69,7 +69,7 @@ properties:
       the left indent size and the alignment.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name").val() as string;
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to update its paragraph format.");
           return;
@@ -190,7 +190,7 @@ properties:
       the left indent size and the alignment.
 
       await Word.run(async (context) => {
-        const styleName = $("#style-name").val() as string;
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to update its paragraph format.");
           return;

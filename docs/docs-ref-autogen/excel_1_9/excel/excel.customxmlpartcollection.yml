@@ -70,7 +70,7 @@ methods:
           await context.sync();
 
           const readableXml = addLineBreaksToXML(xmlBlob.value);
-          $("#display-xml").text(readableXml);
+          document.getElementById("display-xml").textContent = readableXml;
 
           // Store the XML part's ID in a setting.
           const settings = context.workbook.settings;
@@ -114,7 +114,7 @@ methods:
 
 
       await Excel.run(async (context) => {
-          $("#display-xml").text("");
+          document.getElementById("display-xml").textContent = "";
           const contosoNamespace = "http://schemas.contoso.com/review/1.0";
           const customXmlParts = context.workbook.customXmlParts;
           const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
@@ -131,8 +131,8 @@ methods:
               // Make it a bit more readable.
               const readableXml = xmlBlob.value.replace(/></g, ">\n<");
 
-              $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
-                  ${readableXml}`);
+              document.getElementById("display-xml").textContent = `The only XML part in the namespace ${contosoNamespace} is:
+                  ${readableXml}`;
 
           } else {
               console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
@@ -208,7 +208,7 @@ methods:
               await context.sync();
 
               const readableXml = addLineBreaksToXML(xmlBlob.value);
-              $("#display-xml").text(readableXml);
+              document.getElementById("display-xml").textContent = readableXml;
               await context.sync();
           }
       });

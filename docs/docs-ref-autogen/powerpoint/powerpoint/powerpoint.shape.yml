@@ -540,6 +540,26 @@ properties:
       content: 'width: number;'
       return:
         type: number
+  - name: zOrderPosition
+    uid: powerpoint!PowerPoint.Shape#zOrderPosition:member
+    package: powerpoint!
+    fullName: zOrderPosition
+    summary: >-
+      Returns the z-order position of the shape, with 0 representing the bottom
+      of the order stack. Every shape on a slide has a unique z-order, but each
+      slide also has a unique z-order stack, so two shapes on separate slides
+      could have the same z-order number.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly zOrderPosition: number;'
+      return:
+        type: number
 methods:
   - name: delete()
     uid: powerpoint!PowerPoint.Shape#delete:member(1)
@@ -718,6 +738,23 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Slide:class" />
         description: ''
+  - name: getTable()
+    uid: powerpoint!PowerPoint.Shape#getTable:member(1)
+    package: powerpoint!
+    fullName: getTable()
+    summary: Returns the `Table` object if this shape is a table.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getTable(): PowerPoint.Table;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Table:class" />
+        description: ''
   - name: load(options)
     uid: powerpoint!PowerPoint.Shape#load:member(1)
     package: powerpoint!
@@ -795,6 +832,58 @@ methods:
                     }
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
+        description: ''
+  - name: setZOrder(position)
+    uid: powerpoint!PowerPoint.Shape#setZOrder:member(1)
+    package: powerpoint!
+    fullName: setZOrder(position)
+    summary: >-
+      Moves the specified shape up or down the collection's z-order, which
+      shifts it in front of or behind other shapes.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setZOrder(position: PowerPoint.ShapeZOrder): void;'
+      parameters:
+        - id: position
+          description: >-
+            Specifies how to move the shape within the z-order stack. Uses the
+            `ShapeZOrder` enum.
+          type: <xref uid="powerpoint!PowerPoint.ShapeZOrder:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setZOrder(positionString)
+    uid: powerpoint!PowerPoint.Shape#setZOrder:member(2)
+    package: powerpoint!
+    fullName: setZOrder(positionString)
+    summary: >-
+      Moves the specified shape up or down the collection's z-order, which
+      shifts it in front of or behind other shapes.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setZOrder(positionString: "BringForward" | "BringToFront" |
+        "SendBackward" | "SendToBack"): void;
+      parameters:
+        - id: positionString
+          description: >-
+            Specifies how to move the shape within the z-order stack. Uses the
+            `ShapeZOrder` enum.
+          type: '"BringForward" | "BringToFront" | "SendBackward" | "SendToBack"'
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: powerpoint!PowerPoint.Shape#toJSON:member(1)

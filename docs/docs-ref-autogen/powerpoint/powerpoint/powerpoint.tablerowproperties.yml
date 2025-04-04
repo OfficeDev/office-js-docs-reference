@@ -1,0 +1,37 @@
+name: PowerPoint.TableRowProperties
+uid: powerpoint!PowerPoint.TableRowProperties:interface
+package: powerpoint!
+fullName: PowerPoint.TableRowProperties
+summary: Provides the table row properties.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: rowHeight
+    uid: powerpoint!PowerPoint.TableRowProperties#rowHeight:member
+    package: powerpoint!
+    fullName: rowHeight
+    summary: >-
+      Represents the desired height of each row in points, or is undefined.
+
+
+      When a table is being added, for rows whose height is undefined, the row
+      height will be calculated by evenly dividing the remaining height of the
+      table amongst those rows. If the table does not have a defined height, a
+      default row height will be used.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rowHeight?: number | undefined;'
+      return:
+        type: number | undefined

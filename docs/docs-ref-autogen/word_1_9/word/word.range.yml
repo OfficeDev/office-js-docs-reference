@@ -758,7 +758,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to
       cover another range. This range isn't changed. Throws an `ItemNotFound`
-      error if the two ranges do not have a union.
+      error if the two ranges don't have a union.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1533,9 +1533,7 @@ methods:
       // Sets a comment on the selected content.
 
       await Word.run(async (context) => {
-        const text = $("#comment-text")
-          .val()
-          .toString();
+        const text = (document.getElementById("comment-text") as HTMLInputElement).value;
         const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
         // Load object to log in the console.
@@ -1671,28 +1669,13 @@ methods:
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Important:
-
-
-      In Word on Windows and on Mac, the API supports inserting and managing all
-      types listed in [Word.FieldType](xref:word!Word.FieldType:enum) except
-      `Word.FieldType.others`<!-- -->.
-
-
-      In Word on the web, the API supports inserting and managing the following
-      field types.
-
-
-      - `Word.FieldType.addin`
-
-
-      - `Word.FieldType.date`
-
-
-      - `Word.FieldType.hyperlink`
-
-
-      - `Word.FieldType.toc`
+      Important: In Word on Windows and on Mac, the API supports inserting and
+      managing all types listed in
+      [Word.FieldType](xref:word!Word.FieldType:enum) except
+      `Word.FieldType.others`<!-- -->. In Word on the web, fields are mainly
+      read-only. To learn more, see [Use fields in your Word
+      add-in](https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance)<!--
+      -->.
 
 
       #### Examples
@@ -1766,28 +1749,13 @@ methods:
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Important:
-
-
-      In Word on Windows and on Mac, the API supports inserting and managing all
-      types listed in [Word.FieldType](xref:word!Word.FieldType:enum) except
-      `Word.FieldType.others`<!-- -->.
-
-
-      In Word on the web, the API supports inserting and managing the following
-      field types.
-
-
-      - `Word.FieldType.addin`
-
-
-      - `Word.FieldType.date`
-
-
-      - `Word.FieldType.hyperlink`
-
-
-      - `Word.FieldType.toc`
+      Important: In Word on Windows and on Mac, the API supports inserting and
+      managing all types listed in
+      [Word.FieldType](xref:word!Word.FieldType:enum) except
+      `Word.FieldType.others`<!-- -->. In Word on the web, fields are mainly
+      read-only. To learn more, see [Use fields in your Word
+      add-in](https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance)<!--
+      -->.
 
     isPreview: false
     isDeprecated: false
@@ -1866,7 +1834,7 @@ methods:
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an
+      Insertion isn't supported if the document being inserted contains an
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.
@@ -1940,9 +1908,7 @@ methods:
       // Sets a footnote on the selected content.
 
       await Word.run(async (context) => {
-        const text = $("#input-footnote")
-          .val()
-          .toString();
+        const text = (document.getElementById("input-footnote") as HTMLInputElement).value;
         const footnote: Word.NoteItem = context.document.getSelection().insertFootnote(text);
         await context.sync();
 

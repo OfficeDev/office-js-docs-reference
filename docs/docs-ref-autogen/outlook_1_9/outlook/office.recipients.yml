@@ -732,9 +732,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
 
-      const email = $("#emailBcc")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailBcc") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult)
@@ -750,9 +750,9 @@ methods:
       ...
 
 
-      const email = $("#emailCc")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailCc") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult)
@@ -768,9 +768,9 @@ methods:
       ...
 
 
-      const email = $("#emailOptional")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailOptional") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.optionalAttendees.setAsync(emailArray,
@@ -786,9 +786,9 @@ methods:
       ...
 
 
-      const email = $("#emailRequired")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailRequired") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.requiredAttendees.setAsync(emailArray,
@@ -804,9 +804,9 @@ methods:
       ...
 
 
-      const email = $("#emailTo")
-        .val()
-        .toString();
+      const email = (document.getElementById("emailTo") as
+      HTMLInputElement).value;
+
       const emailArray = [email];
 
       Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult)

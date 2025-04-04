@@ -47,6 +47,105 @@ properties:
       content: 'basicValue: number;'
       return:
         type: number
+  - name: layouts
+    uid: excel!Excel.DoubleCellValue#layouts:member
+    package: excel!
+    fullName: layouts
+    summary: Represents layout information for views of this double value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'layouts?: BasicViewLayouts;'
+      return:
+        type: <xref uid="excel!Excel.BasicViewLayouts:interface" />
+  - name: numberFormat
+    uid: excel!Excel.DoubleCellValue#numberFormat:member
+    package: excel!
+    fullName: numberFormat
+    summary: >-
+      Returns the number format string that is used to display this value. When
+      accessed through a `valuesAsJson` property, this number format string is
+      in the en-US locale. When accessed through a `valuesAsJsonLocal` property,
+      this number format is in the user's display locale. Number format strings
+      must conform to Excel guidelines. To learn more, see [Review guidelines
+      for customizing a number
+      format](https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type: string
+  - name: properties
+    uid: excel!Excel.DoubleCellValue#properties:member
+    package: excel!
+    fullName: properties
+    summary: Represents additional properties of this double value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        properties?: {
+                    [key: string]: EntityPropertyType;
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: <xref uid="excel!Excel.EntityPropertyType:type" />;
+                  }
+  - name: provider
+    uid: excel!Excel.DoubleCellValue#provider:member
+    package: excel!
+    fullName: provider
+    summary: >-
+      Represents information that describes the service that provided the data
+      in this `DoubleCellValue`<!-- -->. This information can be used for
+      branding in card view.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: <xref uid="excel!Excel.CellValueProviderAttributes:interface" />
+  - name: referencedValues
+    uid: excel!Excel.DoubleCellValue#referencedValues:member
+    package: excel!
+    fullName: referencedValues
+    summary: >-
+      Represents the cell values which are referenced within
+      `DoubleCellValue.properties`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: <xref uid="excel!Excel.ReferencedValue:type" />[]
   - name: type
     uid: excel!Excel.DoubleCellValue#type:member
     package: excel!
@@ -60,6 +159,8 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: CellValueType.double | "Double";'
+      content: 'type: CellValueType.double | ReferenceValueType.double | "Double";'
       return:
-        type: <xref uid="excel!Excel.CellValueType.double:member" /> | "Double"
+        type: >-
+          <xref uid="excel!Excel.CellValueType.double:member" /> | <xref
+          uid="excel!Excel.ReferenceValueType.double:member" /> | "Double"

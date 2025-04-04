@@ -169,9 +169,9 @@ methods:
       different message in the Reading Pane or closes the window of the current
       message.
 
-      const bodyText = $("#body-text-field")
-        .val()
-        .toString();
+      const bodyText = (document.getElementById("body-text-field") as
+      HTMLInputElement).value;
+
       Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult)
       => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {

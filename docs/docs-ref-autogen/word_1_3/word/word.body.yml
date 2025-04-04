@@ -667,7 +667,7 @@ properties:
         footnotes.load("items");
         await context.sync();
 
-        const referenceNumber = $("#input-reference").val();
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
         const mark = (referenceNumber as number) - 1;
         const item: Word.NoteItem = footnotes.items[mark];
         console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
@@ -1013,7 +1013,7 @@ methods:
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an
+      Insertion isn't supported if the document being inserted contains an
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.

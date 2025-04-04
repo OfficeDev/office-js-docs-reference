@@ -320,3 +320,25 @@ properties:
       content: 'width?: boolean;'
       return:
         type: boolean
+  - name: zOrderPosition
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#zOrderPosition:member
+    package: powerpoint!
+    fullName: zOrderPosition
+    summary: >-
+      For EACH ITEM in the collection: Returns the z-order position of the
+      shape, with 0 representing the bottom of the order stack. Every shape on a
+      slide has a unique z-order, but each slide also has a unique z-order
+      stack, so two shapes on separate slides could have the same z-order
+      number.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'zOrderPosition?: boolean;'
+      return:
+        type: boolean

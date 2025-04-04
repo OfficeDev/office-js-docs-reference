@@ -158,9 +158,9 @@ methods:
       different message in the Reading Pane or closes the window of the current
       message.
 
-      const subjectText = $("#subject-text-field")
-        .val()
-        .toString();
+      const subjectText = (document.getElementById("subject-text-field") as
+      HTMLInputElement).value;
+
       Office.context.mailbox.item.display.subject.setAsync(subjectText,
       (asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {

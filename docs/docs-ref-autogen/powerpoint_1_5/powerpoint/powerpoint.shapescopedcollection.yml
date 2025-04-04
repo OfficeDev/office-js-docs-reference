@@ -103,8 +103,9 @@ methods:
           finalTable += "<tr><td>" + index + "</td><td>" + shape.id + "</td></tr>";
         });
         finalTable += "</table>";
-        $("#outputSpan").empty();
-        $("#outputSpan").append(finalTable);
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = "";
+        outputSpan.innerHTML += finalTable;
       });
 
       ```

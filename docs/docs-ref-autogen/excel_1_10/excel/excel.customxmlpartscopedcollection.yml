@@ -63,7 +63,7 @@ methods:
 
 
       await Excel.run(async (context) => {
-          $("#display-xml").text("");
+          document.getElementById("display-xml").textContent = "";
           const contosoNamespace = "http://schemas.contoso.com/review/1.0";
           const customXmlParts = context.workbook.customXmlParts;
           const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
@@ -80,8 +80,8 @@ methods:
               // Make it a bit more readable.
               const readableXml = xmlBlob.value.replace(/></g, ">\n<");
 
-              $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
-                  ${readableXml}`);
+              document.getElementById("display-xml").textContent = `The only XML part in the namespace ${contosoNamespace} is:
+                  ${readableXml}`;
 
           } else {
               console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
@@ -158,14 +158,14 @@ methods:
               await context.sync();
 
               if (customXmlPart.isNullObject) {
-                  $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+                  document.getElementById("display-xml").textContent = `The XML part with the id ${xmlPartIDSetting.value} has been deleted.`;
 
                   // Delete the unneeded setting too.
                   xmlPartIDSetting.delete();            
               } else {
                   const readableXml = addLineBreaksToXML(xmlBlob.value);
                   const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
-                  $("#display-xml").text(strangeMessage);
+                  document.getElementById("display-xml").textContent = strangeMessage;
               }
 
               await context.sync();
@@ -207,7 +207,7 @@ methods:
 
 
       await Excel.run(async (context) => {
-          $("#display-xml").text("");
+          document.getElementById("display-xml").textContent = "";
           const contosoNamespace = "http://schemas.contoso.com/review/1.0";
           const customXmlParts = context.workbook.customXmlParts;
           const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
@@ -224,8 +224,8 @@ methods:
               // Make it a bit more readable.
               const readableXml = xmlBlob.value.replace(/></g, ">\n<");
 
-              $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
-                  ${readableXml}`);
+              document.getElementById("display-xml").textContent = `The only XML part in the namespace ${contosoNamespace} is:
+                  ${readableXml}`;
 
           } else {
               console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);

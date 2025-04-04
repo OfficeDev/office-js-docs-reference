@@ -144,7 +144,9 @@ methods:
 
           await context.sync();
 
-          $(".conditional-formats").hide();
+          document.querySelectorAll(".conditional-formats").forEach(element => {
+              element.style.display = "none";
+          });
       });
 
       ```

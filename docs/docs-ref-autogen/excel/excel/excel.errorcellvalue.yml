@@ -3,62 +3,7 @@ uid: excel!Excel.ErrorCellValue:type
 package: excel!
 fullName: Excel.ErrorCellValue
 summary: Represents a cell value which contains an error.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
-
-
-  // This function sets the value of cell A1 to a #BUSY! error using data types.
-
-  await Excel.run(async (context) => {
-    // Retrieve the Sample worksheet and cell A1 on that sheet.
-    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
-    const range = sheet.getRange("A1");
-
-    // Get the error data type and set its type to `busy`.
-    const error: Excel.ErrorCellValue = {
-      type: Excel.CellValueType.error,
-      errorType: Excel.ErrorCellValueType.busy
-    };
-
-    // Set cell A1 as the busy error.
-    range.valuesAsJson = [[error]];
-    await context.sync();
-  });
-
-  ```
-
-
-  This type is a union of the following types: 
-
-
-  <xref uid="excel!Excel.= BlockedErrorCellValue:interface" />,<xref
-  uid="excel!Excel.| BusyErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  CalcErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  ConnectErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  Div0ErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  ExternalErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  FieldErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  GettingDataErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  NotAvailableErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  NameErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  NullErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  NumErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  PlaceholderErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  PythonErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  RefErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  SpillErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  TimeoutErrorCellValue:interface" />,<xref uid="excel!Excel.|
-  ValueErrorCellValue:interface" />
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\n\n#### Examples\n\n```TypeScript\n// Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml\n\n// This function sets the value of cell A1 to a #BUSY! error using data types.\nawait Excel.run(async (context) => {\n  // Retrieve the Sample worksheet and cell A1 on that sheet.\n  const sheet = context.workbook.worksheets.getItemOrNullObject(\"Sample\");\n  const range = sheet.getRange(\"A1\");\n\n  // Get the error data type and set its type to `busy`.\n  const error: Excel.ErrorCellValue = {\n    type: Excel.CellValueType.error,\n    errorType: Excel.ErrorCellValueType.busy\n  };\n\n  // Set cell A1 as the busy error.\n  range.valuesAsJson = [[error]];\n  await context.sync();\n});\n```\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= BlockedErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| BusyErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| CalcErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| ConnectErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| Div0ErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| ExternalErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| FieldErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| GettingDataErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| NotAvailableErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| NameErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| NullErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| NumErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| PlaceholderErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| PythonErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| RefErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| SpillErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| TimeoutErrorCellValue:interface\" />, <xref uid=\"excel!Excel.| ValueErrorCellValue:interface\" />"
 
 isPreview: false
 isDeprecated: false

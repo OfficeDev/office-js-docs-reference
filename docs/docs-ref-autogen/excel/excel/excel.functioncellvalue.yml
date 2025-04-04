@@ -1,0 +1,10 @@
+name: Excel.FunctionCellValue
+uid: excel!Excel.FunctionCellValue:type
+package: excel!
+fullName: Excel.FunctionCellValue
+summary: Represents a cell value which can be evaluated as a function.
+remarks: "\\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= JavaScriptCustomFunctionReferenceCellValue:interface\" />"
+
+isPreview: true
+isDeprecated: false
+syntax: export type FunctionCellValue = JavaScriptCustomFunctionReferenceCellValue;

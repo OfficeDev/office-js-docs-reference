@@ -20,9 +20,7 @@ remarks: >-
   // Replies to the first active comment in the selected content.
 
   await Word.run(async (context) => {
-    const text = $("#reply-text")
-      .val()
-      .toString();
+    const text = (document.getElementById("reply-text") as HTMLInputElement).value;
     const comments: Word.CommentCollection = context.document.getSelection().getComments();
     comments.load("items");
     await context.sync();
@@ -85,9 +83,7 @@ properties:
           // Replies to the first active comment in the selected content.
 
           await Word.run(async (context) => {
-            const text = $("#reply-text")
-              .val()
-              .toString();
+            const text = (document.getElementById("reply-text") as HTMLInputElement).value;
             const comments: Word.CommentCollection = context.document.getSelection().getComments();
             comments.load("items");
             await context.sync();

@@ -245,10 +245,7 @@ properties:
       the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-add")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
@@ -340,10 +337,7 @@ properties:
       in the selection.
 
       await Word.run(async (context) => {
-        const listItemText = $("#item-to-add")
-          .val()
-          .toString()
-          .trim();
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
@@ -1474,7 +1468,7 @@ methods:
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an
+      Insertion isn't supported if the document being inserted contains an
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.

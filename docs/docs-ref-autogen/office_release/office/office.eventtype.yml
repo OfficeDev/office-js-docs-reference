@@ -170,18 +170,30 @@ fields:
       Occurs in Outlook when an action is selected on a notification message
       with a defined [custom
       action](https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!--
-      -->. Currently, "Dismiss" is the only supported action that fires this
-      event.
-
-
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      -->. Currently, **Dismiss** is the only supported action that fires
+      this event.
 
 
       To add an event handler for the `InfobarClicked` event, use the
       `addHandlerAsync` method of the `Item` object. The event handler receives
       an argument of type
       [Office.InfobarClickedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10)<!--
+      -->.
+
+
+      **Important**:
+
+
+      - This event can only be handled in a task pane. Function commands can't
+      register a handler for this event.
+
+
+      - Although Outlook on Mac supports the `InsightMessage` notification type,
+      it currently doesn't support the `InfobarClicked` event. To determine when
+      the **Dismiss** action is selected from the notification, implement a
+      handler for the `OnInfoBarDismissClicked` event instead. For more
+      information, see [Configure your Outlook add-in for event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch#supported-events)<!--
       -->.
 
 

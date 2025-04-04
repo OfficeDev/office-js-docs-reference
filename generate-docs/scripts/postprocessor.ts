@@ -264,7 +264,7 @@ tryCatch(async () => {
                                 apiYaml.remarks += remarks;
                             }
 
-                        fsx.writeFileSync(subfolder + '/' + subfilename, JSON.stringify(apiYaml)
+                        fsx.writeFileSync(subfolder + '/' + subfilename, jsyaml.dump(apiYaml) 
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
                             .replace(/description: \\\*[\r\n]/g, "description:") // Remove descriptions that are just "\*".
                             .replace(/\\\*/gm, "*")); // Fix asterisk protection.

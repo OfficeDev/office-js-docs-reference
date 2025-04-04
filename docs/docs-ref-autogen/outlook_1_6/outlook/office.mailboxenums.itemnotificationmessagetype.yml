@@ -24,7 +24,8 @@ remarks: >-
 
   // Adds an error notification to the mail item.
 
-  const id = $("#notificationId").val().toString();
+  const id = (document.getElementById("notificationId") as
+  HTMLInputElement).value;
 
   const details =
     {

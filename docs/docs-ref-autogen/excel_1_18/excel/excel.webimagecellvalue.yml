@@ -202,8 +202,8 @@ properties:
 
       await Excel.run(async (context) => {
         // Retrieve image data from the task pane and then clear the input fields.
-        const imageUrl = $("#url").val() as string;
-        const imageAltText = $("#alt-text").val() as string;
+        const imageUrl = (document.getElementById("url") as HTMLInputElement).value;
+        const imageAltText = (document.getElementById("alt-text") as HTMLInputElement).value;
         clearForm();
 
         // Load the active cell.

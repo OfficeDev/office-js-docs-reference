@@ -71,10 +71,10 @@ properties:
       Specifies a value that indicates whether the font is tagged as hidden.
       True if the font is formatted as hidden text, otherwise, false.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hidden?: boolean;'

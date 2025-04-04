@@ -47,6 +47,81 @@ properties:
       content: 'basicValue: boolean;'
       return:
         type: boolean
+  - name: layouts
+    uid: excel!Excel.BooleanCellValue#layouts:member
+    package: excel!
+    fullName: layouts
+    summary: Represents layout information for views of this boolean value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'layouts?: BasicViewLayouts;'
+      return:
+        type: <xref uid="excel!Excel.BasicViewLayouts:interface" />
+  - name: properties
+    uid: excel!Excel.BooleanCellValue#properties:member
+    package: excel!
+    fullName: properties
+    summary: Represents additional properties of this boolean value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        properties?: {
+                    [key: string]: EntityPropertyType;
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: <xref uid="excel!Excel.EntityPropertyType:type" />;
+                  }
+  - name: provider
+    uid: excel!Excel.BooleanCellValue#provider:member
+    package: excel!
+    fullName: provider
+    summary: >-
+      Represents information that describes the service that provided the data
+      in this `BooleanCellValue`<!-- -->. This information can be used for
+      branding in card view.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: <xref uid="excel!Excel.CellValueProviderAttributes:interface" />
+  - name: referencedValues
+    uid: excel!Excel.BooleanCellValue#referencedValues:member
+    package: excel!
+    fullName: referencedValues
+    summary: >-
+      Represents the cell values which are referenced within
+      `BooleanCellValue.properties`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: <xref uid="excel!Excel.ReferencedValue:type" />[]
   - name: type
     uid: excel!Excel.BooleanCellValue#type:member
     package: excel!
@@ -60,6 +135,8 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: CellValueType.boolean | "Boolean";'
+      content: 'type: CellValueType.boolean | ReferenceValueType.boolean | "Boolean";'
       return:
-        type: <xref uid="excel!Excel.CellValueType.boolean:member" /> | "Boolean"
+        type: >-
+          <xref uid="excel!Excel.CellValueType.boolean:member" /> | <xref
+          uid="excel!Excel.ReferenceValueType.boolean:member" /> | "Boolean"

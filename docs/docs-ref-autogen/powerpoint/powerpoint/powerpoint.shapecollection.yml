@@ -399,6 +399,38 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: The newly inserted shape.
+  - name: addTable(rowCount, columnCount, options)
+    uid: powerpoint!PowerPoint.ShapeCollection#addTable:member(1)
+    package: powerpoint!
+    fullName: addTable(rowCount, columnCount, options)
+    summary: >-
+      Adds a table to the slide. Returns a `Shape` object that represents the
+      new table. Use the `Shape.table` property to get the `Table` object for
+      the shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        addTable(rowCount: number, columnCount: number, options?:
+        PowerPoint.TableAddOptions): PowerPoint.Shape;
+      parameters:
+        - id: rowCount
+          description: Number of rows in the table. Must be 1 or greater.
+          type: number
+        - id: columnCount
+          description: Number of columns in the table. Must be 1 or greater.
+          type: number
+        - id: options
+          description: Provides options describing the new table.
+          type: <xref uid="powerpoint!PowerPoint.TableAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Shape:class" />
+        description: The newly inserted shape.
   - name: addTextBox(text, options)
     uid: powerpoint!PowerPoint.ShapeCollection#addTextBox:member(1)
     package: powerpoint!

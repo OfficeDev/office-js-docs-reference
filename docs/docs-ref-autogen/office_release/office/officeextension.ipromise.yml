@@ -3,12 +3,7 @@ uid: office!OfficeExtension.IPromise:type
 package: office!
 fullName: OfficeExtension.IPromise
 summary: ''
-remarks: |-
-
-
-  This type is a union of the following types: 
-
-  <xref uid="excel!Excel.= Promise:interface" />
+remarks: "\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= Promise:interface\" />"
 
 isPreview: false
 isDeprecated: false

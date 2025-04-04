@@ -1,0 +1,51 @@
+name: Excel.Interfaces.ChartDataLabelAnchorUpdateData
+uid: excel!Excel.Interfaces.ChartDataLabelAnchorUpdateData:interface
+package: excel!
+fullName: Excel.Interfaces.ChartDataLabelAnchorUpdateData
+summary: >-
+  An interface for updating data on the `ChartDataLabelAnchor` object, for use
+  in `chartDataLabelAnchor.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: left
+    uid: excel!Excel.Interfaces.ChartDataLabelAnchorUpdateData#left:member
+    package: excel!
+    fullName: left
+    summary: >-
+      Represents the distance, in points, from the anchor to the left edge of
+      the chart data label. Note that when getting the value, it may differ
+      slightly from the set value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: top
+    uid: excel!Excel.Interfaces.ChartDataLabelAnchorUpdateData#top:member
+    package: excel!
+    fullName: top
+    summary: >-
+      Represents the distance, in points, from the anchor to the top edge of the
+      chart data label. Note that when getting the value, it may differ slightly
+      from the set value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number

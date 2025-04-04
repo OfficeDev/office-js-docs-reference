@@ -131,6 +131,45 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedDataTypeRefreshRequestCompleted"'
+  - name: linkedEntityDataDomainLinkedEntityDataDomainAdded
+    uid: >-
+      excel!Excel.EventType.linkedEntityDataDomainLinkedEntityDataDomainAdded:member
+    package: excel!
+    summary: >-
+      LinkedEntityDataDomainAdded represents the type of event registered when a
+      new linked entity data domain is added to the workbook.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"LinkedEntityDataDomainLinkedEntityDataDomainAdded"'
+  - name: linkedEntityDataDomainRefreshCompleted
+    uid: excel!Excel.EventType.linkedEntityDataDomainRefreshCompleted:member
+    package: excel!
+    summary: >-
+      LinkedEntityDataDomainRefreshCompleted represents the type of event
+      registered when the request to refresh `LinkedEntityCellValue` objects of
+      a linked entity data domain is completed.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"LinkedEntityDataDomainRefreshCompleted"'
+  - name: linkedEntityDataDomainRefreshModeChanged
+    uid: excel!Excel.EventType.linkedEntityDataDomainRefreshModeChanged:member
+    package: excel!
+    summary: >-
+      LinkedEntityDataDomainRefreshModeChanged represents the type of event
+      registered when the `refreshMode` of a linked entity data domain is
+      changed.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"LinkedEntityDataDomainRefreshModeChanged"'
   - name: linkedWorkbookRefreshCompleted
     uid: excel!Excel.EventType.linkedWorkbookRefreshCompleted:member
     package: excel!
