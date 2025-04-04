@@ -235,7 +235,7 @@ tryCatch(async () => {
                             
                             const apiYaml: ApiYaml = jsyaml.load(fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8")) as ApiYaml;
                             if (apiYaml.uid.endsWith(":type")) {
-                                let remarks = "\n\nThis type is a union of the following types: \r\n\r\n"
+                                let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
                                 apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
                                     remarks += `<xref uid="excel!Excel.${match}:interface" />`
                                     if (matchIndex < matches.length - 1) {
@@ -254,7 +254,7 @@ tryCatch(async () => {
                         
                         const apiYaml: ApiYaml = jsyaml.load(fsx.readFileSync(subfolder + '/' + subfilename).toString()) as ApiYaml;
                             if (apiYaml.uid.endsWith(":type")) {
-                                let remarks = "\n\nThis type is a union of the following types: \n\n"
+                                let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
                                 apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
                                     remarks += `<xref uid="excel!Excel.${match}:interface" />`
                                     if (matchIndex < matches.length - 1) {
@@ -500,3 +500,4 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     return newToc;
+}
