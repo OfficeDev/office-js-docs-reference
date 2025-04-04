@@ -1,10 +1,10 @@
-### YamlMime:TSType
 name: Word.Interfaces.PageData
-uid: 'word!Word.Interfaces.PageData:interface'
+uid: word!Word.Interfaces.PageData:interface
 package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

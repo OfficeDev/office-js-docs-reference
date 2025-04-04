@@ -1,35 +1,43 @@
-### YamlMime:TSType
 name: Excel.ConditionalTextComparisonRule
-uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
+uid: excel!Excel.ConditionalTextComparisonRule:interface
 package: excel!
 fullName: Excel.ConditionalTextComparisonRule
 summary: Represents a cell value conditional format rule.
-remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: operator
-    uid: 'excel!Excel.ConditionalTextComparisonRule#operator:member'
+    uid: excel!Excel.ConditionalTextComparisonRule#operator:member
     package: excel!
     fullName: operator
     summary: The operator of the text conditional format.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'operator: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith";'
+      content: >-
+        operator: Excel.ConditionalTextOperator | "Invalid" | "Contains" |
+        "NotContains" | "BeginsWith" | "EndsWith";
       return:
         type: >-
-          <xref uid="excel!Excel.ConditionalTextOperator:enum" /> | "Invalid" | "Contains" | "NotContains" |
-          "BeginsWith" | "EndsWith"
+          <xref uid="excel!Excel.ConditionalTextOperator:enum" /> | "Invalid" |
+          "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
   - name: text
-    uid: 'excel!Excel.ConditionalTextComparisonRule#text:member'
+    uid: excel!Excel.ConditionalTextComparisonRule#text:member
     package: excel!
     fullName: text
     summary: The text value of the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -53,6 +61,7 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:

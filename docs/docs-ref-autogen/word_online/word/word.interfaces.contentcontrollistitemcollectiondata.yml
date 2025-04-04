@@ -1,23 +1,28 @@
-### YamlMime:TSType
 name: Word.Interfaces.ContentControlListItemCollectionData
-uid: 'word!Word.Interfaces.ContentControlListItemCollectionData:interface'
+uid: word!Word.Interfaces.ContentControlListItemCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ContentControlListItemCollectionData
-summary: An interface describing the data returned by calling `contentControlListItemCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `contentControlListItemCollection.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.ContentControlListItemCollectionData#items:member'
+    uid: word!Word.Interfaces.ContentControlListItemCollectionData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.ContentControlListItemData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.ContentControlListItemData:interface" />[]'
+        type: >-
+          <xref uid="word!Word.Interfaces.ContentControlListItemData:interface"
+          />[]

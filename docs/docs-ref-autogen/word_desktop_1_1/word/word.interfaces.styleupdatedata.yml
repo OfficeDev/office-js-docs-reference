@@ -1,23 +1,30 @@
-### YamlMime:TSType
 name: Word.Interfaces.StyleUpdateData
-uid: 'word!Word.Interfaces.StyleUpdateData:interface'
+uid: word!Word.Interfaces.StyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.StyleUpdateData
-summary: 'An interface for updating data on the `Style` object, for use in `style.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Style` object, for use in `style.set({
+  ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: baseStyle
-    uid: 'word!Word.Interfaces.StyleUpdateData#baseStyle:member'
+    uid: word!Word.Interfaces.StyleUpdateData#baseStyle:member
     package: word!
     fullName: baseStyle
-    summary: Specifies the name of an existing style to use as the base formatting of another style.
-    remarks: |-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies the name of an existing style to use as the base formatting of
+      another style.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -25,52 +32,74 @@ properties:
       return:
         type: string
   - name: borders
-    uid: 'word!Word.Interfaces.StyleUpdateData#borders:member'
+    uid: word!Word.Interfaces.StyleUpdateData#borders:member
     package: word!
     fullName: borders
-    summary: Specifies a BorderCollection object that represents all the borders for the specified style.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Specifies a BorderCollection object that represents all the borders for
+      the specified style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Word.Interfaces.BorderCollectionUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BorderCollectionUpdateData:interface" />'
+        type: >-
+          <xref uid="word!Word.Interfaces.BorderCollectionUpdateData:interface"
+          />
   - name: font
-    uid: 'word!Word.Interfaces.StyleUpdateData#font:member'
+    uid: word!Word.Interfaces.StyleUpdateData#font:member
     package: word!
     fullName: font
-    summary: Gets a font object that represents the character formatting of the specified style.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets a font object that represents the character formatting of the
+      specified style.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.FontUpdateData:interface" />
   - name: listTemplate
-    uid: 'word!Word.Interfaces.StyleUpdateData#listTemplate:member'
+    uid: word!Word.Interfaces.StyleUpdateData#listTemplate:member
     package: word!
     fullName: listTemplate
-    summary: Gets a ListTemplate object that represents the list formatting for the specified Style object.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets a ListTemplate object that represents the list formatting for the
+      specified Style object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'listTemplate?: Word.Interfaces.ListTemplateUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ListTemplateUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ListTemplateUpdateData:interface" />
   - name: nextParagraphStyle
-    uid: 'word!Word.Interfaces.StyleUpdateData#nextParagraphStyle:member'
+    uid: word!Word.Interfaces.StyleUpdateData#nextParagraphStyle:member
     package: word!
     fullName: nextParagraphStyle
     summary: >-
-      Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
-      formatted with the specified style.
-    remarks: |-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      Specifies the name of the style to be applied automatically to a new
+      paragraph that is inserted after a paragraph formatted with the specified
+      style.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
+
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi
+      1.6.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,23 +107,33 @@ properties:
       return:
         type: string
   - name: paragraphFormat
-    uid: 'word!Word.Interfaces.StyleUpdateData#paragraphFormat:member'
+    uid: word!Word.Interfaces.StyleUpdateData#paragraphFormat:member
     package: word!
     fullName: paragraphFormat
-    summary: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets a ParagraphFormat object that represents the paragraph settings for
+      the specified style.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ParagraphFormatUpdateData:interface" />'
+        type: >-
+          <xref uid="word!Word.Interfaces.ParagraphFormatUpdateData:interface"
+          />
   - name: priority
-    uid: 'word!Word.Interfaces.StyleUpdateData#priority:member'
+    uid: word!Word.Interfaces.StyleUpdateData#priority:member
     package: word!
     fullName: priority
     summary: Specifies the priority.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,11 +141,14 @@ properties:
       return:
         type: number
   - name: quickStyle
-    uid: 'word!Word.Interfaces.StyleUpdateData#quickStyle:member'
+    uid: word!Word.Interfaces.StyleUpdateData#quickStyle:member
     package: word!
     fullName: quickStyle
     summary: Specifies whether the style corresponds to an available quick style.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,37 +156,51 @@ properties:
       return:
         type: boolean
   - name: shading
-    uid: 'word!Word.Interfaces.StyleUpdateData#shading:member'
+    uid: word!Word.Interfaces.StyleUpdateData#shading:member
     package: word!
     fullName: shading
-    summary: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets a Shading object that represents the shading for the specified style.
+      Not applicable to List style.
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ShadingUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ShadingUpdateData:interface" />
   - name: tableStyle
-    uid: 'word!Word.Interfaces.StyleUpdateData#tableStyle:member'
+    uid: word!Word.Interfaces.StyleUpdateData#tableStyle:member
     package: word!
     fullName: tableStyle
-    summary: Gets a TableStyle object representing Style properties that can be applied to a table.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets a TableStyle object representing Style properties that can be applied
+      to a table.
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'tableStyle?: Word.Interfaces.TableStyleUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableStyleUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.TableStyleUpdateData:interface" />
   - name: unhideWhenUsed
-    uid: 'word!Word.Interfaces.StyleUpdateData#unhideWhenUsed:member'
+    uid: word!Word.Interfaces.StyleUpdateData#unhideWhenUsed:member
     package: word!
     fullName: unhideWhenUsed
     summary: >-
-      Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task
-      pane in Microsoft Word after it's used in the document.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies whether the specified style is made visible as a recommended
+      style in the Styles and in the Styles task pane in Microsoft Word after
+      it's used in the document.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,13 +208,16 @@ properties:
       return:
         type: boolean
   - name: visibility
-    uid: 'word!Word.Interfaces.StyleUpdateData#visibility:member'
+    uid: word!Word.Interfaces.StyleUpdateData#visibility:member
     package: word!
     fullName: visibility
     summary: >-
-      Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
-      task pane.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies whether the specified style is visible as a recommended style in
+      the Styles gallery and in the Styles task pane.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

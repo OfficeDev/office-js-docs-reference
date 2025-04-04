@@ -1,47 +1,55 @@
-### YamlMime:TSType
 name: Excel.NoteCollection
-uid: 'excel!Excel.NoteCollection:class'
+uid: excel!Excel.NoteCollection:class
 package: excel!
 fullName: Excel.NoteCollection
 summary: Represents a collection of note objects that are part of the workbook.
-remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'excel!Excel.NoteCollection#context:member'
+    uid: excel!Excel.NoteCollection#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
   - name: items
-    uid: 'excel!Excel.NoteCollection#items:member'
+    uid: excel!Excel.NoteCollection#items:member
     package: excel!
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Excel.Note[];'
       return:
-        type: '<xref uid="excel!Excel.Note:class" />[]'
+        type: <xref uid="excel!Excel.Note:class" />[]
 methods:
-  - name: 'add(cellAddress, content)'
-    uid: 'excel!Excel.NoteCollection#add:member(1)'
+  - name: add(cellAddress, content)
+    uid: excel!Excel.NoteCollection#add:member(1)
     package: excel!
-    fullName: 'add(cellAddress, content)'
+    fullName: add(cellAddress, content)
     summary: Adds a new note with the given content on the given cell.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,34 +57,43 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the note is added. This can be a `Range` object or a string such as "A1". If the string is
-            invalid, or the range is not a single cell, an `InvalidCellAddress` error is thrown.
-          type: '<xref uid="excel!Excel.Range:class" /> | string'
+            The cell to which the note is added. This can be a `Range` object or
+            a string such as "A1". If the string is invalid, or the range is not
+            a single cell, an `InvalidCellAddress` error is thrown.
+          type: <xref uid="excel!Excel.Range:class" /> | string
         - id: content
           description: The text of the note.
           type: any
       return:
-        type: '<xref uid="excel!Excel.Note:class" />'
+        type: <xref uid="excel!Excel.Note:class" />
         description: ''
   - name: getCount()
-    uid: 'excel!Excel.NoteCollection#getCount:member(1)'
+    uid: excel!Excel.NoteCollection#getCount:member(1)
     package: excel!
     fullName: getCount()
     summary: Gets the number of notes in the collection.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: getItem(key)
-    uid: 'excel!Excel.NoteCollection#getItem:member(1)'
+    uid: excel!Excel.NoteCollection#getItem:member(1)
     package: excel!
     fullName: getItem(key)
     summary: Gets a note by its cell address.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,16 +103,20 @@ methods:
           description: The cell address of the note.
           type: string
       return:
-        type: '<xref uid="excel!Excel.Note:class" />'
+        type: <xref uid="excel!Excel.Note:class" />
         description: >-
-          The note with the given cell address. If there is no note with the given cell address, then the `ItemNotFound`
-          error is thrown.
+          The note with the given cell address. If there is no note with the
+          given cell address, then the `ItemNotFound` error is thrown.
   - name: getItemAt(index)
-    uid: 'excel!Excel.NoteCollection#getItemAt:member(1)'
+    uid: excel!Excel.NoteCollection#getItemAt:member(1)
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a note from the collection based on its position.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,18 +126,23 @@ methods:
           description: The index value of the note to be retrieved. Zero-indexed.
           type: number
       return:
-        type: '<xref uid="excel!Excel.Note:class" />'
+        type: <xref uid="excel!Excel.Note:class" />
         description: ''
   - name: getItemOrNullObject(key)
-    uid: 'excel!Excel.NoteCollection#getItemOrNullObject:member(1)'
+    uid: excel!Excel.NoteCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a note by its cell address. If the note object does not exist, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      Gets a note by its cell address. If the note object does not exist, then
+      this method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,87 +152,102 @@ methods:
           description: The cell address of the note.
           type: string
       return:
-        type: '<xref uid="excel!Excel.Note:class" />'
+        type: <xref uid="excel!Excel.Note:class" />
         description: The note with the given cell address or null object.
   - name: load(options)
-    uid: 'excel!Excel.NoteCollection#load:member(1)'
+    uid: excel!Excel.NoteCollection#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.NoteCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.NoteCollection;
+        load(options?: Excel.Interfaces.NoteCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.NoteCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref uid="excel!Excel.Interfaces.NoteCollectionLoadOptions:interface" /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+            <xref
+            uid="excel!Excel.Interfaces.NoteCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="excel!Excel.NoteCollection:class" />'
+        type: <xref uid="excel!Excel.NoteCollection:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.NoteCollection#load:member(2)'
+    uid: excel!Excel.NoteCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NoteCollection;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.NoteCollection:class" />'
+        type: <xref uid="excel!Excel.NoteCollection:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.NoteCollection#load:member(3)'
+    uid: excel!Excel.NoteCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NoteCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.NoteCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
-        type: '<xref uid="excel!Excel.NoteCollection:class" />'
+        type: <xref uid="excel!Excel.NoteCollection:class" />
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.NoteCollection#toJSON:member(1)'
+    uid: excel!Excel.NoteCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.NoteCollection` object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.NoteCollectionData`<!-- -->) that contains an "items" array
-      with shallow copies of any loaded properties from the collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.NoteCollection`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.NoteCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties
+      from the collection's items.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.NoteCollectionData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.NoteCollectionData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.NoteCollectionData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

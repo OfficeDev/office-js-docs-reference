@@ -1,22 +1,27 @@
-### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideLoadOptions
-uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
+uid: powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLoadOptions
 summary: Represents a single slide of a presentation.
-remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member'
+    uid: powerpoint!PowerPoint.Interfaces.SlideLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +29,15 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member'
+    uid: powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

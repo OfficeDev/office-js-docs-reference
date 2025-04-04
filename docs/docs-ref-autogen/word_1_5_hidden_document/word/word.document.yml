@@ -1,13 +1,14 @@
-### YamlMime:TSType
 name: Word.Document
-uid: 'word!Word.Document:class'
+uid: word!Word.Document:class
 package: word!
 fullName: Word.Document
 summary: >-
-  The Document object is the top level object. A Document object contains one or more sections, content controls, and
-  the body that contains the contents of the document.
+  The Document object is the top level object. A Document object contains one or
+  more sections, content controls, and the body that contains the contents of
+  the document.
 remarks: >-
-  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -36,31 +37,36 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: body
-    uid: 'word!Word.Document#body:member'
+    uid: word!Word.Document#body:member
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
-      textboxes, etc.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Gets the body object of the main document. The body is the text that
+      excludes headers, footers, footnotes, textboxes, etc.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly body: Word.Body;'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type: <xref uid="word!Word.Body:class" />
   - name: changeTrackingMode
-    uid: 'word!Word.Document#changeTrackingMode:member'
+    uid: word!Word.Document#changeTrackingMode:member
     package: word!
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
     remarks: >-
-      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -89,59 +95,73 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
+      content: >-
+        changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" |
+        "TrackMineOnly";
       return:
-        type: '<xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"'
+        type: >-
+          <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
+          | "TrackMineOnly"
   - name: contentControls
-    uid: 'word!Word.Document#contentControls:member'
+    uid: word!Word.Document#contentControls:member
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Gets the collection of content control objects in the document. This
+      includes content controls in the body of the document, headers, footers,
+      textboxes, etc.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
-        type: '<xref uid="word!Word.ContentControlCollection:class" />'
+        type: <xref uid="word!Word.ContentControlCollection:class" />
   - name: context
-    uid: 'word!Word.Document#context:member'
+    uid: word!Word.Document#context:member
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
+        type: <xref uid="word!Word.RequestContext:class" />
   - name: customXmlParts
-    uid: 'word!Word.Document#customXmlParts:member'
+    uid: word!Word.Document#customXmlParts:member
     package: word!
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
-        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
+        type: <xref uid="word!Word.CustomXmlPartCollection:class" />
   - name: properties
-    uid: 'word!Word.Document#properties:member'
+    uid: word!Word.Document#properties:member
     package: word!
     fullName: properties
     summary: Gets the properties of the document.
     remarks: >-
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -162,20 +182,24 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
-        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        type: <xref uid="word!Word.DocumentProperties:class" />
   - name: saved
-    uid: 'word!Word.Document#saved:member'
+    uid: word!Word.Document#saved:member
     package: word!
     fullName: saved
     summary: >-
-      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Indicates whether the changes in the document have been saved. A value of
+      true indicates that the document hasn't changed since it was saved.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,24 +207,28 @@ properties:
       return:
         type: boolean
   - name: sections
-    uid: 'word!Word.Document#sections:member'
+    uid: word!Word.Document#sections:member
     package: word!
     fullName: sections
     summary: Gets the collection of section objects in the document.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly sections: Word.SectionCollection;'
       return:
-        type: '<xref uid="word!Word.SectionCollection:class" />'
+        type: <xref uid="word!Word.SectionCollection:class" />
   - name: settings
-    uid: 'word!Word.Document#settings:member'
+    uid: word!Word.Document#settings:member
     package: word!
     fullName: settings
     summary: Gets the add-in's settings in the document.
     remarks: >-
-      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -230,20 +258,22 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly settings: Word.SettingCollection;'
       return:
-        type: '<xref uid="word!Word.SettingCollection:class" />'
+        type: <xref uid="word!Word.SettingCollection:class" />
 methods:
-  - name: 'addStyle(name, type)'
-    uid: 'word!Word.Document#addStyle:member(1)'
+  - name: addStyle(name, type)
+    uid: word!Word.Document#addStyle:member(1)
     package: word!
-    fullName: 'addStyle(name, type)'
+    fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -258,7 +288,7 @@ methods:
       // Adds a new style.
 
       await Word.run(async (context) => {
-        const newStyleName = (document.getElementById("new-style-name") as HTMLInputElement).value;
+        const newStyleName = $("#new-style-name").val() as string;
         if (newStyleName == "") {
           console.warn("Enter a style name to add.");
           return;
@@ -275,7 +305,7 @@ methods:
           return;
         }
 
-        const newStyleType = ((document.getElementById("new-style-type") as HTMLSelectElement).value as unknown) as Word.StyleType;
+        const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
         context.document.addStyle(newStyleName, newStyleType);
         await context.sync();
 
@@ -283,6 +313,7 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,33 +323,42 @@ methods:
           description: Required. A string representing the style name.
           type: string
         - id: type
-          description: 'Required. The style type, including character, list, paragraph, or table.'
-          type: '<xref uid="word!Word.StyleType:enum" />'
+          description: >-
+            Required. The style type, including character, list, paragraph, or
+            table.
+          type: <xref uid="word!Word.StyleType:enum" />
       return:
-        type: '<xref uid="word!Word.Style:class" />'
+        type: <xref uid="word!Word.Style:class" />
         description: ''
-  - name: 'addStyle(name, typeString)'
-    uid: 'word!Word.Document#addStyle:member(2)'
+  - name: addStyle(name, typeString)
+    uid: word!Word.Document#addStyle:member(2)
     package: word!
-    fullName: 'addStyle(name, typeString)'
+    fullName: addStyle(name, typeString)
     summary: Adds a style into the document by name and type.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;'
+      content: >-
+        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" |
+        "Table"): Word.Style;
       parameters:
         - id: name
           description: Required. A string representing the style name.
           type: string
         - id: typeString
-          description: 'Required. The style type, including character, list, paragraph, or table.'
+          description: >-
+            Required. The style type, including character, list, paragraph, or
+            table.
           type: '"Character" | "List" | "Paragraph" | "Table"'
       return:
-        type: '<xref uid="word!Word.Style:class" />'
+        type: <xref uid="word!Word.Style:class" />
         description: ''
   - name: close(closeBehavior)
-    uid: 'word!Word.Document#close:member(1)'
+    uid: word!Word.Document#close:member(1)
     package: word!
     fullName: close(closeBehavior)
     summary: |-
@@ -326,7 +366,8 @@ methods:
 
       Note: This API isn't supported in Word on the web.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -347,43 +388,54 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'close(closeBehavior?: Word.CloseBehavior): void;'
       parameters:
         - id: closeBehavior
-          description: Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
-          type: '<xref uid="word!Word.CloseBehavior:enum" />'
+          description: >-
+            Optional. The close behavior must be 'Save' or 'SkipSave'. Default
+            value is 'Save'.
+          type: <xref uid="word!Word.CloseBehavior:enum" />
       return:
         type: void
         description: ''
   - name: close(closeBehaviorString)
-    uid: 'word!Word.Document#close:member(2)'
+    uid: word!Word.Document#close:member(2)
     package: word!
     fullName: close(closeBehaviorString)
     summary: |-
       Closes the current document.
 
       Note: This API isn't supported in Word on the web.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
       parameters:
         - id: closeBehaviorString
-          description: Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+          description: >-
+            Optional. The close behavior must be 'Save' or 'SkipSave'. Default
+            value is 'Save'.
           type: '"Save" | "SkipSave"'
       return:
         type: void
         description: ''
   - name: deleteBookmark(name)
-    uid: 'word!Word.Document#deleteBookmark:member(1)'
+    uid: word!Word.Document#deleteBookmark:member(1)
     package: word!
     fullName: deleteBookmark(name)
-    summary: 'Deletes a bookmark, if it exists, from the document.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Deletes a bookmark, if it exists, from the document.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -396,11 +448,16 @@ methods:
         type: void
         description: ''
   - name: getBookmarkRange(name)
-    uid: 'word!Word.Document#getBookmarkRange:member(1)'
+    uid: word!Word.Document#getBookmarkRange:member(1)
     package: word!
     fullName: getBookmarkRange(name)
-    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark
+      doesn't exist.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,18 +467,22 @@ methods:
           description: Required. The case-insensitive bookmark name.
           type: string
       return:
-        type: '<xref uid="word!Word.Range:class" />'
+        type: <xref uid="word!Word.Range:class" />
         description: ''
   - name: getBookmarkRangeOrNullObject(name)
-    uid: 'word!Word.Document#getBookmarkRangeOrNullObject:member(1)'
+    uid: word!Word.Document#getBookmarkRangeOrNullObject:member(1)
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
-      Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      Gets a bookmark's range. If the bookmark doesn't exist, then this method
+      will return an object with its `isNullObject` property set to `true`<!--
+      -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -431,22 +492,25 @@ methods:
           description: Required. The case-insensitive bookmark name.
           type: string
       return:
-        type: '<xref uid="word!Word.Range:class" />'
+        type: <xref uid="word!Word.Range:class" />
         description: ''
   - name: getContentControls(options)
-    uid: 'word!Word.Document#getContentControls:member(1)'
+    uid: word!Word.Document#getContentControls:member(1)
     package: word!
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the document.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Important: If specific types are provided in the options parameter, only content controls of supported types are
-      returned. Be aware that an exception will be thrown on using methods of a generic
-      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
-      additional types of content controls may be supported. Therefore, your add-in should request and handle specific
-      types of content controls.
+      Important: If specific types are provided in the options parameter, only
+      content controls of supported types are returned. Be aware that an
+      exception will be thrown on using methods of a generic
+      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
+      relevant for the specific type. With time, additional types of content
+      controls may be supported. Therefore, your add-in should request and
+      handle specific types of content controls.
 
 
       #### Examples
@@ -508,55 +572,71 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
+      content: >-
+        getContentControls(options?: Word.ContentControlOptions):
+        Word.ContentControlCollection;
       parameters:
         - id: options
           description: Optional. Options that define which content controls are returned.
-          type: '<xref uid="word!Word.ContentControlOptions:interface" />'
+          type: <xref uid="word!Word.ContentControlOptions:interface" />
       return:
-        type: '<xref uid="word!Word.ContentControlCollection:class" />'
+        type: <xref uid="word!Word.ContentControlCollection:class" />
         description: ''
   - name: getEndnoteBody()
-    uid: 'word!Word.Document#getEndnoteBody:member(1)'
+    uid: word!Word.Document#getEndnoteBody:member(1)
     package: word!
     fullName: getEndnoteBody()
     summary: Gets the document's endnotes in a single body.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getEndnoteBody(): Word.Body;'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type: <xref uid="word!Word.Body:class" />
         description: ''
   - name: getFootnoteBody()
-    uid: 'word!Word.Document#getFootnoteBody:member(1)'
+    uid: word!Word.Document#getFootnoteBody:member(1)
     package: word!
     fullName: getFootnoteBody()
     summary: Gets the document's footnotes in a single body.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getFootnoteBody(): Word.Body;'
       return:
-        type: '<xref uid="word!Word.Body:class" />'
+        type: <xref uid="word!Word.Body:class" />
         description: ''
   - name: getSelection()
-    uid: 'word!Word.Document#getSelection:member(1)'
+    uid: word!Word.Document#getSelection:member(1)
     package: word!
     fullName: getSelection()
-    summary: Gets the current selection of the document. Multiple selections aren't supported.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Gets the current selection of the document. Multiple selections aren't
+      supported.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
           
           const textSample = 'This is an example of the insert text method. This is a method ' + 
@@ -576,21 +656,26 @@ methods:
           await context.sync();
           console.log('Inserted the text at the end of the selection.');
       });  
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelection(): Word.Range;'
       return:
-        type: '<xref uid="word!Word.Range:class" />'
+        type: <xref uid="word!Word.Range:class" />
         description: ''
   - name: getStyles()
-    uid: 'word!Word.Document#getStyles:member(1)'
+    uid: word!Word.Document#getStyles:member(1)
     package: word!
     fullName: getStyles()
-    summary: Gets a StyleCollection object that represents the whole style set of the document.
+    summary: >-
+      Gets a StyleCollection object that represents the whole style set of the
+      document.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -613,26 +698,31 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getStyles(): Word.StyleCollection;'
       return:
-        type: '<xref uid="word!Word.StyleCollection:class" />'
+        type: <xref uid="word!Word.StyleCollection:class" />
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
-    uid: 'word!Word.Document#insertFileFromBase64:member(1)'
+  - name: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
+    uid: word!Word.Document#insertFileFromBase64:member(1)
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
+    fullName: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
     summary: >-
-      Inserts a document into the target document at a specific location with additional properties. Headers, footers,
-      watermarks, and other section properties are copied by default.
+      Inserts a document into the target document at a specific location with
+      additional properties. Headers, footers, watermarks, and other section
+      properties are copied by default.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Note: Insertion isn't supported if the document being inserted contains an
+      ActiveX control (likely in a form field). Consider replacing such a form
+      field with a content control or other option appropriate for your
+      scenario.
 
 
       #### Examples
@@ -644,7 +734,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
 
-      // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
+      // Inserts content (applying selected settings) from another document
+      passed in as a Base64-encoded string.
 
       await Word.run(async (context) => {
         // Use the Base64-encoded string representation of the selected .docx file.
@@ -662,36 +753,43 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
-        | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions):
-        Word.SectionCollection;
+        insertFileFromBase64(base64File: string, insertLocation:
+        Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End",
+        insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
       parameters:
         - id: base64File
           description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
+          description: Required. The value must be 'Replace', 'Start', or 'End'.
           type: >-
-            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
-            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
+            uid="word!Word.InsertLocation.start:member" /> | <xref
+            uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" |
+            "End"
         - id: insertFileOptions
-          description: Optional. The additional properties that should be imported to the destination document.
-          type: '<xref uid="word!Word.InsertFileOptions:interface" />'
+          description: >-
+            Optional. The additional properties that should be imported to the
+            destination document.
+          type: <xref uid="word!Word.InsertFileOptions:interface" />
       return:
-        type: '<xref uid="word!Word.SectionCollection:class" />'
+        type: <xref uid="word!Word.SectionCollection:class" />
         description: ''
   - name: load(options)
-    uid: 'word!Word.Document#load:member(1)'
+    uid: word!Word.Document#load:member(1)
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -699,9 +797,9 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="word!Word.Interfaces.DocumentLoadOptions:interface" />'
+          type: <xref uid="word!Word.Interfaces.DocumentLoadOptions:interface" />
       return:
-        type: '<xref uid="word!Word.Document:class" />'
+        type: <xref uid="word!Word.Document:class" />
         description: |-
 
 
@@ -732,32 +830,36 @@ methods:
           });
           ```
   - name: load(propertyNames)
-    uid: 'word!Word.Document#load:member(2)'
+    uid: word!Word.Document#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Document;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="word!Word.Document:class" />'
+        type: <xref uid="word!Word.Document:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.Document#load:member(3)'
+    uid: word!Word.Document#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -769,26 +871,30 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="word!Word.Document:class" />'
+        type: <xref uid="word!Word.Document:class" />
         description: ''
-  - name: 'save(saveBehavior, fileName)'
-    uid: 'word!Word.Document#save:member(1)'
+  - name: save(saveBehavior, fileName)
+    uid: word!Word.Document#save:member(1)
     package: word!
-    fullName: 'save(saveBehavior, fileName)'
+    fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+      Note: The `saveBehavior` and `fileName` parameters were introduced in
+      WordApi 1.5.
 
 
       #### Examples
@@ -841,73 +947,96 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;'
       parameters:
         - id: saveBehavior
-          description: Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
-          type: '<xref uid="word!Word.SaveBehavior:enum" />'
+          description: >-
+            Optional. The save behavior must be 'Save' or 'Prompt'. Default
+            value is 'Save'.
+          type: <xref uid="word!Word.SaveBehavior:enum" />
         - id: fileName
-          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
+          description: >-
+            Optional. The file name (exclude file extension). Only takes effect
+            for a new document.
           type: string
       return:
         type: void
         description: ''
-  - name: 'save(saveBehaviorString, fileName)'
-    uid: 'word!Word.Document#save:member(2)'
+  - name: save(saveBehaviorString, fileName)
+    uid: word!Word.Document#save:member(2)
     package: word!
-    fullName: 'save(saveBehaviorString, fileName)'
+    fullName: save(saveBehaviorString, fileName)
     summary: Saves the document.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+
+      Note: The `saveBehavior` and `fileName` parameters were introduced in
+      WordApi 1.5.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;'
       parameters:
         - id: saveBehaviorString
-          description: Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+          description: >-
+            Optional. The save behavior must be 'Save' or 'Prompt'. Default
+            value is 'Save'.
           type: '"Save" | "Prompt"'
         - id: fileName
-          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
+          description: >-
+            Optional. The file name (exclude file extension). Only takes effect
+            for a new document.
           type: string
       return:
         type: void
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'word!Word.Document#set:member(1)'
+  - name: set(properties, options)
+    uid: word!Word.Document#set:member(1)
     package: word!
-    fullName: 'set(properties, options)'
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.DocumentUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
   - name: set(properties)
-    uid: 'word!Word.Document#set:member(2)'
+    uid: word!Word.Document#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -915,75 +1044,86 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="word!Word.Document:class" />'
+          type: <xref uid="word!Word.Document:class" />
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'word!Word.Document#toJSON:member(1)'
+    uid: word!Word.Document#toJSON:member(1)
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Document` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.DocumentData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.DocumentData:interface" />'
+        type: <xref uid="word!Word.Interfaces.DocumentData:interface" />
         description: ''
   - name: track()
-    uid: 'word!Word.Document#track:member(1)'
+    uid: word!Word.Document#track:member(1)
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created. If this object is part of a collection,
-      you should also track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.Document;'
       return:
-        type: '<xref uid="word!Word.Document:class" />'
+        type: <xref uid="word!Word.Document:class" />
         description: ''
   - name: untrack()
-    uid: 'word!Word.Document#untrack:member(1)'
+    uid: word!Word.Document#untrack:member(1)
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.Document;'
       return:
-        type: '<xref uid="word!Word.Document:class" />'
+        type: <xref uid="word!Word.Document:class" />
         description: ''
 events:
   - name: onContentControlAdded
-    uid: 'word!Word.Document#onContentControlAdded:member'
+    uid: word!Word.Document#onContentControlAdded:member
     package: word!
     fullName: onContentControlAdded
     summary: >-
-      Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
-      properties.
+      Occurs when a content control is added. Run context.sync() in the handler
+      to get the new content control's properties.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -1008,19 +1148,23 @@ events:
       ...
 
 
-      async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
+      async function contentControlAdded(event:
+      Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {
           console.log(`${event.eventType} event detected. IDs of content controls that were added:`, event.ids);
         });
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
+      content: >-
+        readonly onContentControlAdded:
+        OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

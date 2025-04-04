@@ -1,22 +1,24 @@
-### YamlMime:TSType
 name: Office.GetBindingDataOptions
-uid: 'office!Office.GetBindingDataOptions:interface'
+uid: office!Office.GetBindingDataOptions:interface
 package: office!
 fullName: Office.GetBindingDataOptions
 summary: Provides options for how to get the data in a binding.
-remarks: 'If the rows option is used, the value must be "thisRow".'
+remarks: If the rows option is used, the value must be "thisRow".
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: asyncContext
-    uid: 'office!Office.GetBindingDataOptions#asyncContext:member'
+    uid: office!Office.GetBindingDataOptions#asyncContext:member
     package: office!
     fullName: asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
-      object that is passed to a callback.
+      A user-defined item of any type that is returned, unchanged, in the
+      asyncContext property of the AsyncResult object that is passed to a
+      callback.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,27 +26,30 @@ properties:
       return:
         type: any
   - name: coercionType
-    uid: 'office!Office.GetBindingDataOptions#coercionType:member'
+    uid: office!Office.GetBindingDataOptions#coercionType:member
     package: office!
     fullName: coercionType
     summary: >-
-      The expected shape of the selection. Use [Office.CoercionType](xref:office!Office.CoercionType:enum) or text
-      value. Default: The original, uncoerced type of the binding.
+      The expected shape of the selection. Use
+      [Office.CoercionType](xref:office!Office.CoercionType:enum) or text value.
+      Default: The original, uncoerced type of the binding.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'coercionType?: Office.CoercionType | string'
       return:
-        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
+        type: <xref uid="office!Office.CoercionType:enum" /> | string
   - name: columnCount
-    uid: 'office!Office.GetBindingDataOptions#columnCount:member'
+    uid: office!Office.GetBindingDataOptions#columnCount:member
     package: office!
     fullName: columnCount
     summary: >-
-      For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all
-      subsequent columns.
+      For table or matrix bindings, specifies the number of columns offset from
+      the startColumn. Default is all subsequent columns.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,27 +57,30 @@ properties:
       return:
         type: number
   - name: filterType
-    uid: 'office!Office.GetBindingDataOptions#filterType:member'
+    uid: office!Office.GetBindingDataOptions#filterType:member
     package: office!
     fullName: filterType
     summary: >-
-      Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering
-      data. Use Office.FilterType or text value.
+      Specify whether to get only the visible (filtered in) data or all the data
+      (default is all). Useful when filtering data. Use Office.FilterType or
+      text value.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'filterType?: Office.FilterType | string'
       return:
-        type: '<xref uid="office!Office.FilterType:enum" /> | string'
+        type: <xref uid="office!Office.FilterType:enum" /> | string
   - name: rowCount
-    uid: 'office!Office.GetBindingDataOptions#rowCount:member'
+    uid: office!Office.GetBindingDataOptions#rowCount:member
     package: office!
     fullName: rowCount
     summary: >-
-      For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent
-      rows.
+      For table or matrix bindings, specifies the number of rows offset from the
+      startRow. Default is all subsequent rows.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,13 +88,14 @@ properties:
       return:
         type: number
   - name: rows
-    uid: 'office!Office.GetBindingDataOptions#rows:member'
+    uid: office!Office.GetBindingDataOptions#rows:member
     package: office!
     fullName: rows
     summary: >-
-      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
-      the currently selected row.
+      Only for table bindings in content add-ins for Access. Specifies the
+      pre-defined string "thisRow" to get data in the currently selected row.
     remarks: ''
+
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Microsoft Access is no longer supported.
@@ -95,13 +104,14 @@ properties:
       return:
         type: string
   - name: startColumn
-    uid: 'office!Office.GetBindingDataOptions#startColumn:member'
+    uid: office!Office.GetBindingDataOptions#startColumn:member
     package: office!
     fullName: startColumn
     summary: >-
-      For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding.
-      Default is first column.
+      For table or matrix bindings, specifies the zero-based starting column for
+      a subset of the data in the binding. Default is first column.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,13 +119,14 @@ properties:
       return:
         type: number
   - name: startRow
-    uid: 'office!Office.GetBindingDataOptions#startRow:member'
+    uid: office!Office.GetBindingDataOptions#startRow:member
     package: office!
     fullName: startRow
     summary: >-
-      For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding.
-      Default is first row.
+      For table or matrix bindings, specifies the zero-based starting row for a
+      subset of the data in the binding. Default is first row.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,16 +134,18 @@ properties:
       return:
         type: number
   - name: valueFormat
-    uid: 'office!Office.GetBindingDataOptions#valueFormat:member'
+    uid: office!Office.GetBindingDataOptions#valueFormat:member
     package: office!
     fullName: valueFormat
     summary: >-
-      Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use
-      Office.ValueFormat or text value. Default: Unformatted data.
+      Specifies whether values, such as numbers and dates, are returned with
+      their formatting applied. Use Office.ValueFormat or text value. Default:
+      Unformatted data.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'valueFormat?: Office.ValueFormat | string'
       return:
-        type: '<xref uid="office!Office.ValueFormat:enum" /> | string'
+        type: <xref uid="office!Office.ValueFormat:enum" /> | string

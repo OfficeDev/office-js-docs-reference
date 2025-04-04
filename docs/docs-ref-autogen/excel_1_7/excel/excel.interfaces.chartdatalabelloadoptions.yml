@@ -1,22 +1,26 @@
-### YamlMime:TSType
 name: Excel.Interfaces.ChartDataLabelLoadOptions
-uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelLoadOptions
 summary: Represents the data label of a chart point.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +28,16 @@ properties:
       return:
         type: boolean
   - name: position
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#position:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#position:member
     package: excel!
     fullName: position
-    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Value that represents the position of the data label. See
+      `Excel.ChartDataLabelPosition` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,11 +45,14 @@ properties:
       return:
         type: boolean
   - name: separator
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#separator:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#separator:member
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data label on a chart.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +60,14 @@ properties:
       return:
         type: boolean
   - name: showBubbleSize
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showBubbleSize:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#showBubbleSize:member
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +75,14 @@ properties:
       return:
         type: boolean
   - name: showCategoryName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showCategoryName:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#showCategoryName:member
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,11 +90,14 @@ properties:
       return:
         type: boolean
   - name: showLegendKey
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showLegendKey:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#showLegendKey:member
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,11 +105,14 @@ properties:
       return:
         type: boolean
   - name: showPercentage
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showPercentage:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#showPercentage:member
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,11 +120,14 @@ properties:
       return:
         type: boolean
   - name: showSeriesName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showSeriesName:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#showSeriesName:member
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,11 +135,14 @@ properties:
       return:
         type: boolean
   - name: showValue
-    uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showValue:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#showValue:member
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,16 +1,16 @@
-### YamlMime:TSEnum
 name: Office.MailboxEnums.RecurrenceType
-uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
+uid: outlook!Office.MailboxEnums.RecurrenceType:enum
 package: outlook!
 fullName: Office.MailboxEnums.RecurrenceType
 summary: Specifies the type of recurrence.
 remarks: >-
-  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose or Read
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
 
 
   #### Examples
@@ -31,11 +31,13 @@ remarks: >-
 
   // Set series start date to tomorrow.
 
-  seriesTimeObject.setStartDate(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay() + 1);
+  seriesTimeObject.setStartDate(currentDate.getFullYear(),
+  currentDate.getMonth(), currentDate.getDay() + 1);
 
   // Set series end date to one year from now.
 
-  seriesTimeObject.setEndDate(currentDate.getFullYear() + 1, currentDate.getMonth() + 1, currentDate.getDay());
+  seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+  currentDate.getMonth() + 1, currentDate.getDay());
 
   // Set start time to 1:30 PM.
 
@@ -68,31 +70,32 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: Daily
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Daily:member'
+    uid: outlook!Office.MailboxEnums.RecurrenceType.Daily:member
     package: outlook!
     summary: Daily.
     value: '"daily"'
   - name: Weekday
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekday:member'
+    uid: outlook!Office.MailboxEnums.RecurrenceType.Weekday:member
     package: outlook!
     summary: Weekday.
     value: '"weekday"'
   - name: Weekly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekly:member'
+    uid: outlook!Office.MailboxEnums.RecurrenceType.Weekly:member
     package: outlook!
     summary: Weekly.
     value: '"weekly"'
   - name: Monthly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Monthly:member'
+    uid: outlook!Office.MailboxEnums.RecurrenceType.Monthly:member
     package: outlook!
     summary: Monthly.
     value: '"monthly"'
   - name: Yearly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Yearly:member'
+    uid: outlook!Office.MailboxEnums.RecurrenceType.Yearly:member
     package: outlook!
     summary: Yearly.
     value: '"yearly"'

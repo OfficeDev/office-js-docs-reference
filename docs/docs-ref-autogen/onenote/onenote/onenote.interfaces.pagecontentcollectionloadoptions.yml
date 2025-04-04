@@ -1,22 +1,26 @@
-### YamlMime:TSType
 name: OneNote.Interfaces.PageContentCollectionLoadOptions
-uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
+uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageContentCollectionLoadOptions
-summary: 'Represents the contents of a page, as a collection of PageContent objects.'
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+summary: Represents the contents of a page, as a collection of PageContent objects.
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#$all:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#$all:member
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +28,17 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#id:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#id:member
     package: onenote!
     fullName: id
-    summary: 'For EACH ITEM in the collection: Gets the ID of the PageContent object. Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the PageContent object.
+      Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,39 +46,55 @@ properties:
       return:
         type: boolean
   - name: image
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member
     package: onenote!
     fullName: image
     summary: >-
-      For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType
-      isn't Image.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Gets the Image in the PageContent object.
+      Throws an exception if PageContentType isn't Image.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.ImageLoadOptions:interface" />'
+        type: <xref uid="onenote!OneNote.Interfaces.ImageLoadOptions:interface" />
   - name: ink
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member
     package: onenote!
     fullName: ink
     summary: >-
-      For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType
-      isn't Ink.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Gets the ink in the PageContent object.
+      Throws an exception if PageContentType isn't Ink.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'ink?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
   - name: left
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#left:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#left:member
     package: onenote!
     fullName: left
-    summary: 'For EACH ITEM in the collection: Gets or sets the left (X-axis) position of the PageContent object.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the left (X-axis) position
+      of the PageContent object.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,37 +102,54 @@ properties:
       return:
         type: boolean
   - name: outline
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member
     package: onenote!
     fullName: outline
     summary: >-
-      For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if
-      PageContentType isn't Outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Gets the Outline in the PageContent
+      object. Throws an exception if PageContentType isn't Outline.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface" />'
+        type: <xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface" />
   - name: parentPage
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member'
+    uid: >-
+      onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member
     package: onenote!
     fullName: parentPage
-    summary: 'For EACH ITEM in the collection: Gets the page that contains the PageContent object.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Gets the page that contains the
+      PageContent object.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentPage?: OneNote.Interfaces.PageLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.PageLoadOptions:interface" />'
+        type: <xref uid="onenote!OneNote.Interfaces.PageLoadOptions:interface" />
   - name: top
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#top:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#top:member
     package: onenote!
     fullName: top
-    summary: 'For EACH ITEM in the collection: Gets or sets the top (Y-axis) position of the PageContent object.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the top (Y-axis) position of
+      the PageContent object.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,11 +157,17 @@ properties:
       return:
         type: boolean
   - name: type
-    uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#type:member'
+    uid: onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#type:member
     package: onenote!
     fullName: type
-    summary: 'For EACH ITEM in the collection: Gets the type of the PageContent object. Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Gets the type of the PageContent object.
+      Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

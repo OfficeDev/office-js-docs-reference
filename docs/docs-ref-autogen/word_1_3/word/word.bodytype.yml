@@ -1,11 +1,11 @@
-### YamlMime:TSEnum
 name: Word.BodyType
-uid: 'word!Word.BodyType:enum'
+uid: word!Word.BodyType:enum
 package: word!
 fullName: Word.BodyType
 summary: Represents the types of body objects.
 remarks: >-
-  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -17,14 +17,15 @@ remarks: >-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
 
-  // Gets the referenced note's item type and body type, which are both "Footnote".
+  // Gets the referenced note's item type and body type, which are both
+  "Footnote".
 
   await Word.run(async (context) => {
     const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
     footnotes.load("items");
     await context.sync();
 
-    const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
+    const referenceNumber = $("#input-reference").val();
     const mark = (referenceNumber as number) - 1;
     const item: Word.NoteItem = footnotes.items[mark];
     console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
@@ -36,54 +37,67 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: footer
-    uid: 'word!Word.BodyType.footer:member'
+    uid: word!Word.BodyType.footer:member
     package: word!
-    summary: |-
+    summary: >-
       Footer body.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footer"'
   - name: header
-    uid: 'word!Word.BodyType.header:member'
+    uid: word!Word.BodyType.header:member
     package: word!
-    summary: |-
+    summary: >-
       Header body.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Header"'
   - name: mainDoc
-    uid: 'word!Word.BodyType.mainDoc:member'
+    uid: word!Word.BodyType.mainDoc:member
     package: word!
-    summary: |-
+    summary: >-
       Main document body.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MainDoc"'
   - name: section
-    uid: 'word!Word.BodyType.section:member'
+    uid: word!Word.BodyType.section:member
     package: word!
-    summary: |-
+    summary: >-
       Section body.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Section"'
   - name: tableCell
-    uid: 'word!Word.BodyType.tableCell:member'
+    uid: word!Word.BodyType.tableCell:member
     package: word!
-    summary: |-
+    summary: >-
       Table cell body.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TableCell"'
   - name: unknown
-    uid: 'word!Word.BodyType.unknown:member'
+    uid: word!Word.BodyType.unknown:member
     package: word!
-    summary: |-
+    summary: >-
       Unknown body type.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unknown"'

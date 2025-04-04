@@ -1,66 +1,86 @@
-### YamlMime:TSEnum
 name: Word.ShapeTextOrientation
-uid: 'word!Word.ShapeTextOrientation:enum'
+uid: word!Word.ShapeTextOrientation:enum
 package: word!
 fullName: Word.ShapeTextOrientation
 summary: Specifies the orientation for the text frame in a shape.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: eastAsianHorizontalRotated
-    uid: 'word!Word.ShapeTextOrientation.eastAsianHorizontalRotated:member'
+    uid: word!Word.ShapeTextOrientation.eastAsianHorizontalRotated:member
     package: word!
-    summary: |-
-      A special version of vertical text, where some fonts are displayed as if rotated.
+    summary: >-
+      A special version of vertical text, where some fonts are displayed as if
+      rotated.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EastAsianHorizontalRotated"'
   - name: eastAsianVertical
-    uid: 'word!Word.ShapeTextOrientation.eastAsianVertical:member'
+    uid: word!Word.ShapeTextOrientation.eastAsianVertical:member
     package: word!
-    summary: |-
-      A special version of vertical text, where some fonts are displayed as if rotated.
+    summary: >-
+      A special version of vertical text, where some fonts are displayed as if
+      rotated.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EastAsianVertical"'
   - name: horizontal
-    uid: 'word!Word.ShapeTextOrientation.horizontal:member'
+    uid: word!Word.ShapeTextOrientation.horizontal:member
     package: word!
-    summary: |-
+    summary: >-
       Horizontal text.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Horizontal"'
   - name: mixed
-    uid: 'word!Word.ShapeTextOrientation.mixed:member'
+    uid: word!Word.ShapeTextOrientation.mixed:member
     package: word!
-    summary: |-
+    summary: >-
       A combination of automatic orientation is used.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: none
-    uid: 'word!Word.ShapeTextOrientation.none:member'
+    uid: word!Word.ShapeTextOrientation.none:member
     package: word!
-    summary: |-
+    summary: >-
       No orientation, such as in a new geometric shape.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: vertical
-    uid: 'word!Word.ShapeTextOrientation.vertical:member'
+    uid: word!Word.ShapeTextOrientation.vertical:member
     package: word!
-    summary: |-
-      Determines if all of the text is vertical orientation (each line is 90 degrees rotated clockwise).
+    summary: >-
+      Determines if all of the text is vertical orientation (each line is 90
+      degrees rotated clockwise).
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Vertical"'
   - name: vertical270
-    uid: 'word!Word.ShapeTextOrientation.vertical270:member'
+    uid: word!Word.ShapeTextOrientation.vertical270:member
     package: word!
-    summary: |-
-      Determines if all of the text is vertical orientation (each line is 270 degrees rotated clockwise).
+    summary: >-
+      Determines if all of the text is vertical orientation (each line is 270
+      degrees rotated clockwise).
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Vertical270"'

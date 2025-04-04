@@ -1,22 +1,26 @@
-### YamlMime:TSType
 name: Excel.Interfaces.ChartTrendlineLabelLoadOptions
-uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartTrendlineLabelLoadOptions
 summary: This object represents the attributes for a chart trendline label object.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +28,16 @@ properties:
       return:
         type: boolean
   - name: autoText
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#autoText:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#autoText:member
     package: excel!
     fullName: autoText
-    summary: Specifies if the trendline label automatically generates appropriate text based on context.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Specifies if the trendline label automatically generates appropriate text
+      based on context.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,23 +45,34 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#format:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#format:member
     package: excel!
     fullName: format
     summary: The format of the chart trendline label.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface"
+          />
   - name: formula
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#formula:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#formula:member
     package: excel!
     fullName: formula
-    summary: String value that represents the formula of the chart trendline label using A1-style notation.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      String value that represents the formula of the chart trendline label
+      using A1-style notation.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,13 +80,16 @@ properties:
       return:
         type: boolean
   - name: height
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#height:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#height:member
     package: excel!
     fullName: height
     summary: >-
-      Returns the height, in points, of the chart trendline label. Value is `null` if the chart trendline label is not
-      visible.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns the height, in points, of the chart trendline label. Value is
+      `null` if the chart trendline label is not visible.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,13 +97,18 @@ properties:
       return:
         type: boolean
   - name: horizontalAlignment
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#horizontalAlignment:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
     summary: >-
-      Represents the horizontal alignment of the chart trendline label. See `Excel.ChartTextHorizontalAlignment` for
-      details. This property is valid only when `TextOrientation` of a trendline label is -90, 90, or 180.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the horizontal alignment of the chart trendline label. See
+      `Excel.ChartTextHorizontalAlignment` for details. This property is valid
+      only when `TextOrientation` of a trendline label is -90, 90, or 180.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,13 +116,17 @@ properties:
       return:
         type: boolean
   - name: left
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#left:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#left:member
     package: excel!
     fullName: left
     summary: >-
-      Represents the distance, in points, from the left edge of the chart trendline label to the left edge of the chart
-      area. Value is `null` if the chart trendline label is not visible.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the distance, in points, from the left edge of the chart
+      trendline label to the left edge of the chart area. Value is `null` if the
+      chart trendline label is not visible.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,13 +134,17 @@ properties:
       return:
         type: boolean
   - name: linkNumberFormat
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#linkNumberFormat:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#linkNumberFormat:member
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells (so that the number format changes in the labels when it
-      changes in the cells).
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Specifies if the number format is linked to the cells (so that the number
+      format changes in the labels when it changes in the cells).
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,11 +152,14 @@ properties:
       return:
         type: boolean
   - name: numberFormat
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#numberFormat:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#numberFormat:member
     package: excel!
     fullName: numberFormat
     summary: String value that represents the format code for the trendline label.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,11 +167,14 @@ properties:
       return:
         type: boolean
   - name: text
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#text:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#text:member
     package: excel!
     fullName: text
     summary: String representing the text of the trendline label on a chart.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,13 +182,18 @@ properties:
       return:
         type: boolean
   - name: textOrientation
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#textOrientation:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#textOrientation:member
     package: excel!
     fullName: textOrientation
     summary: >-
-      Represents the angle to which the text is oriented for the chart trendline label. The value should either be an
-      integer from -90 to 90 or the integer 180 for vertically-oriented text.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the angle to which the text is oriented for the chart trendline
+      label. The value should either be an integer from -90 to 90 or the integer
+      180 for vertically-oriented text.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,13 +201,17 @@ properties:
       return:
         type: boolean
   - name: top
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#top:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#top:member
     package: excel!
     fullName: top
     summary: >-
-      Represents the distance, in points, from the top edge of the chart trendline label to the top of the chart area.
-      Value is `null` if the chart trendline label is not visible.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the distance, in points, from the top edge of the chart
+      trendline label to the top of the chart area. Value is `null` if the chart
+      trendline label is not visible.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,13 +219,18 @@ properties:
       return:
         type: boolean
   - name: verticalAlignment
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#verticalAlignment:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
     summary: >-
-      Represents the vertical alignment of the chart trendline label. See `Excel.ChartTextVerticalAlignment` for
-      details. This property is valid only when `TextOrientation` of a trendline label is 0.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the vertical alignment of the chart trendline label. See
+      `Excel.ChartTextVerticalAlignment` for details. This property is valid
+      only when `TextOrientation` of a trendline label is 0.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,13 +238,16 @@ properties:
       return:
         type: boolean
   - name: width
-    uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#width:member'
+    uid: excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#width:member
     package: excel!
     fullName: width
     summary: >-
-      Returns the width, in points, of the chart trendline label. Value is `null` if the chart trendline label is not
-      visible.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns the width, in points, of the chart trendline label. Value is
+      `null` if the chart trendline label is not visible.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

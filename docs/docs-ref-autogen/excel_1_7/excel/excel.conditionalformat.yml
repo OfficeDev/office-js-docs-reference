@@ -1,24 +1,31 @@
-### YamlMime:TSType
 name: Excel.ConditionalFormat
-uid: 'excel!Excel.ConditionalFormat:class'
+uid: excel!Excel.ConditionalFormat:class
 package: excel!
 fullName: Excel.ConditionalFormat
 summary: >-
-  An object encapsulating a conditional format's range, format, rule, and other properties. To learn more about the
-  conditional formatting object model, read [Apply conditional formatting to Excel
-  ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+  An object encapsulating a conditional format's range, format, rule, and other
+  properties. To learn more about the conditional formatting object model, read
+  [Apply conditional formatting to Excel
+  ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!--
+  -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: cellValue
-    uid: 'excel!Excel.ConditionalFormat#cellValue:member'
+    uid: excel!Excel.ConditionalFormat#cellValue:member
     package: excel!
     fullName: cellValue
-    summary: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+    summary: >-
+      Returns the cell value conditional format properties if the current
+      conditional format is a `CellValue` type.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -42,31 +49,40 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly cellValue: Excel.CellValueConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.CellValueConditionalFormat:class" />
   - name: cellValueOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#cellValueOrNullObject:member
     package: excel!
     fullName: cellValueOrNullObject
-    summary: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the cell value conditional format properties if the current
+      conditional format is a `CellValue` type.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.CellValueConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.CellValueConditionalFormat:class" />
   - name: colorScale
-    uid: 'excel!Excel.ConditionalFormat#colorScale:member'
+    uid: excel!Excel.ConditionalFormat#colorScale:member
     package: excel!
     fullName: colorScale
-    summary: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+    summary: >-
+      Returns the color scale conditional format properties if the current
+      conditional format is a `ColorScale` type.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -94,45 +110,55 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly colorScale: Excel.ColorScaleConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.ColorScaleConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.ColorScaleConditionalFormat:class" />
   - name: colorScaleOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#colorScaleOrNullObject:member
     package: excel!
     fullName: colorScaleOrNullObject
-    summary: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the color scale conditional format properties if the current
+      conditional format is a `ColorScale` type.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.ColorScaleConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.ColorScaleConditionalFormat:class" />
   - name: context
-    uid: 'excel!Excel.ConditionalFormat#context:member'
+    uid: excel!Excel.ConditionalFormat#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
   - name: custom
-    uid: 'excel!Excel.ConditionalFormat#custom:member'
+    uid: excel!Excel.ConditionalFormat#custom:member
     package: excel!
     fullName: custom
-    summary: Returns the custom conditional format properties if the current conditional format is a custom type.
+    summary: >-
+      Returns the custom conditional format properties if the current
+      conditional format is a custom type.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -155,31 +181,40 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly custom: Excel.CustomConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.CustomConditionalFormat:class" />
   - name: customOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#customOrNullObject:member
     package: excel!
     fullName: customOrNullObject
-    summary: Returns the custom conditional format properties if the current conditional format is a custom type.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the custom conditional format properties if the current
+      conditional format is a custom type.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly customOrNullObject: Excel.CustomConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.CustomConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.CustomConditionalFormat:class" />
   - name: dataBar
-    uid: 'excel!Excel.ConditionalFormat#dataBar:member'
+    uid: excel!Excel.ConditionalFormat#dataBar:member
     package: excel!
     fullName: dataBar
-    summary: Returns the data bar properties if the current conditional format is a data bar.
+    summary: >-
+      Returns the data bar properties if the current conditional format is a
+      data bar.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -202,31 +237,40 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly dataBar: Excel.DataBarConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.DataBarConditionalFormat:class" />
   - name: dataBarOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#dataBarOrNullObject:member
     package: excel!
     fullName: dataBarOrNullObject
-    summary: Returns the data bar properties if the current conditional format is a data bar.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the data bar properties if the current conditional format is a
+      data bar.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.DataBarConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.DataBarConditionalFormat:class" />
   - name: iconSet
-    uid: 'excel!Excel.ConditionalFormat#iconSet:member'
+    uid: excel!Excel.ConditionalFormat#iconSet:member
     package: excel!
     fullName: iconSet
-    summary: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+    summary: >-
+      Returns the icon set conditional format properties if the current
+      conditional format is an `IconSet` type.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -278,30 +322,41 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly iconSet: Excel.IconSetConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.IconSetConditionalFormat:class" />
   - name: iconSetOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#iconSetOrNullObject:member
     package: excel!
     fullName: iconSetOrNullObject
-    summary: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the icon set conditional format properties if the current
+      conditional format is an `IconSet` type.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly iconSetOrNullObject: Excel.IconSetConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.IconSetConditionalFormat:class" />
   - name: id
-    uid: 'excel!Excel.ConditionalFormat#id:member'
+    uid: excel!Excel.ConditionalFormat#id:member
     package: excel!
     fullName: id
-    summary: The priority of the conditional format in the current `ConditionalFormatCollection`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      The priority of the conditional format in the current
+      `ConditionalFormatCollection`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,12 +364,15 @@ properties:
       return:
         type: string
   - name: preset
-    uid: 'excel!Excel.ConditionalFormat#preset:member'
+    uid: excel!Excel.ConditionalFormat#preset:member
     package: excel!
     fullName: preset
-    summary: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+    summary: >-
+      Returns the preset criteria conditional format. See
+      `Excel.PresetCriteriaConditionalFormat` for more details.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -338,35 +396,47 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly preset: Excel.PresetCriteriaConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />
   - name: presetOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#presetOrNullObject:member
     package: excel!
     fullName: presetOrNullObject
-    summary: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the preset criteria conditional format. See
+      `Excel.PresetCriteriaConditionalFormat` for more details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly presetOrNullObject: Excel.PresetCriteriaConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.PresetCriteriaConditionalFormat:class" />
   - name: priority
-    uid: 'excel!Excel.ConditionalFormat#priority:member'
+    uid: excel!Excel.ConditionalFormat#priority:member
     package: excel!
     fullName: priority
     summary: >-
-      The priority (or index) within the conditional format collection that this conditional format currently exists in.
-      Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
-      negative priority to begin from the back. Priorities greater than the bounds will get and set to the maximum (or
-      minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
-      object at that new priority location if you want to make further changes to it.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      The priority (or index) within the conditional format collection that this
+      conditional format currently exists in. Changing this also changes other
+      conditional formats' priorities, to allow for a contiguous priority order.
+      Use a negative priority to begin from the back. Priorities greater than
+      the bounds will get and set to the maximum (or minimum if negative)
+      priority. Also note that if you change the priority, you have to re-fetch
+      a new copy of the object at that new priority location if you want to make
+      further changes to it.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -374,13 +444,17 @@ properties:
       return:
         type: number
   - name: stopIfTrue
-    uid: 'excel!Excel.ConditionalFormat#stopIfTrue:member'
+    uid: excel!Excel.ConditionalFormat#stopIfTrue:member
     package: excel!
     fullName: stopIfTrue
     summary: >-
-      If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
-      Value is `null` on data bars, icon sets, and color scales as there's no concept of `StopIfTrue` for these.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      If the conditions of this conditional format are met, no lower-priority
+      formats shall take effect on that cell. Value is `null` on data bars, icon
+      sets, and color scales as there's no concept of `StopIfTrue` for these.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,14 +462,16 @@ properties:
       return:
         type: boolean
   - name: textComparison
-    uid: 'excel!Excel.ConditionalFormat#textComparison:member'
+    uid: excel!Excel.ConditionalFormat#textComparison:member
     package: excel!
     fullName: textComparison
     summary: >-
-      Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example, to format cells matching the word "Text".
+      Returns the specific text conditional format properties if the current
+      conditional format is a text type. For example, to format cells matching
+      the word "Text".
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -419,61 +495,75 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly textComparison: Excel.TextConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.TextConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.TextConditionalFormat:class" />
   - name: textComparisonOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#textComparisonOrNullObject:member
     package: excel!
     fullName: textComparisonOrNullObject
     summary: >-
-      Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example, to format cells matching the word "Text".
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns the specific text conditional format properties if the current
+      conditional format is a text type. For example, to format cells matching
+      the word "Text".
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly textComparisonOrNullObject: Excel.TextConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.TextConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.TextConditionalFormat:class" />
   - name: topBottom
-    uid: 'excel!Excel.ConditionalFormat#topBottom:member'
+    uid: excel!Excel.ConditionalFormat#topBottom:member
     package: excel!
     fullName: topBottom
     summary: >-
-      Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type. For
-      example, to format the top 10% or bottom 10 items.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns the top/bottom conditional format properties if the current
+      conditional format is a `TopBottom` type. For example, to format the top
+      10% or bottom 10 items.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly topBottom: Excel.TopBottomConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.TopBottomConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.TopBottomConditionalFormat:class" />
   - name: topBottomOrNullObject
-    uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
+    uid: excel!Excel.ConditionalFormat#topBottomOrNullObject:member
     package: excel!
     fullName: topBottomOrNullObject
     summary: >-
-      Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type. For
-      example, to format the top 10% or bottom 10 items.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns the top/bottom conditional format properties if the current
+      conditional format is a `TopBottom` type. For example, to format the top
+      10% or bottom 10 items.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;'
       return:
-        type: '<xref uid="excel!Excel.TopBottomConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.TopBottomConditionalFormat:class" />
   - name: type
-    uid: 'excel!Excel.ConditionalFormat#type:member'
+    uid: excel!Excel.ConditionalFormat#type:member
     package: excel!
     fullName: type
     summary: A type of conditional format. Only one can be set at a time.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -512,23 +602,29 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
-        "PresetCriteria" | "ContainsText" | "CellValue";
+        readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" |
+        "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" |
+        "ContainsText" | "CellValue";
       return:
         type: >-
-          <xref uid="excel!Excel.ConditionalFormatType:enum" /> | "Custom" | "DataBar" | "ColorScale" | "IconSet" |
-          "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"
+          <xref uid="excel!Excel.ConditionalFormatType:enum" /> | "Custom" |
+          "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria"
+          | "ContainsText" | "CellValue"
 methods:
   - name: delete()
-    uid: 'excel!Excel.ConditionalFormat#delete:member(1)'
+    uid: excel!Excel.ConditionalFormat#delete:member(1)
     package: excel!
     fullName: delete()
     summary: Deletes this conditional format.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -537,14 +633,15 @@ methods:
         type: void
         description: ''
   - name: getRange()
-    uid: 'excel!Excel.ConditionalFormat#getRange:member(1)'
+    uid: excel!Excel.ConditionalFormat#getRange:member(1)
     package: excel!
     fullName: getRange()
     summary: >-
-      Returns the range the conditional format is applied to. Throws an error if the conditional format is applied to
-      multiple ranges.
+      Returns the range the conditional format is applied to. Throws an error if
+      the conditional format is applied to multiple ranges.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -583,77 +680,92 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''
   - name: getRangeOrNullObject()
-    uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
+    uid: excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)
     package: excel!
     fullName: getRangeOrNullObject()
     summary: >-
-      Returns the range to which the conditional format is applied. If the conditional format is applied to multiple
-      ranges, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
+      Returns the range to which the conditional format is applied. If the
+      conditional format is applied to multiple ranges, then this method returns
+      an object with its `isNullObject` property set to `true`<!-- -->. For
+      further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''
   - name: load(options)
-    uid: 'excel!Excel.ConditionalFormat#load:member(1)'
+    uid: excel!Excel.ConditionalFormat#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;'
+      content: >-
+        load(options?: Excel.Interfaces.ConditionalFormatLoadOptions):
+        Excel.ConditionalFormat;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions:interface" />'
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.ConditionalFormat:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.ConditionalFormat#load:member(2)'
+    uid: excel!Excel.ConditionalFormat#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalFormat;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.ConditionalFormat:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ConditionalFormat#load:member(3)'
+    uid: excel!Excel.ConditionalFormat#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -665,46 +777,61 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
+        type: <xref uid="excel!Excel.ConditionalFormat:class" />
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ConditionalFormat#set:member(1)'
+  - name: set(properties, options)
+    uid: excel!Excel.ConditionalFormat#set:member(1)
     package: excel!
-    fullName: 'set(properties, options)'
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.ConditionalFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ConditionalFormatUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
   - name: set(properties)
-    uid: 'excel!Excel.ConditionalFormat#set:member(2)'
+    uid: excel!Excel.ConditionalFormat#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -712,26 +839,30 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
+          type: <xref uid="excel!Excel.ConditionalFormat:class" />
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.ConditionalFormat#toJSON:member(1)'
+    uid: excel!Excel.ConditionalFormat#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.ConditionalFormat` object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow copies
-      of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.ConditionalFormat` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

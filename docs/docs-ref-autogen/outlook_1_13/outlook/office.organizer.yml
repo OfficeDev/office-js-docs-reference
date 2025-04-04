@@ -1,37 +1,41 @@
-### YamlMime:TSType
 name: Office.Organizer
-uid: 'outlook!Office.Organizer:interface'
+uid: outlook!Office.Organizer:interface
 package: outlook!
 fullName: Office.Organizer
 summary: >-
-  Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object
-  provides a method to get the organizer value of an appointment in an Outlook add-in.
+  Represents the appointment organizer, even if an alias or a delegate was used
+  to create the appointment. This object provides a method to get the organizer
+  value of an appointment in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'getAsync(options, callback)'
-    uid: 'outlook!Office.Organizer#getAsync:member(1)'
+  - name: getAsync(options, callback)
+    uid: outlook!Office.Organizer#getAsync:member(1)
     package: outlook!
-    fullName: 'getAsync(options, callback)'
+    fullName: getAsync(options, callback)
     summary: >-
       Gets the organizer value of an appointment as an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object in the `asyncResult.value`
-      property.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      object in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -44,8 +48,9 @@ methods:
       -->**: Compose
 
 
-      **Important**: A `recipientType` property value isn't returned by the getAsync method. The appointment
-      organizer is always a user whose email address is on the Exchange server.
+      **Important**: A `recipientType` property value isn't returned by the
+      getAsync method. The appointment organizer is always a user whose email
+      address is on the Exchange server.
 
 
       #### Examples
@@ -67,6 +72,7 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,30 +82,36 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `AsyncResult` object. The `value` property of the result is
-            the appointment's organizer value, as an `EmailAddressDetails` object.
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `AsyncResult` object. The `value`
+            property of the result is the appointment's organizer value, as an
+            `EmailAddressDetails` object.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.EmailAddressDetails:interface"
+            />&gt;) =&gt; void
       return:
         type: void
         description: ''
   - name: getAsync(callback)
-    uid: 'outlook!Office.Organizer#getAsync:member(2)'
+    uid: outlook!Office.Organizer#getAsync:member(2)
     package: outlook!
     fullName: getAsync(callback)
     summary: >-
       Gets the organizer value of an appointment as an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object in the `asyncResult.value`
-      property.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      object in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -112,21 +124,28 @@ methods:
       -->**: Compose
 
 
-      **Important**: A `recipientType` property value isn't returned by the getAsync method. The appointment
-      organizer is always a user whose email address is on the Exchange server.
+      **Important**: A `recipientType` property value isn't returned by the
+      getAsync method. The appointment organizer is always a user whose email
+      address is on the Exchange server.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<EmailAddressDetails>) => void): void;'
+      content: >-
+        getAsync(callback?: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `AsyncResult` object. The `value` property of the result is
-            the appointment's organizer value, as an `EmailAddressDetails` object.
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `AsyncResult` object. The `value`
+            property of the result is the appointment's organizer value, as an
+            `EmailAddressDetails` object.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.EmailAddressDetails:interface"
+            />&gt;) =&gt; void
       return:
         type: void
         description: ''

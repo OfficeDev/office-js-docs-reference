@@ -1,11 +1,11 @@
-### YamlMime:TSType
 name: OfficeExtension.ClientResult
-uid: 'office!OfficeExtension.ClientResult:class'
+uid: office!OfficeExtension.ClientResult:class
 package: office!
 fullName: OfficeExtension.ClientResult
 summary: >-
-  Contains the result for methods that return primitive types. The object's value property is retrieved from the
-  document after `context.sync()` is invoked.
+  Contains the result for methods that return primitive types. The object's
+  value property is retrieved from the document after `context.sync()` is
+  invoked.
 remarks: |-
 
 
@@ -24,16 +24,20 @@ remarks: |-
       console.log(countResult.value);
   });
   ```
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: value
-    uid: 'office!OfficeExtension.ClientResult#value:member'
+    uid: office!OfficeExtension.ClientResult#value:member
     package: office!
     fullName: value
-    summary: The value of the result that is retrieved from the document after `context.sync()` is invoked.
+    summary: >-
+      The value of the result that is retrieved from the document after
+      `context.sync()` is invoked.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

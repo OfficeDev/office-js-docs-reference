@@ -1,22 +1,29 @@
-### YamlMime:TSType
 name: OfficeRuntime.DisplayWebDialogOptions
-uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface
 package: office-runtime!
 fullName: OfficeRuntime.DisplayWebDialogOptions
 summary: Provides display options and actions a dialog box may take.
-remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+remarks: >-
+  \[ [API set: CustomFunctionsRuntime
+  1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: displayInIFrame
-    uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member'
+    uid: >-
+      office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member
     package: office-runtime!
     fullName: displayInIFrame
     summary: >-
-      Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true).
-      This setting is only applicable to custom functions running on Excel Online.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+      Optional parameter that determines whether the dialog box displays as a
+      popup (false) or within an IFrame (true). This setting is only applicable
+      to custom functions running on Excel Online.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,13 +31,17 @@ properties:
       return:
         type: boolean
   - name: height
-    uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member'
+    uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member
     package: office-runtime!
     fullName: height
     summary: >-
-      Optional parameter that defines the height of the dialog box as a percentage of the current display. For example,
-      accepts strings such as: '50%', '50'.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+      Optional parameter that defines the height of the dialog box as a
+      percentage of the current display. For example, accepts strings such as:
+      '50%', '50'.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,11 +49,14 @@ properties:
       return:
         type: string
   - name: onClose
-    uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member'
+    uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member
     package: office-runtime!
     fullName: onClose
     summary: Optional callback that runs when the dialog box is closed.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,37 +64,52 @@ properties:
       return:
         type: () =&gt; void
   - name: onMessage
-    uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member'
+    uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member
     package: office-runtime!
     fullName: onMessage
-    summary: Optional callback that runs when the dialog box sends a message to its parent.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    summary: >-
+      Optional callback that runs when the dialog box sends a message to its
+      parent.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'onMessage?: (message: string, dialog?: Dialog) => void;'
       return:
-        type: '(message: string, dialog?: <xref uid="office-runtime!OfficeRuntime.Dialog:interface" />) =&gt; void'
+        type: >-
+          (message: string, dialog?: <xref
+          uid="office-runtime!OfficeRuntime.Dialog:interface" />) =&gt; void
   - name: onRuntimeError
-    uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member'
+    uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member
     package: office-runtime!
     fullName: onRuntimeError
     summary: Optional callback that runs when the dialog box sends an error.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'onRuntimeError?: (error: Error, dialog?: Dialog) => void;'
       return:
-        type: '(error: Error, dialog?: <xref uid="office-runtime!OfficeRuntime.Dialog:interface" />) =&gt; void'
+        type: >-
+          (error: Error, dialog?: <xref
+          uid="office-runtime!OfficeRuntime.Dialog:interface" />) =&gt; void
   - name: width
-    uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member'
+    uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member
     package: office-runtime!
     fullName: width
     summary: >-
-      Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such
-      as: '50%', '50'.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+      Optional parameter that defines the width of dialog as a percentage of
+      window. For example, accepts strings such as: '50%', '50'.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

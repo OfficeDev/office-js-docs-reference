@@ -1,20 +1,21 @@
-### YamlMime:TSType
 name: OfficeExtension.EventInfo
-uid: 'office!OfficeExtension.EventInfo:interface'
+uid: office!OfficeExtension.EventInfo:interface
 package: office!
 fullName: OfficeExtension.EventInfo
 summary: Used by Office to construct event handlers. Do not call in your code.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: eventArgsTransformFunc
-    uid: 'office!OfficeExtension.EventInfo#eventArgsTransformFunc:member'
+    uid: office!OfficeExtension.EventInfo#eventArgsTransformFunc:member
     package: office!
     fullName: eventArgsTransformFunc
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +23,12 @@ properties:
       return:
         type: '(args: any) =&gt; Promise&lt;T&gt;'
   - name: registerFunc
-    uid: 'office!OfficeExtension.EventInfo#registerFunc:member'
+    uid: office!OfficeExtension.EventInfo#registerFunc:member
     package: office!
     fullName: registerFunc
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +36,12 @@ properties:
       return:
         type: '(callback: (args: any) =&gt; void) =&gt; Promise&lt;any&gt;'
   - name: unregisterFunc
-    uid: 'office!OfficeExtension.EventInfo#unregisterFunc:member'
+    uid: office!OfficeExtension.EventInfo#unregisterFunc:member
     package: office!
     fullName: unregisterFunc
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

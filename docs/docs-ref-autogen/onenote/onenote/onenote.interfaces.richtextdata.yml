@@ -1,20 +1,26 @@
-### YamlMime:TSType
 name: OneNote.Interfaces.RichTextData
-uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
+uid: onenote!OneNote.Interfaces.RichTextData:interface
 package: onenote!
 fullName: OneNote.Interfaces.RichTextData
-summary: An interface describing the data returned by calling `richText.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `richText.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: id
-    uid: 'onenote!OneNote.Interfaces.RichTextData#id:member'
+    uid: onenote!OneNote.Interfaces.RichTextData#id:member
     package: onenote!
     fullName: id
     summary: Gets the ID of the RichText object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +28,15 @@ properties:
       return:
         type: string
   - name: languageId
-    uid: 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
+    uid: onenote!OneNote.Interfaces.RichTextData#languageId:member
     package: onenote!
     fullName: languageId
     summary: The language ID of the text. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,23 +44,31 @@ properties:
       return:
         type: string
   - name: style
-    uid: 'onenote!OneNote.Interfaces.RichTextData#style:member'
+    uid: onenote!OneNote.Interfaces.RichTextData#style:member
     package: onenote!
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'style?: OneNote.ParagraphStyle;'
       return:
-        type: '<xref uid="onenote!OneNote.ParagraphStyle:enum" />'
+        type: <xref uid="onenote!OneNote.ParagraphStyle:enum" />
   - name: text
-    uid: 'onenote!OneNote.Interfaces.RichTextData#text:member'
+    uid: onenote!OneNote.Interfaces.RichTextData#text:member
     package: onenote!
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

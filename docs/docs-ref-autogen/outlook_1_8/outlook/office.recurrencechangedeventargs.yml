@@ -1,16 +1,22 @@
-### YamlMime:TSType
 name: Office.RecurrenceChangedEventArgs
-uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
+uid: outlook!Office.RecurrenceChangedEventArgs:interface
 package: outlook!
 fullName: Office.RecurrenceChangedEventArgs
-summary: Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
-remarks: |-
-  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Provides updated recurrence object that raised the
+  `Office.EventType.RecurrenceChanged` event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Adds an event handler for the RecurrenceChanged event.
+
   Office.onReady(() => {
       document.addEventListener('DOMContentLoaded', () => {
           // Get a reference to the mailbox and use it to add an event handler.
@@ -26,38 +32,51 @@ remarks: |-
       });
   });
 
+
   // Handles the RecurrenceChanged event.
+
   function recurrenceChangedHandler(event) {
       console.log(`Event: ${event.type}`);
       const recurrence = event.recurrence;
 
       // Perform operations based on the updated recurrence.
   }
+
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: recurrence
-    uid: 'outlook!Office.RecurrenceChangedEventArgs#recurrence:member'
+    uid: outlook!Office.RecurrenceChangedEventArgs#recurrence:member
     package: outlook!
     fullName: recurrence
     summary: Gets the updated recurrence object.
-    remarks: '\[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'recurrence: Recurrence;'
       return:
-        type: '<xref uid="outlook!Office.Recurrence:interface" />'
+        type: <xref uid="outlook!Office.Recurrence:interface" />
   - name: type
-    uid: 'outlook!Office.RecurrenceChangedEventArgs#type:member'
+    uid: outlook!Office.RecurrenceChangedEventArgs#type:member
     package: outlook!
     fullName: type
     summary: >-
       Gets the type of the event. For details, refer to
-      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-    remarks: '\[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,12 +1,12 @@
-### YamlMime:TSType
 name: Word.Interfaces.DocumentPropertiesUpdateData
-uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+uid: word!Word.Interfaces.DocumentPropertiesUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DocumentPropertiesUpdateData
 summary: >-
-  An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `DocumentProperties` object, for use in
+  `documentProperties.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

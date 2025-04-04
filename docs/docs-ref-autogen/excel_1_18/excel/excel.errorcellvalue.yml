@@ -1,11 +1,11 @@
-### YamlMime:TSTypeAlias
 name: Excel.ErrorCellValue
-uid: 'excel!Excel.ErrorCellValue:type'
+uid: excel!Excel.ErrorCellValue:type
 package: excel!
 fullName: Excel.ErrorCellValue
 summary: Represents a cell value which contains an error.
 remarks: >-
-  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   #### Examples
@@ -36,10 +36,34 @@ remarks: >-
   });
 
   ```
+
+
+  This type is a union of the following types: 
+
+
+  <xref uid="excel!Excel.= BlockedErrorCellValue:interface" />,<xref
+  uid="excel!Excel.| BusyErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  CalcErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  ConnectErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  Div0ErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  ExternalErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  FieldErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  GettingDataErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  NotAvailableErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  NameErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  NullErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  NumErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  PlaceholderErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  RefErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  SpillErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  ValueErrorCellValue:interface" />
+
 isPreview: false
 isDeprecated: false
 syntax: >-
-  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue |
-  Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
-  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue |
-  RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
+  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue |
+  CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
+  ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
+  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue |
+  NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue |
+  SpillErrorCellValue | ValueErrorCellValue;

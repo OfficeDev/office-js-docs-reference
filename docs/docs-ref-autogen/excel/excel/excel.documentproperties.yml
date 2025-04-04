@@ -1,20 +1,25 @@
-### YamlMime:TSType
 name: Excel.DocumentProperties
-uid: 'excel!Excel.DocumentProperties:class'
+uid: excel!Excel.DocumentProperties:class
 package: excel!
 fullName: Excel.DocumentProperties
 summary: Represents workbook properties.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: author
-    uid: 'excel!Excel.DocumentProperties#author:member'
+    uid: excel!Excel.DocumentProperties#author:member
     package: excel!
     fullName: author
     summary: The author of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +27,14 @@ properties:
       return:
         type: string
   - name: category
-    uid: 'excel!Excel.DocumentProperties#category:member'
+    uid: excel!Excel.DocumentProperties#category:member
     package: excel!
     fullName: category
     summary: The category of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,13 +42,16 @@ properties:
       return:
         type: string
   - name: comments
-    uid: 'excel!Excel.DocumentProperties#comments:member'
+    uid: excel!Excel.DocumentProperties#comments:member
     package: excel!
     fullName: comments
     summary: >-
-      The Comments field in the metadata of the workbook. These have no connection to comments by users made in the
-      workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      The Comments field in the metadata of the workbook. These have no
+      connection to comments by users made in the workbook.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +59,14 @@ properties:
       return:
         type: string
   - name: company
-    uid: 'excel!Excel.DocumentProperties#company:member'
+    uid: excel!Excel.DocumentProperties#company:member
     package: excel!
     fullName: company
     summary: The company of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,25 +74,29 @@ properties:
       return:
         type: string
   - name: context
-    uid: 'excel!Excel.DocumentProperties#context:member'
+    uid: excel!Excel.DocumentProperties#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
   - name: creationDate
-    uid: 'excel!Excel.DocumentProperties#creationDate:member'
+    uid: excel!Excel.DocumentProperties#creationDate:member
     package: excel!
     fullName: creationDate
     summary: Gets the creation date of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,12 +104,13 @@ properties:
       return:
         type: Date
   - name: custom
-    uid: 'excel!Excel.DocumentProperties#custom:member'
+    uid: excel!Excel.DocumentProperties#custom:member
     package: excel!
     fullName: custom
     summary: Gets the collection of custom properties of the workbook.
     remarks: >-
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -117,18 +136,22 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly custom: Excel.CustomPropertyCollection;'
       return:
-        type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
+        type: <xref uid="excel!Excel.CustomPropertyCollection:class" />
   - name: keywords
-    uid: 'excel!Excel.DocumentProperties#keywords:member'
+    uid: excel!Excel.DocumentProperties#keywords:member
     package: excel!
     fullName: keywords
     summary: The keywords of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,11 +159,14 @@ properties:
       return:
         type: string
   - name: lastAuthor
-    uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
+    uid: excel!Excel.DocumentProperties#lastAuthor:member
     package: excel!
     fullName: lastAuthor
     summary: Gets the last author of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,11 +174,14 @@ properties:
       return:
         type: string
   - name: manager
-    uid: 'excel!Excel.DocumentProperties#manager:member'
+    uid: excel!Excel.DocumentProperties#manager:member
     package: excel!
     fullName: manager
     summary: The manager of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,11 +189,14 @@ properties:
       return:
         type: string
   - name: revisionNumber
-    uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
+    uid: excel!Excel.DocumentProperties#revisionNumber:member
     package: excel!
     fullName: revisionNumber
     summary: Gets the revision number of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,11 +204,14 @@ properties:
       return:
         type: number
   - name: subject
-    uid: 'excel!Excel.DocumentProperties#subject:member'
+    uid: excel!Excel.DocumentProperties#subject:member
     package: excel!
     fullName: subject
     summary: The subject of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,11 +219,14 @@ properties:
       return:
         type: string
   - name: title
-    uid: 'excel!Excel.DocumentProperties#title:member'
+    uid: excel!Excel.DocumentProperties#title:member
     package: excel!
     fullName: title
     summary: The title of the workbook.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,51 +235,61 @@ properties:
         type: string
 methods:
   - name: load(options)
-    uid: 'excel!Excel.DocumentProperties#load:member(1)'
+    uid: excel!Excel.DocumentProperties#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
+      content: >-
+        load(options?: Excel.Interfaces.DocumentPropertiesLoadOptions):
+        Excel.DocumentProperties;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface" />'
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="excel!Excel.DocumentProperties:class" />'
+        type: <xref uid="excel!Excel.DocumentProperties:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.DocumentProperties#load:member(2)'
+    uid: excel!Excel.DocumentProperties#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentProperties;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.DocumentProperties:class" />'
+        type: <xref uid="excel!Excel.DocumentProperties:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.DocumentProperties#load:member(3)'
+    uid: excel!Excel.DocumentProperties#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -253,46 +301,61 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.DocumentProperties:class" />'
+        type: <xref uid="excel!Excel.DocumentProperties:class" />
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.DocumentProperties#set:member(1)'
+  - name: set(properties, options)
+    uid: excel!Excel.DocumentProperties#set:member(1)
     package: excel!
-    fullName: 'set(properties, options)'
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.DocumentPropertiesUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
   - name: set(properties)
-    uid: 'excel!Excel.DocumentProperties#set:member(2)'
+    uid: excel!Excel.DocumentProperties#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -300,26 +363,30 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.DocumentProperties:class" />'
+          type: <xref uid="excel!Excel.DocumentProperties:class" />
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.DocumentProperties#toJSON:member(1)'
+    uid: excel!Excel.DocumentProperties#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.DocumentProperties` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.DocumentProperties` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.DocumentPropertiesData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.DocumentPropertiesData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.DocumentPropertiesData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

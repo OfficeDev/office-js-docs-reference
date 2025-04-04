@@ -1,16 +1,23 @@
-### YamlMime:TSType
 name: Office.InfobarClickedEventArgs
-uid: 'outlook!Office.InfobarClickedEventArgs:interface'
+uid: outlook!Office.InfobarClickedEventArgs:interface
 package: outlook!
 fullName: Office.InfobarClickedEventArgs
-summary: Provides basic details about the notification message that raised the `Office.EventType.InfobarClicked` event.
-remarks: |-
-  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Provides basic details about the notification message that raised the
+  `Office.EventType.InfobarClicked` event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Adds an event handler for the InfobarClicked event.
+
   Office.onReady(() => {
       document.addEventListener('DOMContentLoaded', () => {
           // Get a reference to the mailbox and use it to add an event handler.
@@ -26,38 +33,51 @@ remarks: |-
       });
   });
 
+
   // Handles the InfobarClicked event.
+
   function infobarClickedHandler(event) {
       console.log(`Event: ${event.type}`);
       const infobarDetails = event.infobarDetails;
       console.log(`Notification type: ${infobarDetails.infobarType}`);
       console.log(`Action type: ${infobarDetails.actionType}`);
   }
+
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: infobarDetails
-    uid: 'outlook!Office.InfobarClickedEventArgs#infobarDetails:member'
+    uid: outlook!Office.InfobarClickedEventArgs#infobarDetails:member
     package: outlook!
     fullName: infobarDetails
     summary: Gets additional details about the notification message.
-    remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'infobarDetails: InfobarDetails;'
       return:
-        type: '<xref uid="outlook!Office.InfobarDetails:interface" />'
+        type: <xref uid="outlook!Office.InfobarDetails:interface" />
   - name: type
-    uid: 'outlook!Office.InfobarClickedEventArgs#type:member'
+    uid: outlook!Office.InfobarClickedEventArgs#type:member
     package: outlook!
     fullName: type
     summary: >-
       Gets the type of the event. For details, refer to
-      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-    remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

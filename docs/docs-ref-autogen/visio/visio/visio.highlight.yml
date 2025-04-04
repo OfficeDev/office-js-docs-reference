@@ -1,28 +1,38 @@
-### YamlMime:TSType
 name: Visio.Highlight
-uid: 'visio!Visio.Highlight:interface'
+uid: visio!Visio.Highlight:interface
 package: visio!
 fullName: Visio.Highlight
 summary: Represents the highlight data added to the shape.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: color
-    uid: 'visio!Visio.Highlight#color:member'
+    uid: visio!Visio.Highlight#color:member
     package: visio!
     fullName: color
     summary: >-
-      A string that specifies the color of the highlight. It must have the form "\#RRGGBB", where each letter represents
-      a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value
-      between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255).
-    remarks: |-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      A string that specifies the color of the highlight. It must have the form
+      "\#RRGGBB", where each letter represents a hexadecimal digit between 0 and
+      F, and where RR is the red value between 0 and 0xFF (255), GG the green
+      value between 0 and 0xFF (255), and BB is the blue value between 0 and
+      0xFF (255).
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       Visio.run(session, function (ctx) {
           const activePage = ctx.document.getActivePage();
           const shape = activePage.shapes.getItem(0);
@@ -35,7 +45,9 @@ properties:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +55,17 @@ properties:
       return:
         type: string
   - name: width
-    uid: 'visio!Visio.Highlight#width:member'
+    uid: visio!Visio.Highlight#width:member
     package: visio!
     fullName: width
-    summary: A positive integer that specifies the width of the highlight's stroke in pixels.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    summary: >-
+      A positive integer that specifies the width of the highlight's stroke in
+      pixels.
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

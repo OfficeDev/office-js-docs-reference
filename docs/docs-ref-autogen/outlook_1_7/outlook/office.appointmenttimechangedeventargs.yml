@@ -1,18 +1,22 @@
-### YamlMime:TSType
 name: Office.AppointmentTimeChangedEventArgs
-uid: 'outlook!Office.AppointmentTimeChangedEventArgs:interface'
+uid: outlook!Office.AppointmentTimeChangedEventArgs:interface
 package: outlook!
 fullName: Office.AppointmentTimeChangedEventArgs
 summary: >-
-  Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged`
-  event.
-remarks: |-
-  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  Provides the current dates and times of the appointment that raised the
+  `Office.EventType.AppointmentTimeChanged` event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Adds an event handler for the AppointmentTimeChanged event.
+
   Office.onReady(() => {
       document.addEventListener('DOMContentLoaded', () => {
           // Get a reference to the mailbox and use it to add an event handler.
@@ -28,23 +32,31 @@ remarks: |-
       });
   });
 
+
   // Handles the AppointmentTimeChanged event.
+
   function appointmentTimeChangedHandler(event) {
       console.log(`Event: ${event.type}`);
       console.log(`Start time: ${event.start}`);
       console.log(`End time: ${event.end}`);
   }
+
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: end
-    uid: 'outlook!Office.AppointmentTimeChangedEventArgs#end:member'
+    uid: outlook!Office.AppointmentTimeChangedEventArgs#end:member
     package: outlook!
     fullName: end
     summary: Gets the appointment end date and time.
-    remarks: '\[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,11 +64,15 @@ properties:
       return:
         type: Date
   - name: start
-    uid: 'outlook!Office.AppointmentTimeChangedEventArgs#start:member'
+    uid: outlook!Office.AppointmentTimeChangedEventArgs#start:member
     package: outlook!
     fullName: start
     summary: Gets the appointment start date and time.
-    remarks: '\[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,13 +80,18 @@ properties:
       return:
         type: Date
   - name: type
-    uid: 'outlook!Office.AppointmentTimeChangedEventArgs#type:member'
+    uid: outlook!Office.AppointmentTimeChangedEventArgs#type:member
     package: outlook!
     fullName: type
     summary: >-
       Gets the type of the event. For details, refer to
-      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-    remarks: '\[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

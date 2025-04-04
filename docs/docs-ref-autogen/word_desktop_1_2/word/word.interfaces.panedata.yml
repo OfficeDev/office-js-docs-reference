@@ -1,37 +1,43 @@
-### YamlMime:TSType
 name: Word.Interfaces.PaneData
-uid: 'word!Word.Interfaces.PaneData:interface'
+uid: word!Word.Interfaces.PaneData:interface
 package: word!
 fullName: Word.Interfaces.PaneData
 summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: pages
-    uid: 'word!Word.Interfaces.PaneData#pages:member'
+    uid: word!Word.Interfaces.PaneData#pages:member
     package: word!
     fullName: pages
     summary: Gets the collection of pages in the pane.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'pages?: Word.Interfaces.PageData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.PageData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.PageData:interface" />[]
   - name: pagesEnclosingViewport
-    uid: 'word!Word.Interfaces.PaneData#pagesEnclosingViewport:member'
+    uid: word!Word.Interfaces.PaneData#pagesEnclosingViewport:member
     package: word!
     fullName: pagesEnclosingViewport
     summary: >-
-      Gets the `PageCollection` shown in the viewport of the pane. If a page is partially visible in the pane, the whole
-      page is returned.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Gets the `PageCollection` shown in the viewport of the pane. If a page is
+      partially visible in the pane, the whole page is returned.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'pagesEnclosingViewport?: Word.Interfaces.PageData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.PageData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.PageData:interface" />[]

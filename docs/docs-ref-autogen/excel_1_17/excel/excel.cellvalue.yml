@@ -1,13 +1,34 @@
-### YamlMime:TSTypeAlias
 name: Excel.CellValue
-uid: 'excel!Excel.CellValue:type'
+uid: excel!Excel.CellValue:type
 package: excel!
 fullName: Excel.CellValue
 summary: Represents the value in a cell.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  This type is a union of the following types: 
+
+
+  <xref uid="excel!Excel.= :interface" />,<xref uid="excel!Excel.|
+  BooleanCellValue:interface" />,<xref uid="excel!Excel.|
+  DoubleCellValue:interface" />,<xref uid="excel!Excel.|
+  EntityCellValue:interface" />,<xref uid="excel!Excel.|
+  EmptyCellValue:interface" />,<xref uid="excel!Excel.|
+  ErrorCellValue:interface" />,<xref uid="excel!Excel.|
+  FormattedNumberCellValue:interface" />,<xref uid="excel!Excel.|
+  LinkedEntityCellValue:interface" />,<xref uid="excel!Excel.|
+  ReferenceCellValue:interface" />,<xref uid="excel!Excel.|
+  StringCellValue:interface" />,<xref uid="excel!Excel.|
+  ValueTypeNotAvailableCellValue:interface" />,<xref uid="excel!Excel.|
+  WebImageCellValue:interface" />
+
 isPreview: false
 isDeprecated: false
 syntax: >-
-  export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
-  ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue |
-  ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
+  export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue |
+  EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue |
+  LinkedEntityCellValue | ReferenceCellValue | StringCellValue |
+  ValueTypeNotAvailableCellValue | WebImageCellValue) &
+  CellValueExtraProperties;

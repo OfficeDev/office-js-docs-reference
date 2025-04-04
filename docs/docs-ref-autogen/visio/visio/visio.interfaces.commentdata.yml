@@ -1,20 +1,26 @@
-### YamlMime:TSType
 name: Visio.Interfaces.CommentData
-uid: 'visio!Visio.Interfaces.CommentData:interface'
+uid: visio!Visio.Interfaces.CommentData:interface
 package: visio!
 fullName: Visio.Interfaces.CommentData
-summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `comment.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: author
-    uid: 'visio!Visio.Interfaces.CommentData#author:member'
+    uid: visio!Visio.Interfaces.CommentData#author:member
     package: visio!
     fullName: author
     summary: A string that specifies the name of the author of the comment.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +28,15 @@ properties:
       return:
         type: string
   - name: date
-    uid: 'visio!Visio.Interfaces.CommentData#date:member'
+    uid: visio!Visio.Interfaces.CommentData#date:member
     package: visio!
     fullName: date
     summary: A string that specifies the date when the comment was created.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +44,15 @@ properties:
       return:
         type: string
   - name: text
-    uid: 'visio!Visio.Interfaces.CommentData#text:member'
+    uid: visio!Visio.Interfaces.CommentData#text:member
     package: visio!
     fullName: text
     summary: A string that contains the comment text.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,23 +1,24 @@
-### YamlMime:TSEnum
 name: Office.MailboxEnums.RecipientType
-uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
+uid: outlook!Office.MailboxEnums.RecipientType:enum
 package: outlook!
 fullName: Office.MailboxEnums.RecipientType
 summary: Specifies the type of recipient of a message or appointment.
 remarks: >-
-  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose or Read
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
 
 
   **Important**: A `recipientType` property value isn't returned by the
   [Office.context.mailbox.item.from.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1))
   and
   [Office.context.mailbox.item.organizer.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1))
-  methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.
+  methods. The email sender or appointment organizer is always a user whose
+  email address is on the Exchange server.
 
 
   #### Examples
@@ -80,42 +81,51 @@ remarks: >-
   }
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: DistributionList
-    uid: 'outlook!Office.MailboxEnums.RecipientType.DistributionList:member'
+    uid: outlook!Office.MailboxEnums.RecipientType.DistributionList:member
     package: outlook!
-    summary: Specifies the recipient is a distribution list containing a list of email addresses.
+    summary: >-
+      Specifies the recipient is a distribution list containing a list of email
+      addresses.
     value: '"distributionList"'
   - name: User
-    uid: 'outlook!Office.MailboxEnums.RecipientType.User:member'
+    uid: outlook!Office.MailboxEnums.RecipientType.User:member
     package: outlook!
     summary: Specifies the recipient is an SMTP email address on the Exchange server.
     value: '"user"'
   - name: ExternalUser
-    uid: 'outlook!Office.MailboxEnums.RecipientType.ExternalUser:member'
+    uid: outlook!Office.MailboxEnums.RecipientType.ExternalUser:member
     package: outlook!
     summary: >-
-      Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient
-      added from a personal Outlook address book.
+      Specifies the recipient is an SMTP email address that isn't on the
+      Exchange server. It also refers to a recipient added from a personal
+      Outlook address book.
 
 
       **Important**: In Outlook on the web, on Windows
-      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic (starting with
-      Version 2210, Build 15813.20002)), and on Mac, Global Address Book (GAL) recipients saved to a personal address
-      book return the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients
-      return a `User` value only if they're directly added or resolved against the GAL.
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+      and classic (starting with Version 2210, Build 15813.20002)), and on Mac,
+      Global Address Book (GAL) recipients saved to a personal address book
+      return the `ExternalUser` value, even if their SMTP email address appears
+      on the Exchange server. Recipients return a `User` value only if they're
+      directly added or resolved against the GAL.
     value: '"externalUser"'
   - name: Other
-    uid: 'outlook!Office.MailboxEnums.RecipientType.Other:member'
+    uid: outlook!Office.MailboxEnums.RecipientType.Other:member
     package: outlook!
     summary: >-
-      Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved
-      against the Exchange address book, and is therefore treated as an external SMTP address.
+      Specifies the recipient isn't one of the other recipient types. It also
+      refers to a recipient that isn't resolved against the Exchange address
+      book, and is therefore treated as an external SMTP address.
 
 
-      **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal
-      address book return the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients
-      return a `User` value only if they're directly added or resolved against the GAL.
+      **Important**: In Outlook on Android and on iOS, Global Address Book
+      (GAL) recipients saved to a personal address book return the `Other`
+      value, even if their SMTP email address appears on the Exchange server.
+      Recipients return a `User` value only if they're directly added or
+      resolved against the GAL.
     value: '"other"'

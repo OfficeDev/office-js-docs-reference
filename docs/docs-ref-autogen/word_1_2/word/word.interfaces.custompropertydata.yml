@@ -1,10 +1,12 @@
-### YamlMime:TSType
 name: Word.Interfaces.CustomPropertyData
-uid: 'word!Word.Interfaces.CustomPropertyData:interface'
+uid: word!Word.Interfaces.CustomPropertyData:interface
 package: word!
 fullName: Word.Interfaces.CustomPropertyData
-summary: An interface describing the data returned by calling `customProperty.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `customProperty.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

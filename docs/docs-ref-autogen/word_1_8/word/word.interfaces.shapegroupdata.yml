@@ -1,10 +1,12 @@
-### YamlMime:TSType
 name: Word.Interfaces.ShapeGroupData
-uid: 'word!Word.Interfaces.ShapeGroupData:interface'
+uid: word!Word.Interfaces.ShapeGroupData:interface
 package: word!
 fullName: Word.Interfaces.ShapeGroupData
-summary: An interface describing the data returned by calling `shapeGroup.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `shapeGroup.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

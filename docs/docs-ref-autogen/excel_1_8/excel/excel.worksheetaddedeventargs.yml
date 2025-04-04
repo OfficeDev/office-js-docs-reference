@@ -1,32 +1,40 @@
-### YamlMime:TSType
 name: Excel.WorksheetAddedEventArgs
-uid: 'excel!Excel.WorksheetAddedEventArgs:interface'
+uid: excel!Excel.WorksheetAddedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetAddedEventArgs
 summary: Provides information about the worksheet that raised the added event.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: source
-    uid: 'excel!Excel.WorksheetAddedEventArgs#source:member'
+    uid: excel!Excel.WorksheetAddedEventArgs#source:member
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+        type: <xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"
   - name: type
-    uid: 'excel!Excel.WorksheetAddedEventArgs#type:member'
+    uid: excel!Excel.WorksheetAddedEventArgs#type:member
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,12 +42,13 @@ properties:
       return:
         type: '"WorksheetAdded"'
   - name: worksheetId
-    uid: 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
+    uid: excel!Excel.WorksheetAddedEventArgs#worksheetId:member
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet that is added to the workbook.
     remarks: >-
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -61,6 +70,7 @@ properties:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:

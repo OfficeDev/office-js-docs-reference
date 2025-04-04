@@ -1,6 +1,5 @@
-### YamlMime:TSType
 name: OfficeExtension.ErrorCodes
-uid: 'office!OfficeExtension.ErrorCodes:class'
+uid: office!OfficeExtension.ErrorCodes:class
 package: office!
 fullName: OfficeExtension.ErrorCodes
 summary: >-
@@ -9,18 +8,21 @@ summary: >-
 
 
   To learn more about the error codes, see [Office Common API error
-  codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
+  codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: accessDenied
-    uid: 'office!OfficeExtension.ErrorCodes.accessDenied:member'
+    uid: office!OfficeExtension.ErrorCodes.accessDenied:member
     package: office!
     fullName: accessDenied
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +30,12 @@ properties:
       return:
         type: string
   - name: activityLimitReached
-    uid: 'office!OfficeExtension.ErrorCodes.activityLimitReached:member'
+    uid: office!OfficeExtension.ErrorCodes.activityLimitReached:member
     package: office!
     fullName: activityLimitReached
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,11 +43,12 @@ properties:
       return:
         type: string
   - name: apiNotFound
-    uid: 'office!OfficeExtension.ErrorCodes.apiNotFound:member'
+    uid: office!OfficeExtension.ErrorCodes.apiNotFound:member
     package: office!
     fullName: apiNotFound
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,11 +56,12 @@ properties:
       return:
         type: string
   - name: cannotRegisterEvent
-    uid: 'office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member'
+    uid: office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member
     package: office!
     fullName: cannotRegisterEvent
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +69,12 @@ properties:
       return:
         type: string
   - name: connectionFailure
-    uid: 'office!OfficeExtension.ErrorCodes.connectionFailure:member'
+    uid: office!OfficeExtension.ErrorCodes.connectionFailure:member
     package: office!
     fullName: connectionFailure
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,11 +82,12 @@ properties:
       return:
         type: string
   - name: generalException
-    uid: 'office!OfficeExtension.ErrorCodes.generalException:member'
+    uid: office!OfficeExtension.ErrorCodes.generalException:member
     package: office!
     fullName: generalException
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +95,12 @@ properties:
       return:
         type: string
   - name: invalidArgument
-    uid: 'office!OfficeExtension.ErrorCodes.invalidArgument:member'
+    uid: office!OfficeExtension.ErrorCodes.invalidArgument:member
     package: office!
     fullName: invalidArgument
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,11 +108,12 @@ properties:
       return:
         type: string
   - name: invalidObjectPath
-    uid: 'office!OfficeExtension.ErrorCodes.invalidObjectPath:member'
+    uid: office!OfficeExtension.ErrorCodes.invalidObjectPath:member
     package: office!
     fullName: invalidObjectPath
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,11 +121,12 @@ properties:
       return:
         type: string
   - name: invalidRequestContext
-    uid: 'office!OfficeExtension.ErrorCodes.invalidRequestContext:member'
+    uid: office!OfficeExtension.ErrorCodes.invalidRequestContext:member
     package: office!
     fullName: invalidRequestContext
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +134,12 @@ properties:
       return:
         type: string
   - name: propertyNotLoaded
-    uid: 'office!OfficeExtension.ErrorCodes.propertyNotLoaded:member'
+    uid: office!OfficeExtension.ErrorCodes.propertyNotLoaded:member
     package: office!
     fullName: propertyNotLoaded
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,11 +147,12 @@ properties:
       return:
         type: string
   - name: runMustReturnPromise
-    uid: 'office!OfficeExtension.ErrorCodes.runMustReturnPromise:member'
+    uid: office!OfficeExtension.ErrorCodes.runMustReturnPromise:member
     package: office!
     fullName: runMustReturnPromise
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,11 +160,12 @@ properties:
       return:
         type: string
   - name: valueNotLoaded
-    uid: 'office!OfficeExtension.ErrorCodes.valueNotLoaded:member'
+    uid: office!OfficeExtension.ErrorCodes.valueNotLoaded:member
     package: office!
     fullName: valueNotLoaded
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

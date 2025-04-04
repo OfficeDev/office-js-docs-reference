@@ -1,20 +1,25 @@
-### YamlMime:TSType
 name: Excel.CellPropertiesFontLoadOptions
-uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
+uid: excel!Excel.CellPropertiesFontLoadOptions:interface
 package: excel!
 fullName: Excel.CellPropertiesFontLoadOptions
 summary: Specifies which properties to load on the `format.font` object.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: bold
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#bold:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#bold:member
     package: excel!
     fullName: bold
     summary: Specifies whether to load the `bold` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,12 +27,13 @@ properties:
       return:
         type: boolean
   - name: color
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#color:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#color:member
     package: excel!
     fullName: color
     summary: Specifies whether to load the `color` property.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -64,6 +70,7 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,11 +78,14 @@ properties:
       return:
         type: boolean
   - name: italic
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#italic:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#italic:member
     package: excel!
     fullName: italic
     summary: Specifies whether to load the `italic` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,11 +93,14 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#name:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#name:member
     package: excel!
     fullName: name
     summary: Specifies whether to load the `name` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,11 +108,14 @@ properties:
       return:
         type: boolean
   - name: size
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#size:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#size:member
     package: excel!
     fullName: size
     summary: Specifies whether to load the `size` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,11 +123,14 @@ properties:
       return:
         type: boolean
   - name: strikethrough
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#strikethrough:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#strikethrough:member
     package: excel!
     fullName: strikethrough
     summary: Specifies whether to load the `strikethrough` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,11 +138,14 @@ properties:
       return:
         type: boolean
   - name: subscript
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#subscript:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#subscript:member
     package: excel!
     fullName: subscript
     summary: Specifies whether to load the `subscript` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,11 +153,14 @@ properties:
       return:
         type: boolean
   - name: superscript
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#superscript:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#superscript:member
     package: excel!
     fullName: superscript
     summary: Specifies whether to load the `superscript` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,11 +168,14 @@ properties:
       return:
         type: boolean
   - name: tintAndShade
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#tintAndShade:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#tintAndShade:member
     package: excel!
     fullName: tintAndShade
     summary: Specifies whether to load the `tintAndShade` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,11 +183,14 @@ properties:
       return:
         type: boolean
   - name: underline
-    uid: 'excel!Excel.CellPropertiesFontLoadOptions#underline:member'
+    uid: excel!Excel.CellPropertiesFontLoadOptions#underline:member
     package: excel!
     fullName: underline
     summary: Specifies whether to load the `underline` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

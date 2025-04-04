@@ -1,21 +1,29 @@
-### YamlMime:TSType
 name: Excel.PivotFilters
-uid: 'excel!Excel.PivotFilters:interface'
+uid: excel!Excel.PivotFilters:interface
 package: excel!
 fullName: Excel.PivotFilters
-summary: An interface representing all PivotFilters currently applied to a given PivotField.
-remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+summary: >-
+  An interface representing all PivotFilters currently applied to a given
+  PivotField.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: dateFilter
-    uid: 'excel!Excel.PivotFilters#dateFilter:member'
+    uid: excel!Excel.PivotFilters#dateFilter:member
     package: excel!
     fullName: dateFilter
-    summary: The PivotField's currently applied date filter. This property is `null` if no value filter is applied.
+    summary: >-
+      The PivotField's currently applied date filter. This property is `null` if
+      no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -56,19 +64,24 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dateFilter?: Excel.PivotDateFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotDateFilter:interface" />'
+        type: <xref uid="excel!Excel.PivotDateFilter:interface" />
   - name: labelFilter
-    uid: 'excel!Excel.PivotFilters#labelFilter:member'
+    uid: excel!Excel.PivotFilters#labelFilter:member
     package: excel!
     fullName: labelFilter
-    summary: The PivotField's currently applied label filter. This property is `null` if no value filter is applied.
+    summary: >-
+      The PivotField's currently applied label filter. This property is `null`
+      if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -103,19 +116,24 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'labelFilter?: Excel.PivotLabelFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotLabelFilter:interface" />'
+        type: <xref uid="excel!Excel.PivotLabelFilter:interface" />
   - name: manualFilter
-    uid: 'excel!Excel.PivotFilters#manualFilter:member'
+    uid: excel!Excel.PivotFilters#manualFilter:member
     package: excel!
     fullName: manualFilter
-    summary: The PivotField's currently applied manual filter. This property is `null` if no value filter is applied.
+    summary: >-
+      The PivotField's currently applied manual filter. This property is `null`
+      if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -150,19 +168,24 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'manualFilter?: Excel.PivotManualFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotManualFilter:interface" />'
+        type: <xref uid="excel!Excel.PivotManualFilter:interface" />
   - name: valueFilter
-    uid: 'excel!Excel.PivotFilters#valueFilter:member'
+    uid: excel!Excel.PivotFilters#valueFilter:member
     package: excel!
     fullName: valueFilter
-    summary: The PivotField's currently applied value filter. This property is `null` if no value filter is applied.
+    summary: >-
+      The PivotField's currently applied value filter. This property is `null`
+      if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -197,9 +220,10 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'valueFilter?: Excel.PivotValueFilter;'
       return:
-        type: '<xref uid="excel!Excel.PivotValueFilter:interface" />'
+        type: <xref uid="excel!Excel.PivotValueFilter:interface" />

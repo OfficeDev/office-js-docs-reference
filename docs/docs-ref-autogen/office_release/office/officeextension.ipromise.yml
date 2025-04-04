@@ -1,10 +1,15 @@
-### YamlMime:TSTypeAlias
 name: OfficeExtension.IPromise
-uid: 'office!OfficeExtension.IPromise:type'
+uid: office!OfficeExtension.IPromise:type
 package: office!
 fullName: OfficeExtension.IPromise
 summary: ''
-remarks: ''
+remarks: |-
+
+
+  This type is a union of the following types: 
+
+  <xref uid="excel!Excel.= Promise:interface" />
+
 isPreview: false
 isDeprecated: false
 syntax: export type IPromise<T> = Promise<T>;

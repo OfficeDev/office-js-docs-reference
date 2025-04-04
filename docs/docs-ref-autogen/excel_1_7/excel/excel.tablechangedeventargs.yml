@@ -1,20 +1,27 @@
-### YamlMime:TSType
 name: Excel.TableChangedEventArgs
-uid: 'excel!Excel.TableChangedEventArgs:interface'
+uid: excel!Excel.TableChangedEventArgs:interface
 package: excel!
 fullName: Excel.TableChangedEventArgs
 summary: Provides information about the table that raised the changed event.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: address
-    uid: 'excel!Excel.TableChangedEventArgs#address:member'
+    uid: excel!Excel.TableChangedEventArgs#address:member
     package: excel!
     fullName: address
-    summary: Gets the address that represents the changed area of a table on a specific worksheet.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Gets the address that represents the changed area of a table on a specific
+      worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,40 +29,51 @@ properties:
       return:
         type: string
   - name: changeType
-    uid: 'excel!Excel.TableChangedEventArgs#changeType:member'
+    uid: excel!Excel.TableChangedEventArgs#changeType:member
     package: excel!
     fullName: changeType
-    summary: Gets the change type that represents how the changed event is triggered. See `Excel.DataChangeType` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Gets the change type that represents how the changed event is triggered.
+      See `Excel.DataChangeType` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
-        "ColumnDeleted" | "CellInserted" | "CellDeleted";
+        changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" |
+        "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" |
+        "CellInserted" | "CellDeleted";
       return:
         type: >-
-          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" |
-          "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"
+          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" |
+          "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
+          "ColumnDeleted" | "CellInserted" | "CellDeleted"
   - name: source
-    uid: 'excel!Excel.TableChangedEventArgs#source:member'
+    uid: excel!Excel.TableChangedEventArgs#source:member
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+        type: <xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"
   - name: tableId
-    uid: 'excel!Excel.TableChangedEventArgs#tableId:member'
+    uid: excel!Excel.TableChangedEventArgs#tableId:member
     package: excel!
     fullName: tableId
     summary: Gets the ID of the table in which the data changed.
     remarks: >-
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -82,6 +100,7 @@ properties:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,11 +108,14 @@ properties:
       return:
         type: string
   - name: type
-    uid: 'excel!Excel.TableChangedEventArgs#type:member'
+    uid: excel!Excel.TableChangedEventArgs#type:member
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,12 +123,13 @@ properties:
       return:
         type: '"TableChanged"'
   - name: worksheetId
-    uid: 'excel!Excel.TableChangedEventArgs#worksheetId:member'
+    uid: excel!Excel.TableChangedEventArgs#worksheetId:member
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
     remarks: >-
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -133,6 +156,7 @@ properties:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:

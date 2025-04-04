@@ -54,6 +54,71 @@ interface IMembers {
     ]
 }
 
+interface ApiFieldYaml {
+    name: string;
+    uid: string;
+    package: string;
+    summary: string;
+    remarks?: string;
+}
+
+interface ApiPropertyYaml {
+    name: string;
+    uid: string;
+    package: string;
+    fullName: string;
+    summary: string;
+    remarks?: string;
+    isPreview: boolean;
+    isDeprecated: boolean;
+    syntax: {
+        content: string;
+        return: {
+            type: string;
+            description?: string;
+        }
+    }
+}
+
+interface ApiMethodYaml {
+    name: string;
+    uid: string;
+    package: string;
+    fullName: string;
+    summary: string;
+    remarks?: string;
+    isPreview: boolean;
+    isDeprecated: boolean;
+    syntax: {
+        content: string;
+        parameters?: {
+            id: string;
+            description: string;
+            type: string;
+        }[];
+        return: {
+            type: string;
+            description: string;
+        };
+    };
+}
+
+interface ApiYaml {
+    name: string;
+    uid: string;
+    package: string;
+    fullName: string;
+    summary: string;
+    remarks: string;
+    isPreview: boolean;
+    isDeprecated: boolean;
+    type: string;
+    fields?: ApiFieldYaml[];
+    properties?: ApiPropertyYaml[];
+    methods?: ApiMethodYaml[];
+    syntax?: string;
+}
+
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const tocTemplateLocation = path.resolve("../../docs");
@@ -71,7 +136,7 @@ tryCatch(async () => {
     let globalTocString =  fsx.readFileSync(`${tocTemplateLocation}/toc.yml`).toString();
     
     globalTocString = globalTocString.replace(/href:\s*(.*)\.md/g, "href: ../../$1.md");
-    let globalToc = jsyaml.safeLoad(globalTocString) as Toc;
+    let globalToc = jsyaml.load(globalTocString) as Toc;
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
     fsx.readdirSync(docsSource)
@@ -168,14 +233,38 @@ tryCatch(async () => {
                         let packageFolder = subfolder + '/' + subfilename;
                         fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
                             
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString()
+                            const apiYaml: ApiYaml = jsyaml.load(fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8")) as ApiYaml;
+                            if (apiYaml.uid.endsWith(":type")) {
+                                let remarks = "\n\nThis type is a union of the following types: \r\n\r\n"
+                                apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
+                                    remarks += `<xref uid="excel!Excel.${match}:interface" />`
+                                    if (matchIndex < matches.length - 1) {
+                                        remarks += ", ";
+                                    }
+                                });
+                                apiYaml.remarks += remarks;
+                            }
+                            
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, jsyaml.dump(apiYaml) 
                                 .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
                                 .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
                                 .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
                         
-                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
+                        const apiYaml: ApiYaml = jsyaml.load(fsx.readFileSync(subfolder + '/' + subfilename).toString()) as ApiYaml;
+                            if (apiYaml.uid.endsWith(":type")) {
+                                let remarks = "\n\nThis type is a union of the following types: \n\n"
+                                apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
+                                    remarks += `<xref uid="excel!Excel.${match}:interface" />`
+                                    if (matchIndex < matches.length - 1) {
+                                        remarks += ",";
+                                    }
+                                });
+                                apiYaml.remarks += remarks;
+                            }
+
+                        fsx.writeFileSync(subfolder + '/' + subfilename, JSON.stringify(apiYaml)
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
                             .replace(/description: \\\*[\r\n]/g, "description:") // Remove descriptions that are just "\*".
                             .replace(/\\\*/gm, "*")); // Fix asterisk protection.
@@ -216,14 +305,14 @@ function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: stri
         latestToc = fixToc(tocPath, globalToc, hostName, versionNumber);
     }
 
-    fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
+    fsx.writeFileSync(tocPath, jsyaml.dump(latestToc));
     return latestToc;
 }
 
 function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
-    let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
+    let origToc = (jsyaml.load(fsx.readFileSync(tocPath).toString()) as Toc);
     let newTocNode = <ApplicationTocNode>{};
     let membersToMove = <IMembers>{};
 
@@ -240,8 +329,8 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
         generalFilter = generalFilter.concat(['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message']);
     }
 
-    origToc.items.forEach((rootItem, rootIndex) => {
-        rootItem.items.forEach((packageItem: ApplicationTocNode, packageIndex) => {
+    origToc.items.forEach((rootItem) => {
+        rootItem.items.forEach((packageItem: ApplicationTocNode) => {
             // fix host capitalization
             let packageName;
             if (packageItem.name === 'onenote') {
@@ -294,8 +383,9 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                         }
                     }
 
-                    // Address any nested namespaces
-                    primaryList.forEach((namespaceItem, namespaceIndex) => {
+                    
+                    primaryList.forEach((namespaceItem) => {
+                        // Address any nested namespaces
                         // Scan UID for namespace to add to name.
                         if (namespaceItem.uid) {
                             let regex = /\w+\.(\w+\.\w+)/g;
@@ -334,8 +424,8 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
 function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
 
-    let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
-    let runtimeToc = (jsyaml.safeLoad(fsx.readFileSync(path.resolve("../../docs/docs-ref-autogen/office-runtime/toc.yml")).toString()) as Toc);
+    let origToc = (jsyaml.load(fsx.readFileSync(tocPath).toString()) as Toc);
+    let runtimeToc = (jsyaml.load(fsx.readFileSync(path.resolve("../../docs/docs-ref-autogen/office-runtime/toc.yml")).toString()) as Toc);
     origToc.items[0].items = origToc.items[0].items.concat(runtimeToc.items[0].items);
     let membersToMove = <IMembers>{};
 
@@ -410,4 +500,3 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     return newToc;
-}

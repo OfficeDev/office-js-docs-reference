@@ -1,20 +1,27 @@
-### YamlMime:TSType
 name: Excel.WorksheetFormatChangedEventArgs
-uid: 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
+uid: excel!Excel.WorksheetFormatChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetFormatChangedEventArgs
 summary: Provides information about the worksheet format change event.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: address
-    uid: 'excel!Excel.WorksheetFormatChangedEventArgs#address:member'
+    uid: excel!Excel.WorksheetFormatChangedEventArgs#address:member
     package: excel!
     fullName: address
-    summary: Gets the range address that represents the changed area of a specific worksheet.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Gets the range address that represents the changed area of a specific
+      worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,23 +29,29 @@ properties:
       return:
         type: string
   - name: source
-    uid: 'excel!Excel.WorksheetFormatChangedEventArgs#source:member'
+    uid: excel!Excel.WorksheetFormatChangedEventArgs#source:member
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+        type: <xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"
   - name: type
-    uid: 'excel!Excel.WorksheetFormatChangedEventArgs#type:member'
+    uid: excel!Excel.WorksheetFormatChangedEventArgs#type:member
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +59,14 @@ properties:
       return:
         type: '"WorksheetFormatChanged"'
   - name: worksheetId
-    uid: 'excel!Excel.WorksheetFormatChangedEventArgs#worksheetId:member'
+    uid: excel!Excel.WorksheetFormatChangedEventArgs#worksheetId:member
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,14 +75,17 @@ properties:
         type: string
 methods:
   - name: getRange(ctx)
-    uid: 'excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)'
+    uid: excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)
     package: excel!
     fullName: getRange(ctx)
-    summary: |-
+    summary: >-
       Gets the range that represents the changed area of a specific worksheet.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,19 +93,23 @@ methods:
       parameters:
         - id: ctx
           description: ''
-          type: '<xref uid="excel!Excel.RequestContext:class" />'
+          type: <xref uid="excel!Excel.RequestContext:class" />
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''
   - name: getRangeOrNullObject(ctx)
-    uid: 'excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)'
+    uid: excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)
     package: excel!
     fullName: getRangeOrNullObject(ctx)
-    summary: |-
-      Gets the range that represents the changed area of a specific worksheet. It might return null object.
+    summary: >-
+      Gets the range that represents the changed area of a specific worksheet.
+      It might return null object.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +117,7 @@ methods:
       parameters:
         - id: ctx
           description: ''
-          type: '<xref uid="excel!Excel.RequestContext:class" />'
+          type: <xref uid="excel!Excel.RequestContext:class" />
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''

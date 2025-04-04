@@ -1,11 +1,11 @@
-### YamlMime:TSEnum
 name: Word.ContentControlState
-uid: 'word!Word.ContentControlState:enum'
+uid: word!Word.ContentControlState:enum
 package: word!
 fullName: Word.ContentControlState
 summary: Represents the state of the content control.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -20,7 +20,7 @@ remarks: >-
   // Sets the state of the first content control.
 
   await Word.run(async (context) => {
-    const state = ((document.getElementById("state-to-set") as HTMLSelectElement).value as unknown) as Word.ContentControlState;
+    const state = ($("#state-to-set").val() as unknown) as Word.ContentControlState;
     let firstContentControl = context.document.contentControls.getFirstOrNullObject();
     await context.sync();
 
@@ -37,22 +37,27 @@ remarks: >-
   });
 
   ```
+
 isPreview: true
 isDeprecated: false
 fields:
   - name: error
-    uid: 'word!Word.ContentControlState.error:member'
+    uid: word!Word.ContentControlState.error:member
     package: word!
-    summary: |-
+    summary: >-
       Error state.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Error"'
   - name: warning
-    uid: 'word!Word.ContentControlState.warning:member'
+    uid: word!Word.ContentControlState.warning:member
     package: word!
-    summary: |-
+    summary: >-
       Warning state.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Warning"'

@@ -1,23 +1,30 @@
-### YamlMime:TSType
 name: Excel.CommentRichContent
-uid: 'excel!Excel.CommentRichContent:interface'
+uid: excel!Excel.CommentRichContent:interface
 package: excel!
 fullName: Excel.CommentRichContent
 summary: >-
-  Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other
-  objects contained within the comment body, such as mentions.
-remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+  Represents the content contained within a comment or comment reply. Rich
+  content incudes the text string and any other objects contained within the
+  comment body, such as mentions.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: mentions
-    uid: 'excel!Excel.CommentRichContent#mentions:member'
+    uid: excel!Excel.CommentRichContent#mentions:member
     package: excel!
     fullName: mentions
-    summary: 'An array containing all the entities (e.g., people) mentioned within the comment.'
+    summary: >-
+      An array containing all the entities (e.g., people) mentioned within the
+      comment.
     remarks: >-
-      \[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -50,20 +57,26 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'mentions?: Excel.CommentMention[];'
       return:
-        type: '<xref uid="excel!Excel.CommentMention:interface" />[]'
+        type: <xref uid="excel!Excel.CommentMention:interface" />[]
   - name: richContent
-    uid: 'excel!Excel.CommentRichContent#richContent:member'
+    uid: excel!Excel.CommentRichContent#richContent:member
     package: excel!
     fullName: richContent
     summary: >-
-      Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an
-      ID attribute of 0, and the second mentioned entity has an ID attribute of 1).
-    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Specifies the rich content of the comment (e.g., comment content with
+      mentions, the first mentioned entity has an ID attribute of 0, and the
+      second mentioned entity has an ID attribute of 1).
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

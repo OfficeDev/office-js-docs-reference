@@ -1,11 +1,11 @@
-### YamlMime:TSType
 name: Word.AnnotationClickedEventArgs
-uid: 'word!Word.AnnotationClickedEventArgs:interface'
+uid: word!Word.AnnotationClickedEventArgs:interface
 package: word!
 fullName: Word.AnnotationClickedEventArgs
 summary: Holds annotation information that is passed back on annotation inserted event.
 remarks: >-
-  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -50,16 +50,20 @@ remarks: >-
   }
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: id
-    uid: 'word!Word.AnnotationClickedEventArgs#id:member'
+    uid: word!Word.AnnotationClickedEventArgs#id:member
     package: word!
     fullName: id
     summary: Specifies the annotation ID for which the event was fired.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

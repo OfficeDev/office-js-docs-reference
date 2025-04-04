@@ -1,11 +1,11 @@
-### YamlMime:TSType
 name: Word.Application
-uid: 'word!Word.Application:class'
+uid: word!Word.Application:class
 package: word!
 fullName: Word.Application
 summary: Represents the application object.
 remarks: >-
-  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -17,7 +17,8 @@ remarks: >-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
 
-  // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
+  // Updates the text of the current document with the text from another
+  document passed in as a Base64-encoded string.
 
   await Word.run(async (context) => {
     // Use the Base64-encoded string representation of the selected .docx file.
@@ -41,32 +42,35 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'word!Word.Application#context:member'
+    uid: word!Word.Application#context:member
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
+        type: <xref uid="word!Word.RequestContext:class" />
 methods:
   - name: createDocument(base64File)
-    uid: 'word!Word.Application#createDocument:member(1)'
+    uid: word!Word.Application#createDocument:member(1)
     package: word!
     fullName: createDocument(base64File)
     summary: Creates a new document by using an optional Base64-encoded .docx file.
     remarks: >-
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -78,8 +82,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
 
-      // Updates the text of the current document with the text from another document passed in as a Base64-encoded
-      string.
+      // Updates the text of the current document with the text from another
+      document passed in as a Base64-encoded string.
 
       await Word.run(async (context) => {
         // Use the Base64-encoded string representation of the selected .docx file.
@@ -103,6 +107,7 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,43 +117,51 @@ methods:
           description: Optional. The Base64-encoded .docx file. The default value is null.
           type: string
       return:
-        type: '<xref uid="word!Word.DocumentCreated:class" />'
+        type: <xref uid="word!Word.DocumentCreated:class" />
         description: ''
   - name: newObject(context)
-    uid: 'word!Word.Application.newObject:member(1)'
+    uid: word!Word.Application.newObject:member(1)
     package: word!
     fullName: newObject(context)
     summary: Create a new instance of the `Word.Application` object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;'
+      content: >-
+        static newObject(context: OfficeExtension.ClientRequestContext):
+        Word.Application;
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
       return:
-        type: '<xref uid="word!Word.Application:class" />'
+        type: <xref uid="word!Word.Application:class" />
         description: ''
   - name: openDocument(filePath)
-    uid: 'word!Word.Application#openDocument:member(1)'
+    uid: word!Word.Application#openDocument:member(1)
     package: word!
     fullName: openDocument(filePath)
     summary: >-
-      Opens a document and displays it in a new tab or window. The following are examples for the various supported
-      clients and platforms.
+      Opens a document and displays it in a new tab or window. The following are
+      examples for the various supported clients and platforms.
 
 
-      - Remote or cloud location example: `https://microsoft.sharepoint.com/some/path/Document.docx`
+      - Remote or cloud location example:
+      `https://microsoft.sharepoint.com/some/path/Document.docx`
 
 
-      - Local location examples for Windows: `C:\\Users\\Someone\\Documents\\Document.docx` (includes required escaped
+      - Local location examples for Windows:
+      `C:\\Users\\Someone\\Documents\\Document.docx` (includes required escaped
       backslashes), `file://mycomputer/myfolder/Document.docx`
 
 
       - Local location example for Mac and iOS: `/User/someone/document.docx`
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,19 +169,23 @@ methods:
       parameters:
         - id: filePath
           description: >-
-            Required. The absolute path of the .docx file. Word on the web only supports remote (cloud) locations, while
-            Word on Windows, on Mac, and on iOS support local and remote locations.
+            Required. The absolute path of the .docx file. Word on the web only
+            supports remote (cloud) locations, while Word on Windows, on Mac,
+            and on iOS support local and remote locations.
           type: string
       return:
         type: void
         description: ''
   - name: retrieveStylesFromBase64(base64File)
-    uid: 'word!Word.Application#retrieveStylesFromBase64:member(1)'
+    uid: word!Word.Application#retrieveStylesFromBase64:member(1)
     package: word!
     fullName: retrieveStylesFromBase64(base64File)
-    summary: Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
+    summary: >-
+      Parse styles from template Base64 file and return JSON format of retrieved
+      styles as a string.
     remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -180,7 +197,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
 
 
-      // Gets style info from another document passed in as a Base64-encoded string.
+      // Gets style info from another document passed in as a Base64-encoded
+      string.
 
       await Word.run(async (context) => {
         const retrievedStyles = context.application.retrieveStylesFromBase64(externalDocument);
@@ -190,28 +208,34 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'retrieveStylesFromBase64(base64File: string): OfficeExtension.ClientResult<string>;'
+      content: >-
+        retrieveStylesFromBase64(base64File: string):
+        OfficeExtension.ClientResult<string>;
       parameters:
         - id: base64File
           description: Required. The template file.
           type: string
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: toJSON()
-    uid: 'word!Word.Application#toJSON:member(1)'
+    uid: word!Word.Application#toJSON:member(1)
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.Application` object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any
-      loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Application`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,4 +249,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

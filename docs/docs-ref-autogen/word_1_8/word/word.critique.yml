@@ -1,11 +1,13 @@
-### YamlMime:TSType
 name: Word.Critique
-uid: 'word!Word.Critique:interface'
+uid: word!Word.Critique:interface
 package: word!
 fullName: Word.Critique
-summary: Critique that will be rendered as underline for the specified part of paragraph in the document.
+summary: >-
+  Critique that will be rendered as underline for the specified part of
+  paragraph in the document.
 remarks: >-
-  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -69,28 +71,39 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: colorScheme
-    uid: 'word!Word.Critique#colorScheme:member'
+    uid: word!Word.Critique#colorScheme:member
     package: word!
     fullName: colorScheme
     summary: Specifies the color scheme of the critique.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";'
+      content: >-
+        colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" |
+        "Lavender" | "Berry";
       return:
-        type: '<xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" | "Blue" | "Lavender" | "Berry"'
+        type: >-
+          <xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" |
+          "Blue" | "Lavender" | "Berry"
   - name: length
-    uid: 'word!Word.Critique#length:member'
+    uid: word!Word.Critique#length:member
     package: word!
     fullName: length
     summary: Specifies the length of the critique inside paragraph.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,23 +111,29 @@ properties:
       return:
         type: number
   - name: popupOptions
-    uid: 'word!Word.Critique#popupOptions:member'
+    uid: word!Word.Critique#popupOptions:member
     package: word!
     fullName: popupOptions
     summary: Specifies the behavior of the pop-up menu for the critique.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'popupOptions?: Word.CritiquePopupOptions;'
       return:
-        type: '<xref uid="word!Word.CritiquePopupOptions:interface" />'
+        type: <xref uid="word!Word.CritiquePopupOptions:interface" />
   - name: start
-    uid: 'word!Word.Critique#start:member'
+    uid: word!Word.Critique#start:member
     package: word!
     fullName: start
     summary: Specifies the start index of the critique inside paragraph.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
