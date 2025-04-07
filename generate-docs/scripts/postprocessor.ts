@@ -230,7 +230,7 @@ tryCatch(async () => {
         .forEach(filename => {
             let subfolder = docsDestination + '/' + filename;
             fsx.readdirSync(subfolder).forEach(subfilename => {
-                let hostName = filename.substring(0, filename.indexOf("_"));
+                let hostName = filename.substring(0, filename.indexOf("_") < 0 ? filename.length : filename.indexOf("_"));
                 if (subfilename.indexOf("toc") >= 0) {
                     // Update overview HREF.
                     fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
@@ -482,7 +482,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
     const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
     // Add links for type aliases.
     if (apiYaml.uid.endsWith(":type") && (apiYaml.uid.indexOf("Office") < 0)) {
-        let remarks = `${EOL}${EOL}This type is a union of the following types: ${EOL}${EOL}`
+        let remarks = `${EOL}${EOL}Learn more about the types in this type alias throug hthe following links: ${EOL}${EOL}`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
             remarks += `[${hostName}.${match}](/javascript/api/${hostName}/${hostName}.${match})" />`
             if (matchIndex < matches.length - 1) {
