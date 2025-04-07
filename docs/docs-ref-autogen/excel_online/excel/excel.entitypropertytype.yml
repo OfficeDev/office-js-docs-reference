@@ -4,7 +4,7 @@ uid: excel!Excel.EntityPropertyType:type
 package: excel!
 fullName: Excel.EntityPropertyType
 summary: Represents the value of a property.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[Excel.CellValueAndPropertyMetadata](/javascript/api/excel/excel.CellValueAndPropertyMetadata)\" />, [Excel.CellValue](/javascript/api/excel/excel.CellValue)\" />"
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[excel_online.CellValueAndPropertyMetadata](/javascript/api/excel_online/excel_online.CellValueAndPropertyMetadata)\" />, [excel_online.CellValue](/javascript/api/excel_online/excel_online.CellValue)\" />"
 
 isPreview: false
 isDeprecated: false

@@ -4,7 +4,7 @@ uid: excel!Excel.CardLayoutSection:type
 package: excel!
 fullName: Excel.CardLayoutSection
 summary: Represents the layout of a section of a card in card view.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[Excel.CardLayoutListSection](/javascript/api/excel/excel.CardLayoutListSection)\" />, [Excel.CardLayoutTableSection](/javascript/api/excel/excel.CardLayoutTableSection)\" />"
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[excel_1_18.CardLayoutListSection](/javascript/api/excel_1_18/excel_1_18.CardLayoutListSection)\" />, [excel_1_18.CardLayoutTableSection](/javascript/api/excel_1_18/excel_1_18.CardLayoutTableSection)\" />"
 
 isPreview: false
 isDeprecated: false

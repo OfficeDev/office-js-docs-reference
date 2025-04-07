@@ -237,11 +237,11 @@ tryCatch(async () => {
                         let packageFolder = subfolder + '/' + subfilename;
                             fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
                             const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");                        
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, cleanUpYmlFile(ymlFile));
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, cleanUpYmlFile(ymlFile, filename));
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
                         const ymlFile = fsx.readFileSync(subfolder + '/' + subfilename, "utf8");
-                        fsx.writeFileSync(subfolder + '/' + subfilename, cleanUpYmlFile(ymlFile));
+                        fsx.writeFileSync(subfolder + '/' + subfilename, cleanUpYmlFile(ymlFile, filename));
                     }
                 });
         });
@@ -476,14 +476,14 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     return newToc;
 }
 
-function cleanUpYmlFile(ymlFile: string): string {
+function cleanUpYmlFile(ymlFile: string, hostName: string): string {
     const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
     const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
     // Add links for type aliases.
-    if (apiYaml.uid.endsWith(":type")) {
+    if (apiYaml.uid.endsWith(":type") && (apiYaml.uid.indexOf("Office") < 0)) {
         let remarks = `${EOL}${EOL}This type is a union of the following types: ${EOL}${EOL}`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
-            remarks += `[Excel.${match}](/javascript/api/excel/excel.${match})" />`
+            remarks += `[${hostName}.${match}](/javascript/api/${hostName}/${hostName}.${match})" />`
             if (matchIndex < matches.length - 1) {
                 remarks += ", ";
             }

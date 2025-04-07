@@ -4,7 +4,7 @@ uid: office!OfficeExtension.IPromise:type
 package: office!
 fullName: OfficeExtension.IPromise
 summary: ''
-remarks: "\r\n\r\nThis type is a union of the following types: \r\n\r\n[Excel.Promise](/javascript/api/excel/excel.Promise)\" />, [Excel.T](/javascript/api/excel/excel.T)\" />"
+remarks: ''
 
 isPreview: false
 isDeprecated: false
