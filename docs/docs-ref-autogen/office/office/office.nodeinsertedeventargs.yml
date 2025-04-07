@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.NodeInsertedEventArgs
 uid: office!Office.NodeInsertedEventArgs:interface
 package: office!

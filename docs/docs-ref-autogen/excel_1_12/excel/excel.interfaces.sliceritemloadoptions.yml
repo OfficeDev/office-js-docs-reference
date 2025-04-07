@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.SlicerItemLoadOptions
 uid: excel!Excel.Interfaces.SlicerItemLoadOptions:interface
 package: excel!

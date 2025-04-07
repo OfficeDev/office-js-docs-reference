@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.SensitivityLabelChangedEventArgs
 uid: outlook!Office.SensitivityLabelChangedEventArgs:interface
 package: outlook!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.VisibilityModeChangedMessage
 uid: office!Office.VisibilityModeChangedMessage:interface
 package: office!

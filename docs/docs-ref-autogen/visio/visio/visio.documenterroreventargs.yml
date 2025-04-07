@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Visio.DocumentErrorEventArgs
 uid: visio!Visio.DocumentErrorEventArgs:interface
 package: visio!

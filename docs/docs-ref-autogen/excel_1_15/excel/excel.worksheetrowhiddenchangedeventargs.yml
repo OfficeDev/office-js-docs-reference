@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetRowHiddenChangedEventArgs
 uid: excel!Excel.WorksheetRowHiddenChangedEventArgs:interface
 package: excel!

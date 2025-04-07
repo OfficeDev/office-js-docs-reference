@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.ConditionalCellValueRule
 uid: excel!Excel.ConditionalCellValueRule:interface
 package: excel!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.TableFilteredEventArgs
 uid: excel!Excel.TableFilteredEventArgs:interface
 package: excel!

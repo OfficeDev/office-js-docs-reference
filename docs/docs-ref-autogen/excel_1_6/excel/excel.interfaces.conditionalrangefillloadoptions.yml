@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ConditionalRangeFillLoadOptions
 uid: excel!Excel.Interfaces.ConditionalRangeFillLoadOptions:interface
 package: excel!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.SpamReportingEventArgs
 uid: outlook!Office.SpamReportingEventArgs:interface
 package: outlook!

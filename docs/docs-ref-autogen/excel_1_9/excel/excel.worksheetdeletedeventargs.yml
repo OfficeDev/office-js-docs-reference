@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetDeletedEventArgs
 uid: excel!Excel.WorksheetDeletedEventArgs:interface
 package: excel!

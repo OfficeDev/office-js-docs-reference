@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.InfobarClickedEventArgs
 uid: outlook!Office.InfobarClickedEventArgs:interface
 package: outlook!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.GetTextOptions
 uid: word!Word.GetTextOptions:interface
 package: word!

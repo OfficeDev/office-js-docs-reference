@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.TableRowLoadOptions
 uid: excel!Excel.Interfaces.TableRowLoadOptions:interface
 package: excel!

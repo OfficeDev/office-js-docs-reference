@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.InitializationContextChangedEventArgs
 uid: outlook!Office.InitializationContextChangedEventArgs:interface
 package: outlook!

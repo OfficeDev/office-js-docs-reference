@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: CustomFunctions.StreamingInvocation
 uid: custom-functions-runtime!CustomFunctions.StreamingInvocation:interface
 package: custom-functions-runtime!

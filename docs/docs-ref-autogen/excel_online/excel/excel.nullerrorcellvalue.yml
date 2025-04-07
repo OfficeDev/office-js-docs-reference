@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.NullErrorCellValue
 uid: excel!Excel.NullErrorCellValue:interface
 package: excel!

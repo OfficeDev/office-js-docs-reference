@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.MailboxEvent
 uid: outlook!Office.MailboxEvent:interface
 package: outlook!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Visio.PageRenderCompleteEventArgs
 uid: visio!Visio.PageRenderCompleteEventArgs:interface
 package: visio!

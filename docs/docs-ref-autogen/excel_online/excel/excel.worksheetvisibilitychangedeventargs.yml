@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetVisibilityChangedEventArgs
 uid: excel!Excel.WorksheetVisibilityChangedEventArgs:interface
 package: excel!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Visio.TaskPaneStateChangedEventArgs
 uid: visio!Visio.TaskPaneStateChangedEventArgs:interface
 package: visio!

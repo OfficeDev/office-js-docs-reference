@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: OfficeExtension.RequestContextDebugInfo
 uid: office!OfficeExtension.RequestContextDebugInfo:interface
 package: office!

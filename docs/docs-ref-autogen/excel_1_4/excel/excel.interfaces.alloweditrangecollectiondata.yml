@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.AllowEditRangeCollectionData
 uid: excel!Excel.Interfaces.AllowEditRangeCollectionData:interface
 package: excel!

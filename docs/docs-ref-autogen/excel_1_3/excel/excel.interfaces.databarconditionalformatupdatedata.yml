@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.DataBarConditionalFormatUpdateData
 uid: excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface
 package: excel!

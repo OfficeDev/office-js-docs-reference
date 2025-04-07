@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.OfficeThemeChangedEventArgs
 uid: outlook!Office.OfficeThemeChangedEventArgs:interface
 package: outlook!

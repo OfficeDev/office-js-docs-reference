@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.ValueTypeNotAvailableCellValue
 uid: excel!Excel.ValueTypeNotAvailableCellValue:interface
 package: excel!

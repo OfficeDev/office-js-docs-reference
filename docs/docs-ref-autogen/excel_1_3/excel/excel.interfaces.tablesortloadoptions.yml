@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.TableSortLoadOptions
 uid: excel!Excel.Interfaces.TableSortLoadOptions:interface
 package: excel!

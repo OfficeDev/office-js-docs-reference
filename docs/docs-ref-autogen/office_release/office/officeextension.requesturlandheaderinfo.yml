@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: OfficeExtension.RequestUrlAndHeaderInfo
 uid: office!OfficeExtension.RequestUrlAndHeaderInfo:interface
 package: office!

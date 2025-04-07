@@ -232,8 +232,9 @@ tryCatch(async () => {
                     } else if (subfilename.indexOf(".") < 0) {
                         let packageFolder = subfolder + '/' + subfilename;
                         fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
-                            
-                            const apiYaml: ApiYaml = jsyaml.load(fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8")) as ApiYaml;
+                            const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");
+                            const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
+                            const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
                             if (apiYaml.uid.endsWith(":type")) {
                                 let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
                                 apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
@@ -245,14 +246,15 @@ tryCatch(async () => {
                                 apiYaml.remarks += remarks;
                             }
                             
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, jsyaml.dump(apiYaml) 
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, schemaComment + jsyaml.dump(apiYaml) 
                                 .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
                                 .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
                                 .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
-                        
-                        const apiYaml: ApiYaml = jsyaml.load(fsx.readFileSync(subfolder + '/' + subfilename).toString()) as ApiYaml;
+                        const ymlFile = fsx.readFileSync(subfolder + '/' + subfilename, "utf8");
+                        const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
+                        const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
                             if (apiYaml.uid.endsWith(":type")) {
                                 let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
                                 apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
@@ -264,7 +266,7 @@ tryCatch(async () => {
                                 apiYaml.remarks += remarks;
                             }
 
-                        fsx.writeFileSync(subfolder + '/' + subfilename, jsyaml.dump(apiYaml) 
+                        fsx.writeFileSync(subfolder + '/' + subfilename, schemaComment + jsyaml.dump(apiYaml) 
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
                             .replace(/description: \\\*[\r\n]/g, "description:") // Remove descriptions that are just "\*".
                             .replace(/\\\*/gm, "*")); // Fix asterisk protection.

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.MessageRead
 uid: outlook!Office.MessageRead:interface
 package: outlook!

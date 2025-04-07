@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.CommentDeletedEventArgs
 uid: excel!Excel.CommentDeletedEventArgs:interface
 package: excel!

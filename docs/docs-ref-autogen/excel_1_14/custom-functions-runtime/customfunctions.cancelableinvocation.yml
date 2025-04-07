@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: CustomFunctions.CancelableInvocation
 uid: custom-functions-runtime!CustomFunctions.CancelableInvocation:interface
 package: custom-functions-runtime!

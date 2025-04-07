@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
 uid: excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface
 package: excel!

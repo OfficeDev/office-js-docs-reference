@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ChartLineFormatUpdateData
 uid: excel!Excel.Interfaces.ChartLineFormatUpdateData:interface
 package: excel!

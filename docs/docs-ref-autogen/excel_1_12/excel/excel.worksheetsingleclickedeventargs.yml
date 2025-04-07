@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetSingleClickedEventArgs
 uid: excel!Excel.WorksheetSingleClickedEventArgs:interface
 package: excel!

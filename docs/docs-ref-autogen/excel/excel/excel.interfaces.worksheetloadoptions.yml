@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.WorksheetLoadOptions
 uid: excel!Excel.Interfaces.WorksheetLoadOptions:interface
 package: excel!

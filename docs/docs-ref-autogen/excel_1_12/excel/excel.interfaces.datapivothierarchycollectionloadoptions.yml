@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
 uid: excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions:interface
 package: excel!

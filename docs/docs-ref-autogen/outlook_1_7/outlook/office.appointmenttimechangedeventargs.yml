@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.AppointmentTimeChangedEventArgs
 uid: outlook!Office.AppointmentTimeChangedEventArgs:interface
 package: outlook!

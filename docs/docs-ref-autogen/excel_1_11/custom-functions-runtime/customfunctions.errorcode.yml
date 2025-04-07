@@ -1,3 +1,4 @@
+### YamlMime:TSEnum
 name: CustomFunctions.ErrorCode
 uid: custom-functions-runtime!CustomFunctions.ErrorCode:enum
 package: custom-functions-runtime!

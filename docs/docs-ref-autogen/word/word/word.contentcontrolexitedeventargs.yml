@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.ContentControlExitedEventArgs
 uid: word!Word.ContentControlExitedEventArgs:interface
 package: word!

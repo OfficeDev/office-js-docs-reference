@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.DialogParentMessageReceivedEventArgs
 uid: office!Office.DialogParentMessageReceivedEventArgs:interface
 package: office!

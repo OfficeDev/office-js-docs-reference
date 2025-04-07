@@ -1,3 +1,4 @@
+### YamlMime:TSTypeAlias
 name: OfficeExtension.IPromise
 uid: office!OfficeExtension.IPromise:type
 package: office!

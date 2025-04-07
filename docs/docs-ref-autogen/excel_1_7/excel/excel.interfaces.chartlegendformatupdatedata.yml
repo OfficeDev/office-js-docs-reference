@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ChartLegendFormatUpdateData
 uid: excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface
 package: excel!

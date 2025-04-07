@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.PivotTableCollectionUpdateData
 uid: excel!Excel.Interfaces.PivotTableCollectionUpdateData:interface
 package: excel!

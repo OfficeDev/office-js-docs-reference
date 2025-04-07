@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.AddinCommands.Event
 uid: office!Office.AddinCommands.Event:interface
 package: office!

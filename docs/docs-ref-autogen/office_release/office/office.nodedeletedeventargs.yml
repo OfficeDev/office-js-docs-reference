@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.NodeDeletedEventArgs
 uid: office!Office.NodeDeletedEventArgs:interface
 package: office!

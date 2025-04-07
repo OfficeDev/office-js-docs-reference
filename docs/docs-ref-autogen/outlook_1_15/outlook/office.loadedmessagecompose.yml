@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.LoadedMessageCompose
 uid: outlook!Office.LoadedMessageCompose:interface
 package: outlook!

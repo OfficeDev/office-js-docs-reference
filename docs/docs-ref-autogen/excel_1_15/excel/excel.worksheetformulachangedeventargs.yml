@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetFormulaChangedEventArgs
 uid: excel!Excel.WorksheetFormulaChangedEventArgs:interface
 package: excel!

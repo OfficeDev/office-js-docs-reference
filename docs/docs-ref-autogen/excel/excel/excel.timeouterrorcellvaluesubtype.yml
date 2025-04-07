@@ -1,3 +1,4 @@
+### YamlMime:TSEnum
 name: Excel.TimeoutErrorCellValueSubType
 uid: excel!Excel.TimeoutErrorCellValueSubType:enum
 package: excel!

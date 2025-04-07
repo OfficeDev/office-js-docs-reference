@@ -1,3 +1,4 @@
+### YamlMime:TSEnum
 name: Office.AsyncResultStatus
 uid: office!Office.AsyncResultStatus:enum
 package: office!

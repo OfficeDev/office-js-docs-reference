@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.BindingDataChangedEventArgs
 uid: excel!Excel.BindingDataChangedEventArgs:interface
 package: excel!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.WorkbookProtectionData
 uid: excel!Excel.Interfaces.WorkbookProtectionData:interface
 package: excel!

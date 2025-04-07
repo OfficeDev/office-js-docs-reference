@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetRowSortedEventArgs
 uid: excel!Excel.WorksheetRowSortedEventArgs:interface
 package: excel!

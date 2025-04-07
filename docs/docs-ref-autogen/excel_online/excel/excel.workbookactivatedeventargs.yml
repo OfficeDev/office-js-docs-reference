@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorkbookActivatedEventArgs
 uid: excel!Excel.WorkbookActivatedEventArgs:interface
 package: excel!

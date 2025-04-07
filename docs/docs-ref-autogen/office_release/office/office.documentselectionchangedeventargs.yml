@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.DocumentSelectionChangedEventArgs
 uid: office!Office.DocumentSelectionChangedEventArgs:interface
 package: office!

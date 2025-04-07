@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.PivotFieldLoadOptions
 uid: excel!Excel.Interfaces.PivotFieldLoadOptions:interface
 package: excel!

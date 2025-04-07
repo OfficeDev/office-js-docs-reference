@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: CustomFunctions.Invocation
 uid: custom-functions-runtime!CustomFunctions.Invocation:interface
 package: custom-functions-runtime!

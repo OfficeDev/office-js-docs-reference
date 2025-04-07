@@ -1,3 +1,4 @@
+### YamlMime:TSEnum
 name: Office.MailboxEnums.AttachmentStatus
 uid: outlook!Office.MailboxEnums.AttachmentStatus:enum
 package: outlook!

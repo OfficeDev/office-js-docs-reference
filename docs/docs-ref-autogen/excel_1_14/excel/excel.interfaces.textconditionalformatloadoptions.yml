@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.TextConditionalFormatLoadOptions
 uid: excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface
 package: excel!

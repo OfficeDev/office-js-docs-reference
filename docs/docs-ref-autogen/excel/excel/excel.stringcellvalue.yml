@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.StringCellValue
 uid: excel!Excel.StringCellValue:interface
 package: excel!

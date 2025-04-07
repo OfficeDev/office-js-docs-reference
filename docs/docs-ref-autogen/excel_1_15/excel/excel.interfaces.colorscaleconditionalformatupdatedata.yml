@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
 uid: excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface
 package: excel!

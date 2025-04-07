@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Visio.DataRefreshCompleteEventArgs
 uid: visio!Visio.DataRefreshCompleteEventArgs:interface
 package: visio!

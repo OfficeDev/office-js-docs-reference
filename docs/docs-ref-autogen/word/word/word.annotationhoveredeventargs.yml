@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.AnnotationHoveredEventArgs
 uid: word!Word.AnnotationHoveredEventArgs:interface
 package: word!

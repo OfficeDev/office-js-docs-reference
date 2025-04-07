@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Visio.SelectionChangedEventArgs
 uid: visio!Visio.SelectionChangedEventArgs:interface
 package: visio!

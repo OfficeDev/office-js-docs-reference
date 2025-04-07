@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.TableStyleCollectionLoadOptions
 uid: excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface
 package: excel!

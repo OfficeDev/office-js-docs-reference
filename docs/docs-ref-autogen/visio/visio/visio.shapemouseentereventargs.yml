@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Visio.ShapeMouseEnterEventArgs
 uid: visio!Visio.ShapeMouseEnterEventArgs:interface
 package: visio!

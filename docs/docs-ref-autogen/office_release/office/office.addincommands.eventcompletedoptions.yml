@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.AddinCommands.EventCompletedOptions
 uid: office!Office.AddinCommands.EventCompletedOptions:interface
 package: office!

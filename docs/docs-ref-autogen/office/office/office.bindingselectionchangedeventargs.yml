@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.BindingSelectionChangedEventArgs
 uid: office!Office.BindingSelectionChangedEventArgs:interface
 package: office!

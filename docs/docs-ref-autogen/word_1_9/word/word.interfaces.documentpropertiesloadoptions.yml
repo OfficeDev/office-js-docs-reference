@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.Interfaces.DocumentPropertiesLoadOptions
 uid: word!Word.Interfaces.DocumentPropertiesLoadOptions:interface
 package: word!

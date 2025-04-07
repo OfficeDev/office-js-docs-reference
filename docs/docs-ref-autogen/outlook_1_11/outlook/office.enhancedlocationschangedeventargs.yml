@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.EnhancedLocationsChangedEventArgs
 uid: outlook!Office.EnhancedLocationsChangedEventArgs:interface
 package: outlook!

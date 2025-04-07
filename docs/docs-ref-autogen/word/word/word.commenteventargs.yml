@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.CommentEventArgs
 uid: word!Word.CommentEventArgs:interface
 package: word!

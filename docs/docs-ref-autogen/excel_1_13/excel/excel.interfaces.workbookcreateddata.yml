@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.WorkbookCreatedData
 uid: excel!Excel.Interfaces.WorkbookCreatedData:interface
 package: excel!

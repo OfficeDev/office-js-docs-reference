@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.ParagraphAddedEventArgs
 uid: word!Word.ParagraphAddedEventArgs:interface
 package: word!

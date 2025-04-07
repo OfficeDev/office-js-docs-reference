@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.RecipientsChangedEventArgs
 uid: outlook!Office.RecipientsChangedEventArgs:interface
 package: outlook!

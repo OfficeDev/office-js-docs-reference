@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.WorksheetCollectionUpdateData
 uid: excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface
 package: excel!

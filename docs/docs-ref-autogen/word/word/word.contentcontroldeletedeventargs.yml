@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.ContentControlDeletedEventArgs
 uid: word!Word.ContentControlDeletedEventArgs:interface
 package: word!

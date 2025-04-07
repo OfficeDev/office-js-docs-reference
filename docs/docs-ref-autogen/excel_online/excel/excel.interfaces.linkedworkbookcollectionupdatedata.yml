@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.LinkedWorkbookCollectionUpdateData
 uid: excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface
 package: excel!

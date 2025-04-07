@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.AttachmentsChangedEventArgs
 uid: outlook!Office.AttachmentsChangedEventArgs:interface
 package: outlook!

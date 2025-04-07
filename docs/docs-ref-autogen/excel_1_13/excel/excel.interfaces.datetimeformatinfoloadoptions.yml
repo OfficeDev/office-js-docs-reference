@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
 uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface
 package: excel!

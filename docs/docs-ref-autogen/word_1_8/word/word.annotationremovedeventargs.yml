@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.AnnotationRemovedEventArgs
 uid: word!Word.AnnotationRemovedEventArgs:interface
 package: word!

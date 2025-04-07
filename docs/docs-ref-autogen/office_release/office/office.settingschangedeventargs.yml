@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.SettingsChangedEventArgs
 uid: office!Office.SettingsChangedEventArgs:interface
 package: office!

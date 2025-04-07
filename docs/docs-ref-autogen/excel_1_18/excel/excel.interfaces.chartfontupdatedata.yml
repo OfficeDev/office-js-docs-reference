@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ChartFontUpdateData
 uid: excel!Excel.Interfaces.ChartFontUpdateData:interface
 package: excel!

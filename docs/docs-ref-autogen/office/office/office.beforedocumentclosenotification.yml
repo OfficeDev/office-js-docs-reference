@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.BeforeDocumentCloseNotification
 uid: office!Office.BeforeDocumentCloseNotification:interface
 package: office!

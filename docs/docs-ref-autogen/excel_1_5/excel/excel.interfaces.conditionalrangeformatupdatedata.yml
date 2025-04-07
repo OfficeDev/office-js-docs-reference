@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.Interfaces.ConditionalRangeFormatUpdateData
 uid: excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface
 package: excel!

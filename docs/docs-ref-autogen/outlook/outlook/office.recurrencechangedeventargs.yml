@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Office.RecurrenceChangedEventArgs
 uid: outlook!Office.RecurrenceChangedEventArgs:interface
 package: outlook!

@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Excel.WorksheetProtectionChangedEventArgs
 uid: excel!Excel.WorksheetProtectionChangedEventArgs:interface
 package: excel!

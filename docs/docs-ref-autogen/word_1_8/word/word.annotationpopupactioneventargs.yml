@@ -1,3 +1,4 @@
+### YamlMime:TSType
 name: Word.AnnotationPopupActionEventArgs
 uid: word!Word.AnnotationPopupActionEventArgs:interface
 package: word!
