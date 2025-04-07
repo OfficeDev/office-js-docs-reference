@@ -6,7 +6,7 @@ fullName: Excel.CellValueAndPropertyMetadata
 summary: >-
   Represents the value and metadata of a property. The metadata applies to the
   property (and not the value), but it is combined with the value in this type.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[excel_1_18.CellValue](/javascript/api/excel_1_18/excel_1_18.CellValue)\" />, [excel_1_18.EntityPropertyExtraProperties](/javascript/api/excel_1_18/excel_1_18.EntityPropertyExtraProperties)\" />"
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[excel.CellValue](/javascript/api/excel/excel.CellValue)\" />, [excel.EntityPropertyExtraProperties](/javascript/api/excel/excel.EntityPropertyExtraProperties)\" />"
 
 isPreview: false
 isDeprecated: false

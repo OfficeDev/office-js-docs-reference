@@ -230,20 +230,21 @@ tryCatch(async () => {
         .forEach(filename => {
             let subfolder = docsDestination + '/' + filename;
             fsx.readdirSync(subfolder).forEach(subfilename => {
-                    if (subfilename.indexOf("toc") >= 0) {
-                        // Update overview HREF.
-                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
-                    } else if (subfilename.indexOf(".") < 0) {
-                        let packageFolder = subfolder + '/' + subfilename;
-                            fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
-                            const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");                        
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, cleanUpYmlFile(ymlFile, filename));
-                        });
-                    } else if (subfilename.indexOf(".yml") > 0) {
-                        const ymlFile = fsx.readFileSync(subfolder + '/' + subfilename, "utf8");
-                        fsx.writeFileSync(subfolder + '/' + subfilename, cleanUpYmlFile(ymlFile, filename));
-                    }
-                });
+                let hostName = filename.substring(0, filename.indexOf("_"));
+                if (subfilename.indexOf("toc") >= 0) {
+                    // Update overview HREF.
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+                } else if (subfilename.indexOf(".") < 0) {
+                    let packageFolder = subfolder + '/' + subfilename;
+                        fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
+                        const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");                        
+                        fsx.writeFileSync(packageFolder + '/' + packageFileName, cleanUpYmlFile(ymlFile, hostName));
+                    });
+                } else if (subfilename.indexOf(".yml") > 0) {
+                    const ymlFile = fsx.readFileSync(subfolder + '/' + subfilename, "utf8");
+                    fsx.writeFileSync(subfolder + '/' + subfilename, cleanUpYmlFile(ymlFile, hostName));
+                }
+            });
         });
 
     console.log(`Moving common TOC to its own folder`);
