@@ -4,7 +4,7 @@ uid: excel!Excel.ReferencedValue:type
 package: excel!
 fullName: Excel.ReferencedValue
 summary: Represents the value in a cell.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.ArrayCellValue:interface\" />, <xref uid=\"excel!Excel.EntityCellValue:interface\" />, <xref uid=\"excel!Excel.RootReferenceCellValue:interface\" />, <xref uid=\"excel!Excel.DoubleCellValue:interface\" />, <xref uid=\"excel!Excel.StringCellValue:interface\" />, <xref uid=\"excel!Excel.BooleanCellValue:interface\" />"
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n[Excel.ArrayCellValue](/javascript/api/excel/excel.ArrayCellValue)\" />, [Excel.EntityCellValue](/javascript/api/excel/excel.EntityCellValue)\" />, [Excel.RootReferenceCellValue](/javascript/api/excel/excel.RootReferenceCellValue)\" />, [Excel.DoubleCellValue](/javascript/api/excel/excel.DoubleCellValue)\" />, [Excel.StringCellValue](/javascript/api/excel/excel.StringCellValue)\" />, [Excel.BooleanCellValue](/javascript/api/excel/excel.BooleanCellValue)\" />"
 
 isPreview: false
 isDeprecated: false

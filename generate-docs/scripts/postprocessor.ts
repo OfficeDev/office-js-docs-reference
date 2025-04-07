@@ -483,7 +483,7 @@ function cleanUpYmlFile(ymlFile: string): string {
     if (apiYaml.uid.endsWith(":type")) {
         let remarks = `${EOL}${EOL}This type is a union of the following types: ${EOL}${EOL}`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
-            remarks += `<xref uid="excel!Excel.${match.substring(match.indexOf(' ') + 1)}:interface" />`
+            remarks += `[Excel.${match}](/javascript/api/excel/excel.${match})" />`
             if (matchIndex < matches.length - 1) {
                 remarks += ", ";
             }
