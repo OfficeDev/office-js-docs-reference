@@ -4,7 +4,7 @@ uid: excel!Excel.ReferencedValue:type
 package: excel!
 fullName: Excel.ReferencedValue
 summary: Represents the value in a cell.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= ArrayCellValue:interface\" />, <xref uid=\"excel!Excel.| EntityCellValue:interface\" />, <xref uid=\"excel!Excel.| RootReferenceCellValue:interface\" />"
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.ArrayCellValue:interface\" />, <xref uid=\"excel!Excel.EntityCellValue:interface\" />, <xref uid=\"excel!Excel.RootReferenceCellValue:interface\" />"
 
 isPreview: false
 isDeprecated: false

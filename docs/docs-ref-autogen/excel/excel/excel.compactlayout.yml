@@ -6,7 +6,7 @@ fullName: Excel.CompactLayout
 summary: >-
   Represents the layout used when there is limited space to represent the
   entity.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= EntityCompactLayout:interface\" />"
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.EntityCompactLayout:interface\" />"
 
 isPreview: false
 isDeprecated: false

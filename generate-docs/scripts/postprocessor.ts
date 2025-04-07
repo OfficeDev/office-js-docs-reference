@@ -235,10 +235,11 @@ tryCatch(async () => {
                             const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");
                             const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
                             const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
+                            // Add links for type aliases.
                             if (apiYaml.uid.endsWith(":type")) {
                                 let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
                                 apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
-                                    remarks += `<xref uid="excel!Excel.${match}:interface" />`
+                                    remarks += `<xref uid="excel!Excel.${match.substring(match.indexOf(' ') + 1)}:interface" />`
                                     if (matchIndex < matches.length - 1) {
                                         remarks += ", ";
                                     }
@@ -255,10 +256,11 @@ tryCatch(async () => {
                         const ymlFile = fsx.readFileSync(subfolder + '/' + subfilename, "utf8");
                         const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
                         const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
+                        // Add links for type aliases.
                             if (apiYaml.uid.endsWith(":type")) {
                                 let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
-                                apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
-                                    remarks += `<xref uid="excel!Excel.${match}:interface" />`
+                                apiYaml.syntax.match(/[=|] [\w]*/g).forEach((match, matchIndex, matches) => {
+                                    remarks += `<xref uid="excel!Excel.${match.substring(match.indexOf(' ') + 1)}:interface" />`
                                     if (matchIndex < matches.length - 1) {
                                         remarks += ",";
                                     }

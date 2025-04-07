@@ -4,7 +4,7 @@ uid: excel!Excel.CellControl:type
 package: excel!
 fullName: Excel.CellControl
 summary: Represents an interactable control inside of a cell.
-remarks: "\\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.= UnknownCellControl:interface\" />, <xref uid=\"excel!Excel.| EmptyCellControl:interface\" />, <xref uid=\"excel!Excel.| MixedCellControl:interface\" />, <xref uid=\"excel!Excel.| CheckboxCellControl:interface\" />"
+remarks: "\\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nThis type is a union of the following types: \r\n\r\n<xref uid=\"excel!Excel.UnknownCellControl:interface\" />, <xref uid=\"excel!Excel.EmptyCellControl:interface\" />, <xref uid=\"excel!Excel.MixedCellControl:interface\" />, <xref uid=\"excel!Excel.CheckboxCellControl:interface\" />"
 
 isPreview: false
 isDeprecated: false
