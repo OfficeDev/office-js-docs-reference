@@ -4,6 +4,10 @@ import { generateEnumList } from './util';
 import * as fsx from 'fs-extra';
 import * as jsyaml from "js-yaml";
 import * as path from "path";
+import * as os from "os";
+
+const EOL = os.EOL;
+
 
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
@@ -124,7 +128,7 @@ const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const tocTemplateLocation = path.resolve("../../docs");
 
 tryCatch(async () => {
-    console.log("\nStarting postprocessor script...");
+    console.log(`${EOL}Starting postprocessor script...`);
 
     console.log(`Deleting old docs at: ${docsDestination}`);
     // delete everything except the 'overview' folder from the /docs folder
@@ -231,47 +235,13 @@ tryCatch(async () => {
                         fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
                     } else if (subfilename.indexOf(".") < 0) {
                         let packageFolder = subfolder + '/' + subfilename;
-                        fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
-                            const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");
-                            const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
-                            const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
-                            // Add links for type aliases.
-                            if (apiYaml.uid.endsWith(":type")) {
-                                let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
-                                apiYaml.syntax.match(/[=|] ([\w]*)/g).forEach((match, matchIndex, matches) => {
-                                    remarks += `<xref uid="excel!Excel.${match.substring(match.indexOf(' ') + 1)}:interface" />`
-                                    if (matchIndex < matches.length - 1) {
-                                        remarks += ", ";
-                                    }
-                                });
-                                apiYaml.remarks += remarks;
-                            }
-                            
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, schemaComment + jsyaml.dump(apiYaml) 
-                                .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                                .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
-                                .replace(/\\\*/gm, "*")); // Fix asterisk protection.
+                            fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
+                            const ymlFile = fsx.readFileSync(packageFolder + '/' + packageFileName, "utf8");                        
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, cleanUpYmlFile(ymlFile));
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
                         const ymlFile = fsx.readFileSync(subfolder + '/' + subfilename, "utf8");
-                        const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
-                        const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
-                        // Add links for type aliases.
-                            if (apiYaml.uid.endsWith(":type")) {
-                                let remarks = "\r\n\r\nThis type is a union of the following types: \r\n\r\n"
-                                apiYaml.syntax.match(/[=|] [\w]*/g).forEach((match, matchIndex, matches) => {
-                                    remarks += `<xref uid="excel!Excel.${match.substring(match.indexOf(' ') + 1)}:interface" />`
-                                    if (matchIndex < matches.length - 1) {
-                                        remarks += ",";
-                                    }
-                                });
-                                apiYaml.remarks += remarks;
-                            }
-
-                        fsx.writeFileSync(subfolder + '/' + subfilename, schemaComment + jsyaml.dump(apiYaml) 
-                            .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                            .replace(/description: \\\*[\r\n]/g, "description:") // Remove descriptions that are just "\*".
-                            .replace(/\\\*/gm, "*")); // Fix asterisk protection.
+                        fsx.writeFileSync(subfolder + '/' + subfilename, cleanUpYmlFile(ymlFile));
                     }
                 });
         });
@@ -286,7 +256,7 @@ tryCatch(async () => {
     fsx.removeSync(docsDestination + "/office_release/toc.yml");
     fsx.removeSync(docsDestination + "/office-runtime/toc.yml");
 
-    console.log("\nPostprocessor script complete!\n");
+    console.log(`${EOL}Postprocessor script complete${EOL}`);
 
     process.exit(0);
 });
@@ -426,7 +396,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
 }
 
 function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
-    console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
+    console.log(`${EOL}Updating the structure of the Common TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.load(fsx.readFileSync(tocPath).toString()) as Toc);
     let runtimeToc = (jsyaml.load(fsx.readFileSync(path.resolve("../../docs/docs-ref-autogen/office-runtime/toc.yml")).toString()) as Toc);
@@ -504,4 +474,25 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     return newToc;
+}
+
+function cleanUpYmlFile(ymlFile: string): string {
+    const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
+    const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
+    // Add links for type aliases.
+    if (apiYaml.uid.endsWith(":type")) {
+        let remarks = `${EOL}${EOL}This type is a union of the following types: ${EOL}${EOL}`
+        apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
+            remarks += `<xref uid="excel!Excel.${match.substring(match.indexOf(' ') + 1)}:interface" />`
+            if (matchIndex < matches.length - 1) {
+                remarks += ", ";
+            }
+        });
+        apiYaml.remarks += remarks;
+    }
+    
+    return schemaComment + jsyaml.dump(apiYaml) 
+        .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+        .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
+        .replace(/\\\*/gm, "*"); // Fix asterisk protection.
 }
