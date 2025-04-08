@@ -1,24 +1,29 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.TableCellCollectionLoadOptions
-uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface'
+uid: powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellCollectionLoadOptions
 summary: Represents a collection of table cells.
 remarks: >-
   \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#$all:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -26,15 +31,18 @@ properties:
       return:
         type: boolean
   - name: columnCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnCount:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnCount:member
     package: powerpoint!
     fullName: columnCount
     summary: >-
-      For EACH ITEM in the collection: Gets the number of table columns this cell spans across. Will be greater than or
-      equal to 1.
+      For EACH ITEM in the collection: Gets the number of table columns this
+      cell spans across. Will be greater than or equal to 1.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -42,13 +50,18 @@ properties:
       return:
         type: boolean
   - name: columnIndex
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnIndex:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnIndex:member
     package: powerpoint!
     fullName: columnIndex
-    summary: 'For EACH ITEM in the collection: Gets the zero-based column index of the cell within the table.'
+    summary: >-
+      For EACH ITEM in the collection: Gets the zero-based column index of the
+      cell within the table.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -56,15 +69,18 @@ properties:
       return:
         type: boolean
   - name: rowCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowCount:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowCount:member
     package: powerpoint!
     fullName: rowCount
     summary: >-
-      For EACH ITEM in the collection: Gets the number of table rows this cell spans across. Will be greater than or
-      equal to 1.
+      For EACH ITEM in the collection: Gets the number of table rows this cell
+      spans across. Will be greater than or equal to 1.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -72,13 +88,18 @@ properties:
       return:
         type: boolean
   - name: rowIndex
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowIndex:member
     package: powerpoint!
     fullName: rowIndex
-    summary: 'For EACH ITEM in the collection: Gets the zero-based row index of the cell within the table.'
+    summary: >-
+      For EACH ITEM in the collection: Gets the zero-based row index of the cell
+      within the table.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,13 +107,18 @@ properties:
       return:
         type: boolean
   - name: text
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#text:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#text:member
     package: powerpoint!
     fullName: text
-    summary: 'For EACH ITEM in the collection: Specifies the text content of the table cell.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the text content of the table
+      cell.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:

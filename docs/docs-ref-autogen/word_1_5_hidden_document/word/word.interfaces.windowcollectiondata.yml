@@ -1,23 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.WindowCollectionData
-uid: 'word!Word.Interfaces.WindowCollectionData:interface'
+uid: word!Word.Interfaces.WindowCollectionData:interface
 package: word!
 fullName: Word.Interfaces.WindowCollectionData
-summary: An interface describing the data returned by calling `windowCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `windowCollection.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.WindowCollectionData#items:member'
+    uid: word!Word.Interfaces.WindowCollectionData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.WindowData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.WindowData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.WindowData:interface" />[]

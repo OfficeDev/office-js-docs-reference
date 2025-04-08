@@ -1,20 +1,27 @@
 ### YamlMime:TSType
 name: Visio.Interfaces.DocumentViewUpdateData
-uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+uid: visio!Visio.Interfaces.DocumentViewUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentViewUpdateData
-summary: 'An interface for updating data on the DocumentView object, for use in `documentView.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the DocumentView object, for use in
+  `documentView.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: disableHyperlinks
-    uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disableHyperlinks:member'
+    uid: visio!Visio.Interfaces.DocumentViewUpdateData#disableHyperlinks:member
     package: visio!
     fullName: disableHyperlinks
     summary: Disable Hyperlinks.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +29,15 @@ properties:
       return:
         type: boolean
   - name: disablePan
-    uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disablePan:member'
+    uid: visio!Visio.Interfaces.DocumentViewUpdateData#disablePan:member
     package: visio!
     fullName: disablePan
     summary: Disable Pan.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +45,15 @@ properties:
       return:
         type: boolean
   - name: disablePanZoomWindow
-    uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disablePanZoomWindow:member'
+    uid: visio!Visio.Interfaces.DocumentViewUpdateData#disablePanZoomWindow:member
     package: visio!
     fullName: disablePanZoomWindow
     summary: Disable PanZoomWindow.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +61,15 @@ properties:
       return:
         type: boolean
   - name: disableZoom
-    uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disableZoom:member'
+    uid: visio!Visio.Interfaces.DocumentViewUpdateData#disableZoom:member
     package: visio!
     fullName: disableZoom
     summary: Disable Zoom.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +77,15 @@ properties:
       return:
         type: boolean
   - name: hideDiagramBoundary
-    uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#hideDiagramBoundary:member'
+    uid: visio!Visio.Interfaces.DocumentViewUpdateData#hideDiagramBoundary:member
     package: visio!
     fullName: hideDiagramBoundary
     summary: Hide Diagram Boundary.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

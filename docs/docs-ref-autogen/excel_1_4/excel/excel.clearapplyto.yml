@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Excel.ClearApplyTo
-uid: 'excel!Excel.ClearApplyTo:enum'
+uid: excel!Excel.ClearApplyTo:enum
 package: excel!
 fullName: Excel.ClearApplyTo
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   #### Examples
@@ -42,30 +43,37 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: all
-    uid: 'excel!Excel.ClearApplyTo.all:member'
+    uid: excel!Excel.ClearApplyTo.all:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears everything in the range.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: contents
-    uid: 'excel!Excel.ClearApplyTo.contents:member'
+    uid: excel!Excel.ClearApplyTo.contents:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears the contents of the range, leaving formatting intact.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
   - name: formats
-    uid: 'excel!Excel.ClearApplyTo.formats:member'
+    uid: excel!Excel.ClearApplyTo.formats:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears all formatting for the range, leaving values intact.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'

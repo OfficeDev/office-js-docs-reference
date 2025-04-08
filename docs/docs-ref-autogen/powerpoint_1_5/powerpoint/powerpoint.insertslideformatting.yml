@@ -1,11 +1,13 @@
 ### YamlMime:TSEnum
 name: PowerPoint.InsertSlideFormatting
-uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
+uid: powerpoint!PowerPoint.InsertSlideFormatting:enum
 package: powerpoint!
 fullName: PowerPoint.InsertSlideFormatting
 summary: Specifies the formatting options for when slides are inserted.
 remarks: >-
-  \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+  \[ [API set: PowerPointApi
+  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 
   #### Examples
@@ -34,22 +36,29 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: keepSourceFormatting
-    uid: 'powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member'
+    uid: powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Copy the source theme into the target presentation and use that theme.
 
-      * \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"KeepSourceFormatting"'
   - name: useDestinationTheme
-    uid: 'powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
+    uid: powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Use the existing theme in the target presentation.
 
-      * \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"UseDestinationTheme"'

@@ -1,24 +1,30 @@
 ### YamlMime:TSType
 name: PowerPoint.TableMergedAreaProperties
-uid: 'powerpoint!PowerPoint.TableMergedAreaProperties:interface'
+uid: powerpoint!PowerPoint.TableMergedAreaProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableMergedAreaProperties
 summary: Represents the properties of a merged area of cells in a table.
 remarks: >-
   \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: interface
 properties:
   - name: columnCount
-    uid: 'powerpoint!PowerPoint.TableMergedAreaProperties#columnCount:member'
+    uid: powerpoint!PowerPoint.TableMergedAreaProperties#columnCount:member
     package: powerpoint!
     fullName: columnCount
-    summary: Specifies the number of columns for the merged cells area. Must be 1 or greater.
+    summary: >-
+      Specifies the number of columns for the merged cells area. Must be 1 or
+      greater.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -26,13 +32,17 @@ properties:
       return:
         type: number
   - name: columnIndex
-    uid: 'powerpoint!PowerPoint.TableMergedAreaProperties#columnIndex:member'
+    uid: powerpoint!PowerPoint.TableMergedAreaProperties#columnIndex:member
     package: powerpoint!
     fullName: columnIndex
-    summary: Specifies the zero-based index of the column of the top left cell of the merged area.
+    summary: >-
+      Specifies the zero-based index of the column of the top left cell of the
+      merged area.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,13 +50,17 @@ properties:
       return:
         type: number
   - name: rowCount
-    uid: 'powerpoint!PowerPoint.TableMergedAreaProperties#rowCount:member'
+    uid: powerpoint!PowerPoint.TableMergedAreaProperties#rowCount:member
     package: powerpoint!
     fullName: rowCount
-    summary: Specifies the number of rows for the merged cells area. Must be 1 or greater.
+    summary: >-
+      Specifies the number of rows for the merged cells area. Must be 1 or
+      greater.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,13 +68,17 @@ properties:
       return:
         type: number
   - name: rowIndex
-    uid: 'powerpoint!PowerPoint.TableMergedAreaProperties#rowIndex:member'
+    uid: powerpoint!PowerPoint.TableMergedAreaProperties#rowIndex:member
     package: powerpoint!
     fullName: rowIndex
-    summary: Specifies the zero-based index of the row of the top left cell of the merged area.
+    summary: >-
+      Specifies the zero-based index of the row of the top left cell of the
+      merged area.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:

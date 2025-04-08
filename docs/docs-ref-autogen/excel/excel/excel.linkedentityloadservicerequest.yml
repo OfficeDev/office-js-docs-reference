@@ -1,20 +1,31 @@
 ### YamlMime:TSType
 name: Excel.LinkedEntityLoadServiceRequest
-uid: 'excel!Excel.LinkedEntityLoadServiceRequest:interface'
+uid: excel!Excel.LinkedEntityLoadServiceRequest:interface
 package: excel!
 fullName: Excel.LinkedEntityLoadServiceRequest
-summary: Represents a request to `@linkedEntityLoadService` custom function to load `LinkedEntityCellValue` objects.
-remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+summary: >-
+  Represents a request to `@linkedEntityLoadService` custom function to load
+  `LinkedEntityCellValue` objects.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
 properties:
   - name: domainId
-    uid: 'excel!Excel.LinkedEntityLoadServiceRequest#domainId:member'
+    uid: excel!Excel.LinkedEntityLoadServiceRequest#domainId:member
     package: excel!
     fullName: domainId
-    summary: Represents the domain specific to the service used to create the `LinkedEntityCellValue` objects.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents the domain specific to the service used to create the
+      `LinkedEntityCellValue` objects.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -22,14 +33,20 @@ properties:
       return:
         type: string
   - name: entities
-    uid: 'excel!Excel.LinkedEntityLoadServiceRequest#entities:member'
+    uid: excel!Excel.LinkedEntityLoadServiceRequest#entities:member
     package: excel!
     fullName: entities
-    summary: Represents the entity IDs and cultures of the `LinkedEntityCellValue` objects to load.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents the entity IDs and cultures of the `LinkedEntityCellValue`
+      objects to load.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'entities: LinkedEntityIdCulture[];'
       return:
-        type: '<xref uid="excel!Excel.LinkedEntityIdCulture:interface" />[]'
+        type: <xref uid="excel!Excel.LinkedEntityIdCulture:interface" />[]

@@ -1,24 +1,33 @@
 ### YamlMime:TSType
 name: Excel.CellValueProviderAttributes
-uid: 'excel!Excel.CellValueProviderAttributes:interface'
+uid: excel!Excel.CellValueProviderAttributes:interface
 package: excel!
 fullName: Excel.CellValueProviderAttributes
 summary: >-
-  The provider attributes object represents the set of details used in card view to provide specified branding
-  information for a `CellValue` type that supports provider attributes.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+  The provider attributes object represents the set of details used in card view
+  to provide specified branding information for a `CellValue` type that supports
+  provider attributes.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: description
-    uid: 'excel!Excel.CellValueProviderAttributes#description:member'
+    uid: excel!Excel.CellValueProviderAttributes#description:member
     package: excel!
     fullName: description
     summary: >-
-      Represents the provider description property that is used in card view if no logo is specified. If a logo is
-      specified, this will be used as tooltip text.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the provider description property that is used in card view if
+      no logo is specified. If a logo is specified, this will be used as tooltip
+      text.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,11 +35,17 @@ properties:
       return:
         type: string
   - name: logoSourceAddress
-    uid: 'excel!Excel.CellValueProviderAttributes#logoSourceAddress:member'
+    uid: excel!Excel.CellValueProviderAttributes#logoSourceAddress:member
     package: excel!
     fullName: logoSourceAddress
-    summary: Represents a URL used to download an image that will be used as a logo in card view.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents a URL used to download an image that will be used as a logo in
+      card view.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,11 +53,17 @@ properties:
       return:
         type: string
   - name: logoTargetAddress
-    uid: 'excel!Excel.CellValueProviderAttributes#logoTargetAddress:member'
+    uid: excel!Excel.CellValueProviderAttributes#logoTargetAddress:member
     package: excel!
     fullName: logoTargetAddress
-    summary: Represents a URL that is the navigation target if the user clicks on the logo element in card view.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents a URL that is the navigation target if the user clicks on the
+      logo element in card view.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

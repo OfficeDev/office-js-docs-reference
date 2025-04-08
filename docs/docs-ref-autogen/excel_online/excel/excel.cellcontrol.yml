@@ -1,10 +1,13 @@
 ### YamlMime:TSTypeAlias
 name: Excel.CellControl
-uid: 'excel!Excel.CellControl:type'
+uid: excel!Excel.CellControl:type
 package: excel!
 fullName: Excel.CellControl
 summary: Represents an interactable control inside of a cell.
-remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: "\\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nLearn more about the types in this type alias through the following links: \r\n\r\n[Excel.UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol), [Excel.EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol), [Excel.MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol), [Excel.CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)"
+
 isPreview: false
 isDeprecated: false
-syntax: export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;
+syntax: >-
+  export type CellControl = UnknownCellControl | EmptyCellControl |
+  MixedCellControl | CheckboxCellControl;

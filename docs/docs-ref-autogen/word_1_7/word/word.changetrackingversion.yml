@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Word.ChangeTrackingVersion
-uid: 'word!Word.ChangeTrackingVersion:enum'
+uid: word!Word.ChangeTrackingVersion:enum
 package: word!
 fullName: Word.ChangeTrackingVersion
 summary: Specify the current version or the original version of the text.
 remarks: >-
-  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -30,16 +31,21 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: current
-    uid: 'word!Word.ChangeTrackingVersion.current:member'
+    uid: word!Word.ChangeTrackingVersion.current:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Current"'
   - name: original
-    uid: 'word!Word.ChangeTrackingVersion.original:member'
+    uid: word!Word.ChangeTrackingVersion.original:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Original"'

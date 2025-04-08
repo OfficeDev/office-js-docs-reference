@@ -1,24 +1,28 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.TableLoadOptions
-uid: 'powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface'
+uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableLoadOptions
 summary: Represents a table.
 remarks: >-
   \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'powerpoint!PowerPoint.Interfaces.TableLoadOptions#$all:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -26,13 +30,15 @@ properties:
       return:
         type: boolean
   - name: columnCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableLoadOptions#columnCount:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#columnCount:member
     package: powerpoint!
     fullName: columnCount
     summary: Gets the number of columns in the table.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,13 +46,15 @@ properties:
       return:
         type: boolean
   - name: rowCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableLoadOptions#rowCount:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#rowCount:member
     package: powerpoint!
     fullName: rowCount
     summary: Gets the number of rows in the table.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,13 +62,15 @@ properties:
       return:
         type: boolean
   - name: values
-    uid: 'powerpoint!PowerPoint.Interfaces.TableLoadOptions#values:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#values:member
     package: powerpoint!
     fullName: values
     summary: Gets all of the values in the table.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:

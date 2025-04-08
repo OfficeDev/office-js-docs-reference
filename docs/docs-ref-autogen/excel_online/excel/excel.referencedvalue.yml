@@ -1,10 +1,13 @@
 ### YamlMime:TSTypeAlias
 name: Excel.ReferencedValue
-uid: 'excel!Excel.ReferencedValue:type'
+uid: excel!Excel.ReferencedValue:type
 package: excel!
 fullName: Excel.ReferencedValue
 summary: Represents the value in a cell.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nLearn more about the types in this type alias through the following links: \r\n\r\n[Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue), [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue), [Excel.RootReferenceCellValue](/javascript/api/excel/excel.rootreferencecellvalue)"
+
 isPreview: false
 isDeprecated: false
-syntax: export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue;
+syntax: >-
+  export type ReferencedValue = ArrayCellValue | EntityCellValue |
+  RootReferenceCellValue;

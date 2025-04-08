@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartTitleLoadOptions
-uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartTitleLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartTitleLoadOptions
 summary: Represents a chart title object of a chart.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,23 +29,33 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#format:member'
+    uid: excel!Excel.Interfaces.ChartTitleLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: 'Represents the formatting of a chart title, which includes fill and font formatting.'
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents the formatting of a chart title, which includes fill and font
+      formatting.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartTitleFormatLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface" />
   - name: overlay
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
+    uid: excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member
     package: excel!
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +63,14 @@ properties:
       return:
         type: boolean
   - name: text
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#text:member'
+    uid: excel!Excel.Interfaces.ChartTitleLoadOptions#text:member
     package: excel!
     fullName: text
     summary: Specifies the chart's title text.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +78,14 @@ properties:
       return:
         type: boolean
   - name: visible
-    uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member'
+    uid: excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member
     package: excel!
     fullName: visible
     summary: Specifies if the chart title is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

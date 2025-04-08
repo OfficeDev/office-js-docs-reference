@@ -1,26 +1,32 @@
 ### YamlMime:TSType
 name: Excel.SettableColumnProperties
-uid: 'excel!Excel.SettableColumnProperties:interface'
+uid: excel!Excel.SettableColumnProperties:interface
 package: excel!
 fullName: Excel.SettableColumnProperties
-summary: |-
+summary: >-
   Represents the input parameter of setColumnProperties.
 
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: columnHidden
-    uid: 'excel!Excel.SettableColumnProperties#columnHidden:member'
+    uid: excel!Excel.SettableColumnProperties#columnHidden:member
     package: excel!
     fullName: columnHidden
-    summary: |-
+    summary: >-
       Represents the `columnHidden` property.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,14 +34,17 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: 'excel!Excel.SettableColumnProperties#format:member'
+    uid: excel!Excel.SettableColumnProperties#format:member
     package: excel!
     fullName: format
-    summary: |-
+    summary: >-
       Represents the `format` property.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,4 +57,4 @@ properties:
           <xref uid="excel!Excel.CellPropertiesFormat:interface" /> & {
                       columnWidth?: number;
                   }
-extends: '<xref uid="excel!Excel.SettableCellProperties:interface" />'
+extends: <xref uid="excel!Excel.SettableCellProperties:interface" />

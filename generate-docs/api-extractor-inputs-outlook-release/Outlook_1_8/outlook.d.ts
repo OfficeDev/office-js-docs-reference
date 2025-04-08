@@ -3512,6 +3512,21 @@ export declare namespace Office {
     export interface AttachmentDetailsCompose {
         /**
          * Gets a value that indicates the attachment's type.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web and new Outlook on Windows, a message or appointment that's locally saved then attached using
+         * drag-and-drop or the **Attach Item** option is of type `Office.MailboxEnums.AttachmentType.File`. The file name extension is
+         * returned in the `name` property. However, a message or appointment that's attached using the **Forward as Attachment** option
+         * is of type `Office.MailboxEnums.AttachmentType.Item`. In this case, an extension isn't returned in the `name` property.
+         *
+         * - In classic Outlook on Windows, a message or appointment that's attached using drag-and-drop, **Attach File**, or 
+         * **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.Item`. A file name extension isn't returned in the `name` property.
+         *
+         * - In Outlook on Mac, a message or appointment that's attached using drag-and-drop, **Attach Item**, or **Forward as Attachment** is of type
+         * `Office.MailboxEnums.AttachmentType.File`. The file name extension is returned in the `name` property.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
@@ -3525,8 +3540,23 @@ export declare namespace Office {
         /**
          * Gets the name of the attachment.
          *
-         * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
-         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or on Windows.
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't return a file name extension in the `name` property.
+         *
+         * - In Outlook on the web and new Outlook on Windows, a message or appointment that's locally saved then attached using
+         * drag-and-drop or the **Attach Item** option is of type `Office.MailboxEnums.AttachmentType.File`. The file name extension is
+         * returned in the `name` property. However, a message or appointment that's attached using the **Forward as Attachment** option
+         * is of type `Office.MailboxEnums.AttachmentType.Item`. In this case, an extension isn't returned in the `name` property.
+         *
+         * - In classic Outlook on Windows, a message or appointment that's attached using drag-and-drop, **Attach Item**, or 
+         * **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.Item`. A file name extension isn't returned in the `name` property.
+         * A calendar item that's attached 
+         *
+         * - In Outlook on Mac, a message or appointment that's attached using drag-and-drop, **Attach Item**, or **Forward as Attachment** is of type
+         * `Office.MailboxEnums.AttachmentType.File`. The file name extension is returned in the `name` property.
          */
         name: string;
         /**
@@ -3577,8 +3607,9 @@ export declare namespace Office {
         /**
          * Gets the name of the attachment.
          *
-         * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
-         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or on Windows.
+         * @remarks
+         *
+         * **Important**: An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't return a file name extension in the `name` property.
          */
         name: string;
         /**

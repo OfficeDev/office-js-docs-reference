@@ -18,97 +18,97 @@ items:
             uid: ''
             items:
               - name: ColumnType
-                uid: 'visio!Visio.ColumnType:enum'
+                uid: visio!Visio.ColumnType:enum
               - name: ConnectorDirection
-                uid: 'visio!Visio.ConnectorDirection:enum'
+                uid: visio!Visio.ConnectorDirection:enum
               - name: CrossFunctionalFlowchartOrientation
-                uid: 'visio!Visio.CrossFunctionalFlowchartOrientation:enum'
+                uid: visio!Visio.CrossFunctionalFlowchartOrientation:enum
               - name: DataSourceType
-                uid: 'visio!Visio.DataSourceType:enum'
+                uid: visio!Visio.DataSourceType:enum
               - name: DataValidationErrorType
-                uid: 'visio!Visio.DataValidationErrorType:enum'
+                uid: visio!Visio.DataValidationErrorType:enum
               - name: DataVisualizerDiagramOperationType
-                uid: 'visio!Visio.DataVisualizerDiagramOperationType:enum'
+                uid: visio!Visio.DataVisualizerDiagramOperationType:enum
               - name: DataVisualizerDiagramResultType
-                uid: 'visio!Visio.DataVisualizerDiagramResultType:enum'
+                uid: visio!Visio.DataVisualizerDiagramResultType:enum
               - name: DataVisualizerDiagramType
-                uid: 'visio!Visio.DataVisualizerDiagramType:enum'
+                uid: visio!Visio.DataVisualizerDiagramType:enum
               - name: ErrorCodes
-                uid: 'visio!Visio.ErrorCodes:enum'
+                uid: visio!Visio.ErrorCodes:enum
               - name: EventType
-                uid: 'visio!Visio.EventType:enum'
+                uid: visio!Visio.EventType:enum
               - name: LayoutVariant
-                uid: 'visio!Visio.LayoutVariant:enum'
+                uid: visio!Visio.LayoutVariant:enum
               - name: MessageType
-                uid: 'visio!Visio.MessageType:enum'
+                uid: visio!Visio.MessageType:enum
               - name: OverlayHorizontalAlignment
-                uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
+                uid: visio!Visio.OverlayHorizontalAlignment:enum
               - name: OverlayType
-                uid: 'visio!Visio.OverlayType:enum'
+                uid: visio!Visio.OverlayType:enum
               - name: OverlayVerticalAlignment
-                uid: 'visio!Visio.OverlayVerticalAlignment:enum'
+                uid: visio!Visio.OverlayVerticalAlignment:enum
               - name: TaskPaneType
-                uid: 'visio!Visio.TaskPaneType:enum'
+                uid: visio!Visio.TaskPaneType:enum
               - name: ToolBarType
-                uid: 'visio!Visio.ToolBarType:enum'
+                uid: visio!Visio.ToolBarType:enum
           - name: Application
-            uid: 'visio!Visio.Application:class'
+            uid: visio!Visio.Application:class
           - name: BoundingBox
-            uid: 'visio!Visio.BoundingBox:interface'
+            uid: visio!Visio.BoundingBox:interface
           - name: Comment
-            uid: 'visio!Visio.Comment:class'
+            uid: visio!Visio.Comment:class
           - name: CommentCollection
-            uid: 'visio!Visio.CommentCollection:class'
+            uid: visio!Visio.CommentCollection:class
           - name: DataRefreshCompleteEventArgs
-            uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
+            uid: visio!Visio.DataRefreshCompleteEventArgs:interface
           - name: Document
-            uid: 'visio!Visio.Document:class'
+            uid: visio!Visio.Document:class
           - name: DocumentErrorEventArgs
-            uid: 'visio!Visio.DocumentErrorEventArgs:interface'
+            uid: visio!Visio.DocumentErrorEventArgs:interface
           - name: DocumentLoadCompleteEventArgs
-            uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
+            uid: visio!Visio.DocumentLoadCompleteEventArgs:interface
           - name: DocumentView
-            uid: 'visio!Visio.DocumentView:class'
+            uid: visio!Visio.DocumentView:class
           - name: Highlight
-            uid: 'visio!Visio.Highlight:interface'
+            uid: visio!Visio.Highlight:interface
           - name: Hyperlink
-            uid: 'visio!Visio.Hyperlink:class'
+            uid: visio!Visio.Hyperlink:class
           - name: HyperlinkCollection
-            uid: 'visio!Visio.HyperlinkCollection:class'
+            uid: visio!Visio.HyperlinkCollection:class
           - name: Page
-            uid: 'visio!Visio.Page:class'
+            uid: visio!Visio.Page:class
           - name: PageCollection
-            uid: 'visio!Visio.PageCollection:class'
+            uid: visio!Visio.PageCollection:class
           - name: PageLoadCompleteEventArgs
-            uid: 'visio!Visio.PageLoadCompleteEventArgs:interface'
+            uid: visio!Visio.PageLoadCompleteEventArgs:interface
           - name: PageRenderCompleteEventArgs
-            uid: 'visio!Visio.PageRenderCompleteEventArgs:interface'
+            uid: visio!Visio.PageRenderCompleteEventArgs:interface
           - name: PageView
-            uid: 'visio!Visio.PageView:class'
+            uid: visio!Visio.PageView:class
           - name: Position
-            uid: 'visio!Visio.Position:interface'
+            uid: visio!Visio.Position:interface
           - name: RequestContext
-            uid: 'visio!Visio.RequestContext:class'
+            uid: visio!Visio.RequestContext:class
           - name: Selection
-            uid: 'visio!Visio.Selection:class'
+            uid: visio!Visio.Selection:class
           - name: SelectionChangedEventArgs
-            uid: 'visio!Visio.SelectionChangedEventArgs:interface'
+            uid: visio!Visio.SelectionChangedEventArgs:interface
           - name: Shape
-            uid: 'visio!Visio.Shape:class'
+            uid: visio!Visio.Shape:class
           - name: ShapeCollection
-            uid: 'visio!Visio.ShapeCollection:class'
+            uid: visio!Visio.ShapeCollection:class
           - name: ShapeDataItem
-            uid: 'visio!Visio.ShapeDataItem:class'
+            uid: visio!Visio.ShapeDataItem:class
           - name: ShapeDataItemCollection
-            uid: 'visio!Visio.ShapeDataItemCollection:class'
+            uid: visio!Visio.ShapeDataItemCollection:class
           - name: ShapeMouseEnterEventArgs
-            uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
+            uid: visio!Visio.ShapeMouseEnterEventArgs:interface
           - name: ShapeMouseLeaveEventArgs
-            uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
+            uid: visio!Visio.ShapeMouseLeaveEventArgs:interface
           - name: ShapeView
-            uid: 'visio!Visio.ShapeView:class'
+            uid: visio!Visio.ShapeView:class
           - name: TaskPaneStateChangedEventArgs
-            uid: 'visio!Visio.TaskPaneStateChangedEventArgs:interface'
+            uid: visio!Visio.TaskPaneStateChangedEventArgs:interface
       - name: Word
         href: /javascript/api/word
       - name: Common APIs
@@ -143,10 +143,6 @@ items:
         href: ../../manifest/disableentityhighlighting.md
       - name: DisplayName
         href: ../../manifest/displayname.md
-      - name: EquivalentAddin
-        href: ../../manifest/equivalentaddin.md
-      - name: EquivalentAddins
-        href: ../../manifest/equivalentaddins.md
       - name: ExtendedOverrides
         href: ../../manifest/extendedoverrides.md
       - name: FileName
@@ -348,7 +344,7 @@ items:
             displayName: Excel
           - name: CustomFunctionsRuntime API requirement sets
             href: ../../requirement-sets/excel/custom-functions-requirement-sets.md
-            displayName: 'Excel, Custom Functions'
+            displayName: Excel, Custom Functions
           - name: Excel preview APIs
             href: ../../requirement-sets/excel/excel-preview-apis.md
             displayName: Excel

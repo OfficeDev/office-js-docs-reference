@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: Word.ErrorCodes
-uid: 'word!Word.ErrorCodes:enum'
+uid: word!Word.ErrorCodes:enum
 package: word!
 fullName: Word.ErrorCodes
 summary: ''
@@ -30,46 +30,47 @@ remarks: >-
   }
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: accessDenied
-    uid: 'word!Word.ErrorCodes.accessDenied:member'
+    uid: word!Word.ErrorCodes.accessDenied:member
     package: word!
     summary: ''
     value: '"AccessDenied"'
   - name: generalException
-    uid: 'word!Word.ErrorCodes.generalException:member'
+    uid: word!Word.ErrorCodes.generalException:member
     package: word!
     summary: ''
     value: '"GeneralException"'
   - name: invalidArgument
-    uid: 'word!Word.ErrorCodes.invalidArgument:member'
+    uid: word!Word.ErrorCodes.invalidArgument:member
     package: word!
     summary: ''
     value: '"InvalidArgument"'
   - name: itemNotFound
-    uid: 'word!Word.ErrorCodes.itemNotFound:member'
+    uid: word!Word.ErrorCodes.itemNotFound:member
     package: word!
     summary: ''
     value: '"ItemNotFound"'
   - name: notAllowed
-    uid: 'word!Word.ErrorCodes.notAllowed:member'
+    uid: word!Word.ErrorCodes.notAllowed:member
     package: word!
     summary: ''
     value: '"NotAllowed"'
   - name: notImplemented
-    uid: 'word!Word.ErrorCodes.notImplemented:member'
+    uid: word!Word.ErrorCodes.notImplemented:member
     package: word!
     summary: ''
     value: '"NotImplemented"'
   - name: searchDialogIsOpen
-    uid: 'word!Word.ErrorCodes.searchDialogIsOpen:member'
+    uid: word!Word.ErrorCodes.searchDialogIsOpen:member
     package: word!
     summary: ''
     value: '"SearchDialogIsOpen"'
   - name: searchStringInvalidOrTooLong
-    uid: 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
+    uid: word!Word.ErrorCodes.searchStringInvalidOrTooLong:member
     package: word!
     summary: ''
     value: '"SearchStringInvalidOrTooLong"'

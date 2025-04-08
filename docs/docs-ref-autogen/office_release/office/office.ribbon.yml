@@ -1,30 +1,37 @@
 ### YamlMime:TSType
 name: Office.Ribbon
-uid: 'office!Office.Ribbon:interface'
+uid: office!Office.Ribbon:interface
 package: office!
 fullName: Office.Ribbon
-summary: An interface that contains all the functionality provided to manage the state of the Office ribbon.
+summary: >-
+  An interface that contains all the functionality provided to manage the state
+  of the Office ribbon.
 remarks: >-
   **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
   - name: requestCreateControls(tabDefinition)
-    uid: 'office!Office.Ribbon#requestCreateControls:member(1)'
+    uid: office!Office.Ribbon#requestCreateControls:member(1)
     package: office!
     fullName: requestCreateControls(tabDefinition)
-    summary: Registers a custom contextual tab with Office and defines the tab's controls.
+    summary: >-
+      Registers a custom contextual tab with Office and defines the tab's
+      controls.
     remarks: >-
       **Requirement set**: [RibbonAPI
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
-      This method only requests that the tab be registered. The actual registration is controlled by the Office
-      application and may not be complete when the returned `Promise` object is resolved. For more information and code
-      examples, see [Create custom contextual
-      tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+      This method only requests that the tab be registered. The actual
+      registration is controlled by the Office application and may not be
+      complete when the returned `Promise` object is resolved. For more
+      information and code examples, see [Create custom contextual
+      tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
+      -->.
 
 
       #### Examples
@@ -41,6 +48,7 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,19 +56,23 @@ methods:
       parameters:
         - id: tabDefinition
           description: >-
-            Specifies the tab's properties and child controls and their properties. This parameter isn't strongly typed
-            because its shape is defined by a JSON schema that can be versioned. To create the parameter object, pass a
-            JSON string that conforms to the Office [dynamic-ribbon JSON
-            schema](https://developer.microsoft.com/json-schemas/office-js/dynamic-ribbon.schema.json) to
-            `JSON.parse`<!-- -->, and then pass the returned object to this method. To get IntelliSense for the JSON in
-            Visual Studio Code, see [Editing JSON with Visual Studio Code - JSON schemas and
-            settings](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings)<!-- -->.
+            Specifies the tab's properties and child controls and their
+            properties. This parameter isn't strongly typed because its shape is
+            defined by a JSON schema that can be versioned. To create the
+            parameter object, pass a JSON string that conforms to the Office
+            [dynamic-ribbon JSON
+            schema](https://developer.microsoft.com/json-schemas/office-js/dynamic-ribbon.schema.json)
+            to `JSON.parse`<!-- -->, and then pass the returned object to this
+            method. To get IntelliSense for the JSON in Visual Studio Code, see
+            [Editing JSON with Visual Studio Code - JSON schemas and
+            settings](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings)<!--
+            -->.
           type: Object
       return:
         type: Promise&lt;void&gt;
         description: ''
   - name: requestUpdate(input)
-    uid: 'office!Office.Ribbon#requestUpdate:member(1)'
+    uid: office!Office.Ribbon#requestUpdate:member(1)
     package: office!
     fullName: requestUpdate(input)
     summary: Sends a request to Office to update the ribbon.
@@ -69,14 +81,17 @@ methods:
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
-      Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office
-      application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of
-      this API.
+      Note that this API is only to request an update. The actual UI update to
+      the ribbon is controlled by the Office application and hence the exact
+      timing of the ribbon update (or refresh) cannot be determined by the
+      completion of this API.
 
 
       For code examples, see [Change the availability of add-in
-      commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom
-      contextual tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+      commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)
+      and [Create custom contextual
+      tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
+      -->.
 
 
       #### Examples
@@ -84,9 +99,11 @@ methods:
 
       ```TypeScript
 
-      // Office.Tab objects are properties of ribbon updater objects that are passed to the 
+      // Office.Tab objects are properties of ribbon updater objects that are
+      passed to the 
 
-      // Office.ribbon.requestUpdate method. The following shows how to set the visibility of 
+      // Office.ribbon.requestUpdate method. The following shows how to set the
+      visibility of 
 
       // a custom contextual tab.
 
@@ -112,6 +129,7 @@ methods:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,9 +137,9 @@ methods:
       parameters:
         - id: input
           description: >-
-            Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter
-            are made.
-          type: '<xref uid="office!Office.RibbonUpdaterData:interface" />'
+            Represents the updates to be made to the ribbon. Note that only the
+            changes specified in the input parameter are made.
+          type: <xref uid="office!Office.RibbonUpdaterData:interface" />
       return:
         type: Promise&lt;void&gt;
         description: ''

@@ -1,20 +1,26 @@
 ### YamlMime:TSType
 name: Excel.ChartDeletedEventArgs
-uid: 'excel!Excel.ChartDeletedEventArgs:interface'
+uid: excel!Excel.ChartDeletedEventArgs:interface
 package: excel!
 fullName: Excel.ChartDeletedEventArgs
 summary: Provides information about the chart that raised the deleted event.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: chartId
-    uid: 'excel!Excel.ChartDeletedEventArgs#chartId:member'
+    uid: excel!Excel.ChartDeletedEventArgs#chartId:member
     package: excel!
     fullName: chartId
     summary: Gets the ID of the chart that is deleted from the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,23 +28,29 @@ properties:
       return:
         type: string
   - name: source
-    uid: 'excel!Excel.ChartDeletedEventArgs#source:member'
+    uid: excel!Excel.ChartDeletedEventArgs#source:member
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+        type: <xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"
   - name: type
-    uid: 'excel!Excel.ChartDeletedEventArgs#type:member'
+    uid: excel!Excel.ChartDeletedEventArgs#type:member
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +58,14 @@ properties:
       return:
         type: '"ChartDeleted"'
   - name: worksheetId
-    uid: 'excel!Excel.ChartDeletedEventArgs#worksheetId:member'
+    uid: excel!Excel.ChartDeletedEventArgs#worksheetId:member
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the chart is deleted.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

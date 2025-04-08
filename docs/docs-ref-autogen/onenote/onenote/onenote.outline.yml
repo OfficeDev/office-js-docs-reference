@@ -1,34 +1,42 @@
 ### YamlMime:TSType
 name: OneNote.Outline
-uid: 'onenote!OneNote.Outline:class'
+uid: onenote!OneNote.Outline:class
 package: onenote!
 fullName: OneNote.Outline
 summary: Represents a container for Paragraph objects.
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'onenote!OneNote.Outline#context:member'
+    uid: onenote!OneNote.Outline#context:member
     package: onenote!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
+        type: <xref uid="onenote!OneNote.RequestContext:class" />
   - name: id
-    uid: 'onenote!OneNote.Outline#id:member'
+    uid: onenote!OneNote.Outline#id:member
     package: onenote!
     fullName: id
     summary: Gets the ID of the Outline object.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,43 +44,56 @@ properties:
       return:
         type: string
   - name: pageContent
-    uid: 'onenote!OneNote.Outline#pageContent:member'
+    uid: onenote!OneNote.Outline#pageContent:member
     package: onenote!
     fullName: pageContent
     summary: >-
-      Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
-      page.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+      Gets the PageContent object that contains the Outline. This object defines
+      the position of the Outline on the page.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
-        type: '<xref uid="onenote!OneNote.PageContent:class" />'
+        type: <xref uid="onenote!OneNote.PageContent:class" />
   - name: paragraphs
-    uid: 'onenote!OneNote.Outline#paragraphs:member'
+    uid: onenote!OneNote.Outline#paragraphs:member
     package: onenote!
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the Outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
-        type: '<xref uid="onenote!OneNote.ParagraphCollection:class" />'
+        type: <xref uid="onenote!OneNote.ParagraphCollection:class" />
 methods:
   - name: appendHtml(html)
-    uid: 'onenote!OneNote.Outline#appendHtml:member(1)'
+    uid: onenote!OneNote.Outline#appendHtml:member(1)
     package: onenote!
     fullName: appendHtml(html)
     summary: Adds the specified HTML to the bottom of the Outline.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // Gets the active page.
@@ -98,7 +119,9 @@ methods:
               await context.sync();
           }
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,35 +136,49 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'appendImage(base64EncodedImage, width, height)'
-    uid: 'onenote!OneNote.Outline#appendImage:member(1)'
+  - name: appendImage(base64EncodedImage, width, height)
+    uid: onenote!OneNote.Outline#appendImage:member(1)
     package: onenote!
-    fullName: 'appendImage(base64EncodedImage, width, height)'
+    fullName: appendImage(base64EncodedImage, width, height)
     summary: Adds the specified image to the bottom of the Outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
+      content: >-
+        appendImage(base64EncodedImage: string, width: number, height: number):
+        OneNote.Image;
       parameters:
         - id: base64EncodedImage
           description: HTML string to append.
           type: string
         - id: width
-          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
+          description: >-
+            Optional. Width in the unit of Points. The default value is null and
+            image width will be respected.
           type: number
         - id: height
-          description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
+          description: >-
+            Optional. Height in the unit of Points. The default value is null
+            and image height will be respected.
           type: number
       return:
-        type: '<xref uid="onenote!OneNote.Image:class" />'
+        type: <xref uid="onenote!OneNote.Image:class" />
         description: ''
   - name: appendRichText(paragraphText)
-    uid: 'onenote!OneNote.Outline#appendRichText:member(1)'
+    uid: onenote!OneNote.Outline#appendRichText:member(1)
     package: onenote!
     fullName: appendRichText(paragraphText)
     summary: Adds the specified text to the bottom of the Outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,19 +188,26 @@ methods:
           description: HTML string to append.
           type: string
       return:
-        type: '<xref uid="onenote!OneNote.RichText:class" />'
+        type: <xref uid="onenote!OneNote.RichText:class" />
         description: ''
-  - name: 'appendTable(rowCount, columnCount, values)'
-    uid: 'onenote!OneNote.Outline#appendTable:member(1)'
+  - name: appendTable(rowCount, columnCount, values)
+    uid: onenote!OneNote.Outline#appendTable:member(1)
     package: onenote!
-    fullName: 'appendTable(rowCount, columnCount, values)'
-    summary: Adds a table with the specified number of rows and columns to the bottom of the outline.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    fullName: appendTable(rowCount, columnCount, values)
+    summary: >-
+      Adds a table with the specified number of rows and columns to the bottom
+      of the outline.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // Gets the active page.
@@ -188,11 +232,15 @@ methods:
               await context.sync();
           }
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;'
+      content: >-
+        appendTable(rowCount: number, columnCount: number, values?: string[][]):
+        OneNote.Table;
       parameters:
         - id: rowCount
           description: Required. The number of rows in the table.
@@ -201,32 +249,41 @@ methods:
           description: Required. The number of columns in the table.
           type: number
         - id: values
-          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
-          type: 'string[][]'
+          description: >-
+            Optional 2D array. Cells are filled if the corresponding strings are
+            specified in the array.
+          type: string[][]
       return:
-        type: '<xref uid="onenote!OneNote.Table:class" />'
+        type: <xref uid="onenote!OneNote.Table:class" />
         description: ''
   - name: isTitle()
-    uid: 'onenote!OneNote.Outline#isTitle:member(1)'
+    uid: onenote!OneNote.Outline#isTitle:member(1)
     package: onenote!
     fullName: isTitle()
     summary: Check if the outline is title outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'isTitle(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
         description: ''
   - name: load(options)
-    uid: 'onenote!OneNote.Outline#load:member(1)'
+    uid: onenote!OneNote.Outline#load:member(1)
     package: onenote!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,37 +291,43 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface" />'
+          type: >-
+            <xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="onenote!OneNote.Outline:class" />'
+        type: <xref uid="onenote!OneNote.Outline:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'onenote!OneNote.Outline#load:member(2)'
+    uid: onenote!OneNote.Outline#load:member(2)
     package: onenote!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.Outline;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="onenote!OneNote.Outline:class" />'
+        type: <xref uid="onenote!OneNote.Outline:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'onenote!OneNote.Outline#load:member(3)'
+    uid: onenote!OneNote.Outline#load:member(3)
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -276,68 +339,80 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="onenote!OneNote.Outline:class" />'
+        type: <xref uid="onenote!OneNote.Outline:class" />
         description: ''
   - name: toJSON()
-    uid: 'onenote!OneNote.Outline#toJSON:member(1)'
+    uid: onenote!OneNote.Outline#toJSON:member(1)
     package: onenote!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `OneNote.Outline` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `OneNote.Interfaces.OutlineData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `OneNote.Outline` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `OneNote.Interfaces.OutlineData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): OneNote.Interfaces.OutlineData;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.OutlineData:interface" />'
+        type: <xref uid="onenote!OneNote.Interfaces.OutlineData:interface" />
         description: ''
   - name: track()
-    uid: 'onenote!OneNote.Outline#track:member(1)'
+    uid: onenote!OneNote.Outline#track:member(1)
     package: onenote!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): OneNote.Outline;'
       return:
-        type: '<xref uid="onenote!OneNote.Outline:class" />'
+        type: <xref uid="onenote!OneNote.Outline:class" />
         description: ''
   - name: untrack()
-    uid: 'onenote!OneNote.Outline#untrack:member(1)'
+    uid: onenote!OneNote.Outline#untrack:member(1)
     package: onenote!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): OneNote.Outline;'
       return:
-        type: '<xref uid="onenote!OneNote.Outline:class" />'
+        type: <xref uid="onenote!OneNote.Outline:class" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />
