@@ -513,10 +513,6 @@ items:
         href: ../../manifest/disableentityhighlighting.md
       - name: DisplayName
         href: ../../manifest/displayname.md
-      - name: EquivalentAddin
-        href: ../../manifest/equivalentaddin.md
-      - name: EquivalentAddins
-        href: ../../manifest/equivalentaddins.md
       - name: ExtendedOverrides
         href: ../../manifest/extendedoverrides.md
       - name: FileName

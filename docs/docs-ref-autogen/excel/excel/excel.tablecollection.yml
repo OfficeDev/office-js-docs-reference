@@ -4,7 +4,35 @@ uid: 'excel!Excel.TableCollection:class'
 package: excel!
 fullName: Excel.TableCollection
 summary: 'Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.'
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+
+  // Add checkboxes to the table.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+    // Get the second column in the table, without the header.
+    const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
+
+    // Change the boolean values to checkboxes.
+    range.control = {
+      type: Excel.CellControlType.checkbox
+    };
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -109,12 +137,15 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a table by name or ID.
-    remarks: |-
+    remarks: >-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -123,6 +154,30 @@ methods:
           
           console.log(table.name);
       });
+
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+
+      // Remove checkboxes from the table.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Get the second column in the table, without the header.
+        const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
+
+        // Change the checkboxes back to boolean values.
+        range.control = {
+          type: Excel.CellControlType.empty
+        };
+        await context.sync();
+      });
+
       ```
     isPreview: false
     isDeprecated: false
