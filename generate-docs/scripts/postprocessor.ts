@@ -224,7 +224,7 @@ tryCatch(async () => {
             }
         });
 
-    console.log(`Fixing top href`);
+    console.log(`Adjust YAML files - HREF and type alias expansion.`);
     fsx.readdirSync(docsDestination)
         .filter(filename => filename.indexOf(".yml") < 0)
         .forEach(filename => {
@@ -480,11 +480,12 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
 function cleanUpYmlFile(ymlFile: string, hostName: string): string {
     const schemaComment = ymlFile.substring(0, ymlFile.indexOf("\n") + 1);
     const apiYaml: ApiYaml = jsyaml.load(ymlFile) as ApiYaml;
+
     // Add links for type aliases.
     if (apiYaml.uid.endsWith(":type") && (apiYaml.uid.indexOf("Office") < 0)) {
         let remarks = `${EOL}${EOL}Learn more about the types in this type alias throug hthe following links: ${EOL}${EOL}`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
-            remarks += `[${hostName}.${match}](/javascript/api/${hostName}/${hostName}.${match})" />`
+            remarks += `[${hostName}.${match}](/javascript/api/${hostName}/${hostName}.${match})`;
             if (matchIndex < matches.length - 1) {
                 remarks += ", ";
             }

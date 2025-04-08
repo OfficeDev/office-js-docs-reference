@@ -1435,8 +1435,9 @@ export declare namespace Office {
         /**
          * Gets the name of the attachment.
          *
-         * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
-         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or on Windows.
+         * @remarks
+         *
+         * **Important**: An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't return a file name extension in the `name` property.
          */
         name: string;
         /**

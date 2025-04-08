@@ -8,6 +8,28 @@ remarks: >-
   \[ [API set: ExcelApi
   1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
+
+
+  // This function adds a note to the selected cell.
+
+  await Excel.run(async (context) => {
+    const selectedRange = context.workbook.getSelectedRange();
+
+    // Note that an InvalidArgument error is thrown if multiple cells are selected.
+    context.workbook.notes.add(selectedRange, "The first note.");
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -50,6 +72,28 @@ methods:
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
+
+
+      // This function adds a note to the selected cell.
+
+      await Excel.run(async (context) => {
+        const selectedRange = context.workbook.getSelectedRange();
+
+        // Note that an InvalidArgument error is thrown if multiple cells are selected.
+        context.workbook.notes.add(selectedRange, "The first note.");
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -95,6 +139,30 @@ methods:
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
+
+
+      // This function sets the note on cell A1 to visible.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Notes");
+        const firstNote = sheet.notes.getItem("A1");
+
+        firstNote.load();
+        await context.sync();
+
+        firstNote.visible = true;
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,6 +185,27 @@ methods:
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
+
+
+      // This function changes the content in the first note.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Notes");
+        const note = sheet.notes.getItemAt(0);
+        note.content = "Changing the content of the first note.";
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

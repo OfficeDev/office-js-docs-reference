@@ -665,6 +665,28 @@ properties:
       \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+
+      // Change the value of the checkbox in B3.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const range = sheet.getRange("B3");
+
+        range.values = [["TRUE"]];
+        await context.sync();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

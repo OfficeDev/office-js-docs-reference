@@ -8,6 +8,33 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+
+  // Add checkboxes to the table.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+    // Get the second column in the table, without the header.
+    const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
+
+    // Change the boolean values to checkboxes.
+    range.control = {
+      type: Excel.CellControlType.checkbox
+    };
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -148,6 +175,27 @@ methods:
           tableColumn.load('name');
           await context.sync();
           console.log(tableColumn.name);
+      });
+
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+
+      // Remove all content from the Analysis column.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Get the second column in the table, without the header.
+        const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
+
+        // Clear all the data from the second column.
+        range.clearOrResetContents();
+        await context.sync();
       });
 
       ```
