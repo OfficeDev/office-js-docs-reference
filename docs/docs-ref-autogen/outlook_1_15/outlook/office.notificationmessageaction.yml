@@ -114,6 +114,12 @@ properties:
       - To retrieve the JSON data, call `Office.context.mailboxitem.getInitializationContextAsync`<!-- -->. If you
       create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
       string using `JSON.parse()` once you retrieve it.
+
+
+      - To prevent the task pane of a notification message from relaunching if it's already open, implement a handler
+      for the `Office.EventType.InitializationContextChanged` event. You can then pass the [event
+      arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true)
+      to the `contextData` property.
     isPreview: false
     isDeprecated: false
     syntax:
