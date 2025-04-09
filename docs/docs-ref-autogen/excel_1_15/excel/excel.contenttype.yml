@@ -14,7 +14,7 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-mentions.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-mentions.yaml
 
 
   await Excel.run(async (context) => {

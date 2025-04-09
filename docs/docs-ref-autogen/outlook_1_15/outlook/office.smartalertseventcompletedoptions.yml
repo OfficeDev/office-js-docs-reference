@@ -279,6 +279,12 @@ properties:
       - When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also
       added to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user
       runs the function from the Smart Alerts dialog.
+
+
+      - To prevent the task pane of a Smart Alerts add-in from relaunching if it's already open, implement a handler for
+      the `Office.EventType.InitializationContextChanged` event. You can then pass the [event
+      arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true)
+      to the `contextData` property.
     isPreview: false
     isDeprecated: false
     syntax:

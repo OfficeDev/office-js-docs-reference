@@ -561,7 +561,7 @@ Excel.CellBorderCollection,"right",Property,Fine,false
 Excel.CellBorderCollection,"top",Property,Fine,false
 Excel.CellBorderCollection,"vertical",Property,Fine,false
 Excel.CellControl,N/A,TypeAlias,Fine,false
-Excel.CellControlType,N/A,Enum,Unknown,false
+Excel.CellControlType,N/A,Enum,Unknown,true
 Excel.CellControlType,"checkbox",EnumField,Fine,false
 Excel.CellControlType,"dropdown",EnumField,Fine,false
 Excel.CellControlType,"empty",EnumField,Fine,false
@@ -1778,7 +1778,7 @@ Excel.ChartType,"xyscatterSmoothNoMarkers",EnumField,Fine,false
 Excel.ChartUnderlineStyle,N/A,Enum,Fine,false
 Excel.ChartUnderlineStyle,"none",EnumField,Fine,false
 Excel.ChartUnderlineStyle,"single",EnumField,Fine,false
-Excel.CheckboxCellControl,N/A,Interface,Missing,false
+Excel.CheckboxCellControl,N/A,Interface,Missing,true
 Excel.CheckboxCellControl,"type",Property,Missing,false
 Excel.ClearApplyTo,N/A,Enum,Unknown,true
 Excel.ClearApplyTo,"all",EnumField,Fine,false
@@ -4632,14 +4632,14 @@ Excel.NotAvailableErrorCellValueSubType,"stockHistoryInvalidProperty",EnumField,
 Excel.NotAvailableErrorCellValueSubType,"stockHistoryNoData",EnumField,Great,false
 Excel.NotAvailableErrorCellValueSubType,"unknown",EnumField,Good,false
 Excel.NotAvailableErrorCellValueSubType,"vlookupValueNotFound",EnumField,Excellent,false
-Excel.Note,N/A,Class,Unknown,false
+Excel.Note,N/A,Class,Unknown,true
 Excel.Note,"authorName",Property,Poor,false
-Excel.Note,"content",Property,Poor,false
+Excel.Note,"content",Property,Poor,true
 Excel.Note,"context",Property,Excellent,false
-Excel.Note,"height",Property,Good,false
-Excel.Note,"visible",Property,Excellent,false
-Excel.Note,"width",Property,Good,false
-Excel.Note,"delete()",Method,Poor,false
+Excel.Note,"height",Property,Good,true
+Excel.Note,"visible",Property,Excellent,true
+Excel.Note,"width",Property,Good,true
+Excel.Note,"delete()",Method,Poor,true
 Excel.Note,"getLocation()",Method,Poor,false
 Excel.Note,"load(options)",Method,Excellent,false
 Excel.Note,"load(propertyNames)",Method,Excellent,false
@@ -4647,13 +4647,13 @@ Excel.Note,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.Note,"set(properties, options)",Method,Good,false
 Excel.Note,"set(properties)",Method,Good,false
 Excel.Note,"toJSON()",Method,Excellent,false
-Excel.NoteCollection,N/A,Class,Unknown,false
+Excel.NoteCollection,N/A,Class,Unknown,true
 Excel.NoteCollection,"context",Property,Excellent,false
 Excel.NoteCollection,"items",Property,Poor,false
-Excel.NoteCollection,"add(cellAddress, content)",Method,Fine,false
+Excel.NoteCollection,"add(cellAddress, content)",Method,Fine,true
 Excel.NoteCollection,"getCount()",Method,Poor,false
-Excel.NoteCollection,"getItem(key)",Method,Poor,false
-Excel.NoteCollection,"getItemAt(index)",Method,Fine,false
+Excel.NoteCollection,"getItem(key)",Method,Poor,true
+Excel.NoteCollection,"getItemAt(index)",Method,Fine,true
 Excel.NoteCollection,"getItemOrNullObject(key)",Method,Excellent,false
 Excel.NoteCollection,"load(options)",Method,Excellent,false
 Excel.NoteCollection,"load(propertyNames)",Method,Excellent,false
@@ -5152,7 +5152,7 @@ Excel.Range,"columnHidden",Property,Excellent,false
 Excel.Range,"columnIndex",Property,Great,false
 Excel.Range,"conditionalFormats",Property,Good,false
 Excel.Range,"context",Property,Excellent,false
-Excel.Range,"control",Property,Great,false
+Excel.Range,"control",Property,Great,true
 Excel.Range,"dataValidation",Property,Good,false
 Excel.Range,"format",Property,Great,false
 Excel.Range,"formulas",Property,Great,false
@@ -5177,7 +5177,7 @@ Excel.Range,"sort",Property,Poor,true
 Excel.Range,"style",Property,Excellent,true
 Excel.Range,"text",Property,Great,false
 Excel.Range,"top",Property,Good,false
-Excel.Range,"values",Property,Excellent,false
+Excel.Range,"values",Property,Excellent,true
 Excel.Range,"valuesAsJson",Property,Excellent,true
 Excel.Range,"valuesAsJsonLocal",Property,Excellent,false
 Excel.Range,"valueTypes",Property,Good,false
@@ -5188,7 +5188,7 @@ Excel.Range,"autoFill(destinationRange, autoFillTypeString)",Method,Good,false
 Excel.Range,"calculate()",Method,Fine,false
 Excel.Range,"clear(applyTo)",Method,Good,true
 Excel.Range,"clear(applyToString)",Method,Good,false
-Excel.Range,"clearOrResetContents()",Method,Excellent,false
+Excel.Range,"clearOrResetContents()",Method,Excellent,true
 Excel.Range,"convertDataTypeToText()",Method,Fine,false
 Excel.Range,"convertToLinkedDataType(serviceID, languageCulture)",Method,Fine,false
 Excel.Range,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Great,true
@@ -6181,7 +6181,7 @@ Excel.TableChangedEventArgs,"type",Property,Fine,false
 Excel.TableChangedEventArgs,"worksheetId",Property,Fine,true
 Excel.TableChangedEventArgs,"getRange(ctx)",Method,Good,false
 Excel.TableChangedEventArgs,"getRangeOrNullObject(ctx)",Method,Great,false
-Excel.TableCollection,N/A,Class,Unknown,false
+Excel.TableCollection,N/A,Class,Unknown,true
 Excel.TableCollection,"context",Property,Excellent,false
 Excel.TableCollection,"count",Property,Fine,false
 Excel.TableCollection,"items",Property,Poor,false
@@ -6214,7 +6214,7 @@ Excel.TableColumn,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.TableColumn,"set(properties, options)",Method,Good,false
 Excel.TableColumn,"set(properties)",Method,Good,false
 Excel.TableColumn,"toJSON()",Method,Excellent,false
-Excel.TableColumnCollection,N/A,Class,Unknown,false
+Excel.TableColumnCollection,N/A,Class,Unknown,true
 Excel.TableColumnCollection,"context",Property,Excellent,false
 Excel.TableColumnCollection,"count",Property,Fine,false
 Excel.TableColumnCollection,"items",Property,Poor,false
@@ -8937,18 +8937,18 @@ Office.AppointmentTimeChangedEventArgs,"type",Property,Fine,false
 Office.AttachmentContent,N/A,Interface,Good,false
 Office.AttachmentContent,"content",Property,Fine,false
 Office.AttachmentContent,"format",Property,Excellent,true
-Office.AttachmentDetails,N/A,Interface,Good,true
+Office.AttachmentDetails,N/A,Interface,Unknown,true
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
 Office.AttachmentDetails,"contentType",Property,Deprecated,false
 Office.AttachmentDetails,"id",Property,Good,false
 Office.AttachmentDetails,"isInline",Property,Good,false
-Office.AttachmentDetails,"name",Property,Fine,false
+Office.AttachmentDetails,"name",Property,Poor,false
 Office.AttachmentDetails,"size",Property,Poor,false
 Office.AttachmentDetailsCompose,N/A,Interface,Unknown,false
 Office.AttachmentDetailsCompose,"attachmentType",Property,Fine,false
 Office.AttachmentDetailsCompose,"id",Property,Poor,false
 Office.AttachmentDetailsCompose,"isInline",Property,Good,false
-Office.AttachmentDetailsCompose,"name",Property,Fine,false
+Office.AttachmentDetailsCompose,"name",Property,Poor,false
 Office.AttachmentDetailsCompose,"size",Property,Poor,false
 Office.AttachmentDetailsCompose,"url",Property,Good,false
 Office.AttachmentsChangedEventArgs,N/A,Interface,Unknown,true

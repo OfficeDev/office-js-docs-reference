@@ -191,6 +191,12 @@ properties:
       occurs, any task pane that's open or pinned is closed.
 
 
+      - To prevent the task pane of a spam-reporting add-in from relaunching if it's already open, implement a handler
+      for the `Office.EventType.InitializationContextChanged` event. You can then pass the [event
+      arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true)
+      to the `contextData` property.
+
+
       - To retrieve the value of the `contextData` property, you must call
       `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane. If
       you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
