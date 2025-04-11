@@ -31,8 +31,6 @@ NAA supports both Microsoft Accounts (MSA), such as personal outlook.com account
 | PowerPoint  | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 | Word        | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 
-NAA is also GA for Microsoft personal accounts (MSA) such as outlook.com accounts.
-
 > [!IMPORTANT]
 > To use NAA on platforms that are still in preview (Word, Excel, and PowerPoint), join the Microsoft 365 Insider Program (https://insider.microsoft365.com/join) and choose **Current Channel (Preview)**. Don't use NAA in production add-ins for any preview platforms. We invite you to try out NAA in test or development environments and welcome feedback on your experience through GitHub (see the **Feedback** section at the end of this page).
 
