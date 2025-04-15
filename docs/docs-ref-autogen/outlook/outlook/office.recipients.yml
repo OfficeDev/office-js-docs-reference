@@ -61,7 +61,7 @@ methods:
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
 
 
-      - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
       For more information, see [Activate your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
@@ -171,7 +171,7 @@ methods:
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
 
 
-      - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
       For more information, see [Activate your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
@@ -528,7 +528,7 @@ methods:
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
 
 
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
       For more information, see [Activate your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
@@ -610,7 +610,7 @@ methods:
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
 
 
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
       For more information, see [Activate your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
