@@ -240,10 +240,7 @@ methods:
     uid: 'outlook!Office.Recurrence#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(recurrencePattern, options, callback)'
-    summary: |-
-      Sets the recurrence pattern of an appointment series.
-
-      **Note**: `setAsync` should only be available for series items and not instance items.
+    summary: Sets the recurrence pattern of an appointment series.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -256,6 +253,17 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - `setAsync` is only available for series items and not instance items.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -346,10 +354,7 @@ methods:
     uid: 'outlook!Office.Recurrence#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(recurrencePattern, callback)'
-    summary: |-
-      Sets the recurrence pattern of an appointment series.
-
-      **Note**: `setAsync` should only be available for series items and not instance items.
+    summary: Sets the recurrence pattern of an appointment series.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -362,6 +367,17 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - `setAsync` is only available for series items and not instance items.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:

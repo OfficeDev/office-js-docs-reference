@@ -1665,6 +1665,9 @@ export declare namespace Office {
          *
          * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
+         * - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -1712,6 +1715,9 @@ export declare namespace Office {
          *
          * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
+         * - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -1749,6 +1755,9 @@ export declare namespace Office {
          * - SVG files aren't supported. Use JPG or PNG files instead.
          *
          * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+         *
+         * - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -1788,6 +1797,9 @@ export declare namespace Office {
          * - SVG files aren't supported. Use JPG or PNG files instead.
          *
          * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+         *
+         * - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -1969,6 +1981,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**: The `remove` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * @param name - The `name` of the property to be removed.
          */
         remove(name: string): void;
@@ -2037,6 +2052,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The `set` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * @param name - The name of the property to be set.
          * @param value - The value of the property to be set.
@@ -4269,7 +4287,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
@@ -4281,6 +4301,9 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
+         *
+         * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4304,7 +4327,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
@@ -4316,6 +4341,9 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
+         *
+         * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4438,7 +4466,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
@@ -4450,6 +4480,9 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
+         *
+         * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4476,7 +4509,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
@@ -4488,6 +4523,9 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
+         *
+         * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4743,9 +4781,14 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * **Important**:
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4771,9 +4814,14 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * **Important**:
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *

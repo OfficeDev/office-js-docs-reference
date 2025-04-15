@@ -111,6 +111,11 @@ methods:
       -->**: Compose or Read
 
 
+      **Important**: The `remove` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       #### Examples
 
 
@@ -273,6 +278,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `set` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       #### Examples
