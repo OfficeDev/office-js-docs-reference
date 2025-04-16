@@ -74,14 +74,10 @@ properties:
     package: outlook!
     fullName: icon
     summary: >-
-      A reference to an icon that is defined in the manifest. It appears in the infobar area. It is applicable if the
-      type is `InformationalMessage`<!-- -->, and is required if the type is `InsightMessage`<!-- -->. Specifying this
+      A reference to an icon that's defined in the manifest. It appears in the infobar area. It's applicable if the type
+      is `InformationalMessage`<!-- -->, and is required if the type is `InsightMessage`<!-- -->. Specifying this
       parameter for an unsupported type results in an exception.
-
-
-      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g.,
-      Mac, web browser).
-    remarks: ''
+    remarks: '**Important**: Currently, the custom icon is only displayed in classic Outlook on Windows.'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,21 +130,27 @@ properties:
     uid: 'outlook!Office.NotificationMessageDetails#type:member'
     package: outlook!
     fullName: type
-    summary: >-
-      Specifies the `ItemNotificationMessageType` of message.
+    summary: Specifies the `ItemNotificationMessageType` of message.
+    remarks: >-
+      **Important**:
 
 
-      If type is `ProgressIndicator` or `ErrorMessage`<!-- -->, an icon is automatically supplied and the message is not
-      persistent. Therefore the icon and persistent properties are not valid for these types of messages. Including them
+      - For the `ProgressIndicator` or `ErrorMessage` types, an icon is automatically supplied and the message isn't
+      persistent. Therefore, the icon and persistent properties aren't valid for these types of messages. Including them
       will result in an `ArgumentException`<!-- -->.
 
 
-      If type is `ProgressIndicator`<!-- -->, the developer should remove or replace the progress indicator when the
-      action is complete.
+      - For the `ProgressIndicator` type, you should remove or replace the progress indicator when the action is
+      complete.
 
 
-      **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
-    remarks: ''
+      - In Outlook on Android and on iOS, only the `ProgressIndicator`<!-- -->, `InformationalMessage`<!-- -->, and
+      `ErrorMessage` notification types are supported.
+
+
+      - In compose mode, while the style of each notification type varies on other Outlook clients, notifications in
+      Outlook on Android and on iOS all use the same style. The notification message is always prefixed with an
+      informational icon.
     isPreview: false
     isDeprecated: false
     syntax:
