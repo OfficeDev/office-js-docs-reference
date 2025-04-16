@@ -8958,8 +8958,8 @@ Office.AttachmentsChangedEventArgs,"type",Property,Fine,false
 Office.Body,N/A,Interface,Unknown,true
 Office.Body,"appendOnSendAsync(data, options, callback)",Method,Good,true
 Office.Body,"appendOnSendAsync(data, callback)",Method,Good,false
-Office.Body,"getAsync(coercionType, options, callback)",Method,Excellent,true
-Office.Body,"getAsync(coercionType, callback)",Method,Excellent,true
+Office.Body,"getAsync(coercionType, options, callback)",Method,Great,true
+Office.Body,"getAsync(coercionType, callback)",Method,Great,true
 Office.Body,"getTypeAsync(options, callback)",Method,Good,true
 Office.Body,"getTypeAsync(callback)",Method,Good,false
 Office.Body,"prependAsync(data, options, callback)",Method,Good,true
@@ -9230,6 +9230,9 @@ Office.MailboxEnums.AttachmentType,"Base64",EnumField,Good,false
 Office.MailboxEnums.AttachmentType,"Cloud",EnumField,Excellent,false
 Office.MailboxEnums.AttachmentType,"File",EnumField,Poor,false
 Office.MailboxEnums.AttachmentType,"Item",EnumField,Poor,false
+Office.MailboxEnums.BodyMode,N/A,Enum,Unknown,false
+Office.MailboxEnums.BodyMode,"FullBody",EnumField,Fine,false
+Office.MailboxEnums.BodyMode,"HostConfig",EnumField,Great,false
 Office.MailboxEnums.CategoryColor,N/A,Enum,Missing,true
 Office.MailboxEnums.CategoryColor,"None",EnumField,Fine,false
 Office.MailboxEnums.CategoryColor,"Preset0",EnumField,Missing,false
@@ -9656,10 +9659,10 @@ Office.NotificationMessageDetails,"icon",Property,Excellent,false
 Office.NotificationMessageDetails,"key",Property,Fine,false
 Office.NotificationMessageDetails,"message",Property,Excellent,false
 Office.NotificationMessageDetails,"persistent",Property,Excellent,false
-Office.NotificationMessageDetails,"type",Property,Great,false
-Office.NotificationMessages,N/A,Interface,Unknown,false
-Office.NotificationMessages,"addAsync(key, JSONmessage, options, callback)",Method,Fine,true
-Office.NotificationMessages,"addAsync(key, JSONmessage, callback)",Method,Fine,false
+Office.NotificationMessageDetails,"type",Property,Excellent,false
+Office.NotificationMessages,N/A,Interface,Good,false
+Office.NotificationMessages,"addAsync(key, JSONmessage, options, callback)",Method,Great,true
+Office.NotificationMessages,"addAsync(key, JSONmessage, callback)",Method,Great,false
 Office.NotificationMessages,"getAllAsync(options, callback)",Method,Fine,true
 Office.NotificationMessages,"getAllAsync(callback)",Method,Fine,false
 Office.NotificationMessages,"removeAsync(key, options, callback)",Method,Fine,true
