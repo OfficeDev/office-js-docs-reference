@@ -8605,14 +8605,6 @@ export declare namespace Office {
          *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
-         *   </tr>
-         *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
          *     <td>Meeting requests</td>
          *   </tr>
@@ -8662,14 +8654,6 @@ export declare namespace Office {
          *   <tr>
          *     <td>IPM.Note</td>
          *     <td>New messages and message replies</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
          *   </tr>
          *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
@@ -9405,14 +9389,6 @@ export declare namespace Office {
          *   <tr>
          *     <td>IPM.Note</td>
          *     <td>New messages and message replies</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
          *   </tr>
          *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
