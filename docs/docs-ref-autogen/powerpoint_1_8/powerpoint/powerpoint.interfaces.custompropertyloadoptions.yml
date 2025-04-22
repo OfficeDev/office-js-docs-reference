@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomPropertyLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomPropertyLoadOptions
+summary: Represents a custom property.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: key
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions#key:member'
+    package: powerpoint!
+    fullName: key
+    summary: The string that uniquely identifies the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: The type of the value used for the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions#value:member'
+    package: powerpoint!
+    fullName: value
+    summary: >-
+      The value of the custom property. If the value is a string, the maximum length 255 characters. Larger strings
+      cause the operation to fail with an `InvalidArgument` error.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type: boolean

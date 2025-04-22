@@ -33,6 +33,7 @@ export declare namespace PowerPoint {
         context: RequestContext;
         
         
+        
         /**
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
@@ -171,6 +172,8 @@ export declare namespace PowerPoint {
     
     
     
+    
+    
     /**
      * Specifies the type of a shape.
      *
@@ -293,6 +296,7 @@ export declare namespace PowerPoint {
          */
         textBox = "TextBox",
     }
+    
     
     
     /**
@@ -1644,6 +1648,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         clear(): void;
+        
         /**
          * Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`.
          *
@@ -1799,6 +1804,7 @@ export declare namespace PowerPoint {
     export class ShapeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
          *
@@ -1819,6 +1825,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         color: string | null;
+        
         /**
          * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
          *
@@ -1846,6 +1853,10 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         size: number | null;
+        
+        
+        
+        
         /**
          * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
          *
@@ -1880,6 +1891,8 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.ShapeFontData;
     }
+    
+    
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
                 If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
@@ -1926,6 +1939,18 @@ export declare namespace PowerPoint {
          */
         bottomCentered = "BottomCentered",
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Represents the collection of shapes.
      *
@@ -1959,6 +1984,7 @@ export declare namespace PowerPoint {
          * @returns The newly inserted shape.
          */
         addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;
+        
         /**
          * Adds a line to the slide. Returns a `Shape` object that represents the new line.
          *
@@ -1981,7 +2007,8 @@ export declare namespace PowerPoint {
          * @returns The newly inserted shape.
          */
         addLine(connectorTypeString?: "Straight" | "Elbow" | "Curve", options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;
-        /**
+        
+                    /**
          * Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the new text box.
          *
          * @remarks
@@ -2054,6 +2081,8 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.ShapeCollectionData;
     }
+    
+    
     /**
      * Represents the layout of a slide.
      *
@@ -2085,6 +2114,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly name: string;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2439,6 +2469,8 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         readonly id: string;
+        
+        
         /**
          * Deletes the slide from the presentation. Does nothing if the slide does not exist.
          *
@@ -2446,6 +2478,9 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         delete(): void;
+        
+        
+        
         /**
          * Selects the specified shapes. Existing shape selection is replaced with the new selection.
          *
@@ -2531,6 +2566,7 @@ export declare namespace PowerPoint {
          * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
          */
         getItemOrNullObject(id: string): PowerPoint.Shape;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2555,6 +2591,7 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.ShapeScopedCollectionData;
     }
+    
     /**
      * Specifies the style for a line.
      *
@@ -3006,6 +3043,7 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.TextFrameData;
     }
+    
     /**
      * Represents a single shape in the slide.
      *
@@ -3023,6 +3061,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         readonly fill: PowerPoint.ShapeFill;
+        
         /**
          * Returns the line formatting of this shape.
          *
@@ -3030,6 +3069,8 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         readonly lineFormat: PowerPoint.ShapeLineFormat;
+        
+        
         /**
          * Returns a collection of tags in the shape.
          *
@@ -3065,6 +3106,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         left: number;
+        
         /**
          * Specifies the name of this shape.
          *
@@ -3093,6 +3135,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         width: number;
+        
         /**
          * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
          *
@@ -3142,6 +3185,9 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.5]
          */
         getParentSlideOrNullObject(): PowerPoint.Slide;
+        
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3169,6 +3215,8 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.ShapeData;
     }
+    
+    
     
     
     
@@ -3513,6 +3561,7 @@ export declare namespace PowerPoint {
         }
         /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
+            
             /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
              *
@@ -3533,6 +3582,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             color?: string | null;
+            
             /**
              * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
              *
@@ -3560,6 +3610,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             size?: number | null;
+            
+            
+            
+            
             /**
              * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
@@ -3567,6 +3621,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
+        }
+        /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
+        export interface TableCellUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
+        export interface TableCellCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableCellData[];
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -3775,6 +3837,10 @@ export declare namespace PowerPoint {
              */
             width?: number;
         }
+        /** An interface for updating data on the `BindingCollection` object, for use in `bindingCollection.set({ ... })`. */
+        export interface BindingCollectionUpdateData {
+            items?: PowerPoint.Interfaces.BindingData[];
+        }
         /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             
@@ -3831,6 +3897,11 @@ export declare namespace PowerPoint {
         export interface CustomXmlPartCollectionData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
+        /** An interface describing the data returned by calling `placeholderFormat.toJSON()`. */
+        export interface PlaceholderFormatData {
+            
+            
+        }
         /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
         export interface HyperlinkData {
             
@@ -3866,7 +3937,8 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
-            /**
+            
+           /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
              *
              * - `true`: All the text is bold.
@@ -3886,6 +3958,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             color?: string | null;
+            
             /**
              * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
              *
@@ -3913,6 +3986,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             size?: number | null;
+            
+            
+            
+            
             /**
              * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
@@ -3920,6 +3997,24 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
+        }
+        /** An interface describing the data returned by calling `tableCell.toJSON()`. */
+        export interface TableCellData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
+        export interface TableCellCollectionData {
+            items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling `table.toJSON()`. */
+        export interface TableData {
+            
+            
+            
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -3941,6 +4036,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: string;
+            
         }
         /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
         export interface SlideLayoutCollectionData {
@@ -3993,10 +4089,15 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: string;
+            
         }
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
+        export interface ShapeGroupData {
+            
         }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
@@ -4171,6 +4272,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: number;
+            
             /**
              * Specifies the name of this shape.
              *
@@ -4199,6 +4301,16 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: number;
+            
+        }
+        /** An interface describing the data returned by calling `binding.toJSON()`. */
+        export interface BindingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `bindingCollection.toJSON()`. */
+        export interface BindingCollectionData {
+            items?: PowerPoint.Interfaces.BindingData[];
         }
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
@@ -4260,6 +4372,7 @@ export declare namespace PowerPoint {
         
         
         
+        
         /**
          * Represents the fill formatting of a shape object.
          *
@@ -4304,6 +4417,7 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
              *
@@ -4324,6 +4438,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             color?: boolean;
+            
             /**
              * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
              *
@@ -4351,6 +4466,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             size?: boolean;
+            
+            
+            
+            
             /**
              * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
@@ -4359,6 +4478,9 @@ export declare namespace PowerPoint {
              */
             underline?: boolean;
         }
+        
+        
+        
         /**
          * Represents the collection of shapes.
          *
@@ -4377,6 +4499,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
+            
             /**
              * For EACH ITEM in the collection: Returns the line formatting of this shape.
              *
@@ -4384,6 +4507,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            
+            
             /**
              * For EACH ITEM in the collection: Returns the text frame object of this shape.
              *
@@ -4412,6 +4537,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Specifies the name of this shape.
              *
@@ -4440,6 +4566,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+            
         }
         /**
          * Represents the layout of a slide.
@@ -4466,6 +4593,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
+            
         }
         /**
          * Represents the collection of layouts provided by the Slide Master for slides.
@@ -4492,6 +4620,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
+            
         }
         /**
          * Represents the Slide Master of a slide.
@@ -4603,6 +4732,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            
         }
         /**
          * Represents a collection of shapes.
@@ -4622,6 +4752,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.5]
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
+            
             /**
              * For EACH ITEM in the collection: Returns the line formatting of this shape.
              *
@@ -4629,6 +4760,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.5]
              */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            
+            
             /**
              * For EACH ITEM in the collection: Returns the text frame object of this shape.
              *
@@ -4657,6 +4790,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Specifies the name of this shape.
              *
@@ -4685,7 +4819,9 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+            
         }
+        
         /**
          * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
          *
@@ -4927,6 +5063,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
+            
             /**
              * Returns the line formatting of this shape.
              *
@@ -4934,6 +5071,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            
+            
             /**
              * Returns the text frame object of this shape.
              *
@@ -4962,7 +5101,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: boolean;
-            /**
+            
+                        /**
              * Specifies the name of this shape.
              *
              * @remarks
@@ -4990,7 +5130,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+            
         }
+        
+        
         
         
         
@@ -5026,6 +5169,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            
         }
         /**
          * Represents a collection of slides in the presentation.
@@ -5059,6 +5203,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            
         }
         /**
          * Represents the collection of Slide Masters in the presentation.

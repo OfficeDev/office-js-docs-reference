@@ -1,0 +1,214 @@
+### YamlMime:TSType
+name: PowerPoint.CustomPropertyCollection
+uid: 'powerpoint!PowerPoint.CustomPropertyCollection:class'
+package: powerpoint!
+fullName: PowerPoint.CustomPropertyCollection
+summary: A collection of custom properties.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: items
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#items:member'
+    package: powerpoint!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: PowerPoint.CustomProperty[];'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />[]'
+methods:
+  - name: 'add(key, value)'
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#add:member(1)'
+    package: powerpoint!
+    fullName: 'add(key, value)'
+    summary: Creates a new `CustomProperty` or updates the property with the given key.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'add(key: string, value: boolean | Date | number | string): PowerPoint.CustomProperty;'
+      parameters:
+        - id: key
+          description: >-
+            The string that identifies the `CustomProperty` object. It's case-insensitive. The maximum key length is 255
+            characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+          type: string
+        - id: value
+          description: >-
+            The value of the `CustomProperty`<!-- -->. If the value is a string, the maximum length 255 characters.
+            Larger strings cause the operation to fail with an `InvalidArgument` error.
+          type: boolean | Date | number | string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />'
+        description: ''
+  - name: deleteAll()
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#deleteAll:member(1)'
+    package: powerpoint!
+    fullName: deleteAll()
+    summary: Deletes all custom properties in this collection.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteAll(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCount()
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#getCount:member(1)'
+    package: powerpoint!
+    fullName: getCount()
+    summary: Gets the number of custom properties in the collection.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: The number of custom properties in the collection.
+  - name: getItem(key)
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#getItem:member(1)'
+    package: powerpoint!
+    fullName: getItem(key)
+    summary: Gets a `CustomProperty` by its key.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(key: string): PowerPoint.CustomProperty;'
+      parameters:
+        - id: key
+          description: >-
+            The string that identifies the `CustomProperty` object. It's case-insensitive. Keys have a maximum length of
+            255 characters. If the argument exceeds 255 characters, then this method returns the `InvalidArgument`
+            error.
+          type: string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />'
+        description: ''
+  - name: getItemOrNullObject(key)
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#getItemOrNullObject:member(1)'
+    package: powerpoint!
+    fullName: getItemOrNullObject(key)
+    summary: >-
+      Gets a `CustomProperty` by its key. If the `CustomProperty` doesn't exist, then this method returns an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(key: string): PowerPoint.CustomProperty;'
+      parameters:
+        - id: key
+          description: >-
+            The string that identifies the `CustomProperty` object. It's case-insensitive. Keys have a maximum length of
+            255 characters. If the argument exceeds 255 characters, then this method returns the `InvalidArgument`
+            error.
+          type: string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.CustomPropertyCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions:interface" /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomPropertyCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.CustomPropertyCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomPropertyCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.CustomPropertyCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomPropertyCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.CustomPropertyCollection#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `PowerPoint.CustomPropertyCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomPropertyCollectionData`<!-- -->)
+      that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.CustomPropertyCollectionData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

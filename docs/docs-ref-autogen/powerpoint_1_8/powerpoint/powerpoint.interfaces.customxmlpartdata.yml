@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomXmlPartData
+uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomXmlPartData
+summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: The ID of the custom XML part.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: namespaceUri
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData#namespaceUri:member'
+    package: powerpoint!
+    fullName: namespaceUri
+    summary: The namespace URI of the custom XML part.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: string;'
+      return:
+        type: string

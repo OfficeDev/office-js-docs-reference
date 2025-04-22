@@ -1,0 +1,204 @@
+### YamlMime:TSType
+name: PowerPoint.CustomXmlPartScopedCollection
+uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+package: powerpoint!
+fullName: PowerPoint.CustomXmlPartScopedCollection
+summary: >-
+  A scoped collection of custom XML parts. A scoped collection is the result of some operation (such as filtering by
+  namespace). A scoped collection cannot be scoped any further.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: items
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#items:member'
+    package: powerpoint!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: PowerPoint.CustomXmlPart[];'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />[]'
+methods:
+  - name: getCount()
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#getCount:member(1)'
+    package: powerpoint!
+    fullName: getCount()
+    summary: Gets the number of custom XML parts in this collection.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: The number of custom XML parts in the collection.
+  - name: getItem(id)
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#getItem:member(1)'
+    package: powerpoint!
+    fullName: getItem(id)
+    summary: Gets a `CustomXmlPart` based on its ID.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(id: string): PowerPoint.CustomXmlPart;'
+      parameters:
+        - id: id
+          description: ID of the object to be retrieved.
+          type: string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />'
+        description: ''
+  - name: getItemOrNullObject(id)
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+    package: powerpoint!
+    fullName: getItemOrNullObject(id)
+    summary: >-
+      Gets a `CustomXmlPart` based on its ID. If the `CustomXmlPart` doesn't exist, then this method returns an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(id: string): PowerPoint.CustomXmlPart;'
+      parameters:
+        - id: id
+          description: ID of the object to be retrieved.
+          type: string
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />'
+        description: ''
+  - name: getOnlyItem()
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
+    package: powerpoint!
+    fullName: getOnlyItem()
+    summary: >-
+      If the collection contains exactly one item, this method returns it. If the collection contains no items or more
+      than one item, then this method returns the `GeneralException` error.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOnlyItem(): PowerPoint.CustomXmlPart;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />'
+        description: ''
+  - name: getOnlyItemOrNullObject()
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+    package: powerpoint!
+    fullName: getOnlyItemOrNullObject()
+    summary: >-
+      If the collection contains exactly one item, this method returns it. Otherwise, this method returns `null`<!--
+      -->.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOnlyItemOrNullObject(): PowerPoint.CustomXmlPart;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: PowerPoint.Interfaces.CustomXmlPartScopedCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.CustomXmlPartScopedCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface" /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.CustomXmlPartScopedCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.CustomXmlPartScopedCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `PowerPoint.CustomXmlPartScopedCollection` object is an API object, the
+      `toJSON` method returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.CustomXmlPartScopedCollectionData`<!-- -->) that contains an "items" array with shallow
+      copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.CustomXmlPartScopedCollectionData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1,0 +1,177 @@
+### YamlMime:TSType
+name: PowerPoint.HyperlinkCollection
+uid: 'powerpoint!PowerPoint.HyperlinkCollection:class'
+package: powerpoint!
+fullName: PowerPoint.HyperlinkCollection
+summary: Represents a collection of hyperlinks.
+remarks: >-
+  \[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+  // Gets the hyperlinks found in the first selected slide.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks.load("address,screenTip");
+    const hyperlinksCount = hyperlinks.getCount();
+    await context.sync();
+
+    console.log(`${hyperlinksCount.value} hyperlinks found in first selected slide:`);
+    for (let link of hyperlinks.items) {
+      console.log(`Address: "${link.address}" (Screen tip: "${link.screenTip}")`);
+    }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: items
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#items:member'
+    package: powerpoint!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: PowerPoint.Hyperlink[];'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Hyperlink:class" />[]'
+methods:
+  - name: getCount()
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#getCount:member(1)'
+    package: powerpoint!
+    fullName: getCount()
+    summary: Gets the number of hyperlinks in the collection.
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: The number of hyperlinks in the collection.
+  - name: getItemAt(index)
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#getItemAt:member(1)'
+    package: powerpoint!
+    fullName: getItemAt(index)
+    summary: Gets a hyperlink using its zero-based index in the collection. An error is thrown if the index is out of range.
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): PowerPoint.Hyperlink;'
+      parameters:
+        - id: index
+          description: The index of the hyperlink in the collection.
+          type: number
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Hyperlink:class" />'
+        description: The hyperlink at the given index. An error is thrown if index is out of range.
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: PowerPoint.Interfaces.HyperlinkCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.HyperlinkCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkCollectionLoadOptions:interface" /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.HyperlinkCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.HyperlinkCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.HyperlinkCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.HyperlinkCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.HyperlinkCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.HyperlinkCollection#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `PowerPoint.HyperlinkCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `PowerPoint.Interfaces.HyperlinkCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.HyperlinkCollectionData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

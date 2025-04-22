@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeGroupData
+uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.ShapeGroupData
+summary: An interface describing the data returned by calling `shapeGroup.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

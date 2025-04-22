@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions
+summary: A collection of custom XML parts.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: The ID of the custom XML part.'
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: namespaceUri
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member'
+    package: powerpoint!
+    fullName: namespaceUri
+    summary: 'For EACH ITEM in the collection: The namespace URI of the custom XML part.'
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: boolean;'
+      return:
+        type: boolean

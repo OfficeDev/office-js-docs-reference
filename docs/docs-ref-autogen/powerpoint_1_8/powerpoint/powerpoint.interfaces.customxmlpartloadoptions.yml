@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomXmlPartLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomXmlPartLoadOptions
+summary: Represents a custom XML part object.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: The ID of the custom XML part.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: namespaceUri
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions#namespaceUri:member'
+    package: powerpoint!
+    fullName: namespaceUri
+    summary: The namespace URI of the custom XML part.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: boolean;'
+      return:
+        type: boolean

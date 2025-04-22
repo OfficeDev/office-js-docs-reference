@@ -1,0 +1,157 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.DocumentPropertiesLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.DocumentPropertiesLoadOptions
+summary: Represents presentation properties.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: author
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#author:member'
+    package: powerpoint!
+    fullName: author
+    summary: The author of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type: boolean
+  - name: category
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#category:member'
+    package: powerpoint!
+    fullName: category
+    summary: The category of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: boolean;'
+      return:
+        type: boolean
+  - name: comments
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#comments:member'
+    package: powerpoint!
+    fullName: comments
+    summary: The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comments?: boolean;'
+      return:
+        type: boolean
+  - name: company
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#company:member'
+    package: powerpoint!
+    fullName: company
+    summary: The company of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'company?: boolean;'
+      return:
+        type: boolean
+  - name: creationDate
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
+    package: powerpoint!
+    fullName: creationDate
+    summary: The creation date of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type: boolean
+  - name: keywords
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
+    package: powerpoint!
+    fullName: keywords
+    summary: The keywords of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keywords?: boolean;'
+      return:
+        type: boolean
+  - name: lastAuthor
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
+    package: powerpoint!
+    fullName: lastAuthor
+    summary: The last author of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastAuthor?: boolean;'
+      return:
+        type: boolean
+  - name: manager
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#manager:member'
+    package: powerpoint!
+    fullName: manager
+    summary: The manager of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'manager?: boolean;'
+      return:
+        type: boolean
+  - name: revisionNumber
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
+    package: powerpoint!
+    fullName: revisionNumber
+    summary: The revision number of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'revisionNumber?: boolean;'
+      return:
+        type: boolean
+  - name: subject
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#subject:member'
+    package: powerpoint!
+    fullName: subject
+    summary: The subject of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions#title:member'
+    package: powerpoint!
+    fullName: title
+    summary: The title of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,143 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.DocumentPropertiesData
+uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.DocumentPropertiesData
+summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: author
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#author:member'
+    package: powerpoint!
+    fullName: author
+    summary: The author of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'author?: string;'
+      return:
+        type: string
+  - name: category
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#category:member'
+    package: powerpoint!
+    fullName: category
+    summary: The category of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: string;'
+      return:
+        type: string
+  - name: comments
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#comments:member'
+    package: powerpoint!
+    fullName: comments
+    summary: The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comments?: string;'
+      return:
+        type: string
+  - name: company
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#company:member'
+    package: powerpoint!
+    fullName: company
+    summary: The company of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'company?: string;'
+      return:
+        type: string
+  - name: creationDate
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#creationDate:member'
+    package: powerpoint!
+    fullName: creationDate
+    summary: The creation date of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type: Date
+  - name: keywords
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#keywords:member'
+    package: powerpoint!
+    fullName: keywords
+    summary: The keywords of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keywords?: string;'
+      return:
+        type: string
+  - name: lastAuthor
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#lastAuthor:member'
+    package: powerpoint!
+    fullName: lastAuthor
+    summary: The last author of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastAuthor?: string;'
+      return:
+        type: string
+  - name: manager
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#manager:member'
+    package: powerpoint!
+    fullName: manager
+    summary: The manager of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'manager?: string;'
+      return:
+        type: string
+  - name: revisionNumber
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#revisionNumber:member'
+    package: powerpoint!
+    fullName: revisionNumber
+    summary: The revision number of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'revisionNumber?: number;'
+      return:
+        type: number
+  - name: subject
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#subject:member'
+    package: powerpoint!
+    fullName: subject
+    summary: The subject of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string;'
+      return:
+        type: string
+  - name: title
+    uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#title:member'
+    package: powerpoint!
+    fullName: title
+    summary: The title of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string

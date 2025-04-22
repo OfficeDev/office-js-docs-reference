@@ -33,6 +33,7 @@ export declare namespace PowerPoint {
         context: RequestContext;
         
         
+        
         /**
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
@@ -141,6 +142,23 @@ export declare namespace PowerPoint {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Represents the collection of shapes.
      *
@@ -157,6 +175,8 @@ export declare namespace PowerPoint {
         
         
         
+        
+                    
         /**
          * Gets the number of shapes in the collection.
          *
@@ -219,6 +239,8 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.ShapeCollectionData;
     }
+    
+    
     /**
      * Represents the layout of a slide.
      *
@@ -250,6 +272,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly name: string;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -604,6 +627,8 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         readonly id: string;
+        
+        
         /**
          * Deletes the slide from the presentation. Does nothing if the slide does not exist.
          *
@@ -611,6 +636,9 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         delete(): void;
+        
+        
+        
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -647,6 +675,8 @@ export declare namespace PowerPoint {
     
     
     
+    
+    
     /**
      * Represents a single shape in the slide.
      *
@@ -656,6 +686,9 @@ export declare namespace PowerPoint {
     export class Shape extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
         
         
         
@@ -680,6 +713,8 @@ export declare namespace PowerPoint {
         
         
         
+        
+        
         /**
          * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
          *
@@ -687,6 +722,9 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         delete(): void;
+        
+        
+        
         
         
         
@@ -720,6 +758,8 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.ShapeData;
     }
+    
+    
     
     
     
@@ -985,6 +1025,20 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
+        export interface TableCellUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
+        export interface TableCellCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableCellData[];
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -1053,6 +1107,10 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface for updating data on the `BindingCollection` object, for use in `bindingCollection.set({ ... })`. */
+        export interface BindingCollectionUpdateData {
+            items?: PowerPoint.Interfaces.BindingData[];
+        }
         /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             
@@ -1103,6 +1161,11 @@ export declare namespace PowerPoint {
         export interface CustomXmlPartCollectionData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
+        /** An interface describing the data returned by calling `placeholderFormat.toJSON()`. */
+        export interface PlaceholderFormatData {
+            
+            
+        }
         /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
         export interface HyperlinkData {
             
@@ -1121,8 +1184,32 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             
+           
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableCell.toJSON()`. */
+        export interface TableCellData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
+        export interface TableCellCollectionData {
+            items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling `table.toJSON()`. */
+        export interface TableData {
             
             
             
@@ -1147,6 +1234,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: string;
+            
         }
         /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
         export interface SlideLayoutCollectionData {
@@ -1199,10 +1287,15 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: string;
+            
         }
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
+        export interface ShapeGroupData {
+            
         }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
@@ -1253,6 +1346,17 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+        }
+        /** An interface describing the data returned by calling `binding.toJSON()`. */
+        export interface BindingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `bindingCollection.toJSON()`. */
+        export interface BindingCollectionData {
+            items?: PowerPoint.Interfaces.BindingData[];
         }
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
@@ -1310,6 +1414,10 @@ export declare namespace PowerPoint {
         
         
         
+        
+        
+        
+        
         /**
          * Represents the collection of shapes.
          *
@@ -1325,6 +1433,9 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+            
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the shape.
              *
@@ -1332,6 +1443,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
+            
+            
             
             
             
@@ -1363,6 +1476,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
+            
         }
         /**
          * Represents the collection of layouts provided by the Slide Master for slides.
@@ -1389,6 +1503,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
+            
         }
         /**
          * Represents the Slide Master of a slide.
@@ -1500,7 +1615,9 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            
         }
+        
         
         
         
@@ -1522,6 +1639,9 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+            
             /**
              * Gets the unique ID of the shape.
              *
@@ -1531,10 +1651,14 @@ export declare namespace PowerPoint {
             id?: boolean;
             
             
+                        
+            
             
             
             
         }
+        
+        
         
         
         
@@ -1570,6 +1694,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            
         }
         
         /**

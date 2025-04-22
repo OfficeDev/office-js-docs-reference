@@ -1,0 +1,163 @@
+### YamlMime:TSType
+name: PowerPoint.CustomProperty
+uid: 'powerpoint!PowerPoint.CustomProperty:class'
+package: powerpoint!
+fullName: PowerPoint.CustomProperty
+summary: Represents a custom property.
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.CustomProperty#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: key
+    uid: 'powerpoint!PowerPoint.CustomProperty#key:member'
+    package: powerpoint!
+    fullName: key
+    summary: The string that uniquely identifies the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'powerpoint!PowerPoint.CustomProperty#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: The type of the value used for the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: PowerPoint.DocumentPropertyType | "Boolean" | "Date" | "Number" | "String";'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.DocumentPropertyType:enum" /> | "Boolean" | "Date" | "Number" | "String"'
+  - name: value
+    uid: 'powerpoint!PowerPoint.CustomProperty#value:member'
+    package: powerpoint!
+    fullName: value
+    summary: >-
+      The value of the custom property. If the value is a string, the maximum length 255 characters. Larger strings
+      cause the operation to fail with an `InvalidArgument` error.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: boolean | Date | number | string;'
+      return:
+        type: boolean | Date | number | string
+methods:
+  - name: delete()
+    uid: 'powerpoint!PowerPoint.CustomProperty#delete:member(1)'
+    package: powerpoint!
+    fullName: delete()
+    summary: Deletes the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.CustomProperty#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: PowerPoint.Interfaces.CustomPropertyLoadOptions): PowerPoint.CustomProperty;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.CustomProperty#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.CustomProperty;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.CustomProperty#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.CustomProperty;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomProperty:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.CustomProperty#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `PowerPoint.CustomProperty` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomPropertyData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.CustomPropertyData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

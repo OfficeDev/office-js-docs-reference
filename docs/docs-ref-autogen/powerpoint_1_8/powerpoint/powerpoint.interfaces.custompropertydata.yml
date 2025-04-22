@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomPropertyData
+uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomPropertyData
+summary: An interface describing the data returned by calling `customProperty.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: key
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyData#key:member'
+    package: powerpoint!
+    fullName: key
+    summary: The string that uniquely identifies the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyData#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: The type of the value used for the custom property.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: PowerPoint.DocumentPropertyType | "Boolean" | "Date" | "Number" | "String";'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.DocumentPropertyType:enum" /> | "Boolean" | "Date" | "Number" | "String"'
+  - name: value
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyData#value:member'
+    package: powerpoint!
+    fullName: value
+    summary: >-
+      The value of the custom property. If the value is a string, the maximum length 255 characters. Larger strings
+      cause the operation to fail with an `InvalidArgument` error.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean | Date | number | string;'
+      return:
+        type: boolean | Date | number | string

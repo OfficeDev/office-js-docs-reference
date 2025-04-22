@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomPropertyUpdateData
+uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomPropertyUpdateData
+summary: 'An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData#value:member'
+    package: powerpoint!
+    fullName: value
+    summary: >-
+      The value of the custom property. If the value is a string, the maximum length 255 characters. Larger strings
+      cause the operation to fail with an `InvalidArgument` error.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean | Date | number | string;'
+      return:
+        type: boolean | Date | number | string

@@ -35,8 +35,7 @@ export declare namespace PowerPoint {
          * Returns a collection of bindings that are associated with the presentation.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly bindings: PowerPoint.BindingCollection;
         /**
@@ -192,15 +191,13 @@ export declare namespace PowerPoint {
      * Represents the possible binding types.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     enum BindingType {
         /**
          * Represents a shape binding.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         shape = "Shape",
     }
@@ -443,148 +440,127 @@ export declare namespace PowerPoint {
      * Specifies the type of a placeholder.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     enum PlaceholderType {
         /**
          * The placeholder is unsupported.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         unsupported = "Unsupported",
         /**
          * The placeholder is for a date.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         date = "Date",
         /**
          * The placeholder is for a slide number.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         slideNumber = "SlideNumber",
         /**
          * The placeholder is for a footer.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         footer = "Footer",
         /**
          * The placeholder is for a header.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         header = "Header",
         /**
          * The placeholder is for a title.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         title = "Title",
         /**
          * The placeholder is for a body.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         body = "Body",
         /**
          * The placeholder is for a center title.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         centerTitle = "CenterTitle",
         /**
          * The placeholder is for a subtitle.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         subtitle = "Subtitle",
         /**
          * The placeholder is for a vertical title.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalTitle = "VerticalTitle",
         /**
          * The placeholder is for a vertical body.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalBody = "VerticalBody",
         /**
          * The placeholder is for generic content.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         content = "Content",
         /**
          * The placeholder is for a chart.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         chart = "Chart",
         /**
          * The placeholder is for a table.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         table = "Table",
         /**
          * The placeholder is for an online picture.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         onlinePicture = "OnlinePicture",
         /**
          * The placeholder is for a SmartArt.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         smartArt = "SmartArt",
         /**
          * The placeholder is for media.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         media = "Media",
         /**
          * The placeholder is for generic vertical content.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalContent = "VerticalContent",
         /**
          * The placeholder is for a picture.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         picture = "Picture",
         /**
          * The placeholder is for a cameo.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         cameo = "Cameo",
     }
@@ -714,8 +690,7 @@ export declare namespace PowerPoint {
      * Represents the properties of a `placeholder` shape.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class PlaceholderFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -725,16 +700,14 @@ export declare namespace PowerPoint {
                     Returns `null` if the placeholder is empty.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly containedType: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
         /**
          * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly type: PowerPoint.PlaceholderType | "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" | "Title" | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" | "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo";
         /**
@@ -2220,8 +2193,7 @@ export declare namespace PowerPoint {
          * Sets the fill formatting of the shape to an image. This changes the fill type to `PictureAndTexture`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param base64EncodedImage - A string that is a Base64 encoding of the image data.
          */
@@ -2391,8 +2363,7 @@ export declare namespace PowerPoint {
          * - `null`: Returned if some, but not all, of the text has the **All Caps** attribute.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         allCaps: boolean | null;
         /**
@@ -2425,8 +2396,7 @@ export declare namespace PowerPoint {
          * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         doubleStrikethrough: boolean | null;
         /**
@@ -2466,8 +2436,7 @@ export declare namespace PowerPoint {
          * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         smallCaps: boolean | null;
         /**
@@ -2480,8 +2449,7 @@ export declare namespace PowerPoint {
          * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         strikethrough: boolean | null;
         /**
@@ -2494,8 +2462,7 @@ export declare namespace PowerPoint {
          * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         subscript: boolean | null;
         /**
@@ -2508,8 +2475,7 @@ export declare namespace PowerPoint {
          * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         superscript: boolean | null;
         /**
@@ -2550,104 +2516,91 @@ export declare namespace PowerPoint {
      * Represents the font attributes, such as font name, size, and color.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface FontProperties {
         /**
          * Represents whether the font uses all caps, where lowercase letters are shown as capital letters.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         allCaps?: boolean | undefined;
         /**
          * Represents the bold status of font.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         bold?: boolean | undefined;
         /**
          * Represents the HTML color in the hexadecimal format (e.g., "#FF0000" represents red) or as a named HTML color value (e.g., "red").
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         color?: string | undefined;
         /**
          * Represents the double-strikethrough status of the font.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         doubleStrikethrough?: boolean | undefined;
         /**
          * Represents the italic status of font.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         italic?: boolean | undefined;
         /**
          * Represents the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         name?: string | undefined;
         /**
          * Represents the font size in points (e.g., 11).
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         size?: number | undefined;
         /**
          * Represents whether the text uses small caps, where lowercase letters are shown as small capital letters.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         smallCaps?: boolean | undefined;
         /**
          * Represents the strikethrough status of the font.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         strikethrough?: boolean | undefined;
         /**
          * Represents the subscript status of the font.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         subscript?: boolean | undefined;
         /**
          * Represents the superscript status of the font.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         superscript?: boolean | undefined;
         /**
          * Type of underline applied to the font. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | undefined;
     }
@@ -2655,24 +2608,21 @@ export declare namespace PowerPoint {
      * Represents a sequence of one or more characters with the same font attributes.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TextRun {
         /**
          * The font attributes (such as font name, font size, and color) applied to this text run.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         font?: PowerPoint.FontProperties;
         /**
          * The text of this text run.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         text: string;
     }
@@ -2726,8 +2676,7 @@ export declare namespace PowerPoint {
      * Represents a table.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class TableCell extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2737,16 +2686,14 @@ export declare namespace PowerPoint {
                     Will be greater than or equal to 1.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly columnCount: number;
         /**
          * Gets the zero-based column index of the cell within the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly columnIndex: number;
         /**
@@ -2754,24 +2701,21 @@ export declare namespace PowerPoint {
                     Will be greater than or equal to 1.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly rowCount: number;
         /**
          * Gets the zero-based row index of the cell within the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly rowIndex: number;
         /**
          * Specifies the text content of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         text: string;
         /**
@@ -2805,8 +2749,7 @@ export declare namespace PowerPoint {
      * Represents a collection of table cells.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class TableCellCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2817,8 +2760,7 @@ export declare namespace PowerPoint {
          * Gets the number of table cells in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          * @returns The number of table cells in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -2826,8 +2768,7 @@ export declare namespace PowerPoint {
          * Gets the table cell using its zero-based index in the collection. If the `TableCell` does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link [https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties) | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param row - Row index value of the table cell to be retrieved, as a zero-based index.
          * @param column - Column index value of the table cell to be retrieved, as a zero-based index.
@@ -2862,24 +2803,21 @@ export declare namespace PowerPoint {
      * Represents the fill formatting of a table cell.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface FillProperties {
         /**
          * Represents the shape fill color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         color?: string | undefined;
         /**
          * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         transparency?: number | undefined;
     }
@@ -2887,40 +2825,35 @@ export declare namespace PowerPoint {
      * Represents the properties for a table cell border.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface BorderProperties {
         /**
          * Represents the line color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         color?: string | undefined;
         /**
          * Represents the dash style of the line.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot" | undefined;
         /**
          * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         transparency?: number | undefined;
         /**
          * Represents the weight of the line, in points.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         weight?: number | undefined;
     }
@@ -2928,56 +2861,49 @@ export declare namespace PowerPoint {
      * Represents the borders of a table cell.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableCellBorders {
         /**
          * Represents the bottom border.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         bottom?: PowerPoint.BorderProperties;
         /**
          * Represents the diagonal border (top-left to bottom-right).
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         diagonalDown?: PowerPoint.BorderProperties;
         /**
          * Represents the diagonal border (bottom-left to top-right).
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         diagonalUp?: PowerPoint.BorderProperties;
         /**
          * Represents the left border.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         left?: PowerPoint.BorderProperties;
         /**
          * Represents the right border.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         right?: PowerPoint.BorderProperties;
         /**
          * Represents the top border.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         top?: PowerPoint.BorderProperties;
     }
@@ -2985,40 +2911,35 @@ export declare namespace PowerPoint {
      * Represents the margins of a table cell.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableCellMargins {
         /**
          * Specifies the bottom margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         bottom?: number | undefined;
         /**
          * Specifies the left margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         left?: number | undefined;
         /**
          * Specifies the right margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         right?: number | undefined;
         /**
          * Specifies the top margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         top?: number | undefined;
     }
@@ -3026,56 +2947,49 @@ export declare namespace PowerPoint {
      * Represents the table cell properties to update.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableCellProperties {
         /**
          * Specifies the border formatting of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         borders?: PowerPoint.TableCellBorders;
         /**
          * Specifies the fill formatting of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         fill?: PowerPoint.FillProperties;
         /**
          * Specifies the font formatting of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         font?: PowerPoint.FontProperties;
         /**
          * Represents the horizontal alignment of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | undefined;
         /**
          * Represents the indent level of the text in the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         indentLevel?: number | undefined;
         /**
          * Specifies the margin settings in the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         margins?: PowerPoint.TableCellMargins;
         /**
@@ -3084,8 +2998,7 @@ export declare namespace PowerPoint {
                     If a portion of the text requires different formatting, use the `textRuns` property instead.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         text?: string;
         /**
@@ -3093,16 +3006,14 @@ export declare namespace PowerPoint {
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textRuns?: PowerPoint.TextRun[];
         /**
          * Represents the vertical alignment of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" | undefined;
     }
@@ -3110,8 +3021,7 @@ export declare namespace PowerPoint {
      * Represents a table.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3120,32 +3030,28 @@ export declare namespace PowerPoint {
          * Gets the number of columns in the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly columnCount: number;
         /**
          * Gets the number of rows in the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly rowCount: number;
         /**
          * Gets all of the values in the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly values: string[][];
         /**
          * Gets the cell at the specified `rowIndex` and `columnIndex`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param rowIndex - The zero-based row index of the cell.
          * @param columnIndex - The zero-based column index of the cell.
@@ -3156,8 +3062,7 @@ export declare namespace PowerPoint {
          * Gets a collection of cells that represent the merged areas of the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          * @returns a `TableCellCollection` with cells that represent the merged areas of the table.
          */
         getMergedAreas(): PowerPoint.TableCellCollection;
@@ -3165,8 +3070,7 @@ export declare namespace PowerPoint {
          * Gets the shape object for the table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         getShape(): PowerPoint.Shape;
         /**
@@ -3200,8 +3104,7 @@ export declare namespace PowerPoint {
      * Provides the table column properties.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableColumnProperties {
         /**
@@ -3213,8 +3116,7 @@ export declare namespace PowerPoint {
                     a default column width will be used.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         columnWidth?: number | undefined;
     }
@@ -3222,8 +3124,7 @@ export declare namespace PowerPoint {
      * Represents the properties of a merged area of cells in a table.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableMergedAreaProperties {
         /**
@@ -3231,16 +3132,14 @@ export declare namespace PowerPoint {
                     Must be 1 or greater.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         columnCount: number;
         /**
          * Specifies the zero-based index of the column of the top left cell of the merged area.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         columnIndex: number;
         /**
@@ -3248,16 +3147,14 @@ export declare namespace PowerPoint {
                     Must be 1 or greater.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         rowCount: number;
         /**
          * Specifies the zero-based index of the row of the top left cell of the merged area.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         rowIndex: number;
     }
@@ -3265,8 +3162,7 @@ export declare namespace PowerPoint {
      * Provides the table row properties.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableRowProperties {
         /**
@@ -3278,8 +3174,7 @@ export declare namespace PowerPoint {
                     a default row height will be used.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         rowHeight?: number | undefined;
     }
@@ -3287,8 +3182,7 @@ export declare namespace PowerPoint {
      * Represents the available options when adding a table.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface TableAddOptions {
         /**
@@ -3297,8 +3191,7 @@ export declare namespace PowerPoint {
                     Specify an empty object for columns that should use the default formatting.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         columns?: PowerPoint.TableColumnProperties[];
         /**
@@ -3307,8 +3200,7 @@ export declare namespace PowerPoint {
                     Throws an `InvalidArgument` exception when set with a negative value.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         height?: number | undefined;
         /**
@@ -3316,16 +3208,14 @@ export declare namespace PowerPoint {
                     The table is centered horizontally when this parameter is not provided.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         left?: number | undefined;
         /**
          * If specified, represents an rectangular area where multiple cells appear as a single cell.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         mergedAreas?: PowerPoint.TableMergedAreaProperties[];
         /**
@@ -3334,8 +3224,7 @@ export declare namespace PowerPoint {
                     Specify an empty object for rows that should use the default formatting.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         rows?: PowerPoint.TableRowProperties[];
         /**
@@ -3347,8 +3236,7 @@ export declare namespace PowerPoint {
                     to the entire merged area. For the other cells in the merged area, an empty object should be provided.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         specificCellProperties?: PowerPoint.TableCellProperties[][];
         /**
@@ -3356,8 +3244,7 @@ export declare namespace PowerPoint {
                     A default value is used when this parameter is not provided.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         top?: number | undefined;
         /**
@@ -3373,8 +3260,7 @@ export declare namespace PowerPoint {
                     and do not specify specificCellProperties.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         uniformCellProperties?: PowerPoint.TableCellProperties;
         /**
@@ -3386,8 +3272,7 @@ export declare namespace PowerPoint {
                     in the merged area must be an empty string.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         values?: string[][];
         /**
@@ -3396,8 +3281,7 @@ export declare namespace PowerPoint {
                     Throws an `InvalidArgument` exception when set with a negative value.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         width?: number | undefined;
     }
@@ -3438,8 +3322,7 @@ export declare namespace PowerPoint {
          * Create a shape group for several shapes.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param values - An array of shape IDs or `Shape` objects.
          * @returns A `Shape` object that represents the shape group. Use the `Shape.group` property to access the `ShapeGroup` object for the group.
@@ -3472,8 +3355,7 @@ export declare namespace PowerPoint {
                     Use the `Shape.table` property to get the `Table` object for the shape.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param rowCount - Number of rows in the table. Must be 1 or greater.
          * @param columnCount - Number of columns in the table. Must be 1 or greater.
@@ -3558,24 +3440,21 @@ export declare namespace PowerPoint {
      * Represents the available options when getting an image of a slide.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export interface SlideGetImageOptions {
         /**
          * The desired height of the resulting image in pixels.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         height?: number;
         /**
          * The desired width of the resulting image in pixels.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         width?: number;
     }
@@ -3583,267 +3462,229 @@ export declare namespace PowerPoint {
      * Specifies the type of a slide layout.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     enum SlideLayoutType {
         /**
          * Blank layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         blank = "Blank",
         /**
          * Chart layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         chart = "Chart",
         /**
          * Chart and text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         chartAndText = "ChartAndText",
         /**
          * ClipArt and text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         clipArtAndText = "ClipArtAndText",
         /**
          * ClipArt and vertical text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         clipArtAndVerticalText = "ClipArtAndVerticalText",
         /**
          * Comparison layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         comparison = "Comparison",
         /**
          * Content with caption layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         contentWithCaption = "ContentWithCaption",
         /**
          * Custom layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         custom = "Custom",
         /**
          * Four objects layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         fourObjects = "FourObjects",
         /**
          * Large object layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         largeObject = "LargeObject",
         /**
          * MediaClip and text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         mediaClipAndText = "MediaClipAndText",
         /**
          * Mixed layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         mixed = "Mixed",
         /**
          * Object layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         object = "Object",
         /**
          * Object and text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         objectAndText = "ObjectAndText",
         /**
          * Object and two objects layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         objectAndTwoObjects = "ObjectAndTwoObjects",
         /**
          * Object over text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         objectOverText = "ObjectOverText",
         /**
          * Organization chart layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         organizationChart = "OrganizationChart",
         /**
          * Picture with caption layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         pictureWithCaption = "PictureWithCaption",
         /**
          * Section header layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         sectionHeader = "SectionHeader",
         /**
          * Table layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         table = "Table",
         /**
          * Text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         text = "Text",
         /**
          * Text and chart layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textAndChart = "TextAndChart",
         /**
          * Text and ClipArt layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textAndClipArt = "TextAndClipArt",
         /**
          * Text and MediaClip layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textAndMediaClip = "TextAndMediaClip",
         /**
          * Text and object layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textAndObject = "TextAndObject",
         /**
          * Text and two objects layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textAndTwoObjects = "TextAndTwoObjects",
         /**
          * Text over object layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         textOverObject = "TextOverObject",
         /**
          * Title layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         title = "Title",
         /**
          * Title only layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         titleOnly = "TitleOnly",
         /**
          * Two-column text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         twoColumnText = "TwoColumnText",
         /**
          * Two objects layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         twoObjects = "TwoObjects",
         /**
          * Two objects and object layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         twoObjectsAndObject = "TwoObjectsAndObject",
         /**
          * Two objects and text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         twoObjectsAndText = "TwoObjectsAndText",
         /**
          * Two objects over text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         twoObjectsOverText = "TwoObjectsOverText",
         /**
          * Vertical text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalText = "VerticalText",
         /**
          * Vertical title and text layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalTitleAndText = "VerticalTitleAndText",
         /**
          * Vertical title and text over chart layout.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         verticalTitleAndTextOverChart = "VerticalTitleAndTextOverChart",
     }
@@ -3888,8 +3729,7 @@ export declare namespace PowerPoint {
          * Returns the type of the slide layout.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly type: PowerPoint.SlideLayoutType | "Blank" | "Chart" | "ChartAndText" | "ClipArtAndText" | "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" | "LargeObject" | "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" | "ObjectOverText" | "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" | "TextAndChart" | "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" | "TextOverObject" | "Title" | "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" | "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" | "VerticalTitleAndTextOverChart";
         /**
@@ -4268,16 +4108,14 @@ export declare namespace PowerPoint {
          * Returns the zero-based index of the slide representing its position in the presentation.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly index: number;
         /**
          * Applies the specified layout to the slide, changing its design and structure according to the chosen layout.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param slideLayout - The layout to be applied to the slide. This is typically an instance of a predefined layout from the slide master.
          */
@@ -4293,8 +4131,7 @@ export declare namespace PowerPoint {
          * Exports the slide to its own presentation file, returned as Base64-encoded data.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         exportAsBase64(): OfficeExtension.ClientResult<string>;
         /**
@@ -4303,19 +4140,17 @@ export declare namespace PowerPoint {
                     of either width or height is specified, the other will be calculated to preserve aspect ratio.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param options - Optional. Options to specify the desired size of the slide image.
-         * @returns A base64 string of the slide image in PNG format.
+         * @returns A Base64 string of the slide image in PNG format.
          */
         getImageAsBase64(options?: PowerPoint.SlideGetImageOptions): OfficeExtension.ClientResult<string>;
         /**
          * Moves the slide to a new position within the presentation.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param slideIndex - The zero-based index where the slide should be moved.
          */
@@ -4410,8 +4245,7 @@ export declare namespace PowerPoint {
                     If the collection contains fewer than two shapes, then this method returns the `GeneralException` error.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          * @returns The newly created grouped shape as a {@link PowerPoint.Shape}.
          */
         group(): PowerPoint.Shape;
@@ -4443,8 +4277,7 @@ export declare namespace PowerPoint {
      * Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class ShapeGroup extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4453,32 +4286,28 @@ export declare namespace PowerPoint {
          * Returns the `Shape` object associated with the group.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly shape: PowerPoint.Shape;
         /**
          * Returns the collection of `Shape` objects in the group.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly shapes: PowerPoint.ShapeScopedCollection;
         /**
          * Gets the unique ID of the shape group.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly id: string;
         /**
          * Ungroups any grouped shapes in the specified shape group.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         ungroup(): void;
         /**
@@ -4963,36 +4792,31 @@ export declare namespace PowerPoint {
      * Use with `setZOrder` to move the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     enum ShapeZOrder {
         /**
          * Brings the shape forward one spot in the z-order.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         bringForward = "BringForward",
         /**
          * Brings the shape to the front of the z-order.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         bringToFront = "BringToFront",
         /**
          * Sends the shape backward one spot in the z-order.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         sendBackward = "SendBackward",
         /**
          * Sends the shape to the back of the z-order.
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         sendToBack = "SendToBack",
     }
@@ -5024,8 +4848,7 @@ export declare namespace PowerPoint {
                     If the shape type isn't `group`, then this method returns the `GeneralException` error.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly group: PowerPoint.ShapeGroup;
         /**
@@ -5040,8 +4863,7 @@ export declare namespace PowerPoint {
                     If the shape isn't part of a group, then this method returns the `GeneralException` error.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly parentGroup: PowerPoint.Shape;
         /**
@@ -5049,8 +4871,7 @@ export declare namespace PowerPoint {
                     If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly placeholderFormat: PowerPoint.PlaceholderFormat;
         /**
@@ -5098,8 +4919,7 @@ export declare namespace PowerPoint {
                     - A level greater than 1 indicates the shape is a nested group.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly level: number;
         /**
@@ -5135,8 +4955,7 @@ export declare namespace PowerPoint {
                     each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly zOrderPosition: number;
         /**
@@ -5192,16 +5011,14 @@ export declare namespace PowerPoint {
          * Returns the `Table` object if this shape is a table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         getTable(): PowerPoint.Table;
         /**
          * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param position - Specifies how to move the shape within the z-order stack. Uses the `ShapeZOrder` enum.
          */
@@ -5210,8 +5027,7 @@ export declare namespace PowerPoint {
          * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param positionString - Specifies how to move the shape within the z-order stack. Uses the `ShapeZOrder` enum.
          */
@@ -5247,8 +5063,7 @@ export declare namespace PowerPoint {
      * Represents an Office.js binding that is defined in the presentation.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class Binding extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5257,32 +5072,28 @@ export declare namespace PowerPoint {
          * Represents the binding identifier.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly id: string;
         /**
          * Returns the type of the binding. See `BindingType` for details.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         readonly type: PowerPoint.BindingType | "Shape";
         /**
          * Deletes the binding.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         delete(): void;
         /**
          * Returns the shape represented by the binding. Will throw an error if the binding is not of the correct type.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         getShape(): PowerPoint.Shape;
         /**
@@ -5316,8 +5127,7 @@ export declare namespace PowerPoint {
      * Represents the collection of all the binding objects that are part of the presentation.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.8]
      */
     export class BindingCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5328,8 +5138,7 @@ export declare namespace PowerPoint {
          * Adds a new binding to a particular Shape. If the provided ID is already being used by a binding, the existing binding will be overwritten.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param shape - Shape to which the binding is added.
          * @param bindingType - Type of binding. See `BindingType`.
@@ -5340,8 +5149,7 @@ export declare namespace PowerPoint {
          * Adds a new binding to a particular Shape. If the provided ID is already being used by a binding, the existing binding will be overwritten.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param shape - Shape to which the binding is added.
          * @param bindingTypeString - Type of binding. See `BindingType`.
@@ -5353,8 +5161,7 @@ export declare namespace PowerPoint {
                              If the selection has multiple areas, the `InvalidReference` error will be returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param bindingType - Type of binding. See `BindingType`.
          * @param id - ID of the binding.
@@ -5365,8 +5172,7 @@ export declare namespace PowerPoint {
                              If the selection has multiple areas, the `InvalidReference` error will be returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param bindingTypeString - Type of binding. See `BindingType`.
          * @param id - ID of the binding.
@@ -5376,16 +5182,14 @@ export declare namespace PowerPoint {
          * Gets the number of bindings in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a binding object by ID. Throws an ItemNotFoundException if there's no binding with that ID.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param key - ID of the binding object to be retrieved.
          */
@@ -5394,8 +5198,7 @@ export declare namespace PowerPoint {
          * Gets a binding object based on its position in the items array. Throws an InvalidArgumentException if the index less than 0, or greater than or equal to the count of items in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
@@ -5405,8 +5208,7 @@ export declare namespace PowerPoint {
                              For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          *
          * @param id - ID of the binding object to be retrieved.
          */
@@ -6098,8 +5900,7 @@ export declare namespace PowerPoint {
              * - `null`: Some, but not all, of the text has the **All Caps** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             allCaps?: boolean | null;
             /**
@@ -6132,8 +5933,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             doubleStrikethrough?: boolean | null;
             /**
@@ -6173,8 +5973,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             smallCaps?: boolean | null;
             /**
@@ -6187,8 +5986,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             strikethrough?: boolean | null;
             /**
@@ -6201,8 +5999,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             subscript?: boolean | null;
             /**
@@ -6215,8 +6012,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             superscript?: boolean | null;
             /**
@@ -6233,8 +6029,7 @@ export declare namespace PowerPoint {
              * Specifies the text content of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             text?: string;
         }
@@ -6589,16 +6384,14 @@ export declare namespace PowerPoint {
                         Returns `null` if the placeholder is empty.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             containedType?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
             /**
              * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: PowerPoint.PlaceholderType | "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" | "Title" | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" | "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo";
         }
@@ -6659,8 +6452,7 @@ export declare namespace PowerPoint {
              * - `null`: Some, but not all, of the text has the **All Caps** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             allCaps?: boolean | null;
             /**
@@ -6693,8 +6485,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             doubleStrikethrough?: boolean | null;
             /**
@@ -6734,8 +6525,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             smallCaps?: boolean | null;
             /**
@@ -6748,8 +6538,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             strikethrough?: boolean | null;
             /**
@@ -6762,8 +6551,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             subscript?: boolean | null;
             /**
@@ -6776,8 +6564,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             superscript?: boolean | null;
             /**
@@ -6795,16 +6582,14 @@ export declare namespace PowerPoint {
                         Will be greater than or equal to 1.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnCount?: number;
             /**
              * Gets the zero-based column index of the cell within the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnIndex?: number;
             /**
@@ -6812,24 +6597,21 @@ export declare namespace PowerPoint {
                         Will be greater than or equal to 1.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowCount?: number;
             /**
              * Gets the zero-based row index of the cell within the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowIndex?: number;
             /**
              * Specifies the text content of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             text?: string;
         }
@@ -6843,24 +6625,21 @@ export declare namespace PowerPoint {
              * Gets the number of columns in the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnCount?: number;
             /**
              * Gets the number of rows in the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowCount?: number;
             /**
              * Gets all of the values in the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             values?: string[][];
         }
@@ -6888,8 +6667,7 @@ export declare namespace PowerPoint {
              * Returns the type of the slide layout.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: PowerPoint.SlideLayoutType | "Blank" | "Chart" | "ChartAndText" | "ClipArtAndText" | "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" | "LargeObject" | "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" | "ObjectOverText" | "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" | "TextAndChart" | "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" | "TextOverObject" | "Title" | "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" | "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" | "VerticalTitleAndTextOverChart";
         }
@@ -6948,8 +6726,7 @@ export declare namespace PowerPoint {
              * Returns the zero-based index of the slide representing its position in the presentation.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             index?: number;
         }
@@ -6963,8 +6740,7 @@ export declare namespace PowerPoint {
              * Gets the unique ID of the shape group.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             id?: string;
         }
@@ -7151,8 +6927,7 @@ export declare namespace PowerPoint {
                         - A level greater than 1 indicates the shape is a nested group.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             level?: number;
             /**
@@ -7188,8 +6963,7 @@ export declare namespace PowerPoint {
                         each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             zOrderPosition?: number;
         }
@@ -7199,16 +6973,14 @@ export declare namespace PowerPoint {
              * Represents the binding identifier.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             id?: string;
             /**
              * Returns the type of the binding. See `BindingType` for details.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: PowerPoint.BindingType | "Shape";
         }
@@ -7446,8 +7218,7 @@ export declare namespace PowerPoint {
          * Represents the properties of a `placeholder` shape.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface PlaceholderFormatLoadOptions {
             /**
@@ -7459,16 +7230,14 @@ export declare namespace PowerPoint {
                         Returns `null` if the placeholder is empty.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             containedType?: boolean;
             /**
              * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: boolean;
         }
@@ -7578,8 +7347,7 @@ export declare namespace PowerPoint {
              * - `null`: Some, but not all, of the text has the **All Caps** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             allCaps?: boolean;
             /**
@@ -7612,8 +7380,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             doubleStrikethrough?: boolean;
             /**
@@ -7653,8 +7420,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             smallCaps?: boolean;
             /**
@@ -7667,8 +7433,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Strikethrough** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             strikethrough?: boolean;
             /**
@@ -7681,8 +7446,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Subscript** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             subscript?: boolean;
             /**
@@ -7695,8 +7459,7 @@ export declare namespace PowerPoint {
              * - `null`: Returned if some, but not all, of the text has the **Superscript** attribute.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             superscript?: boolean;
             /**
@@ -7711,8 +7474,7 @@ export declare namespace PowerPoint {
          * Represents a table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface TableCellLoadOptions {
             /**
@@ -7724,16 +7486,14 @@ export declare namespace PowerPoint {
                         Will be greater than or equal to 1.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnCount?: boolean;
             /**
              * Gets the zero-based column index of the cell within the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnIndex?: boolean;
             /**
@@ -7741,24 +7501,21 @@ export declare namespace PowerPoint {
                         Will be greater than or equal to 1.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowCount?: boolean;
             /**
              * Gets the zero-based row index of the cell within the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowIndex?: boolean;
             /**
              * Specifies the text content of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             text?: boolean;
         }
@@ -7766,8 +7523,7 @@ export declare namespace PowerPoint {
          * Represents a collection of table cells.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface TableCellCollectionLoadOptions {
             /**
@@ -7779,16 +7535,14 @@ export declare namespace PowerPoint {
                         Will be greater than or equal to 1.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnCount?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the zero-based column index of the cell within the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnIndex?: boolean;
             /**
@@ -7796,24 +7550,21 @@ export declare namespace PowerPoint {
                         Will be greater than or equal to 1.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowCount?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the zero-based row index of the cell within the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowIndex?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the text content of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             text?: boolean;
         }
@@ -7821,8 +7572,7 @@ export declare namespace PowerPoint {
          * Represents a table.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface TableLoadOptions {
             /**
@@ -7833,24 +7583,21 @@ export declare namespace PowerPoint {
              * Gets the number of columns in the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             columnCount?: boolean;
             /**
              * Gets the number of rows in the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             rowCount?: boolean;
             /**
              * Gets all of the values in the table.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             values?: boolean;
         }
@@ -7877,8 +7624,7 @@ export declare namespace PowerPoint {
             If the shape type isn't `group`, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
@@ -7893,8 +7639,7 @@ export declare namespace PowerPoint {
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
@@ -7902,8 +7647,7 @@ export declare namespace PowerPoint {
             If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
@@ -7944,8 +7688,7 @@ export declare namespace PowerPoint {
                         - A level greater than 1 indicates the shape is a nested group.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             level?: boolean;
             /**
@@ -7981,8 +7724,7 @@ export declare namespace PowerPoint {
                         each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             zOrderPosition?: boolean;
         }
@@ -8015,8 +7757,7 @@ export declare namespace PowerPoint {
              * Returns the type of the slide layout.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: boolean;
         }
@@ -8049,8 +7790,7 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Returns the type of the slide layout.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: boolean;
         }
@@ -8168,8 +7908,7 @@ export declare namespace PowerPoint {
              * Returns the zero-based index of the slide representing its position in the presentation.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             index?: boolean;
         }
@@ -8196,8 +7935,7 @@ export declare namespace PowerPoint {
              If the shape type isn't `group`, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
@@ -8212,8 +7950,7 @@ export declare namespace PowerPoint {
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
@@ -8221,8 +7958,7 @@ export declare namespace PowerPoint {
              If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
@@ -8263,8 +7999,7 @@ export declare namespace PowerPoint {
                         - A level greater than 1 indicates the shape is a nested group.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             level?: boolean;
             /**
@@ -8300,8 +8035,7 @@ export declare namespace PowerPoint {
                         each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             zOrderPosition?: boolean;
         }
@@ -8309,8 +8043,7 @@ export declare namespace PowerPoint {
          * Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface ShapeGroupLoadOptions {
             /**
@@ -8321,16 +8054,14 @@ export declare namespace PowerPoint {
             * Returns the `Shape` object associated with the group.
             *
             * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: PowerPointApi 1.8]
             */
             shape?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
              * Gets the unique ID of the shape group.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             id?: boolean;
         }
@@ -8580,8 +8311,7 @@ export declare namespace PowerPoint {
             If the shape type isn't `group`, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
@@ -8596,8 +8326,7 @@ export declare namespace PowerPoint {
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
@@ -8605,8 +8334,7 @@ export declare namespace PowerPoint {
             If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
@@ -8647,8 +8375,7 @@ export declare namespace PowerPoint {
                         - A level greater than 1 indicates the shape is a nested group.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             level?: boolean;
             /**
@@ -8684,8 +8411,7 @@ export declare namespace PowerPoint {
                         each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             zOrderPosition?: boolean;
         }
@@ -8693,8 +8419,7 @@ export declare namespace PowerPoint {
          * Represents an Office.js binding that is defined in the presentation.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface BindingLoadOptions {
             /**
@@ -8705,16 +8430,14 @@ export declare namespace PowerPoint {
              * Represents the binding identifier.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             id?: boolean;
             /**
              * Returns the type of the binding. See `BindingType` for details.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: boolean;
         }
@@ -8722,8 +8445,7 @@ export declare namespace PowerPoint {
          * Represents the collection of all the binding objects that are part of the presentation.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.8]
          */
         export interface BindingCollectionLoadOptions {
             /**
@@ -8734,16 +8456,14 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Represents the binding identifier.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             id?: boolean;
             /**
              * For EACH ITEM in the collection: Returns the type of the binding. See `BindingType` for details.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             type?: boolean;
         }
@@ -8940,8 +8660,7 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the presentation.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             index?: boolean;
         }
@@ -8981,8 +8700,7 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the presentation.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.8]
              */
             index?: boolean;
         }
