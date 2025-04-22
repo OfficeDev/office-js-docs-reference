@@ -264,7 +264,7 @@ export declare namespace Excel {
         icon?: string | EntityCompactLayoutIcons;
     }
     /**
-     * Represents a card layout used for the boolean, double, and string basic types.
+     * Represents a card layout used for the Boolean, double, and string basic types.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6314,36 +6314,36 @@ export declare namespace Excel {
          */
         preview?: CellValue;
         /**
-        * Represents the runtime language of this external code service.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the runtime language of this external code service.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         language: "Python";
         /**
-        * Represents the full type name of this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the full type name of this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_type: string;
         /**
-        * Represents the short type name of this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the short type name of this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_typeName: string;
         /**
-        * Represents the output of str() function when used on this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the output of the `str()` function when used on this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_str: string;
         /**
          * Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.
@@ -17009,6 +17009,26 @@ export declare namespace Excel {
          */
         showGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;
         /**
+         * Sets the marshaling mode of the Python in Excel formula =PY.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param marshalMode - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
+         */
+        togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode): void;
+        /**
+         * Sets the marshaling mode of the Python in Excel formula =PY.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param marshalModeString - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
+         */
+        togglePythonMarshalMode(marshalModeString?: "PythonObject" | "ExcelValue"): void;
+        /**
          * Ungroups columns and rows for an outline.
          *
          * @remarks
@@ -27002,6 +27022,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.12]
          */
         allowMultipleFiltersPerField: boolean;
+        /**
+         * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoRefresh: boolean;
         /**
          * Specifies if the PivotTable allows values in the data body to be edited by the user.
          *
@@ -37564,6 +37592,29 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         power = "Power"
+    }
+    /**
+     * Specifies what an =PY formula returns, such as an Excel value or a Python object.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PythonMarshalMode {
+        /**
+         * Specifies that the result of an =PY formula should be a reference to an object in the Python service.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pythonObject = "PythonObject",
+        /**
+         * Specifies that the result of an =PY formula should be an Excel value.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        excelValue = "ExcelValue"
     }
     /**
      * Specifies where in the z-order a shape should be moved relative to other shapes.
@@ -50304,6 +50355,14 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
+            /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -56900,6 +56959,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -66528,6 +66595,14 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -66595,6 +66670,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -66664,6 +66747,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
