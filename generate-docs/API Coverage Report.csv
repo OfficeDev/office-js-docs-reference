@@ -11,9 +11,10 @@ CustomFunctions.ErrorCode,"invalidReference",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"invalidValue",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"notAvailable",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"nullReference",EnumField,Great,false
-CustomFunctions.Invocation,N/A,Interface,Good,false
+CustomFunctions.Invocation,N/A,Interface,Unknown,false
 CustomFunctions.Invocation,"address",Property,Great,false
 CustomFunctions.Invocation,"functionName",Property,Poor,false
+CustomFunctions.Invocation,"isInValuePreview",Property,Great,false
 CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,false
 CustomFunctions.StreamingInvocation,N/A,Interface,Fine,false
 CustomFunctions.StreamingInvocation,"setResult",Property,Fine,true
@@ -8958,7 +8959,7 @@ Office.AttachmentsChangedEventArgs,"type",Property,Fine,false
 Office.Body,N/A,Interface,Unknown,true
 Office.Body,"appendOnSendAsync(data, options, callback)",Method,Good,true
 Office.Body,"appendOnSendAsync(data, callback)",Method,Good,false
-Office.Body,"getAsync(coercionType, options, callback)",Method,Excellent,true
+Office.Body,"getAsync(coercionType, options, callback)",Method,Excellent,false
 Office.Body,"getAsync(coercionType, callback)",Method,Excellent,true
 Office.Body,"getTypeAsync(options, callback)",Method,Good,true
 Office.Body,"getTypeAsync(callback)",Method,Good,false

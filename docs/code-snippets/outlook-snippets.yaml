@@ -249,22 +249,6 @@ Office.AttachmentContent#format:member:
                 // Handle attachment formats that are not supported.
         }
     }
-Office.Body#getAsync:member(1):
-  - |-
-    // This example gets the body of the item as plain text.
-    Office.context.mailbox.item.body.getAsync(
-        "text",
-        { asyncContext: "This is passed to the callback" },
-        function callback(result) {
-            // Do something with the result.
-        });
-
-    // The following is an example of the result parameter passed to the callback function.
-    {
-        "value": "TEXT of whole body (including threads below)",
-        "status": "succeeded",
-        "asyncContext": "This is passed to the callback"
-    }
 Office.Body#setAsync:member(1):
   - |-
     // When including links in HTML markup, you can disable online link preview
