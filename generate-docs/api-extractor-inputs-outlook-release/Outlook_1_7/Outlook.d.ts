@@ -4151,8 +4151,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -4390,8 +4391,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -4494,8 +4496,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -4626,8 +4629,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -4677,8 +4681,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
