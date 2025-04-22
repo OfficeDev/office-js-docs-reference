@@ -18,12 +18,11 @@ remarks: >-
   The `BodyMode` enum supports the following message organization settings.
 
 
-  - **Conversations**: **Group messages by conversation** &gt; **All messages from the selected
-  conversation** or **Show email grouped by conversation** &gt; **Newest on top**<!-- -->\\<!-- -->/**Newest
-  on bottom**
+  - Conversations: **Group messages by conversation** &gt; **All messages from the selected conversation** or
+  **Show email grouped by conversation** &gt; **Newest on top**<!-- -->/<!-- -->**Newest on bottom**
 
 
-  - **Individual messages**: **Do not group messages** &gt; **Only a single message** or **Show email as
+  - Individual messages: **Do not group messages** &gt; **Only a single message** or **Show email as
   individual messages**
 
 

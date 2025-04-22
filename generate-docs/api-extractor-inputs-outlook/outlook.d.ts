@@ -145,9 +145,9 @@ export declare namespace Office {
          *
          * The `BodyMode` enum supports the following message organization settings.
          *
-         * - **Conversations**: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\\/**Newest on bottom**
+         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
          *
-         * - **Individual messages**: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
          *
          * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
          */
