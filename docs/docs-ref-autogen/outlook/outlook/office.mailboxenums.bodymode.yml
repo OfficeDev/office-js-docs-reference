@@ -19,7 +19,12 @@ remarks: >-
 
 
   - **Conversations**: **Group messages by conversation** &gt; **All messages from the selected
-  conversation** - **Individual messages**: **Do not group messages** &gt; **Only a single message**
+  conversation** or **Show email grouped by conversation** &gt; **Newest on top**<!-- -->\\<!-- -->/**Newest
+  on bottom**
+
+
+  - **Individual messages**: **Do not group messages** &gt; **Only a single message** or **Show email as
+  individual messages**
 
 
   For more information, see [Change how the message list is displayed in

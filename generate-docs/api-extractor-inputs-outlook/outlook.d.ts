@@ -145,8 +145,9 @@ export declare namespace Office {
          *
          * The `BodyMode` enum supports the following message organization settings.
          *
-         * - **Conversations**: **Group messages by conversation** > **All messages from the selected conversation**
-         * - **Individual messages**: **Do not group messages** > **Only a single message**
+         * - **Conversations**: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\\/**Newest on bottom**
+         *
+         * - **Individual messages**: **Do not group messages** > **Only a single message** or **Show email as individual messages**
          *
          * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
          */
@@ -4334,16 +4335,19 @@ export declare namespace Office {
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
-         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want to honor the user's setting when
-         * getting the body of a message, specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
+         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
+         * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
+         * - The `bodyMode` option isn't supported on a message that's loaded using the `loadItemByIdAsync` method. For more information, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * @param coercionType - The format for the returned body.
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Any data you want to access in the callback function.
          *        `bodyMode`: In Outlook on the web and new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is returned.
          *        If a value isn't specified, `bodyMode` defaults to `Office.MailboxEnums.BodyMode.FullBody`, which returns the entire body of a message conversation. The `bodyMode` property only
-         *        applies to the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
+         *        applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *        of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
          */
@@ -4371,8 +4375,8 @@ export declare namespace Office {
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
-         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want to honor the user's setting when
-         * getting the body of a message, specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
+         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
+         * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
          *
          * @param coercionType - The format for the returned body.
@@ -4660,8 +4664,8 @@ export declare namespace Office {
          *
          * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
          * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
-         * setting is temporarily changed to **Show email as individual messages** during the `setAsync` call. A notification is shown to the user to notify them of this change.
-         * Once the call has completed, the user's setting is reinstated.
+         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
          *
          * **Errors**:
          *
@@ -4675,7 +4679,7 @@ export declare namespace Office {
          *        `coercionType`: The desired format for the body. The string in the `data` parameter is converted to this format.
          *        `bodyMode`: In Outlook on the web and new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is set.
          *        If a value isn't specified, `bodyMode` defaults to `Office.MailboxEnums.BodyMode.FullBody`, which replaces the entire body, including previous messages in the conversation thread.
-         *        The `bodyMode` property is ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
+         *        The `bodyMode` property only applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *        of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
          */
@@ -4730,8 +4734,8 @@ export declare namespace Office {
          *
          * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
          * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
-         * setting is temporarily changed to **Show email as individual messages** during the `setAsync` call. A notification is shown to the user to notify them of this change.
-         * Once the call has completed, the user's setting is reinstated.
+         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
          *
          * **Errors**:
          *
