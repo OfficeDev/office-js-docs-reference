@@ -1,64 +1,81 @@
 ### YamlMime:TSType
 name: Excel.Worksheet
-uid: 'excel!Excel.Worksheet:class'
+uid: excel!Excel.Worksheet:class
 package: excel!
 fullName: Excel.Worksheet
 summary: >-
-  An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
-  object model, read [Work with worksheets using the Excel JavaScript
-  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
-remarks: |-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  An Excel worksheet is a grid of cells. It can contain data, tables, charts,
+  etc. To learn more about the worksheet object model, read [Work with
+  worksheets using the Excel JavaScript
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!--
+  -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Get a Worksheet object by its name and activate it.
+
   await Excel.run(async (context) => { 
       const wSheetName = 'Sheet1';
       const worksheet = context.workbook.worksheets.getItem(wSheetName);
       worksheet.activate();
       await context.sync(); 
   });
+
   ```
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: charts
-    uid: 'excel!Excel.Worksheet#charts:member'
+    uid: excel!Excel.Worksheet#charts:member
     package: excel!
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
-        type: '<xref uid="excel!Excel.ChartCollection:class" />'
+        type: <xref uid="excel!Excel.ChartCollection:class" />
   - name: context
-    uid: 'excel!Excel.Worksheet#context:member'
+    uid: excel!Excel.Worksheet#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
   - name: id
-    uid: 'excel!Excel.Worksheet#id:member'
+    uid: excel!Excel.Worksheet#id:member
     package: excel!
     fullName: id
     summary: >-
-      Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns a value that uniquely identifies the worksheet in a given
+      workbook. The value of the identifier remains the same even when the
+      worksheet is renamed or moved.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,11 +83,16 @@ properties:
       return:
         type: string
   - name: name
-    uid: 'excel!Excel.Worksheet#name:member'
+    uid: excel!Excel.Worksheet#name:member
     package: excel!
     fullName: name
-    summary: The display name of the worksheet. The name must be fewer than 32 characters.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      The display name of the worksheet. The name must be fewer than 32
+      characters.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,24 +100,31 @@ properties:
       return:
         type: string
   - name: position
-    uid: 'excel!Excel.Worksheet#position:member'
+    uid: excel!Excel.Worksheet#position:member
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Set worksheet position.
+
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.position = 2;
           await context.sync(); 
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,20 +132,28 @@ properties:
       return:
         type: number
   - name: protection
-    uid: 'excel!Excel.Worksheet#protection:member'
+    uid: excel!Excel.Worksheet#protection:member
     package: excel!
     fullName: protection
     summary: Returns the sheet protection object for a worksheet.
-    remarks: |-
-      \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Unprotecting a worksheet with unprotect() will remove all 
+
       // WorksheetProtectionOptions options applied to a worksheet.
+
       // To remove only a subset of WorksheetProtectionOptions use the 
+
       // protect() method and set the options you wish to remove to true.
+
       await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sheet1");
         sheet.protection.protect({
@@ -124,58 +161,72 @@ properties:
           allowDeleteRows: true // Unprotect row deletion
         });
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
-        type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
+        type: <xref uid="excel!Excel.WorksheetProtection:class" />
   - name: tables
-    uid: 'excel!Excel.Worksheet#tables:member'
+    uid: excel!Excel.Worksheet#tables:member
     package: excel!
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly tables: Excel.TableCollection;'
       return:
-        type: '<xref uid="excel!Excel.TableCollection:class" />'
+        type: <xref uid="excel!Excel.TableCollection:class" />
   - name: visibility
-    uid: 'excel!Excel.Worksheet#visibility:member'
+    uid: excel!Excel.Worksheet#visibility:member
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
-        type: '<xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"'
+        type: >-
+          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
+          | "VeryHidden"
 methods:
   - name: activate()
-    uid: 'excel!Excel.Worksheet#activate:member(1)'
+    uid: excel!Excel.Worksheet#activate:member(1)
     package: excel!
     fullName: activate()
     summary: Activate the worksheet in the Excel UI.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.activate();
           await context.sync(); 
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,26 +235,33 @@ methods:
         type: void
         description: ''
   - name: delete()
-    uid: 'excel!Excel.Worksheet#delete:member(1)'
+    uid: excel!Excel.Worksheet#delete:member(1)
     package: excel!
     fullName: delete()
     summary: >-
-      Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
-      delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
-      or visible before deleting it.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      Deletes the worksheet from the workbook. Note that if the worksheet's
+      visibility is set to "VeryHidden", the delete operation will fail with an
+      `InvalidOperation` exception. You should first change its visibility to
+      hidden or visible before deleting it.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.delete();
           await context.sync(); 
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,19 +269,24 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'getCell(row, column)'
-    uid: 'excel!Excel.Worksheet#getCell:member(1)'
+  - name: getCell(row, column)
+    uid: excel!Excel.Worksheet#getCell:member(1)
     package: excel!
-    fullName: 'getCell(row, column)'
+    fullName: getCell(row, column)
     summary: >-
-      Gets the `Range` object containing the single cell based on row and column numbers. The cell can be outside the
-      bounds of its parent range, so long as it stays within the worksheet grid.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      Gets the `Range` object containing the single cell based on row and column
+      numbers. The cell can be outside the bounds of its parent range, so long
+      as it stays within the worksheet grid.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -234,7 +297,9 @@ methods:
 
           console.log(cell.address);
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,20 +312,27 @@ methods:
           description: The column number of the cell to be retrieved. Zero-indexed.
           type: number
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''
   - name: getRange(address)
-    uid: 'excel!Excel.Worksheet#getRange:member(1)'
+    uid: excel!Excel.Worksheet#getRange:member(1)
     package: excel!
     fullName: getRange(address)
-    summary: 'Gets the `Range` object, representing a single rectangular block of cells, specified by the address or name.'
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the `Range` object, representing a single rectangular block of cells,
+      specified by the address or name.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Use the range address to get the range object.
+
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -271,7 +343,9 @@ methods:
           
           console.log(range.cellCount);
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,26 +353,32 @@ methods:
       parameters:
         - id: address
           description: >-
-            Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified,
-            the entire worksheet range is returned.
+            Optional. The string representing the address or name of the range.
+            For example, "A1:B2". If not specified, the entire worksheet range
+            is returned.
           type: string
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''
   - name: getUsedRange(valuesOnly)
-    uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
+    uid: excel!Excel.Worksheet#getUsedRange:member(1)
     package: excel!
     fullName: getUsedRange(valuesOnly)
     summary: >-
-      The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an
+      The used range is the smallest range that encompasses any cells that have
+      a value or formatting assigned to them. If the entire worksheet is blank,
+      this function will return the top left cell (i.e. it will *not* throw an
       error).
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -308,7 +388,9 @@ methods:
           
           console.log(usedRange.address);
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,20 +398,21 @@ methods:
       parameters:
         - id: valuesOnly
           description: >-
-            Optional. If `true`<!-- -->, considers only cells with values as used cells (ignoring formatting). \[Api
-            set: ExcelApi 1.2\]
+            Optional. If `true`<!-- -->, considers only cells with values as
+            used cells (ignoring formatting). \[Api set: ExcelApi 1.2\]
           type: boolean
       return:
-        type: '<xref uid="excel!Excel.Range:class" />'
+        type: <xref uid="excel!Excel.Range:class" />
         description: ''
   - name: load(options)
-    uid: 'excel!Excel.Worksheet#load:member(1)'
+    uid: excel!Excel.Worksheet#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,28 +420,31 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
+          type: <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />
       return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        type: <xref uid="excel!Excel.Worksheet:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.Worksheet#load:member(2)'
+    uid: excel!Excel.Worksheet#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        type: <xref uid="excel!Excel.Worksheet:class" />
         description: |-
 
 
@@ -376,13 +462,14 @@ methods:
           });
           ```
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.Worksheet#load:member(3)'
+    uid: excel!Excel.Worksheet#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -394,37 +481,46 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        type: <xref uid="excel!Excel.Worksheet:class" />
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.Worksheet#set:member(1)'
+  - name: set(properties, options)
+    uid: excel!Excel.Worksheet#set:member(1)
     package: excel!
-    fullName: 'set(properties, options)'
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.WorksheetUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.WorksheetUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: |-
@@ -445,11 +541,14 @@ methods:
           });
           ```
   - name: set(properties)
-    uid: 'excel!Excel.Worksheet#set:member(2)'
+    uid: excel!Excel.Worksheet#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -457,26 +556,29 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.Worksheet:class" />'
+          type: <xref uid="excel!Excel.Worksheet:class" />
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.Worksheet#toJSON:member(1)'
+    uid: excel!Excel.Worksheet#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.Worksheet` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.Worksheet` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.WorksheetData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

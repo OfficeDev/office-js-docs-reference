@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.FillProperties
-uid: 'powerpoint!PowerPoint.FillProperties:interface'
+uid: powerpoint!PowerPoint.FillProperties:interface
 package: powerpoint!
 fullName: PowerPoint.FillProperties
 summary: Represents the fill formatting of a table cell.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: color
-    uid: 'powerpoint!PowerPoint.FillProperties#color:member'
+    uid: powerpoint!PowerPoint.FillProperties#color:member
     package: powerpoint!
     fullName: color
     summary: >-
@@ -24,7 +24,7 @@ properties:
       return:
         type: string | undefined
   - name: transparency
-    uid: 'powerpoint!PowerPoint.FillProperties#transparency:member'
+    uid: powerpoint!PowerPoint.FillProperties#transparency:member
     package: powerpoint!
     fullName: transparency
     summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).

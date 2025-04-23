@@ -1,4 +1,5 @@
-import * as inquirer from "inquirer";
+
+import inquirer from 'inquirer';
 import { cloneDeep, isString, isUndefined } from "lodash";
 
 const NO_CHOICE_SELECTED = '---';
@@ -73,6 +74,7 @@ export async function promptFromList(options: {
 
 export async function promptCustomText(message: string): Promise<string> {
     let answer = ((await inquirer.prompt({
+        type:  'input',
         name: 'question',
         message: message
     }))['question'] as string).trim();

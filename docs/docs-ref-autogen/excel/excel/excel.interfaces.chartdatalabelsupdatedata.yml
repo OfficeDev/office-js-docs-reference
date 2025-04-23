@@ -1,20 +1,28 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartDataLabelsUpdateData
-uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelsUpdateData
-summary: 'An interface for updating data on the `ChartDataLabels` object, for use in `chartDataLabels.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `ChartDataLabels` object, for use in
+  `chartDataLabels.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: autoText
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#autoText:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#autoText:member
     package: excel!
     fullName: autoText
-    summary: Specifies if data labels automatically generate appropriate text based on context.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Specifies if data labels automatically generate appropriate text based on
+      context.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,132 +30,198 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member
     package: excel!
     fullName: format
-    summary: 'Specifies the format of chart data labels, which includes fill and font formatting.'
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Specifies the format of chart data labels, which includes fill and font
+      formatting.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface"
+          />
   - name: geometricShapeType
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member
     package: excel!
     fullName: geometricShapeType
     summary: >-
-      Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details. Value
-      is `null` if the data labels are not geometric shapes.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Gets or sets the geometric shape type of the data labels. See
+      `Excel.GeometricShapeType` for more details. Value is `null` if the data
+      labels are not geometric shapes.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
-        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
-        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
-        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
-        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
-        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
-        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
-        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
-        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
-        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
-        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
-        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
-        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
-        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
-        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
-        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
-        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
-        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
-        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
-        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
-        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
-        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
-        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
-        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
-        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
-        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
-        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
-        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
+        geometricShapeType?: Excel.GeometricShapeType | "LineInverse" |
+        "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram"
+        | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
+        "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
+        "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24"
+        | "Star32" | "RoundRectangle" | "Round1Rectangle" |
+        "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle"
+        | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" |
+        "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge"
+        | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" |
+        "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" |
+        "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" |
+        "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" |
+        "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" |
+        "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" |
+        "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" |
+        "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" |
+        "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame"
+        | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" |
+        "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+        "AccentCallout1" | "AccentCallout2" | "AccentCallout3" |
+        "BorderCallout1" | "BorderCallout2" | "BorderCallout3" |
+        "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3"
+        | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" |
+        "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" |
+        "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" |
+        "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" |
+        "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" |
+        "FlowChartPreparation" | "FlowChartManualInput" |
+        "FlowChartManualOperation" | "FlowChartConnector" |
+        "FlowChartPunchedCard" | "FlowChartPunchedTape" |
+        "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
+        "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+        "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+        "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
+        "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
+        "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+        "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning"
+        | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+        "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" |
+        "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
+        "ChartStar" | "ChartPlus";
       return:
         type: >-
-          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" |
-          "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
-          "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10"
-          | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
-          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
-          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
-          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
-          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
-          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
-          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
-          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
-          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
-          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
-          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
-          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
-          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
-          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
-          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
-          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
-          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
-          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
-          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
-          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
-          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
-          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
-          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
-          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
+          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" |
+          "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
+          "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
+          "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
+          | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle"
+          | "Round2SameRectangle" | "Round2DiagonalRectangle" |
+          "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" |
+          "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" |
+          "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" |
+          "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow"
+          | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" |
+          "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" |
+          "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow"
+          | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" |
+          "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" |
+          "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" |
+          "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+          "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" |
+          "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" |
+          "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1"
+          | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" |
+          "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+          "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" |
+          "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud"
+          | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+          "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" |
+          "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" |
+          "FlowChartInputOutput" | "FlowChartPredefinedProcess" |
+          "FlowChartInternalStorage" | "FlowChartDocument" |
+          "FlowChartMultidocument" | "FlowChartTerminator" |
+          "FlowChartPreparation" | "FlowChartManualInput" |
+          "FlowChartManualOperation" | "FlowChartConnector" |
+          "FlowChartPunchedCard" | "FlowChartPunchedTape" |
+          "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
+          "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+          "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
+          "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
+          "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+          "ActionButtonInformation" | "ActionButtonForwardNext" |
+          "ActionButtonBackPrevious" | "ActionButtonEnd" |
+          "ActionButtonBeginning" | "ActionButtonReturn" |
+          "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" |
+          "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" |
+          "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" |
+          "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
           "ChartPlus"
   - name: horizontalAlignment
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
     summary: >-
-      Specifies the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
-      This property is valid only when the `TextOrientation` of data label is 0.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Specifies the horizontal alignment for chart data label. See
+      `Excel.ChartTextHorizontalAlignment` for details. This property is valid
+      only when the `TextOrientation` of data label is 0.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
-        "Distributed";
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" |
+        "Left" | "Right" | "Justify" | "Distributed";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> | "Center" | "Left" | "Right" | "Justify" |
-          "Distributed"
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
+          "Center" | "Left" | "Right" | "Justify" | "Distributed"
   - name: leaderLines
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#leaderLines:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#leaderLines:member
     package: excel!
     fullName: leaderLines
     summary: Gets an object that represents the leader lines of the data labels.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'leaderLines?: Excel.Interfaces.ChartLeaderLinesUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartLeaderLinesUpdateData:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLeaderLinesUpdateData:interface" />
   - name: linkNumberFormat
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#linkNumberFormat:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#linkNumberFormat:member
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells. If `true`<!-- -->, the number format will change in the
-      labels when it changes in the cells.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Specifies if the number format is linked to the cells. If `true`<!-- -->,
+      the number format will change in the labels when it changes in the cells.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,11 +229,14 @@ properties:
       return:
         type: boolean
   - name: numberFormat
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#numberFormat:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#numberFormat:member
     package: excel!
     fullName: numberFormat
     summary: Specifies the format code for data labels.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,27 +244,37 @@ properties:
       return:
         type: string
   - name: position
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member
     package: excel!
     fullName: position
-    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Value that represents the position of the data label. See
+      `Excel.ChartDataLabelPosition` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
-        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center"
+        | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" |
+        "Bottom" | "BestFit" | "Callout";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" | "None" | "Center" | "InsideEnd" |
-          "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" |
+          "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+          | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#separator:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#separator:member
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data labels on a chart.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,11 +282,14 @@ properties:
       return:
         type: string
   - name: showBubbleSize
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showBubbleSize:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showBubbleSize:member
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,11 +297,14 @@ properties:
       return:
         type: boolean
   - name: showCategoryName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showCategoryName:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showCategoryName:member
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,13 +312,18 @@ properties:
       return:
         type: boolean
   - name: showLeaderLines
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showLeaderLines:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showLeaderLines:member
     package: excel!
     fullName: showLeaderLines
     summary: >-
-      Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines
-      are shown; otherwise, `false`<!-- -->.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Gets or sets a value that indicates whether leader lines are displayed for
+      the data labels. `true` if leader lines are shown; otherwise, `false`<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -233,11 +331,14 @@ properties:
       return:
         type: boolean
   - name: showLegendKey
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showLegendKey:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showLegendKey:member
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,11 +346,14 @@ properties:
       return:
         type: boolean
   - name: showPercentage
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showPercentage:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showPercentage:member
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,11 +361,14 @@ properties:
       return:
         type: boolean
   - name: showSeriesName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showSeriesName:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showSeriesName:member
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,11 +376,14 @@ properties:
       return:
         type: boolean
   - name: showValue
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showValue:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#showValue:member
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -281,13 +391,17 @@ properties:
       return:
         type: boolean
   - name: textOrientation
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#textOrientation:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#textOrientation:member
     package: excel!
     fullName: textOrientation
     summary: >-
-      Represents the angle to which the text is oriented for data labels. The value should either be an integer from -90
-      to 90 or the integer 180 for vertically-oriented text.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the angle to which the text is oriented for data labels. The
+      value should either be an integer from -90 to 90 or the integer 180 for
+      vertically-oriented text.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,18 +409,24 @@ properties:
       return:
         type: number
   - name: verticalAlignment
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
     summary: >-
-      Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details. This
-      property is valid only when `TextOrientation` of the data label is -90, 90, or 180.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the vertical alignment of chart data label. See
+      `Excel.ChartTextVerticalAlignment` for details. This property is valid
+      only when `TextOrientation` of the data label is -90, 90, or 180.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      content: >-
+        verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" |
+        "Bottom" | "Top" | "Justify" | "Distributed";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center" | "Bottom" | "Top" | "Justify" |
-          "Distributed"
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
+          | "Bottom" | "Top" | "Justify" | "Distributed"

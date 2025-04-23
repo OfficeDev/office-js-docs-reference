@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.TextRun
-uid: 'powerpoint!PowerPoint.TextRun:interface'
+uid: powerpoint!PowerPoint.TextRun:interface
 package: powerpoint!
 fullName: PowerPoint.TextRun
 summary: Represents a sequence of one or more characters with the same font attributes.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: font
-    uid: 'powerpoint!PowerPoint.TextRun#font:member'
+    uid: powerpoint!PowerPoint.TextRun#font:member
     package: powerpoint!
     fullName: font
     summary: 'The font attributes (such as font name, font size, and color) applied to this text run.'
@@ -20,9 +20,9 @@ properties:
     syntax:
       content: 'font?: PowerPoint.FontProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.FontProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.FontProperties:interface" />
   - name: text
-    uid: 'powerpoint!PowerPoint.TextRun#text:member'
+    uid: powerpoint!PowerPoint.TextRun#text:member
     package: powerpoint!
     fullName: text
     summary: The text of this text run.

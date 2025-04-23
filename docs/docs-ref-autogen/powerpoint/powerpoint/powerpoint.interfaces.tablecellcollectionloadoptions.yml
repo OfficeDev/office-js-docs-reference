@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.TableCellCollectionLoadOptions
-uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface'
+uid: powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellCollectionLoadOptions
 summary: Represents a collection of table cells.
@@ -10,12 +10,14 @@ isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#$all:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -24,7 +26,8 @@ properties:
       return:
         type: boolean
   - name: columnCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnCount:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnCount:member
     package: powerpoint!
     fullName: columnCount
     summary: >-
@@ -38,7 +41,8 @@ properties:
       return:
         type: boolean
   - name: columnIndex
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnIndex:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnIndex:member
     package: powerpoint!
     fullName: columnIndex
     summary: 'For EACH ITEM in the collection: Gets the zero-based column index of the cell within the table.'
@@ -50,7 +54,8 @@ properties:
       return:
         type: boolean
   - name: rowCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowCount:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowCount:member
     package: powerpoint!
     fullName: rowCount
     summary: >-
@@ -64,7 +69,8 @@ properties:
       return:
         type: boolean
   - name: rowIndex
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowIndex:member
     package: powerpoint!
     fullName: rowIndex
     summary: 'For EACH ITEM in the collection: Gets the zero-based row index of the cell within the table.'
@@ -76,7 +82,8 @@ properties:
       return:
         type: boolean
   - name: text
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#text:member'
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#text:member
     package: powerpoint!
     fullName: text
     summary: 'For EACH ITEM in the collection: Specifies the text content of the table cell.'

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.SlideGetImageOptions
-uid: 'powerpoint!PowerPoint.SlideGetImageOptions:interface'
+uid: powerpoint!PowerPoint.SlideGetImageOptions:interface
 package: powerpoint!
 fullName: PowerPoint.SlideGetImageOptions
 summary: Represents the available options when getting an image of a slide.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: height
-    uid: 'powerpoint!PowerPoint.SlideGetImageOptions#height:member'
+    uid: powerpoint!PowerPoint.SlideGetImageOptions#height:member
     package: powerpoint!
     fullName: height
     summary: The desired height of the resulting image in pixels.
@@ -22,7 +22,7 @@ properties:
       return:
         type: number
   - name: width
-    uid: 'powerpoint!PowerPoint.SlideGetImageOptions#width:member'
+    uid: powerpoint!PowerPoint.SlideGetImageOptions#width:member
     package: powerpoint!
     fullName: width
     summary: The desired width of the resulting image in pixels.

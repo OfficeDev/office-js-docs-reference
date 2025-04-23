@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.TableCellBorders
-uid: 'powerpoint!PowerPoint.TableCellBorders:interface'
+uid: powerpoint!PowerPoint.TableCellBorders:interface
 package: powerpoint!
 fullName: PowerPoint.TableCellBorders
 summary: Represents the borders of a table cell.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: bottom
-    uid: 'powerpoint!PowerPoint.TableCellBorders#bottom:member'
+    uid: powerpoint!PowerPoint.TableCellBorders#bottom:member
     package: powerpoint!
     fullName: bottom
     summary: Represents the bottom border.
@@ -20,9 +20,9 @@ properties:
     syntax:
       content: 'bottom?: PowerPoint.BorderProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.BorderProperties:interface" />
   - name: diagonalDown
-    uid: 'powerpoint!PowerPoint.TableCellBorders#diagonalDown:member'
+    uid: powerpoint!PowerPoint.TableCellBorders#diagonalDown:member
     package: powerpoint!
     fullName: diagonalDown
     summary: Represents the diagonal border (top-left to bottom-right).
@@ -32,9 +32,9 @@ properties:
     syntax:
       content: 'diagonalDown?: PowerPoint.BorderProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.BorderProperties:interface" />
   - name: diagonalUp
-    uid: 'powerpoint!PowerPoint.TableCellBorders#diagonalUp:member'
+    uid: powerpoint!PowerPoint.TableCellBorders#diagonalUp:member
     package: powerpoint!
     fullName: diagonalUp
     summary: Represents the diagonal border (bottom-left to top-right).
@@ -44,9 +44,9 @@ properties:
     syntax:
       content: 'diagonalUp?: PowerPoint.BorderProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.BorderProperties:interface" />
   - name: left
-    uid: 'powerpoint!PowerPoint.TableCellBorders#left:member'
+    uid: powerpoint!PowerPoint.TableCellBorders#left:member
     package: powerpoint!
     fullName: left
     summary: Represents the left border.
@@ -56,9 +56,9 @@ properties:
     syntax:
       content: 'left?: PowerPoint.BorderProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.BorderProperties:interface" />
   - name: right
-    uid: 'powerpoint!PowerPoint.TableCellBorders#right:member'
+    uid: powerpoint!PowerPoint.TableCellBorders#right:member
     package: powerpoint!
     fullName: right
     summary: Represents the right border.
@@ -68,9 +68,9 @@ properties:
     syntax:
       content: 'right?: PowerPoint.BorderProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.BorderProperties:interface" />
   - name: top
-    uid: 'powerpoint!PowerPoint.TableCellBorders#top:member'
+    uid: powerpoint!PowerPoint.TableCellBorders#top:member
     package: powerpoint!
     fullName: top
     summary: Represents the top border.
@@ -80,4 +80,4 @@ properties:
     syntax:
       content: 'top?: PowerPoint.BorderProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.BorderProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.BorderProperties:interface" />

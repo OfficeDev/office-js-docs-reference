@@ -1,16 +1,17 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.TableData
-uid: 'powerpoint!PowerPoint.Interfaces.TableData:interface'
+uid: powerpoint!PowerPoint.Interfaces.TableData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: columnCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableData#columnCount:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableData#columnCount:member
     package: powerpoint!
     fullName: columnCount
     summary: Gets the number of columns in the table.
@@ -22,7 +23,7 @@ properties:
       return:
         type: number
   - name: rowCount
-    uid: 'powerpoint!PowerPoint.Interfaces.TableData#rowCount:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableData#rowCount:member
     package: powerpoint!
     fullName: rowCount
     summary: Gets the number of rows in the table.
@@ -34,7 +35,7 @@ properties:
       return:
         type: number
   - name: values
-    uid: 'powerpoint!PowerPoint.Interfaces.TableData#values:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableData#values:member
     package: powerpoint!
     fullName: values
     summary: Gets all of the values in the table.
@@ -44,4 +45,4 @@ properties:
     syntax:
       content: 'values?: string[][];'
       return:
-        type: 'string[][]'
+        type: string[][]

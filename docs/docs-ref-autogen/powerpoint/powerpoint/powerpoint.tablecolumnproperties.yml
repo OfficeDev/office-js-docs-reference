@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.TableColumnProperties
-uid: 'powerpoint!PowerPoint.TableColumnProperties:interface'
+uid: powerpoint!PowerPoint.TableColumnProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableColumnProperties
 summary: Provides the table column properties.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: columnWidth
-    uid: 'powerpoint!PowerPoint.TableColumnProperties#columnWidth:member'
+    uid: powerpoint!PowerPoint.TableColumnProperties#columnWidth:member
     package: powerpoint!
     fullName: columnWidth
     summary: >-

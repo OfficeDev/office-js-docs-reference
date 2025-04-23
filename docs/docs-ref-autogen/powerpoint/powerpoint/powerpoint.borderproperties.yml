@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.BorderProperties
-uid: 'powerpoint!PowerPoint.BorderProperties:interface'
+uid: powerpoint!PowerPoint.BorderProperties:interface
 package: powerpoint!
 fullName: PowerPoint.BorderProperties
 summary: Represents the properties for a table cell border.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: color
-    uid: 'powerpoint!PowerPoint.BorderProperties#color:member'
+    uid: powerpoint!PowerPoint.BorderProperties#color:member
     package: powerpoint!
     fullName: color
     summary: >-
@@ -24,7 +24,7 @@ properties:
       return:
         type: string | undefined
   - name: dashStyle
-    uid: 'powerpoint!PowerPoint.BorderProperties#dashStyle:member'
+    uid: powerpoint!PowerPoint.BorderProperties#dashStyle:member
     package: powerpoint!
     fullName: dashStyle
     summary: Represents the dash style of the line.
@@ -33,16 +33,18 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" |
-        "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot" |
-        undefined;
+        dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" |
+        "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" |
+        "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" |
+        "SystemDashDot" | undefined;
       return:
         type: >-
-          <xref uid="powerpoint!PowerPoint.ShapeLineDashStyle:enum" /> | "Dash" | "DashDot" | "DashDotDot" | "LongDash"
-          | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" |
-          "SystemDashDot" | undefined
+          <xref uid="powerpoint!PowerPoint.ShapeLineDashStyle:enum" /> | "Dash"
+          | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" |
+          "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot"
+          | "SystemDashDot" | undefined
   - name: transparency
-    uid: 'powerpoint!PowerPoint.BorderProperties#transparency:member'
+    uid: powerpoint!PowerPoint.BorderProperties#transparency:member
     package: powerpoint!
     fullName: transparency
     summary: Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
@@ -54,7 +56,7 @@ properties:
       return:
         type: number | undefined
   - name: weight
-    uid: 'powerpoint!PowerPoint.BorderProperties#weight:member'
+    uid: powerpoint!PowerPoint.BorderProperties#weight:member
     package: powerpoint!
     fullName: weight
     summary: 'Represents the weight of the line, in points.'

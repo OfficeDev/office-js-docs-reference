@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.BindingLoadOptions
-uid: 'powerpoint!PowerPoint.Interfaces.BindingLoadOptions:interface'
+uid: powerpoint!PowerPoint.Interfaces.BindingLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BindingLoadOptions
 summary: Represents an Office.js binding that is defined in the presentation.
@@ -10,12 +10,13 @@ isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'powerpoint!PowerPoint.Interfaces.BindingLoadOptions#$all:member'
+    uid: powerpoint!PowerPoint.Interfaces.BindingLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -24,7 +25,7 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: 'powerpoint!PowerPoint.Interfaces.BindingLoadOptions#id:member'
+    uid: powerpoint!PowerPoint.Interfaces.BindingLoadOptions#id:member
     package: powerpoint!
     fullName: id
     summary: Represents the binding identifier.
@@ -36,7 +37,7 @@ properties:
       return:
         type: boolean
   - name: type
-    uid: 'powerpoint!PowerPoint.Interfaces.BindingLoadOptions#type:member'
+    uid: powerpoint!PowerPoint.Interfaces.BindingLoadOptions#type:member
     package: powerpoint!
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: Office.ReplyFormAttachment
-uid: 'outlook!Office.ReplyFormAttachment:interface'
+uid: outlook!Office.ReplyFormAttachment:interface
 package: outlook!
 fullName: Office.ReplyFormAttachment
 summary: A file or item attachment. Used when displaying a reply form.
@@ -61,18 +61,21 @@ remarks: >-
   );
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: inLine
-    uid: 'outlook!Office.ReplyFormAttachment#inLine:member'
+    uid: outlook!Office.ReplyFormAttachment#inLine:member
     package: outlook!
     fullName: inLine
     summary: >-
-      If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the
-      attachment list. Only use if `type` is set to `base64` or `file`<!-- -->.
+      If true, indicates that the attachment will be shown inline in the message
+      body and shouldn't be displayed in the attachment list. Only use if `type`
+      is set to `base64` or `file`<!-- -->.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,13 +83,14 @@ properties:
       return:
         type: boolean
   - name: itemId
-    uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
+    uid: outlook!Office.ReplyFormAttachment#itemId:member
     package: outlook!
     fullName: itemId
     summary: >-
-      The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`<!--
-      -->.
+      The EWS item ID of the attachment. This is a string up to 100 characters.
+      Only use if `type` is set to `item`<!-- -->.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +98,14 @@ properties:
       return:
         type: string
   - name: name
-    uid: 'outlook!Office.ReplyFormAttachment#name:member'
+    uid: outlook!Office.ReplyFormAttachment#name:member
     package: outlook!
     fullName: name
-    summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
+    summary: >-
+      A string that contains the name of the attachment, up to 255 characters in
+      length.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +113,7 @@ properties:
       return:
         type: string
   - name: type
-    uid: 'outlook!Office.ReplyFormAttachment#type:member'
+    uid: outlook!Office.ReplyFormAttachment#type:member
     package: outlook!
     fullName: type
     summary: Indicates the type of attachment.
@@ -114,32 +121,38 @@ properties:
       **Important**:
 
 
-      - The `base64` attachment type was introduced in Mailbox requirement set 1.15. It's only supported by the
-      `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->, `displayReplyForm`<!-- -->, and
+      - The `base64` attachment type was introduced in Mailbox requirement set
+      1.15. It's only supported by the `displayReplyAllForm`<!-- -->,
+      `displayReplyAllFormAsync`<!-- -->, `displayReplyForm`<!-- -->, and
       `displayReplyFormAsync` methods.
 
 
-      - The `cloud` attachment type isn't supported by the `displayNewMessageForm`<!-- -->,
-      `displayNewMessageFormAsync`<!-- -->, `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->,
+      - The `cloud` attachment type isn't supported by the
+      `displayNewMessageForm`<!-- -->, `displayNewMessageFormAsync`<!-- -->,
+      `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->,
       `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: MailboxEnums.AttachmentType;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" />'
+        type: <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" />
   - name: url
-    uid: 'outlook!Office.ReplyFormAttachment#url:member'
+    uid: outlook!Office.ReplyFormAttachment#url:member
     package: outlook!
     fullName: url
     summary: >-
-      The URI of the location for the file. Only use if `type` is set to `file`<!-- -->.
+      The URI of the location for the file. Only use if `type` is set to
+      `file`<!-- -->.
 
 
-      **Important**: This link must be publicly accessible without need for authentication by Exchange Online
-      servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it doesn't
-      need further authentication.
+      **Important**: This link must be publicly accessible without need for
+      authentication by Exchange Online servers. However, with on-premises
+      Exchange, the link can be accessible on a private network as long as it
+      doesn't need further authentication.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

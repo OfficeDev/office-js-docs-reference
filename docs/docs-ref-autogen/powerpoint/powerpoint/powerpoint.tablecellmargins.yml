@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.TableCellMargins
-uid: 'powerpoint!PowerPoint.TableCellMargins:interface'
+uid: powerpoint!PowerPoint.TableCellMargins:interface
 package: powerpoint!
 fullName: PowerPoint.TableCellMargins
 summary: Represents the margins of a table cell.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: bottom
-    uid: 'powerpoint!PowerPoint.TableCellMargins#bottom:member'
+    uid: powerpoint!PowerPoint.TableCellMargins#bottom:member
     package: powerpoint!
     fullName: bottom
     summary: Specifies the bottom margin in points.
@@ -22,7 +22,7 @@ properties:
       return:
         type: number | undefined
   - name: left
-    uid: 'powerpoint!PowerPoint.TableCellMargins#left:member'
+    uid: powerpoint!PowerPoint.TableCellMargins#left:member
     package: powerpoint!
     fullName: left
     summary: Specifies the left margin in points.
@@ -34,7 +34,7 @@ properties:
       return:
         type: number | undefined
   - name: right
-    uid: 'powerpoint!PowerPoint.TableCellMargins#right:member'
+    uid: powerpoint!PowerPoint.TableCellMargins#right:member
     package: powerpoint!
     fullName: right
     summary: Specifies the right margin in points.
@@ -46,7 +46,7 @@ properties:
       return:
         type: number | undefined
   - name: top
-    uid: 'powerpoint!PowerPoint.TableCellMargins#top:member'
+    uid: powerpoint!PowerPoint.TableCellMargins#top:member
     package: powerpoint!
     fullName: top
     summary: Specifies the top margin in points.

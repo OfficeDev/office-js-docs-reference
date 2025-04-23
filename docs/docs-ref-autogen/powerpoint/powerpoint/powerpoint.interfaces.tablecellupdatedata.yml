@@ -1,16 +1,19 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.TableCellUpdateData
-uid: 'powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface'
+uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellUpdateData
-summary: 'An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `TableCell` object, for use in
+  `tableCell.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: text
-    uid: 'powerpoint!PowerPoint.Interfaces.TableCellUpdateData#text:member'
+    uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData#text:member
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.

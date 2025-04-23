@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.TableAddOptions
-uid: 'powerpoint!PowerPoint.TableAddOptions:interface'
+uid: powerpoint!PowerPoint.TableAddOptions:interface
 package: powerpoint!
 fullName: PowerPoint.TableAddOptions
 summary: Represents the available options when adding a table.
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: columns
-    uid: 'powerpoint!PowerPoint.TableAddOptions#columns:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#columns:member
     package: powerpoint!
     fullName: columns
     summary: >-
@@ -22,9 +22,9 @@ properties:
     syntax:
       content: 'columns?: PowerPoint.TableColumnProperties[];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.TableColumnProperties:interface" />[]'
+        type: <xref uid="powerpoint!PowerPoint.TableColumnProperties:interface" />[]
   - name: height
-    uid: 'powerpoint!PowerPoint.TableAddOptions#height:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#height:member
     package: powerpoint!
     fullName: height
     summary: >-
@@ -38,7 +38,7 @@ properties:
       return:
         type: number | undefined
   - name: left
-    uid: 'powerpoint!PowerPoint.TableAddOptions#left:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#left:member
     package: powerpoint!
     fullName: left
     summary: >-
@@ -52,7 +52,7 @@ properties:
       return:
         type: number | undefined
   - name: mergedAreas
-    uid: 'powerpoint!PowerPoint.TableAddOptions#mergedAreas:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#mergedAreas:member
     package: powerpoint!
     fullName: mergedAreas
     summary: 'If specified, represents an rectangular area where multiple cells appear as a single cell.'
@@ -62,9 +62,11 @@ properties:
     syntax:
       content: 'mergedAreas?: PowerPoint.TableMergedAreaProperties[];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.TableMergedAreaProperties:interface" />[]'
+        type: >-
+          <xref uid="powerpoint!PowerPoint.TableMergedAreaProperties:interface"
+          />[]
   - name: rows
-    uid: 'powerpoint!PowerPoint.TableAddOptions#rows:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#rows:member
     package: powerpoint!
     fullName: rows
     summary: >-
@@ -76,9 +78,9 @@ properties:
     syntax:
       content: 'rows?: PowerPoint.TableRowProperties[];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.TableRowProperties:interface" />[]'
+        type: <xref uid="powerpoint!PowerPoint.TableRowProperties:interface" />[]
   - name: specificCellProperties
-    uid: 'powerpoint!PowerPoint.TableAddOptions#specificCellProperties:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#specificCellProperties:member
     package: powerpoint!
     fullName: specificCellProperties
     summary: >-
@@ -95,9 +97,9 @@ properties:
     syntax:
       content: 'specificCellProperties?: PowerPoint.TableCellProperties[][];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.TableCellProperties:interface" />[][]'
+        type: <xref uid="powerpoint!PowerPoint.TableCellProperties:interface" />[][]
   - name: top
-    uid: 'powerpoint!PowerPoint.TableAddOptions#top:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#top:member
     package: powerpoint!
     fullName: top
     summary: >-
@@ -111,22 +113,15 @@ properties:
       return:
         type: number | undefined
   - name: uniformCellProperties
-    uid: 'powerpoint!PowerPoint.TableAddOptions#uniformCellProperties:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#uniformCellProperties:member
     package: powerpoint!
     fullName: uniformCellProperties
     summary: >-
-      Specifies the formatting which applies uniformly to all of the table cells.
+      Specifies the formatting which applies uniformly to all of the table
+      cells.
 
 
-      To apply specific formatting to individual cells, use specificCellProperties.
-
-
-      If both uniformCellProperties and specificCellProperties are undefined, the default formatting will be used, and
-      the default table style will be applied. The table will have the same appearance as when the user adds a table
-      through the PowerPoint UI.
-
-
-      To provide a plain appearance for the table, set this property to an empty object and do not specify
+      To apply specific formatting to individual cells, use
       specificCellProperties.
     remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
@@ -134,9 +129,9 @@ properties:
     syntax:
       content: 'uniformCellProperties?: PowerPoint.TableCellProperties;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.TableCellProperties:interface" />'
+        type: <xref uid="powerpoint!PowerPoint.TableCellProperties:interface" />
   - name: values
-    uid: 'powerpoint!PowerPoint.TableAddOptions#values:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#values:member
     package: powerpoint!
     fullName: values
     summary: >-
@@ -151,9 +146,9 @@ properties:
     syntax:
       content: 'values?: string[][];'
       return:
-        type: 'string[][]'
+        type: string[][]
   - name: width
-    uid: 'powerpoint!PowerPoint.TableAddOptions#width:member'
+    uid: powerpoint!PowerPoint.TableAddOptions#width:member
     package: powerpoint!
     fullName: width
     summary: >-

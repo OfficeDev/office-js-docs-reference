@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: PowerPoint.BindingType
-uid: 'powerpoint!PowerPoint.BindingType:enum'
+uid: powerpoint!PowerPoint.BindingType:enum
 package: powerpoint!
 fullName: PowerPoint.BindingType
 summary: Represents the possible binding types.
@@ -9,7 +9,7 @@ isPreview: false
 isDeprecated: false
 fields:
   - name: shape
-    uid: 'powerpoint!PowerPoint.BindingType.shape:member'
+    uid: powerpoint!PowerPoint.BindingType.shape:member
     package: powerpoint!
     summary: |-
       Represents a shape binding.

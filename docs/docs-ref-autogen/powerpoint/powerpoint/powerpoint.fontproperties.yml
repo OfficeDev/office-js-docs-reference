@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.FontProperties
-uid: 'powerpoint!PowerPoint.FontProperties:interface'
+uid: powerpoint!PowerPoint.FontProperties:interface
 package: powerpoint!
 fullName: PowerPoint.FontProperties
 summary: 'Represents the font attributes, such as font name, size, and color.'
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: allCaps
-    uid: 'powerpoint!PowerPoint.FontProperties#allCaps:member'
+    uid: powerpoint!PowerPoint.FontProperties#allCaps:member
     package: powerpoint!
     fullName: allCaps
     summary: 'Represents whether the font uses all caps, where lowercase letters are shown as capital letters.'
@@ -22,7 +22,7 @@ properties:
       return:
         type: boolean | undefined
   - name: bold
-    uid: 'powerpoint!PowerPoint.FontProperties#bold:member'
+    uid: powerpoint!PowerPoint.FontProperties#bold:member
     package: powerpoint!
     fullName: bold
     summary: Represents the bold status of font.
@@ -34,7 +34,7 @@ properties:
       return:
         type: boolean | undefined
   - name: color
-    uid: 'powerpoint!PowerPoint.FontProperties#color:member'
+    uid: powerpoint!PowerPoint.FontProperties#color:member
     package: powerpoint!
     fullName: color
     summary: >-
@@ -48,7 +48,7 @@ properties:
       return:
         type: string | undefined
   - name: doubleStrikethrough
-    uid: 'powerpoint!PowerPoint.FontProperties#doubleStrikethrough:member'
+    uid: powerpoint!PowerPoint.FontProperties#doubleStrikethrough:member
     package: powerpoint!
     fullName: doubleStrikethrough
     summary: Represents the double-strikethrough status of the font.
@@ -60,7 +60,7 @@ properties:
       return:
         type: boolean | undefined
   - name: italic
-    uid: 'powerpoint!PowerPoint.FontProperties#italic:member'
+    uid: powerpoint!PowerPoint.FontProperties#italic:member
     package: powerpoint!
     fullName: italic
     summary: Represents the italic status of font.
@@ -72,7 +72,7 @@ properties:
       return:
         type: boolean | undefined
   - name: name
-    uid: 'powerpoint!PowerPoint.FontProperties#name:member'
+    uid: powerpoint!PowerPoint.FontProperties#name:member
     package: powerpoint!
     fullName: name
     summary: >-
@@ -86,7 +86,7 @@ properties:
       return:
         type: string | undefined
   - name: size
-    uid: 'powerpoint!PowerPoint.FontProperties#size:member'
+    uid: powerpoint!PowerPoint.FontProperties#size:member
     package: powerpoint!
     fullName: size
     summary: 'Represents the font size in points (e.g., 11).'
@@ -98,7 +98,7 @@ properties:
       return:
         type: number | undefined
   - name: smallCaps
-    uid: 'powerpoint!PowerPoint.FontProperties#smallCaps:member'
+    uid: powerpoint!PowerPoint.FontProperties#smallCaps:member
     package: powerpoint!
     fullName: smallCaps
     summary: 'Represents whether the text uses small caps, where lowercase letters are shown as small capital letters.'
@@ -110,7 +110,7 @@ properties:
       return:
         type: boolean | undefined
   - name: strikethrough
-    uid: 'powerpoint!PowerPoint.FontProperties#strikethrough:member'
+    uid: powerpoint!PowerPoint.FontProperties#strikethrough:member
     package: powerpoint!
     fullName: strikethrough
     summary: Represents the strikethrough status of the font.
@@ -122,7 +122,7 @@ properties:
       return:
         type: boolean | undefined
   - name: subscript
-    uid: 'powerpoint!PowerPoint.FontProperties#subscript:member'
+    uid: powerpoint!PowerPoint.FontProperties#subscript:member
     package: powerpoint!
     fullName: subscript
     summary: Represents the subscript status of the font.
@@ -134,7 +134,7 @@ properties:
       return:
         type: boolean | undefined
   - name: superscript
-    uid: 'powerpoint!PowerPoint.FontProperties#superscript:member'
+    uid: powerpoint!PowerPoint.FontProperties#superscript:member
     package: powerpoint!
     fullName: superscript
     summary: Represents the superscript status of the font.
@@ -146,7 +146,7 @@ properties:
       return:
         type: boolean | undefined
   - name: underline
-    uid: 'powerpoint!PowerPoint.FontProperties#underline:member'
+    uid: powerpoint!PowerPoint.FontProperties#underline:member
     package: powerpoint!
     fullName: underline
     summary: >-
@@ -157,11 +157,14 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
-        "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
+        underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" |
+        "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" |
+        "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
         | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | undefined;
       return:
         type: >-
-          <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" |
-          "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
-          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | undefined
+          <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> |
+          "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" |
+          "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" |
+          "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" |
+          "WavyHeavy" | "WavyDouble" | undefined

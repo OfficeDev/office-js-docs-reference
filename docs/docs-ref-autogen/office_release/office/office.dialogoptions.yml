@@ -1,22 +1,25 @@
 ### YamlMime:TSType
 name: Office.DialogOptions
-uid: 'office!Office.DialogOptions:interface'
+uid: office!Office.DialogOptions:interface
 package: office!
 fullName: Office.DialogOptions
 summary: Provides options for how a dialog is displayed.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: asyncContext
-    uid: 'office!Office.DialogOptions#asyncContext:member'
+    uid: office!Office.DialogOptions#asyncContext:member
     package: office!
     fullName: asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
-      object that is passed to a callback.
+      A user-defined item of any type that is returned, unchanged, in the
+      asyncContext property of the AsyncResult object that is passed to a
+      callback.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,15 +27,19 @@ properties:
       return:
         type: any
   - name: displayInIframe
-    uid: 'office!Office.DialogOptions#displayInIframe:member'
+    uid: office!Office.DialogOptions#displayInIframe:member
     package: office!
     fullName: displayInIframe
     summary: >-
-      Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office
-      on the web, and is ignored by other platforms. If false (default), the dialog will be displayed as a new browser
-      window (pop-up). Recommended for authentication pages that cannot be displayed in an IFrame. If true, the dialog
-      will be displayed as a floating overlay with an IFrame. This is best for user experience and performance.
+      Determines whether the dialog box should be displayed within an IFrame.
+      This setting is only applicable in Office on the web, and is ignored by
+      other platforms. If false (default), the dialog will be displayed as a new
+      browser window (pop-up). Recommended for authentication pages that cannot
+      be displayed in an IFrame. If true, the dialog will be displayed as a
+      floating overlay with an IFrame. This is best for user experience and
+      performance.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,11 +47,14 @@ properties:
       return:
         type: boolean
   - name: height
-    uid: 'office!Office.DialogOptions#height:member'
+    uid: office!Office.DialogOptions#height:member
     package: office!
     fullName: height
-    summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
+    summary: >-
+      Defines the height of the dialog as a percentage of the current display.
+      Defaults to 80%. 250px minimum.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,15 +69,18 @@ properties:
 
           ```TypeScript
 
-          // The following example shows how to open a dialog with a specified size. It also shows
+          // The following example shows how to open a dialog with a specified
+          size. It also shows
 
-          // how to register a function to handle the message when Office.UI.messageParent() is called
+          // how to register a function to handle the message when
+          Office.UI.messageParent() is called
 
-          // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage()
-          function is omitted.
+          // in the dialog and how to use that handler to close the dialog. The
+          implementation of the processMessage() function is omitted.
 
 
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
+          { height: 30, width: 20 },
               (asyncResult) => {
                   const dialog = asyncResult.value;
                   dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
@@ -81,7 +94,8 @@ properties:
           // The following example does the same thing in TypeScript.
 
 
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
+          { height: 30, width: 20 },
               (asyncResult: Office.AsyncResult) => {
                   const dialog: Office.Dialog = asyncResult.value;
                   dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
@@ -93,17 +107,20 @@ properties:
 
           ```
   - name: promptBeforeOpen
-    uid: 'office!Office.DialogOptions#promptBeforeOpen:member'
+    uid: office!Office.DialogOptions#promptBeforeOpen:member
     package: office!
     fullName: promptBeforeOpen
     summary: >-
-      Determines if the pop-up blocker dialog will be shown to the user. Defaults to true.
+      Determines if the pop-up blocker dialog will be shown to the user.
+      Defaults to true.
 
 
-      `true` - The framework displays a pop-up to trigger the navigation and avoid the browser's pop-up blocker. `false`
-      - The dialog will not be shown and the developer must handle pop-ups (by providing a user interface artifact to
-      trigger the navigation).
+      `true` - The framework displays a pop-up to trigger the navigation and
+      avoid the browser's pop-up blocker. `false` - The dialog will not be shown
+      and the developer must handle pop-ups (by providing a user interface
+      artifact to trigger the navigation).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,11 +128,14 @@ properties:
       return:
         type: boolean
   - name: width
-    uid: 'office!Office.DialogOptions#width:member'
+    uid: office!Office.DialogOptions#width:member
     package: office!
     fullName: width
-    summary: Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
+    summary: >-
+      Defines the width of the dialog as a percentage of the current display.
+      Defaults to 80%. 150px minimum.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,15 +150,18 @@ properties:
 
           ```TypeScript
 
-          // The following example shows how to open a dialog with a specified size. It also shows
+          // The following example shows how to open a dialog with a specified
+          size. It also shows
 
-          // how to register a function to handle the message when Office.UI.messageParent() is called
+          // how to register a function to handle the message when
+          Office.UI.messageParent() is called
 
-          // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage()
-          function is omitted.
+          // in the dialog and how to use that handler to close the dialog. The
+          implementation of the processMessage() function is omitted.
 
 
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
+          { height: 30, width: 20 },
               (asyncResult) => {
                   const dialog = asyncResult.value;
                   dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
@@ -152,7 +175,8 @@ properties:
           // The following example does the same thing in TypeScript.
 
 
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
+          { height: 30, width: 20 },
               (asyncResult: Office.AsyncResult) => {
                   const dialog: Office.Dialog = asyncResult.value;
                   dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
