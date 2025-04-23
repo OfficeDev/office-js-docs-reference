@@ -143,6 +143,7 @@ enums:
   - 'excel!Excel.PrintMarginUnit:enum'
   - 'excel!Excel.PrintOrder:enum'
   - 'excel!Excel.ProtectionSelectionMode:enum'
+  - 'excel!Excel.PythonMarshalMode:enum'
   - 'excel!Excel.QueryError:enum'
   - 'excel!Excel.RangeCopyType:enum'
   - 'excel!Excel.RangeUnderlineStyle:enum'
