@@ -198,8 +198,18 @@ methods:
       -->**: Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in,
-      you must have a Microsoft 365 E5 subscription.
+      **Important**:
+
+
+      - To use the sensitivity label feature in your add-in, you must have a
+      Microsoft 365 E5 subscription.
+
+
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Tip**: To determine the sensitivity labels available for use, call
@@ -269,8 +279,18 @@ methods:
       -->**: Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in,
-      you must have a Microsoft 365 E5 subscription.
+      **Important**:
+
+
+      - To use the sensitivity label feature in your add-in, you must have a
+      Microsoft 365 E5 subscription.
+
+
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Tip**: To determine the sensitivity labels available for use, call

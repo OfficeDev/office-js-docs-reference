@@ -73,9 +73,9 @@ methods:
       UI).
 
 
-      - The `addAsync` method isn't supported on a message that's currently
-      loaded using the `loadItemByIdAsync` method. For more information, see
-      [Activate your Outlook add-in on multiple
+      The `addAsync` method isn't supported on a message that's currently loaded
+      using the `loadItemByIdAsync` method. For more information, see [Activate
+      your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
 
@@ -203,9 +203,9 @@ methods:
       UI).
 
 
-      - The `addAsync` method isn't supported on a message that's currently
-      loaded using the `loadItemByIdAsync` method. For more information, see
-      [Activate your Outlook add-in on multiple
+      The `addAsync` method isn't supported on a message that's currently loaded
+      using the `loadItemByIdAsync` method. For more information, see [Activate
+      your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
 
@@ -618,9 +618,9 @@ methods:
       UI).
 
 
-      - The `setAsync` method isn't supported on a message that's currently
-      loaded using the `loadItemByIdAsync` method. For more information, see
-      [Activate your Outlook add-in on multiple
+      The `setAsync` method isn't supported on a message that's currently loaded
+      using the `loadItemByIdAsync` method. For more information, see [Activate
+      your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
 
@@ -720,9 +720,9 @@ methods:
       UI).
 
 
-      - The `setAsync` method isn't supported on a message that's currently
-      loaded using the `loadItemByIdAsync` method. For more information, see
-      [Activate your Outlook add-in on multiple
+      The `setAsync` method isn't supported on a message that's currently loaded
+      using the `loadItemByIdAsync` method. For more information, see [Activate
+      your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
 

@@ -28,12 +28,7 @@ methods:
     uid: outlook!Office.NotificationMessages#addAsync:member(1)
     package: outlook!
     fullName: addAsync(key, JSONmessage, options, callback)
-    summary: >-
-      Adds a notification to an item.
-
-
-      There are a maximum of 5 notifications per message. Setting more will
-      return a `NumberOfNotificationMessagesExceeded` error.
+    summary: Adds a notification to an item.
     remarks: >-
       \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -53,6 +48,13 @@ methods:
       **Important**:
 
 
+      - In Outlook on the web, on Windows (new and classic), and on Mac, you can
+      set a maximum of five notifications per message. Setting more returns a
+      `NumberOfNotificationMessagesExceeded` error. In Outlook on Android and on
+      iOS, you can only set one notification per message. Setting an additional
+      notification replaces the previous one.
+
+
       - Only one notification of type
       [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
       is allowed per add-in. Attempting to add more will throw an error.
@@ -63,8 +65,22 @@ methods:
       -->, you can add an `InsightMessage` notification only in Compose mode.
 
 
-      - Only the `InformationalMessage` type is supported in Outlook on Android
-      and on iOS.
+      - In Outlook on Android and on iOS, only the `ProgressIndicator`<!-- -->,
+      `InformationalMessage`<!-- -->, and `ErrorMessage` notification types are
+      supported.
+
+
+      - In compose mode, while the style of each notification type varies on
+      other Outlook clients, notifications in Outlook on Android and on iOS all
+      use the same style. The notification message is always prefixed with an
+      informational icon.
+
+
+      - The `addAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       #### Examples
@@ -186,12 +202,7 @@ methods:
     uid: outlook!Office.NotificationMessages#addAsync:member(2)
     package: outlook!
     fullName: addAsync(key, JSONmessage, callback)
-    summary: >-
-      Adds a notification to an item.
-
-
-      There are a maximum of 5 notifications per message. Setting more will
-      return a `NumberOfNotificationMessagesExceeded` error.
+    summary: Adds a notification to an item.
     remarks: >-
       \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -211,6 +222,13 @@ methods:
       **Important**:
 
 
+      - In Outlook on the web, on Windows (new and classic), and on Mac, you can
+      set a maximum of five notifications per message. Setting more returns a
+      `NumberOfNotificationMessagesExceeded` error. In Outlook on Android and on
+      iOS, you can only set one notification per message. Setting an additional
+      notification replaces the previous one.
+
+
       - Only one notification of type
       [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
       is allowed per add-in. Attempting to add more will throw an error.
@@ -221,8 +239,22 @@ methods:
       -->, you can add an `InsightMessage` notification only in Compose mode.
 
 
-      - Only the `InformationalMessage` type is supported in Outlook on Android
-      and on iOS.
+      - In Outlook on Android and on iOS, only the `ProgressIndicator`<!-- -->,
+      `InformationalMessage`<!-- -->, and `ErrorMessage` notification types are
+      supported.
+
+
+      - In compose mode, while the style of each notification type varies on
+      other Outlook clients, notifications in Outlook on Android and on iOS all
+      use the same style. The notification message is always prefixed with an
+      informational icon.
+
+
+      - The `addAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
     isPreview: false
     isDeprecated: false
@@ -388,6 +420,13 @@ methods:
       -->**: Compose or Read
 
 
+      **Important**: The `removeAsync` method isn't supported on a message
+      that's currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
+
       #### Examples
 
 
@@ -454,6 +493,13 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
+
+      **Important**: The `removeAsync` method isn't supported on a message
+      that's currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -499,6 +545,13 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `replaceAsync` method isn't supported on a message
+      that's currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       #### Examples
@@ -586,6 +639,13 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `replaceAsync` method isn't supported on a message
+      that's currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
     isPreview: false
     isDeprecated: false

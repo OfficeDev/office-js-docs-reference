@@ -108,7 +108,7 @@ properties:
     uid: excel!Excel.ExternalCodeServiceObjectCellValue#Python_str:member
     package: excel!
     fullName: Python_str
-    summary: Represents the output of str() function when used on this object.
+    summary: Represents the output of the `str()` function when used on this object.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

@@ -4282,6 +4282,54 @@ methods:
       return:
         type: void
         description: ''
+  - name: togglePythonMarshalMode(marshalMode)
+    uid: excel!Excel.Range#togglePythonMarshalMode:member(1)
+    package: excel!
+    fullName: togglePythonMarshalMode(marshalMode)
+    summary: Sets the marshaling mode of the Python in Excel formula =PY.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode): void;'
+      parameters:
+        - id: marshalMode
+          description: >-
+            The mode to set. If not specified, switches from `ExcelValue` to
+            `PythonObject` or vice versa.
+          type: <xref uid="excel!Excel.PythonMarshalMode:enum" />
+      return:
+        type: void
+        description: ''
+  - name: togglePythonMarshalMode(marshalModeString)
+    uid: excel!Excel.Range#togglePythonMarshalMode:member(2)
+    package: excel!
+    fullName: togglePythonMarshalMode(marshalModeString)
+    summary: Sets the marshaling mode of the Python in Excel formula =PY.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        togglePythonMarshalMode(marshalModeString?: "PythonObject" |
+        "ExcelValue"): void;
+      parameters:
+        - id: marshalModeString
+          description: >-
+            The mode to set. If not specified, switches from `ExcelValue` to
+            `PythonObject` or vice versa.
+          type: '"PythonObject" | "ExcelValue"'
+      return:
+        type: void
+        description: ''
   - name: toJSON()
     uid: excel!Excel.Range#toJSON:member(1)
     package: excel!

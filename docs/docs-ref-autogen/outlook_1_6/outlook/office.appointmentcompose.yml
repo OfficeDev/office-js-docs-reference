@@ -289,6 +289,13 @@ properties:
       -->**: Appointment Organizer
 
 
+      **Important**: This property isn't supported in Outlook on Android or
+      on iOS. For more information on supported APIs in Outlook mobile, see
+      [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
       #### Examples
 
 

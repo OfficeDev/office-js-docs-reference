@@ -474,6 +474,13 @@ methods:
       external CSS instead.
 
 
+      - The `prependAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
+
       **Errors**:
 
 
@@ -626,6 +633,13 @@ methods:
       external CSS instead.
 
 
+      - The `prependAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
+
       **Errors**:
 
 
@@ -725,6 +739,13 @@ methods:
 
       - The `setAsync` method doesn't support inline CSS. Use internal or
       external CSS instead.
+
+
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
@@ -916,6 +937,13 @@ methods:
       external CSS instead.
 
 
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
+
       **Errors**:
 
 
@@ -998,6 +1026,13 @@ methods:
 
       - The `setSelectedDataAsync` method doesn't support inline CSS. Use
       internal or external CSS instead.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
@@ -1135,6 +1170,13 @@ methods:
 
       - The `setSelectedDataAsync` method doesn't support inline CSS. Use
       internal or external CSS instead.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:

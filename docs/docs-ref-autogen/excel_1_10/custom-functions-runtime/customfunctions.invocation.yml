@@ -52,6 +52,27 @@ properties:
       content: 'functionName?: string;'
       return:
         type: string
+  - name: isInValuePreview
+    uid: >-
+      custom-functions-runtime!CustomFunctions.Invocation#isInValuePreview:member
+    package: custom-functions-runtime!
+    fullName: isInValuePreview
+    summary: >-
+      Indicates whether the function is invoked as part of the formula value
+      preview. `isInValuePreview` is read-only and can't be set by a custom
+      functions add-in. This value is `true` if the function is invoked to
+      preview the formula value; otherwise it is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime
+      1.5](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isInValuePreview?: string;'
+      return:
+        type: string
   - name: parameterAddresses
     uid: >-
       custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member

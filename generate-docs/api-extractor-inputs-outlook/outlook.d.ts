@@ -1623,6 +1623,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         notificationMessages: NotificationMessages;
         /**
@@ -3197,6 +3200,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         notificationMessages: NotificationMessages;
         /**
@@ -6873,14 +6879,6 @@ export declare namespace Office {
          *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
-         *   </tr>
-         *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
          *     <td>Meeting requests</td>
          *   </tr>
@@ -6930,14 +6928,6 @@ export declare namespace Office {
          *   <tr>
          *     <td>IPM.Note</td>
          *     <td>New messages and message replies</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
          *   </tr>
          *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
@@ -7489,14 +7479,6 @@ export declare namespace Office {
          *   <tr>
          *     <td>IPM.Note</td>
          *     <td>New messages and message replies</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
          *   </tr>
          *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
@@ -8581,8 +8563,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -9100,8 +9083,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -9204,8 +9188,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -9378,8 +9363,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -9493,8 +9479,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -10802,14 +10789,6 @@ export declare namespace Office {
          *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
-         *   </tr>
-         *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
          *     <td>Meeting requests</td>
          *   </tr>
@@ -10859,14 +10838,6 @@ export declare namespace Office {
          *   <tr>
          *     <td>IPM.Note</td>
          *     <td>New messages and message replies</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
          *   </tr>
          *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
@@ -11681,14 +11652,6 @@ export declare namespace Office {
          *   <tr>
          *     <td>IPM.Note</td>
          *     <td>New messages and message replies</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
          *   </tr>
          *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
@@ -12744,21 +12707,30 @@ export declare namespace Office {
         /**
          * Specifies the `ItemNotificationMessageType` of message.
          *
-         * If type is `ProgressIndicator` or `ErrorMessage`, an icon is automatically supplied
-         * and the message is not persistent. Therefore the icon and persistent properties are not valid for these types of messages.
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - For the `ProgressIndicator` or `ErrorMessage` types, an icon is automatically supplied
+         * and the message isn't persistent. Therefore, the icon and persistent properties aren't valid for these types of messages.
          * Including them will result in an `ArgumentException`.
          *
-         * If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.
+         * - For the `ProgressIndicator` type, you should remove or replace the progress indicator when the action is complete.
          *
-         * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
+         * - In Outlook on Android and on iOS, only the `ProgressIndicator`, `InformationalMessage`, and `ErrorMessage` notification types are supported.
+         *
+         * - In compose mode, while the style of each notification type varies on other Outlook clients, notifications in Outlook on Android and on iOS
+         * all use the same style. The notification message is always prefixed with an informational icon.
          */
         type: MailboxEnums.ItemNotificationMessageType | string;
         /**
-         * A reference to an icon that is defined in the manifest. It appears in the infobar area.
-         * It is applicable if the type is `InformationalMessage`, and is required if the type is `InsightMessage`.
+         * A reference to an icon that's defined in the manifest. It appears in the infobar area.
+         * It's applicable if the type is `InformationalMessage`, and is required if the type is `InsightMessage`.
          * Specifying this parameter for an unsupported type results in an exception.
          *
-         * **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac, web browser).
+         * @remarks
+         *
+         * **Important**: Currently, the custom icon is only displayed in classic Outlook on Windows.
          */
         icon?: string;
         /**
@@ -12803,8 +12775,6 @@ export declare namespace Office {
         /**
          * Adds a notification to an item.
          *
-         * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
@@ -12814,13 +12784,20 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - In Outlook on the web, on Windows (new and classic), and on Mac, you can set a maximum of five notifications per message.
+         * Setting more returns a `NumberOfNotificationMessagesExceeded` error. In Outlook on Android and on iOS, you can only set one notification per message.
+         * Setting an additional notification replaces the previous one.
+         *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
          * is allowed per add-in. Attempting to add more will throw an error.
          *
          * - In modern Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * you can add an `InsightMessage` notification only in Compose mode.
          *
-         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
+         * - In Outlook on Android and on iOS, only the `ProgressIndicator`, `InformationalMessage`, and `ErrorMessage` notification types are supported.
+         *
+         * - In compose mode, while the style of each notification type varies on other Outlook clients, notifications in Outlook on Android and on iOS
+         * all use the same style. The notification message is always prefixed with an informational icon.
          *
          * - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
@@ -12838,8 +12815,6 @@ export declare namespace Office {
         /**
          * Adds a notification to an item.
          *
-         * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
@@ -12849,13 +12824,20 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - In Outlook on the web, on Windows (new and classic), and on Mac, you can set a maximum of five notifications per message.
+         * Setting more returns a `NumberOfNotificationMessagesExceeded` error. In Outlook on Android and on iOS, you can only set one notification per message.
+         * Setting an additional notification replaces the previous one.
+         *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
          * is allowed per add-in. Attempting to add more will throw an error.
          *
          * - In modern Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * you can add an `InsightMessage` notification only in Compose mode.
          *
-         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
+         * - In Outlook on Android and on iOS, only the `ProgressIndicator`, `InformationalMessage`, and `ErrorMessage` notification types are supported.
+         *
+         * - In compose mode, while the style of each notification type varies on other Outlook clients, notifications in Outlook on Android and on iOS
+         * all use the same style. The notification message is always prefixed with an informational icon.
          *
          * - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
@@ -13149,7 +13131,7 @@ export declare namespace Office {
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
          *
-         * - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
@@ -13188,7 +13170,7 @@ export declare namespace Office {
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
          *
-         * - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
@@ -13327,7 +13309,7 @@ export declare namespace Office {
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
          *
-         * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
@@ -13370,7 +13352,7 @@ export declare namespace Office {
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
          *
-         * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:

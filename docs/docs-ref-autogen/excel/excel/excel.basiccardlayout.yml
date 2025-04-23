@@ -3,7 +3,7 @@ name: Excel.BasicCardLayout
 uid: excel!Excel.BasicCardLayout:interface
 package: excel!
 fullName: Excel.BasicCardLayout
-summary: Represents a card layout used for the boolean, double, and string basic types.
+summary: Represents a card layout used for the Boolean, double, and string basic types.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

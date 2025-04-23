@@ -568,12 +568,14 @@ methods:
       **Important**:
 
 
-      - In February 2025, legacy Exchange [user
+      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
       and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens will be turned off by default for all Exchange Online tenants. This
-      is part of [Microsoft's Secure Future
+      tokens have been turned off by default for most Exchange Online tenants.
+      Administrators can reenable legacy tokens for tenants and add-ins until
+      June 2025. In October 2025, legacy tokens will be completely turned off
+      for all tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current
       threat landscape. Exchange user identity tokens will still work for
@@ -1145,12 +1147,14 @@ methods:
       **Important**:
 
 
-      - In February 2025, legacy Exchange [user
+      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
       and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens will be turned off by default for all Exchange Online tenants. This
-      is part of [Microsoft's Secure Future
+      tokens have been turned off by default for most Exchange Online tenants.
+      Administrators can reenable legacy tokens for tenants and add-ins until
+      June 2025. In October 2025, legacy tokens will be completely turned off
+      for all tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current
       threat landscape. Exchange user identity tokens will still work for
@@ -1355,12 +1359,14 @@ methods:
       **Important**:
 
 
-      - In February 2025, legacy Exchange [user
+      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
       and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens will be turned off by default for all Exchange Online tenants. This
-      is part of [Microsoft's Secure Future
+      tokens have been turned off by default for most Exchange Online tenants.
+      Administrators can reenable legacy tokens for tenants and add-ins until
+      June 2025. In October 2025, legacy tokens will be completely turned off
+      for all tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current
       threat landscape. Exchange user identity tokens will still work for
@@ -1704,12 +1710,14 @@ methods:
       **Important**:
 
 
-      - In February 2025, legacy Exchange [user
+      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
       and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens will be turned off by default for all Exchange Online tenants. This
-      is part of [Microsoft's Secure Future
+      tokens have been turned off by default for most Exchange Online tenants.
+      Administrators can reenable legacy tokens for tenants and add-ins until
+      June 2025. In October 2025, legacy tokens will be completely turned off
+      for all tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current
       threat landscape. Exchange user identity tokens will still work for
@@ -1834,12 +1842,14 @@ methods:
       **Important**:
 
 
-      - In February 2025, legacy Exchange [user
+      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
       and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens will be turned off by default for all Exchange Online tenants. This
-      is part of [Microsoft's Secure Future
+      tokens have been turned off by default for most Exchange Online tenants.
+      Administrators can reenable legacy tokens for tenants and add-ins until
+      June 2025. In October 2025, legacy tokens will be completely turned off
+      for all tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current
       threat landscape. Exchange user identity tokens will still work for

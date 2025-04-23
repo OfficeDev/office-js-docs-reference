@@ -3257,9 +3257,6 @@ methods:
 
       <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr>
       <td>IPM.Note</td> <td>New messages and message replies</td> </tr> <tr>
-      <td>IPM.Note.SMIME</td> <td>Encrypted messages that can also be
-      signed</td> </tr> <tr> <td>IPM.Note.SMIME.MultipartSigned</td>
-      <td>Clear-signed messages</td> </tr> <tr>
       <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
       <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td>
       </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline
@@ -3322,9 +3319,6 @@ methods:
 
       <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr>
       <td>IPM.Note</td> <td>New messages and message replies</td> </tr> <tr>
-      <td>IPM.Note.SMIME</td> <td>Encrypted messages that can also be
-      signed</td> </tr> <tr> <td>IPM.Note.SMIME.MultipartSigned</td>
-      <td>Clear-signed messages</td> </tr> <tr>
       <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
       <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td>
       </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline

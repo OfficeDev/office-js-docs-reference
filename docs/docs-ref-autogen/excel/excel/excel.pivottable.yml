@@ -34,6 +34,24 @@ properties:
       content: 'allowMultipleFiltersPerField: boolean;'
       return:
         type: boolean
+  - name: autoRefresh
+    uid: excel!Excel.PivotTable#autoRefresh:member
+    package: excel!
+    fullName: autoRefresh
+    summary: >-
+      Specifies whether the PivotTable auto refreshes when the source data
+      changes. Corresponds to "Auto Refresh" setting in the UI.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoRefresh: boolean;'
+      return:
+        type: boolean
   - name: columnHierarchies
     uid: excel!Excel.PivotTable#columnHierarchies:member
     package: excel!

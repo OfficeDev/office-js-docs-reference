@@ -306,6 +306,8 @@ items:
                 uid: excel!Excel.PrintOrder:enum
               - name: ProtectionSelectionMode
                 uid: excel!Excel.ProtectionSelectionMode:enum
+              - name: PythonMarshalMode
+                uid: excel!Excel.PythonMarshalMode:enum
               - name: QueryError
                 uid: excel!Excel.QueryError:enum
               - name: RangeCopyType

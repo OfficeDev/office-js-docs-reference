@@ -11,9 +11,10 @@ CustomFunctions.ErrorCode,"invalidReference",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"invalidValue",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"notAvailable",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"nullReference",EnumField,Great,false
-CustomFunctions.Invocation,N/A,Interface,Good,false
+CustomFunctions.Invocation,N/A,Interface,Unknown,false
 CustomFunctions.Invocation,"address",Property,Great,false
 CustomFunctions.Invocation,"functionName",Property,Poor,false
+CustomFunctions.Invocation,"isInValuePreview",Property,Great,false
 CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,false
 CustomFunctions.StreamingInvocation,N/A,Interface,Fine,false
 CustomFunctions.StreamingInvocation,"setResult",Property,Fine,true
@@ -4977,6 +4978,7 @@ Excel.PivotManualFilter,N/A,Interface,Great,false
 Excel.PivotManualFilter,"selectedItems",Property,Good,false
 Excel.PivotTable,N/A,Class,Unknown,false
 Excel.PivotTable,"allowMultipleFiltersPerField",Property,Excellent,false
+Excel.PivotTable,"autoRefresh",Property,Excellent,false
 Excel.PivotTable,"columnHierarchies",Property,Poor,true
 Excel.PivotTable,"context",Property,Excellent,false
 Excel.PivotTable,"dataHierarchies",Property,Poor,true
@@ -5112,6 +5114,9 @@ Excel.PythonErrorCellValue,"basicType",Property,Good,false
 Excel.PythonErrorCellValue,"basicValue",Property,Excellent,false
 Excel.PythonErrorCellValue,"errorType",Property,Good,false
 Excel.PythonErrorCellValue,"type",Property,Fine,false
+Excel.PythonMarshalMode,N/A,Enum,Excellent,false
+Excel.PythonMarshalMode,"excelValue",EnumField,Excellent,false
+Excel.PythonMarshalMode,"pythonObject",EnumField,Excellent,false
 Excel.Query,N/A,Class,Unknown,false
 Excel.Query,"context",Property,Excellent,false
 Excel.Query,"error",Property,Great,false
@@ -5267,6 +5272,8 @@ Excel.Range,"setRowProperties(rowPropertiesData)",Method,Great,false
 Excel.Range,"showCard()",Method,Great,false
 Excel.Range,"showGroupDetails(groupOption)",Method,Poor,false
 Excel.Range,"showGroupDetails(groupOptionString)",Method,Poor,false
+Excel.Range,"togglePythonMarshalMode(marshalMode)",Method,Fine,false
+Excel.Range,"togglePythonMarshalMode(marshalModeString)",Method,Fine,false
 Excel.Range,"toJSON()",Method,Excellent,false
 Excel.Range,"track()",Method,Excellent,false
 Excel.Range,"ungroup(groupOption)",Method,Poor,true
@@ -9656,10 +9663,10 @@ Office.NotificationMessageDetails,"icon",Property,Excellent,false
 Office.NotificationMessageDetails,"key",Property,Fine,false
 Office.NotificationMessageDetails,"message",Property,Excellent,false
 Office.NotificationMessageDetails,"persistent",Property,Excellent,false
-Office.NotificationMessageDetails,"type",Property,Excellent,false
-Office.NotificationMessages,N/A,Interface,Good,false
-Office.NotificationMessages,"addAsync(key, JSONmessage, options, callback)",Method,Great,true
-Office.NotificationMessages,"addAsync(key, JSONmessage, callback)",Method,Great,false
+Office.NotificationMessageDetails,"type",Property,Great,false
+Office.NotificationMessages,N/A,Interface,Unknown,false
+Office.NotificationMessages,"addAsync(key, JSONmessage, options, callback)",Method,Fine,true
+Office.NotificationMessages,"addAsync(key, JSONmessage, callback)",Method,Fine,false
 Office.NotificationMessages,"getAllAsync(options, callback)",Method,Fine,true
 Office.NotificationMessages,"getAllAsync(callback)",Method,Fine,false
 Office.NotificationMessages,"removeAsync(key, options, callback)",Method,Fine,true
