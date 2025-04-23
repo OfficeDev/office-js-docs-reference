@@ -4556,7 +4556,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** > **Options** > **Language** in the Office
          * application.
          *
          * **Support details**
