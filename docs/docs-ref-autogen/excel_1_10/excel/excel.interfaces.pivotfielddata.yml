@@ -1,20 +1,26 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.PivotFieldData
-uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
+uid: excel!Excel.Interfaces.PivotFieldData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotFieldData
-summary: An interface describing the data returned by calling `pivotField.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `pivotField.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: id
-    uid: 'excel!Excel.Interfaces.PivotFieldData#id:member'
+    uid: excel!Excel.Interfaces.PivotFieldData#id:member
     package: excel!
     fullName: id
     summary: ID of the PivotField.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,23 +28,29 @@ properties:
       return:
         type: string
   - name: items
-    uid: 'excel!Excel.Interfaces.PivotFieldData#items:member'
+    uid: excel!Excel.Interfaces.PivotFieldData#items:member
     package: excel!
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Excel.Interfaces.PivotItemData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.PivotItemData:interface" />[]'
+        type: <xref uid="excel!Excel.Interfaces.PivotItemData:interface" />[]
   - name: name
-    uid: 'excel!Excel.Interfaces.PivotFieldData#name:member'
+    uid: excel!Excel.Interfaces.PivotFieldData#name:member
     package: excel!
     fullName: name
     summary: Name of the PivotField.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +58,14 @@ properties:
       return:
         type: string
   - name: showAllItems
-    uid: 'excel!Excel.Interfaces.PivotFieldData#showAllItems:member'
+    uid: excel!Excel.Interfaces.PivotFieldData#showAllItems:member
     package: excel!
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,14 +73,17 @@ properties:
       return:
         type: boolean
   - name: subtotals
-    uid: 'excel!Excel.Interfaces.PivotFieldData#subtotals:member'
+    uid: excel!Excel.Interfaces.PivotFieldData#subtotals:member
     package: excel!
     fullName: subtotals
     summary: Subtotals of the PivotField.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'subtotals?: Excel.Subtotals;'
       return:
-        type: '<xref uid="excel!Excel.Subtotals:interface" />'
+        type: <xref uid="excel!Excel.Subtotals:interface" />

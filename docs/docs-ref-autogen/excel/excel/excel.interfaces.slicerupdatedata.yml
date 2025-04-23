@@ -1,20 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.SlicerUpdateData
-uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
+uid: excel!Excel.Interfaces.SlicerUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.SlicerUpdateData
-summary: 'An interface for updating data on the `Slicer` object, for use in `slicer.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Slicer` object, for use in
+  `slicer.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: caption
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#caption:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#caption:member
     package: excel!
     fullName: caption
     summary: Represents the caption of the slicer.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,13 +29,18 @@ properties:
       return:
         type: string
   - name: height
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#height:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#height:member
     package: excel!
     fullName: height
     summary: >-
-      Represents the height, in points, of the slicer. Throws an `InvalidArgument` exception when set with a negative
-      value or zero as an input.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the height, in points, of the slicer. Throws an
+      `InvalidArgument` exception when set with a negative value or zero as an
+      input.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,13 +48,18 @@ properties:
       return:
         type: number
   - name: left
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#left:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#left:member
     package: excel!
     fullName: left
     summary: >-
-      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
-      `InvalidArgument` error when set with a negative value as an input.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the distance, in points, from the left side of the slicer to
+      the left of the worksheet. Throws an `InvalidArgument` error when set with
+      a negative value as an input.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,11 +67,15 @@ properties:
       return:
         type: number
   - name: name
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#name:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#name:member
     package: excel!
     fullName: name
     summary: Represents the name of the slicer.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +83,15 @@ properties:
       return:
         type: string
   - name: nameInFormula
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#nameInFormula:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#nameInFormula:member
     package: excel!
     fullName: nameInFormula
     summary: Represents the slicer name used in the formula.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -74,40 +99,57 @@ properties:
       return:
         type: string
   - name: slicerStyle
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member
     package: excel!
     fullName: slicerStyle
     summary: The style applied to the slicer.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'slicerStyle?: Excel.Interfaces.SlicerStyleUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.SlicerStyleUpdateData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.SlicerStyleUpdateData:interface" />
   - name: sortBy
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#sortBy:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#sortBy:member
     package: excel!
     fullName: sortBy
     summary: >-
-      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
-      "Descending".
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
+      content: >-
+        sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" |
+        "Descending";
       return:
-        type: '<xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" | "Ascending" | "Descending"'
+        type: >-
+          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
+          "Ascending" | "Descending"
   - name: style
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#style:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#style:member
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through
-      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      Constant value that represents the slicer style. Possible values are:
+      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
+      through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,13 +157,18 @@ properties:
       return:
         type: string
   - name: top
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#top:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#top:member
     package: excel!
     fullName: top
     summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an
-      `InvalidArgument` error when set with a negative value as an input.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the distance, in points, from the top edge of the slicer to the
+      top of the worksheet. Throws an `InvalidArgument` error when set with a
+      negative value as an input.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,13 +176,18 @@ properties:
       return:
         type: number
   - name: width
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#width:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#width:member
     package: excel!
     fullName: width
     summary: >-
-      Represents the width, in points, of the slicer. Throws an `InvalidArgument` error when set with a negative value
-      or zero as an input.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the width, in points, of the slicer. Throws an
+      `InvalidArgument` error when set with a negative value or zero as an
+      input.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,14 +195,18 @@ properties:
       return:
         type: number
   - name: worksheet
-    uid: 'excel!Excel.Interfaces.SlicerUpdateData#worksheet:member'
+    uid: excel!Excel.Interfaces.SlicerUpdateData#worksheet:member
     package: excel!
     fullName: worksheet
     summary: Represents the worksheet containing the slicer.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />

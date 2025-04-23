@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartDataTableLoadOptions
-uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartDataTableLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataTableLoadOptions
 summary: Represents the data table object of a chart.
-remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartDataTableLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,23 +29,37 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#format:member'
+    uid: excel!Excel.Interfaces.ChartDataTableLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: 'Represents the format of a chart data table, which includes fill, font, and border format.'
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents the format of a chart data table, which includes fill, font,
+      and border format.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartDataTableFormatLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions:interface"
+          />
   - name: showHorizontalBorder
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showHorizontalBorder:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartDataTableLoadOptions#showHorizontalBorder:member
     package: excel!
     fullName: showHorizontalBorder
     summary: Specifies whether to display the horizontal border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +67,15 @@ properties:
       return:
         type: boolean
   - name: showLegendKey
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showLegendKey:member'
+    uid: excel!Excel.Interfaces.ChartDataTableLoadOptions#showLegendKey:member
     package: excel!
     fullName: showLegendKey
     summary: Specifies whether to show the legend key of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +83,15 @@ properties:
       return:
         type: boolean
   - name: showOutlineBorder
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showOutlineBorder:member'
+    uid: excel!Excel.Interfaces.ChartDataTableLoadOptions#showOutlineBorder:member
     package: excel!
     fullName: showOutlineBorder
     summary: Specifies whether to display the outline border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,11 +99,15 @@ properties:
       return:
         type: boolean
   - name: showVerticalBorder
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showVerticalBorder:member'
+    uid: excel!Excel.Interfaces.ChartDataTableLoadOptions#showVerticalBorder:member
     package: excel!
     fullName: showVerticalBorder
     summary: Specifies whether to display the vertical border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,11 +115,15 @@ properties:
       return:
         type: boolean
   - name: visible
-    uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#visible:member'
+    uid: excel!Excel.Interfaces.ChartDataTableLoadOptions#visible:member
     package: excel!
     fullName: visible
     summary: Specifies whether to show the data table of the chart.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

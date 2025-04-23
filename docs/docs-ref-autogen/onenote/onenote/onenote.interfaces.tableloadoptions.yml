@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: OneNote.Interfaces.TableLoadOptions
-uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+uid: onenote!OneNote.Interfaces.TableLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableLoadOptions
 summary: Represents a table in a OneNote page.
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#$all:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#$all:member
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +29,17 @@ properties:
       return:
         type: boolean
   - name: borderVisible
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#borderVisible:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#borderVisible:member
     package: onenote!
     fullName: borderVisible
-    summary: 'Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: >-
+      Gets or sets whether the borders are visible or not. True if they are
+      visible, false if they are hidden.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,11 +47,15 @@ properties:
       return:
         type: boolean
   - name: columnCount
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#columnCount:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#columnCount:member
     package: onenote!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +63,15 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#id:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#id:member
     package: onenote!
     fullName: id
     summary: Gets the ID of the table. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,23 +79,33 @@ properties:
       return:
         type: boolean
   - name: paragraph
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#paragraph:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#paragraph:member
     package: onenote!
     fullName: paragraph
     summary: Gets the Paragraph object that contains the Table object.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
+        type: >-
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
+          />
   - name: rowCount
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#rowCount:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#rowCount:member
     package: onenote!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,14 +113,21 @@ properties:
       return:
         type: boolean
   - name: rows
-    uid: 'onenote!OneNote.Interfaces.TableLoadOptions#rows:member'
+    uid: onenote!OneNote.Interfaces.TableLoadOptions#rows:member
     package: onenote!
     fullName: rows
     summary: Gets all of the table rows.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rows?: OneNote.Interfaces.TableRowCollectionLoadOptions;'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface"
+          />

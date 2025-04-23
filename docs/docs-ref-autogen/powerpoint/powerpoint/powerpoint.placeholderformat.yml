@@ -1,122 +1,147 @@
 ### YamlMime:TSType
 name: PowerPoint.PlaceholderFormat
-uid: 'powerpoint!PowerPoint.PlaceholderFormat:class'
+uid: powerpoint!PowerPoint.PlaceholderFormat:class
 package: powerpoint!
 fullName: PowerPoint.PlaceholderFormat
 summary: Represents the properties of a `placeholder` shape.
 remarks: >-
   \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: class
 properties:
   - name: containedType
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#containedType:member'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#containedType:member
     package: powerpoint!
     fullName: containedType
     summary: >-
       Gets the type of the shape contained within the placeholder. See
-      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details. Returns `null` if the placeholder
-      is empty.
+      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
+      details. Returns `null` if the placeholder is empty.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        readonly containedType: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" |
-        "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D"
-        | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
+        readonly containedType: PowerPoint.ShapeType | "Unsupported" | "Image" |
+        "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" |
+        "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" |
+        "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
       return:
         type: >-
-          <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" |
-          "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" |
-          "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null
+          <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" |
+          "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" |
+          "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" |
+          "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" |
+          null
   - name: context
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#context:member'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#context:member
     package: powerpoint!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+        type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
   - name: type
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#type:member'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#type:member
     package: powerpoint!
     fullName: type
     summary: >-
       Returns the type of this placeholder. See
-      [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum) for details.
+      [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum)
+      for details.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        readonly type: PowerPoint.PlaceholderType | "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" |
-        "Title" | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" | "Table"
-        | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo";
+        readonly type: PowerPoint.PlaceholderType | "Unsupported" | "Date" |
+        "SlideNumber" | "Footer" | "Header" | "Title" | "Body" | "CenterTitle" |
+        "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" |
+        "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" |
+        "Picture" | "Cameo";
       return:
         type: >-
-          <xref uid="powerpoint!PowerPoint.PlaceholderType:enum" /> | "Unsupported" | "Date" | "SlideNumber" | "Footer"
-          | "Header" | "Title" | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" |
-          "Chart" | "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo"
+          <xref uid="powerpoint!PowerPoint.PlaceholderType:enum" /> |
+          "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" | "Title"
+          | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" |
+          "VerticalBody" | "Content" | "Chart" | "Table" | "OnlinePicture" |
+          "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo"
 methods:
   - name: load(options)
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#load:member(1)'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#load:member(1)
     package: powerpoint!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions): PowerPoint.PlaceholderFormat;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions):
+        PowerPoint.PlaceholderFormat;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions:interface" />'
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />'
+        type: <xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#load:member(2)'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.PlaceholderFormat;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />'
+        type: <xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#load:member(3)'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -128,32 +153,41 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />'
+        type: <xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />
         description: ''
   - name: toJSON()
-    uid: 'powerpoint!PowerPoint.PlaceholderFormat#toJSON:member(1)'
+    uid: powerpoint!PowerPoint.PlaceholderFormat#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `PowerPoint.PlaceholderFormat` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PlaceholderFormatData`<!-- -->) that contains
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.PlaceholderFormat` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.PlaceholderFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.PlaceholderFormatData;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface" />'
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface"
+          />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

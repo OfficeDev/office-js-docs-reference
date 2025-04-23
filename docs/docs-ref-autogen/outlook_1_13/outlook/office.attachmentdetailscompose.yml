@@ -1,30 +1,34 @@
 ### YamlMime:TSType
 name: Office.AttachmentDetailsCompose
-uid: 'outlook!Office.AttachmentDetailsCompose:interface'
+uid: outlook!Office.AttachmentDetailsCompose:interface
 package: outlook!
 fullName: Office.AttachmentDetailsCompose
-summary: |-
+summary: >-
   Represents an attachment on an item. Compose mode only.
 
-  An array of `AttachmentDetailsCompose` objects is returned by the `getAttachmentsAsync` method.
+
+  An array of `AttachmentDetailsCompose` objects is returned by the
+  `getAttachmentsAsync` method.
 remarks: >-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: attachmentType
-    uid: 'outlook!Office.AttachmentDetailsCompose#attachmentType:member'
+    uid: outlook!Office.AttachmentDetailsCompose#attachmentType:member
     package: outlook!
     fullName: attachmentType
     summary: Gets a value that indicates the attachment's type.
@@ -32,33 +36,42 @@ properties:
       **Important**:
 
 
-      - In Outlook on the web and new Outlook on Windows, a message or appointment that's locally saved then attached
-      using drag-and-drop or the **Attach Item** option is of type `Office.MailboxEnums.AttachmentType.File`<!--
-      -->. The file name extension is returned in the `name` property. However, a message or appointment that's attached
-      using the **Forward as Attachment** option is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In
-      this case, an extension isn't returned in the `name` property.
+      - In Outlook on the web and new Outlook on Windows, a message or
+      appointment that's locally saved then attached using drag-and-drop or the
+      **Attach Item** option is of type
+      `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension
+      is returned in the `name` property. However, a message or appointment
+      that's attached using the **Forward as Attachment** option is of type
+      `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In this case, an
+      extension isn't returned in the `name` property.
 
 
-      - In classic Outlook on Windows, a message or appointment that's attached using drag-and-drop, **Attach
-      File**, or **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file
-      name extension isn't returned in the `name` property.
+      - In classic Outlook on Windows, a message or appointment that's attached
+      using drag-and-drop, **Attach File**, or **Forward as Attachment**
+      is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file name
+      extension isn't returned in the `name` property.
 
 
-      - In Outlook on Mac, a message or appointment that's attached using drag-and-drop, **Attach Item**, or
-      **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name
+      - In Outlook on Mac, a message or appointment that's attached using
+      drag-and-drop, **Attach Item**, or **Forward as Attachment** is of
+      type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name
       extension is returned in the `name` property.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachmentType: MailboxEnums.AttachmentType | string;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> | string'
+        type: >-
+          <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> |
+          string
   - name: id
-    uid: 'outlook!Office.AttachmentDetailsCompose#id:member'
+    uid: outlook!Office.AttachmentDetailsCompose#id:member
     package: outlook!
     fullName: id
     summary: Gets the index of the attachment.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,13 +79,14 @@ properties:
       return:
         type: string
   - name: isInline
-    uid: 'outlook!Office.AttachmentDetailsCompose#isInline:member'
+    uid: outlook!Office.AttachmentDetailsCompose#isInline:member
     package: outlook!
     fullName: isInline
     summary: >-
-      Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the
-      attachment list.
+      Gets a value that indicates whether the attachment appears as an image in
+      the body of the item instead of in the attachment list.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +94,7 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'outlook!Office.AttachmentDetailsCompose#name:member'
+    uid: outlook!Office.AttachmentDetailsCompose#name:member
     package: outlook!
     fullName: name
     summary: Gets the name of the attachment.
@@ -88,25 +102,32 @@ properties:
       **Important**:
 
 
-      - An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't return a file name extension in the
-      `name` property.
+      - An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't
+      return a file name extension in the `name` property.
 
 
-      - In Outlook on the web and new Outlook on Windows, a message or appointment that's locally saved then attached
-      using drag-and-drop or the **Attach Item** option is of type `Office.MailboxEnums.AttachmentType.File`<!--
-      -->. The file name extension is returned in the `name` property. However, a message or appointment that's attached
-      using the **Forward as Attachment** option is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In
-      this case, an extension isn't returned in the `name` property.
+      - In Outlook on the web and new Outlook on Windows, a message or
+      appointment that's locally saved then attached using drag-and-drop or the
+      **Attach Item** option is of type
+      `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension
+      is returned in the `name` property. However, a message or appointment
+      that's attached using the **Forward as Attachment** option is of type
+      `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In this case, an
+      extension isn't returned in the `name` property.
 
 
-      - In classic Outlook on Windows, a message or appointment that's attached using drag-and-drop, **Attach
-      Item**, or **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file
-      name extension isn't returned in the `name` property. A calendar item that's attached
+      - In classic Outlook on Windows, a message or appointment that's attached
+      using drag-and-drop, **Attach Item**, or **Forward as Attachment**
+      is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file name
+      extension isn't returned in the `name` property. A calendar item that's
+      attached
 
 
-      - In Outlook on Mac, a message or appointment that's attached using drag-and-drop, **Attach Item**, or
-      **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name
+      - In Outlook on Mac, a message or appointment that's attached using
+      drag-and-drop, **Attach Item**, or **Forward as Attachment** is of
+      type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name
       extension is returned in the `name` property.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,11 +135,12 @@ properties:
       return:
         type: string
   - name: size
-    uid: 'outlook!Office.AttachmentDetailsCompose#size:member'
+    uid: outlook!Office.AttachmentDetailsCompose#size:member
     package: outlook!
     fullName: size
     summary: Gets the size of the attachment in bytes.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,11 +148,14 @@ properties:
       return:
         type: number
   - name: url
-    uid: 'outlook!Office.AttachmentDetailsCompose#url:member'
+    uid: outlook!Office.AttachmentDetailsCompose#url:member
     package: outlook!
     fullName: url
-    summary: Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`<!-- -->.
+    summary: >-
+      Gets the url of the attachment if its type is
+      `MailboxEnums.AttachmentType.Cloud`<!-- -->.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

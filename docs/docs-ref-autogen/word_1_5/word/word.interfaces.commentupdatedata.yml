@@ -1,20 +1,26 @@
 ### YamlMime:TSType
 name: Word.Interfaces.CommentUpdateData
-uid: 'word!Word.Interfaces.CommentUpdateData:interface'
+uid: word!Word.Interfaces.CommentUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CommentUpdateData
-summary: 'An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Comment` object, for use in
+  `comment.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: content
-    uid: 'word!Word.Interfaces.CommentUpdateData#content:member'
+    uid: word!Word.Interfaces.CommentUpdateData#content:member
     package: word!
     fullName: content
     summary: Specifies the comment's content as plain text.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,25 +28,34 @@ properties:
       return:
         type: string
   - name: contentRange
-    uid: 'word!Word.Interfaces.CommentUpdateData#contentRange:member'
+    uid: word!Word.Interfaces.CommentUpdateData#contentRange:member
     package: word!
     fullName: contentRange
     summary: Specifies the comment's content range.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />'
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />
   - name: resolved
-    uid: 'word!Word.Interfaces.CommentUpdateData#resolved:member'
+    uid: word!Word.Interfaces.CommentUpdateData#resolved:member
     package: word!
     fullName: resolved
     summary: >-
-      Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means
-      that the comment thread is resolved.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies the comment thread's status. Setting to true resolves the
+      comment thread. Getting a value of true means that the comment thread is
+      resolved.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
