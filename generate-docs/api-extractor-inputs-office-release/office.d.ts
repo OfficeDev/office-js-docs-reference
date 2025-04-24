@@ -4592,7 +4592,7 @@ export declare namespace Office {
          *
          * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
          *
-         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** > **Options** > **Language** in the Office
          * application.
          *
          * When using in Outlook, the applicable modes are Compose or Read.
@@ -7097,7 +7097,7 @@ export declare namespace Office {
      * Provides access to the properties for Office theme colors.
      *
      * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user.
-     * The user sets a theme in an Office application through **File** \> **Account** or **Office Account** \> **Office Theme**.
+     * The user sets a theme in an Office application through **File** > **Account** or **Office Account** > **Office Theme**.
      * The selected theme is then applied across all Office applications. Using Office theme colors is appropriate for mail and
      * task pane add-ins.
      *
@@ -8089,7 +8089,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -8143,7 +8143,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -8200,7 +8200,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -8299,7 +8299,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
