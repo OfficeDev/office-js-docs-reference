@@ -139,7 +139,7 @@ properties:
         // Check if this call is for formula value preview mode.
         if (invocation.isInValuePreview) { 
           // Avoid long-running expensive service calls. 
-          // Return a useable but fake number.
+          // Return a usable but fake number.
           return 450000; 
         } else { 
           // Make the actual service calls in this block. 
