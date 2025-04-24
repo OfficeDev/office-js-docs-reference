@@ -43,7 +43,6 @@ remarks: >-
   [Excel.EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol),
   [Excel.MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol),
   [Excel.CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)
-
 isPreview: false
 isDeprecated: false
 syntax: >-
