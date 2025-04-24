@@ -11,11 +11,11 @@ CustomFunctions.ErrorCode,"invalidReference",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"invalidValue",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"notAvailable",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"nullReference",EnumField,Great,false
-CustomFunctions.Invocation,N/A,Interface,Unknown,false
-CustomFunctions.Invocation,"address",Property,Great,false
+CustomFunctions.Invocation,N/A,Interface,Unknown,true
+CustomFunctions.Invocation,"address",Property,Great,true
 CustomFunctions.Invocation,"functionName",Property,Poor,false
-CustomFunctions.Invocation,"isInValuePreview",Property,Great,false
-CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,false
+CustomFunctions.Invocation,"isInValuePreview",Property,Great,true
+CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,true
 CustomFunctions.StreamingInvocation,N/A,Interface,Fine,false
 CustomFunctions.StreamingInvocation,"setResult",Property,Fine,true
 Excel.AggregationFunction,N/A,Enum,Unknown,true

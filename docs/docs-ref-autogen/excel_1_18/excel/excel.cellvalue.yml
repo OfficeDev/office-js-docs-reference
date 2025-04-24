@@ -4,7 +4,27 @@ uid: excel!Excel.CellValue:type
 package: excel!
 fullName: Excel.CellValue
 summary: Represents the value in a cell.
-remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nLearn more about the types in this type alias through the following links: \r\n\r\n[Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue), [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue), [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue), [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue), [Excel.EmptyCellValue](/javascript/api/excel/excel.emptycellvalue), [Excel.ErrorCellValue](/javascript/api/excel/excel.errorcellvalue), [Excel.FormattedNumberCellValue](/javascript/api/excel/excel.formattednumbercellvalue), [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue), [Excel.ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue), [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue), [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue), [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue), [Excel.CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)"
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  Learn more about the types in this type alias through the following links: 
+
+
+  [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue),
+  [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue),
+  [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue),
+  [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue),
+  [Excel.EmptyCellValue](/javascript/api/excel/excel.emptycellvalue),
+  [Excel.ErrorCellValue](/javascript/api/excel/excel.errorcellvalue),
+  [Excel.FormattedNumberCellValue](/javascript/api/excel/excel.formattednumbercellvalue),
+  [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue),
+  [Excel.ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue),
+  [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue),
+  [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue),
+  [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue),
+  [Excel.CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)
 
 isPreview: false
 isDeprecated: false
