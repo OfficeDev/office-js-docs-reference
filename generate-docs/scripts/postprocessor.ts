@@ -483,7 +483,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
 
     // Add links for type aliases.
     if (apiYaml.uid.endsWith(":type") && (apiYaml.uid.indexOf("Office") < 0)) {
-        let remarks = `${EOL}${EOL}Learn more about the types in this type alias through the following links: ${EOL}${EOL}`
+        let remarks = `${EOL}${EOL}Learn more about the types in this type alias through the following links. ${EOL}${EOL}`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
             remarks += `[${capitalizeFirstLetter(hostName)}.${match}](/javascript/api/${hostName}/${hostName}.${match.toLowerCase()})`;
             if (matchIndex < matches.length - 1) {
