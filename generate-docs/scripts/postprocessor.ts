@@ -493,7 +493,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
 
         let exampleIndex = apiYaml.remarks.indexOf("#### Examples");
         if (exampleIndex > 0) {
-            apiYaml.remarks = apiYaml.remarks.substring(0, exampleIndex) + remarks + apiYaml.remarks.substring(exampleIndex);
+            apiYaml.remarks = `${apiYaml.remarks.substring(0, exampleIndex)}${remarks}${EOL}${EOL}${apiYaml.remarks.substring(exampleIndex)}`;
         } else {
             apiYaml.remarks += remarks;
         }
