@@ -502,7 +502,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
     let cleanYml = schemaComment + jsyaml.dump(apiYaml);
     return cleanYml.replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
                    .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
-                   .replace(/\\\*/gm, "*"); // Fix asterisk protection.        
+                   .replace(/\\\*/gm, "*"); // Fix asterisk protection.
 }
 
 function capitalizeFirstLetter(str: string): string {
