@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.TableStyleCollectionLoadOptions
-uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface'
+uid: excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.TableStyleCollectionLoadOptions
 summary: Represents a collection of table styles.
-remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.TableStyleCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +29,15 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member'
+    uid: excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of the table style.'
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,11 +45,17 @@ properties:
       return:
         type: boolean
   - name: readOnly
-    uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#readOnly:member'
+    uid: excel!Excel.Interfaces.TableStyleCollectionLoadOptions#readOnly:member
     package: excel!
     fullName: readOnly
-    summary: 'For EACH ITEM in the collection: Specifies if this `TableStyle` object is read-only.'
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Specifies if this `TableStyle` object is
+      read-only.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

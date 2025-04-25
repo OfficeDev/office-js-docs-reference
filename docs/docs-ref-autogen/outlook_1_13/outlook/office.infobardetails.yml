@@ -1,20 +1,35 @@
 ### YamlMime:TSType
 name: Office.InfobarDetails
-uid: 'outlook!Office.InfobarDetails:interface'
+uid: outlook!Office.InfobarDetails:interface
 package: outlook!
 fullName: Office.InfobarDetails
-summary: Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
-remarks: |-
-  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Provides additional details about the notification message that raised the
+  `Office.EventType.InfobarClicked` event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   /*
-  * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-  * The event handler logs the custom action and notification type to the console.
+
+  * This snippet activates when a notification message is dismissed from an
+  Outlook message or appointment.
+
+  * The event handler logs the custom action and notification type to the
+  console.
+
   */
-  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+  eventHandler, callback);
+
 
   function eventHandler(event) {
       const infobarDetails = event.infobarDetails;
@@ -38,32 +53,42 @@ remarks: |-
               break;
       }
   }
+
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: actionType
-    uid: 'outlook!Office.InfobarDetails#actionType:member'
+    uid: outlook!Office.InfobarDetails#actionType:member
     package: outlook!
     fullName: actionType
-    summary: 'The action type. Currently, "Dismiss" is the only supported action.'
-    remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    summary: The action type. Currently, "Dismiss" is the only supported action.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'actionType: MailboxEnums.InfobarActionType;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.InfobarActionType:enum" />'
+        type: <xref uid="outlook!Office.MailboxEnums.InfobarActionType:enum" />
   - name: infobarType
-    uid: 'outlook!Office.InfobarDetails#infobarType:member'
+    uid: outlook!Office.InfobarDetails#infobarType:member
     package: outlook!
     fullName: infobarType
     summary: The notification type.
-    remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'infobarType: MailboxEnums.InfobarType;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.InfobarType:enum" />'
+        type: <xref uid="outlook!Office.MailboxEnums.InfobarType:enum" />

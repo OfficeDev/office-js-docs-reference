@@ -1,11 +1,12 @@
 ### YamlMime:TSTypeAlias
 name: Excel.ErrorCellValue
-uid: 'excel!Excel.ErrorCellValue:type'
+uid: excel!Excel.ErrorCellValue:type
 package: excel!
 fullName: Excel.ErrorCellValue
 summary: Represents a cell value which contains an error.
 remarks: >-
-  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   #### Examples
@@ -36,10 +37,37 @@ remarks: >-
   });
 
   ```
+
+
+  Learn more about the types in this type alias through the following links: 
+
+
+  [Excel.BlockedErrorCellValue](/javascript/api/excel/excel.blockederrorcellvalue),
+  [Excel.BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue),
+  [Excel.CalcErrorCellValue](/javascript/api/excel/excel.calcerrorcellvalue),
+  [Excel.ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue),
+  [Excel.Div0ErrorCellValue](/javascript/api/excel/excel.div0errorcellvalue),
+  [Excel.ExternalErrorCellValue](/javascript/api/excel/excel.externalerrorcellvalue),
+  [Excel.FieldErrorCellValue](/javascript/api/excel/excel.fielderrorcellvalue),
+  [Excel.GettingDataErrorCellValue](/javascript/api/excel/excel.gettingdataerrorcellvalue),
+  [Excel.NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue),
+  [Excel.NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue),
+  [Excel.NullErrorCellValue](/javascript/api/excel/excel.nullerrorcellvalue),
+  [Excel.NumErrorCellValue](/javascript/api/excel/excel.numerrorcellvalue),
+  [Excel.PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue),
+  [Excel.PythonErrorCellValue](/javascript/api/excel/excel.pythonerrorcellvalue),
+  [Excel.RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue),
+  [Excel.SpillErrorCellValue](/javascript/api/excel/excel.spillerrorcellvalue),
+  [Excel.TimeoutErrorCellValue](/javascript/api/excel/excel.timeouterrorcellvalue),
+  [Excel.ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)
+
 isPreview: false
 isDeprecated: false
 syntax: >-
-  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue |
-  Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
-  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue |
-  PythonErrorCellValue | RefErrorCellValue | SpillErrorCellValue | TimeoutErrorCellValue | ValueErrorCellValue;
+  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue |
+  CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
+  ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
+  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue |
+  NumErrorCellValue | PlaceholderErrorCellValue | PythonErrorCellValue |
+  RefErrorCellValue | SpillErrorCellValue | TimeoutErrorCellValue |
+  ValueErrorCellValue;

@@ -1,20 +1,27 @@
 ### YamlMime:TSType
 name: Excel.CardLayoutSectionStandardProperties
-uid: 'excel!Excel.CardLayoutSectionStandardProperties:interface'
+uid: excel!Excel.CardLayoutSectionStandardProperties:interface
 package: excel!
 fullName: Excel.CardLayoutSectionStandardProperties
 summary: Properties of a card layout relevant to most card layouts.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: collapsed
-    uid: 'excel!Excel.CardLayoutSectionStandardProperties#collapsed:member'
+    uid: excel!Excel.CardLayoutSectionStandardProperties#collapsed:member
     package: excel!
     fullName: collapsed
     summary: Represents whether this section of the card is initially collapsed.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,13 +29,18 @@ properties:
       return:
         type: boolean
   - name: collapsible
-    uid: 'excel!Excel.CardLayoutSectionStandardProperties#collapsible:member'
+    uid: excel!Excel.CardLayoutSectionStandardProperties#collapsible:member
     package: excel!
     fullName: collapsible
     summary: >-
-      Represents whether this section of the card is collapsible. If the card section has a title, the default value is
-      `true`<!-- -->. If the card section doesn't have a title, the default value is `false`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents whether this section of the card is collapsible. If the card
+      section has a title, the default value is `true`<!-- -->. If the card
+      section doesn't have a title, the default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,23 +48,31 @@ properties:
       return:
         type: boolean
   - name: properties
-    uid: 'excel!Excel.CardLayoutSectionStandardProperties#properties:member'
+    uid: excel!Excel.CardLayoutSectionStandardProperties#properties:member
     package: excel!
     fullName: properties
     summary: Represents the names of the properties in this section.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'properties: string[];'
       return:
-        type: 'string[]'
+        type: string[]
   - name: title
-    uid: 'excel!Excel.CardLayoutSectionStandardProperties#title:member'
+    uid: excel!Excel.CardLayoutSectionStandardProperties#title:member
     package: excel!
     fullName: title
     summary: Represents the title of this section of the card.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

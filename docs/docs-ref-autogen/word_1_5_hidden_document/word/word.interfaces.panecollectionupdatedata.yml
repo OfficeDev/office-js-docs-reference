@@ -1,23 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.PaneCollectionUpdateData
-uid: 'word!Word.Interfaces.PaneCollectionUpdateData:interface'
+uid: word!Word.Interfaces.PaneCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.PaneCollectionUpdateData
-summary: 'An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `PaneCollection` object, for use in
+  `paneCollection.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.PaneCollectionUpdateData#items:member'
+    uid: word!Word.Interfaces.PaneCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.PaneData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.PaneData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.PaneData:interface" />[]

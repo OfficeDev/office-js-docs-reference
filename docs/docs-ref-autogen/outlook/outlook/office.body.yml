@@ -1,31 +1,34 @@
 ### YamlMime:TSType
 name: Office.Body
-uid: 'outlook!Office.Body:interface'
+uid: outlook!Office.Body:interface
 package: outlook!
 fullName: Office.Body
 summary: >-
-  The body object provides methods for adding and updating the content of the message or appointment. It is returned in
-  the body property of the selected item.
+  The body object provides methods for adding and updating the content of the
+  message or appointment. It is returned in the body property of the selected
+  item.
 remarks: >-
-  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **Known issue with HTML table border colors**
 
 
-  Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a
-  cell's borders may not reflect the expected color. For the known behavior, visit [OfficeDev/office-js issue
+  Outlook on Windows: If you're setting various cell borders to different colors
+  in an HTML table in Compose mode, a cell's borders may not reflect the
+  expected color. For the known behavior, visit [OfficeDev/office-js issue
   \#1818](https://github.com/OfficeDev/office-js/issues/1818)<!-- -->.
 
 
   **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose or Read
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
 
 
   #### Examples
@@ -39,7 +42,8 @@ remarks: >-
 
   // Get the current body of the message or appointment.
 
-  Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
+  Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html,
+  (bodyResult) => {
     if (bodyResult.status === Office.AsyncResultStatus.Failed) {
       console.log(`Failed to get body: ${bodyResult.error.message}`);
       return;
@@ -68,25 +72,32 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'appendOnSendAsync(data, options, callback)'
-    uid: 'outlook!Office.Body#appendOnSendAsync:member(1)'
+  - name: appendOnSendAsync(data, options, callback)
+    uid: outlook!Office.Body#appendOnSendAsync:member(1)
     package: outlook!
-    fullName: 'appendOnSendAsync(data, options, callback)'
+    fullName: appendOnSendAsync(data, options, callback)
     summary: >-
-      Appends on send the specified content to the end of the item body, after any signature.
+      Appends on send the specified content to the end of the item body, after
+      any signature.
 
 
-      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary with
-      the type of manifest. See [Understanding Outlook add-in
+      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary
+      permission in the manifest. Details vary with the type of manifest. See
+      [Understanding Outlook add-in
       permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
+      -->. To learn more about append-on-send and its configuration, see
+      [Implement append-on-send in your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!--
+      -->.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -99,45 +110,51 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned
+      value to the `options.coercionType` parameter.
 
 
       **Important**:
 
 
       - If the user is running add-ins that implement the [on-send
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins) using `ItemSend` in the
-      manifest, append-on-send runs before on-send functionality.
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)
+      using `ItemSend` in the manifest, append-on-send runs before on-send
+      functionality.
 
 
-      - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler, the
-      `appendOnSendAsync` call returns an error as this scenario isn't supported.
+      - If your add-in implements the on-send feature and calls
+      `appendOnSendAsync` in the `ItemSend` handler, the `appendOnSendAsync`
+      call returns an error as this scenario isn't supported.
 
 
-      - To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to
-      `null`<!-- -->.
+      - To clear data from a previous `appendOnSendAsync` call, you can call it
+      again with the `data` parameter set to `null`<!-- -->.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `appendOnSendAsync` method doesn't support inline CSS. Use internal
+      or external CSS instead.
 
 
-      - The `appendOnSendAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `appendOnSendAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 5,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
+      5,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` but the message body is in plain text.
 
 
       #### Examples
@@ -149,13 +166,15 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/append-text-on-send.yaml
 
 
-      // This snippet appends text to the end of the message or appointment's body once it's sent.
+      // This snippet appends text to the end of the message or appointment's
+      body once it's sent.
 
-      const text = (document.getElementById("text-field") as HTMLInputElement).value;
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
-      // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
-      appendOnSendAsync call.
+      // It's recommended to call getTypeAsync and pass its returned value to
+      the options.coercionType parameter of the appendOnSendAsync call.
 
       Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -175,48 +194,64 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        appendOnSendAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        appendOnSendAsync(data: string, options: Office.AsyncContextOptions &
+        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
+        => void): void;
       parameters:
         - id: data
-          description: 'The string to be added to the end of the body. The string is limited to 5,000 characters.'
+          description: >-
+            The string to be added to the end of the body. The string is limited
+            to 5,000 characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
-            format for the data to be appended. The string in the `data` parameter will be converted to this format.
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+            `coercionType`<!-- -->: The desired format for the data to be
+            appended. The string in the `data` parameter will be converted to
+            this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'appendOnSendAsync(data, callback)'
-    uid: 'outlook!Office.Body#appendOnSendAsync:member(2)'
+  - name: appendOnSendAsync(data, callback)
+    uid: outlook!Office.Body#appendOnSendAsync:member(2)
     package: outlook!
-    fullName: 'appendOnSendAsync(data, callback)'
+    fullName: appendOnSendAsync(data, callback)
     summary: >-
-      Appends on send the specified content to the end of the item body, after any signature.
+      Appends on send the specified content to the end of the item body, after
+      any signature.
 
 
-      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary with
-      the type of manifest. See [Understanding Outlook add-in
+      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary
+      permission in the manifest. Details vary with the type of manifest. See
+      [Understanding Outlook add-in
       permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
+      -->. To learn more about append-on-send and its configuration, see
+      [Implement append-on-send in your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!--
+      -->.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -229,72 +264,90 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned
+      value to the `options.coercionType` parameter.
 
 
       **Important**:
 
 
       - If the user is running add-ins that implement the [on-send
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins) using `ItemSend` in the
-      manifest, append-on-send runs before on-send functionality.
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)
+      using `ItemSend` in the manifest, append-on-send runs before on-send
+      functionality.
 
 
-      - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler, the
-      `appendOnSendAsync` call returns an error as this scenario isn't supported.
+      - If your add-in implements the on-send feature and calls
+      `appendOnSendAsync` in the `ItemSend` handler, the `appendOnSendAsync`
+      call returns an error as this scenario isn't supported.
 
 
-      - To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to
-      `null`<!-- -->.
+      - To clear data from a previous `appendOnSendAsync` call, you can call it
+      again with the `data` parameter set to `null`<!-- -->.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `appendOnSendAsync` method doesn't support inline CSS. Use internal
+      or external CSS instead.
 
 
-      - The `appendOnSendAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `appendOnSendAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 5,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
+      5,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` but the message body is in plain text.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'appendOnSendAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        appendOnSendAsync(data: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: 'The string to be added to the end of the body. The string is limited to 5,000 characters.'
+          description: >-
+            The string to be added to the end of the body. The string is limited
+            to 5,000 characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'getAsync(coercionType, options, callback)'
-    uid: 'outlook!Office.Body#getAsync:member(1)'
+  - name: getAsync(coercionType, options, callback)
+    uid: outlook!Office.Body#getAsync:member(1)
     package: outlook!
-    fullName: 'getAsync(coercionType, options, callback)'
-    summary: |-
+    fullName: getAsync(coercionType, options, callback)
+    summary: >-
       Returns the current body in a specified format.
 
-      This method returns the entire current body in the format specified by `coercionType`<!-- -->.
+
+      This method returns the entire current body in the format specified by
+      `coercionType`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -310,14 +363,17 @@ methods:
       **Important**:
 
 
-      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
-      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
-      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
+      - When working with HTML-formatted bodies, it's important to note that the
+      value returned by the `Body.getAsync` method won't necessarily be the
+      exact same value that was previously passed in the `Body.setAsync` method.
+      The client may modify the value passed to `setAsync` to make it render
+      efficiently with its rendering engine.
 
 
       - In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the body contains
-      formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, if the body contains formatted elements, such as tables, lists, and
+      links, specify `Office.CoercionType.Html` in the `getAsync` call.
       Otherwise, you may receive an unexpected value, such as an empty string.
 
 
@@ -335,7 +391,8 @@ methods:
               // Do something with the result.
           });
 
-      // The following is an example of the result parameter passed to the callback function.
+      // The following is an example of the result parameter passed to the
+      callback function.
 
       {
           "value": "TEXT of whole body (including threads below)",
@@ -344,40 +401,50 @@ methods:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<string>) => void): void;
+        getAsync(coercionType: Office.CoercionType | string, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: coercionType
           description: The format for the returned body.
-          type: '<xref uid="office!Office.CoercionType:enum" /> | string'
+          type: <xref uid="office!Office.CoercionType:enum" /> | string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. The body is provided in the requested format in the
-            `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            Office.AsyncResult. The body is provided in the requested format in
+            the `asyncResult.value` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'getAsync(coercionType, callback)'
-    uid: 'outlook!Office.Body#getAsync:member(2)'
+  - name: getAsync(coercionType, callback)
+    uid: outlook!Office.Body#getAsync:member(2)
     package: outlook!
-    fullName: 'getAsync(coercionType, callback)'
-    summary: |-
+    fullName: getAsync(coercionType, callback)
+    summary: >-
       Returns the current body in a specified format.
 
-      This method returns the entire current body in the format specified by `coercionType`<!-- -->.
+
+      This method returns the entire current body in the format specified by
+      `coercionType`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -393,14 +460,17 @@ methods:
       **Important**:
 
 
-      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
-      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
-      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
+      - When working with HTML-formatted bodies, it's important to note that the
+      value returned by the `Body.getAsync` method won't necessarily be the
+      exact same value that was previously passed in the `Body.setAsync` method.
+      The client may modify the value passed to `setAsync` to make it render
+      efficiently with its rendering engine.
 
 
       - In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the body contains
-      formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, if the body contains formatted elements, such as tables, lists, and
+      links, specify `Office.CoercionType.Html` in the `getAsync` call.
       Otherwise, you may receive an unexpected value, such as an empty string.
 
 
@@ -415,7 +485,8 @@ methods:
 
       // Get the current body of the message or appointment.
 
-      Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
+      Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html,
+      (bodyResult) => {
         if (bodyResult.status === Office.AsyncResultStatus.Failed) {
           console.log(`Failed to get body: ${bodyResult.error.message}`);
           return;
@@ -444,32 +515,38 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(coercionType: Office.CoercionType | string, callback?: (asyncResult: Office.AsyncResult<string>)
-        => void): void;
+        getAsync(coercionType: Office.CoercionType | string, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: coercionType
           description: The format for the returned body.
-          type: '<xref uid="office!Office.CoercionType:enum" /> | string'
+          type: <xref uid="office!Office.CoercionType:enum" /> | string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. The body is provided in the requested format in the
-            `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            Office.AsyncResult. The body is provided in the requested format in
+            the `asyncResult.value` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'getTypeAsync(options, callback)'
-    uid: 'outlook!Office.Body#getTypeAsync:member(1)'
+  - name: getTypeAsync(options, callback)
+    uid: outlook!Office.Body#getTypeAsync:member(1)
     package: outlook!
-    fullName: 'getTypeAsync(options, callback)'
+    fullName: getTypeAsync(options, callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -482,10 +559,12 @@ methods:
       -->**: Compose
 
 
-      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
-      the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
-      [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **Important**: In Outlook on Android and on iOS, this method isn't
+      supported in the Message Compose mode. Only the Appointment Organizer mode
+      is supported. For more information on supported APIs in Outlook mobile,
+      see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
       #### Examples
@@ -497,7 +576,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-body-format.yaml
 
 
-      // Get the mail item's body format (plain text or HTML) and log it to the console.
+      // Get the mail item's body format (plain text or HTML) and log it to the
+      console.
 
       Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -509,36 +589,41 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getTypeAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<Office.CoercionType>) => void): void;
+        getTypeAsync(options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<Office.CoercionType>) => void): void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. The content type is returned as one of the `CoercionType`
-            values in the `asyncResult.value` property.
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. The content type is returned as one of
+            the `CoercionType` values in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
       return:
         type: void
         description: ''
   - name: getTypeAsync(callback)
-    uid: 'outlook!Office.Body#getTypeAsync:member(2)'
+    uid: outlook!Office.Body#getTypeAsync:member(2)
     package: outlook!
     fullName: getTypeAsync(callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -551,33 +636,41 @@ methods:
       -->**: Compose
 
 
-      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
-      the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
-      [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **Important**: In Outlook on Android and on iOS, this method isn't
+      supported in the Message Compose mode. Only the Appointment Organizer mode
+      is supported. For more information on supported APIs in Outlook mobile,
+      see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getTypeAsync(callback?: (asyncResult: Office.AsyncResult<Office.CoercionType>) => void): void;'
+      content: >-
+        getTypeAsync(callback?: (asyncResult:
+        Office.AsyncResult<Office.CoercionType>) => void): void;
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. The content type is returned as one of the `CoercionType`
-            values in the `asyncResult.value` property.
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. The content type is returned as one of
+            the `CoercionType` values in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="office!Office.CoercionType:enum" />&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'prependAsync(data, options, callback)'
-    uid: 'outlook!Office.Body#prependAsync:member(1)'
+  - name: prependAsync(data, options, callback)
+    uid: outlook!Office.Body#prependAsync:member(1)
     package: outlook!
-    fullName: 'prependAsync(data, options, callback)'
+    fullName: prependAsync(data, options, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -590,54 +683,66 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned
+      value to the `options.coercionType` parameter.
 
 
       **Important**:
 
 
-      - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows
-      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
-      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
-      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
-      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
-      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
-      mail item.
+      - After the content is prepended, the position of the cursor depends on
+      which client the add-in is running. In Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+      and classic), the cursor position remains the same in the preexisting
+      content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear
+      between the prepended content and the preexisting content of the body
+      after the call. In Outlook on Mac, the cursor position isn't preserved.
+      The cursor disappears after the `prependAsync` call and only reappears
+      when the user selects something in the body of the mail item.
 
 
-      - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
-      `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a
-      subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact
-      value that was passed in the previous `prependAsync` call.
+      - When working with HTML-formatted bodies, it's important to note that the
+      client may modify the value passed to `prependAsync` to make it render
+      efficiently with its rendering engine. This means that the value returned
+      from a subsequent call to the `Body.getAsync` method (introduced in
+      Mailbox 1.3) won't necessarily contain the exact value that was passed in
+      the previous `prependAsync` call.
 
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview
+      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
+      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a
+      sample).
 
 
-      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
-      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
-      APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on Android and on iOS, this method isn't supported in the
+      Message Compose mode. Only the Appointment Organizer mode is supported.
+      For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `prependAsync` method doesn't support inline CSS. Use internal or
+      external CSS instead.
 
 
-      - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
-      method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `prependAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
+      1,000,000 characters.
 
 
       #### Examples
@@ -649,16 +754,18 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-to-item-body.yaml
 
 
-      /* This snippet adds text to the beginning of the message or appointment's body. 
+      /* This snippet adds text to the beginning of the message or appointment's
+      body. 
         
         When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
-      const text = (document.getElementById("text-field") as HTMLInputElement).value;
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
-      // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
-      prependAsync call.
+      // It's recommended to call getTypeAsync and pass its returned value to
+      the options.coercionType parameter of the prependAsync call.
 
       Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -678,40 +785,51 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        prependAsync(data: string, options: Office.AsyncContextOptions &
+        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
+        => void): void;
       parameters:
         - id: data
-          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          description: >-
+            The string to be inserted at the beginning of the body. The string
+            is limited to 1,000,000 characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
-            format for the body. The string in the `data` parameter will be converted to this format.
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+            `coercionType`<!-- -->: The desired format for the body. The string
+            in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'prependAsync(data, callback)'
-    uid: 'outlook!Office.Body#prependAsync:member(2)'
+  - name: prependAsync(data, callback)
+    uid: outlook!Office.Body#prependAsync:member(2)
     package: outlook!
-    fullName: 'prependAsync(data, callback)'
+    fullName: prependAsync(data, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -724,85 +842,109 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned
+      value to the `options.coercionType` parameter.
 
 
       **Important**:
 
 
-      - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows
-      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
-      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
-      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
-      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
-      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
-      mail item.
+      - After the content is prepended, the position of the cursor depends on
+      which client the add-in is running. In Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+      and classic), the cursor position remains the same in the preexisting
+      content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear
+      between the prepended content and the preexisting content of the body
+      after the call. In Outlook on Mac, the cursor position isn't preserved.
+      The cursor disappears after the `prependAsync` call and only reappears
+      when the user selects something in the body of the mail item.
 
 
-      - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
-      `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a
-      subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact
-      value that was passed in the previous `prependAsync` call.
+      - When working with HTML-formatted bodies, it's important to note that the
+      client may modify the value passed to `prependAsync` to make it render
+      efficiently with its rendering engine. This means that the value returned
+      from a subsequent call to the `Body.getAsync` method (introduced in
+      Mailbox 1.3) won't necessarily contain the exact value that was passed in
+      the previous `prependAsync` call.
 
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview
+      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
+      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a
+      sample).
 
 
-      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
-      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
-      APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on Android and on iOS, this method isn't supported in the
+      Message Compose mode. Only the Appointment Organizer mode is supported.
+      For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `prependAsync` method doesn't support inline CSS. Use internal or
+      external CSS instead.
 
 
-      - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
-      method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `prependAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
+      1,000,000 characters.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'prependAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        prependAsync(data: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          description: >-
+            The string to be inserted at the beginning of the body. The string
+            is limited to 1,000,000 characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'prependOnSendAsync(data, options, callback)'
-    uid: 'outlook!Office.Body#prependOnSendAsync:member(1)'
+  - name: prependOnSendAsync(data, options, callback)
+    uid: outlook!Office.Body#prependOnSendAsync:member(1)
     package: outlook!
-    fullName: 'prependOnSendAsync(data, options, callback)'
+    fullName: prependOnSendAsync(data, options, callback)
     summary: >-
-      Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+      Prepends HTML or plain text to the beginning of a message or appointment
+      body when the mail item is sent.
 
 
-      To use `prependOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary
-      with the type of manifest. For guidance, see [Understanding Outlook add-in
+      To use `prependOnSendAsync`<!-- -->, you must specify a supplementary
+      permission in the manifest. Details vary with the type of manifest. For
+      guidance, see [Understanding Outlook add-in
       permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -815,48 +957,56 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned
+      value to the `options.coercionType` parameter.
 
 
-      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
+      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep
+      the following in mind.
 
 
       - In a [Smart Alerts
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->,
-      the prepend-on-send feature runs first.
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!--
+      -->, the prepend-on-send feature runs first.
 
 
       - A new line is added after the prepended content.
 
 
-      - If multiple active add-ins call `prependOnSendAsync`<!-- -->, the order of the inserted content depends on the
-      order in which the add-in runs. The content of the last run add-in appears above previously prepended content.
+      - If multiple active add-ins call `prependOnSendAsync`<!-- -->, the order
+      of the inserted content depends on the order in which the add-in runs. The
+      content of the last run add-in appears above previously prepended content.
 
 
-      - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain
-      text will be inserted into an HTML body.
+      - If the add-in attempts to insert HTML into a plain text body, the
+      content won't be prepended. Conversely, plain text will be inserted into
+      an HTML body.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `prependOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `prependOnSendAsync` method doesn't support inline CSS. Use internal
+      or external CSS instead.
 
 
-      - The `prependOnSendAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `prependOnSendAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000
+      characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html`<!-- -->,
-      but the item body is in plain text format.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html`<!-- -->, but the item body is in plain
+      text format.
 
 
       #### Examples
@@ -868,13 +1018,15 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-on-send.yaml
 
 
-      // This snippet prepends text to the beginning of the message or appointment's body once it's sent.
+      // This snippet prepends text to the beginning of the message or
+      appointment's body once it's sent.
 
-      const text = (document.getElementById("text-field") as HTMLInputElement).value;
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
-      // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
-      prependOnSendAsync call.
+      // It's recommended to call getTypeAsync and pass its returned value to
+      the options.coercionType parameter of the prependOnSendAsync call.
 
       Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -894,49 +1046,60 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        prependOnSendAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        prependOnSendAsync(data: string, options: Office.AsyncContextOptions &
+        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
+        => void): void;
       parameters:
         - id: data
           description: >-
-            The string to be prepended to the beginning of the message or appointment body. The string is limited to
-            5,000 characters.
+            The string to be prepended to the beginning of the message or
+            appointment body. The string is limited to 5,000 characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Any object
-            that can be accessed in the callback function. `coercionType`<!-- -->: The desired format for the body. The
-            string in the `data` parameter is converted to this format.
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Any object that can be accessed
+            in the callback function. `coercionType`<!-- -->: The desired format
+            for the body. The string in the `data` parameter is converted to
+            this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'prependOnSendAsync(data, callback)'
-    uid: 'outlook!Office.Body#prependOnSendAsync:member(2)'
+  - name: prependOnSendAsync(data, callback)
+    uid: outlook!Office.Body#prependOnSendAsync:member(2)
     package: outlook!
-    fullName: 'prependOnSendAsync(data, callback)'
+    fullName: prependOnSendAsync(data, callback)
     summary: >-
-      Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+      Prepends HTML or plain text to the beginning of a message or appointment
+      body when the mail item is sent.
 
 
-      To use `prependOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary
-      with the type of manifest. For guidance, see [Understanding Outlook add-in
+      To use `prependOnSendAsync`<!-- -->, you must specify a supplementary
+      permission in the manifest. Details vary with the type of manifest. For
+      guidance, see [Understanding Outlook add-in
       permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -949,74 +1112,90 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned
+      value to the `options.coercionType` parameter.
 
 
-      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
+      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep
+      the following in mind.
 
 
       - In a [Smart Alerts
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->,
-      the prepend-on-send feature runs first.
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!--
+      -->, the prepend-on-send feature runs first.
 
 
       - A new line is added after the prepended content.
 
 
-      - If multiple active add-ins call `prependOnSendAsync`<!-- -->, the order of the inserted content depends on the
-      order in which the add-in runs. The content of the last run add-in appears above previously prepended content.
+      - If multiple active add-ins call `prependOnSendAsync`<!-- -->, the order
+      of the inserted content depends on the order in which the add-in runs. The
+      content of the last run add-in appears above previously prepended content.
 
 
-      - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain
-      text will be inserted into an HTML body.
+      - If the add-in attempts to insert HTML into a plain text body, the
+      content won't be prepended. Conversely, plain text will be inserted into
+      an HTML body.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `prependOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `prependOnSendAsync` method doesn't support inline CSS. Use internal
+      or external CSS instead.
 
 
-      - The `prependOnSendAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `prependOnSendAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000
+      characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html`<!-- -->,
-      but the item body is in plain text format.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html`<!-- -->, but the item body is in plain
+      text format.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'prependOnSendAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        prependOnSendAsync(data: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-
-            The string to be prepended to the beginning of the message or appointment body. The string is limited to
-            5,000 characters.
+            The string to be prepended to the beginning of the message or
+            appointment body. The string is limited to 5,000 characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setAsync(data, options, callback)'
-    uid: 'outlook!Office.Body#setAsync:member(1)'
+  - name: setAsync(data, options, callback)
+    uid: outlook!Office.Body#setAsync:member(1)
     package: outlook!
-    fullName: 'setAsync(data, options, callback)'
+    fullName: setAsync(data, options, callback)
     summary: Replaces the entire body with the specified text.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1029,60 +1208,72 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned
+      value to the `options.coercionType` parameter.
 
 
       **Important**:
 
 
-      - After the body is replaced with the specified content, the position of the cursor depends on which client the
-      add-in is running. In classic Outlook on Windows, the cursor appears at the beginning of the body of the mail
-      item. In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the cursor appears at
-      the end of the body of the mail item. In Outlook on Mac, the cursor position isn't preserved. The cursor
-      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
-      mail item.
+      - After the body is replaced with the specified content, the position of
+      the cursor depends on which client the add-in is running. In classic
+      Outlook on Windows, the cursor appears at the beginning of the body of the
+      mail item. In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the cursor appears at the end of the body of the mail item. In
+      Outlook on Mac, the cursor position isn't preserved. The cursor disappears
+      after the `prependAsync` call and only reappears when the user selects
+      something in the body of the mail item.
 
 
-      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
-      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
-      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
+      - When working with HTML-formatted bodies, it's important to note that the
+      value returned by the `Body.getAsync` method won't necessarily be the
+      exact same value that was previously passed in the `Body.setAsync` method.
+      The client may modify the value passed to `setAsync` to make it render
+      efficiently with its rendering engine.
 
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview
+      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
+      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a
+      sample).
 
 
-      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
-      **Undo** command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able
+      to revert this action with the **Undo** command.
 
 
-      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
-      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
-      APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on Android and on iOS, this method isn't supported in the
+      Message Compose mode. Only the Appointment Organizer mode is supported.
+      For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `setAsync` method doesn't support inline CSS. Use internal or
+      external CSS instead.
 
 
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
-      For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
+      1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` and the message body is in plain text.
 
 
       #### Examples
@@ -1090,7 +1281,8 @@ methods:
 
       ```TypeScript
 
-      // When including links in HTML markup, you can disable online link preview
+      // When including links in HTML markup, you can disable online link
+      preview
 
       // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
@@ -1106,7 +1298,8 @@ methods:
       );
 
 
-      // The following is an example of the result parameter passed to the callback function.
+      // The following is an example of the result parameter passed to the
+      callback function.
 
       {
           "value": null,
@@ -1124,7 +1317,8 @@ methods:
 
       // Get the current body of the message or appointment.
 
-      Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
+      Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html,
+      (bodyResult) => {
         if (bodyResult.status === Office.AsyncResultStatus.Failed) {
           console.log(`Failed to get body: ${bodyResult.error.message}`);
           return;
@@ -1153,40 +1347,51 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        setAsync(data: string, options: Office.AsyncContextOptions &
+        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
+        => void): void;
       parameters:
         - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          description: >-
+            The string that will replace the existing body. The string is
+            limited to 1,000,000 characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
-            format for the body. The string in the `data` parameter will be converted to this format.
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+            `coercionType`<!-- -->: The desired format for the body. The string
+            in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            Office.AsyncResult. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setAsync(data, callback)'
-    uid: 'outlook!Office.Body#setAsync:member(2)'
+  - name: setAsync(data, callback)
+    uid: outlook!Office.Body#setAsync:member(2)
     package: outlook!
-    fullName: 'setAsync(data, callback)'
+    fullName: setAsync(data, callback)
     summary: Replaces the entire body with the specified text.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1199,91 +1404,115 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned
+      value to the `options.coercionType` parameter.
 
 
       **Important**:
 
 
-      - After the body is replaced with the specified content, the position of the cursor depends on which client the
-      add-in is running. In classic Outlook on Windows, the cursor appears at the beginning of the body of the mail
-      item. In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the cursor appears at
-      the end of the body of the mail item. In Outlook on Mac, the cursor position isn't preserved. The cursor
-      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
-      mail item.
+      - After the body is replaced with the specified content, the position of
+      the cursor depends on which client the add-in is running. In classic
+      Outlook on Windows, the cursor appears at the beginning of the body of the
+      mail item. In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the cursor appears at the end of the body of the mail item. In
+      Outlook on Mac, the cursor position isn't preserved. The cursor disappears
+      after the `prependAsync` call and only reappears when the user selects
+      something in the body of the mail item.
 
 
-      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
-      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
-      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
+      - When working with HTML-formatted bodies, it's important to note that the
+      value returned by the `Body.getAsync` method won't necessarily be the
+      exact same value that was previously passed in the `Body.setAsync` method.
+      The client may modify the value passed to `setAsync` to make it render
+      efficiently with its rendering engine.
 
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview
+      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
+      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a
+      sample).
 
 
-      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
-      **Undo** command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able
+      to revert this action with the **Undo** command.
 
 
-      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
-      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
-      APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on Android and on iOS, this method isn't supported in the
+      Message Compose mode. Only the Appointment Organizer mode is supported.
+      For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `setAsync` method doesn't support inline CSS. Use internal or
+      external CSS instead.
 
 
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
-      For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
+      1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` and the message body is in plain text.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(data: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          description: >-
+            The string that will replace the existing body. The string is
+            limited to 1,000,000 characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            Office.AsyncResult. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setSelectedDataAsync(data, options, callback)'
-    uid: 'outlook!Office.Body#setSelectedDataAsync:member(1)'
+  - name: setSelectedDataAsync(data, options, callback)
+    uid: outlook!Office.Body#setSelectedDataAsync:member(1)
     package: outlook!
-    fullName: 'setSelectedDataAsync(data, options, callback)'
+    fullName: setSelectedDataAsync(data, options, callback)
     summary: >-
       Replaces the selection in the body with the specified text.
 
 
-      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or,
-      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
-      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
-      insertion, the cursor is placed at the end of the inserted content.
+      The `setSelectedDataAsync` method inserts the specified string at the
+      cursor location in the body of the item, or, if text is selected in the
+      editor, it replaces the selected text. If the cursor was never in the body
+      of the item, or if the body of the item lost focus in the UI, the string
+      will be inserted at the top of the body content. After insertion, the
+      cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1296,35 +1525,42 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to
+      the `options.coercionType` parameter.
 
 
       **Important**:
 
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview
+      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
+      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a
+      sample).
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `setSelectedDataAsync` method doesn't support inline CSS. Use
+      internal or external CSS instead.
 
 
-      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `setSelectedDataAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
+      1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` and the message body is in plain text.
 
 
       #### Examples
@@ -1336,16 +1572,18 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/replace-selected-text.yaml
 
 
-      /* This snippet replaces selected text in a message or appointment's body with specified text.
+      /* This snippet replaces selected text in a message or appointment's body
+      with specified text.
         
         If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
-      const text = (document.getElementById("text-field") as HTMLInputElement).value;
+      const text = (document.getElementById("text-field") as
+      HTMLInputElement).value;
 
 
-      // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
-      prependAsync call.
+      // It's recommended to call getTypeAsync and pass its returned value to
+      the options.coercionType parameter of the prependAsync call.
 
       Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -1365,47 +1603,60 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &
+        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
+        => void): void;
       parameters:
         - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          description: >-
+            The string that will replace the existing body. The string is
+            limited to 1,000,000 characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
-            format for the body. The string in the `data` parameter will be converted to this format.
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+            `coercionType`<!-- -->: The desired format for the body. The string
+            in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setSelectedDataAsync(data, callback)'
-    uid: 'outlook!Office.Body#setSelectedDataAsync:member(2)'
+  - name: setSelectedDataAsync(data, callback)
+    uid: outlook!Office.Body#setSelectedDataAsync:member(2)
     package: outlook!
-    fullName: 'setSelectedDataAsync(data, callback)'
+    fullName: setSelectedDataAsync(data, callback)
     summary: >-
       Replaces the selection in the body with the specified text.
 
 
-      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or,
-      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
-      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
-      insertion, the cursor is placed at the end of the inserted content.
+      The `setSelectedDataAsync` method inserts the specified string at the
+      cursor location in the body of the item, or, if text is selected in the
+      editor, it replaces the selected text. If the cursor was never in the body
+      of the item, or if the body of the item lost focus in the UI, the string
+      will be inserted at the top of the body content. After insertion, the
+      cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1418,61 +1669,79 @@ methods:
       -->**: Compose
 
 
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to
+      the `options.coercionType` parameter.
 
 
       **Important**:
 
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview
+      by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!--
+      -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a
+      sample).
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
 
-      - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `setSelectedDataAsync` method doesn't support inline CSS. Use
+      internal or external CSS instead.
 
 
-      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `setSelectedDataAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
+      1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` and the message body is in plain text.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        setSelectedDataAsync(data: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          description: >-
+            The string that will replace the existing body. The string is
+            limited to 1,000,000 characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
-            `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setSignatureAsync(data, options, callback)'
-    uid: 'outlook!Office.Body#setSignatureAsync:member(1)'
+  - name: setSignatureAsync(data, options, callback)
+    uid: outlook!Office.Body#setSignatureAsync:member(1)
     package: outlook!
-    fullName: 'setSignatureAsync(data, options, callback)'
+    fullName: setSignatureAsync(data, options, callback)
     summary: >-
-      Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the
-      body, replaces that signature.
+      Adds a signature to the item body if it doesn't have an existing
+      signature. If there's already a signature in the body, replaces that
+      signature.
     remarks: >-
-      \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1489,43 +1758,54 @@ methods:
 
 
       - In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `setSignatureAsync`
-      only works on messages.
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
-      sample scenario, see [Implement event-based activation in Outlook mobile
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
-      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - This method is supported in Message Compose on Outlook on Android and on
+      iOS starting in Version 4.2352.0. For a sample scenario, see [Implement
+      event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!--
+      -->. To learn more about APIs supported in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
-      - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-      [event-based activation feature using LaunchEvent in the
-      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
-      item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
-      the form without making other edits, they won't be prompted to save changes.
+      - The behavior of `setSignatureAsync` differs if you call it in the event
+      handler of an add-in that implements the [event-based activation feature
+      using LaunchEvent in the
+      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      -->. When the user composes a new item (including reply or forward), the
+      signature is set but doesn't modify the form. This means if the user
+      closes the form without making other edits, they won't be prompted to save
+      changes.
 
 
-      - SVG files aren't supported in mail signatures. Use JPG or PNG files instead.
+      - SVG files aren't supported in mail signatures. Use JPG or PNG files
+      instead.
 
 
-      - The `setSignatureAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `setSignatureAsync` method doesn't support inline CSS. Use internal
+      or external CSS instead.
 
 
-      - The `setSignatureAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `setSignatureAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 30,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
+      30,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` and the message body is in plain text.
 
 
       #### Examples
@@ -1569,11 +1849,13 @@ methods:
 
       // Set the signature for the current item.
 
-      const signature = (document.getElementById("signature") as HTMLInputElement).value;
+      const signature = (document.getElementById("signature") as
+      HTMLInputElement).value;
 
       console.log(`Setting signature to "${signature}".`);
 
-      Office.context.mailbox.item.body.setSignatureAsync(signature, function(asyncResult) {
+      Office.context.mailbox.item.body.setSignatureAsync(signature,
+      function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("setSignatureAsync succeeded");
         } else {
@@ -1582,44 +1864,54 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setSignatureAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        setSignatureAsync(data: string, options: Office.AsyncContextOptions &
+        CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>)
+        => void): void;
       parameters:
         - id: data
           description: >-
-            The string that represents the signature to be set in the body of the mail. This string is limited to 30,000
-            characters.
+            The string that represents the signature to be set in the body of
+            the mail. This string is limited to 30,000 characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The format the
-            signature should be set to. If Text, the method sets the signature to plain text, removing any HTML tags
-            present. If Html, the method sets the signature to HTML.
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+            `coercionType`<!-- -->: The format the signature should be set to.
+            If Text, the method sets the signature to plain text, removing any
+            HTML tags present. If Html, the method sets the signature to HTML.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setSignatureAsync(data, callback)'
-    uid: 'outlook!Office.Body#setSignatureAsync:member(2)'
+  - name: setSignatureAsync(data, callback)
+    uid: outlook!Office.Body#setSignatureAsync:member(2)
     package: outlook!
-    fullName: 'setSignatureAsync(data, callback)'
+    fullName: setSignatureAsync(data, callback)
     summary: >-
-      Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the
-      body, replaces that signature.
+      Adds a signature to the item body if it doesn't have an existing
+      signature. If there's already a signature in the body, replaces that
+      signature.
     remarks: >-
-      \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1636,58 +1928,75 @@ methods:
 
 
       - In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `setSignatureAsync`
-      only works on messages.
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
-      sample scenario, see [Implement event-based activation in Outlook mobile
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
-      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - This method is supported in Message Compose on Outlook on Android and on
+      iOS starting in Version 4.2352.0. For a sample scenario, see [Implement
+      event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!--
+      -->. To learn more about APIs supported in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
 
 
-      - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-      [event-based activation feature using LaunchEvent in the
-      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
-      item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
-      the form without making other edits, they won't be prompted to save changes.
+      - The behavior of `setSignatureAsync` differs if you call it in the event
+      handler of an add-in that implements the [event-based activation feature
+      using LaunchEvent in the
+      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      -->. When the user composes a new item (including reply or forward), the
+      signature is set but doesn't modify the form. This means if the user
+      closes the form without making other edits, they won't be prompted to save
+      changes.
 
 
-      - SVG files aren't supported in mail signatures. Use JPG or PNG files instead.
+      - SVG files aren't supported in mail signatures. Use JPG or PNG files
+      instead.
 
 
-      - The `setSignatureAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+      - The `setSignatureAsync` method doesn't support inline CSS. Use internal
+      or external CSS instead.
 
 
-      - The `setSignatureAsync` method isn't supported on a message that's currently loaded using the
-      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      - The `setSignatureAsync` method isn't supported on a message that's
+      currently loaded using the `loadItemByIdAsync` method. For more
+      information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
 
 
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 30,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than
+      30,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
-      message body is in plain text.
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
+      set to `Office.CoercionType.Html` and the message body is in plain text.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setSignatureAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        setSignatureAsync(data: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-
-            The string that represents the signature to be set in the body of the mail. This string is limited to 30,000
-            characters.
+            The string that represents the signature to be set in the body of
+            the mail. This string is limited to 30,000 characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
