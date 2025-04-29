@@ -11,6 +11,35 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+  await Word.run(async (context) => {
+    // Gets text boxes in main document.
+    const shapes: Word.ShapeCollection = context.document.body.shapes;
+    shapes.load();
+    await context.sync();
+
+    if (shapes.items.length > 0) {
+      shapes.items.forEach(function(shape, index) {
+        if (shape.type === Word.ShapeType.textBox) {
+          console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+        }
+      });
+    } else {
+      console.log("No shapes found in main document.");
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -165,6 +194,32 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Sets the properties of the first text box.
+        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.textBox])
+          .getFirst();
+        firstShapeWithTextBox.top = 115;
+        firstShapeWithTextBox.left = 0;
+        firstShapeWithTextBox.width = 50;
+        firstShapeWithTextBox.height = 50;
+        await context.sync();
+
+        console.log("The first text box's properties were updated:", firstShapeWithTextBox);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,6 +241,34 @@ methods:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a content control into the first paragraph in the first text box.
+        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.textBox])
+          .getFirst();
+        firstShapeWithTextBox.load("type/body");
+        await context.sync();
+
+        const firstParagraphInTextBox: Word.Paragraph = firstShapeWithTextBox.body.paragraphs.getFirst();
+        const newControl: Word.ContentControl = firstParagraphInTextBox.insertContentControl();
+        newControl.load();
+        await context.sync();
+
+        console.log("New content control properties:", newControl);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
