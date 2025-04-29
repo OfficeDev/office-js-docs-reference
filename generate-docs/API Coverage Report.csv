@@ -11100,7 +11100,7 @@ Word.Body,"parentContentControl",Property,Great,false
 Word.Body,"parentContentControlOrNullObject",Property,Excellent,false
 Word.Body,"parentSection",Property,Great,false
 Word.Body,"parentSectionOrNullObject",Property,Excellent,false
-Word.Body,"shapes",Property,Good,false
+Word.Body,"shapes",Property,Good,true
 Word.Body,"style",Property,Excellent,false
 Word.Body,"styleBuiltIn",Property,Excellent,false
 Word.Body,"tables",Property,Fine,true
@@ -12387,7 +12387,7 @@ Word.InsertLocation,"before",EnumField,Good,false
 Word.InsertLocation,"end",EnumField,Good,false
 Word.InsertLocation,"replace",EnumField,Good,false
 Word.InsertLocation,"start",EnumField,Good,false
-Word.InsertShapeOptions,N/A,Interface,Unknown,false
+Word.InsertShapeOptions,N/A,Interface,Unknown,true
 Word.InsertShapeOptions,"height",Property,Poor,false
 Word.InsertShapeOptions,"left",Property,Fine,false
 Word.InsertShapeOptions,"top",Property,Fine,false
@@ -12753,7 +12753,7 @@ Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,fals
 Word.Paragraph,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Good,false
 Word.Paragraph,"insertText(text, insertLocation)",Method,Good,true
-Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
+Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
 Word.Paragraph,"load(options)",Method,Excellent,false
 Word.Paragraph,"load(propertyNames)",Method,Excellent,false
 Word.Paragraph,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -12873,13 +12873,13 @@ Word.Range,"insertFootnote(insertText)",Method,Fine,true
 Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertGeometricShape(geometricShapeTypeString, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertHtml(html, insertLocation)",Method,Fine,true
-Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,false
+Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
 Word.Range,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
 Word.Range,"insertParagraph(paragraphText, insertLocation)",Method,Fine,true
 Word.Range,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Good,false
 Word.Range,"insertText(text, insertLocation)",Method,Fine,true
-Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
+Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
 Word.Range,"intersectWith(range)",Method,Excellent,false
 Word.Range,"intersectWithOrNullObject(range)",Method,Excellent,false
 Word.Range,"load(options)",Method,Excellent,false
@@ -13070,7 +13070,7 @@ Word.ShadingTextureType,"percent87Pt5",EnumField,Fine,false
 Word.ShadingTextureType,"percent90",EnumField,Fine,false
 Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
-Word.Shape,N/A,Class,Missing,false
+Word.Shape,N/A,Class,Missing,true
 Word.Shape,"allowOverlap",Property,Great,false
 Word.Shape,"altTextDescription",Property,Excellent,false
 Word.Shape,"body",Property,Good,false
@@ -13098,11 +13098,11 @@ Word.Shape,"textFrame",Property,Fine,false
 Word.Shape,"textWrap",Property,Fine,false
 Word.Shape,"top",Property,Fine,false
 Word.Shape,"topRelative",Property,Fine,false
-Word.Shape,"type",Property,Fine,false
+Word.Shape,"type",Property,Fine,true
 Word.Shape,"visible",Property,Great,false
 Word.Shape,"width",Property,Poor,false
 Word.Shape,"widthRelative",Property,Fine,false
-Word.Shape,"delete()",Method,Fine,false
+Word.Shape,"delete()",Method,Fine,true
 Word.Shape,"load(options)",Method,Excellent,false
 Word.Shape,"load(propertyNames)",Method,Excellent,false
 Word.Shape,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -13123,7 +13123,7 @@ Word.ShapeAutoSize,"mixed",EnumField,Good,false
 Word.ShapeAutoSize,"none",EnumField,Fine,false
 Word.ShapeAutoSize,"shapeToFitText",EnumField,Fine,false
 Word.ShapeAutoSize,"textToFitShape",EnumField,Fine,false
-Word.ShapeCollection,N/A,Class,Unknown,false
+Word.ShapeCollection,N/A,Class,Unknown,true
 Word.ShapeCollection,"context",Property,Excellent,false
 Word.ShapeCollection,"items",Property,Poor,false
 Word.ShapeCollection,"getByGeometricTypes(types)",Method,Good,false
@@ -13131,8 +13131,8 @@ Word.ShapeCollection,"getById(id)",Method,Great,false
 Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Excellent,false
 Word.ShapeCollection,"getByIds(ids)",Method,Fine,false
 Word.ShapeCollection,"getByNames(names)",Method,Fine,false
-Word.ShapeCollection,"getByTypes(types)",Method,Fine,false
-Word.ShapeCollection,"getFirst()",Method,Great,false
+Word.ShapeCollection,"getByTypes(types)",Method,Fine,true
+Word.ShapeCollection,"getFirst()",Method,Great,true
 Word.ShapeCollection,"getFirstOrNullObject()",Method,Excellent,false
 Word.ShapeCollection,"group()",Method,Great,false
 Word.ShapeCollection,"load(options)",Method,Excellent,false
@@ -13228,7 +13228,7 @@ Word.ShapeTextWrapType,"square",EnumField,Fine,false
 Word.ShapeTextWrapType,"through",EnumField,Fine,false
 Word.ShapeTextWrapType,"tight",EnumField,Fine,false
 Word.ShapeTextWrapType,"topBottom",EnumField,Fine,false
-Word.ShapeType,N/A,Enum,Unknown,false
+Word.ShapeType,N/A,Enum,Unknown,true
 Word.ShapeType,"canvas",EnumField,Fine,false
 Word.ShapeType,"geometricShape",EnumField,Fine,false
 Word.ShapeType,"group",EnumField,Fine,false
