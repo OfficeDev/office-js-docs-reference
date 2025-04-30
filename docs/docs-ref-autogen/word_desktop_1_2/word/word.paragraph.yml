@@ -2467,6 +2467,36 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a text box at the beginning of the first paragraph in header.
+        const headerFooterBody: Word.Body = context.document.sections.getFirst().getHeader(Word.HeaderFooterType.primary);
+        headerFooterBody.load("paragraphs");
+        const firstParagraph: Word.Paragraph = headerFooterBody.paragraphs.getFirst();
+        const insertShapeOptions: Word.InsertShapeOptions = {
+          top: 0,
+          left: 0,
+          height: 100,
+          width: 100
+        };
+        const newTextBox: Word.Shape = firstParagraph.insertTextBox("placeholder text", insertShapeOptions);
+        newTextBox.select();
+        await context.sync();
+
+        console.log("Inserted a text box at the beginning of the first paragraph in the header.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

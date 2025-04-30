@@ -4,16 +4,7 @@ uid: excel!Excel.CardLayout:type
 package: excel!
 fullName: Excel.CardLayout
 summary: Represents the layout of a card in card view.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  Learn more about the types in this type alias through the following links: 
-
-
-  [Excel.EntityCardLayout](/javascript/api/excel/excel.entitycardlayout),
-  [Excel.EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)
+remarks: "\\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nLearn more about the types in this type alias through the following links. \r\n\r\n[Excel.EntityCardLayout](/javascript/api/excel/excel.entitycardlayout), [Excel.EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)"
 
 isPreview: false
 isDeprecated: false
