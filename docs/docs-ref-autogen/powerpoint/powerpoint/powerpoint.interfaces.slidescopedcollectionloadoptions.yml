@@ -53,9 +53,13 @@ properties:
     package: powerpoint!
     fullName: index
     summary: >-
-      For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the
-      presentation.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Returns the zero-based index of the slide
+      representing its position in the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,7 +4,11 @@ uid: powerpoint!PowerPoint.Binding:class
 package: powerpoint!
 fullName: PowerPoint.Binding
 summary: Represents an Office.js binding that is defined in the presentation.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,6 +21,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,7 +33,11 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Represents the binding identifier.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +49,11 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,7 +66,11 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: Deletes the binding.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,8 +82,14 @@ methods:
     uid: powerpoint!PowerPoint.Binding#getShape:member(1)
     package: powerpoint!
     fullName: getShape()
-    summary: Returns the shape represented by the binding. Will throw an error if the binding is not of the correct type.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Returns the shape represented by the binding. Will throw an error if the
+      binding is not of the correct type.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,6 +105,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,6 +130,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,6 +152,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,6 +190,7 @@ methods:
       contains shallow copies of any loaded child properties from the original
       object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -58,9 +58,14 @@ properties:
     package: powerpoint!
     fullName: group
     summary: >-
-      For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape. If the shape type isn't
-      `group`<!-- -->, then this method returns the `GeneralException` error.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Returns the `ShapeGroup` associated with
+      the shape. If the shape type isn't `group`<!-- -->, then this method
+      returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +144,11 @@ properties:
       - A level of 1 means the shape is part of a top-level group.
 
       - A level greater than 1 indicates the shape is a nested group.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,9 +200,14 @@ properties:
     package: powerpoint!
     fullName: parentGroup
     summary: >-
-      For EACH ITEM in the collection: Returns the parent group of this shape. If the shape isn't part of a group, then
-      this method returns the `GeneralException` error.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Returns the parent group of this shape.
+      If the shape isn't part of a group, then this method returns the
+      `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,9 +222,15 @@ properties:
     package: powerpoint!
     fullName: placeholderFormat
     summary: >-
-      For EACH ITEM in the collection: Returns the properties that apply specifically to this placeholder. If the shape
-      type isn't `placeholder`<!-- -->, then this method returns the `GeneralException` error.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Returns the properties that apply
+      specifically to this placeholder. If the shape type isn't
+      `placeholder`<!-- -->, then this method returns the `GeneralException`
+      error.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -307,10 +327,16 @@ properties:
     package: powerpoint!
     fullName: zOrderPosition
     summary: >-
-      For EACH ITEM in the collection: Returns the z-order position of the shape, with 0 representing the bottom of the
-      order stack. Every shape on a slide has a unique z-order, but each slide also has a unique z-order stack, so two
-      shapes on separate slides could have the same z-order number.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Returns the z-order position of the
+      shape, with 0 representing the bottom of the order stack. Every shape on a
+      slide has a unique z-order, but each slide also has a unique z-order
+      stack, so two shapes on separate slides could have the same z-order
+      number.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,7 +4,11 @@ uid: powerpoint!PowerPoint.TableCell:class
 package: powerpoint!
 fullName: PowerPoint.TableCell
 summary: Represents a table.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -13,8 +17,14 @@ properties:
     uid: powerpoint!PowerPoint.TableCell#columnCount:member
     package: powerpoint!
     fullName: columnCount
-    summary: Gets the number of table columns this cell spans across. Will be greater than or equal to 1.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Gets the number of table columns this cell spans across. Will be greater
+      than or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,7 +36,11 @@ properties:
     package: powerpoint!
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,6 +55,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,8 +66,14 @@ properties:
     uid: powerpoint!PowerPoint.TableCell#rowCount:member
     package: powerpoint!
     fullName: rowCount
-    summary: Gets the number of table rows this cell spans across. Will be greater than or equal to 1.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Gets the number of table rows this cell spans across. Will be greater than
+      or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +85,11 @@ properties:
     package: powerpoint!
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +101,11 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,6 +121,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,6 +146,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,6 +168,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,6 +206,7 @@ methods:
       contains shallow copies of any loaded child properties from the original
       object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -288,8 +288,14 @@ methods:
     uid: powerpoint!PowerPoint.ShapeFill#setImage:member(1)
     package: powerpoint!
     fullName: setImage(base64EncodedImage)
-    summary: Sets the fill formatting of the shape to an image. This changes the fill type to `PictureAndTexture`<!-- -->.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Sets the fill formatting of the shape to an image. This changes the fill
+      type to `PictureAndTexture`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

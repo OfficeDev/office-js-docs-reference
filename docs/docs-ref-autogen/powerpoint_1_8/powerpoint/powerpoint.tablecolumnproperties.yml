@@ -1,26 +1,35 @@
 ### YamlMime:TSType
 name: PowerPoint.TableColumnProperties
-uid: 'powerpoint!PowerPoint.TableColumnProperties:interface'
+uid: powerpoint!PowerPoint.TableColumnProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableColumnProperties
 summary: Provides the table column properties.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: columnWidth
-    uid: 'powerpoint!PowerPoint.TableColumnProperties#columnWidth:member'
+    uid: powerpoint!PowerPoint.TableColumnProperties#columnWidth:member
     package: powerpoint!
     fullName: columnWidth
     summary: >-
       Represents the desired width of each column in points, or is undefined.
 
 
-      When a table is being added, for columns whose width is undefined, the column width will be calculated by evenly
-      dividing the remaining width of the table amongst those columns. If the table does not have a defined width, a
-      default column width will be used.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      When a table is being added, for columns whose width is undefined, the
+      column width will be calculated by evenly dividing the remaining width of
+      the table amongst those columns. If the table does not have a defined
+      width, a default column width will be used.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

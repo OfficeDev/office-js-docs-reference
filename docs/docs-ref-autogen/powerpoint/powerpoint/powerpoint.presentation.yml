@@ -45,8 +45,14 @@ properties:
     uid: powerpoint!PowerPoint.Presentation#bindings:member
     package: powerpoint!
     fullName: bindings
-    summary: Returns a collection of bindings that are associated with the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Returns a collection of bindings that are associated with the
+      presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

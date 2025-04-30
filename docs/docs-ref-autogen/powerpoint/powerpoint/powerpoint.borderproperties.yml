@@ -4,7 +4,11 @@ uid: powerpoint!PowerPoint.BorderProperties:interface
 package: powerpoint!
 fullName: PowerPoint.BorderProperties
 summary: Represents the properties for a table cell border.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,13 @@ properties:
     package: powerpoint!
     fullName: color
     summary: >-
-      Represents the line color in the hexadecimal format \#RRGGBB (e.g., "FFA500") or as a named HTML color value
-      (e.g., "orange").
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
+      "FFA500") or as a named HTML color value (e.g., "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,7 +36,11 @@ properties:
     package: powerpoint!
     fullName: dashStyle
     summary: Represents the dash style of the line.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,8 +59,14 @@ properties:
     uid: powerpoint!PowerPoint.BorderProperties#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Specifies the transparency percentage of the line as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,8 +77,12 @@ properties:
     uid: powerpoint!PowerPoint.BorderProperties#weight:member
     package: powerpoint!
     fullName: weight
-    summary: 'Represents the weight of the line, in points.'
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: Represents the weight of the line, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

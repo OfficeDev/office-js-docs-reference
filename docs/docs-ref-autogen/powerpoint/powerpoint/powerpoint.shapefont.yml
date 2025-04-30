@@ -51,8 +51,13 @@ properties:
       - `false`<!-- -->: None of the text has the **All Caps** attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **All Caps** attribute.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **All Caps** attribute.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,8 +162,13 @@ properties:
       attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Double strikethrough** attribute.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,8 +257,13 @@ properties:
       - `false`<!-- -->: None of the text has the **Small Caps** attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Small Caps** attribute.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Small Caps** attribute.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,8 +286,13 @@ properties:
       attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Strikethrough** attribute.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Strikethrough** attribute.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -294,8 +314,13 @@ properties:
       - `false`<!-- -->: None of the text has the **Subscript** attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Subscript** attribute.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Subscript** attribute.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -317,8 +342,13 @@ properties:
       - `false`<!-- -->: None of the text has the **Superscript** attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Superscript** attribute.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Superscript** attribute.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

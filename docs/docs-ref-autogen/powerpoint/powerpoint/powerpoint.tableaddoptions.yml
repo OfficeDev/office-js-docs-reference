@@ -4,7 +4,11 @@ uid: powerpoint!PowerPoint.TableAddOptions:interface
 package: powerpoint!
 fullName: PowerPoint.TableAddOptions
 summary: Represents the available options when adding a table.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,14 @@ properties:
     package: powerpoint!
     fullName: columns
     summary: >-
-      If provided, specifies properties for each column in the table. The array length must be equal to the number of
-      columns in the table. Specify an empty object for columns that should use the default formatting.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      If provided, specifies properties for each column in the table. The array
+      length must be equal to the number of columns in the table. Specify an
+      empty object for columns that should use the default formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,9 +37,14 @@ properties:
     package: powerpoint!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the table. A default value is used when this parameter is not provided. Throws
-      an `InvalidArgument` exception when set with a negative value.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Specifies the height, in points, of the table. A default value is used
+      when this parameter is not provided. Throws an `InvalidArgument` exception
+      when set with a negative value.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,9 +56,14 @@ properties:
     package: powerpoint!
     fullName: left
     summary: >-
-      Specifies the distance, in points, from the left side of the table to the left side of the slide. The table is
-      centered horizontally when this parameter is not provided.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Specifies the distance, in points, from the left side of the table to the
+      left side of the slide. The table is centered horizontally when this
+      parameter is not provided.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,8 +74,14 @@ properties:
     uid: powerpoint!PowerPoint.TableAddOptions#mergedAreas:member
     package: powerpoint!
     fullName: mergedAreas
-    summary: 'If specified, represents an rectangular area where multiple cells appear as a single cell.'
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      If specified, represents an rectangular area where multiple cells appear
+      as a single cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,9 +95,14 @@ properties:
     package: powerpoint!
     fullName: rows
     summary: >-
-      If provided, specifies properties for each row in the table. The array length must be equal to the number of rows
-      in the table. Specify an empty object for rows that should use the default formatting.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      If provided, specifies properties for each row in the table. The array
+      length must be equal to the number of rows in the table. Specify an empty
+      object for rows that should use the default formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,11 +117,16 @@ properties:
       If provided, specifies properties for each cell in the table.
 
 
-      This should be an 2D array with the same number of rows and columns as the table. If a cell does not require
-      specific formatting, specify an empty object for that cell. Only the top left cell of a merged are can have
-      properties specified, which will be applied to the entire merged area. For the other cells in the merged area, an
-      empty object should be provided.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      This should be an 2D array with the same number of rows and columns as the
+      table. If a cell does not require specific formatting, specify an empty
+      object for that cell. Only the top left cell of a merged are can have
+      properties specified, which will be applied to the entire merged area. For
+      the other cells in the merged area, an empty object should be provided.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,9 +138,14 @@ properties:
     package: powerpoint!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of the table to the top edge of the slide. A default value is
-      used when this parameter is not provided.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Specifies the distance, in points, from the top edge of the table to the
+      top edge of the slide. A default value is used when this parameter is not
+      provided.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +163,21 @@ properties:
 
       To apply specific formatting to individual cells, use
       specificCellProperties.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+
+
+      If both uniformCellProperties and specificCellProperties are undefined,
+      the default formatting will be used, and the default table style will be
+      applied. The table will have the same appearance as when the user adds a
+      table through the PowerPoint UI.
+
+
+      To provide a plain appearance for the table, set this property to an empty
+      object and do not specify specificCellProperties.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,9 +192,14 @@ properties:
       If provided, specifies the values for the table.
 
 
-      When the table contains areas of merged cells, only the top left cell of each merged area can have a non-empty
-      string value. The other cells in the merged area must be an empty string.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      When the table contains areas of merged cells, only the top left cell of
+      each merged area can have a non-empty string value. The other cells in the
+      merged area must be an empty string.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,9 +211,14 @@ properties:
     package: powerpoint!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the table. A default value is used when this parameter is not provided. Throws
-      an `InvalidArgument` exception when set with a negative value.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Specifies the width, in points, of the table. A default value is used when
+      this parameter is not provided. Throws an `InvalidArgument` exception when
+      set with a negative value.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

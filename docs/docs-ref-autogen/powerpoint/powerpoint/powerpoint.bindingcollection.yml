@@ -3,8 +3,14 @@ name: PowerPoint.BindingCollection
 uid: powerpoint!PowerPoint.BindingCollection:class
 package: powerpoint!
 fullName: PowerPoint.BindingCollection
-summary: Represents the collection of all the binding objects that are part of the presentation.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+summary: >-
+  Represents the collection of all the binding objects that are part of the
+  presentation.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,6 +23,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +36,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,9 +49,13 @@ methods:
     package: powerpoint!
     fullName: add(shape, bindingType, id)
     summary: >-
-      Adds a new binding to a particular Shape. If the provided ID is already being used by a binding, the existing
-      binding will be overwritten.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Adds a new binding to a particular Shape. If the provided ID is already
+      being used by a binding, the existing binding will be overwritten.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,9 +80,13 @@ methods:
     package: powerpoint!
     fullName: add(shape, bindingTypeString, id)
     summary: >-
-      Adds a new binding to a particular Shape. If the provided ID is already being used by a binding, the existing
-      binding will be overwritten.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Adds a new binding to a particular Shape. If the provided ID is already
+      being used by a binding, the existing binding will be overwritten.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,9 +111,13 @@ methods:
     package: powerpoint!
     fullName: addFromSelection(bindingType, id)
     summary: >-
-      Adds a new binding based on the current selection. If the selection has multiple areas, the `InvalidReference`
-      error will be returned.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Adds a new binding based on the current selection. If the selection has
+      multiple areas, the `InvalidReference` error will be returned.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,9 +139,13 @@ methods:
     package: powerpoint!
     fullName: addFromSelection(bindingTypeString, id)
     summary: >-
-      Adds a new binding based on the current selection. If the selection has multiple areas, the `InvalidReference`
-      error will be returned.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Adds a new binding based on the current selection. If the selection has
+      multiple areas, the `InvalidReference` error will be returned.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,7 +167,11 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of bindings in the collection.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,8 +183,14 @@ methods:
     uid: powerpoint!PowerPoint.BindingCollection#getItem:member(1)
     package: powerpoint!
     fullName: getItem(key)
-    summary: Gets a binding object by ID. Throws an ItemNotFoundException if there's no binding with that ID.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Gets a binding object by ID. Throws an ItemNotFoundException if there's no
+      binding with that ID.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,9 +207,14 @@ methods:
     package: powerpoint!
     fullName: getItemAt(index)
     summary: >-
-      Gets a binding object based on its position in the items array. Throws an InvalidArgumentException if the index
-      less than 0, or greater than or equal to the count of items in the collection.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Gets a binding object based on its position in the items array. Throws an
+      InvalidArgumentException if the index less than 0, or greater than or
+      equal to the count of items in the collection.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +236,11 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,6 +260,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,6 +288,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -265,6 +310,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,6 +343,7 @@ methods:
       "items" array with shallow copies of any loaded properties from the
       collection's items.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,167 +4,231 @@ uid: powerpoint!PowerPoint.PlaceholderType:enum
 package: powerpoint!
 fullName: PowerPoint.PlaceholderType
 summary: Specifies the type of a placeholder.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: body
     uid: powerpoint!PowerPoint.PlaceholderType.body:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a body.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Body"'
   - name: cameo
     uid: powerpoint!PowerPoint.PlaceholderType.cameo:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a cameo.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Cameo"'
   - name: centerTitle
     uid: powerpoint!PowerPoint.PlaceholderType.centerTitle:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a center title.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"CenterTitle"'
   - name: chart
     uid: powerpoint!PowerPoint.PlaceholderType.chart:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a chart.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Chart"'
   - name: content
     uid: powerpoint!PowerPoint.PlaceholderType.content:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for generic content.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Content"'
   - name: date
     uid: powerpoint!PowerPoint.PlaceholderType.date:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a date.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Date"'
   - name: footer
     uid: powerpoint!PowerPoint.PlaceholderType.footer:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a footer.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Footer"'
   - name: header
     uid: powerpoint!PowerPoint.PlaceholderType.header:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a header.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Header"'
   - name: media
     uid: powerpoint!PowerPoint.PlaceholderType.media:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for media.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Media"'
   - name: onlinePicture
     uid: powerpoint!PowerPoint.PlaceholderType.onlinePicture:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for an online picture.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"OnlinePicture"'
   - name: picture
     uid: powerpoint!PowerPoint.PlaceholderType.picture:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a picture.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Picture"'
   - name: slideNumber
     uid: powerpoint!PowerPoint.PlaceholderType.slideNumber:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a slide number.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"SlideNumber"'
   - name: smartArt
     uid: powerpoint!PowerPoint.PlaceholderType.smartArt:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a SmartArt.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"SmartArt"'
   - name: subtitle
     uid: powerpoint!PowerPoint.PlaceholderType.subtitle:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a subtitle.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Subtitle"'
   - name: table
     uid: powerpoint!PowerPoint.PlaceholderType.table:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a table.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Table"'
   - name: title
     uid: powerpoint!PowerPoint.PlaceholderType.title:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a title.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Title"'
   - name: unsupported
     uid: powerpoint!PowerPoint.PlaceholderType.unsupported:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is unsupported.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Unsupported"'
   - name: verticalBody
     uid: powerpoint!PowerPoint.PlaceholderType.verticalBody:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a vertical body.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"VerticalBody"'
   - name: verticalContent
     uid: powerpoint!PowerPoint.PlaceholderType.verticalContent:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for generic vertical content.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"VerticalContent"'
   - name: verticalTitle
     uid: powerpoint!PowerPoint.PlaceholderType.verticalTitle:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The placeholder is for a vertical title.
 
-      * \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"VerticalTitle"'

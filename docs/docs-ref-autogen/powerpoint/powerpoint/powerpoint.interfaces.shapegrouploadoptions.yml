@@ -3,8 +3,14 @@ name: PowerPoint.Interfaces.ShapeGroupLoadOptions
 uid: powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeGroupLoadOptions
-summary: 'Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`<!-- -->.'
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+summary: >-
+  Represents a shape group inside a presentation. To get the corresponding Shape
+  object, use `ShapeGroup.shape`<!-- -->.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,6 +24,7 @@ properties:
       (such as `Range.address`<!-- -->) but not the navigational properties
       (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +36,11 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape group.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,7 +52,11 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

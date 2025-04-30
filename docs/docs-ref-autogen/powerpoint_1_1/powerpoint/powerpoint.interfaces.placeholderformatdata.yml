@@ -1,10 +1,13 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.PlaceholderFormatData
-uid: 'powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface'
+uid: powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PlaceholderFormatData
-summary: An interface describing the data returned by calling `placeholderFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `placeholderFormat.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

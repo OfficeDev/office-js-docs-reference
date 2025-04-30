@@ -101,8 +101,14 @@ properties:
     uid: powerpoint!PowerPoint.Slide#index:member
     package: powerpoint!
     fullName: index
-    summary: Returns the zero-based index of the slide representing its position in the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Returns the zero-based index of the slide representing its position in the
+      presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,8 +184,14 @@ methods:
     uid: powerpoint!PowerPoint.Slide#applyLayout:member(1)
     package: powerpoint!
     fullName: applyLayout(slideLayout)
-    summary: 'Applies the specified layout to the slide, changing its design and structure according to the chosen layout.'
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Applies the specified layout to the slide, changing its design and
+      structure according to the chosen layout.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,8 +254,14 @@ methods:
     uid: powerpoint!PowerPoint.Slide#exportAsBase64:member(1)
     package: powerpoint!
     fullName: exportAsBase64()
-    summary: 'Exports the slide to its own presentation file, returned as Base64-encoded data.'
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Exports the slide to its own presentation file, returned as Base64-encoded
+      data.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,10 +274,15 @@ methods:
     package: powerpoint!
     fullName: getImageAsBase64(options)
     summary: >-
-      Renders an image of the slide. The image is scaled to fit into the desired dimensions. If width and height aren't
-      specified, the true size of the slide is used. If only one of either width or height is specified, the other will
-      be calculated to preserve aspect ratio.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Renders an image of the slide. The image is scaled to fit into the desired
+      dimensions. If width and height aren't specified, the true size of the
+      slide is used. If only one of either width or height is specified, the
+      other will be calculated to preserve aspect ratio.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,7 +294,7 @@ methods:
           description: Optional. Options to specify the desired size of the slide image.
           type: <xref uid="powerpoint!PowerPoint.SlideGetImageOptions:interface" />
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: A Base64 string of the slide image in PNG format.
   - name: load(options)
     uid: powerpoint!PowerPoint.Slide#load:member(1)
@@ -356,7 +379,11 @@ methods:
     package: powerpoint!
     fullName: moveTo(slideIndex)
     summary: Moves the slide to a new position within the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

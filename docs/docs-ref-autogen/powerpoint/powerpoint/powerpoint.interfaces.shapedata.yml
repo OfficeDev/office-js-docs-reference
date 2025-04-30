@@ -74,7 +74,11 @@ properties:
       - A level of 1 means the shape is part of a top-level group.
 
       - A level greater than 1 indicates the shape is a nested group.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,10 +169,15 @@ properties:
     package: powerpoint!
     fullName: zOrderPosition
     summary: >-
-      Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a
-      slide has a unique z-order, but each slide also has a unique z-order stack, so two shapes on separate slides could
-      have the same z-order number.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Returns the z-order position of the shape, with 0 representing the bottom
+      of the order stack. Every shape on a slide has a unique z-order, but each
+      slide also has a unique z-order stack, so two shapes on separate slides
+      could have the same z-order number.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

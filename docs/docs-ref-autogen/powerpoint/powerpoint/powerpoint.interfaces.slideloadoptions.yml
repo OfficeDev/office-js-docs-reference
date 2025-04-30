@@ -49,8 +49,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SlideLoadOptions#index:member
     package: powerpoint!
     fullName: index
-    summary: Returns the zero-based index of the slide representing its position in the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Returns the zero-based index of the slide representing its position in the
+      presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,7 +4,11 @@ uid: powerpoint!PowerPoint.PlaceholderFormat:class
 package: powerpoint!
 fullName: PowerPoint.PlaceholderFormat
 summary: Represents the properties of a `placeholder` shape.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,9 +19,13 @@ properties:
     fullName: containedType
     summary: >-
       Gets the type of the shape contained within the placeholder. See
-      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details. Returns `null` if the placeholder
-      is empty.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
+      details. Returns `null` if the placeholder is empty.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,6 +49,7 @@ properties:
       The request context associated with the object. This connects the add-in's
       process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,8 +62,13 @@ properties:
     fullName: type
     summary: >-
       Returns the type of this placeholder. See
-      [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum) for details.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,6 +94,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,6 +119,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,6 +141,7 @@ methods:
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,6 +179,7 @@ methods:
       `PowerPoint.Interfaces.PlaceholderFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:

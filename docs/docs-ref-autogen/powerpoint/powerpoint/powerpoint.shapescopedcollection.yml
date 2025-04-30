@@ -198,9 +198,14 @@ methods:
     package: powerpoint!
     fullName: group()
     summary: >-
-      Groups all shapes in this collection into a single shape. If the collection contains fewer than two shapes, then
-      this method returns the `GeneralException` error.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+      Groups all shapes in this collection into a single shape. If the
+      collection contains fewer than two shapes, then this method returns the
+      `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
