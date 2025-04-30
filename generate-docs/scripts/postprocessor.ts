@@ -483,20 +483,26 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
 
     // Add links for type aliases.
     if (apiYaml.uid.endsWith(":type") && (apiYaml.uid.indexOf("Office") < 0)) {
-        let remarks = `${EOL}${EOL}Learn more about the types in this type alias through the following links: ${EOL}${EOL}`
+        let remarks = `${EOL}${EOL}Learn more about the types in this type alias through the following links. ${EOL}${EOL}`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
             remarks += `[${capitalizeFirstLetter(hostName)}.${match}](/javascript/api/${hostName}/${hostName}.${match.toLowerCase()})`;
             if (matchIndex < matches.length - 1) {
                 remarks += ", ";
             }
         });
-        apiYaml.remarks += remarks;
+
+        let exampleIndex = apiYaml.remarks.indexOf("#### Examples");
+        if (exampleIndex > 0) {
+            apiYaml.remarks = `${apiYaml.remarks.substring(0, exampleIndex)}${remarks}${EOL}${EOL}${apiYaml.remarks.substring(exampleIndex)}`;
+        } else {
+            apiYaml.remarks += remarks;
+        }
     }
     
-    return schemaComment + jsyaml.dump(apiYaml) 
-        .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-        .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
-        .replace(/\\\*/gm, "*"); // Fix asterisk protection.
+    let cleanYml = schemaComment + jsyaml.dump(apiYaml);
+    return cleanYml.replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                   .replace(/description: \\\*[\r\n]/gm, "description: ''") // Remove descriptions that are just "\*".
+                   .replace(/\\\*/gm, "*"); // Fix asterisk protection.
 }
 
 function capitalizeFirstLetter(str: string): string {

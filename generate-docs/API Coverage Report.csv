@@ -11,11 +11,11 @@ CustomFunctions.ErrorCode,"invalidReference",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"invalidValue",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"notAvailable",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"nullReference",EnumField,Great,false
-CustomFunctions.Invocation,N/A,Interface,Unknown,false
-CustomFunctions.Invocation,"address",Property,Great,false
+CustomFunctions.Invocation,N/A,Interface,Unknown,true
+CustomFunctions.Invocation,"address",Property,Great,true
 CustomFunctions.Invocation,"functionName",Property,Poor,false
-CustomFunctions.Invocation,"isInValuePreview",Property,Great,false
-CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,false
+CustomFunctions.Invocation,"isInValuePreview",Property,Great,true
+CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,true
 CustomFunctions.StreamingInvocation,N/A,Interface,Fine,false
 CustomFunctions.StreamingInvocation,"setResult",Property,Fine,true
 Excel.AggregationFunction,N/A,Enum,Unknown,true
@@ -561,7 +561,7 @@ Excel.CellBorderCollection,"left",Property,Fine,false
 Excel.CellBorderCollection,"right",Property,Fine,false
 Excel.CellBorderCollection,"top",Property,Fine,false
 Excel.CellBorderCollection,"vertical",Property,Fine,false
-Excel.CellControl,N/A,TypeAlias,Fine,false
+Excel.CellControl,N/A,TypeAlias,Fine,true
 Excel.CellControlType,N/A,Enum,Unknown,true
 Excel.CellControlType,"checkbox",EnumField,Fine,false
 Excel.CellControlType,"dropdown",EnumField,Fine,false
@@ -11100,7 +11100,7 @@ Word.Body,"parentContentControl",Property,Great,false
 Word.Body,"parentContentControlOrNullObject",Property,Excellent,false
 Word.Body,"parentSection",Property,Great,false
 Word.Body,"parentSectionOrNullObject",Property,Excellent,false
-Word.Body,"shapes",Property,Good,false
+Word.Body,"shapes",Property,Good,true
 Word.Body,"style",Property,Excellent,false
 Word.Body,"styleBuiltIn",Property,Excellent,false
 Word.Body,"tables",Property,Fine,true
@@ -11806,7 +11806,7 @@ Word.CustomXmlPartScopedCollection,"toJSON()",Method,Excellent,false
 Word.CustomXmlPartScopedCollection,"track()",Method,Excellent,false
 Word.CustomXmlPartScopedCollection,"untrack()",Method,Excellent,false
 Word.Document,N/A,Class,Missing,true
-Word.Document,"activeWindow",Property,Poor,false
+Word.Document,"activeWindow",Property,Poor,true
 Word.Document,"body",Property,Good,false
 Word.Document,"changeTrackingMode",Property,Good,true
 Word.Document,"contentControls",Property,Good,false
@@ -12387,7 +12387,7 @@ Word.InsertLocation,"before",EnumField,Good,false
 Word.InsertLocation,"end",EnumField,Good,false
 Word.InsertLocation,"replace",EnumField,Good,false
 Word.InsertLocation,"start",EnumField,Good,false
-Word.InsertShapeOptions,N/A,Interface,Unknown,false
+Word.InsertShapeOptions,N/A,Interface,Unknown,true
 Word.InsertShapeOptions,"height",Property,Poor,false
 Word.InsertShapeOptions,"left",Property,Fine,false
 Word.InsertShapeOptions,"top",Property,Fine,false
@@ -12637,21 +12637,21 @@ Word.OutlineLevel,"outlineLevel7",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel8",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel9",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevelBodyText",EnumField,Fine,false
-Word.Page,N/A,Class,Unknown,false
+Word.Page,N/A,Class,Unknown,true
 Word.Page,"context",Property,Excellent,false
 Word.Page,"height",Property,Fine,false
-Word.Page,"index",Property,Fine,false
+Word.Page,"index",Property,Fine,true
 Word.Page,"width",Property,Fine,false
 Word.Page,"getNext()",Method,Great,false
 Word.Page,"getNextOrNullObject()",Method,Excellent,false
-Word.Page,"getRange(rangeLocation)",Method,Fine,false
+Word.Page,"getRange(rangeLocation)",Method,Fine,true
 Word.Page,"load(options)",Method,Excellent,false
 Word.Page,"load(propertyNames)",Method,Excellent,false
 Word.Page,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Page,"toJSON()",Method,Excellent,false
 Word.Page,"track()",Method,Excellent,false
 Word.Page,"untrack()",Method,Excellent,false
-Word.PageCollection,N/A,Class,Unknown,false
+Word.PageCollection,N/A,Class,Unknown,true
 Word.PageCollection,"context",Property,Excellent,false
 Word.PageCollection,"items",Property,Poor,false
 Word.PageCollection,"getFirst()",Method,Great,false
@@ -12662,10 +12662,10 @@ Word.PageCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.PageCollection,"toJSON()",Method,Excellent,false
 Word.PageCollection,"track()",Method,Excellent,false
 Word.PageCollection,"untrack()",Method,Excellent,false
-Word.Pane,N/A,Class,Unknown,false
+Word.Pane,N/A,Class,Unknown,true
 Word.Pane,"context",Property,Excellent,false
-Word.Pane,"pages",Property,Poor,false
-Word.Pane,"pagesEnclosingViewport",Property,Good,false
+Word.Pane,"pages",Property,Poor,true
+Word.Pane,"pagesEnclosingViewport",Property,Good,true
 Word.Pane,"getNext()",Method,Great,false
 Word.Pane,"getNextOrNullObject()",Method,Excellent,false
 Word.Pane,"load(propertyNames)",Method,Excellent,false
@@ -12753,7 +12753,7 @@ Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,fals
 Word.Paragraph,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Good,false
 Word.Paragraph,"insertText(text, insertLocation)",Method,Good,true
-Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
+Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
 Word.Paragraph,"load(options)",Method,Excellent,false
 Word.Paragraph,"load(propertyNames)",Method,Excellent,false
 Word.Paragraph,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -12873,13 +12873,13 @@ Word.Range,"insertFootnote(insertText)",Method,Fine,true
 Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertGeometricShape(geometricShapeTypeString, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertHtml(html, insertLocation)",Method,Fine,true
-Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,false
+Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
 Word.Range,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
 Word.Range,"insertParagraph(paragraphText, insertLocation)",Method,Fine,true
 Word.Range,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Good,false
 Word.Range,"insertText(text, insertLocation)",Method,Fine,true
-Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
+Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
 Word.Range,"intersectWith(range)",Method,Excellent,false
 Word.Range,"intersectWithOrNullObject(range)",Method,Excellent,false
 Word.Range,"load(options)",Method,Excellent,false
@@ -13070,7 +13070,7 @@ Word.ShadingTextureType,"percent87Pt5",EnumField,Fine,false
 Word.ShadingTextureType,"percent90",EnumField,Fine,false
 Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
-Word.Shape,N/A,Class,Missing,false
+Word.Shape,N/A,Class,Missing,true
 Word.Shape,"allowOverlap",Property,Great,false
 Word.Shape,"altTextDescription",Property,Excellent,false
 Word.Shape,"body",Property,Good,false
@@ -13098,11 +13098,11 @@ Word.Shape,"textFrame",Property,Fine,false
 Word.Shape,"textWrap",Property,Fine,false
 Word.Shape,"top",Property,Fine,false
 Word.Shape,"topRelative",Property,Fine,false
-Word.Shape,"type",Property,Fine,false
+Word.Shape,"type",Property,Fine,true
 Word.Shape,"visible",Property,Great,false
 Word.Shape,"width",Property,Poor,false
 Word.Shape,"widthRelative",Property,Fine,false
-Word.Shape,"delete()",Method,Fine,false
+Word.Shape,"delete()",Method,Fine,true
 Word.Shape,"load(options)",Method,Excellent,false
 Word.Shape,"load(propertyNames)",Method,Excellent,false
 Word.Shape,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -13123,7 +13123,7 @@ Word.ShapeAutoSize,"mixed",EnumField,Good,false
 Word.ShapeAutoSize,"none",EnumField,Fine,false
 Word.ShapeAutoSize,"shapeToFitText",EnumField,Fine,false
 Word.ShapeAutoSize,"textToFitShape",EnumField,Fine,false
-Word.ShapeCollection,N/A,Class,Unknown,false
+Word.ShapeCollection,N/A,Class,Unknown,true
 Word.ShapeCollection,"context",Property,Excellent,false
 Word.ShapeCollection,"items",Property,Poor,false
 Word.ShapeCollection,"getByGeometricTypes(types)",Method,Good,false
@@ -13131,8 +13131,8 @@ Word.ShapeCollection,"getById(id)",Method,Great,false
 Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Excellent,false
 Word.ShapeCollection,"getByIds(ids)",Method,Fine,false
 Word.ShapeCollection,"getByNames(names)",Method,Fine,false
-Word.ShapeCollection,"getByTypes(types)",Method,Fine,false
-Word.ShapeCollection,"getFirst()",Method,Great,false
+Word.ShapeCollection,"getByTypes(types)",Method,Fine,true
+Word.ShapeCollection,"getFirst()",Method,Great,true
 Word.ShapeCollection,"getFirstOrNullObject()",Method,Excellent,false
 Word.ShapeCollection,"group()",Method,Great,false
 Word.ShapeCollection,"load(options)",Method,Excellent,false
@@ -13228,7 +13228,7 @@ Word.ShapeTextWrapType,"square",EnumField,Fine,false
 Word.ShapeTextWrapType,"through",EnumField,Fine,false
 Word.ShapeTextWrapType,"tight",EnumField,Fine,false
 Word.ShapeTextWrapType,"topBottom",EnumField,Fine,false
-Word.ShapeType,N/A,Enum,Unknown,false
+Word.ShapeType,N/A,Enum,Unknown,true
 Word.ShapeType,"canvas",EnumField,Fine,false
 Word.ShapeType,"geometricShape",EnumField,Fine,false
 Word.ShapeType,"group",EnumField,Fine,false
@@ -13575,8 +13575,8 @@ Word.VerticalAlignment,"bottom",EnumField,Fine,false
 Word.VerticalAlignment,"center",EnumField,Fine,false
 Word.VerticalAlignment,"mixed",EnumField,Fine,false
 Word.VerticalAlignment,"top",EnumField,Fine,false
-Word.Window,N/A,Class,Unknown,false
-Word.Window,"activePane",Property,Poor,false
+Word.Window,N/A,Class,Unknown,true
+Word.Window,"activePane",Property,Poor,true
 Word.Window,"context",Property,Excellent,false
 Word.Window,"panes",Property,Poor,false
 Word.Window,"load(propertyNames)",Method,Excellent,false

@@ -10,6 +10,46 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+  await Word.run(async (context) => {
+    // Gets pages of the selection.
+    const pages: Word.PageCollection = context.document.getSelection().pages;
+    pages.load();
+    await context.sync();
+
+    // Log info for pages included in selection.
+    console.log(pages);
+    const pagesIndexes = [];
+    const pagesText = [];
+    for (let i = 0; i < pages.items.length; i++) {
+      const page = pages.items[i];
+      page.load('index');
+      pagesIndexes.push(page);
+
+      const range = page.getRange();
+      range.load('text');
+      pagesText.push(range);
+    }
+
+    await context.sync();
+
+    for (let i = 0; i < pagesIndexes.length; i++) {
+      console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+      console.log("Text of that page in the selection:", pagesText[i].text);
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -56,6 +96,52 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the pages that contain the third paragraph.
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
+        paragraphs.load();
+        await context.sync();
+
+        const paraThree = paragraphs.items[2];
+        const rangeOfParagraph = paraThree.getRange();
+        const pages: Word.PageCollection = rangeOfParagraph.pages;
+        pages.load();
+        await context.sync();
+
+        // Log info for pages in range.
+        console.log(pages);
+        const pagesIndexes = [];
+        const pagesText = [];
+        for (let i = 0; i < pages.items.length; i++) {
+          const page = pages.items[i];
+          page.load('index');
+          pagesIndexes.push(page);
+
+          const range = page.getRange();
+          range.load('text');
+          pagesText.push(range);
+        }
+
+        await context.sync();
+
+        for (let i = 0; i < pagesIndexes.length; i++) {
+          console.log(`Index of page ${i + 1} that contains the third paragraph: ${pagesIndexes[i].index}`);
+          console.log("Text of that page:", pagesText[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -130,6 +216,46 @@ methods:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets pages of the selection.
+        const pages: Word.PageCollection = context.document.getSelection().pages;
+        pages.load();
+        await context.sync();
+
+        // Log info for pages included in selection.
+        console.log(pages);
+        const pagesIndexes = [];
+        const pagesText = [];
+        for (let i = 0; i < pages.items.length; i++) {
+          const page = pages.items[i];
+          page.load('index');
+          pagesIndexes.push(page);
+
+          const range = page.getRange();
+          range.load('text');
+          pagesText.push(range);
+        }
+
+        await context.sync();
+
+        for (let i = 0; i < pagesIndexes.length; i++) {
+          console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+          console.log("Text of that page in the selection:", pagesText[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

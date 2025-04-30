@@ -8,6 +8,34 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+  await Word.run(async (context) => {
+    // Inserts a text box at the beginning of the selection.
+    const range: Word.Range = context.document.getSelection();
+    const insertShapeOptions: Word.InsertShapeOptions = {
+      top: 0,
+      left: 0,
+      height: 100,
+      width: 100
+    };
+
+    const newTextBox: Word.Shape = range.insertTextBox("placeholder text", insertShapeOptions);
+    await context.sync();
+
+    console.log("Inserted a text box at the beginning of the current selection.");
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

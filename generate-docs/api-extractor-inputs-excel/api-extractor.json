@@ -33,6 +33,9 @@
       "tsdoc-malformed-inline-tag": {
         "logLevel": "none"
       },
+      "tsdoc-malformed-html-name": {
+        "logLevel": "none"
+      },
       "tsdoc-unnecessary-backslash": {
         "logLevel": "none"
       }
