@@ -6,6 +6,9 @@ summary: ''
 interfaces:
   - powerpoint!PowerPoint.AddSlideOptions:interface
   - powerpoint!PowerPoint.InsertSlideOptions:interface
+  - powerpoint!PowerPoint.Interfaces.BindingCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.BindingData:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatData:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface
@@ -30,6 +33,7 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface
   - powerpoint!PowerPoint.Interfaces.PresentationData:interface
   - powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface
@@ -42,6 +46,7 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.ShapeFontData:interface
   - powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface
   - powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface
   - powerpoint!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface
@@ -66,6 +71,11 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableCellCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.TableCellCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableCellData:interface
+  - powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface
