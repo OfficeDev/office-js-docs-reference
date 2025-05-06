@@ -35,9 +35,10 @@ properties:
     package: powerpoint!
     fullName: dashStyle
     summary: >-
-      Represents the dash style of the line. Returns null when the line is not
+      Represents the dash style of the line. Returns null when the line isn't
       visible or there are inconsistent dash styles. See
-      PowerPoint.ShapeLineDashStyle for details.
+      [PowerPoint.ShapeLineDashStyle](xref:powerpoint!PowerPoint.ShapeLineDashStyle:enum)
+      for details.
     remarks: >-
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -62,8 +63,9 @@ properties:
     package: powerpoint!
     fullName: style
     summary: >-
-      Represents the line style of the shape. Returns null when the line is not
-      visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle
+      Represents the line style of the shape. Returns null when the line isn't
+      visible or there are inconsistent styles. See
+      [PowerPoint.ShapeLineStyle](xref:powerpoint!PowerPoint.ShapeLineStyle:enum)
       for details.
     remarks: >-
       \[ [API set: PowerPointApi
@@ -123,7 +125,7 @@ properties:
     fullName: weight
     summary: >-
       Represents the weight of the line, in points. Returns `null` when the line
-      is not visible or there are inconsistent line weights.
+      isn't visible or there are inconsistent line weights.
     remarks: >-
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

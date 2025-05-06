@@ -167,8 +167,8 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: >-
-      Deletes the slide from the presentation. Does nothing if the slide does
-      not exist.
+      Deletes the slide from the presentation. Does nothing if the slide doesn't
+      exist.
     remarks: >-
       \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

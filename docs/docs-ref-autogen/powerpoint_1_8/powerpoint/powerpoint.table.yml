@@ -105,7 +105,10 @@ methods:
         description: >-
           The cell at the specified row and column. If the cell is part of a
           merged area and not the top left cell of the merged area, an object
-          with the `isNullObject` property set to `true` is returned.
+          with the `isNullObject` property set to `true` is returned. For
+          further information, see [*OrNullObject methods and
+          properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+          -->.
   - name: getMergedAreas()
     uid: powerpoint!PowerPoint.Table#getMergedAreas:member(1)
     package: powerpoint!

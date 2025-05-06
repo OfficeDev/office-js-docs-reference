@@ -23,7 +23,7 @@ properties:
 
       When a table is being added, for columns whose width is undefined, the
       column width will be calculated by evenly dividing the remaining width of
-      the table amongst those columns. If the table does not have a defined
+      the table amongst those columns. If the table doesn't have a defined
       width, a default column width will be used.
     remarks: >-
       \[ [API set: PowerPointApi

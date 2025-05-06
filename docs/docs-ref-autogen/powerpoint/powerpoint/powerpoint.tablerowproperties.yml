@@ -23,7 +23,7 @@ properties:
 
       When a table is being added, for rows whose height is undefined, the row
       height will be calculated by evenly dividing the remaining height of the
-      table amongst those rows. If the table does not have a defined height, a
+      table amongst those rows. If the table doesn't have a defined height, a
       default row height will be used.
     remarks: >-
       \[ [API set: PowerPointApi

@@ -109,6 +109,7 @@ export declare namespace PowerPoint {
         /**
          * Returns the selected {@link PowerPoint.TextRange} in the current view of the presentation.
                     If no text is selected, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
@@ -2084,7 +2085,7 @@ export declare namespace PowerPoint {
          */
         right = "Right",
         /**
-         * Align text so that it is justified across the whole line.
+         * Align text so that it's justified across the whole line.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
@@ -2169,7 +2170,7 @@ export declare namespace PowerPoint {
          */
         foregroundColor: string;
         /**
-         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type doesn't support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -2765,7 +2766,7 @@ export declare namespace PowerPoint {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets the table cell using its zero-based index in the collection. If the `TableCell` does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link [https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties) | *OrNullObject methods and properties}.
+         * Gets the table cell using its zero-based index in the collection. If the `TableCell` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link [https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties) | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -3055,7 +3056,7 @@ export declare namespace PowerPoint {
          *
          * @param rowIndex - The zero-based row index of the cell.
          * @param columnIndex - The zero-based column index of the cell.
-         * @returns The cell at the specified row and column. If the cell is part of a merged area and not the top left cell of the merged area, an object with the `isNullObject` property set to `true` is returned.
+         * @returns The cell at the specified row and column. If the cell is part of a merged area and not the top left cell of the merged area, an object with the `isNullObject` property set to `true` is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getCellOrNullObject(rowIndex: number, columnIndex: number): PowerPoint.TableCell;
         /**
@@ -3112,7 +3113,7 @@ export declare namespace PowerPoint {
                     
                     When a table is being added, for columns whose width is undefined,
                     the column width will be calculated by evenly dividing the remaining width
-                    of the table amongst those columns. If the table does not have a defined width,
+                    of the table amongst those columns. If the table doesn't have a defined width,
                     a default column width will be used.
          *
          * @remarks
@@ -3170,7 +3171,7 @@ export declare namespace PowerPoint {
                     
                     When a table is being added, for rows whose height is undefined,
                     the row height will be calculated by evenly dividing the remaining height
-                    of the table amongst those rows. If the table does not have a defined height,
+                    of the table amongst those rows. If the table doesn't have a defined height,
                     a default row height will be used.
          *
          * @remarks
@@ -3196,7 +3197,7 @@ export declare namespace PowerPoint {
         columns?: PowerPoint.TableColumnProperties[];
         /**
          * Specifies the height, in points, of the table.
-                    A default value is used when this parameter is not provided.
+                    A default value is used when this parameter isn't provided.
                     Throws an `InvalidArgument` exception when set with a negative value.
          *
          * @remarks
@@ -3205,7 +3206,7 @@ export declare namespace PowerPoint {
         height?: number | undefined;
         /**
          * Specifies the distance, in points, from the left side of the table to the left side of the slide.
-                    The table is centered horizontally when this parameter is not provided.
+                    The table is centered horizontally when this parameter isn't provided.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -3231,7 +3232,7 @@ export declare namespace PowerPoint {
          * If provided, specifies properties for each cell in the table.
                     
                     This should be an 2D array with the same number of rows and columns as the table.
-                    If a cell does not require specific formatting, specify an empty object for that cell.
+                    If a cell doesn't require specific formatting, specify an empty object for that cell.
                     Only the top left cell of a merged are can have properties specified, which will be applied
                     to the entire merged area. For the other cells in the merged area, an empty object should be provided.
          *
@@ -3241,7 +3242,7 @@ export declare namespace PowerPoint {
         specificCellProperties?: PowerPoint.TableCellProperties[][];
         /**
          * Specifies the distance, in points, from the top edge of the table to the top edge of the slide.
-                    A default value is used when this parameter is not provided.
+                    A default value is used when this parameter isn't provided.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -3257,7 +3258,7 @@ export declare namespace PowerPoint {
                     appearance as when the user adds a table through the PowerPoint UI.
                     
                     To provide a plain appearance for the table, set this property to an empty object
-                    and do not specify specificCellProperties.
+                    and don't specify specificCellProperties.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -3277,7 +3278,7 @@ export declare namespace PowerPoint {
         values?: string[][];
         /**
          * Specifies the width, in points, of the table.
-                    A default value is used when this parameter is not provided.
+                    A default value is used when this parameter isn't provided.
                     Throws an `InvalidArgument` exception when set with a negative value.
          *
          * @remarks
@@ -3383,13 +3384,13 @@ export declare namespace PowerPoint {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
+         * Gets a shape using its unique ID. An error is thrown if the shape doesn't exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the shape.
-         * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
+         * @returns The shape with the unique ID. If such a shape doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.Shape;
         /**
@@ -3403,13 +3404,13 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Shape;
         /**
-         * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
+         * Gets a shape using its unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
          * @param id - The ID of the shape.
-         * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
+         * @returns The shape with the unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned.
          */
         getItemOrNullObject(id: string): PowerPoint.Shape;
         /**
@@ -3785,7 +3786,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the layout.
-         * @returns The layout with the unique ID. If such a layout does not exist, an error is thrown.
+         * @returns The layout with the unique ID. If such a layout doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.SlideLayout;
         /**
@@ -3799,7 +3800,7 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.SlideLayout;
         /**
-         * Gets a layout using its unique ID.  If such a layout does not exist, an object with an `isNullObject` property set to true is returned. For further information,
+         * Gets a layout using its unique ID.  If such a layout doesn't exist, an object with an `isNullObject` property set to true is returned. For further information,
                     see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -3971,12 +3972,12 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it is always capitalized when saved in the document.
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it's always capitalized when saved in the document.
          * @param value - The value of the tag.
          */
         add(key: string, value: string): void;
         /**
-         * Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
+         * Deletes the tag with the given `key` in this collection. Does nothing if the `key` doesn't exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
@@ -3993,13 +3994,13 @@ export declare namespace PowerPoint {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a tag using its unique ID. An error is thrown if the tag does not exist.
+         * Gets a tag using its unique ID. An error is thrown if the tag doesn't exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the tag.
-         * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
+         * @returns The tag with the unique ID. If such a tag doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.Tag;
         /**
@@ -4013,13 +4014,13 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Tag;
         /**
-         * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
+         * Gets a tag using its unique ID. If such a tag doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the tag.
-         * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
+         * @returns The tag with the unique ID. If such a tag doesn't exist, an object with an `isNullObject` property set to true is returned.
          */
         getItemOrNullObject(key: string): PowerPoint.Tag;
         /**
@@ -4121,7 +4122,7 @@ export declare namespace PowerPoint {
          */
         applyLayout(slideLayout: PowerPoint.SlideLayout): void;
         /**
-         * Deletes the slide from the presentation. Does nothing if the slide does not exist.
+         * Deletes the slide from the presentation. Does nothing if the slide doesn't exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
@@ -4211,13 +4212,13 @@ export declare namespace PowerPoint {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
+         * Gets a shape using its unique ID. An error is thrown if the shape doesn't exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          *
          * @param key - The ID of the shape.
-         * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
+         * @returns The shape with the unique ID. If such a shape doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.Shape;
         /**
@@ -4231,13 +4232,13 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Shape;
         /**
-         * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
+         * Gets a shape using its unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          *
          * @param id - The ID of the shape.
-         * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
+         * @returns The shape with the unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned.
          */
         getItemOrNullObject(id: string): PowerPoint.Shape;
         /**
@@ -4392,14 +4393,14 @@ export declare namespace PowerPoint {
          */
         color: string;
         /**
-         * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
+         * Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See {@linkPowerPoint.ShapeLineDashStyle} for details.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         dashStyle: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
         /**
-         * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
+         * Represents the line style of the shape. Returns null when the line isn't visible or there are inconsistent styles. See {@link PowerPoint.ShapeLineStyle} for details.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -4420,7 +4421,7 @@ export declare namespace PowerPoint {
          */
         visible: boolean;
         /**
-         * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
+         * Represents the weight of the line, in points. Returns `null` when the line isn't visible or there are inconsistent line weights.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -4959,49 +4960,49 @@ export declare namespace PowerPoint {
          */
         readonly zOrderPosition: number;
         /**
-         * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
+         * Deletes the shape from the shape collection. Does nothing if the shape doesn't exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          */
         delete(): void;
         /**
-         * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. Throws an exception if this shape does not belong to a `Slide`.
+         * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. Throws an exception if this shape doesn't belong to a `Slide`.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          */
         getParentSlide(): PowerPoint.Slide;
         /**
-         * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. Throws an exception if this shape does not belong to a `SlideLayout`.
+         * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. Throws an exception if this shape doesn't belong to a `SlideLayout`.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          */
         getParentSlideLayout(): PowerPoint.SlideLayout;
         /**
-         * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. If this shape does not belong to a `SlideLayout`, an object with an `isNullObject` property set to `true` is returned.
+         * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. If this shape doesn't belong to a `SlideLayout`, an object with an `isNullObject` property set to `true` is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          */
         getParentSlideLayoutOrNullObject(): PowerPoint.SlideLayout;
         /**
-         * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. Throws an exception if this shape does not belong to a `SlideMaster`.
+         * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. Throws an exception if this shape doesn't belong to a `SlideMaster`.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          */
         getParentSlideMaster(): PowerPoint.SlideMaster;
         /**
-         * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. If this shape does not belong to a `SlideMaster`, an object with an `isNullObject` property set to `true` is returned.
+         * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. If this shape doesn't belong to a `SlideMaster`, an object with an `isNullObject` property set to `true` is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
          */
         getParentSlideMasterOrNullObject(): PowerPoint.SlideMaster;
         /**
-         * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. If this shape does not belong to a `Slide`, an object with an `isNullObject` property set to `true` is returned.
+         * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. If this shape doesn't belong to a `Slide`, an object with an `isNullObject` property set to `true` is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
@@ -5090,7 +5091,7 @@ export declare namespace PowerPoint {
          */
         delete(): void;
         /**
-         * Returns the shape represented by the binding. Will throw an error if the binding is not of the correct type.
+         * Returns the shape represented by the binding. Will throw an error if the binding isn't of the correct type.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -5576,8 +5577,8 @@ export declare namespace PowerPoint {
         /**
          * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
                     The order of these slides is preserved during the insertion.
-                    If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
-                    All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
+                    If any of the source slides aren't found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
+                    All of the source slides will be inserted when `sourceSlideIds` isn't provided (this is the default behavior).
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
@@ -5585,8 +5586,8 @@ export declare namespace PowerPoint {
         sourceSlideIds?: string[];
         /**
          * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
-                    If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
-                    If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
+                    If `targetSlideId` isn't provided, the slides will be inserted at the beginning of the presentation.
+                    If `targetSlideId` is invalid or if it's pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
@@ -5628,7 +5629,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          *
          * @param key - The ID of the slide.
-         * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.
+         * @returns The slide with the unique ID. If such a slide doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.Slide;
         /**
@@ -5643,7 +5644,7 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Slide;
         /**
-         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see
+         * Gets a slide using its unique ID. If such a slide doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see
                     {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -5703,7 +5704,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.5]
          *
          * @param key - The ID of the slide.
-         * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.
+         * @returns The slide with the unique ID. If such a slide doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.Slide;
         /**
@@ -5717,7 +5718,7 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Slide;
         /**
-         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see
+         * Gets a slide using its unique ID. If such a slide doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see
                     {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -5777,7 +5778,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the Slide Master.
-         * @returns The Slide Master with the unique ID. If such a Slide Master does not exist, an error is thrown.
+         * @returns The Slide Master with the unique ID. If such a Slide Master doesn't exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.SlideMaster;
         /**
@@ -5791,7 +5792,7 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.SlideMaster;
         /**
-         * Gets a Slide Master using its unique ID. If such a Slide Master does not exist, an object with an `isNullObject` property set to true is returned.
+         * Gets a Slide Master using its unique ID. If such a Slide Master doesn't exist, an object with an `isNullObject` property set to true is returned.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -5881,7 +5882,7 @@ export declare namespace PowerPoint {
              */
             foregroundColor?: string;
             /**
-             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type doesn't support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -5950,7 +5951,7 @@ export declare namespace PowerPoint {
              */
             italic?: boolean | null;
             /**
-             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
+             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6073,14 +6074,14 @@ export declare namespace PowerPoint {
              */
             color?: string;
             /**
-             * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
+             * Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See {@link PowerPoint.ShapeLineDashStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
             /**
-             * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
+             * Represents the line style of the shape. Returns null when the line isn't visible or there are inconsistent styles. See {@link PowerPoint.ShapeLineStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6101,7 +6102,7 @@ export declare namespace PowerPoint {
              */
             visible?: boolean;
             /**
-             * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
+             * Represents the weight of the line, in points. Returns `null` when the line isn't visible or there are inconsistent line weights.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6426,7 +6427,7 @@ export declare namespace PowerPoint {
              */
             foregroundColor?: string;
             /**
-             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type doesn't support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6502,7 +6503,7 @@ export declare namespace PowerPoint {
              */
             italic?: boolean | null;
             /**
-             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
+             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6754,14 +6755,14 @@ export declare namespace PowerPoint {
              */
             color?: string;
             /**
-             * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
+             * Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See {@link PowerPoint.ShapeLineDashStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
             /**
-             * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
+             * Represents the line style of the shape. Returns null when the line isn't visible or there are inconsistent styles. See {@link PowerPoint.ShapeLineStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -6782,7 +6783,7 @@ export declare namespace PowerPoint {
              */
             visible?: boolean;
             /**
-             * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
+             * Represents the weight of the line, in points. Returns `null` when the line isn't visible or there are inconsistent line weights.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -7312,7 +7313,7 @@ export declare namespace PowerPoint {
              */
             foregroundColor?: boolean;
             /**
-             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type doesn't support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -7397,7 +7398,7 @@ export declare namespace PowerPoint {
              */
             italic?: boolean;
             /**
-             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
+             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -8084,14 +8085,14 @@ export declare namespace PowerPoint {
              */
             color?: boolean;
             /**
-             * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
+             * Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See {@link PowerPoint.ShapeLineDashStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             dashStyle?: boolean;
             /**
-             * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
+             * Represents the line style of the shape. Returns null when the line isn't visible or there are inconsistent styles. See {@link PowerPoint.ShapeLineStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -8112,7 +8113,7 @@ export declare namespace PowerPoint {
              */
             visible?: boolean;
             /**
-             * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
+             * Represents the weight of the line, in points. Returns `null` when the line isn't visible or there are inconsistent line weights.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
