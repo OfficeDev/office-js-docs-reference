@@ -37,7 +37,7 @@ properties:
     fullName: transparency
     summary: >-
       Specifies the transparency percentage of the fill as a value from 0.0
-      (opaque) through 1.0 (clear). Returns `null` if the shape type does not
+      (opaque) through 1.0 (clear). Returns `null` if the shape type doesn't
       support transparency or the shape fill has inconsistent transparency, such
       as with a gradient fill type.
     remarks: >-

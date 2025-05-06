@@ -123,7 +123,7 @@ methods:
     package: powerpoint!
     fullName: getItem(key)
     summary: >-
-      Gets a shape using its unique ID. An error is thrown if the shape does not
+      Gets a shape using its unique ID. An error is thrown if the shape doesn't
       exist.
     remarks: >-
       \[ [API set: PowerPointApi
@@ -141,7 +141,7 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: >-
-          The shape with the unique ID. If such a shape does not exist, an error
+          The shape with the unique ID. If such a shape doesn't exist, an error
           is thrown.
   - name: getItemAt(index)
     uid: powerpoint!PowerPoint.ShapeScopedCollection#getItemAt:member(1)
@@ -173,8 +173,11 @@ methods:
     package: powerpoint!
     fullName: getItemOrNullObject(id)
     summary: >-
-      Gets a shape using its unique ID. If such a shape does not exist, an
-      object with an `isNullObject` property set to true is returned.
+      Gets a shape using its unique ID. If such a shape doesn't exist, an object
+      with an `isNullObject` property set to true is returned. For further
+      information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: >-
       \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -191,8 +194,8 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: >-
-          The shape with the unique ID. If such a shape does not exist, an
-          object with an `isNullObject` property set to true is returned.
+          The shape with the unique ID. If such a shape doesn't exist, an object
+          with an `isNullObject` property set to true is returned.
   - name: load(options)
     uid: powerpoint!PowerPoint.ShapeScopedCollection#load:member(1)
     package: powerpoint!
