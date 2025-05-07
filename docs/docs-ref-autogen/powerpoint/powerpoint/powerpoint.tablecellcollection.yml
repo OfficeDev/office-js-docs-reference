@@ -65,7 +65,7 @@ methods:
     fullName: getItemAtOrNullObject(row, column)
     summary: >-
       Gets the table cell using its zero-based index in the collection. If the
-      `TableCell` does not exist, then this method returns an object with its
+      `TableCell` doesn't exist, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information,
       see .
     remarks: >-

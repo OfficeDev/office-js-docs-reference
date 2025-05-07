@@ -38,7 +38,7 @@ properties:
     fullName: height
     summary: >-
       Specifies the height, in points, of the table. A default value is used
-      when this parameter is not provided. Throws an `InvalidArgument` exception
+      when this parameter isn't provided. Throws an `InvalidArgument` exception
       when set with a negative value.
     remarks: >-
       \[ [API set: PowerPointApi
@@ -58,7 +58,7 @@ properties:
     summary: >-
       Specifies the distance, in points, from the left side of the table to the
       left side of the slide. The table is centered horizontally when this
-      parameter is not provided.
+      parameter isn't provided.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -118,7 +118,7 @@ properties:
 
 
       This should be an 2D array with the same number of rows and columns as the
-      table. If a cell does not require specific formatting, specify an empty
+      table. If a cell doesn't require specific formatting, specify an empty
       object for that cell. Only the top left cell of a merged are can have
       properties specified, which will be applied to the entire merged area. For
       the other cells in the merged area, an empty object should be provided.
@@ -139,7 +139,7 @@ properties:
     fullName: top
     summary: >-
       Specifies the distance, in points, from the top edge of the table to the
-      top edge of the slide. A default value is used when this parameter is not
+      top edge of the slide. A default value is used when this parameter isn't
       provided.
     remarks: >-
       \[ [API set: PowerPointApi
@@ -172,7 +172,7 @@ properties:
 
 
       To provide a plain appearance for the table, set this property to an empty
-      object and do not specify specificCellProperties.
+      object and don't specify specificCellProperties.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -212,7 +212,7 @@ properties:
     fullName: width
     summary: >-
       Specifies the width, in points, of the table. A default value is used when
-      this parameter is not provided. Throws an `InvalidArgument` exception when
+      this parameter isn't provided. Throws an `InvalidArgument` exception when
       set with a negative value.
     remarks: >-
       \[ [API set: PowerPointApi

@@ -96,7 +96,7 @@ methods:
     fullName: delete()
     summary: >-
       Deletes the shape from the shape collection. Does nothing if the shape
-      does not exist.
+      doesn't exist.
     remarks: >-
       \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

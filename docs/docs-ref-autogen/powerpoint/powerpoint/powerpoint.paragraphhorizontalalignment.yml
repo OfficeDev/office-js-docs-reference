@@ -41,7 +41,7 @@ fields:
     uid: powerpoint!PowerPoint.ParagraphHorizontalAlignment.justify:member
     package: powerpoint!
     summary: >-
-      Align text so that it is justified across the whole line.
+      Align text so that it's justified across the whole line.
 
 
       * \[ [API set: PowerPointApi

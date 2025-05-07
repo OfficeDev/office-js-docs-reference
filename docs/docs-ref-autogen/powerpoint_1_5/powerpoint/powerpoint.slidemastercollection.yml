@@ -110,7 +110,7 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideMaster:class" />
         description: >-
-          The Slide Master with the unique ID. If such a Slide Master does not
+          The Slide Master with the unique ID. If such a Slide Master doesn't
           exist, an error is thrown.
   - name: getItemAt(index)
     uid: powerpoint!PowerPoint.SlideMasterCollection#getItemAt:member(1)
@@ -140,7 +140,7 @@ methods:
     package: powerpoint!
     fullName: getItemOrNullObject(id)
     summary: >-
-      Gets a Slide Master using its unique ID. If such a Slide Master does not
+      Gets a Slide Master using its unique ID. If such a Slide Master doesn't
       exist, an object with an `isNullObject` property set to true is returned.
       For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--

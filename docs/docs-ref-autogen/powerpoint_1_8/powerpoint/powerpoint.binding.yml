@@ -84,7 +84,7 @@ methods:
     fullName: getShape()
     summary: >-
       Returns the shape represented by the binding. Will throw an error if the
-      binding is not of the correct type.
+      binding isn't of the correct type.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
