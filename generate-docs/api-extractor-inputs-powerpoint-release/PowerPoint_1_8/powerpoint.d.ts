@@ -2766,7 +2766,7 @@ export declare namespace PowerPoint {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets the table cell using its zero-based index in the collection. If the `TableCell` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link [https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties) | *OrNullObject methods and properties}.
+         * Gets the table cell using its zero-based index in the collection. If the `TableCell` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -4393,7 +4393,7 @@ export declare namespace PowerPoint {
          */
         color: string;
         /**
-         * Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See {@linkPowerPoint.ShapeLineDashStyle} for details.
+         * Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See {@link PowerPoint.ShapeLineDashStyle} for details.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]

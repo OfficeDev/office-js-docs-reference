@@ -67,7 +67,9 @@ methods:
       Gets the table cell using its zero-based index in the collection. If the
       `TableCell` doesn't exist, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information,
-      see .
+      see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
