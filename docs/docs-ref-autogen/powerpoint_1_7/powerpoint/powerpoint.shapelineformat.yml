@@ -83,8 +83,9 @@ properties:
     fullName: dashStyle
     summary: >-
       Represents the dash style of the line. Returns null when the line isn't
-      visible or there are inconsistent dash styles. See {@<!--
-      -->linkPowerPoint.ShapeLineDashStyle<!-- -->} for details.
+      visible or there are inconsistent dash styles. See
+      [PowerPoint.ShapeLineDashStyle](xref:powerpoint!PowerPoint.ShapeLineDashStyle:enum)
+      for details.
     remarks: >-
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
