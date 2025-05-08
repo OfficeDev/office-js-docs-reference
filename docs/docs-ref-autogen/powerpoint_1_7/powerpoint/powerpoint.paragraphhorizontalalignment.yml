@@ -12,6 +12,38 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Specifies the horizontal and vertical alignments of the cells in a table.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table, specifying horizontal and vertical alignment.
+    shapes.addTable(3, 4, {
+      values: [
+        ["A", "BB", "CCC", "DDDD"],
+        ["E", "FF", "GGG", "HHHH"],
+        ["1", "12", "123", "1234"]
+      ],
+      uniformCellProperties: {
+        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment.justify,
+        verticalAlignment: PowerPoint.TextVerticalAlignment.middle
+      }
+    });
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -89,7 +89,9 @@ properties:
         const minNewShapeWidth = 50;
         const minNewShapeHeight = 50;
         for (let i = 0; i < 20; i++) {
-          const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle);
+          const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(
+            PowerPoint.GeometricShapeType.rectangle
+          );
           rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
           rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
           rectangle.left = getRandomBetween(0, slideWidth - rectangle.width);
@@ -97,13 +99,9 @@ properties:
           rectangle.fill.foregroundColor = generateRandomHexColor();
         }
         finalTable += "Done<br>";
-        const slideTags = document.getElementById("slide-tags");
-        if (slideTags) {
-          slideTags.innerHTML = "";
-          slideTags.innerHTML += finalTable;
-        } else {
-          console.warn('Element with ID "slide-tags" not found.');
-        }
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = "";
+        outputSpan.innerHTML += finalTable;
       });
 
       ```
@@ -295,6 +293,49 @@ methods:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      // Inserts an image with binding.
+
+      await PowerPoint.run(async (context) => {
+        const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
+        const slide = context.presentation.getSelectedSlides().getItemAt(0);
+        const myShape = slide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle, {
+          top: 100,
+          left: 30,
+          width: 200,
+          height: 200
+        });
+
+        myShape.fill.setImage(flowerImage);
+        context.presentation.bindings.add(myShape, PowerPoint.BindingType.shape, bindingId);
+        await context.sync();
+
+        const bindingsDropdown = document.getElementById("bindings-dropdown") as HTMLSelectElement;
+
+        const option = new Option(`Binding ${bindingId}`, bindingId);
+
+        // When a binding ID already exists, the binding is updated to refer to the new shape
+        // so select the existing item rather than add a new one.
+        const foundIndex = findDropdownItem(bindingsDropdown, option.text);
+        if (foundIndex < 0) {
+          bindingsDropdown.add(option);
+          bindingsDropdown.selectedIndex = bindingsDropdown.options.length - 1;
+        } else {
+          bindingsDropdown.selectedIndex = foundIndex;
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

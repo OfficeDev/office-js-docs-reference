@@ -326,14 +326,17 @@ methods:
         context.presentation.load("slides");
         await context.sync();
         const slide1 = context.presentation.slides.getItemAt(0);
-        slide1.load("shapes");
+        slide1.load("shapes/items/type");
         await context.sync();
-        const shapes: PowerPoint.ShapeCollection = slide1.shapes;
-        const shape1: PowerPoint.Shape = shapes.getItemAt(0);
-        const shape2: PowerPoint.Shape = shapes.getItemAt(1);
+
+        const shapes = slide1.shapes.items.filter((item) => item.type === PowerPoint.ShapeType.geometricShape);
+        const shape1: PowerPoint.Shape = shapes[0];
+        const shape2: PowerPoint.Shape = shapes[1];
         shape1.load("id");
         shape2.load("id");
         await context.sync();
+
+        console.log(`IDs: ${shape1.id}, ${shape2.id}`)
         slide1.setSelectedShapes([shape1.id, shape2.id]);
         await context.sync();
       });
