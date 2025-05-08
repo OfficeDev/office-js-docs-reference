@@ -127,6 +127,43 @@ properties:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+      await PowerPoint.run(async (context) => {
+        // Ungroups the first shape group on the current slide.
+
+        // Get the shapes on the current slide.
+        context.presentation.load("slides");
+        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        slide.load("shapes/items/type,shapes/items/id");
+        await context.sync();
+
+        const shapes: PowerPoint.ShapeCollection = slide.shapes;
+        const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
+        if (shapeGroups.length === 0) {
+          console.warn("No shape groups on the current slide, so nothing to ungroup.");
+          return;
+        }
+
+        // Ungroup the first grouped shapes.
+        const firstGroupId = shapeGroups[0].id;
+        const shapeGroupToUngroup = shapes.getItem(firstGroupId);
+        shapeGroupToUngroup.group.ungroup();
+        await context.sync();
+
+        console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -555,6 +592,67 @@ properties:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+        // Changes the z-order position of the selected shapes.
+        return PowerPoint.run(async (context) => {
+          const selectedShapes = context.presentation.getSelectedShapes();
+          selectedShapes.load();
+          await context.sync();
+
+          if (selectedShapes.items.length === 0) {
+            console.log("No shapes are selected.");
+          } else {
+            let direction = 1; // Start with bottom-most (lowest number).
+
+            // Start with top-most when sending to back or bringing forward.
+
+            switch (operation) {
+              case PowerPoint.ShapeZOrder.bringForward:
+
+              case PowerPoint.ShapeZOrder.sendToBack:
+                direction = -1; // Reverse direction.
+
+                break;
+            }
+
+            // Change the z-order position for each of the selected shapes,
+
+            // starting with the bottom-most when bringing to front or sending backward,
+
+            // or top-most when sending to back or bringing forward,
+
+            // so the selected shapes retain their relative z-order positions after they're changed.
+
+            selectedShapes.items
+              .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+              .forEach((shape) => {
+                try {
+                  const originalZOrderPosition = shape.zOrderPosition;
+                  shape.setZOrder(operation);
+
+                  console.log(`Changed z-order of shape ${shape.id}.`);
+                } catch (err) {
+                  console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+                }
+              });
+
+            await context.sync();
+          }
+        });
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -758,6 +856,46 @@ methods:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Gets the table from a shape.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+
+        if (shapeCount.value > 0) {
+          const shape = shapes.getItemAt(0);
+          shape.load("type");
+          await context.sync();
+
+          // The shape type can indicate whether the shape is a table.
+          const isTable = shape.type === PowerPoint.ShapeType.table;
+
+          if (isTable) {
+            // Get the Table object for the Shape which is a table.
+            const table = shape.getTable();
+            table.load();
+            await context.sync();
+
+            // Get the Table row and column count.
+            console.log("Table RowCount:" + table.rowCount + " and columnCount: " + table.columnCount);
+          } else console.log("Selected shape isn't table.");
+        } else console.log("No shape selected.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -854,6 +992,67 @@ methods:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+        // Changes the z-order position of the selected shapes.
+        return PowerPoint.run(async (context) => {
+          const selectedShapes = context.presentation.getSelectedShapes();
+          selectedShapes.load();
+          await context.sync();
+
+          if (selectedShapes.items.length === 0) {
+            console.log("No shapes are selected.");
+          } else {
+            let direction = 1; // Start with bottom-most (lowest number).
+
+            // Start with top-most when sending to back or bringing forward.
+
+            switch (operation) {
+              case PowerPoint.ShapeZOrder.bringForward:
+
+              case PowerPoint.ShapeZOrder.sendToBack:
+                direction = -1; // Reverse direction.
+
+                break;
+            }
+
+            // Change the z-order position for each of the selected shapes,
+
+            // starting with the bottom-most when bringing to front or sending backward,
+
+            // or top-most when sending to back or bringing forward,
+
+            // so the selected shapes retain their relative z-order positions after they're changed.
+
+            selectedShapes.items
+              .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+              .forEach((shape) => {
+                try {
+                  const originalZOrderPosition = shape.zOrderPosition;
+                  shape.setZOrder(operation);
+
+                  console.log(`Changed z-order of shape ${shape.id}.`);
+                } catch (err) {
+                  console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+                }
+              });
+
+            await context.sync();
+          }
+        });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

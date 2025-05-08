@@ -53,6 +53,47 @@ properties:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      // Loads bindings.
+
+      await PowerPoint.run(async (context) => {
+        const bindings = context.presentation.bindings;
+        bindings.load("items");
+        await context.sync();
+
+        const bindingCount = bindings.items.length;
+        if (bindingCount === 0) {
+          console.log(`There are no bindings.`);
+        } else if (bindingCount === 1) {
+          console.log("There's 1 binding.");
+        } else {
+          console.log(`There are ${bindingCount} bindings.`);
+        }
+
+        bindings.items.forEach((binding) => {
+          getShapeForBindingId(binding.id).then((shape) => {
+            if (shape) {
+              console.log(`Binding ID: ${binding.id} refers to shape ID ${shape.id}`);
+            } else {
+              console.log(`Binding ID: ${binding.id} doesn't refers to shape.`);
+            }
+          });
+        });
+
+        populateBindingsDropdown(bindings.items);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

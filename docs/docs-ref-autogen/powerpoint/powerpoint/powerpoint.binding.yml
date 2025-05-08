@@ -9,6 +9,28 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+  async function getShapeForBindingId(bindingId: string):
+  Promise<PowerPoint.Shape | undefined> {
+    // Gets shape associated with binding ID.
+    return PowerPoint.run(async (context) => {
+      const binding = context.presentation.bindings.getItem(bindingId);
+      const shape = binding.getShape();
+      return shape;
+    });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -89,6 +111,28 @@ methods:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      async function getShapeForBindingId(bindingId: string):
+      Promise<PowerPoint.Shape | undefined> {
+        // Gets shape associated with binding ID.
+        return PowerPoint.run(async (context) => {
+          const binding = context.presentation.bindings.getItem(bindingId);
+          const shape = binding.getShape();
+          return shape;
+        });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

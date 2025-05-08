@@ -9,6 +9,31 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Specifies the width and height of a table.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table, specifying the width and height.
+    shapes.addTable(3, 4, {
+      width: 600,
+      height: 400
+    });
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,6 +50,31 @@ properties:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the column widths and row heights of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying column widths and row heights
+        shapes.addTable(3, 4, {
+          columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+          rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -44,6 +94,31 @@ properties:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the width and height of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying the width and height.
+        shapes.addTable(3, 4, {
+          width: 600,
+          height: 400
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -82,6 +157,35 @@ properties:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the merge areas of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying one 2x2 merged area.
+        shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "", "HHHH"],
+            ["1", "", "", "1234"]
+          ],
+          mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+        });
+        await context.sync();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,6 +206,31 @@ properties:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the column widths and row heights of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying column widths and row heights
+        shapes.addTable(3, 4, {
+          columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+          rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -126,6 +255,54 @@ properties:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the font formatting and fill colors of the cells in a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying font formatting and fill colors
+        shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "GGG", "HHHH"],
+            ["1", "12", "123", "1234"]
+          ],
+          specificCellProperties: [
+            [
+              { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+              { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+              { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+              { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+            ],
+            [
+              { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+              { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+              { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+              { fill: { color: "red" }, font: { color: "yellow" } }
+            ],
+            [
+              { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+              { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+              { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+              { fill: { color: "red" }, font: { color: "#fbceb1" } }
+            ]
+          ]
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -178,6 +355,42 @@ properties:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies a table's borders.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying border styles
+        shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "GGG", "HHHH"],
+            ["1", "12", "123", "1234"]
+          ],
+          uniformCellProperties: {
+            borders: {
+              left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+              bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+            }
+          }
+        });
+        await context.sync();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,6 +413,34 @@ properties:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies a table's values.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying cell values.
+        const shape = shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "GGG", "HHHH"],
+            ["1", "12", "123", "1234"]
+          ]
+        });
+        await context.sync();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,6 +459,31 @@ properties:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the width and height of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying the width and height.
+        shapes.addTable(3, 4, {
+          width: 600,
+          height: 400
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
