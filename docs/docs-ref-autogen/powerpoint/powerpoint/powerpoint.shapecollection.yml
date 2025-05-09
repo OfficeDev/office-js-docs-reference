@@ -281,6 +281,43 @@ methods:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+      await PowerPoint.run(async (context) => {
+        // Groups the geometric shapes on the current slide.
+
+        // Get the shapes on the current slide.
+        context.presentation.load("slides");
+        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        slide.load("shapes/items/type,shapes/items/id");
+        await context.sync();
+
+        const shapes: PowerPoint.ShapeCollection = slide.shapes;
+        const shapesToGroup = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.geometricShape);
+        if (shapesToGroup.length === 0) {
+          console.warn("No shapes on the current slide, so nothing to group.");
+          return;
+        }
+
+        // Group the geometric shapes.
+        console.log(`Number of shapes to group: ${shapesToGroup.length}`);
+        const group = shapes.addGroup(shapesToGroup);
+        group.load("id");
+        await context.sync();
+
+        console.log(`Grouped shapes. Group ID: ${group.id}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -413,6 +450,28 @@ methods:
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Adds a basic table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a simple table, specifying the row and column count.
+        shapes.addTable(3, 4);
+        await context.sync();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -503,6 +562,46 @@ methods:
       \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Gets the table from a shape.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+
+        if (shapeCount.value > 0) {
+          const shape = shapes.getItemAt(0);
+          shape.load("type");
+          await context.sync();
+
+          // The shape type can indicate whether the shape is a table.
+          const isTable = shape.type === PowerPoint.ShapeType.table;
+
+          if (isTable) {
+            // Get the Table object for the Shape which is a table.
+            const table = shape.getTable();
+            table.load();
+            await context.sync();
+
+            // Get the Table row and column count.
+            console.log("Table RowCount:" + table.rowCount + " and columnCount: " + table.columnCount);
+          } else console.log("Selected shape isn't table.");
+        } else console.log("No shape selected.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
