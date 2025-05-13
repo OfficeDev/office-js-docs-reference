@@ -1764,12 +1764,12 @@ export declare namespace PowerPoint {
         
         /**
          * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
-         *
-         * - `true`: All the text is bold.
-         *
-         * - `false`: None of the text is bold.
-         *
-         * - `null`: Returned if some, but not all, of the text is bold.
+                    
+                     - `true`: All the text is bold.
+                    
+                     - `false`: None of the text is bold.
+                    
+                     - `null`: Returned if some, but not all, of the text is bold.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -1785,12 +1785,12 @@ export declare namespace PowerPoint {
         
         /**
          * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
-         *
-         * - `true`: All the text is italicized.
-         *
-         * - `false`: None of the text is italicized.
-         *
-         * - `null`: Returned if some, but not all, of the text is italicized.
+                    
+                     - `true`: All the text is italicized.
+                    
+                     - `false`: None of the text is italicized.
+                    
+                     - `null`: Returned if some, but not all, of the text is italicized.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -2139,7 +2139,7 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.SlideLayout;
         /**
-         * Gets a layout using its unique ID.  If such a layout doesn't exist, an object with an `isNullObject` property set to true is returned. For further information,
+         * Gets a layout using its unique ID. If such a layout doesn't exist, an object with an `isNullObject` property set to true is returned. For further information,
                     see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -2681,7 +2681,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3299,12 +3299,12 @@ export declare namespace PowerPoint {
             
             /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
-             *
-             * - `true`: All the text is bold.
-             *
-             * - `false`: None of the text is bold.
-             *
-             * - `null`: Returned if some, but not all, of the text is bold.
+                        
+                         - `true`: All the text is bold.
+                        
+                         - `false`: None of the text is bold.
+                        
+                         - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3320,12 +3320,12 @@ export declare namespace PowerPoint {
             
             /**
              * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
-             *
-             * - `true`: All the text is italicized.
-             *
-             * - `false`: None of the text is italicized.
-             *
-             * - `null`: Returned if some, but not all, of the text is italicized.
+                        
+                         - `true`: All the text is italicized.
+                        
+                         - `false`: None of the text is italicized.
+                        
+                         - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3454,7 +3454,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
         }
         /** An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
@@ -3655,12 +3655,12 @@ export declare namespace PowerPoint {
             
            /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
-             *
-             * - `true`: All the text is bold.
-             *
-             * - `false`: None of the text is bold.
-             *
-             * - `null`: Returned if some, but not all, of the text is bold.
+                        
+                         - `true`: All the text is bold.
+                        
+                         - `false`: None of the text is bold.
+                        
+                         - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3676,12 +3676,12 @@ export declare namespace PowerPoint {
             
             /**
              * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
-             *
-             * - `true`: All the text is italicized.
-             *
-             * - `false`: None of the text is italicized.
-             *
-             * - `null`: Returned if some, but not all, of the text is italicized.
+                        
+                         - `true`: All the text is italicized.
+                        
+                         - `false`: None of the text is italicized.
+                        
+                         - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -3877,7 +3877,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
         }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
@@ -4115,12 +4115,12 @@ export declare namespace PowerPoint {
             
             /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
-             *
-             * - `true`: All the text is bold.
-             *
-             * - `false`: None of the text is bold.
-             *
-             * - `null`: Returned if some, but not all, of the text is bold.
+                        
+                         - `true`: All the text is bold.
+                        
+                         - `false`: None of the text is bold.
+                        
+                         - `null`: Returned if some, but not all, of the text is bold.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -4136,12 +4136,12 @@ export declare namespace PowerPoint {
             
             /**
              * Specifies whether the text in the `TextRange` is set to italic. The possible values are as follows:
-             *
-             * - `true`: All the text is italicized.
-             *
-             * - `false`: None of the text is italicized.
-             *
-             * - `null`: Returned if some, but not all, of the text is italicized.
+                        
+                         - `true`: All the text is italicized.
+                        
+                         - `false`: None of the text is italicized.
+                        
+                         - `null`: Returned if some, but not all, of the text is italicized.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -4824,7 +4824,7 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be prepopulated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *

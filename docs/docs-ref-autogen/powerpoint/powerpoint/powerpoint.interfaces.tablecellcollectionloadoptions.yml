@@ -30,6 +30,27 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#borders:member
+    package: powerpoint!
+    fullName: borders
+    summary: >-
+      For EACH ITEM in the collection: Gets the collection of borders for the
+      table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'borders?: PowerPoint.Interfaces.BordersLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface" />
   - name: columnCount
     uid: >-
       powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#columnCount:member
@@ -68,6 +89,105 @@ properties:
       content: 'columnIndex?: boolean;'
       return:
         type: boolean
+  - name: fill
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#fill:member
+    package: powerpoint!
+    fullName: fill
+    summary: 'For EACH ITEM in the collection: Gets the fill color of the table cell.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface"
+          />
+  - name: font
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#font:member
+    package: powerpoint!
+    fullName: font
+    summary: 'For EACH ITEM in the collection: Gets the font of the table cell.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'font?: PowerPoint.Interfaces.ShapeFontLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface"
+          />
+  - name: horizontalAlignment
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#horizontalAlignment:member
+    package: powerpoint!
+    fullName: horizontalAlignment
+    summary: >-
+      For EACH ITEM in the collection: Specifies the horizontal alignment of the
+      text in the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'horizontalAlignment?: boolean;'
+      return:
+        type: boolean
+  - name: indentLevel
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#indentLevel:member
+    package: powerpoint!
+    fullName: indentLevel
+    summary: >-
+      For EACH ITEM in the collection: Specifies the indent level of the text in
+      the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentLevel?: boolean;'
+      return:
+        type: boolean
+  - name: margins
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#margins:member
+    package: powerpoint!
+    fullName: margins
+    summary: >-
+      For EACH ITEM in the collection: Gets the set of margins in the table
+      cell.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'margins?: PowerPoint.Interfaces.MarginsLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.MarginsLoadOptions:interface" />
   - name: rowCount
     uid: >-
       powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#rowCount:member
@@ -123,5 +243,44 @@ properties:
     isDeprecated: false
     syntax:
       content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: textRuns
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#textRuns:member
+    package: powerpoint!
+    fullName: textRuns
+    summary: >-
+      For EACH ITEM in the collection: Specifies the contents of the table cell
+      as an array of  objects. Each `TextRun` object represents a sequence of
+      one or more characters that share the same font attributes.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textRuns?: boolean;'
+      return:
+        type: boolean
+  - name: verticalAlignment
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#verticalAlignment:member
+    package: powerpoint!
+    fullName: verticalAlignment
+    summary: >-
+      For EACH ITEM in the collection: Specifies the vertical alignment of the
+      text in the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'verticalAlignment?: boolean;'
       return:
         type: boolean

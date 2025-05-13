@@ -351,7 +351,7 @@ methods:
           type: <xref uid="powerpoint!PowerPoint.SlideGetImageOptions:interface" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
-        description: A Base64 string of the slide image in PNG format.
+        description: A Base64-encoded string of the slide image in PNG format.
   - name: load(options)
     uid: powerpoint!PowerPoint.Slide#load:member(1)
     package: powerpoint!

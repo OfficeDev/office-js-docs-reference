@@ -340,7 +340,7 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.SlideLayout;
         /**
-         * Gets a layout using its unique ID.  If such a layout doesn't exist, an object with an `isNullObject` property set to true is returned. For further information,
+         * Gets a layout using its unique ID. If such a layout doesn't exist, an object with an `isNullObject` property set to true is returned. For further information,
                     see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -1754,7 +1754,7 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be prepopulated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *

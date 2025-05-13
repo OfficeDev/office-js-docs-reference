@@ -98,20 +98,20 @@ export declare namespace Excel {
         referencedValues?: ReferencedValue[];
     }
     /**
-    * The Base64-encoded type and data of an image.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * The Base64-encoded type and data of an image.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface Base64EncodedImage {
         /**
-        * The file type of the Base64-encoded image.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The file type of the Base64-encoded image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: Base64EncodingType | "BMP" | "GIF" | "ICO" | "JPG" | "PNG" | "TIF" | "WEBP";
         /**
          * The Base64-encoded string.
@@ -247,7 +247,7 @@ export declare namespace Excel {
         firstRowIsHeader?: boolean;
     }
     /**
-     * Represents the compact layout properties for a value.
+     * The basic compact layout properties.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -290,7 +290,7 @@ export declare namespace Excel {
     export interface BasicViewLayouts {
         /**
          * Represents the layout of this value and its properties in card view.
-         * If the `BasicCardLayout` object doesn't have a layout property, it's assumed to be "Entity".
+         * If the `BasicCardLayout` object does not have a layout property, it is assumed to be "Entity".
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6001,11 +6001,11 @@ export declare namespace Excel {
          */
         text?: string;
         /**
-        * Represents the properties of this entity and their metadata.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the properties of this entity and their metadata.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties?: {
             [key: string]: EntityPropertyType;
         };
@@ -6669,11 +6669,11 @@ export declare namespace Excel {
          */
         text?: string;
         /**
-        * Represents the properties of this linked entity and their metadata.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the properties of this linked entity and their metadata.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties?: {
             [key: string]: EntityPropertyType;
         };
@@ -12672,14 +12672,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.18]
          */
-        checkbox = "Checkbox",
-        /**
-         * Type representing a dropdown control.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dropdown = "Dropdown"
+        checkbox = "Checkbox"
     }
     /**
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
@@ -15075,7 +15068,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
+         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned. The `address` has a limit of 8192 characters. If the address exceeds the character limit, this method returns an `InvalidArgument` error.
          */
         getRange(address?: string): Excel.Range;
         /**
@@ -16525,7 +16518,7 @@ export declare namespace Excel {
         getDirectPrecedents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.
-         * Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
+                    Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35430,8 +35423,8 @@ export declare namespace Excel {
     }
     /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
-     * A data domain is linked to a data provider that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
-     * A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
+                A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
+                A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35442,7 +35435,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          * Gets the name of the data provider for the linked entity data domain.
-         * This name can change based on the information from the data provider.
+                    This name can change based on the information provided by the data provider.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35451,7 +35444,7 @@ export declare namespace Excel {
         readonly dataProvider: string;
         /**
          * Gets the ID of the linked entity data domain defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35460,7 +35453,7 @@ export declare namespace Excel {
         readonly id: string;
         /**
          * Gets the date and time (in the local time zone) since the workbook was opened and the `LinkedEntityCellValue` objects of this linked entity data domain were last refreshed.
-         * Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
+                    Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35479,7 +35472,7 @@ export declare namespace Excel {
         readonly loadFunctionId: string;
         /**
          * Gets the name of the linked entity data domain.
-         * This name can change based on the information from the data provider.
+                    This name can change based on the information provided by the data provider.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35488,7 +35481,7 @@ export declare namespace Excel {
         readonly name: string;
         /**
          * Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically.
-         * The refresh interval only applies if the `refreshMode` is set to "Periodic".
+                    The refresh interval only applies if the `refreshMode` is set to "Periodic".
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35497,8 +35490,8 @@ export declare namespace Excel {
         readonly periodicRefreshInterval: number;
         /**
          * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
-         * If the refresh mode being set isn't supported by this linked entity data domain, then the current refresh mode is not changed.
-         * If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
+                    If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
+                    If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35507,8 +35500,8 @@ export declare namespace Excel {
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
          * Gets the service ID of the linked entity data domain.
-         * This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins.
-         * This ID never changes across user sessions.
+                    This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins.
+                    This ID never changes across user sessions.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35517,7 +35510,7 @@ export declare namespace Excel {
         readonly serviceId: number;
         /**
          * Gets all the refresh modes supported by the linked entity data domain.
-         * This array can change based on the information provided by the data provider.
+                    This array can change based on the information provided by the data provider.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35526,8 +35519,8 @@ export declare namespace Excel {
         readonly supportedRefreshModes: Excel.LinkedEntityDataDomainRefreshMode[];
         /**
          * Deletes this object from the `LinkedEntityDataDomainCollection`.
-         * Once the linked entity data domain is deleted, new `LinkedEntityCellValue` objects of this linked entity data domain can't be created and existing `LinkedEntityCellValue` objects can't be refreshed.
-         * An Office Add-in can only delete linked entity data domains that it created.
+                    Once the linked entity data domain is deleted, new `LinkedEntityCellValue` objects of this linked entity data domain can't be created and existing `LinkedEntityCellValue` objects can't be refreshed.
+                    An Office Add-in can only delete linked entity data domains that it created.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35536,7 +35529,7 @@ export declare namespace Excel {
         delete(): void;
         /**
          * Refreshes all `LinkedEntityCellValue` objects of this linked entity data domain.
-         * The refresh request can fail if the data provider is busy or temporarily inaccessible.
+                    The refresh request can fail if the data provider is busy or temporarily inaccessible.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35580,7 +35573,7 @@ export declare namespace Excel {
     export interface LinkedEntityDataDomainAddedEventArgs {
         /**
          * Gets the ID of the linked entity data domain that was just added to the workbook. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35614,7 +35607,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a collection of `LinkedEntityDataDomain` objects.
-     * The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
+                The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35627,7 +35620,7 @@ export declare namespace Excel {
         readonly items: Excel.LinkedEntityDataDomain[];
         /**
          * Adds a linked entity data domain object defined by the Office Add-in to the collection.
-         * Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
+                    Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35679,8 +35672,8 @@ export declare namespace Excel {
         getItemByName(name: string): Excel.LinkedEntityDataDomain;
         /**
          * Gets a linked entity data domain by its `name`.
-         * If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35692,8 +35685,8 @@ export declare namespace Excel {
         getItemByNameOrNullObject(name: string): Excel.LinkedEntityDataDomain;
         /**
          * Gets a linked entity data domain by its `id`.
-         * If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35705,7 +35698,7 @@ export declare namespace Excel {
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
         /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
-         * The refresh request can fail if the data providers are busy or temporarily inaccessible.
+                    The refresh request can fail if the data providers are busy or temporarily inaccessible.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35784,7 +35777,7 @@ export declare namespace Excel {
         dataProvider: string;
         /**
          * Gets or sets the ID of the linked entity data domain.
-         * This ID must be unique across all linked entity data domains defined by this Office Add-in.
+                    This ID must be unique across all linked entity data domains defined by this Office Add-in.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35802,7 +35795,7 @@ export declare namespace Excel {
         loadFunctionId: string;
         /**
          * Gets or sets the name of the linked entity data domain.
-         * This name must be unique across all linked entity data domains defined by this Office Add-in.
+                    This name must be unique across all linked entity data domains defined by this Office Add-in.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35811,8 +35804,8 @@ export declare namespace Excel {
         name: string;
         /**
          * Gets or sets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The minimum valid value is 300.
-         * This property is required if the `supportedRefreshModes` array contains the value "Periodic".
-         * This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
+                    This property is required if the `supportedRefreshModes` array contains the value "Periodic".
+                    This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35821,10 +35814,10 @@ export declare namespace Excel {
         periodicRefreshInterval?: number;
         /**
          * Gets or sets all the refresh modes supported by the linked entity data domain.
-         * The default value is `["Manual"]`, which is always supported even if not specified.
-         * The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open.
-         * If the refresh mode wasn't saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain.
-         * If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
+                    The default value is `["Manual"]`, which is always supported even if not specified.
+                    The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open.
+                    If the refresh mode was not saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain.
+                    If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35850,7 +35843,7 @@ export declare namespace Excel {
         errors?: string[];
         /**
          * Gets the ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -35900,15 +35893,14 @@ export declare namespace Excel {
     enum LinkedEntityDataDomainRefreshMode {
         /**
          * Refresh mode is unknown or unsupported.
-         * 
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         unknown = "Unknown",
         /**
-         * Manual refresh by the user. Refresh is not triggered automatically.
-         * 
+         * Manual refresh by the user.
+                    Refresh is not triggered automatically.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -35916,8 +35908,7 @@ export declare namespace Excel {
         manual = "Manual",
         /**
          * Refresh on workbook load, applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
-         * Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
-         * 
+                    Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -35925,9 +35916,8 @@ export declare namespace Excel {
         onLoad = "OnLoad",
         /**
          * Refresh automatically based on the frequency, in seconds, specified by `periodicRefreshInterval`.
-         * For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened.
-         * For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
-         * 
+                    For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened.
+                    For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -35944,7 +35934,7 @@ export declare namespace Excel {
     export interface LinkedEntityDataDomainRefreshModeChangedEventArgs {
         /**
          * Gets the ID of the linked entity data domain whose refresh mode was changed. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -43233,7 +43223,9 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Note;
         /**
-         * Gets a note by its cell address. If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+         * Gets a note by its cell address.
+                    If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -59420,7 +59412,7 @@ export declare namespace Excel {
         export interface LinkedEntityDataDomainData {
             /**
              * Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -59457,7 +59449,7 @@ export declare namespace Excel {
             loadFunctionId?: string;
             /**
              * Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -71528,7 +71520,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -71565,7 +71557,7 @@ export declare namespace Excel {
             loadFunctionId?: boolean;
             /**
              * Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -71626,7 +71618,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -71663,7 +71655,7 @@ export declare namespace Excel {
             loadFunctionId?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]

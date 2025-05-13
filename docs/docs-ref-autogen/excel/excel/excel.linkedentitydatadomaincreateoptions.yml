@@ -125,7 +125,7 @@ properties:
       domain. The default value is `["Manual"]`<!-- -->, which is always
       supported even if not specified. The refresh mode saved in the workbook is
       loaded as the default refresh mode of the linked entity data domain on the
-      next workbook open. If the refresh mode wasn't saved in the workbook, the
+      next workbook open. If the refresh mode was not saved in the workbook, the
       first value in the array is set as the default refresh mode of the linked
       entity data domain. If the array has the value "Periodic", the
       `periodicRefreshInterval` property must also be set for the linked entity

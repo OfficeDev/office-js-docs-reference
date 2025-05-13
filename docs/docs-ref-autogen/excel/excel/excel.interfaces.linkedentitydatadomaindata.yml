@@ -18,7 +18,7 @@ properties:
     fullName: dataProvider
     summary: >-
       Gets the name of the data provider for the linked entity data domain. This
-      name can change based on the information from the data provider.
+      name can change based on the information provided by the data provider.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -98,7 +98,7 @@ properties:
     fullName: name
     summary: >-
       Gets the name of the linked entity data domain. This name can change based
-      on the information from the data provider.
+      on the information provided by the data provider.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

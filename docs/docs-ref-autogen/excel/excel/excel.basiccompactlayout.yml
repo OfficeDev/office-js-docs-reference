@@ -3,7 +3,7 @@ name: Excel.BasicCompactLayout
 uid: excel!Excel.BasicCompactLayout:interface
 package: excel!
 fullName: Excel.BasicCompactLayout
-summary: Represents the compact layout properties for a value.
+summary: The basic compact layout properties.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

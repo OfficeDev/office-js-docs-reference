@@ -14,6 +14,11 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.BindingData:interface
   - powerpoint!PowerPoint.Interfaces.BindingLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.BorderData:interface
+  - powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.BordersData:interface
+  - powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.BorderUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatData:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface
@@ -46,6 +51,9 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.HyperlinkData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.MarginsData:interface
+  - powerpoint!PowerPoint.Interfaces.MarginsLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.MarginsUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface
@@ -97,8 +105,23 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TableCellData:interface
   - powerpoint!PowerPoint.Interfaces.TableCellLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnCollectionLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TableData:interface
   - powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowCollectionLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleOptionsData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleOptionsLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface
@@ -117,14 +140,19 @@ interfaces:
   - powerpoint!PowerPoint.TableCellBorders:interface
   - powerpoint!PowerPoint.TableCellMargins:interface
   - powerpoint!PowerPoint.TableCellProperties:interface
+  - powerpoint!PowerPoint.TableClearOptions:interface
+  - powerpoint!PowerPoint.TableColumnAddOptions:interface
   - powerpoint!PowerPoint.TableColumnProperties:interface
   - powerpoint!PowerPoint.TableMergedAreaProperties:interface
+  - powerpoint!PowerPoint.TableRowAddOptions:interface
   - powerpoint!PowerPoint.TableRowProperties:interface
   - powerpoint!PowerPoint.TextRun:interface
 classes:
   - powerpoint!PowerPoint.Application:class
   - powerpoint!PowerPoint.Binding:class
   - powerpoint!PowerPoint.BindingCollection:class
+  - powerpoint!PowerPoint.Border:class
+  - powerpoint!PowerPoint.Borders:class
   - powerpoint!PowerPoint.BulletFormat:class
   - powerpoint!PowerPoint.CustomProperty:class
   - powerpoint!PowerPoint.CustomPropertyCollection:class
@@ -134,6 +162,7 @@ classes:
   - powerpoint!PowerPoint.DocumentProperties:class
   - powerpoint!PowerPoint.Hyperlink:class
   - powerpoint!PowerPoint.HyperlinkCollection:class
+  - powerpoint!PowerPoint.Margins:class
   - powerpoint!PowerPoint.ParagraphFormat:class
   - powerpoint!PowerPoint.PlaceholderFormat:class
   - powerpoint!PowerPoint.Presentation:class
@@ -155,6 +184,11 @@ classes:
   - powerpoint!PowerPoint.Table:class
   - powerpoint!PowerPoint.TableCell:class
   - powerpoint!PowerPoint.TableCellCollection:class
+  - powerpoint!PowerPoint.TableColumn:class
+  - powerpoint!PowerPoint.TableColumnCollection:class
+  - powerpoint!PowerPoint.TableRow:class
+  - powerpoint!PowerPoint.TableRowCollection:class
+  - powerpoint!PowerPoint.TableStyleOptions:class
   - powerpoint!PowerPoint.Tag:class
   - powerpoint!PowerPoint.TagCollection:class
   - powerpoint!PowerPoint.TextFrame:class
@@ -176,6 +210,7 @@ enums:
   - powerpoint!PowerPoint.ShapeType:enum
   - powerpoint!PowerPoint.ShapeZOrder:enum
   - powerpoint!PowerPoint.SlideLayoutType:enum
+  - powerpoint!PowerPoint.TableStyle:enum
   - powerpoint!PowerPoint.TextVerticalAlignment:enum
 functions:
   - name: PowerPoint.createPresentation(base64File)
@@ -183,7 +218,7 @@ functions:
     package: powerpoint!
     summary: >-
       Creates and opens a new presentation. Optionally, the presentation can be
-      pre-populated with a Base64-encoded .pptx file.
+      prepopulated with a Base64-encoded .pptx file.
 
 
       \[ [API set: PowerPointApi

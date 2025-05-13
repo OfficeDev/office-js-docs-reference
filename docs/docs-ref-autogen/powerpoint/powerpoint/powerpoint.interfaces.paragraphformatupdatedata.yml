@@ -34,9 +34,9 @@ properties:
       content: >-
         horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" |
         "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
-        "ThaiDistributed";
+        "ThaiDistributed" | null;
       return:
         type: >-
           <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
           | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
-          "Distributed" | "ThaiDistributed"
+          "Distributed" | "ThaiDistributed" | null

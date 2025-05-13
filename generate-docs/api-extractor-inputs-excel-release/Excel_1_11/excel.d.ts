@@ -2813,7 +2813,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
+         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned. The `address` has a limit of 8192 characters. If the address exceeds the character limit, this method returns an `InvalidArgument` error.
          */
         getRange(address?: string): Excel.Range;
         /**
