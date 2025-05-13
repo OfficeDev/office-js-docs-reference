@@ -1,24 +1,27 @@
 ### YamlMime:TSType
 name: OneNote.Interfaces.PointLoadOptions
-uid: 'onenote!OneNote.Interfaces.PointLoadOptions:interface'
+uid: onenote!OneNote.Interfaces.PointLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.PointLoadOptions
 summary: Represents a single point of ink stroke
-remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'onenote!OneNote.Interfaces.PointLoadOptions#$all:member'
+    uid: onenote!OneNote.Interfaces.PointLoadOptions#$all:member
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +29,15 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: 'onenote!OneNote.Interfaces.PointLoadOptions#id:member'
+    uid: onenote!OneNote.Interfaces.PointLoadOptions#id:member
     package: onenote!
     fullName: id
     summary: Gets the ID of the Point object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,12 +45,12 @@ properties:
       return:
         type: boolean
   - name: x
-    uid: 'onenote!OneNote.Interfaces.PointLoadOptions#x:member'
+    uid: onenote!OneNote.Interfaces.PointLoadOptions#x:member
     package: onenote!
     fullName: x
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,12 +58,12 @@ properties:
       return:
         type: boolean
   - name: 'y'
-    uid: 'onenote!OneNote.Interfaces.PointLoadOptions#y:member'
+    uid: onenote!OneNote.Interfaces.PointLoadOptions#y:member
     package: onenote!
     fullName: 'y'
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -28,6 +28,7 @@
 ||[properties](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-properties-member)|Represents additional properties of this double value.|
 ||[provider](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-provider-member)|Represents information that describes the service that provided the data in this `DoubleCellValue`.|
 ||[referencedValues](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-referencedvalues-member)|Represents the cell values which are referenced within `DoubleCellValue.properties`.|
+|[EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout)|[icon](/javascript/api/excel/excel.entitycompactlayout#excel-excel-entitycompactlayout-icon-member)|Specifies the name of the icon which is used to open the card.|
 |[FormattedNumberCellValue](/javascript/api/excel/excel.formattednumbercellvalue)|[basicType](/javascript/api/excel/excel.formattednumbercellvalue#excel-excel-formattednumbercellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.formattednumbercellvalue#excel-excel-formattednumbercellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[numberFormat](/javascript/api/excel/excel.formattednumbercellvalue#excel-excel-formattednumbercellvalue-numberformat-member)|Returns the number format string that is used to display this value.|

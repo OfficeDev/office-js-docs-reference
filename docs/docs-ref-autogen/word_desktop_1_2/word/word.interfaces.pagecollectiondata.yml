@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.PageCollectionData
-uid: 'word!Word.Interfaces.PageCollectionData:interface'
+uid: word!Word.Interfaces.PageCollectionData:interface
 package: word!
 fullName: Word.Interfaces.PageCollectionData
-summary: An interface describing the data returned by calling `pageCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `pageCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.PageCollectionData#items:member'
+    uid: word!Word.Interfaces.PageCollectionData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.PageData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.PageData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.PageData:interface" />[]

@@ -1,25 +1,29 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideLayoutCollectionData
-uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface'
+uid: powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutCollectionData
-summary: An interface describing the data returned by calling `slideLayoutCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `slideLayoutCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member'
+    uid: powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: PowerPoint.Interfaces.SlideLayoutData[];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface" />[]'
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+          />[]

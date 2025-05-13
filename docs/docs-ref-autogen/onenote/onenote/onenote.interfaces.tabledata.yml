@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: OneNote.Interfaces.TableData
-uid: 'onenote!OneNote.Interfaces.TableData:interface'
+uid: onenote!OneNote.Interfaces.TableData:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: borderVisible
-    uid: 'onenote!OneNote.Interfaces.TableData#borderVisible:member'
+    uid: onenote!OneNote.Interfaces.TableData#borderVisible:member
     package: onenote!
     fullName: borderVisible
-    summary: 'Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets or sets whether the borders are visible or not. True if they are
+      visible, false if they are hidden.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +29,15 @@ properties:
       return:
         type: boolean
   - name: columnCount
-    uid: 'onenote!OneNote.Interfaces.TableData#columnCount:member'
+    uid: onenote!OneNote.Interfaces.TableData#columnCount:member
     package: onenote!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,12 +45,15 @@ properties:
       return:
         type: number
   - name: id
-    uid: 'onenote!OneNote.Interfaces.TableData#id:member'
+    uid: onenote!OneNote.Interfaces.TableData#id:member
     package: onenote!
     fullName: id
     summary: Gets the ID of the table. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +61,15 @@ properties:
       return:
         type: string
   - name: rowCount
-    uid: 'onenote!OneNote.Interfaces.TableData#rowCount:member'
+    uid: onenote!OneNote.Interfaces.TableData#rowCount:member
     package: onenote!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,15 +77,18 @@ properties:
       return:
         type: number
   - name: rows
-    uid: 'onenote!OneNote.Interfaces.TableData#rows:member'
+    uid: onenote!OneNote.Interfaces.TableData#rows:member
     package: onenote!
     fullName: rows
     summary: Gets all of the table rows. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rows?: OneNote.Interfaces.TableRowData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.TableRowData:interface" />[]'
+        type: <xref uid="onenote!OneNote.Interfaces.TableRowData:interface" />[]

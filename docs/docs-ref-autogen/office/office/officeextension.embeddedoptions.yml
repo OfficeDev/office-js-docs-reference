@@ -1,26 +1,27 @@
 ### YamlMime:TSType
 name: OfficeExtension.EmbeddedOptions
-uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+uid: office!OfficeExtension.EmbeddedOptions:interface
 package: office!
 fullName: OfficeExtension.EmbeddedOptions
 summary: >-
-  Specifies options for a session of a Visio diagram embedded in a SharePoint page. Called by constructor of
-  `EmbeddedSession`<!-- -->. For more information, see [Visio JavaScript API
+  Specifies options for a session of a Visio diagram embedded in a SharePoint
+  page. Called by constructor of `EmbeddedSession`<!-- -->. For more
+  information, see [Visio JavaScript API
   overview](https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)<!--
   -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: container
-    uid: 'office!OfficeExtension.EmbeddedOptions#container:member'
+    uid: office!OfficeExtension.EmbeddedOptions#container:member
     package: office!
     fullName: container
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,12 +29,12 @@ properties:
       return:
         type: HTMLElement
   - name: height
-    uid: 'office!OfficeExtension.EmbeddedOptions#height:member'
+    uid: office!OfficeExtension.EmbeddedOptions#height:member
     package: office!
     fullName: height
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,12 +42,12 @@ properties:
       return:
         type: string
   - name: id
-    uid: 'office!OfficeExtension.EmbeddedOptions#id:member'
+    uid: office!OfficeExtension.EmbeddedOptions#id:member
     package: office!
     fullName: id
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,12 +55,12 @@ properties:
       return:
         type: string
   - name: sessionKey
-    uid: 'office!OfficeExtension.EmbeddedOptions#sessionKey:member'
+    uid: office!OfficeExtension.EmbeddedOptions#sessionKey:member
     package: office!
     fullName: sessionKey
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,12 +68,12 @@ properties:
       return:
         type: string
   - name: timeoutInMilliseconds
-    uid: 'office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member'
+    uid: office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member
     package: office!
     fullName: timeoutInMilliseconds
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,12 +81,12 @@ properties:
       return:
         type: number
   - name: width
-    uid: 'office!OfficeExtension.EmbeddedOptions#width:member'
+    uid: office!OfficeExtension.EmbeddedOptions#width:member
     package: office!
     fullName: width
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

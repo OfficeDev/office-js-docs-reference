@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Word.ListLevelType
-uid: 'word!Word.ListLevelType:enum'
+uid: word!Word.ListLevelType:enum
 package: word!
 fullName: Word.ListLevelType
 summary: ''
 remarks: >-
-  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -50,22 +51,28 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: bullet
-    uid: 'word!Word.ListLevelType.bullet:member'
+    uid: word!Word.ListLevelType.bullet:member
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bullet"'
   - name: number
-    uid: 'word!Word.ListLevelType.number:member'
+    uid: word!Word.ListLevelType.number:member
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Number"'
   - name: picture
-    uid: 'word!Word.ListLevelType.picture:member'
+    uid: word!Word.ListLevelType.picture:member
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Picture"'

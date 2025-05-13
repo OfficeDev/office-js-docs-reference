@@ -1,11 +1,12 @@
 ### YamlMime:TSType
 name: Word.DocumentProperties
-uid: 'word!Word.DocumentProperties:class'
+uid: word!Word.DocumentProperties:class
 package: word!
 fullName: Word.DocumentProperties
 summary: Represents document properties.
 remarks: >-
-  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -26,18 +27,20 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: applicationName
-    uid: 'word!Word.DocumentProperties#applicationName:member'
+    uid: word!Word.DocumentProperties#applicationName:member
     package: word!
     fullName: applicationName
     summary: Gets the application name of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,12 +48,14 @@ properties:
       return:
         type: string
   - name: author
-    uid: 'word!Word.DocumentProperties#author:member'
+    uid: word!Word.DocumentProperties#author:member
     package: word!
     fullName: author
     summary: Specifies the author of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,12 +63,14 @@ properties:
       return:
         type: string
   - name: category
-    uid: 'word!Word.DocumentProperties#category:member'
+    uid: word!Word.DocumentProperties#category:member
     package: word!
     fullName: category
     summary: Specifies the category of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,14 +78,16 @@ properties:
       return:
         type: string
   - name: comments
-    uid: 'word!Word.DocumentProperties#comments:member'
+    uid: word!Word.DocumentProperties#comments:member
     package: word!
     fullName: comments
     summary: >-
-      Specifies the Comments field in the metadata of the document. These have no connection to comments by users made
-      in the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+      Specifies the Comments field in the metadata of the document. These have
+      no connection to comments by users made in the document.
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,12 +95,14 @@ properties:
       return:
         type: string
   - name: company
-    uid: 'word!Word.DocumentProperties#company:member'
+    uid: word!Word.DocumentProperties#company:member
     package: word!
     fullName: company
     summary: Specifies the company of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,27 +110,29 @@ properties:
       return:
         type: string
   - name: context
-    uid: 'word!Word.DocumentProperties#context:member'
+    uid: word!Word.DocumentProperties#context:member
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
+        type: <xref uid="word!Word.RequestContext:class" />
   - name: creationDate
-    uid: 'word!Word.DocumentProperties#creationDate:member'
+    uid: word!Word.DocumentProperties#creationDate:member
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,25 +140,29 @@ properties:
       return:
         type: Date
   - name: customProperties
-    uid: 'word!Word.DocumentProperties#customProperties:member'
+    uid: word!Word.DocumentProperties#customProperties:member
     package: word!
     fullName: customProperties
     summary: Gets the collection of custom properties of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly customProperties: Word.CustomPropertyCollection;'
       return:
-        type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
+        type: <xref uid="word!Word.CustomPropertyCollection:class" />
   - name: format
-    uid: 'word!Word.DocumentProperties#format:member'
+    uid: word!Word.DocumentProperties#format:member
     package: word!
     fullName: format
     summary: Specifies the format of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,12 +170,14 @@ properties:
       return:
         type: string
   - name: keywords
-    uid: 'word!Word.DocumentProperties#keywords:member'
+    uid: word!Word.DocumentProperties#keywords:member
     package: word!
     fullName: keywords
     summary: Specifies the keywords of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,12 +185,14 @@ properties:
       return:
         type: string
   - name: lastAuthor
-    uid: 'word!Word.DocumentProperties#lastAuthor:member'
+    uid: word!Word.DocumentProperties#lastAuthor:member
     package: word!
     fullName: lastAuthor
     summary: Gets the last author of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,12 +200,14 @@ properties:
       return:
         type: string
   - name: lastPrintDate
-    uid: 'word!Word.DocumentProperties#lastPrintDate:member'
+    uid: word!Word.DocumentProperties#lastPrintDate:member
     package: word!
     fullName: lastPrintDate
     summary: Gets the last print date of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,12 +215,14 @@ properties:
       return:
         type: Date
   - name: lastSaveTime
-    uid: 'word!Word.DocumentProperties#lastSaveTime:member'
+    uid: word!Word.DocumentProperties#lastSaveTime:member
     package: word!
     fullName: lastSaveTime
     summary: Gets the last save time of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,12 +230,14 @@ properties:
       return:
         type: Date
   - name: manager
-    uid: 'word!Word.DocumentProperties#manager:member'
+    uid: word!Word.DocumentProperties#manager:member
     package: word!
     fullName: manager
     summary: Specifies the manager of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,12 +245,15 @@ properties:
       return:
         type: string
   - name: revisionNumber
-    uid: 'word!Word.DocumentProperties#revisionNumber:member'
+    uid: word!Word.DocumentProperties#revisionNumber:member
     package: word!
     fullName: revisionNumber
     summary: Gets the revision number of the document.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -231,19 +261,24 @@ properties:
       return:
         type: string
   - name: security
-    uid: 'word!Word.DocumentProperties#security:member'
+    uid: word!Word.DocumentProperties#security:member
     package: word!
     fullName: security
     summary: >-
-      Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document
-      Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is
-      encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document:
-      Both \#1 and \#2; 4 = File on disk is read-only; 5 = Both \#1 and \#4; 6 = Both \#2 and \#4; 7 = All of \#1, \#2,
-      and \#4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both \#1 and \#8; 10 = Both \#2 and \#8; 11 = All
-      of \#1, \#2, and \#8; 12 = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4, and \#8; 15 =
-      All of \#1, \#2, \#4, and \#8.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+      Gets security settings of the document. Some are access restrictions on
+      the file on disk. Others are Document Protection settings. Some possible
+      values are 0 = File on disk is read/write; 1 = Protect Document: File is
+      encrypted and requires a password to open; 2 = Protect Document: Always
+      Open as Read-Only; 3 = Protect Document: Both \#1 and \#2; 4 = File on
+      disk is read-only; 5 = Both \#1 and \#4; 6 = Both \#2 and \#4; 7 = All of
+      \#1, \#2, and \#4; 8 = Protect Document: Restrict Edit to read-only; 9 =
+      Both \#1 and \#8; 10 = Both \#2 and \#8; 11 = All of \#1, \#2, and \#8; 12
+      = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4,
+      and \#8; 15 = All of \#1, \#2, \#4, and \#8.
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,12 +286,14 @@ properties:
       return:
         type: number
   - name: subject
-    uid: 'word!Word.DocumentProperties#subject:member'
+    uid: word!Word.DocumentProperties#subject:member
     package: word!
     fullName: subject
     summary: Specifies the subject of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -264,12 +301,14 @@ properties:
       return:
         type: string
   - name: template
-    uid: 'word!Word.DocumentProperties#template:member'
+    uid: word!Word.DocumentProperties#template:member
     package: word!
     fullName: template
     summary: Gets the template of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,12 +316,14 @@ properties:
       return:
         type: string
   - name: title
-    uid: 'word!Word.DocumentProperties#title:member'
+    uid: word!Word.DocumentProperties#title:member
     package: word!
     fullName: title
     summary: Specifies the title of the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -291,54 +332,61 @@ properties:
         type: string
 methods:
   - name: load(options)
-    uid: 'word!Word.DocumentProperties#load:member(1)'
+    uid: word!Word.DocumentProperties#load:member(1)
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;'
+      content: >-
+        load(options?: Word.Interfaces.DocumentPropertiesLoadOptions):
+        Word.DocumentProperties;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />'
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        type: <xref uid="word!Word.DocumentProperties:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'word!Word.DocumentProperties#load:member(2)'
+    uid: word!Word.DocumentProperties#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.DocumentProperties;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        type: <xref uid="word!Word.DocumentProperties:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.DocumentProperties#load:member(3)'
+    uid: word!Word.DocumentProperties#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,48 +398,60 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        type: <xref uid="word!Word.DocumentProperties:class" />
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'word!Word.DocumentProperties#set:member(1)'
+  - name: set(properties, options)
+    uid: word!Word.DocumentProperties#set:member(1)
     package: word!
-    fullName: 'set(properties, options)'
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.DocumentPropertiesUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
   - name: set(properties)
-    uid: 'word!Word.DocumentProperties#set:member(2)'
+    uid: word!Word.DocumentProperties#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -399,66 +459,74 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="word!Word.DocumentProperties:class" />'
+          type: <xref uid="word!Word.DocumentProperties:class" />
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'word!Word.DocumentProperties#toJSON:member(1)'
+    uid: word!Word.DocumentProperties#toJSON:member(1)
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.DocumentProperties` object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Word.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow copies
-      of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.DocumentProperties` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Word.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.DocumentPropertiesData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />'
+        type: <xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />
         description: ''
   - name: track()
-    uid: 'word!Word.DocumentProperties#track:member(1)'
+    uid: word!Word.DocumentProperties#track:member(1)
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created. If this object is part of a collection,
-      you should also track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.DocumentProperties;'
       return:
-        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        type: <xref uid="word!Word.DocumentProperties:class" />
         description: ''
   - name: untrack()
-    uid: 'word!Word.DocumentProperties#untrack:member(1)'
+    uid: word!Word.DocumentProperties#untrack:member(1)
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.DocumentProperties;'
       return:
-        type: '<xref uid="word!Word.DocumentProperties:class" />'
+        type: <xref uid="word!Word.DocumentProperties:class" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

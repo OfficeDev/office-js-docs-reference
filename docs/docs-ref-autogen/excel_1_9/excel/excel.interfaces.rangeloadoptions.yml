@@ -1,27 +1,32 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.RangeLoadOptions
-uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
+uid: excel!Excel.Interfaces.RangeLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.RangeLoadOptions
 summary: >-
-  Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn
-  more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
-  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+  Range represents a set of one or more contiguous cells such as a cell, a row,
+  a column, or a block of cells. To learn more about how ranges are used
+  throughout the API, start with [Ranges in the Excel JavaScript
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!--
+  -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,12 +34,16 @@ properties:
       return:
         type: boolean
   - name: address
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#address:member
     package: excel!
     fullName: address
-    summary: 'Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").'
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the range reference in A1-style. Address value contains the
+      sheet reference (e.g., "Sheet1!A1:B4").
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,12 +51,16 @@ properties:
       return:
         type: boolean
   - name: addressLocal
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member
     package: excel!
     fullName: addressLocal
-    summary: Represents the range reference for the specified range in the language of the user.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the range reference for the specified range in the language of
+      the user.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,14 +68,16 @@ properties:
       return:
         type: boolean
   - name: cellCount
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#cellCount:member
     package: excel!
     fullName: cellCount
     summary: >-
-      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
-      (2,147,483,647).
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Specifies the number of cells in the range. This API will return -1 if the
+      cell count exceeds 2^31-1 (2,147,483,647).
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,12 +85,14 @@ properties:
       return:
         type: boolean
   - name: columnCount
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#columnCount:member
     package: excel!
     fullName: columnCount
     summary: Specifies the total number of columns in the range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,15 +100,18 @@ properties:
       return:
         type: boolean
   - name: columnHidden
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnHidden:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#columnHidden:member
     package: excel!
     fullName: columnHidden
     summary: >-
-      Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden.
-      Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden
-      and other columns in the same range are not hidden.
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents if all columns in the current range are hidden. Value is `true`
+      when all columns in a range are hidden. Value is `false` when no columns
+      in the range are hidden. Value is `null` when some columns in a range are
+      hidden and other columns in the same range are not hidden.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,12 +119,14 @@ properties:
       return:
         type: boolean
   - name: columnIndex
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member
     package: excel!
     fullName: columnIndex
     summary: Specifies the column number of the first cell in the range. Zero-indexed.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,38 +134,50 @@ properties:
       return:
         type: boolean
   - name: dataValidation
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member
     package: excel!
     fullName: dataValidation
     summary: Returns a data validation object.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.DataValidationLoadOptions:interface" />'
+        type: >-
+          <xref uid="excel!Excel.Interfaces.DataValidationLoadOptions:interface"
+          />
   - name: format
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: 'Returns a format object, encapsulating the range''s font, fill, borders, alignment, and other properties.'
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a format object, encapsulating the range's font, fill, borders,
+      alignment, and other properties.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions:interface" />
   - name: formulas
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#formulas:member
     package: excel!
     fullName: formulas
-    summary: 'Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.'
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the formula in A1-style notation. If a cell has no formula, its
+      value is returned instead.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,15 +185,18 @@ properties:
       return:
         type: boolean
   - name: formulasLocal
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member
     package: excel!
     fullName: formulasLocal
     summary: >-
-      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
-      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
-      returned instead.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents the formula in A1-style notation, in the user's language and
+      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
+      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
+      value is returned instead.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,12 +204,16 @@ properties:
       return:
         type: boolean
   - name: formulasR1C1
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulasR1C1:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#formulasR1C1:member
     package: excel!
     fullName: formulasR1C1
-    summary: 'Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.'
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the formula in R1C1-style notation. If a cell has no formula,
+      its value is returned instead.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,15 +221,18 @@ properties:
       return:
         type: boolean
   - name: hidden
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#hidden:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#hidden:member
     package: excel!
     fullName: hidden
     summary: >-
-      Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden.
-      Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and
-      other cells in the same range are not hidden.
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents if all cells in the current range are hidden. Value is `true`
+      when all cells in a range are hidden. Value is `false` when no cells in
+      the range are hidden. Value is `null` when some cells in a range are
+      hidden and other cells in the same range are not hidden.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,12 +240,14 @@ properties:
       return:
         type: boolean
   - name: hyperlink
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#hyperlink:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#hyperlink:member
     package: excel!
     fullName: hyperlink
     summary: Represents the hyperlink for the current range.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,12 +255,14 @@ properties:
       return:
         type: boolean
   - name: isEntireColumn
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#isEntireColumn:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#isEntireColumn:member
     package: excel!
     fullName: isEntireColumn
     summary: Represents if the current range is an entire column.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,12 +270,14 @@ properties:
       return:
         type: boolean
   - name: isEntireRow
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#isEntireRow:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#isEntireRow:member
     package: excel!
     fullName: isEntireRow
     summary: Represents if the current range is an entire row.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,12 +285,14 @@ properties:
       return:
         type: boolean
   - name: linkedDataTypeState
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#linkedDataTypeState:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#linkedDataTypeState:member
     package: excel!
     fullName: linkedDataTypeState
     summary: Represents the data type state of each cell.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -248,14 +300,18 @@ properties:
       return:
         type: boolean
   - name: numberFormat
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member
     package: excel!
     fullName: numberFormat
     summary: >-
-      Represents Excel's number format code for the given range. For more information about Excel number formatting, see
-      [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents Excel's number format code for the given range. For more
+      information about Excel number formatting, see [Number format
+      codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,15 +319,19 @@ properties:
       return:
         type: boolean
   - name: numberFormatLocal
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormatLocal:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#numberFormatLocal:member
     package: excel!
     fullName: numberFormatLocal
     summary: >-
-      Represents Excel's number format code for the given range, based on the language settings of the user. Excel does
-      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
-      text uses the locally-formatted strings based on the language specified in the system settings.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents Excel's number format code for the given range, based on the
+      language settings of the user. Excel does not perform any language or
+      format coercion when getting or setting the `numberFormatLocal` property.
+      Any returned text uses the locally-formatted strings based on the language
+      specified in the system settings.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,12 +339,14 @@ properties:
       return:
         type: boolean
   - name: rowCount
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#rowCount:member
     package: excel!
     fullName: rowCount
     summary: Returns the total number of rows in the range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,15 +354,18 @@ properties:
       return:
         type: boolean
   - name: rowHidden
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowHidden:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#rowHidden:member
     package: excel!
     fullName: rowHidden
     summary: >-
-      Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value
-      is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other
-      rows in the same range are not hidden.
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents if all rows in the current range are hidden. Value is `true`
+      when all rows in a range are hidden. Value is `false` when no rows in the
+      range are hidden. Value is `null` when some rows in a range are hidden and
+      other rows in the same range are not hidden.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,12 +373,14 @@ properties:
       return:
         type: boolean
   - name: rowIndex
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member
     package: excel!
     fullName: rowIndex
     summary: Returns the row number of the first cell in the range. Zero-indexed.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,15 +388,18 @@ properties:
       return:
         type: boolean
   - name: style
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#style:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#style:member
     package: excel!
     fullName: style
     summary: >-
-      Represents the style of the current range. If the styles of the cells are inconsistent, `null` will be returned.
-      For custom styles, the style name will be returned. For built-in styles, a string representing a value in the
-      `BuiltInStyle` enum will be returned.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents the style of the current range. If the styles of the cells are
+      inconsistent, `null` will be returned. For custom styles, the style name
+      will be returned. For built-in styles, a string representing a value in
+      the `BuiltInStyle` enum will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,14 +407,17 @@ properties:
       return:
         type: boolean
   - name: text
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#text:member
     package: excel!
     fullName: text
     summary: >-
-      Text values of the specified range. The text value will not depend on the cell width. The number sign (\#)
-      substitution that happens in the Excel UI will not affect the text value returned by the API.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Text values of the specified range. The text value will not depend on the
+      cell width. The number sign (\#) substitution that happens in the Excel UI
+      will not affect the text value returned by the API.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -352,15 +425,18 @@ properties:
       return:
         type: boolean
   - name: values
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#values:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#values:member
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
-      that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
-      or equal sign ("="), Excel interprets this value as a formula.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents the raw values of the specified range. The data returned could
+      be a string, number, or boolean. Cells that contain an error will return
+      the error string. If the returned value starts with a plus ("+"), minus
+      ("-"), or equal sign ("="), Excel interprets this value as a formula.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -368,12 +444,14 @@ properties:
       return:
         type: boolean
   - name: valueTypes
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member
     package: excel!
     fullName: valueTypes
     summary: Specifies the type of data in each cell.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,15 +459,17 @@ properties:
       return:
         type: boolean
   - name: worksheet
-    uid: 'excel!Excel.Interfaces.RangeLoadOptions#worksheet:member'
+    uid: excel!Excel.Interfaces.RangeLoadOptions#worksheet:member
     package: excel!
     fullName: worksheet
     summary: The worksheet containing the current range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions:interface" />

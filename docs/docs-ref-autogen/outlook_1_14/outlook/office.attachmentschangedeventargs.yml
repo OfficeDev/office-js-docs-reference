@@ -1,16 +1,23 @@
 ### YamlMime:TSType
 name: Office.AttachmentsChangedEventArgs
-uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
+uid: outlook!Office.AttachmentsChangedEventArgs:interface
 package: outlook!
 fullName: Office.AttachmentsChangedEventArgs
-summary: Provides information about the attachment on a mail item that raised the `Office.EventType.AttachmentsChanged` event.
-remarks: |-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Provides information about the attachment on a mail item that raised the
+  `Office.EventType.AttachmentsChanged` event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Handles the OnMessageAttachmentsChanged event.
+
   function onMessageAttachmentsChangedHandler(event) {
       console.log(`Event: ${event.type}`);
 
@@ -19,21 +26,26 @@ remarks: |-
           // Perform operations on the attachment that was added.
       }
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: attachmentDetails
-    uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member'
+    uid: outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member
     package: outlook!
     fullName: attachmentDetails
     summary: >-
-      Gets the object that represents the attachment that was added or removed from a mail item. The object contains the
-      `id`<!-- -->, `name`<!-- -->, `size`<!-- -->, and `attachmentType` properties of the attachment.
-    remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    example: []
+      Gets the object that represents the attachment that was added or removed
+      from a mail item. The object contains the `id`<!-- -->, `name`<!-- -->,
+      `size`<!-- -->, and `attachmentType` properties of the attachment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,29 +53,40 @@ properties:
       return:
         type: object
   - name: attachmentStatus
-    uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member'
+    uid: outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member
     package: outlook!
     fullName: attachmentStatus
     summary: >-
-      Specifies whether the attachment was added or removed from a mail item. For details, see
-      [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum)<!-- -->.
-    remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    example: []
+      Specifies whether the attachment was added or removed from a mail item.
+      For details, see
+      [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachmentStatus: MailboxEnums.AttachmentStatus | string;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentStatus:enum" /> | string'
+        type: >-
+          <xref uid="outlook!Office.MailboxEnums.AttachmentStatus:enum" /> |
+          string
   - name: type
-    uid: 'outlook!Office.AttachmentsChangedEventArgs#type:member'
+    uid: outlook!Office.AttachmentsChangedEventArgs#type:member
     package: outlook!
     fullName: type
     summary: >-
       Gets the type of event that was raised. For details, see
-      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-    remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    example: []
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

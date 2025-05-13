@@ -1,18 +1,18 @@
 ### YamlMime:TSType
 name: Office.EmailUser
-uid: 'outlook!Office.EmailUser:interface'
+uid: outlook!Office.EmailUser:interface
 package: outlook!
 fullName: Office.EmailUser
 summary: Represents an email account on an Exchange Server.
 remarks: >-
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
-  Read
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
 
 
   #### Examples
@@ -44,18 +44,18 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: displayName
-    uid: 'outlook!Office.EmailUser#displayName:member'
+    uid: outlook!Office.EmailUser#displayName:member
     package: outlook!
     fullName: displayName
     summary: Gets the display name associated with an email address.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +63,12 @@ properties:
       return:
         type: string
   - name: emailAddress
-    uid: 'outlook!Office.EmailUser#emailAddress:member'
+    uid: outlook!Office.EmailUser#emailAddress:member
     package: outlook!
     fullName: emailAddress
     summary: Gets the SMTP email address.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

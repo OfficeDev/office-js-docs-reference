@@ -1,0 +1,99 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.BorderLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.BorderLoadOptions
+summary: Represents the properties for a table cell border.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#color:member
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
+      "FFA500") or as a named HTML color value (e.g., "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: dashStyle
+    uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#dashStyle:member
+    package: powerpoint!
+    fullName: dashStyle
+    summary: Represents the dash style of the line.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dashStyle?: boolean;'
+      return:
+        type: boolean
+  - name: transparency
+    uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#transparency:member
+    package: powerpoint!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the line as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type: boolean
+  - name: weight
+    uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#weight:member
+    package: powerpoint!
+    fullName: weight
+    summary: Represents the weight of the line, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type: boolean

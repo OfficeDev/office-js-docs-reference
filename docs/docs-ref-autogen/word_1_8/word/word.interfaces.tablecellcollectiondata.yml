@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.TableCellCollectionData
-uid: 'word!Word.Interfaces.TableCellCollectionData:interface'
+uid: word!Word.Interfaces.TableCellCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableCellCollectionData
-summary: An interface describing the data returned by calling `tableCellCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `tableCellCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.TableCellCollectionData#items:member'
+    uid: word!Word.Interfaces.TableCellCollectionData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.TableCellData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableCellData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.TableCellData:interface" />[]

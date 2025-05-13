@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Word.BorderWidth
-uid: 'word!Word.BorderWidth:enum'
+uid: word!Word.BorderWidth:enum
 package: word!
 fullName: Word.BorderWidth
 summary: Represents the width of a style's border.
 remarks: >-
-  \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -17,7 +18,8 @@ remarks: >-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
 
-  // Updates border properties (e.g., type, width, color) of the specified style.
+  // Updates border properties (e.g., type, width, color) of the specified
+  style.
 
   await Word.run(async (context) => {
     const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
@@ -45,95 +47,117 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: mixed
-    uid: 'word!Word.BorderWidth.mixed:member'
+    uid: word!Word.BorderWidth.mixed:member
     package: word!
-    summary: |-
+    summary: >-
       Mixed width.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: none
-    uid: 'word!Word.BorderWidth.none:member'
+    uid: word!Word.BorderWidth.none:member
     package: word!
-    summary: |-
+    summary: >-
       None width.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: pt025
-    uid: 'word!Word.BorderWidth.pt025:member'
+    uid: word!Word.BorderWidth.pt025:member
     package: word!
-    summary: |-
+    summary: >-
       0.25 point.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt025"'
   - name: pt050
-    uid: 'word!Word.BorderWidth.pt050:member'
+    uid: word!Word.BorderWidth.pt050:member
     package: word!
-    summary: |-
+    summary: >-
       0.50 point.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt050"'
   - name: pt075
-    uid: 'word!Word.BorderWidth.pt075:member'
+    uid: word!Word.BorderWidth.pt075:member
     package: word!
-    summary: |-
+    summary: >-
       0.75 point.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt075"'
   - name: pt100
-    uid: 'word!Word.BorderWidth.pt100:member'
+    uid: word!Word.BorderWidth.pt100:member
     package: word!
-    summary: |-
+    summary: >-
       1.00 point. This is the default.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt100"'
   - name: pt150
-    uid: 'word!Word.BorderWidth.pt150:member'
+    uid: word!Word.BorderWidth.pt150:member
     package: word!
-    summary: |-
+    summary: >-
       1.50 points.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt150"'
   - name: pt225
-    uid: 'word!Word.BorderWidth.pt225:member'
+    uid: word!Word.BorderWidth.pt225:member
     package: word!
-    summary: |-
+    summary: >-
       2.25 points.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt225"'
   - name: pt300
-    uid: 'word!Word.BorderWidth.pt300:member'
+    uid: word!Word.BorderWidth.pt300:member
     package: word!
-    summary: |-
+    summary: >-
       3.00 points.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt300"'
   - name: pt450
-    uid: 'word!Word.BorderWidth.pt450:member'
+    uid: word!Word.BorderWidth.pt450:member
     package: word!
-    summary: |-
+    summary: >-
       4.50 points.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt450"'
   - name: pt600
-    uid: 'word!Word.BorderWidth.pt600:member'
+    uid: word!Word.BorderWidth.pt600:member
     package: word!
-    summary: |-
+    summary: >-
       6.00 points.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pt600"'

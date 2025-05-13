@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: OneNote.Interfaces.PageCollectionUpdateData
-uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
+uid: onenote!OneNote.Interfaces.PageCollectionUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageCollectionUpdateData
-summary: 'An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `PageCollection` object, for use in
+  `pageCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member'
+    uid: onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member
     package: onenote!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.PageData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.PageData:interface" />[]'
+        type: <xref uid="onenote!OneNote.Interfaces.PageData:interface" />[]

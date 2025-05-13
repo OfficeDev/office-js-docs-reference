@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.SectionCollectionData
-uid: 'word!Word.Interfaces.SectionCollectionData:interface'
+uid: word!Word.Interfaces.SectionCollectionData:interface
 package: word!
 fullName: Word.Interfaces.SectionCollectionData
-summary: An interface describing the data returned by calling `sectionCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `sectionCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.SectionCollectionData#items:member'
+    uid: word!Word.Interfaces.SectionCollectionData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.SectionData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.SectionData:interface" />[]

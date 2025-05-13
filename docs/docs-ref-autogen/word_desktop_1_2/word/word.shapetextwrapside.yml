@@ -1,53 +1,66 @@
 ### YamlMime:TSEnum
 name: Word.ShapeTextWrapSide
-uid: 'word!Word.ShapeTextWrapSide:enum'
+uid: word!Word.ShapeTextWrapSide:enum
 package: word!
 fullName: Word.ShapeTextWrapSide
 summary: >-
-  Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side
-  only, or on the side of the shape that's farther from the respective page margin.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+  Specifies whether the document text should wrap on both sides of the specified
+  shape, on either the left or right side only, or on the side of the shape
+  that's farther from the respective page margin.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: both
-    uid: 'word!Word.ShapeTextWrapSide.both:member'
+    uid: word!Word.ShapeTextWrapSide.both:member
     package: word!
-    summary: |-
+    summary: >-
       Both left and right sides of the shape.
 
-      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Both"'
   - name: largest
-    uid: 'word!Word.ShapeTextWrapSide.largest:member'
+    uid: word!Word.ShapeTextWrapSide.largest:member
     package: word!
-    summary: |-
+    summary: >-
       Side of the shape that's farther from the respective page margin.
 
-      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Largest"'
   - name: left
-    uid: 'word!Word.ShapeTextWrapSide.left:member'
+    uid: word!Word.ShapeTextWrapSide.left:member
     package: word!
-    summary: |-
+    summary: >-
       Left side of the shape only.
 
-      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: none
-    uid: 'word!Word.ShapeTextWrapSide.none:member'
+    uid: word!Word.ShapeTextWrapSide.none:member
     package: word!
-    summary: |-
+    summary: >-
       Has no wrap side property, such as those for inline shapes.
 
-      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: right
-    uid: 'word!Word.ShapeTextWrapSide.right:member'
+    uid: word!Word.ShapeTextWrapSide.right:member
     package: word!
-    summary: |-
+    summary: >-
       Right side of the shape only.
 
-      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'

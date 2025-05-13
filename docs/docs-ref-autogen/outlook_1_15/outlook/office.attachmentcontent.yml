@@ -1,33 +1,34 @@
 ### YamlMime:TSType
 name: Office.AttachmentContent
-uid: 'outlook!Office.AttachmentContent:interface'
+uid: outlook!Office.AttachmentContent:interface
 package: outlook!
 fullName: Office.AttachmentContent
 summary: Represents the content of an attachment on a message or appointment item.
 remarks: >-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
-  Compose or Read
-example: []
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: content
-    uid: 'outlook!Office.AttachmentContent#content:member'
+    uid: outlook!Office.AttachmentContent#content:member
     package: outlook!
     fullName: content
     summary: The content of an attachment as a string.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +36,7 @@ properties:
       return:
         type: string
   - name: format
-    uid: 'outlook!Office.AttachmentContent#format:member'
+    uid: outlook!Office.AttachmentContent#format:member
     package: outlook!
     fullName: format
     summary: >-
@@ -45,28 +46,33 @@ properties:
       For file attachments, the formatting is a Base64-encoded string.
 
 
-      For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting
-      is a string representing an .eml formatted file.
+      For item attachments that represent messages and were attached by
+      drag-and-drop or "Attach Item", the formatting is a string representing an
+      .eml formatted file.
 
 
-      For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the
-      formatting is a string representing an .icalendar file.
+      For item attachments that represent calendar items and were attached by
+      drag-and-drop or "Attach Item", the formatting is a string representing an
+      .icalendar file.
 
 
-      \*\*Important\*\*: If a message or calendar item was attached by drag-and-drop in Outlook on the web or [new
-      Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, then
-      `getAttachmentContentAsync` throws an error.
+      **Important**: If a message or calendar item was attached by
+      drag-and-drop in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, then `getAttachmentContentAsync` throws an error.
 
 
       For cloud attachments, the formatting is a URL string.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format: MailboxEnums.AttachmentContentFormat | string;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum" /> | string'
+        type: >-
+          <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum"
+          /> | string
         description: |-
 
 

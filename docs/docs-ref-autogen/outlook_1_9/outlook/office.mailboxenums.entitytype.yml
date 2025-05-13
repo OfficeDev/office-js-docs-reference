@@ -1,59 +1,63 @@
 ### YamlMime:TSEnum
 name: Office.MailboxEnums.EntityType
-uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+uid: outlook!Office.MailboxEnums.EntityType:enum
 package: outlook!
 fullName: Office.MailboxEnums.EntityType
 summary: >-
   Specifies an entity's type.
 
 
-  \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
-  supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
-  For guidance on how to implement these rules, see [Contextual Outlook
-  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+  **Warning**: Entity-based contextual Outlook add-ins are now retired.
+  However, regular expression rules are still supported. We recommend updating
+  your contextual add-in to use regular expression rules as an alternative
+  solution. For guidance on how to implement these rules, see [Contextual
+  Outlook
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+  -->.
 remarks: >-
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
-  Compose or Read
-example: []
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: >-
-  Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+  Use [regular expression
+  rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
   instead.
 fields:
   - name: MeetingSuggestion
-    uid: 'outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member'
+    uid: outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member
     package: outlook!
     summary: Specifies that the entity is a meeting suggestion.
     value: '"meetingSuggestion"'
   - name: TaskSuggestion
-    uid: 'outlook!Office.MailboxEnums.EntityType.TaskSuggestion:member'
+    uid: outlook!Office.MailboxEnums.EntityType.TaskSuggestion:member
     package: outlook!
     summary: Specifies that the entity is a task suggestion.
     value: '"taskSuggestion"'
   - name: Address
-    uid: 'outlook!Office.MailboxEnums.EntityType.Address:member'
+    uid: outlook!Office.MailboxEnums.EntityType.Address:member
     package: outlook!
     summary: Specifies that the entity is a postal address.
     value: '"address"'
   - name: EmailAddress
-    uid: 'outlook!Office.MailboxEnums.EntityType.EmailAddress:member'
+    uid: outlook!Office.MailboxEnums.EntityType.EmailAddress:member
     package: outlook!
     summary: Specifies that the entity is an SMTP email address.
     value: '"emailAddress"'
   - name: Url
-    uid: 'outlook!Office.MailboxEnums.EntityType.Url:member'
+    uid: outlook!Office.MailboxEnums.EntityType.Url:member
     package: outlook!
     summary: Specifies that the entity is an Internet URL.
     value: '"url"'
   - name: PhoneNumber
-    uid: 'outlook!Office.MailboxEnums.EntityType.PhoneNumber:member'
+    uid: outlook!Office.MailboxEnums.EntityType.PhoneNumber:member
     package: outlook!
     summary: Specifies that the entity is a US phone number.
     value: '"phoneNumber"'
   - name: Contact
-    uid: 'outlook!Office.MailboxEnums.EntityType.Contact:member'
+    uid: outlook!Office.MailboxEnums.EntityType.Contact:member
     package: outlook!
     summary: Specifies that the entity is a contact.
     value: '"contact"'

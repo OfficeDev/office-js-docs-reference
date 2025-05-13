@@ -1,61 +1,69 @@
 ### YamlMime:TSType
 name: PowerPoint.Application
-uid: 'powerpoint!PowerPoint.Application:class'
+uid: powerpoint!PowerPoint.Application:class
 package: powerpoint!
 fullName: PowerPoint.Application
 summary: ''
-remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'powerpoint!PowerPoint.Application#context:member'
+    uid: powerpoint!PowerPoint.Application#context:member
     package: powerpoint!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+        type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
 methods:
   - name: newObject(context)
-    uid: 'powerpoint!PowerPoint.Application.newObject:member(1)'
+    uid: powerpoint!PowerPoint.Application.newObject:member(1)
     package: powerpoint!
     fullName: newObject(context)
     summary: Create a new instance of the `PowerPoint.Application` object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'static newObject(context: OfficeExtension.ClientRequestContext): PowerPoint.Application;'
+      content: >-
+        static newObject(context: OfficeExtension.ClientRequestContext):
+        PowerPoint.Application;
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
       return:
-        type: '<xref uid="powerpoint!PowerPoint.Application:class" />'
+        type: <xref uid="powerpoint!PowerPoint.Application:class" />
         description: ''
   - name: toJSON()
-    uid: 'powerpoint!PowerPoint.Application#toJSON:member(1)'
+    uid: powerpoint!PowerPoint.Application#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`<!-- -->) that contains shallow copies
-      of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `PowerPoint.Application`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `PowerPoint.Interfaces.ApplicationData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,4 +77,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

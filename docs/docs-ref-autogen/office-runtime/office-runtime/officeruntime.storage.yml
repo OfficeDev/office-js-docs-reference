@@ -1,53 +1,60 @@
 ### YamlMime:TSType
 name: OfficeRuntime.Storage
-uid: 'office-runtime!OfficeRuntime.Storage:interface'
+uid: office-runtime!OfficeRuntime.Storage:interface
 package: office-runtime!
 fullName: OfficeRuntime.Storage
-summary: 'Asynchronous, global, and persistent key-value storage.'
+summary: Asynchronous, global, and persistent key-value storage.
 remarks: >-
-  \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[ [API set: SharedRuntime 1.1, Mailbox
+  1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
   This interface is available in the [SharedRuntime 1.1 requirement
-  set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel,
-  PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+  set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+  for Excel, PowerPoint, and Word add-ins. It's also available starting in
+  [Mailbox requirement set
   1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
   for Outlook.
 
 
-  \*\*Important\*\*: In Outlook, support is only available with the [event-based
-  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-  Windows. This interface isn't supported in Outlook on Mac or on the web.
+  **Important**: In Outlook, support is only available with the [event-based
+  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+  feature implemented in Outlook on Windows. This interface isn't supported in
+  Outlook on Mac or on the web.
 
 
   Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
   - name: getItem(key)
-    uid: 'office-runtime!OfficeRuntime.Storage#getItem:member(1)'
+    uid: office-runtime!OfficeRuntime.Storage#getItem:member(1)
     package: office-runtime!
     fullName: getItem(key)
     summary: >-
-      Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve,
-      returns null.
+      Retrieves an item from storage based on its key. Returns a Promise. In the
+      event the Promise does not resolve, returns null.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,27 +67,31 @@ methods:
         type: Promise&lt;string | null&gt;
         description: ''
   - name: getItems(keys)
-    uid: 'office-runtime!OfficeRuntime.Storage#getItems:member(1)'
+    uid: office-runtime!OfficeRuntime.Storage#getItems:member(1)
     package: office-runtime!
     fullName: getItems(keys)
     summary: >-
-      Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not
-      resolve, returns null.
+      Retrieves multiple items from storage based on their key. Returns a
+      Promise. In the event the Promise does not resolve, returns null.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,57 +99,65 @@ methods:
       parameters:
         - id: keys
           description: Keys of items to be removed. Must be an array of strings.
-          type: 'string[]'
+          type: string[]
       return:
         type: 'Promise&lt;{ [key: string]: string | null }&gt;'
         description: ''
   - name: getKeys()
-    uid: 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
+    uid: office-runtime!OfficeRuntime.Storage#getKeys:member(1)
     package: office-runtime!
     fullName: getKeys()
     summary: Retrieves an array of all keys from storage. Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getKeys(): Promise<string[]>;'
       return:
-        type: 'Promise&lt;string[]&gt;'
+        type: Promise&lt;string[]&gt;
         description: ''
   - name: removeItem(key)
-    uid: 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
+    uid: office-runtime!OfficeRuntime.Storage#removeItem:member(1)
     package: office-runtime!
     fullName: removeItem(key)
     summary: Removes an item from storage based on its key. Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,25 +170,29 @@ methods:
         type: Promise&lt;void&gt;
         description: ''
   - name: removeItems(keys)
-    uid: 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
+    uid: office-runtime!OfficeRuntime.Storage#removeItems:member(1)
     package: office-runtime!
     fullName: removeItems(keys)
     summary: Removes multiple items from storage. Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,30 +200,36 @@ methods:
       parameters:
         - id: keys
           description: Keys of items to be removed. Must be an array of strings.
-          type: 'string[]'
+          type: string[]
       return:
         type: Promise&lt;void&gt;
         description: ''
-  - name: 'setItem(key, value)'
-    uid: 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
+  - name: setItem(key, value)
+    uid: office-runtime!OfficeRuntime.Storage#setItem:member(1)
     package: office-runtime!
-    fullName: 'setItem(key, value)'
-    summary: Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
+    fullName: setItem(key, value)
+    summary: >-
+      Sets a key-value pair into storage or updates an existing key-value pair.
+      Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,25 +245,31 @@ methods:
         type: Promise&lt;void&gt;
         description: ''
   - name: setItems(keyValues)
-    uid: 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
+    uid: office-runtime!OfficeRuntime.Storage#setItems:member(1)
     package: office-runtime!
     fullName: setItems(keyValues)
-    summary: Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
+    summary: >-
+      Sets multiple items into storage or updates multiple items within storage.
+      Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
-      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+      for Excel, PowerPoint, and Word add-ins. It's also available starting in
+      [Mailbox requirement set
       1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
       for Outlook.
 
 
-      \*\*Important\*\*: In Outlook, support is only available with the [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
-      Windows. This method isn't supported in Outlook on Mac or on the web.
-    example: []
+      **Important**: In Outlook, support is only available with the
+      [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      feature implemented in Outlook on Windows. This method isn't supported in
+      Outlook on Mac or on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:

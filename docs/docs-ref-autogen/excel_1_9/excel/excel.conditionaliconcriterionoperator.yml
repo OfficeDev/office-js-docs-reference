@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Excel.ConditionalIconCriterionOperator
-uid: 'excel!Excel.ConditionalIconCriterionOperator:enum'
+uid: excel!Excel.ConditionalIconCriterionOperator:enum
 package: excel!
 fullName: Excel.ConditionalIconCriterionOperator
 summary: Represents the operator for each icon criteria.
 remarks: >-
-  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   #### Examples
@@ -57,22 +58,28 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: greaterThan
-    uid: 'excel!Excel.ConditionalIconCriterionOperator.greaterThan:member'
+    uid: excel!Excel.ConditionalIconCriterionOperator.greaterThan:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GreaterThan"'
   - name: greaterThanOrEqual
-    uid: 'excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
+    uid: excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GreaterThanOrEqual"'
   - name: invalid
-    uid: 'excel!Excel.ConditionalIconCriterionOperator.invalid:member'
+    uid: excel!Excel.ConditionalIconCriterionOperator.invalid:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Invalid"'

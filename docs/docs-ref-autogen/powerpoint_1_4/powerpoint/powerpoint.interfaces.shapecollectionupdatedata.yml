@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.ShapeCollectionUpdateData
-uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface'
+uid: powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeCollectionUpdateData
-summary: 'An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `ShapeCollection` object, for use in
+  `shapeCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member'
+    uid: powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: PowerPoint.Interfaces.ShapeData[];'
       return:
-        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeData:interface" />[]'
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeData:interface" />[]

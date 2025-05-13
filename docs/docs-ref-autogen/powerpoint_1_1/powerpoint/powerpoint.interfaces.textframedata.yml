@@ -1,11 +1,13 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.TextFrameData
-uid: 'powerpoint!PowerPoint.Interfaces.TextFrameData:interface'
+uid: powerpoint!PowerPoint.Interfaces.TextFrameData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TextFrameData
-summary: An interface describing the data returned by calling `textFrame.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `textFrame.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

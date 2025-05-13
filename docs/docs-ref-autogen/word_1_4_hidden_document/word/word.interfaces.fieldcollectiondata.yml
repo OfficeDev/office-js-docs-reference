@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.FieldCollectionData
-uid: 'word!Word.Interfaces.FieldCollectionData:interface'
+uid: word!Word.Interfaces.FieldCollectionData:interface
 package: word!
 fullName: Word.Interfaces.FieldCollectionData
-summary: An interface describing the data returned by calling `fieldCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `fieldCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.FieldCollectionData#items:member'
+    uid: word!Word.Interfaces.FieldCollectionData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.FieldData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.FieldData:interface" />[]

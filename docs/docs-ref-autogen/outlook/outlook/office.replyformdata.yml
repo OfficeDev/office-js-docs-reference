@@ -1,11 +1,11 @@
 ### YamlMime:TSType
 name: Office.ReplyFormData
-uid: 'outlook!Office.ReplyFormData:interface'
+uid: outlook!Office.ReplyFormData:interface
 package: outlook!
 fullName: Office.ReplyFormData
 summary: >-
-  A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
-  form.
+  A ReplyFormData object that contains body or attachment data and a callback
+  function. Used when displaying a reply form.
 remarks: >-
 
 
@@ -63,50 +63,54 @@ remarks: >-
   );
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: attachments
-    uid: 'outlook!Office.ReplyFormData#attachments:member'
+    uid: outlook!Office.ReplyFormData#attachments:member
     package: outlook!
     fullName: attachments
     summary: >-
-      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are Base64-encoded
-      files, Exchange items, or file attachments.
+      An array of
+      [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface)
+      that are Base64-encoded files, Exchange items, or file attachments.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachments?: ReplyFormAttachment[];'
       return:
-        type: '<xref uid="outlook!Office.ReplyFormAttachment:interface" />[]'
+        type: <xref uid="outlook!Office.ReplyFormAttachment:interface" />[]
   - name: callback
-    uid: 'outlook!Office.ReplyFormData#callback:member'
+    uid: outlook!Office.ReplyFormData#callback:member
     package: outlook!
     fullName: callback
     summary: >-
-      When the reply display call completes, the function passed in the callback parameter is called with a single
-      parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+      When the reply display call completes, the function passed in the callback
+      parameter is called with a single parameter, `asyncResult`<!-- -->, which
+      is an `Office.AsyncResult` object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;'
+      content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
       return:
-        type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
+        type: >-
+          (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+          />&lt;any&gt;) =&gt; void
   - name: htmlBody
-    uid: 'outlook!Office.ReplyFormData#htmlBody:member'
+    uid: outlook!Office.ReplyFormData#htmlBody:member
     package: outlook!
     fullName: htmlBody
     summary: >-
-      A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
-      KB.
+      A string that contains text and HTML and that represents the body of the
+      reply form. The string is limited to 32 KB.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,17 +118,18 @@ properties:
       return:
         type: string
   - name: options
-    uid: 'outlook!Office.ReplyFormData#options:member'
+    uid: outlook!Office.ReplyFormData#options:member
     package: outlook!
     fullName: options
     summary: >-
-      An object literal that contains the following property:- `asyncContext`<!-- -->: Developers can provide any object
-      they wish to access in the callback function.
+      An object literal that contains the following property:-
+      `asyncContext`<!-- -->: Developers can provide any object they wish to
+      access in the callback function.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'options?: CommonAPI.AsyncContextOptions;'
+      content: 'options?: Office.AsyncContextOptions;'
       return:
-        type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        type: <xref uid="office!Office.AsyncContextOptions:interface" />

@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Word.TrailingCharacter
-uid: 'word!Word.TrailingCharacter:enum'
+uid: word!Word.TrailingCharacter:enum
 package: word!
 fullName: Word.TrailingCharacter
 summary: Represents the character inserted after the list item mark.
 remarks: >-
-  \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -49,31 +50,37 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: trailingNone
-    uid: 'word!Word.TrailingCharacter.trailingNone:member'
+    uid: word!Word.TrailingCharacter.trailingNone:member
     package: word!
-    summary: |-
+    summary: >-
       No character is inserted.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingNone"'
   - name: trailingSpace
-    uid: 'word!Word.TrailingCharacter.trailingSpace:member'
+    uid: word!Word.TrailingCharacter.trailingSpace:member
     package: word!
-    summary: |-
+    summary: >-
       A space is inserted. Default.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingSpace"'
   - name: trailingTab
-    uid: 'word!Word.TrailingCharacter.trailingTab:member'
+    uid: word!Word.TrailingCharacter.trailingTab:member
     package: word!
-    summary: |-
+    summary: >-
       A tab is inserted.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingTab"'

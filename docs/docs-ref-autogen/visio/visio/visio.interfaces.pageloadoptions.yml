@@ -1,24 +1,28 @@
 ### YamlMime:TSType
 name: Visio.Interfaces.PageLoadOptions
-uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
+uid: visio!Visio.Interfaces.PageLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.PageLoadOptions
 summary: Represents the Page class.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-example: []
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#$all:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#$all:member
     package: visio!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +30,15 @@ properties:
       return:
         type: boolean
   - name: height
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#height:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#height:member
     package: visio!
     fullName: height
     summary: Returns the height of the page. Read-only.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,12 +46,15 @@ properties:
       return:
         type: boolean
   - name: index
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#index:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#index:member
     package: visio!
     fullName: index
     summary: Index of the Page. Read-only.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,12 +62,15 @@ properties:
       return:
         type: boolean
   - name: isBackground
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#isBackground:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#isBackground:member
     package: visio!
     fullName: isBackground
     summary: Whether the page is a background page or not. Read-only.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,12 +78,15 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#name:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#name:member
     package: visio!
     fullName: name
     summary: Page name. Read-only.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,25 +94,31 @@ properties:
       return:
         type: boolean
   - name: view
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#view:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#view:member
     package: visio!
     fullName: view
     summary: Returns the view of the page.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.PageViewLoadOptions:interface" />'
+        type: <xref uid="visio!Visio.Interfaces.PageViewLoadOptions:interface" />
   - name: width
-    uid: 'visio!Visio.Interfaces.PageLoadOptions#width:member'
+    uid: visio!Visio.Interfaces.PageLoadOptions#width:member
     package: visio!
     fullName: width
     summary: Returns the width of the page. Read-only.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,11 +1,11 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.ShapeData
-uid: 'powerpoint!PowerPoint.Interfaces.ShapeData:interface'
+uid: powerpoint!PowerPoint.Interfaces.ShapeData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

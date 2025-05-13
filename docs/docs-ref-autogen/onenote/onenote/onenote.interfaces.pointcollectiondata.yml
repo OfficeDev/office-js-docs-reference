@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: OneNote.Interfaces.PointCollectionData
-uid: 'onenote!OneNote.Interfaces.PointCollectionData:interface'
+uid: onenote!OneNote.Interfaces.PointCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PointCollectionData
-summary: An interface describing the data returned by calling `pointCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `pointCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'onenote!OneNote.Interfaces.PointCollectionData#items:member'
+    uid: onenote!OneNote.Interfaces.PointCollectionData#items:member
     package: onenote!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.PointData[];'
       return:
-        type: '<xref uid="onenote!OneNote.Interfaces.PointData:interface" />[]'
+        type: <xref uid="onenote!OneNote.Interfaces.PointData:interface" />[]

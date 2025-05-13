@@ -1,11 +1,14 @@
 ### YamlMime:TSType
 name: Word.ContentControlDataChangedEventArgs
-uid: 'word!Word.ContentControlDataChangedEventArgs:interface'
+uid: word!Word.ContentControlDataChangedEventArgs:interface
 package: word!
 fullName: Word.ContentControlDataChangedEventArgs
-summary: Provides information about the content control that raised contentControlDataChanged event.
+summary: >-
+  Provides information about the content control that raised
+  contentControlDataChanged event.
 remarks: >-
-  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -41,64 +44,77 @@ remarks: >-
   ...
 
 
-  async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
+  async function contentControlDataChanged(event:
+  Word.ContentControlDataChangedEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`, event.ids);
     });
   }
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: eventType
-    uid: 'word!Word.ContentControlDataChangedEventArgs#eventType:member'
+    uid: word!Word.ContentControlDataChangedEventArgs#eventType:member
     package: word!
     fullName: eventType
     summary: The event type. See Word.EventType for details.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
-        | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
-        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
-        "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" |
+        "ContentControlSelectionChanged" | "ContentControlDataChanged" |
+        "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+        "CommentDeselected" | "CommentChanged" | "CommentAdded" |
+        "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
+        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" |
+        "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" |
+        "AnnotationPopupAction";
       return:
         type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
-          "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
+          "ContentControlSelectionChanged" | "ContentControlDataChanged" |
+          "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+          "CommentDeselected" | "CommentChanged" | "CommentAdded" |
+          "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
+          "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" |
+          "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" |
+          "AnnotationPopupAction"
   - name: ids
-    uid: 'word!Word.ContentControlDataChangedEventArgs#ids:member'
+    uid: word!Word.ContentControlDataChangedEventArgs#ids:member
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'ids: number[];'
       return:
-        type: 'number[]'
+        type: number[]
   - name: source
-    uid: 'word!Word.ContentControlDataChangedEventArgs#source:member'
+    uid: word!Word.ContentControlDataChangedEventArgs#source:member
     package: word!
     fullName: source
     summary: The source of the event. It can be local or remote (through coauthoring).
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Word.EventSource | "Local" | "Remote";'
       return:
-        type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'
+        type: <xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"

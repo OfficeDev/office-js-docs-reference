@@ -1,37 +1,45 @@
 ### YamlMime:TSType
 name: Excel.NumberFormatInfo
-uid: 'excel!Excel.NumberFormatInfo:class'
+uid: excel!Excel.NumberFormatInfo:class
 package: excel!
 fullName: Excel.NumberFormatInfo
-summary: Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
-remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Defines the culturally appropriate format of displaying numbers. This is based
+  on current system culture settings.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'excel!Excel.NumberFormatInfo#context:member'
+    uid: excel!Excel.NumberFormatInfo#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
   - name: numberDecimalSeparator
-    uid: 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
+    uid: excel!Excel.NumberFormatInfo#numberDecimalSeparator:member
     package: excel!
     fullName: numberDecimalSeparator
-    summary: Gets the string used as the decimal separator for numeric values. This is based on current system settings.
+    summary: >-
+      Gets the string used as the decimal separator for numeric values. This is
+      based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -58,14 +66,17 @@ properties:
       await context.sync();
 
 
-      const systemDecimalSeparator = context.application.cultureInfo.numberFormat.numberDecimalSeparator;
+      const systemDecimalSeparator =
+      context.application.cultureInfo.numberFormat.numberDecimalSeparator;
 
       const oldDecimalString: string = decimalSource.values[0][0];
 
 
-      // This assumes the input column is standardized to use "," as the decimal separator. 
+      // This assumes the input column is standardized to use "," as the decimal
+      separator. 
 
-      const newDecimalString = oldDecimalString.replace(",", systemDecimalSeparator);
+      const newDecimalString = oldDecimalString.replace(",",
+      systemDecimalSeparator);
 
 
       const resultRange = sheet.getRange("C2");
@@ -77,7 +88,7 @@ properties:
       await context.sync();
         });
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,14 +96,16 @@ properties:
       return:
         type: string
   - name: numberGroupSeparator
-    uid: 'excel!Excel.NumberFormatInfo#numberGroupSeparator:member'
+    uid: excel!Excel.NumberFormatInfo#numberGroupSeparator:member
     package: excel!
     fullName: numberGroupSeparator
     summary: >-
-      Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
-      current system settings.
+      Gets the string used to separate groups of digits to the left of the
+      decimal for numeric values. This is based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -126,7 +139,7 @@ properties:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,54 +148,61 @@ properties:
         type: string
 methods:
   - name: load(options)
-    uid: 'excel!Excel.NumberFormatInfo#load:member(1)'
+    uid: excel!Excel.NumberFormatInfo#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.NumberFormatInfoLoadOptions): Excel.NumberFormatInfo;'
+      content: >-
+        load(options?: Excel.Interfaces.NumberFormatInfoLoadOptions):
+        Excel.NumberFormatInfo;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface" />'
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface"
+            />
       return:
-        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
+        type: <xref uid="excel!Excel.NumberFormatInfo:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.NumberFormatInfo#load:member(2)'
+    uid: excel!Excel.NumberFormatInfo#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.NumberFormatInfo;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
+        type: <xref uid="excel!Excel.NumberFormatInfo:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.NumberFormatInfo#load:member(3)'
+    uid: excel!Excel.NumberFormatInfo#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,33 +214,38 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.NumberFormatInfo:class" />'
+        type: <xref uid="excel!Excel.NumberFormatInfo:class" />
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.NumberFormatInfo#toJSON:member(1)'
+    uid: excel!Excel.NumberFormatInfo#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.NumberFormatInfo` object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Excel.Interfaces.NumberFormatInfoData`<!-- -->) that contains shallow copies
-      of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.NumberFormatInfo`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.NumberFormatInfoData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.NumberFormatInfoData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.NumberFormatInfoData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.NumberFormatInfoData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

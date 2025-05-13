@@ -1,11 +1,11 @@
 ### YamlMime:TSType
 name: Word.Interfaces.TableData
-uid: 'word!Word.Interfaces.TableData:interface'
+uid: word!Word.Interfaces.TableData:interface
 package: word!
 fullName: Word.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -1,11 +1,12 @@
 ### YamlMime:TSType
 name: Word.ComboBoxContentControl
-uid: 'word!Word.ComboBoxContentControl:class'
+uid: word!Word.ComboBoxContentControl:class
 package: word!
 fullName: Word.ComboBoxContentControl
 summary: The data specific to content controls of type 'ComboBox'.
 remarks: >-
-  \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -28,33 +29,34 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'word!Word.ComboBoxContentControl#context:member'
+    uid: word!Word.ComboBoxContentControl#context:member
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
+        type: <xref uid="word!Word.RequestContext:class" />
   - name: listItems
-    uid: 'word!Word.ComboBoxContentControl#listItems:member'
+    uid: word!Word.ComboBoxContentControl#listItems:member
     package: word!
     fullName: listItems
     summary: Gets the collection of list items in the combo box content control.
     remarks: >-
-      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -66,7 +68,8 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
 
 
-      // Deletes the provided list item from the first combo box content control in the selection.
+      // Deletes the provided list item from the first combo box content control
+      in the selection.
 
       await Word.run(async (context) => {
         const listItemText = (document.getElementById("item-to-delete") as HTMLInputElement).value.trim();
@@ -110,23 +113,25 @@ properties:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly listItems: Word.ContentControlListItemCollection;'
       return:
-        type: '<xref uid="word!Word.ContentControlListItemCollection:class" />'
+        type: <xref uid="word!Word.ContentControlListItemCollection:class" />
 methods:
-  - name: 'addListItem(displayText, value, index)'
-    uid: 'word!Word.ComboBoxContentControl#addListItem:member(1)'
+  - name: addListItem(displayText, value, index)
+    uid: word!Word.ComboBoxContentControl#addListItem:member(1)
     package: word!
-    fullName: 'addListItem(displayText, value, index)'
+    fullName: addListItem(displayText, value, index)
     summary: >-
       Adds a new list item to this combo box content control and returns a
-      [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) object.
+      [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class)
+      object.
     remarks: >-
-      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -138,7 +143,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
 
 
-      // Adds the provided list item to the first combo box content control in the selection.
+      // Adds the provided list item to the first combo box content control in
+      the selection.
 
       await Word.run(async (context) => {
         const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
@@ -171,11 +177,13 @@ methods:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;'
+      content: >-
+        addListItem(displayText: string, value?: string, index?: number):
+        Word.ContentControlListItem;
       parameters:
         - id: displayText
           description: Required. Display text of the list item.
@@ -185,19 +193,22 @@ methods:
           type: string
         - id: index
           description: >-
-            Optional. Index location of the new item in the list. If an item exists at the position specified, the
-            existing item is pushed down in the list. If omitted, the new item is added to the end of the list.
+            Optional. Index location of the new item in the list. If an item
+            exists at the position specified, the existing item is pushed down
+            in the list. If omitted, the new item is added to the end of the
+            list.
           type: number
       return:
-        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        type: <xref uid="word!Word.ContentControlListItem:class" />
         description: ''
   - name: deleteAllListItems()
-    uid: 'word!Word.ComboBoxContentControl#deleteAllListItems:member(1)'
+    uid: word!Word.ComboBoxContentControl#deleteAllListItems:member(1)
     package: word!
     fullName: deleteAllListItems()
     summary: Deletes all list items in this combo box content control.
     remarks: >-
-      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -209,7 +220,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
 
 
-      // Deletes the list items from first combo box content control found in the selection.
+      // Deletes the list items from first combo box content control found in
+      the selection.
 
       await Word.run(async (context) => {
         const selectedRange: Word.Range = context.document.getSelection();
@@ -242,7 +254,7 @@ methods:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,34 +263,36 @@ methods:
         type: void
         description: ''
   - name: load(propertyNames)
-    uid: 'word!Word.ComboBoxContentControl#load:member(1)'
+    uid: word!Word.ComboBoxContentControl#load:member(1)
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.ComboBoxContentControl;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="word!Word.ComboBoxContentControl:class" />'
+        type: <xref uid="word!Word.ComboBoxContentControl:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.ComboBoxContentControl#load:member(2)'
+    uid: word!Word.ComboBoxContentControl#load:member(2)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -290,72 +304,84 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="word!Word.ComboBoxContentControl:class" />'
+        type: <xref uid="word!Word.ComboBoxContentControl:class" />
         description: ''
   - name: toJSON()
-    uid: 'word!Word.ComboBoxContentControl#toJSON:member(1)'
+    uid: word!Word.ComboBoxContentControl#toJSON:member(1)
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.ComboBoxContentControl` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Word.Interfaces.ComboBoxContentControlData`<!-- -->) that contains
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.ComboBoxContentControl` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Word.Interfaces.ComboBoxContentControlData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.ComboBoxContentControlData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ComboBoxContentControlData:interface" />'
+        type: >-
+          <xref uid="word!Word.Interfaces.ComboBoxContentControlData:interface"
+          />
         description: ''
   - name: track()
-    uid: 'word!Word.ComboBoxContentControl#track:member(1)'
+    uid: word!Word.ComboBoxContentControl#track:member(1)
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created. If this object is part of a collection,
-      you should also track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.ComboBoxContentControl;'
       return:
-        type: '<xref uid="word!Word.ComboBoxContentControl:class" />'
+        type: <xref uid="word!Word.ComboBoxContentControl:class" />
         description: ''
   - name: untrack()
-    uid: 'word!Word.ComboBoxContentControl#untrack:member(1)'
+    uid: word!Word.ComboBoxContentControl#untrack:member(1)
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.ComboBoxContentControl;'
       return:
-        type: '<xref uid="word!Word.ComboBoxContentControl:class" />'
+        type: <xref uid="word!Word.ComboBoxContentControl:class" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

@@ -1,11 +1,13 @@
 ### YamlMime:TSType
 name: Word.Interfaces.TrackedChangeData
-uid: 'word!Word.Interfaces.TrackedChangeData:interface'
+uid: word!Word.Interfaces.TrackedChangeData:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeData
-summary: An interface describing the data returned by calling `trackedChange.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `trackedChange.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

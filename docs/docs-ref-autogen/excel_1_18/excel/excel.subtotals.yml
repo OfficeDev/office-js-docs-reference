@@ -1,24 +1,28 @@
 ### YamlMime:TSType
 name: Excel.Subtotals
-uid: 'excel!Excel.Subtotals:interface'
+uid: excel!Excel.Subtotals:interface
 package: excel!
 fullName: Excel.Subtotals
 summary: Subtotals for the Pivot Field.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: automatic
-    uid: 'excel!Excel.Subtotals#automatic:member'
+    uid: excel!Excel.Subtotals#automatic:member
     package: excel!
     fullName: automatic
     summary: >-
-      If `Automatic` is set to `true`<!-- -->, then all other values will be ignored when setting the `Subtotals`<!--
-      -->.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      If `Automatic` is set to `true`<!-- -->, then all other values will be
+      ignored when setting the `Subtotals`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +30,12 @@ properties:
       return:
         type: boolean
   - name: average
-    uid: 'excel!Excel.Subtotals#average:member'
+    uid: excel!Excel.Subtotals#average:member
     package: excel!
     fullName: average
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,12 +43,12 @@ properties:
       return:
         type: boolean
   - name: count
-    uid: 'excel!Excel.Subtotals#count:member'
+    uid: excel!Excel.Subtotals#count:member
     package: excel!
     fullName: count
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,12 +56,12 @@ properties:
       return:
         type: boolean
   - name: countNumbers
-    uid: 'excel!Excel.Subtotals#countNumbers:member'
+    uid: excel!Excel.Subtotals#countNumbers:member
     package: excel!
     fullName: countNumbers
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,12 +69,12 @@ properties:
       return:
         type: boolean
   - name: max
-    uid: 'excel!Excel.Subtotals#max:member'
+    uid: excel!Excel.Subtotals#max:member
     package: excel!
     fullName: max
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,12 +82,12 @@ properties:
       return:
         type: boolean
   - name: min
-    uid: 'excel!Excel.Subtotals#min:member'
+    uid: excel!Excel.Subtotals#min:member
     package: excel!
     fullName: min
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,12 +95,12 @@ properties:
       return:
         type: boolean
   - name: product
-    uid: 'excel!Excel.Subtotals#product:member'
+    uid: excel!Excel.Subtotals#product:member
     package: excel!
     fullName: product
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,12 +108,12 @@ properties:
       return:
         type: boolean
   - name: standardDeviation
-    uid: 'excel!Excel.Subtotals#standardDeviation:member'
+    uid: excel!Excel.Subtotals#standardDeviation:member
     package: excel!
     fullName: standardDeviation
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,12 +121,12 @@ properties:
       return:
         type: boolean
   - name: standardDeviationP
-    uid: 'excel!Excel.Subtotals#standardDeviationP:member'
+    uid: excel!Excel.Subtotals#standardDeviationP:member
     package: excel!
     fullName: standardDeviationP
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,12 +134,12 @@ properties:
       return:
         type: boolean
   - name: sum
-    uid: 'excel!Excel.Subtotals#sum:member'
+    uid: excel!Excel.Subtotals#sum:member
     package: excel!
     fullName: sum
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,12 +147,12 @@ properties:
       return:
         type: boolean
   - name: variance
-    uid: 'excel!Excel.Subtotals#variance:member'
+    uid: excel!Excel.Subtotals#variance:member
     package: excel!
     fullName: variance
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,12 +160,12 @@ properties:
       return:
         type: boolean
   - name: varianceP
-    uid: 'excel!Excel.Subtotals#varianceP:member'
+    uid: excel!Excel.Subtotals#varianceP:member
     package: excel!
     fullName: varianceP
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

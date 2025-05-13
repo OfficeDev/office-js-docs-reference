@@ -1,24 +1,28 @@
 ### YamlMime:TSType
 name: Visio.Interfaces.DocumentViewLoadOptions
-uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+uid: visio!Visio.Interfaces.DocumentViewLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentViewLoadOptions
 summary: Represents the DocumentView class.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-example: []
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#$all:member'
+    uid: visio!Visio.Interfaces.DocumentViewLoadOptions#$all:member
     package: visio!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +30,15 @@ properties:
       return:
         type: boolean
   - name: disableHyperlinks
-    uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disableHyperlinks:member'
+    uid: visio!Visio.Interfaces.DocumentViewLoadOptions#disableHyperlinks:member
     package: visio!
     fullName: disableHyperlinks
     summary: Disable Hyperlinks.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,12 +46,15 @@ properties:
       return:
         type: boolean
   - name: disablePan
-    uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disablePan:member'
+    uid: visio!Visio.Interfaces.DocumentViewLoadOptions#disablePan:member
     package: visio!
     fullName: disablePan
     summary: Disable Pan.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,12 +62,15 @@ properties:
       return:
         type: boolean
   - name: disablePanZoomWindow
-    uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disablePanZoomWindow:member'
+    uid: visio!Visio.Interfaces.DocumentViewLoadOptions#disablePanZoomWindow:member
     package: visio!
     fullName: disablePanZoomWindow
     summary: Disable PanZoomWindow.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,12 +78,15 @@ properties:
       return:
         type: boolean
   - name: disableZoom
-    uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disableZoom:member'
+    uid: visio!Visio.Interfaces.DocumentViewLoadOptions#disableZoom:member
     package: visio!
     fullName: disableZoom
     summary: Disable Zoom.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,12 +94,15 @@ properties:
       return:
         type: boolean
   - name: hideDiagramBoundary
-    uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#hideDiagramBoundary:member'
+    uid: visio!Visio.Interfaces.DocumentViewLoadOptions#hideDiagramBoundary:member
     package: visio!
     fullName: hideDiagramBoundary
     summary: Hide Diagram Boundary.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,24 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartDataLabelsLoadOptions
-uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
 summary: Represents a collection of all the data labels on a chart point.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +29,16 @@ properties:
       return:
         type: boolean
   - name: autoText
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#autoText:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#autoText:member
     package: excel!
     fullName: autoText
-    summary: Specifies if data labels automatically generate appropriate text based on context.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if data labels automatically generate appropriate text based on
+      context.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,42 +46,93 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#format:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: 'Specifies the format of chart data labels, which includes fill and font formatting.'
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the format of chart data labels, which includes fill and font
+      formatting.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface"
+          />
+  - name: geometricShapeType
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsLoadOptions#geometricShapeType:member
+    package: excel!
+    fullName: geometricShapeType
+    summary: >-
+      Specifies the geometric shape type of the data labels. See
+      `Excel.GeometricShapeType` for more details. Value is `null` if the data
+      labels are not geometric shapes.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'geometricShapeType?: boolean;'
+      return:
+        type: boolean
   - name: horizontalAlignment
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#horizontalAlignment:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsLoadOptions#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
     summary: >-
-      Specifies the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
-      This property is valid only when the `TextOrientation` of data label is 0.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Specifies the horizontal alignment for chart data label. See
+      `Excel.ChartTextHorizontalAlignment` for details. This property is valid
+      only when the `TextOrientation` of data label is 0.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'horizontalAlignment?: boolean;'
       return:
         type: boolean
+  - name: leaderLines
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#leaderLines:member
+    package: excel!
+    fullName: leaderLines
+    summary: Gets an object that represents the leader lines of the data labels.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leaderLines?: Excel.Interfaces.ChartLeaderLinesLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLeaderLinesLoadOptions:interface" />
   - name: linkNumberFormat
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#linkNumberFormat:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#linkNumberFormat:member
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells. If `true`<!-- -->, the number format will change in the
-      labels when it changes in the cells.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Specifies if the number format is linked to the cells. If `true`<!-- -->,
+      the number format will change in the labels when it changes in the cells.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,12 +140,14 @@ properties:
       return:
         type: boolean
   - name: numberFormat
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#numberFormat:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#numberFormat:member
     package: excel!
     fullName: numberFormat
     summary: Specifies the format code for data labels.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,12 +155,16 @@ properties:
       return:
         type: boolean
   - name: position
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member
     package: excel!
     fullName: position
-    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Value that represents the position of the data label. See
+      `Excel.ChartDataLabelPosition` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,25 +172,53 @@ properties:
       return:
         type: boolean
   - name: separator
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#separator:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#separator:member
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data labels on a chart.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'separator?: boolean;'
       return:
         type: boolean
+  - name: showAsStickyCallout
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showAsStickyCallout:member
+    package: excel!
+    fullName: showAsStickyCallout
+    summary: >-
+      Gets a value that indicates whether the data labels are shown as a callout
+      with the tail anchor attached to the data point. If `true`<!-- -->, the
+      callout is one of the following values: "AccentCallout1",
+      "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout",
+      "WedgeRRectCallout" or "WedgeEllipseCallout". See
+      [GeometricShapeType](xref:excel!Excel.GeometricShapeType:enum) for more
+      details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAsStickyCallout?: boolean;'
+      return:
+        type: boolean
   - name: showBubbleSize
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,25 +226,48 @@ properties:
       return:
         type: boolean
   - name: showCategoryName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showCategoryName:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showCategoryName:member
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'showCategoryName?: boolean;'
       return:
         type: boolean
+  - name: showLeaderLines
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLeaderLines:member
+    package: excel!
+    fullName: showLeaderLines
+    summary: >-
+      Specifies a value that indicates whether leader lines are displayed for
+      the data labels. `true` if leader lines are shown; otherwise, `false`<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showLeaderLines?: boolean;'
+      return:
+        type: boolean
   - name: showLegendKey
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLegendKey:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLegendKey:member
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,12 +275,14 @@ properties:
       return:
         type: boolean
   - name: showPercentage
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showPercentage:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showPercentage:member
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,12 +290,14 @@ properties:
       return:
         type: boolean
   - name: showSeriesName
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showSeriesName:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showSeriesName:member
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,12 +305,14 @@ properties:
       return:
         type: boolean
   - name: showValue
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showValue:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showValue:member
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -199,14 +320,17 @@ properties:
       return:
         type: boolean
   - name: textOrientation
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#textOrientation:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#textOrientation:member
     package: excel!
     fullName: textOrientation
     summary: >-
-      Represents the angle to which the text is oriented for data labels. The value should either be an integer from -90
-      to 90 or the integer 180 for vertically-oriented text.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents the angle to which the text is oriented for data labels. The
+      value should either be an integer from -90 to 90 or the integer 180 for
+      vertically-oriented text.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,14 +338,17 @@ properties:
       return:
         type: boolean
   - name: verticalAlignment
-    uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#verticalAlignment:member'
+    uid: excel!Excel.Interfaces.ChartDataLabelsLoadOptions#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
     summary: >-
-      Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details. This
-      property is valid only when `TextOrientation` of the data label is -90, 90, or 180.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents the vertical alignment of chart data label. See
+      `Excel.ChartTextVerticalAlignment` for details. This property is valid
+      only when `TextOrientation` of the data label is -90, 90, or 180.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

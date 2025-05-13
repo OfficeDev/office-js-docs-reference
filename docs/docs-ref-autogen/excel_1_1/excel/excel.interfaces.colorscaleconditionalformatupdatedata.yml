@@ -1,13 +1,13 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
-uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
+uid: excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
 summary: >-
-  An interface for updating data on the `ColorScaleConditionalFormat` object, for use in
-  `colorScaleConditionalFormat.set({ ... })`<!-- -->.
+  An interface for updating data on the `ColorScaleConditionalFormat` object,
+  for use in `colorScaleConditionalFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

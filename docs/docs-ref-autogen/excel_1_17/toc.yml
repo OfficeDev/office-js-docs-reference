@@ -731,8 +731,6 @@ items:
             uid: excel!Excel.FilterPivotHierarchyCollection:class
           - name: FormatProtection
             uid: excel!Excel.FormatProtection:class
-          - name: FormattedNumberCellValue
-            uid: excel!Excel.FormattedNumberCellValue:interface
           - name: FormulaChangedEventDetail
             uid: excel!Excel.FormulaChangedEventDetail:interface
           - name: FunctionResult

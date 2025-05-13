@@ -1,12 +1,13 @@
 ### YamlMime:TSEnum
 name: Office.DevicePermissionType
-uid: 'office!Office.DevicePermissionType:enum'
+uid: office!Office.DevicePermissionType:enum
 package: office!
 fullName: Office.DevicePermissionType
 summary: Specifies the device capability to which an add-in is requesting access.
 remarks: >-
-  \*\*Applications\*\*: This API is supported by the following Office applications when running in Chromium-based
-  browsers, such as Microsoft Edge and Google Chrome.
+  **Applications**: This API is supported by the following Office
+  applications when running in Chromium-based browsers, such as Microsoft Edge
+  and Google Chrome.
 
 
   - Excel on the web
@@ -22,10 +23,11 @@ remarks: >-
 
 
   It's also supported in [new Outlook on
-  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+  -->.
 
 
-  \*\*Requirement set\*\*: [DevicePermission
+  **Requirement set**: [DevicePermission
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 
 
@@ -38,7 +40,8 @@ remarks: >-
 
   const host = Office.context.host;
 
-  if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+  if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint ||
+  host === Office.HostType.Word) {
       if (Office.context.platform === Office.PlatformType.OfficeOnline) {
           const deviceCapabilities = [
               Office.DevicePermissionType.camera,
@@ -99,24 +102,24 @@ remarks: >-
   }
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: camera
-    uid: 'office!Office.DevicePermissionType.camera:member'
+    uid: office!Office.DevicePermissionType.camera:member
     package: office!
     summary: The add-in is requesting access to the user's camera.
   - name: geolocation
-    uid: 'office!Office.DevicePermissionType.geolocation:member'
+    uid: office!Office.DevicePermissionType.geolocation:member
     package: office!
     summary: >-
       The add-in is requesting access to the user's geolocation.
 
 
-      \*\*Important\*\*: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on
-      Windows.
+      **Important**: Access to a user's geolocation is only supported in
+      Outlook on the web and new Outlook on Windows.
   - name: microphone
-    uid: 'office!Office.DevicePermissionType.microphone:member'
+    uid: office!Office.DevicePermissionType.microphone:member
     package: office!
     summary: The add-in is requesting access to the user's microphone.

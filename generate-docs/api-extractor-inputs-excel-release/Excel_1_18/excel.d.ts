@@ -537,7 +537,7 @@ export declare namespace Excel {
      * @remarks
      * [Api set: ExcelApi 1.16]
      */
-    export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection | CardLayoutTwoColumnSection;
+    export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;
     /**
      * Properties of a card layout relevant to most card layouts.
      *
@@ -595,7 +595,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        icon?: string | EntityCompactLayoutIcons;
+        icon?: string;
     }
     
     
@@ -4664,7 +4664,7 @@ export declare namespace Excel {
      * @remarks
      * [Api set: ExcelApi 1.16]
      */
-    export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | FunctionCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
+    export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
     /**
      * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
      *

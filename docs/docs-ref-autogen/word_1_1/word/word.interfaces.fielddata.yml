@@ -1,11 +1,11 @@
 ### YamlMime:TSType
 name: Word.Interfaces.FieldData
-uid: 'word!Word.Interfaces.FieldData:interface'
+uid: word!Word.Interfaces.FieldData:interface
 package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

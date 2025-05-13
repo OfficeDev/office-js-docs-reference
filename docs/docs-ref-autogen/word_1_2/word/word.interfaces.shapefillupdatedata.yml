@@ -1,11 +1,13 @@
 ### YamlMime:TSType
 name: Word.Interfaces.ShapeFillUpdateData
-uid: 'word!Word.Interfaces.ShapeFillUpdateData:interface'
+uid: word!Word.Interfaces.ShapeFillUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeFillUpdateData
-summary: 'An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `ShapeFill` object, for use in
+  `shapeFill.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

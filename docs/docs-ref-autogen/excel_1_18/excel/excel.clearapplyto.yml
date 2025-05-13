@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Excel.ClearApplyTo
-uid: 'excel!Excel.ClearApplyTo:enum'
+uid: excel!Excel.ClearApplyTo:enum
 package: excel!
 fullName: Excel.ClearApplyTo
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   #### Examples
@@ -42,59 +43,71 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: all
-    uid: 'excel!Excel.ClearApplyTo.all:member'
+    uid: excel!Excel.ClearApplyTo.all:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears everything in the range.
 
-      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: contents
-    uid: 'excel!Excel.ClearApplyTo.contents:member'
+    uid: excel!Excel.ClearApplyTo.contents:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears the contents of the range, leaving formatting intact.
 
-      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
   - name: formats
-    uid: 'excel!Excel.ClearApplyTo.formats:member'
+    uid: excel!Excel.ClearApplyTo.formats:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears all formatting for the range, leaving values intact.
 
-      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'
   - name: hyperlinks
-    uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
+    uid: excel!Excel.ClearApplyTo.hyperlinks:member
     package: excel!
-    summary: |-
+    summary: >-
       Clears all hyperlinks, but leaves all content and formatting intact.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hyperlinks"'
   - name: removeHyperlinks
-    uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
+    uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
     package: excel!
     summary: >-
-      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
-      intact.
+      Removes hyperlinks and formatting for the cell but leaves content,
+      conditional formats, and data validation intact.
 
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RemoveHyperlinks"'
   - name: resetContents
-    uid: 'excel!Excel.ClearApplyTo.resetContents:member'
+    uid: excel!Excel.ClearApplyTo.resetContents:member
     package: excel!
     summary: >-
-      Sets all cells in the range to their default state. Cells with cell controls are set to the default value defined
-      by each control. Cells without cell controls are set to blank.
+      Sets all cells in the range to their default state. Cells with cell
+      controls are set to the default value defined by each control. Cells
+      without cell controls are set to blank.
 
 
-      \* \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ResetContents"'

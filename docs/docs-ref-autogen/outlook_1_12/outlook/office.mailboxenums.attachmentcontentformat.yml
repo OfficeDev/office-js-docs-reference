@@ -1,16 +1,17 @@
 ### YamlMime:TSEnum
 name: Office.MailboxEnums.AttachmentContentFormat
-uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
+uid: outlook!Office.MailboxEnums.AttachmentContentFormat:enum
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentContentFormat
 summary: Specifies the formatting that applies to an attachment's content.
 remarks: >-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
-  Compose or Read
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
 
 
   #### Examples
@@ -49,27 +50,31 @@ remarks: >-
   }
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: Base64
-    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
+    uid: outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member
     package: outlook!
     summary: The content of the attachment is returned as a Base64-encoded string.
     value: '"base64"'
   - name: Url
-    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
+    uid: outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member
     package: outlook!
     summary: The content of the attachment is returned as a string representing a URL.
     value: '"url"'
   - name: Eml
-    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
+    uid: outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member
     package: outlook!
-    summary: The content of the attachment is returned as a string representing an .eml formatted file.
+    summary: >-
+      The content of the attachment is returned as a string representing an .eml
+      formatted file.
     value: '"eml"'
   - name: ICalendar
-    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
+    uid: outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member
     package: outlook!
-    summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
+    summary: >-
+      The content of the attachment is returned as a string representing an
+      .icalendar formatted file.
     value: '"iCalendar"'

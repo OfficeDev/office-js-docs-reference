@@ -1,35 +1,44 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartPlotAreaUpdateData
-uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
+uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartPlotAreaUpdateData
-summary: 'An interface for updating data on the `ChartPlotArea` object, for use in `chartPlotArea.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `ChartPlotArea` object, for use in
+  `chartPlotArea.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: format
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#format:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#format:member
     package: excel!
     fullName: format
     summary: Specifies the formatting of a chart plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatUpdateData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface"
+          />
   - name: height
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#height:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#height:member
     package: excel!
     fullName: height
     summary: Specifies the height value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,12 +46,14 @@ properties:
       return:
         type: number
   - name: insideHeight
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideHeight:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideHeight:member
     package: excel!
     fullName: insideHeight
     summary: Specifies the inside height value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +61,14 @@ properties:
       return:
         type: number
   - name: insideLeft
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideLeft:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideLeft:member
     package: excel!
     fullName: insideLeft
     summary: Specifies the inside left value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +76,14 @@ properties:
       return:
         type: number
   - name: insideTop
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideTop:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideTop:member
     package: excel!
     fullName: insideTop
     summary: Specifies the inside top value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,12 +91,14 @@ properties:
       return:
         type: number
   - name: insideWidth
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideWidth:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideWidth:member
     package: excel!
     fullName: insideWidth
     summary: Specifies the inside width value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,12 +106,14 @@ properties:
       return:
         type: number
   - name: left
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#left:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#left:member
     package: excel!
     fullName: left
     summary: Specifies the left value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,25 +121,31 @@ properties:
       return:
         type: number
   - name: position
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#position:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#position:member
     package: excel!
     fullName: position
     summary: Specifies the position of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'position?: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";'
       return:
-        type: '<xref uid="excel!Excel.ChartPlotAreaPosition:enum" /> | "Automatic" | "Custom"'
+        type: >-
+          <xref uid="excel!Excel.ChartPlotAreaPosition:enum" /> | "Automatic" |
+          "Custom"
   - name: top
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#top:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#top:member
     package: excel!
     fullName: top
     summary: Specifies the top value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,12 +153,14 @@ properties:
       return:
         type: number
   - name: width
-    uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#width:member'
+    uid: excel!Excel.Interfaces.ChartPlotAreaUpdateData#width:member
     package: excel!
     fullName: width
     summary: Specifies the width value of a plot area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

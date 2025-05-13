@@ -1,22 +1,22 @@
 ### YamlMime:TSType
 name: OfficeExtension.RequestUrlAndHeaderInfo
-uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+uid: office!OfficeExtension.RequestUrlAndHeaderInfo:interface
 package: office!
 fullName: OfficeExtension.RequestUrlAndHeaderInfo
 summary: Request URL and headers
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: headers
-    uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo#headers:member'
+    uid: office!OfficeExtension.RequestUrlAndHeaderInfo#headers:member
     package: office!
     fullName: headers
     summary: Request headers
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,12 +30,12 @@ properties:
                       [name: string]: string;
                   }
   - name: url
-    uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo#url:member'
+    uid: office!OfficeExtension.RequestUrlAndHeaderInfo#url:member
     package: office!
     fullName: url
     summary: Request URL
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

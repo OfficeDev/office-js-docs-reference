@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.BorderCollectionUpdateData
-uid: 'word!Word.Interfaces.BorderCollectionUpdateData:interface'
+uid: word!Word.Interfaces.BorderCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BorderCollectionUpdateData
-summary: 'An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `BorderCollection` object, for use in
+  `borderCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#items:member'
+    uid: word!Word.Interfaces.BorderCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.BorderData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.BorderData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.BorderData:interface" />[]

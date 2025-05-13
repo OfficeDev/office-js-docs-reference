@@ -1,24 +1,26 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
-uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
+uid: excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
 summary: >-
-  An interface for updating data on the `RowColumnPivotHierarchy` object, for use in `rowColumnPivotHierarchy.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `RowColumnPivotHierarchy` object, for
+  use in `rowColumnPivotHierarchy.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: name
-    uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#name:member'
+    uid: excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#name:member
     package: excel!
     fullName: name
     summary: Name of the RowColumnPivotHierarchy.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +28,14 @@ properties:
       return:
         type: string
   - name: position
-    uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#position:member'
+    uid: excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#position:member
     package: excel!
     fullName: position
     summary: Position of the RowColumnPivotHierarchy.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

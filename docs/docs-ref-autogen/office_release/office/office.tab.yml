@@ -1,14 +1,17 @@
 ### YamlMime:TSType
 name: Office.Tab
-uid: 'office!Office.Tab:interface'
+uid: office!Office.Tab:interface
 package: office!
 fullName: Office.Tab
 summary: >-
-  Represents an individual tab and the state it should have. For code examples, see [Change the availability of add-in
-  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
-  tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+  Represents an individual tab and the state it should have. For code examples,
+  see [Change the availability of add-in
+  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)
+  and [Create custom contextual
+  tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
+  -->.
 remarks: >-
-  \*\*Requirement set\*\*: [RibbonAPI
+  **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
@@ -29,72 +32,88 @@ remarks: >-
   }
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: controls
-    uid: 'office!Office.Tab#controls:member'
+    uid: office!Office.Tab#controls:member
     package: office!
     fullName: controls
-    summary: 'Specifies one or more of the controls in the tab, such as menu items, buttons, etc.'
+    summary: >-
+      Specifies one or more of the controls in the tab, such as menu items,
+      buttons, etc.
     remarks: >-
-      When the `Tab` object is part of an [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
-      object passed to the `requestUpdate` method of [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, this
-      property specifies the IDs of the controls whose enabled status is to be changed. However, if there is a `groups`
-      property on the tab, then this property is ignored and the `controls` properties of the specified groups must be
-      used to change enabled status.
-    example: []
+      When the `Tab` object is part of an
+      [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
+      object passed to the `requestUpdate` method of
+      [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, this
+      property specifies the IDs of the controls whose enabled status is to be
+      changed. However, if there is a `groups` property on the tab, then this
+      property is ignored and the `controls` properties of the specified groups
+      must be used to change enabled status.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'controls?: Control[];'
       return:
-        type: '<xref uid="office!Office.Control:interface" />[]'
+        type: <xref uid="office!Office.Control:interface" />[]
   - name: groups
-    uid: 'office!Office.Tab#groups:member'
+    uid: office!Office.Tab#groups:member
     package: office!
     fullName: groups
     summary: Specifies one or more of the control groups on the tab.
     remarks: >-
-      When the `Tab` object is part of an [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
-      object passed to the `requestUpdate` method of [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, the
-      `controls` properties of the various [Office.Group](xref:office!Office.Group:interface) objects specify which
-      controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.
+      When the `Tab` object is part of an
+      [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
+      object passed to the `requestUpdate` method of
+      [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, the
+      `controls` properties of the various
+      [Office.Group](xref:office!Office.Group:interface) objects specify which
+      controls have their enabled status changed; the `controls` property of the
+      `Tab` object is ignored.
 
 
-      \*\*Requirement set\*\*: [RibbonAPI
+      **Requirement set**: [RibbonAPI
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'groups?: Group[];'
       return:
-        type: '<xref uid="office!Office.Group:interface" />[]'
+        type: <xref uid="office!Office.Group:interface" />[]
   - name: id
-    uid: 'office!Office.Tab#id:member'
+    uid: office!Office.Tab#id:member
     package: office!
     fullName: id
     summary: Identifier of the tab as specified in the manifest.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string;'
       return:
         type: string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```TypeScript
-          // Office.Tab objects are properties of ribbon updater objects that are passed to the 
-          // Office.ribbon.requestUpdate method. The following shows how to set the visibility of 
+
+          // Office.Tab objects are properties of ribbon updater objects that
+          are passed to the 
+
+          // Office.ribbon.requestUpdate method. The following shows how to set
+          the visibility of 
+
           // a custom contextual tab.
+
 
           async function showDataTab() {
               await Office.ribbon.requestUpdate({
@@ -106,21 +125,26 @@ properties:
                   ]});
           }
 
+
           // The the following does the same thing in TypeScript.
+
 
           const showDataTab = async () => {
               const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
               const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
               await Office.ribbon.requestUpdate(ribbonUpdater);
           }
+
           ```
   - name: visible
-    uid: 'office!Office.Tab#visible:member'
+    uid: office!Office.Tab#visible:member
     package: office!
     fullName: visible
-    summary: Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.
+    summary: >-
+      Specifies whether the tab is visible on the ribbon. Used only with
+      contextual tabs.
     remarks: >-
-      \*\*Requirement set\*\*: [RibbonAPI
+      **Requirement set**: [RibbonAPI
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
@@ -129,9 +153,11 @@ properties:
 
       ```TypeScript
 
-      // Office.Tab objects are properties of ribbon updater objects that are passed to the 
+      // Office.Tab objects are properties of ribbon updater objects that are
+      passed to the 
 
-      // Office.ribbon.requestUpdate method. The following shows how to set the visibility of 
+      // Office.ribbon.requestUpdate method. The following shows how to set the
+      visibility of 
 
       // a custom contextual tab.
 
@@ -157,7 +183,7 @@ properties:
       }
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

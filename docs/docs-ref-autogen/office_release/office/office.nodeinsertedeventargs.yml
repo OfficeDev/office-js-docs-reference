@@ -1,22 +1,26 @@
 ### YamlMime:TSType
 name: Office.NodeInsertedEventArgs
-uid: 'office!Office.NodeInsertedEventArgs:interface'
+uid: office!Office.NodeInsertedEventArgs:interface
 package: office!
 fullName: Office.NodeInsertedEventArgs
-summary: Provides information about the inserted node that raised the nodeInserted event.
+summary: >-
+  Provides information about the inserted node that raised the nodeInserted
+  event.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: isUndoRedo
-    uid: 'office!Office.NodeInsertedEventArgs#isUndoRedo:member'
+    uid: office!Office.NodeInsertedEventArgs#isUndoRedo:member
     package: office!
     fullName: isUndoRedo
-    summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
+    summary: >-
+      Gets whether the node was inserted as part of an Undo/Redo action by the
+      user.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,18 +28,20 @@ properties:
       return:
         type: boolean
   - name: newNode
-    uid: 'office!Office.NodeInsertedEventArgs#newNode:member'
+    uid: office!Office.NodeInsertedEventArgs#newNode:member
     package: office!
     fullName: newNode
-    summary: |-
+    summary: >-
       Gets the node that was just added to the CustomXMLPart object.
 
-      Note that this node may have children, if a subtree was just added to the document.
+
+      Note that this node may have children, if a subtree was just added to the
+      document.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'newNode: CustomXmlNode;'
       return:
-        type: '<xref uid="office!Office.CustomXmlNode:interface" />'
+        type: <xref uid="office!Office.CustomXmlNode:interface" />

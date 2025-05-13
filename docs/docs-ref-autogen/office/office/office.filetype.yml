@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: Office.FileType
-uid: 'office!Office.FileType:enum'
+uid: office!Office.FileType:enum
 package: office!
 fullName: Office.FileType
 summary: Specifies the format in which to return the document.
@@ -12,10 +12,11 @@ remarks: >-
 
   ```TypeScript
 
-  // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
+  // The following example gets the document in Office Open XML ("compressed")
+  format in 65536 bytes (64 KB) slices.
 
-  // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office
-  Add-ins.
+  // Note: The implementation of app.showNotification in this example is from
+  the Visual Studio template for Office Add-ins.
 
   function getDocumentAsCompressed() {
       Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
@@ -38,7 +39,8 @@ remarks: >-
   }
 
 
-  function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
+  function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices,
+  docDataSlices, slicesReceived) {
       file.getSliceAsync(nextSlice, function (sliceResult) {
           if (sliceResult.status == "succeeded") {
               if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
@@ -83,27 +85,31 @@ remarks: >-
   }
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: Compressed
-    uid: 'office!Office.FileType.Compressed:member'
+    uid: office!Office.FileType.Compressed:member
     package: office!
     summary: >-
-      Returns the entire document (.pptx, .docx, .xlsx, or .xlsm) in Office Open XML (OOXML) format as a byte array.
+      Returns the entire document (.pptx, .docx, .xlsx, or .xlsm) in Office Open
+      XML (OOXML) format as a byte array.
 
 
-      Note: The .xslm file type is supported in Excel on Windows and Mac. It's not supported in Excel on the web. In
-      Excel on Windows, the file slices from the `getFileAsync` method include the VBA signature files for .xslm file
-      types. The VBA signature files are vbaProjectSignature.bin, vbaProbjectSignatureAgile.bin, and
-      vbaProjectSignatureV3.bin. In Excel on Mac, the file slices from the `getFileAsync` method don't include the VBA
-      signature files, because this platform doesn't support the VBA signature feature.
+      Note: The .xslm file type is supported in Excel on Windows and Mac. It's
+      not supported in Excel on the web. In Excel on Windows, the file slices
+      from the `getFileAsync` method include the VBA signature files for .xslm
+      file types. The VBA signature files are vbaProjectSignature.bin,
+      vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin. In Excel on
+      Mac, the file slices from the `getFileAsync` method don't include the VBA
+      signature files, because this platform doesn't support the VBA signature
+      feature.
   - name: Pdf
-    uid: 'office!Office.FileType.Pdf:member'
+    uid: office!Office.FileType.Pdf:member
     package: office!
     summary: Returns the entire document in PDF format as a byte array.
   - name: Text
-    uid: 'office!Office.FileType.Text:member'
+    uid: office!Office.FileType.Text:member
     package: office!
     summary: Returns only the text of the document as a string.

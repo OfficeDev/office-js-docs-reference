@@ -1,25 +1,30 @@
 ### YamlMime:TSType
 name: Excel.CellPropertiesFont
-uid: 'excel!Excel.CellPropertiesFont:interface'
+uid: excel!Excel.CellPropertiesFont:interface
 package: excel!
 fullName: Excel.CellPropertiesFont
 summary: >-
-  Represents the `format.font` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
-  `getColumnProperties`<!-- -->, or the `format.font` input parameter of `setCellProperties`<!-- -->,
+  Represents the `format.font` properties of `getCellProperties`<!-- -->,
+  `getRowProperties`<!-- -->, and `getColumnProperties`<!-- -->, or the
+  `format.font` input parameter of `setCellProperties`<!-- -->,
   `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: bold
-    uid: 'excel!Excel.CellPropertiesFont#bold:member'
+    uid: excel!Excel.CellPropertiesFont#bold:member
     package: excel!
     fullName: bold
     summary: Represents the `format.font.bold` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,12 +32,13 @@ properties:
       return:
         type: boolean
   - name: color
-    uid: 'excel!Excel.CellPropertiesFont#color:member'
+    uid: excel!Excel.CellPropertiesFont#color:member
     package: excel!
     fullName: color
     summary: Represents the `format.font.color` property.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -117,7 +123,7 @@ properties:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,12 +131,14 @@ properties:
       return:
         type: string
   - name: italic
-    uid: 'excel!Excel.CellPropertiesFont#italic:member'
+    uid: excel!Excel.CellPropertiesFont#italic:member
     package: excel!
     fullName: italic
     summary: Represents the `format.font.italic` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,12 +146,14 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'excel!Excel.CellPropertiesFont#name:member'
+    uid: excel!Excel.CellPropertiesFont#name:member
     package: excel!
     fullName: name
     summary: Represents the `format.font.name` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,12 +161,14 @@ properties:
       return:
         type: string
   - name: size
-    uid: 'excel!Excel.CellPropertiesFont#size:member'
+    uid: excel!Excel.CellPropertiesFont#size:member
     package: excel!
     fullName: size
     summary: Represents the `format.font.size` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,12 +176,14 @@ properties:
       return:
         type: number
   - name: strikethrough
-    uid: 'excel!Excel.CellPropertiesFont#strikethrough:member'
+    uid: excel!Excel.CellPropertiesFont#strikethrough:member
     package: excel!
     fullName: strikethrough
     summary: Represents the `format.font.strikethrough` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,12 +191,14 @@ properties:
       return:
         type: boolean
   - name: subscript
-    uid: 'excel!Excel.CellPropertiesFont#subscript:member'
+    uid: excel!Excel.CellPropertiesFont#subscript:member
     package: excel!
     fullName: subscript
     summary: Represents the `format.font.subscript` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,12 +206,14 @@ properties:
       return:
         type: boolean
   - name: superscript
-    uid: 'excel!Excel.CellPropertiesFont#superscript:member'
+    uid: excel!Excel.CellPropertiesFont#superscript:member
     package: excel!
     fullName: superscript
     summary: Represents the `format.font.superscript` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,12 +221,14 @@ properties:
       return:
         type: boolean
   - name: tintAndShade
-    uid: 'excel!Excel.CellPropertiesFont#tintAndShade:member'
+    uid: excel!Excel.CellPropertiesFont#tintAndShade:member
     package: excel!
     fullName: tintAndShade
     summary: Represents the `format.font.tintAndShade` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,17 +236,21 @@ properties:
       return:
         type: number
   - name: underline
-    uid: 'excel!Excel.CellPropertiesFont#underline:member'
+    uid: excel!Excel.CellPropertiesFont#underline:member
     package: excel!
     fullName: underline
     summary: Represents the `format.font.underline` property.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
+      content: >-
+        underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" |
+        "SingleAccountant" | "DoubleAccountant";
       return:
         type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "SingleAccountant" |
-          "DoubleAccountant"
+          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
+          "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

@@ -1,25 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.TableCollectionUpdateData
-uid: 'word!Word.Interfaces.TableCollectionUpdateData:interface'
+uid: word!Word.Interfaces.TableCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableCollectionUpdateData
-summary: 'An interface for updating data on the `TableCollection` object, for use in `tableCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `TableCollection` object, for use in
+  `tableCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.TableCollectionUpdateData#items:member'
+    uid: word!Word.Interfaces.TableCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.TableData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.TableData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.TableData:interface" />[]

@@ -1,11 +1,13 @@
 ### YamlMime:TSType
 name: Word.Interfaces.ShapeUpdateData
-uid: 'word!Word.Interfaces.ShapeUpdateData:interface'
+uid: word!Word.Interfaces.ShapeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeUpdateData
-summary: 'An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Shape` object, for use in `shape.set({
+  ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

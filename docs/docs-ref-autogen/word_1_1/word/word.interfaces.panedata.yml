@@ -1,11 +1,11 @@
 ### YamlMime:TSType
 name: Word.Interfaces.PaneData
-uid: 'word!Word.Interfaces.PaneData:interface'
+uid: word!Word.Interfaces.PaneData:interface
 package: word!
 fullName: Word.Interfaces.PaneData
 summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

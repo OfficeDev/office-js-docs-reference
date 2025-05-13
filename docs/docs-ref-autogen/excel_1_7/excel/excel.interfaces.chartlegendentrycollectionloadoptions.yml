@@ -1,24 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
-uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
 summary: Represents a collection of legend entries.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,12 +29,17 @@ properties:
       return:
         type: boolean
   - name: visible
-    uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member'
+    uid: >-
+      excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member
     package: excel!
     fullName: visible
-    summary: 'For EACH ITEM in the collection: Represents the visibility of a chart legend entry.'
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Represents the visibility of a chart
+      legend entry.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

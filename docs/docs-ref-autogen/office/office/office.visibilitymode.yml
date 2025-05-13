@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: Office.VisibilityMode
-uid: 'office!Office.VisibilityMode:enum'
+uid: office!Office.VisibilityMode:enum
 package: office!
 fullName: Office.VisibilityMode
 summary: Visibility mode of the add-in.
@@ -20,17 +20,17 @@ remarks: |-
       // Other startup tasks.
   });
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: hidden
-    uid: 'office!Office.VisibilityMode.hidden:member'
+    uid: office!Office.VisibilityMode.hidden:member
     package: office!
     summary: UI is hidden.
     value: '''Hidden'''
   - name: taskpane
-    uid: 'office!Office.VisibilityMode.taskpane:member'
+    uid: office!Office.VisibilityMode.taskpane:member
     package: office!
     summary: Displayed as a task pane.
     value: '''Taskpane'''

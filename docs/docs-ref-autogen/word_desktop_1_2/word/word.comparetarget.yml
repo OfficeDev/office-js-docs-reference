@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Word.CompareTarget
-uid: 'word!Word.CompareTarget:enum'
+uid: word!Word.CompareTarget:enum
 package: word!
 fullName: Word.CompareTarget
 summary: Specifies the target document for displaying document comparison differences.
 remarks: >-
-  \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -36,31 +37,37 @@ remarks: >-
   });
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: compareTargetCurrent
-    uid: 'word!Word.CompareTarget.compareTargetCurrent:member'
+    uid: word!Word.CompareTarget.compareTargetCurrent:member
     package: word!
-    summary: |-
+    summary: >-
       Places comparison differences in the current document.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetCurrent"'
   - name: compareTargetNew
-    uid: 'word!Word.CompareTarget.compareTargetNew:member'
+    uid: word!Word.CompareTarget.compareTargetNew:member
     package: word!
-    summary: |-
+    summary: >-
       Places comparison differences in a new document.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetNew"'
   - name: compareTargetSelected
-    uid: 'word!Word.CompareTarget.compareTargetSelected:member'
+    uid: word!Word.CompareTarget.compareTargetSelected:member
     package: word!
-    summary: |-
+    summary: >-
       Places comparison differences in the target document.
 
-      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetSelected"'

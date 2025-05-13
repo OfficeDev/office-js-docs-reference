@@ -1,25 +1,29 @@
 ### YamlMime:TSType
 name: Word.Interfaces.FieldUpdateData
-uid: 'word!Word.Interfaces.FieldUpdateData:interface'
+uid: word!Word.Interfaces.FieldUpdateData:interface
 package: word!
 fullName: Word.Interfaces.FieldUpdateData
-summary: 'An interface for updating data on the `Field` object, for use in `field.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Field` object, for use in `field.set({
+  ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: code
-    uid: 'word!Word.Interfaces.FieldUpdateData#code:member'
+    uid: word!Word.Interfaces.FieldUpdateData#code:member
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: |-
-      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,15 +31,17 @@ properties:
       return:
         type: string
   - name: result
-    uid: 'word!Word.Interfaces.FieldUpdateData#result:member'
+    uid: word!Word.Interfaces.FieldUpdateData#result:member
     package: word!
     fullName: result
     summary: Gets the field's result data.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'result?: Word.Interfaces.RangeUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />

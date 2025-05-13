@@ -1,24 +1,30 @@
 ### YamlMime:TSType
 name: Excel.WebImageCellValue
-uid: 'excel!Excel.WebImageCellValue:interface'
+uid: excel!Excel.WebImageCellValue:interface
 package: excel!
 fullName: Excel.WebImageCellValue
-summary: Represents the value of a cell containing an image downloaded from the internet.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the value of a cell containing an image downloaded from the
+  internet.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: address
-    uid: 'excel!Excel.WebImageCellValue#address:member'
+    uid: excel!Excel.WebImageCellValue#address:member
     package: excel!
     fullName: address
     summary: >-
-      Represents the URL from which the image will be downloaded. This image must be hosted on a server that supports
-      HTTPS.
+      Represents the URL from which the image will be downloaded. This image
+      must be hosted on a server that supports HTTPS.
     remarks: >-
-      \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -30,7 +36,8 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
 
 
-      // This function retrieves the image URL from the selected cell and opens that image in a new browser tab.
+      // This function retrieves the image URL from the selected cell and opens
+      that image in a new browser tab.
 
       await Excel.run(async (context) => {
         // Load the active cell information.
@@ -53,7 +60,7 @@ properties:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,12 +68,17 @@ properties:
       return:
         type: string
   - name: altText
-    uid: 'excel!Excel.WebImageCellValue#altText:member'
+    uid: excel!Excel.WebImageCellValue#altText:member
     package: excel!
     fullName: altText
-    summary: Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the alternate text that can be used in accessibility scenarios
+      to describe what the image represents.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,41 +86,56 @@ properties:
       return:
         type: string
   - name: attribution
-    uid: 'excel!Excel.WebImageCellValue#attribution:member'
+    uid: excel!Excel.WebImageCellValue#attribution:member
     package: excel!
     fullName: attribution
-    summary: Represents attribution information to describe the source and license requirements for using this image.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents attribution information to describe the source and license
+      requirements for using this image.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'attribution?: CellValueAttributionAttributes[];'
       return:
-        type: '<xref uid="excel!Excel.CellValueAttributionAttributes:interface" />[]'
+        type: <xref uid="excel!Excel.CellValueAttributionAttributes:interface" />[]
   - name: basicType
-    uid: 'excel!Excel.WebImageCellValue#basicType:member'
+    uid: excel!Excel.WebImageCellValue#basicType:member
     package: excel!
     fullName: basicType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the value that would be returned by `Range.valueTypes` for a
+      cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'basicType?: RangeValueType.error | "Error";'
       return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+        type: <xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"
   - name: basicValue
-    uid: 'excel!Excel.WebImageCellValue#basicValue:member'
+    uid: excel!Excel.WebImageCellValue#basicValue:member
     package: excel!
     fullName: basicValue
     summary: >-
-      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
-      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
-      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents the value that would be returned by `Range.values` for a cell
+      with this value. When accessed through a `valuesAsJson` property, this
+      string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's
+      display locale.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,27 +143,36 @@ properties:
       return:
         type: '"#VALUE!" | string'
   - name: provider
-    uid: 'excel!Excel.WebImageCellValue#provider:member'
+    uid: excel!Excel.WebImageCellValue#provider:member
     package: excel!
     fullName: provider
     summary: >-
-      Represents information that describes the entity or individual who provided the image. This information can be
-      used for branding in image cards.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+      Represents information that describes the entity or individual who
+      provided the image. This information can be used for branding in image
+      cards.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'provider?: CellValueProviderAttributes;'
       return:
-        type: '<xref uid="excel!Excel.CellValueProviderAttributes:interface" />'
+        type: <xref uid="excel!Excel.CellValueProviderAttributes:interface" />
   - name: relatedImagesAddress
-    uid: 'excel!Excel.WebImageCellValue#relatedImagesAddress:member'
+    uid: excel!Excel.WebImageCellValue#relatedImagesAddress:member
     package: excel!
     fullName: relatedImagesAddress
-    summary: Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the URL of a webpage with images that are considered related to
+      this `WebImageCellValue`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,12 +180,14 @@ properties:
       return:
         type: string
   - name: type
-    uid: 'excel!Excel.WebImageCellValue#type:member'
+    uid: excel!Excel.WebImageCellValue#type:member
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
     remarks: >-
-      \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
 
       #### Examples
@@ -193,10 +231,10 @@ properties:
       });
 
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.webImage | "WebImage";'
       return:
-        type: '<xref uid="excel!Excel.CellValueType.webImage:member" /> | "WebImage"'
+        type: <xref uid="excel!Excel.CellValueType.webImage:member" /> | "WebImage"

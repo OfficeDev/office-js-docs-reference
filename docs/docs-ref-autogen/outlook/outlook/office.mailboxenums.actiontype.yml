@@ -1,11 +1,13 @@
 ### YamlMime:TSEnum
 name: Office.MailboxEnums.ActionType
-uid: 'outlook!Office.MailboxEnums.ActionType:enum'
+uid: outlook!Office.MailboxEnums.ActionType:enum
 package: outlook!
 fullName: Office.MailboxEnums.ActionType
 summary: Specifies the type of custom action in a notification message.
 remarks: >-
-  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   #### Examples
@@ -19,7 +21,8 @@ remarks: >-
 
   // Adds an informational message with actions to the mail item.
 
-  const id = (document.getElementById("notificationId") as HTMLInputElement).value;
+  const id = (document.getElementById("notificationId") as
+  HTMLInputElement).value;
 
 
   const itemId = Office.context.mailbox.item.itemId;
@@ -40,15 +43,16 @@ remarks: >-
   };
 
 
-  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+  handleResult);
 
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: ShowTaskPane
-    uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+    uid: outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member
     package: outlook!
     summary: The `showTaskPane` action.
     value: '"showTaskPane"'

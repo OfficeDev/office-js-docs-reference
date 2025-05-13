@@ -1,11 +1,13 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.ShapeLineFormatData
-uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface'
+uid: powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeLineFormatData
-summary: An interface describing the data returned by calling `shapeLineFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `shapeLineFormat.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

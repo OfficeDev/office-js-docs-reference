@@ -1,11 +1,13 @@
 ### YamlMime:TSType
 name: Word.Interfaces.TableBorderUpdateData
-uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
+uid: word!Word.Interfaces.TableBorderUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableBorderUpdateData
-summary: 'An interface for updating data on the `TableBorder` object, for use in `tableBorder.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `TableBorder` object, for use in
+  `tableBorder.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

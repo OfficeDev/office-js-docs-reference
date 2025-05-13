@@ -1,15 +1,22 @@
 ### YamlMime:TSType
 name: Visio.DataRefreshCompleteEventArgs
-uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
+uid: visio!Visio.DataRefreshCompleteEventArgs:interface
 package: visio!
 fullName: Visio.DataRefreshCompleteEventArgs
-summary: Provides information about the document that raised the DataRefreshComplete event.
-remarks: |-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+summary: >-
+  Provides information about the document that raised the DataRefreshComplete
+  event.
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   Visio.run(session, function (ctx) {
       const document1 = ctx.document;
       eventResult1 = document1.onDataRefreshComplete.add(
@@ -26,32 +33,39 @@ remarks: |-
           console.log("Debug info: " + JSON.stringify(error.debugInfo));
       }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: document
-    uid: 'visio!Visio.DataRefreshCompleteEventArgs#document:member'
+    uid: visio!Visio.DataRefreshCompleteEventArgs#document:member
     package: visio!
     fullName: document
     summary: Gets the document object that raised the DataRefreshComplete event.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'document: Visio.Document;'
       return:
-        type: '<xref uid="visio!Visio.Document:class" />'
+        type: <xref uid="visio!Visio.Document:class" />
   - name: success
-    uid: 'visio!Visio.DataRefreshCompleteEventArgs#success:member'
+    uid: visio!Visio.DataRefreshCompleteEventArgs#success:member
     package: visio!
     fullName: success
     summary: Gets the success or failure of the DataRefreshComplete event.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
