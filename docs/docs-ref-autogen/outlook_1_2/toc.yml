@@ -1,0 +1,89 @@
+items:
+  - name: API reference
+    href: overview.md
+    items:
+      - name: outlook
+        uid: outlook!
+        items:
+          - name: Appointment
+            uid: 'outlook!Office.Appointment:interface'
+          - name: AppointmentCompose
+            uid: 'outlook!Office.AppointmentCompose:interface'
+          - name: AppointmentForm
+            uid: 'outlook!Office.AppointmentForm:interface'
+          - name: AppointmentRead
+            uid: 'outlook!Office.AppointmentRead:interface'
+          - name: AttachmentDetails
+            uid: 'outlook!Office.AttachmentDetails:interface'
+          - name: Body
+            uid: 'outlook!Office.Body:interface'
+          - name: CoercionTypeOptions
+            uid: 'outlook!Office.CoercionTypeOptions:interface'
+          - name: Contact
+            uid: 'outlook!Office.Contact:interface'
+          - name: CustomProperties
+            uid: 'outlook!Office.CustomProperties:interface'
+          - name: Diagnostics
+            uid: 'outlook!Office.Diagnostics:interface'
+          - name: EmailAddressDetails
+            uid: 'outlook!Office.EmailAddressDetails:interface'
+          - name: EmailUser
+            uid: 'outlook!Office.EmailUser:interface'
+          - name: Entities
+            uid: 'outlook!Office.Entities:interface'
+          - name: Item
+            uid: 'outlook!Office.Item:interface'
+          - name: ItemCompose
+            uid: 'outlook!Office.ItemCompose:interface'
+          - name: ItemRead
+            uid: 'outlook!Office.ItemRead:interface'
+          - name: LocalClientTime
+            uid: 'outlook!Office.LocalClientTime:interface'
+          - name: Location
+            uid: 'outlook!Office.Location:interface'
+          - name: Mailbox
+            uid: 'outlook!Office.Mailbox:interface'
+          - name: AttachmentType
+            uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
+          - name: EntityType
+            uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+          - name: ItemType
+            uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+          - name: OpenLocation
+            uid: 'outlook!Office.MailboxEnums.OpenLocation:enum'
+          - name: OWAView
+            uid: 'outlook!Office.MailboxEnums.OWAView:enum'
+          - name: RecipientType
+            uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
+          - name: ResponseType
+            uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
+          - name: SaveLocation
+            uid: 'outlook!Office.MailboxEnums.SaveLocation:enum'
+          - name: SourceProperty
+            uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
+          - name: MeetingSuggestion
+            uid: 'outlook!Office.MeetingSuggestion:interface'
+          - name: Message
+            uid: 'outlook!Office.Message:interface'
+          - name: MessageCompose
+            uid: 'outlook!Office.MessageCompose:interface'
+          - name: MessageRead
+            uid: 'outlook!Office.MessageRead:interface'
+          - name: PhoneNumber
+            uid: 'outlook!Office.PhoneNumber:interface'
+          - name: Recipients
+            uid: 'outlook!Office.Recipients:interface'
+          - name: ReplyFormAttachment
+            uid: 'outlook!Office.ReplyFormAttachment:interface'
+          - name: ReplyFormData
+            uid: 'outlook!Office.ReplyFormData:interface'
+          - name: RoamingSettings
+            uid: 'outlook!Office.RoamingSettings:interface'
+          - name: Subject
+            uid: 'outlook!Office.Subject:interface'
+          - name: TaskSuggestion
+            uid: 'outlook!Office.TaskSuggestion:interface'
+          - name: Time
+            uid: 'outlook!Office.Time:interface'
+          - name: UserProfile
+            uid: 'outlook!Office.UserProfile:interface'

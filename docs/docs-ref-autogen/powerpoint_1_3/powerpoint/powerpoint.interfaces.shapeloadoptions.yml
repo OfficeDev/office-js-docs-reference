@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.ShapeLoadOptions
+summary: Represents a single shape in the slide.
+remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Gets the unique ID of the shape.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean

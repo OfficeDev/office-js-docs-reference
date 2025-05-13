@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Office.ContextMenu
+uid: 'office!Office.ContextMenu:interface'
+package: office!
+fullName: Office.ContextMenu
+summary: >-
+  Provides options to manage the state of the Office context menu.
+
+
+  To learn more, see [Change the availability of add-in
+  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)<!-- -->.
+remarks: >-
+  \*\*Requirement set\*\*: [ContextMenuAPI
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: requestUpdate(input)
+    uid: 'office!Office.ContextMenu#requestUpdate:member(1)'
+    package: office!
+    fullName: requestUpdate(input)
+    summary: Sends a request to Office to update the context menu.
+    remarks: >-
+      \*\*Requirement set\*\*: [ContextMenuAPI
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
+
+
+      \*\*Important\*\*: This API is only used to request an update. The actual UI update to the context menu is
+      controlled by the Office application, so the exact timing of the context menu update (or refresh) can't be
+      determined by the completion of this API.
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestUpdate(input: ContextMenuUpdaterData): Promise<void>;'
+      parameters:
+        - id: input
+          description: >-
+            Represents the updates to be made to the context menu controls. Only the changes specified in the `control`
+            parameter are made. Other context menu controls that aren't specified remain as is in the Office
+            application.
+          type: '<xref uid="office!Office.ContextMenuUpdaterData:interface" />'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''

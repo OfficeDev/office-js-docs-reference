@@ -1,0 +1,11 @@
+### YamlMime:TSType
+name: Word.Interfaces.TextFrameUpdateData
+uid: 'word!Word.Interfaces.TextFrameUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.TextFrameUpdateData
+summary: 'An interface for updating data on the `TextFrame` object, for use in `textFrame.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface

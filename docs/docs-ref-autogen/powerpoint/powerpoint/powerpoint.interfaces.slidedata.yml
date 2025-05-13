@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideData
+uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideData
+summary: An interface describing the data returned by calling `slide.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideData#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Gets the unique ID of the slide.
+    remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: index
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideData#index:member'
+    package: powerpoint!
+    fullName: index
+    summary: Returns the zero-based index of the slide representing its position in the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'index?: number;'
+      return:
+        type: number

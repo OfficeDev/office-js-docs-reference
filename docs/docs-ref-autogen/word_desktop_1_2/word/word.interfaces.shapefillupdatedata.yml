@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeFillUpdateData
+uid: 'word!Word.Interfaces.ShapeFillUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeFillUpdateData
+summary: 'An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: backgroundColor
+    uid: 'word!Word.Interfaces.ShapeFillUpdateData#backgroundColor:member'
+    package: word!
+    fullName: backgroundColor
+    summary: 'Specifies the shape fill background color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backgroundColor?: string;'
+      return:
+        type: string
+  - name: foregroundColor
+    uid: 'word!Word.Interfaces.ShapeFillUpdateData#foregroundColor:member'
+    package: word!
+    fullName: foregroundColor
+    summary: 'Specifies the shape fill foreground color. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor?: string;'
+      return:
+        type: string
+  - name: transparency
+    uid: 'word!Word.Interfaces.ShapeFillUpdateData#transparency:member'
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: number;'
+      return:
+        type: number

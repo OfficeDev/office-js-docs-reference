@@ -1,0 +1,32 @@
+### YamlMime:TSType
+name: Office.ContextMenuUpdaterData
+uid: 'office!Office.ContextMenuUpdaterData:interface'
+package: office!
+fullName: Office.ContextMenuUpdaterData
+summary: >-
+  Represents the changes to the context menu.
+
+
+  To learn more, see [Change the availability of add-in
+  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)<!-- -->.
+remarks: >-
+  \*\*Requirement set\*\*: [ContextMenuAPI
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: controls
+    uid: 'office!Office.ContextMenuUpdaterData#controls:member'
+    package: office!
+    fullName: controls
+    summary: Collection of context menu controls whose state is set using `Office.contextMenu.requestUpdate`<!-- -->.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'controls: ContextMenuControl[];'
+      return:
+        type: '<xref uid="office!Office.ContextMenuControl:interface" />[]'

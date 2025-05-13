@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.BindingData
+uid: 'powerpoint!PowerPoint.Interfaces.BindingData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.BindingData
+summary: An interface describing the data returned by calling `binding.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.BindingData#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Represents the binding identifier.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'powerpoint!PowerPoint.Interfaces.BindingData#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: Returns the type of the binding. See `BindingType` for details.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: PowerPoint.BindingType | "Shape";'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.BindingType:enum" /> | "Shape"'

@@ -1,0 +1,225 @@
+items:
+  - name: API reference
+    href: overview.md
+    items:
+      - name: powerpoint
+        uid: powerpoint!
+        items:
+          - name: AddSlideOptions
+            uid: 'powerpoint!PowerPoint.AddSlideOptions:interface'
+          - name: Application
+            uid: 'powerpoint!PowerPoint.Application:class'
+          - name: BulletFormat
+            uid: 'powerpoint!PowerPoint.BulletFormat:class'
+          - name: ConnectorType
+            uid: 'powerpoint!PowerPoint.ConnectorType:enum'
+          - name: ErrorCodes
+            uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
+          - name: GeometricShapeType
+            uid: 'powerpoint!PowerPoint.GeometricShapeType:enum'
+          - name: InsertSlideFormatting
+            uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
+          - name: InsertSlideOptions
+            uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
+          - name: BulletFormatData
+            uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatData:interface'
+          - name: BulletFormatLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface'
+          - name: BulletFormatUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface'
+          - name: CollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+          - name: CustomPropertyCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData:interface'
+          - name: CustomPropertyCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData:interface'
+          - name: CustomPropertyData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface'
+          - name: CustomPropertyUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData:interface'
+          - name: CustomXmlPartCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData:interface'
+          - name: CustomXmlPartCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+          - name: CustomXmlPartData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface'
+          - name: CustomXmlPartScopedCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface'
+          - name: CustomXmlPartScopedCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+          - name: DocumentPropertiesData
+            uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface'
+          - name: DocumentPropertiesUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesUpdateData:interface'
+          - name: HyperlinkCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface'
+          - name: HyperlinkCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface'
+          - name: HyperlinkData
+            uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkData:interface'
+          - name: HyperlinkUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface'
+          - name: ParagraphFormatData
+            uid: 'powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface'
+          - name: ParagraphFormatLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface'
+          - name: ParagraphFormatUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface'
+          - name: PresentationData
+            uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
+          - name: PresentationLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+          - name: ShapeCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface'
+          - name: ShapeCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface'
+          - name: ShapeCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface'
+          - name: ShapeData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeData:interface'
+          - name: ShapeFillData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeFillData:interface'
+          - name: ShapeFillLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface'
+          - name: ShapeFillUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeFillUpdateData:interface'
+          - name: ShapeFontData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontData:interface'
+          - name: ShapeFontLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface'
+          - name: ShapeFontUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData:interface'
+          - name: ShapeLineFormatData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface'
+          - name: ShapeLineFormatLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface'
+          - name: ShapeLineFormatUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
+          - name: ShapeLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface'
+          - name: ShapeScopedCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface'
+          - name: ShapeScopedCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface'
+          - name: ShapeScopedCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface'
+          - name: ShapeUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface'
+          - name: SlideCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
+          - name: SlideCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
+          - name: SlideCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
+          - name: SlideData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+          - name: SlideLayoutCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface'
+          - name: SlideLayoutCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface'
+          - name: SlideLayoutCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface'
+          - name: SlideLayoutData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface'
+          - name: SlideLayoutLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface'
+          - name: SlideLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
+          - name: SlideMasterCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface'
+          - name: SlideMasterCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface'
+          - name: SlideMasterCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface'
+          - name: SlideMasterData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
+          - name: SlideMasterLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface'
+          - name: SlideScopedCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
+          - name: SlideScopedCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface'
+          - name: SlideScopedCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
+          - name: TagCollectionData
+            uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
+          - name: TagCollectionLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
+          - name: TagCollectionUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface'
+          - name: TagData
+            uid: 'powerpoint!PowerPoint.Interfaces.TagData:interface'
+          - name: TagLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.TagLoadOptions:interface'
+          - name: TagUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.TagUpdateData:interface'
+          - name: TextFrameData
+            uid: 'powerpoint!PowerPoint.Interfaces.TextFrameData:interface'
+          - name: TextFrameLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.TextFrameLoadOptions:interface'
+          - name: TextFrameUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData:interface'
+          - name: TextRangeData
+            uid: 'powerpoint!PowerPoint.Interfaces.TextRangeData:interface'
+          - name: TextRangeLoadOptions
+            uid: 'powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface'
+          - name: TextRangeUpdateData
+            uid: 'powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface'
+          - name: ParagraphFormat
+            uid: 'powerpoint!PowerPoint.ParagraphFormat:class'
+          - name: ParagraphHorizontalAlignment
+            uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum'
+          - name: Presentation
+            uid: 'powerpoint!PowerPoint.Presentation:class'
+          - name: RequestContext
+            uid: 'powerpoint!PowerPoint.RequestContext:class'
+          - name: Shape
+            uid: 'powerpoint!PowerPoint.Shape:class'
+          - name: ShapeAddOptions
+            uid: 'powerpoint!PowerPoint.ShapeAddOptions:interface'
+          - name: ShapeAutoSize
+            uid: 'powerpoint!PowerPoint.ShapeAutoSize:enum'
+          - name: ShapeCollection
+            uid: 'powerpoint!PowerPoint.ShapeCollection:class'
+          - name: ShapeFill
+            uid: 'powerpoint!PowerPoint.ShapeFill:class'
+          - name: ShapeFillType
+            uid: 'powerpoint!PowerPoint.ShapeFillType:enum'
+          - name: ShapeFont
+            uid: 'powerpoint!PowerPoint.ShapeFont:class'
+          - name: ShapeFontUnderlineStyle
+            uid: 'powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum'
+          - name: ShapeLineDashStyle
+            uid: 'powerpoint!PowerPoint.ShapeLineDashStyle:enum'
+          - name: ShapeLineFormat
+            uid: 'powerpoint!PowerPoint.ShapeLineFormat:class'
+          - name: ShapeLineStyle
+            uid: 'powerpoint!PowerPoint.ShapeLineStyle:enum'
+          - name: ShapeScopedCollection
+            uid: 'powerpoint!PowerPoint.ShapeScopedCollection:class'
+          - name: ShapeType
+            uid: 'powerpoint!PowerPoint.ShapeType:enum'
+          - name: Slide
+            uid: 'powerpoint!PowerPoint.Slide:class'
+          - name: SlideCollection
+            uid: 'powerpoint!PowerPoint.SlideCollection:class'
+          - name: SlideLayout
+            uid: 'powerpoint!PowerPoint.SlideLayout:class'
+          - name: SlideLayoutCollection
+            uid: 'powerpoint!PowerPoint.SlideLayoutCollection:class'
+          - name: SlideMaster
+            uid: 'powerpoint!PowerPoint.SlideMaster:class'
+          - name: SlideMasterCollection
+            uid: 'powerpoint!PowerPoint.SlideMasterCollection:class'
+          - name: SlideScopedCollection
+            uid: 'powerpoint!PowerPoint.SlideScopedCollection:class'
+          - name: Tag
+            uid: 'powerpoint!PowerPoint.Tag:class'
+          - name: TagCollection
+            uid: 'powerpoint!PowerPoint.TagCollection:class'
+          - name: TextFrame
+            uid: 'powerpoint!PowerPoint.TextFrame:class'
+          - name: TextRange
+            uid: 'powerpoint!PowerPoint.TextRange:class'
+          - name: TextVerticalAlignment
+            uid: 'powerpoint!PowerPoint.TextVerticalAlignment:enum'

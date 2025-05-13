@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: PowerPoint.FillProperties
+uid: 'powerpoint!PowerPoint.FillProperties:interface'
+package: powerpoint!
+fullName: PowerPoint.FillProperties
+summary: Represents the fill formatting of a table cell.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'powerpoint!PowerPoint.FillProperties#color:member'
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      Represents the shape fill color in the hexadecimal format \#RRGGBB (e.g., "FFA500") or as a named HTML color value
+      (e.g., "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: string | undefined;'
+      return:
+        type: string | undefined
+  - name: transparency
+    uid: 'powerpoint!PowerPoint.FillProperties#transparency:member'
+    package: powerpoint!
+    fullName: transparency
+    summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: number | undefined;'
+      return:
+        type: number | undefined
