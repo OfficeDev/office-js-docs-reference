@@ -1,0 +1,33 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TableColumnUpdateData
+uid: powerpoint!PowerPoint.Interfaces.TableColumnUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TableColumnUpdateData
+summary: >-
+  An interface for updating data on the `TableColumn` object, for use in
+  `tableColumn.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: width
+    uid: powerpoint!PowerPoint.Interfaces.TableColumnUpdateData#width:member
+    package: powerpoint!
+    fullName: width
+    summary: >-
+      Retrieves the width of the column in points. If the set column width is
+      less than the minimum width, the column width will be increased to the
+      minimum width.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

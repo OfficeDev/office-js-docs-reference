@@ -3,7 +3,7 @@ name: Word.ChangeTrackingMode
 uid: word!Word.ChangeTrackingMode:enum
 package: word!
 fullName: Word.ChangeTrackingMode
-summary: ChangeTracking mode.
+summary: Represents the possible change tracking modes.
 remarks: >-
   \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

@@ -245,7 +245,7 @@ properties:
     uid: powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member
     package: powerpoint!
     fullName: horizontalAlignment
-    summary: Represents the horizontal alignment of the table cell.
+    summary: Represents the horizontal alignment of the text in the table cell.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -405,7 +405,7 @@ properties:
     uid: powerpoint!PowerPoint.TableCellProperties#verticalAlignment:member
     package: powerpoint!
     fullName: verticalAlignment
-    summary: Represents the vertical alignment of the table cell.
+    summary: Represents the vertical alignment of the text in the table cell.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

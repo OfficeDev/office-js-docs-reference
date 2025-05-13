@@ -3708,7 +3708,7 @@ export declare namespace Office {
          */
         userPrincipalName: string;
         /**
-         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa | Microsoft personal account}.
+         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/72f10e1e-cab8-4950-a8da-7c45339575b0 | Microsoft personal account}.
          */
         authorityType: "aad" | "msa" | "other";
         /**

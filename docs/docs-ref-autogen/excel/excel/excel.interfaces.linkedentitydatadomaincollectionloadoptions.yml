@@ -41,7 +41,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the name of the data provider for
       the linked entity data domain. This name can change based on the
-      information from the data provider.
+      information provided by the data provider.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -127,7 +127,7 @@ properties:
     fullName: name
     summary: >-
       For EACH ITEM in the collection: Gets the name of the linked entity data
-      domain. This name can change based on the information from the data
+      domain. This name can change based on the information provided by the data
       provider.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW

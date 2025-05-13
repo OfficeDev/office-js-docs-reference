@@ -47,6 +47,8 @@ items:
                 uid: powerpoint!PowerPoint.ShapeZOrder:enum
               - name: SlideLayoutType
                 uid: powerpoint!PowerPoint.SlideLayoutType:enum
+              - name: TableStyle
+                uid: powerpoint!PowerPoint.TableStyle:enum
               - name: TextVerticalAlignment
                 uid: powerpoint!PowerPoint.TextVerticalAlignment:enum
           - name: AddSlideOptions
@@ -57,8 +59,12 @@ items:
             uid: powerpoint!PowerPoint.Binding:class
           - name: BindingCollection
             uid: powerpoint!PowerPoint.BindingCollection:class
+          - name: Border
+            uid: powerpoint!PowerPoint.Border:class
           - name: BorderProperties
             uid: powerpoint!PowerPoint.BorderProperties:interface
+          - name: Borders
+            uid: powerpoint!PowerPoint.Borders:class
           - name: BulletFormat
             uid: powerpoint!PowerPoint.BulletFormat:class
           - name: CustomProperty
@@ -83,6 +89,8 @@ items:
             uid: powerpoint!PowerPoint.HyperlinkCollection:class
           - name: InsertSlideOptions
             uid: powerpoint!PowerPoint.InsertSlideOptions:interface
+          - name: Margins
+            uid: powerpoint!PowerPoint.Margins:class
           - name: ParagraphFormat
             uid: powerpoint!PowerPoint.ParagraphFormat:class
           - name: PlaceholderFormat
@@ -137,12 +145,28 @@ items:
             uid: powerpoint!PowerPoint.TableCellMargins:interface
           - name: TableCellProperties
             uid: powerpoint!PowerPoint.TableCellProperties:interface
+          - name: TableClearOptions
+            uid: powerpoint!PowerPoint.TableClearOptions:interface
+          - name: TableColumn
+            uid: powerpoint!PowerPoint.TableColumn:class
+          - name: TableColumnAddOptions
+            uid: powerpoint!PowerPoint.TableColumnAddOptions:interface
+          - name: TableColumnCollection
+            uid: powerpoint!PowerPoint.TableColumnCollection:class
           - name: TableColumnProperties
             uid: powerpoint!PowerPoint.TableColumnProperties:interface
           - name: TableMergedAreaProperties
             uid: powerpoint!PowerPoint.TableMergedAreaProperties:interface
+          - name: TableRow
+            uid: powerpoint!PowerPoint.TableRow:class
+          - name: TableRowAddOptions
+            uid: powerpoint!PowerPoint.TableRowAddOptions:interface
+          - name: TableRowCollection
+            uid: powerpoint!PowerPoint.TableRowCollection:class
           - name: TableRowProperties
             uid: powerpoint!PowerPoint.TableRowProperties:interface
+          - name: TableStyleOptions
+            uid: powerpoint!PowerPoint.TableStyleOptions:class
           - name: Tag
             uid: powerpoint!PowerPoint.Tag:class
           - name: TagCollection

@@ -49,17 +49,6 @@ fields:
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Checkbox"'
-  - name: dropdown
-    uid: excel!Excel.CellControlType.dropdown:member
-    package: excel!
-    summary: >-
-      Type representing a dropdown control.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-    value: '"Dropdown"'
   - name: empty
     uid: excel!Excel.CellControlType.empty:member
     package: excel!

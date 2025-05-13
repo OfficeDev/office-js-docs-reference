@@ -595,9 +595,9 @@ properties:
     fullName: top
     summary: >-
       The distance, in points, from the top edge of the shape to the vertical
-      relative position, see
+      relative position (see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
-      -->. For an inline shape, it will return 0 and can't be set. For a child
+      -->). For an inline shape, it will return 0 and can't be set. For a child
       shape in a canvas or group, it's relative to the top left corner.
     remarks: >-
       \[ [API set: WordApiDesktop
