@@ -2529,10 +2529,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.4]
      *
      * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
-     * Support for managing fields is similar to what's available in the Word UI.
-     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
-     * To learn more about Word UI clients that more fully support fields,
-     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2675,10 +2673,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.4]
      *
      * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
-     * Support for managing fields is similar to what's available in the Word UI.
-     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
-     * To learn more about Word UI clients that more fully support fields,
-     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3031,7 +3027,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
@@ -3971,7 +3967,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -6584,7 +6580,7 @@ export declare namespace Word {
     
     
     /**
-     * ChangeTracking mode.
+     * Represents the possible change tracking modes.
      *
      * @remarks
      * [Api set: WordApi 1.4]
@@ -12440,10 +12436,8 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          *
          * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
-         * Support for managing fields is similar to what's available in the Word UI.
-         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
-         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+         * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+         * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldLoadOptions {
             /**
@@ -12527,11 +12521,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
-         * Support for managing fields is similar to what's available in the Word UI.
-         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
-         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
+         * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+         * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldCollectionLoadOptions {
             /**

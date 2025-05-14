@@ -61,6 +61,22 @@ properties:
       content: 'readonly columnCount: number;'
       return:
         type: number
+  - name: columns
+    uid: powerpoint!PowerPoint.Table#columns:member
+    package: powerpoint!
+    fullName: columns
+    summary: Gets the collection of columns in the table.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly columns: PowerPoint.TableColumnCollection;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableColumnCollection:class" />
   - name: context
     uid: powerpoint!PowerPoint.Table#context:member
     package: powerpoint!
@@ -92,6 +108,38 @@ properties:
       content: 'readonly rowCount: number;'
       return:
         type: number
+  - name: rows
+    uid: powerpoint!PowerPoint.Table#rows:member
+    package: powerpoint!
+    fullName: rows
+    summary: Gets the collection of rows in the table.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly rows: PowerPoint.TableRowCollection;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableRowCollection:class" />
+  - name: styleOptions
+    uid: powerpoint!PowerPoint.Table#styleOptions:member
+    package: powerpoint!
+    fullName: styleOptions
+    summary: Gets the table style options.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly styleOptions: PowerPoint.TableStyleOptions;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableStyleOptions:class" />
   - name: values
     uid: powerpoint!PowerPoint.Table#values:member
     package: powerpoint!
@@ -109,6 +157,27 @@ properties:
       return:
         type: string[][]
 methods:
+  - name: clear(options)
+    uid: powerpoint!PowerPoint.Table#clear:member(1)
+    package: powerpoint!
+    fullName: clear(options)
+    summary: Clears table values and formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'clear(options?: PowerPoint.TableClearOptions): void;'
+      parameters:
+        - id: options
+          description: Provides options for clearing the table.
+          type: <xref uid="powerpoint!PowerPoint.TableClearOptions:interface" />
+      return:
+        type: void
+        description: ''
   - name: getCellOrNullObject(rowIndex, columnIndex)
     uid: powerpoint!PowerPoint.Table#getCellOrNullObject:member(1)
     package: powerpoint!
@@ -286,6 +355,45 @@ methods:
                     }
       return:
         type: <xref uid="powerpoint!PowerPoint.Table:class" />
+        description: ''
+  - name: mergeCells(rowIndex, columnIndex, rowCount, columnCount)
+    uid: powerpoint!PowerPoint.Table#mergeCells:member(1)
+    package: powerpoint!
+    fullName: mergeCells(rowIndex, columnIndex, rowCount, columnCount)
+    summary: >-
+      Creates a merged area starting at the cell specified by rowIndex and
+      columnIndex. The merged area spans across a specified number of rows and
+      columns.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        mergeCells(rowIndex: number, columnIndex: number, rowCount: number,
+        columnCount: number): void;
+      parameters:
+        - id: rowIndex
+          description: The zero-based row index of the cell to start the merged area.
+          type: number
+        - id: columnIndex
+          description: The zero-based column index of the cell to start the merged area.
+          type: number
+        - id: rowCount
+          description: >-
+            The number of rows to merge with the starting cell. Must be greater
+            than 0.
+          type: number
+        - id: columnCount
+          description: >-
+            The number of columns to merge with the starting cell. Must be
+            greater than 0.
+          type: number
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: powerpoint!PowerPoint.Table#toJSON:member(1)

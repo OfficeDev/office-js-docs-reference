@@ -133,7 +133,7 @@ functions:
     package: powerpoint!
     summary: >-
       Creates and opens a new presentation. Optionally, the presentation can be
-      pre-populated with a Base64-encoded .pptx file.
+      prepopulated with a Base64-encoded .pptx file.
 
 
       \[ [API set: PowerPointApi

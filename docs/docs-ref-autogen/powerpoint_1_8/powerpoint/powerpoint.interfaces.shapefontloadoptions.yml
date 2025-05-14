@@ -44,11 +44,11 @@ properties:
       - `true`<!-- -->: All the text has the **All Caps** attribute.
 
 
-      - `false`<!-- -->: None of the text has the **All Caps**attribute.
+      - `false`<!-- -->: None of the text has the **All Caps** attribute.
 
 
-      - `null`<!-- -->: Some, but not all, of the text has the **All Caps**
-      attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **All Caps** attribute.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
