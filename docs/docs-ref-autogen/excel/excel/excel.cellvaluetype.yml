@@ -136,8 +136,8 @@ fields:
       Represents a `FunctionCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Function"'
   - name: linkedEntity

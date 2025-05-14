@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData
+uid: excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData:interface
+package: excel!
+fullName: Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData
+summary: >-
+  An interface for updating data on the `LinkedEntityDataDomainCollection`
+  object, for use in `linkedEntityDataDomainCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: >-
+      excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData#items:member
+    package: excel!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.LinkedEntityDataDomainData[];'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.LinkedEntityDataDomainData:interface" />[]

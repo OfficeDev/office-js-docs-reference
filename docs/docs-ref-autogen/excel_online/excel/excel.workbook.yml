@@ -191,6 +191,26 @@ properties:
       content: 'isDirty: boolean;'
       return:
         type: boolean
+  - name: linkedEntityDataDomains
+    uid: excel!Excel.Workbook#linkedEntityDataDomains:member
+    package: excel!
+    fullName: linkedEntityDataDomains
+    summary: >-
+      Returns a collection of linked entity data domains that are available in
+      the workbook.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly linkedEntityDataDomains:
+        Excel.LinkedEntityDataDomainCollection;
+      return:
+        type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
   - name: linkedWorkbooks
     uid: excel!Excel.Workbook#linkedWorkbooks:member
     package: excel!
@@ -738,6 +758,47 @@ methods:
       content: 'getActiveChartOrNullObject(): Excel.Chart;'
       return:
         type: <xref uid="excel!Excel.Chart:class" />
+        description: ''
+  - name: getActiveShape()
+    uid: excel!Excel.Workbook#getActiveShape:member(1)
+    package: excel!
+    fullName: getActiveShape()
+    summary: >-
+      Gets the active shape in the workbook. If there is no active shape, an
+      `ItemNotFound` error is thrown.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveShape(): Excel.Shape;'
+      return:
+        type: <xref uid="excel!Excel.Shape:class" />
+        description: ''
+  - name: getActiveShapeOrNullObject()
+    uid: excel!Excel.Workbook#getActiveShapeOrNullObject:member(1)
+    package: excel!
+    fullName: getActiveShapeOrNullObject()
+    summary: >-
+      Gets the active shape in the workbook. If there is no active shape, then
+      this method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For more information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveShapeOrNullObject(): Excel.Shape;'
+      return:
+        type: <xref uid="excel!Excel.Shape:class" />
         description: ''
   - name: getActiveSlicer()
     uid: excel!Excel.Workbook#getActiveSlicer:member(1)

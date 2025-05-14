@@ -172,6 +172,8 @@ interfaces:
   - excel!Excel.Interfaces.ChartCollectionLoadOptions:interface
   - excel!Excel.Interfaces.ChartCollectionUpdateData:interface
   - excel!Excel.Interfaces.ChartData:interface
+  - excel!Excel.Interfaces.ChartDataLabelAnchorData:interface
+  - excel!Excel.Interfaces.ChartDataLabelAnchorUpdateData:interface
   - excel!Excel.Interfaces.ChartDataLabelData:interface
   - excel!Excel.Interfaces.ChartDataLabelFormatData:interface
   - excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface
@@ -201,6 +203,10 @@ interfaces:
   - excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface
   - excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface
   - excel!Excel.Interfaces.ChartGridlinesUpdateData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesFormatData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesFormatUpdateData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesUpdateData:interface
   - excel!Excel.Interfaces.ChartLegendData:interface
   - excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface
   - excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface
@@ -362,6 +368,10 @@ interfaces:
   - excel!Excel.Interfaces.IterativeCalculationUpdateData:interface
   - excel!Excel.Interfaces.LineData:interface
   - excel!Excel.Interfaces.LineUpdateData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainUpdateData:interface
   - excel!Excel.Interfaces.LinkedWorkbookCollectionData:interface
   - excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface
   - excel!Excel.Interfaces.LinkedWorkbookData:interface

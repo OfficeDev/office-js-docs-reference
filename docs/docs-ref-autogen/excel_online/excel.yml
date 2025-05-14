@@ -91,6 +91,7 @@ enums:
   - excel!Excel.DocumentPropertyItem:enum
   - excel!Excel.DocumentPropertyType:enum
   - excel!Excel.DynamicFilterCriteria:enum
+  - excel!Excel.EntityCardLayoutType:enum
   - excel!Excel.EntityCompactLayoutIcons:enum
   - excel!Excel.ErrorCellValueType:enum
   - excel!Excel.ErrorCodes:enum
@@ -103,6 +104,7 @@ enums:
   - excel!Excel.FilterDatetimeSpecificity:enum
   - excel!Excel.FilterOn:enum
   - excel!Excel.FilterOperator:enum
+  - excel!Excel.FunctionCellValueType:enum
   - excel!Excel.GeometricShapeType:enum
   - excel!Excel.GroupOption:enum
   - excel!Excel.HeaderFooterState:enum
@@ -113,6 +115,7 @@ enums:
   - excel!Excel.KeyboardDirection:enum
   - excel!Excel.LabelFilterCondition:enum
   - excel!Excel.LinkedDataTypeState:enum
+  - excel!Excel.LinkedEntityDataDomainRefreshMode:enum
   - excel!Excel.LoadToType:enum
   - excel!Excel.NamedItemScope:enum
   - excel!Excel.NamedItemType:enum
@@ -195,6 +198,7 @@ classes:
   - excel!Excel.ChartBoxwhiskerOptions:class
   - excel!Excel.ChartCollection:class
   - excel!Excel.ChartDataLabel:class
+  - excel!Excel.ChartDataLabelAnchor:class
   - excel!Excel.ChartDataLabelFormat:class
   - excel!Excel.ChartDataLabels:class
   - excel!Excel.ChartDataTable:class
@@ -206,6 +210,8 @@ classes:
   - excel!Excel.ChartFormatString:class
   - excel!Excel.ChartGridlines:class
   - excel!Excel.ChartGridlinesFormat:class
+  - excel!Excel.ChartLeaderLines:class
+  - excel!Excel.ChartLeaderLinesFormat:class
   - excel!Excel.ChartLegend:class
   - excel!Excel.ChartLegendEntry:class
   - excel!Excel.ChartLegendEntryCollection:class
@@ -271,6 +277,8 @@ classes:
   - excel!Excel.Image:class
   - excel!Excel.IterativeCalculation:class
   - excel!Excel.Line:class
+  - excel!Excel.LinkedEntityDataDomain:class
+  - excel!Excel.LinkedEntityDataDomainCollection:class
   - excel!Excel.LinkedWorkbook:class
   - excel!Excel.LinkedWorkbookCollection:class
   - excel!Excel.NamedItem:class
@@ -361,7 +369,10 @@ classes:
 interfaces:
   - excel!Excel.AllowEditRangeOptions:interface
   - excel!Excel.ArrayCellValue:interface
+  - excel!Excel.BasicCardLayout:interface
+  - excel!Excel.BasicCompactLayout:interface
   - excel!Excel.BasicDataValidation:interface
+  - excel!Excel.BasicViewLayouts:interface
   - excel!Excel.BindingDataChangedEventArgs:interface
   - excel!Excel.BindingSelectionChangedEventArgs:interface
   - excel!Excel.BlockedErrorCellValue:interface
@@ -373,6 +384,7 @@ interfaces:
   - excel!Excel.CardLayoutSectionStandardProperties:interface
   - excel!Excel.CardLayoutStandardProperties:interface
   - excel!Excel.CardLayoutTableSection:interface
+  - excel!Excel.CardLayoutTwoColumnSection:interface
   - excel!Excel.CellBorder:interface
   - excel!Excel.CellBorderCollection:interface
   - excel!Excel.CellProperties:interface
@@ -498,6 +510,9 @@ interfaces:
   - excel!Excel.Interfaces.ChartCollectionLoadOptions:interface
   - excel!Excel.Interfaces.ChartCollectionUpdateData:interface
   - excel!Excel.Interfaces.ChartData:interface
+  - excel!Excel.Interfaces.ChartDataLabelAnchorData:interface
+  - excel!Excel.Interfaces.ChartDataLabelAnchorLoadOptions:interface
+  - excel!Excel.Interfaces.ChartDataLabelAnchorUpdateData:interface
   - excel!Excel.Interfaces.ChartDataLabelData:interface
   - excel!Excel.Interfaces.ChartDataLabelFormatData:interface
   - excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface
@@ -531,6 +546,12 @@ interfaces:
   - excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface
   - excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface
   - excel!Excel.Interfaces.ChartGridlinesUpdateData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesFormatData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesFormatLoadOptions:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesFormatUpdateData:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesLoadOptions:interface
+  - excel!Excel.Interfaces.ChartLeaderLinesUpdateData:interface
   - excel!Excel.Interfaces.ChartLegendData:interface
   - excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface
   - excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface
@@ -716,6 +737,12 @@ interfaces:
   - excel!Excel.Interfaces.LineData:interface
   - excel!Excel.Interfaces.LineLoadOptions:interface
   - excel!Excel.Interfaces.LineUpdateData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainData:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainLoadOptions:interface
+  - excel!Excel.Interfaces.LinkedEntityDataDomainUpdateData:interface
   - excel!Excel.Interfaces.LinkedWorkbookCollectionData:interface
   - excel!Excel.Interfaces.LinkedWorkbookCollectionLoadOptions:interface
   - excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface
@@ -957,8 +984,16 @@ interfaces:
   - excel!Excel.Interfaces.WorksheetProtectionData:interface
   - excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface
   - excel!Excel.Interfaces.WorksheetUpdateData:interface
+  - excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
   - excel!Excel.LinkedEntityCellValue:interface
+  - excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface
+  - excel!Excel.LinkedEntityDataDomainCreateOptions:interface
+  - excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface
+  - excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface
   - excel!Excel.LinkedEntityId:interface
+  - excel!Excel.LinkedEntityIdCulture:interface
+  - excel!Excel.LinkedEntityLoadServiceRequest:interface
+  - excel!Excel.LinkedEntityLoadServiceResult:interface
   - excel!Excel.ListDataValidation:interface
   - excel!Excel.MixedCellControl:interface
   - excel!Excel.NameErrorCellValue:interface
@@ -1045,6 +1080,7 @@ typeAliases:
   - excel!Excel.CompactLayout:type
   - excel!Excel.EntityPropertyType:type
   - excel!Excel.ErrorCellValue:type
+  - excel!Excel.FunctionCellValue:type
   - excel!Excel.ReferencedValue:type
 functions:
   - name: Excel.createWorkbook(base64)

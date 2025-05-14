@@ -739,8 +739,6 @@ items:
             uid: excel!Excel.FilterPivotHierarchyCollection:class
           - name: FormatProtection
             uid: excel!Excel.FormatProtection:class
-          - name: FormattedNumberCellValue
-            uid: excel!Excel.FormattedNumberCellValue:interface
           - name: FormulaChangedEventDetail
             uid: excel!Excel.FormulaChangedEventDetail:interface
           - name: FunctionResult
@@ -1568,6 +1566,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.19 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-19-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.18 requirement set
             href: ../../requirement-sets/excel/excel-api-1-18-requirement-set.md
