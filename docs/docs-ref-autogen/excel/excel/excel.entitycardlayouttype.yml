@@ -5,10 +5,10 @@ package: excel!
 fullName: Excel.EntityCardLayoutType
 summary: Types of entity card layouts.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 fields:
   - name: array
@@ -29,7 +29,7 @@ fields:
       Entity layout of the entity card.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Entity"'

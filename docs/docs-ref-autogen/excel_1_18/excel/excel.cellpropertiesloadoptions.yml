@@ -161,3 +161,19 @@ properties:
       content: 'style?: boolean;'
       return:
         type: boolean
+  - name: textRuns
+    uid: excel!Excel.CellPropertiesLoadOptions#textRuns:member
+    package: excel!
+    fullName: textRuns
+    summary: Specifies whether to load on the `textRuns` property.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRuns?: boolean;'
+      return:
+        type: boolean

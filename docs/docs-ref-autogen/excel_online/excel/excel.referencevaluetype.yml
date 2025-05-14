@@ -22,6 +22,28 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Array"'
+  - name: boolean
+    uid: excel!Excel.ReferenceValueType.boolean:member
+    package: excel!
+    summary: >-
+      Represents a `BooleanCellValue`<!-- -->.
+
+
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Boolean"'
+  - name: double
+    uid: excel!Excel.ReferenceValueType.double:member
+    package: excel!
+    summary: >-
+      Represents a `DoubleCellValue`<!-- -->.
+
+
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Double"'
   - name: entity
     uid: excel!Excel.ReferenceValueType.entity:member
     package: excel!
@@ -44,3 +66,14 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Root"'
+  - name: string
+    uid: excel!Excel.ReferenceValueType.string:member
+    package: excel!
+    summary: >-
+      Represents a `StringCellValue`<!-- -->.
+
+
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"String"'

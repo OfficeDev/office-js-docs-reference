@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 ms.localizationpriority: high
-ms.date: 04/22/2025
+ms.date: 05/13/2025
 ---
 
 # Office Add-ins JavaScript API reference
@@ -24,6 +24,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <ul>
             <li><a href="/javascript/api/excel?view=excel-js-preview&preserve-view=true">ExcelApi Preview</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-online&preserve-view=true">ExcelApiOnline 1.1</a></li>
+            <li><a href="/javascript/api/excel?view=excel-js-1.19&preserve-view=true">ExcelApi 1.19</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.18&preserve-view=true">ExcelApi 1.18</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.17&preserve-view=true">ExcelApi 1.17</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.16&preserve-view=true">ExcelApi 1.16</a></li>

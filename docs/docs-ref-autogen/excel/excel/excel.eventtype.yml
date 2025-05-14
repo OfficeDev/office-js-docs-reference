@@ -141,8 +141,8 @@ fields:
       new linked entity data domain is added to the workbook.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"LinkedEntityDataDomainLinkedEntityDataDomainAdded"'
   - name: linkedEntityDataDomainRefreshCompleted
@@ -154,8 +154,8 @@ fields:
       a linked entity data domain is completed.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"LinkedEntityDataDomainRefreshCompleted"'
   - name: linkedEntityDataDomainRefreshModeChanged
@@ -167,8 +167,8 @@ fields:
       changed.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"LinkedEntityDataDomainRefreshModeChanged"'
   - name: linkedWorkbookRefreshCompleted

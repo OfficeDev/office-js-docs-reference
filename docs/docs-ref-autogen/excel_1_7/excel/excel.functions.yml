@@ -12990,9 +12990,7 @@ methods:
         Excel.FunctionResult<any>>): FunctionResult<number>;
       parameters:
         - id: values
-          description: >-
-            List of parameters, whose elements are 1 to 255 numeric arguments
-            corresponding to a sample of a population.
+          description: ''
           type: >-
             Array&lt;number | <xref uid="excel!Excel.Range:class" /> | <xref
             uid="excel!Excel.RangeReference:interface" /> | <xref
@@ -13474,9 +13472,7 @@ methods:
         FunctionResult<number>;
       parameters:
         - id: values
-          description: >-
-            Is a series of cash flows that correspond to a schedule of payments
-            in dates.
+          description: ''
           type: >-
             number | string | <xref uid="excel!Excel.Range:class" /> | boolean |
             <xref uid="excel!Excel.RangeReference:interface" /> | <xref
@@ -13525,9 +13521,7 @@ methods:
             <xref uid="excel!Excel.RangeReference:interface" /> | <xref
             uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
         - id: values
-          description: >-
-            Is a series of cash flows that correspond to a schedule of payments
-            in dates.
+          description: ''
           type: >-
             number | string | <xref uid="excel!Excel.Range:class" /> | boolean |
             <xref uid="excel!Excel.RangeReference:interface" /> | <xref
@@ -13560,10 +13554,7 @@ methods:
         Excel.FunctionResult<any>>): FunctionResult<boolean>;
       parameters:
         - id: values
-          description: >-
-            List of parameters, whose elements are 1 to 254 conditions you want
-            to test that can be either TRUE or FALSE and can be logical values,
-            arrays, or references.
+          description: ''
           type: >-
             Array&lt;boolean | <xref uid="excel!Excel.Range:class" /> | <xref
             uid="excel!Excel.RangeReference:interface" /> | <xref

@@ -9,10 +9,10 @@ summary: >-
   defined by service data providers, such as Bing or Power BI, or linked entity
   data domains defined by Office Add-ins.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -27,7 +27,7 @@ properties:
       (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -43,11 +43,11 @@ properties:
       the linked entity data domain. This name can change based on the
       information provided by the data provider.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataProvider?: boolean;'
@@ -64,11 +64,11 @@ properties:
       entity data domains defined by service data providers, such as Bing or
       Power BI.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
@@ -86,11 +86,11 @@ properties:
       `undefined` if `LinkedEntityCellValue` objects have not been refreshed
       since the workbook was opened.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lastRefreshed?: boolean;'
@@ -110,11 +110,11 @@ properties:
       -->. This ID is not applicable to linked entity data domains defined by
       service data providers, such as Bing or Power BI.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadFunctionId?: boolean;'
@@ -130,11 +130,11 @@ properties:
       domain. This name can change based on the information provided by the data
       provider.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name?: boolean;'
@@ -151,11 +151,11 @@ properties:
       refreshed automatically. The refresh interval only applies if the
       `refreshMode` is set to "Periodic".
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'periodicRefreshInterval?: boolean;'
@@ -167,19 +167,18 @@ properties:
     package: excel!
     fullName: refreshMode
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the refresh mode that
-      defines how and when the `LinkedEntityCellValue` objects of this linked
-      entity data domain are refreshed. If the refresh mode being set is not
-      supported by this linked entity data domain, then the current refresh mode
-      is not changed. If the refresh mode is set to "Periodic", the refresh
-      interval is set to the `periodicRefreshInterval` of this linked entity
-      data domain.
+      For EACH ITEM in the collection: Specifies the refresh mode that defines
+      how and when the `LinkedEntityCellValue` objects of this linked entity
+      data domain are refreshed. If the refresh mode being set is not supported
+      by this linked entity data domain, then the current refresh mode is not
+      changed. If the refresh mode is set to "Periodic", the refresh interval is
+      set to the `periodicRefreshInterval` of this linked entity data domain.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'refreshMode?: boolean;'
@@ -197,11 +196,11 @@ properties:
       Power BI, or defined by Office Add-ins. This ID never changes across user
       sessions.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'serviceId?: boolean;'
@@ -217,11 +216,11 @@ properties:
       the linked entity data domain. This array can change based on the
       information provided by the data provider.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'supportedRefreshModes?: boolean;'

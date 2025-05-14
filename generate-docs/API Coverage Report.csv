@@ -1004,7 +1004,7 @@ Excel.ChartDataLabel,"autoText",Property,Excellent,false
 Excel.ChartDataLabel,"context",Property,Excellent,false
 Excel.ChartDataLabel,"format",Property,Poor,false
 Excel.ChartDataLabel,"formula",Property,Great,false
-Excel.ChartDataLabel,"geometricShapeType",Property,Great,false
+Excel.ChartDataLabel,"geometricShapeType",Property,Excellent,false
 Excel.ChartDataLabel,"height",Property,Excellent,false
 Excel.ChartDataLabel,"horizontalAlignment",Property,Great,false
 Excel.ChartDataLabel,"left",Property,Great,false
@@ -1072,7 +1072,7 @@ Excel.ChartDataLabels,N/A,Class,Unknown,false
 Excel.ChartDataLabels,"autoText",Property,Excellent,false
 Excel.ChartDataLabels,"context",Property,Excellent,false
 Excel.ChartDataLabels,"format",Property,Great,false
-Excel.ChartDataLabels,"geometricShapeType",Property,Great,false
+Excel.ChartDataLabels,"geometricShapeType",Property,Excellent,false
 Excel.ChartDataLabels,"horizontalAlignment",Property,Excellent,false
 Excel.ChartDataLabels,"leaderLines",Property,Good,false
 Excel.ChartDataLabels,"linkNumberFormat",Property,Excellent,false
@@ -1082,7 +1082,7 @@ Excel.ChartDataLabels,"separator",Property,Great,false
 Excel.ChartDataLabels,"showAsStickyCallout",Property,Great,false
 Excel.ChartDataLabels,"showBubbleSize",Property,Great,false
 Excel.ChartDataLabels,"showCategoryName",Property,Great,false
-Excel.ChartDataLabels,"showLeaderLines",Property,Great,false
+Excel.ChartDataLabels,"showLeaderLines",Property,Excellent,false
 Excel.ChartDataLabels,"showLegendKey",Property,Good,false
 Excel.ChartDataLabels,"showPercentage",Property,Good,false
 Excel.ChartDataLabels,"showSeriesName",Property,Great,false
@@ -3551,11 +3551,11 @@ Excel.FormatProtection,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.FormatProtection,"set(properties, options)",Method,Good,false
 Excel.FormatProtection,"set(properties)",Method,Good,false
 Excel.FormatProtection,"toJSON()",Method,Excellent,false
-Excel.FormattedNumberCellValue,N/A,Interface,Unknown,false
-Excel.FormattedNumberCellValue,"basicType",Property,Good,false
-Excel.FormattedNumberCellValue,"basicValue",Property,Good,false
-Excel.FormattedNumberCellValue,"numberFormat",Property,Excellent,true
-Excel.FormattedNumberCellValue,"type",Property,Fine,true
+Excel.FormattedNumberCellValue,N/A,Interface,Deprecated,false
+Excel.FormattedNumberCellValue,"basicType",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"basicValue",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"numberFormat",Property,Deprecated,true
+Excel.FormattedNumberCellValue,"type",Property,Deprecated,true
 Excel.FormulaChangedEventDetail,N/A,Interface,Fine,false
 Excel.FormulaChangedEventDetail,"cellAddress",Property,Fine,false
 Excel.FormulaChangedEventDetail,"previousFormula",Property,Fine,false
@@ -4444,10 +4444,10 @@ Excel.LinkedEntityDataDomainCollection,"load(propertyNamesAndPaths)",Method,Exce
 Excel.LinkedEntityDataDomainCollection,"refreshAll()",Method,Excellent,false
 Excel.LinkedEntityDataDomainCollection,"toJSON()",Method,Excellent,false
 Excel.LinkedEntityDataDomainCreateOptions,N/A,Interface,Unknown,false
-Excel.LinkedEntityDataDomainCreateOptions,"dataProvider",Property,Fine,false
-Excel.LinkedEntityDataDomainCreateOptions,"id",Property,Fine,false
-Excel.LinkedEntityDataDomainCreateOptions,"loadFunctionId",Property,Great,false
-Excel.LinkedEntityDataDomainCreateOptions,"name",Property,Fine,false
+Excel.LinkedEntityDataDomainCreateOptions,"dataProvider",Property,Great,false
+Excel.LinkedEntityDataDomainCreateOptions,"id",Property,Great,false
+Excel.LinkedEntityDataDomainCreateOptions,"loadFunctionId",Property,Excellent,false
+Excel.LinkedEntityDataDomainCreateOptions,"name",Property,Great,false
 Excel.LinkedEntityDataDomainCreateOptions,"periodicRefreshInterval",Property,Excellent,false
 Excel.LinkedEntityDataDomainCreateOptions,"supportedRefreshModes",Property,Excellent,false
 Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,N/A,Interface,Unknown,false
@@ -5625,11 +5625,11 @@ Excel.SearchDirection,"forward",EnumField,Fine,false
 Excel.SelectionChangedEventArgs,N/A,Interface,Unknown,false
 Excel.SelectionChangedEventArgs,"workbook",Property,Good,false
 Excel.Session,N/A,Interface,Unknown,false
-Excel.SettableCellProperties,N/A,Interface,Unknown,false
+Excel.SettableCellProperties,N/A,Interface,Good,false
 Excel.SettableCellProperties,"format",Property,Good,false
 Excel.SettableCellProperties,"hyperlink",Property,Good,false
 Excel.SettableCellProperties,"style",Property,Good,true
-Excel.SettableCellProperties,"textRuns",Property,Good,false
+Excel.SettableCellProperties,"textRuns",Property,Fine,false
 Excel.SettableColumnProperties,N/A,Interface,Unknown,false
 Excel.SettableColumnProperties,"columnHidden",Property,Good,false
 Excel.SettableColumnProperties,"format",Property,Good,false

@@ -440,6 +440,24 @@ properties:
       content: 'readonly shapes: Excel.ShapeCollection;'
       return:
         type: <xref uid="excel!Excel.ShapeCollection:class" />
+  - name: showDataTypeIcons
+    uid: excel!Excel.Worksheet#showDataTypeIcons:member
+    package: excel!
+    fullName: showDataTypeIcons
+    summary: >-
+      Specifies if data type icons are visible on the worksheet. By default,
+      data type icons are visible.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showDataTypeIcons: boolean;'
+      return:
+        type: boolean
   - name: showGridlines
     uid: excel!Excel.Worksheet#showGridlines:member
     package: excel!
