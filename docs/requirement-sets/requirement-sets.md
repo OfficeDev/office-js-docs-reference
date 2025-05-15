@@ -1,7 +1,7 @@
 ---
 title: Office client application and platform availability for Office Add-ins
 description: Supported requirement sets for Excel, OneNote, Outlook, PowerPoint, Project, and Word.
-ms.date: 05/13/2025
+ms.date: 05/15/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -36,11 +36,11 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 
 |Platform|Extension points|Application-specific API requirement sets|[Common API requirement sets](common/office-add-in-requirement-sets.md)|
 |---|---|---|---|
-|Office on the web|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)</li></ul>|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.4](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
-|Office on Windows</li><li>Microsoft 365 subscription</li><li>retail perpetual Office 2016 and later</li></ul>|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.4](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
+|Office on the web|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)</li></ul>|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.4](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.5](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
+|Office on Windows</li><li>Microsoft 365 subscription</li><li>retail perpetual Office 2016 and later</li></ul>|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.4](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.5](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
 |Office 2024 on Windows<br>(volume-licensed perpetual)|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
 |Office 2021 on Windows<br>(volume-licensed perpetual)|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
-|Office on Mac|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)</li></ul>|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.4](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
+|Office on Mac|<ul><li>[CustomFunctions](excel/custom-functions-requirement-sets.md)</li></ul>|<ul><li>[CustomFunctionsRuntime 1.1](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.2](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.3](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.4](excel/custom-functions-requirement-sets.md)</li><li>[CustomFunctionsRuntime 1.5](excel/custom-functions-requirement-sets.md)</li></ul>|Not applicable|
 
 ## Outlook
 
