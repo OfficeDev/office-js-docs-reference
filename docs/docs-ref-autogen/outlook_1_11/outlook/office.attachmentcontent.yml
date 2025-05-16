@@ -18,6 +18,50 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  Office.context.mailbox.item.getAttachmentsAsync((result) => {
+      if (result.value.length > 0) {
+          for (let i = 0 ; i < result.value.length ; i++) {
+              Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+          }
+      }
+  });
+
+
+  function handleAttachmentsCallback(result) {
+      // Identify if an attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
+      switch (result.value.format) {
+          case Office.MailboxEnums.AttachmentContentFormat.Base64:
+              // Handle file attachment.
+              console.log("Attachment is a Base64-encoded string.");
+              break;
+          case Office.MailboxEnums.AttachmentContentFormat.Eml:
+              // Handle email item attachment.
+              console.log("Attachment is a message.");
+              break;
+          case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+              // Handle .icalender attachment.
+              console.log("Attachment is a calendar item.");
+              break;
+          case Office.MailboxEnums.AttachmentContentFormat.Url:
+              // Handle cloud attachment.
+              console.log("Attachment is a cloud attachment.");
+              break;
+          default:
+              // Handle attachment formats that aren't supported.
+      }
+
+      // Log the content of the attachments as a string.
+      console.log(result.value.content);
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -73,41 +117,3 @@ properties:
         type: >-
           <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum"
           /> | string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const options = {asyncContext: {currentItem: item}};
-          item.getAttachmentsAsync(options, callback);
-
-          function callback(result) {
-              if (result.value.length > 0) {
-                  for (let i = 0 ; i < result.value.length ; i++) {
-                      result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-                  }
-              }
-          }
-
-          function handleAttachmentsCallback(result) {
-              // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-              switch (result.value.format) {
-                  case Office.MailboxEnums.AttachmentContentFormat.Base64:
-                      // Handle file attachment.
-                      break;
-                  case Office.MailboxEnums.AttachmentContentFormat.Eml:
-                      // Handle email item attachment.
-                      break;
-                  case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
-                      // Handle .icalender attachment.
-                      break;
-                  case Office.MailboxEnums.AttachmentContentFormat.Url:
-                      // Handle cloud attachment.
-                      break;
-                  default:
-                      // Handle attachment formats that are not supported.
-              }
-          }
-          ```
