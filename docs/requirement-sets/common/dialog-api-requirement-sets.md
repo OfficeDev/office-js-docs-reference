@@ -1,7 +1,7 @@
 ---
 title: Dialog API requirement sets
 description: Learn more about the Dialog API requirement sets.
-ms.date: 11/07/2024
+ms.date: 05/22/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -14,8 +14,8 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<sup>1</sup><br>(retail perpetual) | Office on Windows<sup>1</sup><br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| DialogApi 1.2 | Supported | Version 2005 (Build 12827.20268) | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | Version 16.37 (20051002) | Version 16.37 | Not supported |
-| DialogApi 1.1 | Supported | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2016<sup>2</sup> | Version 15.20 | Version 1.22 | Version 1608 (Build 7601.6800) |
+| DialogApi 1.2 | Supported | <ul><li>Excel, Outlook (classic), PowerPoint, Word: Version 2005 (Build 12827.20268)</li><li>Outlook ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)): Supported</li></ul> | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | Version 16.37 (20051002) | Version 16.37 | Not supported |
+| DialogApi 1.1 | Supported | <ul><li>Excel, Outlook (classic), PowerPoint, Word: Version 1602 (Build 6741.0000)</li><li>Outlook (new): Supported</li></ul> | Version 1602 (Build 6741.0000) | Office 2016<sup>2</sup> | Version 15.20 | Version 1.22 | Version 1608 (Build 7601.6800) |
 
 > [!NOTE]
 > <sup>1</sup>Users of perpetual versions of Office may not have accepted all patches and updates. If so, the DLL that Office uses to report its version in the UI may be greater than the versions listed here even if the updated DLLs needed to support DialogApi haven't been installed on the user's computer. To ensure that the needed patch is installed, the user must go to the [Office 2016 update list](/officeupdates/msp-files-office-2016), search for **osfclient-x-none**, and install the listed patch.
