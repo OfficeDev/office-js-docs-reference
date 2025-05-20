@@ -1,7 +1,7 @@
 ---
 title: Open Browser Window requirement sets
 description: Specifies which Office platforms and builds support the openBrowserWindow API.
-ms.date: 10/22/2024
+ms.date: 05/20/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -16,13 +16,13 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| OpenBrowserWindowApi 1.1 | Not supported | Version 1810 (Build 11001.20074) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.0 | Excel, PowerPoint, Word (iPad only): Version 16.0 | Not supported |
+| OpenBrowserWindowApi 1.1 | Not supported | <ul><li>Excel, Outlook (classic), PowerPoint, Word: Version 1810 (Build 11001.20074)</li><li>Outlook ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)): Not supported</li></ul> | Office 2021: Version 2108 (Build 14326.20454) | Version 16.0 | Excel, PowerPoint, Word (iPad only): Version 16.0 | Not supported |
 
 > [!IMPORTANT]
 > The OpenBrowserWindowApi 1.1 requirement set is only available as follows:
 >
 > - Excel, PowerPoint, Word: Windows, Mac, iPad
-> - Outlook: Windows, Mac
+> - Outlook: Windows (classic), Mac
 
 To find out more about versions and build numbers, see:
 
