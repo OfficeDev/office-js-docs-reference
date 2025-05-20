@@ -2395,16 +2395,9 @@ methods:
 
 
       // Gets the attachments of the current message or appointment in compose
-      mode.
+      mode. The getAttachmentsAsync call can only be used in compose mode.
 
-      const options = { asyncContext: { currentItem: item } };
-
-      // The getAttachmentsAsync call can only be used in compose mode.
-
-      item.getAttachmentsAsync(options, callback);
-
-
-      function callback(result) {
+      Office.context.mailbox.item.getAttachmentsAsync((result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(result.error.message);
           return;
@@ -2417,9 +2410,9 @@ methods:
 
         for (let i = 0; i < result.value.length; i++) {
           // Log the attachment type and its contents to the console.
-          result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+          Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
         }
-      }
+      });
 
       ```
 

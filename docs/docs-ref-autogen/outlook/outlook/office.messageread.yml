@@ -2611,9 +2611,9 @@ methods:
 
 
       // Gets the attachments of the current message or appointment in read
-      mode.
+      mode. The item.attachments call can only be used in read mode.
 
-      // The item.attachments call can only be used in read mode.
+      const item = Office.context.mailbox.item;
 
       const attachments = item.attachments;
 
