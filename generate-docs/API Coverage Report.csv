@@ -8940,9 +8940,9 @@ Office.AppointmentTimeChangedEventArgs,N/A,Interface,Unknown,true
 Office.AppointmentTimeChangedEventArgs,"end",Property,Poor,false
 Office.AppointmentTimeChangedEventArgs,"start",Property,Poor,false
 Office.AppointmentTimeChangedEventArgs,"type",Property,Fine,false
-Office.AttachmentContent,N/A,Interface,Good,false
+Office.AttachmentContent,N/A,Interface,Good,true
 Office.AttachmentContent,"content",Property,Fine,false
-Office.AttachmentContent,"format",Property,Excellent,true
+Office.AttachmentContent,"format",Property,Excellent,false
 Office.AttachmentDetails,N/A,Interface,Unknown,true
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
 Office.AttachmentDetails,"contentType",Property,Deprecated,false
