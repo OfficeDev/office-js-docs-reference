@@ -55,7 +55,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'add(index?: number | null, count?: number): void;'
+      content: >-
+        add(index?: number | null | undefined, count?: number | undefined):
+        void;
       parameters:
         - id: index
           description: >-
@@ -64,12 +66,12 @@ methods:
             down. If the index value is undefined, null, -1, or greater than the
             number of rows in the table, the new rows are added at the end of
             the table.
-          type: number | null
+          type: number | null | undefined
         - id: count
           description: >-
             Optional. The number of rows to add. If the value is undefined or 0,
             only one row is added.
-          type: number
+          type: number | undefined
       return:
         type: void
         description: ''

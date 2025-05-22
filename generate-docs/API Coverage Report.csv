@@ -5601,8 +5601,8 @@ Excel.RowPropertiesLoadOptions,N/A,Interface,Excellent,false
 Excel.RowPropertiesLoadOptions,"format",Property,Excellent,false
 Excel.RowPropertiesLoadOptions,"rowHidden",Property,Excellent,false
 Excel.RowPropertiesLoadOptions,"rowIndex",Property,Excellent,false
-Excel.RunOptions,N/A,Interface,Great,false
-Excel.RunOptions,"delayForCellEdit",Property,Great,false
+Excel.RunOptions,N/A,Interface,Excellent,false
+Excel.RunOptions,"delayForCellEdit",Property,Excellent,false
 Excel.Runtime,N/A,Class,Unknown,false
 Excel.Runtime,"context",Property,Excellent,false
 Excel.Runtime,"enableEvents",Property,Fine,true

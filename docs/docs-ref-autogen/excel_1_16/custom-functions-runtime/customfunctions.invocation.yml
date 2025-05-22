@@ -110,8 +110,8 @@ properties:
       functions add-in. This value is `true` if the function is invoked to
       preview the formula value; otherwise it is `false`<!-- -->.
     remarks: >-
-      \[ [API set: CustomFunctionsRuntime BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets)
+      \[ [API set: CustomFunctionsRuntime
+      1.5](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets)
       \]
 
 
