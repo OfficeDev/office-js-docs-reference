@@ -3440,7 +3440,8 @@ export declare namespace PowerPoint {
          * @param index - Optional. Specifies the zero-based index where the new columns are added. Existing columns starting at the index location are shifted right. If the index value is undefined, null, -1, or greater than the number of columns in the table, the new columns are added at the end of the table.
          * @param count - Optional. The number of columns to add. If the value is undefined or 0, only one column is added.
          */
-        add(index?: number | null, count?: number): void;
+        // eslint-disable-next-line @definitelytyped/redundant-undefined
+        add(index?: number | null | undefined, count?: number | undefined): void;
         /**
          * Deletes the specified columns from the collection.
          *
@@ -3645,7 +3646,8 @@ export declare namespace PowerPoint {
          * @param index - Optional. Specifies the zero-based index where the new rows are added. Existing rows starting at the index location are shifted down. If the index value is undefined, null, -1, or greater than the number of rows in the table, the new rows are added at the end of the table.
          * @param count - Optional. The number of rows to add. If the value is undefined or 0, only one row is added.
          */
-        add(index?: number | null, count?: number): void;
+        // eslint-disable-next-line @definitelytyped/redundant-undefined
+        add(index?: number | null | undefined, count?: number | undefined): void;
         /**
          * Deletes the specified rows from the collection.
          *

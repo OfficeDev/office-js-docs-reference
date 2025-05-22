@@ -7483,8 +7483,9 @@ export declare namespace Excel {
         /**
          * Determines whether Excel will delay the batch request until the user exits cell edit mode.
          *
-         * When false, if the user is in cell edit when the batch request is processed by the host, the batch will automatically fail.
-         * When true, the batch request will be executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
+         * When `false`, if the user is in cell edit when the batch request is processed by the host, the batch automatically fails.
+         * When `true`, the batch request is executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode then the batch request is delayed until the user exits cell edit mode.
+         * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
     }

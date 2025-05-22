@@ -37,6 +37,8 @@ remarks: >-
         cell.text = generateRandomString();
       }
     }
+
+    await context.sync();
   });
 
   ```
@@ -268,6 +270,8 @@ properties:
             cell.text = generateRandomString();
           }
         }
+
+        await context.sync();
       });
 
       ```
