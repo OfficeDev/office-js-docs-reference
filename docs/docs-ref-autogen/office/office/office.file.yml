@@ -171,6 +171,11 @@ methods:
 
           getFileContentsHelper();
 
+          /**
+           * A helper function to retrieve all slices of the file recursively.
+           * It fetches one slice at a time and stores it in the `fileSlices` array.
+           * The recursion terminates when all slices have been retrieved.
+           */
           function getFileContentsHelper() {
               file.getSliceAsync(fileSlices.length, function(result) {
                   if (result.status === Office.AsyncResultStatus.Failed) {
