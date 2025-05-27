@@ -3960,8 +3960,7 @@ Office.EventType:enum:
     }
 Office.File:interface:
   - |-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
+    // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
 
     function getCurrentFile() {
         const sliceSize = 4096; /*Bytes*/
@@ -3988,8 +3987,7 @@ Office.File:interface:
     }
 Office.File#getSliceAsync:member(1):
   - |-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
+    // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
     function getFileContents(
         file: Office.File,
         onSuccess: (byteArray: number[]) => void,
