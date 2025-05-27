@@ -8,7 +8,7 @@
 ||[left](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-left-member)|The distance, in points, from the left side of the shape to the left side of the slide.|
 ||[lineFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-lineformat-member)|Returns the line formatting of this shape.|
 ||[name](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-name-member)|Specifies the name of this shape.|
-||[textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)|Returns the text frame object of this shape.|
+||[textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)|Returns the PowerPoint.TextFrame object of this `Shape`.|
 ||[top](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-top-member)|The distance, in points, from the top edge of the shape to the top edge of the slide.|
 ||[type](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-type-member)|Returns the type of this shape.|
 ||[width](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-width-member)|Specifies the width, in points, of the shape.|

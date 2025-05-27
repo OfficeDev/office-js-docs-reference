@@ -15,7 +15,6 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
 
 
@@ -155,8 +154,8 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
+
 
       function getFileContents(
           file: Office.File,

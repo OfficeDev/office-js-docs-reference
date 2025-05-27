@@ -10299,7 +10299,7 @@ PowerPoint.Shape,"name",Property,Good,false
 PowerPoint.Shape,"parentGroup",Property,Excellent,false
 PowerPoint.Shape,"placeholderFormat",Property,Excellent,false
 PowerPoint.Shape,"tags",Property,Fine,false
-PowerPoint.Shape,"textFrame",Property,Good,false
+PowerPoint.Shape,"textFrame",Property,Excellent,false
 PowerPoint.Shape,"top",Property,Fine,true
 PowerPoint.Shape,"type",Property,Good,true
 PowerPoint.Shape,"width",Property,Excellent,true

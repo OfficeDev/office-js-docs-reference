@@ -3988,6 +3988,7 @@ Office.File:interface:
 Office.File#getSliceAsync:member(1):
   - |-
     // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
+    
     function getFileContents(
         file: Office.File,
         onSuccess: (byteArray: number[]) => void,
