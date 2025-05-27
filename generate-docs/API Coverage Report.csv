@@ -7264,7 +7264,7 @@ Office.EventType,"SettingsChanged",EnumField,Fine,false
 Office.EventType,"SpamReporting",EnumField,Great,false
 Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
-Office.File,N/A,Interface,Unknown,false
+Office.File,N/A,Interface,Unknown,true
 Office.File,"size",Property,Poor,false
 Office.File,"sliceCount",Property,Fine,false
 Office.File,"closeAsync(callback)",Method,Poor,false
@@ -9300,10 +9300,10 @@ Office.MailboxEnums.InfobarType,"Informational",EnumField,Good,false
 Office.MailboxEnums.InfobarType,"ProgressIndicator",EnumField,Good,false
 Office.MailboxEnums.InfobarType,"Error",EnumField,Great,false
 Office.MailboxEnums.InfobarType,"Insight",EnumField,Good,false
-Office.MailboxEnums.ItemNotificationMessageType,N/A,Enum,Unknown,true
+Office.MailboxEnums.ItemNotificationMessageType,N/A,Enum,Good,true
 Office.MailboxEnums.ItemNotificationMessageType,"ProgressIndicator",EnumField,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,"InformationalMessage",EnumField,Good,false
-Office.MailboxEnums.ItemNotificationMessageType,"ErrorMessage",EnumField,Great,false
+Office.MailboxEnums.ItemNotificationMessageType,"ErrorMessage",EnumField,Good,false
 Office.MailboxEnums.ItemNotificationMessageType,"InsightMessage",EnumField,Good,false
 Office.MailboxEnums.ItemType,N/A,Enum,Missing,true
 Office.MailboxEnums.ItemType,"Message",EnumField,Fine,false
@@ -10299,7 +10299,7 @@ PowerPoint.Shape,"name",Property,Good,false
 PowerPoint.Shape,"parentGroup",Property,Excellent,false
 PowerPoint.Shape,"placeholderFormat",Property,Excellent,false
 PowerPoint.Shape,"tags",Property,Fine,false
-PowerPoint.Shape,"textFrame",Property,Good,false
+PowerPoint.Shape,"textFrame",Property,Excellent,false
 PowerPoint.Shape,"top",Property,Fine,true
 PowerPoint.Shape,"type",Property,Good,true
 PowerPoint.Shape,"width",Property,Excellent,true

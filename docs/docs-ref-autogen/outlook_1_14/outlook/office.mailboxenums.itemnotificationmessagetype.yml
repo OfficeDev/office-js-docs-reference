@@ -57,12 +57,7 @@ fields:
     uid: >-
       outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member
     package: outlook!
-    summary: >-
-      The notification message is an error message.
-
-
-      **Important**: Only the `InformationalMessage` type is supported in
-      Outlook on Android and on iOS.
+    summary: The notification message is an error message.
     value: '"errorMessage"'
   - name: InsightMessage
     uid: >-

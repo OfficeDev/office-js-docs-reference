@@ -160,8 +160,6 @@ export declare namespace Office {
             InformationalMessage = "informationalMessage",
             /**
              * The notification message is an error message.
-             * 
-             * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
              */
             ErrorMessage = "errorMessage",
                     }

@@ -6242,7 +6242,7 @@ export declare namespace PowerPoint {
          */
         readonly tags: PowerPoint.TagCollection;
         /**
-         * Returns the text frame object of this shape.
+         * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
@@ -9912,7 +9912,7 @@ export declare namespace PowerPoint {
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the text frame object of this shape.
+            * For EACH ITEM in the collection: Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -10223,7 +10223,7 @@ export declare namespace PowerPoint {
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the text frame object of this shape.
+            * For EACH ITEM in the collection: Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.5]
@@ -10599,7 +10599,7 @@ export declare namespace PowerPoint {
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-             * Returns the text frame object of this shape.
+            * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]

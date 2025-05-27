@@ -272,7 +272,11 @@ properties:
     uid: powerpoint!PowerPoint.Shape#textFrame:member
     package: powerpoint!
     fullName: textFrame
-    summary: Returns the text frame object of this shape.
+    summary: >-
+      Returns the
+      [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object
+      of this `Shape`<!-- -->. Throws an `InvalidArgument` exception if the
+      shape doesn't support a `TextFrame`<!-- -->.
     remarks: >-
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
