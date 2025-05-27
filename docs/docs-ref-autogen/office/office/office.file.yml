@@ -15,7 +15,7 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
 
 
   function getCurrentFile() {
@@ -154,7 +154,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/refs/heads/main/samples/excel/26-document/get-file-in-slices-async.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
 
 
       function getFileContents(
