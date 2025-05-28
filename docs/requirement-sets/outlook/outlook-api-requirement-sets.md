@@ -100,7 +100,6 @@ The following table lists Exchange servers and the Mailbox requirement sets they
 | Exchange on-premises | 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 || 2016 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 
-> [!NOTE]
 > <sup>1</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
 
 Even if an add-in implements features from later requirement sets not supported in an Exchange on-premises environment, it can still be added to an Outlook client as long as the minimum requirement set specified in its manifest aligns with those supported by Exchange on-premises. However, an implemented feature only works if the Outlook client in which the add-in is installed supports the minimum requirement set needed by a feature. For example, a signature add-in that specifies 1.5 in its manifest will be installed and loaded in the Exchange 2019 on-premises environment. However, its implementation of the [Body.setSignatureAsync](/javascript/api/outlook/office.body#outlook-office-body-setsignatureasync-member(1)), which was introduced in requirement set 1.10, will only run if the Outlook client where the add-in is installed supports 1.10.
@@ -172,7 +171,7 @@ The following table lists version support for more recent Mailbox requirement se
 For more details about your client version, see the update history page for [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) or [Office 2024](/officeupdates/update-history-office-2024) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 
 > [!NOTE]
-> In the Outlook client, each update channel receives updates at a different rate. To verify that your channel supports a particular version or build, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). For a comparison of the different update channels, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
+> In Outlook, each update channel receives updates at a different rate. To verify that your channel supports a particular version or build, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). For a comparison of the different update channels, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
 
 ## Reference the Office JavaScript API production library
 
