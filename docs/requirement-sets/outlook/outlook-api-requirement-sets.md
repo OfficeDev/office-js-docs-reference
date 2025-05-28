@@ -48,7 +48,7 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 
-The minimum requirement set specified in the manifest determines which Outlook clients can load the add-in. If a client or client version doesn't support at least the specified version, it doesn't load the add-in. For example, if you specify the requirement set version to 1.3, the add-in only appears in Outlook clients that support version 1.3 or higher.
+The minimum requirement set specified in the manifest determines which Outlook clients can load the add-in. If the Outlook client doesn't support at least the specified version, the add-in won't load. For example, if you specify the requirement set version to 1.3, the add-in only appears in Outlook clients that support version 1.3 or higher.
 
 > [!NOTE]
 > Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
