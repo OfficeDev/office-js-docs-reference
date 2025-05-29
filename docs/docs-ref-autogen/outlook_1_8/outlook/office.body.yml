@@ -119,32 +119,6 @@ methods:
       links, specify `Office.CoercionType.Html` in the `getAsync` call.
       Otherwise, you may receive an unexpected value, such as an empty string.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // This example gets the body of the item as plain text.
-
-      Office.context.mailbox.item.body.getAsync(
-          "text",
-          { asyncContext: "This is passed to the callback" },
-          function callback(result) {
-              // Do something with the result.
-          });
-
-      // The following is an example of the result parameter passed to the
-      callback function.
-
-      {
-          "value": "TEXT of whole body (including threads below)",
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
