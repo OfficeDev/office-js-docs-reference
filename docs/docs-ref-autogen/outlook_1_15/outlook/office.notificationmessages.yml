@@ -20,6 +20,12 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
+  **Important**: To learn about the different types of notification messages
+  you can implement, see [Create notifications for your Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
+  -->.
+
 isPreview: false
 isDeprecated: false
 type: interface

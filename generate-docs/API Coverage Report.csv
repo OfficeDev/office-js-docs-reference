@@ -9658,7 +9658,7 @@ Office.NotificationMessageAction,"commandId",Property,Fine,false
 Office.NotificationMessageAction,"contextData",Property,Fine,false
 Office.NotificationMessageDetails,N/A,Interface,Unknown,true
 Office.NotificationMessageDetails,"actions",Property,Excellent,false
-Office.NotificationMessageDetails,"icon",Property,Excellent,false
+Office.NotificationMessageDetails,"icon",Property,Good,true
 Office.NotificationMessageDetails,"key",Property,Fine,false
 Office.NotificationMessageDetails,"message",Property,Excellent,false
 Office.NotificationMessageDetails,"persistent",Property,Excellent,false
