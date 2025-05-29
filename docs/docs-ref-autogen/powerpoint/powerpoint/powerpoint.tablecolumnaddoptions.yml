@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: PowerPoint.TableColumnAddOptions
+uid: powerpoint!PowerPoint.TableColumnAddOptions:interface
+package: powerpoint!
+fullName: PowerPoint.TableColumnAddOptions
+summary: Represents the available options when adding a table column.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: specificCellProperties
+    uid: powerpoint!PowerPoint.TableColumnAddOptions#specificCellProperties:member
+    package: powerpoint!
+    fullName: specificCellProperties
+    summary: >-
+      If provided, specifies properties for each cell in the table column. If a
+      cell doesn't require specific formatting, specify an empty object for that
+      cell.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'specificCellProperties?: PowerPoint.TableCellProperties[][];'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableCellProperties:interface" />[][]
+  - name: uniformCellProperties
+    uid: powerpoint!PowerPoint.TableColumnAddOptions#uniformCellProperties:member
+    package: powerpoint!
+    fullName: uniformCellProperties
+    summary: >-
+      Specifies the formatting which applies uniformly to all of the table
+      column cells.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'uniformCellProperties?: PowerPoint.TableCellProperties;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableCellProperties:interface" />

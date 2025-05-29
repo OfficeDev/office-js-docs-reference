@@ -1,20 +1,28 @@
 ### YamlMime:TSType
 name: Visio.PageRenderCompleteEventArgs
-uid: 'visio!Visio.PageRenderCompleteEventArgs:interface'
+uid: visio!Visio.PageRenderCompleteEventArgs:interface
 package: visio!
 fullName: Visio.PageRenderCompleteEventArgs
 summary: Provides information about the page that raised the PageRenderComplete event.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: pageName
-    uid: 'visio!Visio.PageRenderCompleteEventArgs#pageName:member'
+    uid: visio!Visio.PageRenderCompleteEventArgs#pageName:member
     package: visio!
     fullName: pageName
     summary: Gets the name of the page that raised the PageLoad event.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +30,15 @@ properties:
       return:
         type: string
   - name: success
-    uid: 'visio!Visio.PageRenderCompleteEventArgs#success:member'
+    uid: visio!Visio.PageRenderCompleteEventArgs#success:member
     package: visio!
     fullName: success
     summary: Gets the success/failure of the PageRender event.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -445,7 +445,7 @@
       context.application.calculate(Excel.CalculationType.recalculate);
       await context.sync();
     });
-'Excel.CellControl:class':
+'Excel.CellControl:type':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
@@ -8757,16 +8757,9 @@
 
 
     // Gets the attachments of the current message or appointment in compose
-    mode.
+    mode. The getAttachmentsAsync call can only be used in compose mode.
 
-    const options = { asyncContext: { currentItem: item } };
-
-    // The getAttachmentsAsync call can only be used in compose mode.
-
-    item.getAttachmentsAsync(options, callback);
-
-
-    function callback(result) {
+    Office.context.mailbox.item.getAttachmentsAsync((result) => {
       if (result.status === Office.AsyncResultStatus.Failed) {
         console.log(result.error.message);
         return;
@@ -8779,9 +8772,9 @@
 
       for (let i = 0; i < result.value.length; i++) {
         // Log the attachment type and its contents to the console.
-        result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+        Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
       }
-    }
+    });
 'Office.AppointmentCompose#getAttachmentsAsync:member(1)':
   - >-
     // Link to full sample:
@@ -9812,8 +9805,9 @@
 
 
     // Gets the attachments of the current message or appointment in read mode.
+    The item.attachments call can only be used in read mode.
 
-    // The item.attachments call can only be used in read mode.
+    const item = Office.context.mailbox.item;
 
     const attachments = item.attachments;
 
@@ -12515,16 +12509,9 @@
 
 
     // Gets the attachments of the current message or appointment in compose
-    mode.
+    mode. The getAttachmentsAsync call can only be used in compose mode.
 
-    const options = { asyncContext: { currentItem: item } };
-
-    // The getAttachmentsAsync call can only be used in compose mode.
-
-    item.getAttachmentsAsync(options, callback);
-
-
-    function callback(result) {
+    Office.context.mailbox.item.getAttachmentsAsync((result) => {
       if (result.status === Office.AsyncResultStatus.Failed) {
         console.log(result.error.message);
         return;
@@ -12537,9 +12524,9 @@
 
       for (let i = 0; i < result.value.length; i++) {
         // Log the attachment type and its contents to the console.
-        result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+        Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
       }
-    }
+    });
 'Office.MessageCompose#getAttachmentsAsync:member(1)':
   - >-
     // Link to full sample:
@@ -13506,8 +13493,9 @@
 
 
     // Gets the attachments of the current message or appointment in read mode.
+    The item.attachments call can only be used in read mode.
 
-    // The item.attachments call can only be used in read mode.
+    const item = Office.context.mailbox.item;
 
     const attachments = item.attachments;
 
@@ -14738,6 +14726,273 @@
       context.presentation.slides.add(newSlideOptions);
       await context.sync();
     });
+'PowerPoint.Binding:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    async function getShapeForBindingId(bindingId: string):
+    Promise<PowerPoint.Shape | undefined> {
+      // Gets shape associated with binding ID.
+      return PowerPoint.run(async (context) => {
+        const binding = context.presentation.bindings.getItem(bindingId);
+        const shape = binding.getShape();
+        return shape;
+      });
+    }
+'PowerPoint.Binding#getShape:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    async function getShapeForBindingId(bindingId: string):
+    Promise<PowerPoint.Shape | undefined> {
+      // Gets shape associated with binding ID.
+      return PowerPoint.run(async (context) => {
+        const binding = context.presentation.bindings.getItem(bindingId);
+        const shape = binding.getShape();
+        return shape;
+      });
+    }
+'PowerPoint.BindingCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    // Loads bindings.
+
+    await PowerPoint.run(async (context) => {
+      const bindings = context.presentation.bindings;
+      bindings.load("items");
+      await context.sync();
+
+      const bindingCount = bindings.items.length;
+      if (bindingCount === 0) {
+        console.log(`There are no bindings.`);
+      } else if (bindingCount === 1) {
+        console.log("There's 1 binding.");
+      } else {
+        console.log(`There are ${bindingCount} bindings.`);
+      }
+
+      bindings.items.forEach((binding) => {
+        getShapeForBindingId(binding.id).then((shape) => {
+          if (shape) {
+            console.log(`Binding ID: ${binding.id} refers to shape ID ${shape.id}`);
+          } else {
+            console.log(`Binding ID: ${binding.id} doesn't refers to shape.`);
+          }
+        });
+      });
+
+      populateBindingsDropdown(bindings.items);
+    });
+'PowerPoint.BindingCollection#add:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    // Inserts an image with binding.
+
+    await PowerPoint.run(async (context) => {
+      const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
+      const slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const myShape = slide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle, {
+        top: 100,
+        left: 30,
+        width: 200,
+        height: 200
+      });
+
+      myShape.fill.setImage(flowerImage);
+      context.presentation.bindings.add(myShape, PowerPoint.BindingType.shape, bindingId);
+      await context.sync();
+
+      const bindingsDropdown = document.getElementById("bindings-dropdown") as HTMLSelectElement;
+
+      const option = new Option(`Binding ${bindingId}`, bindingId);
+
+      // When a binding ID already exists, the binding is updated to refer to the new shape
+      // so select the existing item rather than add a new one.
+      const foundIndex = findDropdownItem(bindingsDropdown, option.text);
+      if (foundIndex < 0) {
+        bindingsDropdown.add(option);
+        bindingsDropdown.selectedIndex = bindingsDropdown.options.length - 1;
+      } else {
+        bindingsDropdown.selectedIndex = foundIndex;
+      }
+    });
+'PowerPoint.BindingCollection#getItem:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    async function getShapeForBindingId(bindingId: string):
+    Promise<PowerPoint.Shape | undefined> {
+      // Gets shape associated with binding ID.
+      return PowerPoint.run(async (context) => {
+        const binding = context.presentation.bindings.getItem(bindingId);
+        const shape = binding.getShape();
+        return shape;
+      });
+    }
+'PowerPoint.BindingType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    // Inserts an image with binding.
+
+    await PowerPoint.run(async (context) => {
+      const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
+      const slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const myShape = slide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle, {
+        top: 100,
+        left: 30,
+        width: 200,
+        height: 200
+      });
+
+      myShape.fill.setImage(flowerImage);
+      context.presentation.bindings.add(myShape, PowerPoint.BindingType.shape, bindingId);
+      await context.sync();
+
+      const bindingsDropdown = document.getElementById("bindings-dropdown") as HTMLSelectElement;
+
+      const option = new Option(`Binding ${bindingId}`, bindingId);
+
+      // When a binding ID already exists, the binding is updated to refer to the new shape
+      // so select the existing item rather than add a new one.
+      const foundIndex = findDropdownItem(bindingsDropdown, option.text);
+      if (foundIndex < 0) {
+        bindingsDropdown.add(option);
+        bindingsDropdown.selectedIndex = bindingsDropdown.options.length - 1;
+      } else {
+        bindingsDropdown.selectedIndex = foundIndex;
+      }
+    });
+'PowerPoint.BorderProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.BorderProperties#color:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.BorderProperties#dashStyle:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.BorderProperties#weight:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
 'PowerPoint.ConnectorType:enum':
   - >-
     // Link to full sample:
@@ -14764,6 +15019,375 @@
           });
       line.name = "StraightLine";
 
+      await context.sync();
+    });
+'PowerPoint.FillProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FillProperties#color:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties#color:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties#doubleStrikethrough:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties#name:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties#strikethrough:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties#subscript:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.FontProperties#superscript:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
       await context.sync();
     });
 'PowerPoint.GeometricShapeType:enum':
@@ -14870,6 +15494,31 @@
         };
         presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
         await context.sync();
+    });
+'PowerPoint.ParagraphHorizontalAlignment:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the horizontal and vertical alignments of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying horizontal and vertical alignment.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment.justify,
+          verticalAlignment: PowerPoint.TextVerticalAlignment.middle
+        }
+      });
+      await context.sync();
     });
 'PowerPoint.Presentation:class':
   - >-
@@ -15158,6 +15807,40 @@
       context.presentation.setSelectedSlides([slide2.id, slide4.id, slide5.id]);
       await context.sync();
     });
+'PowerPoint.Presentation#bindings:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    // Loads bindings.
+
+    await PowerPoint.run(async (context) => {
+      const bindings = context.presentation.bindings;
+      bindings.load("items");
+      await context.sync();
+
+      const bindingCount = bindings.items.length;
+      if (bindingCount === 0) {
+        console.log(`There are no bindings.`);
+      } else if (bindingCount === 1) {
+        console.log("There's 1 binding.");
+      } else {
+        console.log(`There are ${bindingCount} bindings.`);
+      }
+
+      bindings.items.forEach((binding) => {
+        getShapeForBindingId(binding.id).then((shape) => {
+          if (shape) {
+            console.log(`Binding ID: ${binding.id} refers to shape ID ${shape.id}`);
+          } else {
+            console.log(`Binding ID: ${binding.id} doesn't refers to shape.`);
+          }
+        });
+      });
+
+      populateBindingsDropdown(bindings.items);
+    });
 'PowerPoint.Shape:class':
   - >-
     // Link to full sample:
@@ -15203,6 +15886,93 @@
 
       await context.sync();
     });
+'PowerPoint.Shape#getTable:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Gets the table from a shape.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      shapes.load("items");
+      await context.sync();
+
+      if (shapeCount.value > 0) {
+        const shape = shapes.getItemAt(0);
+        shape.load("type");
+        await context.sync();
+
+        // The shape type can indicate whether the shape is a table.
+        const isTable = shape.type === PowerPoint.ShapeType.table;
+
+        if (isTable) {
+          // Get the Table object for the Shape which is a table.
+          const table = shape.getTable();
+          table.load();
+          await context.sync();
+
+          // Get the Table row and column count.
+          console.log("Table RowCount: " + table.rowCount + " and columnCount: " + table.columnCount);
+        } else console.log("Selected shape isn't table.");
+      } else console.log("No shape selected.");
+    });
+'PowerPoint.Shape#setZOrder:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+      // Changes the z-order position of the selected shapes.
+      return PowerPoint.run(async (context) => {
+        const selectedShapes = context.presentation.getSelectedShapes();
+        selectedShapes.load();
+        await context.sync();
+
+        if (selectedShapes.items.length === 0) {
+          console.log("No shapes are selected.");
+        } else {
+          let direction = 1; // Start with bottom-most (lowest number).
+
+          // Start with top-most when sending to back or bringing forward.
+
+          switch (operation) {
+            case PowerPoint.ShapeZOrder.bringForward:
+
+            case PowerPoint.ShapeZOrder.sendToBack:
+              direction = -1; // Reverse direction.
+
+              break;
+          }
+
+          // Change the z-order position for each of the selected shapes,
+
+          // starting with the bottom-most when bringing to front or sending backward,
+
+          // or top-most when sending to back or bringing forward,
+
+          // so the selected shapes retain their relative z-order positions after they're changed.
+
+          selectedShapes.items
+            .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+            .forEach((shape) => {
+              try {
+                const originalZOrderPosition = shape.zOrderPosition;
+                shape.setZOrder(operation);
+
+                console.log(`Changed z-order of shape ${shape.id}.`);
+              } catch (err) {
+                console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+              }
+            });
+
+          await context.sync();
+        }
+      });
+    }
 'PowerPoint.Shape#fill:member':
   - >-
     // Link to full sample:
@@ -15220,6 +15990,36 @@
         shape.fill.setSolidColor("red");
       });
       await context.sync();
+    });
+'PowerPoint.Shape#group:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+    await PowerPoint.run(async (context) => {
+      // Ungroups the first shape group on the current slide.
+
+      // Get the shapes on the current slide.
+      context.presentation.load("slides");
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.load("shapes/items/type,shapes/items/id");
+      await context.sync();
+
+      const shapes: PowerPoint.ShapeCollection = slide.shapes;
+      const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
+      if (shapeGroups.length === 0) {
+        console.warn("No shape groups on the current slide, so nothing to ungroup.");
+        return;
+      }
+
+      // Ungroup the first grouped shapes.
+      const firstGroupId = shapeGroups[0].id;
+      const shapeGroupToUngroup = shapes.getItem(firstGroupId);
+      shapeGroupToUngroup.group.ungroup();
+      await context.sync();
+
+      console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
     });
 'PowerPoint.Shape#height:member':
   - >-
@@ -15355,6 +16155,60 @@
       currentLeft = 0;
       if (currentTop > slideHeight - 200) currentTop = 0;
     });
+'PowerPoint.Shape#zOrderPosition:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+      // Changes the z-order position of the selected shapes.
+      return PowerPoint.run(async (context) => {
+        const selectedShapes = context.presentation.getSelectedShapes();
+        selectedShapes.load();
+        await context.sync();
+
+        if (selectedShapes.items.length === 0) {
+          console.log("No shapes are selected.");
+        } else {
+          let direction = 1; // Start with bottom-most (lowest number).
+
+          // Start with top-most when sending to back or bringing forward.
+
+          switch (operation) {
+            case PowerPoint.ShapeZOrder.bringForward:
+
+            case PowerPoint.ShapeZOrder.sendToBack:
+              direction = -1; // Reverse direction.
+
+              break;
+          }
+
+          // Change the z-order position for each of the selected shapes,
+
+          // starting with the bottom-most when bringing to front or sending backward,
+
+          // or top-most when sending to back or bringing forward,
+
+          // so the selected shapes retain their relative z-order positions after they're changed.
+
+          selectedShapes.items
+            .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+            .forEach((shape) => {
+              try {
+                const originalZOrderPosition = shape.zOrderPosition;
+                shape.setZOrder(operation);
+
+                console.log(`Changed z-order of shape ${shape.id}.`);
+              } catch (err) {
+                console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+              }
+            });
+
+          await context.sync();
+        }
+      });
+    }
 'PowerPoint.ShapeAddOptions:interface':
   - >-
     // Link to full sample:
@@ -15427,6 +16281,36 @@
 
       await context.sync();
     });
+'PowerPoint.ShapeCollection#addGroup:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+    await PowerPoint.run(async (context) => {
+      // Groups the geometric shapes on the current slide.
+
+      // Get the shapes on the current slide.
+      context.presentation.load("slides");
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.load("shapes/items/type,shapes/items/id");
+      await context.sync();
+
+      const shapes: PowerPoint.ShapeCollection = slide.shapes;
+      const shapesToGroup = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.geometricShape);
+      if (shapesToGroup.length === 0) {
+        console.warn("No shapes on the current slide, so nothing to group.");
+        return;
+      }
+
+      // Group the geometric shapes.
+      console.log(`Number of shapes to group: ${shapesToGroup.length}`);
+      const group = shapes.addGroup(shapesToGroup);
+      group.load("id");
+      await context.sync();
+
+      console.log(`Grouped shapes. Group ID: ${group.id}`);
+    });
 'PowerPoint.ShapeCollection#addLine:member(1)':
   - >-
     // Link to full sample:
@@ -15455,6 +16339,21 @@
 
       await context.sync();
     });
+'PowerPoint.ShapeCollection#addTable:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Adds a basic table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a simple table, specifying the row and column count.
+      shapes.addTable(3, 4);
+      await context.sync();
+    });
 'PowerPoint.ShapeCollection#addTextBox:member(1)':
   - >-
     // Link to full sample:
@@ -15479,6 +16378,39 @@
       textbox.name = "Textbox";
 
       return context.sync();
+    });
+'PowerPoint.ShapeCollection#getCount:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Gets the table from a shape.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      shapes.load("items");
+      await context.sync();
+
+      if (shapeCount.value > 0) {
+        const shape = shapes.getItemAt(0);
+        shape.load("type");
+        await context.sync();
+
+        // The shape type can indicate whether the shape is a table.
+        const isTable = shape.type === PowerPoint.ShapeType.table;
+
+        if (isTable) {
+          // Get the Table object for the Shape which is a table.
+          const table = shape.getTable();
+          table.load();
+          await context.sync();
+
+          // Get the Table row and column count.
+          console.log("Table RowCount: " + table.rowCount + " and columnCount: " + table.columnCount);
+        } else console.log("Selected shape isn't table.");
+      } else console.log("No shape selected.");
     });
 'PowerPoint.ShapeCollection#getItemAt:member(1)':
   - >-
@@ -15544,36 +16476,40 @@
       });
       await context.sync();
     });
-'PowerPoint.ShapeFill#foregroundColor:member':
+'PowerPoint.ShapeFill#setImage:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
 
 
-    // Creates random shapes on the selected slide.
+    // Inserts an image with binding.
 
     await PowerPoint.run(async (context) => {
-      let finalTable = "";
-      const currentSlide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-      const maxNewShapeWidth = 200;
-      const maxNewShapeHeight = 200;
-      const minNewShapeWidth = 50;
-      const minNewShapeHeight = 50;
-      for (let i = 0; i < 20; i++) {
-        const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle);
-        rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
-        rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
-        rectangle.left = getRandomBetween(0, slideWidth - rectangle.width);
-        rectangle.top = getRandomBetween(0, slideHeight - rectangle.height);
-        rectangle.fill.foregroundColor = generateRandomHexColor();
-      }
-      finalTable += "Done<br>";
-      const slideTags = document.getElementById("slide-tags");
-      if (slideTags) {
-        slideTags.innerHTML = "";
-        slideTags.innerHTML += finalTable;
+      const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
+      const slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const myShape = slide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle, {
+        top: 100,
+        left: 30,
+        width: 200,
+        height: 200
+      });
+
+      myShape.fill.setImage(flowerImage);
+      context.presentation.bindings.add(myShape, PowerPoint.BindingType.shape, bindingId);
+      await context.sync();
+
+      const bindingsDropdown = document.getElementById("bindings-dropdown") as HTMLSelectElement;
+
+      const option = new Option(`Binding ${bindingId}`, bindingId);
+
+      // When a binding ID already exists, the binding is updated to refer to the new shape
+      // so select the existing item rather than add a new one.
+      const foundIndex = findDropdownItem(bindingsDropdown, option.text);
+      if (foundIndex < 0) {
+        bindingsDropdown.add(option);
+        bindingsDropdown.selectedIndex = bindingsDropdown.options.length - 1;
       } else {
-        console.warn('Element with ID "slide-tags" not found.');
+        bindingsDropdown.selectedIndex = foundIndex;
       }
     });
 'PowerPoint.ShapeFill#setSolidColor:member(1)':
@@ -15593,6 +16529,36 @@
         shape.fill.setSolidColor("red");
       });
       await context.sync();
+    });
+'PowerPoint.ShapeFill#foregroundColor:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+    // Creates random shapes on the selected slide.
+
+    await PowerPoint.run(async (context) => {
+      let finalTable = "";
+      const currentSlide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const maxNewShapeWidth = 200;
+      const maxNewShapeHeight = 200;
+      const minNewShapeWidth = 50;
+      const minNewShapeHeight = 50;
+      for (let i = 0; i < 20; i++) {
+        const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(
+          PowerPoint.GeometricShapeType.rectangle
+        );
+        rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
+        rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
+        rectangle.left = getRandomBetween(0, slideWidth - rectangle.width);
+        rectangle.top = getRandomBetween(0, slideHeight - rectangle.height);
+        rectangle.fill.foregroundColor = generateRandomHexColor();
+      }
+      finalTable += "Done<br>";
+      const outputSpan = document.getElementById("outputSpan");
+      outputSpan.innerHTML = "";
+      outputSpan.innerHTML += finalTable;
     });
 'PowerPoint.ShapeFill#transparency:member':
   - >-
@@ -15641,6 +16607,66 @@
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.font.color = "green";
       await context.sync();
+    });
+'PowerPoint.ShapeGroup:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+    await PowerPoint.run(async (context) => {
+      // Ungroups the first shape group on the current slide.
+
+      // Get the shapes on the current slide.
+      context.presentation.load("slides");
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.load("shapes/items/type,shapes/items/id");
+      await context.sync();
+
+      const shapes: PowerPoint.ShapeCollection = slide.shapes;
+      const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
+      if (shapeGroups.length === 0) {
+        console.warn("No shape groups on the current slide, so nothing to ungroup.");
+        return;
+      }
+
+      // Ungroup the first grouped shapes.
+      const firstGroupId = shapeGroups[0].id;
+      const shapeGroupToUngroup = shapes.getItem(firstGroupId);
+      shapeGroupToUngroup.group.ungroup();
+      await context.sync();
+
+      console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
+    });
+'PowerPoint.ShapeGroup#ungroup:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+    await PowerPoint.run(async (context) => {
+      // Ungroups the first shape group on the current slide.
+
+      // Get the shapes on the current slide.
+      context.presentation.load("slides");
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.load("shapes/items/type,shapes/items/id");
+      await context.sync();
+
+      const shapes: PowerPoint.ShapeCollection = slide.shapes;
+      const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
+      if (shapeGroups.length === 0) {
+        console.warn("No shape groups on the current slide, so nothing to ungroup.");
+        return;
+      }
+
+      // Ungroup the first grouped shapes.
+      const firstGroupId = shapeGroups[0].id;
+      const shapeGroupToUngroup = shapes.getItem(firstGroupId);
+      shapeGroupToUngroup.group.ungroup();
+      await context.sync();
+
+      console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
     });
 'PowerPoint.ShapeLineDashStyle:enum':
   - >-
@@ -15775,6 +16801,68 @@
       });
       await context.sync();
     });
+'PowerPoint.ShapeZOrder:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    // Sends the shape to the back.
+
+    changeZOrder(PowerPoint.ShapeZOrder.sendToBack);
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+    async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+      // Changes the z-order position of the selected shapes.
+      return PowerPoint.run(async (context) => {
+        const selectedShapes = context.presentation.getSelectedShapes();
+        selectedShapes.load();
+        await context.sync();
+
+        if (selectedShapes.items.length === 0) {
+          console.log("No shapes are selected.");
+        } else {
+          let direction = 1; // Start with bottom-most (lowest number).
+
+          // Start with top-most when sending to back or bringing forward.
+
+          switch (operation) {
+            case PowerPoint.ShapeZOrder.bringForward:
+
+            case PowerPoint.ShapeZOrder.sendToBack:
+              direction = -1; // Reverse direction.
+
+              break;
+          }
+
+          // Change the z-order position for each of the selected shapes,
+
+          // starting with the bottom-most when bringing to front or sending backward,
+
+          // or top-most when sending to back or bringing forward,
+
+          // so the selected shapes retain their relative z-order positions after they're changed.
+
+          selectedShapes.items
+            .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+            .forEach((shape) => {
+              try {
+                const originalZOrderPosition = shape.zOrderPosition;
+                shape.setZOrder(operation);
+
+                console.log(`Changed z-order of shape ${shape.id}.`);
+              } catch (err) {
+                console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+              }
+            });
+
+          await context.sync();
+        }
+      });
+    }
 'PowerPoint.Slide:class':
   - >-
     // Link to full sample:
@@ -15808,6 +16896,48 @@
         slide.delete();
       });
     });
+'PowerPoint.Slide#exportAsBase64:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
+
+
+    // Exports current slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const slideBase64DataResult = slide.exportAsBase64();
+      const imageBase64DataResult = slide.getImageAsBase64({ height: 300 });
+      await context.sync();
+
+      localStorage.setItem("exportedSlide", slideBase64DataResult.value);
+      localStorage.setItem("exportedSlideImage", imageBase64DataResult.value);
+
+      updateSlideImage(imageBase64DataResult.value);
+
+      console.log("Slide was exported.");
+    });
+'PowerPoint.Slide#getImageAsBase64:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
+
+
+    // Exports current slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const slideBase64DataResult = slide.exportAsBase64();
+      const imageBase64DataResult = slide.getImageAsBase64({ height: 300 });
+      await context.sync();
+
+      localStorage.setItem("exportedSlide", slideBase64DataResult.value);
+      localStorage.setItem("exportedSlideImage", imageBase64DataResult.value);
+
+      updateSlideImage(imageBase64DataResult.value);
+
+      console.log("Slide was exported.");
+    });
 'PowerPoint.Slide#setSelectedShapes:member(1)':
   - >-
     // Link to full sample:
@@ -15833,14 +16963,17 @@
       context.presentation.load("slides");
       await context.sync();
       const slide1 = context.presentation.slides.getItemAt(0);
-      slide1.load("shapes");
+      slide1.load("shapes/items/type");
       await context.sync();
-      const shapes: PowerPoint.ShapeCollection = slide1.shapes;
-      const shape1: PowerPoint.Shape = shapes.getItemAt(0);
-      const shape2: PowerPoint.Shape = shapes.getItemAt(1);
+
+      const shapes = slide1.shapes.items.filter((item) => item.type === PowerPoint.ShapeType.geometricShape);
+      const shape1: PowerPoint.Shape = shapes[0];
+      const shape2: PowerPoint.Shape = shapes[1];
       shape1.load("id");
       shape2.load("id");
       await context.sync();
+
+      console.log(`IDs: ${shape1.id}, ${shape2.id}`)
       slide1.setSelectedShapes([shape1.id, shape2.id]);
       await context.sync();
     });
@@ -16125,6 +17258,872 @@
       shapes.items.map((shape) => {
         savedShapeSelection.push(shape.id);
       });
+    });
+'PowerPoint.Table:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Updates a table's values.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table (which is a type of Shape).
+      const shape = shapes.addTable(4, 3);
+      let table = shape.getTable();
+      table.load();
+      await context.sync();
+
+      // Update values in the table.
+      for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+        for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+          const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+          cell.text = generateRandomString();
+        }
+      }
+
+      await context.sync();
+    });
+'PowerPoint.Table#getCellOrNullObject:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Updates a table's values.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table (which is a type of Shape).
+      const shape = shapes.addTable(4, 3);
+      let table = shape.getTable();
+      table.load();
+      await context.sync();
+
+      // Update values in the table.
+      for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+        for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+          const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+          cell.text = generateRandomString();
+        }
+      }
+
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the width and height of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying the width and height.
+      shapes.addTable(3, 4, {
+        width: 600,
+        height: 400
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#columns:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the column widths and row heights of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying column widths and row heights
+      shapes.addTable(3, 4, {
+        columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+        rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#height:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the width and height of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying the width and height.
+      shapes.addTable(3, 4, {
+        width: 600,
+        height: 400
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#mergedAreas:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the merge areas of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying one 2x2 merged area.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "", "HHHH"],
+          ["1", "", "", "1234"]
+        ],
+        mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#rows:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the column widths and row heights of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying column widths and row heights
+      shapes.addTable(3, 4, {
+        columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+        rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#specificCellProperties:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#uniformCellProperties:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#values:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's values.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying cell values.
+      const shape = shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableAddOptions#width:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the width and height of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying the width and height.
+      shapes.addTable(3, 4, {
+        width: 600,
+        height: 400
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCell:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Updates a table's values.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table (which is a type of Shape).
+      const shape = shapes.addTable(4, 3);
+      let table = shape.getTable();
+      table.load();
+      await context.sync();
+
+      // Update values in the table.
+      for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+        for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+          const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+          cell.text = generateRandomString();
+        }
+      }
+
+      await context.sync();
+    });
+'PowerPoint.TableCell#text:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Updates a table's values.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table (which is a type of Shape).
+      const shape = shapes.addTable(4, 3);
+      let table = shape.getTable();
+      table.load();
+      await context.sync();
+
+      // Update values in the table.
+      for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+        for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+          const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+          cell.text = generateRandomString();
+        }
+      }
+
+      await context.sync();
+    });
+'PowerPoint.TableCellBorders:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellBorders#bottom:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellBorders#left:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellBorders#right:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellBorders#top:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties#borders:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies a table's borders.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying border styles
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          borders: {
+            left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+            top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+            bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+          }
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties#fill:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties#font:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the font formatting and fill colors of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying font formatting and fill colors
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [
+            { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
+            { fill: { color: "red" }, font: { color: "yellow", italic: true } },
+            { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
+          ],
+          [
+            { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
+            { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
+            { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
+            { fill: { color: "red" }, font: { color: "yellow" } }
+          ],
+          [
+            { fill: { color: "red" }, font: { color: "#b0bf1a" } },
+            { fill: { color: "#9966cc" }, font: { color: "yellow" } },
+            { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
+            { fill: { color: "red" }, font: { color: "#fbceb1" } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties#horizontalAlignment:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the horizontal and vertical alignments of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying horizontal and vertical alignment.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment.justify,
+          verticalAlignment: PowerPoint.TextVerticalAlignment.middle
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties#indentLevel:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifying the indents for a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying the indent level for cells.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        specificCellProperties: [
+          [{ indentLevel: 0 }, { indentLevel: 1 }, { indentLevel: 2 }, { indentLevel: 3 }],
+          [{ indentLevel: 0 }, { indentLevel: 1 }, { indentLevel: 2 }, { indentLevel: 3 }],
+          [{ indentLevel: 0 }, { indentLevel: 1 }, { indentLevel: 2 }, { indentLevel: 3 }]
+        ]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableCellProperties#verticalAlignment:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the horizontal and vertical alignments of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying horizontal and vertical alignment.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "GGG", "HHHH"],
+          ["1", "12", "123", "1234"]
+        ],
+        uniformCellProperties: {
+          horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment.justify,
+          verticalAlignment: PowerPoint.TextVerticalAlignment.middle
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.TableColumnProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the column widths and row heights of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying column widths and row heights
+      shapes.addTable(3, 4, {
+        columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+        rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableColumnProperties#columnWidth:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the column widths and row heights of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying column widths and row heights
+      shapes.addTable(3, 4, {
+        columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+        rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableMergedAreaProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the merge areas of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying one 2x2 merged area.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "", "HHHH"],
+          ["1", "", "", "1234"]
+        ],
+        mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableMergedAreaProperties#columnCount:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the merge areas of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying one 2x2 merged area.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "", "HHHH"],
+          ["1", "", "", "1234"]
+        ],
+        mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableMergedAreaProperties#columnIndex:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the merge areas of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying one 2x2 merged area.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "", "HHHH"],
+          ["1", "", "", "1234"]
+        ],
+        mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableMergedAreaProperties#rowCount:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the merge areas of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying one 2x2 merged area.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "", "HHHH"],
+          ["1", "", "", "1234"]
+        ],
+        mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableMergedAreaProperties#rowIndex:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the merge areas of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying one 2x2 merged area.
+      shapes.addTable(3, 4, {
+        values: [
+          ["A", "BB", "CCC", "DDDD"],
+          ["E", "FF", "", "HHHH"],
+          ["1", "", "", "1234"]
+        ],
+        mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableRowProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the column widths and row heights of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying column widths and row heights
+      shapes.addTable(3, 4, {
+        columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+        rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+      });
+      await context.sync();
+    });
+'PowerPoint.TableRowProperties#rowHeight:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the column widths and row heights of a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying column widths and row heights
+      shapes.addTable(3, 4, {
+        columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+        rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+      });
+      await context.sync();
     });
 'PowerPoint.Tag:class':
   - >-
@@ -17621,6 +19620,28 @@
         console.log("Search term: " + result.searchTerm + " => Count: " + length);
       });
     });
+'Word.Body#shapes:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets text boxes in main document.
+      const shapes: Word.ShapeCollection = context.document.body.shapes;
+      shapes.load();
+      await context.sync();
+
+      if (shapes.items.length > 0) {
+        shapes.items.forEach(function(shape, index) {
+          if (shape.type === Word.ShapeType.textBox) {
+            console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+          }
+        });
+      } else {
+        console.log("No shapes found in main document.");
+      }
+    });
 'Word.Body#tables:member':
   - >-
     // Link to full sample:
@@ -18740,7 +20761,7 @@
         console.warn("There are no content controls in this document.");
         return;
       }
-      
+
       firstContentControl.resetState();
       firstContentControl.load("id");
       await context.sync();
@@ -18796,7 +20817,8 @@
     // Sets the state of the first content control.
 
     await Word.run(async (context) => {
-      const state = ((document.getElementById("state-to-set") as HTMLSelectElement).value as unknown) as Word.ContentControlState;
+      const state = ((document.getElementById("state-to-set") as HTMLSelectElement)
+        .value as unknown) as Word.ContentControlState;
       let firstContentControl = context.document.contentControls.getFirstOrNullObject();
       await context.sync();
 
@@ -19701,7 +21723,8 @@
     // Sets the state of the first content control.
 
     await Word.run(async (context) => {
-      const state = ((document.getElementById("state-to-set") as HTMLSelectElement).value as unknown) as Word.ContentControlState;
+      const state = ((document.getElementById("state-to-set") as HTMLSelectElement)
+        .value as unknown) as Word.ContentControlState;
       let firstContentControl = context.document.contentControls.getFirstOrNullObject();
       await context.sync();
 
@@ -20925,6 +22948,56 @@
       context.document.save();
       await context.sync();
     });
+'Word.Document#activeWindow:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the first paragraph of each page.
+      console.log("Getting first paragraph of each page...");
+
+      // Get the active window.
+      const activeWindow: Word.Window = context.document.activeWindow;
+      activeWindow.load();
+
+      // Get the active pane.
+      const activePane: Word.Pane = activeWindow.activePane;
+      activePane.load();
+
+      // Get all pages.
+      const pages: Word.PageCollection = activePane.pages;
+      pages.load();
+
+      await context.sync();
+
+      // Get page index and paragraphs of each page.
+      const pagesIndexes = [];
+      const pagesNumberOfParagraphs = [];
+      const pagesFirstParagraphText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const paragraphs = page.getRange().paragraphs;
+        paragraphs.load('items/length');
+        pagesNumberOfParagraphs.push(paragraphs);
+
+        const firstParagraph = paragraphs.getFirst();
+        firstParagraph.load('text');
+        pagesFirstParagraphText.push(firstParagraph);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Page index: ${pagesIndexes[i].index}`);
+        console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
+        console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+      }
+    });
 'Word.Document#changeTrackingMode:member':
   - >-
     // Link to full sample:
@@ -22056,6 +24129,27 @@
 
       console.log("Inserted section without an associated page break.");
     });
+'Word.InsertShapeOptions:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a text box at the beginning of the selection.
+      const range: Word.Range = context.document.getSelection();
+      const insertShapeOptions: Word.InsertShapeOptions = {
+        top: 0,
+        left: 0,
+        height: 100,
+        width: 100
+      };
+
+      const newTextBox: Word.Shape = range.insertTextBox("placeholder text", insertShapeOptions);
+      await context.sync();
+
+      console.log("Inserted a text box at the beginning of the current selection.");
+    });
 'Word.List:class':
   - >-
     // Link to full sample:
@@ -22846,6 +24940,285 @@
       await context.sync();
       console.log("Styles imported from JSON:", styles);
     });
+'Word.Page:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets pages of the selection.
+      const pages: Word.PageCollection = context.document.getSelection().pages;
+      pages.load();
+      await context.sync();
+
+      // Log info for pages included in selection.
+      console.log(pages);
+      const pagesIndexes = [];
+      const pagesText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const range = page.getRange();
+        range.load('text');
+        pagesText.push(range);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+        console.log("Text of that page in the selection:", pagesText[i].text);
+      }
+    });
+'Word.Page#getRange:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets pages of the selection.
+      const pages: Word.PageCollection = context.document.getSelection().pages;
+      pages.load();
+      await context.sync();
+
+      // Log info for pages included in selection.
+      console.log(pages);
+      const pagesIndexes = [];
+      const pagesText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const range = page.getRange();
+        range.load('text');
+        pagesText.push(range);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+        console.log("Text of that page in the selection:", pagesText[i].text);
+      }
+    });
+'Word.Page#index:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the pages that contain the third paragraph.
+      const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
+      paragraphs.load();
+      await context.sync();
+
+      const paraThree = paragraphs.items[2];
+      const rangeOfParagraph = paraThree.getRange();
+      const pages: Word.PageCollection = rangeOfParagraph.pages;
+      pages.load();
+      await context.sync();
+
+      // Log info for pages in range.
+      console.log(pages);
+      const pagesIndexes = [];
+      const pagesText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const range = page.getRange();
+        range.load('text');
+        pagesText.push(range);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Index of page ${i + 1} that contains the third paragraph: ${pagesIndexes[i].index}`);
+        console.log("Text of that page:", pagesText[i].text);
+      }
+    });
+'Word.PageCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets pages of the selection.
+      const pages: Word.PageCollection = context.document.getSelection().pages;
+      pages.load();
+      await context.sync();
+
+      // Log info for pages included in selection.
+      console.log(pages);
+      const pagesIndexes = [];
+      const pagesText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const range = page.getRange();
+        range.load('text');
+        pagesText.push(range);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+        console.log("Text of that page in the selection:", pagesText[i].text);
+      }
+    });
+'Word.Pane:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the first paragraph of each page.
+      console.log("Getting first paragraph of each page...");
+
+      // Get the active window.
+      const activeWindow: Word.Window = context.document.activeWindow;
+      activeWindow.load();
+
+      // Get the active pane.
+      const activePane: Word.Pane = activeWindow.activePane;
+      activePane.load();
+
+      // Get all pages.
+      const pages: Word.PageCollection = activePane.pages;
+      pages.load();
+
+      await context.sync();
+
+      // Get page index and paragraphs of each page.
+      const pagesIndexes = [];
+      const pagesNumberOfParagraphs = [];
+      const pagesFirstParagraphText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const paragraphs = page.getRange().paragraphs;
+        paragraphs.load('items/length');
+        pagesNumberOfParagraphs.push(paragraphs);
+
+        const firstParagraph = paragraphs.getFirst();
+        firstParagraph.load('text');
+        pagesFirstParagraphText.push(firstParagraph);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Page index: ${pagesIndexes[i].index}`);
+        console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
+        console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+      }
+    });
+'Word.Pane#pages:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the first paragraph of each page.
+      console.log("Getting first paragraph of each page...");
+
+      // Get the active window.
+      const activeWindow: Word.Window = context.document.activeWindow;
+      activeWindow.load();
+
+      // Get the active pane.
+      const activePane: Word.Pane = activeWindow.activePane;
+      activePane.load();
+
+      // Get all pages.
+      const pages: Word.PageCollection = activePane.pages;
+      pages.load();
+
+      await context.sync();
+
+      // Get page index and paragraphs of each page.
+      const pagesIndexes = [];
+      const pagesNumberOfParagraphs = [];
+      const pagesFirstParagraphText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const paragraphs = page.getRange().paragraphs;
+        paragraphs.load('items/length');
+        pagesNumberOfParagraphs.push(paragraphs);
+
+        const firstParagraph = paragraphs.getFirst();
+        firstParagraph.load('text');
+        pagesFirstParagraphText.push(firstParagraph);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Page index: ${pagesIndexes[i].index}`);
+        console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
+        console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+      }
+    });
+'Word.Pane#pagesEnclosingViewport:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the pages enclosing the viewport.
+
+      // Get the active window.
+      const activeWindow: Word.Window = context.document.activeWindow;
+      activeWindow.load();
+
+      // Get the active pane.
+      const activePane: Word.Pane = activeWindow.activePane;
+      activePane.load();
+
+      // Get pages enclosing the viewport.
+      const pages: Word.PageCollection = activePane.pagesEnclosingViewport;
+      pages.load();
+
+      await context.sync();
+
+      // Log the number of pages.
+      const pageCount = pages.items.length;
+      console.log(`Number of pages enclosing the viewport: ${pageCount}`);
+
+      // Log index info of these pages.
+      const pagesIndexes = [];
+      for (let i = 0; i < pageCount; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Page index: ${pagesIndexes[i].index}`);
+      }
+    });
 'Word.Paragraph:class':
   - >-
     // Link to full sample:
@@ -23000,6 +25373,29 @@
       range.font.color = "white";
 
       await context.sync();
+    });
+'Word.Paragraph#insertTextBox:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a text box at the beginning of the first paragraph in header.
+      const headerFooterBody: Word.Body = context.document.sections.getFirst().getHeader(Word.HeaderFooterType.primary);
+      headerFooterBody.load("paragraphs");
+      const firstParagraph: Word.Paragraph = headerFooterBody.paragraphs.getFirst();
+      const insertShapeOptions: Word.InsertShapeOptions = {
+        top: 0,
+        left: 0,
+        height: 100,
+        width: 100
+      };
+      const newTextBox: Word.Shape = firstParagraph.insertTextBox("placeholder text", insertShapeOptions);
+      newTextBox.select();
+      await context.sync();
+
+      console.log("Inserted a text box at the beginning of the first paragraph in the header.");
     });
 'Word.Paragraph#select:member(1)':
   - >-
@@ -23842,6 +26238,63 @@
 
       console.log("Inserted footnote.");
     });
+'Word.Range#insertInlinePictureFromBase64:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a picture at the start of the first text box.
+      const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.textBox])
+        .getFirst();
+      firstShapeWithTextBox.load("type/body");
+      await context.sync();
+
+      const startRange: Word.Range = firstShapeWithTextBox.body.getRange(Word.RangeLocation.start);
+      const newPic: Word.InlinePicture = startRange.insertInlinePictureFromBase64(
+        getPictureBase64(),
+        Word.InsertLocation.start
+      );
+      newPic.load();
+      await context.sync();
+
+      console.log("New inline picture properties:", newPic);
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    // Returns Base64-encoded image data for a sample picture.
+
+    const pictureBase64 =
+
+    "iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABblBMVEX+7tEYMFlyg5v8zHXVgof///+hrL77qRnIWmBEWXq6MDgAF0/i1b//8dP+79QKJ1MAIFL8yWpugZz/+O/VzLwzTXR+jaP/z3PHzdjNaWvuxrLFT1n8znmMj5fFTFP25OHlsa2wqqJGW3z7pgCbqsH936oAJlWnssRzdoLTd1HTfINbY3a7tar90IxJVG0AH1ecmJH//90gN14AFU/nxInHVFL80YQAD03qv3LUrm7cwJLWjoLenpPRdXTQgoj15sz+57/7szr93KPbiWjUvZj95LnwzLmMX3L8wmz7rib8xnP8vVz91JT8ukvTz8i8vsORkJKvsLIAD1YwPViWnKZVYHbKuqHjwo3ur2/Pa2O+OTvHVETfj1tybm9qdYlsYlnkmmC0DSPirpvAq4bj5uuono7tu5vgpannnX3ksbSKg5bv0tTclJNFSlyZgpPqwsW4go2giWdbWV+3mmuWgpRcbolURmReS2embHkiRHBcZ6c8AAALcElEQVR4nO3di1cTVx4H8AyThmC484ghFzSxEDRhIRBIMEFQA1qoVhAqYBVd3UXcri1dd7fLdv3vdybJZF73zr2TufPyzPccew49hc6H331nZkylkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiQJ6wj2hH1JLKNo9p/sPB3X8rRUau/f2f56kML2k/n5+XFDSjzPQ7l95+swCqkfzDy1hnwvsLT9FRCF1I7Fpwt5Xt6PfRmF1LgNaBAqZdyNOVGwV9AkVMq4HOshR3iCAJqFalONr1HYRQGtQsXYvrONmjKj7xae0QnVuaO0/OiOlv3lfqI/1G4jgShhnzkIfzA/SNgAUoR9d0I9g/9wfjtsAiHocWZ8fIckLA1ad/SFB0jg+AGxhgNi9FvpU7TwGVHIl+QdtR9GfaTBCOdlIlA18vIzPqZC8kCjZT+mQnI31HInpkKqRqpGDhtADFpInCuGaUe9hBghrY+Xo7+xQgnn6Xth9EuIFNIPpDDsy6cISvg1tVGkkB4Y+ZlCjU34lBrIx6GCitAyyOzQ8mA7+nvfXixCigV33xf9tYwWg3B+/ICnAsbrKFwY8nae0figwnsUq3M34aCXZ3KphPa12+2SWjYZ8v0Pa1Jx4ikRSv1ga2Y8MIzH6aElAqFlRn/vQApRuB32FXoNSRiTad0hgkxI5E8piLlOStgX6DnfkBL7GhKFsS8iUfhN2FfoNWRh3ItIFsa9iBTCmBeRQhjz4ZRGGG8ilfB6jInEVVs/MTj5xUWwbSbUQNs2sZ2Kq9EilNup60qj3LUReT4mR2u2mIXyrtbx2nbjI/P+HpgTFoAYAQlU0rYJYXt3aASg+/zw8HBlkKWFuW5UkSbhsnH4RHxIKmtG8Lx2O5PJ1DhxkKqUW+hGk2gUyoJxhniE6Ivq3W0pAXQPVZ8ibHJ6qrl6JImmGppnecwn3XK7kBnEJOS4zlEUiUZh2zzLI4UQrv94GyPkOnMRJBqFyzghHKa0qfvsQk6KYF90bqUb93pZ72fz5Y+3DT6EsFqOtlC+bh1pXjSUtCq3tWTMsQm5VrSF/L6lkW7k1KsWM7jUjq3CXCFyRPOMb9hpLCtfb7TUvlWsYYUrVqG0Gm2hgbjfG2c61erxCRaYqS2J1o4YvQnDuvJeFtSV9zbfm+7hSTGD9ykpVq3ChagL1d1T/09PWLeOLdZYW2kchKbpfZMgrJ2K8RbyPKGEmRMp5kL40mURYyckFzHTjLkQrpPGmhMx3kIe/kRqp0Ux3kKlihlnY+2EE6MuhIYgiPxL25LbTMysSFEWQvjq8evs3Wu9nL15+4MdCdsvM47IWvG42q9j9c+RE4JXr29ms5pQzVtkHX9S94aG2JrquxVRqlZz7yN2Og5SW6rPJLz2BtkdlbTXN797qeS7zXX7YqdWq2VOTk7monTzBgDgPNsHmoTX3qBO2TRmP9hJpA7lRyESzafUe/c1n0V47S/EARa3YL1dh2He/Q26W2ruq9l6kL059FmFZ7giDoW41Zwq5PmwgClw/lf1+hWaEYcQXntFEMrPpzEpqBuv0EabvjCLikX4liA0n6zazpFhWLdIK8KzW0hgNmsW/sm5mcrbzsLQnjQBXWvj1HPmRshjgdpnAaFNGVhg9pYLofFDOIxQDunzVHAfX0QXwhIeOPw8J6TBBnRx3dAy1jgKzUfjGGEUi3hGKZSBA1D/TC6sngjSVEQHIfxQdMqq9p2hPbgHtvAN9YxCCD/mxwzJ54tF5R/617owtOUpuDGDLeMZSQhLRybg2LTaMi/G8nYhXwpvdQpupO3LtsFwc+YkhHBzzAzUel8RIQzzOQYAUnvnWw9mZlTUayvy7q2zM5QQ8ptlsy9/oQkv8nZhyE+3DW/zAfAtopaPrUJlR/jRUr+xsaI+hBYRwohshQX4mCyEGx+KeatvLF/ThYd5uzC8jmiKAO/esscoVMq3auepmkNdOI0QRuSRKaH0LSJd/TrhehnpUzQZXVhDCGFEHijadVyZwPUjjE/l6N+AGEvD2yVaglxkDoRww8FnLGINNZaGN+ebIqCAg506/9HJZ+iJ06gZPyqDKRLYE9qmdxSxOH1xMV1ErdqULEdAiNsmCDLkV4m+HilvqrNJGIHjbzD76dMsKn+D6+QCIsGREgJwf1HPw59/1r/4+4eRfBETgu7lYlrL4rdq4/yk/YtfRgSahaEuagDozuq+AVAjPhyRFyEhAHuzi0bgJ22IWfQGtAoBMv7zurNpo08R/qoJL70BLUJQL6Pi72226kdOZp5F6AloERZazQlbpqqnPgoV36XNZ26lnoAWIcdxUxWrsMk1/LuBUfXZeL0MgJ8Xf2Eo/E20EyvqHUadgj+9EqTuY3zp9GUP+OuDf4w6TdiF8H3/Dg0TsTK4hao+TIGdEewh2qehoX7+fLn4T49A42nivxqDO1AmKjYgJw2TqzJ6EMWpgH2i4vc2ypiE8J4GNBArtjvfuX6bZQF0LKAWj53QKNxoGAwTlUpF+TOBBHLiCgMhuEHhS3tuowbhsemGvuaUOk0gfeptRl3vQEILZVZCTQj/bb0B3CmSZyElkEEJB0J9lKHKsddWCnCTIPsS9oXw95YboOe7/SgrmH7IoIR94T1XFeQ6k96EYJYOmPY62Q+FJVc+ruPxMRtlmqADMmmkPeFv1gdpHJuo5PmZRUpfOs2ihKrwvUR2aRE7np8epu2EbEZSVfh7jt7XWimseQVSt1FGwrF3tBNhVWotMVh1g0vqRvofJsA8uQ9WG51WQ1wp11k8we+ihGwGmjH0ytPYMnPlgrqEYbQxpO+FaY97+0GwS88h8HiS7UkUPZCJcILYRptsT6HcNFIWwisisMX4MWHq5QwbIRnI/HkTFyMpCyHJx2QjaBG6KKH3AwziMMrlmL9UohukcIrYRpmcVpjiaqDxKqyQp3rWw0ywQvIo48djbQEKKRZrnMTa51boZeGdJ48yXMOHd9eMKLyqTDVFlyEDOebDzIjCqymqy3UfyY+XSNEdAxuFFc4fnpIOe59bIdWAP3o8n4l6F141/QSKvjwB7Ur4vZ8+LgI1/K/PQC4XstB3INfw4wVS9EL/gf50RGrhH/4DlWbq8dMJL0K/B5l+/HifBKXwf4EAlTmf9QafWkixamYSH17lRicMpo1yfmzxKYVBAZWxhnkzpRIGVkI/3qlIJQzMp3RE5ntgGmFQA6ka9u9UpBH+ERzQh9e3gm52BpMh3c2NPZ6FPhy2YZ9pzmYfBN5IfRGe4x9Nz84EPJL69B4whyL2iEF2Q39Wpnv4h+97RNt7gOMmVIZTh3aaDW5N2k9zjb1QqSL+/QLZmYeBApVlmy9HGeD8wU1MsotBDjT+vShafb/ADXT2XNygxSKiL8A+Ep1uwMLqgh890SlBC7ncasDErqt7eVmkVQ70L2sBddc11J8EaeRGWtNKTfVvpAnqmT3gfsJfG6ZbKEujGTunC6tz1tQ93g2G/qUtub/CJS0LR3WQKo/WysWqZE/reG5Uo4qZLNh+aXNlcYQS6B/7VhvS0Vqd/nZZchrHIx0aK7q5dxNThoiDX5r3raF0nKqzHKtEyf1JDgD1d1+m7A8Asrqk47VyR29o3n9nbtd1im/CzMMLR1u/SUdAb/ar5aa7By0QV+HuTBVMXtl8GGGzezraxXXMQ3+96bGOru6bAnNf7D608EUBgNXWKGW0nJ8BsOCtY4or1Ise5f+FKCBa2HtqBUwujWK0LqbBXMfThqVFO56CbgUNtAulwa0uYK2wkHM9WtiOecHkqRcj7UEAqH+ZwkVq5fS0ctzRcPxSNhtzC5yUc5NO03pFABQWRFc/w5jWC7oSpgr4TJoDLB0JdCfdBfH7VSbh0UPbSqnj5XvxK2aXP4P485IkSZIkSZIkSZIkSZIkSZIkSZIk8Tv/B3bBREdOWYS3AAAAAElFTkSuQmCC";
+
+    return pictureBase64;
+'Word.Range#insertTextBox:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a text box at the beginning of the selection.
+      const range: Word.Range = context.document.getSelection();
+      const insertShapeOptions: Word.InsertShapeOptions = {
+        top: 0,
+        left: 0,
+        height: 100,
+        width: 100
+      };
+
+      const newTextBox: Word.Shape = range.insertTextBox("placeholder text", insertShapeOptions);
+      await context.sync();
+
+      console.log("Inserted a text box at the beginning of the current selection.");
+    });
 'Word.Range#footnotes:member':
   - >-
     // Link to full sample:
@@ -24254,6 +26707,147 @@
         shading.texture = Word.ShadingTextureType.darkTrellis;
 
         console.log("Updated shading.");
+      }
+    });
+'Word.Shape:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Sets the properties of the first text box.
+      const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.textBox])
+        .getFirst();
+      firstShapeWithTextBox.top = 115;
+      firstShapeWithTextBox.left = 0;
+      firstShapeWithTextBox.width = 50;
+      firstShapeWithTextBox.height = 50;
+      await context.sync();
+
+      console.log("The first text box's properties were updated:", firstShapeWithTextBox);
+    });
+'Word.Shape#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Deletes the first text box.
+      context.document.body.shapes
+        .getByTypes([Word.ShapeType.textBox])
+        .getFirst()
+        .delete();
+      await context.sync();
+
+      console.log("The first text box in document was deleted.");
+    });
+'Word.Shape#type:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets text boxes in main document.
+      const shapes: Word.ShapeCollection = context.document.body.shapes;
+      shapes.load();
+      await context.sync();
+
+      if (shapes.items.length > 0) {
+        shapes.items.forEach(function(shape, index) {
+          if (shape.type === Word.ShapeType.textBox) {
+            console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+          }
+        });
+      } else {
+        console.log("No shapes found in main document.");
+      }
+    });
+'Word.ShapeCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets text boxes in main document.
+      const shapes: Word.ShapeCollection = context.document.body.shapes;
+      shapes.load();
+      await context.sync();
+
+      if (shapes.items.length > 0) {
+        shapes.items.forEach(function(shape, index) {
+          if (shape.type === Word.ShapeType.textBox) {
+            console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+          }
+        });
+      } else {
+        console.log("No shapes found in main document.");
+      }
+    });
+'Word.ShapeCollection#getByTypes:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Sets the properties of the first text box.
+      const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.textBox])
+        .getFirst();
+      firstShapeWithTextBox.top = 115;
+      firstShapeWithTextBox.left = 0;
+      firstShapeWithTextBox.width = 50;
+      firstShapeWithTextBox.height = 50;
+      await context.sync();
+
+      console.log("The first text box's properties were updated:", firstShapeWithTextBox);
+    });
+'Word.ShapeCollection#getFirst:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a content control into the first paragraph in the first text box.
+      const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.textBox])
+        .getFirst();
+      firstShapeWithTextBox.load("type/body");
+      await context.sync();
+
+      const firstParagraphInTextBox: Word.Paragraph = firstShapeWithTextBox.body.paragraphs.getFirst();
+      const newControl: Word.ContentControl = firstParagraphInTextBox.insertContentControl();
+      newControl.load();
+      await context.sync();
+
+      console.log("New content control properties:", newControl);
+    });
+'Word.ShapeType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets text boxes in main document.
+      const shapes: Word.ShapeCollection = context.document.body.shapes;
+      shapes.load();
+      await context.sync();
+
+      if (shapes.items.length > 0) {
+        shapes.items.forEach(function(shape, index) {
+          if (shape.type === Word.ShapeType.textBox) {
+            console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+          }
+        });
+      } else {
+        console.log("No shapes found in main document.");
       }
     });
 'Word.Style:class':
@@ -25343,4 +27937,95 @@
       await context.sync();
 
       console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+    });
+'Word.Window:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the first paragraph of each page.
+      console.log("Getting first paragraph of each page...");
+
+      // Get the active window.
+      const activeWindow: Word.Window = context.document.activeWindow;
+      activeWindow.load();
+
+      // Get the active pane.
+      const activePane: Word.Pane = activeWindow.activePane;
+      activePane.load();
+
+      // Get all pages.
+      const pages: Word.PageCollection = activePane.pages;
+      pages.load();
+
+      await context.sync();
+
+      // Get page index and paragraphs of each page.
+      const pagesIndexes = [];
+      const pagesNumberOfParagraphs = [];
+      const pagesFirstParagraphText = [];
+      for (let i = 0; i < pages.items.length; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+
+        const paragraphs = page.getRange().paragraphs;
+        paragraphs.load('items/length');
+        pagesNumberOfParagraphs.push(paragraphs);
+
+        const firstParagraph = paragraphs.getFirst();
+        firstParagraph.load('text');
+        pagesFirstParagraphText.push(firstParagraph);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Page index: ${pagesIndexes[i].index}`);
+        console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
+        console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+      }
+    });
+'Word.Window#activePane:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the pages enclosing the viewport.
+
+      // Get the active window.
+      const activeWindow: Word.Window = context.document.activeWindow;
+      activeWindow.load();
+
+      // Get the active pane.
+      const activePane: Word.Pane = activeWindow.activePane;
+      activePane.load();
+
+      // Get pages enclosing the viewport.
+      const pages: Word.PageCollection = activePane.pagesEnclosingViewport;
+      pages.load();
+
+      await context.sync();
+
+      // Log the number of pages.
+      const pageCount = pages.items.length;
+      console.log(`Number of pages enclosing the viewport: ${pageCount}`);
+
+      // Log index info of these pages.
+      const pagesIndexes = [];
+      for (let i = 0; i < pageCount; i++) {
+        const page = pages.items[i];
+        page.load('index');
+        pagesIndexes.push(page);
+      }
+
+      await context.sync();
+
+      for (let i = 0; i < pagesIndexes.length; i++) {
+        console.log(`Page index: ${pagesIndexes[i].index}`);
+      }
     });

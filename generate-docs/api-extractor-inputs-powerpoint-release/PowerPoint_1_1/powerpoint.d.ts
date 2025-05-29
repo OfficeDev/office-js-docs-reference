@@ -37,6 +37,7 @@ export declare namespace PowerPoint {
         
         
         
+        
         readonly title: string;
         
         
@@ -71,6 +72,29 @@ export declare namespace PowerPoint {
          */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -160,6 +184,20 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
+        export interface TableCellUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
+        export interface TableCellCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableCellData[];
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -222,6 +260,10 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface for updating data on the `BindingCollection` object, for use in `bindingCollection.set({ ... })`. */
+        export interface BindingCollectionUpdateData {
+            items?: PowerPoint.Interfaces.BindingData[];
+        }
         /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             
@@ -272,6 +314,11 @@ export declare namespace PowerPoint {
         export interface CustomXmlPartCollectionData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
+        /** An interface describing the data returned by calling `placeholderFormat.toJSON()`. */
+        export interface PlaceholderFormatData {
+            
+            
+        }
         /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
         export interface HyperlinkData {
             
@@ -290,8 +337,32 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             
+           
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableCell.toJSON()`. */
+        export interface TableCellData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
+        export interface TableCellCollectionData {
+            items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling `table.toJSON()`. */
+        export interface TableData {
             
             
             
@@ -302,6 +373,7 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
         export interface SlideLayoutData {
+            
             
             
         }
@@ -326,10 +398,15 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
             
+            
         }
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
+        export interface ShapeGroupData {
+            
         }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
@@ -374,6 +451,17 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+        }
+        /** An interface describing the data returned by calling `binding.toJSON()`. */
+        export interface BindingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `bindingCollection.toJSON()`. */
+        export interface BindingCollectionData {
+            items?: PowerPoint.Interfaces.BindingData[];
         }
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
@@ -451,6 +539,13 @@ export declare namespace PowerPoint {
         
         
         
+        
+        
+        
+        
+        
+        
+        
     }
 }
 export declare namespace PowerPoint {
@@ -482,7 +577,7 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be prepopulated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *

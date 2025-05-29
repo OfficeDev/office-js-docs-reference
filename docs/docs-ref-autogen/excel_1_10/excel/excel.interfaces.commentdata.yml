@@ -1,20 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.CommentData
-uid: 'excel!Excel.Interfaces.CommentData:interface'
+uid: excel!Excel.Interfaces.CommentData:interface
 package: excel!
 fullName: Excel.Interfaces.CommentData
-summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `comment.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: authorEmail
-    uid: 'excel!Excel.Interfaces.CommentData#authorEmail:member'
+    uid: excel!Excel.Interfaces.CommentData#authorEmail:member
     package: excel!
     fullName: authorEmail
     summary: Gets the email of the comment's author.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +29,15 @@ properties:
       return:
         type: string
   - name: authorName
-    uid: 'excel!Excel.Interfaces.CommentData#authorName:member'
+    uid: excel!Excel.Interfaces.CommentData#authorName:member
     package: excel!
     fullName: authorName
     summary: Gets the name of the comment's author.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +45,15 @@ properties:
       return:
         type: string
   - name: content
-    uid: 'excel!Excel.Interfaces.CommentData#content:member'
+    uid: excel!Excel.Interfaces.CommentData#content:member
     package: excel!
     fullName: content
     summary: The comment's content. The string is plain text.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,13 +61,17 @@ properties:
       return:
         type: string
   - name: creationDate
-    uid: 'excel!Excel.Interfaces.CommentData#creationDate:member'
+    uid: excel!Excel.Interfaces.CommentData#creationDate:member
     package: excel!
     fullName: creationDate
     summary: >-
-      Gets the creation time of the comment. Returns `null` if the comment was converted from a note, since the comment
-      does not have a creation date.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Gets the creation time of the comment. Returns `null` if the comment was
+      converted from a note, since the comment does not have a creation date.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +79,15 @@ properties:
       return:
         type: Date
   - name: id
-    uid: 'excel!Excel.Interfaces.CommentData#id:member'
+    uid: excel!Excel.Interfaces.CommentData#id:member
     package: excel!
     fullName: id
     summary: Specifies the comment identifier.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,14 +95,18 @@ properties:
       return:
         type: string
   - name: replies
-    uid: 'excel!Excel.Interfaces.CommentData#replies:member'
+    uid: excel!Excel.Interfaces.CommentData#replies:member
     package: excel!
     fullName: replies
     summary: Represents a collection of reply objects associated with the comment.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'replies?: Excel.Interfaces.CommentReplyData[];'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.CommentReplyData:interface" />[]'
+        type: <xref uid="excel!Excel.Interfaces.CommentReplyData:interface" />[]

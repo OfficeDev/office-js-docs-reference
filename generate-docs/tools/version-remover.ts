@@ -44,6 +44,15 @@ while (indexOfApiSetTag >= 0) {
 
 /* Add necessary custom logic here*/
 
+if (process.argv[3] === "ExcelApi 1.19") {
+    console.log("Address CardLayoutTwoColumnSection reference for when removing ExcelApi 1.19");
+    wholeDts = wholeDts.replace(/type CardLayoutSection = CardLayoutListSection \| CardLayoutTableSection \| CardLayoutTwoColumnSection;/g, "type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;");
+    console.log("Address EntityCompactLayoutIcons reference for when removing ExcelApi 1.19");
+    wholeDts = wholeDts.replace(/icon\?: string \| EntityCompactLayoutIcons;/g, "icon?: string;");
+    console.log("Address EntityCompactLayoutIcons reference for when removing ExcelApi 1.19");
+    wholeDts = wholeDts.replace(/type CellValue = \(ArrayCellValue \| BooleanCellValue \| DoubleCellValue \| EntityCellValue \| EmptyCellValue \| ErrorCellValue \| FormattedNumberCellValue \| FunctionCellValue \| LinkedEntityCellValue \| ReferenceCellValue \| StringCellValue \| ValueTypeNotAvailableCellValue \| WebImageCellValue\) \& CellValueExtraProperties;/g, "type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;");
+}
+
 if (process.argv[3] === "ExcelApi 1.11") {
     console.log("Address CommentRichContent reference for when removing ExcelApi 1.11");
     wholeDts = wholeDts.replace(/content: CommentRichContent \| string,/g, "content: string,");

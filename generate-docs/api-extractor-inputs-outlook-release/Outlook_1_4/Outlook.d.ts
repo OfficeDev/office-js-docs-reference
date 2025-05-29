@@ -111,8 +111,6 @@ export declare namespace Office {
             InformationalMessage = "informationalMessage",
             /**
              * The notification message is an error message.
-             * 
-             * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
              */
             ErrorMessage = "errorMessage",
                     }
@@ -475,7 +473,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**:
+         *
+         * - To learn about the different types of notification messages you can implement, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/notifications | Create notifications for your Outlook add-in}.
+         * 
+         * - This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         notificationMessages: NotificationMessages;
@@ -1379,7 +1382,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**:
+         *
+         * - To learn about the different types of notification messages you can implement, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/notifications | Create notifications for your Outlook add-in}.
+         *
+         * - This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         notificationMessages: NotificationMessages;
@@ -2969,8 +2977,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -3162,8 +3171,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -3294,8 +3304,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -3345,8 +3356,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -3596,6 +3608,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: To learn about the different types of notification messages you can implement, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/notifications | Create notifications for your Outlook add-in}.
          */
         notificationMessages: NotificationMessages;
         
@@ -4411,6 +4426,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: To learn about the different types of notification messages you can implement, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/notifications | Create notifications for your Outlook add-in}.
          */
         notificationMessages: NotificationMessages;
         
@@ -4728,6 +4746,9 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: To learn about the different types of notification messages you can implement, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/notifications | Create notifications for your Outlook add-in}.
      */
     export interface NotificationMessageDetails {
         /**
@@ -4754,13 +4775,27 @@ export declare namespace Office {
          */
         type: MailboxEnums.ItemNotificationMessageType | string;
         /**
-         * A reference to an icon that's defined in the manifest. It appears in the infobar area.
-         * It's applicable if the type is `InformationalMessage`, and is required if the type is `InsightMessage`.
-         * Specifying this parameter for an unsupported type results in an exception.
+         * A reference to a custom icon that's defined in the manifest. The icon appears before the notification message in the infobar area.
+         * An icon must be specified for `InformationalMessage` and `InsightMessage` notifications.
          *
          * @remarks
          *
-         * **Important**: Currently, the custom icon is only displayed in classic Outlook on Windows.
+         * **Important**:
+         *
+         * - Currently, the custom icon is only displayed in classic Outlook on Windows.
+         *
+         * - A custom icon is only supported in `InformationalMessage` and `InsightMessage` notifications. Specifying an icon for other notification
+         * types results in an exception.
+         *
+         * - If your add-in uses the {@link https://learn.microsoft.com/office/dev/add-ins/develop/add-in-manifests | add-in only manifest}, the icon
+         * must be specified in the {@link https://learn.microsoft.com/javascript/api/manifest/images | Images} element of the
+         * {@link https://learn.microsoft.com/javascript/api/manifest/resources | Resources} section of the manifest.
+         *
+         * - If your add-in uses the {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | unified manifest for Microsoft 365},
+         * you can't currently customize the icon of an `InformationalMessage` or `InsightMessage` notification. The notification uses the first image specified in the
+         * {@link https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-icon | "icons"} array of the first
+         * {@link https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-custom-group-controls-item | extensions.ribbons.tabs.groups.controls} object
+         * of the manifest. Although this is the case, you must still specify a string in the `icon` property (for example, "icon-16").
          */
         icon?: string;
         /**
@@ -4787,6 +4822,9 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: To learn about the different types of notification messages you can implement, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/notifications | Create notifications for your Outlook add-in}.
      */
     export interface NotificationMessages {
         /**

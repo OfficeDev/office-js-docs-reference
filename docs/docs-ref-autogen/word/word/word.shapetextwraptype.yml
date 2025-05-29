@@ -1,68 +1,87 @@
 ### YamlMime:TSEnum
 name: Word.ShapeTextWrapType
-uid: 'word!Word.ShapeTextWrapType:enum'
+uid: word!Word.ShapeTextWrapType:enum
 package: word!
 fullName: Word.ShapeTextWrapType
 summary: >-
-  Specifies how to wrap document text around a shape. For more details, see the "Text Wrapping" tab of [Layout
-  options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!-- -->.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+  Specifies how to wrap document text around a shape. For more details, see the
+  "Text Wrapping" tab of [Layout
+  options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!--
+  -->.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: behind
-    uid: 'word!Word.ShapeTextWrapType.behind:member'
+    uid: word!Word.ShapeTextWrapType.behind:member
     package: word!
-    summary: |-
+    summary: >-
       Places shape behind text.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Behind"'
   - name: front
-    uid: 'word!Word.ShapeTextWrapType.front:member'
+    uid: word!Word.ShapeTextWrapType.front:member
     package: word!
-    summary: |-
+    summary: >-
       Places shape in front of text.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Front"'
   - name: inline
-    uid: 'word!Word.ShapeTextWrapType.inline:member'
+    uid: word!Word.ShapeTextWrapType.inline:member
     package: word!
-    summary: |-
+    summary: >-
       Places the shape in line with text.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inline"'
   - name: square
-    uid: 'word!Word.ShapeTextWrapType.square:member'
+    uid: word!Word.ShapeTextWrapType.square:member
     package: word!
-    summary: |-
+    summary: >-
       Wraps text squarely around the shape.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Square"'
   - name: through
-    uid: 'word!Word.ShapeTextWrapType.through:member'
+    uid: word!Word.ShapeTextWrapType.through:member
     package: word!
-    summary: |-
+    summary: >-
       Wraps text around and through the shape.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Through"'
   - name: tight
-    uid: 'word!Word.ShapeTextWrapType.tight:member'
+    uid: word!Word.ShapeTextWrapType.tight:member
     package: word!
-    summary: |-
+    summary: >-
       Wraps text close to the shape.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tight"'
   - name: topBottom
-    uid: 'word!Word.ShapeTextWrapType.topBottom:member'
+    uid: word!Word.ShapeTextWrapType.topBottom:member
     package: word!
-    summary: |-
+    summary: >-
       Places text above and below the shape.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TopBottom"'

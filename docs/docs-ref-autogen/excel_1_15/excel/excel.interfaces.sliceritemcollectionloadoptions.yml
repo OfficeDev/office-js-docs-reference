@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.SlicerItemCollectionLoadOptions
-uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions:interface'
+uid: excel!Excel.Interfaces.SlicerItemCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.SlicerItemCollectionLoadOptions
 summary: Represents a collection of all the slicer item objects in the slicer.
-remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +29,17 @@ properties:
       return:
         type: boolean
   - name: hasData
-    uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#hasData:member'
+    uid: excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#hasData:member
     package: excel!
     fullName: hasData
-    summary: 'For EACH ITEM in the collection: Value is `true` if the slicer item has data.'
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Value is `true` if the slicer item has
+      data.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,14 +47,19 @@ properties:
       return:
         type: boolean
   - name: isSelected
-    uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#isSelected:member'
+    uid: excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#isSelected:member
     package: excel!
     fullName: isSelected
     summary: >-
-      For EACH ITEM in the collection: Value is `true` if the slicer item is selected. Setting this value will not clear
-      the selected state of other slicer items. By default, if the slicer item is the only one selected, when it is
-      deselected, all items will be selected.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      For EACH ITEM in the collection: Value is `true` if the slicer item is
+      selected. Setting this value will not clear the selected state of other
+      slicer items. By default, if the slicer item is the only one selected,
+      when it is deselected, all items will be selected.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,11 +67,17 @@ properties:
       return:
         type: boolean
   - name: key
-    uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#key:member'
+    uid: excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#key:member
     package: excel!
     fullName: key
-    summary: 'For EACH ITEM in the collection: Represents the unique value representing the slicer item.'
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Represents the unique value representing
+      the slicer item.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +85,17 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#name:member'
+    uid: excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#name:member
     package: excel!
     fullName: name
-    summary: 'For EACH ITEM in the collection: Represents the title displayed in the Excel UI.'
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      For EACH ITEM in the collection: Represents the title displayed in the
+      Excel UI.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -50,7 +50,8 @@ pushd tools
 mkdir tool-inputs
 npm install
 npm run build
-node version-remover ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts "ExcelApiOnline 1.1" ../api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts
+node version-remover ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts "ExcelApiOnline 1.1" ../api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts
+node version-remover ../api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts "ExcelApi 1.19" ../api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts "ExcelApi 1.18" ../api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts "ExcelApi 1.17" ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts "ExcelApi 1.16" ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts
@@ -100,6 +101,7 @@ node version-remover ../api-extractor-inputs-outlook-release/outlook_1_2/outlook
 node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts Outlook 1.1
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts "Mailbox 1.1" ./tool-inputs/outlook-base.d.ts
 
+node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts "PowerPointApi 1.8" ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts "PowerPointApi 1.7" ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts "PowerPointApi 1.6" ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts "PowerPointApi 1.5" ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts
@@ -144,7 +146,8 @@ node version-remover ../api-extractor-inputs-word-release/word_1_1/word.d.ts "Wo
 
 
 node whats-new excel ../api-extractor-inputs-excel/excel.d.ts ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../../docs/includes/excel-preview
-node whats-new excel ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../../docs/includes/excel-online
+node whats-new excel ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../../docs/includes/excel-online
+node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../../docs/includes/excel-1_19
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts ../../docs/includes/excel-1_18
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts ../../docs/includes/excel-1_17
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts ../../docs/includes/excel-1_16
@@ -181,7 +184,8 @@ node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_3/outlo
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ../../docs/includes/outlook-1_2
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts ../../docs/includes/outlook-1_1
 
-node whats-new powerpoint ../api-extractor-inputs-powerpoint/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../../docs/includes/powerpoint-preview
+node whats-new powerpoint ../api-extractor-inputs-powerpoint/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts ../../docs/includes/powerpoint-preview
+node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../../docs/includes/powerpoint-1_8
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../../docs/includes/powerpoint-1_7
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../../docs/includes/powerpoint-1_6
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../../docs/includes/powerpoint-1_5
@@ -231,6 +235,12 @@ fi
 if [ ! -d "json/excel_online" ]; then
     echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release/excel_online
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/excel_1_19" ]; then
+    echo Running API Extractor for Excel 1.19.
+    pushd api-extractor-inputs-excel-release/excel_1_19
     ../../node_modules/.bin/api-extractor run
     popd
 fi
@@ -451,6 +461,12 @@ if [ ! -d "json/powerpoint" ]; then
     echo Running API Extractor for PowerPoint preview.
     pushd api-extractor-inputs-powerpoint
     ../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/powerpoint_1_8" ]; then
+    echo Running API Extractor for PowerPoint 1.8.
+    pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_8
+    ../../node_modules/.bin/api-extractor run
     popd
 fi
 if [ ! -d "json/powerpoint_1_7" ]; then
@@ -683,6 +699,9 @@ fi
 if [ ! -d "yaml/excel_1_18" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_18 --output-folder ./yaml/excel_1_18 --office 2>/dev/null
 fi
+if [ ! -d "yaml/excel_1_19" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_19 --output-folder ./yaml/excel_1_19 --office 2>/dev/null
+fi
 if [ ! -d "yaml/excel_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_online --output-folder ./yaml/excel_online --office 2>/dev/null
 fi
@@ -760,6 +779,9 @@ if [ ! -d "yaml/powerpoint_1_6" ]; then
 fi
 if [ ! -d "yaml/powerpoint_1_7" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_7 --output-folder ./yaml/powerpoint_1_7 --office 2>/dev/null
+fi
+if [ ! -d "yaml/powerpoint_1_8" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_8 --output-folder ./yaml/powerpoint_1_8 --office 2>/dev/null
 fi
 if [ ! -d "yaml/visio" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/visio --output-folder ./yaml/visio --office

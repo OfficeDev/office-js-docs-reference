@@ -22,6 +22,7 @@
 ||[select()](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-select-member(1))|Selects the specified range areas in the Excel UI.|
 |[RangeTextRun](/javascript/api/excel/excel.rangetextrun)|[font](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-font-member)|The font attributes (such as font name, font size, and color) applied to this text run.|
 ||[text](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-text-member)|The text of this text run.|
+|[SettableCellProperties](/javascript/api/excel/excel.settablecellproperties)|[textRuns](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-textruns-member)|Represents the `textRuns` property.|
 |[UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol)|[type](/javascript/api/excel/excel.unknowncellcontrol#excel-excel-unknowncellcontrol-type-member)||
 |[Workbook](/javascript/api/excel/excel.workbook)|[notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)|Returns a collection of all the notes objects in the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)|Returns a collection of all the notes objects in the worksheet.|

@@ -1,7 +1,7 @@
 ---
 title: Custom Functions requirement sets
 description: Details about the Custom Functions requirement sets for Excel JavaScript API.
-ms.date: 04/15/2024
+ms.date: 05/15/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 
 | Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| CustomFunctionsRuntime 1.5 | Supported | Version 2504 (Build 18730.20088) | Not supported | Not supported | Version 16.96 (25042933) | Not supported |
 | CustomFunctionsRuntime 1.4 | Supported | Version 2208 (Build 15601.20148) | Not supported | Not supported | Version 16.64 (22081401) | Not supported |
 | CustomFunctionsRuntime 1.3 | Supported | Version 2008 (Build 13127.20296) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 14332.20011) | Version 16.40 (20081000) | Not supported |
 | CustomFunctionsRuntime 1.2 | Supported | Version 1909 (Build 11929.20934) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 14332.20011) | Version 16.34 (20020900) | Not supported |
@@ -19,6 +20,7 @@ ms.localizationpriority: medium
 
 ## Requirement set history
 
+- Requirement set 1.5 adds additional support for custom functions and data types, particularly [linked entities](/office/dev/add-ins/excel/excel-data-types-linked-entity-cell-values), and [formula value preview mode](/office/dev/add-ins/excel/custom-functions-formula-value-preview) support with the [`CustomFunctions.Invocation`](/javascript/api/custom-functions-runtime/customfunctions.invocation) interface.
 - Requirement set 1.4 includes [custom functions integration with data types](/office/dev/add-ins/excel/custom-functions-data-types-concepts) and the [`allowCustomDataForDataTypeAny` JSON manifest property](/office/dev/add-ins/excel/custom-functions-json#allowcustomdatafordatatypeany) to support the data types integration.
 - Requirement set 1.3 adds [XLL streaming](/office/dev/add-ins/excel/make-custom-functions-compatible-with-xll-udf#custom-function-behavior-for-xll-compatible-functions) support and new `ErrorCode` options to the [CustomFunctions.Error](/javascript/api/custom-functions-runtime/customfunctions.error) object.
 - Requirement set 1.2 adds the `CustomFunctions.Error` object to support error handling.

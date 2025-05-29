@@ -1,22 +1,60 @@
 ### YamlMime:TSType
 name: Office.File
-uid: 'office!Office.File:interface'
+uid: office!Office.File:interface
 package: office!
 fullName: Office.File
 summary: Represents the document file associated with an Office Add-in.
 remarks: >-
-  Access the File object with the AsyncResult.value property in the callback function passed to the
-  Document.getFileAsync method.
+  Access the File object with the AsyncResult.value property in the callback
+  function passed to the Document.getFileAsync method.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
+
+
+  function getCurrentFile() {
+      const sliceSize = 4096; /*Bytes*/
+
+      // This snippet specifies a small slice size to show how the getFileAsync() method uses slices.
+      Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: sliceSize }, function(result) {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              return onError(result.error);
+          }
+
+          // result.value is the File object.
+          const file: Office.File = result.value
+          getFileContents(file, onSuccess, onError); /* getFileContents is defined in the Office.File.getSliceAsync example. */
+      });
+
+      function onError(error: Office.Error): void {
+          console.error(error);
+      }
+
+      function onSuccess(byteArray: number[]) {
+          let base64string = base64js.fromByteArray(byteArray);
+          // Do something with the file contents.
+      }
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: size
-    uid: 'office!Office.File#size:member'
+    uid: office!Office.File#size:member
     package: office!
     fullName: size
     summary: Gets the document file size in bytes.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +62,12 @@ properties:
       return:
         type: number
   - name: sliceCount
-    uid: 'office!Office.File#sliceCount:member'
+    uid: office!Office.File#sliceCount:member
     package: office!
     fullName: sliceCount
     summary: Gets the number of slices into which the file is divided.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +76,7 @@ properties:
         type: number
 methods:
   - name: closeAsync(callback)
-    uid: 'office!Office.File#closeAsync:member(1)'
+    uid: office!Office.File#closeAsync:member(1)
     package: office!
     fullName: closeAsync(callback)
     summary: Closes the document file.
@@ -46,20 +85,26 @@ methods:
       [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
-      No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail.
-      Use the File.closeAsync method to close the file when you are finished working with it.
+      No more than two documents are allowed to be in memory; otherwise the
+      Document.getFileAsync operation will fail. Use the File.closeAsync method
+      to close the file when you are finished working with it.
 
 
-      In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to
-      return the following information.
+      In the callback function passed to the closeAsync method, you can use the
+      properties of the AsyncResult object to return the following information.
 
 
-      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
+      <td><code>AsyncResult.value</code></td> <td>Always returns
+      <code>undefined</code> because there's no object or data to retrieve.</td>
+      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
+      success or failure of the operation.</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
+      provides error information if the operation failed.</td> </tr> <tr>
+      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
+      type that's returned in the AsyncResult object without being altered.</td>
+      </tr> </table>
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,31 +112,40 @@ methods:
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
-          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. A function that is invoked when the callback returns,
+            whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
+            -->.
+          type: >-
+            (result: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'getSliceAsync(sliceIndex, callback)'
-    uid: 'office!Office.File#getSliceAsync:member(1)'
+  - name: getSliceAsync(sliceIndex, callback)
+    uid: office!Office.File#getSliceAsync:member(1)
     package: office!
-    fullName: 'getSliceAsync(sliceIndex, callback)'
+    fullName: getSliceAsync(sliceIndex, callback)
     summary: Returns the specified slice.
     remarks: >-
       **Requirement set**:
       [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
-      In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object
-      to return the following information.
+      In the callback function passed to the getSliceAsync method, you can use
+      the properties of the AsyncResult object to return the following
+      information.
 
 
-      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Access the
-      Slice object.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
-      operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
-      information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an
-      item of any type that's returned in the AsyncResult object without being altered.</td> </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
+      <td><code>AsyncResult.value</code></td> <td>Access the Slice object.</td>
+      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
+      success or failure of the operation.</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
+      provides error information if the operation failed.</td> </tr> <tr>
+      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
+      type that's returned in the AsyncResult object without being altered.</td>
+      </tr> </table>
 
 
       #### Examples
@@ -99,70 +153,79 @@ methods:
 
       ```TypeScript
 
-      // This sample shows how to get all the slices of a file. 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
 
-      // The asynchronous operation returns a Promise so it can be awaited.
 
-      private getAllSlices(file: any): Promise<any> {
-          const self = this;
-          let isError = false;
+      function getFileContents(
+          file: Office.File,
+          onSuccess: (byteArray: number[]) => void,
+          onError: (error: Office.Error) => void
+      ) {
+          let expectedSliceCount = file.sliceCount;
+          let fileSlices: Array<Array<number>> = [];
 
-          return new Promise(async (resolve, reject) => {
-              let documentFileData = [];
-              for (let sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
-                  const sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
-                      file.getSliceAsync(sliceIndex, (asyncResult) => {
-                          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                              documentFileData = documentFileData.concat(asyncResult.value.data);
-                              sliceResolve({
-                                  IsSuccess: true,
-                                  Data: documentFileData
-                              });
-                          } else {
-                              file.closeAsync();
-                              sliceReject({
-                                  IsSuccess: false,
-                                  ErrorMessage: `Error in reading the slice: ${sliceIndex} of the document`
-                              });
-                          }
+          console.log("Current file size in bytes: " + file.size);
+          console.log("Number of file slices: " + file.sliceCount);
+
+          getFileContentsHelper();
+
+          /**
+           * A helper function to retrieve all slices of the file recursively.
+           * It fetches one slice at a time and stores it in the `fileSlices` array.
+           * The recursion terminates when all slices have been retrieved.
+           */
+          function getFileContentsHelper() {
+              file.getSliceAsync(fileSlices.length, function(result) {
+                  if (result.status === Office.AsyncResultStatus.Failed) {
+                      file.closeAsync();
+                      return onError(result.error);
+                  }
+
+                  // Got one slice, store it in a temporary array.
+                  fileSlices.push(result.value.data);
+
+                  if (fileSlices.length == expectedSliceCount) {
+                      console.log("All slices have been received.");
+                      file.closeAsync();
+
+                      let array = [];
+                      fileSlices.forEach((slice) => {
+                          array = array.concat(slice);
                       });
-                  });
-                  await sliceReadPromise.catch((error) => {
-                      isError = true;
-                  });
-              }
 
-              if (isError || !documentFileData.length) {
-                  reject('Error while reading document. Please try it again.');
-                  return;
-              }
-
-              file.closeAsync();
-
-              resolve({
-                  IsSuccess: true,
-                  Data: documentFileData
+                      onSuccess(array); /* onSuccess is defined in the Office.File example. */
+                  } else {
+                      getFileContentsHelper();
+                  }
               });
-          });
+          }
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult<Office.Slice>) => void): void;'
+      content: >-
+        getSliceAsync(sliceIndex: number, callback?: (result:
+        AsyncResult<Office.Slice>) => void): void;
       parameters:
         - id: sliceIndex
-          description: Specifies the zero-based index of the slice to be retrieved. Required.
+          description: >-
+            Specifies the zero-based index of the slice to be retrieved.
+            Required.
           type: number
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
-            is the [Office.Slice](xref:office!Office.Slice:interface) object.
+            Optional. A function that is invoked when the callback returns,
+            whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
+            -->. The `value` property of the result is the
+            [Office.Slice](xref:office!Office.Slice:interface) object.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.Slice:interface"
-            />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="office!Office.Slice:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

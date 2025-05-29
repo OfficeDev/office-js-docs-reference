@@ -1,10 +1,13 @@
 ### YamlMime:TSType
 name: Word.Interfaces.AnnotationData
-uid: 'word!Word.Interfaces.AnnotationData:interface'
+uid: word!Word.Interfaces.AnnotationData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationData
-summary: An interface describing the data returned by calling `annotation.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `annotation.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

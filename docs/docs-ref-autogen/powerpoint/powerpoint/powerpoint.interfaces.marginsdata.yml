@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.MarginsData
+uid: powerpoint!PowerPoint.Interfaces.MarginsData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.MarginsData
+summary: >-
+  An interface describing the data returned by calling `margins.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottom
+    uid: powerpoint!PowerPoint.Interfaces.MarginsData#bottom:member
+    package: powerpoint!
+    fullName: bottom
+    summary: Specifies the bottom margin in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bottom?: number | undefined;'
+      return:
+        type: number | undefined
+  - name: left
+    uid: powerpoint!PowerPoint.Interfaces.MarginsData#left:member
+    package: powerpoint!
+    fullName: left
+    summary: Specifies the left margin in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: number | undefined;'
+      return:
+        type: number | undefined
+  - name: right
+    uid: powerpoint!PowerPoint.Interfaces.MarginsData#right:member
+    package: powerpoint!
+    fullName: right
+    summary: Specifies the right margin in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'right?: number | undefined;'
+      return:
+        type: number | undefined
+  - name: top
+    uid: powerpoint!PowerPoint.Interfaces.MarginsData#top:member
+    package: powerpoint!
+    fullName: top
+    summary: Specifies the top margin in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: number | undefined;'
+      return:
+        type: number | undefined

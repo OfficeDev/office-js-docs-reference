@@ -98,20 +98,20 @@ export declare namespace Excel {
         referencedValues?: ReferencedValue[];
     }
     /**
-    * The Base64-encoded type and data of an image.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * The Base64-encoded type and data of an image.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface Base64EncodedImage {
         /**
-        * The file type of the Base64-encoded image.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The file type of the Base64-encoded image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: Base64EncodingType | "BMP" | "GIF" | "ICO" | "JPG" | "PNG" | "TIF" | "WEBP";
         /**
          * The Base64-encoded string.
@@ -247,36 +247,32 @@ export declare namespace Excel {
         firstRowIsHeader?: boolean;
     }
     /**
-     * Represents the compact layout properties for a value.
+     * The basic compact layout properties.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface BasicCompactLayout {
         /**
          * Specifies the name of the icon which is used to open the card.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         icon?: string | EntityCompactLayoutIcons;
     }
     /**
-     * Represents a card layout used for the boolean, double, and string basic types.
+     * Represents a card layout used for the Boolean, double, and string basic types.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface BasicCardLayout extends CardLayoutStandardProperties {
         /**
          * Represents the type of this layout.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layout?: EntityCardLayoutType.entity | "Entity";
     }
@@ -284,25 +280,22 @@ export declare namespace Excel {
      * Represents layout information for various views of the value and its properties.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface BasicViewLayouts {
         /**
          * Represents the layout of this value and its properties in card view.
-         * If the `BasicCardLayout` object doesn't have a layout property, it's assumed to be "Entity".
+         * If the `BasicCardLayout` object does not have a layout property, it is assumed to be "Entity".
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         card?: BasicCardLayout;
         /**
          * Represents the layout used when there is limited space to represent the value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         compact?: BasicCompactLayout;
     }
@@ -568,7 +561,7 @@ export declare namespace Excel {
         errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense" | "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" | "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" | "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" | "EnvironmentExceedsQuota" | "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" | "EnvironmentExceedsTakerQuotaMonthly" | "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" | "EnvironmentExceedsComputeResourceCountDaily" | "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" | "PythonFunction" | "EnvironmentConnectionExceedQuota" | "UnsupportedEnvironment" | "UnsupportedInCalculationMode";
     }
     /**
-     * Represents the value of a cell containing a boolean.
+     * Represents the value of a cell containing a Boolean.
      *
      * @remarks
      * [Api set: ExcelApi 1.16]
@@ -599,8 +592,7 @@ export declare namespace Excel {
          * Represents additional properties of this boolean value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         properties?: {
             [key: string]: EntityPropertyType;
@@ -609,8 +601,7 @@ export declare namespace Excel {
          * Represents layout information for views of this boolean value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layouts?: BasicViewLayouts;
         /**
@@ -618,16 +609,14 @@ export declare namespace Excel {
          * This information can be used for branding in card view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         provider?: CellValueProviderAttributes;
         /**
          * Represents the cell values which are referenced within `BooleanCellValue.properties`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         referencedValues?: ReferencedValue[];
     }
@@ -1011,16 +1000,14 @@ export declare namespace Excel {
      * Represents a section of a card that is arranged as two columns in card view.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface CardLayoutTwoColumnSection extends CardLayoutSectionStandardProperties {
         /**
          * Represents the type of layout for this section.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layout: "TwoColumn";
     }
@@ -1078,16 +1065,14 @@ export declare namespace Excel {
      * Types of entity card layouts.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     enum EntityCardLayoutType {
         /**
          * Entity layout of the entity card.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         entity = "Entity",
         /**
@@ -1118,16 +1103,14 @@ export declare namespace Excel {
      * Represents the types of the `FunctionCellValue` object.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     enum FunctionCellValueType {
         /**
          * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview  | Create custom functions in Excel}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         javaScriptReference = "JavaScriptReference"
     }
@@ -1135,16 +1118,14 @@ export declare namespace Excel {
      * Represents a reference to a JavaScript custom function.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface JavaScriptCustomFunctionReferenceCellValue {
         /**
          * Represents the type of this cell value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         type: CellValueType.function | "Function";
         /**
@@ -1153,40 +1134,35 @@ export declare namespace Excel {
          * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         basicValue?: "#VALUE!" | string;
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         basicType?: RangeValueType.error | "Error";
         /**
          * Represents the type of `FunctionCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         functionType: FunctionCellValueType.javaScriptReference | "JavaScriptReference";
         /**
          * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace  | Manifest reference: Namespace}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         namespace: string;
         /**
          * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id  | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         id: string;
     }
@@ -1194,8 +1170,7 @@ export declare namespace Excel {
      * Represents a cell value which can be evaluated as a function.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export type FunctionCellValue = JavaScriptCustomFunctionReferenceCellValue;
     /**
@@ -5160,24 +5135,21 @@ export declare namespace Excel {
          * Represents a `DoubleCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         double = "Double",
         /**
          * Represents a `StringCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         string = "String",
         /**
          * Represents a `BooleanCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         boolean = "Boolean"
     }
@@ -5256,8 +5228,7 @@ export declare namespace Excel {
          * Represents a `FunctionCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         function = "Function",
         /**
@@ -5872,16 +5843,14 @@ export declare namespace Excel {
          * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         numberFormat?: string;
         /**
          * Represents additional properties of this double value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         properties?: {
             [key: string]: EntityPropertyType;
@@ -5890,8 +5859,7 @@ export declare namespace Excel {
          * Represents layout information for views of this double value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layouts?: BasicViewLayouts;
         /**
@@ -5899,16 +5867,14 @@ export declare namespace Excel {
          * This information can be used for branding in card view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         provider?: CellValueProviderAttributes;
         /**
          * Represents the cell values which are referenced within `DoubleCellValue.properties`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         referencedValues?: ReferencedValue[];
     }
@@ -6001,11 +5967,11 @@ export declare namespace Excel {
          */
         text?: string;
         /**
-        * Represents the properties of this entity and their metadata.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the properties of this entity and their metadata.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties?: {
             [key: string]: EntityPropertyType;
         };
@@ -6314,36 +6280,36 @@ export declare namespace Excel {
          */
         preview?: CellValue;
         /**
-        * Represents the runtime language of this external code service.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the runtime language of this external code service.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         language: "Python";
         /**
-        * Represents the full type name of this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the full type name of this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_type: string;
         /**
-        * Represents the short type name of this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the short type name of this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_typeName: string;
         /**
-        * Represents the output of str() function when used on this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the output of the `str()` function when used on this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_str: string;
         /**
          * Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.
@@ -6447,12 +6413,16 @@ export declare namespace Excel {
      * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
      * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
      *
+     * @deprecated As of [Api set: ExcelApi 1.19], use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
+     *
      * @remarks
      * [Api set: ExcelApi 1.16]
      */
     export interface FormattedNumberCellValue {
         /**
          * Represents the type of this cell value.
+         *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6461,12 +6431,16 @@ export declare namespace Excel {
         /**
          * Represents the value that would be returned by `Range.values` for a cell with this value.
          *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         *
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
         basicValue: number;
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6477,6 +6451,8 @@ export declare namespace Excel {
          * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
          * Number format strings must conform to Excel guidelines.
          * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+         *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6525,24 +6501,21 @@ export declare namespace Excel {
      * Represents a request to `@linkedEntityLoadService` custom function to load `LinkedEntityCellValue` objects.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityLoadServiceRequest {
         /**
          * Represents the domain specific to the service used to create the `LinkedEntityCellValue` objects.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         domainId: string;
         /**
          * Represents the entity IDs and cultures of the `LinkedEntityCellValue` objects to load.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         entities: LinkedEntityIdCulture[];
     }
@@ -6550,16 +6523,14 @@ export declare namespace Excel {
      * Represents the result of a request to `@linkedEntityLoadService` custom function to load `LinkedEntityCellValue` objects.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityLoadServiceResult {
         /**
          * Represents the loaded `LinkedEntityCellValue` objects. The loaded objects must be returned in the same order as the `entities` property of `LinkedEntityLoadServiceRequest`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         entities: LinkedEntityCellValue[];
     }
@@ -6603,24 +6574,21 @@ export declare namespace Excel {
      * Represents the entity ID and culture for a `LinkedEntityCellValue` object.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityIdCulture {
         /**
          * Represents the identifier specific to a service used to create the `LinkedEntityCellValue` object.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         entityId: string;
         /**
          * Represents the language culture used to create the `LinkedEntityCellValue` object.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         culture: string;
     }
@@ -6669,11 +6637,11 @@ export declare namespace Excel {
          */
         text?: string;
         /**
-        * Represents the properties of this linked entity and their metadata.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the properties of this linked entity and their metadata.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties?: {
             [key: string]: EntityPropertyType;
         };
@@ -7318,8 +7286,7 @@ export declare namespace Excel {
          * Represents additional properties of this string value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         properties?: {
             [key: string]: EntityPropertyType;
@@ -7328,8 +7295,7 @@ export declare namespace Excel {
          * Represents layout information for views of this string value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layouts?: BasicViewLayouts;
         /**
@@ -7337,16 +7303,14 @@ export declare namespace Excel {
          * This information can be used for branding in card view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         provider?: CellValueProviderAttributes;
         /**
          * Represents the cell values which are referenced within `StringCellValue.properties`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         referencedValues?: ReferencedValue[];
     }
@@ -8513,7 +8477,8 @@ export declare namespace Excel {
         /**
         * Specifies whether to load on the `textRuns` property.
         *
-        * [Api set: ExcelApi 1.18]  
+        * @remarks
+        * [Api set: ExcelApi 1.18]
         */
         textRuns?: boolean;
     }
@@ -8716,7 +8681,8 @@ export declare namespace Excel {
         /**
         * Represents the `textRuns` property.
         *
-        * [Api set: ExcelApi 1.18]  
+        * @remarks
+        * [Api set: ExcelApi 1.18]
         */
         textRuns?: RangeTextRun[];
     }
@@ -9169,8 +9135,9 @@ export declare namespace Excel {
         /**
          * Determines whether Excel will delay the batch request until the user exits cell edit mode.
          *
-         * When false, if the user is in cell edit when the batch request is processed by the host, the batch will automatically fail.
-         * When true, the batch request will be executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
+         * When `false`, if the user is in cell edit when the batch request is processed by the host, the batch automatically fails.
+         * When `true`, the batch request is executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode then the batch request is delayed until the user exits cell edit mode.
+         * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
     }
@@ -12672,14 +12639,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.18]
          */
-        checkbox = "Checkbox",
-        /**
-         * Type representing a dropdown control.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dropdown = "Dropdown"
+        checkbox = "Checkbox"
     }
     /**
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
@@ -14223,8 +14183,7 @@ export declare namespace Excel {
          * Returns a collection of linked entity data domains that are available in the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly linkedEntityDataDomains: Excel.LinkedEntityDataDomainCollection;
         /**
@@ -14491,8 +14450,7 @@ export declare namespace Excel {
          * Gets the active shape in the workbook. If there is no active shape, an `ItemNotFound` error is thrown.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getActiveShape(): Excel.Shape;
         /**
@@ -14500,8 +14458,7 @@ export declare namespace Excel {
                     For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getActiveShapeOrNullObject(): Excel.Shape;
         /**
@@ -14889,8 +14846,7 @@ export declare namespace Excel {
          * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         showDataTypeIcons: boolean;
         /**
@@ -15075,7 +15031,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
+         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned. The `address` has a limit of 8192 characters. If the address exceeds the character limit, this method returns an `InvalidArgument` error.
          */
         getRange(address?: string): Excel.Range;
         /**
@@ -16525,11 +16481,10 @@ export declare namespace Excel {
         getDirectPrecedents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.
-         * Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
+                    Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param cellPropertiesLoadOptions - An object that represents which cell properties to load.
          * @returns A 2D array where each item represents the requested display properties of the corresponding cell.
@@ -17008,6 +16963,26 @@ export declare namespace Excel {
          * @param groupOptionString - Specifies whether to show the details of grouped rows or grouped columns.
          */
         showGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;
+        /**
+         * Sets the marshaling mode of the Python in Excel formula =PY.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param marshalMode - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
+         */
+        togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode): void;
+        /**
+         * Sets the marshaling mode of the Python in Excel formula =PY.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param marshalModeString - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
+         */
+        togglePythonMarshalMode(marshalModeString?: "PythonObject" | "ExcelValue"): void;
         /**
          * Ungroups columns and rows for an outline.
          *
@@ -22955,8 +22930,7 @@ export declare namespace Excel {
          * Gets an object that represents the leader lines of the data labels.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly leaderLines: Excel.ChartLeaderLines;
         /**
@@ -22967,12 +22941,11 @@ export declare namespace Excel {
          */
         autoText: boolean;
         /**
-         * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+         * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                     Value is `null` if the data labels are not geometric shapes.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
         /**
@@ -23015,8 +22988,7 @@ export declare namespace Excel {
          * Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly showAsStickyCallout: boolean;
         /**
@@ -23034,11 +23006,10 @@ export declare namespace Excel {
          */
         showCategoryName: boolean;
         /**
-         * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+         * Specifies a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         showLeaderLines: boolean;
         /**
@@ -23150,12 +23121,11 @@ export declare namespace Excel {
          */
         formula: string;
         /**
-         * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+         * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                     Value is `null` if the data label is not a geometric shape.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
         /**
@@ -23212,8 +23182,7 @@ export declare namespace Excel {
          * Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly showAsStickyCallout: boolean;
         /**
@@ -23306,8 +23275,7 @@ export declare namespace Excel {
          * Returns a substring of the data label. The line break character '\n' counts as one character.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param start - The zero-based starting character position of a substring in the data label.
          * @param length - Optional. The number of characters in the substring. If length is omitted, all the characters from start to the end of the data label are retrieved.
@@ -23317,16 +23285,14 @@ export declare namespace Excel {
          * Returns the tail anchor of the data label which is shown as a sticky callout.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getTailAnchor(): Excel.ChartDataLabelAnchor;
         /**
          * Sets the height of the data label in points.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param height - The height of the data label in points.
          */
@@ -23335,8 +23301,7 @@ export declare namespace Excel {
          * Sets the width of the data label in points.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param width - The width of the data label in points.
          */
@@ -23437,8 +23402,7 @@ export declare namespace Excel {
      * Represents the chart data label anchor.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class ChartDataLabelAnchor extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -23447,16 +23411,14 @@ export declare namespace Excel {
          * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         left: number;
         /**
          * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         top: number;
         /**
@@ -25603,8 +25565,7 @@ export declare namespace Excel {
      * Gets an object that represents the formatting of chart leader lines.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class ChartLeaderLines extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -25613,8 +25574,7 @@ export declare namespace Excel {
          * Represents the formatting of leader lines of data labels in a series.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly format: Excel.ChartLeaderLinesFormat;
         /**
@@ -25656,8 +25616,7 @@ export declare namespace Excel {
      * Encapsulates the format properties for leader lines.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class ChartLeaderLinesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -25666,8 +25625,7 @@ export declare namespace Excel {
          * Gets an object that represents the line formatting of chart leader lines.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly line: Excel.ChartLineFormat;
         /**
@@ -27002,6 +26960,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.12]
          */
         allowMultipleFiltersPerField: boolean;
+        /**
+         * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoRefresh: boolean;
         /**
          * Specifies if the PivotTable allows values in the data body to be edited by the user.
          *
@@ -35402,41 +35368,37 @@ export declare namespace Excel {
     }
     /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
-     * A data domain is linked to a data provider that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
-     * A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
+                A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
+                A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class LinkedEntityDataDomain extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
          * Gets the name of the data provider for the linked entity data domain.
-         * This name can change based on the information from the data provider.
+                    This name can change based on the information provided by the data provider.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly dataProvider: string;
         /**
          * Gets the ID of the linked entity data domain defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly id: string;
         /**
          * Gets the date and time (in the local time zone) since the workbook was opened and the `LinkedEntityCellValue` objects of this linked entity data domain were last refreshed.
-         * Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
+                    Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly lastRefreshed: Date;
         /**
@@ -35445,74 +35407,66 @@ export declare namespace Excel {
          * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly loadFunctionId: string;
         /**
          * Gets the name of the linked entity data domain.
-         * This name can change based on the information from the data provider.
+                    This name can change based on the information provided by the data provider.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly name: string;
         /**
          * Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically.
-         * The refresh interval only applies if the `refreshMode` is set to "Periodic".
+                    The refresh interval only applies if the `refreshMode` is set to "Periodic".
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly periodicRefreshInterval: number;
         /**
-         * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
-         * If the refresh mode being set isn't supported by this linked entity data domain, then the current refresh mode is not changed.
-         * If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
+         * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+                    If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
+                    If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
          * Gets the service ID of the linked entity data domain.
-         * This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins.
-         * This ID never changes across user sessions.
+                    This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins.
+                    This ID never changes across user sessions.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly serviceId: number;
         /**
          * Gets all the refresh modes supported by the linked entity data domain.
-         * This array can change based on the information provided by the data provider.
+                    This array can change based on the information provided by the data provider.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly supportedRefreshModes: Excel.LinkedEntityDataDomainRefreshMode[];
         /**
          * Deletes this object from the `LinkedEntityDataDomainCollection`.
-         * Once the linked entity data domain is deleted, new `LinkedEntityCellValue` objects of this linked entity data domain can't be created and existing `LinkedEntityCellValue` objects can't be refreshed.
-         * An Office Add-in can only delete linked entity data domains that it created.
+                    Once the linked entity data domain is deleted, new `LinkedEntityCellValue` objects of this linked entity data domain can't be created and existing `LinkedEntityCellValue` objects can't be refreshed.
+                    An Office Add-in can only delete linked entity data domains that it created.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         delete(): void;
         /**
          * Refreshes all `LinkedEntityCellValue` objects of this linked entity data domain.
-         * The refresh request can fail if the data provider is busy or temporarily inaccessible.
+                    The refresh request can fail if the data provider is busy or temporarily inaccessible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         refresh(): void;
         /**
@@ -35546,51 +35500,45 @@ export declare namespace Excel {
      * Provides information about the identity of the linked entity data domain that was just added to the workbook.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityDataDomainAddedEventArgs {
         /**
          * Gets the ID of the linked entity data domain that was just added to the workbook. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         id?: string;
         /**
          * Gets the service ID of the linked entity data domain that was just added to the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         serviceId: number;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         type: "LinkedEntityDataDomainLinkedEntityDataDomainAdded";
     }
     /**
      * Represents a collection of `LinkedEntityDataDomain` objects.
-     * The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
+                The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class LinkedEntityDataDomainCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -35599,11 +35547,10 @@ export declare namespace Excel {
         readonly items: Excel.LinkedEntityDataDomain[];
         /**
          * Adds a linked entity data domain object defined by the Office Add-in to the collection.
-         * Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
+                    Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param options - Options that are used to create the linked entity data domain to be added.
          */
@@ -35612,16 +35559,14 @@ export declare namespace Excel {
          * Gets the number of linked entity data domains in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a linked entity data domain by its `id`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
@@ -35631,8 +35576,7 @@ export declare namespace Excel {
          * Gets a linked entity data domain by its index in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param index - The index of the linked entity data domain in the collection.
          * @returns The linked entity data domain at the given index.
@@ -35642,8 +35586,7 @@ export declare namespace Excel {
          * Gets a linked entity data domain by its `name`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `name`. If there are multiple linked entity data domains with the same `name`, the one defined by this Office Add-in will be returned.
@@ -35651,12 +35594,11 @@ export declare namespace Excel {
         getItemByName(name: string): Excel.LinkedEntityDataDomain;
         /**
          * Gets a linked entity data domain by its `name`.
-         * If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `name`. If there are multiple linked entity data domains with the same `name`, the one defined by this Office Add-in will be returned.
@@ -35664,12 +35606,11 @@ export declare namespace Excel {
         getItemByNameOrNullObject(name: string): Excel.LinkedEntityDataDomain;
         /**
          * Gets a linked entity data domain by its `id`.
-         * If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
@@ -35677,11 +35618,10 @@ export declare namespace Excel {
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
         /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
-         * The refresh request can fail if the data providers are busy or temporarily inaccessible.
+                    The refresh request can fail if the data providers are busy or temporarily inaccessible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         refreshAll(): void;
         /**
@@ -35706,30 +35646,27 @@ export declare namespace Excel {
          * Occurs when a new linked entity data domain is added to the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.19]
          *
          * @eventproperty
-         * @beta
          */
         readonly onLinkedEntityDataDomainAdded: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainAddedEventArgs>;
         /**
          * Occurs when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.19]
          *
          * @eventproperty
-         * @beta
          */
         readonly onRefreshCompleted: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshCompletedEventArgs>;
         /**
          * Occurs when the `refreshMode` of a linked entity data domain is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.19]
          *
          * @eventproperty
-         * @beta
          */
         readonly onRefreshModeChanged: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs>;
         /**
@@ -35742,65 +35679,58 @@ export declare namespace Excel {
      * Represents options that are used to create the `LinkedEntityDataDomain` object being added to the `LinkedEntityDataDomainCollection`.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityDataDomainCreateOptions {
         /**
-         * Gets or sets the name of the data provider for the linked entity data domain.
+         * Specifies the name of the data provider for the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         dataProvider: string;
         /**
-         * Gets or sets the ID of the linked entity data domain.
-         * This ID must be unique across all linked entity data domains defined by this Office Add-in.
+         * Specifies the ID of the linked entity data domain.
+                    This ID must be unique across all linked entity data domains defined by this Office Add-in.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         id: string;
         /**
-         * Gets or sets the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.
+         * Specifies the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.
          * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         loadFunctionId: string;
         /**
-         * Gets or sets the name of the linked entity data domain.
-         * This name must be unique across all linked entity data domains defined by this Office Add-in.
+         * Specifies the name of the linked entity data domain.
+                    This name must be unique across all linked entity data domains defined by this Office Add-in.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         name: string;
         /**
-         * Gets or sets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The minimum valid value is 300.
-         * This property is required if the `supportedRefreshModes` array contains the value "Periodic".
-         * This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
+         * Specifies the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The minimum valid value is 300.
+                    This property is required if the `supportedRefreshModes` array contains the value "Periodic".
+                    This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         periodicRefreshInterval?: number;
         /**
-         * Gets or sets all the refresh modes supported by the linked entity data domain.
-         * The default value is `["Manual"]`, which is always supported even if not specified.
-         * The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open.
-         * If the refresh mode wasn't saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain.
-         * If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
+         * Specifies all the refresh modes supported by the linked entity data domain.
+                    The default value is `["Manual"]`, which is always supported even if not specified.
+                    The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open.
+                    If the refresh mode was not saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain.
+                    If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
     }
@@ -35808,57 +35738,50 @@ export declare namespace Excel {
      * Provides information about the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityDataDomainRefreshCompletedEventArgs {
         /**
          * Gets any errors encountered during the request to refresh `LinkedEntityCellValue` objects of the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         errors?: string[];
         /**
          * Gets the ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         id?: string;
         /**
          * Returns `true` if the `LinkedEntityCellValue` objects of the linked entity data domain were refreshed successfully, otherwise returns `false`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         refreshed: boolean;
         /**
          * Gets the service ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         serviceId: number;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         type: "LinkedEntityDataDomainRefreshCompleted";
     }
@@ -35866,43 +35789,35 @@ export declare namespace Excel {
      * Represents the refresh mode setting for the `LinkedEntityCellValue` objects of a `LinkedEntityDataDomain`.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     enum LinkedEntityDataDomainRefreshMode {
         /**
          * Refresh mode is unknown or unsupported.
-         * 
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         unknown = "Unknown",
         /**
-         * Manual refresh by the user. Refresh is not triggered automatically.
-         * 
+         * Manual refresh by the user.
+                    Refresh is not triggered automatically.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         manual = "Manual",
         /**
          * Refresh on workbook load, applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
-         * Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
-         * 
+                    Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         onLoad = "OnLoad",
         /**
          * Refresh automatically based on the frequency, in seconds, specified by `periodicRefreshInterval`.
-         * For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened.
-         * For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
-         * 
+                    For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened.
+                    For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         periodic = "Periodic"
     }
@@ -35910,49 +35825,43 @@ export declare namespace Excel {
      * Provides information about the linked entity data domain whose refresh mode was changed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface LinkedEntityDataDomainRefreshModeChangedEventArgs {
         /**
          * Gets the ID of the linked entity data domain whose refresh mode was changed. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         id?: string;
         /**
          * Gets the new refresh mode of the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
          * Gets the service ID of the linked entity data domain whose refresh mode was changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         serviceId: number;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         type: "LinkedEntityDataDomainRefreshModeChanged";
     }
@@ -37564,6 +37473,29 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         power = "Power"
+    }
+    /**
+     * Specifies what an =PY formula returns, such as an Excel value or a Python object.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PythonMarshalMode {
+        /**
+         * Specifies that the result of an =PY formula should be a reference to an object in the Python service.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pythonObject = "PythonObject",
+        /**
+         * Specifies that the result of an =PY formula should be an Excel value.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        excelValue = "ExcelValue"
     }
     /**
      * Specifies where in the z-order a shape should be moved relative to other shapes.
@@ -40283,22 +40215,19 @@ export declare namespace Excel {
         /**
          * LinkedEntityDataDomainAdded represents the type of event registered when a new linked entity data domain is added to the workbook.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         linkedEntityDataDomainLinkedEntityDataDomainAdded = "LinkedEntityDataDomainLinkedEntityDataDomainAdded",
         /**
          * LinkedEntityDataDomainRefreshCompleted represents the type of event registered when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         linkedEntityDataDomainRefreshCompleted = "LinkedEntityDataDomainRefreshCompleted",
         /**
          * LinkedEntityDataDomainRefreshModeChanged represents the type of event registered when the `refreshMode` of a linked entity data domain is changed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         linkedEntityDataDomainRefreshModeChanged = "LinkedEntityDataDomainRefreshModeChanged",
         /**
@@ -43182,7 +43111,9 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Note;
         /**
-         * Gets a note by its cell address. If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+         * Gets a note by its cell address.
+                    If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -47400,8 +47331,7 @@ export declare namespace Excel {
              * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -49127,8 +49057,7 @@ export declare namespace Excel {
             * Gets an object that represents the leader lines of the data labels.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesUpdateData;
             /**
@@ -49139,12 +49068,11 @@ export declare namespace Excel {
              */
             autoText?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data labels are not geometric shapes.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
@@ -49198,11 +49126,10 @@ export declare namespace Excel {
              */
             showCategoryName?: boolean;
             /**
-             * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+             * Specifies a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showLeaderLines?: boolean;
             /**
@@ -49273,12 +49200,11 @@ export declare namespace Excel {
              */
             formula?: string;
             /**
-             * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data label is not a geometric shape.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
@@ -49419,16 +49345,14 @@ export declare namespace Excel {
              * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             left?: number;
             /**
              * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             top?: number;
         }
@@ -50262,8 +50186,7 @@ export declare namespace Excel {
             * Represents the formatting of leader lines of data labels in a series.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             format?: Excel.Interfaces.ChartLeaderLinesFormatUpdateData;
         }
@@ -50273,8 +50196,7 @@ export declare namespace Excel {
             * Gets an object that represents the line formatting of chart leader lines.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
@@ -50303,6 +50225,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -52226,13 +52156,12 @@ export declare namespace Excel {
         /** An interface for updating data on the `LinkedEntityDataDomain` object, for use in `linkedEntityDataDomain.set({ ... })`. */
         export interface LinkedEntityDataDomainUpdateData {
             /**
-             * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         }
@@ -53039,8 +52968,7 @@ export declare namespace Excel {
              * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -55420,8 +55348,7 @@ export declare namespace Excel {
             * Gets an object that represents the leader lines of the data labels.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesData;
             /**
@@ -55432,12 +55359,11 @@ export declare namespace Excel {
              */
             autoText?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data labels are not geometric shapes.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
@@ -55480,8 +55406,7 @@ export declare namespace Excel {
              * Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -55499,11 +55424,10 @@ export declare namespace Excel {
              */
             showCategoryName?: boolean;
             /**
-             * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+             * Specifies a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showLeaderLines?: boolean;
             /**
@@ -55574,12 +55498,11 @@ export declare namespace Excel {
              */
             formula?: string;
             /**
-             * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data label is not a geometric shape.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
@@ -55636,8 +55559,7 @@ export declare namespace Excel {
              * Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -55742,16 +55664,14 @@ export declare namespace Excel {
              * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             left?: number;
             /**
              * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             top?: number;
         }
@@ -56655,8 +56575,7 @@ export declare namespace Excel {
             * Represents the formatting of leader lines of data labels in a series.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             format?: Excel.Interfaces.ChartLeaderLinesFormatData;
         }
@@ -56666,8 +56585,7 @@ export declare namespace Excel {
             * Gets an object that represents the line formatting of chart leader lines.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
@@ -56900,6 +56818,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -59353,11 +59279,10 @@ export declare namespace Excel {
         export interface LinkedEntityDataDomainData {
             /**
              * Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             dataProvider?: string;
             /**
@@ -59365,8 +59290,7 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             id?: string;
             /**
@@ -59374,8 +59298,7 @@ export declare namespace Excel {
                         Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             lastRefreshed?: Date;
             /**
@@ -59384,17 +59307,15 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             loadFunctionId?: string;
             /**
              * Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             name?: string;
             /**
@@ -59402,18 +59323,16 @@ export declare namespace Excel {
                         The refresh interval only applies if the `refreshMode` is set to "Periodic".
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             periodicRefreshInterval?: number;
             /**
-             * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
             /**
@@ -59422,8 +59341,7 @@ export declare namespace Excel {
                         This ID never changes across user sessions.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             serviceId?: number;
             /**
@@ -59431,8 +59349,7 @@ export declare namespace Excel {
                         This array can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
         }
@@ -60542,8 +60459,7 @@ export declare namespace Excel {
              * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -60678,8 +60594,7 @@ export declare namespace Excel {
              * For EACH ITEM in the collection: Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -64565,8 +64480,7 @@ export declare namespace Excel {
             * Gets an object that represents the leader lines of the data labels.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesLoadOptions;
             /**
@@ -64577,12 +64491,11 @@ export declare namespace Excel {
              */
             autoText?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data labels are not geometric shapes.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: boolean;
             /**
@@ -64625,8 +64538,7 @@ export declare namespace Excel {
              * Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -64644,11 +64556,10 @@ export declare namespace Excel {
              */
             showCategoryName?: boolean;
             /**
-             * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+             * Specifies a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showLeaderLines?: boolean;
             /**
@@ -64728,12 +64639,11 @@ export declare namespace Excel {
              */
             formula?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data label is not a geometric shape.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: boolean;
             /**
@@ -64790,8 +64700,7 @@ export declare namespace Excel {
              * Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -64903,8 +64812,7 @@ export declare namespace Excel {
          * Represents the chart data label anchor.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface ChartDataLabelAnchorLoadOptions {
             /**
@@ -64915,16 +64823,14 @@ export declare namespace Excel {
              * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             left?: boolean;
             /**
              * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             top?: boolean;
         }
@@ -66170,8 +66076,7 @@ export declare namespace Excel {
          * Gets an object that represents the formatting of chart leader lines.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface ChartLeaderLinesLoadOptions {
             /**
@@ -66182,8 +66087,7 @@ export declare namespace Excel {
             * Represents the formatting of leader lines of data labels in a series.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             format?: Excel.Interfaces.ChartLeaderLinesFormatLoadOptions;
         }
@@ -66191,8 +66095,7 @@ export declare namespace Excel {
          * Encapsulates the format properties for leader lines.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface ChartLeaderLinesFormatLoadOptions {
             /**
@@ -66203,8 +66106,7 @@ export declare namespace Excel {
             * Gets an object that represents the line formatting of chart leader lines.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
@@ -66528,6 +66430,14 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -66595,6 +66505,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -66664,6 +66582,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -71427,8 +71353,7 @@ export declare namespace Excel {
                     A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface LinkedEntityDataDomainLoadOptions {
             /**
@@ -71437,11 +71362,10 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             dataProvider?: boolean;
             /**
@@ -71449,8 +71373,7 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             id?: boolean;
             /**
@@ -71458,8 +71381,7 @@ export declare namespace Excel {
                         Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             lastRefreshed?: boolean;
             /**
@@ -71468,17 +71390,15 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             loadFunctionId?: boolean;
             /**
              * Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             name?: boolean;
             /**
@@ -71486,18 +71406,16 @@ export declare namespace Excel {
                         The refresh interval only applies if the `refreshMode` is set to "Periodic".
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             periodicRefreshInterval?: boolean;
             /**
-             * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             refreshMode?: boolean;
             /**
@@ -71506,8 +71424,7 @@ export declare namespace Excel {
                         This ID never changes across user sessions.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             serviceId?: boolean;
             /**
@@ -71515,8 +71432,7 @@ export declare namespace Excel {
                         This array can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             supportedRefreshModes?: boolean;
         }
@@ -71525,8 +71441,7 @@ export declare namespace Excel {
                     The collection can contain linked entity data domains such as stocks, geography or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface LinkedEntityDataDomainCollectionLoadOptions {
             /**
@@ -71535,11 +71450,10 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             dataProvider?: boolean;
             /**
@@ -71547,8 +71461,7 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             id?: boolean;
             /**
@@ -71556,8 +71469,7 @@ export declare namespace Excel {
                         Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             lastRefreshed?: boolean;
             /**
@@ -71566,17 +71478,15 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             loadFunctionId?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             name?: boolean;
             /**
@@ -71584,18 +71494,16 @@ export declare namespace Excel {
                         The refresh interval only applies if the `refreshMode` is set to "Periodic".
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             periodicRefreshInterval?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * For EACH ITEM in the collection: Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             refreshMode?: boolean;
             /**
@@ -71604,8 +71512,7 @@ export declare namespace Excel {
                         This ID never changes across user sessions.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             serviceId?: boolean;
             /**
@@ -71613,8 +71520,7 @@ export declare namespace Excel {
                         This array can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             supportedRefreshModes?: boolean;
         }

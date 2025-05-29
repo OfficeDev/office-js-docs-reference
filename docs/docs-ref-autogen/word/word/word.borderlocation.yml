@@ -1,11 +1,12 @@
 ### YamlMime:TSEnum
 name: Word.BorderLocation
-uid: 'word!Word.BorderLocation:enum'
+uid: word!Word.BorderLocation:enum
 package: word!
 fullName: Word.BorderLocation
 summary: ''
 remarks: >-
-  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -30,51 +31,70 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: all
-    uid: 'word!Word.BorderLocation.all:member'
+    uid: word!Word.BorderLocation.all:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"All"'
   - name: bottom
-    uid: 'word!Word.BorderLocation.bottom:member'
+    uid: word!Word.BorderLocation.bottom:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
   - name: inside
-    uid: 'word!Word.BorderLocation.inside:member'
+    uid: word!Word.BorderLocation.inside:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inside"'
   - name: insideHorizontal
-    uid: 'word!Word.BorderLocation.insideHorizontal:member'
+    uid: word!Word.BorderLocation.insideHorizontal:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideHorizontal"'
   - name: insideVertical
-    uid: 'word!Word.BorderLocation.insideVertical:member'
+    uid: word!Word.BorderLocation.insideVertical:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideVertical"'
   - name: left
-    uid: 'word!Word.BorderLocation.left:member'
+    uid: word!Word.BorderLocation.left:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: outside
-    uid: 'word!Word.BorderLocation.outside:member'
+    uid: word!Word.BorderLocation.outside:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Outside"'
   - name: right
-    uid: 'word!Word.BorderLocation.right:member'
+    uid: word!Word.BorderLocation.right:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'
   - name: top
-    uid: 'word!Word.BorderLocation.top:member'
+    uid: word!Word.BorderLocation.top:member
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

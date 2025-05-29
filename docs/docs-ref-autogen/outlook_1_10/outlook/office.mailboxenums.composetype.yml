@@ -1,16 +1,18 @@
 ### YamlMime:TSEnum
 name: Office.MailboxEnums.ComposeType
-uid: 'outlook!Office.MailboxEnums.ComposeType:enum'
+uid: outlook!Office.MailboxEnums.ComposeType:enum
 package: outlook!
 fullName: Office.MailboxEnums.ComposeType
 summary: Specifies a message's compose type.
 remarks: >-
-  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
 
 
   #### Examples
@@ -38,21 +40,22 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: Reply
-    uid: 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
+    uid: outlook!Office.MailboxEnums.ComposeType.Reply:member
     package: outlook!
     summary: Reply.
     value: '"reply"'
   - name: NewMail
-    uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
+    uid: outlook!Office.MailboxEnums.ComposeType.NewMail:member
     package: outlook!
     summary: New mail.
     value: '"newMail"'
   - name: Forward
-    uid: 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
+    uid: outlook!Office.MailboxEnums.ComposeType.Forward:member
     package: outlook!
     summary: Forward.
     value: '"forward"'

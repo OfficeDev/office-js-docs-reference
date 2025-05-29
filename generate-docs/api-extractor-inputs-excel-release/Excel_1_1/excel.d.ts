@@ -111,6 +111,17 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     export interface Session {
     }
     /**
@@ -126,8 +137,9 @@ export declare namespace Excel {
         /**
          * Determines whether Excel will delay the batch request until the user exits cell edit mode.
          *
-         * When false, if the user is in cell edit when the batch request is processed by the host, the batch will automatically fail.
-         * When true, the batch request will be executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
+         * When `false`, if the user is in cell edit when the batch request is processed by the host, the batch automatically fails.
+         * When `true`, the batch request is executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode then the batch request is delayed until the user exits cell edit mode.
+         * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
     }
@@ -335,6 +347,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Represents a collection of workbook-scoped named items (named ranges and constants).
          *
@@ -384,6 +397,8 @@ export declare namespace Excel {
         set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Workbook): void;
+        
+        
         
         
         
@@ -502,6 +517,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * The visibility of the worksheet.
          *
@@ -556,7 +572,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
+         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned. The `address` has a limit of 8192 characters. If the address exceeds the character limit, this method returns an `InvalidArgument` error.
          */
         getRange(address?: string): Excel.Range;
         
@@ -915,6 +931,7 @@ export declare namespace Excel {
          * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
+        
         
         
         
@@ -1831,7 +1848,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param values - Optional. A 2D array of unformatted values of the table row.
+         * @param valuesString - Optional. A 2D array of unformatted values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
@@ -3487,6 +3504,8 @@ export declare namespace Excel {
         
         
         
+        
+        
         /**
          * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
          *
@@ -3501,6 +3520,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         separator: string;
+        
         /**
          * Specifies if the data label bubble size is visible.
          *
@@ -3515,6 +3535,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         showCategoryName: boolean;
+        
         /**
          * Specifies if the data label legend key is visible.
          *
@@ -3640,6 +3661,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
     }
+    
     
     
     
@@ -4219,6 +4241,15 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ChartFontData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -5558,6 +5589,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * The visibility of the worksheet.
              *
@@ -6291,6 +6323,8 @@ export declare namespace Excel {
             
             
             
+            
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -6319,6 +6353,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showCategoryName?: boolean;
+            
             /**
              * Specifies if the data label legend key is visible.
              *
@@ -6371,6 +6406,7 @@ export declare namespace Excel {
             
             
             
+            
         }
         /** An interface for updating data on the `ChartDataLabelFormat` object, for use in `chartDataLabelFormat.set({ ... })`. */
         export interface ChartDataLabelFormatUpdateData {
@@ -6382,6 +6418,11 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
+        }
+        /** An interface for updating data on the `ChartDataLabelAnchor` object, for use in `chartDataLabelAnchor.set({ ... })`. */
+        export interface ChartDataLabelAnchorUpdateData {
+            
+            
         }
         /** An interface for updating data on the `ChartDataTable` object, for use in `chartDataTable.set({ ... })`. */
         export interface ChartDataTableUpdateData {
@@ -6687,6 +6728,14 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `ChartPlotAreaFormat` object, for use in `chartPlotAreaFormat.set({ ... })`. */
         export interface ChartPlotAreaFormatUpdateData {
+            
+        }
+        /** An interface for updating data on the `ChartLeaderLines` object, for use in `chartLeaderLines.set({ ... })`. */
+        export interface ChartLeaderLinesUpdateData {
+            
+        }
+        /** An interface for updating data on the `ChartLeaderLinesFormat` object, for use in `chartLeaderLinesFormat.set({ ... })`. */
+        export interface ChartLeaderLinesFormatUpdateData {
             
         }
         /** An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`. */
@@ -7171,6 +7220,14 @@ export declare namespace Excel {
         export interface SlicerItemCollectionUpdateData {
             items?: Excel.Interfaces.SlicerItemData[];
         }
+        /** An interface for updating data on the `LinkedEntityDataDomain` object, for use in `linkedEntityDataDomain.set({ ... })`. */
+        export interface LinkedEntityDataDomainUpdateData {
+            
+        }
+        /** An interface for updating data on the `LinkedEntityDataDomainCollection` object, for use in `linkedEntityDataDomainCollection.set({ ... })`. */
+        export interface LinkedEntityDataDomainCollectionUpdateData {
+            items?: Excel.Interfaces.LinkedEntityDataDomainData[];
+        }
         /** An interface for updating data on the `NamedSheetView` object, for use in `namedSheetView.set({ ... })`. */
         export interface NamedSheetViewUpdateData {
             
@@ -7357,6 +7414,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             position?: number;
+            
             
             
             
@@ -8343,6 +8401,8 @@ export declare namespace Excel {
             
             
             
+            
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -8357,6 +8417,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             separator?: string;
+            
             /**
              * Specifies if the data label bubble size is visible.
              *
@@ -8371,6 +8432,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showCategoryName?: boolean;
+            
             /**
              * Specifies if the data label legend key is visible.
              *
@@ -8425,6 +8487,8 @@ export declare namespace Excel {
             
             
             
+            
+            
         }
         /** An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`. */
         export interface ChartDataLabelFormatData {
@@ -8436,6 +8500,11 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontData;
+        }
+        /** An interface describing the data returned by calling `chartDataLabelAnchor.toJSON()`. */
+        export interface ChartDataLabelAnchorData {
+            
+            
         }
         /** An interface describing the data returned by calling `chartDataTable.toJSON()`. */
         export interface ChartDataTableData {
@@ -8751,6 +8820,14 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `chartPlotAreaFormat.toJSON()`. */
         export interface ChartPlotAreaFormatData {
+            
+        }
+        /** An interface describing the data returned by calling `chartLeaderLines.toJSON()`. */
+        export interface ChartLeaderLinesData {
+            
+        }
+        /** An interface describing the data returned by calling `chartLeaderLinesFormat.toJSON()`. */
+        export interface ChartLeaderLinesFormatData {
             
         }
         /** An interface describing the data returned by calling `tableSort.toJSON()`. */
@@ -9358,6 +9435,22 @@ export declare namespace Excel {
         export interface SlicerItemCollectionData {
             items?: Excel.Interfaces.SlicerItemData[];
         }
+        /** An interface describing the data returned by calling `linkedEntityDataDomain.toJSON()`. */
+        export interface LinkedEntityDataDomainData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `linkedEntityDataDomainCollection.toJSON()`. */
+        export interface LinkedEntityDataDomainCollectionData {
+            items?: Excel.Interfaces.LinkedEntityDataDomainData[];
+        }
         /** An interface describing the data returned by calling `namedSheetView.toJSON()`. */
         export interface NamedSheetViewData {
             
@@ -9520,6 +9613,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * The visibility of the worksheet.
              *
@@ -9578,6 +9672,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             position?: boolean;
+            
             
             
             
@@ -11130,6 +11225,8 @@ export declare namespace Excel {
             
             
             
+            
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -11144,6 +11241,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             separator?: boolean;
+            
             /**
              * Specifies if the data label bubble size is visible.
              *
@@ -11158,6 +11256,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showCategoryName?: boolean;
+            
             /**
              * Specifies if the data label legend key is visible.
              *
@@ -11210,6 +11309,7 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
+        
         
         
         
@@ -11475,6 +11575,10 @@ export declare namespace Excel {
              */
             underline?: boolean;
         }
+        
+        
+        
+        
         
         
         
