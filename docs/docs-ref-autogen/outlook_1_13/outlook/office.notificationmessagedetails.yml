@@ -21,6 +21,12 @@ remarks: >-
   -->**: Compose or Read
 
 
+  **Important**: To learn about the different types of notification messages
+  you can implement, see [Create notifications for your Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
+  -->.
+
+
   #### Examples
 
 
@@ -84,13 +90,42 @@ properties:
     package: outlook!
     fullName: icon
     summary: >-
-      A reference to an icon that's defined in the manifest. It appears in the
-      infobar area. It's applicable if the type is `InformationalMessage`<!--
-      -->, and is required if the type is `InsightMessage`<!-- -->. Specifying
-      this parameter for an unsupported type results in an exception.
+      A reference to a custom icon that's defined in the manifest. The icon
+      appears before the notification message in the infobar area. An icon must
+      be specified for `InformationalMessage` and `InsightMessage`
+      notifications.
     remarks: >-
-      **Important**: Currently, the custom icon is only displayed in classic
-      Outlook on Windows.
+      **Important**:
+
+
+      - Currently, the custom icon is only displayed in classic Outlook on
+      Windows.
+
+
+      - A custom icon is only supported in `InformationalMessage` and
+      `InsightMessage` notifications. Specifying an icon for other notification
+      types results in an exception.
+
+
+      - If your add-in uses the [add-in only
+      manifest](https://learn.microsoft.com/office/dev/add-ins/develop/add-in-manifests)<!--
+      -->, the icon must be specified in the
+      [Images](https://learn.microsoft.com/javascript/api/manifest/images)
+      element of the
+      [Resources](https://learn.microsoft.com/javascript/api/manifest/resources)
+      section of the manifest.
+
+
+      - If your add-in uses the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview)<!--
+      -->, you can't currently customize the icon of an `InformationalMessage`
+      or `InsightMessage` notification. The notification uses the first image
+      specified in the
+      ["icons"](https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-icon)
+      array of the first
+      [extensions.ribbons.tabs.groups.controls](https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-custom-group-controls-item)
+      object of the manifest. Although this is the case, you must still specify
+      a string in the `icon` property (for example, "icon-16").
 
     isPreview: false
     isDeprecated: false

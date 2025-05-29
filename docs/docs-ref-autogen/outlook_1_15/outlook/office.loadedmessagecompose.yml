@@ -419,8 +419,17 @@ properties:
       -->**: Message Compose
 
 
-      **Important**: Only the `getAllAsync` method of the
-      NotificationMessages object is supported.
+      **Important**:
+
+
+      - To learn about the different types of notification messages you can
+      implement, see [Create notifications for your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
+      -->.
+
+
+      - Only the `getAllAsync` method of the NotificationMessages object is
+      supported.
 
     isPreview: false
     isDeprecated: false
