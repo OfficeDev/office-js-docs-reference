@@ -4582,7 +4582,7 @@ export declare namespace PowerPoint {
         /**
          * If provided, specifies properties for each cell in the table.
                     
-                    This should be an 2D array with the same number of rows and columns as the table.
+                    This should be a 2D array with the same number of rows and columns as the table.
                     If a cell doesn't require specific formatting, specify an empty object for that cell.
                     Only the top left cell of a merged are can have properties specified, which will be applied
                     to the entire merged area. For the other cells in the merged area, an empty object should be provided.
