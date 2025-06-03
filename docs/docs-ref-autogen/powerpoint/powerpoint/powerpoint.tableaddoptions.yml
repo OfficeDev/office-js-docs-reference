@@ -246,7 +246,7 @@ properties:
       If provided, specifies properties for each cell in the table.
 
 
-      This should be an 2D array with the same number of rows and columns as the
+      This should be a 2D array with the same number of rows and columns as the
       table. If a cell doesn't require specific formatting, specify an empty
       object for that cell. Only the top left cell of a merged are can have
       properties specified, which will be applied to the entire merged area. For
@@ -407,7 +407,7 @@ properties:
 
 
       To apply specific formatting to individual cells, use
-      specificCellProperties.
+      `specificCellProperties`<!-- -->.
 
 
       If both uniformCellProperties and specificCellProperties are undefined,
@@ -417,7 +417,7 @@ properties:
 
 
       To provide a plain appearance for the table, set this property to an empty
-      object and don't specify specificCellProperties.
+      object and don't specify `specificCellProperties`<!-- -->.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

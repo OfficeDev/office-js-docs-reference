@@ -23,6 +23,8 @@ items:
                 uid: outlook!Office.MailboxEnums.AttachmentStatus:enum
               - name: AttachmentType
                 uid: outlook!Office.MailboxEnums.AttachmentType:enum
+              - name: BodyMode
+                uid: outlook!Office.MailboxEnums.BodyMode:enum
               - name: CategoryColor
                 uid: outlook!Office.MailboxEnums.CategoryColor:enum
               - name: ComposeType

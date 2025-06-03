@@ -6,8 +6,8 @@ fullName: PowerPoint.TextVerticalAlignment
 summary: >-
   Represents the vertical alignment of a
   [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) in a
-  [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->. If one the
-  centered options are selected, the contents of the `TextFrame` will be
+  [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->. If one of
+  the centered options is selected, the contents of the `TextFrame` will be
   centered horizontally within the `Shape` as a group. To change the horizontal
   alignment of a text, see
   [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)
