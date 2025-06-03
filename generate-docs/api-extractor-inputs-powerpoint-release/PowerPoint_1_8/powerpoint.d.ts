@@ -2629,7 +2629,7 @@ export declare namespace PowerPoint {
     }
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
-                If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
+                If one of the centered options is selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
                 To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment}.
      *
      * @remarks
@@ -3251,14 +3251,14 @@ export declare namespace PowerPoint {
         /**
          * Specifies the formatting which applies uniformly to all of the table cells.
                     
-                    To apply specific formatting to individual cells, use specificCellProperties.
+                    To apply specific formatting to individual cells, use `specificCellProperties`.
                     
                     If both uniformCellProperties and specificCellProperties are undefined, the default formatting
                     will be used, and the default table style will be applied. The table will have the same
                     appearance as when the user adds a table through the PowerPoint UI.
                     
                     To provide a plain appearance for the table, set this property to an empty object
-                    and don't specify specificCellProperties.
+                    and don't specify `specificCellProperties`.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]

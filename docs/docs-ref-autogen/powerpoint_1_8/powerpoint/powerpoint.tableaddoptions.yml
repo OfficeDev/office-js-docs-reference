@@ -339,7 +339,7 @@ properties:
 
 
       To apply specific formatting to individual cells, use
-      specificCellProperties.
+      `specificCellProperties`<!-- -->.
 
 
       If both uniformCellProperties and specificCellProperties are undefined,
@@ -349,7 +349,7 @@ properties:
 
 
       To provide a plain appearance for the table, set this property to an empty
-      object and don't specify specificCellProperties.
+      object and don't specify `specificCellProperties`<!-- -->.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
