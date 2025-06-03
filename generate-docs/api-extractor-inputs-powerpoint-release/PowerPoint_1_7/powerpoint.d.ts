@@ -2241,7 +2241,7 @@ export declare namespace PowerPoint {
     
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
-                If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
+                If one of the centered options is selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
                 To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment}.
      *
      * @remarks
