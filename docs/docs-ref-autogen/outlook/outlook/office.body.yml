@@ -396,32 +396,6 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // This example gets the body of the item as plain text.
-
-      Office.context.mailbox.item.body.getAsync(
-          "text",
-          { asyncContext: "This is passed to the callback" },
-          function callback(result) {
-              // Do something with the result.
-          });
-
-      // The following is an example of the result parameter passed to the
-      callback function.
-
-      {
-          "value": "TEXT of whole body (including threads below)",
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
