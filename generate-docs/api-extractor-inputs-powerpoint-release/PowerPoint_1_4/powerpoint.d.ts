@@ -4828,7 +4828,7 @@ export declare namespace PowerPoint {
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null. The maximum length of the string is 71,680,000 characters.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }
