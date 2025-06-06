@@ -151,7 +151,9 @@ functions:
       content: 'export function createPresentation(base64File?: string): Promise<void>;'
       parameters:
         - id: base64File
-          description: Optional. The Base64-encoded .pptx file. The default value is null.
+          description: >-
+            Optional. The Base64-encoded .pptx file. The default value is null.
+            The maximum length of the string is 71,680,000 characters.
           type: string
       return:
         type: Promise&lt;void&gt;

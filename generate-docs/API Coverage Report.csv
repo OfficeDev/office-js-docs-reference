@@ -8964,8 +8964,8 @@ Office.AttachmentsChangedEventArgs,"type",Property,Fine,false
 Office.Body,N/A,Interface,Unknown,true
 Office.Body,"appendOnSendAsync(data, options, callback)",Method,Good,true
 Office.Body,"appendOnSendAsync(data, callback)",Method,Good,false
-Office.Body,"getAsync(coercionType, options, callback)",Method,Excellent,false
-Office.Body,"getAsync(coercionType, callback)",Method,Excellent,true
+Office.Body,"getAsync(coercionType, options, callback)",Method,Great,false
+Office.Body,"getAsync(coercionType, callback)",Method,Great,true
 Office.Body,"getTypeAsync(options, callback)",Method,Good,true
 Office.Body,"getTypeAsync(callback)",Method,Good,false
 Office.Body,"prependAsync(data, options, callback)",Method,Good,true
