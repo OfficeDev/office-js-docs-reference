@@ -49,11 +49,13 @@ The **\<EquivalentAddins\>** element can contain the following child element.
 
 ### Effect
 
-Specifies which add-in is disabled when a COM add-in and Office Add-in conflict. There are three possible values.
+Specifies either that the COM add-in is disabled and hidden (instead of the Office Add-in) when they conflict, or specifies that the user chooses which to disable and hide. There are two possible values.
 
-- **Enable** (default): The COM add-in is enabled and the Office Add-in is disabled and hidden on the Windows computer. Since this is the default value of **\<Effect\>**, this is also the behavior if the **\<Effect\>** element is not present.
 - **DisableWithNotification**: All of the COM add-ins specified in the child **\<EquivalentAddin\>** elements will be disabled and hidden. A popup dialog notifies the user that this happening.
 - **UserOptionToDisable**: The user is prompted to choose whether to disable and hide COM add-ins specified in the child **\<EquivalentAddin\>** elements or to disable and hide the Office Add-in.
+
+> [!NOTE]
+> If the **\<Effect\>** element is not present, the COM add-ins are enabled and the Office Add-in is disabled and hidden on the Windows computer. 
 
 The following is an example. The **\<Effect\>** element must be after all the **\<EquivalentAddin\>** elements.
 
