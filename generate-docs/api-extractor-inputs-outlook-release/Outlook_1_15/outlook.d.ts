@@ -14688,9 +14688,9 @@ export declare namespace Office {
          * - To learn how to implement this in your spam-reporting add-in, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message | Open a task pane after reporting a message}.
          *
-         * - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In an add-in only manifest,
-         * the ID is specified in the `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element that represents the task pane.
-         * The `commandId` property isn't currently supported in a spam-reporting add-in that uses a unified manifest for Microsoft 365.
+         * - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In the unified manifest for Microsoft 365, the ID is specified in the "id" property of the
+         * {@link https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-custom-group-controls-item#id | "extensions.ribbons.tabs.groups.controls"} object that represents the task pane.
+         * In an add-in only manifest, the ID is specified in the `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element that represents the task pane.
          *
          * - If you configure the `commandId` option in the `event.completed` call, a post-processing dialog isn't shown to the user
          * even if the `showPostProcessingDialog` option is specified in the call.
