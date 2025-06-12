@@ -501,6 +501,7 @@ Excel.CalcErrorCellValueSubType,"dataTableReferencedPendingFormula",EnumField,Gr
 Excel.CalcErrorCellValueSubType,"emptyArray",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"eRegexReplaceCharLimit",EnumField,Great,false
 Excel.CalcErrorCellValueSubType,"externalQueryRef",EnumField,Excellent,false
+Excel.CalcErrorCellValueSubType,"functionInCell",EnumField,Great,false
 Excel.CalcErrorCellValueSubType,"invalidPythonObject",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"lambdaInCell",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"pythonGridQuery",EnumField,Great,false
@@ -2271,6 +2272,14 @@ Excel.CustomConditionalFormat,"set(properties)",Method,Good,false
 Excel.CustomConditionalFormat,"toJSON()",Method,Excellent,false
 Excel.CustomDataValidation,N/A,Interface,Unknown,false
 Excel.CustomDataValidation,"formula",Property,Great,false
+Excel.CustomFunctionManager,N/A,Class,Unknown,false
+Excel.CustomFunctionManager,"context",Property,Excellent,false
+Excel.CustomFunctionManager,"load(propertyNames)",Method,Excellent,false
+Excel.CustomFunctionManager,"load(propertyNamesAndPaths)",Method,Excellent,false
+Excel.CustomFunctionManager,"toJSON()",Method,Excellent,false
+Excel.CustomFunctionVisibilityOptions,N/A,Interface,Fine,false
+Excel.CustomFunctionVisibilityOptions,"hide",Property,Fine,false
+Excel.CustomFunctionVisibilityOptions,"show",Property,Fine,false
 Excel.CustomProperty,N/A,Class,Great,false
 Excel.CustomProperty,"context",Property,Excellent,false
 Excel.CustomProperty,"key",Property,Good,false
@@ -3336,6 +3345,7 @@ Excel.EventType,"chartDeleted",EnumField,Good,false
 Excel.EventType,"commentAdded",EnumField,Good,false
 Excel.EventType,"commentChanged",EnumField,Good,false
 Excel.EventType,"commentDeleted",EnumField,Good,false
+Excel.EventType,"externalCodeServiceDiffResultReceived",EnumField,Great,false
 Excel.EventType,"linkedDataTypeLinkedDataTypeAdded",EnumField,Good,false
 Excel.EventType,"linkedDataTypeRefreshModeChanged",EnumField,Good,false
 Excel.EventType,"linkedDataTypeRefreshRequestCompleted",EnumField,Good,false
@@ -5218,7 +5228,7 @@ Excel.Range,"getEntireColumn()",Method,Excellent,true
 Excel.Range,"getEntireRow()",Method,Excellent,true
 Excel.Range,"getExtendedRange(direction, activeCell)",Method,Excellent,true
 Excel.Range,"getExtendedRange(directionString, activeCell)",Method,Excellent,false
-Excel.Range,"getImage()",Method,Fine,false
+Excel.Range,"getImage()",Method,Poor,false
 Excel.Range,"getIntersection(anotherRange)",Method,Good,true
 Excel.Range,"getIntersectionOrNullObject(anotherRange)",Method,Excellent,true
 Excel.Range,"getLastCell()",Method,Great,true
@@ -6031,6 +6041,7 @@ Excel.SpecialCellType,"blanks",EnumField,Fine,false
 Excel.SpecialCellType,"conditionalFormats",EnumField,Good,false
 Excel.SpecialCellType,"constants",EnumField,Fine,false
 Excel.SpecialCellType,"dataValidations",EnumField,Fine,false
+Excel.SpecialCellType,"dirtyFormulas",EnumField,Fine,false
 Excel.SpecialCellType,"formulas",EnumField,Fine,false
 Excel.SpecialCellType,"sameConditionalFormat",EnumField,Good,false
 Excel.SpecialCellType,"sameDataValidation",EnumField,Fine,false

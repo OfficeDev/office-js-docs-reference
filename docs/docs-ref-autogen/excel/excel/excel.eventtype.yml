@@ -96,6 +96,19 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentDeleted"'
+  - name: externalCodeServiceDiffResultReceived
+    uid: excel!Excel.EventType.externalCodeServiceDiffResultReceived:member
+    package: excel!
+    summary: >-
+      ExternalCodeServiceDiffResultReceived represents the type of event
+      registered when the diff result is received from the external code
+      service.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceDiffResultReceived"'
   - name: linkedDataTypeLinkedDataTypeAdded
     uid: excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member
     package: excel!

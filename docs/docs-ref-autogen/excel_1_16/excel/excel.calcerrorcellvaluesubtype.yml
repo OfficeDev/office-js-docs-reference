@@ -60,18 +60,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EmptyArray"'
-  - name: lambdaInCell
-    uid: excel!Excel.CalcErrorCellValueSubType.lambdaInCell:member
-    package: excel!
-    summary: >-
-      An error caused by a cell's formula evaluating to a lambda value. Displays
-      as error type \#CALC! in Excel.
-
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-    value: '"LambdaInCell"'
   - name: textOverflow
     uid: excel!Excel.CalcErrorCellValueSubType.textOverflow:member
     package: excel!
