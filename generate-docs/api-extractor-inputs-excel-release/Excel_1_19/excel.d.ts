@@ -452,6 +452,10 @@ export declare namespace Excel {
         tooManyCells = "TooManyCells",
         /**
          * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+         * 
+         * Warning: `lambdaInCell` was deprecated in ExcelApi 1.19.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -711,7 +715,7 @@ export declare namespace Excel {
      */
     enum FunctionCellValueType {
         /**
-         * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview  | Create custom functions in Excel}.
+         * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview | Create custom functions in Excel}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -756,14 +760,14 @@ export declare namespace Excel {
          */
         functionType: FunctionCellValueType.javaScriptReference | "JavaScriptReference";
         /**
-         * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace  | Manifest reference: Namespace}.
+         * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace | Manifest reference: Namespace}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
          */
         namespace: string;
         /**
-         * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id  | Autogenerate JSON metadata for custom functions: ID}.
+         * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -12340,7 +12344,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -12348,7 +12352,7 @@ export declare namespace Excel {
         getDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12356,7 +12360,7 @@ export declare namespace Excel {
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found.
+                    Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -12409,7 +12413,6 @@ export declare namespace Excel {
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
          * Renders the range as a Base64-encoded PNG image.
-                    **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -12485,7 +12488,7 @@ export declare namespace Excel {
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
+                    Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
@@ -30614,7 +30617,7 @@ export declare namespace Excel {
         readonly lastRefreshed: Date;
         /**
          * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                     This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
@@ -30910,7 +30913,7 @@ export declare namespace Excel {
         id: string;
         /**
          * Specifies the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.
-                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -53716,7 +53719,7 @@ export declare namespace Excel {
             lastRefreshed?: Date;
             /**
              * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
@@ -64948,7 +64951,7 @@ export declare namespace Excel {
             lastRefreshed?: boolean;
             /**
              * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
@@ -65036,7 +65039,7 @@ export declare namespace Excel {
             lastRefreshed?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks

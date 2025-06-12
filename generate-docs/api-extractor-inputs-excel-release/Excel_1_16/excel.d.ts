@@ -333,6 +333,10 @@ export declare namespace Excel {
         tooManyCells = "TooManyCells",
         /**
          * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+         * 
+         * Warning: `lambdaInCell` was deprecated in ExcelApi 1.19.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -11655,7 +11659,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -11663,7 +11667,7 @@ export declare namespace Excel {
         getDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -11671,7 +11675,7 @@ export declare namespace Excel {
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found.
+                    Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11714,7 +11718,6 @@ export declare namespace Excel {
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
          * Renders the range as a Base64-encoded PNG image.
-                    **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -11790,7 +11793,7 @@ export declare namespace Excel {
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
+                    Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.14]

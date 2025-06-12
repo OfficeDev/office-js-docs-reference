@@ -721,6 +721,10 @@ items:
             uid: excel!Excel.CustomConditionalFormat:class
           - name: CustomDataValidation
             uid: excel!Excel.CustomDataValidation:interface
+          - name: CustomFunctionManager
+            uid: excel!Excel.CustomFunctionManager:class
+          - name: CustomFunctionVisibilityOptions
+            uid: excel!Excel.CustomFunctionVisibilityOptions:interface
           - name: CustomProperty
             uid: excel!Excel.CustomProperty:class
           - name: CustomPropertyCollection
