@@ -49,7 +49,7 @@ The **\<EquivalentAddins\>** element can contain the following child element.
 
 ### Effect
 
-Specifies either that the COM add-in is disabled and hidden (instead of the Office Add-in) when they conflict, or specifies that the user chooses which to disable and hide. There are two possible values.
+Specifies either that the COM add-in is disabled and hidden (instead of the Office Web Add-in) when they conflict, or specifies that the user chooses which to disable and hide. There are two possible values.
 
 - **DisableWithNotification**: All of the COM add-ins specified in the child **\<EquivalentAddin\>** elements will be disabled and hidden. A popup dialog notifies the user that this happening.
 - **UserOptionToDisable**: The user is prompted to choose whether to disable and hide COM add-ins specified in the child **\<EquivalentAddin\>** elements or to disable and hide the Office Add-in.
