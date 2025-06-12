@@ -758,8 +758,10 @@ export declare namespace Excel {
         tooManyCells = "TooManyCells",
         /**
          * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+         * 
+         * Warning: `lambdaInCell` was deprecated in ExcelApi 1.19.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -30819,6 +30821,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class CustomFunctionManager extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -30827,21 +30830,33 @@ export declare namespace Excel {
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         load(propertyNames?: string | string[]): Excel.CustomFunctionManager;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         load(propertyNamesAndPaths?: {
             select?: string;
             expand?: string;
         }): Excel.CustomFunctionManager;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.CustomFunctionManager` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomFunctionManagerData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Excel.CustomFunctionManager` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomFunctionManagerData`) that contains shallow copies of any loaded child properties from the original object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta        
+         */
         toJSON(): Excel.Interfaces.CustomFunctionManagerData;
     }
     /**

@@ -331,7 +331,18 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.16]
          */
         tooManyCells = "TooManyCells",
-                /**
+        /**
+         * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+         * 
+         * Warning: `lambdaInCell` was deprecated in ExcelApi 1.19.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
+        lambdaInCell = "LambdaInCell",
+        /**
          * An error caused by a `CellValue` object that is too deeply nested within another `CellValue`. Displays as error type #CALC! in Excel.
          *
          * @remarks

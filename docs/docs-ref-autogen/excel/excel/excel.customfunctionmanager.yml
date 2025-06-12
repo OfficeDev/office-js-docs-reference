@@ -8,7 +8,7 @@ remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: class
 properties:
@@ -21,7 +21,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -35,9 +35,12 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.CustomFunctionManager;'
@@ -57,9 +60,12 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: |-
@@ -95,9 +101,12 @@ methods:
       returns a plain JavaScript object (typed as
       `Excel.Interfaces.CustomFunctionManagerData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
-    remarks: ''
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.CustomFunctionManagerData;'
