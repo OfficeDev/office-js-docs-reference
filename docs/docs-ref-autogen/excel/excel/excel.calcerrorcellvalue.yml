@@ -72,7 +72,7 @@ properties:
         "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" |
         "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" |
         "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" |
-        "ERegexReplaceCharLimit" | "UnexpectedReturnValue";
+        "ERegexReplaceCharLimit" | "UnexpectedReturnValue" | "FunctionInCell";
       return:
         type: >-
           <xref uid="excel!Excel.CalcErrorCellValueSubType:enum" /> | "Unknown"
@@ -83,7 +83,7 @@ properties:
           "PythonPowerQueryDataUploadEtagChanged" |
           "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject"
           | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" |
-          "ERegexReplaceCharLimit" | "UnexpectedReturnValue"
+          "ERegexReplaceCharLimit" | "UnexpectedReturnValue" | "FunctionInCell"
   - name: errorType
     uid: excel!Excel.CalcErrorCellValue#errorType:member
     package: excel!

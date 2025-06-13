@@ -51,6 +51,17 @@ fields:
       * \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataValidations"'
+  - name: dirtyFormulas
+    uid: excel!Excel.SpecialCellType.dirtyFormulas:member
+    package: excel!
+    summary: >-
+      Cells contain formulas which don't have up-to-date results.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"DirtyFormulas"'
   - name: formulas
     uid: excel!Excel.SpecialCellType.formulas:member
     package: excel!

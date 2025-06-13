@@ -220,8 +220,7 @@ export declare namespace Excel {
          */
         displayName?: string;
         /**
-         * Represents the count of rows which the card claims are in the array. 
-         * A card may report fewer rows than actually exist to display a smaller amount of preview data.
+         * Represents the count of rows which the card claims are in the array. A card may report fewer rows than actually exist to display a smaller amount of preview data.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -229,8 +228,7 @@ export declare namespace Excel {
          */
         rowsToReport?: number;
         /**
-         * Represents the count of columns which the card claims are in the array. 
-         * A card may report fewer columns than actually exist to display a smaller amount of preview data.
+         * Represents the count of columns which the card claims are in the array. A card may report fewer columns than actually exist to display a smaller amount of preview data.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -760,6 +758,10 @@ export declare namespace Excel {
         tooManyCells = "TooManyCells",
         /**
          * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+         * 
+         * Warning: `lambdaInCell` was deprecated in ExcelApi 1.19.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -859,7 +861,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        unexpectedReturnValue = "UnexpectedReturnValue"
+        unexpectedReturnValue = "UnexpectedReturnValue",
+        /**
+         * An error caused by a cell's formula evaluating to a function or function reference. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        functionInCell = "FunctionInCell"
     }
     /**
      * Represents the value of a cell containing a #CALC! error.
@@ -904,7 +914,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue";
+        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue" | "FunctionInCell";
         /**
          * Represents the name of the function causing the error.
          *
@@ -1107,7 +1117,7 @@ export declare namespace Excel {
      */
     enum FunctionCellValueType {
         /**
-         * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview  | Create custom functions in Excel}.
+         * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview | Create custom functions in Excel}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -1152,14 +1162,14 @@ export declare namespace Excel {
          */
         functionType: FunctionCellValueType.javaScriptReference | "JavaScriptReference";
         /**
-         * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace  | Manifest reference: Namespace}.
+         * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace | Manifest reference: Namespace}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
          */
         namespace: string;
         /**
-         * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id  | Autogenerate JSON metadata for custom functions: ID}.
+         * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -16457,7 +16467,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -16465,7 +16475,7 @@ export declare namespace Excel {
         getDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16473,7 +16483,7 @@ export declare namespace Excel {
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
+                    Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -16526,7 +16536,6 @@ export declare namespace Excel {
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
          * Renders the range as a Base64-encoded PNG image.
-                    **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -16602,7 +16611,7 @@ export declare namespace Excel {
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
+                    Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
@@ -16696,7 +16705,7 @@ export declare namespace Excel {
          * @param cellTypeString - The type of cells to include.
          * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
                     If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
@@ -16720,7 +16729,7 @@ export declare namespace Excel {
          * @param cellTypeString - The type of cells to include.
          * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell.
          *
@@ -17337,7 +17346,7 @@ export declare namespace Excel {
          * @param cellTypeString - The type of cells to include.
          * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
@@ -17359,7 +17368,7 @@ export declare namespace Excel {
          * @param cellTypeString - The type of cells to include.
          * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Returns a scoped collection of tables that overlap with any range in this `RangeAreas` object.
          *
@@ -30808,6 +30817,74 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
     }
     /**
+     * Manages settings on custom functions.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomFunctionManager extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        load(propertyNames?: string | string[]): Excel.CustomFunctionManager;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CustomFunctionManager;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Excel.CustomFunctionManager` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomFunctionManagerData`) that contains shallow copies of any loaded child properties from the original object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta        
+         */
+        toJSON(): Excel.Interfaces.CustomFunctionManagerData;
+    }
+    /**
+     * Represents which custom functions to show or hide in Excel AutoComplete.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomFunctionVisibilityOptions {
+        /**
+         * A list of custom functions to hide from Excel AutoComplete.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hide?: string[];
+        /**
+         * A list of custom functions to show in Excel AutoComplete.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        show?: string[];
+    }
+    /**
      * An object encapsulating a style's format and other properties.
      *
      * @remarks
@@ -35403,8 +35480,8 @@ export declare namespace Excel {
         readonly lastRefreshed: Date;
         /**
          * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -35699,7 +35776,7 @@ export declare namespace Excel {
         id: string;
         /**
          * Specifies the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -40236,7 +40313,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        queryQueryRefreshCompleted = "QueryQueryRefreshCompleted"
+        queryQueryRefreshCompleted = "QueryQueryRefreshCompleted",
+        /**
+         * ExternalCodeServiceDiffResultReceived represents the type of event registered when the diff result is received from the external code service.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        externalCodeServiceDiffResultReceived = "ExternalCodeServiceDiffResultReceived"
     }
     /**
      * @remarks
@@ -42219,7 +42303,14 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
-        visible = "Visible"
+        visible = "Visible",
+        /**
+         * Cells contain formulas which don't have up-to-date results.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dirtyFormulas = "DirtyFormulas"
     }
     /**
      * @remarks
@@ -57882,6 +57973,9 @@ export declare namespace Excel {
         export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
+        /** An interface describing the data returned by calling `customFunctionManager.toJSON()`. */
+        export interface CustomFunctionManagerData {
+        }
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
             /**
@@ -59303,7 +59397,7 @@ export declare namespace Excel {
             lastRefreshed?: Date;
             /**
              * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
@@ -71386,7 +71480,7 @@ export declare namespace Excel {
             lastRefreshed?: boolean;
             /**
              * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
@@ -71438,7 +71532,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a collection of `LinkedEntityDataDomain` objects.
-                    The collection can contain linked entity data domains such as stocks, geography or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
+                    The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -71474,7 +71568,7 @@ export declare namespace Excel {
             lastRefreshed?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
