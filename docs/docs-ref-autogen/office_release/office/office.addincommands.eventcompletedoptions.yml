@@ -26,12 +26,24 @@ remarks: >-
   -->**: Compose
 
 
-  **Important**: Although Outlook on Android and on iOS support up to
-  Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting
-  provider and note-logging mobile add-ins. For more information on API support
-  in Outlook on mobile devices, see [Outlook JavaScript APIs supported in
-  Outlook on mobile
+  **Important**:
+
+
+  - Although Outlook on Android and on iOS support up to Mailbox 1.5, the
+  `EventCompletedOptions` object is supported in online-meeting provider and
+  note-logging mobile add-ins. For more information on API support in Outlook on
+  mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile
   devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+  -->.
+
+
+  - [Event-based
+  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+  and [integrated
+  spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
+  add-ins use a different event object to signal when they've completed
+  processing an event. For more information, see
+  [Office.MailboxEvent](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent)<!--
   -->.
 
 isPreview: false
