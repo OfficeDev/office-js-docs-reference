@@ -9342,7 +9342,15 @@ export declare namespace Office {
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
      *
-     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+     * **Important**:
+     *
+     * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+     *
+     * - For information about the Event object used by the {@link https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands | function command button},
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send add-in},
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting | online-meeting provider add-in}, and
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments | note-logging mobile add-in},
+     * see {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event | Office.AddinCommands.Event}.
      */
     export interface MailboxEvent {
         /**

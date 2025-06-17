@@ -29,8 +29,24 @@ remarks: >-
   -->**: Compose or Read
 
 
-  **Important**: Support for the integrated spam-reporting feature was
-  introduced in Mailbox 1.14.
+  **Important**:
+
+
+  - Support for the integrated spam-reporting feature was introduced in Mailbox
+  1.14.
+
+
+  - For information about the Event object used by the [function command
+  button](https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands)<!--
+  -->, [on-send
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)<!--
+  -->, [online-meeting provider
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting)<!--
+  -->, and [note-logging mobile
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments)<!--
+  -->, see
+  [Office.AddinCommands.Event](https://learn.microsoft.com/javascript/api/office/office.addincommands.event)<!--
+  -->.
 
 isPreview: false
 isDeprecated: false

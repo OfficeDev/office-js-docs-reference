@@ -7280,7 +7280,7 @@ Office.File,"size",Property,Poor,false
 Office.File,"sliceCount",Property,Fine,false
 Office.File,"closeAsync(callback)",Method,Poor,false
 Office.File,"getSliceAsync(sliceIndex, callback)",Method,Good,true
-Office.FileProperties,N/A,Interface,Missing,false
+Office.FileProperties,N/A,Interface,Missing,true
 Office.FileProperties,"url",Property,Missing,false
 Office.FileType,N/A,Enum,Great,true
 Office.FileType,"Compressed",EnumField,Excellent,false
