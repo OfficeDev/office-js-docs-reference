@@ -17,9 +17,9 @@ properties:
     package: powerpoint!
     fullName: visible
     summary: >-
-      Specifies if the bullets in the paragraph are visible. Returns 'null' if
-      the 'TextRange' includes text fragments with different bullet visibility
-      values.
+      Specifies if the bullets in the paragraph are visible. Returns `null` if
+      the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet visibility values.
     remarks: >-
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -28,6 +28,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'visible?: boolean;'
+      content: 'visible?: boolean | null;'
       return:
-        type: boolean
+        type: boolean | null

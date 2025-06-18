@@ -4496,12 +4496,12 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+         * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        visible: boolean;
+        visible: boolean | null;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6112,12 +6112,12 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `BulletFormat` object, for use in `bulletFormat.set({ ... })`. */
         export interface BulletFormatUpdateData {
             /**
-             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+             * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            visible?: boolean;
+            visible?: boolean | null;
         }
         /** An interface for updating data on the `ParagraphFormat` object, for use in `paragraphFormat.set({ ... })`. */
         export interface ParagraphFormatUpdateData {
@@ -6793,12 +6793,12 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
         export interface BulletFormatData {
             /**
-             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+             * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            visible?: boolean;
+            visible?: boolean | null;
         }
         /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
         export interface ParagraphFormatData {
@@ -8132,7 +8132,7 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+             * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
