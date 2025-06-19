@@ -33,6 +33,29 @@ methods:
       the exact timing of the context menu update (or refresh) can't be
       determined by the completion of this API.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Change the availability of custom buttons on the context menu.
+
+      await Office.contextMenu.requestUpdate({
+          controls: [
+              {
+                  id: Addin.CtxMenu.Button1,
+                  enabled: true
+              },
+              {
+                  id: Addin.CtxMenu.Button2,
+                  enabled: false
+              },
+          ]
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

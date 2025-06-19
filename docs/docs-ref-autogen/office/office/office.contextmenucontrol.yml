@@ -14,6 +14,29 @@ remarks: >-
   **Requirement set**: [ContextMenuAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Change the availability of custom buttons on the context menu.
+
+  await Office.contextMenu.requestUpdate({
+      controls: [
+          {
+              id: Addin.CtxMenu.Button1,
+              enabled: true
+          },
+          {
+              id: Addin.CtxMenu.Button2,
+              enabled: false
+          },
+      ]
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

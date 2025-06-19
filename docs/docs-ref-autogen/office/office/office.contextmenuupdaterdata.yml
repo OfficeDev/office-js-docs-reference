@@ -33,3 +33,23 @@ properties:
       content: 'controls: ContextMenuControl[];'
       return:
         type: <xref uid="office!Office.ContextMenuControl:interface" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Change the availability of custom buttons on the context menu.
+          await Office.contextMenu.requestUpdate({
+              controls: [
+                  {
+                      id: Addin.CtxMenu.Button1,
+                      enabled: true
+                  },
+                  {
+                      id: Addin.CtxMenu.Button2,
+                      enabled: false
+                  },
+              ]
+          });
+          ```
