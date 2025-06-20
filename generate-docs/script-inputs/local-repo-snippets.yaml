@@ -2855,6 +2855,51 @@ Office.ContextInformation#version:member:
   - |-
     const contextInfo = Office.context.diagnostics;
     console.log("Office version: " + contextInfo.version);
+Office.ContextMenu#requestUpdate:member(1):
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.ContextMenuControl:interface:
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.ContextMenuUpdaterData#controls:member:
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
 Office.CustomXmlNode#baseName:member:
   - |-
     function showXmlNodeBaseNames() {
