@@ -24,7 +24,7 @@ remarks: >-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-    // Add a table, specifying column widths and row heights
+    // Add a table, specifying column widths and row heights.
     shapes.addTable(3, 4, {
       columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
       rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -70,7 +70,7 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-        // Add a table, specifying column widths and row heights
+        // Add a table, specifying column widths and row heights.
         shapes.addTable(3, 4, {
           columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
           rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]

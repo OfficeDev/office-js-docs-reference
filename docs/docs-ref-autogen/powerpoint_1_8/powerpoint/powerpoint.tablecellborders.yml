@@ -24,7 +24,7 @@ remarks: >-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-    // Add a table, specifying border styles
+    // Add a table, specifying border styles.
     shapes.addTable(3, 4, {
       values: [
         ["A", "BB", "CCC", "DDDD"],
@@ -74,7 +74,7 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-        // Add a table, specifying border styles
+        // Add a table, specifying border styles.
         shapes.addTable(3, 4, {
           values: [
             ["A", "BB", "CCC", "DDDD"],
@@ -158,7 +158,7 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-        // Add a table, specifying border styles
+        // Add a table, specifying border styles.
         shapes.addTable(3, 4, {
           values: [
             ["A", "BB", "CCC", "DDDD"],
@@ -210,7 +210,7 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-        // Add a table, specifying border styles
+        // Add a table, specifying border styles.
         shapes.addTable(3, 4, {
           values: [
             ["A", "BB", "CCC", "DDDD"],
@@ -262,7 +262,7 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-        // Add a table, specifying border styles
+        // Add a table, specifying border styles.
         shapes.addTable(3, 4, {
           values: [
             ["A", "BB", "CCC", "DDDD"],

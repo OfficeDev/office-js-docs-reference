@@ -7100,13 +7100,13 @@ Office.ContextInformation,"host",Property,Good,true
 Office.ContextInformation,"platform",Property,Poor,true
 Office.ContextInformation,"version",Property,Fine,true
 Office.ContextMenu,N/A,Interface,Unknown,false
-Office.ContextMenu,"requestUpdate(input)",Method,Great,false
-Office.ContextMenuControl,N/A,Interface,Unknown,false
+Office.ContextMenu,"requestUpdate(input)",Method,Great,true
+Office.ContextMenuControl,N/A,Interface,Unknown,true
 Office.ContextMenuControl,"enabled",Property,Great,false
 Office.ContextMenuControl,"id",Property,Excellent,false
 Office.ContextMenuUpdaterData,N/A,Interface,Great,false
-Office.ContextMenuUpdaterData,"controls",Property,Great,false
-Office.Control,N/A,Interface,Unknown,false
+Office.ContextMenuUpdaterData,"controls",Property,Great,true
+Office.Control,N/A,Interface,Unknown,true
 Office.Control,"enabled",Property,Excellent,false
 Office.Control,"id",Property,Good,false
 Office.CustomXmlNode,N/A,Interface,Missing,false
@@ -10700,7 +10700,7 @@ PowerPoint.TableCellProperties,"horizontalAlignment",Property,Fine,true
 PowerPoint.TableCellProperties,"indentLevel",Property,Fine,true
 PowerPoint.TableCellProperties,"margins",Property,Good,false
 PowerPoint.TableCellProperties,"text",Property,Excellent,false
-PowerPoint.TableCellProperties,"textRuns",Property,Excellent,false
+PowerPoint.TableCellProperties,"textRuns",Property,Excellent,true
 PowerPoint.TableCellProperties,"verticalAlignment",Property,Fine,true
 PowerPoint.TableClearOptions,N/A,Interface,Unknown,false
 PowerPoint.TableClearOptions,"all",Property,Excellent,false
@@ -10902,7 +10902,7 @@ PowerPoint.TextRange,"load(propertyNames)",Method,Excellent,false
 PowerPoint.TextRange,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.TextRange,"setSelected()",Method,Poor,true
 PowerPoint.TextRange,"toJSON()",Method,Excellent,false
-PowerPoint.TextRun,N/A,Interface,Unknown,false
+PowerPoint.TextRun,N/A,Interface,Unknown,true
 PowerPoint.TextRun,"font",Property,Good,false
 PowerPoint.TextRun,"text",Property,Poor,false
 PowerPoint.TextVerticalAlignment,N/A,Enum,Unknown,true
