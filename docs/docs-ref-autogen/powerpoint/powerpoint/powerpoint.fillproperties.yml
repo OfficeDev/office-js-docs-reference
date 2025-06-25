@@ -24,7 +24,7 @@ remarks: >-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-    // Add a table, specifying font formatting and fill colors
+    // Add a table, specifying font formatting and fill colors.
     shapes.addTable(3, 4, {
       values: [
         ["A", "BB", "CCC", "DDDD"],
@@ -88,7 +88,7 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-        // Add a table, specifying font formatting and fill colors
+        // Add a table, specifying font formatting and fill colors.
         shapes.addTable(3, 4, {
           values: [
             ["A", "BB", "CCC", "DDDD"],

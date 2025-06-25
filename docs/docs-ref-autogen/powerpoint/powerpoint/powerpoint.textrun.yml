@@ -9,6 +9,62 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Specifies the text runs of the cells in a table.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table, specifying text runs.
+    shapes.addTable(3, 4, {
+      specificCellProperties: [
+        [
+          { text: "Title text", font: { bold: true } },
+          { text: "Title text", font: { bold: true } },
+          { text: "Title text", font: { bold: true } },
+          { text: "Title text", font: { bold: true } }
+        ],
+        [
+          { text: "Bold text", font: { bold: true } },
+          {
+            textRuns: [
+              { text: "Text runs with " },
+              { text: "Underlined text", font: { underline: PowerPoint.ShapeFontUnderlineStyle.double } },
+              { text: " and plain text" }
+            ]
+          },
+          { text: "Italicized text", font: { italic: true } },
+          { text: "Plain text" }
+        ],
+        [
+          { text: "Bold text", font: { bold: true } },
+          { text: "Underlined text", font: { underline: PowerPoint.ShapeFontUnderlineStyle.dotted } },
+          {
+            font: { bold: true },
+            textRuns: [
+              { text: "Text runs with " },
+              { text: "italicized text", font: { italic: true } },
+              { text: " and (inherited) bold text" }
+            ]
+          },
+          { text: "Italicized text", font: { italic: true } }
+        ]
+      ]
+    });
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
