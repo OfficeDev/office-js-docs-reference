@@ -2645,11 +2645,11 @@ Excel.DoubleCellValue,N/A,Interface,Unknown,false
 Excel.DoubleCellValue,"basicType",Property,Good,false
 Excel.DoubleCellValue,"basicValue",Property,Good,false
 Excel.DoubleCellValue,"layouts",Property,Good,false
-Excel.DoubleCellValue,"numberFormat",Property,Excellent,false
+Excel.DoubleCellValue,"numberFormat",Property,Excellent,true
 Excel.DoubleCellValue,"properties",Property,Good,false
 Excel.DoubleCellValue,"provider",Property,Great,false
 Excel.DoubleCellValue,"referencedValues",Property,Great,false
-Excel.DoubleCellValue,"type",Property,Fine,false
+Excel.DoubleCellValue,"type",Property,Fine,true
 Excel.DynamicFilterCriteria,N/A,Enum,Fine,true
 Excel.DynamicFilterCriteria,"aboveAverage",EnumField,Fine,false
 Excel.DynamicFilterCriteria,"allDatesInPeriodApril",EnumField,Fine,false
@@ -3564,8 +3564,8 @@ Excel.FormatProtection,"toJSON()",Method,Excellent,false
 Excel.FormattedNumberCellValue,N/A,Interface,Deprecated,false
 Excel.FormattedNumberCellValue,"basicType",Property,Deprecated,false
 Excel.FormattedNumberCellValue,"basicValue",Property,Deprecated,false
-Excel.FormattedNumberCellValue,"numberFormat",Property,Deprecated,true
-Excel.FormattedNumberCellValue,"type",Property,Deprecated,true
+Excel.FormattedNumberCellValue,"numberFormat",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"type",Property,Deprecated,false
 Excel.FormulaChangedEventDetail,N/A,Interface,Fine,false
 Excel.FormulaChangedEventDetail,"cellAddress",Property,Fine,false
 Excel.FormulaChangedEventDetail,"previousFormula",Property,Fine,false

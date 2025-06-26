@@ -82,6 +82,41 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
+
+
+      // This function creates a double data type,
+
+      // and sets the format of this data type as a currency.
+
+      await Excel.run(async (context) => {
+        // Get the Sample worksheet and a range on that sheet.
+        const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+        const currencyRange = sheet.getRange("A2");
+
+        // Write a number formatted as currency to cell A2.
+        currencyRange.valuesAsJson = [
+          [
+            {
+              type: Excel.CellValueType.double,
+              basicValue: 12.34,
+              numberFormat: "$* #,##0.00"
+            }
+          ]
+        ];
+
+        await context.sync();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,6 +191,40 @@ properties:
       \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
+
+
+      // This function creates a double data type,
+
+      // and sets the format of this data type as a date.
+
+      await Excel.run(async (context) => {
+        // Get the Sample worksheet and a range on that sheet.
+        const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+        const dateRange = sheet.getRange("A1");
+
+        // Write a number formatted as a date to cell A1.
+        dateRange.valuesAsJson = [
+          [
+            {
+              type: Excel.CellValueType.double,
+              basicValue: 32889.0,
+              numberFormat: "m/d/yyyy"
+            }
+          ]
+        ];
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
