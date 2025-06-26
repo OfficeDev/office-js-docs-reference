@@ -8221,9 +8221,9 @@ Office.EnhancedLocationsChangedEventArgs:interface:
         document.addEventListener('DOMContentLoaded', () => {
             // Get a reference to the mailbox and use it to add an event handler.
             const mailbox = Office.context.mailbox;
-            mailbox.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+            mailbox.item.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
                 if (result.status === Office.AsyncResultStatus.Failed) {
-                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    console.error(`Failed to add event handler: ${result.error.message}`);
                     return;
                 }
 

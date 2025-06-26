@@ -820,7 +820,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
 
 
-      // This function creates a formatted number data type,
+      // This function creates a double data type,
 
       // and sets the format of this data type as a date.
 
@@ -833,7 +833,7 @@ properties:
         dateRange.valuesAsJson = [
           [
             {
-              type: Excel.CellValueType.formattedNumber,
+              type: Excel.CellValueType.double,
               basicValue: 32889.0,
               numberFormat: "m/d/yyyy"
             }
