@@ -5441,6 +5441,8 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
+         * - Access to a user's geolocation isn't supported in Excel, PowerPoint, and Word. It's only supported in Outlook on the web and new Outlook on Windows using the `requestPermissionsAsync` method.
+         *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
          *     In web versions of Excel, PowerPoint, and Word, add-ins can only request access to a user's camera and microphone.
          *     Access to a user's geolocation is blocked.
