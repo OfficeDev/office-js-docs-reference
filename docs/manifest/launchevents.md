@@ -45,6 +45,5 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 - [LaunchEvent](launchevent.md)
 - [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation)
-- [Automatically run an add-in when the document opens](/office/dev/add-ins/develop/launch-add-in-on-open)
 - [Use Smart Alerts and the OnMessageSend event in your Outlook add-in](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)
 - [Automatically update your signature when switching between Exchange accounts](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events)
