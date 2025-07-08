@@ -6821,7 +6821,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox (applies to classic Outlook on Windows only)**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -6829,8 +6829,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -6862,7 +6868,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox (applies to Outlook on Windows only)**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -6870,8 +6876,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
@@ -10790,7 +10802,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -10798,8 +10810,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -10833,7 +10851,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -10841,8 +10859,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
