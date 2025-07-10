@@ -97,6 +97,11 @@ methods:
       to the user's device capabilities.
 
 
+      - Access to a user's geolocation isn't supported in Excel, PowerPoint, and
+      Word. It's only supported in Outlook on the web and new Outlook on Windows
+      using the `requestPermissionsAsync` method.
+
+
       #### Examples
 
 

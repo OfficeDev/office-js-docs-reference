@@ -3384,9 +3384,15 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              *
-             * **Important**: The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
+             * **Important**:
+             *
+             * - The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
              * Mailbox 1.5, the `options` parameter is supported in online-meeting provider and note-logging mobile add-ins. For more information on API support in
              * Outlook on mobile devices, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+             *
+             * - {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Event-based activation} and
+             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
+             * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
              *
              * @param options - Optional. In Outlook, an object that specifies the behavior of an on-send add-in, online-meeting provider add-in, or note-logging mobile add-in
              * when it completes processing an event.
@@ -3407,9 +3413,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
+         * **Important**:
+         *
+         * - Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
          * note-logging mobile add-ins. For more information on API support in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
+         * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
          */
         export interface EventCompletedOptions {
             /**
@@ -5480,6 +5492,8 @@ export declare namespace Office {
          * - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in which the add-in is running is closed.
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
+         *
+         * - Access to a user's geolocation isn't supported in Excel, PowerPoint, and Word. It's only supported in Outlook on the web and new Outlook on Windows using the `requestPermissionsAsync` method.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
          *     In web versions of Excel, PowerPoint, and Word, add-ins can only request access to a user's camera and microphone.

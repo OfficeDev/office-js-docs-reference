@@ -5,9 +5,9 @@ package: excel!
 fullName: Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions
 summary: >-
   Represents a collection of `LinkedEntityDataDomain` objects. The collection
-  can contain linked entity data domains such as stocks, geography or currencies
-  defined by service data providers, such as Bing or Power BI, or linked entity
-  data domains defined by Office Add-ins.
+  can contain linked entity data domains such as stocks, geography, or
+  currencies defined by service data providers, such as Bing or Power BI, or
+  linked entity data domains defined by Office Add-ins.
 remarks: >-
   \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

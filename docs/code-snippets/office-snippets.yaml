@@ -1245,6 +1245,62 @@ Office.ContextInformation#version:member:
   - |-
     const contextInfo = Office.context.diagnostics;
     console.log("Office version: " + contextInfo.version);
+Office.ContextMenu#requestUpdate:member(1):
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.ContextMenuControl:interface:
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.ContextMenuUpdaterData#controls:member:
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.Control:interface:
+  - |-
+    // This snippet enables a control (a button) in a custom ribbon tab.
+    // Note that "MyButton", "OfficeAddinTab1", and "CustomGroup111" are defined in the manifest.
+    const enableButton = async () => {
+        const button: Control = { id: "MyButton", enabled: true };
+        const parentGroup: Group = { id: "CustomGroup111", controls: [button] };
+        const parentTab: Tab = { id: "OfficeAddinTab1", groups: [parentGroup] };
+        const ribbonUpdater: RibbonUpdaterData = { tabs: [parentTab] };
+        Office.ribbon.requestUpdate(ribbonUpdater);
+    }
 Office.CustomXmlNode#baseName:member:
   - |-
     function showXmlNodeBaseNames() {
@@ -4032,6 +4088,26 @@ Office.File#getSliceAsync:member(1):
                 }
             });
         }
+    }
+Office.FileProperties:interface:
+  - |-
+    // To read the URL of the current file, you need to write a callback function that returns the URL.
+    // The following example shows how to:
+    // 1. Pass an anonymous callback function that returns the value of the file's URL
+    //    to the callback parameter of the getFilePropertiesAsync method.
+    // 2. Display the value on the add-in's page.
+    function getFileUrl() {
+        // Get the URL of the current file.
+        Office.context.document.getFilePropertiesAsync(function (asyncResult) {
+            const fileProperties: Office.FileProperties = asyncResult.value;
+            const fileUrl = fileProperties.url;
+            if (fileUrl == "") {
+                showMessage("The file hasn't been saved yet. Save the file and try again");
+            }
+            else {
+                showMessage(fileUrl);
+            }
+        });
     }
 Office.HostType:enum:
   - |-

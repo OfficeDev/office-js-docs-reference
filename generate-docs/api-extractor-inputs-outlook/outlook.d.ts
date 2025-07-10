@@ -7123,7 +7123,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -7131,8 +7131,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7164,7 +7170,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -7172,8 +7178,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
@@ -9660,7 +9672,15 @@ export declare namespace Office {
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
      *
-     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+     * **Important**:
+     *
+     * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+     *
+     * - For information about the Event object used by the {@link https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands | function command button},
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send add-in},
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting | online-meeting provider add-in}, and
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments | note-logging mobile add-in},
+     * see {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event | Office.AddinCommands.Event}.
      */
     export interface MailboxEvent {
         /**
@@ -11099,7 +11119,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -11107,8 +11127,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -11142,7 +11168,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox opened in the same panel as the user's primary mailbox (web, classic Windows) or shared mailbox that hasn't been promoted to a full account (new Windows)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -11150,8 +11176,14 @@ export declare namespace Office {
          *
          * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
          *
-         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
-         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         * Once these conditions are met, the message becomes available in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message is sent, it's usually found in the **Sent Items** folder of the sender's personal mailbox.
+         *
+         * The `getSharedPropertiesAsync` method is supported on the following platforms without additional conditions.
+         *
+         * - Outlook on the web when the shared mailbox is opened in a separate tab or window using the **Open another mailbox** option.
+         *
+         * - New Outlook on Windows when the shared mailbox is promoted to a full account.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
@@ -15109,9 +15141,9 @@ export declare namespace Office {
          * - To learn how to implement the `commandId` property in your spam-reporting add-in, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message | Open a task pane after reporting a message}.
          *
-         * - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In an add-in only manifest,
-         * the ID is specified in the `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element that represents the task pane.
-         * The `commandId` property isn't currently supported in a spam-reporting add-in that uses a unified manifest for Microsoft 365.
+         * - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In the unified manifest for Microsoft 365, the ID is specified in the "id" property of the
+         * {@link https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-custom-group-controls-item#id | "extensions.ribbons.tabs.groups.controls"} object that represents the task pane.
+         * In an add-in only manifest, the ID is specified in the `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element that represents the task pane.
          *
          * - If you configure the `commandId` option in the `event.completed` call, a post-processing dialog isn't shown to the user
          * even if the `showPostProcessingDialog` option is specified in the call.

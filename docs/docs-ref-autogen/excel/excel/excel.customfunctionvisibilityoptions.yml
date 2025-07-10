@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Excel.CustomFunctionVisibilityOptions
+uid: excel!Excel.CustomFunctionVisibilityOptions:interface
+package: excel!
+fullName: Excel.CustomFunctionVisibilityOptions
+summary: Represents which custom functions to show or hide in Excel AutoComplete.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: hide
+    uid: excel!Excel.CustomFunctionVisibilityOptions#hide:member
+    package: excel!
+    fullName: hide
+    summary: A list of custom functions to hide from Excel AutoComplete.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hide?: string[];'
+      return:
+        type: string[]
+  - name: show
+    uid: excel!Excel.CustomFunctionVisibilityOptions#show:member
+    package: excel!
+    fullName: show
+    summary: A list of custom functions to show in Excel AutoComplete.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'show?: string[];'
+      return:
+        type: string[]

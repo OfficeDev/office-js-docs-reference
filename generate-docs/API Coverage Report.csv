@@ -501,6 +501,7 @@ Excel.CalcErrorCellValueSubType,"dataTableReferencedPendingFormula",EnumField,Gr
 Excel.CalcErrorCellValueSubType,"emptyArray",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"eRegexReplaceCharLimit",EnumField,Great,false
 Excel.CalcErrorCellValueSubType,"externalQueryRef",EnumField,Excellent,false
+Excel.CalcErrorCellValueSubType,"functionInCell",EnumField,Great,false
 Excel.CalcErrorCellValueSubType,"invalidPythonObject",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"lambdaInCell",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"pythonGridQuery",EnumField,Great,false
@@ -2271,6 +2272,14 @@ Excel.CustomConditionalFormat,"set(properties)",Method,Good,false
 Excel.CustomConditionalFormat,"toJSON()",Method,Excellent,false
 Excel.CustomDataValidation,N/A,Interface,Unknown,false
 Excel.CustomDataValidation,"formula",Property,Great,false
+Excel.CustomFunctionManager,N/A,Class,Unknown,false
+Excel.CustomFunctionManager,"context",Property,Excellent,false
+Excel.CustomFunctionManager,"load(propertyNames)",Method,Excellent,false
+Excel.CustomFunctionManager,"load(propertyNamesAndPaths)",Method,Excellent,false
+Excel.CustomFunctionManager,"toJSON()",Method,Excellent,false
+Excel.CustomFunctionVisibilityOptions,N/A,Interface,Fine,false
+Excel.CustomFunctionVisibilityOptions,"hide",Property,Fine,false
+Excel.CustomFunctionVisibilityOptions,"show",Property,Fine,false
 Excel.CustomProperty,N/A,Class,Great,false
 Excel.CustomProperty,"context",Property,Excellent,false
 Excel.CustomProperty,"key",Property,Good,false
@@ -2636,11 +2645,11 @@ Excel.DoubleCellValue,N/A,Interface,Unknown,false
 Excel.DoubleCellValue,"basicType",Property,Good,false
 Excel.DoubleCellValue,"basicValue",Property,Good,false
 Excel.DoubleCellValue,"layouts",Property,Good,false
-Excel.DoubleCellValue,"numberFormat",Property,Excellent,false
+Excel.DoubleCellValue,"numberFormat",Property,Excellent,true
 Excel.DoubleCellValue,"properties",Property,Good,false
 Excel.DoubleCellValue,"provider",Property,Great,false
 Excel.DoubleCellValue,"referencedValues",Property,Great,false
-Excel.DoubleCellValue,"type",Property,Fine,false
+Excel.DoubleCellValue,"type",Property,Fine,true
 Excel.DynamicFilterCriteria,N/A,Enum,Fine,true
 Excel.DynamicFilterCriteria,"aboveAverage",EnumField,Fine,false
 Excel.DynamicFilterCriteria,"allDatesInPeriodApril",EnumField,Fine,false
@@ -3336,6 +3345,7 @@ Excel.EventType,"chartDeleted",EnumField,Good,false
 Excel.EventType,"commentAdded",EnumField,Good,false
 Excel.EventType,"commentChanged",EnumField,Good,false
 Excel.EventType,"commentDeleted",EnumField,Good,false
+Excel.EventType,"externalCodeServiceDiffResultReceived",EnumField,Great,false
 Excel.EventType,"linkedDataTypeLinkedDataTypeAdded",EnumField,Good,false
 Excel.EventType,"linkedDataTypeRefreshModeChanged",EnumField,Good,false
 Excel.EventType,"linkedDataTypeRefreshRequestCompleted",EnumField,Good,false
@@ -3554,8 +3564,8 @@ Excel.FormatProtection,"toJSON()",Method,Excellent,false
 Excel.FormattedNumberCellValue,N/A,Interface,Deprecated,false
 Excel.FormattedNumberCellValue,"basicType",Property,Deprecated,false
 Excel.FormattedNumberCellValue,"basicValue",Property,Deprecated,false
-Excel.FormattedNumberCellValue,"numberFormat",Property,Deprecated,true
-Excel.FormattedNumberCellValue,"type",Property,Deprecated,true
+Excel.FormattedNumberCellValue,"numberFormat",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"type",Property,Deprecated,false
 Excel.FormulaChangedEventDetail,N/A,Interface,Fine,false
 Excel.FormulaChangedEventDetail,"cellAddress",Property,Fine,false
 Excel.FormulaChangedEventDetail,"previousFormula",Property,Fine,false
@@ -5218,7 +5228,7 @@ Excel.Range,"getEntireColumn()",Method,Excellent,true
 Excel.Range,"getEntireRow()",Method,Excellent,true
 Excel.Range,"getExtendedRange(direction, activeCell)",Method,Excellent,true
 Excel.Range,"getExtendedRange(directionString, activeCell)",Method,Excellent,false
-Excel.Range,"getImage()",Method,Fine,false
+Excel.Range,"getImage()",Method,Poor,false
 Excel.Range,"getIntersection(anotherRange)",Method,Good,true
 Excel.Range,"getIntersectionOrNullObject(anotherRange)",Method,Excellent,true
 Excel.Range,"getLastCell()",Method,Great,true
@@ -6031,6 +6041,7 @@ Excel.SpecialCellType,"blanks",EnumField,Fine,false
 Excel.SpecialCellType,"conditionalFormats",EnumField,Good,false
 Excel.SpecialCellType,"constants",EnumField,Fine,false
 Excel.SpecialCellType,"dataValidations",EnumField,Fine,false
+Excel.SpecialCellType,"dirtyFormulas",EnumField,Fine,false
 Excel.SpecialCellType,"formulas",EnumField,Fine,false
 Excel.SpecialCellType,"sameConditionalFormat",EnumField,Good,false
 Excel.SpecialCellType,"sameDataValidation",EnumField,Fine,false
@@ -7089,13 +7100,13 @@ Office.ContextInformation,"host",Property,Good,true
 Office.ContextInformation,"platform",Property,Poor,true
 Office.ContextInformation,"version",Property,Fine,true
 Office.ContextMenu,N/A,Interface,Unknown,false
-Office.ContextMenu,"requestUpdate(input)",Method,Great,false
-Office.ContextMenuControl,N/A,Interface,Unknown,false
+Office.ContextMenu,"requestUpdate(input)",Method,Great,true
+Office.ContextMenuControl,N/A,Interface,Unknown,true
 Office.ContextMenuControl,"enabled",Property,Great,false
 Office.ContextMenuControl,"id",Property,Excellent,false
 Office.ContextMenuUpdaterData,N/A,Interface,Great,false
-Office.ContextMenuUpdaterData,"controls",Property,Great,false
-Office.Control,N/A,Interface,Unknown,false
+Office.ContextMenuUpdaterData,"controls",Property,Great,true
+Office.Control,N/A,Interface,Unknown,true
 Office.Control,"enabled",Property,Excellent,false
 Office.Control,"id",Property,Good,false
 Office.CustomXmlNode,N/A,Interface,Missing,false
@@ -7269,7 +7280,7 @@ Office.File,"size",Property,Poor,false
 Office.File,"sliceCount",Property,Fine,false
 Office.File,"closeAsync(callback)",Method,Poor,false
 Office.File,"getSliceAsync(sliceIndex, callback)",Method,Good,true
-Office.FileProperties,N/A,Interface,Missing,false
+Office.FileProperties,N/A,Interface,Missing,true
 Office.FileProperties,"url",Property,Missing,false
 Office.FileType,N/A,Enum,Great,true
 Office.FileType,"Compressed",EnumField,Excellent,false
@@ -9739,7 +9750,7 @@ Office.ReplyFormData,"htmlBody",Property,Good,false
 Office.ReplyFormData,"options",Property,Excellent,false
 Office.RoamingSettings,N/A,Interface,Great,false
 Office.RoamingSettings,"get(name)",Method,Good,true
-Office.RoamingSettings,"remove(name)",Method,Fine,false
+Office.RoamingSettings,"remove(name)",Method,Fine,true
 Office.RoamingSettings,"saveAsync(callback)",Method,Excellent,true
 Office.RoamingSettings,"set(name, value)",Method,Excellent,true
 Office.SelectedItemDetails,N/A,Interface,Unknown,true
@@ -10689,7 +10700,7 @@ PowerPoint.TableCellProperties,"horizontalAlignment",Property,Fine,true
 PowerPoint.TableCellProperties,"indentLevel",Property,Fine,true
 PowerPoint.TableCellProperties,"margins",Property,Good,false
 PowerPoint.TableCellProperties,"text",Property,Excellent,false
-PowerPoint.TableCellProperties,"textRuns",Property,Excellent,false
+PowerPoint.TableCellProperties,"textRuns",Property,Excellent,true
 PowerPoint.TableCellProperties,"verticalAlignment",Property,Fine,true
 PowerPoint.TableClearOptions,N/A,Interface,Unknown,false
 PowerPoint.TableClearOptions,"all",Property,Excellent,false
@@ -10891,7 +10902,7 @@ PowerPoint.TextRange,"load(propertyNames)",Method,Excellent,false
 PowerPoint.TextRange,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.TextRange,"setSelected()",Method,Poor,true
 PowerPoint.TextRange,"toJSON()",Method,Excellent,false
-PowerPoint.TextRun,N/A,Interface,Unknown,false
+PowerPoint.TextRun,N/A,Interface,Unknown,true
 PowerPoint.TextRun,"font",Property,Good,false
 PowerPoint.TextRun,"text",Property,Poor,false
 PowerPoint.TextVerticalAlignment,N/A,Enum,Unknown,true

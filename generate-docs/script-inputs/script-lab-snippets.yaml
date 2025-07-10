@@ -3455,6 +3455,61 @@
         console.log(`${property.key}:${property.value}`);
       });
     });
+'Excel.DoubleCellValue#numberFormat:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
+
+
+    // This function creates a double data type,
+
+    // and sets the format of this data type as a currency.
+
+    await Excel.run(async (context) => {
+      // Get the Sample worksheet and a range on that sheet.
+      const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+      const currencyRange = sheet.getRange("A2");
+
+      // Write a number formatted as currency to cell A2.
+      currencyRange.valuesAsJson = [
+        [
+          {
+            type: Excel.CellValueType.double,
+            basicValue: 12.34,
+            numberFormat: "$* #,##0.00"
+          }
+        ]
+      ];
+
+      await context.sync();
+    });
+'Excel.DoubleCellValue#type:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
+
+
+    // This function creates a double data type,
+
+    // and sets the format of this data type as a date.
+
+    await Excel.run(async (context) => {
+      // Get the Sample worksheet and a range on that sheet.
+      const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+      const dateRange = sheet.getRange("A1");
+
+      // Write a number formatted as a date to cell A1.
+      dateRange.valuesAsJson = [
+        [
+          {
+            type: Excel.CellValueType.double,
+            basicValue: 32889.0,
+            numberFormat: "m/d/yyyy"
+          }
+        ]
+      ];
+      await context.sync();
+    });
 'Excel.DynamicFilterCriteria:enum':
   - >-
     // Link to full sample:
@@ -3688,61 +3743,6 @@
       };
       filterField.applyFilter({ dateFilter: dateFilter });
 
-      await context.sync();
-    });
-'Excel.FormattedNumberCellValue#numberFormat:member':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
-
-
-    // This function creates a formatted number data type,
-
-    // and sets the format of this data type as a currency.
-
-    await Excel.run(async (context) => {
-      // Get the Sample worksheet and a range on that sheet.
-      const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
-      const currencyRange = sheet.getRange("A2");
-
-      // Write a number formatted as currency to cell A2.
-      currencyRange.valuesAsJson = [
-        [
-          {
-            type: Excel.CellValueType.formattedNumber,
-            basicValue: 12.34,
-            numberFormat: "$* #,##0.00"
-          }
-        ]
-      ];
-
-      await context.sync();
-    });
-'Excel.FormattedNumberCellValue#type:member':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
-
-
-    // This function creates a formatted number data type,
-
-    // and sets the format of this data type as a date.
-
-    await Excel.run(async (context) => {
-      // Get the Sample worksheet and a range on that sheet.
-      const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
-      const dateRange = sheet.getRange("A1");
-
-      // Write a number formatted as a date to cell A1.
-      dateRange.valuesAsJson = [
-        [
-          {
-            type: Excel.CellValueType.formattedNumber,
-            basicValue: 32889.0,
-            numberFormat: "m/d/yyyy"
-          }
-        ]
-      ];
       await context.sync();
     });
 'Excel.Functions:class':
@@ -5940,7 +5940,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
 
 
-    // This function creates a formatted number data type,
+    // This function creates a double data type,
 
     // and sets the format of this data type as a date.
 
@@ -5953,7 +5953,7 @@
       dateRange.valuesAsJson = [
         [
           {
-            type: Excel.CellValueType.formattedNumber,
+            type: Excel.CellValueType.double,
             basicValue: 32889.0,
             numberFormat: "m/d/yyyy"
           }
@@ -14387,6 +14387,20 @@
     settingValue;
 
     console.log(`The value of setting "${settingName}" is "${settingValue}".`);
+'Office.RoamingSettings#remove:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
+
+    // Remove the specified setting from the mailbox.
+
+    const settingName = (document.getElementById("settingName") as
+    HTMLInputElement).value;
+
+    Office.context.roamingSettings.remove(settingName);
+
+    console.log(`The "${settingName}" setting has been removed.`);
 'Office.RoamingSettings#saveAsync:member(1)':
   - >-
     // Link to full sample:
@@ -14888,7 +14902,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -14917,7 +14931,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -14946,7 +14960,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -14975,7 +14989,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15032,7 +15046,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15073,7 +15087,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15114,7 +15128,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15155,7 +15169,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15196,7 +15210,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15237,7 +15251,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15278,7 +15292,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15319,7 +15333,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -15360,7 +15374,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17342,7 +17356,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying column widths and row heights
+      // Add a table, specifying column widths and row heights.
       shapes.addTable(3, 4, {
         columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
         rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -17400,7 +17414,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying column widths and row heights
+      // Add a table, specifying column widths and row heights.
       shapes.addTable(3, 4, {
         columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
         rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -17418,7 +17432,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17459,7 +17473,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17581,7 +17595,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17610,7 +17624,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17639,7 +17653,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17668,7 +17682,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17697,7 +17711,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17726,7 +17740,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17767,7 +17781,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying border styles
+      // Add a table, specifying border styles.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17796,7 +17810,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17837,7 +17851,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying font formatting and fill colors
+      // Add a table, specifying font formatting and fill colors.
       shapes.addTable(3, 4, {
         values: [
           ["A", "BB", "CCC", "DDDD"],
@@ -17918,6 +17932,55 @@
       });
       await context.sync();
     });
+'PowerPoint.TableCellProperties#textRuns:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the text runs of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying text runs.
+      shapes.addTable(3, 4, {
+        specificCellProperties: [
+          [
+            { text: "Title text", font: { bold: true } },
+            { text: "Title text", font: { bold: true } },
+            { text: "Title text", font: { bold: true } },
+            { text: "Title text", font: { bold: true } }
+          ],
+          [
+            { text: "Bold text", font: { bold: true } },
+            {
+              textRuns: [
+                { text: "Text runs with " },
+                { text: "Underlined text", font: { underline: PowerPoint.ShapeFontUnderlineStyle.double } },
+                { text: " and plain text" }
+              ]
+            },
+            { text: "Italicized text", font: { italic: true } },
+            { text: "Plain text" }
+          ],
+          [
+            { text: "Bold text", font: { bold: true } },
+            { text: "Underlined text", font: { underline: PowerPoint.ShapeFontUnderlineStyle.dotted } },
+            {
+              font: { bold: true },
+              textRuns: [
+                { text: "Text runs with " },
+                { text: "italicized text", font: { italic: true } },
+                { text: " and (inherited) bold text" }
+              ]
+            },
+            { text: "Italicized text", font: { italic: true } }
+          ]
+        ]
+      });
+      await context.sync();
+    });
 'PowerPoint.TableCellProperties#verticalAlignment:member':
   - >-
     // Link to full sample:
@@ -17954,7 +18017,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying column widths and row heights
+      // Add a table, specifying column widths and row heights.
       shapes.addTable(3, 4, {
         columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
         rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -17972,7 +18035,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying column widths and row heights
+      // Add a table, specifying column widths and row heights.
       shapes.addTable(3, 4, {
         columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
         rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -18100,7 +18163,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying column widths and row heights
+      // Add a table, specifying column widths and row heights.
       shapes.addTable(3, 4, {
         columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
         rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -18118,7 +18181,7 @@
     await PowerPoint.run(async (context) => {
       const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
-      // Add a table, specifying column widths and row heights
+      // Add a table, specifying column widths and row heights.
       shapes.addTable(3, 4, {
         columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
         rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
@@ -18335,6 +18398,55 @@
       const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
       const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
       textRange.setSelected();
+      await context.sync();
+    });
+'PowerPoint.TextRun:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+    // Specifies the text runs of the cells in a table.
+
+    await PowerPoint.run(async (context) => {
+      const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+      // Add a table, specifying text runs.
+      shapes.addTable(3, 4, {
+        specificCellProperties: [
+          [
+            { text: "Title text", font: { bold: true } },
+            { text: "Title text", font: { bold: true } },
+            { text: "Title text", font: { bold: true } },
+            { text: "Title text", font: { bold: true } }
+          ],
+          [
+            { text: "Bold text", font: { bold: true } },
+            {
+              textRuns: [
+                { text: "Text runs with " },
+                { text: "Underlined text", font: { underline: PowerPoint.ShapeFontUnderlineStyle.double } },
+                { text: " and plain text" }
+              ]
+            },
+            { text: "Italicized text", font: { italic: true } },
+            { text: "Plain text" }
+          ],
+          [
+            { text: "Bold text", font: { bold: true } },
+            { text: "Underlined text", font: { underline: PowerPoint.ShapeFontUnderlineStyle.dotted } },
+            {
+              font: { bold: true },
+              textRuns: [
+                { text: "Text runs with " },
+                { text: "italicized text", font: { italic: true } },
+                { text: " and (inherited) bold text" }
+              ]
+            },
+            { text: "Italicized text", font: { italic: true } }
+          ]
+        ]
+      });
       await context.sync();
     });
 'PowerPoint.TextVerticalAlignment:enum':

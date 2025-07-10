@@ -820,7 +820,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
 
 
-      // This function creates a formatted number data type,
+      // This function creates a double data type,
 
       // and sets the format of this data type as a date.
 
@@ -833,7 +833,7 @@ properties:
         dateRange.valuesAsJson = [
           [
             {
-              type: Excel.CellValueType.formattedNumber,
+              type: Excel.CellValueType.double,
               basicValue: 32889.0,
               numberFormat: "m/d/yyyy"
             }
@@ -2214,11 +2214,7 @@ methods:
     uid: excel!Excel.Range#getImage:member(1)
     package: excel!
     fullName: getImage()
-    summary: >-
-      Renders the range as a Base64-encoded PNG image. *Important**: This API
-      is currently unsupported in Excel for Mac. Visit [OfficeDev/office-js
-      Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the
-      current status.
+    summary: Renders the range as a Base64-encoded PNG image.
     remarks: >-
       \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -3019,18 +3015,19 @@ methods:
       content: >-
         getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations"
         | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
-        "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors"
-        | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" |
-        "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" |
-        "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" |
-        "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        "SameDataValidation" | "Visible" | "DirtyFormulas",
+        cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" |
+        "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
+        "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers"
+        | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" |
+        "Text"): Excel.RangeAreas;
       parameters:
         - id: cellTypeString
           description: The type of cells to include.
           type: >-
             "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
             "Formulas" | "SameConditionalFormat" | "SameDataValidation" |
-            "Visible"
+            "Visible" | "DirtyFormulas"
         - id: cellValueTypeString
           description: >-
             If `cellType` is either `constants` or `formulas`<!-- -->, this
@@ -3105,19 +3102,19 @@ methods:
       content: >-
         getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" |
         "DataValidations" | "Blanks" | "Constants" | "Formulas" |
-        "SameConditionalFormat" | "SameDataValidation" | "Visible",
-        cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" |
-        "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
-        "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers"
-        | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" |
-        "Text"): Excel.RangeAreas;
+        "SameConditionalFormat" | "SameDataValidation" | "Visible" |
+        "DirtyFormulas", cellValueTypeString?: "All" | "Errors" |
+        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber"
+        | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
+        "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
+        "NumbersText" | "Text"): Excel.RangeAreas;
       parameters:
         - id: cellTypeString
           description: The type of cells to include.
           type: >-
             "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
             "Formulas" | "SameConditionalFormat" | "SameDataValidation" |
-            "Visible"
+            "Visible" | "DirtyFormulas"
         - id: cellValueTypeString
           description: >-
             If `cellType` is either `constants` or `formulas`<!-- -->, this

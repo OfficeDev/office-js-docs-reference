@@ -84,6 +84,18 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ExternalQueryRef"'
+  - name: functionInCell
+    uid: excel!Excel.CalcErrorCellValueSubType.functionInCell:member
+    package: excel!
+    summary: >-
+      An error caused by a cell's formula evaluating to a function or function
+      reference. Displays as error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"FunctionInCell"'
   - name: invalidPythonObject
     uid: excel!Excel.CalcErrorCellValueSubType.invalidPythonObject:member
     package: excel!
@@ -105,9 +117,10 @@ fields:
       as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      Warning: `lambdaInCell` was deprecated in ExcelAPI 1.19.
+
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"LambdaInCell"'
   - name: pythonGridQuery
     uid: excel!Excel.CalcErrorCellValueSubType.pythonGridQuery:member
