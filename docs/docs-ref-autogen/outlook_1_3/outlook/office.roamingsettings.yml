@@ -140,6 +140,27 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
+
+      // Remove the specified setting from the mailbox.
+
+      const settingName = (document.getElementById("settingName") as
+      HTMLInputElement).value;
+
+      Office.context.roamingSettings.remove(settingName);
+
+      console.log(`The "${settingName}" setting has been removed.`);
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
