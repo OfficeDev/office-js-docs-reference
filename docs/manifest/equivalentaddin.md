@@ -55,4 +55,4 @@ To specify an XLL as the equivalent add-in, provide both the `FileName` and `Typ
 ## See also
 
 - [Make your custom functions compatible with XLL user-defined functions](/office/dev/add-ins/excel/make-custom-functions-compatible-with-xll-udf)
-- [Make your Office Add-in compatible with an existing COM VSTO add-in](/office/dev/add-ins/develop/make-office-add-in-compatible-with-existing-com-add-in)
+- [Make your Office Add-in compatible with an existing COM or VSTO add-in](/office/dev/add-ins/develop/make-office-add-in-compatible-with-existing-com-add-in)

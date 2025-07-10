@@ -1,6 +1,6 @@
 ---
 title: EquivalentAddins element in the manifest file
-description: Specifies backwards compatibility with an equivalent COM or VSTO add-ins or XLLs.
+description: Specifies backwards compatibility with one or more equivalent COM or VSTO add-ins or XLLs.
 ms.date: 07/12/2025
 ms.localizationpriority: medium
 ---
