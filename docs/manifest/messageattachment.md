@@ -51,4 +51,4 @@ None.
 ## See also
 
 - [LaunchEvent element](launchevent.md)
-- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events)
+- [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation#supported-events)

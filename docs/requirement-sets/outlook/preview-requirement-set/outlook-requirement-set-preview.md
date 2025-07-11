@@ -31,7 +31,7 @@ The following features are in preview.
 
 ### Activate an event-based add-in on a message in read mode
 
-#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
+#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/develop/event-based-activation#supported-events)
 
 Added events to activate an event-based add-in on a message in read mode when it contains certain attachment types or custom internet headers.
 

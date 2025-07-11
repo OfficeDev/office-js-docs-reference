@@ -17,7 +17,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 Requirement set 1.10 includes all of the features of [requirement set 1.9](../requirement-set-1.9/outlook-requirement-set-1.9.md). It added the following features.
 
-- Added new APIs for [event-based activation](/office/dev/add-ins/outlook/autolaunch) and mail signature features.
+- Added new APIs for [event-based activation](/office/dev/add-ins/develop/event-based-activation) and mail signature features.
 - Added support for the [OfficeRuntime.Storage](/javascript/api/office-runtime/officeruntime.storage?view=outlook-js-1.10&preserve-view=true) object with the event-based activation feature.
 - Added ability to include a custom action on a notification message.
 

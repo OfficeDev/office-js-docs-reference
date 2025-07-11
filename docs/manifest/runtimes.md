@@ -1,7 +1,7 @@
 ---
 title: Runtimes in the manifest file 
 description: The Runtimes element specifies your add-in's runtime.
-ms.date: 07/14/2023
+ms.date: 07/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ Specifies the runtime of your add-in. Child of the [Host](host.md) element.
 > [!NOTE]
 > When running in Office on Windows, an add-in that has a **\<Runtimes\>** element in its manifest does not necessarily run in the same webview control as it otherwise would. For more information about how the versions of Windows and Office determine what webview control is normally used, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). If the conditions described there for using Microsoft Edge with WebView2 (Chromium-based) are met, then the add-in uses that browser whether or not it has a **\<Runtimes\>** element. However, when those conditions are not met, an add-in with a **\<Runtimes\>** element always uses Internet Explorer 11 regardless of the Windows or Microsoft 365 version.
 
-**Add-in type:** Task pane, Mail
+**Add-in type:**: Document, Mail, Presentation, Task pane, Workbook
 
 **Valid only in these VersionOverrides schemas**:
 
@@ -24,7 +24,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 **Associated with these requirement sets**:
 
 - [SharedRuntime 1.1](../requirement-sets/common/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
-- [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/outlook/autolaunch).)
+- [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/develop/event-based-activation).)
 - [Mailbox preview](/javascript/api/requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview) (When used in an Outlook add-in that implements the [integrated spam reporting (preview)](/office/dev/add-ins/outlook/spam-reporting) feature.)
 
 [!include[Runtimes support](../includes/runtimes-note.md)]
@@ -52,5 +52,5 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 - [Runtime](runtime.md)
 - [Runtimes in Office Add-ins](/office/dev/add-ins/testing/runtimes)
 - [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
-- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)
+- [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation)
 - [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting)
