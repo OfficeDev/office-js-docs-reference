@@ -19,7 +19,7 @@ Requirement set 1.13 includes all of the features of [requirement set 1.12](../r
 
 - Added support to activate an add-in without the Reading Pane enabled or a message selected.
 - Added support to manage the delivery data and time of a message.
-- Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events).
+- Added new events for [event-based activation](/office/dev/add-ins/develop/event-based-activation#supported-events).
 - Added the item multi-select feature.
 - Added the prepend-on-send feature.
 - Added the sensitivity label feature.
@@ -30,7 +30,7 @@ Requirement set 1.13 includes all of the features of [requirement set 1.12](../r
 - Added the [SupportsNoItemContext](/javascript/api/manifest/action?view=outlook-js-1.13&preserve-view=true#supportsnoitemcontext) add-in only manifest element: Allows task pane add-ins to activate without the Reading Pane enabled or a message selected.
 - Added [Office.context.mailbox.item.delayDeliveryTime](office.context.mailbox.item.md#properties): Adds a property that provides the object to manage the delivery date and time of a message in compose mode.
 - Added [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-1.13&preserve-view=true): Adds an object to manage the delivery date and time of a message in compose mode.
-- Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events): Adds support for the following events.
+- Added new events for [event-based activation](/office/dev/add-ins/develop/event-based-activation#supported-events): Adds support for the following events.
   - `OnMessageFromChanged`
   - `OnAppointmentFromChanged`
   - `OnSensitivityLabelChanged`

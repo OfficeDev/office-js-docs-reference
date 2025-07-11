@@ -33,7 +33,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ## Contained in
 
-- [ExtensionPoint](extensionpoint.md) (**\<LaunchEvent\>** mail add-in)
+- [ExtensionPoint](extensionpoint.md) (**\<LaunchEvent\>** add-in)
 
 ## Child elements
 

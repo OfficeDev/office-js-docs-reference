@@ -1,7 +1,7 @@
 ---
 title: Runtime in the manifest file
 description: The Runtime element configures your add-in to use a shared JavaScript runtime for its various components, for example, ribbon, task pane, custom functions.
-ms.date: 07/14/2023
+ms.date: 07/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Configures your add-in to use a shared JavaScript runtime so that various components all run in the same runtime. Child of the [Runtimes](runtimes.md) element.
 
-**Add-in type:** Task pane, Mail
+**Add-in type:**: Document, Mail, Presentation, Task pane, Workbook
 
 **Valid only in these VersionOverrides schemas**:
 
@@ -21,7 +21,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 **Associated with these requirement sets**:
 
 - [SharedRuntime 1.1](../requirement-sets/common/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
-- [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/outlook/autolaunch).)
+- [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/develop/event-based-activation).)
 - [Mailbox preview](/javascript/api/requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview) (When used in an Outlook add-in that implements the [integrated spam reporting (preview)](/office/dev/add-ins/outlook/spam-reporting) feature.)
 
 [!include[Runtimes support](../includes/runtimes-note.md)]
@@ -66,5 +66,5 @@ Optional. Represents the length of time the add-in is allowed to run.
 - [Runtimes](runtimes.md)
 - [Runtimes in Office Add-ins](/office/dev/add-ins/testing/runtimes)
 - [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
-- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)
+- [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation)
 - [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting)
