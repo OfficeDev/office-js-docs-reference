@@ -49,9 +49,6 @@ The **\<EquivalentAddins\>** element can contain the following child element.
 
 ### Effect
 
-> [!NOTE]
-> This element is not currently supported in Outlook.
-
 Specifies either that the COM or VSTO add-in is disabled and hidden (instead of the Office Web Add-in) when they conflict, or specifies that the user chooses which to disable and hide. There are two possible values.
 
 - **DisableWithNotification**: All of the COM and VSTO add-ins specified in the child **\<EquivalentAddin\>** elements will be disabled and hidden. A popup dialog notifies the user that this happening.
