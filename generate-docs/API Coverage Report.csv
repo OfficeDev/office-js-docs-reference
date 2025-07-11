@@ -9750,7 +9750,7 @@ Office.ReplyFormData,"htmlBody",Property,Good,false
 Office.ReplyFormData,"options",Property,Excellent,false
 Office.RoamingSettings,N/A,Interface,Great,false
 Office.RoamingSettings,"get(name)",Method,Good,true
-Office.RoamingSettings,"remove(name)",Method,Fine,false
+Office.RoamingSettings,"remove(name)",Method,Fine,true
 Office.RoamingSettings,"saveAsync(callback)",Method,Excellent,true
 Office.RoamingSettings,"set(name, value)",Method,Excellent,true
 Office.SelectedItemDetails,N/A,Interface,Unknown,true
