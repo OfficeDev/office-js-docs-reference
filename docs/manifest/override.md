@@ -208,7 +208,7 @@ An **\<Override\>** element expresses a conditional and can be read as an "If ..
 </Runtime>
 ```
 
-**Add-in type:** Mail
+**Add-in type:** Document, Mail, Presentation, Workbook
 
 ### Syntax
 
