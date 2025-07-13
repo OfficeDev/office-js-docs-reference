@@ -347,7 +347,7 @@ methods:
 
 
       - [Event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
       and [integrated
       spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
       add-ins use a different event object to signal when they've completed

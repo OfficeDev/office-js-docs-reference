@@ -2747,7 +2747,7 @@ export declare namespace Office {
          * **Important**:
          *
          * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
@@ -2782,7 +2782,7 @@ export declare namespace Office {
          * **Important**:
          *
          * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
@@ -4864,7 +4864,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using LaunchEvent in the manifest}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation feature using LaunchEvent in the manifest}.
          * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
@@ -4911,7 +4911,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using LaunchEvent in the manifest}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation feature using LaunchEvent in the manifest}.
          * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
@@ -9660,7 +9660,7 @@ export declare namespace Office {
     }
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
+     * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
      * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
@@ -10540,7 +10540,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * **Errors**:
@@ -10576,7 +10576,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * **Errors**:
@@ -11460,7 +11460,7 @@ export declare namespace Office {
          * **Important**:
          *
          * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
@@ -11495,7 +11495,7 @@ export declare namespace Office {
          * **Important**:
          *
          * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
          * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.

@@ -4461,7 +4461,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using LaunchEvent in the manifest}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation feature using LaunchEvent in the manifest}.
          * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
@@ -4508,7 +4508,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using LaunchEvent in the manifest}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation feature using LaunchEvent in the manifest}.
          * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
@@ -7017,7 +7017,7 @@ export declare namespace Office {
     }
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
+     * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
      * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.

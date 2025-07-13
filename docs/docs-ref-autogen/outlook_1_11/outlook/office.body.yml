@@ -1489,7 +1489,7 @@ methods:
       - The behavior of `setSignatureAsync` differs if you call it in the event
       handler of an add-in that implements the [event-based activation feature
       using LaunchEvent in the
-      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      manifest](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
       -->. When the user composes a new item (including reply or forward), the
       signature is set but doesn't modify the form. This means if the user
       closes the form without making other edits, they won't be prompted to save
@@ -1659,7 +1659,7 @@ methods:
       - The behavior of `setSignatureAsync` differs if you call it in the event
       handler of an add-in that implements the [event-based activation feature
       using LaunchEvent in the
-      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      manifest](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
       -->. When the user composes a new item (including reply or forward), the
       signature is set but doesn't modify the form. This means if the user
       closes the form without making other edits, they won't be prompted to save

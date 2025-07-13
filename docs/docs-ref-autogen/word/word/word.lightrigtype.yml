@@ -1,0 +1,293 @@
+### YamlMime:TSEnum
+name: Word.LightRigType
+uid: word!Word.LightRigType:enum
+package: word!
+fullName: Word.LightRigType
+summary: Indicates the effects lighting for an object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: balanced
+    uid: word!Word.LightRigType.balanced:member
+    package: word!
+    summary: >-
+      Represents a balanced light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Balanced"'
+  - name: brightRoom
+    uid: word!Word.LightRigType.brightRoom:member
+    package: word!
+    summary: >-
+      Represents a bright room light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BrightRoom"'
+  - name: chilly
+    uid: word!Word.LightRigType.chilly:member
+    package: word!
+    summary: >-
+      Represents a chilly light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Chilly"'
+  - name: contrasting
+    uid: word!Word.LightRigType.contrasting:member
+    package: word!
+    summary: >-
+      Represents a contrasting light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Contrasting"'
+  - name: flat
+    uid: word!Word.LightRigType.flat:member
+    package: word!
+    summary: >-
+      Represents a flat light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Flat"'
+  - name: flood
+    uid: word!Word.LightRigType.flood:member
+    package: word!
+    summary: >-
+      Represents a flood light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Flood"'
+  - name: freezing
+    uid: word!Word.LightRigType.freezing:member
+    package: word!
+    summary: >-
+      Represents a freezing light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Freezing"'
+  - name: glow
+    uid: word!Word.LightRigType.glow:member
+    package: word!
+    summary: >-
+      Represents a glow light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Glow"'
+  - name: harsh
+    uid: word!Word.LightRigType.harsh:member
+    package: word!
+    summary: >-
+      Represents a harsh light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Harsh"'
+  - name: legacyFlat1
+    uid: word!Word.LightRigType.legacyFlat1:member
+    package: word!
+    summary: >-
+      Represents legacy flat light rig type 1.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyFlat1"'
+  - name: legacyFlat2
+    uid: word!Word.LightRigType.legacyFlat2:member
+    package: word!
+    summary: >-
+      Represents legacy flat light rig type 2.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyFlat2"'
+  - name: legacyFlat3
+    uid: word!Word.LightRigType.legacyFlat3:member
+    package: word!
+    summary: >-
+      Represents legacy flat light rig type 3.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyFlat3"'
+  - name: legacyFlat4
+    uid: word!Word.LightRigType.legacyFlat4:member
+    package: word!
+    summary: >-
+      Represents legacy flat light rig type 4.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyFlat4"'
+  - name: legacyHarsh1
+    uid: word!Word.LightRigType.legacyHarsh1:member
+    package: word!
+    summary: >-
+      Represents legacy harsh light rig type 1.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyHarsh1"'
+  - name: legacyHarsh2
+    uid: word!Word.LightRigType.legacyHarsh2:member
+    package: word!
+    summary: >-
+      Represents legacy harsh light rig type 2.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyHarsh2"'
+  - name: legacyHarsh3
+    uid: word!Word.LightRigType.legacyHarsh3:member
+    package: word!
+    summary: >-
+      Represents legacy harsh light rig type 3.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyHarsh3"'
+  - name: legacyHarsh4
+    uid: word!Word.LightRigType.legacyHarsh4:member
+    package: word!
+    summary: >-
+      Represents legacy harsh light rig type 4.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyHarsh4"'
+  - name: legacyNormal1
+    uid: word!Word.LightRigType.legacyNormal1:member
+    package: word!
+    summary: >-
+      Represents legacy normal light rig type 1.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyNormal1"'
+  - name: legacyNormal2
+    uid: word!Word.LightRigType.legacyNormal2:member
+    package: word!
+    summary: >-
+      Represents legacy normal light rig type 2.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyNormal2"'
+  - name: legacyNormal3
+    uid: word!Word.LightRigType.legacyNormal3:member
+    package: word!
+    summary: >-
+      Represents legacy normal light rig type 3.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyNormal3"'
+  - name: legacyNormal4
+    uid: word!Word.LightRigType.legacyNormal4:member
+    package: word!
+    summary: >-
+      Represents legacy normal light rig type 4.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LegacyNormal4"'
+  - name: mixed
+    uid: word!Word.LightRigType.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: morning
+    uid: word!Word.LightRigType.morning:member
+    package: word!
+    summary: >-
+      Represents a morning light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Morning"'
+  - name: soft
+    uid: word!Word.LightRigType.soft:member
+    package: word!
+    summary: >-
+      Represents a soft light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Soft"'
+  - name: sunrise
+    uid: word!Word.LightRigType.sunrise:member
+    package: word!
+    summary: >-
+      Represents a sunrise light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Sunrise"'
+  - name: sunset
+    uid: word!Word.LightRigType.sunset:member
+    package: word!
+    summary: >-
+      Represents a sunset light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Sunset"'
+  - name: threePoint
+    uid: word!Word.LightRigType.threePoint:member
+    package: word!
+    summary: >-
+      Represents a three-point light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ThreePoint"'
+  - name: twoPoint
+    uid: word!Word.LightRigType.twoPoint:member
+    package: word!
+    summary: >-
+      Represents a two-point light rig type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TwoPoint"'

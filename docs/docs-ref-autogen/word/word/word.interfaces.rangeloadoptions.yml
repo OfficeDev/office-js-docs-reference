@@ -45,6 +45,23 @@ properties:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.FontLoadOptions:interface" />
+  - name: hasNoProofing
+    uid: word!Word.Interfaces.RangeLoadOptions#hasNoProofing:member
+    package: word!
+    fullName: hasNoProofing
+    summary: >-
+      Specifies the proofing status (spelling and grammar checking) of the
+      range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasNoProofing?: boolean;'
+      return:
+        type: boolean
   - name: hyperlink
     uid: word!Word.Interfaces.RangeLoadOptions#hyperlink:member
     package: word!
@@ -79,6 +96,23 @@ properties:
       content: 'isEmpty?: boolean;'
       return:
         type: boolean
+  - name: listFormat
+    uid: word!Word.Interfaces.RangeLoadOptions#listFormat:member
+    package: word!
+    fullName: listFormat
+    summary: >-
+      Returns a `ListFormat` object that represents all the list formatting
+      characteristics of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listFormat?: Word.Interfaces.ListFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListFormatLoadOptions:interface" />
   - name: parentBody
     uid: word!Word.Interfaces.RangeLoadOptions#parentBody:member
     package: word!

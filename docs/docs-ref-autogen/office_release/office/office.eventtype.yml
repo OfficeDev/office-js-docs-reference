@@ -193,8 +193,8 @@ fields:
       it currently doesn't support the `InfobarClicked` event. To determine when
       the **Dismiss** action is selected from the notification, implement a
       handler for the `OnInfoBarDismissClicked` event instead. For more
-      information, see [Configure your Outlook add-in for event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch#supported-events)<!--
+      information, see [Activate add-ins with
+      events](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events)<!--
       -->.
 
 
@@ -282,7 +282,7 @@ fields:
 
       - The `OfficeThemeChanged` event isn't supported in add-ins that implement
       [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
       -->.
 
 

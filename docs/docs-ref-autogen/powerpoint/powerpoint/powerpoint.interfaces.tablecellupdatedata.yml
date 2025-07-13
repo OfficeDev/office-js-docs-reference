@@ -17,7 +17,9 @@ properties:
       powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member
     package: powerpoint!
     fullName: horizontalAlignment
-    summary: Specifies the horizontal alignment of the text in the table cell.
+    summary: >-
+      Specifies the horizontal alignment of the text in the table cell. Returns
+      `null` if the cell text contains different alignments.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -29,17 +31,19 @@ properties:
       content: >-
         horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" |
         "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
-        "ThaiDistributed";
+        "ThaiDistributed" | null;
       return:
         type: >-
           <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
           | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
-          "Distributed" | "ThaiDistributed"
+          "Distributed" | "ThaiDistributed" | null
   - name: indentLevel
     uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData#indentLevel:member
     package: powerpoint!
     fullName: indentLevel
-    summary: Specifies the indent level of the text in the table cell.
+    summary: >-
+      Specifies the indent level of the text in the table cell. Returns `null`
+      if the cell text contains different indent levels.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -48,9 +52,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'indentLevel?: number;'
+      content: 'indentLevel?: number | null;'
       return:
-        type: number
+        type: number | null
   - name: text
     uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData#text:member
     package: powerpoint!

@@ -136,7 +136,8 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Specifies the horizontal alignment of the
-      text in the table cell.
+      text in the table cell. Returns `null` if the cell text contains different
+      alignments.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -155,7 +156,8 @@ properties:
     fullName: indentLevel
     summary: >-
       For EACH ITEM in the collection: Specifies the indent level of the text in
-      the table cell.
+      the table cell. Returns `null` if the cell text contains different indent
+      levels.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

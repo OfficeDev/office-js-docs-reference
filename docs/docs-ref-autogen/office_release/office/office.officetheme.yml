@@ -37,7 +37,7 @@ remarks: >-
   [Mailbox requirement set
   1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14)<!--
   -->. It isn't supported in Outlook add-ins that implement [event-based
-  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+  activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
   -->.
 
 

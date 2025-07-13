@@ -157,6 +157,23 @@ properties:
       content: 'readonly footnotes: Word.NoteItemCollection;'
       return:
         type: <xref uid="word!Word.NoteItemCollection:class" />
+  - name: hasNoProofing
+    uid: word!Word.Range#hasNoProofing:member
+    package: word!
+    fullName: hasNoProofing
+    summary: >-
+      Specifies the proofing status (spelling and grammar checking) of the
+      range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasNoProofing: boolean;'
+      return:
+        type: boolean
   - name: hyperlink
     uid: word!Word.Range#hyperlink:member
     package: word!
@@ -206,6 +223,23 @@ properties:
       content: 'readonly isEmpty: boolean;'
       return:
         type: boolean
+  - name: listFormat
+    uid: word!Word.Range#listFormat:member
+    package: word!
+    fullName: listFormat
+    summary: >-
+      Returns a `ListFormat` object that represents all the list formatting
+      characteristics of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listFormat: Word.ListFormat;'
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
   - name: lists
     uid: word!Word.Range#lists:member
     package: word!

@@ -1,0 +1,313 @@
+### YamlMime:TSType
+name: Word.ColorFormat
+uid: word!Word.ColorFormat:class
+package: word!
+fullName: Word.ColorFormat
+summary: Represents the color formatting of a shape or text in Word.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: brightness
+    uid: word!Word.ColorFormat#brightness:member
+    package: word!
+    fullName: brightness
+    summary: >-
+      Specifies the brightness of a specified shape color. Valid values are from
+      `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'brightness: number;'
+      return:
+        type: number
+  - name: context
+    uid: word!Word.ColorFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: objectThemeColor
+    uid: word!Word.ColorFormat#objectThemeColor:member
+    package: word!
+    fullName: objectThemeColor
+    summary: Specifies the theme color for a color format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        objectThemeColor: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1" |
+        "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" |
+        "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" |
+        "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+      return:
+        type: >-
+          <xref uid="word!Word.ThemeColorIndex:enum" /> | "NotThemeColor" |
+          "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" |
+          "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" |
+          "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" |
+          "Background2" | "Text2"
+  - name: rgb
+    uid: word!Word.ColorFormat#rgb:member
+    package: word!
+    fullName: rgb
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the specified color. You can
+      provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rgb: string;'
+      return:
+        type: string
+  - name: tintAndShade
+    uid: word!Word.ColorFormat#tintAndShade:member
+    package: word!
+    fullName: tintAndShade
+    summary: >-
+      Specifies the lightening or darkening of a specified shape's color. Valid
+      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type: number
+  - name: type
+    uid: word!Word.ColorFormat#type:member
+    package: word!
+    fullName: type
+    summary: Returns the shape color type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Word.ColorType | "rgb" | "scheme";'
+      return:
+        type: <xref uid="word!Word.ColorType:enum" /> | "rgb" | "scheme"
+methods:
+  - name: load(options)
+    uid: word!Word.ColorFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ColorFormatLoadOptions):
+        Word.ColorFormat;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.ColorFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ColorFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.ColorFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ColorFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.ColorFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ColorFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.ColorFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.ColorFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ColorFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.ColorFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.ColorFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.ColorFormat`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.ColorFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ColorFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.ColorFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.ColorFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />
