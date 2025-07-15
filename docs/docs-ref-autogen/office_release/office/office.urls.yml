@@ -48,8 +48,8 @@ properties:
       - The URL that's returned points to the location of the JavaScript file
       that classic Outlook on Windows uses to handle event-based activation and
       integrated spam reporting. To learn more about these features, see
-      [Configure your Outlook add-in for event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      [Activate add-ins with
+      events](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
       and [Implement an integrated spam-reporting
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!--
       -->.

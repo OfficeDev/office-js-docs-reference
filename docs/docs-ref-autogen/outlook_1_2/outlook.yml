@@ -38,6 +38,7 @@ interfaces:
   - outlook!Office.UserProfile:interface
 enums:
   - outlook!Office.MailboxEnums.AttachmentType:enum
+  - outlook!Office.MailboxEnums.BodyMode:enum
   - outlook!Office.MailboxEnums.EntityType:enum
   - outlook!Office.MailboxEnums.ItemType:enum
   - outlook!Office.MailboxEnums.OpenLocation:enum

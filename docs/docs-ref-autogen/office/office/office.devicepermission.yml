@@ -205,7 +205,7 @@ methods:
 
 
       - If your add-in implements [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
       -->, browser permissions to device capabilities aren't inherited and the
       `requestPermissionsAsync` method isn't supported.
 
@@ -302,7 +302,7 @@ methods:
 
 
       - If your add-in implements [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
       -->, browser permissions to device capabilities aren't inherited and the
       `requestPermissionsAsync` method isn't supported.
 

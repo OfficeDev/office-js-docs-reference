@@ -12,6 +12,12 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
+  To learn how to get or set the body of a mail item, see [Get or set the body
+  of a message or appointment in
+  Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/insert-data-in-the-body)<!--
+  -->.
+
+
   **Known issue with HTML table border colors**
 
 
