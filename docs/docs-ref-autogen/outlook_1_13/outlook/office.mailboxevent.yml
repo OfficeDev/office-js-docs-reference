@@ -6,7 +6,7 @@ fullName: Office.MailboxEvent
 summary: >-
   The `MailboxEvent` object is passed as an argument to the event handler of an
   add-in that implements [event-based
-  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+  activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
   -->, including [Smart
   Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!--
   -->, or the [integrated spam-reporting

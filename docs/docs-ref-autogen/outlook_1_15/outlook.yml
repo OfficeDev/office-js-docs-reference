@@ -85,6 +85,7 @@ enums:
   - outlook!Office.MailboxEnums.AttachmentContentFormat:enum
   - outlook!Office.MailboxEnums.AttachmentStatus:enum
   - outlook!Office.MailboxEnums.AttachmentType:enum
+  - outlook!Office.MailboxEnums.BodyMode:enum
   - outlook!Office.MailboxEnums.CategoryColor:enum
   - outlook!Office.MailboxEnums.ComposeType:enum
   - outlook!Office.MailboxEnums.Days:enum

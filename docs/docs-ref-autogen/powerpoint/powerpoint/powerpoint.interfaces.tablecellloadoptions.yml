@@ -124,7 +124,9 @@ properties:
       powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#horizontalAlignment:member
     package: powerpoint!
     fullName: horizontalAlignment
-    summary: Specifies the horizontal alignment of the text in the table cell.
+    summary: >-
+      Specifies the horizontal alignment of the text in the table cell. Returns
+      `null` if the cell text contains different alignments.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -140,7 +142,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#indentLevel:member
     package: powerpoint!
     fullName: indentLevel
-    summary: Specifies the indent level of the text in the table cell.
+    summary: >-
+      Specifies the indent level of the text in the table cell. Returns `null`
+      if the cell text contains different indent levels.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

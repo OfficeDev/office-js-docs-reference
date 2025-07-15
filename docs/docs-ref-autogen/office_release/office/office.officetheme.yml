@@ -37,7 +37,7 @@ remarks: >-
   [Mailbox requirement set
   1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14)<!--
   -->. It isn't supported in Outlook add-ins that implement [event-based
-  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!--
+  activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
   -->.
 
 
@@ -142,8 +142,14 @@ properties:
       Returns `true` if the Office theme that's currently selected is
       **Black** (dark mode) or **Dark Gray**.
     remarks: >-
-      **Important**: The `isDarkTheme` property isn't yet supported in
-      Outlook.
+      **Important**: The `isDarkTheme` property isn't supported in Outlook.
+      To determine the current theme in Outlook, use the `body*Color` and
+      `control*Color` properties instead. To automatically detect theme changes,
+      use the
+      [addHandlerAsync](https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1))
+      method to create an event handler for the
+      [OfficeThemeChanged](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
+      event.
 
     isPreview: false
     isDeprecated: false
@@ -156,7 +162,15 @@ properties:
     package: office!
     fullName: themeId
     summary: Gets the Office theme that's currently selected.
-    remarks: '**Important**: The `themeId` property isn''t yet supported in Outlook.'
+    remarks: >-
+      **Important**: The `themeId` property isn't supported in Outlook. To
+      determine the current theme in Outlook, use the `body*Color` and
+      `control*Color` properties instead. To automatically detect theme changes,
+      use the
+      [addHandlerAsync](https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1))
+      method to create an event handler for the
+      [OfficeThemeChanged](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
+      event.
 
     isPreview: false
     isDeprecated: false

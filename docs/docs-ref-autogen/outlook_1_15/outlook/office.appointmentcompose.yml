@@ -4133,7 +4133,7 @@ methods:
 
       - The `sendAsync` method is only supported in task pane and function
       command implementations. It isn't supported in [event-based
-      handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      handlers](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
       or [item multi-select
       scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
@@ -4216,7 +4216,7 @@ methods:
 
       - The `sendAsync` method is only supported in task pane and function
       command implementations. It isn't supported in [event-based
-      handlers](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
+      handlers](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
       or [item multi-select
       scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
