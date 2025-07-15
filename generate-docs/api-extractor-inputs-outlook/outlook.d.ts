@@ -4223,6 +4223,9 @@ export declare namespace Office {
      * @remarks
      * [Api set: Mailbox 1.1]
      *
+     * To learn how to get or set the body of a mail item, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/insert-data-in-the-body | Get or set the body of a message or appointment in Outlook}.
+     *
      * **Known issue with HTML table border colors**
      *
      * Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a cell's borders may not reflect
@@ -4349,7 +4352,7 @@ export declare namespace Office {
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
-         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
+         * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
          * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
          *
@@ -4389,7 +4392,7 @@ export declare namespace Office {
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
-         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
+         * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
          * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
          *
@@ -4671,7 +4674,7 @@ export declare namespace Office {
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
-         * In Message Compose mode, particulary for replies to a conversation thread with more than one message, if you want to honor the user's settings when
+         * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want to honor the user's settings when
          * setting the body of a message, specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `setAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is set. Conversely, if messages are displayed individually, the entire body, including previous messages
          * in the conversation thread, is replaced.
@@ -4741,7 +4744,7 @@ export declare namespace Office {
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
-         * In Message Compose mode, particulary for replies in a conversation thread with more than one message, if you want to honor the user's settings when
+         * In Message Compose mode, particularly for replies in a conversation thread with more than one message, if you want to honor the user's settings when
          * setting the body of a message, specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `setAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is set. Conversely, if messages are displayed individually, the entire body, including previous messages
          * in the conversation thread, is replaced.

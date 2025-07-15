@@ -7190,7 +7190,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `isDarkTheme` property isn't yet supported in Outlook. 
+         * **Important**: The `isDarkTheme` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         isDarkTheme: boolean;
         /**
@@ -7198,7 +7202,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `themeId` property isn't yet supported in Outlook. 
+         * **Important**: The `themeId` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         themeId: ThemeId;
     }

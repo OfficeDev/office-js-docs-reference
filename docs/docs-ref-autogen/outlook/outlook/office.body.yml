@@ -12,6 +12,12 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
+  To learn how to get or set the body of a mail item, see [Get or set the body
+  of a message or appointment in
+  Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/insert-data-in-the-body)<!--
+  -->.
+
+
   **Known issue with HTML table border colors**
 
 
@@ -381,7 +387,7 @@ methods:
       Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
-      current message). In Message Compose mode, particulary for replies to a
+      current message). In Message Compose mode, particularly for replies to a
       conversation thread with more than one message, if you want the returned
       body to reflect the user's setting, specify the `bodyMode:
       Office.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync`
@@ -482,7 +488,7 @@ methods:
       Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
-      current message). In Message Compose mode, particulary for replies to a
+      current message). In Message Compose mode, particularly for replies to a
       conversation thread with more than one message, if you want the returned
       body to reflect the user's setting, specify the `bodyMode:
       Office.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync`
@@ -1289,7 +1295,7 @@ methods:
       Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
-      current message). In Message Compose mode, particulary for replies to a
+      current message). In Message Compose mode, particularly for replies to a
       conversation thread with more than one message, if you want to honor the
       user's settings when setting the body of a message, specify the `bodyMode:
       Office.MailboxEnums.BodyMode.HostConfig` parameter in your `setAsync`
@@ -1523,7 +1529,7 @@ methods:
       Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
-      current message). In Message Compose mode, particulary for replies in a
+      current message). In Message Compose mode, particularly for replies in a
       conversation thread with more than one message, if you want to honor the
       user's settings when setting the body of a message, specify the `bodyMode:
       Office.MailboxEnums.BodyMode.HostConfig` parameter in your `setAsync`

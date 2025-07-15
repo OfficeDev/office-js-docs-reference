@@ -42,6 +42,36 @@ export declare namespace Office {
              */
             Item = "item"
         }
+        /**
+         * Specifies the portion of a message's body displayed for replies to a conversation thread with more than one message.
+         *
+         * @remarks
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This enum is only supported in Outlook on the web and new Outlook on Windows. On these platforms, users can organize their messages as
+         * conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         *
+         * The `BodyMode` enum supports the following message organization settings.
+         *
+         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
+         *
+         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         *
+         * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
+         */
+        enum BodyMode {
+            /**
+             * The entire body of a message, including previous messages from the same conversation thread.
+             */
+            FullBody = 0,
+            /**
+             * The body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
+             * If messages are organized by conversation, it specifies only the current body of the reply. Conversely, if messages are organized as individual
+             * messages, it specifies the entire body of a message, including previous messages from the same conversation thread.
+             */
+            HostConfig = 1
+        }
         
         
         
@@ -1818,6 +1848,9 @@ export declare namespace Office {
      * @remarks
      * [Api set: Mailbox 1.1]
      *
+     * To learn how to get or set the body of a mail item, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/insert-data-in-the-body | Get or set the body of a message or appointment in Outlook}.
+     *
      * **Known issue with HTML table border colors**
      *
      * Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a cell's borders may not reflect
@@ -1831,9 +1864,7 @@ export declare namespace Office {
         
         
         /**
-         * Returns the current body in a specified format.
-         *
-         * This method returns the entire current body in the format specified by `coercionType`.
+         * Returns the entire current body in the format specified by `coercionType`.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -1852,17 +1883,28 @@ export declare namespace Office {
          * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
          * Otherwise, you may receive an unexpected value, such as an empty string.
          *
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
+         * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
+         * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
+         * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
+         * - The `bodyMode` option isn't supported on a message that's loaded using the `loadItemByIdAsync` method. For more information, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * @param coercionType - The format for the returned body.
-         * @param options - An object literal that contains one or more of the following properties:-
-         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Any data you want to access in the callback function.
+         *        `bodyMode`: In Outlook on the web and new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is returned.
+         *        If a value isn't specified, `bodyMode` defaults to `Office.MailboxEnums.BodyMode.FullBody`, which returns the entire body of a message conversation. The `bodyMode` property only
+         *        applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
+         *        of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
          */
-        getAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions & { bodyMode?: MailboxEnums.BodyMode }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Returns the current body in a specified format.
-         *
-         * This method returns the entire current body in the format specified by `coercionType`.
+         * Returns the entire current body in the format specified by `coercionType`.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -1881,9 +1923,16 @@ export declare namespace Office {
          * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
          * Otherwise, you may receive an unexpected value, such as an empty string.
          *
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
+         * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
+         * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
+         * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
          * @param coercionType - The format for the returned body.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
+         *        of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
          */
         getAsync(coercionType: CommonAPI.CoercionType | string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -2065,20 +2114,36 @@ export declare namespace Office {
          * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
+         * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want to honor the user's settings when
+         * setting the body of a message, specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `setAsync` call. If messages are grouped by conversation,
+         * only the body of the current reply is set. Conversely, if messages are displayed individually, the entire body, including previous messages
+         * in the conversation thread, is replaced.
+         *
+         * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
+         * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
+         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
          *
          * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
          *
-         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         * @param options - An object literal that contains one or more of the following properties:-
-         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
+         * @param data - The string that replaces the existing body. The string is limited to 1,000,000 characters.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Any data you want to access in the callback function.
+         *        `coercionType`: The desired format for the body. The string in the `data` parameter is converted to this format.
+         *        `bodyMode`: In Outlook on the web and new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is set.
+         *        If a value isn't specified, `bodyMode` defaults to `Office.MailboxEnums.BodyMode.FullBody`, which replaces the entire body, including previous messages in the conversation thread.
+         *        The `bodyMode` property only applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         *        of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
          */
-        setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions & { bodyMode?: MailboxEnums.BodyMode }, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Replaces the entire body with the specified text.
          *
@@ -2119,6 +2184,19 @@ export declare namespace Office {
          * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
+         * In Message Compose mode, particularly for replies in a conversation thread with more than one message, if you want to honor the user's settings when
+         * setting the body of a message, specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `setAsync` call. If messages are grouped by conversation,
+         * only the body of the current reply is set. Conversely, if messages are displayed individually, the entire body, including previous messages
+         * in the conversation thread, is replaced.
+         *
+         * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
+         * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
+         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -2127,7 +2205,7 @@ export declare namespace Office {
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         *        of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
          */
         setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
