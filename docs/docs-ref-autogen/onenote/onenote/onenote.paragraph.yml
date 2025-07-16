@@ -268,10 +268,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.NoteTag:class" />
         description: ''
-  - name: addNoteTag(typeString, statusString)
+  - name: addNoteTag(type, status)
     uid: onenote!OneNote.Paragraph#addNoteTag:member(2)
     package: onenote!
-    fullName: addNoteTag(typeString, statusString)
+    fullName: addNoteTag(type, status)
     summary: Add NoteTag to the paragraph.
     remarks: >-
       \[ [API set: OneNoteApi
@@ -282,19 +282,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" |
+        addNoteTag(type: "Unknown" | "ToDo" | "Important" | "Question" |
         "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical"
-        | "ToDoPriority1" | "ToDoPriority2", statusString: "Unknown" | "Normal"
-        | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
+        | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" |
+        "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
         "TaskRemoved"): OneNote.NoteTag;
       parameters:
-        - id: typeString
+        - id: type
           description: The type of the NoteTag.
           type: >-
             "Unknown" | "ToDo" | "Important" | "Question" | "Contact" |
             "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" |
             "ToDoPriority1" | "ToDoPriority2"
-        - id: statusString
+        - id: status
           description: The status of the NoteTag.
           type: >-
             "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
@@ -434,10 +434,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: insertHtmlAsSibling(insertLocationString, html)
+  - name: insertHtmlAsSibling(insertLocation, html)
     uid: onenote!OneNote.Paragraph#insertHtmlAsSibling:member(2)
     package: onenote!
-    fullName: insertHtmlAsSibling(insertLocationString, html)
+    fullName: insertHtmlAsSibling(insertLocation, html)
     summary: Inserts the specified HTML content
     remarks: >-
       \[ [API set: OneNoteApi
@@ -448,10 +448,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertHtmlAsSibling(insertLocationString: "Before" | "After", html:
-        string): void;
+        insertHtmlAsSibling(insertLocation: "Before" | "After", html: string):
+        void;
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of new contents relative to the current Paragraph.
           type: '"Before" | "After"'
         - id: html
@@ -534,14 +534,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Image:class" />
         description: ''
-  - name: >-
-      insertImageAsSibling(insertLocationString, base64EncodedImage, width,
-      height)
+  - name: insertImageAsSibling(insertLocation, base64EncodedImage, width, height)
     uid: onenote!OneNote.Paragraph#insertImageAsSibling:member(2)
     package: onenote!
-    fullName: >-
-      insertImageAsSibling(insertLocationString, base64EncodedImage, width,
-      height)
+    fullName: insertImageAsSibling(insertLocation, base64EncodedImage, width, height)
     summary: Inserts the image at the specified insert location.
     remarks: >-
       \[ [API set: OneNoteApi
@@ -552,11 +548,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertImageAsSibling(insertLocationString: "Before" | "After",
+        insertImageAsSibling(insertLocation: "Before" | "After",
         base64EncodedImage: string, width: number, height: number):
         OneNote.Image;
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type: '"Before" | "After"'
         - id: base64EncodedImage
@@ -633,10 +629,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.RichText:class" />
         description: ''
-  - name: insertRichTextAsSibling(insertLocationString, paragraphText)
+  - name: insertRichTextAsSibling(insertLocation, paragraphText)
     uid: onenote!OneNote.Paragraph#insertRichTextAsSibling:member(2)
     package: onenote!
-    fullName: insertRichTextAsSibling(insertLocationString, paragraphText)
+    fullName: insertRichTextAsSibling(insertLocation, paragraphText)
     summary: Inserts the paragraph text at the specifiec insert location.
     remarks: >-
       \[ [API set: OneNoteApi
@@ -647,10 +643,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertRichTextAsSibling(insertLocationString: "Before" | "After",
+        insertRichTextAsSibling(insertLocation: "Before" | "After",
         paragraphText: string): OneNote.RichText;
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type: '"Before" | "After"'
         - id: paragraphText
@@ -695,10 +691,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Table:class" />
         description: ''
-  - name: insertTableAsSibling(insertLocationString, rowCount, columnCount, values)
+  - name: insertTableAsSibling(insertLocation, rowCount, columnCount, values)
     uid: onenote!OneNote.Paragraph#insertTableAsSibling:member(2)
     package: onenote!
-    fullName: insertTableAsSibling(insertLocationString, rowCount, columnCount, values)
+    fullName: insertTableAsSibling(insertLocation, rowCount, columnCount, values)
     summary: >-
       Adds a table with the specified number of rows and columns before or after
       the current paragraph.
@@ -711,10 +707,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount:
+        insertTableAsSibling(insertLocation: "Before" | "After", rowCount:
         number, columnCount: number, values?: string[][]): OneNote.Table;
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type: '"Before" | "After"'
         - id: rowCount

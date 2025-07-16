@@ -1102,10 +1102,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
-  - name: getDimensionDataSourceString(dimensionString)
+  - name: getDimensionDataSourceString(dimension)
     uid: excel!Excel.ChartSeries#getDimensionDataSourceString:member(2)
     package: excel!
-    fullName: getDimensionDataSourceString(dimensionString)
+    fullName: getDimensionDataSourceString(dimension)
     summary: >-
       Gets the string representation of the data source of the chart series. The
       string representation could be information such as a cell address.
@@ -1118,11 +1118,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getDimensionDataSourceString(dimensionString: "Categories" | "Values" |
+        getDimensionDataSourceString(dimension: "Categories" | "Values" |
         "XValues" | "YValues" | "BubbleSizes"):
         OfficeExtension.ClientResult<string>;
       parameters:
-        - id: dimensionString
+        - id: dimension
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
@@ -1187,10 +1187,10 @@ methods:
           <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
           uid="excel!Excel.ChartDataSourceType:enum" />&gt;
         description: ''
-  - name: getDimensionDataSourceType(dimensionString)
+  - name: getDimensionDataSourceType(dimension)
     uid: excel!Excel.ChartSeries#getDimensionDataSourceType:member(2)
     package: excel!
-    fullName: getDimensionDataSourceType(dimensionString)
+    fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
     remarks: >-
       \[ [API set: ExcelApi
@@ -1201,11 +1201,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getDimensionDataSourceType(dimensionString: "Categories" | "Values" |
+        getDimensionDataSourceType(dimension: "Categories" | "Values" |
         "XValues" | "YValues" | "BubbleSizes"):
         OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
       parameters:
-        - id: dimensionString
+        - id: dimension
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
@@ -1274,10 +1274,10 @@ methods:
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: ''
-  - name: getDimensionValues(dimensionString)
+  - name: getDimensionValues(dimension)
     uid: excel!Excel.ChartSeries#getDimensionValues:member(2)
     package: excel!
-    fullName: getDimensionValues(dimensionString)
+    fullName: getDimensionValues(dimension)
     summary: >-
       Gets the values from a single dimension of the chart series. These could
       be either category values or data values, depending on the dimension
@@ -1291,10 +1291,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getDimensionValues(dimensionString: "Categories" | "Values" | "XValues"
-        | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
+        getDimensionValues(dimension: "Categories" | "Values" | "XValues" |
+        "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
       parameters:
-        - id: dimensionString
+        - id: dimension
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:

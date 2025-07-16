@@ -1,0 +1,53 @@
+### YamlMime:TSEnum
+name: Word.PresetLightingSoftness
+uid: word!Word.PresetLightingSoftness:enum
+package: word!
+fullName: Word.PresetLightingSoftness
+summary: Specifies the intensity of light used on a shape.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bright
+    uid: word!Word.PresetLightingSoftness.bright:member
+    package: word!
+    summary: >-
+      Represents bright lighting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bright"'
+  - name: dim
+    uid: word!Word.PresetLightingSoftness.dim:member
+    package: word!
+    summary: >-
+      Represents dim lighting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Dim"'
+  - name: mixed
+    uid: word!Word.PresetLightingSoftness.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed lighting softness.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: normal
+    uid: word!Word.PresetLightingSoftness.normal:member
+    package: word!
+    summary: >-
+      Represents normal lighting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Normal"'

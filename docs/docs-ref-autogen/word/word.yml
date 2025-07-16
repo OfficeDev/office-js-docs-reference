@@ -6,6 +6,10 @@ summary: ''
 enums:
   - word!Word.Alignment:enum
   - word!Word.AnnotationState:enum
+  - word!Word.ArrowheadLength:enum
+  - word!Word.ArrowheadStyle:enum
+  - word!Word.ArrowheadWidth:enum
+  - word!Word.BevelType:enum
   - word!Word.BodyType:enum
   - word!Word.BorderLocation:enum
   - word!Word.BorderType:enum
@@ -17,37 +21,68 @@ enums:
   - word!Word.ChangeTrackingState:enum
   - word!Word.ChangeTrackingVersion:enum
   - word!Word.CloseBehavior:enum
+  - word!Word.ColorIndex:enum
+  - word!Word.ColorType:enum
   - word!Word.CommentChangeType:enum
   - word!Word.CompareTarget:enum
   - word!Word.ContentControlAppearance:enum
   - word!Word.ContentControlState:enum
   - word!Word.ContentControlType:enum
+  - word!Word.Continue:enum
   - word!Word.CritiqueColorScheme:enum
+  - word!Word.DefaultListBehavior:enum
   - word!Word.DocumentPropertyType:enum
+  - word!Word.EmphasisMark:enum
   - word!Word.ErrorCodes:enum
   - word!Word.EventSource:enum
   - word!Word.EventType:enum
+  - word!Word.ExtrusionColorType:enum
   - word!Word.FieldKind:enum
   - word!Word.FieldType:enum
+  - word!Word.FillType:enum
   - word!Word.GeometricShapeType:enum
+  - word!Word.GradientColorType:enum
+  - word!Word.GradientStyle:enum
   - word!Word.HeaderFooterType:enum
   - word!Word.ImageFormat:enum
   - word!Word.ImportedStylesConflictBehavior:enum
   - word!Word.InsertLocation:enum
+  - word!Word.LanguageId:enum
+  - word!Word.Ligature:enum
+  - word!Word.LightRigType:enum
+  - word!Word.LineDashStyle:enum
+  - word!Word.LineFormatStyle:enum
+  - word!Word.ListApplyTo:enum
   - word!Word.ListBuiltInNumberStyle:enum
   - word!Word.ListBullet:enum
   - word!Word.ListLevelType:enum
   - word!Word.ListNumbering:enum
+  - word!Word.ListType:enum
   - word!Word.LocationRelation:enum
   - word!Word.NoteItemType:enum
+  - word!Word.NumberForm:enum
+  - word!Word.NumberSpacing:enum
+  - word!Word.NumberType:enum
   - word!Word.OutlineLevel:enum
+  - word!Word.PatternType:enum
+  - word!Word.PresetCamera:enum
+  - word!Word.PresetExtrusionDirection:enum
+  - word!Word.PresetGradientType:enum
+  - word!Word.PresetLightingDirection:enum
+  - word!Word.PresetLightingSoftness:enum
+  - word!Word.PresetMaterial:enum
+  - word!Word.PresetTexture:enum
+  - word!Word.PresetThreeDimensionalFormat:enum
   - word!Word.RangeLocation:enum
+  - word!Word.ReflectionType:enum
   - word!Word.RelativeHorizontalPosition:enum
   - word!Word.RelativeSize:enum
   - word!Word.RelativeVerticalPosition:enum
   - word!Word.SaveBehavior:enum
   - word!Word.SelectionMode:enum
   - word!Word.ShadingTextureType:enum
+  - word!Word.ShadowStyle:enum
+  - word!Word.ShadowType:enum
   - word!Word.ShapeAutoSize:enum
   - word!Word.ShapeFillType:enum
   - word!Word.ShapeScaleFrom:enum
@@ -58,6 +93,10 @@ enums:
   - word!Word.ShapeTextWrapType:enum
   - word!Word.ShapeType:enum
   - word!Word.StyleType:enum
+  - word!Word.StylisticSet:enum
+  - word!Word.TextureAlignment:enum
+  - word!Word.TextureType:enum
+  - word!Word.ThemeColorIndex:enum
   - word!Word.TrackedChangeType:enum
   - word!Word.TrailingCharacter:enum
   - word!Word.UnderlineType:enum
@@ -71,6 +110,7 @@ classes:
   - word!Word.BorderCollection:class
   - word!Word.Canvas:class
   - word!Word.CheckboxContentControl:class
+  - word!Word.ColorFormat:class
   - word!Word.ComboBoxContentControl:class
   - word!Word.Comment:class
   - word!Word.CommentCollection:class
@@ -93,11 +133,15 @@ classes:
   - word!Word.DropDownListContentControl:class
   - word!Word.Field:class
   - word!Word.FieldCollection:class
+  - word!Word.FillFormat:class
   - word!Word.Font:class
+  - word!Word.GlowFormat:class
   - word!Word.InlinePicture:class
   - word!Word.InlinePictureCollection:class
+  - word!Word.LineFormat:class
   - word!Word.List:class
   - word!Word.ListCollection:class
+  - word!Word.ListFormat:class
   - word!Word.ListItem:class
   - word!Word.ListLevel:class
   - word!Word.ListLevelCollection:class
@@ -113,6 +157,7 @@ classes:
   - word!Word.ParagraphFormat:class
   - word!Word.Range:class
   - word!Word.RangeCollection:class
+  - word!Word.ReflectionFormat:class
   - word!Word.RequestContext:class
   - word!Word.SearchOptions:class
   - word!Word.Section:class
@@ -120,6 +165,7 @@ classes:
   - word!Word.Setting:class
   - word!Word.SettingCollection:class
   - word!Word.Shading:class
+  - word!Word.ShadowFormat:class
   - word!Word.Shape:class
   - word!Word.ShapeCollection:class
   - word!Word.ShapeFill:class
@@ -136,6 +182,7 @@ classes:
   - word!Word.TableRowCollection:class
   - word!Word.TableStyle:class
   - word!Word.TextFrame:class
+  - word!Word.ThreeDimensionalFormat:class
   - word!Word.TrackedChange:class
   - word!Word.TrackedChangeCollection:class
   - word!Word.Window:class
@@ -183,6 +230,9 @@ interfaces:
   - word!Word.Interfaces.CheckboxContentControlLoadOptions:interface
   - word!Word.Interfaces.CheckboxContentControlUpdateData:interface
   - word!Word.Interfaces.CollectionLoadOptions:interface
+  - word!Word.Interfaces.ColorFormatData:interface
+  - word!Word.Interfaces.ColorFormatLoadOptions:interface
+  - word!Word.Interfaces.ColorFormatUpdateData:interface
   - word!Word.Interfaces.ComboBoxContentControlData:interface
   - word!Word.Interfaces.CommentCollectionData:interface
   - word!Word.Interfaces.CommentCollectionLoadOptions:interface
@@ -243,19 +293,31 @@ interfaces:
   - word!Word.Interfaces.FieldData:interface
   - word!Word.Interfaces.FieldLoadOptions:interface
   - word!Word.Interfaces.FieldUpdateData:interface
+  - word!Word.Interfaces.FillFormatData:interface
+  - word!Word.Interfaces.FillFormatLoadOptions:interface
+  - word!Word.Interfaces.FillFormatUpdateData:interface
   - word!Word.Interfaces.FontData:interface
   - word!Word.Interfaces.FontLoadOptions:interface
   - word!Word.Interfaces.FontUpdateData:interface
+  - word!Word.Interfaces.GlowFormatData:interface
+  - word!Word.Interfaces.GlowFormatLoadOptions:interface
+  - word!Word.Interfaces.GlowFormatUpdateData:interface
   - word!Word.Interfaces.InlinePictureCollectionData:interface
   - word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface
   - word!Word.Interfaces.InlinePictureCollectionUpdateData:interface
   - word!Word.Interfaces.InlinePictureData:interface
   - word!Word.Interfaces.InlinePictureLoadOptions:interface
   - word!Word.Interfaces.InlinePictureUpdateData:interface
+  - word!Word.Interfaces.LineFormatData:interface
+  - word!Word.Interfaces.LineFormatLoadOptions:interface
+  - word!Word.Interfaces.LineFormatUpdateData:interface
   - word!Word.Interfaces.ListCollectionData:interface
   - word!Word.Interfaces.ListCollectionLoadOptions:interface
   - word!Word.Interfaces.ListCollectionUpdateData:interface
   - word!Word.Interfaces.ListData:interface
+  - word!Word.Interfaces.ListFormatData:interface
+  - word!Word.Interfaces.ListFormatLoadOptions:interface
+  - word!Word.Interfaces.ListFormatUpdateData:interface
   - word!Word.Interfaces.ListItemData:interface
   - word!Word.Interfaces.ListItemLoadOptions:interface
   - word!Word.Interfaces.ListItemUpdateData:interface
@@ -298,6 +360,9 @@ interfaces:
   - word!Word.Interfaces.RangeData:interface
   - word!Word.Interfaces.RangeLoadOptions:interface
   - word!Word.Interfaces.RangeUpdateData:interface
+  - word!Word.Interfaces.ReflectionFormatData:interface
+  - word!Word.Interfaces.ReflectionFormatLoadOptions:interface
+  - word!Word.Interfaces.ReflectionFormatUpdateData:interface
   - word!Word.Interfaces.SearchOptionsData:interface
   - word!Word.Interfaces.SearchOptionsLoadOptions:interface
   - word!Word.Interfaces.SearchOptionsUpdateData:interface
@@ -316,6 +381,9 @@ interfaces:
   - word!Word.Interfaces.ShadingData:interface
   - word!Word.Interfaces.ShadingLoadOptions:interface
   - word!Word.Interfaces.ShadingUpdateData:interface
+  - word!Word.Interfaces.ShadowFormatData:interface
+  - word!Word.Interfaces.ShadowFormatLoadOptions:interface
+  - word!Word.Interfaces.ShadowFormatUpdateData:interface
   - word!Word.Interfaces.ShapeCollectionData:interface
   - word!Word.Interfaces.ShapeCollectionLoadOptions:interface
   - word!Word.Interfaces.ShapeCollectionUpdateData:interface
@@ -364,6 +432,9 @@ interfaces:
   - word!Word.Interfaces.TextFrameData:interface
   - word!Word.Interfaces.TextFrameLoadOptions:interface
   - word!Word.Interfaces.TextFrameUpdateData:interface
+  - word!Word.Interfaces.ThreeDimensionalFormatData:interface
+  - word!Word.Interfaces.ThreeDimensionalFormatLoadOptions:interface
+  - word!Word.Interfaces.ThreeDimensionalFormatUpdateData:interface
   - word!Word.Interfaces.TrackedChangeCollectionData:interface
   - word!Word.Interfaces.TrackedChangeCollectionLoadOptions:interface
   - word!Word.Interfaces.TrackedChangeCollectionUpdateData:interface
@@ -372,6 +443,8 @@ interfaces:
   - word!Word.Interfaces.WindowCollectionData:interface
   - word!Word.Interfaces.WindowCollectionUpdateData:interface
   - word!Word.Interfaces.WindowData:interface
+  - word!Word.ListFormatCountNumberedItemsOptions:interface
+  - word!Word.ListTemplateApplyOptions:interface
   - word!Word.ParagraphAddedEventArgs:interface
   - word!Word.ParagraphChangedEventArgs:interface
   - word!Word.ParagraphDeletedEventArgs:interface

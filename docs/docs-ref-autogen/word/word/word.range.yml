@@ -157,6 +157,23 @@ properties:
       content: 'readonly footnotes: Word.NoteItemCollection;'
       return:
         type: <xref uid="word!Word.NoteItemCollection:class" />
+  - name: hasNoProofing
+    uid: word!Word.Range#hasNoProofing:member
+    package: word!
+    fullName: hasNoProofing
+    summary: >-
+      Specifies the proofing status (spelling and grammar checking) of the
+      range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasNoProofing: boolean;'
+      return:
+        type: boolean
   - name: hyperlink
     uid: word!Word.Range#hyperlink:member
     package: word!
@@ -206,6 +223,23 @@ properties:
       content: 'readonly isEmpty: boolean;'
       return:
         type: boolean
+  - name: listFormat
+    uid: word!Word.Range#listFormat:member
+    package: word!
+    fullName: listFormat
+    summary: >-
+      Returns a `ListFormat` object that represents all the list formatting
+      characteristics of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listFormat: Word.ListFormat;'
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
   - name: lists
     uid: word!Word.Range#lists:member
     package: word!
@@ -1325,10 +1359,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
-  - name: getReviewedText(changeTrackingVersionString)
+  - name: getReviewedText(changeTrackingVersion)
     uid: word!Word.Range#getReviewedText:member(2)
     package: word!
-    fullName: getReviewedText(changeTrackingVersionString)
+    fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
       \[ [API set: WordApi
@@ -1338,10 +1372,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"):
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"):
         OfficeExtension.ClientResult<string>;
       parameters:
-        - id: changeTrackingVersionString
+        - id: changeTrackingVersion
           description: >-
             Optional. The value must be 'Original' or 'Current'. The default is
             'Current'.
@@ -1797,10 +1831,10 @@ methods:
       return:
         type: <xref uid="word!Word.Field:class" />
         description: ''
-  - name: insertField(insertLocation, fieldTypeString, text, removeFormatting)
+  - name: insertField(insertLocation, fieldType, text, removeFormatting)
     uid: word!Word.Range#insertField:member(2)
     package: word!
-    fullName: insertField(insertLocation, fieldTypeString, text, removeFormatting)
+    fullName: insertField(insertLocation, fieldType, text, removeFormatting)
     summary: Inserts a field at the specified location.
     remarks: >-
       \[ [API set: WordApi
@@ -1820,7 +1854,7 @@ methods:
     syntax:
       content: >-
         insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" |
-        "End" | "Before" | "After", fieldTypeString?: "Addin" | "AddressBlock" |
+        "End" | "Before" | "After", fieldType?: "Addin" | "AddressBlock" |
         "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" |
         "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" |
         "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" |
@@ -1847,7 +1881,7 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
-        - id: fieldTypeString
+        - id: fieldType
           description: Optional. Can be any FieldType constant. The default value is Empty.
           type: >-
             "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText"
@@ -2017,10 +2051,10 @@ methods:
       return:
         type: <xref uid="word!Word.Shape:class" />
         description: ''
-  - name: insertGeometricShape(geometricShapeTypeString, insertShapeOptions)
+  - name: insertGeometricShape(geometricShapeType, insertShapeOptions)
     uid: word!Word.Range#insertGeometricShape:member(2)
     package: word!
-    fullName: insertGeometricShape(geometricShapeTypeString, insertShapeOptions)
+    fullName: insertGeometricShape(geometricShapeType, insertShapeOptions)
     summary: >-
       Inserts a geometric shape in front of text with its anchor at the
       beginning of the range.
@@ -2032,9 +2066,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertGeometricShape(geometricShapeTypeString: "LineInverse" |
-        "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram"
-        | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
+        insertGeometricShape(geometricShapeType: "LineInverse" | "Triangle" |
+        "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" |
+        "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
         "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
         "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24"
         | "Star32" | "RoundRectangle" | "Round1Rectangle" |
@@ -2084,7 +2118,7 @@ methods:
         "ChartStar" | "ChartPlus", insertShapeOptions?:
         Word.InsertShapeOptions): Word.Shape;
       parameters:
-        - id: geometricShapeTypeString
+        - id: geometricShapeType
           description: The geometric type of the shape to insert.
           type: >-
             "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
@@ -2798,10 +2832,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: select(selectionModeString)
+  - name: select(selectionMode)
     uid: word!Word.Range#select:member(2)
     package: word!
-    fullName: select(selectionModeString)
+    fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
     remarks: >-
       \[ [API set: WordApi
@@ -2810,9 +2844,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
-        - id: selectionModeString
+        - id: selectionMode
           description: >-
             Optional. The selection mode must be 'Select', 'Start', or 'End'.
             'Select' is the default.

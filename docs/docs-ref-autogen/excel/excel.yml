@@ -865,6 +865,7 @@ interfaces:
   - excel!Excel.Interfaces.QueryCollectionUpdateData:interface
   - excel!Excel.Interfaces.QueryData:interface
   - excel!Excel.Interfaces.QueryLoadOptions:interface
+  - excel!Excel.Interfaces.QueryUpdateData:interface
   - excel!Excel.Interfaces.RangeAreasCollectionData:interface
   - excel!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface
   - excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface

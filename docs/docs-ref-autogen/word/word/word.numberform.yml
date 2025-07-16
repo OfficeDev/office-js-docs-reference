@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.NumberForm
+uid: word!Word.NumberForm:enum
+package: word!
+fullName: Word.NumberForm
+summary: Specifies the number form setting for an OpenType font.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: default
+    uid: word!Word.NumberForm.default:member
+    package: word!
+    summary: >-
+      Default number form setting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Default"'
+  - name: lining
+    uid: word!Word.NumberForm.lining:member
+    package: word!
+    summary: >-
+      Lining number form setting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Lining"'
+  - name: oldStyle
+    uid: word!Word.NumberForm.oldStyle:member
+    package: word!
+    summary: >-
+      Old-style number form setting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OldStyle"'

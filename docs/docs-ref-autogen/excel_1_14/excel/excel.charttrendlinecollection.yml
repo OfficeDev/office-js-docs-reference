@@ -86,10 +86,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartTrendline:class" />
         description: ''
-  - name: add(typeString)
+  - name: add(type)
     uid: excel!Excel.ChartTrendlineCollection#add:member(2)
     package: excel!
-    fullName: add(typeString)
+    fullName: add(type)
     summary: Adds a new trendline to trendline collection.
     remarks: >-
       \[ [API set: ExcelApi
@@ -99,10 +99,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(typeString?: "Linear" | "Exponential" | "Logarithmic" |
-        "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
+        add(type?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" |
+        "Polynomial" | "Power"): Excel.ChartTrendline;
       parameters:
-        - id: typeString
+        - id: type
           description: >-
             Specifies the trendline type. The default value is "Linear". See
             `Excel.ChartTrendline` for details.

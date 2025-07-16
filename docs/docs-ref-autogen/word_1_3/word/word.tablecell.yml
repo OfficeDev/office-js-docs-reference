@@ -338,10 +338,10 @@ methods:
       return:
         type: <xref uid="word!Word.TableBorder:class" />
         description: ''
-  - name: getBorder(borderLocationString)
+  - name: getBorder(borderLocation)
     uid: word!Word.TableCell#getBorder:member(2)
     package: word!
-    fullName: getBorder(borderLocationString)
+    fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
     remarks: >-
       \[ [API set: WordApi
@@ -376,11 +376,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" |
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" |
         "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"):
         Word.TableBorder;
       parameters:
-        - id: borderLocationString
+        - id: borderLocation
           description: Required. The border location.
           type: >-
             "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
@@ -412,10 +412,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
-  - name: getCellPadding(cellPaddingLocationString)
+  - name: getCellPadding(cellPaddingLocation)
     uid: word!Word.TableCell#getCellPadding:member(2)
     package: word!
-    fullName: getCellPadding(cellPaddingLocationString)
+    fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
     remarks: >-
       \[ [API set: WordApi
@@ -452,10 +452,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" |
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" |
         "Right"): OfficeExtension.ClientResult<number>;
       parameters:
-        - id: cellPaddingLocationString
+        - id: cellPaddingLocation
           description: >-
             Required. The cell padding location must be 'Top', 'Left', 'Bottom',
             or 'Right'.
@@ -725,10 +725,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setCellPadding(cellPaddingLocationString, cellPadding)
+  - name: setCellPadding(cellPaddingLocation, cellPadding)
     uid: word!Word.TableCell#setCellPadding:member(2)
     package: word!
-    fullName: setCellPadding(cellPaddingLocationString, cellPadding)
+    fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
     remarks: >-
       \[ [API set: WordApi
@@ -738,10 +738,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" |
-        "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right",
+        cellPadding: number): void;
       parameters:
-        - id: cellPaddingLocationString
+        - id: cellPaddingLocation
           description: >-
             Required. The cell padding location must be 'Top', 'Left', 'Bottom',
             or 'Right'.

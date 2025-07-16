@@ -159,10 +159,10 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Binding:class" />
         description: ''
-  - name: add(shape, bindingTypeString, id)
+  - name: add(shape, bindingType, id)
     uid: powerpoint!PowerPoint.BindingCollection#add:member(2)
     package: powerpoint!
-    fullName: add(shape, bindingTypeString, id)
+    fullName: add(shape, bindingType, id)
     summary: >-
       Adds a new binding to a particular Shape. If the provided ID is already
       being used by a binding, the existing binding will be overwritten.
@@ -175,13 +175,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(shape: PowerPoint.Shape, bindingTypeString: "Shape", id: string):
+        add(shape: PowerPoint.Shape, bindingType: "Shape", id: string):
         PowerPoint.Binding;
       parameters:
         - id: shape
           description: Shape to which the binding is added.
           type: <xref uid="powerpoint!PowerPoint.Shape:class" />
-        - id: bindingTypeString
+        - id: bindingType
           description: Type of binding. See `BindingType`<!-- -->.
           type: '"Shape"'
         - id: id
@@ -218,10 +218,10 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Binding:class" />
         description: ''
-  - name: addFromSelection(bindingTypeString, id)
+  - name: addFromSelection(bindingType, id)
     uid: powerpoint!PowerPoint.BindingCollection#addFromSelection:member(2)
     package: powerpoint!
-    fullName: addFromSelection(bindingTypeString, id)
+    fullName: addFromSelection(bindingType, id)
     summary: >-
       Adds a new binding based on the current selection. If the selection has
       multiple areas, the `InvalidReference` error will be returned.
@@ -233,11 +233,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addFromSelection(bindingTypeString: "Shape", id: string):
-        PowerPoint.Binding;
+      content: 'addFromSelection(bindingType: "Shape", id: string): PowerPoint.Binding;'
       parameters:
-        - id: bindingTypeString
+        - id: bindingType
           description: Type of binding. See `BindingType`<!-- -->.
           type: '"Shape"'
         - id: id

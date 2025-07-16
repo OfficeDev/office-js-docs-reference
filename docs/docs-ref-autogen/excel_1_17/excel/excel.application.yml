@@ -256,10 +256,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: calculate(calculationTypeString)
+  - name: calculate(calculationType)
     uid: excel!Excel.Application#calculate:member(2)
     package: excel!
-    fullName: calculate(calculationTypeString)
+    fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: >-
       \[ [API set: ExcelApi
@@ -282,10 +282,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        calculate(calculationTypeString: "Recalculate" | "Full" |
-        "FullRebuild"): void;
+        calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"):
+        void;
       parameters:
-        - id: calculationTypeString
+        - id: calculationType
           description: >-
             Specifies the calculation type to use. See `Excel.CalculationType`
             for details.

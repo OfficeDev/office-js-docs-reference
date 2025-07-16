@@ -394,10 +394,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: clear(applyToString)
+  - name: clear(applyTo)
     uid: excel!Excel.Range#clear:member(2)
     package: excel!
-    fullName: clear(applyToString)
+    fullName: clear(applyTo)
     summary: Clear range values and formatting, such as fill and border.
     remarks: >-
       \[ [API set: ExcelApi
@@ -407,10 +407,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" |
+        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" |
         "RemoveHyperlinks" | "ResetContents"): void;
       parameters:
-        - id: applyToString
+        - id: applyTo
           description: >-
             Optional. Determines the type of clear action. See
             `Excel.ClearApplyTo` for details.
@@ -458,10 +458,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: delete(shiftString)
+  - name: delete(shift)
     uid: excel!Excel.Range#delete:member(2)
     package: excel!
-    fullName: delete(shiftString)
+    fullName: delete(shift)
     summary: Deletes the cells associated with the range.
     remarks: >-
       \[ [API set: ExcelApi
@@ -470,9 +470,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'delete(shiftString: "Up" | "Left"): void;'
+      content: 'delete(shift: "Up" | "Left"): void;'
       parameters:
-        - id: shiftString
+        - id: shift
           description: >-
             Specifies which way to shift the cells. See
             `Excel.DeleteShiftDirection` for details.
@@ -975,10 +975,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Range:class" />
         description: ''
-  - name: insert(shiftString)
+  - name: insert(shift)
     uid: excel!Excel.Range#insert:member(2)
     package: excel!
-    fullName: insert(shiftString)
+    fullName: insert(shift)
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this
       range, and shifts the other cells to make space. Returns a new `Range`
@@ -990,9 +990,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
+      content: 'insert(shift: "Down" | "Right"): Excel.Range;'
       parameters:
-        - id: shiftString
+        - id: shift
           description: >-
             Specifies which way to shift the cells. See
             `Excel.InsertShiftDirection` for details.

@@ -1,0 +1,380 @@
+### YamlMime:TSType
+name: Word.Interfaces.FillFormatLoadOptions
+uid: word!Word.Interfaces.FillFormatLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.FillFormatLoadOptions
+summary: Represents the fill formatting for a shape or text.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.FillFormatLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: backgroundColor
+    uid: word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member
+    package: word!
+    fullName: backgroundColor
+    summary: >-
+      Returns a `ColorFormat` object that represents the background color for
+      the fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+  - name: foregroundColor
+    uid: word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member
+    package: word!
+    fullName: foregroundColor
+    summary: >-
+      Returns a `ColorFormat` object that represents the foreground color for
+      the fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+  - name: gradientAngle
+    uid: word!Word.Interfaces.FillFormatLoadOptions#gradientAngle:member
+    package: word!
+    fullName: gradientAngle
+    summary: >-
+      Specifies the angle of the gradient fill. The valid range of values is
+      from 0 to 359.9.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gradientAngle?: boolean;'
+      return:
+        type: boolean
+  - name: gradientColorType
+    uid: word!Word.Interfaces.FillFormatLoadOptions#gradientColorType:member
+    package: word!
+    fullName: gradientColorType
+    summary: Gets the gradient color type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gradientColorType?: boolean;'
+      return:
+        type: boolean
+  - name: gradientDegree
+    uid: word!Word.Interfaces.FillFormatLoadOptions#gradientDegree:member
+    package: word!
+    fullName: gradientDegree
+    summary: >-
+      Returns how dark or light a one-color gradient fill is. A value of 0 means
+      that black is mixed in with the shape's foreground color to form the
+      gradient. A value of 1 means that white is mixed in. Values between 0 and
+      1 mean that a darker or lighter shade of the foreground color is mixed in.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gradientDegree?: boolean;'
+      return:
+        type: boolean
+  - name: gradientStyle
+    uid: word!Word.Interfaces.FillFormatLoadOptions#gradientStyle:member
+    package: word!
+    fullName: gradientStyle
+    summary: Returns the gradient style for the fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gradientStyle?: boolean;'
+      return:
+        type: boolean
+  - name: gradientVariant
+    uid: word!Word.Interfaces.FillFormatLoadOptions#gradientVariant:member
+    package: word!
+    fullName: gradientVariant
+    summary: >-
+      Returns the gradient variant for the fill as an integer value from 1 to 4
+      for most gradient fills.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gradientVariant?: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.Interfaces.FillFormatLoadOptions#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies if the object, or the formatting applied to it, is visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean
+  - name: pattern
+    uid: word!Word.Interfaces.FillFormatLoadOptions#pattern:member
+    package: word!
+    fullName: pattern
+    summary: >-
+      Returns a `PatternType` value that represents the pattern applied to the
+      fill or line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type: boolean
+  - name: presetGradientType
+    uid: word!Word.Interfaces.FillFormatLoadOptions#presetGradientType:member
+    package: word!
+    fullName: presetGradientType
+    summary: Returns the preset gradient type for the fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'presetGradientType?: boolean;'
+      return:
+        type: boolean
+  - name: presetTexture
+    uid: word!Word.Interfaces.FillFormatLoadOptions#presetTexture:member
+    package: word!
+    fullName: presetTexture
+    summary: Gets the preset texture.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'presetTexture?: boolean;'
+      return:
+        type: boolean
+  - name: rotateWithObject
+    uid: word!Word.Interfaces.FillFormatLoadOptions#rotateWithObject:member
+    package: word!
+    fullName: rotateWithObject
+    summary: Specifies whether the fill rotates with the shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotateWithObject?: boolean;'
+      return:
+        type: boolean
+  - name: textureAlignment
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureAlignment:member
+    package: word!
+    fullName: textureAlignment
+    summary: >-
+      Specifies the alignment (the origin of the coordinate grid) for the tiling
+      of the texture fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureAlignment?: boolean;'
+      return:
+        type: boolean
+  - name: textureHorizontalScale
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureHorizontalScale:member
+    package: word!
+    fullName: textureHorizontalScale
+    summary: Specifies the horizontal scaling factor for the texture fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureHorizontalScale?: boolean;'
+      return:
+        type: boolean
+  - name: textureName
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureName:member
+    package: word!
+    fullName: textureName
+    summary: Returns the name of the custom texture file for the fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureName?: boolean;'
+      return:
+        type: boolean
+  - name: textureOffsetX
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureOffsetX:member
+    package: word!
+    fullName: textureOffsetX
+    summary: Specifies the horizontal offset of the texture from the origin in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureOffsetX?: boolean;'
+      return:
+        type: boolean
+  - name: textureOffsetY
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureOffsetY:member
+    package: word!
+    fullName: textureOffsetY
+    summary: Specifies the vertical offset of the texture.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureOffsetY?: boolean;'
+      return:
+        type: boolean
+  - name: textureTile
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureTile:member
+    package: word!
+    fullName: textureTile
+    summary: Specifies whether the texture is tiled.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureTile?: boolean;'
+      return:
+        type: boolean
+  - name: textureType
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureType:member
+    package: word!
+    fullName: textureType
+    summary: Returns the texture type for the fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureType?: boolean;'
+      return:
+        type: boolean
+  - name: textureVerticalScale
+    uid: word!Word.Interfaces.FillFormatLoadOptions#textureVerticalScale:member
+    package: word!
+    fullName: textureVerticalScale
+    summary: >-
+      Specifies the vertical scaling factor for the texture fill as a value
+      between 0.0 and 1.0.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textureVerticalScale?: boolean;'
+      return:
+        type: boolean
+  - name: transparency
+    uid: word!Word.Interfaces.FillFormatLoadOptions#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency of the fill for a shape as a value
+      between 0.0 (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.FillFormatLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: Gets the fill format type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

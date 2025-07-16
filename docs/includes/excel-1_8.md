@@ -44,7 +44,7 @@
 ||[height](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-height-member)|Returns the height, in points, of the chart data label.|
 ||[horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-horizontalalignment-member)|Represents the horizontal alignment for chart data label.|
 ||[left](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-left-member)|Represents the distance, in points, from the left edge of chart data label to the left edge of chart area.|
-||[numberFormat](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-numberformat-member)|String value that represents the format code for data label.|
+||[numberFormat](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-numberformat-member)|Specifies the format code for data label.|
 ||[text](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-text-member)|String representing the text of the data label on a chart.|
 ||[textOrientation](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-textorientation-member)|Represents the angle to which the text is oriented for the chart data label.|
 ||[top](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-top-member)|Represents the distance, in points, from the top edge of chart data label to the top of chart area.|

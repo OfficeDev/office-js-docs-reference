@@ -92,10 +92,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.ConditionalFormat:class" />
         description: ''
-  - name: add(typeString)
+  - name: add(type)
     uid: excel!Excel.ConditionalFormatCollection#add:member(2)
     package: excel!
-    fullName: add(typeString)
+    fullName: add(type)
     summary: Adds a new conditional format to the collection at the first/top priority.
     remarks: >-
       \[ [API set: ExcelApi
@@ -105,11 +105,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" |
-        "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"):
+        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom"
+        | "PresetCriteria" | "ContainsText" | "CellValue"):
         Excel.ConditionalFormat;
       parameters:
-        - id: typeString
+        - id: type
           description: >-
             The type of conditional format being added. See
             `Excel.ConditionalFormatType` for details.

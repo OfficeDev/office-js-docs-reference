@@ -136,14 +136,10 @@ methods:
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: An array of IDs corresponding to each newly inserted worksheet.
-  - name: >-
-      addFromBase64(base64File, sheetNamesToInsert, positionTypeString,
-      relativeTo)
+  - name: addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)
     uid: excel!Excel.WorksheetCollection#addFromBase64:member(2)
     package: excel!
-    fullName: >-
-      addFromBase64(base64File, sheetNamesToInsert, positionTypeString,
-      relativeTo)
+    fullName: addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)
     summary: >-
       Inserts the specified worksheets of a workbook into the current workbook.
 
@@ -161,7 +157,7 @@ methods:
     syntax:
       content: >-
         addFromBase64(base64File: string, sheetNamesToInsert?: string[],
-        positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End",
+        positionType?: "None" | "Before" | "After" | "Beginning" | "End",
         relativeTo?: Worksheet | string):
         OfficeExtension.ClientResult<string[]>;
       parameters:
@@ -175,7 +171,7 @@ methods:
             Optional. The names of individual worksheets to insert. By default,
             all the worksheets from the source workbook are inserted.
           type: string[]
-        - id: positionTypeString
+        - id: positionType
           description: >-
             Optional. Where in the current workbook the new worksheets will be
             inserted. See `Excel.WorksheetPositionType` for details. Default is

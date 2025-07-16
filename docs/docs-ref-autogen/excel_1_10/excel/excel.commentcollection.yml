@@ -106,10 +106,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Comment:class" />
         description: ''
-  - name: add(cellAddress, content, contentTypeString)
+  - name: add(cellAddress, content, contentType)
     uid: excel!Excel.CommentCollection#add:member(2)
     package: excel!
-    fullName: add(cellAddress, content, contentTypeString)
+    fullName: add(cellAddress, content, contentType)
     summary: >-
       Creates a new comment with the given content on the given cell. An
       `InvalidArgument` error is thrown if the provided range is larger than one
@@ -123,8 +123,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(cellAddress: Range | string, content: string, contentTypeString?:
-        "Plain" | "Mention"): Excel.Comment;
+        add(cellAddress: Range | string, content: string, contentType?: "Plain"
+        | "Mention"): Excel.Comment;
       parameters:
         - id: cellAddress
           description: >-
@@ -141,7 +141,7 @@ methods:
             as mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
             CommentRichContent object\]
           type: string
-        - id: contentTypeString
+        - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
             default value is enum `ContentType.Plain`<!-- -->. \[Api set:

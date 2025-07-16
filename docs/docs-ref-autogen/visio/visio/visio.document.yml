@@ -342,10 +342,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: showTaskPane(taskPaneTypeString, initialProps, show)
+  - name: showTaskPane(taskPaneType, initialProps, show)
     uid: visio!Visio.Document#showTaskPane:member(2)
     package: visio!
-    fullName: showTaskPane(taskPaneTypeString, initialProps, show)
+    fullName: showTaskPane(taskPaneType, initialProps, show)
     summary: >-
       Shows or hides a TaskPane. This will be consumed by the DV Excel
       Add-In/Other third-party apps who embed the Visio drawing to show/hide the
@@ -359,11 +359,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        showTaskPane(taskPaneTypeString: "None" |
-        "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings",
-        initialProps?: any, show?: boolean): void;
+        showTaskPane(taskPaneType: "None" | "DataVisualizerProcessMappings" |
+        "DataVisualizerOrgChartMappings", initialProps?: any, show?: boolean):
+        void;
       parameters:
-        - id: taskPaneTypeString
+        - id: taskPaneType
           description: >-
             Type of the 1st Party TaskPane. It can take values from enum
             TaskPaneType
