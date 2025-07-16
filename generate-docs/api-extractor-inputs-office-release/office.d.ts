@@ -648,7 +648,7 @@ export declare namespace Office {
          *
          * - Although Outlook on Mac supports the `InsightMessage` notification type, it currently doesn't support the `InfobarClicked` event.
          * To determine when the **Dismiss** action is selected from the notification, implement a handler for the `OnInfoBarDismissClicked` event instead.
-         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch#supported-events | Configure your Outlook add-in for event-based activation}.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events | Activate add-ins with events}.
          *
          * [Api set: Mailbox 1.10]
          */
@@ -703,7 +703,7 @@ export declare namespace Office {
          * - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * - The `OfficeThemeChanged` event isn't supported in add-ins that implement
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
          *
          * [Api set: Mailbox 1.14]
          */
@@ -3388,7 +3388,7 @@ export declare namespace Office {
              * Mailbox 1.5, the `options` parameter is supported in online-meeting provider and note-logging mobile add-ins. For more information on API support in
              * Outlook on mobile devices, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
              *
-             * - {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Event-based activation} and
+             * - {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Event-based activation} and
              * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
              * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
              *
@@ -3417,7 +3417,7 @@ export declare namespace Office {
          * note-logging mobile add-ins. For more information on API support in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * - {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Event-based activation} and
+         * - {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Event-based activation} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
          * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
          */
@@ -5474,7 +5474,7 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
-         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation},
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
@@ -5515,7 +5515,7 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
-         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation},
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
@@ -7166,7 +7166,7 @@ export declare namespace Office {
      *
      * **Important**: In Outlook, the Office theme API is supported starting in
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
-     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
      */
     export interface OfficeTheme {
         /**
@@ -7190,7 +7190,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `isDarkTheme` property isn't yet supported in Outlook. 
+         * **Important**: The `isDarkTheme` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         isDarkTheme: boolean;
         /**
@@ -7198,7 +7202,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `themeId` property isn't yet supported in Outlook. 
+         * **Important**: The `themeId` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         themeId: ThemeId;
     }
@@ -8731,7 +8739,7 @@ export declare namespace Office {
          *
          * - The URL that's returned points to the location of the JavaScript file that classic Outlook on Windows uses to handle event-based activation
          * and integrated spam reporting. To learn more about these features, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Activate add-ins with events} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
          * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},

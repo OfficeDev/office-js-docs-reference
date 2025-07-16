@@ -2953,21 +2953,21 @@ export declare namespace PowerPoint {
          */
         readonly columnIndex: number;
         /**
-         * Specifies the horizontal alignment of the text in the table cell.
+         * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
          *
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
         /**
-         * Specifies the indent level of the text in the table cell.
+         * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
          *
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        indentLevel: number;
+        indentLevel: number | null;
         /**
          * Gets the number of table rows this cell spans across.
                     Will be greater than or equal to 1.
@@ -7456,21 +7456,21 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
         export interface TableCellUpdateData {
             /**
-             * Specifies the horizontal alignment of the text in the table cell.
+             * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
             /**
-             * Specifies the indent level of the text in the table cell.
+             * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            indentLevel?: number;
+            indentLevel?: number | null;
             /**
              * Specifies the text content of the table cell.
              *
@@ -8218,21 +8218,21 @@ export declare namespace PowerPoint {
              */
             columnIndex?: number;
             /**
-             * Specifies the horizontal alignment of the text in the table cell.
+             * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
             /**
-             * Specifies the indent level of the text in the table cell.
+             * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            indentLevel?: number;
+            indentLevel?: number | null;
             /**
              * Gets the number of table rows this cell spans across.
                         Will be greater than or equal to 1.
@@ -9451,7 +9451,7 @@ export declare namespace PowerPoint {
              */
             columnIndex?: boolean;
             /**
-             * Specifies the horizontal alignment of the text in the table cell.
+             * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -9459,7 +9459,7 @@ export declare namespace PowerPoint {
              */
             horizontalAlignment?: boolean;
             /**
-             * Specifies the indent level of the text in the table cell.
+             * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -9565,7 +9565,7 @@ export declare namespace PowerPoint {
              */
             columnIndex?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the horizontal alignment of the text in the table cell.
+             * For EACH ITEM in the collection: Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -9573,7 +9573,7 @@ export declare namespace PowerPoint {
              */
             horizontalAlignment?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the indent level of the text in the table cell.
+             * For EACH ITEM in the collection: Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]

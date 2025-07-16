@@ -10657,8 +10657,8 @@ PowerPoint.TableCell,"columnIndex",Property,Good,false
 PowerPoint.TableCell,"context",Property,Excellent,false
 PowerPoint.TableCell,"fill",Property,Poor,false
 PowerPoint.TableCell,"font",Property,Poor,false
-PowerPoint.TableCell,"horizontalAlignment",Property,Great,false
-PowerPoint.TableCell,"indentLevel",Property,Great,false
+PowerPoint.TableCell,"horizontalAlignment",Property,Excellent,false
+PowerPoint.TableCell,"indentLevel",Property,Excellent,false
 PowerPoint.TableCell,"margins",Property,Poor,false
 PowerPoint.TableCell,"rowCount",Property,Fine,false
 PowerPoint.TableCell,"rowIndex",Property,Good,false
