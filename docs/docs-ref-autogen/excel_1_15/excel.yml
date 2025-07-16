@@ -599,6 +599,7 @@ interfaces:
   - excel!Excel.Interfaces.CustomConditionalFormatData:interface
   - excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface
   - excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface
+  - excel!Excel.Interfaces.CustomFunctionManagerData:interface
   - excel!Excel.Interfaces.CustomPropertyCollectionData:interface
   - excel!Excel.Interfaces.CustomPropertyCollectionLoadOptions:interface
   - excel!Excel.Interfaces.CustomPropertyCollectionUpdateData:interface

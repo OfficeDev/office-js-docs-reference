@@ -781,6 +781,54 @@ methods:
       return:
         type: void
         description: ''
+  - name: enterPreviewMode()
+    uid: excel!Excel.Workbook#enterPreviewMode:member(1)
+    package: excel!
+    fullName: enterPreviewMode()
+    summary: >-
+      Enters Scratchpad Preview Mode for the workbook, showing changes suggested
+      by Copilot to the user.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'enterPreviewMode(): void;'
+      return:
+        type: void
+        description: ''
+  - name: exitPreviewMode(applyChanges)
+    uid: excel!Excel.Workbook#exitPreviewMode:member(1)
+    package: excel!
+    fullName: exitPreviewMode(applyChanges)
+    summary: >-
+      Exits Scratchpad Preview Mode for the workbook. This method should be
+      called once the user decides to apply or discard changes suggested by
+      Copilot.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'exitPreviewMode(applyChanges: boolean): void;'
+      parameters:
+        - id: applyChanges
+          description: >-
+            A Boolean value that specifies whether the user wants to apply the
+            changes proposed by Copilot shown in Preview Mode (`true`<!-- -->),
+            or discard the changes shown in Preview Mode (`false`<!-- -->). The
+            default value is `false`<!-- -->, as accepting changes should be an
+            active and explicit choice by the user.
+          type: boolean
+      return:
+        type: void
+        description: ''
   - name: getActiveCell()
     uid: excel!Excel.Workbook#getActiveCell:member(1)
     package: excel!
@@ -865,8 +913,8 @@ methods:
     package: excel!
     fullName: getActiveShape()
     summary: >-
-      Gets the active shape in the workbook. If there is no active shape, an
-      `ItemNotFound` error is thrown.
+      Gets the active shape in the workbook. Throws an `ItemNotFound` if there
+      is no active shape.
     remarks: >-
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

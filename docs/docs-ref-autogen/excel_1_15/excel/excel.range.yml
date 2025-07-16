@@ -1668,8 +1668,8 @@ methods:
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing
       all the dependent cells of a specified range in the same worksheet or
-      across multiple worksheets. Note: This API returns an `ItemNotFound` error
-      if no dependents are found.
+      across multiple worksheets. Throws an `ItemNotFound` error if no
+      dependents are found.
     remarks: >-
       \[ [API set: ExcelApi
       1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -1724,8 +1724,8 @@ methods:
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing
       all the direct dependent cells of a specified range in the same worksheet
-      or across multiple worksheets. Note: This API returns an `ItemNotFound`
-      error if no dependents are found.
+      or across multiple worksheets. Throws an `ItemNotFound` error if no
+      dependents are found.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -1776,8 +1776,8 @@ methods:
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing
       all the direct precedent cells of a specified range in the same worksheet
-      or across multiple worksheets. Note: This API returns an `ItemNotFound`
-      error if no precedents are found.
+      or across multiple worksheets. Throws an `ItemNotFound` error if no
+      precedents are found.
     remarks: >-
       \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -2276,7 +2276,7 @@ methods:
       Returns a `RangeAreas` object that represents the merged areas in this
       range. Note that if the merged areas count in this range is more than 512,
       then this method will fail to return the result. If the `RangeAreas`
-      object doesn't exist, then this function will return an object with its
+      object doesn't exist, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information,
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -2446,8 +2446,8 @@ methods:
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing
       all the precedent cells of a specified range in the same worksheet or
-      across multiple worksheets. Note: This API returns an `ItemNotFound` error
-      if no precedents are found.
+      across multiple worksheets. Throws an `ItemNotFound` error if no
+      precedents are found.
     remarks: >-
       \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

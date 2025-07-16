@@ -9143,6 +9143,9 @@ export declare namespace Excel {
         export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
+        /** An interface describing the data returned by calling `customFunctionManager.toJSON()`. */
+        export interface CustomFunctionManagerData {
+        }
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
             
