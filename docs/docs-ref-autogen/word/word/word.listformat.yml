@@ -1,0 +1,683 @@
+### YamlMime:TSType
+name: Word.ListFormat
+uid: word!Word.ListFormat:class
+package: word!
+fullName: Word.ListFormat
+summary: Represents the list formatting characteristics of a range.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.ListFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: isSingleList
+    uid: word!Word.ListFormat#isSingleList:member
+    package: word!
+    fullName: isSingleList
+    summary: Indicates whether the `ListFormat` object contains a single list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isSingleList: boolean;'
+      return:
+        type: boolean
+  - name: isSingleListTemplate
+    uid: word!Word.ListFormat#isSingleListTemplate:member
+    package: word!
+    fullName: isSingleListTemplate
+    summary: Indicates whether the `ListFormat` object contains a single list template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isSingleListTemplate: boolean;'
+      return:
+        type: boolean
+  - name: list
+    uid: word!Word.ListFormat#list:member
+    package: word!
+    fullName: list
+    summary: >-
+      Returns a `List` object that represents the first formatted list contained
+      in the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly list: Word.List;'
+      return:
+        type: <xref uid="word!Word.List:class" />
+  - name: listLevelNumber
+    uid: word!Word.ListFormat#listLevelNumber:member
+    package: word!
+    fullName: listLevelNumber
+    summary: >-
+      Specifies the list level number for the first paragraph for the
+      `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listLevelNumber: number;'
+      return:
+        type: number
+  - name: listString
+    uid: word!Word.ListFormat#listString:member
+    package: word!
+    fullName: listString
+    summary: >-
+      Gets the string representation of the list value of the first paragraph in
+      the range for the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listString: string;'
+      return:
+        type: string
+  - name: listTemplate
+    uid: word!Word.ListFormat#listTemplate:member
+    package: word!
+    fullName: listTemplate
+    summary: Gets the list template associated with the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listTemplate: Word.ListTemplate;'
+      return:
+        type: <xref uid="word!Word.ListTemplate:class" />
+  - name: listType
+    uid: word!Word.ListFormat#listType:member
+    package: word!
+    fullName: listType
+    summary: Gets the type of the list for the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly listType: Word.ListType | "ListNoNumbering" | "ListListNumOnly"
+        | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" |
+        "ListMixedNumbering" | "ListPictureBullet";
+      return:
+        type: >-
+          <xref uid="word!Word.ListType:enum" /> | "ListNoNumbering" |
+          "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" |
+          "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet"
+  - name: listValue
+    uid: word!Word.ListFormat#listValue:member
+    package: word!
+    fullName: listValue
+    summary: >-
+      Gets the numeric value of the the first paragraph in the range for the
+      `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listValue: number;'
+      return:
+        type: number
+methods:
+  - name: applyBulletDefault(defaultListBehavior)
+    uid: word!Word.ListFormat#applyBulletDefault:member(1)
+    package: word!
+    fullName: applyBulletDefault(defaultListBehavior)
+    summary: Adds bullets and formatting to the paragraphs in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyBulletDefault(defaultListBehavior: Word.DefaultListBehavior): void;'
+      parameters:
+        - id: defaultListBehavior
+          description: >-
+            Optional. Specifies the default list behavior. Default is
+            `DefaultListBehavior.word97`<!-- -->.
+          type: <xref uid="word!Word.DefaultListBehavior:enum" />
+      return:
+        type: void
+        description: ''
+  - name: applyBulletDefault(defaultListBehaviorString)
+    uid: word!Word.ListFormat#applyBulletDefault:member(2)
+    package: word!
+    fullName: applyBulletDefault(defaultListBehaviorString)
+    summary: Adds bullets and formatting to the paragraphs in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        applyBulletDefault(defaultListBehaviorString: "Word97" | "Word2000" |
+        "Word2002"): void;
+      parameters:
+        - id: defaultListBehaviorString
+          description: >-
+            Optional. Specifies the default list behavior. Default is
+            `DefaultListBehavior.word97`<!-- -->.
+          type: '"Word97" | "Word2000" | "Word2002"'
+      return:
+        type: void
+        description: ''
+  - name: applyListTemplateWithLevel(listTemplate, options)
+    uid: word!Word.ListFormat#applyListTemplateWithLevel:member(1)
+    package: word!
+    fullName: applyListTemplateWithLevel(listTemplate, options)
+    summary: >-
+      Applies a list template with a specific level to the paragraphs in the
+      range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        applyListTemplateWithLevel(listTemplate: Word.ListTemplate, options?:
+        Word.ListTemplateApplyOptions): void;
+      parameters:
+        - id: listTemplate
+          description: The list template to apply.
+          type: <xref uid="word!Word.ListTemplate:class" />
+        - id: options
+          description: >-
+            Optional. Options for applying the list template, such as whether to
+            continue the previous list or which part of the list to apply the
+            template to.
+          type: <xref uid="word!Word.ListTemplateApplyOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: applyNumberDefault(defaultListBehavior)
+    uid: word!Word.ListFormat#applyNumberDefault:member(1)
+    package: word!
+    fullName: applyNumberDefault(defaultListBehavior)
+    summary: Adds numbering and formatting to the paragraphs in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyNumberDefault(defaultListBehavior: Word.DefaultListBehavior): void;'
+      parameters:
+        - id: defaultListBehavior
+          description: Optional. Specifies the default list behavior.
+          type: <xref uid="word!Word.DefaultListBehavior:enum" />
+      return:
+        type: void
+        description: ''
+  - name: applyNumberDefault(defaultListBehaviorString)
+    uid: word!Word.ListFormat#applyNumberDefault:member(2)
+    package: word!
+    fullName: applyNumberDefault(defaultListBehaviorString)
+    summary: Adds numbering and formatting to the paragraphs in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        applyNumberDefault(defaultListBehaviorString: "Word97" | "Word2000" |
+        "Word2002"): void;
+      parameters:
+        - id: defaultListBehaviorString
+          description: Optional. Specifies the default list behavior.
+          type: '"Word97" | "Word2000" | "Word2002"'
+      return:
+        type: void
+        description: ''
+  - name: applyOutlineNumberDefault(defaultListBehavior)
+    uid: word!Word.ListFormat#applyOutlineNumberDefault:member(1)
+    package: word!
+    fullName: applyOutlineNumberDefault(defaultListBehavior)
+    summary: Adds outline numbering and formatting to the paragraphs in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        applyOutlineNumberDefault(defaultListBehavior:
+        Word.DefaultListBehavior): void;
+      parameters:
+        - id: defaultListBehavior
+          description: Optional. Specifies the default list behavior.
+          type: <xref uid="word!Word.DefaultListBehavior:enum" />
+      return:
+        type: void
+        description: ''
+  - name: applyOutlineNumberDefault(defaultListBehaviorString)
+    uid: word!Word.ListFormat#applyOutlineNumberDefault:member(2)
+    package: word!
+    fullName: applyOutlineNumberDefault(defaultListBehaviorString)
+    summary: Adds outline numbering and formatting to the paragraphs in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        applyOutlineNumberDefault(defaultListBehaviorString: "Word97" |
+        "Word2000" | "Word2002"): void;
+      parameters:
+        - id: defaultListBehaviorString
+          description: Optional. Specifies the default list behavior.
+          type: '"Word97" | "Word2000" | "Word2002"'
+      return:
+        type: void
+        description: ''
+  - name: canContinuePreviousList(listTemplate)
+    uid: word!Word.ListFormat#canContinuePreviousList:member(1)
+    package: word!
+    fullName: canContinuePreviousList(listTemplate)
+    summary: Determines whether the `ListFormat` object can continue a previous list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        canContinuePreviousList(listTemplate: Word.ListTemplate):
+        OfficeExtension.ClientResult<Word.Continue>;
+      parameters:
+        - id: listTemplate
+          description: The list template to check.
+          type: <xref uid="word!Word.ListTemplate:class" />
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
+          uid="word!Word.Continue:enum" />&gt;
+        description: A `Continue` value indicating whether continuation is possible.
+  - name: convertNumbersToText(numberType)
+    uid: word!Word.ListFormat#convertNumbersToText:member(1)
+    package: word!
+    fullName: convertNumbersToText(numberType)
+    summary: Converts numbers in the list to plain text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convertNumbersToText(numberType: Word.NumberType): void;'
+      parameters:
+        - id: numberType
+          description: Optional. The type of number to convert.
+          type: <xref uid="word!Word.NumberType:enum" />
+      return:
+        type: void
+        description: ''
+  - name: convertNumbersToText(numberTypeString)
+    uid: word!Word.ListFormat#convertNumbersToText:member(2)
+    package: word!
+    fullName: convertNumbersToText(numberTypeString)
+    summary: Converts numbers in the list to plain text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        convertNumbersToText(numberTypeString: "Paragraph" | "ListNum" |
+        "AllNumbers"): void;
+      parameters:
+        - id: numberTypeString
+          description: Optional. The type of number to convert.
+          type: '"Paragraph" | "ListNum" | "AllNumbers"'
+      return:
+        type: void
+        description: ''
+  - name: countNumberedItems(options)
+    uid: word!Word.ListFormat#countNumberedItems:member(1)
+    package: word!
+    fullName: countNumberedItems(options)
+    summary: Counts the numbered items in the list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        countNumberedItems(options?: Word.ListFormatCountNumberedItemsOptions):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: options
+          description: >-
+            Optional. Options for counting numbered items, such as the type of
+            number and the level to count.
+          type: >-
+            <xref uid="word!Word.ListFormatCountNumberedItemsOptions:interface"
+            />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: The number of items.
+  - name: listIndent()
+    uid: word!Word.ListFormat#listIndent:member(1)
+    package: word!
+    fullName: listIndent()
+    summary: Indents the list by one level.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listIndent(): void;'
+      return:
+        type: void
+        description: ''
+  - name: listOutdent()
+    uid: word!Word.ListFormat#listOutdent:member(1)
+    package: word!
+    fullName: listOutdent()
+    summary: Outdents the list by one level.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listOutdent(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.ListFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.ListFormatLoadOptions): Word.ListFormat;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.ListFormatLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.ListFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ListFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.ListFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ListFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
+        description: ''
+  - name: removeNumbers(numberType)
+    uid: word!Word.ListFormat#removeNumbers:member(1)
+    package: word!
+    fullName: removeNumbers(numberType)
+    summary: Removes numbering from the list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removeNumbers(numberType: Word.NumberType): void;'
+      parameters:
+        - id: numberType
+          description: Optional. The type of number to remove.
+          type: <xref uid="word!Word.NumberType:enum" />
+      return:
+        type: void
+        description: ''
+  - name: removeNumbers(numberTypeString)
+    uid: word!Word.ListFormat#removeNumbers:member(2)
+    package: word!
+    fullName: removeNumbers(numberTypeString)
+    summary: Removes numbering from the list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeNumbers(numberTypeString: "Paragraph" | "ListNum" | "AllNumbers"):
+        void;
+      parameters:
+        - id: numberTypeString
+          description: Optional. The type of number to remove.
+          type: '"Paragraph" | "ListNum" | "AllNumbers"'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.ListFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ListFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.ListFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.ListFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ListFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.ListFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.ListFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.ListFormat` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.ListFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ListFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.ListFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ListFormat;'
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.ListFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ListFormat;'
+      return:
+        type: <xref uid="word!Word.ListFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

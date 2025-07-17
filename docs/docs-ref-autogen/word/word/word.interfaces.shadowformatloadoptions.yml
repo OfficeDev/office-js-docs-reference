@@ -1,0 +1,211 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShadowFormatLoadOptions
+uid: word!Word.Interfaces.ShadowFormatLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.ShadowFormatLoadOptions
+summary: Represents the shadow formatting for a shape or text in Word.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: blur
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#blur:member
+    package: word!
+    fullName: blur
+    summary: >-
+      Specifies the blur level for a shadow format as a value between 0.0 and
+      100.0.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'blur?: boolean;'
+      return:
+        type: boolean
+  - name: foregroundColor
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member
+    package: word!
+    fullName: foregroundColor
+    summary: >-
+      Returns a `ColorFormat` object that represents the foreground color for
+      the fill, line, or shadow.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+  - name: isVisible
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies whether the object or the formatting applied to it is visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean
+  - name: obscured
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#obscured:member
+    package: word!
+    fullName: obscured
+    summary: >-
+      Specifies `true` if the shadow of the shape appears filled in and is
+      obscured by the shape, even if the shape has no fill, `false` if the
+      shadow has no fill and the outline of the shadow is visible through the
+      shape if the shape has no fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'obscured?: boolean;'
+      return:
+        type: boolean
+  - name: offsetX
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#offsetX:member
+    package: word!
+    fullName: offsetX
+    summary: >-
+      Specifies the horizontal offset (in points) of the shadow from the shape.
+      A positive value offsets the shadow to the right of the shape; a negative
+      value offsets it to the left.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'offsetX?: boolean;'
+      return:
+        type: boolean
+  - name: offsetY
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#offsetY:member
+    package: word!
+    fullName: offsetY
+    summary: >-
+      Specifies the vertical offset (in points) of the shadow from the shape. A
+      positive value offsets the shadow to the top of the shape; a negative
+      value offsets it to the bottom.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'offsetY?: boolean;'
+      return:
+        type: boolean
+  - name: rotateWithShape
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#rotateWithShape:member
+    package: word!
+    fullName: rotateWithShape
+    summary: Specifies whether to rotate the shadow when rotating the shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotateWithShape?: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#size:member
+    package: word!
+    fullName: size
+    summary: Specifies the width of the shadow.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#style:member
+    package: word!
+    fullName: style
+    summary: Specifies the type of shadow formatting to apply to a shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: transparency
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency of the shadow as a value between 0.0
+      (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.ShadowFormatLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: Specifies the shape shadow type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

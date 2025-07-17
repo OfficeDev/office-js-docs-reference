@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.DefaultListBehavior
+uid: word!Word.DefaultListBehavior:enum
+package: word!
+fullName: Word.DefaultListBehavior
+summary: Specifies the default list behavior for a list.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: word2000
+    uid: word!Word.DefaultListBehavior.word2000:member
+    package: word!
+    summary: >-
+      Use Web-oriented formatting as introduced in Microsoft Word 2000.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Word2000"'
+  - name: word2002
+    uid: word!Word.DefaultListBehavior.word2002:member
+    package: word!
+    summary: >-
+      Use formatting compatible with Microsoft Word 2002.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Word2002"'
+  - name: word97
+    uid: word!Word.DefaultListBehavior.word97:member
+    package: word!
+    summary: >-
+      Use formatting compatible with Microsoft Word 97.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Word97"'

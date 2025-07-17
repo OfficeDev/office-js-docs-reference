@@ -1,0 +1,47 @@
+### YamlMime:TSEnum
+name: Word.ExtrusionColorType
+uid: word!Word.ExtrusionColorType:enum
+package: word!
+fullName: Word.ExtrusionColorType
+summary: >-
+  Specifies whether the extrusion color is based on the extruded shape's fill
+  (the front face of the extrusion) and automatically changes when the shape's
+  fill changes, or whether the extrusion color is independent of the shape's
+  fill.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: word!Word.ExtrusionColorType.automatic:member
+    package: word!
+    summary: >-
+      Represents an automatic extrusion color based on the shape's fill.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"automatic"'
+  - name: custom
+    uid: word!Word.ExtrusionColorType.custom:member
+    package: word!
+    summary: >-
+      Represents a custom extrusion color independent of the shape's fill.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"custom"'
+  - name: mixed
+    uid: word!Word.ExtrusionColorType.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed extrusion color type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"mixed"'

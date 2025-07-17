@@ -1,0 +1,173 @@
+### YamlMime:TSEnum
+name: Word.PresetMaterial
+uid: word!Word.PresetMaterial:enum
+package: word!
+fullName: Word.PresetMaterial
+summary: Specifies the extrusion surface material.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: clear
+    uid: word!Word.PresetMaterial.clear:member
+    package: word!
+    summary: >-
+      Represents a clear material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Clear"'
+  - name: darkEdge
+    uid: word!Word.PresetMaterial.darkEdge:member
+    package: word!
+    summary: >-
+      Represents a dark edge material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkEdge"'
+  - name: flat
+    uid: word!Word.PresetMaterial.flat:member
+    package: word!
+    summary: >-
+      Represents a flat material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Flat"'
+  - name: matte
+    uid: word!Word.PresetMaterial.matte:member
+    package: word!
+    summary: >-
+      Represents a matte material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Matte"'
+  - name: matte2
+    uid: word!Word.PresetMaterial.matte2:member
+    package: word!
+    summary: >-
+      Represents a second matte material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Matte2"'
+  - name: metal
+    uid: word!Word.PresetMaterial.metal:member
+    package: word!
+    summary: >-
+      Represents a metal material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Metal"'
+  - name: metal2
+    uid: word!Word.PresetMaterial.metal2:member
+    package: word!
+    summary: >-
+      Represents a second metal material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Metal2"'
+  - name: mixed
+    uid: word!Word.PresetMaterial.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed material type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: plastic
+    uid: word!Word.PresetMaterial.plastic:member
+    package: word!
+    summary: >-
+      Represents a plastic material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Plastic"'
+  - name: plastic2
+    uid: word!Word.PresetMaterial.plastic2:member
+    package: word!
+    summary: >-
+      Represents a second plastic material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Plastic2"'
+  - name: powder
+    uid: word!Word.PresetMaterial.powder:member
+    package: word!
+    summary: >-
+      Represents a powder material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Powder"'
+  - name: softEdge
+    uid: word!Word.PresetMaterial.softEdge:member
+    package: word!
+    summary: >-
+      Represents a soft edge material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SoftEdge"'
+  - name: softMetal
+    uid: word!Word.PresetMaterial.softMetal:member
+    package: word!
+    summary: >-
+      Represents a soft metal material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SoftMetal"'
+  - name: translucentPowder
+    uid: word!Word.PresetMaterial.translucentPowder:member
+    package: word!
+    summary: >-
+      Represents a translucent powder material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TranslucentPowder"'
+  - name: warmMatte
+    uid: word!Word.PresetMaterial.warmMatte:member
+    package: word!
+    summary: >-
+      Represents a warm matte material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WarmMatte"'
+  - name: wireFrame
+    uid: word!Word.PresetMaterial.wireFrame:member
+    package: word!
+    summary: >-
+      Represents a wireframe material.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WireFrame"'

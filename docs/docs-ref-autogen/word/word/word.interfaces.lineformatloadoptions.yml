@@ -1,0 +1,264 @@
+### YamlMime:TSType
+name: Word.Interfaces.LineFormatLoadOptions
+uid: word!Word.Interfaces.LineFormatLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.LineFormatLoadOptions
+summary: >-
+  Represents line and arrowhead formatting. For a line, the `LineFormat` object
+  contains formatting information for the line itself; for a shape with a
+  border, this object contains formatting information for the shape's border.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.LineFormatLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: backgroundColor
+    uid: word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member
+    package: word!
+    fullName: backgroundColor
+    summary: >-
+      Gets a `ColorFormat` object that represents the background color for a
+      patterned line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+  - name: beginArrowheadLength
+    uid: word!Word.Interfaces.LineFormatLoadOptions#beginArrowheadLength:member
+    package: word!
+    fullName: beginArrowheadLength
+    summary: Specifies the length of the arrowhead at the beginning of the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'beginArrowheadLength?: boolean;'
+      return:
+        type: boolean
+  - name: beginArrowheadStyle
+    uid: word!Word.Interfaces.LineFormatLoadOptions#beginArrowheadStyle:member
+    package: word!
+    fullName: beginArrowheadStyle
+    summary: Specifies the style of the arrowhead at the beginning of the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'beginArrowheadStyle?: boolean;'
+      return:
+        type: boolean
+  - name: beginArrowheadWidth
+    uid: word!Word.Interfaces.LineFormatLoadOptions#beginArrowheadWidth:member
+    package: word!
+    fullName: beginArrowheadWidth
+    summary: Specifies the width of the arrowhead at the beginning of the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'beginArrowheadWidth?: boolean;'
+      return:
+        type: boolean
+  - name: dashStyle
+    uid: word!Word.Interfaces.LineFormatLoadOptions#dashStyle:member
+    package: word!
+    fullName: dashStyle
+    summary: Specifies the dash style for the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dashStyle?: boolean;'
+      return:
+        type: boolean
+  - name: endArrowheadLength
+    uid: word!Word.Interfaces.LineFormatLoadOptions#endArrowheadLength:member
+    package: word!
+    fullName: endArrowheadLength
+    summary: Specifies the length of the arrowhead at the end of the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'endArrowheadLength?: boolean;'
+      return:
+        type: boolean
+  - name: endArrowheadStyle
+    uid: word!Word.Interfaces.LineFormatLoadOptions#endArrowheadStyle:member
+    package: word!
+    fullName: endArrowheadStyle
+    summary: Specifies the style of the arrowhead at the end of the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'endArrowheadStyle?: boolean;'
+      return:
+        type: boolean
+  - name: endArrowheadWidth
+    uid: word!Word.Interfaces.LineFormatLoadOptions#endArrowheadWidth:member
+    package: word!
+    fullName: endArrowheadWidth
+    summary: Specifies the width of the arrowhead at the end of the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'endArrowheadWidth?: boolean;'
+      return:
+        type: boolean
+  - name: foregroundColor
+    uid: word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member
+    package: word!
+    fullName: foregroundColor
+    summary: >-
+      Gets a `ColorFormat` object that represents the foreground color for the
+      line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+  - name: insetPen
+    uid: word!Word.Interfaces.LineFormatLoadOptions#insetPen:member
+    package: word!
+    fullName: insetPen
+    summary: Specifies if to draw lines inside a shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insetPen?: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.Interfaces.LineFormatLoadOptions#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies if the object, or the formatting applied to it, is visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean
+  - name: pattern
+    uid: word!Word.Interfaces.LineFormatLoadOptions#pattern:member
+    package: word!
+    fullName: pattern
+    summary: Specifies the pattern applied to the line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: word!Word.Interfaces.LineFormatLoadOptions#style:member
+    package: word!
+    fullName: style
+    summary: Specifies the line format style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: transparency
+    uid: word!Word.Interfaces.LineFormatLoadOptions#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency of the line as a value between 0.0
+      (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type: boolean
+  - name: weight
+    uid: word!Word.Interfaces.LineFormatLoadOptions#weight:member
+    package: word!
+    fullName: weight
+    summary: Specifies the thickness of the line in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type: boolean

@@ -4424,12 +4424,96 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fill: Word.FillFormat;
+        /**
+         * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly glow: Word.GlowFormat;
+        /**
+         * Returns a `LineFormat` object that specifies the formatting for a line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly line: Word.LineFormat;
+        /**
+         * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly reflection: Word.ReflectionFormat;
+        /**
+         * Returns a `ColorFormat` object that represents the color for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly textColor: Word.ColorFormat;
+        /**
+         * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly textShadow: Word.ShadowFormat;
+        /**
+         * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly threeDimensionalFormat: Word.ThreeDimensionalFormat;
+        /**
+         * Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+                    
+                    - `true`: All the text has the **All Caps** attribute.
+                    
+                    - `false`: None of the text has the **All Caps** attribute.
+                    
+                    - `null`: Returned if some, but not all, of the text has the **All Caps** attribute.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allCaps: boolean;
+        /**
          * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         bold: boolean;
+        /**
+         * Specifies whether the font is formatted as bold in a right-to-left language document. The possible values are as follows:
+                    
+                    - `true`: All the text is bold.
+                    
+                    - `false`: None of the text is bold.
+                    
+                    - `null`: Returned if some, but not all, of the text is bold.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        boldBidirectional: boolean;
         /**
          * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
          *
@@ -4438,12 +4522,88 @@ export declare namespace Word {
          */
         color: string;
         /**
+         * Specifies a `ColorIndex` value that represents the color for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        colorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+        /**
+         * Specifies the color for the `Font` object in a right-to-left language document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        colorIndexBidirectional: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+        /**
+         * Specifies whether contextual alternates are enabled for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contextualAlternates: boolean;
+        /**
+         * Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '#RRGGBB' format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diacriticColor: string;
+        /**
+         * Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        disableCharacterSpaceGrid: boolean;
+        /**
          * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         doubleStrikeThrough: boolean;
+        /**
+         * Specifies whether the font is formatted as embossed. The possible values are as follows:
+                    
+                    - `true`: All the text is embossed.
+                    
+                    - `false`: None of the text is embossed.
+                    
+                    - `null`: Returned if some, but not all, of the text is embossed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        emboss: boolean;
+        /**
+         * Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        emphasisMark: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+        /**
+         * Specifies whether the font is formatted as engraved. The possible values are as follows:
+                    
+                    - `true`: All the text is engraved.
+                    
+                    - `false`: None of the text is engraved.
+                    
+                    - `null`: Returned if some, but not all, of the text is engraved.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        engrave: boolean;
         /**
          * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
          *
@@ -4466,12 +4626,134 @@ export declare namespace Word {
          */
         italic: boolean;
         /**
+         * Specifies whether the font is italicized in a right-to-left language document. The possible values are as follows:
+                    
+                    - `true`: All the text is italicized.
+                    
+                    - `false`: None of the text is italicized.
+                    
+                    - `null`: Returned if some, but not all, of the text is italicized.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        italicBidirectional: boolean;
+        /**
+         * Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kerning: number;
+        /**
+         * Specifies the ligature setting for the `Font` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ligature: Word.Ligature | "None" | "Standard" | "Contextual" | "StandardContextual" | "Historical" | "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional" | "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" | "HistoricalDiscretional" | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All";
+        /**
          * Specifies a value that represents the name of the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         name: string;
+        /**
+         * Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nameAscii: string;
+        /**
+         * Specifies the font name in a right-to-left language document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nameBidirectional: string;
+        /**
+         * Specifies the East Asian font name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nameFarEast: string;
+        /**
+         * Specifies the font used for characters with codes from 128 through 255.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nameOther: string;
+        /**
+         * Specifies the number form setting for an OpenType font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberForm: Word.NumberForm | "Default" | "Lining" | "OldStyle";
+        /**
+         * Specifies the number spacing setting for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberSpacing: Word.NumberSpacing | "Default" | "Proportional" | "Tabular";
+        /**
+         * Specifies if the font is formatted as outlined. The possible values are as follows:
+                    
+                    - `true`: All the text is outlined.
+                    
+                    - `false`: None of the text is outlined.
+                    
+                    - `null`: Returned if some, but not all, of the text is outlined.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outline: boolean;
+        /**
+         * Specifies the position of text (in points) relative to the base line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        position: number;
+        /**
+         * Specifies the scaling percentage applied to the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scaling: number;
+        /**
+         * Specifies if the font is formatted as shadowed. The possible values are as follows:
+                    
+                    - `true`: All the text is shadowed.
+                    
+                    - `false`: None of the text is shadowed.
+                    
+                    - `null`: Returned if some, but not all, of the text is shadowed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shadow: boolean;
         /**
          * Specifies a value that represents the font size in points.
          *
@@ -4480,12 +4762,50 @@ export declare namespace Word {
          */
         size: number;
         /**
+         * Specifies the font size in points for right-to-left text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sizeBidirectional: number;
+        /**
+         * Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+                    
+                    - `true`: All the text has the **Small Caps** attribute.
+                    
+                    - `false`: None of the text has the **Small Caps** attribute.
+                    
+                    - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallCaps: boolean;
+        /**
+         * Specifies the spacing between characters.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spacing: number;
+        /**
          * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         strikeThrough: boolean;
+        /**
+         * Specifies the stylistic set for the font.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        stylisticSet: Word.StylisticSet | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" | "Set17" | "Set18" | "Set19" | "Set20";
         /**
          * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
          *
@@ -4508,6 +4828,14 @@ export declare namespace Word {
          */
         underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         /**
+         * Specifies the color of the underline for the `Font` object. You can provide the value in the '#RRGGBB' format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        underlineColor: string;
+        /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
@@ -4515,6 +4843,38 @@ export declare namespace Word {
         set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Font): void;
+        /**
+         * Decreases the font size to the next available size.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        decreaseFontSize(): void;
+        /**
+         * Increases the font size to the next available size.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        increaseFontSize(): void;
+        /**
+         * Removes manual character formatting.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reset(): void;
+        /**
+         * Sets the specified font formatting as the default for the active document and all new documents based on the active template.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setAsTemplateDefault(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4545,9 +4905,9 @@ export declare namespace Word {
          */
         untrack(): Word.Font;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.FontData;
     }
     /**
@@ -7058,6 +7418,14 @@ export declare namespace Word {
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
+         * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listFormat: Word.ListFormat;
+        /**
          * Gets the collection of list objects in the range.
          *
          * @remarks
@@ -7143,6 +7511,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly tables: Word.TableCollection;
+        /**
+         * Specifies the proofing status (spelling and grammar checking) of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hasNoProofing: boolean;
         /**
          * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
          *
@@ -16754,6 +17130,6962 @@ export declare namespace Word {
          */
         scaleFromBottomRight = "ScaleFromBottomRight",
     }
+    /**
+     * Represents the language ID of a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LanguageId {
+        /**
+         * Afrikaans language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        afrikaans = "Afrikaans",
+        /**
+         * Albanian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        albanian = "Albanian",
+        /**
+         * Amharic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        amharic = "Amharic",
+        /**
+         * Arabic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabic = "Arabic",
+        /**
+         * Arabic Algerian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicAlgeria = "ArabicAlgeria",
+        /**
+         * Arabic Bahraini language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicBahrain = "ArabicBahrain",
+        /**
+         * Arabic Egyptian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicEgypt = "ArabicEgypt",
+        /**
+         * Arabic Iraqi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicIraq = "ArabicIraq",
+        /**
+         * Arabic Jordanian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicJordan = "ArabicJordan",
+        /**
+         * Arabic Kuwaiti language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicKuwait = "ArabicKuwait",
+        /**
+         * Arabic Lebanese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicLebanon = "ArabicLebanon",
+        /**
+         * Arabic Libyan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicLibya = "ArabicLibya",
+        /**
+         * Arabic Moroccan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicMorocco = "ArabicMorocco",
+        /**
+         * Arabic Omani language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicOman = "ArabicOman",
+        /**
+         * Arabic Qatari language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicQatar = "ArabicQatar",
+        /**
+         * Arabic Syrian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicSyria = "ArabicSyria",
+        /**
+         * Arabic Tunisian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicTunisia = "ArabicTunisia",
+        /**
+         * Arabic United Arab Emirates language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicUAE = "ArabicUAE",
+        /**
+         * Arabic Yemeni language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicYemen = "ArabicYemen",
+        /**
+         * Armenian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        armenian = "Armenian",
+        /**
+         * Assamese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        assamese = "Assamese",
+        /**
+         * Azerbaijani Cyrillic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        azeriCyrillic = "AzeriCyrillic",
+        /**
+         * Azerbaijani Latin language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        azeriLatin = "AzeriLatin",
+        /**
+         * Basque (Basque).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        basque = "Basque",
+        /**
+         * Belgian Dutch language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        belgianDutch = "BelgianDutch",
+        /**
+         * Belgian French language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        belgianFrench = "BelgianFrench",
+        /**
+         * Bengali language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bengali = "Bengali",
+        /**
+         * Bulgarian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bulgarian = "Bulgarian",
+        /**
+         * Burmese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        burmese = "Burmese",
+        /**
+         * Belarusian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        belarusian = "Belarusian",
+        /**
+         * Catalan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        catalan = "Catalan",
+        /**
+         * Cherokee language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cherokee = "Cherokee",
+        /**
+         * Chinese Hong Kong SAR language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chineseHongKongSAR = "ChineseHongKongSAR",
+        /**
+         * Chinese Macao SAR language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chineseMacaoSAR = "ChineseMacaoSAR",
+        /**
+         * Chinese Singapore language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chineseSingapore = "ChineseSingapore",
+        /**
+         * Croatian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        croatian = "Croatian",
+        /**
+         * Czech language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        czech = "Czech",
+        /**
+         * Danish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        danish = "Danish",
+        /**
+         * Divehi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        divehi = "Divehi",
+        /**
+         * Dutch language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dutch = "Dutch",
+        /**
+         * Edo language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        edo = "Edo",
+        /**
+         * Australian English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishAUS = "EnglishAUS",
+        /**
+         * Belize English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishBelize = "EnglishBelize",
+        /**
+         * Canadian English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishCanadian = "EnglishCanadian",
+        /**
+         * Caribbean English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishCaribbean = "EnglishCaribbean",
+        /**
+         * Indonesian English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishIndonesia = "EnglishIndonesia",
+        /**
+         * Irish English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishIreland = "EnglishIreland",
+        /**
+         * Jamaican English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishJamaica = "EnglishJamaica",
+        /**
+         * New Zealand English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishNewZealand = "EnglishNewZealand",
+        /**
+         * Filipino English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishPhilippines = "EnglishPhilippines",
+        /**
+         * South African English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishSouthAfrica = "EnglishSouthAfrica",
+        /**
+         * Tobago Trinidad English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishTrinidadTobago = "EnglishTrinidadTobago",
+        /**
+         * United Kingdom English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishUK = "EnglishUK",
+        /**
+         * United States English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishUS = "EnglishUS",
+        /**
+         * Zimbabwe English language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        englishZimbabwe = "EnglishZimbabwe",
+        /**
+         * Estonian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        estonian = "Estonian",
+        /**
+         * Faeroese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        faeroese = "Faeroese",
+        /**
+         * Filipino language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        filipino = "Filipino",
+        /**
+         * Finnish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        finnish = "Finnish",
+        /**
+         * French language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        french = "French",
+        /**
+         * French Cameroon language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchCameroon = "FrenchCameroon",
+        /**
+         * French Canadian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchCanadian = "FrenchCanadian",
+        /**
+         * French (Congo (DRC)) language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchCongoDRC = "FrenchCongoDRC",
+        /**
+         * French Cote d'Ivoire language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchCotedIvoire = "FrenchCotedIvoire",
+        /**
+         * French Haiti language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchHaiti = "FrenchHaiti",
+        /**
+         * French Luxembourg language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchLuxembourg = "FrenchLuxembourg",
+        /**
+         * French Mali language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchMali = "FrenchMali",
+        /**
+         * French Monaco language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchMonaco = "FrenchMonaco",
+        /**
+         * French Morocco language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchMorocco = "FrenchMorocco",
+        /**
+         * French Reunion language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchReunion = "FrenchReunion",
+        /**
+         * French Senegal language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchSenegal = "FrenchSenegal",
+        /**
+         * French West Indies language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frenchWestIndies = "FrenchWestIndies",
+        /**
+         * Frisian Netherlands language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frisianNetherlands = "FrisianNetherlands",
+        /**
+         * Fulfulde language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fulfulde = "Fulfulde",
+        /**
+         * Irish (Irish) language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gaelicIreland = "GaelicIreland",
+        /**
+         * Scottish Gaelic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gaelicScotland = "GaelicScotland",
+        /**
+         * Galician language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        galician = "Galician",
+        /**
+         * Georgian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        georgian = "Georgian",
+        /**
+         * German language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        german = "German",
+        /**
+         * German Austrian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        germanAustria = "GermanAustria",
+        /**
+         * German Liechtenstein language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        germanLiechtenstein = "GermanLiechtenstein",
+        /**
+         * German Luxembourg language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        germanLuxembourg = "GermanLuxembourg",
+        /**
+         * Greek language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        greek = "Greek",
+        /**
+         * Guarani language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        guarani = "Guarani",
+        /**
+         * Gujarati language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gujarati = "Gujarati",
+        /**
+         * Hausa language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hausa = "Hausa",
+        /**
+         * Hawaiian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hawaiian = "Hawaiian",
+        /**
+         * Hebrew language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hebrew = "Hebrew",
+        /**
+         * Hindi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hindi = "Hindi",
+        /**
+         * Hungarian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hungarian = "Hungarian",
+        /**
+         * Ibibio language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ibibio = "Ibibio",
+        /**
+         * Icelandic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        icelandic = "Icelandic",
+        /**
+         * Igbo language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        igbo = "Igbo",
+        /**
+         * Indonesian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indonesian = "Indonesian",
+        /**
+         * Inuktitut language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inuktitut = "Inuktitut",
+        /**
+         * Italian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        italian = "Italian",
+        /**
+         * Japanese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        japanese = "Japanese",
+        /**
+         * Kannada language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kannada = "Kannada",
+        /**
+         * Kanuri language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kanuri = "Kanuri",
+        /**
+         * Kashmiri language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kashmiri = "Kashmiri",
+        /**
+         * Kazakh language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kazakh = "Kazakh",
+        /**
+         * Khmer language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        khmer = "Khmer",
+        /**
+         * Kirghiz language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kirghiz = "Kirghiz",
+        /**
+         * Konkani language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        konkani = "Konkani",
+        /**
+         * Korean language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        korean = "Korean",
+        /**
+         * Kyrgyz language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kyrgyz = "Kyrgyz",
+        /**
+         * No specified language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        languageNone = "LanguageNone",
+        /**
+         * Lao language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lao = "Lao",
+        /**
+         * Latin language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        latin = "Latin",
+        /**
+         * Latvian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        latvian = "Latvian",
+        /**
+         * Lithuanian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lithuanian = "Lithuanian",
+        /**
+         * Macedonian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macedonianFYROM = "MacedonianFYROM",
+        /**
+         * Malayalam language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        malayalam = "Malayalam",
+        /**
+         * Malay Brunei Darussalam language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        malayBruneiDarussalam = "MalayBruneiDarussalam",
+        /**
+         * Malaysian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        malaysian = "Malaysian",
+        /**
+         * Maltese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        maltese = "Maltese",
+        /**
+         * Manipuri language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        manipuri = "Manipuri",
+        /**
+         * Marathi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        marathi = "Marathi",
+        /**
+         * Mexican Spanish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mexicanSpanish = "MexicanSpanish",
+        /**
+         * Mongolian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mongolian = "Mongolian",
+        /**
+         * Nepali language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nepali = "Nepali",
+        /**
+         * Disables proofing if the language ID identifies a language in which an object is grammatically validated using the Microsoft Word proofing tools.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noProofing = "NoProofing",
+        /**
+         * Norwegian Bokmol language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        norwegianBokmol = "NorwegianBokmol",
+        /**
+         * Norwegian Nynorsk language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        norwegianNynorsk = "NorwegianNynorsk",
+        /**
+         * Odia (Oriya) language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oriya = "Oriya",
+        /**
+         * Oromo language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oromo = "Oromo",
+        /**
+         * Pashto language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pashto = "Pashto",
+        /**
+         * Persian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        persian = "Persian",
+        /**
+         * Polish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        polish = "Polish",
+        /**
+         * Portuguese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        portuguese = "Portuguese",
+        /**
+         * Portuguese (Brazil) language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        portugueseBrazil = "PortugueseBrazil",
+        /**
+         * Punjabi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        punjabi = "Punjabi",
+        /**
+         * Rhaeto Romanic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rhaetoRomanic = "RhaetoRomanic",
+        /**
+         * Romanian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanian = "Romanian",
+        /**
+         * Romanian Moldova language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanianMoldova = "RomanianMoldova",
+        /**
+         * Russian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        russian = "Russian",
+        /**
+         * Russian Moldova language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        russianMoldova = "RussianMoldova",
+        /**
+         * Sami Lappish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        samiLappish = "SamiLappish",
+        /**
+         * Sanskrit language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sanskrit = "Sanskrit",
+        /**
+         * Serbian Cyrillic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        serbianCyrillic = "SerbianCyrillic",
+        /**
+         * Serbian Latin language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        serbianLatin = "SerbianLatin",
+        /**
+         * Sesotho language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sesotho = "Sesotho",
+        /**
+         * Simplified Chinese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simplifiedChinese = "SimplifiedChinese",
+        /**
+         * Sindhi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sindhi = "Sindhi",
+        /**
+         * Sindhi (Pakistan) language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sindhiPakistan = "SindhiPakistan",
+        /**
+         * Sinhalese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sinhalese = "Sinhalese",
+        /**
+         * Slovakian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slovak = "Slovak",
+        /**
+         * Slovenian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slovenian = "Slovenian",
+        /**
+         * Somali language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        somali = "Somali",
+        /**
+         * Sorbian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sorbian = "Sorbian",
+        /**
+         * Spanish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanish = "Spanish",
+        /**
+         * Spanish Argentina language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishArgentina = "SpanishArgentina",
+        /**
+         * Spanish Bolivian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishBolivia = "SpanishBolivia",
+        /**
+         * Spanish Chilean language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishChile = "SpanishChile",
+        /**
+         * Spanish Colombian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishColombia = "SpanishColombia",
+        /**
+         * Spanish Costa Rican language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishCostaRica = "SpanishCostaRica",
+        /**
+         * Spanish Dominican Republic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishDominicanRepublic = "SpanishDominicanRepublic",
+        /**
+         * Spanish Ecuadorian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishEcuador = "SpanishEcuador",
+        /**
+         * Spanish El Salvadorian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishElSalvador = "SpanishElSalvador",
+        /**
+         * Spanish Guatemala language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishGuatemala = "SpanishGuatemala",
+        /**
+         * Spanish Honduran language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishHonduras = "SpanishHonduras",
+        /**
+         * Spanish Modern Sort language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishModernSort = "SpanishModernSort",
+        /**
+         * Spanish Nicaraguan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishNicaragua = "SpanishNicaragua",
+        /**
+         * Spanish Panamanian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishPanama = "SpanishPanama",
+        /**
+         * Spanish Paraguayan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishParaguay = "SpanishParaguay",
+        /**
+         * Spanish Peruvian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishPeru = "SpanishPeru",
+        /**
+         * Spanish Puerto Rican language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishPuertoRico = "SpanishPuertoRico",
+        /**
+         * Spanish Uruguayan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishUruguay = "SpanishUruguay",
+        /**
+         * Spanish Venezuelan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spanishVenezuela = "SpanishVenezuela",
+        /**
+         * Sutu language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sutu = "Sutu",
+        /**
+         * Swahili language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swahili = "Swahili",
+        /**
+         * Swedish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swedish = "Swedish",
+        /**
+         * Swedish Finnish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swedishFinland = "SwedishFinland",
+        /**
+         * Swiss French language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swissFrench = "SwissFrench",
+        /**
+         * Swiss German language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swissGerman = "SwissGerman",
+        /**
+         * Swiss Italian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swissItalian = "SwissItalian",
+        /**
+         * Syriac language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        syriac = "Syriac",
+        /**
+         * Tajik language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tajik = "Tajik",
+        /**
+         * Tamazight language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tamazight = "Tamazight",
+        /**
+         * Tamazight Latin language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tamazightLatin = "TamazightLatin",
+        /**
+         * Tamil language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tamil = "Tamil",
+        /**
+         * Tatar language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tatar = "Tatar",
+        /**
+         * Telugu language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        telugu = "Telugu",
+        /**
+         * Thai language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thai = "Thai",
+        /**
+         * Tibetan language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tibetan = "Tibetan",
+        /**
+         * Tigrigna Eritrea language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tigrignaEritrea = "TigrignaEritrea",
+        /**
+         * Tigrigna Ethiopic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tigrignaEthiopic = "TigrignaEthiopic",
+        /**
+         * Traditional Chinese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        traditionalChinese = "TraditionalChinese",
+        /**
+         * Tsonga language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tsonga = "Tsonga",
+        /**
+         * Tswana language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tswana = "Tswana",
+        /**
+         * Turkish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        turkish = "Turkish",
+        /**
+         * Turkmen language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        turkmen = "Turkmen",
+        /**
+         * Ukrainian language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ukrainian = "Ukrainian",
+        /**
+         * Urdu language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        urdu = "Urdu",
+        /**
+         * Uzbek Cyrillic language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        uzbekCyrillic = "UzbekCyrillic",
+        /**
+         * Uzbek Latin language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        uzbekLatin = "UzbekLatin",
+        /**
+         * Venda language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        venda = "Venda",
+        /**
+         * Vietnamese language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vietnamese = "Vietnamese",
+        /**
+         * Welsh language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        welsh = "Welsh",
+        /**
+         * Xhosa language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xhosa = "Xhosa",
+        /**
+         * Yi language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        yi = "Yi",
+        /**
+         * Yiddish language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        yiddish = "Yiddish",
+        /**
+         * Yoruba language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        yoruba = "Yoruba",
+        /**
+         * Zulu language.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        zulu = "Zulu",
+    }
+    /**
+     * Represents the list formatting characteristics of a range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ListFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly list: Word.List;
+        /**
+         * Gets the list template associated with the `ListFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listTemplate: Word.ListTemplate;
+        /**
+         * Indicates whether the `ListFormat` object contains a single list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isSingleList: boolean;
+        /**
+         * Indicates whether the `ListFormat` object contains a single list template.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isSingleListTemplate: boolean;
+        /**
+         * Specifies the list level number for the first paragraph for the `ListFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listLevelNumber: number;
+        /**
+         * Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listString: string;
+        /**
+         * Gets the type of the list for the `ListFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listType: Word.ListType | "ListNoNumbering" | "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet";
+        /**
+         * Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listValue: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ListFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ListFormat): void;
+        /**
+         * Adds bullets and formatting to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param defaultListBehavior - Optional. Specifies the default list behavior. Default is `DefaultListBehavior.word97`.
+         */
+        applyBulletDefault(defaultListBehavior: Word.DefaultListBehavior): void;
+        /**
+         * Adds bullets and formatting to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param defaultListBehaviorString - Optional. Specifies the default list behavior. Default is `DefaultListBehavior.word97`.
+         */
+        applyBulletDefault(defaultListBehaviorString: "Word97" | "Word2000" | "Word2002"): void;
+        /**
+         * Applies a list template with a specific level to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param listTemplate - The list template to apply.
+         * @param options - Optional. Options for applying the list template, such as whether to continue the previous list or which part of the list to apply the template to.
+         */
+        applyListTemplateWithLevel(listTemplate: Word.ListTemplate, options?: Word.ListTemplateApplyOptions): void;
+        /**
+         * Adds numbering and formatting to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param defaultListBehavior - Optional. Specifies the default list behavior.
+         */
+        applyNumberDefault(defaultListBehavior: Word.DefaultListBehavior): void;
+        /**
+         * Adds numbering and formatting to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param defaultListBehaviorString - Optional. Specifies the default list behavior.
+         */
+        applyNumberDefault(defaultListBehaviorString: "Word97" | "Word2000" | "Word2002"): void;
+        /**
+         * Adds outline numbering and formatting to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param defaultListBehavior - Optional. Specifies the default list behavior.
+         */
+        applyOutlineNumberDefault(defaultListBehavior: Word.DefaultListBehavior): void;
+        /**
+         * Adds outline numbering and formatting to the paragraphs in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param defaultListBehaviorString - Optional. Specifies the default list behavior.
+         */
+        applyOutlineNumberDefault(defaultListBehaviorString: "Word97" | "Word2000" | "Word2002"): void;
+        /**
+         * Determines whether the `ListFormat` object can continue a previous list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param listTemplate - The list template to check.
+         * @returns A `Continue` value indicating whether continuation is possible.
+         */
+        canContinuePreviousList(listTemplate: Word.ListTemplate): OfficeExtension.ClientResult<Word.Continue>;
+        /**
+         * Converts numbers in the list to plain text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberType - Optional. The type of number to convert.
+         */
+        convertNumbersToText(numberType: Word.NumberType): void;
+        /**
+         * Converts numbers in the list to plain text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberTypeString - Optional. The type of number to convert.
+         */
+        convertNumbersToText(numberTypeString: "Paragraph" | "ListNum" | "AllNumbers"): void;
+        /**
+         * Counts the numbered items in the list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options for counting numbered items, such as the type of number and the level to count.
+         * @returns The number of items.
+         */
+        countNumberedItems(options?: Word.ListFormatCountNumberedItemsOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Indents the list by one level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listIndent(): void;
+        /**
+         * Outdents the list by one level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listOutdent(): void;
+        /**
+         * Removes numbering from the list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberType - Optional. The type of number to remove.
+         */
+        removeNumbers(numberType: Word.NumberType): void;
+        /**
+         * Removes numbering from the list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberTypeString - Optional. The type of number to remove.
+         */
+        removeNumbers(numberTypeString: "Paragraph" | "ListNum" | "AllNumbers"): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ListFormatLoadOptions): Word.ListFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ListFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ListFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ListFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ListFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ListFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ListFormatData;
+    }
+    /**
+     * Represents options for counting numbered items in a range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ListFormatCountNumberedItemsOptions {
+        /**
+         * If provided, specifies the level to count. The default value is 1.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        level?: number;
+        /**
+         * If provided, specifies the type of number to count. The default value is `Word.NumberType.paragraph`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberType?: Word.NumberType | "Paragraph" | "ListNum" | "AllNumbers";
+    }
+    /**
+     * Represents options for applying a list template to a range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ListTemplateApplyOptions {
+        /**
+         * If provided, specifies the level to apply in the list template. The default value is 1.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        applyLevel?: number;
+        /**
+         * If provided, specifies which part of the list to apply the template to. The default value is `Word.ListApplyTo.wholeList`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        applyTo?: Word.ListApplyTo | "WholeList" | "ThisPointForward" | "Selection";
+        /**
+         * If provided, specifies whether to continue the previous list. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        continuePreviousList?: boolean;
+        /**
+         * If provided, specifies the default list behavior. The default value is `DefaultListBehavior.word97`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        defaultListBehavior?: Word.DefaultListBehavior | "Word97" | "Word2000" | "Word2002";
+    }
+    /**
+     * Represents the fill formatting for a shape or text.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class FillFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `ColorFormat` object that represents the background color for the fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly backgroundColor: Word.ColorFormat;
+        /**
+         * Returns a `ColorFormat` object that represents the foreground color for the fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly foregroundColor: Word.ColorFormat;
+        /**
+         * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gradientAngle: number;
+        /**
+         * Gets the gradient color type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly gradientColorType: Word.GradientColorType | "Mixed" | "OneColor" | "TwoColors" | "PresetColors" | "MultiColor";
+        /**
+         * Returns how dark or light a one-color gradient fill is.
+                    A value of 0 means that black is mixed in with the shape's foreground color to form the gradient.
+                    A value of 1 means that white is mixed in.
+                    Values between 0 and 1 mean that a darker or lighter shade of the foreground color is mixed in.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly gradientDegree: number;
+        /**
+         * Returns the gradient style for the fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly gradientStyle: Word.GradientStyle | "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter";
+        /**
+         * Returns the gradient variant for the fill as an integer value from 1 to 4 for most gradient fills.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly gradientVariant: number;
+        /**
+         * Specifies if the object, or the formatting applied to it, is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Returns a `PatternType` value that represents the pattern applied to the fill or line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly pattern: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
+        /**
+         * Returns the preset gradient type for the fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly presetGradientType: Word.PresetGradientType | "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire";
+        /**
+         * Gets the preset texture.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly presetTexture: Word.PresetTexture | "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood";
+        /**
+         * Specifies whether the fill rotates with the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rotateWithObject: boolean;
+        /**
+         * Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureAlignment: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";
+        /**
+         * Specifies the horizontal scaling factor for the texture fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureHorizontalScale: number;
+        /**
+         * Returns the name of the custom texture file for the fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly textureName: string;
+        /**
+         * Specifies the horizontal offset of the texture from the origin in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureOffsetX: number;
+        /**
+         * Specifies the vertical offset of the texture.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureOffsetY: number;
+        /**
+         * Specifies whether the texture is tiled.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureTile: boolean;
+        /**
+         * Returns the texture type for the fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly textureType: Word.TextureType | "Mixed" | "Preset" | "UserDefined";
+        /**
+         * Specifies the vertical scaling factor for the texture fill as a value between 0.0 and 1.0.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureVerticalScale: number;
+        /**
+         * Specifies the degree of transparency of the fill for a shape as a value between 0.0 (opaque) and 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Gets the fill format type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.FillType | "Mixed" | "Solid" | "Patterned" | "Gradient" | "Textured" | "Background" | "Picture";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.FillFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.FillFormat): void;
+        /**
+         * Sets the fill to a one-color gradient.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param styleString - The gradient style.
+         * @param variant - The gradient variant. Can be a value from 1 to 4.
+         * @param degree - The gradient degree. Can be a value from `0.0` (dark) to `1.0` (light).
+         */
+        setOneColorGradient(style: Word.GradientStyle, variant: number, degree: number): void;
+        /**
+         * Sets the fill to a one-color gradient.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param styleString - The gradient style.
+         * @param variant - The gradient variant. Can be a value from 1 to 4.
+         * @param degree - The gradient degree. Can be a value from `0.0` (dark) to `1.0` (light).
+         */
+        setOneColorGradient(styleString: "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter", variant: number, degree: number): void;
+        /**
+         * Sets the fill to a pattern.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPatterned(pattern: Word.PatternType): void;
+        /**
+         * Sets the fill to a pattern.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPatterned(patternString: "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"): void;
+        /**
+         * Sets the fill to a preset gradient.
+                    The gradient style.The gradient variant. Can be a value from 1 to 4.The preset gradient type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPresetGradient(style: Word.GradientStyle, variant: number, presetGradientType: Word.PresetGradientType): void;
+        /**
+         * Sets the fill to a preset gradient.
+                    The gradient style.The gradient variant. Can be a value from 1 to 4.The preset gradient type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPresetGradient(styleString: "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter", variant: number, presetGradientTypeString: "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"): void;
+        /**
+         * Sets the fill to a preset texture.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPresetTextured(presetTexture: Word.PresetTexture): void;
+        /**
+         * Sets the fill to a preset texture.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPresetTextured(presetTextureString: "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"): void;
+        /**
+         * Sets the fill to a two-color gradient.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setTwoColorGradient(style: Word.GradientStyle, variant: number): void;
+        /**
+         * Sets the fill to a two-color gradient.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setTwoColorGradient(styleString: "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter", variant: number): void;
+        /**
+         * Sets the fill to a uniform color.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solid(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.FillFormatLoadOptions): Word.FillFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.FillFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.FillFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.FillFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.FillFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.FillFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FillFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.FillFormatData;
+    }
+    /**
+     * Represents the glow formatting for the font used by the range of text.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class GlowFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `ColorFormat` object that represents the color for a glow effect.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly color: Word.ColorFormat;
+        /**
+         * Specifies the length of the radius for a glow effect.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        radius: number;
+        /**
+         * Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.GlowFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.GlowFormat): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.GlowFormatLoadOptions): Word.GlowFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.GlowFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.GlowFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.GlowFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.GlowFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.GlowFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.GlowFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.GlowFormatData;
+    }
+    /**
+     * Represents line and arrowhead formatting. For a line, the `LineFormat` object contains formatting information for the line itself;
+                for a shape with a border, this object contains formatting information for the shape's border.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class LineFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets a `ColorFormat` object that represents the background color for a patterned line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly backgroundColor: Word.ColorFormat;
+        /**
+         * Gets a `ColorFormat` object that represents the foreground color for the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly foregroundColor: Word.ColorFormat;
+        /**
+         * Specifies the length of the arrowhead at the beginning of the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        beginArrowheadLength: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
+        /**
+         * Specifies the style of the arrowhead at the beginning of the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        beginArrowheadStyle: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+        /**
+         * Specifies the width of the arrowhead at the beginning of the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        beginArrowheadWidth: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
+        /**
+         * Specifies the dash style for the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashStyle: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
+        /**
+         * Specifies the length of the arrowhead at the end of the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endArrowheadLength: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
+        /**
+         * Specifies the style of the arrowhead at the end of the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endArrowheadStyle: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+        /**
+         * Specifies the width of the arrowhead at the end of the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endArrowheadWidth: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
+        /**
+         * Specifies if to draw lines inside a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insetPen: boolean;
+        /**
+         * Specifies if the object, or the formatting applied to it, is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Specifies the pattern applied to the line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pattern: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
+        /**
+         * Specifies the line format style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        style: Word.LineFormatStyle | "Mixed" | "Single" | "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin";
+        /**
+         * Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Specifies the thickness of the line in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        weight: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.LineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.LineFormat): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.LineFormatLoadOptions): Word.LineFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.LineFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.LineFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.LineFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.LineFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.LineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.LineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.LineFormatData;
+    }
+    /**
+     * Represents the reflection formatting for a shape in Word.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ReflectionFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blur: number;
+        /**
+         * Specifies the amount of separation, in points, of the reflected image from the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        offset: number;
+        /**
+         * Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size: number;
+        /**
+         * Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.ReflectionType | "Mixed" | "None" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ReflectionFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ReflectionFormat): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ReflectionFormatLoadOptions): Word.ReflectionFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ReflectionFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ReflectionFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ReflectionFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ReflectionFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ReflectionFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReflectionFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ReflectionFormatData;
+    }
+    /**
+     * Represents the color formatting of a shape or text in Word.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ColorFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brightness: number;
+        /**
+         * Specifies the theme color for a color format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        objectThemeColor: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+        /**
+         * Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '#RRGGBB' format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rgb: string;
+        /**
+         * Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tintAndShade: number;
+        /**
+         * Returns the shape color type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.ColorType | "rgb" | "scheme";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ColorFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ColorFormat): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ColorFormatLoadOptions): Word.ColorFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ColorFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ColorFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ColorFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ColorFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ColorFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ColorFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ColorFormatData;
+    }
+    /**
+     * Represents the shadow formatting for a shape or text in Word.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ShadowFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly foregroundColor: Word.ColorFormat;
+        /**
+         * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blur: number;
+        /**
+         * Specifies whether the object or the formatting applied to it is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Specifies `true` if the shadow of the shape appears filled in and is obscured by the shape, even if the shape has no fill,
+                    `false` if the shadow has no fill and the outline of the shadow is visible through the shape if the shape has no fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obscured: boolean;
+        /**
+         * Specifies the horizontal offset (in points) of the shadow from the shape.
+                    A positive value offsets the shadow to the right of the shape; a negative value offsets it to the left.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        offsetX: number;
+        /**
+         * Specifies the vertical offset (in points) of the shadow from the shape.
+                    A positive value offsets the shadow to the top of the shape; a negative value offsets it to the bottom.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        offsetY: number;
+        /**
+         * Specifies whether to rotate the shadow when rotating the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rotateWithShape: boolean;
+        /**
+         * Specifies the width of the shadow.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size: number;
+        /**
+         * Specifies the type of shadow formatting to apply to a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        style: Word.ShadowStyle | "Mixed" | "OuterShadow" | "InnerShadow";
+        /**
+         * Specifies the degree of transparency of the shadow as a value between 0.0 (opaque) and 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Specifies the shape shadow type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.ShadowType | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" | "Type42" | "Type43";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShadowFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ShadowFormat): void;
+        /**
+         * Changes the horizontal offset of the shadow by the number of points.
+                    Increment The number of points to adjust.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementOffsetX(increment: number): void;
+        /**
+         * Changes the vertical offset of the shadow by the specified number of points.
+                    Increment The number of points to adjust.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementOffsetY(increment: number): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ShadowFormatLoadOptions): Word.ShadowFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ShadowFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ShadowFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ShadowFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ShadowFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ShadowFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadowFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ShadowFormatData;
+    }
+    /**
+     * Represents a shape's three-dimensional formatting.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ThreeDimensionalFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `ColorFormat` object that represents color of the contour of a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly contourColor: Word.ColorFormat;
+        /**
+         * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly extrusionColor: Word.ColorFormat;
+        /**
+         * Specifies the depth of the bottom bevel.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevelBottomDepth: number;
+        /**
+         * Specifies the inset size for the bottom bevel.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevelBottomInset: number;
+        /**
+         * Specifies a `BevelType` value that represents the bevel type for the bottom bevel.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevelBottomType: Word.BevelType | "mixed" | "none" | "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+        /**
+         * Specifies the depth of the top bevel.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevelTopDepth: number;
+        /**
+         * Specifies the inset size for the top bevel.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevelTopInset: number;
+        /**
+         * Specifies a `BevelType` value that represents the bevel type for the top bevel.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevelTopType: Word.BevelType | "mixed" | "none" | "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+        /**
+         * Specifies the width of the contour of a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contourWidth: number;
+        /**
+         * Specifies the depth of the shape's extrusion.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        depth: number;
+        /**
+         * Specifies whether the extrusion color is based on the extruded shape's fill (the front face of the extrusion)
+                    and automatically changes when the shape's fill changes, or whether the extrusion color is independent of the shape's fill.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        extrusionColorType: Word.ExtrusionColorType | "mixed" | "automatic" | "custom";
+        /**
+         * Specifies the amount of perspective for a shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fieldOfView: number;
+        /**
+         * Specifies `true` if the extrusion appears in perspective — that is, if the walls of the extrusion narrow toward a vanishing point,
+                    `false` if the extrusion is a parallel, or orthographic, projection — that is, if the walls don't narrow toward a vanishing point.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isPerspective: boolean;
+        /**
+         * Specifies if the specified object, or the formatting applied to it, is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Specifies the angle of the lighting.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightAngle: number;
+        /**
+         * Returns a `PresetCamera` value that represents the camera presets.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly presetCamera: Word.PresetCamera | "Mixed" | "LegacyObliqueTopLeft" | "LegacyObliqueTop" | "LegacyObliqueTopRight" | "LegacyObliqueLeft" | "LegacyObliqueFront" | "LegacyObliqueRight" | "LegacyObliqueBottomLeft" | "LegacyObliqueBottom" | "LegacyObliqueBottomRight" | "LegacyPerspectiveTopLeft" | "LegacyPerspectiveTop" | "LegacyPerspectiveTopRight" | "LegacyPerspectiveLeft" | "LegacyPerspectiveFront" | "LegacyPerspectiveRight" | "LegacyPerspectiveBottomLeft" | "LegacyPerspectiveBottom" | "LegacyPerspectiveBottomRight" | "OrthographicFront" | "IsometricTopUp" | "IsometricTopDown" | "IsometricBottomUp" | "IsometricBottomDown" | "IsometricLeftUp" | "IsometricLeftDown" | "IsometricRightUp" | "IsometricRightDown" | "IsometricOffAxis1Left" | "IsometricOffAxis1Right" | "IsometricOffAxis1Top" | "IsometricOffAxis2Left" | "IsometricOffAxis2Right" | "IsometricOffAxis2Top" | "IsometricOffAxis3Left" | "IsometricOffAxis3Right" | "IsometricOffAxis3Bottom" | "IsometricOffAxis4Left" | "IsometricOffAxis4Right" | "IsometricOffAxis4Bottom" | "ObliqueTopLeft" | "ObliqueTop" | "ObliqueTopRight" | "ObliqueLeft" | "ObliqueRight" | "ObliqueBottomLeft" | "ObliqueBottom" | "ObliqueBottomRight" | "PerspectiveFront" | "PerspectiveLeft" | "PerspectiveRight" | "PerspectiveAbove" | "PerspectiveBelow" | "PerspectiveAboveLeftFacing" | "PerspectiveAboveRightFacing" | "PerspectiveContrastingLeftFacing" | "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing" | "PerspectiveHeroicRightFacing" | "PerspectiveHeroicExtremeLeftFacing" | "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" | "PerspectiveRelaxedModerately";
+        /**
+         * Returns the direction taken by the extrusion's sweep path leading away from the extruded shape (the front face of the extrusion).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly presetExtrusionDirection: Word.PresetExtrusionDirection | "Mixed" | "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" | "TopRight" | "Top" | "TopLeft";
+        /**
+         * Specifies a `LightRigType` value that represents the lighting preset.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        presetLighting: Word.LightRigType | "Mixed" | "LegacyFlat1" | "LegacyFlat2" | "LegacyFlat3" | "LegacyFlat4" | "LegacyNormal1" | "LegacyNormal2" | "LegacyNormal3" | "LegacyNormal4" | "LegacyHarsh1" | "LegacyHarsh2" | "LegacyHarsh3" | "LegacyHarsh4" | "ThreePoint" | "Balanced" | "Soft" | "Harsh" | "Flood" | "Contrasting" | "Morning" | "Sunrise" | "Sunset" | "Chilly" | "Freezing" | "Flat" | "TwoPoint" | "Glow" | "BrightRoom";
+        /**
+         * Specifies the position of the light source relative to the extrusion.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        presetLightingDirection: Word.PresetLightingDirection | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "None" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";
+        /**
+         * Specifies the intensity of the extrusion lighting.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        presetLightingSoftness: Word.PresetLightingSoftness | "Mixed" | "Dim" | "Normal" | "Bright";
+        /**
+         * Specifies the extrusion surface material.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        presetMaterial: Word.PresetMaterial | "Mixed" | "Matte" | "Plastic" | "Metal" | "WireFrame" | "Matte2" | "Plastic2" | "Metal2" | "WarmMatte" | "TranslucentPowder" | "Powder" | "DarkEdge" | "SoftEdge" | "Clear" | "Flat" | "SoftMetal";
+        /**
+         * Returns the preset extrusion format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly presetThreeDimensionalFormat: Word.PresetThreeDimensionalFormat | "Mixed" | "Format1" | "Format2" | "Format3" | "Format4" | "Format5" | "Format6" | "Format7" | "Format8" | "Format9" | "Format10" | "Format11" | "Format12" | "Format13" | "Format14" | "Format15" | "Format16" | "Format17" | "Format18" | "Format19" | "Format20";
+        /**
+         * Specifies whether text on a shape rotates with shape. `true` rotates the text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        projectText: boolean;
+        /**
+         * Specifies the rotation of the extruded shape around the x-axis in degrees.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rotationX: number;
+        /**
+         * Specifies the rotation of the extruded shape around the y-axis in degrees.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rotationY: number;
+        /**
+         * Specifies the z-axis rotation of the camera.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rotationZ: number;
+        /**
+         * Specifies the position on the z-axis for the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        z: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ThreeDimensionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ThreeDimensionalFormat): void;
+        /**
+         * Horizontally rotates a shape on the x-axis.
+                    The number of degrees to rotate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementRotationHorizontal(increment: number): void;
+        /**
+         * Vertically rotates a shape on the y-axis.
+                    The number of degrees to rotate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementRotationVertical(increment: number): void;
+        /**
+         * Changes the rotation around the x-axis.
+                    The number of degrees to rotate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementRotationX(increment: number): void;
+        /**
+         * Changes the rotation around the y-axis.
+                    The number of degrees to rotate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementRotationY(increment: number): void;
+        /**
+         * Rotates a shape on the z-axis.
+                    The number of degrees to rotate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        incrementRotationZ(increment: number): void;
+        /**
+         * Resets the extrusion rotation around the x-axis, y-axis, and z-axis to 0.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetRotation(): void;
+        /**
+         * Sets the direction of the extrusion's sweep path.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param presetExtrusionDirection - The preset direction.
+         */
+        setExtrusionDirection(presetExtrusionDirection: Word.PresetExtrusionDirection): void;
+        /**
+         * Sets the direction of the extrusion's sweep path.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param presetExtrusionDirectionString - The preset direction.
+         */
+        setExtrusionDirection(presetExtrusionDirectionString: "Mixed" | "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" | "TopRight" | "Top" | "TopLeft"): void;
+        /**
+         * Sets the camera preset for the shape.
+                    The preset camera type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPresetCamera(presetCamera: Word.PresetCamera): void;
+        /**
+         * Sets the camera preset for the shape.
+                    The preset camera type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setPresetCamera(presetCameraString: "Mixed" | "LegacyObliqueTopLeft" | "LegacyObliqueTop" | "LegacyObliqueTopRight" | "LegacyObliqueLeft" | "LegacyObliqueFront" | "LegacyObliqueRight" | "LegacyObliqueBottomLeft" | "LegacyObliqueBottom" | "LegacyObliqueBottomRight" | "LegacyPerspectiveTopLeft" | "LegacyPerspectiveTop" | "LegacyPerspectiveTopRight" | "LegacyPerspectiveLeft" | "LegacyPerspectiveFront" | "LegacyPerspectiveRight" | "LegacyPerspectiveBottomLeft" | "LegacyPerspectiveBottom" | "LegacyPerspectiveBottomRight" | "OrthographicFront" | "IsometricTopUp" | "IsometricTopDown" | "IsometricBottomUp" | "IsometricBottomDown" | "IsometricLeftUp" | "IsometricLeftDown" | "IsometricRightUp" | "IsometricRightDown" | "IsometricOffAxis1Left" | "IsometricOffAxis1Right" | "IsometricOffAxis1Top" | "IsometricOffAxis2Left" | "IsometricOffAxis2Right" | "IsometricOffAxis2Top" | "IsometricOffAxis3Left" | "IsometricOffAxis3Right" | "IsometricOffAxis3Bottom" | "IsometricOffAxis4Left" | "IsometricOffAxis4Right" | "IsometricOffAxis4Bottom" | "ObliqueTopLeft" | "ObliqueTop" | "ObliqueTopRight" | "ObliqueLeft" | "ObliqueRight" | "ObliqueBottomLeft" | "ObliqueBottom" | "ObliqueBottomRight" | "PerspectiveFront" | "PerspectiveLeft" | "PerspectiveRight" | "PerspectiveAbove" | "PerspectiveBelow" | "PerspectiveAboveLeftFacing" | "PerspectiveAboveRightFacing" | "PerspectiveContrastingLeftFacing" | "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing" | "PerspectiveHeroicRightFacing" | "PerspectiveHeroicExtremeLeftFacing" | "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" | "PerspectiveRelaxedModerately"): void;
+        /**
+         * Sets the preset extrusion format.
+                    The preset format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setThreeDimensionalFormat(presetThreeDimensionalFormat: Word.PresetThreeDimensionalFormat): void;
+        /**
+         * Sets the preset extrusion format.
+                    The preset format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setThreeDimensionalFormat(presetThreeDimensionalFormatString: "Mixed" | "Format1" | "Format2" | "Format3" | "Format4" | "Format5" | "Format6" | "Format7" | "Format8" | "Format9" | "Format10" | "Format11" | "Format12" | "Format13" | "Format14" | "Format15" | "Format16" | "Format17" | "Format18" | "Format19" | "Format20"): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ThreeDimensionalFormatLoadOptions): Word.ThreeDimensionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ThreeDimensionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ThreeDimensionalFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ThreeDimensionalFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ThreeDimensionalFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ThreeDimensionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ThreeDimensionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ThreeDimensionalFormatData;
+    }
+    /**
+     * Specifies the length of the arrowhead at the end of a line.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ArrowheadLength {
+        /**
+         * Represents a mixed arrowhead length.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a short arrowhead length.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        short = "Short",
+        /**
+         * Represents a medium arrowhead length.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        medium = "Medium",
+        /**
+         * Represents a long arrowhead length.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        long = "Long",
+    }
+    /**
+     * Specifies the style of the arrowhead at the end of a line.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ArrowheadStyle {
+        /**
+         * Represents a mixed arrowhead style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents no arrowhead.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents a triangle arrowhead style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        triangle = "Triangle",
+        /**
+         * Represents an open arrowhead style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        open = "Open",
+        /**
+         * Represents a stealth arrowhead style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        stealth = "Stealth",
+        /**
+         * Represents a diamond arrowhead style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diamond = "Diamond",
+        /**
+         * Represents an oval arrowhead style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oval = "Oval",
+    }
+    /**
+     * Specifies the width of the arrowhead at the end of a line.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ArrowheadWidth {
+        /**
+         * Represents a mixed arrowhead width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a narrow arrowhead width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        narrow = "Narrow",
+        /**
+         * Represents a medium arrowhead width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        medium = "Medium",
+        /**
+         * Represents a wide arrowhead width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wide = "Wide",
+    }
+    /**
+     * Indicates the bevel type of a {@link Word.ThreeDimensionalFormat} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum BevelType {
+        /**
+         * Represents a mixed bevel type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "mixed",
+        /**
+         * Represents no bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "none",
+        /**
+         * Represents a relaxed inset bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        relaxedInset = "relaxedInset",
+        /**
+         * Represents a circle bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        circle = "circle",
+        /**
+         * Represents a slope bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slope = "slope",
+        /**
+         * Represents a cross bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cross = "cross",
+        /**
+         * Represents an angle bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        angle = "angle",
+        /**
+         * Represents a soft round bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        softRound = "softRound",
+        /**
+         * Represents a convex bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        convex = "convex",
+        /**
+         * Represents a cool slant bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        coolSlant = "coolSlant",
+        /**
+         * Represents a divot bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        divot = "divot",
+        /**
+         * Represents a riblet bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        riblet = "riblet",
+        /**
+         * Represents a hard edge bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hardEdge = "hardEdge",
+        /**
+         * Represents an art deco bevel.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        artDeco = "artDeco",
+    }
+    /**
+     * Represents color index values in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ColorIndex {
+        /**
+         * Automatically determines the color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        auto = "Auto",
+        /**
+         * Represents the color black.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        black = "Black",
+        /**
+         * Represents the color blue.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blue = "Blue",
+        /**
+         * Represents the color turquoise.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        turquoise = "Turquoise",
+        /**
+         * Represents a bright green color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brightGreen = "BrightGreen",
+        /**
+         * Represents the color pink.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pink = "Pink",
+        /**
+         * Represents the color red.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        red = "Red",
+        /**
+         * Represents the color yellow.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        yellow = "Yellow",
+        /**
+         * Represents the color white.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        white = "White",
+        /**
+         * Represents a dark blue color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkBlue = "DarkBlue",
+        /**
+         * Represents the color teal.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        teal = "Teal",
+        /**
+         * Represents the color green.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        green = "Green",
+        /**
+         * Represents the color violet.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        violet = "Violet",
+        /**
+         * Represents a dark red color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkRed = "DarkRed",
+        /**
+         * Represents a dark yellow color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkYellow = "DarkYellow",
+        /**
+         * Represents a gray color with 50% intensity.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gray50 = "Gray50",
+        /**
+         * Represents a gray color with 25% intensity.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gray25 = "Gray25",
+        /**
+         * Represents a classic red color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        classicRed = "ClassicRed",
+        /**
+         * Represents a classic blue color.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        classicBlue = "ClassicBlue",
+        /**
+         * Represents a color determined by the author.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        byAuthor = "ByAuthor",
+    }
+    /**
+     * Specifies the color type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ColorType {
+        /**
+         * Represents an RGB color type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rgb = "rgb",
+        /**
+         * Represents a scheme color type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scheme = "scheme",
+    }
+    /**
+     * Specifies whether the formatting from the previous list can be continued.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum Continue {
+        /**
+         * Formatting cannot continue from the previous list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        disabled = "Disabled",
+        /**
+         * Formatting can continue from the previous list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        list = "List",
+        /**
+         * Numbering can be restarted.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reset = "Reset",
+    }
+    /**
+     * Specifies the default list behavior for a list.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DefaultListBehavior {
+        /**
+         * Use formatting compatible with Microsoft Word 97.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word97 = "Word97",
+        /**
+         * Use Web-oriented formatting as introduced in Microsoft Word 2000.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word2000 = "Word2000",
+        /**
+         * Use formatting compatible with Microsoft Word 2002.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word2002 = "Word2002",
+    }
+    /**
+     * Specifies the type of emphasis mark to use for a character or designated character string.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum EmphasisMark {
+        /**
+         * No emphasis mark.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Emphasis mark over a solid circle.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        overSolidCircle = "OverSolidCircle",
+        /**
+         * Emphasis mark over a comma.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        overComma = "OverComma",
+        /**
+         * Emphasis mark over a white circle.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        overWhiteCircle = "OverWhiteCircle",
+        /**
+         * Emphasis mark under a solid circle.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        underSolidCircle = "UnderSolidCircle",
+    }
+    /**
+     * Specifies whether the extrusion color is based on the extruded shape's fill (the front face of the extrusion)
+                and automatically changes when the shape's fill changes, or whether the extrusion color is independent of the shape's fill.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ExtrusionColorType {
+        /**
+         * Represents a mixed extrusion color type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "mixed",
+        /**
+         * Represents an automatic extrusion color based on the shape's fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        automatic = "automatic",
+        /**
+         * Represents a custom extrusion color independent of the shape's fill.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        custom = "custom",
+    }
+    /**
+     * Specifies a shape's fill type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum FillType {
+        /**
+         * Represents a mixed fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a solid fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solid = "Solid",
+        /**
+         * Represents a patterned fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        patterned = "Patterned",
+        /**
+         * Represents a gradient fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gradient = "Gradient",
+        /**
+         * Represents a textured fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textured = "Textured",
+        /**
+         * Represents a background fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        background = "Background",
+        /**
+         * Represents a picture fill type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        picture = "Picture",
+    }
+    /**
+     * Specifies the type of gradient used in a shape's fill.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum GradientColorType {
+        /**
+         * Mixed gradient color type. Used when multiple shapes with different gradient types are selected.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Gradient with a single color and varying transparency or brightness.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oneColor = "OneColor",
+        /**
+         * Gradient that blends two distinct colors.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoColors = "TwoColors",
+        /**
+         * Gradient that uses a predefined set of colors.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        presetColors = "PresetColors",
+        /**
+         * Gradient that includes more than two colors, often customized.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        multiColor = "MultiColor",
+    }
+    /**
+     * Specifies the style for a gradient fill.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum GradientStyle {
+        /**
+         * Represents a mixed gradient style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a horizontal gradient style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontal = "Horizontal",
+        /**
+         * Represents a vertical gradient style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical = "Vertical",
+        /**
+         * Represents a diagonal-up gradient style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalUp = "DiagonalUp",
+        /**
+         * Represents a diagonal-down gradient style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalDown = "DiagonalDown",
+        /**
+         * Represents a gradient style from the corner.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fromCorner = "FromCorner",
+        /**
+         * Represents a gradient style from the title.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fromTitle = "FromTitle",
+        /**
+         * Represents a gradient style from the center.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fromCenter = "FromCenter",
+    }
+    /**
+     * Specifies the type of ligature applied to a font.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum Ligature {
+        /**
+         * No ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Standard ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standard = "Standard",
+        /**
+         * Contextual ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contextual = "Contextual",
+        /**
+         * Standard and contextual ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standardContextual = "StandardContextual",
+        /**
+         * Historical ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        historical = "Historical",
+        /**
+         * Standard and historical ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standardHistorical = "StandardHistorical",
+        /**
+         * Contextual and historical ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contextualHistorical = "ContextualHistorical",
+        /**
+         * Standard, contextual, and historical ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standardContextualHistorical = "StandardContextualHistorical",
+        /**
+         * Discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        discretional = "Discretional",
+        /**
+         * Standard and discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standardDiscretional = "StandardDiscretional",
+        /**
+         * Contextual and discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contextualDiscretional = "ContextualDiscretional",
+        /**
+         * Standard, contextual, and discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standardContextualDiscretional = "StandardContextualDiscretional",
+        /**
+         * Historical and discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        historicalDiscretional = "HistoricalDiscretional",
+        /**
+         * Standard, historical, and discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        standardHistoricalDiscretional = "StandardHistoricalDiscretional",
+        /**
+         * Contextual, historical, and discretional ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contextualHistoricalDiscretional = "ContextualHistoricalDiscretional",
+        /**
+         * All ligatures applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        all = "All",
+    }
+    /**
+     * Indicates the effects lighting for an object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LightRigType {
+        /**
+         * Represents a mixed light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents legacy flat light rig type 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyFlat1 = "LegacyFlat1",
+        /**
+         * Represents legacy flat light rig type 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyFlat2 = "LegacyFlat2",
+        /**
+         * Represents legacy flat light rig type 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyFlat3 = "LegacyFlat3",
+        /**
+         * Represents legacy flat light rig type 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyFlat4 = "LegacyFlat4",
+        /**
+         * Represents legacy normal light rig type 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyNormal1 = "LegacyNormal1",
+        /**
+         * Represents legacy normal light rig type 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyNormal2 = "LegacyNormal2",
+        /**
+         * Represents legacy normal light rig type 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyNormal3 = "LegacyNormal3",
+        /**
+         * Represents legacy normal light rig type 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyNormal4 = "LegacyNormal4",
+        /**
+         * Represents legacy harsh light rig type 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyHarsh1 = "LegacyHarsh1",
+        /**
+         * Represents legacy harsh light rig type 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyHarsh2 = "LegacyHarsh2",
+        /**
+         * Represents legacy harsh light rig type 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyHarsh3 = "LegacyHarsh3",
+        /**
+         * Represents legacy harsh light rig type 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyHarsh4 = "LegacyHarsh4",
+        /**
+         * Represents a three-point light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        threePoint = "ThreePoint",
+        /**
+         * Represents a balanced light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        balanced = "Balanced",
+        /**
+         * Represents a soft light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        soft = "Soft",
+        /**
+         * Represents a harsh light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        harsh = "Harsh",
+        /**
+         * Represents a flood light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flood = "Flood",
+        /**
+         * Represents a contrasting light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contrasting = "Contrasting",
+        /**
+         * Represents a morning light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        morning = "Morning",
+        /**
+         * Represents a sunrise light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sunrise = "Sunrise",
+        /**
+         * Represents a sunset light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sunset = "Sunset",
+        /**
+         * Represents a chilly light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chilly = "Chilly",
+        /**
+         * Represents a freezing light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        freezing = "Freezing",
+        /**
+         * Represents a flat light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flat = "Flat",
+        /**
+         * Represents a two-point light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoPoint = "TwoPoint",
+        /**
+         * Represents a glow light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        glow = "Glow",
+        /**
+         * Represents a bright room light rig type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brightRoom = "BrightRoom",
+    }
+    /**
+     * Specifies the dash style for a line.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LineDashStyle {
+        /**
+         * Represents a mixed dash style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a solid line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solid = "Solid",
+        /**
+         * Represents a square dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        squareDot = "SquareDot",
+        /**
+         * Represents a round dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        roundDot = "RoundDot",
+        /**
+         * Represents a dashed line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dash = "Dash",
+        /**
+         * Represents a dash-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashDot = "DashDot",
+        /**
+         * Represents a dash-dot-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashDotDot = "DashDotDot",
+        /**
+         * Represents a long dash line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        longDash = "LongDash",
+        /**
+         * Represents a long dash-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        longDashDot = "LongDashDot",
+        /**
+         * Represents a long dash-dot-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        longDashDotDot = "LongDashDotDot",
+        /**
+         * Represents a system dash line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sysDash = "SysDash",
+        /**
+         * Represents a system dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sysDot = "SysDot",
+        /**
+         * Represents a system dash-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sysDashDot = "SysDashDot",
+    }
+    /**
+     * Specifies the style for a line.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LineFormatStyle {
+        /**
+         * Represents a mixed line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a single line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        single = "Single",
+        /**
+         * Represents a thin-thin line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThin = "ThinThin",
+        /**
+         * Represents a thin-thick line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThick = "ThinThick",
+        /**
+         * Represents a thick-thin line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thickThin = "ThickThin",
+        /**
+         * Represents a thick line between two thin lines style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thickBetweenThin = "ThickBetweenThin",
+    }
+    /**
+     * Specifies the portion of a list to which to apply a list template.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ListApplyTo {
+        /**
+         * Applies the list template to the entire list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wholeList = "WholeList",
+        /**
+         * Applies the list template from the cursor insertion point to the end of the list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thisPointForward = "ThisPointForward",
+        /**
+         * Applies the list template to the selection.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        selection = "Selection",
+    }
+    /**
+     * Represents the list type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ListType {
+        /**
+         * List with no bullets, numbering, or outlining.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listNoNumbering = "ListNoNumbering",
+        /**
+         * ListNum fields that can be used in the body of a paragraph.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listListNumOnly = "ListListNumOnly",
+        /**
+         * Bulleted list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listBullet = "ListBullet",
+        /**
+         * Simple numeric list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listSimpleNumbering = "ListSimpleNumbering",
+        /**
+         * Outlined list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listOutlineNumbering = "ListOutlineNumbering",
+        /**
+         * Mixed numeric list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listMixedNumbering = "ListMixedNumbering",
+        /**
+         * Picture bulleted list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listPictureBullet = "ListPictureBullet",
+    }
+    /**
+     * Specifies the number form setting for an OpenType font.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum NumberForm {
+        /**
+         * Default number form setting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        default = "Default",
+        /**
+         * Lining number form setting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lining = "Lining",
+        /**
+         * Old-style number form setting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oldStyle = "OldStyle",
+    }
+    /**
+     * Specifies the number spacing setting for an OpenType font.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum NumberSpacing {
+        /**
+         * Default number spacing setting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        default = "Default",
+        /**
+         * Proportional number spacing setting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        proportional = "Proportional",
+        /**
+         * Tabular number spacing setting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tabular = "Tabular",
+    }
+    /**
+     * Specifies the type of numbers in a list.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum NumberType {
+        /**
+         * Preset numbers you can add to paragraphs by selecting a template in the **Bullets and Numbering** dialog box.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraph = "Paragraph",
+        /**
+         * Default value for {@link https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82 | ListNum fields}.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listNum = "ListNum",
+        /**
+         * Default value for all other cases.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allNumbers = "AllNumbers",
+    }
+    /**
+     * Specifies the fill pattern used in a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PatternType {
+        /**
+         * Represents a mixed pattern type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a 5 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent5 = "Percent5",
+        /**
+         * Represents a 10 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent10 = "Percent10",
+        /**
+         * Represents a 20 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent20 = "Percent20",
+        /**
+         * Represents a 25 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent25 = "Percent25",
+        /**
+         * Represents a 30 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent30 = "Percent30",
+        /**
+         * Represents a 40 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent40 = "Percent40",
+        /**
+         * Represents a 50 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent50 = "Percent50",
+        /**
+         * Represents a 60 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent60 = "Percent60",
+        /**
+         * Represents a 70 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent70 = "Percent70",
+        /**
+         * Represents a 75 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent75 = "Percent75",
+        /**
+         * Represents an 80 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent80 = "Percent80",
+        /**
+         * Represents a 90 percent fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent90 = "Percent90",
+        /**
+         * Represents a dark horizontal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkHorizontal = "DarkHorizontal",
+        /**
+         * Represents a dark vertical fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkVertical = "DarkVertical",
+        /**
+         * Represents a dark downward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkDownwardDiagonal = "DarkDownwardDiagonal",
+        /**
+         * Represents a dark upward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkUpwardDiagonal = "DarkUpwardDiagonal",
+        /**
+         * Represents a small checkerboard fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallCheckerBoard = "SmallCheckerBoard",
+        /**
+         * Represents a trellis fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trellis = "Trellis",
+        /**
+         * Represents a light horizontal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightHorizontal = "LightHorizontal",
+        /**
+         * Represents a light vertical fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightVertical = "LightVertical",
+        /**
+         * Represents a light downward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightDownwardDiagonal = "LightDownwardDiagonal",
+        /**
+         * Represents a light upward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightUpwardDiagonal = "LightUpwardDiagonal",
+        /**
+         * Represents a small grid fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallGrid = "SmallGrid",
+        /**
+         * Represents a dotted diamond fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dottedDiamond = "DottedDiamond",
+        /**
+         * Represents a wide downward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wideDownwardDiagonal = "WideDownwardDiagonal",
+        /**
+         * Represents a wide upward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wideUpwardDiagonal = "WideUpwardDiagonal",
+        /**
+         * Represents a dashed upward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedUpwardDiagonal = "DashedUpwardDiagonal",
+        /**
+         * Represents a dashed downward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedDownwardDiagonal = "DashedDownwardDiagonal",
+        /**
+         * Represents a narrow vertical fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        narrowVertical = "NarrowVertical",
+        /**
+         * Represents a narrow horizontal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        narrowHorizontal = "NarrowHorizontal",
+        /**
+         * Represents a dashed vertical fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedVertical = "DashedVertical",
+        /**
+         * Represents a dashed horizontal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedHorizontal = "DashedHorizontal",
+        /**
+         * Represents a large confetti fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeConfetti = "LargeConfetti",
+        /**
+         * Represents a large grid fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeGrid = "LargeGrid",
+        /**
+         * Represents a horizontal brick fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontalBrick = "HorizontalBrick",
+        /**
+         * Represents a large checkerboard fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeCheckerBoard = "LargeCheckerBoard",
+        /**
+         * Represents a small confetti fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallConfetti = "SmallConfetti",
+        /**
+         * Represents a zigzag fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        zigZag = "ZigZag",
+        /**
+         * Represents a solid diamond fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solidDiamond = "SolidDiamond",
+        /**
+         * Represents a diagonal brick fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalBrick = "DiagonalBrick",
+        /**
+         * Represents an outlined diamond fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlinedDiamond = "OutlinedDiamond",
+        /**
+         * Represents a plaid fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plaid = "Plaid",
+        /**
+         * Represents a sphere fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sphere = "Sphere",
+        /**
+         * Represents a weave fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        weave = "Weave",
+        /**
+         * Represents a dotted grid fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dottedGrid = "DottedGrid",
+        /**
+         * Represents a divot fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        divot = "Divot",
+        /**
+         * Represents a shingle fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shingle = "Shingle",
+        /**
+         * Represents a wave fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wave = "Wave",
+        /**
+         * Represents a horizontal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontal = "Horizontal",
+        /**
+         * Represents a vertical fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical = "Vertical",
+        /**
+         * Represents a cross fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cross = "Cross",
+        /**
+         * Represents a downward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        downwardDiagonal = "DownwardDiagonal",
+        /**
+         * Represents an upward diagonal fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upwardDiagonal = "UpwardDiagonal",
+        /**
+         * Represents a diagonal cross fill pattern.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalCross = "DiagonalCross",
+    }
+    /**
+     * Indicates the effects camera type used by the specified object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetCamera {
+        /**
+         * Represents a mixed camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a legacy oblique top-left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueTopLeft = "LegacyObliqueTopLeft",
+        /**
+         * Represents a legacy oblique top camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueTop = "LegacyObliqueTop",
+        /**
+         * Represents a legacy oblique top-right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueTopRight = "LegacyObliqueTopRight",
+        /**
+         * Represents a legacy oblique left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueLeft = "LegacyObliqueLeft",
+        /**
+         * Represents a legacy oblique front camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueFront = "LegacyObliqueFront",
+        /**
+         * Represents a legacy oblique right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueRight = "LegacyObliqueRight",
+        /**
+         * Represents a legacy oblique bottom-left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueBottomLeft = "LegacyObliqueBottomLeft",
+        /**
+         * Represents a legacy oblique bottom camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueBottom = "LegacyObliqueBottom",
+        /**
+         * Represents a legacy oblique bottom-right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyObliqueBottomRight = "LegacyObliqueBottomRight",
+        /**
+         * Represents a legacy perspective top-left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveTopLeft = "LegacyPerspectiveTopLeft",
+        /**
+         * Represents a legacy perspective top camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveTop = "LegacyPerspectiveTop",
+        /**
+         * Represents a legacy perspective top-right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveTopRight = "LegacyPerspectiveTopRight",
+        /**
+         * Represents a legacy perspective left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveLeft = "LegacyPerspectiveLeft",
+        /**
+         * Represents a legacy perspective front camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveFront = "LegacyPerspectiveFront",
+        /**
+         * Represents a legacy perspective right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveRight = "LegacyPerspectiveRight",
+        /**
+         * Represents a legacy perspective bottom-left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveBottomLeft = "LegacyPerspectiveBottomLeft",
+        /**
+         * Represents a legacy perspective bottom camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveBottom = "LegacyPerspectiveBottom",
+        /**
+         * Represents a legacy perspective bottom-right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        legacyPerspectiveBottomRight = "LegacyPerspectiveBottomRight",
+        /**
+         * Represents an orthographic front camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        orthographicFront = "OrthographicFront",
+        /**
+         * Represents an isometric top-up camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricTopUp = "IsometricTopUp",
+        /**
+         * Represents an isometric top-down camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricTopDown = "IsometricTopDown",
+        /**
+         * Represents an isometric bottom-up camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricBottomUp = "IsometricBottomUp",
+        /**
+         * Represents an isometric bottom-down camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricBottomDown = "IsometricBottomDown",
+        /**
+         * Represents an isometric left-up camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricLeftUp = "IsometricLeftUp",
+        /**
+         * Represents an isometric left-down camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricLeftDown = "IsometricLeftDown",
+        /**
+         * Represents an isometric right-up camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricRightUp = "IsometricRightUp",
+        /**
+         * Represents an isometric right-down camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricRightDown = "IsometricRightDown",
+        /**
+         * Represents an isometric off-axis 1 left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis1Left = "IsometricOffAxis1Left",
+        /**
+         * Represents an isometric off-axis 1 right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis1Right = "IsometricOffAxis1Right",
+        /**
+         * Represents an isometric off-axis 1 top camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis1Top = "IsometricOffAxis1Top",
+        /**
+         * Represents an isometric off-axis 2 left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis2Left = "IsometricOffAxis2Left",
+        /**
+         * Represents an isometric off-axis 2 right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis2Right = "IsometricOffAxis2Right",
+        /**
+         * Represents an isometric off-axis 2 top camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis2Top = "IsometricOffAxis2Top",
+        /**
+         * Represents an isometric off-axis 3 left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis3Left = "IsometricOffAxis3Left",
+        /**
+         * Represents an isometric off-axis 3 right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis3Right = "IsometricOffAxis3Right",
+        /**
+         * Represents an isometric off-axis 3 bottom camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis3Bottom = "IsometricOffAxis3Bottom",
+        /**
+         * Represents an isometric off-axis 4 left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis4Left = "IsometricOffAxis4Left",
+        /**
+         * Represents an isometric off-axis 4 right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis4Right = "IsometricOffAxis4Right",
+        /**
+         * Represents an isometric off-axis 4 bottom camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isometricOffAxis4Bottom = "IsometricOffAxis4Bottom",
+        /**
+         * Represents an oblique top-left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueTopLeft = "ObliqueTopLeft",
+        /**
+         * Represents an oblique top camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueTop = "ObliqueTop",
+        /**
+         * Represents an oblique top-right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueTopRight = "ObliqueTopRight",
+        /**
+         * Represents an oblique left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueLeft = "ObliqueLeft",
+        /**
+         * Represents an oblique right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueRight = "ObliqueRight",
+        /**
+         * Represents an oblique bottom-left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueBottomLeft = "ObliqueBottomLeft",
+        /**
+         * Represents an oblique bottom camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueBottom = "ObliqueBottom",
+        /**
+         * Represents an oblique bottom-right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        obliqueBottomRight = "ObliqueBottomRight",
+        /**
+         * Represents a perspective front camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveFront = "PerspectiveFront",
+        /**
+         * Represents a perspective left camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveLeft = "PerspectiveLeft",
+        /**
+         * Represents a perspective right camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveRight = "PerspectiveRight",
+        /**
+         * Represents a perspective above camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveAbove = "PerspectiveAbove",
+        /**
+         * Represents a perspective below camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveBelow = "PerspectiveBelow",
+        /**
+         * Represents a perspective above-left facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveAboveLeftFacing = "PerspectiveAboveLeftFacing",
+        /**
+         * Represents a perspective above-right facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveAboveRightFacing = "PerspectiveAboveRightFacing",
+        /**
+         * Represents a perspective contrasting-left facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveContrastingLeftFacing = "PerspectiveContrastingLeftFacing",
+        /**
+         * Represents a perspective contrasting-right facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveContrastingRightFacing = "PerspectiveContrastingRightFacing",
+        /**
+         * Represents a perspective heroic-left facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveHeroicLeftFacing = "PerspectiveHeroicLeftFacing",
+        /**
+         * Represents a perspective heroic-right facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveHeroicRightFacing = "PerspectiveHeroicRightFacing",
+        /**
+         * Represents a perspective heroic-extreme left facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveHeroicExtremeLeftFacing = "PerspectiveHeroicExtremeLeftFacing",
+        /**
+         * Represents a perspective heroic-extreme right facing camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveHeroicExtremeRightFacing = "PerspectiveHeroicExtremeRightFacing",
+        /**
+         * Represents a relaxed perspective camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveRelaxed = "PerspectiveRelaxed",
+        /**
+         * Represents a moderately relaxed perspective camera type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        perspectiveRelaxedModerately = "PerspectiveRelaxedModerately",
+    }
+    /**
+     * Specifies the direction that the extrusion's sweep path takes away from the extruded shape (the front face of the extrusion).
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetExtrusionDirection {
+        /**
+         * Represents a mixed extrusion direction.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents an extrusion direction to the bottom-right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomRight = "BottomRight",
+        /**
+         * Represents an extrusion direction to the bottom.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom = "Bottom",
+        /**
+         * Represents an extrusion direction to the bottom-left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomLeft = "BottomLeft",
+        /**
+         * Represents an extrusion direction to the right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+        /**
+         * Represents no extrusion direction.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents an extrusion direction to the left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Represents an extrusion direction to the top-right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topRight = "TopRight",
+        /**
+         * Represents an extrusion direction to the top.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top = "Top",
+        /**
+         * Represents an extrusion direction to the top-left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topLeft = "TopLeft",
+    }
+    /**
+     * Specifies which predefined gradient to use to fill a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetGradientType {
+        /**
+         * Mixed gradient type. Used when multiple shapes with different preset gradients are selected.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * A warm gradient resembling an early sunset.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        earlySunset = "EarlySunset",
+        /**
+         * A deeper, richer gradient resembling a late sunset.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lateSunset = "LateSunset",
+        /**
+         * A dark gradient evoking the colors of nightfall.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nightfall = "Nightfall",
+        /**
+         * A light gradient representing the colors of daybreak.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        daybreak = "Daybreak",
+        /**
+         * A gradient that mimics the colors of the horizon.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizon = "Horizon",
+        /**
+         * A warm, sandy gradient inspired by desert tones.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        desert = "Desert",
+        /**
+         * A cool gradient reflecting ocean hues.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ocean = "Ocean",
+        /**
+         * A soft, tranquil gradient resembling calm water.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        calmWater = "CalmWater",
+        /**
+         * A vivid gradient with fiery tones.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fire = "Fire",
+        /**
+         * A muted gradient with fog-like softness.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fog = "Fog",
+        /**
+         * A natural green gradient inspired by moss.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        moss = "Moss",
+        /**
+         * A vibrant gradient with peacock feather colors.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        peacock = "Peacock",
+        /**
+         * A light, golden gradient resembling wheat.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wheat = "Wheat",
+        /**
+         * A warm, aged paper-like gradient.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        parchment = "Parchment",
+        /**
+         * A rich, reddish-brown gradient like mahogany wood.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mahogany = "Mahogany",
+        /**
+         * A colorful gradient resembling a rainbow.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rainbow = "Rainbow",
+        /**
+         * A variation of the rainbow gradient with different color emphasis.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rainbowII = "RainbowII",
+        /**
+         * A shiny, metallic gold gradient.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gold = "Gold",
+        /**
+         * A variation of the gold gradient with different tones.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        goldII = "GoldII",
+        /**
+         * A metallic gradient resembling brass.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brass = "Brass",
+        /**
+         * A sleek, reflective chrome gradient.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chrome = "Chrome",
+        /**
+         * A variation of the chrome gradient with alternate highlights.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chromeII = "ChromeII",
+        /**
+         * A smooth, metallic silver gradient.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        silver = "Silver",
+        /**
+         * A deep blue gradient inspired by sapphire.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sapphire = "Sapphire",
+    }
+    /**
+     * Specifies the location of lighting on an extruded (three-dimensional) shape relative to the shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetLightingDirection {
+        /**
+         * Represents a mixed lighting direction.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents lighting from the top-left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topLeft = "TopLeft",
+        /**
+         * Represents lighting from the top.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top = "Top",
+        /**
+         * Represents lighting from the top-right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topRight = "TopRight",
+        /**
+         * Represents lighting from the left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Represents no lighting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents lighting from the right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+        /**
+         * Represents lighting from the bottom-left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomLeft = "BottomLeft",
+        /**
+         * Represents lighting from the bottom.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom = "Bottom",
+        /**
+         * Represents lighting from the bottom-right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomRight = "BottomRight",
+    }
+    /**
+     * Specifies the intensity of light used on a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetLightingSoftness {
+        /**
+         * Represents a mixed lighting softness.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents dim lighting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dim = "Dim",
+        /**
+         * Represents normal lighting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        normal = "Normal",
+        /**
+         * Represents bright lighting.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bright = "Bright",
+    }
+    /**
+     * Specifies the extrusion surface material.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetMaterial {
+        /**
+         * Represents a mixed material type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a matte material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        matte = "Matte",
+        /**
+         * Represents a plastic material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plastic = "Plastic",
+        /**
+         * Represents a metal material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        metal = "Metal",
+        /**
+         * Represents a wireframe material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wireFrame = "WireFrame",
+        /**
+         * Represents a second matte material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        matte2 = "Matte2",
+        /**
+         * Represents a second plastic material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plastic2 = "Plastic2",
+        /**
+         * Represents a second metal material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        metal2 = "Metal2",
+        /**
+         * Represents a warm matte material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        warmMatte = "WarmMatte",
+        /**
+         * Represents a translucent powder material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        translucentPowder = "TranslucentPowder",
+        /**
+         * Represents a powder material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        powder = "Powder",
+        /**
+         * Represents a dark edge material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkEdge = "DarkEdge",
+        /**
+         * Represents a soft edge material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        softEdge = "SoftEdge",
+        /**
+         * Represents a clear material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clear = "Clear",
+        /**
+         * Represents a flat material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flat = "Flat",
+        /**
+         * Represents a soft metal material.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        softMetal = "SoftMetal",
+    }
+    /**
+     * Specifies texture to be used to fill a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetTexture {
+        /**
+         * Represents a mixed texture type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents a papyrus texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        papyrus = "Papyrus",
+        /**
+         * Represents a canvas texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        canvas = "Canvas",
+        /**
+         * Represents a denim texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        denim = "Denim",
+        /**
+         * Represents a woven mat texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wovenMat = "WovenMat",
+        /**
+         * Represents a water droplets texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        waterDroplets = "WaterDroplets",
+        /**
+         * Represents a paper bag texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paperBag = "PaperBag",
+        /**
+         * Represents a fish fossil texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fishFossil = "FishFossil",
+        /**
+         * Represents a sand texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sand = "Sand",
+        /**
+         * Represents a green marble texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        greenMarble = "GreenMarble",
+        /**
+         * Represents a white marble texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        whiteMarble = "WhiteMarble",
+        /**
+         * Represents a brown marble texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brownMarble = "BrownMarble",
+        /**
+         * Represents a granite texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        granite = "Granite",
+        /**
+         * Represents a newsprint texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        newsprint = "Newsprint",
+        /**
+         * Represents a recycled paper texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        recycledPaper = "RecycledPaper",
+        /**
+         * Represents a parchment texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        parchment = "Parchment",
+        /**
+         * Represents a stationery texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        stationery = "Stationery",
+        /**
+         * Represents a blue tissue paper texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blueTissuePaper = "BlueTissuePaper",
+        /**
+         * Represents a pink tissue paper texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pinkTissuePaper = "PinkTissuePaper",
+        /**
+         * Represents a purple mesh texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        purpleMesh = "PurpleMesh",
+        /**
+         * Represents a bouquet texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bouquet = "Bouquet",
+        /**
+         * Represents a cork texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cork = "Cork",
+        /**
+         * Represents a walnut texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        walnut = "Walnut",
+        /**
+         * Represents an oak texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oak = "Oak",
+        /**
+         * Represents a medium wood texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mediumWood = "MediumWood",
+    }
+    /**
+     * Specifies an extrusion (three-dimensional) format.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PresetThreeDimensionalFormat {
+        /**
+         * Represents a mixed three-dimensional format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents three-dimensional format 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format1 = "Format1",
+        /**
+         * Represents three-dimensional format 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format2 = "Format2",
+        /**
+         * Represents three-dimensional format 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format3 = "Format3",
+        /**
+         * Represents three-dimensional format 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format4 = "Format4",
+        /**
+         * Represents three-dimensional format 5.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format5 = "Format5",
+        /**
+         * Represents three-dimensional format 6.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format6 = "Format6",
+        /**
+         * Represents three-dimensional format 7.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format7 = "Format7",
+        /**
+         * Represents three-dimensional format 8.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format8 = "Format8",
+        /**
+         * Represents three-dimensional format 9.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format9 = "Format9",
+        /**
+         * Represents three-dimensional format 10.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format10 = "Format10",
+        /**
+         * Represents three-dimensional format 11.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format11 = "Format11",
+        /**
+         * Represents three-dimensional format 12.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format12 = "Format12",
+        /**
+         * Represents three-dimensional format 13.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format13 = "Format13",
+        /**
+         * Represents three-dimensional format 14.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format14 = "Format14",
+        /**
+         * Represents three-dimensional format 15.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format15 = "Format15",
+        /**
+         * Represents three-dimensional format 16.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format16 = "Format16",
+        /**
+         * Represents three-dimensional format 17.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format17 = "Format17",
+        /**
+         * Represents three-dimensional format 18.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format18 = "Format18",
+        /**
+         * Represents three-dimensional format 19.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format19 = "Format19",
+        /**
+         * Represents three-dimensional format 20.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format20 = "Format20",
+    }
+    /**
+     * Specifies the type of the {@link Word.ReflectionFormat} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ReflectionType {
+        /**
+         * Represents a mixed reflection type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents no reflection.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents reflection type 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type1 = "Type1",
+        /**
+         * Represents reflection type 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type2 = "Type2",
+        /**
+         * Represents reflection type 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type3 = "Type3",
+        /**
+         * Represents reflection type 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type4 = "Type4",
+        /**
+         * Represents reflection type 5.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type5 = "Type5",
+        /**
+         * Represents reflection type 6.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type6 = "Type6",
+        /**
+         * Represents reflection type 7.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type7 = "Type7",
+        /**
+         * Represents reflection type 8.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type8 = "Type8",
+        /**
+         * Represents reflection type 9.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type9 = "Type9",
+    }
+    /**
+     * Specifies the type of shadowing effect.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShadowStyle {
+        /**
+         * Represents a mixed shadow style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents an outer shadow style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outerShadow = "OuterShadow",
+        /**
+         * Represents an inner shadow style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        innerShadow = "InnerShadow",
+    }
+    /**
+     * Specifies the type of shadow displayed with a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShadowType {
+        /**
+         * Represents a mixed shadow type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Represents shadow type 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type1 = "Type1",
+        /**
+         * Represents shadow type 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type2 = "Type2",
+        /**
+         * Represents shadow type 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type3 = "Type3",
+        /**
+         * Represents shadow type 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type4 = "Type4",
+        /**
+         * Represents shadow type 5.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type5 = "Type5",
+        /**
+         * Represents shadow type 6.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type6 = "Type6",
+        /**
+         * Represents shadow type 7.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type7 = "Type7",
+        /**
+         * Represents shadow type 8.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type8 = "Type8",
+        /**
+         * Represents shadow type 9.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type9 = "Type9",
+        /**
+         * Represents shadow type 10.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type10 = "Type10",
+        /**
+         * Represents shadow type 11.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type11 = "Type11",
+        /**
+         * Represents shadow type 12.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type12 = "Type12",
+        /**
+         * Represents shadow type 13.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type13 = "Type13",
+        /**
+         * Represents shadow type 14.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type14 = "Type14",
+        /**
+         * Represents shadow type 15.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type15 = "Type15",
+        /**
+         * Represents shadow type 16.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type16 = "Type16",
+        /**
+         * Represents shadow type 17.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type17 = "Type17",
+        /**
+         * Represents shadow type 18.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type18 = "Type18",
+        /**
+         * Represents shadow type 19.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type19 = "Type19",
+        /**
+         * Represents shadow type 20.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type20 = "Type20",
+        /**
+         * Represents shadow type 21.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type21 = "Type21",
+        /**
+         * Represents shadow type 22.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type22 = "Type22",
+        /**
+         * Represents shadow type 23.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type23 = "Type23",
+        /**
+         * Represents shadow type 24.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type24 = "Type24",
+        /**
+         * Represents shadow type 25.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type25 = "Type25",
+        /**
+         * Represents shadow type 26.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type26 = "Type26",
+        /**
+         * Represents shadow type 27.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type27 = "Type27",
+        /**
+         * Represents shadow type 28.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type28 = "Type28",
+        /**
+         * Represents shadow type 29.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type29 = "Type29",
+        /**
+         * Represents shadow type 30.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type30 = "Type30",
+        /**
+         * Represents shadow type 31.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type31 = "Type31",
+        /**
+         * Represents shadow type 32.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type32 = "Type32",
+        /**
+         * Represents shadow type 33.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type33 = "Type33",
+        /**
+         * Represents shadow type 34.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type34 = "Type34",
+        /**
+         * Represents shadow type 35.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type35 = "Type35",
+        /**
+         * Represents shadow type 36.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type36 = "Type36",
+        /**
+         * Represents shadow type 37.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type37 = "Type37",
+        /**
+         * Represents shadow type 38.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type38 = "Type38",
+        /**
+         * Represents shadow type 39.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type39 = "Type39",
+        /**
+         * Represents shadow type 40.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type40 = "Type40",
+        /**
+         * Represents shadow type 41.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type41 = "Type41",
+        /**
+         * Represents shadow type 42.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type42 = "Type42",
+        /**
+         * Represents shadow type 43.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type43 = "Type43",
+    }
+    /**
+     * Specifies the stylistic set to apply to the font.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum StylisticSet {
+        /**
+         * Default stylistic set.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        default = "Default",
+        /**
+         * Stylistic set 01.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set01 = "Set01",
+        /**
+         * Stylistic set 02.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set02 = "Set02",
+        /**
+         * Stylistic set 03.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set03 = "Set03",
+        /**
+         * Stylistic set 04.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set04 = "Set04",
+        /**
+         * Stylistic set 05.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set05 = "Set05",
+        /**
+         * Stylistic set 06.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set06 = "Set06",
+        /**
+         * Stylistic set 07.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set07 = "Set07",
+        /**
+         * Stylistic set 08.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set08 = "Set08",
+        /**
+         * Stylistic set 09.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set09 = "Set09",
+        /**
+         * Stylistic set 10.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set10 = "Set10",
+        /**
+         * Stylistic set 11.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set11 = "Set11",
+        /**
+         * Stylistic set 12.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set12 = "Set12",
+        /**
+         * Stylistic set 13.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set13 = "Set13",
+        /**
+         * Stylistic set 14.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set14 = "Set14",
+        /**
+         * Stylistic set 15.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set15 = "Set15",
+        /**
+         * Stylistic set 16.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set16 = "Set16",
+        /**
+         * Stylistic set 17.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set17 = "Set17",
+        /**
+         * Stylistic set 18.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set18 = "Set18",
+        /**
+         * Stylistic set 19.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set19 = "Set19",
+        /**
+         * Stylistic set 20.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set20 = "Set20",
+    }
+    /**
+     * Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TextureAlignment {
+        /**
+         * Mixed texture alignment. Used when multiple shapes with different texture alignments are selected.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Aligns the texture to the top-left corner of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topLeft = "TopLeft",
+        /**
+         * Aligns the texture to the top center of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top = "Top",
+        /**
+         * Aligns the texture to the top-right corner of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topRight = "TopRight",
+        /**
+         * Aligns the texture to the middle left side of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Aligns the texture to the center of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        center = "Center",
+        /**
+         * Aligns the texture to the middle right side of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+        /**
+         * Aligns the texture to the bottom-left corner of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomLeft = "BottomLeft",
+        /**
+         * Aligns the texture to the bottom center of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom = "Bottom",
+        /**
+         * Aligns the texture to the bottom-right corner of the shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomRight = "BottomRight",
+    }
+    /**
+     * Specifies the texture type for the selected fill.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TextureType {
+        /**
+         * Mixed texture type. Used when multiple shapes with different texture types are selected.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * A predefined texture selected from the built-in texture gallery.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        preset = "Preset",
+        /**
+         * A custom texture defined by the user, typically from an image file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userDefined = "UserDefined",
+    }
+    /**
+     * Specifies the theme colors for document themes.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ThemeColorIndex {
+        /**
+         * Not a theme color. Used when the color is not part of the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        notThemeColor = "NotThemeColor",
+        /**
+         * The first dark color in the main theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mainDark1 = "MainDark1",
+        /**
+         * The first light color in the main theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mainLight1 = "MainLight1",
+        /**
+         * The second dark color in the main theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mainDark2 = "MainDark2",
+        /**
+         * The second light color in the main theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mainLight2 = "MainLight2",
+        /**
+         * The first accent color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent1 = "Accent1",
+        /**
+         * The second accent color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent2 = "Accent2",
+        /**
+         * The third accent color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent3 = "Accent3",
+        /**
+         * The fourth accent color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent4 = "Accent4",
+        /**
+         * The fifth accent color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent5 = "Accent5",
+        /**
+         * The sixth accent color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent6 = "Accent6",
+        /**
+         * The color used for hyperlinks.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hyperlink = "Hyperlink",
+        /**
+         * The color used for followed hyperlinks.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hyperlinkFollowed = "HyperlinkFollowed",
+        /**
+         * The first background color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        background1 = "Background1",
+        /**
+         * The first text color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text1 = "Text1",
+        /**
+         * The second background color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        background2 = "Background2",
+        /**
+         * The second text color in the theme.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text2 = "Text2",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -17282,12 +24614,96 @@ export declare namespace Word {
         /** An interface for updating data on the `Font` object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
             /**
+            * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            fill?: Word.Interfaces.FillFormatUpdateData;
+            /**
+            * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            glow?: Word.Interfaces.GlowFormatUpdateData;
+            /**
+            * Returns a `LineFormat` object that specifies the formatting for a line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Word.Interfaces.LineFormatUpdateData;
+            /**
+            * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reflection?: Word.Interfaces.ReflectionFormatUpdateData;
+            /**
+            * Returns a `ColorFormat` object that represents the color for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+            * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textShadow?: Word.Interfaces.ShadowFormatUpdateData;
+            /**
+            * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            threeDimensionalFormat?: Word.Interfaces.ThreeDimensionalFormatUpdateData;
+            /**
+             * Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+                        
+                        - `true`: All the text has the **All Caps** attribute.
+                        
+                        - `false`: None of the text has the **All Caps** attribute.
+                        
+                        - `null`: Returned if some, but not all, of the text has the **All Caps** attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allCaps?: boolean;
+            /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
+            /**
+             * Specifies whether the font is formatted as bold in a right-to-left language document. The possible values are as follows:
+                        
+                        - `true`: All the text is bold.
+                        
+                        - `false`: None of the text is bold.
+                        
+                        - `null`: Returned if some, but not all, of the text is bold.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            boldBidirectional?: boolean;
             /**
              * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -17296,12 +24712,88 @@ export declare namespace Word {
              */
             color?: string;
             /**
+             * Specifies a `ColorIndex` value that represents the color for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorIndex?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+            /**
+             * Specifies the color for the `Font` object in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorIndexBidirectional?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+            /**
+             * Specifies whether contextual alternates are enabled for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contextualAlternates?: boolean;
+            /**
+             * Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            diacriticColor?: string;
+            /**
+             * Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            disableCharacterSpaceGrid?: boolean;
+            /**
              * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
+            /**
+             * Specifies whether the font is formatted as embossed. The possible values are as follows:
+                        
+                        - `true`: All the text is embossed.
+                        
+                        - `false`: None of the text is embossed.
+                        
+                        - `null`: Returned if some, but not all, of the text is embossed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emboss?: boolean;
+            /**
+             * Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character string.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emphasisMark?: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+            /**
+             * Specifies whether the font is formatted as engraved. The possible values are as follows:
+                        
+                        - `true`: All the text is engraved.
+                        
+                        - `false`: None of the text is engraved.
+                        
+                        - `null`: Returned if some, but not all, of the text is engraved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            engrave?: boolean;
             /**
              * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
              *
@@ -17324,12 +24816,134 @@ export declare namespace Word {
              */
             italic?: boolean;
             /**
+             * Specifies whether the font is italicized in a right-to-left language document. The possible values are as follows:
+                        
+                        - `true`: All the text is italicized.
+                        
+                        - `false`: None of the text is italicized.
+                        
+                        - `null`: Returned if some, but not all, of the text is italicized.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italicBidirectional?: boolean;
+            /**
+             * Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kerning?: number;
+            /**
+             * Specifies the ligature setting for the `Font` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ligature?: Word.Ligature | "None" | "Standard" | "Contextual" | "StandardContextual" | "Historical" | "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional" | "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" | "HistoricalDiscretional" | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All";
+            /**
              * Specifies a value that represents the name of the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             name?: string;
+            /**
+             * Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameAscii?: string;
+            /**
+             * Specifies the font name in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameBidirectional?: string;
+            /**
+             * Specifies the East Asian font name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameFarEast?: string;
+            /**
+             * Specifies the font used for characters with codes from 128 through 255.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameOther?: string;
+            /**
+             * Specifies the number form setting for an OpenType font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberForm?: Word.NumberForm | "Default" | "Lining" | "OldStyle";
+            /**
+             * Specifies the number spacing setting for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberSpacing?: Word.NumberSpacing | "Default" | "Proportional" | "Tabular";
+            /**
+             * Specifies if the font is formatted as outlined. The possible values are as follows:
+                        
+                        - `true`: All the text is outlined.
+                        
+                        - `false`: None of the text is outlined.
+                        
+                        - `null`: Returned if some, but not all, of the text is outlined.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outline?: boolean;
+            /**
+             * Specifies the position of text (in points) relative to the base line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: number;
+            /**
+             * Specifies the scaling percentage applied to the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scaling?: number;
+            /**
+             * Specifies if the font is formatted as shadowed. The possible values are as follows:
+                        
+                        - `true`: All the text is shadowed.
+                        
+                        - `false`: None of the text is shadowed.
+                        
+                        - `null`: Returned if some, but not all, of the text is shadowed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shadow?: boolean;
             /**
              * Specifies a value that represents the font size in points.
              *
@@ -17338,12 +24952,50 @@ export declare namespace Word {
              */
             size?: number;
             /**
+             * Specifies the font size in points for right-to-left text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sizeBidirectional?: number;
+            /**
+             * Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+                        
+                        - `true`: All the text has the **Small Caps** attribute.
+                        
+                        - `false`: None of the text has the **Small Caps** attribute.
+                        
+                        - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            smallCaps?: boolean;
+            /**
+             * Specifies the spacing between characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spacing?: number;
+            /**
              * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
+            /**
+             * Specifies the stylistic set for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            stylisticSet?: Word.StylisticSet | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" | "Set17" | "Set18" | "Set19" | "Set20";
             /**
              * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
@@ -17365,6 +25017,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+            /**
+             * Specifies the color of the underline for the `Font` object. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underlineColor?: string;
         }
         /** An interface for updating data on the `InlinePicture` object, for use in `inlinePicture.set({ ... })`. */
         export interface InlinePictureUpdateData {
@@ -17778,6 +25438,22 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             font?: Word.Interfaces.FontUpdateData;
+            /**
+            * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listFormat?: Word.Interfaces.ListFormatUpdateData;
+            /**
+             * Specifies the proofing status (spelling and grammar checking) of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasNoProofing?: boolean;
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
@@ -18643,6 +26319,643 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
+        }
+        /** An interface for updating data on the `ListFormat` object, for use in `listFormat.set({ ... })`. */
+        export interface ListFormatUpdateData {
+            /**
+            * Gets the list template associated with the `ListFormat` object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateUpdateData;
+            /**
+             * Specifies the list level number for the first paragraph for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listLevelNumber?: number;
+        }
+        /** An interface for updating data on the `FillFormat` object, for use in `fillFormat.set({ ... })`. */
+        export interface FillFormatUpdateData {
+            /**
+            * Returns a `ColorFormat` object that represents the background color for the fill.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            backgroundColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+            * Returns a `ColorFormat` object that represents the foreground color for the fill.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+             * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientAngle?: number;
+            /**
+             * Specifies if the object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies whether the fill rotates with the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotateWithObject?: boolean;
+            /**
+             * Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureAlignment?: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";
+            /**
+             * Specifies the horizontal scaling factor for the texture fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureHorizontalScale?: number;
+            /**
+             * Specifies the horizontal offset of the texture from the origin in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureOffsetX?: number;
+            /**
+             * Specifies the vertical offset of the texture.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureOffsetY?: number;
+            /**
+             * Specifies whether the texture is tiled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureTile?: boolean;
+            /**
+             * Specifies the vertical scaling factor for the texture fill as a value between 0.0 and 1.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureVerticalScale?: number;
+            /**
+             * Specifies the degree of transparency of the fill for a shape as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface for updating data on the `GlowFormat` object, for use in `glowFormat.set({ ... })`. */
+        export interface GlowFormatUpdateData {
+            /**
+            * Returns a `ColorFormat` object that represents the color for a glow effect.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            color?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+             * Specifies the length of the radius for a glow effect.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            radius?: number;
+            /**
+             * Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface for updating data on the `LineFormat` object, for use in `lineFormat.set({ ... })`. */
+        export interface LineFormatUpdateData {
+            /**
+            * Gets a `ColorFormat` object that represents the background color for a patterned line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            backgroundColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+            * Gets a `ColorFormat` object that represents the foreground color for the line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+             * Specifies the length of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
+            /**
+             * Specifies the style of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+            /**
+             * Specifies the width of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
+            /**
+             * Specifies the dash style for the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dashStyle?: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
+            /**
+             * Specifies the length of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
+            /**
+             * Specifies the style of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+            /**
+             * Specifies the width of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
+            /**
+             * Specifies if to draw lines inside a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            insetPen?: boolean;
+            /**
+             * Specifies if the object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the pattern applied to the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
+            /**
+             * Specifies the line format style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: Word.LineFormatStyle | "Mixed" | "Single" | "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin";
+            /**
+             * Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Specifies the thickness of the line in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            weight?: number;
+        }
+        /** An interface for updating data on the `ReflectionFormat` object, for use in `reflectionFormat.set({ ... })`. */
+        export interface ReflectionFormatUpdateData {
+            /**
+             * Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blur?: number;
+            /**
+             * Specifies the amount of separation, in points, of the reflected image from the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offset?: number;
+            /**
+             * Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: number;
+            /**
+             * Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ReflectionType | "Mixed" | "None" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9";
+        }
+        /** An interface for updating data on the `ColorFormat` object, for use in `colorFormat.set({ ... })`. */
+        export interface ColorFormatUpdateData {
+            /**
+             * Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: number;
+            /**
+             * Specifies the theme color for a color format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+            /**
+             * Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rgb?: string;
+            /**
+             * Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: number;
+        }
+        /** An interface for updating data on the `ShadowFormat` object, for use in `shadowFormat.set({ ... })`. */
+        export interface ShadowFormatUpdateData {
+            /**
+            * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+             * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blur?: number;
+            /**
+             * Specifies whether the object or the formatting applied to it is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies `true` if the shadow of the shape appears filled in and is obscured by the shape, even if the shape has no fill,
+                        `false` if the shadow has no fill and the outline of the shadow is visible through the shape if the shape has no fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            obscured?: boolean;
+            /**
+             * Specifies the horizontal offset (in points) of the shadow from the shape.
+                        A positive value offsets the shadow to the right of the shape; a negative value offsets it to the left.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offsetX?: number;
+            /**
+             * Specifies the vertical offset (in points) of the shadow from the shape.
+                        A positive value offsets the shadow to the top of the shape; a negative value offsets it to the bottom.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offsetY?: number;
+            /**
+             * Specifies whether to rotate the shadow when rotating the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotateWithShape?: boolean;
+            /**
+             * Specifies the width of the shadow.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: number;
+            /**
+             * Specifies the type of shadow formatting to apply to a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: Word.ShadowStyle | "Mixed" | "OuterShadow" | "InnerShadow";
+            /**
+             * Specifies the degree of transparency of the shadow as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Specifies the shape shadow type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ShadowType | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" | "Type42" | "Type43";
+        }
+        /** An interface for updating data on the `ThreeDimensionalFormat` object, for use in `threeDimensionalFormat.set({ ... })`. */
+        export interface ThreeDimensionalFormatUpdateData {
+            /**
+            * Returns a `ColorFormat` object that represents color of the contour of a shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            contourColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+            * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            extrusionColor?: Word.Interfaces.ColorFormatUpdateData;
+            /**
+             * Specifies the depth of the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomDepth?: number;
+            /**
+             * Specifies the inset size for the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomInset?: number;
+            /**
+             * Specifies a `BevelType` value that represents the bevel type for the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomType?: Word.BevelType | "mixed" | "none" | "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+            /**
+             * Specifies the depth of the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopDepth?: number;
+            /**
+             * Specifies the inset size for the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopInset?: number;
+            /**
+             * Specifies a `BevelType` value that represents the bevel type for the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopType?: Word.BevelType | "mixed" | "none" | "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+            /**
+             * Specifies the width of the contour of a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contourWidth?: number;
+            /**
+             * Specifies the depth of the shape's extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            depth?: number;
+            /**
+             * Specifies whether the extrusion color is based on the extruded shape's fill (the front face of the extrusion)
+                        and automatically changes when the shape's fill changes, or whether the extrusion color is independent of the shape's fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            extrusionColorType?: Word.ExtrusionColorType | "mixed" | "automatic" | "custom";
+            /**
+             * Specifies the amount of perspective for a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fieldOfView?: number;
+            /**
+             * Specifies `true` if the extrusion appears in perspective — that is, if the walls of the extrusion narrow toward a vanishing point,
+                        `false` if the extrusion is a parallel, or orthographic, projection — that is, if the walls don't narrow toward a vanishing point.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPerspective?: boolean;
+            /**
+             * Specifies if the specified object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the angle of the lighting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lightAngle?: number;
+            /**
+             * Specifies a `LightRigType` value that represents the lighting preset.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLighting?: Word.LightRigType | "Mixed" | "LegacyFlat1" | "LegacyFlat2" | "LegacyFlat3" | "LegacyFlat4" | "LegacyNormal1" | "LegacyNormal2" | "LegacyNormal3" | "LegacyNormal4" | "LegacyHarsh1" | "LegacyHarsh2" | "LegacyHarsh3" | "LegacyHarsh4" | "ThreePoint" | "Balanced" | "Soft" | "Harsh" | "Flood" | "Contrasting" | "Morning" | "Sunrise" | "Sunset" | "Chilly" | "Freezing" | "Flat" | "TwoPoint" | "Glow" | "BrightRoom";
+            /**
+             * Specifies the position of the light source relative to the extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLightingDirection?: Word.PresetLightingDirection | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "None" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";
+            /**
+             * Specifies the intensity of the extrusion lighting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLightingSoftness?: Word.PresetLightingSoftness | "Mixed" | "Dim" | "Normal" | "Bright";
+            /**
+             * Specifies the extrusion surface material.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetMaterial?: Word.PresetMaterial | "Mixed" | "Matte" | "Plastic" | "Metal" | "WireFrame" | "Matte2" | "Plastic2" | "Metal2" | "WarmMatte" | "TranslucentPowder" | "Powder" | "DarkEdge" | "SoftEdge" | "Clear" | "Flat" | "SoftMetal";
+            /**
+             * Specifies whether text on a shape rotates with shape. `true` rotates the text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            projectText?: boolean;
+            /**
+             * Specifies the rotation of the extruded shape around the x-axis in degrees.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationX?: number;
+            /**
+             * Specifies the rotation of the extruded shape around the y-axis in degrees.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationY?: number;
+            /**
+             * Specifies the z-axis rotation of the camera.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationZ?: number;
+            /**
+             * Specifies the position on the z-axis for the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            z?: number;
         }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
@@ -19566,12 +27879,96 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `font.toJSON()`. */
         export interface FontData {
             /**
+            * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            fill?: Word.Interfaces.FillFormatData;
+            /**
+            * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            glow?: Word.Interfaces.GlowFormatData;
+            /**
+            * Returns a `LineFormat` object that specifies the formatting for a line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Word.Interfaces.LineFormatData;
+            /**
+            * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reflection?: Word.Interfaces.ReflectionFormatData;
+            /**
+            * Returns a `ColorFormat` object that represents the color for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textColor?: Word.Interfaces.ColorFormatData;
+            /**
+            * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textShadow?: Word.Interfaces.ShadowFormatData;
+            /**
+            * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            threeDimensionalFormat?: Word.Interfaces.ThreeDimensionalFormatData;
+            /**
+             * Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+                        
+                        - `true`: All the text has the **All Caps** attribute.
+                        
+                        - `false`: None of the text has the **All Caps** attribute.
+                        
+                        - `null`: Returned if some, but not all, of the text has the **All Caps** attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allCaps?: boolean;
+            /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
+            /**
+             * Specifies whether the font is formatted as bold in a right-to-left language document. The possible values are as follows:
+                        
+                        - `true`: All the text is bold.
+                        
+                        - `false`: None of the text is bold.
+                        
+                        - `null`: Returned if some, but not all, of the text is bold.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            boldBidirectional?: boolean;
             /**
              * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -19580,12 +27977,88 @@ export declare namespace Word {
              */
             color?: string;
             /**
+             * Specifies a `ColorIndex` value that represents the color for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorIndex?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+            /**
+             * Specifies the color for the `Font` object in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorIndexBidirectional?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+            /**
+             * Specifies whether contextual alternates are enabled for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contextualAlternates?: boolean;
+            /**
+             * Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            diacriticColor?: string;
+            /**
+             * Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            disableCharacterSpaceGrid?: boolean;
+            /**
              * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
+            /**
+             * Specifies whether the font is formatted as embossed. The possible values are as follows:
+                        
+                        - `true`: All the text is embossed.
+                        
+                        - `false`: None of the text is embossed.
+                        
+                        - `null`: Returned if some, but not all, of the text is embossed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emboss?: boolean;
+            /**
+             * Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character string.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emphasisMark?: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+            /**
+             * Specifies whether the font is formatted as engraved. The possible values are as follows:
+                        
+                        - `true`: All the text is engraved.
+                        
+                        - `false`: None of the text is engraved.
+                        
+                        - `null`: Returned if some, but not all, of the text is engraved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            engrave?: boolean;
             /**
              * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
              *
@@ -19608,12 +28081,134 @@ export declare namespace Word {
              */
             italic?: boolean;
             /**
+             * Specifies whether the font is italicized in a right-to-left language document. The possible values are as follows:
+                        
+                        - `true`: All the text is italicized.
+                        
+                        - `false`: None of the text is italicized.
+                        
+                        - `null`: Returned if some, but not all, of the text is italicized.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italicBidirectional?: boolean;
+            /**
+             * Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kerning?: number;
+            /**
+             * Specifies the ligature setting for the `Font` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ligature?: Word.Ligature | "None" | "Standard" | "Contextual" | "StandardContextual" | "Historical" | "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional" | "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" | "HistoricalDiscretional" | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All";
+            /**
              * Specifies a value that represents the name of the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             name?: string;
+            /**
+             * Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameAscii?: string;
+            /**
+             * Specifies the font name in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameBidirectional?: string;
+            /**
+             * Specifies the East Asian font name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameFarEast?: string;
+            /**
+             * Specifies the font used for characters with codes from 128 through 255.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameOther?: string;
+            /**
+             * Specifies the number form setting for an OpenType font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberForm?: Word.NumberForm | "Default" | "Lining" | "OldStyle";
+            /**
+             * Specifies the number spacing setting for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberSpacing?: Word.NumberSpacing | "Default" | "Proportional" | "Tabular";
+            /**
+             * Specifies if the font is formatted as outlined. The possible values are as follows:
+                        
+                        - `true`: All the text is outlined.
+                        
+                        - `false`: None of the text is outlined.
+                        
+                        - `null`: Returned if some, but not all, of the text is outlined.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outline?: boolean;
+            /**
+             * Specifies the position of text (in points) relative to the base line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: number;
+            /**
+             * Specifies the scaling percentage applied to the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scaling?: number;
+            /**
+             * Specifies if the font is formatted as shadowed. The possible values are as follows:
+                        
+                        - `true`: All the text is shadowed.
+                        
+                        - `false`: None of the text is shadowed.
+                        
+                        - `null`: Returned if some, but not all, of the text is shadowed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shadow?: boolean;
             /**
              * Specifies a value that represents the font size in points.
              *
@@ -19622,12 +28217,50 @@ export declare namespace Word {
              */
             size?: number;
             /**
+             * Specifies the font size in points for right-to-left text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sizeBidirectional?: number;
+            /**
+             * Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+                        
+                        - `true`: All the text has the **Small Caps** attribute.
+                        
+                        - `false`: None of the text has the **Small Caps** attribute.
+                        
+                        - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            smallCaps?: boolean;
+            /**
+             * Specifies the spacing between characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spacing?: number;
+            /**
              * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
+            /**
+             * Specifies the stylistic set for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            stylisticSet?: Word.StylisticSet | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" | "Set17" | "Set18" | "Set19" | "Set20";
             /**
              * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
@@ -19649,6 +28282,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+            /**
+             * Specifies the color of the underline for the `Font` object. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underlineColor?: string;
         }
         /** An interface describing the data returned by calling `inlinePicture.toJSON()`. */
         export interface InlinePictureData {
@@ -20243,6 +28884,14 @@ export declare namespace Word {
              */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
+             * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listFormat?: Word.Interfaces.ListFormatData;
+            /**
              * Gets the collection of pages in the range.
              *
              * @remarks
@@ -20256,6 +28905,14 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             shapes?: Word.Interfaces.ShapeData[];
+            /**
+             * Specifies the proofing status (spelling and grammar checking) of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasNoProofing?: boolean;
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
@@ -21377,6 +30034,806 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
+        }
+        /** An interface describing the data returned by calling `listFormat.toJSON()`. */
+        export interface ListFormatData {
+            /**
+            * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            list?: Word.Interfaces.ListData;
+            /**
+            * Gets the list template associated with the `ListFormat` object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateData;
+            /**
+             * Indicates whether the `ListFormat` object contains a single list.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSingleList?: boolean;
+            /**
+             * Indicates whether the `ListFormat` object contains a single list template.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSingleListTemplate?: boolean;
+            /**
+             * Specifies the list level number for the first paragraph for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listLevelNumber?: number;
+            /**
+             * Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listString?: string;
+            /**
+             * Gets the type of the list for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listType?: Word.ListType | "ListNoNumbering" | "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet";
+            /**
+             * Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listValue?: number;
+        }
+        /** An interface describing the data returned by calling `fillFormat.toJSON()`. */
+        export interface FillFormatData {
+            /**
+            * Returns a `ColorFormat` object that represents the background color for the fill.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            backgroundColor?: Word.Interfaces.ColorFormatData;
+            /**
+            * Returns a `ColorFormat` object that represents the foreground color for the fill.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatData;
+            /**
+             * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientAngle?: number;
+            /**
+             * Gets the gradient color type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientColorType?: Word.GradientColorType | "Mixed" | "OneColor" | "TwoColors" | "PresetColors" | "MultiColor";
+            /**
+             * Returns how dark or light a one-color gradient fill is.
+                        A value of 0 means that black is mixed in with the shape's foreground color to form the gradient.
+                        A value of 1 means that white is mixed in.
+                        Values between 0 and 1 mean that a darker or lighter shade of the foreground color is mixed in.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientDegree?: number;
+            /**
+             * Returns the gradient style for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientStyle?: Word.GradientStyle | "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter";
+            /**
+             * Returns the gradient variant for the fill as an integer value from 1 to 4 for most gradient fills.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientVariant?: number;
+            /**
+             * Specifies if the object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Returns a `PatternType` value that represents the pattern applied to the fill or line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
+            /**
+             * Returns the preset gradient type for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetGradientType?: Word.PresetGradientType | "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire";
+            /**
+             * Gets the preset texture.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetTexture?: Word.PresetTexture | "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood";
+            /**
+             * Specifies whether the fill rotates with the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotateWithObject?: boolean;
+            /**
+             * Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureAlignment?: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";
+            /**
+             * Specifies the horizontal scaling factor for the texture fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureHorizontalScale?: number;
+            /**
+             * Returns the name of the custom texture file for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureName?: string;
+            /**
+             * Specifies the horizontal offset of the texture from the origin in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureOffsetX?: number;
+            /**
+             * Specifies the vertical offset of the texture.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureOffsetY?: number;
+            /**
+             * Specifies whether the texture is tiled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureTile?: boolean;
+            /**
+             * Returns the texture type for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureType?: Word.TextureType | "Mixed" | "Preset" | "UserDefined";
+            /**
+             * Specifies the vertical scaling factor for the texture fill as a value between 0.0 and 1.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureVerticalScale?: number;
+            /**
+             * Specifies the degree of transparency of the fill for a shape as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Gets the fill format type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.FillType | "Mixed" | "Solid" | "Patterned" | "Gradient" | "Textured" | "Background" | "Picture";
+        }
+        /** An interface describing the data returned by calling `glowFormat.toJSON()`. */
+        export interface GlowFormatData {
+            /**
+            * Returns a `ColorFormat` object that represents the color for a glow effect.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            color?: Word.Interfaces.ColorFormatData;
+            /**
+             * Specifies the length of the radius for a glow effect.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            radius?: number;
+            /**
+             * Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface describing the data returned by calling `lineFormat.toJSON()`. */
+        export interface LineFormatData {
+            /**
+            * Gets a `ColorFormat` object that represents the background color for a patterned line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            backgroundColor?: Word.Interfaces.ColorFormatData;
+            /**
+            * Gets a `ColorFormat` object that represents the foreground color for the line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatData;
+            /**
+             * Specifies the length of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
+            /**
+             * Specifies the style of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+            /**
+             * Specifies the width of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
+            /**
+             * Specifies the dash style for the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dashStyle?: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
+            /**
+             * Specifies the length of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
+            /**
+             * Specifies the style of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+            /**
+             * Specifies the width of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
+            /**
+             * Specifies if to draw lines inside a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            insetPen?: boolean;
+            /**
+             * Specifies if the object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the pattern applied to the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
+            /**
+             * Specifies the line format style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: Word.LineFormatStyle | "Mixed" | "Single" | "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin";
+            /**
+             * Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Specifies the thickness of the line in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            weight?: number;
+        }
+        /** An interface describing the data returned by calling `reflectionFormat.toJSON()`. */
+        export interface ReflectionFormatData {
+            /**
+             * Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blur?: number;
+            /**
+             * Specifies the amount of separation, in points, of the reflected image from the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offset?: number;
+            /**
+             * Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: number;
+            /**
+             * Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ReflectionType | "Mixed" | "None" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9";
+        }
+        /** An interface describing the data returned by calling `colorFormat.toJSON()`. */
+        export interface ColorFormatData {
+            /**
+             * Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: number;
+            /**
+             * Specifies the theme color for a color format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+            /**
+             * Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rgb?: string;
+            /**
+             * Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: number;
+            /**
+             * Returns the shape color type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ColorType | "rgb" | "scheme";
+        }
+        /** An interface describing the data returned by calling `shadowFormat.toJSON()`. */
+        export interface ShadowFormatData {
+            /**
+            * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatData;
+            /**
+             * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blur?: number;
+            /**
+             * Specifies whether the object or the formatting applied to it is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies `true` if the shadow of the shape appears filled in and is obscured by the shape, even if the shape has no fill,
+                        `false` if the shadow has no fill and the outline of the shadow is visible through the shape if the shape has no fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            obscured?: boolean;
+            /**
+             * Specifies the horizontal offset (in points) of the shadow from the shape.
+                        A positive value offsets the shadow to the right of the shape; a negative value offsets it to the left.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offsetX?: number;
+            /**
+             * Specifies the vertical offset (in points) of the shadow from the shape.
+                        A positive value offsets the shadow to the top of the shape; a negative value offsets it to the bottom.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offsetY?: number;
+            /**
+             * Specifies whether to rotate the shadow when rotating the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotateWithShape?: boolean;
+            /**
+             * Specifies the width of the shadow.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: number;
+            /**
+             * Specifies the type of shadow formatting to apply to a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: Word.ShadowStyle | "Mixed" | "OuterShadow" | "InnerShadow";
+            /**
+             * Specifies the degree of transparency of the shadow as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             * Specifies the shape shadow type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ShadowType | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" | "Type42" | "Type43";
+        }
+        /** An interface describing the data returned by calling `threeDimensionalFormat.toJSON()`. */
+        export interface ThreeDimensionalFormatData {
+            /**
+            * Returns a `ColorFormat` object that represents color of the contour of a shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            contourColor?: Word.Interfaces.ColorFormatData;
+            /**
+            * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            extrusionColor?: Word.Interfaces.ColorFormatData;
+            /**
+             * Specifies the depth of the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomDepth?: number;
+            /**
+             * Specifies the inset size for the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomInset?: number;
+            /**
+             * Specifies a `BevelType` value that represents the bevel type for the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomType?: Word.BevelType | "mixed" | "none" | "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+            /**
+             * Specifies the depth of the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopDepth?: number;
+            /**
+             * Specifies the inset size for the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopInset?: number;
+            /**
+             * Specifies a `BevelType` value that represents the bevel type for the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopType?: Word.BevelType | "mixed" | "none" | "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+            /**
+             * Specifies the width of the contour of a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contourWidth?: number;
+            /**
+             * Specifies the depth of the shape's extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            depth?: number;
+            /**
+             * Specifies whether the extrusion color is based on the extruded shape's fill (the front face of the extrusion)
+                        and automatically changes when the shape's fill changes, or whether the extrusion color is independent of the shape's fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            extrusionColorType?: Word.ExtrusionColorType | "mixed" | "automatic" | "custom";
+            /**
+             * Specifies the amount of perspective for a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fieldOfView?: number;
+            /**
+             * Specifies `true` if the extrusion appears in perspective — that is, if the walls of the extrusion narrow toward a vanishing point,
+                        `false` if the extrusion is a parallel, or orthographic, projection — that is, if the walls don't narrow toward a vanishing point.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPerspective?: boolean;
+            /**
+             * Specifies if the specified object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the angle of the lighting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lightAngle?: number;
+            /**
+             * Returns a `PresetCamera` value that represents the camera presets.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetCamera?: Word.PresetCamera | "Mixed" | "LegacyObliqueTopLeft" | "LegacyObliqueTop" | "LegacyObliqueTopRight" | "LegacyObliqueLeft" | "LegacyObliqueFront" | "LegacyObliqueRight" | "LegacyObliqueBottomLeft" | "LegacyObliqueBottom" | "LegacyObliqueBottomRight" | "LegacyPerspectiveTopLeft" | "LegacyPerspectiveTop" | "LegacyPerspectiveTopRight" | "LegacyPerspectiveLeft" | "LegacyPerspectiveFront" | "LegacyPerspectiveRight" | "LegacyPerspectiveBottomLeft" | "LegacyPerspectiveBottom" | "LegacyPerspectiveBottomRight" | "OrthographicFront" | "IsometricTopUp" | "IsometricTopDown" | "IsometricBottomUp" | "IsometricBottomDown" | "IsometricLeftUp" | "IsometricLeftDown" | "IsometricRightUp" | "IsometricRightDown" | "IsometricOffAxis1Left" | "IsometricOffAxis1Right" | "IsometricOffAxis1Top" | "IsometricOffAxis2Left" | "IsometricOffAxis2Right" | "IsometricOffAxis2Top" | "IsometricOffAxis3Left" | "IsometricOffAxis3Right" | "IsometricOffAxis3Bottom" | "IsometricOffAxis4Left" | "IsometricOffAxis4Right" | "IsometricOffAxis4Bottom" | "ObliqueTopLeft" | "ObliqueTop" | "ObliqueTopRight" | "ObliqueLeft" | "ObliqueRight" | "ObliqueBottomLeft" | "ObliqueBottom" | "ObliqueBottomRight" | "PerspectiveFront" | "PerspectiveLeft" | "PerspectiveRight" | "PerspectiveAbove" | "PerspectiveBelow" | "PerspectiveAboveLeftFacing" | "PerspectiveAboveRightFacing" | "PerspectiveContrastingLeftFacing" | "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing" | "PerspectiveHeroicRightFacing" | "PerspectiveHeroicExtremeLeftFacing" | "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" | "PerspectiveRelaxedModerately";
+            /**
+             * Returns the direction taken by the extrusion's sweep path leading away from the extruded shape (the front face of the extrusion).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetExtrusionDirection?: Word.PresetExtrusionDirection | "Mixed" | "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" | "TopRight" | "Top" | "TopLeft";
+            /**
+             * Specifies a `LightRigType` value that represents the lighting preset.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLighting?: Word.LightRigType | "Mixed" | "LegacyFlat1" | "LegacyFlat2" | "LegacyFlat3" | "LegacyFlat4" | "LegacyNormal1" | "LegacyNormal2" | "LegacyNormal3" | "LegacyNormal4" | "LegacyHarsh1" | "LegacyHarsh2" | "LegacyHarsh3" | "LegacyHarsh4" | "ThreePoint" | "Balanced" | "Soft" | "Harsh" | "Flood" | "Contrasting" | "Morning" | "Sunrise" | "Sunset" | "Chilly" | "Freezing" | "Flat" | "TwoPoint" | "Glow" | "BrightRoom";
+            /**
+             * Specifies the position of the light source relative to the extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLightingDirection?: Word.PresetLightingDirection | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "None" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";
+            /**
+             * Specifies the intensity of the extrusion lighting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLightingSoftness?: Word.PresetLightingSoftness | "Mixed" | "Dim" | "Normal" | "Bright";
+            /**
+             * Specifies the extrusion surface material.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetMaterial?: Word.PresetMaterial | "Mixed" | "Matte" | "Plastic" | "Metal" | "WireFrame" | "Matte2" | "Plastic2" | "Metal2" | "WarmMatte" | "TranslucentPowder" | "Powder" | "DarkEdge" | "SoftEdge" | "Clear" | "Flat" | "SoftMetal";
+            /**
+             * Returns the preset extrusion format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetThreeDimensionalFormat?: Word.PresetThreeDimensionalFormat | "Mixed" | "Format1" | "Format2" | "Format3" | "Format4" | "Format5" | "Format6" | "Format7" | "Format8" | "Format9" | "Format10" | "Format11" | "Format12" | "Format13" | "Format14" | "Format15" | "Format16" | "Format17" | "Format18" | "Format19" | "Format20";
+            /**
+             * Specifies whether text on a shape rotates with shape. `true` rotates the text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            projectText?: boolean;
+            /**
+             * Specifies the rotation of the extruded shape around the x-axis in degrees.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationX?: number;
+            /**
+             * Specifies the rotation of the extruded shape around the y-axis in degrees.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationY?: number;
+            /**
+             * Specifies the z-axis rotation of the camera.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationZ?: number;
+            /**
+             * Specifies the position on the z-axis for the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            z?: number;
         }
         /**
          * Represents an annotation wrapper around critique displayed in the document.
@@ -22979,12 +32436,96 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+            * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            fill?: Word.Interfaces.FillFormatLoadOptions;
+            /**
+            * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            glow?: Word.Interfaces.GlowFormatLoadOptions;
+            /**
+            * Returns a `LineFormat` object that specifies the formatting for a line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Word.Interfaces.LineFormatLoadOptions;
+            /**
+            * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reflection?: Word.Interfaces.ReflectionFormatLoadOptions;
+            /**
+            * Returns a `ColorFormat` object that represents the color for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+            * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textShadow?: Word.Interfaces.ShadowFormatLoadOptions;
+            /**
+            * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            threeDimensionalFormat?: Word.Interfaces.ThreeDimensionalFormatLoadOptions;
+            /**
+             * Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+                        
+                        - `true`: All the text has the **All Caps** attribute.
+                        
+                        - `false`: None of the text has the **All Caps** attribute.
+                        
+                        - `null`: Returned if some, but not all, of the text has the **All Caps** attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allCaps?: boolean;
+            /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
+            /**
+             * Specifies whether the font is formatted as bold in a right-to-left language document. The possible values are as follows:
+                        
+                        - `true`: All the text is bold.
+                        
+                        - `false`: None of the text is bold.
+                        
+                        - `null`: Returned if some, but not all, of the text is bold.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            boldBidirectional?: boolean;
             /**
              * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -22993,12 +32534,88 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
+             * Specifies a `ColorIndex` value that represents the color for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorIndex?: boolean;
+            /**
+             * Specifies the color for the `Font` object in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorIndexBidirectional?: boolean;
+            /**
+             * Specifies whether contextual alternates are enabled for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contextualAlternates?: boolean;
+            /**
+             * Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            diacriticColor?: boolean;
+            /**
+             * Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            disableCharacterSpaceGrid?: boolean;
+            /**
              * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
+            /**
+             * Specifies whether the font is formatted as embossed. The possible values are as follows:
+                        
+                        - `true`: All the text is embossed.
+                        
+                        - `false`: None of the text is embossed.
+                        
+                        - `null`: Returned if some, but not all, of the text is embossed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emboss?: boolean;
+            /**
+             * Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character string.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emphasisMark?: boolean;
+            /**
+             * Specifies whether the font is formatted as engraved. The possible values are as follows:
+                        
+                        - `true`: All the text is engraved.
+                        
+                        - `false`: None of the text is engraved.
+                        
+                        - `null`: Returned if some, but not all, of the text is engraved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            engrave?: boolean;
             /**
              * Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden text, otherwise, false.
              *
@@ -23021,12 +32638,134 @@ export declare namespace Word {
              */
             italic?: boolean;
             /**
+             * Specifies whether the font is italicized in a right-to-left language document. The possible values are as follows:
+                        
+                        - `true`: All the text is italicized.
+                        
+                        - `false`: None of the text is italicized.
+                        
+                        - `null`: Returned if some, but not all, of the text is italicized.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italicBidirectional?: boolean;
+            /**
+             * Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kerning?: boolean;
+            /**
+             * Specifies the ligature setting for the `Font` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ligature?: boolean;
+            /**
              * Specifies a value that represents the name of the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             name?: boolean;
+            /**
+             * Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameAscii?: boolean;
+            /**
+             * Specifies the font name in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameBidirectional?: boolean;
+            /**
+             * Specifies the East Asian font name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameFarEast?: boolean;
+            /**
+             * Specifies the font used for characters with codes from 128 through 255.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameOther?: boolean;
+            /**
+             * Specifies the number form setting for an OpenType font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberForm?: boolean;
+            /**
+             * Specifies the number spacing setting for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberSpacing?: boolean;
+            /**
+             * Specifies if the font is formatted as outlined. The possible values are as follows:
+                        
+                        - `true`: All the text is outlined.
+                        
+                        - `false`: None of the text is outlined.
+                        
+                        - `null`: Returned if some, but not all, of the text is outlined.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outline?: boolean;
+            /**
+             * Specifies the position of text (in points) relative to the base line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: boolean;
+            /**
+             * Specifies the scaling percentage applied to the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scaling?: boolean;
+            /**
+             * Specifies if the font is formatted as shadowed. The possible values are as follows:
+                        
+                        - `true`: All the text is shadowed.
+                        
+                        - `false`: None of the text is shadowed.
+                        
+                        - `null`: Returned if some, but not all, of the text is shadowed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shadow?: boolean;
             /**
              * Specifies a value that represents the font size in points.
              *
@@ -23035,12 +32774,50 @@ export declare namespace Word {
              */
             size?: boolean;
             /**
+             * Specifies the font size in points for right-to-left text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sizeBidirectional?: boolean;
+            /**
+             * Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+                        
+                        - `true`: All the text has the **Small Caps** attribute.
+                        
+                        - `false`: None of the text has the **Small Caps** attribute.
+                        
+                        - `null`: Returned if some, but not all, of the text has the **Small Caps** attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            smallCaps?: boolean;
+            /**
+             * Specifies the spacing between characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spacing?: boolean;
+            /**
              * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
+            /**
+             * Specifies the stylistic set for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            stylisticSet?: boolean;
             /**
              * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
@@ -23062,6 +32839,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             underline?: boolean;
+            /**
+             * Specifies the color of the underline for the `Font` object. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underlineColor?: boolean;
         }
         /**
          * Represents an inline picture.
@@ -24270,6 +34055,14 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             /**
+            * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listFormat?: Word.Interfaces.ListFormatLoadOptions;
+            /**
              * Gets the parent body of the range.
              *
              * @remarks
@@ -24318,6 +34111,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             * Specifies the proofing status (spelling and grammar checking) of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasNoProofing?: boolean;
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
@@ -24373,6 +34174,14 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             /**
+            * For EACH ITEM in the collection: Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listFormat?: Word.Interfaces.ListFormatLoadOptions;
+            /**
              * For EACH ITEM in the collection: Gets the parent body of the range.
              *
              * @remarks
@@ -24421,6 +34230,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies the proofing status (spelling and grammar checking) of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasNoProofing?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
@@ -26489,6 +36306,887 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             type?: boolean;
+        }
+        /**
+         * Represents the list formatting characteristics of a range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ListFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            list?: Word.Interfaces.ListLoadOptions;
+            /**
+            * Gets the list template associated with the `ListFormat` object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
+            /**
+             * Indicates whether the `ListFormat` object contains a single list.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSingleList?: boolean;
+            /**
+             * Indicates whether the `ListFormat` object contains a single list template.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSingleListTemplate?: boolean;
+            /**
+             * Specifies the list level number for the first paragraph for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listLevelNumber?: boolean;
+            /**
+             * Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listString?: boolean;
+            /**
+             * Gets the type of the list for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listType?: boolean;
+            /**
+             * Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            listValue?: boolean;
+        }
+        /**
+         * Represents the fill formatting for a shape or text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface FillFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns a `ColorFormat` object that represents the background color for the fill.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+            * Returns a `ColorFormat` object that represents the foreground color for the fill.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+             * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientAngle?: boolean;
+            /**
+             * Gets the gradient color type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientColorType?: boolean;
+            /**
+             * Returns how dark or light a one-color gradient fill is.
+                        A value of 0 means that black is mixed in with the shape's foreground color to form the gradient.
+                        A value of 1 means that white is mixed in.
+                        Values between 0 and 1 mean that a darker or lighter shade of the foreground color is mixed in.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientDegree?: boolean;
+            /**
+             * Returns the gradient style for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientStyle?: boolean;
+            /**
+             * Returns the gradient variant for the fill as an integer value from 1 to 4 for most gradient fills.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientVariant?: boolean;
+            /**
+             * Specifies if the object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Returns a `PatternType` value that represents the pattern applied to the fill or line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: boolean;
+            /**
+             * Returns the preset gradient type for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetGradientType?: boolean;
+            /**
+             * Gets the preset texture.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetTexture?: boolean;
+            /**
+             * Specifies whether the fill rotates with the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotateWithObject?: boolean;
+            /**
+             * Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureAlignment?: boolean;
+            /**
+             * Specifies the horizontal scaling factor for the texture fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureHorizontalScale?: boolean;
+            /**
+             * Returns the name of the custom texture file for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureName?: boolean;
+            /**
+             * Specifies the horizontal offset of the texture from the origin in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureOffsetX?: boolean;
+            /**
+             * Specifies the vertical offset of the texture.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureOffsetY?: boolean;
+            /**
+             * Specifies whether the texture is tiled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureTile?: boolean;
+            /**
+             * Returns the texture type for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureType?: boolean;
+            /**
+             * Specifies the vertical scaling factor for the texture fill as a value between 0.0 and 1.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textureVerticalScale?: boolean;
+            /**
+             * Specifies the degree of transparency of the fill for a shape as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             * Gets the fill format type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents the glow formatting for the font used by the range of text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface GlowFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns a `ColorFormat` object that represents the color for a glow effect.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            color?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+             * Specifies the length of the radius for a glow effect.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            radius?: boolean;
+            /**
+             * Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+        }
+        /**
+         * Represents line and arrowhead formatting. For a line, the `LineFormat` object contains formatting information for the line itself;
+                    for a shape with a border, this object contains formatting information for the shape's border.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface LineFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Gets a `ColorFormat` object that represents the background color for a patterned line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+            * Gets a `ColorFormat` object that represents the foreground color for the line.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+             * Specifies the length of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadLength?: boolean;
+            /**
+             * Specifies the style of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadStyle?: boolean;
+            /**
+             * Specifies the width of the arrowhead at the beginning of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            beginArrowheadWidth?: boolean;
+            /**
+             * Specifies the dash style for the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dashStyle?: boolean;
+            /**
+             * Specifies the length of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadLength?: boolean;
+            /**
+             * Specifies the style of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadStyle?: boolean;
+            /**
+             * Specifies the width of the arrowhead at the end of the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endArrowheadWidth?: boolean;
+            /**
+             * Specifies if to draw lines inside a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            insetPen?: boolean;
+            /**
+             * Specifies if the object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the pattern applied to the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: boolean;
+            /**
+             * Specifies the line format style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+            /**
+             * Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             * Specifies the thickness of the line in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            weight?: boolean;
+        }
+        /**
+         * Represents the reflection formatting for a shape in Word.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ReflectionFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blur?: boolean;
+            /**
+             * Specifies the amount of separation, in points, of the reflected image from the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offset?: boolean;
+            /**
+             * Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: boolean;
+            /**
+             * Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             * Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents the color formatting of a shape or text in Word.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ColorFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: boolean;
+            /**
+             * Specifies the theme color for a color format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            objectThemeColor?: boolean;
+            /**
+             * Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '#RRGGBB' format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rgb?: boolean;
+            /**
+             * Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: boolean;
+            /**
+             * Returns the shape color type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents the shadow formatting for a shape or text in Word.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShadowFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+             * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blur?: boolean;
+            /**
+             * Specifies whether the object or the formatting applied to it is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies `true` if the shadow of the shape appears filled in and is obscured by the shape, even if the shape has no fill,
+                        `false` if the shadow has no fill and the outline of the shadow is visible through the shape if the shape has no fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            obscured?: boolean;
+            /**
+             * Specifies the horizontal offset (in points) of the shadow from the shape.
+                        A positive value offsets the shadow to the right of the shape; a negative value offsets it to the left.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offsetX?: boolean;
+            /**
+             * Specifies the vertical offset (in points) of the shadow from the shape.
+                        A positive value offsets the shadow to the top of the shape; a negative value offsets it to the bottom.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            offsetY?: boolean;
+            /**
+             * Specifies whether to rotate the shadow when rotating the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotateWithShape?: boolean;
+            /**
+             * Specifies the width of the shadow.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: boolean;
+            /**
+             * Specifies the type of shadow formatting to apply to a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+            /**
+             * Specifies the degree of transparency of the shadow as a value between 0.0 (opaque) and 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             * Specifies the shape shadow type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents a shape's three-dimensional formatting.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ThreeDimensionalFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns a `ColorFormat` object that represents color of the contour of a shape.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            contourColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+            * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            extrusionColor?: Word.Interfaces.ColorFormatLoadOptions;
+            /**
+             * Specifies the depth of the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomDepth?: boolean;
+            /**
+             * Specifies the inset size for the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomInset?: boolean;
+            /**
+             * Specifies a `BevelType` value that represents the bevel type for the bottom bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelBottomType?: boolean;
+            /**
+             * Specifies the depth of the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopDepth?: boolean;
+            /**
+             * Specifies the inset size for the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopInset?: boolean;
+            /**
+             * Specifies a `BevelType` value that represents the bevel type for the top bevel.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bevelTopType?: boolean;
+            /**
+             * Specifies the width of the contour of a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contourWidth?: boolean;
+            /**
+             * Specifies the depth of the shape's extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            depth?: boolean;
+            /**
+             * Specifies whether the extrusion color is based on the extruded shape's fill (the front face of the extrusion)
+                        and automatically changes when the shape's fill changes, or whether the extrusion color is independent of the shape's fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            extrusionColorType?: boolean;
+            /**
+             * Specifies the amount of perspective for a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fieldOfView?: boolean;
+            /**
+             * Specifies `true` if the extrusion appears in perspective — that is, if the walls of the extrusion narrow toward a vanishing point,
+                        `false` if the extrusion is a parallel, or orthographic, projection — that is, if the walls don't narrow toward a vanishing point.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPerspective?: boolean;
+            /**
+             * Specifies if the specified object, or the formatting applied to it, is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the angle of the lighting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lightAngle?: boolean;
+            /**
+             * Returns a `PresetCamera` value that represents the camera presets.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetCamera?: boolean;
+            /**
+             * Returns the direction taken by the extrusion's sweep path leading away from the extruded shape (the front face of the extrusion).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetExtrusionDirection?: boolean;
+            /**
+             * Specifies a `LightRigType` value that represents the lighting preset.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLighting?: boolean;
+            /**
+             * Specifies the position of the light source relative to the extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLightingDirection?: boolean;
+            /**
+             * Specifies the intensity of the extrusion lighting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetLightingSoftness?: boolean;
+            /**
+             * Specifies the extrusion surface material.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetMaterial?: boolean;
+            /**
+             * Returns the preset extrusion format.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            presetThreeDimensionalFormat?: boolean;
+            /**
+             * Specifies whether text on a shape rotates with shape. `true` rotates the text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            projectText?: boolean;
+            /**
+             * Specifies the rotation of the extruded shape around the x-axis in degrees.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationX?: boolean;
+            /**
+             * Specifies the rotation of the extruded shape around the y-axis in degrees.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationY?: boolean;
+            /**
+             * Specifies the z-axis rotation of the camera.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotationZ?: boolean;
+            /**
+             * Specifies the position on the z-axis for the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            z?: boolean;
         }
     }
 }

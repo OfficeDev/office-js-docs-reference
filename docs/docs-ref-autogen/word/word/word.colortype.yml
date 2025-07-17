@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.ColorType
+uid: word!Word.ColorType:enum
+package: word!
+fullName: Word.ColorType
+summary: Specifies the color type.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: rgb
+    uid: word!Word.ColorType.rgb:member
+    package: word!
+    summary: >-
+      Represents an RGB color type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"rgb"'
+  - name: scheme
+    uid: word!Word.ColorType.scheme:member
+    package: word!
+    summary: >-
+      Represents a scheme color type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"scheme"'

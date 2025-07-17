@@ -174,7 +174,7 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#numberFormat:member
     package: excel!
     fullName: numberFormat
-    summary: String value that represents the format code for data label.
+    summary: Specifies the format code for data label.
     remarks: >-
       \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -223,10 +223,10 @@ properties:
     package: excel!
     fullName: showAsStickyCallout
     summary: >-
-      Gets a value that indicates whether the data label is shown as a callout
-      with the tail anchor attached to the data point. If `true`<!-- -->, the
-      callout is one of the following values: "AccentCallout1",
-      "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout",
+      Specifies if the data label is shown as a callout with the tail anchor
+      attached to the data point. If `true`<!-- -->, the callout is one of the
+      following valuesString: "AccentCallout1", "AccentCallout2",
+      "BorderCallout1", "BorderCallout2", "WedgeRectCallout",
       "WedgeRRectCallout" or "WedgeEllipseCallout". See
       [GeometricShapeType](xref:excel!Excel.GeometricShapeType:enum) for more
       details.

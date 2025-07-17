@@ -1,0 +1,468 @@
+### YamlMime:TSType
+name: Word.ShadowFormat
+uid: word!Word.ShadowFormat:class
+package: word!
+fullName: Word.ShadowFormat
+summary: Represents the shadow formatting for a shape or text in Word.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: blur
+    uid: word!Word.ShadowFormat#blur:member
+    package: word!
+    fullName: blur
+    summary: >-
+      Specifies the blur level for a shadow format as a value between 0.0 and
+      100.0.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'blur: number;'
+      return:
+        type: number
+  - name: context
+    uid: word!Word.ShadowFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: foregroundColor
+    uid: word!Word.ShadowFormat#foregroundColor:member
+    package: word!
+    fullName: foregroundColor
+    summary: >-
+      Returns a `ColorFormat` object that represents the foreground color for
+      the fill, line, or shadow.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly foregroundColor: Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+  - name: isVisible
+    uid: word!Word.ShadowFormat#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies whether the object or the formatting applied to it is visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible: boolean;'
+      return:
+        type: boolean
+  - name: obscured
+    uid: word!Word.ShadowFormat#obscured:member
+    package: word!
+    fullName: obscured
+    summary: >-
+      Specifies `true` if the shadow of the shape appears filled in and is
+      obscured by the shape, even if the shape has no fill, `false` if the
+      shadow has no fill and the outline of the shadow is visible through the
+      shape if the shape has no fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'obscured: boolean;'
+      return:
+        type: boolean
+  - name: offsetX
+    uid: word!Word.ShadowFormat#offsetX:member
+    package: word!
+    fullName: offsetX
+    summary: >-
+      Specifies the horizontal offset (in points) of the shadow from the shape.
+      A positive value offsets the shadow to the right of the shape; a negative
+      value offsets it to the left.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'offsetX: number;'
+      return:
+        type: number
+  - name: offsetY
+    uid: word!Word.ShadowFormat#offsetY:member
+    package: word!
+    fullName: offsetY
+    summary: >-
+      Specifies the vertical offset (in points) of the shadow from the shape. A
+      positive value offsets the shadow to the top of the shape; a negative
+      value offsets it to the bottom.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'offsetY: number;'
+      return:
+        type: number
+  - name: rotateWithShape
+    uid: word!Word.ShadowFormat#rotateWithShape:member
+    package: word!
+    fullName: rotateWithShape
+    summary: Specifies whether to rotate the shadow when rotating the shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotateWithShape: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: word!Word.ShadowFormat#size:member
+    package: word!
+    fullName: size
+    summary: Specifies the width of the shadow.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size: number;'
+      return:
+        type: number
+  - name: style
+    uid: word!Word.ShadowFormat#style:member
+    package: word!
+    fullName: style
+    summary: Specifies the type of shadow formatting to apply to a shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'style: Word.ShadowStyle | "Mixed" | "OuterShadow" | "InnerShadow";'
+      return:
+        type: >-
+          <xref uid="word!Word.ShadowStyle:enum" /> | "Mixed" | "OuterShadow" |
+          "InnerShadow"
+  - name: transparency
+    uid: word!Word.ShadowFormat#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency of the shadow as a value between 0.0
+      (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type: number
+  - name: type
+    uid: word!Word.ShadowFormat#type:member
+    package: word!
+    fullName: type
+    summary: Specifies the shape shadow type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.ShadowType | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4"
+        | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11"
+        | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" |
+        "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" |
+        "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" |
+        "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" |
+        "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" |
+        "Type42" | "Type43";
+      return:
+        type: >-
+          <xref uid="word!Word.ShadowType:enum" /> | "Mixed" | "Type1" | "Type2"
+          | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9"
+          | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" |
+          "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" |
+          "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" |
+          "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" |
+          "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" |
+          "Type40" | "Type41" | "Type42" | "Type43"
+methods:
+  - name: incrementOffsetX(increment)
+    uid: word!Word.ShadowFormat#incrementOffsetX:member(1)
+    package: word!
+    fullName: incrementOffsetX(increment)
+    summary: >-
+      Changes the horizontal offset of the shadow by the number of points.
+      Increment The number of points to adjust.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementOffsetX(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: incrementOffsetY(increment)
+    uid: word!Word.ShadowFormat#incrementOffsetY:member(1)
+    package: word!
+    fullName: incrementOffsetY(increment)
+    summary: >-
+      Changes the vertical offset of the shadow by the specified number of
+      points. Increment The number of points to adjust.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementOffsetY(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.ShadowFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ShadowFormatLoadOptions):
+        Word.ShadowFormat;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.ShadowFormatLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="word!Word.ShadowFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.ShadowFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ShadowFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.ShadowFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.ShadowFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ShadowFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.ShadowFormat:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.ShadowFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ShadowFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.ShadowFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.ShadowFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ShadowFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.ShadowFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.ShadowFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.ShadowFormat`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.ShadowFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ShadowFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ShadowFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.ShadowFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ShadowFormat;'
+      return:
+        type: <xref uid="word!Word.ShadowFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.ShadowFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ShadowFormat;'
+      return:
+        type: <xref uid="word!Word.ShadowFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

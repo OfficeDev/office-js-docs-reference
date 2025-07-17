@@ -622,6 +622,17 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
+         * Occurs in Outlook on the web and the new Outlook on Windows when messages or file attachments within the Outlook client window are
+         * dragged then dropped into the task pane of an add-in.
+         *
+         * To add an event handler for the `DragAndDrop` event, use the `addHandlerAsync` method of the `Mailbox` object.
+         * The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs | Office.DragAndDropEventArgs}.
+         *
+         * [Api set: Mailbox 1.1]
+         */
+        DragAndDrop,
+        /**
          * Occurs when the appointment location is changed in Outlook.
          *
          * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.

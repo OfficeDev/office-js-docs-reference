@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: Office.DragoverEventData
+uid: outlook!Office.DragoverEventData:interface
+package: outlook!
+fullName: Office.DragoverEventData
+summary: >-
+  Represents the `DragAndDropEventArgs.dragAndDropEventData` object when a
+  message or file attachment is being dragged over an add-in's task pane.
+remarks: >-
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: pageX
+    uid: outlook!Office.DragoverEventData#pageX:member
+    package: outlook!
+    fullName: pageX
+    summary: >-
+      Gets the x-coordinate of the mouse pointer that represents the horizontal
+      position in pixels.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageX: number;'
+      return:
+        type: number
+  - name: pageY
+    uid: outlook!Office.DragoverEventData#pageY:member
+    package: outlook!
+    fullName: pageY
+    summary: >-
+      Gets the y-coordinate of the mouse pointer that represents the vertical
+      position in pixels.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageY: number;'
+      return:
+        type: number
+  - name: type
+    uid: outlook!Office.DragoverEventData#type:member
+    package: outlook!
+    fullName: type
+    summary: Gets the type of drag-and-drop event.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "dragover";'
+      return:
+        type: '"dragover"'

@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListFormatUpdateData
+uid: word!Word.Interfaces.ListFormatUpdateData:interface
+package: word!
+fullName: Word.Interfaces.ListFormatUpdateData
+summary: >-
+  An interface for updating data on the `ListFormat` object, for use in
+  `listFormat.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: listLevelNumber
+    uid: word!Word.Interfaces.ListFormatUpdateData#listLevelNumber:member
+    package: word!
+    fullName: listLevelNumber
+    summary: >-
+      Specifies the list level number for the first paragraph for the
+      `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listLevelNumber?: number;'
+      return:
+        type: number
+  - name: listTemplate
+    uid: word!Word.Interfaces.ListFormatUpdateData#listTemplate:member
+    package: word!
+    fullName: listTemplate
+    summary: Gets the list template associated with the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listTemplate?: Word.Interfaces.ListTemplateUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListTemplateUpdateData:interface" />

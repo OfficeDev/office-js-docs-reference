@@ -1,0 +1,93 @@
+### YamlMime:TSEnum
+name: Word.GradientStyle
+uid: word!Word.GradientStyle:enum
+package: word!
+fullName: Word.GradientStyle
+summary: Specifies the style for a gradient fill.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: diagonalDown
+    uid: word!Word.GradientStyle.diagonalDown:member
+    package: word!
+    summary: >-
+      Represents a diagonal-down gradient style.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DiagonalDown"'
+  - name: diagonalUp
+    uid: word!Word.GradientStyle.diagonalUp:member
+    package: word!
+    summary: >-
+      Represents a diagonal-up gradient style.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DiagonalUp"'
+  - name: fromCenter
+    uid: word!Word.GradientStyle.fromCenter:member
+    package: word!
+    summary: >-
+      Represents a gradient style from the center.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FromCenter"'
+  - name: fromCorner
+    uid: word!Word.GradientStyle.fromCorner:member
+    package: word!
+    summary: >-
+      Represents a gradient style from the corner.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FromCorner"'
+  - name: fromTitle
+    uid: word!Word.GradientStyle.fromTitle:member
+    package: word!
+    summary: >-
+      Represents a gradient style from the title.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FromTitle"'
+  - name: horizontal
+    uid: word!Word.GradientStyle.horizontal:member
+    package: word!
+    summary: >-
+      Represents a horizontal gradient style.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Horizontal"'
+  - name: mixed
+    uid: word!Word.GradientStyle.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed gradient style.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: vertical
+    uid: word!Word.GradientStyle.vertical:member
+    package: word!
+    summary: >-
+      Represents a vertical gradient style.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Vertical"'

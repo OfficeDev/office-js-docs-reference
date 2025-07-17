@@ -1,0 +1,104 @@
+### YamlMime:TSType
+name: Word.Interfaces.ColorFormatData
+uid: word!Word.Interfaces.ColorFormatData:interface
+package: word!
+fullName: Word.Interfaces.ColorFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `colorFormat.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: brightness
+    uid: word!Word.Interfaces.ColorFormatData#brightness:member
+    package: word!
+    fullName: brightness
+    summary: >-
+      Specifies the brightness of a specified shape color. Valid values are from
+      `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'brightness?: number;'
+      return:
+        type: number
+  - name: objectThemeColor
+    uid: word!Word.Interfaces.ColorFormatData#objectThemeColor:member
+    package: word!
+    fullName: objectThemeColor
+    summary: Specifies the theme color for a color format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1"
+        | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" |
+        "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" |
+        "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+      return:
+        type: >-
+          <xref uid="word!Word.ThemeColorIndex:enum" /> | "NotThemeColor" |
+          "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" |
+          "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" |
+          "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" |
+          "Background2" | "Text2"
+  - name: rgb
+    uid: word!Word.Interfaces.ColorFormatData#rgb:member
+    package: word!
+    fullName: rgb
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the specified color. You can
+      provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rgb?: string;'
+      return:
+        type: string
+  - name: tintAndShade
+    uid: word!Word.Interfaces.ColorFormatData#tintAndShade:member
+    package: word!
+    fullName: tintAndShade
+    summary: >-
+      Specifies the lightening or darkening of a specified shape's color. Valid
+      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type: number
+  - name: type
+    uid: word!Word.Interfaces.ColorFormatData#type:member
+    package: word!
+    fullName: type
+    summary: Returns the shape color type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.ColorType | "rgb" | "scheme";'
+      return:
+        type: <xref uid="word!Word.ColorType:enum" /> | "rgb" | "scheme"

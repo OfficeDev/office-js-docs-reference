@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Office.DroppedItems
+uid: outlook!Office.DroppedItems:interface
+package: outlook!
+fullName: Office.DroppedItems
+summary: >-
+  Provides the content and details of the messages or file attachments being
+  dragged and dropped into an add-in's task pane.
+remarks: >-
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fileContent
+    uid: outlook!Office.DroppedItems#fileContent:member
+    package: outlook!
+    fullName: fileContent
+    summary: Gets the contents of the file being dragged and dropped.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileContent: Blob;'
+      return:
+        type: Blob
+  - name: name
+    uid: outlook!Office.DroppedItems#name:member
+    package: outlook!
+    fullName: name
+    summary: Gets the name of the file being dragged and dropped.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: type
+    uid: outlook!Office.DroppedItems#type:member
+    package: outlook!
+    fullName: type
+    summary: Gets the type of the file being dragged and dropped.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string;'
+      return:
+        type: string

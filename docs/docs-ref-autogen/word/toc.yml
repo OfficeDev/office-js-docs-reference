@@ -23,6 +23,14 @@ items:
                 uid: word!Word.Alignment:enum
               - name: AnnotationState
                 uid: word!Word.AnnotationState:enum
+              - name: ArrowheadLength
+                uid: word!Word.ArrowheadLength:enum
+              - name: ArrowheadStyle
+                uid: word!Word.ArrowheadStyle:enum
+              - name: ArrowheadWidth
+                uid: word!Word.ArrowheadWidth:enum
+              - name: BevelType
+                uid: word!Word.BevelType:enum
               - name: BodyType
                 uid: word!Word.BodyType:enum
               - name: BorderLocation
@@ -45,6 +53,10 @@ items:
                 uid: word!Word.ChangeTrackingVersion:enum
               - name: CloseBehavior
                 uid: word!Word.CloseBehavior:enum
+              - name: ColorIndex
+                uid: word!Word.ColorIndex:enum
+              - name: ColorType
+                uid: word!Word.ColorType:enum
               - name: CommentChangeType
                 uid: word!Word.CommentChangeType:enum
               - name: CompareTarget
@@ -55,22 +67,36 @@ items:
                 uid: word!Word.ContentControlState:enum
               - name: ContentControlType
                 uid: word!Word.ContentControlType:enum
+              - name: Continue
+                uid: word!Word.Continue:enum
               - name: CritiqueColorScheme
                 uid: word!Word.CritiqueColorScheme:enum
+              - name: DefaultListBehavior
+                uid: word!Word.DefaultListBehavior:enum
               - name: DocumentPropertyType
                 uid: word!Word.DocumentPropertyType:enum
+              - name: EmphasisMark
+                uid: word!Word.EmphasisMark:enum
               - name: ErrorCodes
                 uid: word!Word.ErrorCodes:enum
               - name: EventSource
                 uid: word!Word.EventSource:enum
               - name: EventType
                 uid: word!Word.EventType:enum
+              - name: ExtrusionColorType
+                uid: word!Word.ExtrusionColorType:enum
               - name: FieldKind
                 uid: word!Word.FieldKind:enum
               - name: FieldType
                 uid: word!Word.FieldType:enum
+              - name: FillType
+                uid: word!Word.FillType:enum
               - name: GeometricShapeType
                 uid: word!Word.GeometricShapeType:enum
+              - name: GradientColorType
+                uid: word!Word.GradientColorType:enum
+              - name: GradientStyle
+                uid: word!Word.GradientStyle:enum
               - name: HeaderFooterType
                 uid: word!Word.HeaderFooterType:enum
               - name: ImageFormat
@@ -79,6 +105,18 @@ items:
                 uid: word!Word.ImportedStylesConflictBehavior:enum
               - name: InsertLocation
                 uid: word!Word.InsertLocation:enum
+              - name: LanguageId
+                uid: word!Word.LanguageId:enum
+              - name: Ligature
+                uid: word!Word.Ligature:enum
+              - name: LightRigType
+                uid: word!Word.LightRigType:enum
+              - name: LineDashStyle
+                uid: word!Word.LineDashStyle:enum
+              - name: LineFormatStyle
+                uid: word!Word.LineFormatStyle:enum
+              - name: ListApplyTo
+                uid: word!Word.ListApplyTo:enum
               - name: ListBuiltInNumberStyle
                 uid: word!Word.ListBuiltInNumberStyle:enum
               - name: ListBullet
@@ -87,14 +125,42 @@ items:
                 uid: word!Word.ListLevelType:enum
               - name: ListNumbering
                 uid: word!Word.ListNumbering:enum
+              - name: ListType
+                uid: word!Word.ListType:enum
               - name: LocationRelation
                 uid: word!Word.LocationRelation:enum
               - name: NoteItemType
                 uid: word!Word.NoteItemType:enum
+              - name: NumberForm
+                uid: word!Word.NumberForm:enum
+              - name: NumberSpacing
+                uid: word!Word.NumberSpacing:enum
+              - name: NumberType
+                uid: word!Word.NumberType:enum
               - name: OutlineLevel
                 uid: word!Word.OutlineLevel:enum
+              - name: PatternType
+                uid: word!Word.PatternType:enum
+              - name: PresetCamera
+                uid: word!Word.PresetCamera:enum
+              - name: PresetExtrusionDirection
+                uid: word!Word.PresetExtrusionDirection:enum
+              - name: PresetGradientType
+                uid: word!Word.PresetGradientType:enum
+              - name: PresetLightingDirection
+                uid: word!Word.PresetLightingDirection:enum
+              - name: PresetLightingSoftness
+                uid: word!Word.PresetLightingSoftness:enum
+              - name: PresetMaterial
+                uid: word!Word.PresetMaterial:enum
+              - name: PresetTexture
+                uid: word!Word.PresetTexture:enum
+              - name: PresetThreeDimensionalFormat
+                uid: word!Word.PresetThreeDimensionalFormat:enum
               - name: RangeLocation
                 uid: word!Word.RangeLocation:enum
+              - name: ReflectionType
+                uid: word!Word.ReflectionType:enum
               - name: RelativeHorizontalPosition
                 uid: word!Word.RelativeHorizontalPosition:enum
               - name: RelativeSize
@@ -107,6 +173,10 @@ items:
                 uid: word!Word.SelectionMode:enum
               - name: ShadingTextureType
                 uid: word!Word.ShadingTextureType:enum
+              - name: ShadowStyle
+                uid: word!Word.ShadowStyle:enum
+              - name: ShadowType
+                uid: word!Word.ShadowType:enum
               - name: ShapeAutoSize
                 uid: word!Word.ShapeAutoSize:enum
               - name: ShapeFillType
@@ -127,6 +197,14 @@ items:
                 uid: word!Word.ShapeType:enum
               - name: StyleType
                 uid: word!Word.StyleType:enum
+              - name: StylisticSet
+                uid: word!Word.StylisticSet:enum
+              - name: TextureAlignment
+                uid: word!Word.TextureAlignment:enum
+              - name: TextureType
+                uid: word!Word.TextureType:enum
+              - name: ThemeColorIndex
+                uid: word!Word.ThemeColorIndex:enum
               - name: TrackedChangeType
                 uid: word!Word.TrackedChangeType:enum
               - name: TrailingCharacter
@@ -163,6 +241,8 @@ items:
             uid: word!Word.Canvas:class
           - name: CheckboxContentControl
             uid: word!Word.CheckboxContentControl:class
+          - name: ColorFormat
+            uid: word!Word.ColorFormat:class
           - name: ComboBoxContentControl
             uid: word!Word.ComboBoxContentControl:class
           - name: Comment
@@ -231,10 +311,14 @@ items:
             uid: word!Word.Field:class
           - name: FieldCollection
             uid: word!Word.FieldCollection:class
+          - name: FillFormat
+            uid: word!Word.FillFormat:class
           - name: Font
             uid: word!Word.Font:class
           - name: GetTextOptions
             uid: word!Word.GetTextOptions:interface
+          - name: GlowFormat
+            uid: word!Word.GlowFormat:class
           - name: InlinePicture
             uid: word!Word.InlinePicture:class
           - name: InlinePictureCollection
@@ -243,10 +327,16 @@ items:
             uid: word!Word.InsertFileOptions:interface
           - name: InsertShapeOptions
             uid: word!Word.InsertShapeOptions:interface
+          - name: LineFormat
+            uid: word!Word.LineFormat:class
           - name: List
             uid: word!Word.List:class
           - name: ListCollection
             uid: word!Word.ListCollection:class
+          - name: ListFormat
+            uid: word!Word.ListFormat:class
+          - name: ListFormatCountNumberedItemsOptions
+            uid: word!Word.ListFormatCountNumberedItemsOptions:interface
           - name: ListItem
             uid: word!Word.ListItem:class
           - name: ListLevel
@@ -255,6 +345,8 @@ items:
             uid: word!Word.ListLevelCollection:class
           - name: ListTemplate
             uid: word!Word.ListTemplate:class
+          - name: ListTemplateApplyOptions
+            uid: word!Word.ListTemplateApplyOptions:interface
           - name: NoteItem
             uid: word!Word.NoteItem:class
           - name: NoteItemCollection
@@ -283,6 +375,8 @@ items:
             uid: word!Word.Range:class
           - name: RangeCollection
             uid: word!Word.RangeCollection:class
+          - name: ReflectionFormat
+            uid: word!Word.ReflectionFormat:class
           - name: RequestContext
             uid: word!Word.RequestContext:class
           - name: SearchOptions
@@ -297,6 +391,8 @@ items:
             uid: word!Word.SettingCollection:class
           - name: Shading
             uid: word!Word.Shading:class
+          - name: ShadowFormat
+            uid: word!Word.ShadowFormat:class
           - name: Shape
             uid: word!Word.Shape:class
           - name: ShapeCollection
@@ -329,6 +425,8 @@ items:
             uid: word!Word.TableStyle:class
           - name: TextFrame
             uid: word!Word.TextFrame:class
+          - name: ThreeDimensionalFormat
+            uid: word!Word.ThreeDimensionalFormat:class
           - name: TrackedChange
             uid: word!Word.TrackedChange:class
           - name: TrackedChangeCollection

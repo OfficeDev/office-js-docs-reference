@@ -49,7 +49,7 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Represents the height, in points, of the slicer. Throws an
+      Specifies the height, in points, of the slicer. Throws an
       `InvalidArgument` exception when set with a negative value or zero as an
       input.
     remarks: >-
@@ -136,7 +136,7 @@ properties:
     uid: excel!Excel.Interfaces.SlicerLoadOptions#nameInFormula:member
     package: excel!
     fullName: nameInFormula
-    summary: Represents the slicer name used in the formula.
+    summary: Specifies the slicer name used in the formula.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -169,8 +169,8 @@ properties:
     package: excel!
     fullName: sortBy
     summary: >-
-      Represents the sort order of the items in the slicer. Possible values are:
-      "DataSourceOrder", "Ascending", "Descending".
+      Specifies the sort order of the items in the slicer. Possible values
+      areString: "DataSourceOrder", "Ascending", "Descending".
     remarks: >-
       \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
