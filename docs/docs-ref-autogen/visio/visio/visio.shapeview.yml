@@ -132,13 +132,13 @@ methods:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: >-
-      addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignmentString,
-      OverlayVerticalAlignmentString, Width, Height)
+      addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
+      OverlayVerticalAlignment, Width, Height)
     uid: visio!Visio.ShapeView#addOverlay:member(2)
     package: visio!
     fullName: >-
-      addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignmentString,
-      OverlayVerticalAlignmentString, Width, Height)
+      addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
+      OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
     remarks: >-
       \[ [API set:
@@ -149,23 +149,23 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content:
-        string, OverlayHorizontalAlignmentString: "Left" | "Center" | "Right",
-        OverlayVerticalAlignmentString: "Top" | "Middle" | "Bottom", Width:
-        number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayType: "Text" | "Image" | "Html", Content: string,
+        OverlayHorizontalAlignment: "Left" | "Center" | "Right",
+        OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number,
+        Height: number): OfficeExtension.ClientResult<number>;
       parameters:
-        - id: OverlayTypeString
+        - id: OverlayType
           description: An Overlay Type. Can be 'Text', 'Image' or 'Html'.
           type: '"Text" | "Image" | "Html"'
         - id: Content
           description: Content of Overlay.
           type: string
-        - id: OverlayHorizontalAlignmentString
+        - id: OverlayHorizontalAlignment
           description: >-
             Horizontal Alignment of Overlay. Can be 'Left', 'Center', or
             'Right'.
           type: '"Left" | "Center" | "Right"'
-        - id: OverlayVerticalAlignmentString
+        - id: OverlayVerticalAlignment
           description: Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
           type: '"Top" | "Middle" | "Bottom"'
         - id: Width

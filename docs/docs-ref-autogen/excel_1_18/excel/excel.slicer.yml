@@ -48,7 +48,7 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Represents the height, in points, of the slicer. Throws an
+      Specifies the height, in points, of the slicer. Throws an
       `InvalidArgument` exception when set with a negative value or zero as an
       input.
     remarks: >-
@@ -152,7 +152,7 @@ properties:
     package: excel!
     fullName: sortBy
     summary: >-
-      Represents the sort order of the items in the slicer. Possible values are:
+      Specifies the sort order of the items in the slicer. Possible values are:
       "DataSourceOrder", "Ascending", "Descending".
     remarks: >-
       \[ [API set: ExcelApi

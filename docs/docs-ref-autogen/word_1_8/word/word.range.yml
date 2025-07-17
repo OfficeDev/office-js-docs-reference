@@ -1292,10 +1292,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
-  - name: getReviewedText(changeTrackingVersionString)
+  - name: getReviewedText(changeTrackingVersion)
     uid: word!Word.Range#getReviewedText:member(2)
     package: word!
-    fullName: getReviewedText(changeTrackingVersionString)
+    fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
       \[ [API set: WordApi
@@ -1305,10 +1305,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"):
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"):
         OfficeExtension.ClientResult<string>;
       parameters:
-        - id: changeTrackingVersionString
+        - id: changeTrackingVersion
           description: >-
             Optional. The value must be 'Original' or 'Current'. The default is
             'Current'.
@@ -1740,10 +1740,10 @@ methods:
       return:
         type: <xref uid="word!Word.Field:class" />
         description: ''
-  - name: insertField(insertLocation, fieldTypeString, text, removeFormatting)
+  - name: insertField(insertLocation, fieldType, text, removeFormatting)
     uid: word!Word.Range#insertField:member(2)
     package: word!
-    fullName: insertField(insertLocation, fieldTypeString, text, removeFormatting)
+    fullName: insertField(insertLocation, fieldType, text, removeFormatting)
     summary: Inserts a field at the specified location.
     remarks: >-
       \[ [API set: WordApi
@@ -1763,7 +1763,7 @@ methods:
     syntax:
       content: >-
         insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" |
-        "End" | "Before" | "After", fieldTypeString?: "Addin" | "AddressBlock" |
+        "End" | "Before" | "After", fieldType?: "Addin" | "AddressBlock" |
         "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" |
         "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" |
         "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" |
@@ -1790,7 +1790,7 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
-        - id: fieldTypeString
+        - id: fieldType
           description: Optional. Can be any FieldType constant. The default value is Empty.
           type: >-
             "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText"
@@ -2495,10 +2495,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: select(selectionModeString)
+  - name: select(selectionMode)
     uid: word!Word.Range#select:member(2)
     package: word!
-    fullName: select(selectionModeString)
+    fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
     remarks: >-
       \[ [API set: WordApi
@@ -2507,9 +2507,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
-        - id: selectionModeString
+        - id: selectionMode
           description: >-
             Optional. The selection mode must be 'Select', 'Start', or 'End'.
             'Select' is the default.

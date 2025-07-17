@@ -1071,10 +1071,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setZOrder(positionString)
+  - name: setZOrder(position)
     uid: powerpoint!PowerPoint.Shape#setZOrder:member(2)
     package: powerpoint!
-    fullName: setZOrder(positionString)
+    fullName: setZOrder(position)
     summary: >-
       Moves the specified shape up or down the collection's z-order, which
       shifts it in front of or behind other shapes.
@@ -1087,10 +1087,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setZOrder(positionString: "BringForward" | "BringToFront" |
-        "SendBackward" | "SendToBack"): void;
+        setZOrder(position: "BringForward" | "BringToFront" | "SendBackward" |
+        "SendToBack"): void;
       parameters:
-        - id: positionString
+        - id: position
           description: >-
             Specifies how to move the shape within the z-order stack. Uses the
             `ShapeZOrder` enum.

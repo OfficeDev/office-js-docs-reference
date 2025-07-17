@@ -795,10 +795,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
-  - name: getAsImage(formatString)
+  - name: getAsImage(format)
     uid: excel!Excel.Shape#getAsImage:member(2)
     package: excel!
-    fullName: getAsImage(formatString)
+    fullName: getAsImage(format)
     summary: >-
       Converts the shape to an image and returns the image as a Base64-encoded
       string. The DPI is 96. The only supported formats are
@@ -812,10 +812,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" |
-        "SVG"): OfficeExtension.ClientResult<string>;
+        getAsImage(format: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"):
+        OfficeExtension.ClientResult<string>;
       parameters:
-        - id: formatString
+        - id: format
           description: Specifies the format of the image.
           type: '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
       return:
@@ -1086,10 +1086,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: scaleHeight(scaleFactor, scaleTypeString, scaleFromString)
+  - name: scaleHeight(scaleFactor, scaleType, scaleFrom)
     uid: excel!Excel.Shape#scaleHeight:member(2)
     package: excel!
-    fullName: scaleHeight(scaleFactor, scaleTypeString, scaleFromString)
+    fullName: scaleHeight(scaleFactor, scaleType, scaleFrom)
     summary: >-
       Scales the height of the shape by a specified factor. For images, you can
       indicate whether you want to scale the shape relative to the original or
@@ -1103,22 +1103,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" |
-        "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle"
-        | "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleType: "CurrentSize" |
+        "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" |
+        "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
           description: >-
             Specifies the ratio between the height of the shape after you resize
             it and the current or original height.
           type: number
-        - id: scaleTypeString
+        - id: scaleType
           description: >-
             Specifies whether the shape is scaled relative to its original or
             current size. The original size scaling option only works for
             images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFromString
+        - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position
             when the shape is scaled. If omitted, it represents the shape's
@@ -1167,10 +1167,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: scaleWidth(scaleFactor, scaleTypeString, scaleFromString)
+  - name: scaleWidth(scaleFactor, scaleType, scaleFrom)
     uid: excel!Excel.Shape#scaleWidth:member(2)
     package: excel!
-    fullName: scaleWidth(scaleFactor, scaleTypeString, scaleFromString)
+    fullName: scaleWidth(scaleFactor, scaleType, scaleFrom)
     summary: >-
       Scales the width of the shape by a specified factor. For images, you can
       indicate whether you want to scale the shape relative to the original or
@@ -1184,22 +1184,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" |
-        "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle"
-        | "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleType: "CurrentSize" |
+        "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" |
+        "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
           description: >-
             Specifies the ratio between the width of the shape after you resize
             it and the current or original width.
           type: number
-        - id: scaleTypeString
+        - id: scaleType
           description: >-
             Specifies whether the shape is scaled relative to its original or
             current size. The original size scaling option only works for
             images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFromString
+        - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position
             when the shape is scaled. If omitted, it represents the shape's
@@ -1302,10 +1302,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setZOrder(positionString)
+  - name: setZOrder(position)
     uid: excel!Excel.Shape#setZOrder:member(2)
     package: excel!
-    fullName: setZOrder(positionString)
+    fullName: setZOrder(position)
     summary: >-
       Moves the specified shape up or down the collection's z-order, which
       shifts it in front of or behind other shapes.
@@ -1317,10 +1317,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack"
-        | "SendBackward"): void;
+        setZOrder(position: "BringToFront" | "BringForward" | "SendToBack" |
+        "SendBackward"): void;
       parameters:
-        - id: positionString
+        - id: position
           description: >-
             Where to move the shape in the z-order stack relative to the other
             shapes. See `Excel.ShapeZOrder` for details.

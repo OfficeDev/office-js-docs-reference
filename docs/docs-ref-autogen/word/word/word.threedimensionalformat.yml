@@ -1,0 +1,1090 @@
+### YamlMime:TSType
+name: Word.ThreeDimensionalFormat
+uid: word!Word.ThreeDimensionalFormat:class
+package: word!
+fullName: Word.ThreeDimensionalFormat
+summary: Represents a shape's three-dimensional formatting.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: bevelBottomDepth
+    uid: word!Word.ThreeDimensionalFormat#bevelBottomDepth:member
+    package: word!
+    fullName: bevelBottomDepth
+    summary: Specifies the depth of the bottom bevel.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bevelBottomDepth: number;'
+      return:
+        type: number
+  - name: bevelBottomInset
+    uid: word!Word.ThreeDimensionalFormat#bevelBottomInset:member
+    package: word!
+    fullName: bevelBottomInset
+    summary: Specifies the inset size for the bottom bevel.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bevelBottomInset: number;'
+      return:
+        type: number
+  - name: bevelBottomType
+    uid: word!Word.ThreeDimensionalFormat#bevelBottomType:member
+    package: word!
+    fullName: bevelBottomType
+    summary: >-
+      Specifies a `BevelType` value that represents the bevel type for the
+      bottom bevel.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        bevelBottomType: Word.BevelType | "mixed" | "none" | "relaxedInset" |
+        "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" |
+        "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+      return:
+        type: >-
+          <xref uid="word!Word.BevelType:enum" /> | "mixed" | "none" |
+          "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound"
+          | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco"
+  - name: bevelTopDepth
+    uid: word!Word.ThreeDimensionalFormat#bevelTopDepth:member
+    package: word!
+    fullName: bevelTopDepth
+    summary: Specifies the depth of the top bevel.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bevelTopDepth: number;'
+      return:
+        type: number
+  - name: bevelTopInset
+    uid: word!Word.ThreeDimensionalFormat#bevelTopInset:member
+    package: word!
+    fullName: bevelTopInset
+    summary: Specifies the inset size for the top bevel.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bevelTopInset: number;'
+      return:
+        type: number
+  - name: bevelTopType
+    uid: word!Word.ThreeDimensionalFormat#bevelTopType:member
+    package: word!
+    fullName: bevelTopType
+    summary: >-
+      Specifies a `BevelType` value that represents the bevel type for the top
+      bevel.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        bevelTopType: Word.BevelType | "mixed" | "none" | "relaxedInset" |
+        "circle" | "slope" | "cross" | "angle" | "softRound" | "convex" |
+        "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco";
+      return:
+        type: >-
+          <xref uid="word!Word.BevelType:enum" /> | "mixed" | "none" |
+          "relaxedInset" | "circle" | "slope" | "cross" | "angle" | "softRound"
+          | "convex" | "coolSlant" | "divot" | "riblet" | "hardEdge" | "artDeco"
+  - name: context
+    uid: word!Word.ThreeDimensionalFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: contourColor
+    uid: word!Word.ThreeDimensionalFormat#contourColor:member
+    package: word!
+    fullName: contourColor
+    summary: >-
+      Returns a `ColorFormat` object that represents color of the contour of a
+      shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly contourColor: Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+  - name: contourWidth
+    uid: word!Word.ThreeDimensionalFormat#contourWidth:member
+    package: word!
+    fullName: contourWidth
+    summary: Specifies the width of the contour of a shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contourWidth: number;'
+      return:
+        type: number
+  - name: depth
+    uid: word!Word.ThreeDimensionalFormat#depth:member
+    package: word!
+    fullName: depth
+    summary: Specifies the depth of the shape's extrusion.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'depth: number;'
+      return:
+        type: number
+  - name: extrusionColor
+    uid: word!Word.ThreeDimensionalFormat#extrusionColor:member
+    package: word!
+    fullName: extrusionColor
+    summary: >-
+      Returns a `ColorFormat` object that represents the color of the shape's
+      extrusion.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly extrusionColor: Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+  - name: extrusionColorType
+    uid: word!Word.ThreeDimensionalFormat#extrusionColorType:member
+    package: word!
+    fullName: extrusionColorType
+    summary: >-
+      Specifies whether the extrusion color is based on the extruded shape's
+      fill (the front face of the extrusion) and automatically changes when the
+      shape's fill changes, or whether the extrusion color is independent of the
+      shape's fill.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        extrusionColorType: Word.ExtrusionColorType | "mixed" | "automatic" |
+        "custom";
+      return:
+        type: >-
+          <xref uid="word!Word.ExtrusionColorType:enum" /> | "mixed" |
+          "automatic" | "custom"
+  - name: fieldOfView
+    uid: word!Word.ThreeDimensionalFormat#fieldOfView:member
+    package: word!
+    fullName: fieldOfView
+    summary: Specifies the amount of perspective for a shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fieldOfView: number;'
+      return:
+        type: number
+  - name: isPerspective
+    uid: word!Word.ThreeDimensionalFormat#isPerspective:member
+    package: word!
+    fullName: isPerspective
+    summary: >-
+      Specifies `true` if the extrusion appears in perspective — that is, if the
+      walls of the extrusion narrow toward a vanishing point, `false` if the
+      extrusion is a parallel, or orthographic, projection — that is, if the
+      walls don't narrow toward a vanishing point.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPerspective: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.ThreeDimensionalFormat#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: >-
+      Specifies if the specified object, or the formatting applied to it, is
+      visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible: boolean;'
+      return:
+        type: boolean
+  - name: lightAngle
+    uid: word!Word.ThreeDimensionalFormat#lightAngle:member
+    package: word!
+    fullName: lightAngle
+    summary: Specifies the angle of the lighting.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lightAngle: number;'
+      return:
+        type: number
+  - name: presetCamera
+    uid: word!Word.ThreeDimensionalFormat#presetCamera:member
+    package: word!
+    fullName: presetCamera
+    summary: Returns a `PresetCamera` value that represents the camera presets.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly presetCamera: Word.PresetCamera | "Mixed" |
+        "LegacyObliqueTopLeft" | "LegacyObliqueTop" | "LegacyObliqueTopRight" |
+        "LegacyObliqueLeft" | "LegacyObliqueFront" | "LegacyObliqueRight" |
+        "LegacyObliqueBottomLeft" | "LegacyObliqueBottom" |
+        "LegacyObliqueBottomRight" | "LegacyPerspectiveTopLeft" |
+        "LegacyPerspectiveTop" | "LegacyPerspectiveTopRight" |
+        "LegacyPerspectiveLeft" | "LegacyPerspectiveFront" |
+        "LegacyPerspectiveRight" | "LegacyPerspectiveBottomLeft" |
+        "LegacyPerspectiveBottom" | "LegacyPerspectiveBottomRight" |
+        "OrthographicFront" | "IsometricTopUp" | "IsometricTopDown" |
+        "IsometricBottomUp" | "IsometricBottomDown" | "IsometricLeftUp" |
+        "IsometricLeftDown" | "IsometricRightUp" | "IsometricRightDown" |
+        "IsometricOffAxis1Left" | "IsometricOffAxis1Right" |
+        "IsometricOffAxis1Top" | "IsometricOffAxis2Left" |
+        "IsometricOffAxis2Right" | "IsometricOffAxis2Top" |
+        "IsometricOffAxis3Left" | "IsometricOffAxis3Right" |
+        "IsometricOffAxis3Bottom" | "IsometricOffAxis4Left" |
+        "IsometricOffAxis4Right" | "IsometricOffAxis4Bottom" | "ObliqueTopLeft"
+        | "ObliqueTop" | "ObliqueTopRight" | "ObliqueLeft" | "ObliqueRight" |
+        "ObliqueBottomLeft" | "ObliqueBottom" | "ObliqueBottomRight" |
+        "PerspectiveFront" | "PerspectiveLeft" | "PerspectiveRight" |
+        "PerspectiveAbove" | "PerspectiveBelow" | "PerspectiveAboveLeftFacing" |
+        "PerspectiveAboveRightFacing" | "PerspectiveContrastingLeftFacing" |
+        "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing" |
+        "PerspectiveHeroicRightFacing" | "PerspectiveHeroicExtremeLeftFacing" |
+        "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" |
+        "PerspectiveRelaxedModerately";
+      return:
+        type: >-
+          <xref uid="word!Word.PresetCamera:enum" /> | "Mixed" |
+          "LegacyObliqueTopLeft" | "LegacyObliqueTop" | "LegacyObliqueTopRight"
+          | "LegacyObliqueLeft" | "LegacyObliqueFront" | "LegacyObliqueRight" |
+          "LegacyObliqueBottomLeft" | "LegacyObliqueBottom" |
+          "LegacyObliqueBottomRight" | "LegacyPerspectiveTopLeft" |
+          "LegacyPerspectiveTop" | "LegacyPerspectiveTopRight" |
+          "LegacyPerspectiveLeft" | "LegacyPerspectiveFront" |
+          "LegacyPerspectiveRight" | "LegacyPerspectiveBottomLeft" |
+          "LegacyPerspectiveBottom" | "LegacyPerspectiveBottomRight" |
+          "OrthographicFront" | "IsometricTopUp" | "IsometricTopDown" |
+          "IsometricBottomUp" | "IsometricBottomDown" | "IsometricLeftUp" |
+          "IsometricLeftDown" | "IsometricRightUp" | "IsometricRightDown" |
+          "IsometricOffAxis1Left" | "IsometricOffAxis1Right" |
+          "IsometricOffAxis1Top" | "IsometricOffAxis2Left" |
+          "IsometricOffAxis2Right" | "IsometricOffAxis2Top" |
+          "IsometricOffAxis3Left" | "IsometricOffAxis3Right" |
+          "IsometricOffAxis3Bottom" | "IsometricOffAxis4Left" |
+          "IsometricOffAxis4Right" | "IsometricOffAxis4Bottom" |
+          "ObliqueTopLeft" | "ObliqueTop" | "ObliqueTopRight" | "ObliqueLeft" |
+          "ObliqueRight" | "ObliqueBottomLeft" | "ObliqueBottom" |
+          "ObliqueBottomRight" | "PerspectiveFront" | "PerspectiveLeft" |
+          "PerspectiveRight" | "PerspectiveAbove" | "PerspectiveBelow" |
+          "PerspectiveAboveLeftFacing" | "PerspectiveAboveRightFacing" |
+          "PerspectiveContrastingLeftFacing" |
+          "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing" |
+          "PerspectiveHeroicRightFacing" | "PerspectiveHeroicExtremeLeftFacing"
+          | "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" |
+          "PerspectiveRelaxedModerately"
+  - name: presetExtrusionDirection
+    uid: word!Word.ThreeDimensionalFormat#presetExtrusionDirection:member
+    package: word!
+    fullName: presetExtrusionDirection
+    summary: >-
+      Returns the direction taken by the extrusion's sweep path leading away
+      from the extruded shape (the front face of the extrusion).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly presetExtrusionDirection: Word.PresetExtrusionDirection |
+        "Mixed" | "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None" |
+        "Left" | "TopRight" | "Top" | "TopLeft";
+      return:
+        type: >-
+          <xref uid="word!Word.PresetExtrusionDirection:enum" /> | "Mixed" |
+          "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" |
+          "TopRight" | "Top" | "TopLeft"
+  - name: presetLighting
+    uid: word!Word.ThreeDimensionalFormat#presetLighting:member
+    package: word!
+    fullName: presetLighting
+    summary: Specifies a `LightRigType` value that represents the lighting preset.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        presetLighting: Word.LightRigType | "Mixed" | "LegacyFlat1" |
+        "LegacyFlat2" | "LegacyFlat3" | "LegacyFlat4" | "LegacyNormal1" |
+        "LegacyNormal2" | "LegacyNormal3" | "LegacyNormal4" | "LegacyHarsh1" |
+        "LegacyHarsh2" | "LegacyHarsh3" | "LegacyHarsh4" | "ThreePoint" |
+        "Balanced" | "Soft" | "Harsh" | "Flood" | "Contrasting" | "Morning" |
+        "Sunrise" | "Sunset" | "Chilly" | "Freezing" | "Flat" | "TwoPoint" |
+        "Glow" | "BrightRoom";
+      return:
+        type: >-
+          <xref uid="word!Word.LightRigType:enum" /> | "Mixed" | "LegacyFlat1" |
+          "LegacyFlat2" | "LegacyFlat3" | "LegacyFlat4" | "LegacyNormal1" |
+          "LegacyNormal2" | "LegacyNormal3" | "LegacyNormal4" | "LegacyHarsh1" |
+          "LegacyHarsh2" | "LegacyHarsh3" | "LegacyHarsh4" | "ThreePoint" |
+          "Balanced" | "Soft" | "Harsh" | "Flood" | "Contrasting" | "Morning" |
+          "Sunrise" | "Sunset" | "Chilly" | "Freezing" | "Flat" | "TwoPoint" |
+          "Glow" | "BrightRoom"
+  - name: presetLightingDirection
+    uid: word!Word.ThreeDimensionalFormat#presetLightingDirection:member
+    package: word!
+    fullName: presetLightingDirection
+    summary: Specifies the position of the light source relative to the extrusion.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        presetLightingDirection: Word.PresetLightingDirection | "Mixed" |
+        "TopLeft" | "Top" | "TopRight" | "Left" | "None" | "Right" |
+        "BottomLeft" | "Bottom" | "BottomRight";
+      return:
+        type: >-
+          <xref uid="word!Word.PresetLightingDirection:enum" /> | "Mixed" |
+          "TopLeft" | "Top" | "TopRight" | "Left" | "None" | "Right" |
+          "BottomLeft" | "Bottom" | "BottomRight"
+  - name: presetLightingSoftness
+    uid: word!Word.ThreeDimensionalFormat#presetLightingSoftness:member
+    package: word!
+    fullName: presetLightingSoftness
+    summary: Specifies the intensity of the extrusion lighting.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        presetLightingSoftness: Word.PresetLightingSoftness | "Mixed" | "Dim" |
+        "Normal" | "Bright";
+      return:
+        type: >-
+          <xref uid="word!Word.PresetLightingSoftness:enum" /> | "Mixed" | "Dim"
+          | "Normal" | "Bright"
+  - name: presetMaterial
+    uid: word!Word.ThreeDimensionalFormat#presetMaterial:member
+    package: word!
+    fullName: presetMaterial
+    summary: Specifies the extrusion surface material.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        presetMaterial: Word.PresetMaterial | "Mixed" | "Matte" | "Plastic" |
+        "Metal" | "WireFrame" | "Matte2" | "Plastic2" | "Metal2" | "WarmMatte" |
+        "TranslucentPowder" | "Powder" | "DarkEdge" | "SoftEdge" | "Clear" |
+        "Flat" | "SoftMetal";
+      return:
+        type: >-
+          <xref uid="word!Word.PresetMaterial:enum" /> | "Mixed" | "Matte" |
+          "Plastic" | "Metal" | "WireFrame" | "Matte2" | "Plastic2" | "Metal2" |
+          "WarmMatte" | "TranslucentPowder" | "Powder" | "DarkEdge" | "SoftEdge"
+          | "Clear" | "Flat" | "SoftMetal"
+  - name: presetThreeDimensionalFormat
+    uid: word!Word.ThreeDimensionalFormat#presetThreeDimensionalFormat:member
+    package: word!
+    fullName: presetThreeDimensionalFormat
+    summary: Returns the preset extrusion format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly presetThreeDimensionalFormat: Word.PresetThreeDimensionalFormat
+        | "Mixed" | "Format1" | "Format2" | "Format3" | "Format4" | "Format5" |
+        "Format6" | "Format7" | "Format8" | "Format9" | "Format10" | "Format11"
+        | "Format12" | "Format13" | "Format14" | "Format15" | "Format16" |
+        "Format17" | "Format18" | "Format19" | "Format20";
+      return:
+        type: >-
+          <xref uid="word!Word.PresetThreeDimensionalFormat:enum" /> | "Mixed" |
+          "Format1" | "Format2" | "Format3" | "Format4" | "Format5" | "Format6"
+          | "Format7" | "Format8" | "Format9" | "Format10" | "Format11" |
+          "Format12" | "Format13" | "Format14" | "Format15" | "Format16" |
+          "Format17" | "Format18" | "Format19" | "Format20"
+  - name: projectText
+    uid: word!Word.ThreeDimensionalFormat#projectText:member
+    package: word!
+    fullName: projectText
+    summary: >-
+      Specifies whether text on a shape rotates with shape. `true` rotates the
+      text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'projectText: boolean;'
+      return:
+        type: boolean
+  - name: rotationX
+    uid: word!Word.ThreeDimensionalFormat#rotationX:member
+    package: word!
+    fullName: rotationX
+    summary: Specifies the rotation of the extruded shape around the x-axis in degrees.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotationX: number;'
+      return:
+        type: number
+  - name: rotationY
+    uid: word!Word.ThreeDimensionalFormat#rotationY:member
+    package: word!
+    fullName: rotationY
+    summary: Specifies the rotation of the extruded shape around the y-axis in degrees.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotationY: number;'
+      return:
+        type: number
+  - name: rotationZ
+    uid: word!Word.ThreeDimensionalFormat#rotationZ:member
+    package: word!
+    fullName: rotationZ
+    summary: Specifies the z-axis rotation of the camera.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotationZ: number;'
+      return:
+        type: number
+  - name: z
+    uid: word!Word.ThreeDimensionalFormat#z:member
+    package: word!
+    fullName: z
+    summary: Specifies the position on the z-axis for the shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'z: number;'
+      return:
+        type: number
+methods:
+  - name: incrementRotationHorizontal(increment)
+    uid: word!Word.ThreeDimensionalFormat#incrementRotationHorizontal:member(1)
+    package: word!
+    fullName: incrementRotationHorizontal(increment)
+    summary: >-
+      Horizontally rotates a shape on the x-axis. The number of degrees to
+      rotate.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementRotationHorizontal(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: incrementRotationVertical(increment)
+    uid: word!Word.ThreeDimensionalFormat#incrementRotationVertical:member(1)
+    package: word!
+    fullName: incrementRotationVertical(increment)
+    summary: Vertically rotates a shape on the y-axis. The number of degrees to rotate.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementRotationVertical(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: incrementRotationX(increment)
+    uid: word!Word.ThreeDimensionalFormat#incrementRotationX:member(1)
+    package: word!
+    fullName: incrementRotationX(increment)
+    summary: Changes the rotation around the x-axis. The number of degrees to rotate.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementRotationX(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: incrementRotationY(increment)
+    uid: word!Word.ThreeDimensionalFormat#incrementRotationY:member(1)
+    package: word!
+    fullName: incrementRotationY(increment)
+    summary: Changes the rotation around the y-axis. The number of degrees to rotate.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementRotationY(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: incrementRotationZ(increment)
+    uid: word!Word.ThreeDimensionalFormat#incrementRotationZ:member(1)
+    package: word!
+    fullName: incrementRotationZ(increment)
+    summary: Rotates a shape on the z-axis. The number of degrees to rotate.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementRotationZ(increment: number): void;'
+      parameters:
+        - id: increment
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.ThreeDimensionalFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ThreeDimensionalFormatLoadOptions):
+        Word.ThreeDimensionalFormat;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.ThreeDimensionalFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ThreeDimensionalFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.ThreeDimensionalFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ThreeDimensionalFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
+        description: ''
+  - name: resetRotation()
+    uid: word!Word.ThreeDimensionalFormat#resetRotation:member(1)
+    package: word!
+    fullName: resetRotation()
+    summary: Resets the extrusion rotation around the x-axis, y-axis, and z-axis to 0.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resetRotation(): void;'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.ThreeDimensionalFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ThreeDimensionalFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.ThreeDimensionalFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ThreeDimensionalFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: setExtrusionDirection(presetExtrusionDirection)
+    uid: word!Word.ThreeDimensionalFormat#setExtrusionDirection:member(1)
+    package: word!
+    fullName: setExtrusionDirection(presetExtrusionDirection)
+    summary: Sets the direction of the extrusion's sweep path.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setExtrusionDirection(presetExtrusionDirection:
+        Word.PresetExtrusionDirection): void;
+      parameters:
+        - id: presetExtrusionDirection
+          description: The preset direction.
+          type: <xref uid="word!Word.PresetExtrusionDirection:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setExtrusionDirection(presetExtrusionDirection)
+    uid: word!Word.ThreeDimensionalFormat#setExtrusionDirection:member(2)
+    package: word!
+    fullName: setExtrusionDirection(presetExtrusionDirection)
+    summary: Sets the direction of the extrusion's sweep path.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setExtrusionDirection(presetExtrusionDirection: "Mixed" | "BottomRight"
+        | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" | "TopRight" |
+        "Top" | "TopLeft"): void;
+      parameters:
+        - id: presetExtrusionDirection
+          description: The preset direction.
+          type: >-
+            "Mixed" | "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None"
+            | "Left" | "TopRight" | "Top" | "TopLeft"
+      return:
+        type: void
+        description: ''
+  - name: setPresetCamera(presetCamera)
+    uid: word!Word.ThreeDimensionalFormat#setPresetCamera:member(1)
+    package: word!
+    fullName: setPresetCamera(presetCamera)
+    summary: Sets the camera preset for the shape. The preset camera type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setPresetCamera(presetCamera: Word.PresetCamera): void;'
+      parameters:
+        - id: presetCamera
+          description: ''
+          type: <xref uid="word!Word.PresetCamera:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setPresetCamera(presetCamera)
+    uid: word!Word.ThreeDimensionalFormat#setPresetCamera:member(2)
+    package: word!
+    fullName: setPresetCamera(presetCamera)
+    summary: Sets the camera preset for the shape. The preset camera type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setPresetCamera(presetCamera: "Mixed" | "LegacyObliqueTopLeft" |
+        "LegacyObliqueTop" | "LegacyObliqueTopRight" | "LegacyObliqueLeft" |
+        "LegacyObliqueFront" | "LegacyObliqueRight" | "LegacyObliqueBottomLeft"
+        | "LegacyObliqueBottom" | "LegacyObliqueBottomRight" |
+        "LegacyPerspectiveTopLeft" | "LegacyPerspectiveTop" |
+        "LegacyPerspectiveTopRight" | "LegacyPerspectiveLeft" |
+        "LegacyPerspectiveFront" | "LegacyPerspectiveRight" |
+        "LegacyPerspectiveBottomLeft" | "LegacyPerspectiveBottom" |
+        "LegacyPerspectiveBottomRight" | "OrthographicFront" | "IsometricTopUp"
+        | "IsometricTopDown" | "IsometricBottomUp" | "IsometricBottomDown" |
+        "IsometricLeftUp" | "IsometricLeftDown" | "IsometricRightUp" |
+        "IsometricRightDown" | "IsometricOffAxis1Left" |
+        "IsometricOffAxis1Right" | "IsometricOffAxis1Top" |
+        "IsometricOffAxis2Left" | "IsometricOffAxis2Right" |
+        "IsometricOffAxis2Top" | "IsometricOffAxis3Left" |
+        "IsometricOffAxis3Right" | "IsometricOffAxis3Bottom" |
+        "IsometricOffAxis4Left" | "IsometricOffAxis4Right" |
+        "IsometricOffAxis4Bottom" | "ObliqueTopLeft" | "ObliqueTop" |
+        "ObliqueTopRight" | "ObliqueLeft" | "ObliqueRight" | "ObliqueBottomLeft"
+        | "ObliqueBottom" | "ObliqueBottomRight" | "PerspectiveFront" |
+        "PerspectiveLeft" | "PerspectiveRight" | "PerspectiveAbove" |
+        "PerspectiveBelow" | "PerspectiveAboveLeftFacing" |
+        "PerspectiveAboveRightFacing" | "PerspectiveContrastingLeftFacing" |
+        "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing" |
+        "PerspectiveHeroicRightFacing" | "PerspectiveHeroicExtremeLeftFacing" |
+        "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" |
+        "PerspectiveRelaxedModerately"): void;
+      parameters:
+        - id: presetCamera
+          description: ''
+          type: >-
+            "Mixed" | "LegacyObliqueTopLeft" | "LegacyObliqueTop" |
+            "LegacyObliqueTopRight" | "LegacyObliqueLeft" | "LegacyObliqueFront"
+            | "LegacyObliqueRight" | "LegacyObliqueBottomLeft" |
+            "LegacyObliqueBottom" | "LegacyObliqueBottomRight" |
+            "LegacyPerspectiveTopLeft" | "LegacyPerspectiveTop" |
+            "LegacyPerspectiveTopRight" | "LegacyPerspectiveLeft" |
+            "LegacyPerspectiveFront" | "LegacyPerspectiveRight" |
+            "LegacyPerspectiveBottomLeft" | "LegacyPerspectiveBottom" |
+            "LegacyPerspectiveBottomRight" | "OrthographicFront" |
+            "IsometricTopUp" | "IsometricTopDown" | "IsometricBottomUp" |
+            "IsometricBottomDown" | "IsometricLeftUp" | "IsometricLeftDown" |
+            "IsometricRightUp" | "IsometricRightDown" | "IsometricOffAxis1Left"
+            | "IsometricOffAxis1Right" | "IsometricOffAxis1Top" |
+            "IsometricOffAxis2Left" | "IsometricOffAxis2Right" |
+            "IsometricOffAxis2Top" | "IsometricOffAxis3Left" |
+            "IsometricOffAxis3Right" | "IsometricOffAxis3Bottom" |
+            "IsometricOffAxis4Left" | "IsometricOffAxis4Right" |
+            "IsometricOffAxis4Bottom" | "ObliqueTopLeft" | "ObliqueTop" |
+            "ObliqueTopRight" | "ObliqueLeft" | "ObliqueRight" |
+            "ObliqueBottomLeft" | "ObliqueBottom" | "ObliqueBottomRight" |
+            "PerspectiveFront" | "PerspectiveLeft" | "PerspectiveRight" |
+            "PerspectiveAbove" | "PerspectiveBelow" |
+            "PerspectiveAboveLeftFacing" | "PerspectiveAboveRightFacing" |
+            "PerspectiveContrastingLeftFacing" |
+            "PerspectiveContrastingRightFacing" | "PerspectiveHeroicLeftFacing"
+            | "PerspectiveHeroicRightFacing" |
+            "PerspectiveHeroicExtremeLeftFacing" |
+            "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" |
+            "PerspectiveRelaxedModerately"
+      return:
+        type: void
+        description: ''
+  - name: setThreeDimensionalFormat(presetThreeDimensionalFormat)
+    uid: word!Word.ThreeDimensionalFormat#setThreeDimensionalFormat:member(1)
+    package: word!
+    fullName: setThreeDimensionalFormat(presetThreeDimensionalFormat)
+    summary: Sets the preset extrusion format. The preset format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setThreeDimensionalFormat(presetThreeDimensionalFormat:
+        Word.PresetThreeDimensionalFormat): void;
+      parameters:
+        - id: presetThreeDimensionalFormat
+          description: ''
+          type: <xref uid="word!Word.PresetThreeDimensionalFormat:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setThreeDimensionalFormat(presetThreeDimensionalFormat)
+    uid: word!Word.ThreeDimensionalFormat#setThreeDimensionalFormat:member(2)
+    package: word!
+    fullName: setThreeDimensionalFormat(presetThreeDimensionalFormat)
+    summary: Sets the preset extrusion format. The preset format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setThreeDimensionalFormat(presetThreeDimensionalFormat: "Mixed" |
+        "Format1" | "Format2" | "Format3" | "Format4" | "Format5" | "Format6" |
+        "Format7" | "Format8" | "Format9" | "Format10" | "Format11" | "Format12"
+        | "Format13" | "Format14" | "Format15" | "Format16" | "Format17" |
+        "Format18" | "Format19" | "Format20"): void;
+      parameters:
+        - id: presetThreeDimensionalFormat
+          description: ''
+          type: >-
+            "Mixed" | "Format1" | "Format2" | "Format3" | "Format4" | "Format5"
+            | "Format6" | "Format7" | "Format8" | "Format9" | "Format10" |
+            "Format11" | "Format12" | "Format13" | "Format14" | "Format15" |
+            "Format16" | "Format17" | "Format18" | "Format19" | "Format20"
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.ThreeDimensionalFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.ThreeDimensionalFormat` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Word.Interfaces.ThreeDimensionalFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ThreeDimensionalFormatData;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ThreeDimensionalFormatData:interface"
+          />
+        description: ''
+  - name: track()
+    uid: word!Word.ThreeDimensionalFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ThreeDimensionalFormat;'
+      return:
+        type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.ThreeDimensionalFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ThreeDimensionalFormat;'
+      return:
+        type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

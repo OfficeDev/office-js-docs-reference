@@ -108,7 +108,7 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelUpdateData#numberFormat:member
     package: excel!
     fullName: numberFormat
-    summary: String value that represents the format code for data label.
+    summary: Specifies the format code for data label.
     remarks: >-
       \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

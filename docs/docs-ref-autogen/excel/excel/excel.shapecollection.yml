@@ -89,10 +89,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Shape:class" />
         description: ''
-  - name: addGeometricShape(geometricShapeTypeString)
+  - name: addGeometricShape(geometricShapeType)
     uid: excel!Excel.ShapeCollection#addGeometricShape:member(2)
     package: excel!
-    fullName: addGeometricShape(geometricShapeTypeString)
+    fullName: addGeometricShape(geometricShapeType)
     summary: >-
       Adds a geometric shape to the worksheet. Returns a `Shape` object that
       represents the new shape.
@@ -104,7 +104,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" |
+        addGeometricShape(geometricShapeType: "LineInverse" | "Triangle" |
         "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" |
         "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
         "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
@@ -155,7 +155,7 @@ methods:
         "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
         "ChartStar" | "ChartPlus"): Excel.Shape;
       parameters:
-        - id: geometricShapeTypeString
+        - id: geometricShapeType
           description: >-
             Represents the type of the geometric shape. See
             `Excel.GeometricShapeType` for details.
@@ -386,10 +386,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Shape:class" />
         description: ''
-  - name: addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)
+  - name: addLine(startLeft, startTop, endLeft, endTop, connectorType)
     uid: excel!Excel.ShapeCollection#addLine:member(2)
     package: excel!
-    fullName: addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)
+    fullName: addLine(startLeft, startTop, endLeft, endTop, connectorType)
     summary: >-
       Adds a line to worksheet. Returns a `Shape` object that represents the new
       line.
@@ -402,8 +402,7 @@ methods:
     syntax:
       content: >-
         addLine(startLeft: number, startTop: number, endLeft: number, endTop:
-        number, connectorTypeString?: "Straight" | "Elbow" | "Curve"):
-        Excel.Shape;
+        number, connectorType?: "Straight" | "Elbow" | "Curve"): Excel.Shape;
       parameters:
         - id: startLeft
           description: >-
@@ -425,7 +424,7 @@ methods:
             The distance, in points, from the end of the line to the top of the
             worksheet.
           type: number
-        - id: connectorTypeString
+        - id: connectorType
           description: >-
             Represents the connector type. See `Excel.ConnectorType` for
             details.

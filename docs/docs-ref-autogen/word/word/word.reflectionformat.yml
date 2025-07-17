@@ -1,0 +1,318 @@
+### YamlMime:TSType
+name: Word.ReflectionFormat
+uid: word!Word.ReflectionFormat:class
+package: word!
+fullName: Word.ReflectionFormat
+summary: Represents the reflection formatting for a shape in Word.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: blur
+    uid: word!Word.ReflectionFormat#blur:member
+    package: word!
+    fullName: blur
+    summary: >-
+      Specifies the degree of blur effect applied to the `ReflectionFormat`
+      object as a value between 0.0 and 100.0.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'blur: number;'
+      return:
+        type: number
+  - name: context
+    uid: word!Word.ReflectionFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: offset
+    uid: word!Word.ReflectionFormat#offset:member
+    package: word!
+    fullName: offset
+    summary: >-
+      Specifies the amount of separation, in points, of the reflected image from
+      the shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'offset: number;'
+      return:
+        type: number
+  - name: size
+    uid: word!Word.ReflectionFormat#size:member
+    package: word!
+    fullName: size
+    summary: >-
+      Specifies the size of the reflection as a percentage of the reflected
+      shape from 0 to 100.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size: number;'
+      return:
+        type: number
+  - name: transparency
+    uid: word!Word.ReflectionFormat#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency for the reflection effect as a value
+      between 0.0 (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type: number
+  - name: type
+    uid: word!Word.ReflectionFormat#type:member
+    package: word!
+    fullName: type
+    summary: >-
+      Specifies a `ReflectionType` value that represents the type and direction
+      of the lighting for a shape reflection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.ReflectionType | "Mixed" | "None" | "Type1" | "Type2" |
+        "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9";
+      return:
+        type: >-
+          <xref uid="word!Word.ReflectionType:enum" /> | "Mixed" | "None" |
+          "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" |
+          "Type8" | "Type9"
+methods:
+  - name: load(options)
+    uid: word!Word.ReflectionFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ReflectionFormatLoadOptions):
+        Word.ReflectionFormat;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.ReflectionFormatLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.ReflectionFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.ReflectionFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ReflectionFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.ReflectionFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.ReflectionFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ReflectionFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.ReflectionFormat:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.ReflectionFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ReflectionFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.ReflectionFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.ReflectionFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ReflectionFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.ReflectionFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.ReflectionFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.ReflectionFormat`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.ReflectionFormatData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ReflectionFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ReflectionFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.ReflectionFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ReflectionFormat;'
+      return:
+        type: <xref uid="word!Word.ReflectionFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.ReflectionFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ReflectionFormat;'
+      return:
+        type: <xref uid="word!Word.ReflectionFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

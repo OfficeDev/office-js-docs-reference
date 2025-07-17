@@ -285,9 +285,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationTypeString - Specifies the calculation type to use. See `Excel.CalculationType` for details.
+         * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
-        calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;
+        calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
         
         
         /**
@@ -872,9 +872,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
+         * @param applyTo - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
         
         
         
@@ -895,9 +895,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param shiftString - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
+         * @param shift - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
          */
-        delete(shiftString: "Up" | "Left"): void;
+        delete(shift: "Up" | "Left"): void;
         
         
         
@@ -1046,9 +1046,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param shiftString - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
+         * @param shift - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
          */
-        insert(shiftString: "Down" | "Right"): Excel.Range;
+        insert(shift: "Down" | "Right"): Excel.Range;
         
         
         
@@ -1848,7 +1848,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param valuesString - Optional. A 2D array of unformatted values of the table row.
+         * @param values - Optional. A 2D array of unformatted values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
@@ -2252,9 +2252,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param indexString - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
+         * @param index - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
          */
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -2413,11 +2413,11 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param typeString - Represents the type of a chart. See `Excel.ChartType` for details.
+         * @param type - Represents the type of a chart. See `Excel.ChartType` for details.
          * @param sourceData - The `Range` object corresponding to the source data.
-         * @param seriesByString - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
+         * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         
         /**
          * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
@@ -2603,9 +2603,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param sourceData - The range object corresponding to the source data.
-         * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
+         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
          */
-        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;
+        setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): void;
         /**
          * Positions the chart relative to cells on the worksheet.
          *
@@ -9142,6 +9142,9 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `conditionalRangeBorderCollection.toJSON()`. */
         export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
+        }
+        /** An interface describing the data returned by calling `customFunctionManager.toJSON()`. */
+        export interface CustomFunctionManagerData {
         }
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {

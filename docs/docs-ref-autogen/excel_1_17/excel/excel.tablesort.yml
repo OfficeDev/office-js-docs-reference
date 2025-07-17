@@ -123,10 +123,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: apply(fields, matchCase, methodString)
+  - name: apply(fields, matchCase, method)
     uid: excel!Excel.TableSort#apply:member(2)
     package: excel!
-    fullName: apply(fields, matchCase, methodString)
+    fullName: apply(fields, matchCase, method)
     summary: Perform a sort operation.
     remarks: >-
       \[ [API set: ExcelApi
@@ -136,8 +136,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?:
-        "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, method?: "PinYin"
+        | "StrokeCount"): void;
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -145,7 +145,7 @@ methods:
         - id: matchCase
           description: Optional. Whether to have the casing impact string ordering.
           type: boolean
-        - id: methodString
+        - id: method
           description: Optional. The ordering method used for Chinese characters.
           type: '"PinYin" | "StrokeCount"'
       return:

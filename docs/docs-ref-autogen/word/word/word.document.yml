@@ -418,10 +418,10 @@ methods:
       return:
         type: <xref uid="word!Word.Style:class" />
         description: ''
-  - name: addStyle(name, typeString)
+  - name: addStyle(name, type)
     uid: word!Word.Document#addStyle:member(2)
     package: word!
-    fullName: addStyle(name, typeString)
+    fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
     remarks: >-
       \[ [API set: WordApi
@@ -431,13 +431,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" |
+        addStyle(name: string, type: "Character" | "List" | "Paragraph" |
         "Table"): Word.Style;
       parameters:
         - id: name
           description: Required. A string representing the style name.
           type: string
-        - id: typeString
+        - id: type
           description: >-
             Required. The style type, including character, list, paragraph, or
             table.
@@ -490,10 +490,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: close(closeBehaviorString)
+  - name: close(closeBehavior)
     uid: word!Word.Document#close:member(2)
     package: word!
-    fullName: close(closeBehaviorString)
+    fullName: close(closeBehavior)
     summary: |-
       Closes the current document.
 
@@ -505,9 +505,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
+      content: 'close(closeBehavior?: "Save" | "SkipSave"): void;'
       parameters:
-        - id: closeBehaviorString
+        - id: closeBehavior
           description: >-
             Optional. The close behavior must be 'Save' or 'SkipSave'. Default
             value is 'Save'.
@@ -1011,10 +1011,10 @@ methods:
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: ''
-  - name: importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)
+  - name: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     uid: word!Word.Document#importStylesFromJson:member(2)
     package: word!
-    fullName: importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)
+    fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     summary: Import styles from a JSON-formatted string.
     remarks: >-
       \[ [API set: WordApi
@@ -1029,13 +1029,13 @@ methods:
     syntax:
       content: >-
         importStylesFromJson(stylesJson: string,
-        importedStylesConflictBehaviorString?: "Ignore" | "Overwrite" |
-        "CreateNew"): OfficeExtension.ClientResult<string[]>;
+        importedStylesConflictBehavior?: "Ignore" | "Overwrite" | "CreateNew"):
+        OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: stylesJson
           description: Required. A JSON-formatted string representing the styles.
           type: string
-        - id: importedStylesConflictBehaviorString
+        - id: importedStylesConflictBehavior
           description: >-
             Optional. Specifies how to handle any imported styles with the same
             name as existing styles in the current document.
@@ -1305,10 +1305,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: save(saveBehaviorString, fileName)
+  - name: save(saveBehavior, fileName)
     uid: word!Word.Document#save:member(2)
     package: word!
-    fullName: save(saveBehaviorString, fileName)
+    fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
       \[ [API set: WordApi
@@ -1321,9 +1321,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;'
+      content: 'save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;'
       parameters:
-        - id: saveBehaviorString
+        - id: saveBehavior
           description: >-
             Optional. The save behavior must be 'Save' or 'Prompt'. Default
             value is 'Save'.

@@ -95,10 +95,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.CommentReply:class" />
         description: ''
-  - name: add(content, contentTypeString)
+  - name: add(content, contentType)
     uid: excel!Excel.CommentReplyCollection#add:member(2)
     package: excel!
-    fullName: add(content, contentTypeString)
+    fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
     remarks: >-
       \[ [API set: ExcelApi
@@ -109,7 +109,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(content: CommentRichContent | string, contentTypeString?: "Plain" |
+        add(content: CommentRichContent | string, contentType?: "Plain" |
         "Mention"): Excel.CommentReply;
       parameters:
         - id: content
@@ -119,7 +119,7 @@ methods:
             \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
             object\]
           type: <xref uid="excel!Excel.CommentRichContent:interface" /> | string
-        - id: contentTypeString
+        - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
             default value is enum `ContentType.Plain`<!-- -->. \[Api set:

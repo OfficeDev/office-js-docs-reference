@@ -1,0 +1,44 @@
+### YamlMime:TSEnum
+name: Word.ListApplyTo
+uid: word!Word.ListApplyTo:enum
+package: word!
+fullName: Word.ListApplyTo
+summary: Specifies the portion of a list to which to apply a list template.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: selection
+    uid: word!Word.ListApplyTo.selection:member
+    package: word!
+    summary: >-
+      Applies the list template to the selection.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Selection"'
+  - name: thisPointForward
+    uid: word!Word.ListApplyTo.thisPointForward:member
+    package: word!
+    summary: >-
+      Applies the list template from the cursor insertion point to the end of
+      the list.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ThisPointForward"'
+  - name: wholeList
+    uid: word!Word.ListApplyTo.wholeList:member
+    package: word!
+    summary: >-
+      Applies the list template to the entire list.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WholeList"'

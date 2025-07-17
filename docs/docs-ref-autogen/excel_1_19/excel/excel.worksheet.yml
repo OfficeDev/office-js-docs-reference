@@ -784,10 +784,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Worksheet:class" />
         description: The newly created worksheet.
-  - name: copy(positionTypeString, relativeTo)
+  - name: copy(positionType, relativeTo)
     uid: excel!Excel.Worksheet#copy:member(2)
     package: excel!
-    fullName: copy(positionTypeString, relativeTo)
+    fullName: copy(positionType, relativeTo)
     summary: Copies a worksheet and places it at the specified position.
     remarks: >-
       \[ [API set: ExcelApi
@@ -797,10 +797,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" |
-        "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        copy(positionType?: "None" | "Before" | "After" | "Beginning" | "End",
+        relativeTo?: Excel.Worksheet): Excel.Worksheet;
       parameters:
-        - id: positionTypeString
+        - id: positionType
           description: >-
             The location in the workbook to place the newly created worksheet.
             The default value is "None", which inserts the worksheet at the

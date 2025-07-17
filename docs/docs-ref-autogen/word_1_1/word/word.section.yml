@@ -128,10 +128,10 @@ methods:
       return:
         type: <xref uid="word!Word.Body:class" />
         description: ''
-  - name: getFooter(typeString)
+  - name: getFooter(type)
     uid: word!Word.Section#getFooter:member(2)
     package: word!
-    fullName: getFooter(typeString)
+    fullName: getFooter(type)
     summary: Gets one of the section's footers.
     remarks: >-
       \[ [API set: WordApi
@@ -161,9 +161,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      content: 'getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       parameters:
-        - id: typeString
+        - id: type
           description: >-
             Required. The type of footer to return. This value must be:
             'Primary', 'FirstPage', or 'EvenPages'.
@@ -214,10 +214,10 @@ methods:
       return:
         type: <xref uid="word!Word.Body:class" />
         description: ''
-  - name: getHeader(typeString)
+  - name: getHeader(type)
     uid: word!Word.Section#getHeader:member(2)
     package: word!
-    fullName: getHeader(typeString)
+    fullName: getHeader(type)
     summary: Gets one of the section's headers.
     remarks: >-
       \[ [API set: WordApi
@@ -264,9 +264,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      content: 'getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       parameters:
-        - id: typeString
+        - id: type
           description: >-
             Required. The type of header to return. This value must be:
             'Primary', 'FirstPage', or 'EvenPages'.

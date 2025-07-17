@@ -926,10 +926,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: scaleHeight(scaleFactor, scaleTypeString, scaleFromString)
+  - name: scaleHeight(scaleFactor, scaleType, scaleFrom)
     uid: word!Word.Shape#scaleHeight:member(2)
     package: word!
-    fullName: scaleHeight(scaleFactor, scaleTypeString, scaleFromString)
+    fullName: scaleHeight(scaleFactor, scaleType, scaleFrom)
     summary: >-
       Scales the height of the shape by a specified factor. For images, you can
       indicate whether you want to scale the shape relative to the original or
@@ -943,22 +943,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" |
-        "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle"
-        | "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleType: "CurrentSize" |
+        "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" |
+        "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
           description: >-
             Specifies the ratio between the height of the shape after you resize
             it and the current or original height.
           type: number
-        - id: scaleTypeString
+        - id: scaleType
           description: >-
             Specifies whether the shape is scaled relative to its original or
             current size. The original size scaling option only works for
             images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFromString
+        - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position
             when the shape is scaled. If omitted, it represents that the shape's
@@ -1007,10 +1007,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: scaleWidth(scaleFactor, scaleTypeString, scaleFromString)
+  - name: scaleWidth(scaleFactor, scaleType, scaleFrom)
     uid: word!Word.Shape#scaleWidth:member(2)
     package: word!
-    fullName: scaleWidth(scaleFactor, scaleTypeString, scaleFromString)
+    fullName: scaleWidth(scaleFactor, scaleType, scaleFrom)
     summary: >-
       Scales the width of the shape by a specified factor. For images, you can
       indicate whether you want to scale the shape relative to the original or
@@ -1024,22 +1024,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" |
-        "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle"
-        | "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleType: "CurrentSize" |
+        "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" |
+        "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
           description: >-
             Specifies the ratio between the width of the shape after you resize
             it and the current or original width.
           type: number
-        - id: scaleTypeString
+        - id: scaleType
           description: >-
             Specifies whether the shape is scaled relative to its original or
             current size. The original size scaling option only works for
             images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFromString
+        - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position
             when the shape is scaled. If omitted, it represents that the shape's

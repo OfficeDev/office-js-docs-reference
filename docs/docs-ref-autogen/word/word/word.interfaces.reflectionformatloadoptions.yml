@@ -1,0 +1,115 @@
+### YamlMime:TSType
+name: Word.Interfaces.ReflectionFormatLoadOptions
+uid: word!Word.Interfaces.ReflectionFormatLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.ReflectionFormatLoadOptions
+summary: Represents the reflection formatting for a shape in Word.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.ReflectionFormatLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: blur
+    uid: word!Word.Interfaces.ReflectionFormatLoadOptions#blur:member
+    package: word!
+    fullName: blur
+    summary: >-
+      Specifies the degree of blur effect applied to the `ReflectionFormat`
+      object as a value between 0.0 and 100.0.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'blur?: boolean;'
+      return:
+        type: boolean
+  - name: offset
+    uid: word!Word.Interfaces.ReflectionFormatLoadOptions#offset:member
+    package: word!
+    fullName: offset
+    summary: >-
+      Specifies the amount of separation, in points, of the reflected image from
+      the shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'offset?: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: word!Word.Interfaces.ReflectionFormatLoadOptions#size:member
+    package: word!
+    fullName: size
+    summary: >-
+      Specifies the size of the reflection as a percentage of the reflected
+      shape from 0 to 100.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type: boolean
+  - name: transparency
+    uid: word!Word.Interfaces.ReflectionFormatLoadOptions#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency for the reflection effect as a value
+      between 0.0 (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.ReflectionFormatLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: >-
+      Specifies a `ReflectionType` value that represents the type and direction
+      of the lighting for a shape reflection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

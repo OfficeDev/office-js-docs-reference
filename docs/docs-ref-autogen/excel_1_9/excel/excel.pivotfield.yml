@@ -294,10 +294,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: sortByValues(sortByString, valuesHierarchy, pivotItemScope)
+  - name: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
     uid: excel!Excel.PivotField#sortByValues:member(2)
     package: excel!
-    fullName: sortByValues(sortByString, valuesHierarchy, pivotItemScope)
+    fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope
       defines which specific values will be used to sort when there are multiple
@@ -310,11 +310,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy:
+        sortByValues(sortBy: "Ascending" | "Descending", valuesHierarchy:
         Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>):
         void;
       parameters:
-        - id: sortByString
+        - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
           type: '"Ascending" | "Descending"'
         - id: valuesHierarchy
