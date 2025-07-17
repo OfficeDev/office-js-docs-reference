@@ -12,28 +12,58 @@ remarks: >-
   -->**: Message Compose
 
 
-  **Important**: This enum is only supported in Outlook on the web and new
-  Outlook on Windows. On these platforms, users can organize their messages as
-  conversations or individual messages in **Settings** &gt; **Mail**
-  &gt; **Layout** &gt; **Message organization**. This user setting
+  **Important**: This enum is only supported in Outlook on the web, on
+  mobile devices, and in the new Outlook on Windows. On these platforms, users
+  can organize their messages as conversations or individual messages, which
   affects the portion of the body of a message that's displayed.
+
+
+  - **Outlook on the web and new Outlook on Windows**: **Settings** &gt;
+  **Mail** &gt; **Layout** &gt; **Message organization**
+
+
+  - **Outlook on Android**: **Settings** &gt; **Mail** &gt;
+  **Threading** &gt; **Organize by thread**
+
+
+  - **Outlook on iOS**: **Settings** &gt; **Email Organization**
+  &gt; **Group Emails by Conversation**
 
 
   The `BodyMode` enum supports the following message organization settings.
 
 
-  - Conversations: **Group messages by conversation** &gt; **All messages
-  from the selected conversation** or **Show email grouped by
-  conversation** &gt; **Newest on top**<!-- -->/<!-- -->**Newest on
-  bottom**
+  - Conversations in Outlook on the web and new Outlook on Windows: **Group
+  messages by conversation** &gt; **All messages from the selected
+  conversation** or **Show email grouped by conversation** &gt; **Newest
+  on top**<!-- -->/<!-- -->**Newest on bottom**
 
 
-  - Individual messages: **Do not group messages** &gt; **Only a single
-  message** or **Show email as individual messages**
+  - Conversations in Outlook on Android: **Organize by thread** &gt;
+  **Newest on top**<!-- -->/<!-- -->**Newest on bottom**
+
+
+  - Conversations in Outlook on iOS: **Group Emails by Conversation** &gt;
+  **Newest on top**<!-- -->/<!-- -->**Newest on bottom**
+
+
+  - Individual messages in Outlook on the web and new Outlook on Windows: **Do
+  not group messages** &gt; **Only a single message** or **Show email as
+  individual messages**
+
+
+  - Individual messages in Outlook on Android: **Organize by thread** is
+  turned off
+
+
+  - Individual messages in Outlook on iOS: **Group Emails by Conversation**
+  is turned off
 
 
   For more information, see [Change how the message list is displayed in
-  Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
+  Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)
+  and [Optimize the Outlook mobile app for your phone or
+  tablet](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)<!--
   -->.
 
 isPreview: false
