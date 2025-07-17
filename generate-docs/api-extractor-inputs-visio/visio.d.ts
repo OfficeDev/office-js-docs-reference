@@ -250,10 +250,10 @@ export declare namespace Visio {
          * @remarks
          * [Api set:  1.1]
          *
-         * @param idString - The type of the Toolbar.
+         * @param id - The type of the Toolbar.
          * @param show - Whether the toolbar is visible or not.
          */
-        showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
+        showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -354,11 +354,11 @@ export declare namespace Visio {
          * @remarks
          * [Api set:  1.1]
          *
-         * @param taskPaneTypeString - Type of the 1st Party TaskPane. It can take values from enum TaskPaneType
+         * @param taskPaneType - Type of the 1st Party TaskPane. It can take values from enum TaskPaneType
          * @param initialProps - Optional Parameter. This is a generic data structure which would be filled with initial data required to initialize the content of the task pane.
          * @param show - Optional Parameter. If it's set to false, it will hide the specified task pane.
          */
-        showTaskPane(taskPaneTypeString: "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings", initialProps?: any, show?: boolean): void;
+        showTaskPane(taskPaneType: "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings", initialProps?: any, show?: boolean): void;
         /**
          * Triggers the refresh of the data in the Diagram, for all pages.
          *
@@ -1024,14 +1024,14 @@ export declare namespace Visio {
          * @remarks
          * [Api set:  1.1]
          *
-         * @param OverlayTypeString - An Overlay Type. Can be 'Text', 'Image' or 'Html'.
+         * @param OverlayType - An Overlay Type. Can be 'Text', 'Image' or 'Html'.
          * @param Content - Content of Overlay.
-         * @param OverlayHorizontalAlignmentString - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
-         * @param OverlayVerticalAlignmentString - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
+         * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
+         * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
          * @param Width - Overlay Width.
          * @param Height - Overlay Height.
          */
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignmentString: "Left" | "Center" | "Right", OverlayVerticalAlignmentString: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayType: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
          * Removes particular overlay or all overlays on the Shape.
          *

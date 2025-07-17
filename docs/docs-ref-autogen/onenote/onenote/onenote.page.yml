@@ -442,10 +442,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Page:class" />
         description: ''
-  - name: insertPageAsSibling(locationString, title)
+  - name: insertPageAsSibling(location, title)
     uid: onenote!OneNote.Page#insertPageAsSibling:member(2)
     package: onenote!
-    fullName: insertPageAsSibling(locationString, title)
+    fullName: insertPageAsSibling(location, title)
     summary: Inserts a new page before or after the current page.
     remarks: >-
       \[ [API set: OneNoteApi
@@ -480,10 +480,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertPageAsSibling(locationString: "Before" | "After", title: string):
+        insertPageAsSibling(location: "Before" | "After", title: string):
         OneNote.Page;
       parameters:
-        - id: locationString
+        - id: location
           description: The location of the new page relative to the current page.
           type: '"Before" | "After"'
         - id: title

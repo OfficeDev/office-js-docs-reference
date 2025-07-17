@@ -140,7 +140,7 @@ properties:
     fullName: sortBy
     summary: >-
       For EACH ITEM in the collection: Specifies the sort order of the items in
-      the slicer. Possible values areString: "DataSourceOrder", "Ascending",
+      the slicer. Possible values are: "DataSourceOrder", "Ascending",
       "Descending".
     remarks: >-
       \[ [API set: ExcelApi

@@ -117,10 +117,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.RangeBorder:class" />
         description: ''
-  - name: getItem(indexString)
+  - name: getItem(index)
     uid: excel!Excel.RangeBorderCollection#getItem:member(2)
     package: excel!
-    fullName: getItem(indexString)
+    fullName: getItem(index)
     summary: Gets a border object using its name.
     remarks: >-
       \[ [API set: ExcelApi
@@ -130,11 +130,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
-        | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" |
-        "DiagonalUp"): Excel.RangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" |
+        "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"):
+        Excel.RangeBorder;
       parameters:
-        - id: indexString
+        - id: index
           description: >-
             Index value of the border object to be retrieved. See
             `Excel.BorderIndex` for details.

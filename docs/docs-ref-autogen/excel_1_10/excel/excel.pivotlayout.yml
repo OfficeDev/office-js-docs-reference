@@ -401,10 +401,10 @@ methods:
         description: >-
           A PivotItemCollection of the PivotItems that are used to calculate the
           values in the specified row.
-  - name: getPivotItems(axisString, cell)
+  - name: getPivotItems(axis, cell)
     uid: excel!Excel.PivotLayout#getPivotItems:member(2)
     package: excel!
-    fullName: getPivotItems(axisString, cell)
+    fullName: getPivotItems(axis, cell)
     summary: >-
       Gets the PivotItems from an axis that make up the value in a specified
       range within the PivotTable.
@@ -416,10 +416,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" |
-        "Filter", cell: Range | string): Excel.PivotItemCollection;
+        getPivotItems(axis: "Unknown" | "Row" | "Column" | "Data" | "Filter",
+        cell: Range | string): Excel.PivotItemCollection;
       parameters:
-        - id: axisString
+        - id: axis
           description: >-
             The axis from which to get the PivotItems. Must be either "row" or
             "column."
@@ -623,10 +623,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setAutoSortOnCell(cell, sortByString)
+  - name: setAutoSortOnCell(cell, sortBy)
     uid: excel!Excel.PivotLayout#setAutoSortOnCell:member(2)
     package: excel!
-    fullName: setAutoSortOnCell(cell, sortByString)
+    fullName: setAutoSortOnCell(cell, sortBy)
     summary: >-
       Sets the PivotTable to automatically sort using the specified cell to
       automatically select all necessary criteria and context. This behaves
@@ -639,7 +639,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" |
+        setAutoSortOnCell(cell: Range | string, sortBy: "Ascending" |
         "Descending"): void;
       parameters:
         - id: cell
@@ -647,7 +647,7 @@ methods:
             A single cell to use get the criteria from for applying the
             autosort.
           type: <xref uid="excel!Excel.Range:class" /> | string
-        - id: sortByString
+        - id: sortBy
           description: The direction of the sort.
           type: '"Ascending" | "Descending"'
       return:

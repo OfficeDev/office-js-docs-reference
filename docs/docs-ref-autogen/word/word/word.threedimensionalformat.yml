@@ -847,10 +847,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setExtrusionDirection(presetExtrusionDirectionString)
+  - name: setExtrusionDirection(presetExtrusionDirection)
     uid: word!Word.ThreeDimensionalFormat#setExtrusionDirection:member(2)
     package: word!
-    fullName: setExtrusionDirection(presetExtrusionDirectionString)
+    fullName: setExtrusionDirection(presetExtrusionDirection)
     summary: Sets the direction of the extrusion's sweep path.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -860,11 +860,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setExtrusionDirection(presetExtrusionDirectionString: "Mixed" |
-        "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" |
-        "TopRight" | "Top" | "TopLeft"): void;
+        setExtrusionDirection(presetExtrusionDirection: "Mixed" | "BottomRight"
+        | "Bottom" | "BottomLeft" | "Right" | "None" | "Left" | "TopRight" |
+        "Top" | "TopLeft"): void;
       parameters:
-        - id: presetExtrusionDirectionString
+        - id: presetExtrusionDirection
           description: The preset direction.
           type: >-
             "Mixed" | "BottomRight" | "Bottom" | "BottomLeft" | "Right" | "None"
@@ -892,10 +892,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setPresetCamera(presetCameraString)
+  - name: setPresetCamera(presetCamera)
     uid: word!Word.ThreeDimensionalFormat#setPresetCamera:member(2)
     package: word!
-    fullName: setPresetCamera(presetCameraString)
+    fullName: setPresetCamera(presetCamera)
     summary: Sets the camera preset for the shape. The preset camera type.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -905,7 +905,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setPresetCamera(presetCameraString: "Mixed" | "LegacyObliqueTopLeft" |
+        setPresetCamera(presetCamera: "Mixed" | "LegacyObliqueTopLeft" |
         "LegacyObliqueTop" | "LegacyObliqueTopRight" | "LegacyObliqueLeft" |
         "LegacyObliqueFront" | "LegacyObliqueRight" | "LegacyObliqueBottomLeft"
         | "LegacyObliqueBottom" | "LegacyObliqueBottomRight" |
@@ -933,7 +933,7 @@ methods:
         "PerspectiveHeroicExtremeRightFacing" | "PerspectiveRelaxed" |
         "PerspectiveRelaxedModerately"): void;
       parameters:
-        - id: presetCameraString
+        - id: presetCamera
           description: ''
           type: >-
             "Mixed" | "LegacyObliqueTopLeft" | "LegacyObliqueTop" |
@@ -990,10 +990,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setThreeDimensionalFormat(presetThreeDimensionalFormatString)
+  - name: setThreeDimensionalFormat(presetThreeDimensionalFormat)
     uid: word!Word.ThreeDimensionalFormat#setThreeDimensionalFormat:member(2)
     package: word!
-    fullName: setThreeDimensionalFormat(presetThreeDimensionalFormatString)
+    fullName: setThreeDimensionalFormat(presetThreeDimensionalFormat)
     summary: Sets the preset extrusion format. The preset format.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -1003,13 +1003,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setThreeDimensionalFormat(presetThreeDimensionalFormatString: "Mixed" |
+        setThreeDimensionalFormat(presetThreeDimensionalFormat: "Mixed" |
         "Format1" | "Format2" | "Format3" | "Format4" | "Format5" | "Format6" |
         "Format7" | "Format8" | "Format9" | "Format10" | "Format11" | "Format12"
         | "Format13" | "Format14" | "Format15" | "Format16" | "Format17" |
         "Format18" | "Format19" | "Format20"): void;
       parameters:
-        - id: presetThreeDimensionalFormatString
+        - id: presetThreeDimensionalFormat
           description: ''
           type: >-
             "Mixed" | "Format1" | "Format2" | "Format3" | "Format4" | "Format5"

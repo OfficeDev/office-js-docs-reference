@@ -184,8 +184,8 @@ properties:
     package: excel!
     fullName: sortBy
     summary: >-
-      Specifies the sort order of the items in the slicer. Possible values
-      areString: "DataSourceOrder", "Ascending", "Descending".
+      Specifies the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
     remarks: >-
       \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

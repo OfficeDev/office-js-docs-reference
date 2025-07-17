@@ -576,9 +576,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationTypeString - Specifies the calculation type to use. See `Excel.CalculationType` for details.
+         * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
-        calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;
+        calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
         /**
          * Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
          *
@@ -1514,9 +1514,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
+         * @param applyTo - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
         
         
         
@@ -1537,9 +1537,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param shiftString - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
+         * @param shift - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
          */
-        delete(shiftString: "Up" | "Left"): void;
+        delete(shift: "Up" | "Left"): void;
         
         
         
@@ -1763,9 +1763,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param shiftString - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
+         * @param shift - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
          */
-        insert(shiftString: "Down" | "Right"): Excel.Range;
+        insert(shift: "Down" | "Right"): Excel.Range;
         /**
          * Merge the range cells into one region in the worksheet.
          *
@@ -2551,10 +2551,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          *
          * @param range - Range to bind the binding to. May be a `Range` object or a string. If string, must contain the full address, including the sheet name
-         * @param bindingTypeString - Type of binding. See `Excel.BindingType`.
+         * @param bindingType - Type of binding. See `Excel.BindingType`.
          * @param id - Name of the binding.
          */
-        add(range: Range | string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        add(range: Range | string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          * Add a new binding based on a named item in the workbook.
                     If the named item references to multiple areas, the `InvalidReference` error will be returned.
@@ -2575,10 +2575,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          *
          * @param name - Name from which to create binding.
-         * @param bindingTypeString - Type of binding. See `Excel.BindingType`.
+         * @param bindingType - Type of binding. See `Excel.BindingType`.
          * @param id - Name of the binding.
          */
-        addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          * Add a new binding based on the current selection.
                     If the selection has multiple areas, the `InvalidReference` error will be returned.
@@ -2597,10 +2597,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.3]
          *
-         * @param bindingTypeString - Type of binding. See `Excel.BindingType`.
+         * @param bindingType - Type of binding. See `Excel.BindingType`.
          * @param id - Name of the binding.
          */
-        addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromSelection(bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          * Gets the number of bindings in the collection.
          *
@@ -3201,7 +3201,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param valuesString - Optional. A 2D array of unformatted values of the table row.
+         * @param values - Optional. A 2D array of unformatted values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
@@ -3698,9 +3698,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param indexString - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
+         * @param index - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
          */
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -3859,11 +3859,11 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param typeString - Represents the type of a chart. See `Excel.ChartType` for details.
+         * @param type - Represents the type of a chart. See `Excel.ChartType` for details.
          * @param sourceData - The `Range` object corresponding to the source data.
-         * @param seriesByString - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
+         * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          * Returns the number of charts in the worksheet.
          *
@@ -4073,9 +4073,9 @@ export declare namespace Excel {
          *
          * @param height - Optional. The desired height of the resulting image.
          * @param width - Optional. The desired width of the resulting image.
-         * @param fittingModeString - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
+         * @param fittingMode - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
          */
-        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingMode?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
         /**
          * Resets the source data for the chart.
          *
@@ -4093,9 +4093,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param sourceData - The range object corresponding to the source data.
-         * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
+         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
          */
-        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;
+        setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): void;
         /**
          * Positions the chart relative to cells on the worksheet.
          *
@@ -5783,10 +5783,10 @@ export declare namespace Excel {
          * @param fields - The list of conditions to sort on.
          * @param matchCase - Optional. Whether to have the casing impact string ordering.
          * @param hasHeaders - Optional. Whether the range has a header.
-         * @param orientationString - Optional. Whether the operation is sorting rows or columns.
-         * @param methodString - Optional. The ordering method used for Chinese characters.
+         * @param orientation - Optional. Whether the operation is sorting rows or columns.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", methodString?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: "Rows" | "Columns", method?: "PinYin" | "StrokeCount"): void;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeSort` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5844,9 +5844,9 @@ export declare namespace Excel {
          *
          * @param fields - The list of conditions to sort on.
          * @param matchCase - Optional. Whether to have the casing impact string ordering.
-         * @param methodString - Optional. The ordering method used for Chinese characters.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, method?: "PinYin" | "StrokeCount"): void;
         /**
          * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
          *
@@ -6010,9 +6010,9 @@ export declare namespace Excel {
          *
          * @param criteria1 - The first criteria string.
          * @param criteria2 - Optional. The second criteria string.
-         * @param operString - Optional. The operator that describes how the two criteria are joined.
+         * @param oper - Optional. The operator that describes how the two criteria are joined.
          */
-        applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;
+        applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" | "Or"): void;
         /**
          * Apply a "Dynamic" filter to the column.
          *
@@ -6028,9 +6028,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteriaString - The dynamic criteria to apply.
+         * @param criteria - The dynamic criteria to apply.
          */
-        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
+        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
         /**
          * Apply a "Font Color" filter to the column for the given color.
          *
@@ -6667,9 +6667,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          *
-         * @param typeString - The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
+         * @param type - The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
          */
-        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
+        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
         /**
          * Clears all conditional formats active on the current specified range.
          *
@@ -8230,9 +8230,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          *
-         * @param indexString - Index value of the border object to be retrieved. See `Excel.ConditionalRangeBorderIndex` for details.
+         * @param index - Index value of the border object to be retrieved. See `Excel.ConditionalRangeBorderIndex` for details.
          */
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -14127,7 +14127,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param valuesString - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
          */
         var_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -14206,7 +14206,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param valuesString - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
          * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          * @param guess - Is a number that you guess is close to the result of XIRR.
          */
@@ -14218,7 +14218,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param rate - Is the discount rate to apply to the cash flows.
-         * @param valuesString - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
          * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          */
         xnpv(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -14228,7 +14228,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param valuesString - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
+         * @param values - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
         xor(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**

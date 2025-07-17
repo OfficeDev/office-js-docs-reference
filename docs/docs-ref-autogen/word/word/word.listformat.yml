@@ -184,10 +184,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: applyBulletDefault(defaultListBehaviorString)
+  - name: applyBulletDefault(defaultListBehavior)
     uid: word!Word.ListFormat#applyBulletDefault:member(2)
     package: word!
-    fullName: applyBulletDefault(defaultListBehaviorString)
+    fullName: applyBulletDefault(defaultListBehavior)
     summary: Adds bullets and formatting to the paragraphs in the range.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -197,10 +197,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        applyBulletDefault(defaultListBehaviorString: "Word97" | "Word2000" |
+        applyBulletDefault(defaultListBehavior: "Word97" | "Word2000" |
         "Word2002"): void;
       parameters:
-        - id: defaultListBehaviorString
+        - id: defaultListBehavior
           description: >-
             Optional. Specifies the default list behavior. Default is
             `DefaultListBehavior.word97`<!-- -->.
@@ -258,10 +258,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: applyNumberDefault(defaultListBehaviorString)
+  - name: applyNumberDefault(defaultListBehavior)
     uid: word!Word.ListFormat#applyNumberDefault:member(2)
     package: word!
-    fullName: applyNumberDefault(defaultListBehaviorString)
+    fullName: applyNumberDefault(defaultListBehavior)
     summary: Adds numbering and formatting to the paragraphs in the range.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -271,10 +271,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        applyNumberDefault(defaultListBehaviorString: "Word97" | "Word2000" |
+        applyNumberDefault(defaultListBehavior: "Word97" | "Word2000" |
         "Word2002"): void;
       parameters:
-        - id: defaultListBehaviorString
+        - id: defaultListBehavior
           description: Optional. Specifies the default list behavior.
           type: '"Word97" | "Word2000" | "Word2002"'
       return:
@@ -302,10 +302,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: applyOutlineNumberDefault(defaultListBehaviorString)
+  - name: applyOutlineNumberDefault(defaultListBehavior)
     uid: word!Word.ListFormat#applyOutlineNumberDefault:member(2)
     package: word!
-    fullName: applyOutlineNumberDefault(defaultListBehaviorString)
+    fullName: applyOutlineNumberDefault(defaultListBehavior)
     summary: Adds outline numbering and formatting to the paragraphs in the range.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -315,10 +315,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        applyOutlineNumberDefault(defaultListBehaviorString: "Word97" |
-        "Word2000" | "Word2002"): void;
+        applyOutlineNumberDefault(defaultListBehavior: "Word97" | "Word2000" |
+        "Word2002"): void;
       parameters:
-        - id: defaultListBehaviorString
+        - id: defaultListBehavior
           description: Optional. Specifies the default list behavior.
           type: '"Word97" | "Word2000" | "Word2002"'
       return:
@@ -368,10 +368,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: convertNumbersToText(numberTypeString)
+  - name: convertNumbersToText(numberType)
     uid: word!Word.ListFormat#convertNumbersToText:member(2)
     package: word!
-    fullName: convertNumbersToText(numberTypeString)
+    fullName: convertNumbersToText(numberType)
     summary: Converts numbers in the list to plain text.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -381,10 +381,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        convertNumbersToText(numberTypeString: "Paragraph" | "ListNum" |
+        convertNumbersToText(numberType: "Paragraph" | "ListNum" |
         "AllNumbers"): void;
       parameters:
-        - id: numberTypeString
+        - id: numberType
           description: Optional. The type of number to convert.
           type: '"Paragraph" | "ListNum" | "AllNumbers"'
       return:
@@ -542,10 +542,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: removeNumbers(numberTypeString)
+  - name: removeNumbers(numberType)
     uid: word!Word.ListFormat#removeNumbers:member(2)
     package: word!
-    fullName: removeNumbers(numberTypeString)
+    fullName: removeNumbers(numberType)
     summary: Removes numbering from the list.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -554,11 +554,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        removeNumbers(numberTypeString: "Paragraph" | "ListNum" | "AllNumbers"):
-        void;
+      content: 'removeNumbers(numberType: "Paragraph" | "ListNum" | "AllNumbers"): void;'
       parameters:
-        - id: numberTypeString
+        - id: numberType
           description: Optional. The type of number to remove.
           type: '"Paragraph" | "ListNum" | "AllNumbers"'
       return:

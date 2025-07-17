@@ -727,9 +727,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the collection of the TrackedChange objects in the body.
          *
@@ -866,9 +866,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1939,9 +1939,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
          *
@@ -2076,9 +2076,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Splits the content control into child ranges by using delimiters.
          *
@@ -3027,9 +3027,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          *
          * @param name - Required. A string representing the style name.
-         * @param typeString - Required. The style type, including character, list, paragraph, or table.
+         * @param type - Required. The style type, including character, list, paragraph, or table.
          */
-        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
+        addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Closes the current document.
                     
@@ -3049,9 +3049,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+         * @param closeBehavior - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
-        close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        close(closeBehavior?: "Save" | "SkipSave"): void;
         /**
          * Displays revision marks that indicate where the specified document differs from another document.
          *
@@ -3179,9 +3179,9 @@ export declare namespace Word {
          * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
          *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
-         * @param importedStylesConflictBehaviorString - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
+         * @param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
          */
-        importStylesFromJson(stylesJson: string, importedStylesConflictBehaviorString?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.
@@ -3216,10 +3216,10 @@ export declare namespace Word {
          *
          * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
          *
-         * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
-        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
+        save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
         /**
          * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
          *
@@ -3764,9 +3764,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Updates the field.
          *
@@ -4261,9 +4261,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4466,9 +4466,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignmentString - Required. The level alignment that must be 'Left', 'Centered', or 'Right'.
+         * @param alignment - Required. The level alignment that must be 'Left', 'Centered', or 'Right'.
          */
-        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
+        setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
         /**
          * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
          *
@@ -4488,11 +4488,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param listBulletString - Required. The bullet.
+         * @param listBullet - Required. The bullet.
          * @param charCode - Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
          * @param fontName - Optional. The bullet's font name. Used only if the bullet is 'Custom'.
          */
-        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
+        setLevelBullet(level: number, listBullet: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
         /**
          * Sets the two indents of the specified level in the list.
          *
@@ -4522,10 +4522,10 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param listNumberingString - Required. The ordinal format.
+         * @param listNumbering - Required. The ordinal format.
          * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
          */
-        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
+        setLevelNumbering(level: number, listNumbering: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
         /**
          * Sets the picture at the specified level in the list.
          *
@@ -5921,9 +5921,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Returns the text of the paragraph. This excludes equations, graphics (e.g., images, videos, drawings), and special characters that mark various content (e.g., for content controls, fields, comments, footnotes, endnotes).
                     By default, hidden text and text marked as deleted are excluded.
@@ -6025,10 +6025,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          *
-         * @param geometricShapeTypeString - The geometric type of the shape to insert.
+         * @param geometricShapeType - The geometric type of the shape to insert.
          * @param insertShapeOptions - Optional. The location and size of the geometric shape. The default location and size is (0, 0, 100, 100).
          */
-        insertGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        insertGeometricShape(geometricShapeType: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
          * Inserts HTML into the paragraph at the specified location.
          *
@@ -6144,9 +6144,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Splits the paragraph into child ranges by using delimiters.
          *
@@ -6738,9 +6738,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
          *
@@ -6852,11 +6852,11 @@ export declare namespace Word {
          * In Word on the web, fields are mainly read-only. To learn more, see {@link  https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance | Use fields in your Word add-in}.
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
+         * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
          * @param text - Optional. Additional properties or options if needed for specified field type.
          * @param removeFormatting - Optional. `true` to remove the formatting that's applied to the field during updates, `false` otherwise. The default value is `false`.
          */
-        insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", fieldTypeString?: "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined", text?: string, removeFormatting?: boolean): Word.Field;
+        insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", fieldType?: "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined", text?: string, removeFormatting?: boolean): Word.Field;
         /**
          * Inserts a document at the specified location.
          *
@@ -6894,10 +6894,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          *
-         * @param geometricShapeTypeString - The geometric type of the shape to insert.
+         * @param geometricShapeType - The geometric type of the shape to insert.
          * @param insertShapeOptions - Optional. The location and size of the geometric shape. The default location and size is (0, 0, 100, 100).
          */
-        insertGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        insertGeometricShape(geometricShapeType: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
          * Inserts HTML at the specified location.
          *
@@ -7038,9 +7038,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Splits the range into child ranges by using delimiters.
          *
@@ -7462,9 +7462,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          * Gets one of the section's headers.
          *
@@ -7480,9 +7480,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          * Gets the next section. Throws an `ItemNotFound` error if this section is the last one.
          *
@@ -8391,9 +8391,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocationString - Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          * Gets the table cell at a specified row and column. Throws an `ItemNotFound` error if the specified table cell doesn't exist.
          *
@@ -8429,9 +8429,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          * Gets the next table. Throws an `ItemNotFound` error if this table is the last one.
          *
@@ -8557,9 +8557,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Sets cell padding in points.
          *
@@ -8576,10 +8576,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8917,9 +8917,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocationString - Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          * Gets cell padding in points.
          *
@@ -8935,9 +8935,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          * Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
          *
@@ -9010,9 +9010,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Sets cell padding in points.
          *
@@ -9029,10 +9029,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -9248,9 +9248,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocationString - Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          * Gets cell padding in points.
          *
@@ -9266,9 +9266,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          * Gets the next cell. Throws an `ItemNotFound` error if this cell is the last one.
          *
@@ -9321,10 +9321,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Splits the cell into the specified number of rows and columns.
          *
@@ -9948,10 +9948,10 @@ export declare namespace Word {
          * [Api set: WordApiDesktop 1.2]
          *
          * @param scaleFactor - Specifies the ratio between the height of the shape after you resize it and the current or original height.
-         * @param scaleTypeString - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
-         * @param scaleFromString - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents that the shape's upper left corner retains its position.
+         * @param scaleType - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+         * @param scaleFrom - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents that the shape's upper left corner retains its position.
          */
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleType: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
         /**
          * Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
          *
@@ -9970,10 +9970,10 @@ export declare namespace Word {
          * [Api set: WordApiDesktop 1.2]
          *
          * @param scaleFactor - Specifies the ratio between the width of the shape after you resize it and the current or original width.
-         * @param scaleTypeString - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
-         * @param scaleFromString - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents that the shape's upper left corner retains its position.
+         * @param scaleType - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+         * @param scaleFrom - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents that the shape's upper left corner retains its position.
          */
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleType: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
         /**
          * Selects the shape.
          *

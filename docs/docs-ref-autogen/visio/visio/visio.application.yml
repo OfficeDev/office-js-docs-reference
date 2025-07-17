@@ -236,10 +236,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: showToolbar(idString, show)
+  - name: showToolbar(id, show)
     uid: visio!Visio.Application#showToolbar:member(2)
     package: visio!
-    fullName: showToolbar(idString, show)
+    fullName: showToolbar(id, show)
     summary: Sets the visibility of a specific toolbar in the application.
     remarks: >-
       \[ [API set:
@@ -250,10 +250,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar",
-        show: boolean): void;
+        showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show:
+        boolean): void;
       parameters:
-        - id: idString
+        - id: id
           description: The type of the Toolbar.
           type: '"CommandBar" | "PageNavigationBar" | "StatusBar"'
         - id: show

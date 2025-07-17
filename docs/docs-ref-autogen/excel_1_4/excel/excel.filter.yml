@@ -157,10 +157,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: applyCustomFilter(criteria1, criteria2, operString)
+  - name: applyCustomFilter(criteria1, criteria2, oper)
     uid: excel!Excel.Filter#applyCustomFilter:member(2)
     package: excel!
-    fullName: applyCustomFilter(criteria1, criteria2, operString)
+    fullName: applyCustomFilter(criteria1, criteria2, oper)
     summary: Apply an "Icon" filter to the column for the given criteria strings.
     remarks: >-
       \[ [API set: ExcelApi
@@ -170,8 +170,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        applyCustomFilter(criteria1: string, criteria2?: string, operString?:
-        "And" | "Or"): void;
+        applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" |
+        "Or"): void;
       parameters:
         - id: criteria1
           description: The first criteria string.
@@ -179,7 +179,7 @@ methods:
         - id: criteria2
           description: Optional. The second criteria string.
           type: string
-        - id: operString
+        - id: oper
           description: >-
             Optional. The operator that describes how the two criteria are
             joined.
@@ -207,10 +207,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: applyDynamicFilter(criteriaString)
+  - name: applyDynamicFilter(criteria)
     uid: excel!Excel.Filter#applyDynamicFilter:member(2)
     package: excel!
-    fullName: applyDynamicFilter(criteriaString)
+    fullName: applyDynamicFilter(criteria)
     summary: Apply a "Dynamic" filter to the column.
     remarks: >-
       \[ [API set: ExcelApi
@@ -220,7 +220,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" |
+        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" |
         "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
         "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
         "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
@@ -233,7 +233,7 @@ methods:
         "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
         "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
       parameters:
-        - id: criteriaString
+        - id: criteria
           description: The dynamic criteria to apply.
           type: >-
             "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |

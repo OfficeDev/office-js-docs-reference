@@ -297,9 +297,9 @@ properties:
     summary: >-
       Specifies if the data labels are shown as a callout with the tail anchor
       attached to the data point. If `true`<!-- -->, the callout is one of the
-      following valuesString: "AccentCallout1", "AccentCallout2",
-      "BorderCallout1", "BorderCallout2", "WedgeRectCallout",
-      "WedgeRRectCallout" or "WedgeEllipseCallout". See
+      following values: "AccentCallout1", "AccentCallout2", "BorderCallout1",
+      "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or
+      "WedgeEllipseCallout". See
       [GeometricShapeType](xref:excel!Excel.GeometricShapeType:enum) for more
       details.
     remarks: >-

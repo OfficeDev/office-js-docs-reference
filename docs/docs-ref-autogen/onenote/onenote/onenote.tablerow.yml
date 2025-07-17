@@ -192,10 +192,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.TableRow:class" />
         description: ''
-  - name: insertRowAsSibling(insertLocationString, values)
+  - name: insertRowAsSibling(insertLocation, values)
     uid: onenote!OneNote.TableRow#insertRowAsSibling:member(2)
     package: onenote!
-    fullName: insertRowAsSibling(insertLocationString, values)
+    fullName: insertRowAsSibling(insertLocation, values)
     summary: Inserts a row before or after the current row.
     remarks: >-
       \[ [API set: OneNoteApi
@@ -206,10 +206,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertRowAsSibling(insertLocationString: "Before" | "After", values?:
+        insertRowAsSibling(insertLocation: "Before" | "After", values?:
         string[]): OneNote.TableRow;
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: Where the new rows should be inserted relative to the current row.
           type: '"Before" | "After"'
         - id: values

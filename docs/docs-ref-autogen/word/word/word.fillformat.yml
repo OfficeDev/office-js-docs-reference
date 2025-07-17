@@ -598,7 +598,7 @@ methods:
         number): void;
       parameters:
         - id: style
-          description: ''
+          description: The gradient style.
           type: <xref uid="word!Word.GradientStyle:enum" />
         - id: variant
           description: The gradient variant. Can be a value from 1 to 4.
@@ -611,10 +611,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setOneColorGradient(styleString, variant, degree)
+  - name: setOneColorGradient(style, variant, degree)
     uid: word!Word.FillFormat#setOneColorGradient:member(2)
     package: word!
-    fullName: setOneColorGradient(styleString, variant, degree)
+    fullName: setOneColorGradient(style, variant, degree)
     summary: Sets the fill to a one-color gradient.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -624,11 +624,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setOneColorGradient(styleString: "Mixed" | "Horizontal" | "Vertical" |
+        setOneColorGradient(style: "Mixed" | "Horizontal" | "Vertical" |
         "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
         "FromCenter", variant: number, degree: number): void;
       parameters:
-        - id: styleString
+        - id: style
           description: The gradient style.
           type: >-
             "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown"
@@ -664,10 +664,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setPatterned(patternString)
+  - name: setPatterned(pattern)
     uid: word!Word.FillFormat#setPatterned:member(2)
     package: word!
-    fullName: setPatterned(patternString)
+    fullName: setPatterned(pattern)
     summary: Sets the fill to a pattern.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -677,23 +677,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setPatterned(patternString: "Mixed" | "Percent5" | "Percent10" |
-        "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" |
-        "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" |
-        "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" |
-        "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" |
-        "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" |
-        "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" |
-        "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" |
-        "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" |
-        "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" |
-        "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" |
-        "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" |
-        "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" |
-        "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" |
-        "UpwardDiagonal" | "DiagonalCross"): void;
+        setPatterned(pattern: "Mixed" | "Percent5" | "Percent10" | "Percent20" |
+        "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" |
+        "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal"
+        | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" |
+        "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" |
+        "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" |
+        "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
+        "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" |
+        "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" |
+        "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard"
+        | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" |
+        "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" |
+        "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" |
+        "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"): void;
       parameters:
-        - id: patternString
+        - id: pattern
           description: ''
           type: >-
             "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" |
@@ -744,10 +743,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setPresetGradient(styleString, variant, presetGradientTypeString)
+  - name: setPresetGradient(style, variant, presetGradientType)
     uid: word!Word.FillFormat#setPresetGradient:member(2)
     package: word!
-    fullName: setPresetGradient(styleString, variant, presetGradientTypeString)
+    fullName: setPresetGradient(style, variant, presetGradientType)
     summary: >-
       Sets the fill to a preset gradient. The gradient style.The gradient
       variant. Can be a value from 1 to 4.The preset gradient type.
@@ -759,16 +758,16 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setPresetGradient(styleString: "Mixed" | "Horizontal" | "Vertical" |
+        setPresetGradient(style: "Mixed" | "Horizontal" | "Vertical" |
         "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
-        "FromCenter", variant: number, presetGradientTypeString: "Mixed" |
+        "FromCenter", variant: number, presetGradientType: "Mixed" |
         "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" |
         "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" |
         "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" |
         "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"):
         void;
       parameters:
-        - id: styleString
+        - id: style
           description: ''
           type: >-
             "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown"
@@ -776,7 +775,7 @@ methods:
         - id: variant
           description: ''
           type: number
-        - id: presetGradientTypeString
+        - id: presetGradientType
           description: ''
           type: >-
             "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" |
@@ -807,10 +806,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setPresetTextured(presetTextureString)
+  - name: setPresetTextured(presetTexture)
     uid: word!Word.FillFormat#setPresetTextured:member(2)
     package: word!
-    fullName: setPresetTextured(presetTextureString)
+    fullName: setPresetTextured(presetTexture)
     summary: Sets the fill to a preset texture.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -820,14 +819,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setPresetTextured(presetTextureString: "Mixed" | "Papyrus" | "Canvas" |
+        setPresetTextured(presetTexture: "Mixed" | "Papyrus" | "Canvas" |
         "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" |
         "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" |
         "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" |
         "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" |
         "Cork" | "Walnut" | "Oak" | "MediumWood"): void;
       parameters:
-        - id: presetTextureString
+        - id: presetTexture
           description: ''
           type: >-
             "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" |
@@ -862,10 +861,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setTwoColorGradient(styleString, variant)
+  - name: setTwoColorGradient(style, variant)
     uid: word!Word.FillFormat#setTwoColorGradient:member(2)
     package: word!
-    fullName: setTwoColorGradient(styleString, variant)
+    fullName: setTwoColorGradient(style, variant)
     summary: Sets the fill to a two-color gradient.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -875,11 +874,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setTwoColorGradient(styleString: "Mixed" | "Horizontal" | "Vertical" |
+        setTwoColorGradient(style: "Mixed" | "Horizontal" | "Vertical" |
         "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
         "FromCenter", variant: number): void;
       parameters:
-        - id: styleString
+        - id: style
           description: ''
           type: >-
             "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown"

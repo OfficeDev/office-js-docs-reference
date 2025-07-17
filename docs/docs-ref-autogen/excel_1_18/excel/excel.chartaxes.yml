@@ -121,10 +121,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartAxis:class" />
         description: ''
-  - name: getItem(typeString, groupString)
+  - name: getItem(type, group)
     uid: excel!Excel.ChartAxes#getItem:member(2)
     package: excel!
-    fullName: getItem(typeString, groupString)
+    fullName: getItem(type, group)
     summary: Returns the specific axis identified by type and group.
     remarks: >-
       \[ [API set: ExcelApi
@@ -134,13 +134,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getItem(typeString: "Invalid" | "Category" | "Value" | "Series",
-        groupString?: "Primary" | "Secondary"): Excel.ChartAxis;
+        getItem(type: "Invalid" | "Category" | "Value" | "Series", group?:
+        "Primary" | "Secondary"): Excel.ChartAxis;
       parameters:
-        - id: typeString
+        - id: type
           description: Specifies the axis type. See `Excel.ChartAxisType` for details.
           type: '"Invalid" | "Category" | "Value" | "Series"'
-        - id: groupString
+        - id: group
           description: >-
             Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for
             details.

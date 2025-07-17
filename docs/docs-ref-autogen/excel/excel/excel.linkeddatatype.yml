@@ -284,10 +284,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: requestSetRefreshMode(refreshModeString)
+  - name: requestSetRefreshMode(refreshMode)
     uid: excel!Excel.LinkedDataType#requestSetRefreshMode:member(2)
     package: excel!
-    fullName: requestSetRefreshMode(refreshModeString)
+    fullName: requestSetRefreshMode(refreshMode)
     summary: >-
       Makes a request to change the refresh mode for this linked data type. If
       the given refresh mode is not supported by this linked data type the mode
@@ -302,10 +302,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        requestSetRefreshMode(refreshModeString: "Unknown" | "Manual" | "OnLoad"
-        | "Periodic"): void;
+        requestSetRefreshMode(refreshMode: "Unknown" | "Manual" | "OnLoad" |
+        "Periodic"): void;
       parameters:
-        - id: refreshModeString
+        - id: refreshMode
           description: >-
             The intended mode to which this linked data type is requested to
             change.

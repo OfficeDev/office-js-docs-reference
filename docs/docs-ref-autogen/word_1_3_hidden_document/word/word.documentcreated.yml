@@ -290,10 +290,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: save(saveBehaviorString, fileName)
+  - name: save(saveBehavior, fileName)
     uid: word!Word.DocumentCreated#save:member(2)
     package: word!
-    fullName: save(saveBehaviorString, fileName)
+    fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
       \[ [API set: WordApiHiddenDocument
@@ -306,9 +306,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;'
+      content: 'save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;'
       parameters:
-        - id: saveBehaviorString
+        - id: saveBehavior
           description: Optional. DocumentCreated only supports 'Save'.
           type: '"Save" | "Prompt"'
         - id: fileName
