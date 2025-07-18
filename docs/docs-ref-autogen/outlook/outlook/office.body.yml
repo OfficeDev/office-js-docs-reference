@@ -380,12 +380,11 @@ methods:
       Otherwise, you may receive an unexpected value, such as an empty string.
 
 
-      - In Outlook on the web, on mobile devices, and in the new Outlook on
-      Windows, users can organize their messages as conversations or individual
-      messages (see [Change how the message list is displayed in
-      Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)
-      and [Optimize the Outlook mobile app for your phone or
-      tablet](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)<!--
+      - In Outlook on the web and in the new Outlook on Windows, users can
+      organize their messages as conversations or individual messages in
+      **Settings** &gt; **Mail** &gt; **Layout** &gt; **Message
+      organization** (see [Change how the message list is displayed in
+      Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
       current message). In Message Compose mode, particularly for replies to a
@@ -397,9 +396,16 @@ methods:
       individually, the entire conversation thread is returned.
 
 
+      - In Outlook on mobile devices, specifying the `bodyMode:
+      Office.MailboxEnums.BodyMode.HostConfig` parameter returns the body of the
+      current reply.
+
+
       - In Outlook on mobile devices, while in quick reply mode (the reply field
-      at the bottom of the message), only the body of the currently reply is
-      returned.
+      at the bottom of the message), only the body of the current reply is
+      returned. This applies even if the `bodyMode:
+      Office.MailboxEnums.BodyMode.FullBody` parameter is specified in the
+      `getAsync` call.
 
 
       - The `bodyMode` option isn't supported on a message that's loaded using
@@ -487,12 +493,11 @@ methods:
       Otherwise, you may receive an unexpected value, such as an empty string.
 
 
-      - In Outlook on the web, on mobile devices, and in the new Outlook on
-      Windows, users can organize their messages as conversations or individual
-      messages (see [Change how the message list is displayed in
-      Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)
-      and [Optimize the Outlook mobile app for your phone or
-      tablet](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)<!--
+      - In Outlook on the web and in the new Outlook on Windows, users can
+      organize their messages as conversations or individual messages in
+      **Settings** &gt; **Mail** &gt; **Layout** &gt; **Message
+      organization** (see [Change how the message list is displayed in
+      Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
       current message). In Message Compose mode, particularly for replies to a
@@ -504,9 +509,16 @@ methods:
       individually, the entire conversation thread is returned.
 
 
+      - In Outlook on mobile devices, specifying the `bodyMode:
+      Office.MailboxEnums.BodyMode.HostConfig` parameter returns the body of the
+      current reply.
+
+
       - In Outlook on mobile devices, while in quick reply mode (the reply field
-      at the bottom of the message), only the body of the currently reply is
-      returned.
+      at the bottom of the message), only the body of the current reply is
+      returned. This applies even if the `bodyMode:
+      Office.MailboxEnums.BodyMode.FullBody` parameter is specified in the
+      `getAsync` call.
 
 
       #### Examples

@@ -166,8 +166,8 @@ methods:
     fullName: getItemByNameOrNullObject(name)
     summary: >-
       Gets a linked entity data domain by its `name`<!-- -->. If the linked
-      entity data domain does not exist, then this function will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
+      entity data domain does not exist, then this method returns an object with
+      its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -196,9 +196,9 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a linked entity data domain by its `id`<!-- -->. If the linked entity
-      data domain does not exist, then this function will return an object with
-      its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
+      data domain does not exist, then this method returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-

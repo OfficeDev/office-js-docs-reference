@@ -316,9 +316,8 @@ properties:
     package: excel!
     fullName: showLeaderLines
     summary: >-
-      Specifies a value that indicates whether leader lines are displayed for
-      the data labels. `true` if leader lines are shown; otherwise, `false`<!--
-      -->.
+      Specifies if leader lines are displayed for the data labels. `true` if
+      leader lines are shown; otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

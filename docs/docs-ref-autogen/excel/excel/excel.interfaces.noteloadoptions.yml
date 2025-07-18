@@ -48,7 +48,7 @@ properties:
     uid: excel!Excel.Interfaces.NoteLoadOptions#content:member
     package: excel!
     fullName: content
-    summary: Gets or sets the text of the note.
+    summary: Specifies the text of the note.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
