@@ -460,10 +460,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setData(sourceData, seriesByString)
+  - name: setData(sourceData, seriesBy)
     uid: excel!Excel.Chart#setData:member(2)
     package: excel!
-    fullName: setData(sourceData, seriesByString)
+    fullName: setData(sourceData, seriesBy)
     summary: Resets the source data for the chart.
     remarks: >-
       \[ [API set: ExcelApi
@@ -473,13 +473,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" |
-        "Rows"): void;
+        setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"):
+        void;
       parameters:
         - id: sourceData
           description: The range object corresponding to the source data.
           type: <xref uid="excel!Excel.Range:class" />
-        - id: seriesByString
+        - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the
             chart. Can be one of the following: Auto (default), Rows, and

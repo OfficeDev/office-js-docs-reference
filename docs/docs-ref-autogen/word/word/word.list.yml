@@ -505,10 +505,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setLevelAlignment(level, alignmentString)
+  - name: setLevelAlignment(level, alignment)
     uid: word!Word.List#setLevelAlignment:member(2)
     package: word!
-    fullName: setLevelAlignment(level, alignmentString)
+    fullName: setLevelAlignment(level, alignment)
     summary: >-
       Sets the alignment of the bullet, number, or picture at the specified
       level in the list.
@@ -520,13 +520,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" |
-        "Left" | "Centered" | "Right" | "Justified"): void;
+        setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left"
+        | "Centered" | "Right" | "Justified"): void;
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
-        - id: alignmentString
+        - id: alignment
           description: >-
             Required. The level alignment that must be 'Left', 'Centered', or
             'Right'.
@@ -616,10 +616,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setLevelBullet(level, listBulletString, charCode, fontName)
+  - name: setLevelBullet(level, listBullet, charCode, fontName)
     uid: word!Word.List#setLevelBullet:member(2)
     package: word!
-    fullName: setLevelBullet(level, listBulletString, charCode, fontName)
+    fullName: setLevelBullet(level, listBullet, charCode, fontName)
     summary: >-
       Sets the bullet format at the specified level in the list. If the bullet
       is 'Custom', the charCode is required.
@@ -631,14 +631,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" |
-        "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?:
-        number, fontName?: string): void;
+        setLevelBullet(level: number, listBullet: "Custom" | "Solid" | "Hollow"
+        | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number,
+        fontName?: string): void;
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
-        - id: listBulletString
+        - id: listBullet
           description: Required. The bullet.
           type: >-
             "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" |
@@ -766,10 +766,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setLevelNumbering(level, listNumberingString, formatString)
+  - name: setLevelNumbering(level, listNumbering, formatString)
     uid: word!Word.List#setLevelNumbering:member(2)
     package: word!
-    fullName: setLevelNumbering(level, listNumberingString, formatString)
+    fullName: setLevelNumbering(level, listNumbering, formatString)
     summary: Sets the numbering format at the specified level in the list.
     remarks: >-
       \[ [API set: WordApi
@@ -779,14 +779,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic"
-        | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter",
+        setLevelNumbering(level: number, listNumbering: "None" | "Arabic" |
+        "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter",
         formatString?: Array<string | number>): void;
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
-        - id: listNumberingString
+        - id: listNumbering
           description: Required. The ordinal format.
           type: >-
             "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" |

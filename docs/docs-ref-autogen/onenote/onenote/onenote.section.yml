@@ -404,10 +404,10 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Section:class" />
         description: ''
-  - name: insertSectionAsSibling(locationString, title)
+  - name: insertSectionAsSibling(location, title)
     uid: onenote!OneNote.Section#insertSectionAsSibling:member(2)
     package: onenote!
-    fullName: insertSectionAsSibling(locationString, title)
+    fullName: insertSectionAsSibling(location, title)
     summary: Inserts a new section before or after the current section.
     remarks: >-
       \[ [API set: OneNoteApi
@@ -443,10 +443,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertSectionAsSibling(locationString: "Before" | "After", title:
-        string): OneNote.Section;
+        insertSectionAsSibling(location: "Before" | "After", title: string):
+        OneNote.Section;
       parameters:
-        - id: locationString
+        - id: location
           description: The location of the new section relative to the current section.
           type: '"Before" | "After"'
         - id: title

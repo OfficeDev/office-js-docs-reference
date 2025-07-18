@@ -759,10 +759,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setPrintMargins(unitString, marginOptions)
+  - name: setPrintMargins(unit, marginOptions)
     uid: excel!Excel.PageLayout#setPrintMargins:member(2)
     package: excel!
-    fullName: setPrintMargins(unitString, marginOptions)
+    fullName: setPrintMargins(unit, marginOptions)
     summary: Sets the worksheet's page margins with units.
     remarks: >-
       \[ [API set: ExcelApi
@@ -772,10 +772,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setPrintMargins(unitString: "Points" | "Inches" | "Centimeters",
+        setPrintMargins(unit: "Points" | "Inches" | "Centimeters",
         marginOptions: Excel.PageLayoutMarginOptions): void;
       parameters:
-        - id: unitString
+        - id: unit
           description: Measurement unit for the margins provided.
           type: '"Points" | "Inches" | "Centimeters"'
         - id: marginOptions

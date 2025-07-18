@@ -1,0 +1,263 @@
+### YamlMime:TSEnum
+name: Word.PresetTexture
+uid: word!Word.PresetTexture:enum
+package: word!
+fullName: Word.PresetTexture
+summary: Specifies texture to be used to fill a shape.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: blueTissuePaper
+    uid: word!Word.PresetTexture.blueTissuePaper:member
+    package: word!
+    summary: >-
+      Represents a blue tissue paper texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BlueTissuePaper"'
+  - name: bouquet
+    uid: word!Word.PresetTexture.bouquet:member
+    package: word!
+    summary: >-
+      Represents a bouquet texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bouquet"'
+  - name: brownMarble
+    uid: word!Word.PresetTexture.brownMarble:member
+    package: word!
+    summary: >-
+      Represents a brown marble texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BrownMarble"'
+  - name: canvas
+    uid: word!Word.PresetTexture.canvas:member
+    package: word!
+    summary: >-
+      Represents a canvas texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Canvas"'
+  - name: cork
+    uid: word!Word.PresetTexture.cork:member
+    package: word!
+    summary: >-
+      Represents a cork texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Cork"'
+  - name: denim
+    uid: word!Word.PresetTexture.denim:member
+    package: word!
+    summary: >-
+      Represents a denim texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Denim"'
+  - name: fishFossil
+    uid: word!Word.PresetTexture.fishFossil:member
+    package: word!
+    summary: >-
+      Represents a fish fossil texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FishFossil"'
+  - name: granite
+    uid: word!Word.PresetTexture.granite:member
+    package: word!
+    summary: >-
+      Represents a granite texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Granite"'
+  - name: greenMarble
+    uid: word!Word.PresetTexture.greenMarble:member
+    package: word!
+    summary: >-
+      Represents a green marble texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"GreenMarble"'
+  - name: mediumWood
+    uid: word!Word.PresetTexture.mediumWood:member
+    package: word!
+    summary: >-
+      Represents a medium wood texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"MediumWood"'
+  - name: mixed
+    uid: word!Word.PresetTexture.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed texture type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: newsprint
+    uid: word!Word.PresetTexture.newsprint:member
+    package: word!
+    summary: >-
+      Represents a newsprint texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Newsprint"'
+  - name: oak
+    uid: word!Word.PresetTexture.oak:member
+    package: word!
+    summary: >-
+      Represents an oak texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Oak"'
+  - name: paperBag
+    uid: word!Word.PresetTexture.paperBag:member
+    package: word!
+    summary: >-
+      Represents a paper bag texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PaperBag"'
+  - name: papyrus
+    uid: word!Word.PresetTexture.papyrus:member
+    package: word!
+    summary: >-
+      Represents a papyrus texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Papyrus"'
+  - name: parchment
+    uid: word!Word.PresetTexture.parchment:member
+    package: word!
+    summary: >-
+      Represents a parchment texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Parchment"'
+  - name: pinkTissuePaper
+    uid: word!Word.PresetTexture.pinkTissuePaper:member
+    package: word!
+    summary: >-
+      Represents a pink tissue paper texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PinkTissuePaper"'
+  - name: purpleMesh
+    uid: word!Word.PresetTexture.purpleMesh:member
+    package: word!
+    summary: >-
+      Represents a purple mesh texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PurpleMesh"'
+  - name: recycledPaper
+    uid: word!Word.PresetTexture.recycledPaper:member
+    package: word!
+    summary: >-
+      Represents a recycled paper texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RecycledPaper"'
+  - name: sand
+    uid: word!Word.PresetTexture.sand:member
+    package: word!
+    summary: >-
+      Represents a sand texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Sand"'
+  - name: stationery
+    uid: word!Word.PresetTexture.stationery:member
+    package: word!
+    summary: >-
+      Represents a stationery texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Stationery"'
+  - name: walnut
+    uid: word!Word.PresetTexture.walnut:member
+    package: word!
+    summary: >-
+      Represents a walnut texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Walnut"'
+  - name: waterDroplets
+    uid: word!Word.PresetTexture.waterDroplets:member
+    package: word!
+    summary: >-
+      Represents a water droplets texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WaterDroplets"'
+  - name: whiteMarble
+    uid: word!Word.PresetTexture.whiteMarble:member
+    package: word!
+    summary: >-
+      Represents a white marble texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WhiteMarble"'
+  - name: wovenMat
+    uid: word!Word.PresetTexture.wovenMat:member
+    package: word!
+    summary: >-
+      Represents a woven mat texture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WovenMat"'

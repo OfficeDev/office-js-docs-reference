@@ -1,0 +1,116 @@
+### YamlMime:TSEnum
+name: Word.TextureAlignment
+uid: word!Word.TextureAlignment:enum
+package: word!
+fullName: Word.TextureAlignment
+summary: >-
+  Specifies the alignment (the origin of the coordinate grid) for the tiling of
+  the texture fill.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: word!Word.TextureAlignment.bottom:member
+    package: word!
+    summary: >-
+      Aligns the texture to the bottom center of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bottom"'
+  - name: bottomLeft
+    uid: word!Word.TextureAlignment.bottomLeft:member
+    package: word!
+    summary: >-
+      Aligns the texture to the bottom-left corner of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BottomLeft"'
+  - name: bottomRight
+    uid: word!Word.TextureAlignment.bottomRight:member
+    package: word!
+    summary: >-
+      Aligns the texture to the bottom-right corner of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BottomRight"'
+  - name: center
+    uid: word!Word.TextureAlignment.center:member
+    package: word!
+    summary: >-
+      Aligns the texture to the center of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Center"'
+  - name: left
+    uid: word!Word.TextureAlignment.left:member
+    package: word!
+    summary: >-
+      Aligns the texture to the middle left side of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Left"'
+  - name: mixed
+    uid: word!Word.TextureAlignment.mixed:member
+    package: word!
+    summary: >-
+      Mixed texture alignment. Used when multiple shapes with different texture
+      alignments are selected.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: right
+    uid: word!Word.TextureAlignment.right:member
+    package: word!
+    summary: >-
+      Aligns the texture to the middle right side of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Right"'
+  - name: top
+    uid: word!Word.TextureAlignment.top:member
+    package: word!
+    summary: >-
+      Aligns the texture to the top center of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Top"'
+  - name: topLeft
+    uid: word!Word.TextureAlignment.topLeft:member
+    package: word!
+    summary: >-
+      Aligns the texture to the top-left corner of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TopLeft"'
+  - name: topRight
+    uid: word!Word.TextureAlignment.topRight:member
+    package: word!
+    summary: >-
+      Aligns the texture to the top-right corner of the shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TopRight"'

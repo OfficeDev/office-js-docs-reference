@@ -979,10 +979,10 @@ methods:
       return:
         type: <xref uid="word!Word.TableBorder:class" />
         description: ''
-  - name: getBorder(borderLocationString)
+  - name: getBorder(borderLocation)
     uid: word!Word.Table#getBorder:member(2)
     package: word!
-    fullName: getBorder(borderLocationString)
+    fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
     remarks: >-
       \[ [API set: WordApi
@@ -992,11 +992,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" |
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" |
         "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"):
         Word.TableBorder;
       parameters:
-        - id: borderLocationString
+        - id: borderLocation
           description: Required. The border location.
           type: >-
             "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
@@ -1131,10 +1131,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
-  - name: getCellPadding(cellPaddingLocationString)
+  - name: getCellPadding(cellPaddingLocation)
     uid: word!Word.Table#getCellPadding:member(2)
     package: word!
-    fullName: getCellPadding(cellPaddingLocationString)
+    fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
     remarks: >-
       \[ [API set: WordApi
@@ -1144,10 +1144,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" |
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" |
         "Right"): OfficeExtension.ClientResult<number>;
       parameters:
-        - id: cellPaddingLocationString
+        - id: cellPaddingLocation
           description: >-
             Required. The cell padding location must be 'Top', 'Left', 'Bottom',
             or 'Right'.
@@ -1559,10 +1559,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: select(selectionModeString)
+  - name: select(selectionMode)
     uid: word!Word.Table#select:member(2)
     package: word!
-    fullName: select(selectionModeString)
+    fullName: select(selectionMode)
     summary: >-
       Selects the table, or the position at the start or end of the table, and
       navigates the Word UI to it.
@@ -1573,9 +1573,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
-        - id: selectionModeString
+        - id: selectionMode
           description: >-
             Optional. The selection mode must be 'Select', 'Start', or 'End'.
             'Select' is the default.
@@ -1661,10 +1661,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: setCellPadding(cellPaddingLocationString, cellPadding)
+  - name: setCellPadding(cellPaddingLocation, cellPadding)
     uid: word!Word.Table#setCellPadding:member(2)
     package: word!
-    fullName: setCellPadding(cellPaddingLocationString, cellPadding)
+    fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
     remarks: >-
       \[ [API set: WordApi
@@ -1674,10 +1674,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" |
-        "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right",
+        cellPadding: number): void;
       parameters:
-        - id: cellPaddingLocationString
+        - id: cellPaddingLocation
           description: >-
             Required. The cell padding location must be 'Top', 'Left', 'Bottom',
             or 'Right'.

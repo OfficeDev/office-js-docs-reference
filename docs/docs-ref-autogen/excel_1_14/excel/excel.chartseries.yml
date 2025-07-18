@@ -1104,10 +1104,10 @@ methods:
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;string[]&gt;
         description: ''
-  - name: getDimensionValues(dimensionString)
+  - name: getDimensionValues(dimension)
     uid: excel!Excel.ChartSeries#getDimensionValues:member(2)
     package: excel!
-    fullName: getDimensionValues(dimensionString)
+    fullName: getDimensionValues(dimension)
     summary: >-
       Gets the values from a single dimension of the chart series. These could
       be either category values or data values, depending on the dimension
@@ -1121,10 +1121,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getDimensionValues(dimensionString: "Categories" | "Values" | "XValues"
-        | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
+        getDimensionValues(dimension: "Categories" | "Values" | "XValues" |
+        "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
       parameters:
-        - id: dimensionString
+        - id: dimension
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:

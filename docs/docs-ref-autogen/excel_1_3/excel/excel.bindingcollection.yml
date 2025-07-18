@@ -88,10 +88,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Binding:class" />
         description: ''
-  - name: add(range, bindingTypeString, id)
+  - name: add(range, bindingType, id)
     uid: excel!Excel.BindingCollection#add:member(2)
     package: excel!
-    fullName: add(range, bindingTypeString, id)
+    fullName: add(range, bindingType, id)
     summary: Add a new binding to a particular Range.
     remarks: >-
       \[ [API set: ExcelApi
@@ -101,15 +101,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(range: Range | string, bindingTypeString: "Range" | "Table" |
-        "Text", id: string): Excel.Binding;
+        add(range: Range | string, bindingType: "Range" | "Table" | "Text", id:
+        string): Excel.Binding;
       parameters:
         - id: range
           description: >-
             Range to bind the binding to. May be a `Range` object or a string.
             If string, must contain the full address, including the sheet name
           type: <xref uid="excel!Excel.Range:class" /> | string
-        - id: bindingTypeString
+        - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '"Range" | "Table" | "Text"'
         - id: id
@@ -149,10 +149,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Binding:class" />
         description: ''
-  - name: addFromNamedItem(name, bindingTypeString, id)
+  - name: addFromNamedItem(name, bindingType, id)
     uid: excel!Excel.BindingCollection#addFromNamedItem:member(2)
     package: excel!
-    fullName: addFromNamedItem(name, bindingTypeString, id)
+    fullName: addFromNamedItem(name, bindingType, id)
     summary: >-
       Add a new binding based on a named item in the workbook. If the named item
       references to multiple areas, the `InvalidReference` error will be
@@ -165,13 +165,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" |
-        "Text", id: string): Excel.Binding;
+        addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text",
+        id: string): Excel.Binding;
       parameters:
         - id: name
           description: Name from which to create binding.
           type: string
-        - id: bindingTypeString
+        - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '"Range" | "Table" | "Text"'
         - id: id
@@ -207,10 +207,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Binding:class" />
         description: ''
-  - name: addFromSelection(bindingTypeString, id)
+  - name: addFromSelection(bindingType, id)
     uid: excel!Excel.BindingCollection#addFromSelection:member(2)
     package: excel!
-    fullName: addFromSelection(bindingTypeString, id)
+    fullName: addFromSelection(bindingType, id)
     summary: >-
       Add a new binding based on the current selection. If the selection has
       multiple areas, the `InvalidReference` error will be returned.
@@ -222,10 +222,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id:
-        string): Excel.Binding;
+        addFromSelection(bindingType: "Range" | "Table" | "Text", id: string):
+        Excel.Binding;
       parameters:
-        - id: bindingTypeString
+        - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
           type: '"Range" | "Table" | "Text"'
         - id: id

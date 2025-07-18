@@ -1522,10 +1522,10 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
-  - name: getReviewedText(changeTrackingVersionString)
+  - name: getReviewedText(changeTrackingVersion)
     uid: word!Word.Paragraph#getReviewedText:member(2)
     package: word!
-    fullName: getReviewedText(changeTrackingVersionString)
+    fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
       \[ [API set: WordApi
@@ -1535,10 +1535,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"):
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"):
         OfficeExtension.ClientResult<string>;
       parameters:
-        - id: changeTrackingVersionString
+        - id: changeTrackingVersion
           description: >-
             Optional. The value must be 'Original' or 'Current'. The default is
             'Current'.
@@ -2394,10 +2394,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: select(selectionModeString)
+  - name: select(selectionMode)
     uid: word!Word.Paragraph#select:member(2)
     package: word!
-    fullName: select(selectionModeString)
+    fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the paragraph.
     remarks: >-
       \[ [API set: WordApi
@@ -2406,9 +2406,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
-        - id: selectionModeString
+        - id: selectionMode
           description: >-
             Optional. The selection mode must be 'Select', 'Start', or 'End'.
             'Select' is the default.

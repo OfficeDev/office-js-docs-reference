@@ -136,10 +136,10 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: The newly inserted shape.
-  - name: addGeometricShape(geometricShapeTypeString, options)
+  - name: addGeometricShape(geometricShapeType, options)
     uid: powerpoint!PowerPoint.ShapeCollection#addGeometricShape:member(2)
     package: powerpoint!
-    fullName: addGeometricShape(geometricShapeTypeString, options)
+    fullName: addGeometricShape(geometricShapeType, options)
     summary: >-
       Adds a geometric shape to the slide. Returns a `Shape` object that
       represents the new shape.
@@ -152,7 +152,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" |
+        addGeometricShape(geometricShapeType: "LineInverse" | "Triangle" |
         "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" |
         "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
         "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
@@ -204,7 +204,7 @@ methods:
         "ChartStar" | "ChartPlus", options?: PowerPoint.ShapeAddOptions):
         PowerPoint.Shape;
       parameters:
-        - id: geometricShapeTypeString
+        - id: geometricShapeType
           description: >-
             Specifies the type of the geometric shape. See
             [PowerPoint.GeometricShapeType](xref:powerpoint!PowerPoint.GeometricShapeType:enum)
@@ -340,10 +340,10 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: The newly inserted shape.
-  - name: addLine(connectorTypeString, options)
+  - name: addLine(connectorType, options)
     uid: powerpoint!PowerPoint.ShapeCollection#addLine:member(2)
     package: powerpoint!
-    fullName: addLine(connectorTypeString, options)
+    fullName: addLine(connectorType, options)
     summary: >-
       Adds a line to the slide. Returns a `Shape` object that represents the new
       line.
@@ -356,10 +356,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addLine(connectorTypeString?: "Straight" | "Elbow" | "Curve", options?:
+        addLine(connectorType?: "Straight" | "Elbow" | "Curve", options?:
         PowerPoint.ShapeAddOptions): PowerPoint.Shape;
       parameters:
-        - id: connectorTypeString
+        - id: connectorType
           description: >-
             Specifies the connector type of the line. If not provided,
             `straight` connector type will be used. See

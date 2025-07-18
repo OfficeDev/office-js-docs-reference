@@ -1,0 +1,115 @@
+### YamlMime:TSEnum
+name: Word.PresetLightingDirection
+uid: word!Word.PresetLightingDirection:enum
+package: word!
+fullName: Word.PresetLightingDirection
+summary: >-
+  Specifies the location of lighting on an extruded (three-dimensional) shape
+  relative to the shape.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: word!Word.PresetLightingDirection.bottom:member
+    package: word!
+    summary: >-
+      Represents lighting from the bottom.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bottom"'
+  - name: bottomLeft
+    uid: word!Word.PresetLightingDirection.bottomLeft:member
+    package: word!
+    summary: >-
+      Represents lighting from the bottom-left.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BottomLeft"'
+  - name: bottomRight
+    uid: word!Word.PresetLightingDirection.bottomRight:member
+    package: word!
+    summary: >-
+      Represents lighting from the bottom-right.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BottomRight"'
+  - name: left
+    uid: word!Word.PresetLightingDirection.left:member
+    package: word!
+    summary: >-
+      Represents lighting from the left.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Left"'
+  - name: mixed
+    uid: word!Word.PresetLightingDirection.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed lighting direction.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: none
+    uid: word!Word.PresetLightingDirection.none:member
+    package: word!
+    summary: >-
+      Represents no lighting.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: right
+    uid: word!Word.PresetLightingDirection.right:member
+    package: word!
+    summary: >-
+      Represents lighting from the right.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Right"'
+  - name: top
+    uid: word!Word.PresetLightingDirection.top:member
+    package: word!
+    summary: >-
+      Represents lighting from the top.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Top"'
+  - name: topLeft
+    uid: word!Word.PresetLightingDirection.topLeft:member
+    package: word!
+    summary: >-
+      Represents lighting from the top-left.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TopLeft"'
+  - name: topRight
+    uid: word!Word.PresetLightingDirection.topRight:member
+    package: word!
+    summary: >-
+      Represents lighting from the top-right.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TopRight"'

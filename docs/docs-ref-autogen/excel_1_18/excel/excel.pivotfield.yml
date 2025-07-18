@@ -198,10 +198,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: clearFilter(filterTypeString)
+  - name: clearFilter(filterType)
     uid: excel!Excel.PivotField#clearFilter:member(2)
     package: excel!
-    fullName: clearFilter(filterTypeString)
+    fullName: clearFilter(filterType)
     summary: >-
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
@@ -214,10 +214,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        clearFilter(filterTypeString: "Unknown" | "Value" | "Manual" | "Label" |
+        clearFilter(filterType: "Unknown" | "Value" | "Manual" | "Label" |
         "Date"): void;
       parameters:
-        - id: filterTypeString
+        - id: filterType
           description: The type of filter on the field of which to clear all criteria.
           type: '"Unknown" | "Value" | "Manual" | "Label" | "Date"'
       return:
@@ -272,10 +272,10 @@ methods:
           True if the field has a filter of type `filterType` applied. If
           `filterType` is not specified, `true` is returned if the field has any
           applied filters.
-  - name: isFiltered(filterTypeString)
+  - name: isFiltered(filterType)
     uid: excel!Excel.PivotField#isFiltered:member(2)
     package: excel!
-    fullName: isFiltered(filterTypeString)
+    fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: >-
       \[ [API set: ExcelApi
@@ -286,10 +286,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        isFiltered(filterTypeString?: "Unknown" | "Value" | "Manual" | "Label" |
+        isFiltered(filterType?: "Unknown" | "Value" | "Manual" | "Label" |
         "Date"): OfficeExtension.ClientResult<boolean>;
       parameters:
-        - id: filterTypeString
+        - id: filterType
           description: >-
             The filter type to check. If no type is provided, this method will
             check if any filter is applied.
@@ -493,10 +493,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: sortByValues(sortByString, valuesHierarchy, pivotItemScope)
+  - name: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
     uid: excel!Excel.PivotField#sortByValues:member(2)
     package: excel!
-    fullName: sortByValues(sortByString, valuesHierarchy, pivotItemScope)
+    fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope
       defines which specific values will be used to sort when there are multiple
@@ -509,11 +509,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy:
+        sortByValues(sortBy: "Ascending" | "Descending", valuesHierarchy:
         Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>):
         void;
       parameters:
-        - id: sortByString
+        - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
           type: '"Ascending" | "Descending"'
         - id: valuesHierarchy

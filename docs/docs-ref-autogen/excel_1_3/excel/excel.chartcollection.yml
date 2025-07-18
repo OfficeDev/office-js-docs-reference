@@ -111,10 +111,10 @@ methods:
       return:
         type: <xref uid="excel!Excel.Chart:class" />
         description: ''
-  - name: add(typeString, sourceData, seriesByString)
+  - name: add(type, sourceData, seriesBy)
     uid: excel!Excel.ChartCollection#add:member(2)
     package: excel!
-    fullName: add(typeString, sourceData, seriesByString)
+    fullName: add(type, sourceData, seriesBy)
     summary: Creates a new chart.
     remarks: >-
       \[ [API set: ExcelApi
@@ -124,7 +124,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" |
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" |
         "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" |
         "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
         "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" |
@@ -146,10 +146,10 @@ methods:
         "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" |
         "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
         "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" |
-        "Sunburst" | "Funnel", sourceData: Range, seriesByString?: "Auto" |
-        "Columns" | "Rows"): Excel.Chart;
+        "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns"
+        | "Rows"): Excel.Chart;
       parameters:
-        - id: typeString
+        - id: type
           description: Represents the type of a chart. See `Excel.ChartType` for details.
           type: >-
             "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100"
@@ -179,7 +179,7 @@ methods:
         - id: sourceData
           description: The `Range` object corresponding to the source data.
           type: <xref uid="excel!Excel.Range:class" />
-        - id: seriesByString
+        - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series
             on the chart. See `Excel.ChartSeriesBy` for details.

@@ -605,10 +605,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: close(closeBehaviorString)
+  - name: close(closeBehavior)
     uid: excel!Excel.Workbook#close:member(2)
     package: excel!
-    fullName: close(closeBehaviorString)
+    fullName: close(closeBehavior)
     summary: Close current workbook.
     remarks: >-
       \[ [API set: ExcelApi
@@ -618,9 +618,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
+      content: 'close(closeBehavior?: "Save" | "SkipSave"): void;'
       parameters:
-        - id: closeBehaviorString
+        - id: closeBehavior
           description: workbook close behavior.
           type: '"Save" | "SkipSave"'
       return:
@@ -1074,10 +1074,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: save(saveBehaviorString)
+  - name: save(saveBehavior)
     uid: excel!Excel.Workbook#save:member(2)
     package: excel!
-    fullName: save(saveBehaviorString)
+    fullName: save(saveBehavior)
     summary: Save current workbook.
     remarks: >-
       \[ [API set: ExcelApi
@@ -1087,9 +1087,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
+      content: 'save(saveBehavior?: "Save" | "Prompt"): void;'
       parameters:
-        - id: saveBehaviorString
+        - id: saveBehavior
           description: >-
             The save behavior must be "Save" or "Prompt". Default value is
             "Save".
