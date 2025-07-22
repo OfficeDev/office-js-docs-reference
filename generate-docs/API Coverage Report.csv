@@ -1000,7 +1000,7 @@ Excel.ChartColorScheme,"monochromaticPalette6",EnumField,Fine,false
 Excel.ChartColorScheme,"monochromaticPalette7",EnumField,Fine,false
 Excel.ChartColorScheme,"monochromaticPalette8",EnumField,Fine,false
 Excel.ChartColorScheme,"monochromaticPalette9",EnumField,Fine,false
-Excel.ChartDataLabel,N/A,Class,Unknown,false
+Excel.ChartDataLabel,N/A,Class,Unknown,true
 Excel.ChartDataLabel,"autoText",Property,Excellent,false
 Excel.ChartDataLabel,"context",Property,Excellent,false
 Excel.ChartDataLabel,"format",Property,Poor,false
@@ -1422,7 +1422,7 @@ Excel.ChartPlotAreaPosition,"custom",EnumField,Fine,false
 Excel.ChartPlotBy,N/A,Enum,Fine,false
 Excel.ChartPlotBy,"columns",EnumField,Fine,false
 Excel.ChartPlotBy,"rows",EnumField,Fine,false
-Excel.ChartPoint,N/A,Class,Unknown,false
+Excel.ChartPoint,N/A,Class,Unknown,true
 Excel.ChartPoint,"context",Property,Excellent,false
 Excel.ChartPoint,"dataLabel",Property,Fine,false
 Excel.ChartPoint,"format",Property,Poor,false
@@ -1448,7 +1448,7 @@ Excel.ChartPointFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.ChartPointFormat,"set(properties, options)",Method,Good,false
 Excel.ChartPointFormat,"set(properties)",Method,Good,false
 Excel.ChartPointFormat,"toJSON()",Method,Excellent,false
-Excel.ChartPointsCollection,N/A,Class,Unknown,false
+Excel.ChartPointsCollection,N/A,Class,Unknown,true
 Excel.ChartPointsCollection,"context",Property,Excellent,false
 Excel.ChartPointsCollection,"count",Property,Fine,false
 Excel.ChartPointsCollection,"items",Property,Poor,false
@@ -6669,7 +6669,7 @@ Excel.Workbook,"getActiveCell()",Method,Poor,true
 Excel.Workbook,"getActiveChart()",Method,Great,false
 Excel.Workbook,"getActiveChartOrNullObject()",Method,Excellent,false
 Excel.Workbook,"getActiveShape()",Method,Good,false
-Excel.Workbook,"getActiveShapeOrNullObject()",Method,Excellent,false
+Excel.Workbook,"getActiveShapeOrNullObject()",Method,Excellent,true
 Excel.Workbook,"getActiveSlicer()",Method,Great,false
 Excel.Workbook,"getActiveSlicerOrNullObject()",Method,Excellent,false
 Excel.Workbook,"getIsActiveCollabSession()",Method,Excellent,false
