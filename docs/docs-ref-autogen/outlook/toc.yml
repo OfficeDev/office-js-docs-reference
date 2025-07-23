@@ -113,6 +113,8 @@ items:
             uid: outlook!Office.DragoverEventData:interface
           - name: DropEventData
             uid: outlook!Office.DropEventData:interface
+          - name: DroppedItemData
+            uid: outlook!Office.DroppedItemData:interface
           - name: DroppedItems
             uid: outlook!Office.DroppedItems:interface
           - name: EmailAddressDetails

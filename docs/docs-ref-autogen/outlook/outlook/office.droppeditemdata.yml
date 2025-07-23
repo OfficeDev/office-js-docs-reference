@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: Office.DroppedItemData
+uid: outlook!Office.DroppedItemData:interface
+package: outlook!
+fullName: Office.DroppedItemData
+summary: >-
+  Provides the contents and details of the message or file attachment being
+  dragged and dropped into an add-in's task pane.
+remarks: >-
+  To learn more about the drag-and-drop feature and how to implement it across
+  various Outlook clients, see .
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fileContent
+    uid: outlook!Office.DroppedItemData#fileContent:member
+    package: outlook!
+    fullName: fileContent
+    summary: Gets the contents of the file being dragged and dropped.
+    remarks: >-
+      For guidance on how to retrieve data from a `Blob`<!-- -->, see the [File
+      API documentation](https://developer.mozilla.org/docs/Web/API/Blob)<!--
+      -->.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileContent: Blob;'
+      return:
+        type: Blob
+  - name: name
+    uid: outlook!Office.DroppedItemData#name:member
+    package: outlook!
+    fullName: name
+    summary: Gets the name of the file being dragged and dropped.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: type
+    uid: outlook!Office.DroppedItemData#type:member
+    package: outlook!
+    fullName: type
+    summary: Gets the type of the file being dragged and dropped.
+    remarks: >-
+      **Important**: Messages are dropped as .eml files in an add-in's task
+      pane.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string;'
+      return:
+        type: string

@@ -160,8 +160,9 @@ fields:
       -->.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      **Important**: The `DragAndDrop` event isn't supported in Outlook on
+      Windows (classic) and on Mac. If the `DragAndDrop` handler runs on these
+      clients, an error occurs ("This event isn't supported on this platform.").
   - name: EnhancedLocationsChanged
     uid: office!Office.EventType.EnhancedLocationsChanged:member
     package: office!

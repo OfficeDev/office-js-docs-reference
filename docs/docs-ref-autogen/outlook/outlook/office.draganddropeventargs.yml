@@ -8,8 +8,8 @@ summary: >-
   and dropped into an add-in's task pane when the `Office.EventType.DragAndDrop`
   event is raised.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  To learn more about the drag-and-drop feature and how to implement it across
+  various Outlook clients, see .
 
 isPreview: false
 isDeprecated: false
@@ -22,10 +22,7 @@ properties:
     summary: >-
       Gets the details about the mouse pointer position within an add-in's task
       pane and the items being dragged and dropped into the task pane.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -43,10 +40,7 @@ properties:
       Gets the type of the event. For details, see
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: ''
 
     isPreview: false
     isDeprecated: false

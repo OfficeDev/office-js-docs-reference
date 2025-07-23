@@ -8,6 +8,55 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-labels.yaml
+
+
+  // This function adds data labels to specific chart points 
+
+  // and sets their text and position.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem(sheetName);
+    const chart = sheet.charts.getItemAt(0);
+    await context.sync();
+
+    const series = chart.series.getItemAt(0);
+    series.points.load("dataLabel");
+    await context.sync();
+    
+    // Define properties for data label positioning and shape.
+    const labelProperties = [
+      {
+        top: 70,
+        geometricShapeType: Excel.GeometricShapeType.rectangle
+      },
+      {
+        top: 200,
+        geometricShapeType: Excel.GeometricShapeType.rectangle
+      }
+    ];
+
+    // Add data labels to specific chart points and set their text and properties.
+    for (let i = 0; i < dataLabelInfo.length; i++) {
+      const point = series.points.getItemAt(dataLabelInfo[i].index);
+      point.hasDataLabel = true;
+
+      const dataLabel = point.dataLabel;
+      dataLabel.text = dataLabelInfo[i].news;
+      dataLabel.set(labelProperties[i]);
+    }
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

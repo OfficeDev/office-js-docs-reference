@@ -5,10 +5,10 @@ package: outlook!
 fullName: Office.DragoverEventData
 summary: >-
   Represents the `DragAndDropEventArgs.dragAndDropEventData` object when a
-  message or file attachment is being dragged over an add-in's task pane.
+  message or file attachment is dragged over an add-in's task pane.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  To learn more about the drag-and-drop feature and how to implement it across
+  various Outlook clients, see .
 
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,7 @@ properties:
     summary: >-
       Gets the x-coordinate of the mouse pointer that represents the horizontal
       position in pixels.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -39,10 +36,7 @@ properties:
     summary: >-
       Gets the y-coordinate of the mouse pointer that represents the vertical
       position in pixels.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -54,11 +48,10 @@ properties:
     uid: outlook!Office.DragoverEventData#type:member
     package: outlook!
     fullName: type
-    summary: Gets the type of drag-and-drop event.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: >-
+      Gets the type of drag-and-drop event. The `dragover` event occurs when an
+      item is dragged over an add-in's task pane.
+    remarks: ''
 
     isPreview: false
     isDeprecated: false

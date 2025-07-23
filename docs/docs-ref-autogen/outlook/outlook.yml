@@ -27,6 +27,7 @@ interfaces:
   - outlook!Office.DragAndDropEventArgs:interface
   - outlook!Office.DragoverEventData:interface
   - outlook!Office.DropEventData:interface
+  - outlook!Office.DroppedItemData:interface
   - outlook!Office.DroppedItems:interface
   - outlook!Office.EmailAddressDetails:interface
   - outlook!Office.EmailUser:interface

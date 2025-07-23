@@ -629,7 +629,8 @@ export declare namespace Office {
          * The event handler receives an argument of type
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs | Office.DragAndDropEventArgs}.
          *
-         * [Api set: Mailbox 1.1]
+         * **Important**: The `DragAndDrop` event isn't supported in Outlook on Windows (classic) and on Mac. If the `DragAndDrop` handler runs on
+         * these clients, an error occurs ("This event isn't supported on this platform.").
          */
         DragAndDrop,
         /**
