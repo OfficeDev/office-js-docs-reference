@@ -1,11 +1,12 @@
 ### YamlMime:TSType
 name: Word.CritiquePopupOptions
-uid: 'word!Word.CritiquePopupOptions:interface'
+uid: word!Word.CritiquePopupOptions:interface
 package: word!
 fullName: Word.CritiquePopupOptions
 summary: Properties defining the behavior of the pop-up menu for a given critique.
 remarks: >-
-  \[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -69,18 +70,22 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: brandingTextResourceId
-    uid: 'word!Word.CritiquePopupOptions#brandingTextResourceId:member'
+    uid: word!Word.CritiquePopupOptions#brandingTextResourceId:member
     package: word!
     fullName: brandingTextResourceId
     summary: >-
-      Gets the manifest resource ID of the string to use for branding. This branding text appears next to your add-in
-      icon in the pop-up menu.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Gets the manifest resource ID of the string to use for branding. This
+      branding text appears next to your add-in icon in the pop-up menu.
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +93,14 @@ properties:
       return:
         type: string
   - name: subtitleResourceId
-    uid: 'word!Word.CritiquePopupOptions#subtitleResourceId:member'
+    uid: word!Word.CritiquePopupOptions#subtitleResourceId:member
     package: word!
     fullName: subtitleResourceId
     summary: Gets the manifest resource ID of the string to use as the subtitle.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,23 +108,29 @@ properties:
       return:
         type: string
   - name: suggestions
-    uid: 'word!Word.CritiquePopupOptions#suggestions:member'
+    uid: word!Word.CritiquePopupOptions#suggestions:member
     package: word!
     fullName: suggestions
     summary: Gets the suggestions to display in the critique pop-up menu.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'suggestions: string[];'
       return:
-        type: 'string[]'
+        type: string[]
   - name: titleResourceId
-    uid: 'word!Word.CritiquePopupOptions#titleResourceId:member'
+    uid: word!Word.CritiquePopupOptions#titleResourceId:member
     package: word!
     fullName: titleResourceId
     summary: Gets the manifest resource ID of the string to use as the title.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

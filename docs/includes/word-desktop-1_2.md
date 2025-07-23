@@ -69,7 +69,7 @@
 ||[shapeGroup](/javascript/api/word/word.shape#word-word-shape-shapegroup-member)|Gets the shape group associated with the shape.|
 ||[textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)|Gets the text frame object of the shape.|
 ||[textWrap](/javascript/api/word/word.shape#word-word-shape-textwrap-member)|Returns the text wrap formatting of the shape.|
-||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|The distance, in points, from the top edge of the shape to the vertical relative position, see Word.RelativeVerticalPosition.|
+||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|The distance, in points, from the top edge of the shape to the vertical relative position (see Word.RelativeVerticalPosition).|
 ||[topRelative](/javascript/api/word/word.shape#word-word-shape-toprelative-member)|The relative top position as a percentage from the top edge of the shape to the vertical relative position, see Word.RelativeVerticalPosition.|
 ||[type](/javascript/api/word/word.shape#word-word-shape-type-member)|Gets the shape type.|
 ||[visible](/javascript/api/word/word.shape#word-word-shape-visible-member)|Specifies if the shape is visible.|

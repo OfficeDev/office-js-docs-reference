@@ -648,7 +648,7 @@ export declare namespace Office {
          *
          * - Although Outlook on Mac supports the `InsightMessage` notification type, it currently doesn't support the `InfobarClicked` event.
          * To determine when the **Dismiss** action is selected from the notification, implement a handler for the `OnInfoBarDismissClicked` event instead.
-         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch#supported-events | Configure your Outlook add-in for event-based activation}.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events | Activate add-ins with events}.
          *
          * [Api set: Mailbox 1.10]
          */
@@ -703,7 +703,7 @@ export declare namespace Office {
          * - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * - The `OfficeThemeChanged` event isn't supported in add-ins that implement
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
          *
          * [Api set: Mailbox 1.14]
          */
@@ -3384,9 +3384,15 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              *
-             * **Important**: The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
+             * **Important**:
+             *
+             * - The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
              * Mailbox 1.5, the `options` parameter is supported in online-meeting provider and note-logging mobile add-ins. For more information on API support in
              * Outlook on mobile devices, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+             *
+             * - {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Event-based activation} and
+             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
+             * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
              *
              * @param options - Optional. In Outlook, an object that specifies the behavior of an on-send add-in, online-meeting provider add-in, or note-logging mobile add-in
              * when it completes processing an event.
@@ -3407,9 +3413,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
+         * **Important**:
+         *
+         * - Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
          * note-logging mobile add-ins. For more information on API support in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
+         * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
          */
         export interface EventCompletedOptions {
             /**
@@ -3708,7 +3720,7 @@ export declare namespace Office {
          */
         userPrincipalName: string;
         /**
-         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa | Microsoft personal account}.
+         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/72f10e1e-cab8-4950-a8da-7c45339575b0 | Microsoft personal account}.
          */
         authorityType: "aad" | "msa" | "other";
         /**
@@ -4608,7 +4620,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** > **Options** > **Language** in the Office
          * application.
          *
          * **Support details**
@@ -4644,7 +4656,7 @@ export declare namespace Office {
          *
          * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
          *
-         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** > **Options** > **Language** in the Office
          * application.
          *
          * When using in Outlook, the applicable modes are Compose or Read.
@@ -5481,6 +5493,8 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
+         * - Access to a user's geolocation isn't supported in Excel, PowerPoint, and Word. It's only supported in Outlook on the web and new Outlook on Windows using the `requestPermissionsAsync` method.
+         *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
          *     In web versions of Excel, PowerPoint, and Word, add-ins can only request access to a user's camera and microphone.
          *     Access to a user's geolocation is blocked.
@@ -5512,7 +5526,7 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
-         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation},
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
@@ -5553,7 +5567,7 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
-         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation},
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
@@ -7149,7 +7163,7 @@ export declare namespace Office {
      * Provides access to the properties for Office theme colors.
      *
      * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user.
-     * The user sets a theme in an Office application through **File** \> **Account** or **Office Account** \> **Office Theme**.
+     * The user sets a theme in an Office application through **File** > **Account** or **Office Account** > **Office Theme**.
      * The selected theme is then applied across all Office applications. Using Office theme colors is appropriate for mail and
      * task pane add-ins.
      *
@@ -7204,7 +7218,7 @@ export declare namespace Office {
      *
      * **Important**: In Outlook, the Office theme API is supported starting in
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
-     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
      */
     export interface OfficeTheme {
         /**
@@ -7228,7 +7242,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `isDarkTheme` property isn't yet supported in Outlook. 
+         * **Important**: The `isDarkTheme` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         isDarkTheme: boolean;
         /**
@@ -7236,7 +7254,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `themeId` property isn't yet supported in Outlook. 
+         * **Important**: The `themeId` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         themeId: ThemeId;
     }
@@ -8141,7 +8163,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -8195,7 +8217,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -8252,7 +8274,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -8351,7 +8373,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -8769,7 +8791,7 @@ export declare namespace Office {
          *
          * - The URL that's returned points to the location of the JavaScript file that classic Outlook on Windows uses to handle event-based activation
          * and integrated spam reporting. To learn more about these features, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Activate add-ins with events} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
          * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},

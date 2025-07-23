@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 05/06/2025
+ms.date: 08/26/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -48,7 +48,7 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 
-Setting a minimum requirement set version in the manifest controls in which Outlook client the add-in will appear. If a client doesn't support the minimum requirement set, it doesn't load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
+The minimum requirement set specified in the manifest determines which Outlook clients can load the add-in. If the Outlook client doesn't support at least the specified version, the add-in won't load. For example, if you specify the requirement set version to 1.3, the add-in only appears in Outlook clients that support version 1.3 or higher.
 
 > [!NOTE]
 > Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
@@ -92,18 +92,20 @@ In this section, we note the range of requirement sets supported by Exchange ser
 
 ### Exchange server support
 
-The following servers support Outlook add-ins.
+The following table lists Exchange servers and the Mailbox requirement sets they support. For your add-in to show up in Outlook hosted in a particular Exchange environment, the version you specify as the minimum requirement set in your add-in's manifest must be supported by that environment.
 
 | Product | Major Exchange version | Supported API requirement sets |
 |---|---|---|
 | Exchange Online | Latest build | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md), [1.13](requirement-set-1.13/outlook-requirement-set-1.13.md), [1.14](requirement-set-1.14/outlook-requirement-set-1.14.md), [1.15](requirement-set-1.15/outlook-requirement-set-1.15.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>1</sup> |
-| Exchange on-premises<sup>2</sup> | 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
+| Exchange on-premises | Subscription Edition (SE) | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
+|| 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 || 2016 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 
-> [!NOTE]
 > <sup>1</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
->
-> <sup>2</sup> Even if an add-in implements features from requirement sets not supported in an Exchange on-premises environment, it can still be added to an Outlook client as long as the requirement set specified in its manifest aligns with those supported by Exchange on-premises. However, an implemented feature will only work if the Outlook client in which the add-in is installed supports the minimum requirement set needed by a feature. To determine the requirement sets supported by varying Outlook clients, see [Outlook client support](#outlook-client-support). We recommend supplementing this with the documentation on the specific feature for any exceptions.
+
+Even if an add-in implements features from later requirement sets not supported in an Exchange on-premises environment, it can still be added to an Outlook client as long as the minimum requirement set specified in its manifest aligns with those supported by Exchange on-premises. However, an implemented feature only works if the Outlook client in which the add-in is installed supports the minimum requirement set needed by a feature. For example, a signature add-in that specifies 1.5 in its manifest will be installed and loaded in the Exchange 2019 on-premises environment. However, its call to [Body.setSignatureAsync](/javascript/api/outlook/office.body#outlook-office-body-setsignatureasync-member(1)), which was introduced in requirement set 1.10, will only run if the Outlook client where the add-in is installed supports 1.10.
+
+To determine the requirement sets supported by varying Outlook clients, see [Outlook client support](#outlook-client-support). We recommend supplementing this with the documentation on the specific feature for any exceptions.
 
 ### Outlook client support
 
@@ -125,7 +127,6 @@ Add-ins are supported in Outlook on the following platforms.
 | Android<sup>1 8</sup> | subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md)<br>[NestedAppAuth 1.1](../common/nested-app-auth-requirement-sets.md) |
 | iOS<sup>1 8</sup> | subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md)<br>[NestedAppAuth 1.1](../common/nested-app-auth-requirement-sets.md) |
 
-> [!NOTE]
 > <sup>1</sup> Add-ins aren't supported in Outlook on Android, on iOS, and modern mobile web with on-premises Exchange accounts. Certain iOS devices still support add-ins when using on-premises Exchange accounts with classic Outlook on the web. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 >
 > <sup>2</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
@@ -169,6 +170,9 @@ The following table lists version support for more recent Mailbox requirement se
 | 1.15 | Version 2412 (Build 18324.20172) |
 
 For more details about your client version, see the update history page for [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) or [Office 2024](/officeupdates/update-history-office-2024) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
+
+> [!NOTE]
+> In Outlook, each update channel receives updates at a different rate. To verify that your channel supports a particular version or build, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). For a comparison of the different update channels, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
 
 ## Reference the Office JavaScript API production library
 

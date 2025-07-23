@@ -54,14 +54,14 @@
 ||[clearFilters()](/javascript/api/excel/excel.slicer#excel-excel-slicer-clearfilters-member(1))|Clears all the filters currently applied on the slicer.|
 ||[delete()](/javascript/api/excel/excel.slicer#excel-excel-slicer-delete-member(1))|Deletes the slicer.|
 ||[getSelectedItems()](/javascript/api/excel/excel.slicer#excel-excel-slicer-getselecteditems-member(1))|Returns an array of selected items' keys.|
-||[height](/javascript/api/excel/excel.slicer#excel-excel-slicer-height-member)|Represents the height, in points, of the slicer.|
+||[height](/javascript/api/excel/excel.slicer#excel-excel-slicer-height-member)|Specifies the height, in points, of the slicer.|
 ||[id](/javascript/api/excel/excel.slicer#excel-excel-slicer-id-member)|Represents the unique ID of the slicer.|
 ||[isFilterCleared](/javascript/api/excel/excel.slicer#excel-excel-slicer-isfiltercleared-member)|Value is `true` if all filters currently applied on the slicer are cleared.|
 ||[left](/javascript/api/excel/excel.slicer#excel-excel-slicer-left-member)|Represents the distance, in points, from the left side of the slicer to the left of the worksheet.|
 ||[name](/javascript/api/excel/excel.slicer#excel-excel-slicer-name-member)|Represents the name of the slicer.|
 ||[selectItems(items?: string[])](/javascript/api/excel/excel.slicer#excel-excel-slicer-selectitems-member(1))|Selects slicer items based on their keys.|
 ||[slicerItems](/javascript/api/excel/excel.slicer#excel-excel-slicer-sliceritems-member)|Represents the collection of slicer items that are part of the slicer.|
-||[sortBy](/javascript/api/excel/excel.slicer#excel-excel-slicer-sortby-member)|Represents the sort order of the items in the slicer.|
+||[sortBy](/javascript/api/excel/excel.slicer#excel-excel-slicer-sortby-member)|Specifies the sort order of the items in the slicer.|
 ||[style](/javascript/api/excel/excel.slicer#excel-excel-slicer-style-member)|Constant value that represents the slicer style.|
 ||[top](/javascript/api/excel/excel.slicer#excel-excel-slicer-top-member)|Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.|
 ||[width](/javascript/api/excel/excel.slicer#excel-excel-slicer-width-member)|Represents the width, in points, of the slicer.|

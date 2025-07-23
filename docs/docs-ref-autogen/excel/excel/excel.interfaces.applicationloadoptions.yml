@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ApplicationLoadOptions
-uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+uid: excel!Excel.Interfaces.ApplicationLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ApplicationLoadOptions
 summary: Represents the Excel application that manages the workbook.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,11 +29,17 @@ properties:
       return:
         type: boolean
   - name: calculationEngineVersion
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member'
+    uid: >-
+      excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member
     package: excel!
     fullName: calculationEngineVersion
-    summary: Returns the Excel calculation engine version used for the last full recalculation.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the Excel calculation engine version used for the last full
+      recalculation.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,17 +47,20 @@ properties:
       return:
         type: boolean
   - name: calculationMode
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member
     package: excel!
     fullName: calculationMode
     summary: >-
-      Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`<!-- -->.
-      Possible values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
-      where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when
-      the user requests it.
+      Returns the calculation mode used in the workbook, as defined by the
+      constants in `Excel.CalculationMode`<!-- -->. Possible values are:
+      `Automatic`<!-- -->, where Excel controls recalculation;
+      `AutomaticExceptTables`<!-- -->, where Excel controls recalculation but
+      ignores changes in tables; `Manual`<!-- -->, where calculation is done
+      when the user requests it.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for
+      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,11 +68,16 @@ properties:
       return:
         type: boolean
   - name: calculationState
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member
     package: excel!
     fullName: calculationState
-    summary: Returns the calculation state of the application. See `Excel.CalculationState` for details.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Returns the calculation state of the application. See
+      `Excel.CalculationState` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,25 +85,36 @@ properties:
       return:
         type: boolean
   - name: cultureInfo
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member
     package: excel!
     fullName: cultureInfo
     summary: >-
-      Provides information based on current system culture settings. This includes the culture names, number formatting,
-      and other culturally dependent settings.
-    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Provides information based on current system culture settings. This
+      includes the culture names, number formatting, and other culturally
+      dependent settings.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'cultureInfo?: Excel.Interfaces.CultureInfoLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.CultureInfoLoadOptions:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.CultureInfoLoadOptions:interface" />
   - name: decimalSeparator
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member
     package: excel!
     fullName: decimalSeparator
-    summary: Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
-    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Gets the string used as the decimal separator for numeric values. This is
+      based on the local Excel settings.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,13 +122,18 @@ properties:
       return:
         type: boolean
   - name: formatStaleValues
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#formatStaleValues:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#formatStaleValues:member
     package: excel!
     fullName: formatStaleValues
     summary: >-
-      Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled. The stale
-      formulas are rendered with stale formatting if the option is enabled.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Specifies whether the Format Stale Values option within Calculation
+      Options is enabled or disabled. The stale formulas are rendered with stale
+      formatting if the option is enabled.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -106,27 +141,38 @@ properties:
       return:
         type: boolean
   - name: iterativeCalculation
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member
     package: excel!
     fullName: iterativeCalculation
     summary: >-
-      Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
-      Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Returns the iterative calculation settings. In Excel on Windows and Mac,
+      the settings will apply to the Excel Application. In Excel on the web and
+      other platforms, the settings will apply to the active workbook.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface"
+          />
   - name: thousandsSeparator
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member
     package: excel!
     fullName: thousandsSeparator
     summary: >-
-      Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
-      the local Excel settings.
-    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Gets the string used to separate groups of digits to the left of the
+      decimal for numeric values. This is based on the local Excel settings.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,13 +180,17 @@ properties:
       return:
         type: boolean
   - name: useSystemSeparators
-    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member
     package: excel!
     fullName: useSystemSeparators
     summary: >-
-      Specifies if the system separators of Excel are enabled. System separators include the decimal separator and
-      thousands separator.
-    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Specifies if the system separators of Excel are enabled. System separators
+      include the decimal separator and thousands separator.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

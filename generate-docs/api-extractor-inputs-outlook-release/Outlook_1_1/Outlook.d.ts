@@ -42,6 +42,36 @@ export declare namespace Office {
              */
             Item = "item"
         }
+        /**
+         * Specifies the portion of a message's body displayed for replies to a conversation thread with more than one message.
+         *
+         * @remarks
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This enum is only supported in Outlook on the web and new Outlook on Windows. On these platforms, users can organize their messages as
+         * conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         *
+         * The `BodyMode` enum supports the following message organization settings.
+         *
+         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
+         *
+         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         *
+         * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
+         */
+        enum BodyMode {
+            /**
+             * The entire body of a message, including previous messages from the same conversation thread.
+             */
+            FullBody = 0,
+            /**
+             * The body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
+             * If messages are organized by conversation, it specifies only the current body of the reply. Conversely, if messages are organized as individual
+             * messages, it specifies the entire body of a message, including previous messages from the same conversation thread.
+             */
+            HostConfig = 1
+        }
         
         
         
@@ -1452,6 +1482,9 @@ export declare namespace Office {
      *
      * @remarks
      * [Api set: Mailbox 1.1]
+     *
+     * To learn how to get or set the body of a mail item, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/insert-data-in-the-body | Get or set the body of a message or appointment in Outlook}.
      *
      * **Known issue with HTML table border colors**
      *

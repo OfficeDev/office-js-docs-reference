@@ -50,6 +50,75 @@ CustomFunctions.ErrorCode:enum:
       // and a #NUM! error in place of the second result.
       return [[firstResult], [secondResult], [thirdResult]];
       };
+CustomFunctions.Invocation:interface:
+  - |- 
+    /**
+    * Return the address of the cell that invoked the custom function. 
+    * @customfunction
+    * @param {number} first First parameter.
+    * @param {number} second Second parameter.
+    * @param {CustomFunctions.Invocation} invocation Invocation object. 
+    * @requiresAddress 
+    */
+    function getAddress(first, second, invocation) {
+      const address = invocation.address;
+      return address;
+    }
+CustomFunctions.Invocation#address:member:
+  - |- 
+    /**
+    * Return the address of the cell that invoked the custom function. 
+    * @customfunction
+    * @param {number} first First parameter.
+    * @param {number} second Second parameter.
+    * @param {CustomFunctions.Invocation} invocation Invocation object. 
+    * @requiresAddress 
+    */
+    function getAddress(first, second, invocation) {
+      const address = invocation.address;
+      return address;
+    }
+CustomFunctions.Invocation#isInValuePreview:member:
+  - |- 
+    /**
+    * Get the listing price for a house on the market for the given address.
+    * @customfunction
+    * @param address The address of the house.
+    * @param invocation Custom function handler.
+    * @returns The price of the house at the address.
+    */
+    function getHousePrice(address: string, invocation: CustomFunctions.Invocation): number {
+      // Check if this call is for formula value preview mode.
+      if (invocation.isInValuePreview) { 
+        // Avoid long-running expensive service calls. 
+        // Return a usable but fake number.
+        return 450000; 
+      } else { 
+        // Make the actual service calls in this block. 
+        const price = callHouseServiceAPI(address);
+        return price; 
+      } 
+    }
+CustomFunctions.Invocation#parameterAddresses:member:
+  - |-
+    /**
+    * Return the addresses of three parameters. 
+    * @customfunction
+    * @param {string} firstParameter First parameter.
+    * @param {string} secondParameter Second parameter.
+    * @param {string} thirdParameter Third parameter.
+    * @param {CustomFunctions.Invocation} invocation Invocation object. 
+    * @returns {string[][]} The addresses of the parameters, as a 2-dimensional array. 
+    * @requiresParameterAddresses
+    */
+    function getParameterAddresses(firstParameter, secondParameter, thirdParameter, invocation) {
+      const addresses = [
+        [invocation.parameterAddresses[0]],
+        [invocation.parameterAddresses[1]],
+        [invocation.parameterAddresses[2]]
+      ];
+      return addresses;
+    }
 Excel.createWorkbook:function(1):
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");
@@ -2786,6 +2855,62 @@ Office.ContextInformation#version:member:
   - |-
     const contextInfo = Office.context.diagnostics;
     console.log("Office version: " + contextInfo.version);
+Office.ContextMenu#requestUpdate:member(1):
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.ContextMenuControl:interface:
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.ContextMenuUpdaterData#controls:member:
+  - |-
+    // Change the availability of custom buttons on the context menu.
+    await Office.contextMenu.requestUpdate({
+        controls: [
+            {
+                id: Addin.CtxMenu.Button1,
+                enabled: true
+            },
+            {
+                id: Addin.CtxMenu.Button2,
+                enabled: false
+            },
+        ]
+    });
+Office.Control:interface:
+  - |-
+    // This snippet enables a control (a button) in a custom ribbon tab.
+    // Note that "MyButton", "OfficeAddinTab1", and "CustomGroup111" are defined in the manifest.
+    const enableButton = async () => {
+        const button: Control = { id: "MyButton", enabled: true };
+        const parentGroup: Group = { id: "CustomGroup111", controls: [button] };
+        const parentTab: Tab = { id: "OfficeAddinTab1", groups: [parentGroup] };
+        const ribbonUpdater: RibbonUpdaterData = { tabs: [parentTab] };
+        Office.ribbon.requestUpdate(ribbonUpdater);
+    }
 Office.CustomXmlNode#baseName:member:
   - |-
     function showXmlNodeBaseNames() {
@@ -5499,50 +5624,99 @@ Office.EventType:enum:
             });
         });
     }
+Office.File:interface:
+  - |-
+    // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
+
+    function getCurrentFile() {
+        const sliceSize = 4096; /*Bytes*/
+
+        // This snippet specifies a small slice size to show how the getFileAsync() method uses slices.
+        Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: sliceSize }, function(result) {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                return onError(result.error);
+            }
+
+            // result.value is the File object.
+            const file: Office.File = result.value
+            getFileContents(file, onSuccess, onError); /* getFileContents is defined in the Office.File.getSliceAsync example. */
+        });
+
+        function onError(error: Office.Error): void {
+            console.error(error);
+        }
+
+        function onSuccess(byteArray: number[]) {
+            let base64string = base64js.fromByteArray(byteArray);
+            // Do something with the file contents.
+        }
+    }
 Office.File#getSliceAsync:member(1):
   - |-
-    // This sample shows how to get all the slices of a file. 
-    // The asynchronous operation returns a Promise so it can be awaited.
-    private getAllSlices(file: any): Promise<any> {
-        const self = this;
-        let isError = false;
+    // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
+    
+    function getFileContents(
+        file: Office.File,
+        onSuccess: (byteArray: number[]) => void,
+        onError: (error: Office.Error) => void
+    ) {
+        let expectedSliceCount = file.sliceCount;
+        let fileSlices: Array<Array<number>> = [];
 
-        return new Promise(async (resolve, reject) => {
-            let documentFileData = [];
-            for (let sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
-                const sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
-                    file.getSliceAsync(sliceIndex, (asyncResult) => {
-                        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                            documentFileData = documentFileData.concat(asyncResult.value.data);
-                            sliceResolve({
-                                IsSuccess: true,
-                                Data: documentFileData
-                            });
-                        } else {
-                            file.closeAsync();
-                            sliceReject({
-                                IsSuccess: false,
-                                ErrorMessage: `Error in reading the slice: ${sliceIndex} of the document`
-                            });
-                        }
+        console.log("Current file size in bytes: " + file.size);
+        console.log("Number of file slices: " + file.sliceCount);
+
+        getFileContentsHelper();
+
+        /**
+         * A helper function to retrieve all slices of the file recursively.
+         * It fetches one slice at a time and stores it in the `fileSlices` array.
+         * The recursion terminates when all slices have been retrieved.
+         */
+        function getFileContentsHelper() {
+            file.getSliceAsync(fileSlices.length, function(result) {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    file.closeAsync();
+                    return onError(result.error);
+                }
+
+                // Got one slice, store it in a temporary array.
+                fileSlices.push(result.value.data);
+
+                if (fileSlices.length == expectedSliceCount) {
+                    console.log("All slices have been received.");
+                    file.closeAsync();
+
+                    let array = [];
+                    fileSlices.forEach((slice) => {
+                        array = array.concat(slice);
                     });
-                });
-                await sliceReadPromise.catch((error) => {
-                    isError = true;
-                });
-            }
 
-            if (isError || !documentFileData.length) {
-                reject('Error while reading document. Please try it again.');
-                return;
-            }
-
-            file.closeAsync();
-
-            resolve({
-                IsSuccess: true,
-                Data: documentFileData
+                    onSuccess(array); /* onSuccess is defined in the Office.File example. */
+                } else {
+                    getFileContentsHelper();
+                }
             });
+        }
+    }
+Office.FileProperties:interface:
+  - |-
+    // To read the URL of the current file, you need to write a callback function that returns the URL.
+    // The following example shows how to:
+    // 1. Pass an anonymous callback function that returns the value of the file's URL
+    //    to the callback parameter of the getFilePropertiesAsync method.
+    // 2. Display the value on the add-in's page.
+    function getFileUrl() {
+        // Get the URL of the current file.
+        Office.context.document.getFilePropertiesAsync(function (asyncResult) {
+            const fileProperties: Office.FileProperties = asyncResult.value;
+            const fileUrl = fileProperties.url;
+            if (fileUrl == "") {
+                showMessage("The file hasn't been saved yet. Save the file and try again");
+            }
+            else {
+                showMessage(fileUrl);
+            }
         });
     }
 Office.HostType:enum:
@@ -7901,54 +8075,41 @@ Office.AttachmentsChangedEventArgs:interface:
             // Perform operations on the attachment that was added.
         }
     }
-Office.AttachmentContent#format:member:
+Office.AttachmentContent:interface:
   - |-
-    const item = Office.context.mailbox.item;
-    const options = {asyncContext: {currentItem: item}};
-    item.getAttachmentsAsync(options, callback);
-
-    function callback(result) {
+    Office.context.mailbox.item.getAttachmentsAsync((result) => {
         if (result.value.length > 0) {
             for (let i = 0 ; i < result.value.length ; i++) {
-                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+                Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
             }
         }
-    }
+    });
 
     function handleAttachmentsCallback(result) {
-        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        // Identify if an attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
         switch (result.value.format) {
             case Office.MailboxEnums.AttachmentContentFormat.Base64:
                 // Handle file attachment.
+                console.log("Attachment is a Base64-encoded string.");
                 break;
             case Office.MailboxEnums.AttachmentContentFormat.Eml:
                 // Handle email item attachment.
+                console.log("Attachment is a message.");
                 break;
             case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
                 // Handle .icalender attachment.
+                console.log("Attachment is a calendar item.");
                 break;
             case Office.MailboxEnums.AttachmentContentFormat.Url:
                 // Handle cloud attachment.
+                console.log("Attachment is a cloud attachment.");
                 break;
             default:
-                // Handle attachment formats that are not supported.
+                // Handle attachment formats that aren't supported.
         }
-    }
-Office.Body#getAsync:member(1):
-  - |-
-    // This example gets the body of the item as plain text.
-    Office.context.mailbox.item.body.getAsync(
-        "text",
-        { asyncContext: "This is passed to the callback" },
-        function callback(result) {
-            // Do something with the result.
-        });
 
-    // The following is an example of the result parameter passed to the callback function.
-    {
-        "value": "TEXT of whole body (including threads below)",
-        "status": "succeeded",
-        "asyncContext": "This is passed to the callback"
+        // Log the content of the attachments as a string.
+        console.log(result.value.content);
     }
 Office.Body#setAsync:member(1):
   - |-
@@ -8060,9 +8221,9 @@ Office.EnhancedLocationsChangedEventArgs:interface:
         document.addEventListener('DOMContentLoaded', () => {
             // Get a reference to the mailbox and use it to add an event handler.
             const mailbox = Office.context.mailbox;
-            mailbox.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+            mailbox.item.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
                 if (result.status === Office.AsyncResultStatus.Failed) {
-                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    console.error(`Failed to add event handler: ${result.error.message}`);
                     return;
                 }
 

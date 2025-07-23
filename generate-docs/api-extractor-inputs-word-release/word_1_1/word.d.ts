@@ -236,9 +236,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -570,9 +570,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -781,6 +781,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Saves the document.
          *
@@ -801,10 +802,10 @@ export declare namespace Word {
          *
          * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
          *
-         * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
-        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
+        save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
                 /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1399,7 +1400,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -1493,9 +1494,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         
         
         /**
@@ -1825,9 +1826,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -2050,9 +2051,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          * Gets one of the section's headers.
          *
@@ -2068,9 +2069,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         
         
         /**

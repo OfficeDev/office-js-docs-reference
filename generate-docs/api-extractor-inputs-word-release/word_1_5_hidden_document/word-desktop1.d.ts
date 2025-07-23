@@ -721,9 +721,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the collection of the TrackedChange objects in the body.
          *
@@ -860,9 +860,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1733,9 +1733,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
          *
@@ -1870,9 +1870,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Splits the content control into child ranges by using delimiters.
          *
@@ -2809,9 +2809,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          *
          * @param name - Required. A string representing the style name.
-         * @param typeString - Required. The style type, including character, list, paragraph, or table.
+         * @param type - Required. The style type, including character, list, paragraph, or table.
          */
-        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
+        addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Closes the current document.
                     
@@ -2831,9 +2831,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+         * @param closeBehavior - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
-        close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        close(closeBehavior?: "Save" | "SkipSave"): void;
         
         
         /**
@@ -2933,7 +2933,19 @@ export declare namespace Word {
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
          * 
          */
-        importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior): OfficeExtension.ClientResult<string[]>;
+        /**
+         * Import styles from a JSON-formatted string.
+         *
+         * @remarks
+         * [Api set: WordApi 1.6]
+         *
+         * 
+         *
+         * @param stylesJson - Required. A JSON-formatted string representing the styles.
+         * 
+         */
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.
@@ -2941,7 +2953,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -2968,10 +2980,10 @@ export declare namespace Word {
          *
          * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
          *
-         * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
-        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
+        save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
         /**
          * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
          *
@@ -3186,9 +3198,9 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.5]
          *
          * @param name - Required. A string representing the style name.
-         * @param typeString - Required. The style type, including character, list, paragraph, or table.
+         * @param type - Required. The style type, including character, list, paragraph, or table.
          */
-        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
+        addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Deletes a bookmark, if it exists, from the document.
          *
@@ -3243,7 +3255,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiHiddenDocument 1.5]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -3277,10 +3289,10 @@ export declare namespace Word {
          *
          * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
          *
-         * @param saveBehaviorString - Optional. DocumentCreated only supports 'Save'.
+         * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
-        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
+        save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3503,10 +3515,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.4]
      *
      * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
-     * Support for managing fields is similar to what's available in the Word UI.
-     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
-     * To learn more about Word UI clients that more fully support fields,
-     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3649,9 +3659,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Updates the field.
          *
@@ -3701,10 +3711,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.4]
      *
      * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
-     * Support for managing fields is similar to what's available in the Word UI.
-     * However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
-     * To learn more about Word UI clients that more fully support fields,
-     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+     * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4065,7 +4073,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
@@ -4136,9 +4144,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4316,9 +4324,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignmentString - Required. The level alignment that must be 'Left', 'Centered', or 'Right'.
+         * @param alignment - Required. The level alignment that must be 'Left', 'Centered', or 'Right'.
          */
-        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
+        setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
         /**
          * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
          *
@@ -4338,11 +4346,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param listBulletString - Required. The bullet.
+         * @param listBullet - Required. The bullet.
          * @param charCode - Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
          * @param fontName - Optional. The bullet's font name. Used only if the bullet is 'Custom'.
          */
-        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
+        setLevelBullet(level: number, listBullet: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
         /**
          * Sets the two indents of the specified level in the list.
          *
@@ -4372,10 +4380,10 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param listNumberingString - Required. The ordinal format.
+         * @param listNumbering - Required. The ordinal format.
          * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
          */
-        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
+        setLevelNumbering(level: number, listNumbering: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
         
         /**
          * Sets the starting number at the specified level in the list. Default value is 1.
@@ -5148,9 +5156,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Returns the text of the paragraph. This excludes equations, graphics (e.g., images, videos, drawings), and special characters that mark various content (e.g., for content controls, fields, comments, footnotes, endnotes).
                     By default, hidden text and text marked as deleted are excluded.
@@ -5222,7 +5230,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -5327,9 +5335,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Splits the paragraph into child ranges by using delimiters.
          *
@@ -5909,9 +5917,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+         * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
-        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
+        getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
          *
@@ -6015,11 +6023,11 @@ export declare namespace Word {
          * In Word on the web, fields are mainly read-only. To learn more, see {@link  https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance | Use fields in your Word add-in}.
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
+         * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
          * @param text - Optional. Additional properties or options if needed for specified field type.
          * @param removeFormatting - Optional. `true` to remove the formatting that's applied to the field during updates, `false` otherwise. The default value is `false`.
          */
-        insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", fieldTypeString?: "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined", text?: string, removeFormatting?: boolean): Word.Field;
+        insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", fieldType?: "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined", text?: string, removeFormatting?: boolean): Word.Field;
         /**
          * Inserts a document at the specified location.
          *
@@ -6165,9 +6173,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Splits the range into child ranges by using delimiters.
          *
@@ -6497,9 +6505,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          * Gets one of the section's headers.
          *
@@ -6515,9 +6523,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          * Gets the next section. Throws an `ItemNotFound` error if this section is the last one.
          *
@@ -7402,9 +7410,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocationString - Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          * Gets the table cell at a specified row and column. Throws an `ItemNotFound` error if the specified table cell doesn't exist.
          *
@@ -7440,9 +7448,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          * Gets the next table. Throws an `ItemNotFound` error if this table is the last one.
          *
@@ -7568,9 +7576,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Sets cell padding in points.
          *
@@ -7587,10 +7595,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -7916,9 +7924,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocationString - Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          * Gets cell padding in points.
          *
@@ -7934,9 +7942,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          * Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
          *
@@ -8003,9 +8011,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Sets cell padding in points.
          *
@@ -8022,10 +8030,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8241,9 +8249,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocationString - Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          * Gets cell padding in points.
          *
@@ -8259,9 +8267,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          * Gets the next cell. Throws an `ItemNotFound` error if this cell is the last one.
          *
@@ -8314,10 +8322,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Splits the cell into the specified number of rows and columns.
          *
@@ -8679,7 +8687,7 @@ export declare namespace Word {
     
     
     /**
-     * ChangeTracking mode.
+     * Represents the possible change tracking modes.
      *
      * @remarks
      * [Api set: WordApi 1.4]
@@ -16410,10 +16418,8 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          *
          * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
-         * Support for managing fields is similar to what's available in the Word UI.
-         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
-         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+         * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+         * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldLoadOptions {
             /**
@@ -16521,11 +16527,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
-         * Support for managing fields is similar to what's available in the Word UI.
-         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
-         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
-         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
+         * Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}).
+         * To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldCollectionLoadOptions {
             /**

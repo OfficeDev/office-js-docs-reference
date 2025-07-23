@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 03/11/2025
+ms.date: 07/11/2025
 ms.localizationpriority: medium
 ---
 
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
  Defines where an add-in exposes functionality in the Office UI. The **\<ExtensionPoint\>** element is a child element of [AllFormFactors](allformfactors.md), [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md).
 
-**Add-in type:** Task pane, Mail
+**Add-in type**: Document, Mail, Presentation, Task pane, Workbook
 
 **Valid only in these VersionOverrides schemas**:
 
@@ -24,6 +24,37 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----:|:-----|
 |  **xsi:type**  |  Yes  | The type of extension point being defined. Possible values depend on the Office host application defined in the grandparent **\<Host\>** element value.|
+
+## Extension points for Excel, Outlook, PowerPoint, and Word
+
+- [LaunchEvent](#launchevent) - Activates tasks based on application events, such as opening.
+
+### LaunchEvent
+
+This extension point enables an add-in to activate based on supported events in both the desktop and mobile form factors. To learn more about event-based activation and for the full list of supported events, see [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation).
+
+> [!IMPORTANT]
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+
+#### Child elements
+
+|  Element |  Description  |
+|:-----|:-----|
+| [LaunchEvents](launchevents.md) |  List of [LaunchEvent](launchevent.md) for event-based activation.  |
+| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.  |
+
+#### Example
+
+```xml
+<ExtensionPoint xsi:type="LaunchEvent">
+  <LaunchEvents>
+    <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
+    <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
+  </LaunchEvents>
+  <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
+  <SourceLocation resid="WebViewRuntime.Url"/>
+</ExtensionPoint>
+```
 
 ## Extension points for Excel, OneNote, PowerPoint, and Word add-in commands
 
@@ -152,7 +183,6 @@ A custom function written in JavaScript or TypeScript for Excel.
 - [MobileMessageReadCommandSurface](#mobilemessagereadcommandsurface)
 - [MobileOnlineMeetingCommandSurface](#mobileonlinemeetingcommandsurface)
 - [MobileLogEventAppointmentAttendee](#mobilelogeventappointmentattendee)
-- [LaunchEvent](#launchevent)
 - [Events](#events)
 - [DetectedEntity](#detectedentity)
 - [ReportPhishingCommandSurface](#reportphishingcommandsurface)
@@ -442,33 +472,6 @@ The images specified in the **\<Icon\>** element should be in grayscale using he
       <FunctionName>logToCRM</FunctionName>
     </Action>
   </Control>
-</ExtensionPoint>
-```
-
-### LaunchEvent
-
-This extension point enables an add-in to activate based on supported events in both the desktop and mobile form factors. To learn more about event-based activation and for the full list of supported events, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch).
-
-> [!IMPORTANT]
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
-
-#### Child elements
-
-|  Element |  Description  |
-|:-----|:-----|
-| [LaunchEvents](launchevents.md) |  List of [LaunchEvent](launchevent.md) for event-based activation.  |
-| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.  |
-
-#### Example
-
-```xml
-<ExtensionPoint xsi:type="LaunchEvent">
-  <LaunchEvents>
-    <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
-    <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
-  </LaunchEvents>
-  <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
-  <SourceLocation resid="WebViewRuntime.Url"/>
 </ExtensionPoint>
 ```
 

@@ -1,20 +1,27 @@
 ### YamlMime:TSType
 name: OneNote.Interfaces.ImageUpdateData
-uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+uid: onenote!OneNote.Interfaces.ImageUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ImageUpdateData
-summary: 'An interface for updating data on the `Image` object, for use in `image.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Image` object, for use in `image.set({
+  ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: description
-    uid: 'onenote!OneNote.Interfaces.ImageUpdateData#description:member'
+    uid: onenote!OneNote.Interfaces.ImageUpdateData#description:member
     package: onenote!
     fullName: description
     summary: Gets or sets the description of the Image.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +29,15 @@ properties:
       return:
         type: string
   - name: height
-    uid: 'onenote!OneNote.Interfaces.ImageUpdateData#height:member'
+    uid: onenote!OneNote.Interfaces.ImageUpdateData#height:member
     package: onenote!
     fullName: height
     summary: Gets or sets the height of the Image layout.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +45,15 @@ properties:
       return:
         type: number
   - name: hyperlink
-    uid: 'onenote!OneNote.Interfaces.ImageUpdateData#hyperlink:member'
+    uid: onenote!OneNote.Interfaces.ImageUpdateData#hyperlink:member
     package: onenote!
     fullName: hyperlink
     summary: Gets or sets the hyperlink of the Image.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +61,15 @@ properties:
       return:
         type: string
   - name: width
-    uid: 'onenote!OneNote.Interfaces.ImageUpdateData#width:member'
+    uid: onenote!OneNote.Interfaces.ImageUpdateData#width:member
     package: onenote!
     fullName: width
     summary: Gets or sets the width of the Image layout.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

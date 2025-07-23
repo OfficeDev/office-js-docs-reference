@@ -1,0 +1,243 @@
+### YamlMime:TSType
+name: PowerPoint.TableColumnCollection
+uid: powerpoint!PowerPoint.TableColumnCollection:class
+package: powerpoint!
+fullName: PowerPoint.TableColumnCollection
+summary: Represents a collection of table columns.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: powerpoint!PowerPoint.TableColumnCollection#context:member
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
+  - name: items
+    uid: powerpoint!PowerPoint.TableColumnCollection#items:member
+    package: powerpoint!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: PowerPoint.TableColumn[];'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableColumn:class" />[]
+methods:
+  - name: add(index, count)
+    uid: powerpoint!PowerPoint.TableColumnCollection#add:member(1)
+    package: powerpoint!
+    fullName: add(index, count)
+    summary: Adds one or more columns to the table.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        add(index?: number | null | undefined, count?: number | undefined):
+        void;
+      parameters:
+        - id: index
+          description: >-
+            Optional. Specifies the zero-based index where the new columns are
+            added. Existing columns starting at the index location are shifted
+            right. If the index value is undefined, null, -1, or greater than
+            the number of columns in the table, the new columns are added at the
+            end of the table.
+          type: number | null | undefined
+        - id: count
+          description: >-
+            Optional. The number of columns to add. If the value is undefined or
+            0, only one column is added.
+          type: number | undefined
+      return:
+        type: void
+        description: ''
+  - name: deleteColumns(columns)
+    uid: powerpoint!PowerPoint.TableColumnCollection#deleteColumns:member(1)
+    package: powerpoint!
+    fullName: deleteColumns(columns)
+    summary: Deletes the specified columns from the collection.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'deleteColumns(columns: PowerPoint.TableColumn[]): void;'
+      parameters:
+        - id: columns
+          description: >-
+            An array of `TableColumn` objects representing the columns to be
+            deleted.
+          type: <xref uid="powerpoint!PowerPoint.TableColumn:class" />[]
+      return:
+        type: void
+        description: ''
+  - name: getCount()
+    uid: powerpoint!PowerPoint.TableColumnCollection#getCount:member(1)
+    package: powerpoint!
+    fullName: getCount()
+    summary: Gets the number of columns in the collection.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: The number of columns in the collection.
+  - name: getItemAt(index)
+    uid: powerpoint!PowerPoint.TableColumnCollection#getItemAt:member(1)
+    package: powerpoint!
+    fullName: getItemAt(index)
+    summary: Gets the column using its zero-based index in the collection.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): PowerPoint.TableColumn;'
+      parameters:
+        - id: index
+          description: Index value of the column to be retrieved, as a zero-based index.
+          type: number
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableColumn:class" />
+        description: The column object.
+  - name: load(options)
+    uid: powerpoint!PowerPoint.TableColumnCollection#load:member(1)
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: PowerPoint.Interfaces.TableColumnCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions):
+        PowerPoint.TableColumnCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.TableColumnCollectionLoadOptions:interface"
+            /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableColumnCollection:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: powerpoint!PowerPoint.TableColumnCollection#load:member(2)
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNames?: string | string[]):
+        PowerPoint.TableColumnCollection;
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableColumnCollection:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: powerpoint!PowerPoint.TableColumnCollection#load:member(3)
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        PowerPoint.TableColumnCollection;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableColumnCollection:class" />
+        description: ''
+  - name: toJSON()
+    uid: powerpoint!PowerPoint.TableColumnCollection#toJSON:member(1)
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.TableColumnCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.TableColumnCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the
+      collection's items.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.TableColumnCollectionData;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.TableColumnCollectionData:interface"
+          />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

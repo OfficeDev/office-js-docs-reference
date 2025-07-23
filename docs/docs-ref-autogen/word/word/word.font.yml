@@ -1,17 +1,23 @@
 ### YamlMime:TSType
 name: Word.Font
-uid: 'word!Word.Font:class'
+uid: word!Word.Font:class
 package: word!
 fullName: Word.Font
 summary: Represents a font.
-remarks: |-
-  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Change the font color
+
   // Run a batch operation against the Word object model.
+
   await Word.run(async (context) => {
 
       // Create a range proxy object for the current selection.
@@ -25,26 +31,62 @@ remarks: |-
       await context.sync();
       console.log('The font color of the selection has been changed.');
   });
+
   ```
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: allCaps
+    uid: word!Word.Font#allCaps:member
+    package: word!
+    fullName: allCaps
+    summary: >-
+      Specifies whether the font is formatted as all capital letters, which
+      makes lowercase letters appear as uppercase letters. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text has the **All Caps** attribute.
+
+
+      - `false`<!-- -->: None of the text has the **All Caps** attribute.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **All Caps** attribute.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allCaps: boolean;'
+      return:
+        type: boolean
   - name: bold
-    uid: 'word!Word.Font#bold:member'
+    uid: word!Word.Font#bold:member
     package: word!
     fullName: bold
     summary: >-
-      Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
-      false.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      Specifies a value that indicates whether the font is bold. True if the
+      font is formatted as bold, otherwise, false.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Bold format text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -58,26 +100,62 @@ properties:
           await context.sync();
           console.log('The selection is now bold.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'bold: boolean;'
       return:
         type: boolean
+  - name: boldBidirectional
+    uid: word!Word.Font#boldBidirectional:member
+    package: word!
+    fullName: boldBidirectional
+    summary: >-
+      Specifies whether the font is formatted as bold in a right-to-left
+      language document. The possible values are as follows:
+
+
+      - `true`<!-- -->: All the text is bold.
+
+
+      - `false`<!-- -->: None of the text is bold.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is bold.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'boldBidirectional: boolean;'
+      return:
+        type: boolean
   - name: color
-    uid: 'word!Word.Font#color:member'
+    uid: word!Word.Font#color:member
     package: word!
     fullName: color
-    summary: 'Specifies the color for the specified font. You can provide the value in the ''\#RRGGBB'' format or the color name.'
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies the color for the specified font. You can provide the value in
+      the '\#RRGGBB' format or the color name.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Change the font color
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -91,49 +169,264 @@ properties:
           await context.sync();
           console.log('The font color of the selection has been changed.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'color: string;'
       return:
         type: string
+  - name: colorIndex
+    uid: word!Word.Font#colorIndex:member
+    package: word!
+    fullName: colorIndex
+    summary: Specifies a `ColorIndex` value that represents the color for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        colorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" |
+        "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" |
+        "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
+        "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+      return:
+        type: >-
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+  - name: colorIndexBidirectional
+    uid: word!Word.Font#colorIndexBidirectional:member
+    package: word!
+    fullName: colorIndexBidirectional
+    summary: >-
+      Specifies the color for the `Font` object in a right-to-left language
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        colorIndexBidirectional: Word.ColorIndex | "Auto" | "Black" | "Blue" |
+        "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+        "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+        "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+      return:
+        type: >-
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
   - name: context
-    uid: 'word!Word.Font#context:member'
+    uid: word!Word.Font#context:member
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: contextualAlternates
+    uid: word!Word.Font#contextualAlternates:member
+    package: word!
+    fullName: contextualAlternates
+    summary: Specifies whether contextual alternates are enabled for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contextualAlternates: boolean;'
+      return:
+        type: boolean
+  - name: diacriticColor
+    uid: word!Word.Font#diacriticColor:member
+    package: word!
+    fullName: diacriticColor
+    summary: >-
+      Specifies the color to be used for diacritics for the `Font` object. You
+      can provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'diacriticColor: string;'
+      return:
+        type: string
+  - name: disableCharacterSpaceGrid
+    uid: word!Word.Font#disableCharacterSpaceGrid:member
+    package: word!
+    fullName: disableCharacterSpaceGrid
+    summary: >-
+      Specifies whether Microsoft Word ignores the number of characters per line
+      for the corresponding `Font` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'disableCharacterSpaceGrid: boolean;'
+      return:
+        type: boolean
   - name: doubleStrikeThrough
-    uid: 'word!Word.Font#doubleStrikeThrough:member'
+    uid: word!Word.Font#doubleStrikeThrough:member
     package: word!
     fullName: doubleStrikeThrough
     summary: >-
-      Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as
-      double strikethrough text, otherwise, false.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies a value that indicates whether the font has a double
+      strikethrough. True if the font is formatted as double strikethrough text,
+      otherwise, false.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'doubleStrikeThrough: boolean;'
       return:
         type: boolean
+  - name: emboss
+    uid: word!Word.Font#emboss:member
+    package: word!
+    fullName: emboss
+    summary: >-
+      Specifies whether the font is formatted as embossed. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text is embossed.
+
+
+      - `false`<!-- -->: None of the text is embossed.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is embossed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'emboss: boolean;'
+      return:
+        type: boolean
+  - name: emphasisMark
+    uid: word!Word.Font#emphasisMark:member
+    package: word!
+    fullName: emphasisMark
+    summary: >-
+      Specifies an `EmphasisMark` value that represents the emphasis mark for a
+      character or designated character string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        emphasisMark: Word.EmphasisMark | "None" | "OverSolidCircle" |
+        "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+      return:
+        type: >-
+          <xref uid="word!Word.EmphasisMark:enum" /> | "None" |
+          "OverSolidCircle" | "OverComma" | "OverWhiteCircle" |
+          "UnderSolidCircle"
+  - name: engrave
+    uid: word!Word.Font#engrave:member
+    package: word!
+    fullName: engrave
+    summary: >-
+      Specifies whether the font is formatted as engraved. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text is engraved.
+
+
+      - `false`<!-- -->: None of the text is engraved.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is engraved.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'engrave: boolean;'
+      return:
+        type: boolean
+  - name: fill
+    uid: word!Word.Font#fill:member
+    package: word!
+    fullName: fill
+    summary: >-
+      Returns a `FillFormat` object that contains fill formatting properties for
+      the font used by the range of text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly fill: Word.FillFormat;'
+      return:
+        type: <xref uid="word!Word.FillFormat:class" />
+  - name: glow
+    uid: word!Word.Font#glow:member
+    package: word!
+    fullName: glow
+    summary: >-
+      Returns a `GlowFormat` object that represents the glow formatting for the
+      font used by the range of text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly glow: Word.GlowFormat;'
+      return:
+        type: <xref uid="word!Word.GlowFormat:class" />
   - name: hidden
-    uid: 'word!Word.Font#hidden:member'
+    uid: word!Word.Font#hidden:member
     package: word!
     fullName: hidden
     summary: >-
-      Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden
-      text, otherwise, false.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies a value that indicates whether the font is tagged as hidden.
+      True if the font is formatted as hidden text, otherwise, false.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,24 +434,34 @@ properties:
       return:
         type: boolean
   - name: highlightColor
-    uid: 'word!Word.Font#highlightColor:member'
+    uid: word!Word.Font#highlightColor:member
     package: word!
     fullName: highlightColor
     summary: >-
-      Specifies the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To remove
-      highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty string for
-      mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in
-      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal",
-      "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for
-      Windows Desktop, any other color is converted to the closest color when applied to the font.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      Specifies the highlight color. To set it, use a value either in the
+      '\#RRGGBB' format or the color name. To remove highlight color, set it to
+      null. The returned highlight color can be in the '\#RRGGBB' format, an
+      empty string for mixed highlight colors, or `null` for no highlight color.
+      Note: Only the default highlight colors are available in Office for
+      Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue",
+      "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
+      "LightGray", and "Black". When the add-in runs in Office for Windows
+      Desktop, any other color is converted to the closest color when applied to
+      the font.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Highlight selected text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -172,7 +475,9 @@ properties:
           await context.sync();
           console.log('The selection has been highlighted.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,30 +485,130 @@ properties:
       return:
         type: string
   - name: italic
-    uid: 'word!Word.Font#italic:member'
+    uid: word!Word.Font#italic:member
     package: word!
     fullName: italic
-    summary: 'Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.'
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Specifies a value that indicates whether the font is italicized. True if
+      the font is italicized, otherwise, false.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'italic: boolean;'
       return:
         type: boolean
+  - name: italicBidirectional
+    uid: word!Word.Font#italicBidirectional:member
+    package: word!
+    fullName: italicBidirectional
+    summary: >-
+      Specifies whether the font is italicized in a right-to-left language
+      document. The possible values are as follows:
+
+
+      - `true`<!-- -->: All the text is italicized.
+
+
+      - `false`<!-- -->: None of the text is italicized.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is
+      italicized.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'italicBidirectional: boolean;'
+      return:
+        type: boolean
+  - name: kerning
+    uid: word!Word.Font#kerning:member
+    package: word!
+    fullName: kerning
+    summary: >-
+      Specifies the minimum font size for which Microsoft Word will adjust
+      kerning automatically.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'kerning: number;'
+      return:
+        type: number
+  - name: ligature
+    uid: word!Word.Font#ligature:member
+    package: word!
+    fullName: ligature
+    summary: Specifies the ligature setting for the `Font` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        ligature: Word.Ligature | "None" | "Standard" | "Contextual" |
+        "StandardContextual" | "Historical" | "StandardHistorical" |
+        "ContextualHistorical" | "StandardContextualHistorical" | "Discretional"
+        | "StandardDiscretional" | "ContextualDiscretional" |
+        "StandardContextualDiscretional" | "HistoricalDiscretional" |
+        "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" |
+        "All";
+      return:
+        type: >-
+          <xref uid="word!Word.Ligature:enum" /> | "None" | "Standard" |
+          "Contextual" | "StandardContextual" | "Historical" |
+          "StandardHistorical" | "ContextualHistorical" |
+          "StandardContextualHistorical" | "Discretional" |
+          "StandardDiscretional" | "ContextualDiscretional" |
+          "StandardContextualDiscretional" | "HistoricalDiscretional" |
+          "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional"
+          | "All"
+  - name: line
+    uid: word!Word.Font#line:member
+    package: word!
+    fullName: line
+    summary: Returns a `LineFormat` object that specifies the formatting for a line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly line: Word.LineFormat;'
+      return:
+        type: <xref uid="word!Word.LineFormat:class" />
   - name: name
-    uid: 'word!Word.Font#name:member'
+    uid: word!Word.Font#name:member
     package: word!
     fullName: name
     summary: Specifies a value that represents the name of the font.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Change the font name
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -217,26 +622,231 @@ properties:
           await context.sync();
           console.log('The font name has changed.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
         type: string
+  - name: nameAscii
+    uid: word!Word.Font#nameAscii:member
+    package: word!
+    fullName: nameAscii
+    summary: >-
+      Specifies the font used for Latin text (characters with character codes
+      from 0 (zero) through 127).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nameAscii: string;'
+      return:
+        type: string
+  - name: nameBidirectional
+    uid: word!Word.Font#nameBidirectional:member
+    package: word!
+    fullName: nameBidirectional
+    summary: Specifies the font name in a right-to-left language document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nameBidirectional: string;'
+      return:
+        type: string
+  - name: nameFarEast
+    uid: word!Word.Font#nameFarEast:member
+    package: word!
+    fullName: nameFarEast
+    summary: Specifies the East Asian font name.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nameFarEast: string;'
+      return:
+        type: string
+  - name: nameOther
+    uid: word!Word.Font#nameOther:member
+    package: word!
+    fullName: nameOther
+    summary: Specifies the font used for characters with codes from 128 through 255.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nameOther: string;'
+      return:
+        type: string
+  - name: numberForm
+    uid: word!Word.Font#numberForm:member
+    package: word!
+    fullName: numberForm
+    summary: Specifies the number form setting for an OpenType font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'numberForm: Word.NumberForm | "Default" | "Lining" | "OldStyle";'
+      return:
+        type: >-
+          <xref uid="word!Word.NumberForm:enum" /> | "Default" | "Lining" |
+          "OldStyle"
+  - name: numberSpacing
+    uid: word!Word.Font#numberSpacing:member
+    package: word!
+    fullName: numberSpacing
+    summary: Specifies the number spacing setting for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        numberSpacing: Word.NumberSpacing | "Default" | "Proportional" |
+        "Tabular";
+      return:
+        type: >-
+          <xref uid="word!Word.NumberSpacing:enum" /> | "Default" |
+          "Proportional" | "Tabular"
+  - name: outline
+    uid: word!Word.Font#outline:member
+    package: word!
+    fullName: outline
+    summary: >-
+      Specifies if the font is formatted as outlined. The possible values are as
+      follows:
+
+
+      - `true`<!-- -->: All the text is outlined.
+
+
+      - `false`<!-- -->: None of the text is outlined.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is outlined.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outline: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: word!Word.Font#position:member
+    package: word!
+    fullName: position
+    summary: Specifies the position of text (in points) relative to the base line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'position: number;'
+      return:
+        type: number
+  - name: reflection
+    uid: word!Word.Font#reflection:member
+    package: word!
+    fullName: reflection
+    summary: >-
+      Returns a `ReflectionFormat` object that represents the reflection
+      formatting for a shape.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly reflection: Word.ReflectionFormat;'
+      return:
+        type: <xref uid="word!Word.ReflectionFormat:class" />
+  - name: scaling
+    uid: word!Word.Font#scaling:member
+    package: word!
+    fullName: scaling
+    summary: Specifies the scaling percentage applied to the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'scaling: number;'
+      return:
+        type: number
+  - name: shadow
+    uid: word!Word.Font#shadow:member
+    package: word!
+    fullName: shadow
+    summary: >-
+      Specifies if the font is formatted as shadowed. The possible values are as
+      follows:
+
+
+      - `true`<!-- -->: All the text is shadowed.
+
+
+      - `false`<!-- -->: None of the text is shadowed.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is shadowed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shadow: boolean;'
+      return:
+        type: boolean
   - name: size
-    uid: 'word!Word.Font#size:member'
+    uid: word!Word.Font#size:member
     package: word!
     fullName: size
     summary: Specifies a value that represents the font size in points.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Change the font size
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -250,28 +860,94 @@ properties:
           await context.sync();
           console.log('The font size has changed.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'size: number;'
       return:
         type: number
+  - name: sizeBidirectional
+    uid: word!Word.Font#sizeBidirectional:member
+    package: word!
+    fullName: sizeBidirectional
+    summary: Specifies the font size in points for right-to-left text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sizeBidirectional: number;'
+      return:
+        type: number
+  - name: smallCaps
+    uid: word!Word.Font#smallCaps:member
+    package: word!
+    fullName: smallCaps
+    summary: >-
+      Specifies whether the font is formatted as small caps, which makes
+      lowercase letters appear as small uppercase letters. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text has the **Small Caps** attribute.
+
+
+      - `false`<!-- -->: None of the text has the **Small Caps** attribute.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Small Caps** attribute.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'smallCaps: boolean;'
+      return:
+        type: boolean
+  - name: spacing
+    uid: word!Word.Font#spacing:member
+    package: word!
+    fullName: spacing
+    summary: Specifies the spacing between characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spacing: number;'
+      return:
+        type: number
   - name: strikeThrough
-    uid: 'word!Word.Font#strikeThrough:member'
+    uid: word!Word.Font#strikeThrough:member
     package: word!
     fullName: strikeThrough
     summary: >-
-      Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as
-      strikethrough text, otherwise, false.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      Specifies a value that indicates whether the font has a strikethrough.
+      True if the font is formatted as strikethrough text, otherwise, false.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Strike format text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -285,21 +961,49 @@ properties:
           await context.sync();
           console.log('The selection now has a strikethrough.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'strikeThrough: boolean;'
       return:
         type: boolean
+  - name: stylisticSet
+    uid: word!Word.Font#stylisticSet:member
+    package: word!
+    fullName: stylisticSet
+    summary: Specifies the stylistic set for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        stylisticSet: Word.StylisticSet | "Default" | "Set01" | "Set02" |
+        "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" |
+        "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" |
+        "Set17" | "Set18" | "Set19" | "Set20";
+      return:
+        type: >-
+          <xref uid="word!Word.StylisticSet:enum" /> | "Default" | "Set01" |
+          "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" |
+          "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" |
+          "Set16" | "Set17" | "Set18" | "Set19" | "Set20"
   - name: subscript
-    uid: 'word!Word.Font#subscript:member'
+    uid: word!Word.Font#subscript:member
     package: word!
     fullName: subscript
     summary: >-
-      Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
-      otherwise, false.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies a value that indicates whether the font is a subscript. True if
+      the font is formatted as subscript, otherwise, false.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -307,32 +1011,92 @@ properties:
       return:
         type: boolean
   - name: superscript
-    uid: 'word!Word.Font#superscript:member'
+    uid: word!Word.Font#superscript:member
     package: word!
     fullName: superscript
     summary: >-
-      Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript,
-      otherwise, false.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies a value that indicates whether the font is a superscript. True
+      if the font is formatted as superscript, otherwise, false.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'superscript: boolean;'
       return:
         type: boolean
+  - name: textColor
+    uid: word!Word.Font#textColor:member
+    package: word!
+    fullName: textColor
+    summary: Returns a `ColorFormat` object that represents the color for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly textColor: Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+  - name: textShadow
+    uid: word!Word.Font#textShadow:member
+    package: word!
+    fullName: textShadow
+    summary: >-
+      Returns a `ShadowFormat` object that specifies the shadow formatting for
+      the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly textShadow: Word.ShadowFormat;'
+      return:
+        type: <xref uid="word!Word.ShadowFormat:class" />
+  - name: threeDimensionalFormat
+    uid: word!Word.Font#threeDimensionalFormat:member
+    package: word!
+    fullName: threeDimensionalFormat
+    summary: >-
+      Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D)
+      effect formatting properties for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly threeDimensionalFormat: Word.ThreeDimensionalFormat;'
+      return:
+        type: <xref uid="word!Word.ThreeDimensionalFormat:class" />
   - name: underline
-    uid: 'word!Word.Font#underline:member'
+    uid: word!Word.Font#underline:member
     package: word!
     fullName: underline
-    summary: Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies a value that indicates the font's underline type. 'None' if the
+      font isn't underlined.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Underline format text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -346,29 +1110,85 @@ properties:
           await context.sync();
           console.log('The selection now has an underline style.');
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick"
-        | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine"
-        | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
+        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
+        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
+        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
-          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
-          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
-          "WaveHeavy" | "WaveDouble"
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
+          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
+          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
+          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
+          | "WaveHeavy" | "WaveDouble"
+  - name: underlineColor
+    uid: word!Word.Font#underlineColor:member
+    package: word!
+    fullName: underlineColor
+    summary: >-
+      Specifies the color of the underline for the `Font` object. You can
+      provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'underlineColor: string;'
+      return:
+        type: string
 methods:
+  - name: decreaseFontSize()
+    uid: word!Word.Font#decreaseFontSize:member(1)
+    package: word!
+    fullName: decreaseFontSize()
+    summary: Decreases the font size to the next available size.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'decreaseFontSize(): void;'
+      return:
+        type: void
+        description: ''
+  - name: increaseFontSize()
+    uid: word!Word.Font#increaseFontSize:member(1)
+    package: word!
+    fullName: increaseFontSize()
+    summary: Increases the font size to the next available size.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'increaseFontSize(): void;'
+      return:
+        type: void
+        description: ''
   - name: load(options)
-    uid: 'word!Word.Font#load:member(1)'
+    uid: word!Word.Font#load:member(1)
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -376,37 +1196,41 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
+          type: <xref uid="word!Word.Interfaces.FontLoadOptions:interface" />
       return:
-        type: '<xref uid="word!Word.Font:class" />'
+        type: <xref uid="word!Word.Font:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'word!Word.Font#load:member(2)'
+    uid: word!Word.Font#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Font;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="word!Word.Font:class" />'
+        type: <xref uid="word!Word.Font:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'word!Word.Font#load:member(3)'
+    uid: word!Word.Font#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -418,46 +1242,74 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="word!Word.Font:class" />'
+        type: <xref uid="word!Word.Font:class" />
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'word!Word.Font#set:member(1)'
+  - name: reset()
+    uid: word!Word.Font#reset:member(1)
     package: word!
-    fullName: 'set(properties, options)'
+    fullName: reset()
+    summary: Removes manual character formatting.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'reset(): void;'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.Font#set:member(1)
+    package: word!
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.FontUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.FontUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
   - name: set(properties)
-    uid: 'word!Word.Font#set:member(2)'
+    uid: word!Word.Font#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -465,63 +1317,91 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="word!Word.Font:class" />'
+          type: <xref uid="word!Word.Font:class" />
+      return:
+        type: void
+        description: ''
+  - name: setAsTemplateDefault()
+    uid: word!Word.Font#setAsTemplateDefault:member(1)
+    package: word!
+    fullName: setAsTemplateDefault()
+    summary: >-
+      Sets the specified font formatting as the default for the active document
+      and all new documents based on the active template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setAsTemplateDefault(): void;'
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'word!Word.Font#toJSON:member(1)'
+    uid: word!Word.Font#toJSON:member(1)
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Font` object is an
+      API object, the `toJSON` method returns a plain JavaScript object (typed
+      as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.FontData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
+        type: <xref uid="word!Word.Interfaces.FontData:interface" />
         description: ''
   - name: track()
-    uid: 'word!Word.Font#track:member(1)'
+    uid: word!Word.Font#track:member(1)
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created. If this object is part of a collection,
-      you should also track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.Font;'
       return:
-        type: '<xref uid="word!Word.Font:class" />'
+        type: <xref uid="word!Word.Font:class" />
         description: ''
   - name: untrack()
-    uid: 'word!Word.Font#untrack:member(1)'
+    uid: word!Word.Font#untrack:member(1)
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.Font;'
       return:
-        type: '<xref uid="word!Word.Font:class" />'
+        type: <xref uid="word!Word.Font:class" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

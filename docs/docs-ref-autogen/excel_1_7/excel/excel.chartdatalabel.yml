@@ -1,50 +1,114 @@
 ### YamlMime:TSType
 name: Excel.ChartDataLabel
-uid: 'excel!Excel.ChartDataLabel:class'
+uid: excel!Excel.ChartDataLabel:class
 package: excel!
 fullName: Excel.ChartDataLabel
 summary: Represents the data label of a chart point.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-labels.yaml
+
+
+  // This function styles substrings within data label text using font
+  formatting.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem(sheetName);
+    const chart = sheet.charts.getItemAt(0);
+    await context.sync();
+
+    const series = chart.series.getItemAt(0);
+    series.load("points");
+    await context.sync();
+
+    series.points.load("items");
+    await context.sync();
+
+    // Style a substring in the first data label.
+    let searchString = "sports";
+    let dataLabel = series.points.getItemAt(dataLabelInfo[0].index).dataLabel.load("text");
+    await context.sync();
+    let substringStart = dataLabel.text.indexOf(searchString);
+    let subLabel = dataLabel.getSubstring(substringStart, searchString.length);
+    subLabel.font.size = 13;
+    subLabel.font.bold = true;
+
+    // Style a substring in the second data label.
+    searchString = "'Titanic'";
+    dataLabel = series.points.getItemAt(dataLabelInfo[1].index).dataLabel.load("text");
+    await context.sync();
+
+    substringStart = dataLabel.text.indexOf(searchString);
+    subLabel = dataLabel.getSubstring(substringStart, searchString.length);
+    subLabel.font.name = "Calibri";
+    subLabel.font.size = 13;
+    subLabel.font.italic = true;
+    subLabel.font.color = "blue";
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'excel!Excel.ChartDataLabel#context:member'
+    uid: excel!Excel.ChartDataLabel#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
   - name: position
-    uid: 'excel!Excel.ChartDataLabel#position:member'
+    uid: excel!Excel.ChartDataLabel#position:member
     package: excel!
     fullName: position
-    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      Value that represents the position of the data label. See
+      `Excel.ChartDataLabelPosition` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
-        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" |
+        "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" |
+        "Bottom" | "BestFit" | "Callout";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" | "None" | "Center" | "InsideEnd" |
-          "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" |
+          "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+          | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator
-    uid: 'excel!Excel.ChartDataLabel#separator:member'
+    uid: excel!Excel.ChartDataLabel#separator:member
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data label on a chart.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,11 +116,14 @@ properties:
       return:
         type: string
   - name: showBubbleSize
-    uid: 'excel!Excel.ChartDataLabel#showBubbleSize:member'
+    uid: excel!Excel.ChartDataLabel#showBubbleSize:member
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +131,14 @@ properties:
       return:
         type: boolean
   - name: showCategoryName
-    uid: 'excel!Excel.ChartDataLabel#showCategoryName:member'
+    uid: excel!Excel.ChartDataLabel#showCategoryName:member
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,11 +146,14 @@ properties:
       return:
         type: boolean
   - name: showLegendKey
-    uid: 'excel!Excel.ChartDataLabel#showLegendKey:member'
+    uid: excel!Excel.ChartDataLabel#showLegendKey:member
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +161,14 @@ properties:
       return:
         type: boolean
   - name: showPercentage
-    uid: 'excel!Excel.ChartDataLabel#showPercentage:member'
+    uid: excel!Excel.ChartDataLabel#showPercentage:member
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,11 +176,14 @@ properties:
       return:
         type: boolean
   - name: showSeriesName
-    uid: 'excel!Excel.ChartDataLabel#showSeriesName:member'
+    uid: excel!Excel.ChartDataLabel#showSeriesName:member
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,11 +191,14 @@ properties:
       return:
         type: boolean
   - name: showValue
-    uid: 'excel!Excel.ChartDataLabel#showValue:member'
+    uid: excel!Excel.ChartDataLabel#showValue:member
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,51 +207,60 @@ properties:
         type: boolean
 methods:
   - name: load(options)
-    uid: 'excel!Excel.ChartDataLabel#load:member(1)'
+    uid: excel!Excel.ChartDataLabel#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;'
+      content: >-
+        load(options?: Excel.Interfaces.ChartDataLabelLoadOptions):
+        Excel.ChartDataLabel;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface" />'
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface" />
       return:
-        type: '<xref uid="excel!Excel.ChartDataLabel:class" />'
+        type: <xref uid="excel!Excel.ChartDataLabel:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.ChartDataLabel#load:member(2)'
+    uid: excel!Excel.ChartDataLabel#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartDataLabel;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.ChartDataLabel:class" />'
+        type: <xref uid="excel!Excel.ChartDataLabel:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.ChartDataLabel#load:member(3)'
+    uid: excel!Excel.ChartDataLabel#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,46 +272,60 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.ChartDataLabel:class" />'
+        type: <xref uid="excel!Excel.ChartDataLabel:class" />
         description: ''
-  - name: 'set(properties, options)'
-    uid: 'excel!Excel.ChartDataLabel#set:member(1)'
+  - name: set(properties, options)
+    uid: excel!Excel.ChartDataLabel#set:member(1)
     package: excel!
-    fullName: 'set(properties, options)'
+    fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartDataLabelUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.ChartDataLabelUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData:interface" />'
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataLabelUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
   - name: set(properties)
-    uid: 'excel!Excel.ChartDataLabel#set:member(2)'
+    uid: excel!Excel.ChartDataLabel#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,26 +333,30 @@ methods:
       parameters:
         - id: properties
           description: ''
-          type: '<xref uid="excel!Excel.ChartDataLabel:class" />'
+          type: <xref uid="excel!Excel.ChartDataLabel:class" />
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.ChartDataLabel#toJSON:member(1)'
+    uid: excel!Excel.ChartDataLabel#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.ChartDataLabel` object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`<!-- -->) that contains shallow copies of
-      any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.ChartDataLabel`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.ChartDataLabelData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ChartDataLabelData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.ChartDataLabelData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

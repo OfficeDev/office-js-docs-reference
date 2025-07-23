@@ -11,11 +11,11 @@ CustomFunctions.ErrorCode,"invalidReference",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"invalidValue",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"notAvailable",EnumField,Excellent,false
 CustomFunctions.ErrorCode,"nullReference",EnumField,Great,false
-CustomFunctions.Invocation,N/A,Interface,Unknown,false
-CustomFunctions.Invocation,"address",Property,Great,false
+CustomFunctions.Invocation,N/A,Interface,Unknown,true
+CustomFunctions.Invocation,"address",Property,Great,true
 CustomFunctions.Invocation,"functionName",Property,Poor,false
-CustomFunctions.Invocation,"isInValuePreview",Property,Great,false
-CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,false
+CustomFunctions.Invocation,"isInValuePreview",Property,Great,true
+CustomFunctions.Invocation,"parameterAddresses",Property,Excellent,true
 CustomFunctions.StreamingInvocation,N/A,Interface,Fine,false
 CustomFunctions.StreamingInvocation,"setResult",Property,Fine,true
 Excel.AggregationFunction,N/A,Enum,Unknown,true
@@ -73,7 +73,7 @@ Excel.Application,"iterativeCalculation",Property,Great,false
 Excel.Application,"thousandsSeparator",Property,Excellent,false
 Excel.Application,"useSystemSeparators",Property,Excellent,false
 Excel.Application,"calculate(calculationType)",Method,Fine,true
-Excel.Application,"calculate(calculationTypeString)",Method,Fine,true
+Excel.Application,"calculate(calculationType)",Method,Fine,true
 Excel.Application,"load(options)",Method,Excellent,false
 Excel.Application,"load(propertyNames)",Method,Excellent,true
 Excel.Application,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -145,7 +145,7 @@ Excel.Base64EncodingType,"TIF",EnumField,Good,false
 Excel.Base64EncodingType,"WEBP",EnumField,Fine,false
 Excel.BasicCardLayout,N/A,Interface,Good,false
 Excel.BasicCardLayout,"layout",Property,Poor,false
-Excel.BasicCompactLayout,N/A,Interface,Great,false
+Excel.BasicCompactLayout,N/A,Interface,Good,false
 Excel.BasicCompactLayout,"icon",Property,Excellent,false
 Excel.BasicDataValidation,N/A,Interface,Unknown,false
 Excel.BasicDataValidation,"formula1",Property,Excellent,false
@@ -171,11 +171,11 @@ Excel.BindingCollection,"context",Property,Excellent,false
 Excel.BindingCollection,"count",Property,Fine,false
 Excel.BindingCollection,"items",Property,Poor,false
 Excel.BindingCollection,"add(range, bindingType, id)",Method,Poor,false
-Excel.BindingCollection,"add(range, bindingTypeString, id)",Method,Poor,false
+Excel.BindingCollection,"add(range, bindingType, id)",Method,Poor,false
 Excel.BindingCollection,"addFromNamedItem(name, bindingType, id)",Method,Excellent,false
-Excel.BindingCollection,"addFromNamedItem(name, bindingTypeString, id)",Method,Excellent,false
+Excel.BindingCollection,"addFromNamedItem(name, bindingType, id)",Method,Excellent,false
 Excel.BindingCollection,"addFromSelection(bindingType, id)",Method,Excellent,false
-Excel.BindingCollection,"addFromSelection(bindingTypeString, id)",Method,Excellent,false
+Excel.BindingCollection,"addFromSelection(bindingType, id)",Method,Excellent,false
 Excel.BindingCollection,"getCount()",Method,Poor,false
 Excel.BindingCollection,"getItem(id)",Method,Fine,true
 Excel.BindingCollection,"getItemAt(index)",Method,Great,true
@@ -501,6 +501,7 @@ Excel.CalcErrorCellValueSubType,"dataTableReferencedPendingFormula",EnumField,Gr
 Excel.CalcErrorCellValueSubType,"emptyArray",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"eRegexReplaceCharLimit",EnumField,Great,false
 Excel.CalcErrorCellValueSubType,"externalQueryRef",EnumField,Excellent,false
+Excel.CalcErrorCellValueSubType,"functionInCell",EnumField,Great,false
 Excel.CalcErrorCellValueSubType,"invalidPythonObject",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"lambdaInCell",EnumField,Excellent,false
 Excel.CalcErrorCellValueSubType,"pythonGridQuery",EnumField,Great,false
@@ -561,10 +562,9 @@ Excel.CellBorderCollection,"left",Property,Fine,false
 Excel.CellBorderCollection,"right",Property,Fine,false
 Excel.CellBorderCollection,"top",Property,Fine,false
 Excel.CellBorderCollection,"vertical",Property,Fine,false
-Excel.CellControl,N/A,TypeAlias,Fine,false
+Excel.CellControl,N/A,TypeAlias,Fine,true
 Excel.CellControlType,N/A,Enum,Unknown,true
 Excel.CellControlType,"checkbox",EnumField,Fine,false
-Excel.CellControlType,"dropdown",EnumField,Fine,false
 Excel.CellControlType,"empty",EnumField,Fine,false
 Excel.CellControlType,"mixed",EnumField,Fine,false
 Excel.CellControlType,"unknown",EnumField,Fine,false
@@ -744,14 +744,14 @@ Excel.Chart,"getDataRangeOrNullObject()",Method,Excellent,false
 Excel.Chart,"getDataTable()",Method,Great,false
 Excel.Chart,"getDataTableOrNullObject()",Method,Excellent,true
 Excel.Chart,"getImage(width, height, fittingMode)",Method,Good,true
-Excel.Chart,"getImage(width, height, fittingModeString)",Method,Good,false
+Excel.Chart,"getImage(width, height, fittingMode)",Method,Good,false
 Excel.Chart,"load(options)",Method,Excellent,false
 Excel.Chart,"load(propertyNames)",Method,Excellent,true
 Excel.Chart,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.Chart,"set(properties, options)",Method,Good,false
 Excel.Chart,"set(properties)",Method,Good,false
 Excel.Chart,"setData(sourceData, seriesBy)",Method,Poor,true
-Excel.Chart,"setData(sourceData, seriesByString)",Method,Poor,false
+Excel.Chart,"setData(sourceData, seriesBy)",Method,Poor,false
 Excel.Chart,"setPosition(startCell, endCell)",Method,Fine,true
 Excel.Chart,"toJSON()",Method,Excellent,false
 Excel.ChartActivatedEventArgs,N/A,Interface,Unknown,false
@@ -782,7 +782,7 @@ Excel.ChartAxes,"context",Property,Excellent,false
 Excel.ChartAxes,"seriesAxis",Property,Poor,false
 Excel.ChartAxes,"valueAxis",Property,Fine,true
 Excel.ChartAxes,"getItem(type, group)",Method,Great,false
-Excel.ChartAxes,"getItem(typeString, groupString)",Method,Great,false
+Excel.ChartAxes,"getItem(type, group)",Method,Great,false
 Excel.ChartAxes,"load(options)",Method,Excellent,false
 Excel.ChartAxes,"load(propertyNames)",Method,Excellent,false
 Excel.ChartAxes,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -973,7 +973,7 @@ Excel.ChartCollection,"context",Property,Excellent,false
 Excel.ChartCollection,"count",Property,Fine,false
 Excel.ChartCollection,"items",Property,Poor,false
 Excel.ChartCollection,"add(type, sourceData, seriesBy)",Method,Poor,true
-Excel.ChartCollection,"add(typeString, sourceData, seriesByString)",Method,Poor,false
+Excel.ChartCollection,"add(type, sourceData, seriesBy)",Method,Poor,false
 Excel.ChartCollection,"getCount()",Method,Fine,false
 Excel.ChartCollection,"getItem(name)",Method,Good,true
 Excel.ChartCollection,"getItemAt(index)",Method,Fine,true
@@ -1000,20 +1000,20 @@ Excel.ChartColorScheme,"monochromaticPalette6",EnumField,Fine,false
 Excel.ChartColorScheme,"monochromaticPalette7",EnumField,Fine,false
 Excel.ChartColorScheme,"monochromaticPalette8",EnumField,Fine,false
 Excel.ChartColorScheme,"monochromaticPalette9",EnumField,Fine,false
-Excel.ChartDataLabel,N/A,Class,Unknown,false
+Excel.ChartDataLabel,N/A,Class,Unknown,true
 Excel.ChartDataLabel,"autoText",Property,Excellent,false
 Excel.ChartDataLabel,"context",Property,Excellent,false
 Excel.ChartDataLabel,"format",Property,Poor,false
 Excel.ChartDataLabel,"formula",Property,Great,false
-Excel.ChartDataLabel,"geometricShapeType",Property,Great,false
+Excel.ChartDataLabel,"geometricShapeType",Property,Excellent,false
 Excel.ChartDataLabel,"height",Property,Excellent,false
 Excel.ChartDataLabel,"horizontalAlignment",Property,Great,false
 Excel.ChartDataLabel,"left",Property,Great,false
 Excel.ChartDataLabel,"linkNumberFormat",Property,Excellent,false
-Excel.ChartDataLabel,"numberFormat",Property,Great,false
+Excel.ChartDataLabel,"numberFormat",Property,Good,false
 Excel.ChartDataLabel,"position",Property,Good,false
 Excel.ChartDataLabel,"separator",Property,Great,false
-Excel.ChartDataLabel,"showAsStickyCallout",Property,Great,false
+Excel.ChartDataLabel,"showAsStickyCallout",Property,Excellent,false
 Excel.ChartDataLabel,"showBubbleSize",Property,Great,false
 Excel.ChartDataLabel,"showCategoryName",Property,Great,false
 Excel.ChartDataLabel,"showLegendKey",Property,Good,false
@@ -1073,14 +1073,14 @@ Excel.ChartDataLabels,N/A,Class,Unknown,false
 Excel.ChartDataLabels,"autoText",Property,Excellent,false
 Excel.ChartDataLabels,"context",Property,Excellent,false
 Excel.ChartDataLabels,"format",Property,Great,false
-Excel.ChartDataLabels,"geometricShapeType",Property,Great,false
+Excel.ChartDataLabels,"geometricShapeType",Property,Excellent,false
 Excel.ChartDataLabels,"horizontalAlignment",Property,Excellent,false
 Excel.ChartDataLabels,"leaderLines",Property,Good,false
 Excel.ChartDataLabels,"linkNumberFormat",Property,Excellent,false
 Excel.ChartDataLabels,"numberFormat",Property,Good,false
 Excel.ChartDataLabels,"position",Property,Good,false
 Excel.ChartDataLabels,"separator",Property,Great,false
-Excel.ChartDataLabels,"showAsStickyCallout",Property,Great,false
+Excel.ChartDataLabels,"showAsStickyCallout",Property,Excellent,false
 Excel.ChartDataLabels,"showBubbleSize",Property,Great,false
 Excel.ChartDataLabels,"showCategoryName",Property,Great,false
 Excel.ChartDataLabels,"showLeaderLines",Property,Great,false
@@ -1422,7 +1422,7 @@ Excel.ChartPlotAreaPosition,"custom",EnumField,Fine,false
 Excel.ChartPlotBy,N/A,Enum,Fine,false
 Excel.ChartPlotBy,"columns",EnumField,Fine,false
 Excel.ChartPlotBy,"rows",EnumField,Fine,false
-Excel.ChartPoint,N/A,Class,Unknown,false
+Excel.ChartPoint,N/A,Class,Unknown,true
 Excel.ChartPoint,"context",Property,Excellent,false
 Excel.ChartPoint,"dataLabel",Property,Fine,false
 Excel.ChartPoint,"format",Property,Poor,false
@@ -1448,7 +1448,7 @@ Excel.ChartPointFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.ChartPointFormat,"set(properties, options)",Method,Good,false
 Excel.ChartPointFormat,"set(properties)",Method,Good,false
 Excel.ChartPointFormat,"toJSON()",Method,Excellent,false
-Excel.ChartPointsCollection,N/A,Class,Unknown,false
+Excel.ChartPointsCollection,N/A,Class,Unknown,true
 Excel.ChartPointsCollection,"context",Property,Excellent,false
 Excel.ChartPointsCollection,"count",Property,Fine,false
 Excel.ChartPointsCollection,"items",Property,Poor,false
@@ -1508,11 +1508,11 @@ Excel.ChartSeries,"xErrorBars",Property,Good,false
 Excel.ChartSeries,"yErrorBars",Property,Good,false
 Excel.ChartSeries,"delete()",Method,Fine,true
 Excel.ChartSeries,"getDimensionDataSourceString(dimension)",Method,Good,true
-Excel.ChartSeries,"getDimensionDataSourceString(dimensionString)",Method,Good,false
+Excel.ChartSeries,"getDimensionDataSourceString(dimension)",Method,Good,false
 Excel.ChartSeries,"getDimensionDataSourceType(dimension)",Method,Poor,true
-Excel.ChartSeries,"getDimensionDataSourceType(dimensionString)",Method,Poor,false
+Excel.ChartSeries,"getDimensionDataSourceType(dimension)",Method,Poor,false
 Excel.ChartSeries,"getDimensionValues(dimension)",Method,Great,true
-Excel.ChartSeries,"getDimensionValues(dimensionString)",Method,Great,false
+Excel.ChartSeries,"getDimensionValues(dimension)",Method,Great,false
 Excel.ChartSeries,"load(options)",Method,Excellent,false
 Excel.ChartSeries,"load(propertyNames)",Method,Excellent,true
 Excel.ChartSeries,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -1638,7 +1638,7 @@ Excel.ChartTrendlineCollection,N/A,Class,Unknown,false
 Excel.ChartTrendlineCollection,"context",Property,Excellent,false
 Excel.ChartTrendlineCollection,"items",Property,Poor,false
 Excel.ChartTrendlineCollection,"add(type)",Method,Poor,true
-Excel.ChartTrendlineCollection,"add(typeString)",Method,Poor,false
+Excel.ChartTrendlineCollection,"add(type)",Method,Poor,false
 Excel.ChartTrendlineCollection,"getCount()",Method,Good,false
 Excel.ChartTrendlineCollection,"getItem(index)",Method,Great,false
 Excel.ChartTrendlineCollection,"load(options)",Method,Excellent,false
@@ -1855,7 +1855,7 @@ Excel.CommentCollection,N/A,Class,Unknown,false
 Excel.CommentCollection,"context",Property,Excellent,false
 Excel.CommentCollection,"items",Property,Poor,false
 Excel.CommentCollection,"add(cellAddress, content, contentType)",Method,Excellent,true
-Excel.CommentCollection,"add(cellAddress, content, contentTypeString)",Method,Excellent,false
+Excel.CommentCollection,"add(cellAddress, content, contentType)",Method,Excellent,false
 Excel.CommentCollection,"getCount()",Method,Poor,false
 Excel.CommentCollection,"getItem(commentId)",Method,Fine,false
 Excel.CommentCollection,"getItemAt(index)",Method,Fine,false
@@ -1906,7 +1906,7 @@ Excel.CommentReplyCollection,N/A,Class,Unknown,false
 Excel.CommentReplyCollection,"context",Property,Excellent,false
 Excel.CommentReplyCollection,"items",Property,Poor,false
 Excel.CommentReplyCollection,"add(content, contentType)",Method,Fine,true
-Excel.CommentReplyCollection,"add(content, contentTypeString)",Method,Fine,false
+Excel.CommentReplyCollection,"add(content, contentType)",Method,Fine,false
 Excel.CommentReplyCollection,"getCount()",Method,Fine,false
 Excel.CommentReplyCollection,"getItem(commentReplyId)",Method,Good,false
 Excel.CommentReplyCollection,"getItemAt(index)",Method,Fine,false
@@ -2020,7 +2020,7 @@ Excel.ConditionalFormatCollection,N/A,Class,Unknown,false
 Excel.ConditionalFormatCollection,"context",Property,Excellent,false
 Excel.ConditionalFormatCollection,"items",Property,Poor,false
 Excel.ConditionalFormatCollection,"add(type)",Method,Good,true
-Excel.ConditionalFormatCollection,"add(typeString)",Method,Good,false
+Excel.ConditionalFormatCollection,"add(type)",Method,Good,false
 Excel.ConditionalFormatCollection,"clearAll()",Method,Great,true
 Excel.ConditionalFormatCollection,"getCount()",Method,Great,true
 Excel.ConditionalFormatCollection,"getItem(id)",Method,Good,true
@@ -2135,7 +2135,7 @@ Excel.ConditionalRangeBorderCollection,"left",Property,Poor,false
 Excel.ConditionalRangeBorderCollection,"right",Property,Poor,false
 Excel.ConditionalRangeBorderCollection,"top",Property,Missing,false
 Excel.ConditionalRangeBorderCollection,"getItem(index)",Method,Fine,false
-Excel.ConditionalRangeBorderCollection,"getItem(indexString)",Method,Fine,false
+Excel.ConditionalRangeBorderCollection,"getItem(index)",Method,Fine,false
 Excel.ConditionalRangeBorderCollection,"getItemAt(index)",Method,Fine,false
 Excel.ConditionalRangeBorderCollection,"load(options)",Method,Excellent,false
 Excel.ConditionalRangeBorderCollection,"load(propertyNames)",Method,Excellent,false
@@ -2272,6 +2272,16 @@ Excel.CustomConditionalFormat,"set(properties)",Method,Good,false
 Excel.CustomConditionalFormat,"toJSON()",Method,Excellent,false
 Excel.CustomDataValidation,N/A,Interface,Unknown,false
 Excel.CustomDataValidation,"formula",Property,Great,false
+Excel.CustomFunctionManager,N/A,Class,Unknown,false
+Excel.CustomFunctionManager,"context",Property,Excellent,false
+Excel.CustomFunctionManager,"load(propertyNames)",Method,Excellent,false
+Excel.CustomFunctionManager,"load(propertyNamesAndPaths)",Method,Excellent,false
+Excel.CustomFunctionManager,"newObject(context)",Method,Good,false
+Excel.CustomFunctionManager,"setVisibility(customFunctionVisibilityOptions)",Method,Fine,false
+Excel.CustomFunctionManager,"toJSON()",Method,Excellent,false
+Excel.CustomFunctionVisibilityOptions,N/A,Interface,Fine,false
+Excel.CustomFunctionVisibilityOptions,"hide",Property,Fine,false
+Excel.CustomFunctionVisibilityOptions,"show",Property,Fine,false
 Excel.CustomProperty,N/A,Class,Great,false
 Excel.CustomProperty,"context",Property,Excellent,false
 Excel.CustomProperty,"key",Property,Good,false
@@ -2637,11 +2647,11 @@ Excel.DoubleCellValue,N/A,Interface,Unknown,false
 Excel.DoubleCellValue,"basicType",Property,Good,false
 Excel.DoubleCellValue,"basicValue",Property,Good,false
 Excel.DoubleCellValue,"layouts",Property,Good,false
-Excel.DoubleCellValue,"numberFormat",Property,Excellent,false
+Excel.DoubleCellValue,"numberFormat",Property,Excellent,true
 Excel.DoubleCellValue,"properties",Property,Good,false
 Excel.DoubleCellValue,"provider",Property,Great,false
 Excel.DoubleCellValue,"referencedValues",Property,Great,false
-Excel.DoubleCellValue,"type",Property,Fine,false
+Excel.DoubleCellValue,"type",Property,Fine,true
 Excel.DynamicFilterCriteria,N/A,Enum,Fine,true
 Excel.DynamicFilterCriteria,"aboveAverage",EnumField,Fine,false
 Excel.DynamicFilterCriteria,"allDatesInPeriodApril",EnumField,Fine,false
@@ -3337,6 +3347,7 @@ Excel.EventType,"chartDeleted",EnumField,Good,false
 Excel.EventType,"commentAdded",EnumField,Good,false
 Excel.EventType,"commentChanged",EnumField,Good,false
 Excel.EventType,"commentDeleted",EnumField,Good,false
+Excel.EventType,"externalCodeServiceDiffResultReceived",EnumField,Great,false
 Excel.EventType,"linkedDataTypeLinkedDataTypeAdded",EnumField,Good,false
 Excel.EventType,"linkedDataTypeRefreshModeChanged",EnumField,Good,false
 Excel.EventType,"linkedDataTypeRefreshRequestCompleted",EnumField,Good,false
@@ -3439,9 +3450,9 @@ Excel.Filter,"applyBottomItemsFilter(count)",Method,Fine,false
 Excel.Filter,"applyBottomPercentFilter(percent)",Method,Fine,false
 Excel.Filter,"applyCellColorFilter(color)",Method,Fine,false
 Excel.Filter,"applyCustomFilter(criteria1, criteria2, oper)",Method,Good,false
-Excel.Filter,"applyCustomFilter(criteria1, criteria2, operString)",Method,Good,false
+Excel.Filter,"applyCustomFilter(criteria1, criteria2, oper)",Method,Good,false
 Excel.Filter,"applyDynamicFilter(criteria)",Method,Poor,false
-Excel.Filter,"applyDynamicFilter(criteriaString)",Method,Poor,false
+Excel.Filter,"applyDynamicFilter(criteria)",Method,Poor,false
 Excel.Filter,"applyFontColorFilter(color)",Method,Fine,false
 Excel.Filter,"applyIconFilter(icon)",Method,Fine,false
 Excel.Filter,"applyTopItemsFilter(count)",Method,Fine,false
@@ -3552,11 +3563,11 @@ Excel.FormatProtection,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.FormatProtection,"set(properties, options)",Method,Good,false
 Excel.FormatProtection,"set(properties)",Method,Good,false
 Excel.FormatProtection,"toJSON()",Method,Excellent,false
-Excel.FormattedNumberCellValue,N/A,Interface,Unknown,false
-Excel.FormattedNumberCellValue,"basicType",Property,Good,false
-Excel.FormattedNumberCellValue,"basicValue",Property,Good,false
-Excel.FormattedNumberCellValue,"numberFormat",Property,Excellent,true
-Excel.FormattedNumberCellValue,"type",Property,Fine,true
+Excel.FormattedNumberCellValue,N/A,Interface,Deprecated,false
+Excel.FormattedNumberCellValue,"basicType",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"basicValue",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"numberFormat",Property,Deprecated,false
+Excel.FormattedNumberCellValue,"type",Property,Deprecated,false
 Excel.FormulaChangedEventDetail,N/A,Interface,Fine,false
 Excel.FormulaChangedEventDetail,"cellAddress",Property,Fine,false
 Excel.FormulaChangedEventDetail,"previousFormula",Property,Fine,false
@@ -4369,7 +4380,7 @@ Excel.LinkedDataType,"load(propertyNames)",Method,Excellent,false
 Excel.LinkedDataType,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.LinkedDataType,"requestRefresh()",Method,Good,false
 Excel.LinkedDataType,"requestSetRefreshMode(refreshMode)",Method,Great,false
-Excel.LinkedDataType,"requestSetRefreshMode(refreshModeString)",Method,Great,false
+Excel.LinkedDataType,"requestSetRefreshMode(refreshMode)",Method,Great,false
 Excel.LinkedDataType,"toJSON()",Method,Excellent,false
 Excel.LinkedDataTypeAddedEventArgs,N/A,Interface,Fine,false
 Excel.LinkedDataTypeAddedEventArgs,"serviceId",Property,Poor,false
@@ -4445,10 +4456,10 @@ Excel.LinkedEntityDataDomainCollection,"load(propertyNamesAndPaths)",Method,Exce
 Excel.LinkedEntityDataDomainCollection,"refreshAll()",Method,Excellent,false
 Excel.LinkedEntityDataDomainCollection,"toJSON()",Method,Excellent,false
 Excel.LinkedEntityDataDomainCreateOptions,N/A,Interface,Unknown,false
-Excel.LinkedEntityDataDomainCreateOptions,"dataProvider",Property,Fine,false
-Excel.LinkedEntityDataDomainCreateOptions,"id",Property,Fine,false
-Excel.LinkedEntityDataDomainCreateOptions,"loadFunctionId",Property,Great,false
-Excel.LinkedEntityDataDomainCreateOptions,"name",Property,Fine,false
+Excel.LinkedEntityDataDomainCreateOptions,"dataProvider",Property,Great,false
+Excel.LinkedEntityDataDomainCreateOptions,"id",Property,Great,false
+Excel.LinkedEntityDataDomainCreateOptions,"loadFunctionId",Property,Excellent,false
+Excel.LinkedEntityDataDomainCreateOptions,"name",Property,Great,false
 Excel.LinkedEntityDataDomainCreateOptions,"periodicRefreshInterval",Property,Excellent,false
 Excel.LinkedEntityDataDomainCreateOptions,"supportedRefreshModes",Property,Excellent,false
 Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,N/A,Interface,Unknown,false
@@ -4635,7 +4646,7 @@ Excel.NotAvailableErrorCellValueSubType,"unknown",EnumField,Good,false
 Excel.NotAvailableErrorCellValueSubType,"vlookupValueNotFound",EnumField,Excellent,false
 Excel.Note,N/A,Class,Unknown,true
 Excel.Note,"authorName",Property,Poor,false
-Excel.Note,"content",Property,Poor,true
+Excel.Note,"content",Property,Good,true
 Excel.Note,"context",Property,Excellent,false
 Excel.Note,"height",Property,Good,true
 Excel.Note,"visible",Property,Excellent,true
@@ -4753,7 +4764,7 @@ Excel.PageLayout,"set(properties, options)",Method,Good,false
 Excel.PageLayout,"set(properties)",Method,Good,false
 Excel.PageLayout,"setPrintArea(printArea)",Method,Poor,true
 Excel.PageLayout,"setPrintMargins(unit, marginOptions)",Method,Poor,false
-Excel.PageLayout,"setPrintMargins(unitString, marginOptions)",Method,Poor,false
+Excel.PageLayout,"setPrintMargins(unit, marginOptions)",Method,Poor,false
 Excel.PageLayout,"setPrintTitleColumns(printTitleColumns)",Method,Fine,false
 Excel.PageLayout,"setPrintTitleRows(printTitleRows)",Method,Fine,true
 Excel.PageLayout,"toJSON()",Method,Excellent,false
@@ -4843,10 +4854,10 @@ Excel.PivotField,"subtotals",Property,Fine,false
 Excel.PivotField,"applyFilter(filter)",Method,Excellent,false
 Excel.PivotField,"clearAllFilters()",Method,Good,true
 Excel.PivotField,"clearFilter(filterType)",Method,Great,false
-Excel.PivotField,"clearFilter(filterTypeString)",Method,Great,false
+Excel.PivotField,"clearFilter(filterType)",Method,Great,false
 Excel.PivotField,"getFilters()",Method,Fine,false
 Excel.PivotField,"isFiltered(filterType)",Method,Great,false
-Excel.PivotField,"isFiltered(filterTypeString)",Method,Great,false
+Excel.PivotField,"isFiltered(filterType)",Method,Great,false
 Excel.PivotField,"load(options)",Method,Excellent,false
 Excel.PivotField,"load(propertyNames)",Method,Excellent,false
 Excel.PivotField,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -4854,7 +4865,7 @@ Excel.PivotField,"set(properties, options)",Method,Good,false
 Excel.PivotField,"set(properties)",Method,Good,false
 Excel.PivotField,"sortByLabels(sortBy)",Method,Great,false
 Excel.PivotField,"sortByValues(sortBy, valuesHierarchy, pivotItemScope)",Method,Excellent,false
-Excel.PivotField,"sortByValues(sortByString, valuesHierarchy, pivotItemScope)",Method,Excellent,false
+Excel.PivotField,"sortByValues(sortBy, valuesHierarchy, pivotItemScope)",Method,Excellent,false
 Excel.PivotField,"toJSON()",Method,Excellent,false
 Excel.PivotFieldCollection,N/A,Class,Unknown,false
 Excel.PivotFieldCollection,"context",Property,Excellent,false
@@ -4957,7 +4968,7 @@ Excel.PivotLayout,"getDataBodyRange()",Method,Great,true
 Excel.PivotLayout,"getDataHierarchy(cell)",Method,Excellent,false
 Excel.PivotLayout,"getFilterAxisRange()",Method,Fine,false
 Excel.PivotLayout,"getPivotItems(axis, cell)",Method,Excellent,false
-Excel.PivotLayout,"getPivotItems(axisString, cell)",Method,Excellent,false
+Excel.PivotLayout,"getPivotItems(axis, cell)",Method,Excellent,false
 Excel.PivotLayout,"getRange()",Method,Good,false
 Excel.PivotLayout,"getRowLabelRange()",Method,Good,false
 Excel.PivotLayout,"load(options)",Method,Excellent,false
@@ -4967,7 +4978,7 @@ Excel.PivotLayout,"repeatAllItemLabels(repeatLabels)",Method,Good,true
 Excel.PivotLayout,"set(properties, options)",Method,Good,false
 Excel.PivotLayout,"set(properties)",Method,Good,false
 Excel.PivotLayout,"setAutoSortOnCell(cell, sortBy)",Method,Excellent,false
-Excel.PivotLayout,"setAutoSortOnCell(cell, sortByString)",Method,Excellent,false
+Excel.PivotLayout,"setAutoSortOnCell(cell, sortBy)",Method,Excellent,false
 Excel.PivotLayout,"setStyle(style)",Method,Poor,false
 Excel.PivotLayout,"toJSON()",Method,Excellent,false
 Excel.PivotLayoutType,N/A,Enum,Good,false
@@ -5189,17 +5200,17 @@ Excel.Range,"valueTypes",Property,Good,false
 Excel.Range,"width",Property,Good,false
 Excel.Range,"worksheet",Property,Poor,false
 Excel.Range,"autoFill(destinationRange, autoFillType)",Method,Good,true
-Excel.Range,"autoFill(destinationRange, autoFillTypeString)",Method,Good,false
+Excel.Range,"autoFill(destinationRange, autoFillType)",Method,Good,false
 Excel.Range,"calculate()",Method,Fine,false
 Excel.Range,"clear(applyTo)",Method,Good,true
-Excel.Range,"clear(applyToString)",Method,Good,false
+Excel.Range,"clear(applyTo)",Method,Good,false
 Excel.Range,"clearOrResetContents()",Method,Excellent,true
 Excel.Range,"convertDataTypeToText()",Method,Fine,false
 Excel.Range,"convertToLinkedDataType(serviceID, languageCulture)",Method,Fine,false
 Excel.Range,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Great,true
-Excel.Range,"copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)",Method,Great,false
+Excel.Range,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Great,false
 Excel.Range,"delete(shift)",Method,Fine,true
-Excel.Range,"delete(shiftString)",Method,Fine,false
+Excel.Range,"delete(shift)",Method,Fine,false
 Excel.Range,"find(text, criteria)",Method,Great,true
 Excel.Range,"findOrNullObject(text, criteria)",Method,Excellent,true
 Excel.Range,"flashFill()",Method,Good,false
@@ -5218,8 +5229,8 @@ Excel.Range,"getDisplayedCellProperties(cellPropertiesLoadOptions)",Method,Excel
 Excel.Range,"getEntireColumn()",Method,Excellent,true
 Excel.Range,"getEntireRow()",Method,Excellent,true
 Excel.Range,"getExtendedRange(direction, activeCell)",Method,Excellent,true
-Excel.Range,"getExtendedRange(directionString, activeCell)",Method,Excellent,false
-Excel.Range,"getImage()",Method,Fine,false
+Excel.Range,"getExtendedRange(direction, activeCell)",Method,Excellent,false
+Excel.Range,"getImage()",Method,Poor,false
 Excel.Range,"getIntersection(anotherRange)",Method,Good,true
 Excel.Range,"getIntersectionOrNullObject(anotherRange)",Method,Excellent,true
 Excel.Range,"getLastCell()",Method,Great,true
@@ -5230,16 +5241,16 @@ Excel.Range,"getOffsetRange(rowOffset, columnOffset)",Method,Excellent,true
 Excel.Range,"getPivotTables(fullyContained)",Method,Good,true
 Excel.Range,"getPrecedents()",Method,Excellent,true
 Excel.Range,"getRangeEdge(direction, activeCell)",Method,Excellent,true
-Excel.Range,"getRangeEdge(directionString, activeCell)",Method,Excellent,false
+Excel.Range,"getRangeEdge(direction, activeCell)",Method,Excellent,false
 Excel.Range,"getResizedRange(deltaRows, deltaColumns)",Method,Good,false
 Excel.Range,"getRow(row)",Method,Poor,true
 Excel.Range,"getRowProperties(rowPropertiesLoadOptions)",Method,Excellent,false
 Excel.Range,"getRowsAbove(count)",Method,Good,false
 Excel.Range,"getRowsBelow(count)",Method,Good,false
 Excel.Range,"getSpecialCells(cellType, cellValueType)",Method,Excellent,true
-Excel.Range,"getSpecialCells(cellTypeString, cellValueTypeString)",Method,Excellent,false
+Excel.Range,"getSpecialCells(cellType, cellValueType)",Method,Excellent,false
 Excel.Range,"getSpecialCellsOrNullObject(cellType, cellValueType)",Method,Excellent,false
-Excel.Range,"getSpecialCellsOrNullObject(cellTypeString, cellValueTypeString)",Method,Excellent,false
+Excel.Range,"getSpecialCellsOrNullObject(cellType, cellValueType)",Method,Excellent,false
 Excel.Range,"getSpillingToRange()",Method,Excellent,true
 Excel.Range,"getSpillingToRangeOrNullObject()",Method,Excellent,false
 Excel.Range,"getSpillParent()",Method,Great,false
@@ -5250,11 +5261,11 @@ Excel.Range,"getUsedRange(valuesOnly)",Method,Excellent,true
 Excel.Range,"getUsedRangeOrNullObject(valuesOnly)",Method,Excellent,true
 Excel.Range,"getVisibleView()",Method,Poor,false
 Excel.Range,"group(groupOption)",Method,Poor,true
-Excel.Range,"group(groupOptionString)",Method,Poor,false
+Excel.Range,"group(groupOption)",Method,Poor,false
 Excel.Range,"hideGroupDetails(groupOption)",Method,Poor,false
-Excel.Range,"hideGroupDetails(groupOptionString)",Method,Poor,false
+Excel.Range,"hideGroupDetails(groupOption)",Method,Poor,false
 Excel.Range,"insert(shift)",Method,Excellent,true
-Excel.Range,"insert(shiftString)",Method,Excellent,false
+Excel.Range,"insert(shift)",Method,Excellent,false
 Excel.Range,"load(options)",Method,Excellent,false
 Excel.Range,"load(propertyNames)",Method,Excellent,true
 Excel.Range,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -5271,13 +5282,13 @@ Excel.Range,"setDirty()",Method,Good,false
 Excel.Range,"setRowProperties(rowPropertiesData)",Method,Great,false
 Excel.Range,"showCard()",Method,Great,false
 Excel.Range,"showGroupDetails(groupOption)",Method,Poor,false
-Excel.Range,"showGroupDetails(groupOptionString)",Method,Poor,false
+Excel.Range,"showGroupDetails(groupOption)",Method,Poor,false
 Excel.Range,"togglePythonMarshalMode(marshalMode)",Method,Fine,false
-Excel.Range,"togglePythonMarshalMode(marshalModeString)",Method,Fine,false
+Excel.Range,"togglePythonMarshalMode(marshalMode)",Method,Fine,false
 Excel.Range,"toJSON()",Method,Excellent,false
 Excel.Range,"track()",Method,Excellent,false
 Excel.Range,"ungroup(groupOption)",Method,Poor,true
-Excel.Range,"ungroup(groupOptionString)",Method,Poor,false
+Excel.Range,"ungroup(groupOption)",Method,Poor,false
 Excel.Range,"unmerge()",Method,Poor,true
 Excel.Range,"untrack()",Method,Excellent,true
 Excel.RangeAreas,N/A,Class,Unknown,false
@@ -5296,21 +5307,21 @@ Excel.RangeAreas,"style",Property,Excellent,false
 Excel.RangeAreas,"worksheet",Property,Good,false
 Excel.RangeAreas,"calculate()",Method,Fine,false
 Excel.RangeAreas,"clear(applyTo)",Method,Great,false
-Excel.RangeAreas,"clear(applyToString)",Method,Great,false
+Excel.RangeAreas,"clear(applyTo)",Method,Great,false
 Excel.RangeAreas,"clearOrResetContents()",Method,Excellent,false
 Excel.RangeAreas,"convertDataTypeToText()",Method,Fine,false
 Excel.RangeAreas,"convertToLinkedDataType(serviceID, languageCulture)",Method,Fine,false
 Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Good,false
-Excel.RangeAreas,"copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)",Method,Good,false
+Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Good,false
 Excel.RangeAreas,"getEntireColumn()",Method,Excellent,false
 Excel.RangeAreas,"getEntireRow()",Method,Excellent,false
 Excel.RangeAreas,"getIntersection(anotherRange)",Method,Excellent,false
 Excel.RangeAreas,"getIntersectionOrNullObject(anotherRange)",Method,Excellent,false
 Excel.RangeAreas,"getOffsetRangeAreas(rowOffset, columnOffset)",Method,Excellent,false
 Excel.RangeAreas,"getSpecialCells(cellType, cellValueType)",Method,Excellent,false
-Excel.RangeAreas,"getSpecialCells(cellTypeString, cellValueTypeString)",Method,Excellent,false
+Excel.RangeAreas,"getSpecialCells(cellType, cellValueType)",Method,Excellent,false
 Excel.RangeAreas,"getSpecialCellsOrNullObject(cellType, cellValueType)",Method,Excellent,false
-Excel.RangeAreas,"getSpecialCellsOrNullObject(cellTypeString, cellValueTypeString)",Method,Excellent,false
+Excel.RangeAreas,"getSpecialCellsOrNullObject(cellType, cellValueType)",Method,Excellent,false
 Excel.RangeAreas,"getTables(fullyContained)",Method,Excellent,false
 Excel.RangeAreas,"getUsedRangeAreas(valuesOnly)",Method,Excellent,false
 Excel.RangeAreas,"getUsedRangeAreasOrNullObject(valuesOnly)",Method,Excellent,false
@@ -5352,7 +5363,7 @@ Excel.RangeBorderCollection,"count",Property,Fine,false
 Excel.RangeBorderCollection,"items",Property,Poor,false
 Excel.RangeBorderCollection,"tintAndShade",Property,Excellent,false
 Excel.RangeBorderCollection,"getItem(index)",Method,Fine,true
-Excel.RangeBorderCollection,"getItem(indexString)",Method,Fine,false
+Excel.RangeBorderCollection,"getItem(index)",Method,Fine,false
 Excel.RangeBorderCollection,"getItemAt(index)",Method,Fine,true
 Excel.RangeBorderCollection,"load(options)",Method,Excellent,false
 Excel.RangeBorderCollection,"load(propertyNames)",Method,Excellent,true
@@ -5443,7 +5454,7 @@ Excel.RangeReference,"address",Property,Good,false
 Excel.RangeSort,N/A,Class,Unknown,false
 Excel.RangeSort,"context",Property,Excellent,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Poor,false
-Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientationString, methodString)",Method,Poor,false
+Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Poor,false
 Excel.RangeSort,"toJSON()",Method,Excellent,false
 Excel.RangeTextRun,N/A,Interface,Good,false
 Excel.RangeTextRun,"font",Property,Good,false
@@ -5602,8 +5613,8 @@ Excel.RowPropertiesLoadOptions,N/A,Interface,Excellent,false
 Excel.RowPropertiesLoadOptions,"format",Property,Excellent,false
 Excel.RowPropertiesLoadOptions,"rowHidden",Property,Excellent,false
 Excel.RowPropertiesLoadOptions,"rowIndex",Property,Excellent,false
-Excel.RunOptions,N/A,Interface,Great,false
-Excel.RunOptions,"delayForCellEdit",Property,Great,false
+Excel.RunOptions,N/A,Interface,Excellent,false
+Excel.RunOptions,"delayForCellEdit",Property,Excellent,false
 Excel.Runtime,N/A,Class,Unknown,false
 Excel.Runtime,"context",Property,Excellent,false
 Excel.Runtime,"enableEvents",Property,Fine,true
@@ -5626,11 +5637,11 @@ Excel.SearchDirection,"forward",EnumField,Fine,false
 Excel.SelectionChangedEventArgs,N/A,Interface,Unknown,false
 Excel.SelectionChangedEventArgs,"workbook",Property,Good,false
 Excel.Session,N/A,Interface,Unknown,false
-Excel.SettableCellProperties,N/A,Interface,Unknown,false
+Excel.SettableCellProperties,N/A,Interface,Good,false
 Excel.SettableCellProperties,"format",Property,Good,false
 Excel.SettableCellProperties,"hyperlink",Property,Good,false
 Excel.SettableCellProperties,"style",Property,Good,true
-Excel.SettableCellProperties,"textRuns",Property,Good,false
+Excel.SettableCellProperties,"textRuns",Property,Fine,false
 Excel.SettableColumnProperties,N/A,Interface,Unknown,false
 Excel.SettableColumnProperties,"columnHidden",Property,Good,false
 Excel.SettableColumnProperties,"format",Property,Good,false
@@ -5692,7 +5703,7 @@ Excel.Shape,"zOrderPosition",Property,Great,false
 Excel.Shape,"copyTo(destinationSheet)",Method,Good,false
 Excel.Shape,"delete()",Method,Poor,true
 Excel.Shape,"getAsImage(format)",Method,Excellent,true
-Excel.Shape,"getAsImage(formatString)",Method,Excellent,false
+Excel.Shape,"getAsImage(format)",Method,Excellent,false
 Excel.Shape,"incrementLeft(increment)",Method,Good,true
 Excel.Shape,"incrementRotation(increment)",Method,Great,true
 Excel.Shape,"incrementTop(increment)",Method,Good,true
@@ -5700,13 +5711,13 @@ Excel.Shape,"load(options)",Method,Excellent,false
 Excel.Shape,"load(propertyNames)",Method,Excellent,false
 Excel.Shape,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,true
-Excel.Shape,"scaleHeight(scaleFactor, scaleTypeString, scaleFromString)",Method,Good,false
+Excel.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,false
 Excel.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,false
-Excel.Shape,"scaleWidth(scaleFactor, scaleTypeString, scaleFromString)",Method,Good,false
+Excel.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,false
 Excel.Shape,"set(properties, options)",Method,Good,false
 Excel.Shape,"set(properties)",Method,Good,false
 Excel.Shape,"setZOrder(position)",Method,Good,true
-Excel.Shape,"setZOrder(positionString)",Method,Good,false
+Excel.Shape,"setZOrder(position)",Method,Good,false
 Excel.Shape,"toJSON()",Method,Excellent,false
 Excel.ShapeActivatedEventArgs,N/A,Interface,Unknown,false
 Excel.ShapeActivatedEventArgs,"shapeId",Property,Poor,false
@@ -5721,11 +5732,11 @@ Excel.ShapeCollection,N/A,Class,Unknown,false
 Excel.ShapeCollection,"context",Property,Excellent,false
 Excel.ShapeCollection,"items",Property,Poor,false
 Excel.ShapeCollection,"addGeometricShape(geometricShapeType)",Method,Great,true
-Excel.ShapeCollection,"addGeometricShape(geometricShapeTypeString)",Method,Great,false
+Excel.ShapeCollection,"addGeometricShape(geometricShapeType)",Method,Great,false
 Excel.ShapeCollection,"addGroup(values)",Method,Great,true
 Excel.ShapeCollection,"addImage(base64ImageString)",Method,Excellent,true
 Excel.ShapeCollection,"addLine(startLeft, startTop, endLeft, endTop, connectorType)",Method,Great,true
-Excel.ShapeCollection,"addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)",Method,Great,false
+Excel.ShapeCollection,"addLine(startLeft, startTop, endLeft, endTop, connectorType)",Method,Great,false
 Excel.ShapeCollection,"addLocalImageReference(address)",Method,Great,false
 Excel.ShapeCollection,"addSvg(xml)",Method,Excellent,false
 Excel.ShapeCollection,"addTextBox(text)",Method,Great,true
@@ -5919,10 +5930,10 @@ Excel.Slicer,"id",Property,Poor,false
 Excel.Slicer,"isFilterCleared",Property,Great,false
 Excel.Slicer,"left",Property,Excellent,false
 Excel.Slicer,"name",Property,Poor,false
-Excel.Slicer,"nameInFormula",Property,Fine,false
+Excel.Slicer,"nameInFormula",Property,Great,false
 Excel.Slicer,"slicerItems",Property,Fine,false
 Excel.Slicer,"slicerStyle",Property,Poor,false
-Excel.Slicer,"sortBy",Property,Good,false
+Excel.Slicer,"sortBy",Property,Excellent,false
 Excel.Slicer,"style",Property,Great,true
 Excel.Slicer,"top",Property,Excellent,false
 Excel.Slicer,"width",Property,Excellent,false
@@ -6032,6 +6043,7 @@ Excel.SpecialCellType,"blanks",EnumField,Fine,false
 Excel.SpecialCellType,"conditionalFormats",EnumField,Good,false
 Excel.SpecialCellType,"constants",EnumField,Fine,false
 Excel.SpecialCellType,"dataValidations",EnumField,Fine,false
+Excel.SpecialCellType,"dirtyFormulas",EnumField,Fine,false
 Excel.SpecialCellType,"formulas",EnumField,Fine,false
 Excel.SpecialCellType,"sameConditionalFormat",EnumField,Good,false
 Excel.SpecialCellType,"sameDataValidation",EnumField,Fine,false
@@ -6296,7 +6308,7 @@ Excel.TableSort,"fields",Property,Excellent,false
 Excel.TableSort,"matchCase",Property,Great,false
 Excel.TableSort,"method",Property,Great,false
 Excel.TableSort,"apply(fields, matchCase, method)",Method,Poor,true
-Excel.TableSort,"apply(fields, matchCase, methodString)",Method,Poor,false
+Excel.TableSort,"apply(fields, matchCase, method)",Method,Poor,false
 Excel.TableSort,"clear()",Method,Good,false
 Excel.TableSort,"load(options)",Method,Excellent,false
 Excel.TableSort,"load(propertyNames)",Method,Excellent,false
@@ -6650,12 +6662,14 @@ Excel.Workbook,"use1904DateSystem",Property,Fine,false
 Excel.Workbook,"usePrecisionAsDisplayed",Property,Excellent,false
 Excel.Workbook,"worksheets",Property,Fine,false
 Excel.Workbook,"close(closeBehavior)",Method,Poor,true
-Excel.Workbook,"close(closeBehaviorString)",Method,Poor,false
+Excel.Workbook,"close(closeBehavior)",Method,Poor,false
+Excel.Workbook,"enterPreviewMode()",Method,Fine,false
+Excel.Workbook,"exitPreviewMode(applyChanges)",Method,Good,false
 Excel.Workbook,"getActiveCell()",Method,Poor,true
 Excel.Workbook,"getActiveChart()",Method,Great,false
 Excel.Workbook,"getActiveChartOrNullObject()",Method,Excellent,false
-Excel.Workbook,"getActiveShape()",Method,Great,false
-Excel.Workbook,"getActiveShapeOrNullObject()",Method,Excellent,false
+Excel.Workbook,"getActiveShape()",Method,Good,false
+Excel.Workbook,"getActiveShapeOrNullObject()",Method,Excellent,true
 Excel.Workbook,"getActiveSlicer()",Method,Great,false
 Excel.Workbook,"getActiveSlicerOrNullObject()",Method,Excellent,false
 Excel.Workbook,"getIsActiveCollabSession()",Method,Excellent,false
@@ -6667,7 +6681,7 @@ Excel.Workbook,"load(options)",Method,Excellent,false
 Excel.Workbook,"load(propertyNames)",Method,Excellent,false
 Excel.Workbook,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.Workbook,"save(saveBehavior)",Method,Poor,true
-Excel.Workbook,"save(saveBehaviorString)",Method,Poor,false
+Excel.Workbook,"save(saveBehavior)",Method,Poor,false
 Excel.Workbook,"set(properties, options)",Method,Good,false
 Excel.Workbook,"set(properties)",Method,Good,false
 Excel.Workbook,"toJSON()",Method,Excellent,false
@@ -6739,7 +6753,7 @@ Excel.Worksheet,"visibility",Property,Poor,false
 Excel.Worksheet,"activate()",Method,Poor,true
 Excel.Worksheet,"calculate(markAllDirty)",Method,Fine,false
 Excel.Worksheet,"copy(positionType, relativeTo)",Method,Good,true
-Excel.Worksheet,"copy(positionTypeString, relativeTo)",Method,Good,false
+Excel.Worksheet,"copy(positionType, relativeTo)",Method,Good,false
 Excel.Worksheet,"delete()",Method,Excellent,true
 Excel.Worksheet,"findAll(text, criteria)",Method,Excellent,false
 Excel.Worksheet,"findAllOrNullObject(text, criteria)",Method,Excellent,true
@@ -6788,7 +6802,7 @@ Excel.WorksheetCollection,"context",Property,Excellent,false
 Excel.WorksheetCollection,"items",Property,Poor,false
 Excel.WorksheetCollection,"add(name)",Method,Good,true
 Excel.WorksheetCollection,"addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)",Method,Good,false
-Excel.WorksheetCollection,"addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)",Method,Good,false
+Excel.WorksheetCollection,"addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)",Method,Good,false
 Excel.WorksheetCollection,"getActiveWorksheet()",Method,Fine,true
 Excel.WorksheetCollection,"getCount(visibleOnly)",Method,Poor,false
 Excel.WorksheetCollection,"getFirst(visibleOnly)",Method,Poor,true
@@ -7090,13 +7104,13 @@ Office.ContextInformation,"host",Property,Good,true
 Office.ContextInformation,"platform",Property,Poor,true
 Office.ContextInformation,"version",Property,Fine,true
 Office.ContextMenu,N/A,Interface,Unknown,false
-Office.ContextMenu,"requestUpdate(input)",Method,Great,false
-Office.ContextMenuControl,N/A,Interface,Unknown,false
+Office.ContextMenu,"requestUpdate(input)",Method,Great,true
+Office.ContextMenuControl,N/A,Interface,Unknown,true
 Office.ContextMenuControl,"enabled",Property,Great,false
 Office.ContextMenuControl,"id",Property,Excellent,false
 Office.ContextMenuUpdaterData,N/A,Interface,Great,false
-Office.ContextMenuUpdaterData,"controls",Property,Great,false
-Office.Control,N/A,Interface,Unknown,false
+Office.ContextMenuUpdaterData,"controls",Property,Great,true
+Office.Control,N/A,Interface,Unknown,true
 Office.Control,"enabled",Property,Excellent,false
 Office.Control,"id",Property,Good,false
 Office.CustomXmlNode,N/A,Interface,Missing,false
@@ -7265,12 +7279,12 @@ Office.EventType,"SettingsChanged",EnumField,Fine,false
 Office.EventType,"SpamReporting",EnumField,Great,false
 Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
-Office.File,N/A,Interface,Unknown,false
+Office.File,N/A,Interface,Unknown,true
 Office.File,"size",Property,Poor,false
 Office.File,"sliceCount",Property,Fine,false
 Office.File,"closeAsync(callback)",Method,Poor,false
 Office.File,"getSliceAsync(sliceIndex, callback)",Method,Good,true
-Office.FileProperties,N/A,Interface,Missing,false
+Office.FileProperties,N/A,Interface,Missing,true
 Office.FileProperties,"url",Property,Missing,false
 Office.FileType,N/A,Enum,Great,true
 Office.FileType,"Compressed",EnumField,Excellent,false
@@ -8502,7 +8516,7 @@ OneNote.Page,"copyToSectionAndSetClassNotebookPageSource(destinationSection)",Me
 OneNote.Page,"getRestApiId()",Method,Poor,true
 OneNote.Page,"hasTitleContent()",Method,Poor,false
 OneNote.Page,"insertPageAsSibling(location, title)",Method,Fine,false
-OneNote.Page,"insertPageAsSibling(locationString, title)",Method,Fine,true
+OneNote.Page,"insertPageAsSibling(location, title)",Method,Fine,true
 OneNote.Page,"load(options)",Method,Excellent,false
 OneNote.Page,"load(propertyNames)",Method,Excellent,true
 OneNote.Page,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -8575,17 +8589,17 @@ OneNote.Paragraph,"richText",Property,Excellent,false
 OneNote.Paragraph,"table",Property,Excellent,false
 OneNote.Paragraph,"type",Property,Fine,false
 OneNote.Paragraph,"addNoteTag(type, status)",Method,Poor,false
-OneNote.Paragraph,"addNoteTag(typeString, statusString)",Method,Poor,false
+OneNote.Paragraph,"addNoteTag(type, status)",Method,Poor,false
 OneNote.Paragraph,"delete()",Method,Fine,true
 OneNote.Paragraph,"getParagraphInfo()",Method,Poor,false
 OneNote.Paragraph,"insertHtmlAsSibling(insertLocation, html)",Method,Fine,true
-OneNote.Paragraph,"insertHtmlAsSibling(insertLocationString, html)",Method,Fine,false
+OneNote.Paragraph,"insertHtmlAsSibling(insertLocation, html)",Method,Fine,false
 OneNote.Paragraph,"insertImageAsSibling(insertLocation, base64EncodedImage, width, height)",Method,Good,true
-OneNote.Paragraph,"insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)",Method,Good,false
+OneNote.Paragraph,"insertImageAsSibling(insertLocation, base64EncodedImage, width, height)",Method,Good,false
 OneNote.Paragraph,"insertRichTextAsSibling(insertLocation, paragraphText)",Method,Good,true
-OneNote.Paragraph,"insertRichTextAsSibling(insertLocationString, paragraphText)",Method,Good,false
+OneNote.Paragraph,"insertRichTextAsSibling(insertLocation, paragraphText)",Method,Good,false
 OneNote.Paragraph,"insertTableAsSibling(insertLocation, rowCount, columnCount, values)",Method,Good,false
-OneNote.Paragraph,"insertTableAsSibling(insertLocationString, rowCount, columnCount, values)",Method,Good,false
+OneNote.Paragraph,"insertTableAsSibling(insertLocation, rowCount, columnCount, values)",Method,Good,false
 OneNote.Paragraph,"load(options)",Method,Excellent,false
 OneNote.Paragraph,"load(propertyNames)",Method,Excellent,true
 OneNote.Paragraph,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -8688,7 +8702,7 @@ OneNote.Section,"copyToNotebook(destinationNotebook)",Method,Fine,true
 OneNote.Section,"copyToSectionGroup(destinationSectionGroup)",Method,Fine,true
 OneNote.Section,"getRestApiId()",Method,Poor,true
 OneNote.Section,"insertSectionAsSibling(location, title)",Method,Fine,false
-OneNote.Section,"insertSectionAsSibling(locationString, title)",Method,Fine,true
+OneNote.Section,"insertSectionAsSibling(location, title)",Method,Fine,true
 OneNote.Section,"load(options)",Method,Excellent,false
 OneNote.Section,"load(propertyNames)",Method,Excellent,true
 OneNote.Section,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -8805,7 +8819,7 @@ OneNote.TableRow,"parentTable",Property,Poor,false
 OneNote.TableRow,"rowIndex",Property,Poor,false
 OneNote.TableRow,"clear()",Method,Poor,false
 OneNote.TableRow,"insertRowAsSibling(insertLocation, values)",Method,Poor,true
-OneNote.TableRow,"insertRowAsSibling(insertLocationString, values)",Method,Poor,false
+OneNote.TableRow,"insertRowAsSibling(insertLocation, values)",Method,Poor,false
 OneNote.TableRow,"load(options)",Method,Excellent,false
 OneNote.TableRow,"load(propertyNames)",Method,Excellent,true
 OneNote.TableRow,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -8941,9 +8955,9 @@ Office.AppointmentTimeChangedEventArgs,N/A,Interface,Unknown,true
 Office.AppointmentTimeChangedEventArgs,"end",Property,Poor,false
 Office.AppointmentTimeChangedEventArgs,"start",Property,Poor,false
 Office.AppointmentTimeChangedEventArgs,"type",Property,Fine,false
-Office.AttachmentContent,N/A,Interface,Good,false
+Office.AttachmentContent,N/A,Interface,Good,true
 Office.AttachmentContent,"content",Property,Fine,false
-Office.AttachmentContent,"format",Property,Excellent,true
+Office.AttachmentContent,"format",Property,Excellent,false
 Office.AttachmentDetails,N/A,Interface,Unknown,true
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
 Office.AttachmentDetails,"contentType",Property,Deprecated,false
@@ -8965,8 +8979,8 @@ Office.AttachmentsChangedEventArgs,"type",Property,Fine,false
 Office.Body,N/A,Interface,Unknown,true
 Office.Body,"appendOnSendAsync(data, options, callback)",Method,Good,true
 Office.Body,"appendOnSendAsync(data, callback)",Method,Good,false
-Office.Body,"getAsync(coercionType, options, callback)",Method,Excellent,true
-Office.Body,"getAsync(coercionType, callback)",Method,Excellent,true
+Office.Body,"getAsync(coercionType, options, callback)",Method,Great,false
+Office.Body,"getAsync(coercionType, callback)",Method,Great,true
 Office.Body,"getTypeAsync(options, callback)",Method,Good,true
 Office.Body,"getTypeAsync(callback)",Method,Good,false
 Office.Body,"prependAsync(data, options, callback)",Method,Good,true
@@ -9237,6 +9251,9 @@ Office.MailboxEnums.AttachmentType,"Base64",EnumField,Good,false
 Office.MailboxEnums.AttachmentType,"Cloud",EnumField,Excellent,false
 Office.MailboxEnums.AttachmentType,"File",EnumField,Poor,false
 Office.MailboxEnums.AttachmentType,"Item",EnumField,Poor,false
+Office.MailboxEnums.BodyMode,N/A,Enum,Unknown,false
+Office.MailboxEnums.BodyMode,"FullBody",EnumField,Fine,false
+Office.MailboxEnums.BodyMode,"HostConfig",EnumField,Great,false
 Office.MailboxEnums.CategoryColor,N/A,Enum,Missing,true
 Office.MailboxEnums.CategoryColor,"None",EnumField,Fine,false
 Office.MailboxEnums.CategoryColor,"Preset0",EnumField,Missing,false
@@ -9301,10 +9318,10 @@ Office.MailboxEnums.InfobarType,"Informational",EnumField,Good,false
 Office.MailboxEnums.InfobarType,"ProgressIndicator",EnumField,Good,false
 Office.MailboxEnums.InfobarType,"Error",EnumField,Great,false
 Office.MailboxEnums.InfobarType,"Insight",EnumField,Good,false
-Office.MailboxEnums.ItemNotificationMessageType,N/A,Enum,Unknown,true
+Office.MailboxEnums.ItemNotificationMessageType,N/A,Enum,Good,true
 Office.MailboxEnums.ItemNotificationMessageType,"ProgressIndicator",EnumField,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,"InformationalMessage",EnumField,Good,false
-Office.MailboxEnums.ItemNotificationMessageType,"ErrorMessage",EnumField,Great,false
+Office.MailboxEnums.ItemNotificationMessageType,"ErrorMessage",EnumField,Good,false
 Office.MailboxEnums.ItemNotificationMessageType,"InsightMessage",EnumField,Good,false
 Office.MailboxEnums.ItemType,N/A,Enum,Missing,true
 Office.MailboxEnums.ItemType,"Message",EnumField,Fine,false
@@ -9659,7 +9676,7 @@ Office.NotificationMessageAction,"commandId",Property,Fine,false
 Office.NotificationMessageAction,"contextData",Property,Fine,false
 Office.NotificationMessageDetails,N/A,Interface,Unknown,true
 Office.NotificationMessageDetails,"actions",Property,Excellent,false
-Office.NotificationMessageDetails,"icon",Property,Excellent,false
+Office.NotificationMessageDetails,"icon",Property,Good,true
 Office.NotificationMessageDetails,"key",Property,Fine,false
 Office.NotificationMessageDetails,"message",Property,Excellent,false
 Office.NotificationMessageDetails,"persistent",Property,Excellent,false
@@ -9737,7 +9754,7 @@ Office.ReplyFormData,"htmlBody",Property,Good,false
 Office.ReplyFormData,"options",Property,Excellent,false
 Office.RoamingSettings,N/A,Interface,Great,false
 Office.RoamingSettings,"get(name)",Method,Good,true
-Office.RoamingSettings,"remove(name)",Method,Fine,false
+Office.RoamingSettings,"remove(name)",Method,Fine,true
 Office.RoamingSettings,"saveAsync(callback)",Method,Excellent,true
 Office.RoamingSettings,"set(name, value)",Method,Excellent,true
 Office.SelectedItemDetails,N/A,Interface,Unknown,true
@@ -9843,38 +9860,60 @@ PowerPoint.Application,N/A,Class,Unknown,false
 PowerPoint.Application,"context",Property,Excellent,false
 PowerPoint.Application,"newObject(context)",Method,Great,false
 PowerPoint.Application,"toJSON()",Method,Excellent,false
-PowerPoint.Binding,N/A,Class,Unknown,false
+PowerPoint.Binding,N/A,Class,Unknown,true
 PowerPoint.Binding,"context",Property,Excellent,false
 PowerPoint.Binding,"id",Property,Fine,false
 PowerPoint.Binding,"type",Property,Good,false
 PowerPoint.Binding,"delete()",Method,Poor,false
-PowerPoint.Binding,"getShape()",Method,Excellent,false
+PowerPoint.Binding,"getShape()",Method,Excellent,true
 PowerPoint.Binding,"load(options)",Method,Excellent,false
 PowerPoint.Binding,"load(propertyNames)",Method,Excellent,false
 PowerPoint.Binding,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.Binding,"toJSON()",Method,Excellent,false
-PowerPoint.BindingCollection,N/A,Class,Unknown,false
+PowerPoint.BindingCollection,N/A,Class,Unknown,true
 PowerPoint.BindingCollection,"context",Property,Excellent,false
 PowerPoint.BindingCollection,"items",Property,Poor,false
+PowerPoint.BindingCollection,"add(shape, bindingType, id)",Method,Great,true
 PowerPoint.BindingCollection,"add(shape, bindingType, id)",Method,Great,false
-PowerPoint.BindingCollection,"add(shape, bindingTypeString, id)",Method,Great,false
 PowerPoint.BindingCollection,"addFromSelection(bindingType, id)",Method,Excellent,false
-PowerPoint.BindingCollection,"addFromSelection(bindingTypeString, id)",Method,Excellent,false
+PowerPoint.BindingCollection,"addFromSelection(bindingType, id)",Method,Excellent,false
 PowerPoint.BindingCollection,"getCount()",Method,Poor,false
-PowerPoint.BindingCollection,"getItem(key)",Method,Excellent,false
+PowerPoint.BindingCollection,"getItem(key)",Method,Excellent,true
 PowerPoint.BindingCollection,"getItemAt(index)",Method,Excellent,false
 PowerPoint.BindingCollection,"getItemOrNullObject(id)",Method,Excellent,false
 PowerPoint.BindingCollection,"load(options)",Method,Excellent,false
 PowerPoint.BindingCollection,"load(propertyNames)",Method,Excellent,false
 PowerPoint.BindingCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.BindingCollection,"toJSON()",Method,Excellent,false
-PowerPoint.BindingType,N/A,Enum,Unknown,false
+PowerPoint.BindingType,N/A,Enum,Unknown,true
 PowerPoint.BindingType,"shape",EnumField,Fine,false
-PowerPoint.BorderProperties,N/A,Interface,Unknown,false
-PowerPoint.BorderProperties,"color",Property,Good,false
-PowerPoint.BorderProperties,"dashStyle",Property,Poor,false
+PowerPoint.Border,N/A,Class,Unknown,false
+PowerPoint.Border,"color",Property,Good,false
+PowerPoint.Border,"context",Property,Excellent,false
+PowerPoint.Border,"dashStyle",Property,Poor,false
+PowerPoint.Border,"transparency",Property,Excellent,false
+PowerPoint.Border,"weight",Property,Poor,false
+PowerPoint.Border,"load(options)",Method,Excellent,false
+PowerPoint.Border,"load(propertyNames)",Method,Excellent,false
+PowerPoint.Border,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.Border,"toJSON()",Method,Excellent,false
+PowerPoint.BorderProperties,N/A,Interface,Unknown,true
+PowerPoint.BorderProperties,"color",Property,Good,true
+PowerPoint.BorderProperties,"dashStyle",Property,Poor,true
 PowerPoint.BorderProperties,"transparency",Property,Excellent,false
-PowerPoint.BorderProperties,"weight",Property,Poor,false
+PowerPoint.BorderProperties,"weight",Property,Poor,true
+PowerPoint.Borders,N/A,Class,Missing,false
+PowerPoint.Borders,"bottom",Property,Poor,false
+PowerPoint.Borders,"context",Property,Excellent,false
+PowerPoint.Borders,"diagonalDown",Property,Fine,false
+PowerPoint.Borders,"diagonalUp",Property,Fine,false
+PowerPoint.Borders,"left",Property,Poor,false
+PowerPoint.Borders,"right",Property,Poor,false
+PowerPoint.Borders,"top",Property,Missing,false
+PowerPoint.Borders,"load(options)",Method,Excellent,false
+PowerPoint.Borders,"load(propertyNames)",Method,Excellent,false
+PowerPoint.Borders,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.Borders,"toJSON()",Method,Excellent,false
 PowerPoint.BulletFormat,N/A,Class,Unknown,false
 PowerPoint.BulletFormat,"context",Property,Excellent,false
 PowerPoint.BulletFormat,"visible",Property,Excellent,false
@@ -9968,21 +10007,21 @@ PowerPoint.DocumentPropertyType,"number",EnumField,Good,false
 PowerPoint.DocumentPropertyType,"string",EnumField,Great,false
 PowerPoint.ErrorCodes,N/A,Enum,Missing,false
 PowerPoint.ErrorCodes,"generalException",EnumField,Missing,false
-PowerPoint.FillProperties,N/A,Interface,Good,false
-PowerPoint.FillProperties,"color",Property,Good,false
+PowerPoint.FillProperties,N/A,Interface,Good,true
+PowerPoint.FillProperties,"color",Property,Good,true
 PowerPoint.FillProperties,"transparency",Property,Excellent,false
-PowerPoint.FontProperties,N/A,Interface,Unknown,false
+PowerPoint.FontProperties,N/A,Interface,Unknown,true
 PowerPoint.FontProperties,"allCaps",Property,Good,false
 PowerPoint.FontProperties,"bold",Property,Poor,false
-PowerPoint.FontProperties,"color",Property,Good,false
-PowerPoint.FontProperties,"doubleStrikethrough",Property,Fine,false
+PowerPoint.FontProperties,"color",Property,Good,true
+PowerPoint.FontProperties,"doubleStrikethrough",Property,Fine,true
 PowerPoint.FontProperties,"italic",Property,Poor,false
-PowerPoint.FontProperties,"name",Property,Good,false
+PowerPoint.FontProperties,"name",Property,Good,true
 PowerPoint.FontProperties,"size",Property,Poor,false
 PowerPoint.FontProperties,"smallCaps",Property,Good,false
-PowerPoint.FontProperties,"strikethrough",Property,Poor,false
-PowerPoint.FontProperties,"subscript",Property,Poor,false
-PowerPoint.FontProperties,"superscript",Property,Poor,false
+PowerPoint.FontProperties,"strikethrough",Property,Poor,true
+PowerPoint.FontProperties,"subscript",Property,Poor,true
+PowerPoint.FontProperties,"superscript",Property,Poor,true
 PowerPoint.FontProperties,"underline",Property,Fine,false
 PowerPoint.GeometricShapeType,N/A,Enum,Unknown,true
 PowerPoint.GeometricShapeType,"accentBorderCallout1",EnumField,Fine,false
@@ -10186,6 +10225,16 @@ PowerPoint.InsertSlideOptions,N/A,Interface,Unknown,true
 PowerPoint.InsertSlideOptions,"formatting",Property,Excellent,false
 PowerPoint.InsertSlideOptions,"sourceSlideIds",Property,Excellent,false
 PowerPoint.InsertSlideOptions,"targetSlideId",Property,Excellent,false
+PowerPoint.Margins,N/A,Class,Unknown,false
+PowerPoint.Margins,"bottom",Property,Good,false
+PowerPoint.Margins,"context",Property,Excellent,false
+PowerPoint.Margins,"left",Property,Good,false
+PowerPoint.Margins,"right",Property,Good,false
+PowerPoint.Margins,"top",Property,Good,false
+PowerPoint.Margins,"load(options)",Method,Excellent,false
+PowerPoint.Margins,"load(propertyNames)",Method,Excellent,false
+PowerPoint.Margins,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.Margins,"toJSON()",Method,Excellent,false
 PowerPoint.ParagraphFormat,N/A,Class,Unknown,false
 PowerPoint.ParagraphFormat,"bulletFormat",Property,Fine,false
 PowerPoint.ParagraphFormat,"context",Property,Excellent,false
@@ -10194,7 +10243,7 @@ PowerPoint.ParagraphFormat,"load(options)",Method,Excellent,false
 PowerPoint.ParagraphFormat,"load(propertyNames)",Method,Excellent,false
 PowerPoint.ParagraphFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.ParagraphFormat,"toJSON()",Method,Excellent,false
-PowerPoint.ParagraphHorizontalAlignment,N/A,Enum,Unknown,false
+PowerPoint.ParagraphHorizontalAlignment,N/A,Enum,Unknown,true
 PowerPoint.ParagraphHorizontalAlignment,"center",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"distributed",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"justify",EnumField,Good,false
@@ -10232,7 +10281,7 @@ PowerPoint.PlaceholderType,"verticalBody",EnumField,Fine,false
 PowerPoint.PlaceholderType,"verticalContent",EnumField,Fine,false
 PowerPoint.PlaceholderType,"verticalTitle",EnumField,Fine,false
 PowerPoint.Presentation,N/A,Class,Missing,true
-PowerPoint.Presentation,"bindings",Property,Good,false
+PowerPoint.Presentation,"bindings",Property,Good,true
 PowerPoint.Presentation,"context",Property,Excellent,false
 PowerPoint.Presentation,"customXmlParts",Property,Good,false
 PowerPoint.Presentation,"id",Property,Poor,false
@@ -10258,7 +10307,7 @@ PowerPoint.Shape,N/A,Class,Unknown,true
 PowerPoint.Shape,"context",Property,Excellent,false
 PowerPoint.Shape,"customXmlParts",Property,Good,false
 PowerPoint.Shape,"fill",Property,Fine,true
-PowerPoint.Shape,"group",Property,Excellent,false
+PowerPoint.Shape,"group",Property,Excellent,true
 PowerPoint.Shape,"height",Property,Excellent,true
 PowerPoint.Shape,"id",Property,Poor,false
 PowerPoint.Shape,"left",Property,Fine,true
@@ -10268,11 +10317,11 @@ PowerPoint.Shape,"name",Property,Good,false
 PowerPoint.Shape,"parentGroup",Property,Excellent,false
 PowerPoint.Shape,"placeholderFormat",Property,Excellent,false
 PowerPoint.Shape,"tags",Property,Fine,false
-PowerPoint.Shape,"textFrame",Property,Good,false
+PowerPoint.Shape,"textFrame",Property,Excellent,false
 PowerPoint.Shape,"top",Property,Fine,true
 PowerPoint.Shape,"type",Property,Good,true
 PowerPoint.Shape,"width",Property,Excellent,true
-PowerPoint.Shape,"zOrderPosition",Property,Good,false
+PowerPoint.Shape,"zOrderPosition",Property,Good,true
 PowerPoint.Shape,"delete()",Method,Great,true
 PowerPoint.Shape,"getParentSlide()",Method,Excellent,false
 PowerPoint.Shape,"getParentSlideLayout()",Method,Excellent,false
@@ -10280,12 +10329,12 @@ PowerPoint.Shape,"getParentSlideLayoutOrNullObject()",Method,Excellent,false
 PowerPoint.Shape,"getParentSlideMaster()",Method,Excellent,false
 PowerPoint.Shape,"getParentSlideMasterOrNullObject()",Method,Excellent,false
 PowerPoint.Shape,"getParentSlideOrNullObject()",Method,Excellent,false
-PowerPoint.Shape,"getTable()",Method,Excellent,false
+PowerPoint.Shape,"getTable()",Method,Excellent,true
 PowerPoint.Shape,"load(options)",Method,Excellent,false
 PowerPoint.Shape,"load(propertyNames)",Method,Excellent,false
 PowerPoint.Shape,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.Shape,"setZOrder(position)",Method,Good,true
 PowerPoint.Shape,"setZOrder(position)",Method,Good,false
-PowerPoint.Shape,"setZOrder(positionString)",Method,Good,false
 PowerPoint.Shape,"toJSON()",Method,Excellent,false
 PowerPoint.ShapeAddOptions,N/A,Interface,Unknown,true
 PowerPoint.ShapeAddOptions,"height",Property,Excellent,false
@@ -10301,13 +10350,13 @@ PowerPoint.ShapeCollection,N/A,Class,Unknown,true
 PowerPoint.ShapeCollection,"context",Property,Excellent,false
 PowerPoint.ShapeCollection,"items",Property,Poor,false
 PowerPoint.ShapeCollection,"addGeometricShape(geometricShapeType, options)",Method,Great,true
-PowerPoint.ShapeCollection,"addGeometricShape(geometricShapeTypeString, options)",Method,Great,false
-PowerPoint.ShapeCollection,"addGroup(values)",Method,Poor,false
+PowerPoint.ShapeCollection,"addGeometricShape(geometricShapeType, options)",Method,Great,false
+PowerPoint.ShapeCollection,"addGroup(values)",Method,Poor,true
 PowerPoint.ShapeCollection,"addLine(connectorType, options)",Method,Great,true
-PowerPoint.ShapeCollection,"addLine(connectorTypeString, options)",Method,Great,false
-PowerPoint.ShapeCollection,"addTable(rowCount, columnCount, options)",Method,Excellent,false
+PowerPoint.ShapeCollection,"addLine(connectorType, options)",Method,Great,false
+PowerPoint.ShapeCollection,"addTable(rowCount, columnCount, options)",Method,Excellent,true
 PowerPoint.ShapeCollection,"addTextBox(text, options)",Method,Great,true
-PowerPoint.ShapeCollection,"getCount()",Method,Poor,false
+PowerPoint.ShapeCollection,"getCount()",Method,Poor,true
 PowerPoint.ShapeCollection,"getItem(key)",Method,Great,false
 PowerPoint.ShapeCollection,"getItemAt(index)",Method,Great,true
 PowerPoint.ShapeCollection,"getItemOrNullObject(id)",Method,Excellent,false
@@ -10324,7 +10373,7 @@ PowerPoint.ShapeFill,"clear()",Method,Poor,false
 PowerPoint.ShapeFill,"load(options)",Method,Excellent,false
 PowerPoint.ShapeFill,"load(propertyNames)",Method,Excellent,false
 PowerPoint.ShapeFill,"load(propertyNamesAndPaths)",Method,Excellent,false
-PowerPoint.ShapeFill,"setImage(base64EncodedImage)",Method,Fine,false
+PowerPoint.ShapeFill,"setImage(base64EncodedImage)",Method,Fine,true
 PowerPoint.ShapeFill,"setSolidColor(color)",Method,Good,true
 PowerPoint.ShapeFill,"toJSON()",Method,Excellent,false
 PowerPoint.ShapeFillType,N/A,Enum,Unknown,false
@@ -10370,7 +10419,7 @@ PowerPoint.ShapeFontUnderlineStyle,"single",EnumField,Fine,false
 PowerPoint.ShapeFontUnderlineStyle,"wavy",EnumField,Fine,false
 PowerPoint.ShapeFontUnderlineStyle,"wavyDouble",EnumField,Fine,false
 PowerPoint.ShapeFontUnderlineStyle,"wavyHeavy",EnumField,Fine,false
-PowerPoint.ShapeGroup,N/A,Class,Great,false
+PowerPoint.ShapeGroup,N/A,Class,Great,true
 PowerPoint.ShapeGroup,"context",Property,Excellent,false
 PowerPoint.ShapeGroup,"id",Property,Poor,false
 PowerPoint.ShapeGroup,"shape",Property,Great,false
@@ -10379,7 +10428,7 @@ PowerPoint.ShapeGroup,"load(options)",Method,Excellent,false
 PowerPoint.ShapeGroup,"load(propertyNames)",Method,Excellent,false
 PowerPoint.ShapeGroup,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.ShapeGroup,"toJSON()",Method,Excellent,false
-PowerPoint.ShapeGroup,"ungroup()",Method,Good,false
+PowerPoint.ShapeGroup,"ungroup()",Method,Good,true
 PowerPoint.ShapeLineDashStyle,N/A,Enum,Unknown,true
 PowerPoint.ShapeLineDashStyle,"dash",EnumField,Fine,false
 PowerPoint.ShapeLineDashStyle,"dashDot",EnumField,Fine,false
@@ -10443,7 +10492,7 @@ PowerPoint.ShapeType,"smartArt",EnumField,Fine,false
 PowerPoint.ShapeType,"table",EnumField,Fine,false
 PowerPoint.ShapeType,"textBox",EnumField,Fine,false
 PowerPoint.ShapeType,"unsupported",EnumField,Fine,false
-PowerPoint.ShapeZOrder,N/A,Enum,Unknown,false
+PowerPoint.ShapeZOrder,N/A,Enum,Unknown,true
 PowerPoint.ShapeZOrder,"bringForward",EnumField,Fine,false
 PowerPoint.ShapeZOrder,"bringToFront",EnumField,Fine,false
 PowerPoint.ShapeZOrder,"sendBackward",EnumField,Fine,false
@@ -10460,8 +10509,8 @@ PowerPoint.Slide,"slideMaster",Property,Great,false
 PowerPoint.Slide,"tags",Property,Fine,false
 PowerPoint.Slide,"applyLayout(slideLayout)",Method,Good,false
 PowerPoint.Slide,"delete()",Method,Great,true
-PowerPoint.Slide,"exportAsBase64()",Method,Fine,false
-PowerPoint.Slide,"getImageAsBase64(options)",Method,Great,false
+PowerPoint.Slide,"exportAsBase64()",Method,Fine,true
+PowerPoint.Slide,"getImageAsBase64(options)",Method,Great,true
 PowerPoint.Slide,"load(options)",Method,Excellent,false
 PowerPoint.Slide,"load(propertyNames)",Method,Excellent,false
 PowerPoint.Slide,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -10576,47 +10625,63 @@ PowerPoint.SlideScopedCollection,"load(options)",Method,Excellent,false
 PowerPoint.SlideScopedCollection,"load(propertyNames)",Method,Excellent,false
 PowerPoint.SlideScopedCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.SlideScopedCollection,"toJSON()",Method,Excellent,false
-PowerPoint.Table,N/A,Class,Missing,false
+PowerPoint.Table,N/A,Class,Missing,true
 PowerPoint.Table,"columnCount",Property,Poor,false
+PowerPoint.Table,"columns",Property,Poor,false
 PowerPoint.Table,"context",Property,Excellent,false
 PowerPoint.Table,"rowCount",Property,Poor,false
+PowerPoint.Table,"rows",Property,Poor,false
+PowerPoint.Table,"styleOptions",Property,Fine,false
 PowerPoint.Table,"values",Property,Fine,false
-PowerPoint.Table,"getCellOrNullObject(rowIndex, columnIndex)",Method,Good,false
+PowerPoint.Table,"clear(options)",Method,Fine,false
+PowerPoint.Table,"getCellOrNullObject(rowIndex, columnIndex)",Method,Good,true
 PowerPoint.Table,"getMergedAreas()",Method,Fine,false
 PowerPoint.Table,"getShape()",Method,Fine,false
 PowerPoint.Table,"load(options)",Method,Excellent,false
 PowerPoint.Table,"load(propertyNames)",Method,Excellent,false
 PowerPoint.Table,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.Table,"mergeCells(rowIndex, columnIndex, rowCount, columnCount)",Method,Great,false
 PowerPoint.Table,"toJSON()",Method,Excellent,false
-PowerPoint.TableAddOptions,N/A,Interface,Unknown,false
-PowerPoint.TableAddOptions,"columns",Property,Excellent,false
-PowerPoint.TableAddOptions,"height",Property,Excellent,false
+PowerPoint.TableAddOptions,N/A,Interface,Unknown,true
+PowerPoint.TableAddOptions,"columns",Property,Excellent,true
+PowerPoint.TableAddOptions,"height",Property,Excellent,true
 PowerPoint.TableAddOptions,"left",Property,Excellent,false
-PowerPoint.TableAddOptions,"mergedAreas",Property,Good,false
-PowerPoint.TableAddOptions,"rows",Property,Excellent,false
-PowerPoint.TableAddOptions,"specificCellProperties",Property,Excellent,false
+PowerPoint.TableAddOptions,"mergedAreas",Property,Good,true
+PowerPoint.TableAddOptions,"rows",Property,Excellent,true
+PowerPoint.TableAddOptions,"specificCellProperties",Property,Excellent,true
+PowerPoint.TableAddOptions,"style",Property,Great,false
 PowerPoint.TableAddOptions,"top",Property,Excellent,false
-PowerPoint.TableAddOptions,"uniformCellProperties",Property,Excellent,false
-PowerPoint.TableAddOptions,"values",Property,Excellent,false
-PowerPoint.TableAddOptions,"width",Property,Excellent,false
-PowerPoint.TableCell,N/A,Class,Missing,false
+PowerPoint.TableAddOptions,"uniformCellProperties",Property,Excellent,true
+PowerPoint.TableAddOptions,"values",Property,Excellent,true
+PowerPoint.TableAddOptions,"width",Property,Excellent,true
+PowerPoint.TableCell,N/A,Class,Missing,true
+PowerPoint.TableCell,"borders",Property,Poor,false
 PowerPoint.TableCell,"columnCount",Property,Fine,false
 PowerPoint.TableCell,"columnIndex",Property,Good,false
 PowerPoint.TableCell,"context",Property,Excellent,false
+PowerPoint.TableCell,"fill",Property,Poor,false
+PowerPoint.TableCell,"font",Property,Poor,false
+PowerPoint.TableCell,"horizontalAlignment",Property,Excellent,false
+PowerPoint.TableCell,"indentLevel",Property,Excellent,false
+PowerPoint.TableCell,"margins",Property,Poor,false
 PowerPoint.TableCell,"rowCount",Property,Fine,false
 PowerPoint.TableCell,"rowIndex",Property,Good,false
-PowerPoint.TableCell,"text",Property,Good,false
+PowerPoint.TableCell,"text",Property,Good,true
+PowerPoint.TableCell,"textRuns",Property,Excellent,false
+PowerPoint.TableCell,"verticalAlignment",Property,Great,false
 PowerPoint.TableCell,"load(options)",Method,Excellent,false
 PowerPoint.TableCell,"load(propertyNames)",Method,Excellent,false
 PowerPoint.TableCell,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.TableCell,"resize(rowCount, columnCount)",Method,Good,false
+PowerPoint.TableCell,"split(rowCount, columnCount)",Method,Good,false
 PowerPoint.TableCell,"toJSON()",Method,Excellent,false
-PowerPoint.TableCellBorders,N/A,Interface,Unknown,false
-PowerPoint.TableCellBorders,"bottom",Property,Poor,false
+PowerPoint.TableCellBorders,N/A,Interface,Unknown,true
+PowerPoint.TableCellBorders,"bottom",Property,Poor,true
 PowerPoint.TableCellBorders,"diagonalDown",Property,Fine,false
 PowerPoint.TableCellBorders,"diagonalUp",Property,Fine,false
-PowerPoint.TableCellBorders,"left",Property,Poor,false
-PowerPoint.TableCellBorders,"right",Property,Poor,false
-PowerPoint.TableCellBorders,"top",Property,Poor,false
+PowerPoint.TableCellBorders,"left",Property,Poor,true
+PowerPoint.TableCellBorders,"right",Property,Poor,true
+PowerPoint.TableCellBorders,"top",Property,Poor,true
 PowerPoint.TableCellCollection,N/A,Class,Unknown,false
 PowerPoint.TableCellCollection,"context",Property,Excellent,false
 PowerPoint.TableCellCollection,"items",Property,Poor,false
@@ -10631,25 +10696,164 @@ PowerPoint.TableCellMargins,"bottom",Property,Good,false
 PowerPoint.TableCellMargins,"left",Property,Good,false
 PowerPoint.TableCellMargins,"right",Property,Good,false
 PowerPoint.TableCellMargins,"top",Property,Good,false
-PowerPoint.TableCellProperties,N/A,Interface,Unknown,false
-PowerPoint.TableCellProperties,"borders",Property,Good,false
-PowerPoint.TableCellProperties,"fill",Property,Good,false
-PowerPoint.TableCellProperties,"font",Property,Good,false
-PowerPoint.TableCellProperties,"horizontalAlignment",Property,Fine,false
-PowerPoint.TableCellProperties,"indentLevel",Property,Fine,false
+PowerPoint.TableCellProperties,N/A,Interface,Unknown,true
+PowerPoint.TableCellProperties,"borders",Property,Good,true
+PowerPoint.TableCellProperties,"fill",Property,Good,true
+PowerPoint.TableCellProperties,"font",Property,Good,true
+PowerPoint.TableCellProperties,"horizontalAlignment",Property,Fine,true
+PowerPoint.TableCellProperties,"indentLevel",Property,Fine,true
 PowerPoint.TableCellProperties,"margins",Property,Good,false
 PowerPoint.TableCellProperties,"text",Property,Excellent,false
-PowerPoint.TableCellProperties,"textRuns",Property,Excellent,false
-PowerPoint.TableCellProperties,"verticalAlignment",Property,Fine,false
-PowerPoint.TableColumnProperties,N/A,Interface,Good,false
-PowerPoint.TableColumnProperties,"columnWidth",Property,Excellent,false
-PowerPoint.TableMergedAreaProperties,N/A,Interface,Unknown,false
-PowerPoint.TableMergedAreaProperties,"columnCount",Property,Great,false
-PowerPoint.TableMergedAreaProperties,"columnIndex",Property,Great,false
-PowerPoint.TableMergedAreaProperties,"rowCount",Property,Great,false
-PowerPoint.TableMergedAreaProperties,"rowIndex",Property,Great,false
-PowerPoint.TableRowProperties,N/A,Interface,Good,false
-PowerPoint.TableRowProperties,"rowHeight",Property,Excellent,false
+PowerPoint.TableCellProperties,"textRuns",Property,Excellent,true
+PowerPoint.TableCellProperties,"verticalAlignment",Property,Fine,true
+PowerPoint.TableClearOptions,N/A,Interface,Unknown,false
+PowerPoint.TableClearOptions,"all",Property,Excellent,false
+PowerPoint.TableClearOptions,"format",Property,Great,false
+PowerPoint.TableClearOptions,"text",Property,Excellent,false
+PowerPoint.TableColumn,N/A,Class,Unknown,false
+PowerPoint.TableColumn,"columnIndex",Property,Great,false
+PowerPoint.TableColumn,"context",Property,Excellent,false
+PowerPoint.TableColumn,"width",Property,Great,false
+PowerPoint.TableColumn,"delete()",Method,Poor,false
+PowerPoint.TableColumn,"load(options)",Method,Excellent,false
+PowerPoint.TableColumn,"load(propertyNames)",Method,Excellent,false
+PowerPoint.TableColumn,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.TableColumn,"toJSON()",Method,Excellent,false
+PowerPoint.TableColumnAddOptions,N/A,Interface,Unknown,false
+PowerPoint.TableColumnAddOptions,"specificCellProperties",Property,Excellent,false
+PowerPoint.TableColumnAddOptions,"uniformCellProperties",Property,Great,false
+PowerPoint.TableColumnCollection,N/A,Class,Unknown,false
+PowerPoint.TableColumnCollection,"context",Property,Excellent,false
+PowerPoint.TableColumnCollection,"items",Property,Poor,false
+PowerPoint.TableColumnCollection,"add(index, count)",Method,Poor,false
+PowerPoint.TableColumnCollection,"deleteColumns(columns)",Method,Good,false
+PowerPoint.TableColumnCollection,"getCount()",Method,Poor,false
+PowerPoint.TableColumnCollection,"getItemAt(index)",Method,Fine,false
+PowerPoint.TableColumnCollection,"load(options)",Method,Excellent,false
+PowerPoint.TableColumnCollection,"load(propertyNames)",Method,Excellent,false
+PowerPoint.TableColumnCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.TableColumnCollection,"toJSON()",Method,Excellent,false
+PowerPoint.TableColumnProperties,N/A,Interface,Good,true
+PowerPoint.TableColumnProperties,"columnWidth",Property,Excellent,true
+PowerPoint.TableMergedAreaProperties,N/A,Interface,Unknown,true
+PowerPoint.TableMergedAreaProperties,"columnCount",Property,Great,true
+PowerPoint.TableMergedAreaProperties,"columnIndex",Property,Great,true
+PowerPoint.TableMergedAreaProperties,"rowCount",Property,Great,true
+PowerPoint.TableMergedAreaProperties,"rowIndex",Property,Great,true
+PowerPoint.TableRow,N/A,Class,Unknown,false
+PowerPoint.TableRow,"context",Property,Excellent,false
+PowerPoint.TableRow,"currentHeight",Property,Fine,false
+PowerPoint.TableRow,"height",Property,Great,false
+PowerPoint.TableRow,"rowIndex",Property,Great,false
+PowerPoint.TableRow,"delete()",Method,Poor,false
+PowerPoint.TableRow,"load(options)",Method,Excellent,false
+PowerPoint.TableRow,"load(propertyNames)",Method,Excellent,false
+PowerPoint.TableRow,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.TableRow,"toJSON()",Method,Excellent,false
+PowerPoint.TableRowAddOptions,N/A,Interface,Unknown,false
+PowerPoint.TableRowAddOptions,"specificCellProperties",Property,Excellent,false
+PowerPoint.TableRowAddOptions,"uniformCellProperties",Property,Great,false
+PowerPoint.TableRowCollection,N/A,Class,Unknown,false
+PowerPoint.TableRowCollection,"context",Property,Excellent,false
+PowerPoint.TableRowCollection,"items",Property,Poor,false
+PowerPoint.TableRowCollection,"add(index, count)",Method,Poor,false
+PowerPoint.TableRowCollection,"deleteRows(rows)",Method,Good,false
+PowerPoint.TableRowCollection,"getCount()",Method,Poor,false
+PowerPoint.TableRowCollection,"getItemAt(index)",Method,Fine,false
+PowerPoint.TableRowCollection,"load(options)",Method,Excellent,false
+PowerPoint.TableRowCollection,"load(propertyNames)",Method,Excellent,false
+PowerPoint.TableRowCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.TableRowCollection,"toJSON()",Method,Excellent,false
+PowerPoint.TableRowProperties,N/A,Interface,Good,true
+PowerPoint.TableRowProperties,"rowHeight",Property,Excellent,true
+PowerPoint.TableStyle,N/A,Enum,Unknown,false
+PowerPoint.TableStyle,"darkStyle1",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle1Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle1Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle1Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle1Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle1Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle1Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle2",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle2Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle2Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"darkStyle2Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle1Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle2Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"lightStyle3Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle1Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle2Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle3Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"mediumStyle4Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"noStyleNoGrid",EnumField,Great,false
+PowerPoint.TableStyle,"noStyleTableGrid",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle1Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle1Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle1Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle1Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle1Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle1Accent6",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle2Accent1",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle2Accent2",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle2Accent3",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle2Accent4",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle2Accent5",EnumField,Great,false
+PowerPoint.TableStyle,"themedStyle2Accent6",EnumField,Great,false
+PowerPoint.TableStyleOptions,N/A,Class,Unknown,false
+PowerPoint.TableStyleOptions,"areColumnsBanded",Property,Great,false
+PowerPoint.TableStyleOptions,"areRowsBanded",Property,Great,false
+PowerPoint.TableStyleOptions,"context",Property,Excellent,false
+PowerPoint.TableStyleOptions,"isFirstColumnHighlighted",Property,Great,false
+PowerPoint.TableStyleOptions,"isFirstRowHighlighted",Property,Great,false
+PowerPoint.TableStyleOptions,"isLastColumnHighlighted",Property,Great,false
+PowerPoint.TableStyleOptions,"isLastRowHighlighted",Property,Great,false
+PowerPoint.TableStyleOptions,"style",Property,Good,false
+PowerPoint.TableStyleOptions,"load(options)",Method,Excellent,false
+PowerPoint.TableStyleOptions,"load(propertyNames)",Method,Excellent,false
+PowerPoint.TableStyleOptions,"load(propertyNamesAndPaths)",Method,Excellent,false
+PowerPoint.TableStyleOptions,"toJSON()",Method,Excellent,false
 PowerPoint.Tag,N/A,Class,Great,true
 PowerPoint.Tag,"context",Property,Excellent,false
 PowerPoint.Tag,"key",Property,Great,false
@@ -10702,7 +10906,7 @@ PowerPoint.TextRange,"load(propertyNames)",Method,Excellent,false
 PowerPoint.TextRange,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.TextRange,"setSelected()",Method,Poor,true
 PowerPoint.TextRange,"toJSON()",Method,Excellent,false
-PowerPoint.TextRun,N/A,Interface,Unknown,false
+PowerPoint.TextRun,N/A,Interface,Unknown,true
 PowerPoint.TextRun,"font",Property,Good,false
 PowerPoint.TextRun,"text",Property,Poor,false
 PowerPoint.TextVerticalAlignment,N/A,Enum,Unknown,true
@@ -10722,7 +10926,7 @@ Visio.Application,"load(propertyNamesAndPaths)",Method,Excellent,false
 Visio.Application,"set(properties, options)",Method,Good,false
 Visio.Application,"set(properties)",Method,Good,false
 Visio.Application,"showToolbar(id, show)",Method,Great,false
-Visio.Application,"showToolbar(idString, show)",Method,Great,false
+Visio.Application,"showToolbar(id, show)",Method,Great,false
 Visio.Application,"toJSON()",Method,Excellent,false
 Visio.BoundingBox,N/A,Interface,Good,false
 Visio.BoundingBox,"height",Property,Fine,false
@@ -10810,7 +11014,7 @@ Visio.Document,"set(properties, options)",Method,Good,false
 Visio.Document,"set(properties)",Method,Good,false
 Visio.Document,"setActivePage(PageName)",Method,Poor,true
 Visio.Document,"showTaskPane(taskPaneType, initialProps, show)",Method,Fine,false
-Visio.Document,"showTaskPane(taskPaneTypeString, initialProps, show)",Method,Fine,false
+Visio.Document,"showTaskPane(taskPaneType, initialProps, show)",Method,Fine,false
 Visio.Document,"startDataRefresh()",Method,Fine,true
 Visio.Document,"toJSON()",Method,Excellent,false
 Visio.DocumentErrorEventArgs,N/A,Interface,Unknown,false
@@ -11008,7 +11212,7 @@ Visio.ShapeView,N/A,Class,Unknown,false
 Visio.ShapeView,"context",Property,Excellent,false
 Visio.ShapeView,"highlight",Property,Poor,true
 Visio.ShapeView,"addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)",Method,Poor,true
-Visio.ShapeView,"addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignmentString, OverlayVerticalAlignmentString, Width, Height)",Method,Poor,false
+Visio.ShapeView,"addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)",Method,Poor,false
 Visio.ShapeView,"load(options)",Method,Excellent,false
 Visio.ShapeView,"load(propertyNames)",Method,Excellent,false
 Visio.ShapeView,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -11084,6 +11288,39 @@ Word.Application,"newObject(context)",Method,Great,false
 Word.Application,"openDocument(filePath)",Method,Excellent,false
 Word.Application,"retrieveStylesFromBase64(base64File)",Method,Good,true
 Word.Application,"toJSON()",Method,Excellent,false
+Word.ArrowheadLength,N/A,Enum,Unknown,false
+Word.ArrowheadLength,"long",EnumField,Fine,false
+Word.ArrowheadLength,"medium",EnumField,Fine,false
+Word.ArrowheadLength,"mixed",EnumField,Fine,false
+Word.ArrowheadLength,"short",EnumField,Fine,false
+Word.ArrowheadStyle,N/A,Enum,Unknown,false
+Word.ArrowheadStyle,"diamond",EnumField,Fine,false
+Word.ArrowheadStyle,"mixed",EnumField,Fine,false
+Word.ArrowheadStyle,"none",EnumField,Fine,false
+Word.ArrowheadStyle,"open",EnumField,Fine,false
+Word.ArrowheadStyle,"oval",EnumField,Fine,false
+Word.ArrowheadStyle,"stealth",EnumField,Fine,false
+Word.ArrowheadStyle,"triangle",EnumField,Fine,false
+Word.ArrowheadWidth,N/A,Enum,Unknown,false
+Word.ArrowheadWidth,"medium",EnumField,Fine,false
+Word.ArrowheadWidth,"mixed",EnumField,Fine,false
+Word.ArrowheadWidth,"narrow",EnumField,Fine,false
+Word.ArrowheadWidth,"wide",EnumField,Fine,false
+Word.BevelType,N/A,Enum,Unknown,false
+Word.BevelType,"angle",EnumField,Fine,false
+Word.BevelType,"artDeco",EnumField,Fine,false
+Word.BevelType,"circle",EnumField,Fine,false
+Word.BevelType,"convex",EnumField,Fine,false
+Word.BevelType,"coolSlant",EnumField,Fine,false
+Word.BevelType,"cross",EnumField,Fine,false
+Word.BevelType,"divot",EnumField,Fine,false
+Word.BevelType,"hardEdge",EnumField,Fine,false
+Word.BevelType,"mixed",EnumField,Fine,false
+Word.BevelType,"none",EnumField,Fine,false
+Word.BevelType,"relaxedInset",EnumField,Fine,false
+Word.BevelType,"riblet",EnumField,Fine,false
+Word.BevelType,"slope",EnumField,Fine,false
+Word.BevelType,"softRound",EnumField,Fine,false
 Word.Body,N/A,Class,Unknown,true
 Word.Body,"contentControls",Property,Good,false
 Word.Body,"context",Property,Excellent,false
@@ -11100,7 +11337,7 @@ Word.Body,"parentContentControl",Property,Great,false
 Word.Body,"parentContentControlOrNullObject",Property,Excellent,false
 Word.Body,"parentSection",Property,Great,false
 Word.Body,"parentSectionOrNullObject",Property,Excellent,false
-Word.Body,"shapes",Property,Good,false
+Word.Body,"shapes",Property,Good,true
 Word.Body,"style",Property,Excellent,false
 Word.Body,"styleBuiltIn",Property,Excellent,false
 Word.Body,"tables",Property,Fine,true
@@ -11113,7 +11350,7 @@ Word.Body,"getHtml()",Method,Excellent,true
 Word.Body,"getOoxml()",Method,Good,true
 Word.Body,"getRange(rangeLocation)",Method,Fine,false
 Word.Body,"getReviewedText(changeTrackingVersion)",Method,Fine,false
-Word.Body,"getReviewedText(changeTrackingVersionString)",Method,Fine,false
+Word.Body,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 Word.Body,"getTrackedChanges()",Method,Good,true
 Word.Body,"insertBreak(breakType, insertLocation)",Method,Good,true
 Word.Body,"insertContentControl(contentControlType)",Method,Fine,true
@@ -11129,7 +11366,7 @@ Word.Body,"load(propertyNames)",Method,Excellent,false
 Word.Body,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Body,"search(searchText, searchOptions)",Method,Excellent,true
 Word.Body,"select(selectionMode)",Method,Poor,true
-Word.Body,"select(selectionModeString)",Method,Poor,false
+Word.Body,"select(selectionMode)",Method,Poor,false
 Word.Body,"set(properties, options)",Method,Good,false
 Word.Body,"set(properties)",Method,Good,false
 Word.Body,"toJSON()",Method,Excellent,false
@@ -11402,7 +11639,7 @@ Word.CellPaddingLocation,"bottom",EnumField,Fine,false
 Word.CellPaddingLocation,"left",EnumField,Fine,false
 Word.CellPaddingLocation,"right",EnumField,Fine,false
 Word.CellPaddingLocation,"top",EnumField,Fine,false
-Word.ChangeTrackingMode,N/A,Enum,Missing,true
+Word.ChangeTrackingMode,N/A,Enum,Unknown,true
 Word.ChangeTrackingMode,"off",EnumField,Fine,false
 Word.ChangeTrackingMode,"trackAll",EnumField,Fine,false
 Word.ChangeTrackingMode,"trackMineOnly",EnumField,Fine,false
@@ -11428,6 +11665,45 @@ Word.CheckboxContentControl,"untrack()",Method,Excellent,false
 Word.CloseBehavior,N/A,Enum,Unknown,true
 Word.CloseBehavior,"save",EnumField,Fine,false
 Word.CloseBehavior,"skipSave",EnumField,Good,false
+Word.ColorFormat,N/A,Class,Unknown,false
+Word.ColorFormat,"brightness",Property,Excellent,false
+Word.ColorFormat,"context",Property,Excellent,false
+Word.ColorFormat,"objectThemeColor",Property,Good,false
+Word.ColorFormat,"rgb",Property,Excellent,false
+Word.ColorFormat,"tintAndShade",Property,Excellent,false
+Word.ColorFormat,"type",Property,Fine,false
+Word.ColorFormat,"load(options)",Method,Excellent,false
+Word.ColorFormat,"load(propertyNames)",Method,Excellent,false
+Word.ColorFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.ColorFormat,"set(properties, options)",Method,Good,false
+Word.ColorFormat,"set(properties)",Method,Good,false
+Word.ColorFormat,"toJSON()",Method,Excellent,false
+Word.ColorFormat,"track()",Method,Excellent,false
+Word.ColorFormat,"untrack()",Method,Excellent,false
+Word.ColorIndex,N/A,Enum,Fine,false
+Word.ColorIndex,"auto",EnumField,Fine,false
+Word.ColorIndex,"black",EnumField,Fine,false
+Word.ColorIndex,"blue",EnumField,Fine,false
+Word.ColorIndex,"brightGreen",EnumField,Fine,false
+Word.ColorIndex,"byAuthor",EnumField,Fine,false
+Word.ColorIndex,"classicBlue",EnumField,Fine,false
+Word.ColorIndex,"classicRed",EnumField,Fine,false
+Word.ColorIndex,"darkBlue",EnumField,Fine,false
+Word.ColorIndex,"darkRed",EnumField,Fine,false
+Word.ColorIndex,"darkYellow",EnumField,Fine,false
+Word.ColorIndex,"gray25",EnumField,Fine,false
+Word.ColorIndex,"gray50",EnumField,Fine,false
+Word.ColorIndex,"green",EnumField,Fine,false
+Word.ColorIndex,"pink",EnumField,Fine,false
+Word.ColorIndex,"red",EnumField,Fine,false
+Word.ColorIndex,"teal",EnumField,Fine,false
+Word.ColorIndex,"turquoise",EnumField,Fine,false
+Word.ColorIndex,"violet",EnumField,Fine,false
+Word.ColorIndex,"white",EnumField,Fine,false
+Word.ColorIndex,"yellow",EnumField,Fine,false
+Word.ColorType,N/A,Enum,Unknown,false
+Word.ColorType,"rgb",EnumField,Fine,false
+Word.ColorType,"scheme",EnumField,Fine,false
 Word.ComboBoxContentControl,N/A,Class,Unknown,true
 Word.ComboBoxContentControl,"context",Property,Excellent,false
 Word.ComboBoxContentControl,"listItems",Property,Fine,true
@@ -11580,7 +11856,7 @@ Word.ContentControl,"getHtml()",Method,Excellent,true
 Word.ContentControl,"getOoxml()",Method,Good,true
 Word.ContentControl,"getRange(rangeLocation)",Method,Fine,false
 Word.ContentControl,"getReviewedText(changeTrackingVersion)",Method,Fine,false
-Word.ContentControl,"getReviewedText(changeTrackingVersionString)",Method,Fine,false
+Word.ContentControl,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 Word.ContentControl,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,false
 Word.ContentControl,"getTrackedChanges()",Method,Good,false
 Word.ContentControl,"insertBreak(breakType, insertLocation)",Method,Excellent,true
@@ -11597,11 +11873,11 @@ Word.ContentControl,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.ContentControl,"resetState()",Method,Poor,true
 Word.ContentControl,"search(searchText, searchOptions)",Method,Excellent,true
 Word.ContentControl,"select(selectionMode)",Method,Fine,false
-Word.ContentControl,"select(selectionModeString)",Method,Fine,false
+Word.ContentControl,"select(selectionMode)",Method,Fine,false
 Word.ContentControl,"set(properties, options)",Method,Good,true
 Word.ContentControl,"set(properties)",Method,Good,false
 Word.ContentControl,"setState(contentControlState)",Method,Poor,true
-Word.ContentControl,"setState(contentControlStateString)",Method,Poor,false
+Word.ContentControl,"setState(contentControlState)",Method,Poor,false
 Word.ContentControl,"split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)",Method,Fine,false
 Word.ContentControl,"toJSON()",Method,Excellent,false
 Word.ContentControl,"track()",Method,Excellent,false
@@ -11701,6 +11977,10 @@ Word.ContentControlType,"richTextTable",EnumField,Fine,false
 Word.ContentControlType,"richTextTableCell",EnumField,Fine,false
 Word.ContentControlType,"richTextTableRow",EnumField,Fine,false
 Word.ContentControlType,"unknown",EnumField,Fine,false
+Word.Continue,N/A,Enum,Unknown,false
+Word.Continue,"disabled",EnumField,Fine,false
+Word.Continue,"list",EnumField,Fine,false
+Word.Continue,"reset",EnumField,Fine,false
 Word.Critique,N/A,Interface,Unknown,true
 Word.Critique,"colorScheme",Property,Good,false
 Word.Critique,"length",Property,Great,false
@@ -11805,8 +12085,12 @@ Word.CustomXmlPartScopedCollection,"load(propertyNamesAndPaths)",Method,Excellen
 Word.CustomXmlPartScopedCollection,"toJSON()",Method,Excellent,false
 Word.CustomXmlPartScopedCollection,"track()",Method,Excellent,false
 Word.CustomXmlPartScopedCollection,"untrack()",Method,Excellent,false
+Word.DefaultListBehavior,N/A,Enum,Unknown,false
+Word.DefaultListBehavior,"word2000",EnumField,Fine,false
+Word.DefaultListBehavior,"word2002",EnumField,Fine,false
+Word.DefaultListBehavior,"word97",EnumField,Fine,false
 Word.Document,N/A,Class,Missing,true
-Word.Document,"activeWindow",Property,Poor,false
+Word.Document,"activeWindow",Property,Poor,true
 Word.Document,"body",Property,Good,false
 Word.Document,"changeTrackingMode",Property,Good,true
 Word.Document,"contentControls",Property,Good,false
@@ -11818,9 +12102,9 @@ Word.Document,"sections",Property,Good,false
 Word.Document,"settings",Property,Poor,true
 Word.Document,"windows",Property,Good,false
 Word.Document,"addStyle(name, type)",Method,Poor,true
-Word.Document,"addStyle(name, typeString)",Method,Poor,false
+Word.Document,"addStyle(name, type)",Method,Poor,false
 Word.Document,"close(closeBehavior)",Method,Fine,true
-Word.Document,"close(closeBehaviorString)",Method,Fine,false
+Word.Document,"close(closeBehavior)",Method,Fine,false
 Word.Document,"compare(filePath, documentCompareOptions)",Method,Good,true
 Word.Document,"compareFromBase64(base64File, documentCompareOptions)",Method,Good,false
 Word.Document,"deleteBookmark(name)",Method,Great,false
@@ -11834,13 +12118,13 @@ Word.Document,"getParagraphByUniqueLocalId(id)",Method,Excellent,true
 Word.Document,"getSelection()",Method,Fine,true
 Word.Document,"getStyles()",Method,Good,true
 Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehavior)",Method,Fine,true
-Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)",Method,Fine,false
+Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehavior)",Method,Fine,false
 Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Great,true
 Word.Document,"load(options)",Method,Excellent,true
 Word.Document,"load(propertyNames)",Method,Excellent,false
 Word.Document,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Document,"save(saveBehavior, fileName)",Method,Missing,true
-Word.Document,"save(saveBehaviorString, fileName)",Method,Missing,false
+Word.Document,"save(saveBehavior, fileName)",Method,Missing,false
 Word.Document,"search(searchText, searchOptions)",Method,Excellent,false
 Word.Document,"set(properties, options)",Method,Good,false
 Word.Document,"set(properties)",Method,Good,false
@@ -11865,7 +12149,7 @@ Word.DocumentCreated,"saved",Property,Good,false
 Word.DocumentCreated,"sections",Property,Good,false
 Word.DocumentCreated,"settings",Property,Poor,false
 Word.DocumentCreated,"addStyle(name, type)",Method,Poor,false
-Word.DocumentCreated,"addStyle(name, typeString)",Method,Poor,false
+Word.DocumentCreated,"addStyle(name, type)",Method,Poor,false
 Word.DocumentCreated,"deleteBookmark(name)",Method,Great,false
 Word.DocumentCreated,"getBookmarkRange(name)",Method,Great,false
 Word.DocumentCreated,"getBookmarkRangeOrNullObject(name)",Method,Excellent,false
@@ -11877,7 +12161,7 @@ Word.DocumentCreated,"load(propertyNames)",Method,Excellent,false
 Word.DocumentCreated,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.DocumentCreated,"open()",Method,Missing,true
 Word.DocumentCreated,"save(saveBehavior, fileName)",Method,Missing,false
-Word.DocumentCreated,"save(saveBehaviorString, fileName)",Method,Missing,false
+Word.DocumentCreated,"save(saveBehavior, fileName)",Method,Missing,false
 Word.DocumentCreated,"set(properties, options)",Method,Good,false
 Word.DocumentCreated,"set(properties)",Method,Good,false
 Word.DocumentCreated,"toJSON()",Method,Excellent,false
@@ -11926,6 +12210,12 @@ Word.DropDownListContentControl,"load(propertyNamesAndPaths)",Method,Excellent,f
 Word.DropDownListContentControl,"toJSON()",Method,Excellent,false
 Word.DropDownListContentControl,"track()",Method,Excellent,false
 Word.DropDownListContentControl,"untrack()",Method,Excellent,false
+Word.EmphasisMark,N/A,Enum,Unknown,false
+Word.EmphasisMark,"none",EnumField,Fine,false
+Word.EmphasisMark,"overComma",EnumField,Fine,false
+Word.EmphasisMark,"overSolidCircle",EnumField,Fine,false
+Word.EmphasisMark,"overWhiteCircle",EnumField,Fine,false
+Word.EmphasisMark,"underSolidCircle",EnumField,Fine,false
 Word.ErrorCodes,N/A,Enum,Missing,true
 Word.ErrorCodes,"accessDenied",EnumField,Missing,false
 Word.ErrorCodes,"generalException",EnumField,Missing,false
@@ -11958,6 +12248,10 @@ Word.EventType,"contentControlSelectionChanged",EnumField,Fine,false
 Word.EventType,"paragraphAdded",EnumField,Fine,false
 Word.EventType,"paragraphChanged",EnumField,Fine,false
 Word.EventType,"paragraphDeleted",EnumField,Fine,false
+Word.ExtrusionColorType,N/A,Enum,Unknown,false
+Word.ExtrusionColorType,"automatic",EnumField,Fine,false
+Word.ExtrusionColorType,"custom",EnumField,Fine,false
+Word.ExtrusionColorType,"mixed",EnumField,Fine,false
 Word.Field,N/A,Class,Unknown,true
 Word.Field,"code",Property,Great,true
 Word.Field,"context",Property,Excellent,false
@@ -11981,7 +12275,7 @@ Word.Field,"load(options)",Method,Excellent,false
 Word.Field,"load(propertyNames)",Method,Excellent,false
 Word.Field,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Field,"select(selectionMode)",Method,Poor,true
-Word.Field,"select(selectionModeString)",Method,Poor,false
+Word.Field,"select(selectionMode)",Method,Poor,false
 Word.Field,"set(properties, options)",Method,Good,false
 Word.Field,"set(properties)",Method,Good,false
 Word.Field,"toJSON()",Method,Excellent,false
@@ -12096,25 +12390,115 @@ Word.FieldType,"userAddress",EnumField,Good,false
 Word.FieldType,"userInitials",EnumField,Good,false
 Word.FieldType,"userName",EnumField,Good,false
 Word.FieldType,"xe",EnumField,Good,false
+Word.FillFormat,N/A,Class,Unknown,false
+Word.FillFormat,"backgroundColor",Property,Great,false
+Word.FillFormat,"context",Property,Excellent,false
+Word.FillFormat,"foregroundColor",Property,Great,false
+Word.FillFormat,"gradientAngle",Property,Excellent,false
+Word.FillFormat,"gradientColorType",Property,Poor,false
+Word.FillFormat,"gradientDegree",Property,Great,false
+Word.FillFormat,"gradientStyle",Property,Fine,false
+Word.FillFormat,"gradientVariant",Property,Excellent,false
+Word.FillFormat,"isVisible",Property,Excellent,false
+Word.FillFormat,"pattern",Property,Great,false
+Word.FillFormat,"presetGradientType",Property,Fine,false
+Word.FillFormat,"presetTexture",Property,Poor,false
+Word.FillFormat,"rotateWithObject",Property,Good,false
+Word.FillFormat,"textureAlignment",Property,Great,false
+Word.FillFormat,"textureHorizontalScale",Property,Great,false
+Word.FillFormat,"textureName",Property,Good,false
+Word.FillFormat,"textureOffsetX",Property,Great,false
+Word.FillFormat,"textureOffsetY",Property,Good,false
+Word.FillFormat,"textureTile",Property,Good,false
+Word.FillFormat,"textureType",Property,Fine,false
+Word.FillFormat,"textureVerticalScale",Property,Excellent,false
+Word.FillFormat,"transparency",Property,Excellent,false
+Word.FillFormat,"type",Property,Poor,false
+Word.FillFormat,"load(options)",Method,Excellent,false
+Word.FillFormat,"load(propertyNames)",Method,Excellent,false
+Word.FillFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.FillFormat,"set(properties, options)",Method,Good,false
+Word.FillFormat,"set(properties)",Method,Good,false
+Word.FillFormat,"setOneColorGradient(style, variant, degree)",Method,Poor,false
+Word.FillFormat,"setOneColorGradient(style, variant, degree)",Method,Poor,false
+Word.FillFormat,"setPatterned(pattern)",Method,Poor,false
+Word.FillFormat,"setPatterned(pattern)",Method,Poor,false
+Word.FillFormat,"setPresetGradient(style, variant, presetGradientType)",Method,Good,false
+Word.FillFormat,"setPresetGradient(style, variant, presetGradientType)",Method,Good,false
+Word.FillFormat,"setPresetTextured(presetTexture)",Method,Poor,false
+Word.FillFormat,"setPresetTextured(presetTexture)",Method,Poor,false
+Word.FillFormat,"setTwoColorGradient(style, variant)",Method,Poor,false
+Word.FillFormat,"setTwoColorGradient(style, variant)",Method,Poor,false
+Word.FillFormat,"solid()",Method,Fine,false
+Word.FillFormat,"toJSON()",Method,Excellent,false
+Word.FillFormat,"track()",Method,Excellent,false
+Word.FillFormat,"untrack()",Method,Excellent,false
+Word.FillType,N/A,Enum,Unknown,false
+Word.FillType,"background",EnumField,Fine,false
+Word.FillType,"gradient",EnumField,Fine,false
+Word.FillType,"mixed",EnumField,Fine,false
+Word.FillType,"patterned",EnumField,Fine,false
+Word.FillType,"picture",EnumField,Fine,false
+Word.FillType,"solid",EnumField,Fine,false
+Word.FillType,"textured",EnumField,Fine,false
 Word.Font,N/A,Class,Missing,true
+Word.Font,"allCaps",Property,Excellent,false
 Word.Font,"bold",Property,Excellent,true
+Word.Font,"boldBidirectional",Property,Excellent,false
 Word.Font,"color",Property,Excellent,true
+Word.Font,"colorIndex",Property,Excellent,false
+Word.Font,"colorIndexBidirectional",Property,Excellent,false
 Word.Font,"context",Property,Excellent,false
+Word.Font,"contextualAlternates",Property,Excellent,false
+Word.Font,"diacriticColor",Property,Excellent,false
+Word.Font,"disableCharacterSpaceGrid",Property,Excellent,false
 Word.Font,"doubleStrikeThrough",Property,Excellent,false
+Word.Font,"emboss",Property,Excellent,false
+Word.Font,"emphasisMark",Property,Excellent,false
+Word.Font,"engrave",Property,Excellent,false
+Word.Font,"fill",Property,Excellent,false
+Word.Font,"glow",Property,Excellent,false
 Word.Font,"hidden",Property,Excellent,false
 Word.Font,"highlightColor",Property,Excellent,true
 Word.Font,"italic",Property,Excellent,false
+Word.Font,"italicBidirectional",Property,Excellent,false
+Word.Font,"kerning",Property,Great,false
+Word.Font,"ligature",Property,Excellent,false
+Word.Font,"line",Property,Excellent,false
 Word.Font,"name",Property,Excellent,true
+Word.Font,"nameAscii",Property,Excellent,false
+Word.Font,"nameBidirectional",Property,Great,false
+Word.Font,"nameFarEast",Property,Good,false
+Word.Font,"nameOther",Property,Excellent,false
+Word.Font,"numberForm",Property,Great,false
+Word.Font,"numberSpacing",Property,Good,false
+Word.Font,"outline",Property,Excellent,false
+Word.Font,"position",Property,Great,false
+Word.Font,"reflection",Property,Great,false
+Word.Font,"scaling",Property,Great,false
+Word.Font,"shadow",Property,Excellent,false
 Word.Font,"size",Property,Excellent,true
+Word.Font,"sizeBidirectional",Property,Great,false
+Word.Font,"smallCaps",Property,Excellent,false
+Word.Font,"spacing",Property,Good,false
 Word.Font,"strikeThrough",Property,Excellent,true
+Word.Font,"stylisticSet",Property,Good,false
 Word.Font,"subscript",Property,Excellent,false
 Word.Font,"superscript",Property,Excellent,false
+Word.Font,"textColor",Property,Great,false
+Word.Font,"textShadow",Property,Excellent,false
+Word.Font,"threeDimensionalFormat",Property,Excellent,false
 Word.Font,"underline",Property,Excellent,true
+Word.Font,"underlineColor",Property,Excellent,false
+Word.Font,"decreaseFontSize()",Method,Fine,false
+Word.Font,"increaseFontSize()",Method,Fine,false
 Word.Font,"load(options)",Method,Excellent,false
 Word.Font,"load(propertyNames)",Method,Excellent,false
 Word.Font,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.Font,"reset()",Method,Poor,false
 Word.Font,"set(properties, options)",Method,Good,false
 Word.Font,"set(properties)",Method,Good,false
+Word.Font,"setAsTemplateDefault()",Method,Great,false
 Word.Font,"toJSON()",Method,Excellent,false
 Word.Font,"track()",Method,Excellent,false
 Word.Font,"untrack()",Method,Excellent,false
@@ -12299,6 +12683,34 @@ Word.GeometricShapeType,"wedgeRRectCallout",EnumField,Fine,false
 Word.GetTextOptions,N/A,Interface,Excellent,true
 Word.GetTextOptions,"includeHiddenText",Property,Excellent,false
 Word.GetTextOptions,"includeTextMarkedAsDeleted",Property,Excellent,false
+Word.GlowFormat,N/A,Class,Unknown,false
+Word.GlowFormat,"color",Property,Excellent,false
+Word.GlowFormat,"context",Property,Excellent,false
+Word.GlowFormat,"radius",Property,Excellent,false
+Word.GlowFormat,"transparency",Property,Excellent,false
+Word.GlowFormat,"load(options)",Method,Excellent,false
+Word.GlowFormat,"load(propertyNames)",Method,Excellent,false
+Word.GlowFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.GlowFormat,"set(properties, options)",Method,Good,false
+Word.GlowFormat,"set(properties)",Method,Good,false
+Word.GlowFormat,"toJSON()",Method,Excellent,false
+Word.GlowFormat,"track()",Method,Excellent,false
+Word.GlowFormat,"untrack()",Method,Excellent,false
+Word.GradientColorType,N/A,Enum,Good,false
+Word.GradientColorType,"mixed",EnumField,Excellent,false
+Word.GradientColorType,"multiColor",EnumField,Fine,false
+Word.GradientColorType,"oneColor",EnumField,Fine,false
+Word.GradientColorType,"presetColors",EnumField,Fine,false
+Word.GradientColorType,"twoColors",EnumField,Fine,false
+Word.GradientStyle,N/A,Enum,Unknown,false
+Word.GradientStyle,"diagonalDown",EnumField,Fine,false
+Word.GradientStyle,"diagonalUp",EnumField,Fine,false
+Word.GradientStyle,"fromCenter",EnumField,Fine,false
+Word.GradientStyle,"fromCorner",EnumField,Fine,false
+Word.GradientStyle,"fromTitle",EnumField,Fine,false
+Word.GradientStyle,"horizontal",EnumField,Fine,false
+Word.GradientStyle,"mixed",EnumField,Fine,false
+Word.GradientStyle,"vertical",EnumField,Fine,false
 Word.HeaderFooterType,N/A,Enum,Unknown,true
 Word.HeaderFooterType,"evenPages",EnumField,Good,false
 Word.HeaderFooterType,"firstPage",EnumField,Good,false
@@ -12355,7 +12767,7 @@ Word.InlinePicture,"load(options)",Method,Excellent,false
 Word.InlinePicture,"load(propertyNames)",Method,Excellent,false
 Word.InlinePicture,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.InlinePicture,"select(selectionMode)",Method,Fine,false
-Word.InlinePicture,"select(selectionModeString)",Method,Fine,false
+Word.InlinePicture,"select(selectionMode)",Method,Fine,false
 Word.InlinePicture,"set(properties, options)",Method,Good,false
 Word.InlinePicture,"set(properties)",Method,Good,false
 Word.InlinePicture,"toJSON()",Method,Excellent,false
@@ -12387,11 +12799,308 @@ Word.InsertLocation,"before",EnumField,Good,false
 Word.InsertLocation,"end",EnumField,Good,false
 Word.InsertLocation,"replace",EnumField,Good,false
 Word.InsertLocation,"start",EnumField,Good,false
-Word.InsertShapeOptions,N/A,Interface,Unknown,false
+Word.InsertShapeOptions,N/A,Interface,Unknown,true
 Word.InsertShapeOptions,"height",Property,Poor,false
 Word.InsertShapeOptions,"left",Property,Fine,false
 Word.InsertShapeOptions,"top",Property,Fine,false
 Word.InsertShapeOptions,"width",Property,Poor,false
+Word.LanguageId,N/A,Enum,Unknown,false
+Word.LanguageId,"afrikaans",EnumField,Fine,false
+Word.LanguageId,"albanian",EnumField,Fine,false
+Word.LanguageId,"amharic",EnumField,Fine,false
+Word.LanguageId,"arabic",EnumField,Fine,false
+Word.LanguageId,"arabicAlgeria",EnumField,Fine,false
+Word.LanguageId,"arabicBahrain",EnumField,Fine,false
+Word.LanguageId,"arabicEgypt",EnumField,Fine,false
+Word.LanguageId,"arabicIraq",EnumField,Fine,false
+Word.LanguageId,"arabicJordan",EnumField,Fine,false
+Word.LanguageId,"arabicKuwait",EnumField,Fine,false
+Word.LanguageId,"arabicLebanon",EnumField,Fine,false
+Word.LanguageId,"arabicLibya",EnumField,Fine,false
+Word.LanguageId,"arabicMorocco",EnumField,Fine,false
+Word.LanguageId,"arabicOman",EnumField,Fine,false
+Word.LanguageId,"arabicQatar",EnumField,Fine,false
+Word.LanguageId,"arabicSyria",EnumField,Fine,false
+Word.LanguageId,"arabicTunisia",EnumField,Fine,false
+Word.LanguageId,"arabicUAE",EnumField,Fine,false
+Word.LanguageId,"arabicYemen",EnumField,Fine,false
+Word.LanguageId,"armenian",EnumField,Fine,false
+Word.LanguageId,"assamese",EnumField,Fine,false
+Word.LanguageId,"azeriCyrillic",EnumField,Fine,false
+Word.LanguageId,"azeriLatin",EnumField,Fine,false
+Word.LanguageId,"basque",EnumField,Fine,false
+Word.LanguageId,"belarusian",EnumField,Fine,false
+Word.LanguageId,"belgianDutch",EnumField,Fine,false
+Word.LanguageId,"belgianFrench",EnumField,Fine,false
+Word.LanguageId,"bengali",EnumField,Fine,false
+Word.LanguageId,"bulgarian",EnumField,Fine,false
+Word.LanguageId,"burmese",EnumField,Fine,false
+Word.LanguageId,"catalan",EnumField,Fine,false
+Word.LanguageId,"cherokee",EnumField,Fine,false
+Word.LanguageId,"chineseHongKongSAR",EnumField,Fine,false
+Word.LanguageId,"chineseMacaoSAR",EnumField,Fine,false
+Word.LanguageId,"chineseSingapore",EnumField,Fine,false
+Word.LanguageId,"croatian",EnumField,Fine,false
+Word.LanguageId,"czech",EnumField,Fine,false
+Word.LanguageId,"danish",EnumField,Fine,false
+Word.LanguageId,"divehi",EnumField,Fine,false
+Word.LanguageId,"dutch",EnumField,Fine,false
+Word.LanguageId,"edo",EnumField,Fine,false
+Word.LanguageId,"englishAUS",EnumField,Fine,false
+Word.LanguageId,"englishBelize",EnumField,Fine,false
+Word.LanguageId,"englishCanadian",EnumField,Fine,false
+Word.LanguageId,"englishCaribbean",EnumField,Fine,false
+Word.LanguageId,"englishIndonesia",EnumField,Fine,false
+Word.LanguageId,"englishIreland",EnumField,Fine,false
+Word.LanguageId,"englishJamaica",EnumField,Fine,false
+Word.LanguageId,"englishNewZealand",EnumField,Fine,false
+Word.LanguageId,"englishPhilippines",EnumField,Fine,false
+Word.LanguageId,"englishSouthAfrica",EnumField,Fine,false
+Word.LanguageId,"englishTrinidadTobago",EnumField,Fine,false
+Word.LanguageId,"englishUK",EnumField,Fine,false
+Word.LanguageId,"englishUS",EnumField,Fine,false
+Word.LanguageId,"englishZimbabwe",EnumField,Fine,false
+Word.LanguageId,"estonian",EnumField,Fine,false
+Word.LanguageId,"faeroese",EnumField,Fine,false
+Word.LanguageId,"filipino",EnumField,Fine,false
+Word.LanguageId,"finnish",EnumField,Fine,false
+Word.LanguageId,"french",EnumField,Fine,false
+Word.LanguageId,"frenchCameroon",EnumField,Fine,false
+Word.LanguageId,"frenchCanadian",EnumField,Fine,false
+Word.LanguageId,"frenchCongoDRC",EnumField,Fine,false
+Word.LanguageId,"frenchCotedIvoire",EnumField,Fine,false
+Word.LanguageId,"frenchHaiti",EnumField,Fine,false
+Word.LanguageId,"frenchLuxembourg",EnumField,Fine,false
+Word.LanguageId,"frenchMali",EnumField,Fine,false
+Word.LanguageId,"frenchMonaco",EnumField,Fine,false
+Word.LanguageId,"frenchMorocco",EnumField,Fine,false
+Word.LanguageId,"frenchReunion",EnumField,Fine,false
+Word.LanguageId,"frenchSenegal",EnumField,Fine,false
+Word.LanguageId,"frenchWestIndies",EnumField,Fine,false
+Word.LanguageId,"frisianNetherlands",EnumField,Fine,false
+Word.LanguageId,"fulfulde",EnumField,Fine,false
+Word.LanguageId,"gaelicIreland",EnumField,Fine,false
+Word.LanguageId,"gaelicScotland",EnumField,Fine,false
+Word.LanguageId,"galician",EnumField,Fine,false
+Word.LanguageId,"georgian",EnumField,Fine,false
+Word.LanguageId,"german",EnumField,Fine,false
+Word.LanguageId,"germanAustria",EnumField,Fine,false
+Word.LanguageId,"germanLiechtenstein",EnumField,Fine,false
+Word.LanguageId,"germanLuxembourg",EnumField,Fine,false
+Word.LanguageId,"greek",EnumField,Fine,false
+Word.LanguageId,"guarani",EnumField,Fine,false
+Word.LanguageId,"gujarati",EnumField,Fine,false
+Word.LanguageId,"hausa",EnumField,Fine,false
+Word.LanguageId,"hawaiian",EnumField,Fine,false
+Word.LanguageId,"hebrew",EnumField,Fine,false
+Word.LanguageId,"hindi",EnumField,Fine,false
+Word.LanguageId,"hungarian",EnumField,Fine,false
+Word.LanguageId,"ibibio",EnumField,Fine,false
+Word.LanguageId,"icelandic",EnumField,Fine,false
+Word.LanguageId,"igbo",EnumField,Fine,false
+Word.LanguageId,"indonesian",EnumField,Fine,false
+Word.LanguageId,"inuktitut",EnumField,Fine,false
+Word.LanguageId,"italian",EnumField,Fine,false
+Word.LanguageId,"japanese",EnumField,Fine,false
+Word.LanguageId,"kannada",EnumField,Fine,false
+Word.LanguageId,"kanuri",EnumField,Fine,false
+Word.LanguageId,"kashmiri",EnumField,Fine,false
+Word.LanguageId,"kazakh",EnumField,Fine,false
+Word.LanguageId,"khmer",EnumField,Fine,false
+Word.LanguageId,"kirghiz",EnumField,Fine,false
+Word.LanguageId,"konkani",EnumField,Fine,false
+Word.LanguageId,"korean",EnumField,Fine,false
+Word.LanguageId,"kyrgyz",EnumField,Fine,false
+Word.LanguageId,"languageNone",EnumField,Good,false
+Word.LanguageId,"lao",EnumField,Fine,false
+Word.LanguageId,"latin",EnumField,Fine,false
+Word.LanguageId,"latvian",EnumField,Fine,false
+Word.LanguageId,"lithuanian",EnumField,Fine,false
+Word.LanguageId,"macedonianFYROM",EnumField,Fine,false
+Word.LanguageId,"malayalam",EnumField,Fine,false
+Word.LanguageId,"malayBruneiDarussalam",EnumField,Fine,false
+Word.LanguageId,"malaysian",EnumField,Fine,false
+Word.LanguageId,"maltese",EnumField,Fine,false
+Word.LanguageId,"manipuri",EnumField,Fine,false
+Word.LanguageId,"marathi",EnumField,Fine,false
+Word.LanguageId,"mexicanSpanish",EnumField,Fine,false
+Word.LanguageId,"mongolian",EnumField,Fine,false
+Word.LanguageId,"nepali",EnumField,Fine,false
+Word.LanguageId,"noProofing",EnumField,Great,false
+Word.LanguageId,"norwegianBokmol",EnumField,Fine,false
+Word.LanguageId,"norwegianNynorsk",EnumField,Fine,false
+Word.LanguageId,"oriya",EnumField,Fine,false
+Word.LanguageId,"oromo",EnumField,Fine,false
+Word.LanguageId,"pashto",EnumField,Fine,false
+Word.LanguageId,"persian",EnumField,Fine,false
+Word.LanguageId,"polish",EnumField,Fine,false
+Word.LanguageId,"portuguese",EnumField,Fine,false
+Word.LanguageId,"portugueseBrazil",EnumField,Fine,false
+Word.LanguageId,"punjabi",EnumField,Fine,false
+Word.LanguageId,"rhaetoRomanic",EnumField,Fine,false
+Word.LanguageId,"romanian",EnumField,Fine,false
+Word.LanguageId,"romanianMoldova",EnumField,Fine,false
+Word.LanguageId,"russian",EnumField,Fine,false
+Word.LanguageId,"russianMoldova",EnumField,Fine,false
+Word.LanguageId,"samiLappish",EnumField,Fine,false
+Word.LanguageId,"sanskrit",EnumField,Fine,false
+Word.LanguageId,"serbianCyrillic",EnumField,Fine,false
+Word.LanguageId,"serbianLatin",EnumField,Fine,false
+Word.LanguageId,"sesotho",EnumField,Fine,false
+Word.LanguageId,"simplifiedChinese",EnumField,Good,false
+Word.LanguageId,"sindhi",EnumField,Fine,false
+Word.LanguageId,"sindhiPakistan",EnumField,Fine,false
+Word.LanguageId,"sinhalese",EnumField,Fine,false
+Word.LanguageId,"slovak",EnumField,Fine,false
+Word.LanguageId,"slovenian",EnumField,Fine,false
+Word.LanguageId,"somali",EnumField,Fine,false
+Word.LanguageId,"sorbian",EnumField,Fine,false
+Word.LanguageId,"spanish",EnumField,Fine,false
+Word.LanguageId,"spanishArgentina",EnumField,Fine,false
+Word.LanguageId,"spanishBolivia",EnumField,Fine,false
+Word.LanguageId,"spanishChile",EnumField,Fine,false
+Word.LanguageId,"spanishColombia",EnumField,Fine,false
+Word.LanguageId,"spanishCostaRica",EnumField,Fine,false
+Word.LanguageId,"spanishDominicanRepublic",EnumField,Fine,false
+Word.LanguageId,"spanishEcuador",EnumField,Fine,false
+Word.LanguageId,"spanishElSalvador",EnumField,Fine,false
+Word.LanguageId,"spanishGuatemala",EnumField,Fine,false
+Word.LanguageId,"spanishHonduras",EnumField,Fine,false
+Word.LanguageId,"spanishModernSort",EnumField,Fine,false
+Word.LanguageId,"spanishNicaragua",EnumField,Fine,false
+Word.LanguageId,"spanishPanama",EnumField,Fine,false
+Word.LanguageId,"spanishParaguay",EnumField,Fine,false
+Word.LanguageId,"spanishPeru",EnumField,Fine,false
+Word.LanguageId,"spanishPuertoRico",EnumField,Fine,false
+Word.LanguageId,"spanishUruguay",EnumField,Fine,false
+Word.LanguageId,"spanishVenezuela",EnumField,Fine,false
+Word.LanguageId,"sutu",EnumField,Fine,false
+Word.LanguageId,"swahili",EnumField,Fine,false
+Word.LanguageId,"swedish",EnumField,Fine,false
+Word.LanguageId,"swedishFinland",EnumField,Fine,false
+Word.LanguageId,"swissFrench",EnumField,Fine,false
+Word.LanguageId,"swissGerman",EnumField,Fine,false
+Word.LanguageId,"swissItalian",EnumField,Fine,false
+Word.LanguageId,"syriac",EnumField,Fine,false
+Word.LanguageId,"tajik",EnumField,Fine,false
+Word.LanguageId,"tamazight",EnumField,Fine,false
+Word.LanguageId,"tamazightLatin",EnumField,Fine,false
+Word.LanguageId,"tamil",EnumField,Fine,false
+Word.LanguageId,"tatar",EnumField,Fine,false
+Word.LanguageId,"telugu",EnumField,Fine,false
+Word.LanguageId,"thai",EnumField,Fine,false
+Word.LanguageId,"tibetan",EnumField,Fine,false
+Word.LanguageId,"tigrignaEritrea",EnumField,Fine,false
+Word.LanguageId,"tigrignaEthiopic",EnumField,Fine,false
+Word.LanguageId,"traditionalChinese",EnumField,Fine,false
+Word.LanguageId,"tsonga",EnumField,Fine,false
+Word.LanguageId,"tswana",EnumField,Fine,false
+Word.LanguageId,"turkish",EnumField,Fine,false
+Word.LanguageId,"turkmen",EnumField,Fine,false
+Word.LanguageId,"ukrainian",EnumField,Fine,false
+Word.LanguageId,"urdu",EnumField,Fine,false
+Word.LanguageId,"uzbekCyrillic",EnumField,Fine,false
+Word.LanguageId,"uzbekLatin",EnumField,Fine,false
+Word.LanguageId,"venda",EnumField,Fine,false
+Word.LanguageId,"vietnamese",EnumField,Fine,false
+Word.LanguageId,"welsh",EnumField,Fine,false
+Word.LanguageId,"xhosa",EnumField,Fine,false
+Word.LanguageId,"yi",EnumField,Fine,false
+Word.LanguageId,"yiddish",EnumField,Fine,false
+Word.LanguageId,"yoruba",EnumField,Fine,false
+Word.LanguageId,"zulu",EnumField,Fine,false
+Word.Ligature,N/A,Enum,Unknown,false
+Word.Ligature,"all",EnumField,Fine,false
+Word.Ligature,"contextual",EnumField,Great,false
+Word.Ligature,"contextualDiscretional",EnumField,Great,false
+Word.Ligature,"contextualHistorical",EnumField,Great,false
+Word.Ligature,"contextualHistoricalDiscretional",EnumField,Great,false
+Word.Ligature,"discretional",EnumField,Fine,false
+Word.Ligature,"historical",EnumField,Fine,false
+Word.Ligature,"historicalDiscretional",EnumField,Fine,false
+Word.Ligature,"none",EnumField,Fine,false
+Word.Ligature,"standard",EnumField,Fine,false
+Word.Ligature,"standardContextual",EnumField,Great,false
+Word.Ligature,"standardContextualDiscretional",EnumField,Great,false
+Word.Ligature,"standardContextualHistorical",EnumField,Great,false
+Word.Ligature,"standardDiscretional",EnumField,Fine,false
+Word.Ligature,"standardHistorical",EnumField,Fine,false
+Word.Ligature,"standardHistoricalDiscretional",EnumField,Fine,false
+Word.LightRigType,N/A,Enum,Unknown,false
+Word.LightRigType,"balanced",EnumField,Fine,false
+Word.LightRigType,"brightRoom",EnumField,Fine,false
+Word.LightRigType,"chilly",EnumField,Fine,false
+Word.LightRigType,"contrasting",EnumField,Fine,false
+Word.LightRigType,"flat",EnumField,Fine,false
+Word.LightRigType,"flood",EnumField,Fine,false
+Word.LightRigType,"freezing",EnumField,Fine,false
+Word.LightRigType,"glow",EnumField,Fine,false
+Word.LightRigType,"harsh",EnumField,Fine,false
+Word.LightRigType,"legacyFlat1",EnumField,Fine,false
+Word.LightRigType,"legacyFlat2",EnumField,Fine,false
+Word.LightRigType,"legacyFlat3",EnumField,Fine,false
+Word.LightRigType,"legacyFlat4",EnumField,Fine,false
+Word.LightRigType,"legacyHarsh1",EnumField,Fine,false
+Word.LightRigType,"legacyHarsh2",EnumField,Fine,false
+Word.LightRigType,"legacyHarsh3",EnumField,Fine,false
+Word.LightRigType,"legacyHarsh4",EnumField,Fine,false
+Word.LightRigType,"legacyNormal1",EnumField,Fine,false
+Word.LightRigType,"legacyNormal2",EnumField,Fine,false
+Word.LightRigType,"legacyNormal3",EnumField,Fine,false
+Word.LightRigType,"legacyNormal4",EnumField,Fine,false
+Word.LightRigType,"mixed",EnumField,Fine,false
+Word.LightRigType,"morning",EnumField,Fine,false
+Word.LightRigType,"soft",EnumField,Fine,false
+Word.LightRigType,"sunrise",EnumField,Fine,false
+Word.LightRigType,"sunset",EnumField,Fine,false
+Word.LightRigType,"threePoint",EnumField,Fine,false
+Word.LightRigType,"twoPoint",EnumField,Fine,false
+Word.LineDashStyle,N/A,Enum,Unknown,false
+Word.LineDashStyle,"dash",EnumField,Fine,false
+Word.LineDashStyle,"dashDot",EnumField,Fine,false
+Word.LineDashStyle,"dashDotDot",EnumField,Fine,false
+Word.LineDashStyle,"longDash",EnumField,Fine,false
+Word.LineDashStyle,"longDashDot",EnumField,Fine,false
+Word.LineDashStyle,"longDashDotDot",EnumField,Fine,false
+Word.LineDashStyle,"mixed",EnumField,Fine,false
+Word.LineDashStyle,"roundDot",EnumField,Fine,false
+Word.LineDashStyle,"solid",EnumField,Fine,false
+Word.LineDashStyle,"squareDot",EnumField,Fine,false
+Word.LineDashStyle,"sysDash",EnumField,Fine,false
+Word.LineDashStyle,"sysDashDot",EnumField,Fine,false
+Word.LineDashStyle,"sysDot",EnumField,Fine,false
+Word.LineFormat,N/A,Class,Unknown,false
+Word.LineFormat,"backgroundColor",Property,Good,false
+Word.LineFormat,"beginArrowheadLength",Property,Great,false
+Word.LineFormat,"beginArrowheadStyle",Property,Great,false
+Word.LineFormat,"beginArrowheadWidth",Property,Great,false
+Word.LineFormat,"context",Property,Excellent,false
+Word.LineFormat,"dashStyle",Property,Good,false
+Word.LineFormat,"endArrowheadLength",Property,Great,false
+Word.LineFormat,"endArrowheadStyle",Property,Great,false
+Word.LineFormat,"endArrowheadWidth",Property,Great,false
+Word.LineFormat,"foregroundColor",Property,Good,false
+Word.LineFormat,"insetPen",Property,Good,false
+Word.LineFormat,"isVisible",Property,Excellent,false
+Word.LineFormat,"pattern",Property,Good,false
+Word.LineFormat,"style",Property,Good,false
+Word.LineFormat,"transparency",Property,Excellent,false
+Word.LineFormat,"weight",Property,Good,false
+Word.LineFormat,"load(options)",Method,Excellent,false
+Word.LineFormat,"load(propertyNames)",Method,Excellent,false
+Word.LineFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.LineFormat,"set(properties, options)",Method,Good,false
+Word.LineFormat,"set(properties)",Method,Good,false
+Word.LineFormat,"toJSON()",Method,Excellent,false
+Word.LineFormat,"track()",Method,Excellent,false
+Word.LineFormat,"untrack()",Method,Excellent,false
+Word.LineFormatStyle,N/A,Enum,Unknown,false
+Word.LineFormatStyle,"mixed",EnumField,Fine,false
+Word.LineFormatStyle,"single",EnumField,Fine,false
+Word.LineFormatStyle,"thickBetweenThin",EnumField,Fine,false
+Word.LineFormatStyle,"thickThin",EnumField,Fine,false
+Word.LineFormatStyle,"thinThick",EnumField,Fine,false
+Word.LineFormatStyle,"thinThin",EnumField,Fine,false
 Word.List,N/A,Class,Missing,true
 Word.List,"context",Property,Excellent,false
 Word.List,"id",Property,Missing,false
@@ -12408,17 +13117,21 @@ Word.List,"load(propertyNames)",Method,Excellent,false
 Word.List,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.List,"resetLevelFont(level, resetFontName)",Method,Good,false
 Word.List,"setLevelAlignment(level, alignment)",Method,Good,false
-Word.List,"setLevelAlignment(level, alignmentString)",Method,Good,false
+Word.List,"setLevelAlignment(level, alignment)",Method,Good,false
 Word.List,"setLevelBullet(level, listBullet, charCode, fontName)",Method,Great,true
-Word.List,"setLevelBullet(level, listBulletString, charCode, fontName)",Method,Great,false
+Word.List,"setLevelBullet(level, listBullet, charCode, fontName)",Method,Great,false
 Word.List,"setLevelIndents(level, textIndent, bulletNumberPictureIndent)",Method,Good,false
 Word.List,"setLevelNumbering(level, listNumbering, formatString)",Method,Good,true
-Word.List,"setLevelNumbering(level, listNumberingString, formatString)",Method,Good,false
+Word.List,"setLevelNumbering(level, listNumbering, formatString)",Method,Good,false
 Word.List,"setLevelPicture(level, base64EncodedImage)",Method,Good,false
 Word.List,"setLevelStartingNumber(level, startingNumber)",Method,Excellent,false
 Word.List,"toJSON()",Method,Excellent,false
 Word.List,"track()",Method,Excellent,false
 Word.List,"untrack()",Method,Excellent,false
+Word.ListApplyTo,N/A,Enum,Unknown,false
+Word.ListApplyTo,"selection",EnumField,Fine,false
+Word.ListApplyTo,"thisPointForward",EnumField,Fine,false
+Word.ListApplyTo,"wholeList",EnumField,Fine,false
 Word.ListBuiltInNumberStyle,N/A,Enum,Fine,true
 Word.ListBuiltInNumberStyle,"aiueo",EnumField,Fine,false
 Word.ListBuiltInNumberStyle,"aiueoHalfWidth",EnumField,Fine,false
@@ -12510,6 +13223,42 @@ Word.ListCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.ListCollection,"toJSON()",Method,Excellent,false
 Word.ListCollection,"track()",Method,Excellent,false
 Word.ListCollection,"untrack()",Method,Excellent,false
+Word.ListFormat,N/A,Class,Unknown,false
+Word.ListFormat,"context",Property,Excellent,false
+Word.ListFormat,"isSingleList",Property,Good,false
+Word.ListFormat,"isSingleListTemplate",Property,Good,false
+Word.ListFormat,"list",Property,Great,false
+Word.ListFormat,"listLevelNumber",Property,Excellent,false
+Word.ListFormat,"listString",Property,Excellent,false
+Word.ListFormat,"listTemplate",Property,Good,false
+Word.ListFormat,"listType",Property,Good,false
+Word.ListFormat,"listValue",Property,Great,false
+Word.ListFormat,"applyBulletDefault(defaultListBehavior)",Method,Fine,false
+Word.ListFormat,"applyBulletDefault(defaultListBehavior)",Method,Fine,false
+Word.ListFormat,"applyListTemplateWithLevel(listTemplate, options)",Method,Good,false
+Word.ListFormat,"applyNumberDefault(defaultListBehavior)",Method,Fine,false
+Word.ListFormat,"applyNumberDefault(defaultListBehavior)",Method,Fine,false
+Word.ListFormat,"applyOutlineNumberDefault(defaultListBehavior)",Method,Fine,false
+Word.ListFormat,"applyOutlineNumberDefault(defaultListBehavior)",Method,Fine,false
+Word.ListFormat,"canContinuePreviousList(listTemplate)",Method,Good,false
+Word.ListFormat,"convertNumbersToText(numberType)",Method,Poor,false
+Word.ListFormat,"convertNumbersToText(numberType)",Method,Poor,false
+Word.ListFormat,"countNumberedItems(options)",Method,Poor,false
+Word.ListFormat,"listIndent()",Method,Poor,false
+Word.ListFormat,"listOutdent()",Method,Poor,false
+Word.ListFormat,"load(options)",Method,Excellent,false
+Word.ListFormat,"load(propertyNames)",Method,Excellent,false
+Word.ListFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.ListFormat,"removeNumbers(numberType)",Method,Poor,false
+Word.ListFormat,"removeNumbers(numberType)",Method,Poor,false
+Word.ListFormat,"set(properties, options)",Method,Good,false
+Word.ListFormat,"set(properties)",Method,Good,false
+Word.ListFormat,"toJSON()",Method,Excellent,false
+Word.ListFormat,"track()",Method,Excellent,false
+Word.ListFormat,"untrack()",Method,Excellent,false
+Word.ListFormatCountNumberedItemsOptions,N/A,Interface,Unknown,false
+Word.ListFormatCountNumberedItemsOptions,"level",Property,Excellent,false
+Word.ListFormatCountNumberedItemsOptions,"numberType",Property,Excellent,false
 Word.ListItem,N/A,Class,Unknown,true
 Word.ListItem,"context",Property,Excellent,false
 Word.ListItem,"level",Property,Good,true
@@ -12581,6 +13330,19 @@ Word.ListTemplate,"set(properties)",Method,Good,false
 Word.ListTemplate,"toJSON()",Method,Excellent,false
 Word.ListTemplate,"track()",Method,Excellent,false
 Word.ListTemplate,"untrack()",Method,Excellent,false
+Word.ListTemplateApplyOptions,N/A,Interface,Unknown,false
+Word.ListTemplateApplyOptions,"applyLevel",Property,Excellent,false
+Word.ListTemplateApplyOptions,"applyTo",Property,Excellent,false
+Word.ListTemplateApplyOptions,"continuePreviousList",Property,Excellent,false
+Word.ListTemplateApplyOptions,"defaultListBehavior",Property,Excellent,false
+Word.ListType,N/A,Enum,Unknown,false
+Word.ListType,"listBullet",EnumField,Fine,false
+Word.ListType,"listListNumOnly",EnumField,Great,false
+Word.ListType,"listMixedNumbering",EnumField,Fine,false
+Word.ListType,"listNoNumbering",EnumField,Fine,false
+Word.ListType,"listOutlineNumbering",EnumField,Fine,false
+Word.ListType,"listPictureBullet",EnumField,Fine,false
+Word.ListType,"listSimpleNumbering",EnumField,Fine,false
 Word.LocationRelation,N/A,Enum,Unknown,true
 Word.LocationRelation,"adjacentAfter",EnumField,Fine,false
 Word.LocationRelation,"adjacentBefore",EnumField,Fine,false
@@ -12626,6 +13388,18 @@ Word.NoteItemCollection,"untrack()",Method,Excellent,false
 Word.NoteItemType,N/A,Enum,Missing,true
 Word.NoteItemType,"endnote",EnumField,Fine,false
 Word.NoteItemType,"footnote",EnumField,Fine,false
+Word.NumberForm,N/A,Enum,Unknown,false
+Word.NumberForm,"default",EnumField,Good,false
+Word.NumberForm,"lining",EnumField,Fine,false
+Word.NumberForm,"oldStyle",EnumField,Fine,false
+Word.NumberSpacing,N/A,Enum,Unknown,false
+Word.NumberSpacing,"default",EnumField,Good,false
+Word.NumberSpacing,"proportional",EnumField,Fine,false
+Word.NumberSpacing,"tabular",EnumField,Fine,false
+Word.NumberType,N/A,Enum,Unknown,false
+Word.NumberType,"allNumbers",EnumField,Excellent,false
+Word.NumberType,"listNum",EnumField,Excellent,false
+Word.NumberType,"paragraph",EnumField,Fine,false
 Word.OutlineLevel,N/A,Enum,Unknown,true
 Word.OutlineLevel,"outlineLevel1",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel2",EnumField,Fine,false
@@ -12637,21 +13411,21 @@ Word.OutlineLevel,"outlineLevel7",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel8",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel9",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevelBodyText",EnumField,Fine,false
-Word.Page,N/A,Class,Unknown,false
+Word.Page,N/A,Class,Unknown,true
 Word.Page,"context",Property,Excellent,false
 Word.Page,"height",Property,Fine,false
-Word.Page,"index",Property,Fine,false
+Word.Page,"index",Property,Fine,true
 Word.Page,"width",Property,Fine,false
 Word.Page,"getNext()",Method,Great,false
 Word.Page,"getNextOrNullObject()",Method,Excellent,false
-Word.Page,"getRange(rangeLocation)",Method,Fine,false
+Word.Page,"getRange(rangeLocation)",Method,Fine,true
 Word.Page,"load(options)",Method,Excellent,false
 Word.Page,"load(propertyNames)",Method,Excellent,false
 Word.Page,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Page,"toJSON()",Method,Excellent,false
 Word.Page,"track()",Method,Excellent,false
 Word.Page,"untrack()",Method,Excellent,false
-Word.PageCollection,N/A,Class,Unknown,false
+Word.PageCollection,N/A,Class,Unknown,true
 Word.PageCollection,"context",Property,Excellent,false
 Word.PageCollection,"items",Property,Poor,false
 Word.PageCollection,"getFirst()",Method,Great,false
@@ -12662,10 +13436,10 @@ Word.PageCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.PageCollection,"toJSON()",Method,Excellent,false
 Word.PageCollection,"track()",Method,Excellent,false
 Word.PageCollection,"untrack()",Method,Excellent,false
-Word.Pane,N/A,Class,Unknown,false
+Word.Pane,N/A,Class,Unknown,true
 Word.Pane,"context",Property,Excellent,false
-Word.Pane,"pages",Property,Poor,false
-Word.Pane,"pagesEnclosingViewport",Property,Good,false
+Word.Pane,"pages",Property,Poor,true
+Word.Pane,"pagesEnclosingViewport",Property,Good,true
 Word.Pane,"getNext()",Method,Great,false
 Word.Pane,"getNextOrNullObject()",Method,Excellent,false
 Word.Pane,"load(propertyNames)",Method,Excellent,false
@@ -12735,7 +13509,7 @@ Word.Paragraph,"getPrevious()",Method,Great,false
 Word.Paragraph,"getPreviousOrNullObject()",Method,Excellent,true
 Word.Paragraph,"getRange(rangeLocation)",Method,Fine,true
 Word.Paragraph,"getReviewedText(changeTrackingVersion)",Method,Fine,false
-Word.Paragraph,"getReviewedText(changeTrackingVersionString)",Method,Fine,false
+Word.Paragraph,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 Word.Paragraph,"getText(options)",Method,Excellent,false
 Word.Paragraph,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,false
 Word.Paragraph,"getTrackedChanges()",Method,Good,false
@@ -12745,7 +13519,7 @@ Word.Paragraph,"insertCanvas(insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"insertContentControl(contentControlType)",Method,Fine,true
 Word.Paragraph,"insertFileFromBase64(base64File, insertLocation)",Method,Good,false
 Word.Paragraph,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
-Word.Paragraph,"insertGeometricShape(geometricShapeTypeString, insertShapeOptions)",Method,Fine,false
+Word.Paragraph,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"insertHtml(html, insertLocation)",Method,Good,true
 Word.Paragraph,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Good,true
 Word.Paragraph,"insertOoxml(ooxml, insertLocation)",Method,Good,false
@@ -12753,13 +13527,13 @@ Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,fals
 Word.Paragraph,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Good,false
 Word.Paragraph,"insertText(text, insertLocation)",Method,Good,true
-Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
+Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
 Word.Paragraph,"load(options)",Method,Excellent,false
 Word.Paragraph,"load(propertyNames)",Method,Excellent,false
 Word.Paragraph,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Paragraph,"search(searchText, searchOptions)",Method,Excellent,false
 Word.Paragraph,"select(selectionMode)",Method,Fine,true
-Word.Paragraph,"select(selectionModeString)",Method,Fine,false
+Word.Paragraph,"select(selectionMode)",Method,Fine,false
 Word.Paragraph,"set(properties, options)",Method,Good,true
 Word.Paragraph,"set(properties)",Method,Good,false
 Word.Paragraph,"split(delimiters, trimDelimiters, trimSpacing)",Method,Fine,true
@@ -12816,6 +13590,244 @@ Word.ParagraphFormat,"set(properties)",Method,Good,false
 Word.ParagraphFormat,"toJSON()",Method,Excellent,false
 Word.ParagraphFormat,"track()",Method,Excellent,false
 Word.ParagraphFormat,"untrack()",Method,Excellent,false
+Word.PatternType,N/A,Enum,Unknown,false
+Word.PatternType,"cross",EnumField,Fine,false
+Word.PatternType,"darkDownwardDiagonal",EnumField,Fine,false
+Word.PatternType,"darkHorizontal",EnumField,Fine,false
+Word.PatternType,"darkUpwardDiagonal",EnumField,Fine,false
+Word.PatternType,"darkVertical",EnumField,Fine,false
+Word.PatternType,"dashedDownwardDiagonal",EnumField,Fine,false
+Word.PatternType,"dashedHorizontal",EnumField,Fine,false
+Word.PatternType,"dashedUpwardDiagonal",EnumField,Fine,false
+Word.PatternType,"dashedVertical",EnumField,Fine,false
+Word.PatternType,"diagonalBrick",EnumField,Fine,false
+Word.PatternType,"diagonalCross",EnumField,Fine,false
+Word.PatternType,"divot",EnumField,Fine,false
+Word.PatternType,"dottedDiamond",EnumField,Fine,false
+Word.PatternType,"dottedGrid",EnumField,Fine,false
+Word.PatternType,"downwardDiagonal",EnumField,Fine,false
+Word.PatternType,"horizontal",EnumField,Fine,false
+Word.PatternType,"horizontalBrick",EnumField,Fine,false
+Word.PatternType,"largeCheckerBoard",EnumField,Fine,false
+Word.PatternType,"largeConfetti",EnumField,Fine,false
+Word.PatternType,"largeGrid",EnumField,Fine,false
+Word.PatternType,"lightDownwardDiagonal",EnumField,Fine,false
+Word.PatternType,"lightHorizontal",EnumField,Fine,false
+Word.PatternType,"lightUpwardDiagonal",EnumField,Fine,false
+Word.PatternType,"lightVertical",EnumField,Fine,false
+Word.PatternType,"mixed",EnumField,Fine,false
+Word.PatternType,"narrowHorizontal",EnumField,Fine,false
+Word.PatternType,"narrowVertical",EnumField,Fine,false
+Word.PatternType,"outlinedDiamond",EnumField,Fine,false
+Word.PatternType,"percent10",EnumField,Fine,false
+Word.PatternType,"percent20",EnumField,Fine,false
+Word.PatternType,"percent25",EnumField,Fine,false
+Word.PatternType,"percent30",EnumField,Fine,false
+Word.PatternType,"percent40",EnumField,Fine,false
+Word.PatternType,"percent5",EnumField,Fine,false
+Word.PatternType,"percent50",EnumField,Fine,false
+Word.PatternType,"percent60",EnumField,Fine,false
+Word.PatternType,"percent70",EnumField,Fine,false
+Word.PatternType,"percent75",EnumField,Fine,false
+Word.PatternType,"percent80",EnumField,Fine,false
+Word.PatternType,"percent90",EnumField,Fine,false
+Word.PatternType,"plaid",EnumField,Fine,false
+Word.PatternType,"shingle",EnumField,Fine,false
+Word.PatternType,"smallCheckerBoard",EnumField,Fine,false
+Word.PatternType,"smallConfetti",EnumField,Fine,false
+Word.PatternType,"smallGrid",EnumField,Fine,false
+Word.PatternType,"solidDiamond",EnumField,Fine,false
+Word.PatternType,"sphere",EnumField,Fine,false
+Word.PatternType,"trellis",EnumField,Fine,false
+Word.PatternType,"upwardDiagonal",EnumField,Fine,false
+Word.PatternType,"vertical",EnumField,Fine,false
+Word.PatternType,"wave",EnumField,Fine,false
+Word.PatternType,"weave",EnumField,Fine,false
+Word.PatternType,"wideDownwardDiagonal",EnumField,Fine,false
+Word.PatternType,"wideUpwardDiagonal",EnumField,Fine,false
+Word.PatternType,"zigZag",EnumField,Fine,false
+Word.PresetCamera,N/A,Enum,Unknown,false
+Word.PresetCamera,"isometricBottomDown",EnumField,Fine,false
+Word.PresetCamera,"isometricBottomUp",EnumField,Fine,false
+Word.PresetCamera,"isometricLeftDown",EnumField,Fine,false
+Word.PresetCamera,"isometricLeftUp",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis1Left",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis1Right",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis1Top",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis2Left",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis2Right",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis2Top",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis3Bottom",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis3Left",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis3Right",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis4Bottom",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis4Left",EnumField,Fine,false
+Word.PresetCamera,"isometricOffAxis4Right",EnumField,Fine,false
+Word.PresetCamera,"isometricRightDown",EnumField,Fine,false
+Word.PresetCamera,"isometricRightUp",EnumField,Fine,false
+Word.PresetCamera,"isometricTopDown",EnumField,Fine,false
+Word.PresetCamera,"isometricTopUp",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueBottom",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueBottomLeft",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueBottomRight",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueFront",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueLeft",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueRight",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueTop",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueTopLeft",EnumField,Fine,false
+Word.PresetCamera,"legacyObliqueTopRight",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveBottom",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveBottomLeft",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveBottomRight",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveFront",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveLeft",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveRight",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveTop",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveTopLeft",EnumField,Fine,false
+Word.PresetCamera,"legacyPerspectiveTopRight",EnumField,Fine,false
+Word.PresetCamera,"mixed",EnumField,Fine,false
+Word.PresetCamera,"obliqueBottom",EnumField,Fine,false
+Word.PresetCamera,"obliqueBottomLeft",EnumField,Fine,false
+Word.PresetCamera,"obliqueBottomRight",EnumField,Fine,false
+Word.PresetCamera,"obliqueLeft",EnumField,Fine,false
+Word.PresetCamera,"obliqueRight",EnumField,Fine,false
+Word.PresetCamera,"obliqueTop",EnumField,Fine,false
+Word.PresetCamera,"obliqueTopLeft",EnumField,Fine,false
+Word.PresetCamera,"obliqueTopRight",EnumField,Fine,false
+Word.PresetCamera,"orthographicFront",EnumField,Fine,false
+Word.PresetCamera,"perspectiveAbove",EnumField,Fine,false
+Word.PresetCamera,"perspectiveAboveLeftFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveAboveRightFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveBelow",EnumField,Fine,false
+Word.PresetCamera,"perspectiveContrastingLeftFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveContrastingRightFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveFront",EnumField,Fine,false
+Word.PresetCamera,"perspectiveHeroicExtremeLeftFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveHeroicExtremeRightFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveHeroicLeftFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveHeroicRightFacing",EnumField,Fine,false
+Word.PresetCamera,"perspectiveLeft",EnumField,Fine,false
+Word.PresetCamera,"perspectiveRelaxed",EnumField,Fine,false
+Word.PresetCamera,"perspectiveRelaxedModerately",EnumField,Fine,false
+Word.PresetCamera,"perspectiveRight",EnumField,Fine,false
+Word.PresetExtrusionDirection,N/A,Enum,Unknown,false
+Word.PresetExtrusionDirection,"bottom",EnumField,Fine,false
+Word.PresetExtrusionDirection,"bottomLeft",EnumField,Fine,false
+Word.PresetExtrusionDirection,"bottomRight",EnumField,Fine,false
+Word.PresetExtrusionDirection,"left",EnumField,Fine,false
+Word.PresetExtrusionDirection,"mixed",EnumField,Fine,false
+Word.PresetExtrusionDirection,"none",EnumField,Fine,false
+Word.PresetExtrusionDirection,"right",EnumField,Fine,false
+Word.PresetExtrusionDirection,"top",EnumField,Fine,false
+Word.PresetExtrusionDirection,"topLeft",EnumField,Fine,false
+Word.PresetExtrusionDirection,"topRight",EnumField,Fine,false
+Word.PresetGradientType,N/A,Enum,Unknown,false
+Word.PresetGradientType,"brass",EnumField,Fine,false
+Word.PresetGradientType,"calmWater",EnumField,Fine,false
+Word.PresetGradientType,"chrome",EnumField,Fine,false
+Word.PresetGradientType,"chromeII",EnumField,Fine,false
+Word.PresetGradientType,"daybreak",EnumField,Fine,false
+Word.PresetGradientType,"desert",EnumField,Fine,false
+Word.PresetGradientType,"earlySunset",EnumField,Fine,false
+Word.PresetGradientType,"fire",EnumField,Fine,false
+Word.PresetGradientType,"fog",EnumField,Fine,false
+Word.PresetGradientType,"gold",EnumField,Fine,false
+Word.PresetGradientType,"goldII",EnumField,Good,false
+Word.PresetGradientType,"horizon",EnumField,Fine,false
+Word.PresetGradientType,"lateSunset",EnumField,Fine,false
+Word.PresetGradientType,"mahogany",EnumField,Fine,false
+Word.PresetGradientType,"mixed",EnumField,Excellent,false
+Word.PresetGradientType,"moss",EnumField,Fine,false
+Word.PresetGradientType,"nightfall",EnumField,Fine,false
+Word.PresetGradientType,"ocean",EnumField,Fine,false
+Word.PresetGradientType,"parchment",EnumField,Fine,false
+Word.PresetGradientType,"peacock",EnumField,Fine,false
+Word.PresetGradientType,"rainbow",EnumField,Fine,false
+Word.PresetGradientType,"rainbowII",EnumField,Good,false
+Word.PresetGradientType,"sapphire",EnumField,Fine,false
+Word.PresetGradientType,"silver",EnumField,Fine,false
+Word.PresetGradientType,"wheat",EnumField,Fine,false
+Word.PresetLightingDirection,N/A,Enum,Unknown,false
+Word.PresetLightingDirection,"bottom",EnumField,Fine,false
+Word.PresetLightingDirection,"bottomLeft",EnumField,Fine,false
+Word.PresetLightingDirection,"bottomRight",EnumField,Fine,false
+Word.PresetLightingDirection,"left",EnumField,Fine,false
+Word.PresetLightingDirection,"mixed",EnumField,Fine,false
+Word.PresetLightingDirection,"none",EnumField,Fine,false
+Word.PresetLightingDirection,"right",EnumField,Fine,false
+Word.PresetLightingDirection,"top",EnumField,Fine,false
+Word.PresetLightingDirection,"topLeft",EnumField,Fine,false
+Word.PresetLightingDirection,"topRight",EnumField,Fine,false
+Word.PresetLightingSoftness,N/A,Enum,Unknown,false
+Word.PresetLightingSoftness,"bright",EnumField,Fine,false
+Word.PresetLightingSoftness,"dim",EnumField,Fine,false
+Word.PresetLightingSoftness,"mixed",EnumField,Fine,false
+Word.PresetLightingSoftness,"normal",EnumField,Fine,false
+Word.PresetMaterial,N/A,Enum,Unknown,false
+Word.PresetMaterial,"clear",EnumField,Fine,false
+Word.PresetMaterial,"darkEdge",EnumField,Fine,false
+Word.PresetMaterial,"flat",EnumField,Fine,false
+Word.PresetMaterial,"matte",EnumField,Fine,false
+Word.PresetMaterial,"matte2",EnumField,Fine,false
+Word.PresetMaterial,"metal",EnumField,Fine,false
+Word.PresetMaterial,"metal2",EnumField,Fine,false
+Word.PresetMaterial,"mixed",EnumField,Fine,false
+Word.PresetMaterial,"plastic",EnumField,Fine,false
+Word.PresetMaterial,"plastic2",EnumField,Fine,false
+Word.PresetMaterial,"powder",EnumField,Fine,false
+Word.PresetMaterial,"softEdge",EnumField,Fine,false
+Word.PresetMaterial,"softMetal",EnumField,Fine,false
+Word.PresetMaterial,"translucentPowder",EnumField,Fine,false
+Word.PresetMaterial,"warmMatte",EnumField,Fine,false
+Word.PresetMaterial,"wireFrame",EnumField,Fine,false
+Word.PresetTexture,N/A,Enum,Unknown,false
+Word.PresetTexture,"blueTissuePaper",EnumField,Fine,false
+Word.PresetTexture,"bouquet",EnumField,Fine,false
+Word.PresetTexture,"brownMarble",EnumField,Fine,false
+Word.PresetTexture,"canvas",EnumField,Fine,false
+Word.PresetTexture,"cork",EnumField,Fine,false
+Word.PresetTexture,"denim",EnumField,Fine,false
+Word.PresetTexture,"fishFossil",EnumField,Fine,false
+Word.PresetTexture,"granite",EnumField,Fine,false
+Word.PresetTexture,"greenMarble",EnumField,Fine,false
+Word.PresetTexture,"mediumWood",EnumField,Fine,false
+Word.PresetTexture,"mixed",EnumField,Fine,false
+Word.PresetTexture,"newsprint",EnumField,Fine,false
+Word.PresetTexture,"oak",EnumField,Fine,false
+Word.PresetTexture,"paperBag",EnumField,Fine,false
+Word.PresetTexture,"papyrus",EnumField,Fine,false
+Word.PresetTexture,"parchment",EnumField,Fine,false
+Word.PresetTexture,"pinkTissuePaper",EnumField,Fine,false
+Word.PresetTexture,"purpleMesh",EnumField,Fine,false
+Word.PresetTexture,"recycledPaper",EnumField,Fine,false
+Word.PresetTexture,"sand",EnumField,Fine,false
+Word.PresetTexture,"stationery",EnumField,Fine,false
+Word.PresetTexture,"walnut",EnumField,Fine,false
+Word.PresetTexture,"waterDroplets",EnumField,Fine,false
+Word.PresetTexture,"whiteMarble",EnumField,Fine,false
+Word.PresetTexture,"wovenMat",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,N/A,Enum,Unknown,false
+Word.PresetThreeDimensionalFormat,"format1",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format10",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format11",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format12",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format13",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format14",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format15",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format16",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format17",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format18",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format19",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format2",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format20",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format3",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format4",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format5",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format6",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format7",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format8",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"format9",EnumField,Fine,false
+Word.PresetThreeDimensionalFormat,"mixed",EnumField,Fine,false
 Word.Range,N/A,Class,Unknown,true
 Word.Range,"contentControls",Property,Good,false
 Word.Range,"context",Property,Excellent,false
@@ -12823,9 +13835,11 @@ Word.Range,"endnotes",Property,Poor,false
 Word.Range,"fields",Property,Good,false
 Word.Range,"font",Property,Fine,false
 Word.Range,"footnotes",Property,Poor,true
+Word.Range,"hasNoProofing",Property,Great,false
 Word.Range,"hyperlink",Property,Excellent,false
 Word.Range,"inlinePictures",Property,Good,false
 Word.Range,"isEmpty",Property,Poor,false
+Word.Range,"listFormat",Property,Great,false
 Word.Range,"lists",Property,Fine,false
 Word.Range,"pages",Property,Poor,false
 Word.Range,"paragraphs",Property,Good,false
@@ -12856,7 +13870,7 @@ Word.Range,"getNextTextRangeOrNullObject(endingMarks, trimSpacing)",Method,Excel
 Word.Range,"getOoxml()",Method,Fine,true
 Word.Range,"getRange(rangeLocation)",Method,Fine,true
 Word.Range,"getReviewedText(changeTrackingVersion)",Method,Fine,true
-Word.Range,"getReviewedText(changeTrackingVersionString)",Method,Fine,false
+Word.Range,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 Word.Range,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,true
 Word.Range,"getTrackedChanges()",Method,Good,false
 Word.Range,"highlight()",Method,Fine,false
@@ -12867,19 +13881,19 @@ Word.Range,"insertComment(commentText)",Method,Poor,true
 Word.Range,"insertContentControl(contentControlType)",Method,Fine,true
 Word.Range,"insertEndnote(insertText)",Method,Fine,false
 Word.Range,"insertField(insertLocation, fieldType, text, removeFormatting)",Method,Good,true
-Word.Range,"insertField(insertLocation, fieldTypeString, text, removeFormatting)",Method,Good,false
+Word.Range,"insertField(insertLocation, fieldType, text, removeFormatting)",Method,Good,false
 Word.Range,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
 Word.Range,"insertFootnote(insertText)",Method,Fine,true
 Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
-Word.Range,"insertGeometricShape(geometricShapeTypeString, insertShapeOptions)",Method,Fine,false
+Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertHtml(html, insertLocation)",Method,Fine,true
-Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,false
+Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
 Word.Range,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
 Word.Range,"insertParagraph(paragraphText, insertLocation)",Method,Fine,true
 Word.Range,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Good,false
 Word.Range,"insertText(text, insertLocation)",Method,Fine,true
-Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
+Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
 Word.Range,"intersectWith(range)",Method,Excellent,false
 Word.Range,"intersectWithOrNullObject(range)",Method,Excellent,false
 Word.Range,"load(options)",Method,Excellent,false
@@ -12888,7 +13902,7 @@ Word.Range,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Range,"removeHighlight()",Method,Good,false
 Word.Range,"search(searchText, searchOptions)",Method,Excellent,false
 Word.Range,"select(selectionMode)",Method,Poor,true
-Word.Range,"select(selectionModeString)",Method,Poor,false
+Word.Range,"select(selectionMode)",Method,Poor,false
 Word.Range,"set(properties, options)",Method,Good,false
 Word.Range,"set(properties)",Method,Good,false
 Word.Range,"split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)",Method,Fine,false
@@ -12913,6 +13927,33 @@ Word.RangeLocation,"content",EnumField,Fine,false
 Word.RangeLocation,"end",EnumField,Good,false
 Word.RangeLocation,"start",EnumField,Good,false
 Word.RangeLocation,"whole",EnumField,Great,false
+Word.ReflectionFormat,N/A,Class,Unknown,false
+Word.ReflectionFormat,"blur",Property,Excellent,false
+Word.ReflectionFormat,"context",Property,Excellent,false
+Word.ReflectionFormat,"offset",Property,Great,false
+Word.ReflectionFormat,"size",Property,Great,false
+Word.ReflectionFormat,"transparency",Property,Excellent,false
+Word.ReflectionFormat,"type",Property,Excellent,false
+Word.ReflectionFormat,"load(options)",Method,Excellent,false
+Word.ReflectionFormat,"load(propertyNames)",Method,Excellent,false
+Word.ReflectionFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.ReflectionFormat,"set(properties, options)",Method,Good,false
+Word.ReflectionFormat,"set(properties)",Method,Good,false
+Word.ReflectionFormat,"toJSON()",Method,Excellent,false
+Word.ReflectionFormat,"track()",Method,Excellent,false
+Word.ReflectionFormat,"untrack()",Method,Excellent,false
+Word.ReflectionType,N/A,Enum,Unknown,false
+Word.ReflectionType,"mixed",EnumField,Fine,false
+Word.ReflectionType,"none",EnumField,Fine,false
+Word.ReflectionType,"type1",EnumField,Fine,false
+Word.ReflectionType,"type2",EnumField,Fine,false
+Word.ReflectionType,"type3",EnumField,Fine,false
+Word.ReflectionType,"type4",EnumField,Fine,false
+Word.ReflectionType,"type5",EnumField,Fine,false
+Word.ReflectionType,"type6",EnumField,Fine,false
+Word.ReflectionType,"type7",EnumField,Fine,false
+Word.ReflectionType,"type8",EnumField,Fine,false
+Word.ReflectionType,"type9",EnumField,Fine,false
 Word.RelativeHorizontalPosition,N/A,Enum,Fine,false
 Word.RelativeHorizontalPosition,"character",EnumField,Fine,false
 Word.RelativeHorizontalPosition,"column",EnumField,Fine,false
@@ -12964,9 +14005,9 @@ Word.Section,N/A,Class,Unknown,true
 Word.Section,"body",Property,Good,false
 Word.Section,"context",Property,Excellent,false
 Word.Section,"getFooter(type)",Method,Poor,true
-Word.Section,"getFooter(typeString)",Method,Poor,true
+Word.Section,"getFooter(type)",Method,Poor,true
 Word.Section,"getHeader(type)",Method,Poor,true
-Word.Section,"getHeader(typeString)",Method,Poor,true
+Word.Section,"getHeader(type)",Method,Poor,true
 Word.Section,"getNext()",Method,Great,false
 Word.Section,"getNextOrNullObject()",Method,Excellent,false
 Word.Section,"load(options)",Method,Excellent,false
@@ -13070,7 +14111,79 @@ Word.ShadingTextureType,"percent87Pt5",EnumField,Fine,false
 Word.ShadingTextureType,"percent90",EnumField,Fine,false
 Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
-Word.Shape,N/A,Class,Missing,false
+Word.ShadowFormat,N/A,Class,Unknown,false
+Word.ShadowFormat,"blur",Property,Excellent,false
+Word.ShadowFormat,"context",Property,Excellent,false
+Word.ShadowFormat,"foregroundColor",Property,Great,false
+Word.ShadowFormat,"isVisible",Property,Excellent,false
+Word.ShadowFormat,"obscured",Property,Great,false
+Word.ShadowFormat,"offsetX",Property,Excellent,false
+Word.ShadowFormat,"offsetY",Property,Excellent,false
+Word.ShadowFormat,"rotateWithShape",Property,Excellent,false
+Word.ShadowFormat,"size",Property,Good,false
+Word.ShadowFormat,"style",Property,Great,false
+Word.ShadowFormat,"transparency",Property,Excellent,false
+Word.ShadowFormat,"type",Property,Good,false
+Word.ShadowFormat,"incrementOffsetX(increment)",Method,Fine,false
+Word.ShadowFormat,"incrementOffsetY(increment)",Method,Good,false
+Word.ShadowFormat,"load(options)",Method,Excellent,false
+Word.ShadowFormat,"load(propertyNames)",Method,Excellent,false
+Word.ShadowFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.ShadowFormat,"set(properties, options)",Method,Good,false
+Word.ShadowFormat,"set(properties)",Method,Good,false
+Word.ShadowFormat,"toJSON()",Method,Excellent,false
+Word.ShadowFormat,"track()",Method,Excellent,false
+Word.ShadowFormat,"untrack()",Method,Excellent,false
+Word.ShadowStyle,N/A,Enum,Unknown,false
+Word.ShadowStyle,"innerShadow",EnumField,Fine,false
+Word.ShadowStyle,"mixed",EnumField,Fine,false
+Word.ShadowStyle,"outerShadow",EnumField,Fine,false
+Word.ShadowType,N/A,Enum,Unknown,false
+Word.ShadowType,"mixed",EnumField,Fine,false
+Word.ShadowType,"type1",EnumField,Fine,false
+Word.ShadowType,"type10",EnumField,Fine,false
+Word.ShadowType,"type11",EnumField,Fine,false
+Word.ShadowType,"type12",EnumField,Fine,false
+Word.ShadowType,"type13",EnumField,Fine,false
+Word.ShadowType,"type14",EnumField,Fine,false
+Word.ShadowType,"type15",EnumField,Fine,false
+Word.ShadowType,"type16",EnumField,Fine,false
+Word.ShadowType,"type17",EnumField,Fine,false
+Word.ShadowType,"type18",EnumField,Fine,false
+Word.ShadowType,"type19",EnumField,Fine,false
+Word.ShadowType,"type2",EnumField,Fine,false
+Word.ShadowType,"type20",EnumField,Fine,false
+Word.ShadowType,"type21",EnumField,Fine,false
+Word.ShadowType,"type22",EnumField,Fine,false
+Word.ShadowType,"type23",EnumField,Fine,false
+Word.ShadowType,"type24",EnumField,Fine,false
+Word.ShadowType,"type25",EnumField,Fine,false
+Word.ShadowType,"type26",EnumField,Fine,false
+Word.ShadowType,"type27",EnumField,Fine,false
+Word.ShadowType,"type28",EnumField,Fine,false
+Word.ShadowType,"type29",EnumField,Fine,false
+Word.ShadowType,"type3",EnumField,Fine,false
+Word.ShadowType,"type30",EnumField,Fine,false
+Word.ShadowType,"type31",EnumField,Fine,false
+Word.ShadowType,"type32",EnumField,Fine,false
+Word.ShadowType,"type33",EnumField,Fine,false
+Word.ShadowType,"type34",EnumField,Fine,false
+Word.ShadowType,"type35",EnumField,Fine,false
+Word.ShadowType,"type36",EnumField,Fine,false
+Word.ShadowType,"type37",EnumField,Fine,false
+Word.ShadowType,"type38",EnumField,Fine,false
+Word.ShadowType,"type39",EnumField,Fine,false
+Word.ShadowType,"type4",EnumField,Fine,false
+Word.ShadowType,"type40",EnumField,Fine,false
+Word.ShadowType,"type41",EnumField,Fine,false
+Word.ShadowType,"type42",EnumField,Fine,false
+Word.ShadowType,"type43",EnumField,Fine,false
+Word.ShadowType,"type5",EnumField,Fine,false
+Word.ShadowType,"type6",EnumField,Fine,false
+Word.ShadowType,"type7",EnumField,Fine,false
+Word.ShadowType,"type8",EnumField,Fine,false
+Word.ShadowType,"type9",EnumField,Fine,false
+Word.Shape,N/A,Class,Missing,true
 Word.Shape,"allowOverlap",Property,Great,false
 Word.Shape,"altTextDescription",Property,Excellent,false
 Word.Shape,"body",Property,Good,false
@@ -13098,20 +14211,20 @@ Word.Shape,"textFrame",Property,Fine,false
 Word.Shape,"textWrap",Property,Fine,false
 Word.Shape,"top",Property,Fine,false
 Word.Shape,"topRelative",Property,Fine,false
-Word.Shape,"type",Property,Fine,false
+Word.Shape,"type",Property,Fine,true
 Word.Shape,"visible",Property,Great,false
 Word.Shape,"width",Property,Poor,false
 Word.Shape,"widthRelative",Property,Fine,false
-Word.Shape,"delete()",Method,Fine,false
+Word.Shape,"delete()",Method,Fine,true
 Word.Shape,"load(options)",Method,Excellent,false
 Word.Shape,"load(propertyNames)",Method,Excellent,false
 Word.Shape,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Shape,"moveHorizontally(distance)",Method,Fine,false
 Word.Shape,"moveVertically(distance)",Method,Fine,false
 Word.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,false
-Word.Shape,"scaleHeight(scaleFactor, scaleTypeString, scaleFromString)",Method,Good,false
+Word.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,false
 Word.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,false
-Word.Shape,"scaleWidth(scaleFactor, scaleTypeString, scaleFromString)",Method,Good,false
+Word.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,false
 Word.Shape,"select(selectMultipleShapes)",Method,Missing,false
 Word.Shape,"set(properties, options)",Method,Good,false
 Word.Shape,"set(properties)",Method,Good,false
@@ -13123,7 +14236,7 @@ Word.ShapeAutoSize,"mixed",EnumField,Good,false
 Word.ShapeAutoSize,"none",EnumField,Fine,false
 Word.ShapeAutoSize,"shapeToFitText",EnumField,Fine,false
 Word.ShapeAutoSize,"textToFitShape",EnumField,Fine,false
-Word.ShapeCollection,N/A,Class,Unknown,false
+Word.ShapeCollection,N/A,Class,Unknown,true
 Word.ShapeCollection,"context",Property,Excellent,false
 Word.ShapeCollection,"items",Property,Poor,false
 Word.ShapeCollection,"getByGeometricTypes(types)",Method,Good,false
@@ -13131,8 +14244,8 @@ Word.ShapeCollection,"getById(id)",Method,Great,false
 Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Excellent,false
 Word.ShapeCollection,"getByIds(ids)",Method,Fine,false
 Word.ShapeCollection,"getByNames(names)",Method,Fine,false
-Word.ShapeCollection,"getByTypes(types)",Method,Fine,false
-Word.ShapeCollection,"getFirst()",Method,Great,false
+Word.ShapeCollection,"getByTypes(types)",Method,Fine,true
+Word.ShapeCollection,"getFirst()",Method,Great,true
 Word.ShapeCollection,"getFirstOrNullObject()",Method,Excellent,false
 Word.ShapeCollection,"group()",Method,Great,false
 Word.ShapeCollection,"load(options)",Method,Excellent,false
@@ -13228,7 +14341,7 @@ Word.ShapeTextWrapType,"square",EnumField,Fine,false
 Word.ShapeTextWrapType,"through",EnumField,Fine,false
 Word.ShapeTextWrapType,"tight",EnumField,Fine,false
 Word.ShapeTextWrapType,"topBottom",EnumField,Fine,false
-Word.ShapeType,N/A,Enum,Unknown,false
+Word.ShapeType,N/A,Enum,Unknown,true
 Word.ShapeType,"canvas",EnumField,Fine,false
 Word.ShapeType,"geometricShape",EnumField,Fine,false
 Word.ShapeType,"group",EnumField,Fine,false
@@ -13282,6 +14395,28 @@ Word.StyleType,"character",EnumField,Fine,false
 Word.StyleType,"list",EnumField,Fine,false
 Word.StyleType,"paragraph",EnumField,Fine,false
 Word.StyleType,"table",EnumField,Fine,false
+Word.StylisticSet,N/A,Enum,Unknown,false
+Word.StylisticSet,"default",EnumField,Good,false
+Word.StylisticSet,"set01",EnumField,Fine,false
+Word.StylisticSet,"set02",EnumField,Fine,false
+Word.StylisticSet,"set03",EnumField,Fine,false
+Word.StylisticSet,"set04",EnumField,Fine,false
+Word.StylisticSet,"set05",EnumField,Fine,false
+Word.StylisticSet,"set06",EnumField,Fine,false
+Word.StylisticSet,"set07",EnumField,Fine,false
+Word.StylisticSet,"set08",EnumField,Fine,false
+Word.StylisticSet,"set09",EnumField,Fine,false
+Word.StylisticSet,"set10",EnumField,Fine,false
+Word.StylisticSet,"set11",EnumField,Fine,false
+Word.StylisticSet,"set12",EnumField,Fine,false
+Word.StylisticSet,"set13",EnumField,Fine,false
+Word.StylisticSet,"set14",EnumField,Fine,false
+Word.StylisticSet,"set15",EnumField,Fine,false
+Word.StylisticSet,"set16",EnumField,Fine,false
+Word.StylisticSet,"set17",EnumField,Fine,false
+Word.StylisticSet,"set18",EnumField,Fine,false
+Word.StylisticSet,"set19",EnumField,Fine,false
+Word.StylisticSet,"set20",EnumField,Fine,false
 Word.Table,N/A,Class,Unknown,true
 Word.Table,"alignment",Property,Excellent,true
 Word.Table,"context",Property,Excellent,false
@@ -13323,11 +14458,11 @@ Word.Table,"deleteColumns(columnIndex, columnCount)",Method,Great,false
 Word.Table,"deleteRows(rowIndex, rowCount)",Method,Good,false
 Word.Table,"distributeColumns()",Method,Good,false
 Word.Table,"getBorder(borderLocation)",Method,Fine,true
-Word.Table,"getBorder(borderLocationString)",Method,Fine,false
+Word.Table,"getBorder(borderLocation)",Method,Fine,false
 Word.Table,"getCell(rowIndex, cellIndex)",Method,Great,true
 Word.Table,"getCellOrNullObject(rowIndex, cellIndex)",Method,Excellent,false
 Word.Table,"getCellPadding(cellPaddingLocation)",Method,Poor,true
-Word.Table,"getCellPadding(cellPaddingLocationString)",Method,Poor,false
+Word.Table,"getCellPadding(cellPaddingLocation)",Method,Poor,false
 Word.Table,"getNext()",Method,Great,false
 Word.Table,"getNextOrNullObject()",Method,Excellent,false
 Word.Table,"getParagraphAfter()",Method,Great,false
@@ -13344,11 +14479,11 @@ Word.Table,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.Table,"mergeCells(topRow, firstCell, bottomRow, lastCell)",Method,Fine,false
 Word.Table,"search(searchText, searchOptions)",Method,Excellent,false
 Word.Table,"select(selectionMode)",Method,Fine,false
-Word.Table,"select(selectionModeString)",Method,Fine,false
+Word.Table,"select(selectionMode)",Method,Fine,false
 Word.Table,"set(properties, options)",Method,Good,false
 Word.Table,"set(properties)",Method,Good,false
 Word.Table,"setCellPadding(cellPaddingLocation, cellPadding)",Method,Poor,false
-Word.Table,"setCellPadding(cellPaddingLocationString, cellPadding)",Method,Poor,false
+Word.Table,"setCellPadding(cellPaddingLocation, cellPadding)",Method,Poor,false
 Word.Table,"toJSON()",Method,Excellent,false
 Word.Table,"track()",Method,Excellent,false
 Word.Table,"untrack()",Method,Excellent,false
@@ -13381,9 +14516,9 @@ Word.TableCell,"width",Property,Poor,false
 Word.TableCell,"deleteColumn()",Method,Great,false
 Word.TableCell,"deleteRow()",Method,Fine,false
 Word.TableCell,"getBorder(borderLocation)",Method,Fine,false
-Word.TableCell,"getBorder(borderLocationString)",Method,Fine,true
+Word.TableCell,"getBorder(borderLocation)",Method,Fine,true
 Word.TableCell,"getCellPadding(cellPaddingLocation)",Method,Poor,false
-Word.TableCell,"getCellPadding(cellPaddingLocationString)",Method,Poor,true
+Word.TableCell,"getCellPadding(cellPaddingLocation)",Method,Poor,true
 Word.TableCell,"getNext()",Method,Great,false
 Word.TableCell,"getNextOrNullObject()",Method,Excellent,false
 Word.TableCell,"insertColumns(insertLocation, columnCount, values)",Method,Excellent,false
@@ -13394,7 +14529,7 @@ Word.TableCell,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.TableCell,"set(properties, options)",Method,Good,false
 Word.TableCell,"set(properties)",Method,Good,false
 Word.TableCell,"setCellPadding(cellPaddingLocation, cellPadding)",Method,Poor,false
-Word.TableCell,"setCellPadding(cellPaddingLocationString, cellPadding)",Method,Poor,false
+Word.TableCell,"setCellPadding(cellPaddingLocation, cellPadding)",Method,Poor,false
 Word.TableCell,"split(rowCount, columnCount)",Method,Good,false
 Word.TableCell,"toJSON()",Method,Excellent,false
 Word.TableCell,"track()",Method,Excellent,false
@@ -13440,9 +14575,9 @@ Word.TableRow,"verticalAlignment",Property,Excellent,false
 Word.TableRow,"clear()",Method,Poor,false
 Word.TableRow,"delete()",Method,Fine,false
 Word.TableRow,"getBorder(borderLocation)",Method,Poor,true
-Word.TableRow,"getBorder(borderLocationString)",Method,Poor,false
+Word.TableRow,"getBorder(borderLocation)",Method,Poor,false
 Word.TableRow,"getCellPadding(cellPaddingLocation)",Method,Poor,true
-Word.TableRow,"getCellPadding(cellPaddingLocationString)",Method,Poor,false
+Word.TableRow,"getCellPadding(cellPaddingLocation)",Method,Poor,false
 Word.TableRow,"getNext()",Method,Great,false
 Word.TableRow,"getNextOrNullObject()",Method,Excellent,false
 Word.TableRow,"insertContentControl()",Method,Poor,false
@@ -13453,11 +14588,11 @@ Word.TableRow,"load(propertyNamesAndPaths)",Method,Excellent,false
 Word.TableRow,"merge()",Method,Poor,false
 Word.TableRow,"search(searchText, searchOptions)",Method,Excellent,false
 Word.TableRow,"select(selectionMode)",Method,Poor,false
-Word.TableRow,"select(selectionModeString)",Method,Poor,false
+Word.TableRow,"select(selectionMode)",Method,Poor,false
 Word.TableRow,"set(properties, options)",Method,Good,false
 Word.TableRow,"set(properties)",Method,Good,false
 Word.TableRow,"setCellPadding(cellPaddingLocation, cellPadding)",Method,Poor,false
-Word.TableRow,"setCellPadding(cellPaddingLocationString, cellPadding)",Method,Poor,false
+Word.TableRow,"setCellPadding(cellPaddingLocation, cellPadding)",Method,Poor,false
 Word.TableRow,"toJSON()",Method,Excellent,false
 Word.TableRow,"track()",Method,Excellent,false
 Word.TableRow,"untrack()",Method,Excellent,false
@@ -13509,6 +14644,88 @@ Word.TextFrame,"set(properties)",Method,Good,false
 Word.TextFrame,"toJSON()",Method,Excellent,false
 Word.TextFrame,"track()",Method,Excellent,false
 Word.TextFrame,"untrack()",Method,Excellent,false
+Word.TextureAlignment,N/A,Enum,Unknown,false
+Word.TextureAlignment,"bottom",EnumField,Fine,false
+Word.TextureAlignment,"bottomLeft",EnumField,Fine,false
+Word.TextureAlignment,"bottomRight",EnumField,Fine,false
+Word.TextureAlignment,"center",EnumField,Fine,false
+Word.TextureAlignment,"left",EnumField,Fine,false
+Word.TextureAlignment,"mixed",EnumField,Excellent,false
+Word.TextureAlignment,"right",EnumField,Fine,false
+Word.TextureAlignment,"top",EnumField,Fine,false
+Word.TextureAlignment,"topLeft",EnumField,Fine,false
+Word.TextureAlignment,"topRight",EnumField,Fine,false
+Word.TextureType,N/A,Enum,Good,false
+Word.TextureType,"mixed",EnumField,Excellent,false
+Word.TextureType,"preset",EnumField,Fine,false
+Word.TextureType,"userDefined",EnumField,Fine,false
+Word.ThemeColorIndex,N/A,Enum,Unknown,false
+Word.ThemeColorIndex,"accent1",EnumField,Fine,false
+Word.ThemeColorIndex,"accent2",EnumField,Fine,false
+Word.ThemeColorIndex,"accent3",EnumField,Fine,false
+Word.ThemeColorIndex,"accent4",EnumField,Fine,false
+Word.ThemeColorIndex,"accent5",EnumField,Good,false
+Word.ThemeColorIndex,"accent6",EnumField,Fine,false
+Word.ThemeColorIndex,"background1",EnumField,Fine,false
+Word.ThemeColorIndex,"background2",EnumField,Fine,false
+Word.ThemeColorIndex,"hyperlink",EnumField,Good,false
+Word.ThemeColorIndex,"hyperlinkFollowed",EnumField,Good,false
+Word.ThemeColorIndex,"mainDark1",EnumField,Fine,false
+Word.ThemeColorIndex,"mainDark2",EnumField,Fine,false
+Word.ThemeColorIndex,"mainLight1",EnumField,Fine,false
+Word.ThemeColorIndex,"mainLight2",EnumField,Fine,false
+Word.ThemeColorIndex,"notThemeColor",EnumField,Great,false
+Word.ThemeColorIndex,"text1",EnumField,Fine,false
+Word.ThemeColorIndex,"text2",EnumField,Fine,false
+Word.ThreeDimensionalFormat,N/A,Class,Unknown,false
+Word.ThreeDimensionalFormat,"bevelBottomDepth",Property,Good,false
+Word.ThreeDimensionalFormat,"bevelBottomInset",Property,Good,false
+Word.ThreeDimensionalFormat,"bevelBottomType",Property,Excellent,false
+Word.ThreeDimensionalFormat,"bevelTopDepth",Property,Good,false
+Word.ThreeDimensionalFormat,"bevelTopInset",Property,Good,false
+Word.ThreeDimensionalFormat,"bevelTopType",Property,Excellent,false
+Word.ThreeDimensionalFormat,"context",Property,Excellent,false
+Word.ThreeDimensionalFormat,"contourColor",Property,Great,false
+Word.ThreeDimensionalFormat,"contourWidth",Property,Good,false
+Word.ThreeDimensionalFormat,"depth",Property,Good,false
+Word.ThreeDimensionalFormat,"extrusionColor",Property,Great,false
+Word.ThreeDimensionalFormat,"extrusionColorType",Property,Excellent,false
+Word.ThreeDimensionalFormat,"fieldOfView",Property,Good,false
+Word.ThreeDimensionalFormat,"isPerspective",Property,Great,false
+Word.ThreeDimensionalFormat,"isVisible",Property,Excellent,false
+Word.ThreeDimensionalFormat,"lightAngle",Property,Good,false
+Word.ThreeDimensionalFormat,"presetCamera",Property,Great,false
+Word.ThreeDimensionalFormat,"presetExtrusionDirection",Property,Good,false
+Word.ThreeDimensionalFormat,"presetLighting",Property,Excellent,false
+Word.ThreeDimensionalFormat,"presetLightingDirection",Property,Great,false
+Word.ThreeDimensionalFormat,"presetLightingSoftness",Property,Good,false
+Word.ThreeDimensionalFormat,"presetMaterial",Property,Good,false
+Word.ThreeDimensionalFormat,"presetThreeDimensionalFormat",Property,Fine,false
+Word.ThreeDimensionalFormat,"projectText",Property,Great,false
+Word.ThreeDimensionalFormat,"rotationX",Property,Great,false
+Word.ThreeDimensionalFormat,"rotationY",Property,Great,false
+Word.ThreeDimensionalFormat,"rotationZ",Property,Good,false
+Word.ThreeDimensionalFormat,"z",Property,Great,false
+Word.ThreeDimensionalFormat,"incrementRotationHorizontal(increment)",Method,Fine,false
+Word.ThreeDimensionalFormat,"incrementRotationVertical(increment)",Method,Fine,false
+Word.ThreeDimensionalFormat,"incrementRotationX(increment)",Method,Fine,false
+Word.ThreeDimensionalFormat,"incrementRotationY(increment)",Method,Fine,false
+Word.ThreeDimensionalFormat,"incrementRotationZ(increment)",Method,Fine,false
+Word.ThreeDimensionalFormat,"load(options)",Method,Excellent,false
+Word.ThreeDimensionalFormat,"load(propertyNames)",Method,Excellent,false
+Word.ThreeDimensionalFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
+Word.ThreeDimensionalFormat,"resetRotation()",Method,Fine,false
+Word.ThreeDimensionalFormat,"set(properties, options)",Method,Good,false
+Word.ThreeDimensionalFormat,"set(properties)",Method,Good,false
+Word.ThreeDimensionalFormat,"setExtrusionDirection(presetExtrusionDirection)",Method,Poor,false
+Word.ThreeDimensionalFormat,"setExtrusionDirection(presetExtrusionDirection)",Method,Poor,false
+Word.ThreeDimensionalFormat,"setPresetCamera(presetCamera)",Method,Fine,false
+Word.ThreeDimensionalFormat,"setPresetCamera(presetCamera)",Method,Fine,false
+Word.ThreeDimensionalFormat,"setThreeDimensionalFormat(presetThreeDimensionalFormat)",Method,Fine,false
+Word.ThreeDimensionalFormat,"setThreeDimensionalFormat(presetThreeDimensionalFormat)",Method,Fine,false
+Word.ThreeDimensionalFormat,"toJSON()",Method,Excellent,false
+Word.ThreeDimensionalFormat,"track()",Method,Excellent,false
+Word.ThreeDimensionalFormat,"untrack()",Method,Excellent,false
 Word.TrackedChange,N/A,Class,Unknown,true
 Word.TrackedChange,"author",Property,Poor,false
 Word.TrackedChange,"context",Property,Excellent,false
@@ -13575,8 +14792,8 @@ Word.VerticalAlignment,"bottom",EnumField,Fine,false
 Word.VerticalAlignment,"center",EnumField,Fine,false
 Word.VerticalAlignment,"mixed",EnumField,Fine,false
 Word.VerticalAlignment,"top",EnumField,Fine,false
-Word.Window,N/A,Class,Unknown,false
-Word.Window,"activePane",Property,Poor,false
+Word.Window,N/A,Class,Unknown,true
+Word.Window,"activePane",Property,Poor,true
 Word.Window,"context",Property,Excellent,false
 Word.Window,"panes",Property,Poor,false
 Word.Window,"load(propertyNames)",Method,Excellent,false
