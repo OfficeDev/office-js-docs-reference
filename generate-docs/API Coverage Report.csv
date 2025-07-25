@@ -4470,10 +4470,10 @@ Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"serviceId",Property,Great
 Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"source",Property,Fine,false
 Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"type",Property,Fine,false
 Excel.LinkedEntityDataDomainRefreshMode,N/A,Enum,Unknown,false
-Excel.LinkedEntityDataDomainRefreshMode,"manual",EnumField,Fine,false
-Excel.LinkedEntityDataDomainRefreshMode,"onLoad",EnumField,Fine,false
-Excel.LinkedEntityDataDomainRefreshMode,"periodic",EnumField,Great,false
-Excel.LinkedEntityDataDomainRefreshMode,"unknown",EnumField,Fine,false
+Excel.LinkedEntityDataDomainRefreshMode,"manual",EnumField,Good,false
+Excel.LinkedEntityDataDomainRefreshMode,"onLoad",EnumField,Good,false
+Excel.LinkedEntityDataDomainRefreshMode,"periodic",EnumField,Excellent,false
+Excel.LinkedEntityDataDomainRefreshMode,"unknown",EnumField,Good,false
 Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs,N/A,Interface,Fine,false
 Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs,"id",Property,Fine,false
 Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs,"refreshMode",Property,Fine,false
