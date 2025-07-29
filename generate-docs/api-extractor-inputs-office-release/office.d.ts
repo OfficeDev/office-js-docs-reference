@@ -3630,6 +3630,19 @@ export declare namespace Office {
          * @returns Promise to the access token.
          */
         getAccessToken(options?: AuthOptions): Promise<string>;
+        /**
+         * Gets information about the signed-in user. 
+         * The add-in can pass this information to the Microsoft authentication library (MSAL.js) to get an access token for the current session.
+         *
+         * @remarks
+         *
+         * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+         * 
+         * **Requirement set**: NestedAppAuth 1.1
+         * 
+         * @returns Promise to the AuthContext object.
+         */
+        getAuthContext(): Promise<AuthContext>;
     }
     /**
      * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
@@ -3685,6 +3698,35 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.
          */
         forMSGraphAccess?: boolean;
+    }
+    /**
+     * Represents the user information which can be passed to the Microsoft Authentication Library for JavaScript (MSAL.js).
+     */
+    export interface AuthContext {
+        /**
+         * The unique ID of the account.
+         */
+        userObjectId: string;
+        /**
+         * The full tenant or organizational ID that this account belongs to.
+         */
+        tenantId: string;
+        /**
+         * The user's internet-style login name, based on the Internet standard RFC. Also known as UPN. 
+         */
+        userPrincipalName: string;
+        /**
+         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/72f10e1e-cab8-4950-a8da-7c45339575b0 | Microsoft personal account}.
+         */
+        authorityType: "aad" | "msa" | "other";
+        /**
+         * The URL that indicates a directory that MSAL can request tokens from.
+         */
+        authorityBaseUrl: string;
+        /**
+         * An optional claim that provides a hint about the user account attempting to sign in.
+         */
+        loginHint: string;
     }
     /**
      * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
