@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - requirement set 1.9
 description: Outlook Mailbox API requirement set 1.9 version of the Mailbox object model.
-ms.date: 07/24/2025
+ms.date: 07/31/2025
 ms.localizationpriority: medium
 ---
 
@@ -63,4 +63,4 @@ You can subscribe to and unsubscribe from the following events using [addHandler
 | [Event](/javascript/api/office/office.eventtype?view=outlook-js-1.9&preserve-view=true) | Description | Minimum<br>requirement set |
 |---|---|:---:|
 |`ItemChanged`| A different Outlook item is selected for viewing while the task pane is pinned. | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
-|`DragAndDrop`| In Outlook on the web or the new Outlook on Windows, a message or file attachment is dragged and dropped into an add-in's task pane. | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
+|`ItemDraggedAndDropped`| In Outlook on the web or the new Outlook on Windows, messages or file attachments are dragged and dropped into an add-in's task pane. | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
