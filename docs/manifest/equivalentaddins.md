@@ -1,7 +1,7 @@
 ---
 title: EquivalentAddins element in the manifest file
 description: Specifies backwards compatibility with one or more equivalent COM or VSTO add-ins or XLLs.
-ms.date: 07/12/2025
+ms.date: 07/21/2025
 ms.localizationpriority: medium
 ---
 
@@ -20,6 +20,9 @@ Specifies compatibility with one or more equivalent COM add-ins, VSTO add-ins, o
 
 For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
+> [!NOTE]
+> Some child elements are not valid in the Mail schemas. See [Can contain](#can-contain).
+
 ## Syntax
 
 ```XML
@@ -35,6 +38,42 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 ## Must contain
 
 - [EquivalentAddin](equivalentaddin.md)
+
+## Can contain
+
+The **\<EquivalentAddins\>** element can contain the following child element.
+
+|Element|Content|Mail|TaskPane|
+|:-----|:-----:|:-----:|:-----:|
+|[Effect](#effect)|No|No|Yes|
+
+### Effect
+
+Specifies either that the COM or VSTO add-in is disabled and hidden (instead of the Office Web Add-in) when they conflict, or specifies that the user chooses which to disable and hide. There are two possible values.
+
+- **DisableWithNotification**: All of the COM and VSTO add-ins specified in the child **\<EquivalentAddin\>** elements will be disabled and hidden. A popup dialog notifies the user that this happening.
+- **UserOptionToDisable**: The user is prompted to choose whether to disable and hide the COM and VSTO add-ins specified in the child **\<EquivalentAddin\>** elements or to disable and hide the Office Add-in.
+
+> [!NOTE]
+> If the **\<Effect\>** element is not present, the COM and VSTO add-ins are enabled and the Office Add-in is disabled and hidden on the Windows computer.
+
+The following is an example. The **\<Effect\>** element must be after all the **\<EquivalentAddin\>** elements.
+
+```xml
+<VersionOverrides>
+  ...
+  <EquivalentAddins>
+    <EquivalentAddin>
+      <ProgId>ContosoAddin</ProgId>
+      <Type>COM</Type>
+    </EquivalentAddin>
+    <Effect>UserOptionToDisable</Effect>
+  </EquivalentAddins>
+</VersionOverrides>
+```
+
+> [!IMPORTANT]
+> The **\<Effect\>** element is not available in Outlook.
 
 ## See also
 
