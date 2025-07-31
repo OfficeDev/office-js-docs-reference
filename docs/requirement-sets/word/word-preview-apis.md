@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 07/17/2025
+ms.date: 07/31/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -27,6 +27,9 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Body](/javascript/api/word/word.body)|[type](/javascript/api/word/word.body#word-word-body-type-member)|Gets the type of the body.|
+|[Break](/javascript/api/word/word.break)|[pageIndex](/javascript/api/word/word.break#word-word-break-pageindex-member)|Returns the page number on which the break occurs.|
+||[range](/javascript/api/word/word.break#word-word-break-range-member)|Returns a `Range` object that represents the portion of the document that's contained in the break.|
+|[BreakCollection](/javascript/api/word/word.breakcollection)|[items](/javascript/api/word/word.breakcollection#word-word-breakcollection-items-member)|Gets the loaded child items in this collection.|
 |[ColorFormat](/javascript/api/word/word.colorformat)|[brightness](/javascript/api/word/word.colorformat#word-word-colorformat-brightness-member)|Specifies the brightness of a specified shape color.|
 ||[objectThemeColor](/javascript/api/word/word.colorformat#word-word-colorformat-objectthemecolor-member)|Specifies the theme color for a color format.|
 ||[rgb](/javascript/api/word/word.colorformat#word-word-colorformat-rgb-member)|Specifies the red-green-blue (RGB) value of the specified color.|
@@ -34,12 +37,107 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[type](/javascript/api/word/word.colorformat#word-word-colorformat-type-member)|Returns the shape color type.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[resetState()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-resetstate-member(1))|Resets the state of the content control.|
 ||[setState(contentControlState: Word.ContentControlState)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-setstate-member(1))|Sets the state of the content control.|
+||[xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
 |[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|The event type.|
 |[ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs)|[eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)|The event type.|
 |[ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs)|[eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)|The event type.|
 |[ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs)|[eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)|The event type.|
 |[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
 |[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
+|[CustomXmlAddNodeOptions](/javascript/api/word/word.customxmladdnodeoptions)|[name](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-name-member)|If provided, specifies the base name of the element to be added.|
+||[namespaceUri](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-namespaceuri-member)|If provided, specifies the namespace of the element to be appended.|
+||[nextSibling](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-nextsibling-member)|If provided, specifies the node which should become the next sibling of the new node.|
+||[nodeType](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-nodetype-member)|If provided, specifies the type of node to add.|
+||[nodeValue](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-nodevalue-member)|If provided, specifies the value of the added node for those nodes that allow text.|
+|[CustomXmlAddSchemaOptions](/javascript/api/word/word.customxmladdschemaoptions)|[alias](/javascript/api/word/word.customxmladdschemaoptions#word-word-customxmladdschemaoptions-alias-member)|If provided, specifies the alias of the schema to be added to the collection.|
+||[fileName](/javascript/api/word/word.customxmladdschemaoptions#word-word-customxmladdschemaoptions-filename-member)|If provided, specifies the location of the schema on a disk.|
+||[installForAllUsers](/javascript/api/word/word.customxmladdschemaoptions#word-word-customxmladdschemaoptions-installforallusers-member)|If provided, specifies whether, in the case where the schema is being added to the Schema Library, the Schema Library keys should be written to the registry (`HKEY_LOCAL_MACHINE` for all users or `HKEY_CURRENT_USER` for just the current user).|
+||[namespaceUri](/javascript/api/word/word.customxmladdschemaoptions#word-word-customxmladdschemaoptions-namespaceuri-member)|If provided, specifies the namespace of the schema to be added to the collection.|
+|[CustomXmlAddValidationErrorOptions](/javascript/api/word/word.customxmladdvalidationerroroptions)|[clearedOnUpdate](/javascript/api/word/word.customxmladdvalidationerroroptions#word-word-customxmladdvalidationerroroptions-clearedonupdate-member)|If provided, specifies whether the error is to be cleared from the Word.CustomXmlValidationErrorCollection when the XML is corrected and updated.|
+||[errorText](/javascript/api/word/word.customxmladdvalidationerroroptions#word-word-customxmladdvalidationerroroptions-errortext-member)|If provided, specifies the descriptive error text.|
+|[CustomXmlAppendChildNodeOptions](/javascript/api/word/word.customxmlappendchildnodeoptions)|[name](/javascript/api/word/word.customxmlappendchildnodeoptions#word-word-customxmlappendchildnodeoptions-name-member)|If provided, specifies the base name of the element to be appended.|
+||[namespaceUri](/javascript/api/word/word.customxmlappendchildnodeoptions#word-word-customxmlappendchildnodeoptions-namespaceuri-member)|If provided, specifies the namespace of the element to be appended.|
+||[nodeType](/javascript/api/word/word.customxmlappendchildnodeoptions#word-word-customxmlappendchildnodeoptions-nodetype-member)|If provided, specifies the type of node to append.|
+||[nodeValue](/javascript/api/word/word.customxmlappendchildnodeoptions#word-word-customxmlappendchildnodeoptions-nodevalue-member)|If provided, specifies the value of the appended node for those nodes that allow text.|
+|[CustomXmlInsertNodeBeforeOptions](/javascript/api/word/word.customxmlinsertnodebeforeoptions)|[name](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-name-member)|If provided, specifies the base name of the element to be inserted.|
+||[namespaceUri](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-namespaceuri-member)|If provided, specifies the namespace of the element to be inserted.|
+||[nextSibling](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-nextsibling-member)|If provided, specifies the context node.|
+||[nodeType](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-nodetype-member)|If provided, specifies the type of node to append.|
+||[nodeValue](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-nodevalue-member)|If provided, specifies the value of the inserted node for those nodes that allow text.|
+|[CustomXmlInsertSubtreeBeforeOptions](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions)|[nextSibling](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions#word-word-customxmlinsertsubtreebeforeoptions-nextsibling-member)|If provided, specifies the context node.|
+|[CustomXmlNode](/javascript/api/word/word.customxmlnode)|[appendChildNode(options?: Word.CustomXmlAppendChildNodeOptions)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-appendchildnode-member(1))|Appends a single node as the last child under the context element node in the tree.|
+||[appendChildSubtree(xml: string)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-appendchildsubtree-member(1))|Adds a subtree as the last child under the context element node in the tree.|
+||[attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member)|Gets a `CustomXmlNodeCollection` object representing the attributes of the current element in the current node.|
+||[baseName](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-basename-member)|Gets the base name of the node without the namespace prefix, if one exists.|
+||[childNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-childnodes-member)|Gets a `CustomXmlNodeCollection` object containing all of the child elements of the current node.|
+||[delete()](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-delete-member(1))|Deletes the current node from the tree (including all of its children, if any exist).|
+||[firstChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-firstchild-member)|Gets a `CustomXmlNode` object corresponding to the first child element of the current node.|
+||[hasChildNodes()](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-haschildnodes-member(1))|Specifies if the current element node has child element nodes.|
+||[insertNodeBefore(options?: Word.CustomXmlInsertNodeBeforeOptions)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-insertnodebefore-member(1))|Inserts a new node just before the context node in the tree.|
+||[insertSubtreeBefore(xml: string, options?: Word.CustomXmlInsertSubtreeBeforeOptions)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-insertsubtreebefore-member(1))|Inserts the specified subtree into the location just before the context node.|
+||[lastChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-lastchild-member)|Gets a `CustomXmlNode` object corresponding to the last child element of the current node.|
+||[namespaceUri](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-namespaceuri-member)|Gets the unique address identifier for the namespace of the node.|
+||[nextSibling](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-nextsibling-member)|Gets the next sibling node (element, comment, or processing instruction) of the current node.|
+||[nodeType](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-nodetype-member)|Gets the type of the current node.|
+||[nodeValue](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-nodevalue-member)|Specifies the value of the current node.|
+||[ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)|Gets the object representing the part associated with this node.|
+||[parentNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-parentnode-member)|Gets the parent element node of the current node.|
+||[previousSibling](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-previoussibling-member)|Gets the previous sibling node (element, comment, or processing instruction) of the current node.|
+||[removeChild(child: Word.CustomXmlNode)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-removechild-member(1))|Removes the specified child node from the tree.|
+||[replaceChildNode(oldNode: Word.CustomXmlNode, options?: Word.CustomXmlReplaceChildNodeOptions)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildnode-member(1))|Removes the specified child node and replaces it with a different node in the same location.|
+||[replaceChildSubtree(xml: string, oldNode: Word.CustomXmlNode)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildsubtree-member(1))|Removes the specified node and replaces it with a different subtree in the same location.|
+||[selectNodes(xPath: string)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectnodes-member(1))|Selects a collection of nodes matching an XPath expression.|
+||[selectSingleNode(xPath: string)](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectsinglenode-member(1))|Selects a single node from a collection matching an XPath expression.|
+||[text](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-text-member)|Specifies the text for the current node.|
+||[xml](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-xml-member)|Gets the XML representation of the current node and its children.|
+||[xpath](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-xpath-member)|Gets a string with the canonicalized XPath for the current node.|
+|[CustomXmlNodeCollection](/javascript/api/word/word.customxmlnodecollection)|[getCount()](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItem(index: number)](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-getitem-member(1))|Returns a `CustomXmlNode` object that represents the specified item in the collection.|
+||[items](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-items-member)|Gets the loaded child items in this collection.|
+|[CustomXmlPart](/javascript/api/word/word.customxmlpart)|[addNode(parent: Word.CustomXmlNode, options?: Word.CustomXmlAddNodeOptions)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-addnode-member(1))|Adds a node to the XML tree.|
+||[builtIn](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-builtin-member)|Gets a value that indicates whether the `CustomXmlPart` is built-in.|
+||[documentElement](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-documentelement-member)|Gets the root element of a bound region of data in the document.|
+||[errors](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-errors-member)|Gets a `CustomXmlValidationErrorCollection` object that provides access to any XML validation errors.|
+||[loadXml(xml: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-loadxml-member(1))|Populates the `CustomXmlPart` object from an XML string.|
+||[namespaceManager](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespacemanager-member)|Gets the set of namespace prefix mappings used against the current `CustomXmlPart` object.|
+||[schemaCollection](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-schemacollection-member)|Specifies a `CustomXmlSchemaCollection` object representing the set of schemas attached to a bound region of data in the document.|
+||[selectNodes(xPath: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectnodes-member(1))|Selects a collection of nodes from a custom XML part.|
+||[selectSingleNode(xPath: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectsinglenode-member(1))|Selects a single node within a custom XML part matching an XPath expression.|
+||[xml](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-xml-member)|Gets the XML representation of the current `CustomXmlPart` object.|
+|[CustomXmlPrefixMapping](/javascript/api/word/word.customxmlprefixmapping)|[namespaceUri](/javascript/api/word/word.customxmlprefixmapping#word-word-customxmlprefixmapping-namespaceuri-member)|Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.|
+||[prefix](/javascript/api/word/word.customxmlprefixmapping#word-word-customxmlprefixmapping-prefix-member)|Gets the prefix for the `CustomXmlPrefixMapping` object.|
+|[CustomXmlPrefixMappingCollection](/javascript/api/word/word.customxmlprefixmappingcollection)|[addNamespace(prefix: string, namespaceUri: string)](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-addnamespace-member(1))|Adds a custom namespace/prefix mapping to use when querying an item.|
+||[getCount()](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItem(index: number)](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-getitem-member(1))|Returns a `CustomXmlPrefixMapping` object that represents the specified item in the collection.|
+||[items](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-items-member)|Gets the loaded child items in this collection.|
+||[lookupNamespace(prefix: string)](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-lookupnamespace-member(1))|Gets the namespace corresponding to the specified prefix.|
+||[lookupPrefix(namespaceUri: string)](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-lookupprefix-member(1))|Gets the prefix corresponding to the specified namespace.|
+|[CustomXmlReplaceChildNodeOptions](/javascript/api/word/word.customxmlreplacechildnodeoptions)|[name](/javascript/api/word/word.customxmlreplacechildnodeoptions#word-word-customxmlreplacechildnodeoptions-name-member)|If provided, specifies the base name of the replacement element.|
+||[namespaceUri](/javascript/api/word/word.customxmlreplacechildnodeoptions#word-word-customxmlreplacechildnodeoptions-namespaceuri-member)|If provided, specifies the namespace of the replacement element.|
+||[nodeType](/javascript/api/word/word.customxmlreplacechildnodeoptions#word-word-customxmlreplacechildnodeoptions-nodetype-member)|If provided, specifies the type of the replacement node.|
+||[nodeValue](/javascript/api/word/word.customxmlreplacechildnodeoptions#word-word-customxmlreplacechildnodeoptions-nodevalue-member)|If provided, specifies the value of the replacement node for those nodes that allow text.|
+|[CustomXmlSchema](/javascript/api/word/word.customxmlschema)|[delete()](/javascript/api/word/word.customxmlschema#word-word-customxmlschema-delete-member(1))|Deletes this schema from the Word.CustomXmlSchemaCollection object.|
+||[location](/javascript/api/word/word.customxmlschema#word-word-customxmlschema-location-member)|Gets the location of the schema on a computer.|
+||[namespaceUri](/javascript/api/word/word.customxmlschema#word-word-customxmlschema-namespaceuri-member)|Gets the unique address identifier for the namespace of the `CustomXmlSchema` object.|
+||[reload()](/javascript/api/word/word.customxmlschema#word-word-customxmlschema-reload-member(1))|Reloads the schema from a file.|
+|[CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection)|[add(options?: Word.CustomXmlAddSchemaOptions)](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-add-member(1))|Adds one or more schemas to the schema collection that can then be added to a stream in the data store and to the schema library.|
+||[addCollection(schemaCollection: Word.CustomXmlSchemaCollection)](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-addcollection-member(1))|Adds an existing schema collection to the current schema collection.|
+||[getCount()](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItem(index: number)](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-getitem-member(1))|Returns a `CustomXmlSchema` object that represents the specified item in the collection.|
+||[getNamespaceUri()](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-getnamespaceuri-member(1))|Returns the number of items in the collection.|
+||[items](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-items-member)|Gets the loaded child items in this collection.|
+||[validate()](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-validate-member(1))|Specifies whether the schemas in the schema collection are valid (conforms to the syntactic rules of XML and the rules for a specified vocabulary).|
+|[CustomXmlValidationError](/javascript/api/word/word.customxmlvalidationerror)|[delete()](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-delete-member(1))|Deletes this `CustomXmlValidationError` object.|
+||[errorCode](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-errorcode-member)|Gets an integer representing the validation error in the `CustomXmlValidationError` object.|
+||[name](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-name-member)|Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`|
+||[node](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-node-member)|Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.|
+||[text](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-text-member)|Gets the text in the `CustomXmlValidationError` object.|
+||[type](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-type-member)|Gets the type of error generated from the `CustomXmlValidationError` object.|
+|[CustomXmlValidationErrorCollection](/javascript/api/word/word.customxmlvalidationerrorcollection)|[add(node: Word.CustomXmlNode, errorName: string, options?: Word.CustomXmlAddValidationErrorOptions)](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-add-member(1))|Adds a `CustomXmlValidationError` object containing an XML validation error to the `CustomXmlValidationErrorCollection` object.|
+||[getCount()](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItem(index: number)](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getitem-member(1))|Returns a `CustomXmlValidationError` object that represents the specified item in the collection.|
+||[items](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-items-member)|Gets the loaded child items in this collection.|
+|[Document](/javascript/api/word/word.document)|[hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.|
 |[FillFormat](/javascript/api/word/word.fillformat)|[backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)|Returns a `ColorFormat` object that represents the background color for the fill.|
 ||[foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)|Returns a `ColorFormat` object that represents the foreground color for the fill.|
 ||[gradientAngle](/javascript/api/word/word.fillformat#word-word-fillformat-gradientangle-member)|Specifies the angle of the gradient fill.|
@@ -110,6 +208,26 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |[GlowFormat](/javascript/api/word/word.glowformat)|[color](/javascript/api/word/word.glowformat#word-word-glowformat-color-member)|Returns a `ColorFormat` object that represents the color for a glow effect.|
 ||[radius](/javascript/api/word/word.glowformat#word-word-glowformat-radius-member)|Specifies the length of the radius for a glow effect.|
 ||[transparency](/javascript/api/word/word.glowformat#word-word-glowformat-transparency-member)|Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).|
+|[Hyperlink](/javascript/api/word/word.hyperlink)|[addToFavorites()](/javascript/api/word/word.hyperlink#word-word-hyperlink-addtofavorites-member(1))|Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.|
+||[address](/javascript/api/word/word.hyperlink#word-word-hyperlink-address-member)|Specifies the address (for example, a file name or URL) of the hyperlink.|
+||[createNewDocument(fileName: string, editNow: boolean, overwrite: boolean)](/javascript/api/word/word.hyperlink#word-word-hyperlink-createnewdocument-member(1))|Creates a new document linked to the hyperlink.|
+||[delete()](/javascript/api/word/word.hyperlink#word-word-hyperlink-delete-member(1))|Deletes the hyperlink.|
+||[emailSubject](/javascript/api/word/word.hyperlink#word-word-hyperlink-emailsubject-member)|Specifies the text string for the hyperlink's subject line.|
+||[isExtraInfoRequired](/javascript/api/word/word.hyperlink#word-word-hyperlink-isextrainforequired-member)|Returns `true` if extra information is required to resolve the hyperlink.|
+||[name](/javascript/api/word/word.hyperlink#word-word-hyperlink-name-member)|Returns the name of the `Hyperlink` object.|
+||[range](/javascript/api/word/word.hyperlink#word-word-hyperlink-range-member)|Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.|
+||[screenTip](/javascript/api/word/word.hyperlink#word-word-hyperlink-screentip-member)|Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.|
+||[subAddress](/javascript/api/word/word.hyperlink#word-word-hyperlink-subaddress-member)|Specifies a named location in the destination of the hyperlink.|
+||[target](/javascript/api/word/word.hyperlink#word-word-hyperlink-target-member)|Specifies the name of the frame or window in which to load the hyperlink.|
+||[textToDisplay](/javascript/api/word/word.hyperlink#word-word-hyperlink-texttodisplay-member)|Specifies the hyperlink's visible text in the document.|
+||[type](/javascript/api/word/word.hyperlink#word-word-hyperlink-type-member)|Returns the hyperlink type.|
+|[HyperlinkAddOptions](/javascript/api/word/word.hyperlinkaddoptions)|[address](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-address-member)|If provided, specifies the address (e.g., URL or file path) of the hyperlink.|
+||[screenTip](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-screentip-member)|If provided, specifies the text that appears as a tooltip.|
+||[subAddress](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-subaddress-member)|If provided, specifies the location within the file or document.|
+||[target](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-target-member)|If provided, specifies the name of the frame or window in which to load the hyperlink.|
+||[textToDisplay](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-texttodisplay-member)|If provided, specifies the visible text of the hyperlink.|
+|[HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection)|[add(anchor: Word.Range, options?: Word.HyperlinkAddOptions)](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1))|Returns a `Hyperlink` object that represents a new hyperlink added to a range, selection, or document.|
+||[items](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-items-member)|Gets the loaded child items in this collection.|
 |[LineFormat](/javascript/api/word/word.lineformat)|[backgroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-backgroundcolor-member)|Gets a `ColorFormat` object that represents the background color for a patterned line.|
 ||[beginArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadlength-member)|Specifies the length of the arrowhead at the beginning of the line.|
 ||[beginArrowheadStyle](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadstyle-member)|Specifies the style of the arrowhead at the beginning of the line.|
@@ -149,10 +267,12 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[applyTo](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-applyto-member)|If provided, specifies which part of the list to apply the template to.|
 ||[continuePreviousList](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-continuepreviouslist-member)|If provided, specifies whether to continue the previous list.|
 ||[defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)|If provided, specifies the default list behavior.|
+|[Page](/javascript/api/word/word.page)|[breaks](/javascript/api/word/word.page#word-word-page-breaks-member)|Gets a `BreakCollection` object that represents the breaks on the page.|
 |[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
 |[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
 |[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
 |[Range](/javascript/api/word/word.range)|[hasNoProofing](/javascript/api/word/word.range#word-word-range-hasnoproofing-member)|Specifies the proofing status (spelling and grammar checking) of the range.|
+||[hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the range.|
 ||[listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)|Returns a `ListFormat` object that represents all the list formatting characteristics of the range.|
 |[ReflectionFormat](/javascript/api/word/word.reflectionformat)|[blur](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-blur-member)|Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.|
 ||[offset](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-offset-member)|Specifies the amount of separation, in points, of the reflected image from the shape.|
@@ -209,6 +329,16 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[setPresetCamera(presetCamera: Word.PresetCamera)](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setpresetcamera-member(1))|Sets the camera preset for the shape.|
 ||[setThreeDimensionalFormat(presetThreeDimensionalFormat: Word.PresetThreeDimensionalFormat)](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setthreedimensionalformat-member(1))|Sets the preset extrusion format.|
 ||[z](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-z-member)|Specifies the position on the z-axis for the shape.|
+|[XmlMapping](/javascript/api/word/word.xmlmapping)|[customXmlNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlnode-member)|Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.|
+||[customXmlPart](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlpart-member)|Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.|
+||[delete()](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-delete-member(1))|Deletes the XML mapping from the parent content control.|
+||[isMapped](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-ismapped-member)|Returns whether the content control in the document is mapped to an XML node in the document's XML data store.|
+||[prefixMappings](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-prefixmappings-member)|Returns the prefix mappings used to evaluate the XPath for the current XML mapping.|
+||[setMapping(xPath: string, options?: Word.XmlSetMappingOptions)](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmapping-member(1))|Allows creating or changing the XML mapping on the content control.|
+||[setMappingByNode(node: Word.CustomXmlNode)](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmappingbynode-member(1))|Allows creating or changing the XML data mapping on the content control.|
+||[xpath](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-xpath-member)|Returns the XPath for the XML mapping, which evaluates to the currently mapped XML node.|
+|[XmlSetMappingOptions](/javascript/api/word/word.xmlsetmappingoptions)|[prefixMapping](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-prefixmapping-member)|If provided, specifies the prefix mappings to use when querying the expression provided in the `xPath` parameter of the `XmlMapping.setMapping` calling method.|
+||[source](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-source-member)|If provided, specifies the desired custom XML data to map the content control to.|
 
 ## Web-only API list
 

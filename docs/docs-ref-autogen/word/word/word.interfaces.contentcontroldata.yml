@@ -550,3 +550,20 @@ properties:
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
           | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
           "RichText" | "PlainText"
+  - name: xmlMapping
+    uid: word!Word.Interfaces.ContentControlData#xmlMapping:member
+    package: word!
+    fullName: xmlMapping
+    summary: >-
+      Returns an `XmlMapping` object that represents the mapping of the content
+      control to XML data in the data store of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xmlMapping?: Word.Interfaces.XmlMappingData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlMappingData:interface" />

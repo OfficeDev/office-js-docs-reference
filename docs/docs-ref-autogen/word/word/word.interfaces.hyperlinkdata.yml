@@ -1,0 +1,170 @@
+### YamlMime:TSType
+name: Word.Interfaces.HyperlinkData
+uid: word!Word.Interfaces.HyperlinkData:interface
+package: word!
+fullName: Word.Interfaces.HyperlinkData
+summary: >-
+  An interface describing the data returned by calling `hyperlink.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: word!Word.Interfaces.HyperlinkData#address:member
+    package: word!
+    fullName: address
+    summary: Specifies the address (for example, a file name or URL) of the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'address?: string;'
+      return:
+        type: string
+  - name: emailSubject
+    uid: word!Word.Interfaces.HyperlinkData#emailSubject:member
+    package: word!
+    fullName: emailSubject
+    summary: Specifies the text string for the hyperlink's subject line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'emailSubject?: string;'
+      return:
+        type: string
+  - name: isExtraInfoRequired
+    uid: word!Word.Interfaces.HyperlinkData#isExtraInfoRequired:member
+    package: word!
+    fullName: isExtraInfoRequired
+    summary: Returns `true` if extra information is required to resolve the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isExtraInfoRequired?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.HyperlinkData#name:member
+    package: word!
+    fullName: name
+    summary: Returns the name of the `Hyperlink` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: range
+    uid: word!Word.Interfaces.HyperlinkData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained within the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />
+  - name: screenTip
+    uid: word!Word.Interfaces.HyperlinkData#screenTip:member
+    package: word!
+    fullName: screenTip
+    summary: >-
+      Specifies the text that appears as a ScreenTip when the mouse pointer is
+      positioned over the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type: string
+  - name: subAddress
+    uid: word!Word.Interfaces.HyperlinkData#subAddress:member
+    package: word!
+    fullName: subAddress
+    summary: Specifies a named location in the destination of the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subAddress?: string;'
+      return:
+        type: string
+  - name: target
+    uid: word!Word.Interfaces.HyperlinkData#target:member
+    package: word!
+    fullName: target
+    summary: Specifies the name of the frame or window in which to load the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'target?: string;'
+      return:
+        type: string
+  - name: textToDisplay
+    uid: word!Word.Interfaces.HyperlinkData#textToDisplay:member
+    package: word!
+    fullName: textToDisplay
+    summary: Specifies the hyperlink's visible text in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type: string
+  - name: type
+    uid: word!Word.Interfaces.HyperlinkData#type:member
+    package: word!
+    fullName: type
+    summary: Returns the hyperlink type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.HyperlinkType | "Range" | "Shape" | "InlineShape";'
+      return:
+        type: >-
+          <xref uid="word!Word.HyperlinkType:enum" /> | "Range" | "Shape" |
+          "InlineShape"

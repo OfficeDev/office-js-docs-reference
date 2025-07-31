@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlPrefixMappingData
+uid: word!Word.Interfaces.CustomXmlPrefixMappingData:interface
+package: word!
+fullName: Word.Interfaces.CustomXmlPrefixMappingData
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlPrefixMapping.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: namespaceUri
+    uid: word!Word.Interfaces.CustomXmlPrefixMappingData#namespaceUri:member
+    package: word!
+    fullName: namespaceUri
+    summary: >-
+      Gets the unique address identifier for the namespace of the
+      `CustomXmlPrefixMapping` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: string;'
+      return:
+        type: string
+  - name: prefix
+    uid: word!Word.Interfaces.CustomXmlPrefixMappingData#prefix:member
+    package: word!
+    fullName: prefix
+    summary: Gets the prefix for the `CustomXmlPrefixMapping` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'prefix?: string;'
+      return:
+        type: string

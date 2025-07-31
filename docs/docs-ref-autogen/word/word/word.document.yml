@@ -227,6 +227,23 @@ properties:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
         type: <xref uid="word!Word.CustomXmlPartCollection:class" />
+  - name: hyperlinks
+    uid: word!Word.Document#hyperlinks:member
+    package: word!
+    fullName: hyperlinks
+    summary: >-
+      Returns a `HyperlinkCollection` object that represents all the hyperlinks
+      in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly hyperlinks: Word.HyperlinkCollection;'
+      return:
+        type: <xref uid="word!Word.HyperlinkCollection:class" />
   - name: properties
     uid: word!Word.Document#properties:member
     package: word!

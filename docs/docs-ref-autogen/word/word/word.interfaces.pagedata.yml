@@ -10,6 +10,21 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: breaks
+    uid: word!Word.Interfaces.PageData#breaks:member
+    package: word!
+    fullName: breaks
+    summary: Gets a `BreakCollection` object that represents the breaks on the page.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'breaks?: Word.Interfaces.BreakData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.BreakData:interface" />[]
   - name: height
     uid: word!Word.Interfaces.PageData#height:member
     package: word!
