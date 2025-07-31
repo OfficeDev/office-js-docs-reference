@@ -1,0 +1,123 @@
+### YamlMime:TSType
+name: Word.Interfaces.HyperlinkUpdateData
+uid: word!Word.Interfaces.HyperlinkUpdateData:interface
+package: word!
+fullName: Word.Interfaces.HyperlinkUpdateData
+summary: >-
+  An interface for updating data on the `Hyperlink` object, for use in
+  `hyperlink.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: word!Word.Interfaces.HyperlinkUpdateData#address:member
+    package: word!
+    fullName: address
+    summary: Specifies the address (for example, a file name or URL) of the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'address?: string;'
+      return:
+        type: string
+  - name: emailSubject
+    uid: word!Word.Interfaces.HyperlinkUpdateData#emailSubject:member
+    package: word!
+    fullName: emailSubject
+    summary: Specifies the text string for the hyperlink's subject line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'emailSubject?: string;'
+      return:
+        type: string
+  - name: range
+    uid: word!Word.Interfaces.HyperlinkUpdateData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained within the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />
+  - name: screenTip
+    uid: word!Word.Interfaces.HyperlinkUpdateData#screenTip:member
+    package: word!
+    fullName: screenTip
+    summary: >-
+      Specifies the text that appears as a ScreenTip when the mouse pointer is
+      positioned over the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type: string
+  - name: subAddress
+    uid: word!Word.Interfaces.HyperlinkUpdateData#subAddress:member
+    package: word!
+    fullName: subAddress
+    summary: Specifies a named location in the destination of the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subAddress?: string;'
+      return:
+        type: string
+  - name: target
+    uid: word!Word.Interfaces.HyperlinkUpdateData#target:member
+    package: word!
+    fullName: target
+    summary: Specifies the name of the frame or window in which to load the hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'target?: string;'
+      return:
+        type: string
+  - name: textToDisplay
+    uid: word!Word.Interfaces.HyperlinkUpdateData#textToDisplay:member
+    package: word!
+    fullName: textToDisplay
+    summary: Specifies the hyperlink's visible text in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type: string

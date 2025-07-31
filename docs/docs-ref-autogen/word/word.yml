@@ -30,6 +30,8 @@ enums:
   - word!Word.ContentControlType:enum
   - word!Word.Continue:enum
   - word!Word.CritiqueColorScheme:enum
+  - word!Word.CustomXmlNodeType:enum
+  - word!Word.CustomXmlValidationErrorType:enum
   - word!Word.DefaultListBehavior:enum
   - word!Word.DocumentPropertyType:enum
   - word!Word.EmphasisMark:enum
@@ -44,6 +46,7 @@ enums:
   - word!Word.GradientColorType:enum
   - word!Word.GradientStyle:enum
   - word!Word.HeaderFooterType:enum
+  - word!Word.HyperlinkType:enum
   - word!Word.ImageFormat:enum
   - word!Word.ImportedStylesConflictBehavior:enum
   - word!Word.InsertLocation:enum
@@ -108,6 +111,8 @@ classes:
   - word!Word.Body:class
   - word!Word.Border:class
   - word!Word.BorderCollection:class
+  - word!Word.Break:class
+  - word!Word.BreakCollection:class
   - word!Word.Canvas:class
   - word!Word.CheckboxContentControl:class
   - word!Word.ColorFormat:class
@@ -124,9 +129,17 @@ classes:
   - word!Word.CritiqueAnnotation:class
   - word!Word.CustomProperty:class
   - word!Word.CustomPropertyCollection:class
+  - word!Word.CustomXmlNode:class
+  - word!Word.CustomXmlNodeCollection:class
   - word!Word.CustomXmlPart:class
   - word!Word.CustomXmlPartCollection:class
   - word!Word.CustomXmlPartScopedCollection:class
+  - word!Word.CustomXmlPrefixMapping:class
+  - word!Word.CustomXmlPrefixMappingCollection:class
+  - word!Word.CustomXmlSchema:class
+  - word!Word.CustomXmlSchemaCollection:class
+  - word!Word.CustomXmlValidationError:class
+  - word!Word.CustomXmlValidationErrorCollection:class
   - word!Word.Document:class
   - word!Word.DocumentCreated:class
   - word!Word.DocumentProperties:class
@@ -136,6 +149,8 @@ classes:
   - word!Word.FillFormat:class
   - word!Word.Font:class
   - word!Word.GlowFormat:class
+  - word!Word.Hyperlink:class
+  - word!Word.HyperlinkCollection:class
   - word!Word.InlinePicture:class
   - word!Word.InlinePictureCollection:class
   - word!Word.LineFormat:class
@@ -187,6 +202,7 @@ classes:
   - word!Word.TrackedChangeCollection:class
   - word!Word.Window:class
   - word!Word.WindowCollection:class
+  - word!Word.XmlMapping:class
 interfaces:
   - word!Word.AnnotationClickedEventArgs:interface
   - word!Word.AnnotationHoveredEventArgs:interface
@@ -205,8 +221,16 @@ interfaces:
   - word!Word.ContentControlSelectionChangedEventArgs:interface
   - word!Word.Critique:interface
   - word!Word.CritiquePopupOptions:interface
+  - word!Word.CustomXmlAddNodeOptions:interface
+  - word!Word.CustomXmlAddSchemaOptions:interface
+  - word!Word.CustomXmlAddValidationErrorOptions:interface
+  - word!Word.CustomXmlAppendChildNodeOptions:interface
+  - word!Word.CustomXmlInsertNodeBeforeOptions:interface
+  - word!Word.CustomXmlInsertSubtreeBeforeOptions:interface
+  - word!Word.CustomXmlReplaceChildNodeOptions:interface
   - word!Word.DocumentCompareOptions:interface
   - word!Word.GetTextOptions:interface
+  - word!Word.HyperlinkAddOptions:interface
   - word!Word.InsertFileOptions:interface
   - word!Word.InsertShapeOptions:interface
   - word!Word.Interfaces.AnnotationCollectionData:interface
@@ -223,6 +247,12 @@ interfaces:
   - word!Word.Interfaces.BorderData:interface
   - word!Word.Interfaces.BorderLoadOptions:interface
   - word!Word.Interfaces.BorderUpdateData:interface
+  - word!Word.Interfaces.BreakCollectionData:interface
+  - word!Word.Interfaces.BreakCollectionLoadOptions:interface
+  - word!Word.Interfaces.BreakCollectionUpdateData:interface
+  - word!Word.Interfaces.BreakData:interface
+  - word!Word.Interfaces.BreakLoadOptions:interface
+  - word!Word.Interfaces.BreakUpdateData:interface
   - word!Word.Interfaces.CanvasData:interface
   - word!Word.Interfaces.CanvasLoadOptions:interface
   - word!Word.Interfaces.CanvasUpdateData:interface
@@ -269,6 +299,12 @@ interfaces:
   - word!Word.Interfaces.CustomPropertyData:interface
   - word!Word.Interfaces.CustomPropertyLoadOptions:interface
   - word!Word.Interfaces.CustomPropertyUpdateData:interface
+  - word!Word.Interfaces.CustomXmlNodeCollectionData:interface
+  - word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlNodeCollectionUpdateData:interface
+  - word!Word.Interfaces.CustomXmlNodeData:interface
+  - word!Word.Interfaces.CustomXmlNodeLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlNodeUpdateData:interface
   - word!Word.Interfaces.CustomXmlPartCollectionData:interface
   - word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface
   - word!Word.Interfaces.CustomXmlPartCollectionUpdateData:interface
@@ -277,6 +313,23 @@ interfaces:
   - word!Word.Interfaces.CustomXmlPartScopedCollectionData:interface
   - word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface
   - word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface
+  - word!Word.Interfaces.CustomXmlPartUpdateData:interface
+  - word!Word.Interfaces.CustomXmlPrefixMappingCollectionData:interface
+  - word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData:interface
+  - word!Word.Interfaces.CustomXmlPrefixMappingData:interface
+  - word!Word.Interfaces.CustomXmlPrefixMappingLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlSchemaCollectionData:interface
+  - word!Word.Interfaces.CustomXmlSchemaCollectionLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData:interface
+  - word!Word.Interfaces.CustomXmlSchemaData:interface
+  - word!Word.Interfaces.CustomXmlSchemaLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlValidationErrorCollectionData:interface
+  - word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData:interface
+  - word!Word.Interfaces.CustomXmlValidationErrorData:interface
+  - word!Word.Interfaces.CustomXmlValidationErrorLoadOptions:interface
+  - word!Word.Interfaces.CustomXmlValidationErrorUpdateData:interface
   - word!Word.Interfaces.DocumentCreatedData:interface
   - word!Word.Interfaces.DocumentCreatedLoadOptions:interface
   - word!Word.Interfaces.DocumentCreatedUpdateData:interface
@@ -302,6 +355,12 @@ interfaces:
   - word!Word.Interfaces.GlowFormatData:interface
   - word!Word.Interfaces.GlowFormatLoadOptions:interface
   - word!Word.Interfaces.GlowFormatUpdateData:interface
+  - word!Word.Interfaces.HyperlinkCollectionData:interface
+  - word!Word.Interfaces.HyperlinkCollectionLoadOptions:interface
+  - word!Word.Interfaces.HyperlinkCollectionUpdateData:interface
+  - word!Word.Interfaces.HyperlinkData:interface
+  - word!Word.Interfaces.HyperlinkLoadOptions:interface
+  - word!Word.Interfaces.HyperlinkUpdateData:interface
   - word!Word.Interfaces.InlinePictureCollectionData:interface
   - word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface
   - word!Word.Interfaces.InlinePictureCollectionUpdateData:interface
@@ -443,11 +502,15 @@ interfaces:
   - word!Word.Interfaces.WindowCollectionData:interface
   - word!Word.Interfaces.WindowCollectionUpdateData:interface
   - word!Word.Interfaces.WindowData:interface
+  - word!Word.Interfaces.XmlMappingData:interface
+  - word!Word.Interfaces.XmlMappingLoadOptions:interface
+  - word!Word.Interfaces.XmlMappingUpdateData:interface
   - word!Word.ListFormatCountNumberedItemsOptions:interface
   - word!Word.ListTemplateApplyOptions:interface
   - word!Word.ParagraphAddedEventArgs:interface
   - word!Word.ParagraphChangedEventArgs:interface
   - word!Word.ParagraphDeletedEventArgs:interface
+  - word!Word.XmlSetMappingOptions:interface
 functions:
   - name: Word.run(objects, batch)
     uid: word!Word.run:function(1)

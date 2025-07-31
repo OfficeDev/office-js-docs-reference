@@ -54,6 +54,21 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: breaks
+    uid: word!Word.Page#breaks:member
+    package: word!
+    fullName: breaks
+    summary: Gets a `BreakCollection` object that represents the breaks on the page.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly breaks: Word.BreakCollection;'
+      return:
+        type: <xref uid="word!Word.BreakCollection:class" />
   - name: context
     uid: word!Word.Page#context:member
     package: word!

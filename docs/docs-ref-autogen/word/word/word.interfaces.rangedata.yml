@@ -78,6 +78,23 @@ properties:
       content: 'hyperlink?: string;'
       return:
         type: string
+  - name: hyperlinks
+    uid: word!Word.Interfaces.RangeData#hyperlinks:member
+    package: word!
+    fullName: hyperlinks
+    summary: >-
+      Returns a `HyperlinkCollection` object that represents all the hyperlinks
+      in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hyperlinks?: Word.Interfaces.HyperlinkData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.HyperlinkData:interface" />[]
   - name: inlinePictures
     uid: word!Word.Interfaces.RangeData#inlinePictures:member
     package: word!

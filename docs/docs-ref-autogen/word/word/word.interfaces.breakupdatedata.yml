@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: Word.Interfaces.BreakUpdateData
+uid: word!Word.Interfaces.BreakUpdateData:interface
+package: word!
+fullName: Word.Interfaces.BreakUpdateData
+summary: >-
+  An interface for updating data on the `Break` object, for use in `break.set({
+  ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: range
+    uid: word!Word.Interfaces.BreakUpdateData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained in the break.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />

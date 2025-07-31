@@ -45,6 +45,21 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: builtIn
+    uid: word!Word.CustomXmlPart#builtIn:member
+    package: word!
+    fullName: builtIn
+    summary: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly builtIn: boolean;'
+      return:
+        type: boolean
   - name: context
     uid: word!Word.CustomXmlPart#context:member
     package: word!
@@ -60,6 +75,40 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: documentElement
+    uid: word!Word.CustomXmlPart#documentElement:member
+    package: word!
+    fullName: documentElement
+    summary: >-
+      Gets the root element of a bound region of data in the document. If the
+      region is empty, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly documentElement: Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+  - name: errors
+    uid: word!Word.CustomXmlPart#errors:member
+    package: word!
+    fullName: errors
+    summary: >-
+      Gets a `CustomXmlValidationErrorCollection` object that provides access to
+      any XML validation errors.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly errors: Word.CustomXmlValidationErrorCollection;'
+      return:
+        type: <xref uid="word!Word.CustomXmlValidationErrorCollection:class" />
   - name: id
     uid: word!Word.CustomXmlPart#id:member
     package: word!
@@ -108,6 +157,23 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: namespaceManager
+    uid: word!Word.CustomXmlPart#namespaceManager:member
+    package: word!
+    fullName: namespaceManager
+    summary: >-
+      Gets the set of namespace prefix mappings used against the current
+      `CustomXmlPart` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly namespaceManager: Word.CustomXmlPrefixMappingCollection;'
+      return:
+        type: <xref uid="word!Word.CustomXmlPrefixMappingCollection:class" />
   - name: namespaceUri
     uid: word!Word.CustomXmlPart#namespaceUri:member
     package: word!
@@ -159,7 +225,64 @@ properties:
       content: 'readonly namespaceUri: string;'
       return:
         type: string
+  - name: schemaCollection
+    uid: word!Word.CustomXmlPart#schemaCollection:member
+    package: word!
+    fullName: schemaCollection
+    summary: >-
+      Specifies a `CustomXmlSchemaCollection` object representing the set of
+      schemas attached to a bound region of data in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'schemaCollection: Word.CustomXmlSchemaCollection;'
+      return:
+        type: <xref uid="word!Word.CustomXmlSchemaCollection:class" />
+  - name: xml
+    uid: word!Word.CustomXmlPart#xml:member
+    package: word!
+    fullName: xml
+    summary: Gets the XML representation of the current `CustomXmlPart` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly xml: string;'
+      return:
+        type: string
 methods:
+  - name: addNode(parent, options)
+    uid: word!Word.CustomXmlPart#addNode:member(1)
+    package: word!
+    fullName: addNode(parent, options)
+    summary: Adds a node to the XML tree.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        addNode(parent: Word.CustomXmlNode, options?:
+        Word.CustomXmlAddNodeOptions): OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: parent
+          description: The parent node to which the new node will be added.
+          type: <xref uid="word!Word.CustomXmlNode:class" />
+        - id: options
+          description: Optional. The options that define the node to be added.
+          type: <xref uid="word!Word.CustomXmlAddNodeOptions:interface" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
   - name: delete()
     uid: word!Word.CustomXmlPart#delete:member(1)
     package: word!
@@ -825,6 +948,28 @@ methods:
       return:
         type: <xref uid="word!Word.CustomXmlPart:class" />
         description: ''
+  - name: loadXml(xml)
+    uid: word!Word.CustomXmlPart#loadXml:member(1)
+    package: word!
+    fullName: loadXml(xml)
+    summary: Populates the `CustomXmlPart` object from an XML string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'loadXml(xml: string): OfficeExtension.ClientResult<boolean>;'
+      parameters:
+        - id: xml
+          description: The XML string to load.
+          type: string
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
   - name: query(xpath, namespaceMappings)
     uid: word!Word.CustomXmlPart#query:member(1)
     package: word!
@@ -962,6 +1107,101 @@ methods:
         description: >-
           An array where each item represents an entry matched by the XPath
           query.
+  - name: selectNodes(xPath)
+    uid: word!Word.CustomXmlPart#selectNodes:member(1)
+    package: word!
+    fullName: selectNodes(xPath)
+    summary: Selects a collection of nodes from a custom XML part.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selectNodes(xPath: string): Word.CustomXmlNodeCollection;'
+      parameters:
+        - id: xPath
+          description: The XPath expression to evaluate.
+          type: string
+      return:
+        type: <xref uid="word!Word.CustomXmlNodeCollection:class" />
+        description: ''
+  - name: selectSingleNode(xPath)
+    uid: word!Word.CustomXmlPart#selectSingleNode:member(1)
+    package: word!
+    fullName: selectSingleNode(xPath)
+    summary: >-
+      Selects a single node within a custom XML part matching an XPath
+      expression.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selectSingleNode(xPath: string): Word.CustomXmlNode;'
+      parameters:
+        - id: xPath
+          description: The XPath expression to evaluate.
+          type: string
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.CustomXmlPart#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.CustomXmlPartUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.CustomXmlPartUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.CustomXmlPart#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.CustomXmlPart): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.CustomXmlPart:class" />
+      return:
+        type: void
+        description: ''
   - name: setXml(xml)
     uid: word!Word.CustomXmlPart#setXml:member(1)
     package: word!

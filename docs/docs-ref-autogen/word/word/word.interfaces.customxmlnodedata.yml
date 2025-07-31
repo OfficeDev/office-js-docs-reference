@@ -1,0 +1,271 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlNodeData
+uid: word!Word.Interfaces.CustomXmlNodeData:interface
+package: word!
+fullName: Word.Interfaces.CustomXmlNodeData
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlNode.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributes
+    uid: word!Word.Interfaces.CustomXmlNodeData#attributes:member
+    package: word!
+    fullName: attributes
+    summary: >-
+      Gets a `CustomXmlNodeCollection` object representing the attributes of the
+      current element in the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: Word.Interfaces.CustomXmlNodeData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />[]
+  - name: baseName
+    uid: word!Word.Interfaces.CustomXmlNodeData#baseName:member
+    package: word!
+    fullName: baseName
+    summary: >-
+      Gets the base name of the node without the namespace prefix, if one
+      exists.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'baseName?: string;'
+      return:
+        type: string
+  - name: childNodes
+    uid: word!Word.Interfaces.CustomXmlNodeData#childNodes:member
+    package: word!
+    fullName: childNodes
+    summary: >-
+      Gets a `CustomXmlNodeCollection` object containing all of the child
+      elements of the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'childNodes?: Word.Interfaces.CustomXmlNodeData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />[]
+  - name: firstChild
+    uid: word!Word.Interfaces.CustomXmlNodeData#firstChild:member
+    package: word!
+    fullName: firstChild
+    summary: >-
+      Gets a `CustomXmlNode` object corresponding to the first child element of
+      the current node. If the node has no child elements (or if it isn't of
+      type
+      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
+      -->), returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'firstChild?: Word.Interfaces.CustomXmlNodeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />
+  - name: lastChild
+    uid: word!Word.Interfaces.CustomXmlNodeData#lastChild:member
+    package: word!
+    fullName: lastChild
+    summary: >-
+      Gets a `CustomXmlNode` object corresponding to the last child element of
+      the current node. If the node has no child elements (or if it isn't of
+      type
+      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
+      -->), the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lastChild?: Word.Interfaces.CustomXmlNodeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />
+  - name: namespaceUri
+    uid: word!Word.Interfaces.CustomXmlNodeData#namespaceUri:member
+    package: word!
+    fullName: namespaceUri
+    summary: Gets the unique address identifier for the namespace of the node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: string;'
+      return:
+        type: string
+  - name: nextSibling
+    uid: word!Word.Interfaces.CustomXmlNodeData#nextSibling:member
+    package: word!
+    fullName: nextSibling
+    summary: >-
+      Gets the next sibling node (element, comment, or processing instruction)
+      of the current node. If the node is the last sibling at its level, the
+      property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nextSibling?: Word.Interfaces.CustomXmlNodeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />
+  - name: nodeType
+    uid: word!Word.Interfaces.CustomXmlNodeData#nodeType:member
+    package: word!
+    fullName: nodeType
+    summary: Gets the type of the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        nodeType?: Word.CustomXmlNodeType | "element" | "attribute" | "text" |
+        "cData" | "processingInstruction" | "comment" | "document";
+      return:
+        type: >-
+          <xref uid="word!Word.CustomXmlNodeType:enum" /> | "element" |
+          "attribute" | "text" | "cData" | "processingInstruction" | "comment" |
+          "document"
+  - name: nodeValue
+    uid: word!Word.Interfaces.CustomXmlNodeData#nodeValue:member
+    package: word!
+    fullName: nodeValue
+    summary: Specifies the value of the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nodeValue?: string;'
+      return:
+        type: string
+  - name: ownerPart
+    uid: word!Word.Interfaces.CustomXmlNodeData#ownerPart:member
+    package: word!
+    fullName: ownerPart
+    summary: Gets the object representing the part associated with this node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'ownerPart?: Word.Interfaces.CustomXmlPartData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />
+  - name: parentNode
+    uid: word!Word.Interfaces.CustomXmlNodeData#parentNode:member
+    package: word!
+    fullName: parentNode
+    summary: >-
+      Gets the parent element node of the current node. If the current node is
+      at the root level, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentNode?: Word.Interfaces.CustomXmlNodeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />
+  - name: previousSibling
+    uid: word!Word.Interfaces.CustomXmlNodeData#previousSibling:member
+    package: word!
+    fullName: previousSibling
+    summary: >-
+      Gets the previous sibling node (element, comment, or processing
+      instruction) of the current node. If the current node is the first sibling
+      at its level, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'previousSibling?: Word.Interfaces.CustomXmlNodeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />
+  - name: text
+    uid: word!Word.Interfaces.CustomXmlNodeData#text:member
+    package: word!
+    fullName: text
+    summary: Specifies the text for the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: xml
+    uid: word!Word.Interfaces.CustomXmlNodeData#xml:member
+    package: word!
+    fullName: xml
+    summary: Gets the XML representation of the current node and its children.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xml?: string;'
+      return:
+        type: string
+  - name: xpath
+    uid: word!Word.Interfaces.CustomXmlNodeData#xpath:member
+    package: word!
+    fullName: xpath
+    summary: >-
+      Gets a string with the canonicalized XPath for the current node. If the
+      node is no longer in the Document Object Model (DOM), the property returns
+      an error message.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xpath?: string;'
+      return:
+        type: string

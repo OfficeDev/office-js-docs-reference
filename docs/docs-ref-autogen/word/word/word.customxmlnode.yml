@@ -1,0 +1,742 @@
+### YamlMime:TSType
+name: Word.CustomXmlNode
+uid: word!Word.CustomXmlNode:class
+package: word!
+fullName: Word.CustomXmlNode
+summary: >-
+  Represents an XML node in a tree in the document. The `CustomXmlNode` object
+  is a member of the
+  [Word.CustomXmlNodeCollection](xref:word!Word.CustomXmlNodeCollection:class)
+  object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: attributes
+    uid: word!Word.CustomXmlNode#attributes:member
+    package: word!
+    fullName: attributes
+    summary: >-
+      Gets a `CustomXmlNodeCollection` object representing the attributes of the
+      current element in the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly attributes: Word.CustomXmlNodeCollection;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNodeCollection:class" />
+  - name: baseName
+    uid: word!Word.CustomXmlNode#baseName:member
+    package: word!
+    fullName: baseName
+    summary: >-
+      Gets the base name of the node without the namespace prefix, if one
+      exists.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly baseName: string;'
+      return:
+        type: string
+  - name: childNodes
+    uid: word!Word.CustomXmlNode#childNodes:member
+    package: word!
+    fullName: childNodes
+    summary: >-
+      Gets a `CustomXmlNodeCollection` object containing all of the child
+      elements of the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly childNodes: Word.CustomXmlNodeCollection;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNodeCollection:class" />
+  - name: context
+    uid: word!Word.CustomXmlNode#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: firstChild
+    uid: word!Word.CustomXmlNode#firstChild:member
+    package: word!
+    fullName: firstChild
+    summary: >-
+      Gets a `CustomXmlNode` object corresponding to the first child element of
+      the current node. If the node has no child elements (or if it isn't of
+      type
+      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
+      -->), returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly firstChild: Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+  - name: lastChild
+    uid: word!Word.CustomXmlNode#lastChild:member
+    package: word!
+    fullName: lastChild
+    summary: >-
+      Gets a `CustomXmlNode` object corresponding to the last child element of
+      the current node. If the node has no child elements (or if it isn't of
+      type
+      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
+      -->), the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly lastChild: Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+  - name: namespaceUri
+    uid: word!Word.CustomXmlNode#namespaceUri:member
+    package: word!
+    fullName: namespaceUri
+    summary: Gets the unique address identifier for the namespace of the node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly namespaceUri: string;'
+      return:
+        type: string
+  - name: nextSibling
+    uid: word!Word.CustomXmlNode#nextSibling:member
+    package: word!
+    fullName: nextSibling
+    summary: >-
+      Gets the next sibling node (element, comment, or processing instruction)
+      of the current node. If the node is the last sibling at its level, the
+      property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly nextSibling: Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+  - name: nodeType
+    uid: word!Word.CustomXmlNode#nodeType:member
+    package: word!
+    fullName: nodeType
+    summary: Gets the type of the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly nodeType: Word.CustomXmlNodeType | "element" | "attribute" |
+        "text" | "cData" | "processingInstruction" | "comment" | "document";
+      return:
+        type: >-
+          <xref uid="word!Word.CustomXmlNodeType:enum" /> | "element" |
+          "attribute" | "text" | "cData" | "processingInstruction" | "comment" |
+          "document"
+  - name: nodeValue
+    uid: word!Word.CustomXmlNode#nodeValue:member
+    package: word!
+    fullName: nodeValue
+    summary: Specifies the value of the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nodeValue: string;'
+      return:
+        type: string
+  - name: ownerPart
+    uid: word!Word.CustomXmlNode#ownerPart:member
+    package: word!
+    fullName: ownerPart
+    summary: Gets the object representing the part associated with this node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly ownerPart: Word.CustomXmlPart;'
+      return:
+        type: <xref uid="word!Word.CustomXmlPart:class" />
+  - name: parentNode
+    uid: word!Word.CustomXmlNode#parentNode:member
+    package: word!
+    fullName: parentNode
+    summary: >-
+      Gets the parent element node of the current node. If the current node is
+      at the root level, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentNode: Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+  - name: previousSibling
+    uid: word!Word.CustomXmlNode#previousSibling:member
+    package: word!
+    fullName: previousSibling
+    summary: >-
+      Gets the previous sibling node (element, comment, or processing
+      instruction) of the current node. If the current node is the first sibling
+      at its level, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly previousSibling: Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+  - name: text
+    uid: word!Word.CustomXmlNode#text:member
+    package: word!
+    fullName: text
+    summary: Specifies the text for the current node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'text: string;'
+      return:
+        type: string
+  - name: xml
+    uid: word!Word.CustomXmlNode#xml:member
+    package: word!
+    fullName: xml
+    summary: Gets the XML representation of the current node and its children.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly xml: string;'
+      return:
+        type: string
+  - name: xpath
+    uid: word!Word.CustomXmlNode#xpath:member
+    package: word!
+    fullName: xpath
+    summary: >-
+      Gets a string with the canonicalized XPath for the current node. If the
+      node is no longer in the Document Object Model (DOM), the property returns
+      an error message.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly xpath: string;'
+      return:
+        type: string
+methods:
+  - name: appendChildNode(options)
+    uid: word!Word.CustomXmlNode#appendChildNode:member(1)
+    package: word!
+    fullName: appendChildNode(options)
+    summary: >-
+      Appends a single node as the last child under the context element node in
+      the tree.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        appendChildNode(options?: Word.CustomXmlAppendChildNodeOptions):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: options
+          description: Optional. The options that define the node to be appended.
+          type: <xref uid="word!Word.CustomXmlAppendChildNodeOptions:interface" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: appendChildSubtree(xml)
+    uid: word!Word.CustomXmlNode#appendChildSubtree:member(1)
+    package: word!
+    fullName: appendChildSubtree(xml)
+    summary: >-
+      Adds a subtree as the last child under the context element node in the
+      tree.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'appendChildSubtree(xml: string): OfficeExtension.ClientResult<number>;'
+      parameters:
+        - id: xml
+          description: A string representing the XML subtree.
+          type: string
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: delete()
+    uid: word!Word.CustomXmlNode#delete:member(1)
+    package: word!
+    fullName: delete()
+    summary: >-
+      Deletes the current node from the tree (including all of its children, if
+      any exist).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: hasChildNodes()
+    uid: word!Word.CustomXmlNode#hasChildNodes:member(1)
+    package: word!
+    fullName: hasChildNodes()
+    summary: Specifies if the current element node has child element nodes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasChildNodes(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
+  - name: insertNodeBefore(options)
+    uid: word!Word.CustomXmlNode#insertNodeBefore:member(1)
+    package: word!
+    fullName: insertNodeBefore(options)
+    summary: Inserts a new node just before the context node in the tree.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        insertNodeBefore(options?: Word.CustomXmlInsertNodeBeforeOptions):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: options
+          description: Optional. The options that define the node to be inserted.
+          type: <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions:interface" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: insertSubtreeBefore(xml, options)
+    uid: word!Word.CustomXmlNode#insertSubtreeBefore:member(1)
+    package: word!
+    fullName: insertSubtreeBefore(xml, options)
+    summary: >-
+      Inserts the specified subtree into the location just before the context
+      node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        insertSubtreeBefore(xml: string, options?:
+        Word.CustomXmlInsertSubtreeBeforeOptions):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: xml
+          description: A string representing the XML subtree.
+          type: string
+        - id: options
+          description: Optional. The options available for inserting the subtree.
+          type: >-
+            <xref uid="word!Word.CustomXmlInsertSubtreeBeforeOptions:interface"
+            />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: load(options)
+    uid: word!Word.CustomXmlNode#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.CustomXmlNodeLoadOptions):
+        Word.CustomXmlNode;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.CustomXmlNode#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.CustomXmlNode;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.CustomXmlNode#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.CustomXmlNode;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+  - name: removeChild(child)
+    uid: word!Word.CustomXmlNode#removeChild:member(1)
+    package: word!
+    fullName: removeChild(child)
+    summary: Removes the specified child node from the tree.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeChild(child: Word.CustomXmlNode):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: child
+          description: The child node to remove.
+          type: <xref uid="word!Word.CustomXmlNode:class" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: replaceChildNode(oldNode, options)
+    uid: word!Word.CustomXmlNode#replaceChildNode:member(1)
+    package: word!
+    fullName: replaceChildNode(oldNode, options)
+    summary: >-
+      Removes the specified child node and replaces it with a different node in
+      the same location.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        replaceChildNode(oldNode: Word.CustomXmlNode, options?:
+        Word.CustomXmlReplaceChildNodeOptions):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: oldNode
+          description: The node to be replaced.
+          type: <xref uid="word!Word.CustomXmlNode:class" />
+        - id: options
+          description: >-
+            Optional. The options that define the child node which is to replace
+            the old node.
+          type: <xref uid="word!Word.CustomXmlReplaceChildNodeOptions:interface" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: replaceChildSubtree(xml, oldNode)
+    uid: word!Word.CustomXmlNode#replaceChildSubtree:member(1)
+    package: word!
+    fullName: replaceChildSubtree(xml, oldNode)
+    summary: >-
+      Removes the specified node and replaces it with a different subtree in the
+      same location.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        replaceChildSubtree(xml: string, oldNode: Word.CustomXmlNode):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: xml
+          description: A string representing the new subtree.
+          type: string
+        - id: oldNode
+          description: The node to be replaced.
+          type: <xref uid="word!Word.CustomXmlNode:class" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: selectNodes(xPath)
+    uid: word!Word.CustomXmlNode#selectNodes:member(1)
+    package: word!
+    fullName: selectNodes(xPath)
+    summary: Selects a collection of nodes matching an XPath expression.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selectNodes(xPath: string): Word.CustomXmlNodeCollection;'
+      parameters:
+        - id: xPath
+          description: The XPath expression.
+          type: string
+      return:
+        type: <xref uid="word!Word.CustomXmlNodeCollection:class" />
+        description: ''
+  - name: selectSingleNode(xPath)
+    uid: word!Word.CustomXmlNode#selectSingleNode:member(1)
+    package: word!
+    fullName: selectSingleNode(xPath)
+    summary: Selects a single node from a collection matching an XPath expression.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selectSingleNode(xPath: string): Word.CustomXmlNode;'
+      parameters:
+        - id: xPath
+          description: The XPath expression.
+          type: string
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.CustomXmlNode#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.CustomXmlNodeUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.CustomXmlNode#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.CustomXmlNode): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.CustomXmlNode:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.CustomXmlNode#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.CustomXmlNode`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.CustomXmlNodeData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CustomXmlNodeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.CustomXmlNode#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.CustomXmlNode#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.CustomXmlNode;'
+      return:
+        type: <xref uid="word!Word.CustomXmlNode:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

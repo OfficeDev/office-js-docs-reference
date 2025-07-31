@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: Word.Interfaces.XmlMappingUpdateData
+uid: word!Word.Interfaces.XmlMappingUpdateData:interface
+package: word!
+fullName: Word.Interfaces.XmlMappingUpdateData
+summary: >-
+  An interface for updating data on the `XmlMapping` object, for use in
+  `xmlMapping.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: customXmlNode
+    uid: word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member
+    package: word!
+    fullName: customXmlNode
+    summary: >-
+      Returns a `CustomXmlNode` object that represents the custom XML node in
+      the data store that the content control in the document maps to.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'customXmlNode?: Word.Interfaces.CustomXmlNodeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData:interface" />
+  - name: customXmlPart
+    uid: word!Word.Interfaces.XmlMappingUpdateData#customXmlPart:member
+    package: word!
+    fullName: customXmlPart
+    summary: >-
+      Returns a `CustomXmlPart` object that represents the custom XML part to
+      which the content control in the document maps.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'customXmlPart?: Word.Interfaces.CustomXmlPartUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlPartUpdateData:interface" />
