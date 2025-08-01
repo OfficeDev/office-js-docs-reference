@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Word.Interfaces.BreakCollectionLoadOptions
+uid: word!Word.Interfaces.BreakCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.BreakCollectionLoadOptions
+summary: Contains a collection of [Word.Break](xref:word!Word.Break:class) objects.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.BreakCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: pageIndex
+    uid: word!Word.Interfaces.BreakCollectionLoadOptions#pageIndex:member
+    package: word!
+    fullName: pageIndex
+    summary: >-
+      For EACH ITEM in the collection: Returns the page number on which the
+      break occurs.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageIndex?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.BreakCollectionLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      For EACH ITEM in the collection: Returns a `Range` object that represents
+      the portion of the document that's contained in the break.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />

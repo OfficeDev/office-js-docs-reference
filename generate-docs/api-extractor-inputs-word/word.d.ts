@@ -1157,6 +1157,119 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.BorderCollectionData;
     }
     /**
+     * Represents a break in a Word document. This could be a page, column, or section break.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Break extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `Range` object that represents the portion of the document that's contained in the break.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
+         * Returns the page number on which the break occurs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly pageIndex: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.BreakUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Break): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.BreakLoadOptions): Word.Break;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Break;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Break;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Break;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Break;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Break` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BreakData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.BreakData;
+    }
+    /**
+     * Contains a collection of {@link Word.Break} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class BreakCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Break[];
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.BreakCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.BreakCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.BreakCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.BreakCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.BreakCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.BreakCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.BreakCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BreakCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.BreakCollectionData;
+    }
+    /**
      * The data specific to content controls of type CheckBox.
      *
      * @remarks
@@ -1678,6 +1791,1215 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.CommentReplyCollectionData;
     }
     /**
+     * Represents the XML mapping on a {@link Word.ContentControl} object between custom XML and that content control. An XML mapping is a link between the text in a content control and an XML element in the custom XML data store for this document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class XmlMapping extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlNode: Word.CustomXmlNode;
+        /**
+         * Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlPart: Word.CustomXmlPart;
+        /**
+         * Returns whether the content control in the document is mapped to an XML node in the document's XML data store.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isMapped: boolean;
+        /**
+         * Returns the prefix mappings used to evaluate the XPath for the current XML mapping.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly prefixMappings: string;
+        /**
+         * Returns the XPath for the XML mapping, which evaluates to the currently mapped XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly xpath: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.XmlMappingUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.XmlMapping): void;
+        /**
+         * Deletes the XML mapping from the parent content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Allows creating or changing the XML mapping on the content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression to evaluate.
+         * @param options - Optional. The options available for setting the XML mapping.
+         */
+        setMapping(xPath: string, options?: Word.XmlSetMappingOptions): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Allows creating or changing the XML data mapping on the content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param node - The custom XML node to map.
+         */
+        setMappingByNode(node: Word.CustomXmlNode): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.XmlMappingLoadOptions): Word.XmlMapping;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.XmlMapping;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.XmlMapping;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.XmlMapping;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.XmlMapping;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.XmlMapping` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.XmlMappingData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.XmlMappingData;
+    }
+    /**
+     * The options that define the prefix mapping and the source of the custom XML data.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface XmlSetMappingOptions {
+        /**
+         * If provided, specifies the prefix mappings to use when querying the expression provided in the `xPath` parameter of the `XmlMapping.setMapping` calling method. If omitted, Word uses the set of prefix mappings for the specified custom XML part in the current document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        prefixMapping?: string;
+        /**
+         * If provided, specifies the desired custom XML data to map the content control to. If this property is omitted, the XPath is evaluated against all custom XML in the current document, and the mapping is established with the first `CustomXmlPart` where the XPath resolves to an XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source?: Word.CustomXmlPart;
+    }
+    /**
+     * Represents a collection of {@link Word.CustomXmlPrefixMapping} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPrefixMappingCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CustomXmlPrefixMapping[];
+        /**
+         * Adds a custom namespace/prefix mapping to use when querying an item.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param prefix - The prefix to associate with the namespace.
+         * @param namespaceUri - The namespace URI to map.
+         */
+        addNamespace(prefix: string, namespaceUri: string): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns the number of items in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns a `CustomXmlPrefixMapping` object that represents the specified item in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a paragraph object.
+         */
+        getItem(index: number): Word.CustomXmlPrefixMapping;
+        /**
+         * Gets the namespace corresponding to the specified prefix.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param prefix - The prefix to look up.
+         */
+        lookupNamespace(prefix: string): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets the prefix corresponding to the specified namespace.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param namespaceUri - The namespace URI to look up.
+         */
+        lookupPrefix(namespaceUri: string): OfficeExtension.ClientResult<string>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPrefixMappingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlPrefixMappingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CustomXmlPrefixMappingCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlPrefixMappingCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlPrefixMappingCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlPrefixMappingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPrefixMappingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.CustomXmlPrefixMappingCollectionData;
+    }
+    /**
+     * Represents a `CustomXmlPrefixMapping` object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPrefixMapping extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceUri: string;
+        /**
+         * Gets the prefix for the `CustomXmlPrefixMapping` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly prefix: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlPrefixMappingLoadOptions): Word.CustomXmlPrefixMapping;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlPrefixMapping;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CustomXmlPrefixMapping;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlPrefixMapping;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlPrefixMapping;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlPrefixMapping` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPrefixMappingData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CustomXmlPrefixMappingData;
+    }
+    /**
+     * Represents a schema in a {@link Word.CustomXmlSchemaCollection} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlSchema extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the location of the schema on a computer.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly location: string;
+        /**
+         * Gets the unique address identifier for the namespace of the `CustomXmlSchema` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceUri: string;
+        /**
+         * Deletes this schema from the {@link Word.CustomXmlSchemaCollection} object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Reloads the schema from a file.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reload(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlSchemaLoadOptions): Word.CustomXmlSchema;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlSchema;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CustomXmlSchema;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlSchema;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlSchema;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlSchema` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlSchemaData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CustomXmlSchemaData;
+    }
+    /**
+     * Represents a collection of {@link Word.CustomXmlSchema} objects attached to a data stream.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlSchemaCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CustomXmlSchema[];
+        /**
+         * Adds one or more schemas to the schema collection that can then be added to a stream in the data store and to the schema library.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. The options that define the schema to be added.
+         */
+        add(options?: Word.CustomXmlAddSchemaOptions): Word.CustomXmlSchema;
+        /**
+         * Adds an existing schema collection to the current schema collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param schemaCollection - The schema collection to add.
+         */
+        addCollection(schemaCollection: Word.CustomXmlSchemaCollection): Word.CustomXmlSchemaCollection;
+        /**
+         * Returns the number of items in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns a `CustomXmlSchema` object that represents the specified item in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a paragraph object.
+         */
+        getItem(index: number): Word.CustomXmlSchema;
+        /**
+         * Returns the number of items in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNamespaceUri(): OfficeExtension.ClientResult<number>;
+        /**
+         * Specifies whether the schemas in the schema collection are valid (conforms to the syntactic rules of XML and the rules for a specified vocabulary).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        validate(): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlSchemaCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlSchemaCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlSchemaCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CustomXmlSchemaCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlSchemaCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlSchemaCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlSchemaCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlSchemaCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.CustomXmlSchemaCollectionData;
+    }
+    /**
+     * Adds one or more schemas to a schema collection that can then be added to a stream in the data store and to the schema library.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlAddSchemaOptions {
+        /**
+         * If provided, specifies the alias of the schema to be added to the collection. However, if the alias already exists in the Schema Library, the schema can be found using this value.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alias?: string;
+        /**
+         * If provided, specifies the location of the schema on a disk. If this property is specified, the schema is added to the collection and to the Schema Library.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fileName?: string;
+        /**
+         * If provided, specifies whether, in the case where the schema is being added to the Schema Library, the Schema Library keys should be written to the registry (`HKEY_LOCAL_MACHINE` for all users or `HKEY_CURRENT_USER` for just the current user). The property defaults to `false` and writes to `HKEY_CURRENT_USER`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        installForAllUsers?: boolean;
+        /**
+         * If provided, specifies the namespace of the schema to be added to the collection. However, if the schema already exists in the Schema Library, the schema will be retrieved from there.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namespaceUri?: string;
+    }
+    /**
+     * Represents a collection of {@link Word.CustomXmlValidationError} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlValidationErrorCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CustomXmlValidationError[];
+        /**
+         * Adds a `CustomXmlValidationError` object containing an XML validation error to the `CustomXmlValidationErrorCollection` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param node - The XML node where the error occurred.
+         * @param errorName - The name of the error.
+         * @param options - Optional. The options that define the error message and other settings.
+         */
+        add(node: Word.CustomXmlNode, errorName: string, options?: Word.CustomXmlAddValidationErrorOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns the number of items in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns a `CustomXmlValidationError` object that represents the specified item in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a paragraph object.
+         */
+        getItem(index: number): Word.CustomXmlValidationError;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlValidationErrorCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlValidationErrorCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CustomXmlValidationErrorCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlValidationErrorCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlValidationErrorCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlValidationErrorCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlValidationErrorCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.CustomXmlValidationErrorCollectionData;
+    }
+    /**
+     * The options that define the descriptive error text and the state of `clearedOnUpdate`.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlAddValidationErrorOptions {
+        /**
+         * If provided, specifies whether the error is to be cleared from the {@link Word.CustomXmlValidationErrorCollection} when the XML is corrected and updated.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clearedOnUpdate?: boolean;
+        /**
+         * If provided, specifies the descriptive error text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        errorText?: string;
+    }
+    /**
+     * Represents a single validation error in a {@link Word.CustomXmlValidationErrorCollection} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlValidationError extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly node: Word.CustomXmlNode;
+        /**
+         * Gets an integer representing the validation error in the `CustomXmlValidationError` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly errorCode: number;
+        /**
+         * Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Gets the text in the `CustomXmlValidationError` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly text: string;
+        /**
+         * Gets the type of error generated from the `CustomXmlValidationError` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.CustomXmlValidationErrorType | "schemaGenerated" | "automaticallyCleared" | "manual";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CustomXmlValidationErrorUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.CustomXmlValidationError): void;
+        /**
+         * Deletes this `CustomXmlValidationError` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlValidationErrorLoadOptions): Word.CustomXmlValidationError;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlValidationError;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CustomXmlValidationError;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlValidationError;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlValidationError;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlValidationError` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlValidationErrorData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CustomXmlValidationErrorData;
+    }
+    /**
+     * Contains a collection of {@link Word.CustomXmlNode} objects representing the XML nodes in a document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlNodeCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CustomXmlNode[];
+        /**
+         * Returns the number of items in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns a `CustomXmlNode` object that represents the specified item in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a CustomXMLNode object.
+         */
+        getItem(index: number): Word.CustomXmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlNodeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlNodeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlNodeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CustomXmlNodeCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlNodeCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlNodeCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlNodeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlNodeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.CustomXmlNodeCollectionData;
+    }
+    /**
+     * The options that define the prefix mapping and the source of the custom XML data.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlAppendChildNodeOptions {
+        /**
+         * If provided, specifies the base name of the element to be appended.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name?: string;
+        /**
+         * If provided, specifies the namespace of the element to be appended. This property is required to append nodes of {@link Word.CustomXmlNodeType | type} `element` or `attribute`; otherwise, it's ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namespaceUri?: string;
+        /**
+         * If provided, specifies the type of node to append. If the property isn't specified, it's assumed to be of type `element`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeType?: Word.CustomXmlNodeType | "element" | "attribute" | "text" | "cData" | "processingInstruction" | "comment" | "document";
+        /**
+         * If provided, specifies the value of the appended node for those nodes that allow text. If the node doesn't allow text, the property is ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeValue?: string;
+    }
+    /**
+     * Inserts a new node just before the context node in the tree.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlInsertNodeBeforeOptions {
+        /**
+         * If provided, specifies the base name of the element to be inserted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name?: string;
+        /**
+         * If provided, specifies the namespace of the element to be inserted. This property is required to insert nodes of {@link Word.CustomXmlNodeType | type} `element` or `attribute`; otherwise, it's ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namespaceUri?: string;
+        /**
+         * If provided, specifies the context node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nextSibling?: Word.CustomXmlNode;
+        /**
+         * If provided, specifies the type of node to append. If the property isn't specified, it's assumed to be of type `element`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeType?: Word.CustomXmlNodeType | "element" | "attribute" | "text" | "cData" | "processingInstruction" | "comment" | "document";
+        /**
+         * If provided, specifies the value of the inserted node for those nodes that allow text. If the node doesn't allow text, the property is ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeValue?: string;
+    }
+    /**
+     * Inserts a new node just before the context node in the tree.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlInsertSubtreeBeforeOptions {
+        /**
+         * If provided, specifies the context node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nextSibling?: Word.CustomXmlNode;
+    }
+    /**
+     * Removes the specified child node and replaces it with a different node in the same location.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlReplaceChildNodeOptions {
+        /**
+         * If provided, specifies the base name of the replacement element.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name?: string;
+        /**
+         * If provided, specifies the namespace of the replacement element. This property is required to replace nodes of {@link Word.CustomXmlNodeType | type} `element` or `attribute`; otherwise, it's ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namespaceUri?: string;
+        /**
+         * If provided, specifies the type of the replacement node. If the property isn't specified, it's assumed to be of type `element`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeType?: Word.CustomXmlNodeType | "element" | "attribute" | "text" | "cData" | "processingInstruction" | "comment" | "document";
+        /**
+         * If provided, specifies the value of the replacement node for those nodes that allow text. If the node doesn't allow text, the property is ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeValue?: string;
+    }
+    /**
+     * Represents an XML node in a tree in the document. The `CustomXmlNode` object is a member of the {@link Word.CustomXmlNodeCollection} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlNode extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets a `CustomXmlNodeCollection` object representing the attributes of the current element in the current node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly attributes: Word.CustomXmlNodeCollection;
+        /**
+         * Gets a `CustomXmlNodeCollection` object containing all of the child elements of the current node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly childNodes: Word.CustomXmlNodeCollection;
+        /**
+         * Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly firstChild: Word.CustomXmlNode;
+        /**
+         * Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), the property returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly lastChild: Word.CustomXmlNode;
+        /**
+         * Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly nextSibling: Word.CustomXmlNode;
+        /**
+         * Gets the object representing the part associated with this node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly ownerPart: Word.CustomXmlPart;
+        /**
+         * Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentNode: Word.CustomXmlNode;
+        /**
+         * Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly previousSibling: Word.CustomXmlNode;
+        /**
+         * Gets the base name of the node without the namespace prefix, if one exists.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly baseName: string;
+        /**
+         * Gets the unique address identifier for the namespace of the node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceUri: string;
+        /**
+         * Gets the type of the current node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly nodeType: Word.CustomXmlNodeType | "element" | "attribute" | "text" | "cData" | "processingInstruction" | "comment" | "document";
+        /**
+         * Specifies the value of the current node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeValue: string;
+        /**
+         * Specifies the text for the current node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text: string;
+        /**
+         * Gets a string with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly xpath: string;
+        /**
+         * Gets the XML representation of the current node and its children.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly xml: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CustomXmlNodeUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.CustomXmlNode): void;
+        /**
+         * Appends a single node as the last child under the context element node in the tree.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. The options that define the node to be appended.
+         */
+        appendChildNode(options?: Word.CustomXmlAppendChildNodeOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Adds a subtree as the last child under the context element node in the tree.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - A string representing the XML subtree.
+         */
+        appendChildSubtree(xml: string): OfficeExtension.ClientResult<number>;
+        /**
+         * Deletes the current node from the tree (including all of its children, if any exist).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Specifies if the current element node has child element nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hasChildNodes(): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Inserts a new node just before the context node in the tree.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. The options that define the node to be inserted.
+         */
+        insertNodeBefore(options?: Word.CustomXmlInsertNodeBeforeOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Inserts the specified subtree into the location just before the context node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - A string representing the XML subtree.
+         * @param options - Optional. The options available for inserting the subtree.
+         */
+        insertSubtreeBefore(xml: string, options?: Word.CustomXmlInsertSubtreeBeforeOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Removes the specified child node from the tree.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param child - The child node to remove.
+         */
+        removeChild(child: Word.CustomXmlNode): OfficeExtension.ClientResult<number>;
+        /**
+         * Removes the specified child node and replaces it with a different node in the same location.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param oldNode - The node to be replaced.
+         * @param options - Optional. The options that define the child node which is to replace the old node.
+         */
+        replaceChildNode(oldNode: Word.CustomXmlNode, options?: Word.CustomXmlReplaceChildNodeOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Removes the specified node and replaces it with a different subtree in the same location.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - A string representing the new subtree.
+         * @param oldNode - The node to be replaced.
+         */
+        replaceChildSubtree(xml: string, oldNode: Word.CustomXmlNode): OfficeExtension.ClientResult<number>;
+        /**
+         * Selects a collection of nodes matching an XPath expression.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression.
+         */
+        selectNodes(xPath: string): Word.CustomXmlNodeCollection;
+        /**
+         * Selects a single node from a collection matching an XPath expression.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression.
+         */
+        selectSingleNode(xPath: string): Word.CustomXmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CustomXmlNodeLoadOptions): Word.CustomXmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CustomXmlNode;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CustomXmlNode;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlNode;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlNode` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlNodeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CustomXmlNodeData;
+    }
+    /**
      * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
@@ -1821,6 +3143,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly tables: Word.TableCollection;
+        /**
+         * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly xmlMapping: Word.XmlMapping;
         /**
          * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
          *
@@ -2751,6 +4081,55 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.CustomPropertyCollectionData;
     }
     /**
+     * The options for adding a node to the XML tree.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CustomXmlAddNodeOptions {
+        /**
+         * If provided, specifies the base name of the element to be added.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name?: string;
+        /**
+         * If provided, specifies the namespace of the element to be appended. This property is required to add nodes of {@link Word.CustomXmlNodeType} | type} `element` or `attribute`; otherwise, it's ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namespaceUri?: string;
+        /**
+         * If provided, specifies the node which should become the next sibling of the new node. If not specified, the node is added to the end of the parent node's children. This property is ignored for additions of {@link Word.CustomXmlNodeType | type} `attribute`. If the node isn't a child of the parent, an error is displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nextSibling?: Word.CustomXmlNode;
+        /**
+         * If provided, specifies the type of node to add. If the parameter isn't specified, it's assumed to be of type `element`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeType?: Word.CustomXmlNodeType | "element" | "attribute" | "text" | "cData" | "processingInstruction" | "comment" | "document";
+        /**
+         * If provided, specifies the value of the added node for those nodes that allow text. If the node doesn't allow text, the property is ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeValue?: string;
+    }
+    /**
      * Represents a custom XML part.
      *
      * @remarks
@@ -2759,6 +4138,46 @@ export declare namespace Word {
     export class CustomXmlPart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly documentElement: Word.CustomXmlNode;
+        /**
+         * Gets a `CustomXmlValidationErrorCollection` object that provides access to any XML validation errors.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly errors: Word.CustomXmlValidationErrorCollection;
+        /**
+         * Gets the set of namespace prefix mappings used against the current `CustomXmlPart` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceManager: Word.CustomXmlPrefixMappingCollection;
+        /**
+         * Specifies a `CustomXmlSchemaCollection` object representing the set of schemas attached to a bound region of data in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        schemaCollection: Word.CustomXmlSchemaCollection;
+        /**
+         * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly builtIn: boolean;
         /**
          * Gets the ID of the custom XML part.
          *
@@ -2773,6 +4192,33 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         readonly namespaceUri: string;
+        /**
+         * Gets the XML representation of the current `CustomXmlPart` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly xml: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CustomXmlPartUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.CustomXmlPart): void;
+        /**
+         * Adds a node to the XML tree.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param parent - The parent node to which the new node will be added.
+         * @param options - Optional. The options that define the node to be added.
+         */
+        addNode(parent: Word.CustomXmlNode, options?: Word.CustomXmlAddNodeOptions): OfficeExtension.ClientResult<number>;
         /**
          * Deletes the custom XML part.
          *
@@ -2901,6 +4347,16 @@ export declare namespace Word {
             [key: string]: string;
         }, index?: number): void;
         /**
+         * Populates the `CustomXmlPart` object from an XML string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - The XML string to load.
+         */
+        loadXml(xml: string): OfficeExtension.ClientResult<boolean>;
+        /**
          * Queries the XML content of the custom XML part.
          *
          * @remarks
@@ -2928,6 +4384,26 @@ export declare namespace Word {
         query(xpath: string, namespaceMappings: {
             [key: string]: string;
         }): OfficeExtension.ClientResult<string[]>;
+        /**
+         * Selects a collection of nodes from a custom XML part.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression to evaluate.
+         */
+        selectNodes(xPath: string): Word.CustomXmlNodeCollection;
+        /**
+         * Selects a single node within a custom XML part matching an XPath expression.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression to evaluate.
+         */
+        selectSingleNode(xPath: string): Word.CustomXmlNode;
         /**
          * Sets the full XML content of the custom XML part.
          *
@@ -3234,6 +4710,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         readonly customXmlParts: Word.CustomXmlPartCollection;
+        /**
+         * Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hyperlinks: Word.HyperlinkCollection;
         /**
          * Gets the properties of the document.
          *
@@ -4911,6 +6395,271 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.FontData;
     }
     /**
+     * Represents a hyperlink in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Hyperlink extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
+         * Specifies the address (for example, a file name or URL) of the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        address: string;
+        /**
+         * Specifies the text string for the hyperlink's subject line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        emailSubject: string;
+        /**
+         * Returns `true` if extra information is required to resolve the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isExtraInfoRequired: boolean;
+        /**
+         * Returns the name of the `Hyperlink` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        screenTip: string;
+        /**
+         * Specifies a named location in the destination of the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subAddress: string;
+        /**
+         * Specifies the name of the frame or window in which to load the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        target: string;
+        /**
+         * Specifies the hyperlink's visible text in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textToDisplay: string;
+        /**
+         * Returns the hyperlink type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.HyperlinkType | "Range" | "Shape" | "InlineShape";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.HyperlinkUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Hyperlink): void;
+        /**
+         * Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addToFavorites(): void;
+        /**
+         * Creates a new document linked to the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param fileName - Required. The name of the file.
+         * @param editNow - Required. `true` to start editing now.
+         * @param overwrite - Required. `true` to overwrite if there's another file with the same name.
+         */
+        createNewDocument(fileName: string, editNow: boolean, overwrite: boolean): void;
+        /**
+         * Deletes the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.HyperlinkLoadOptions): Word.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Hyperlink;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Hyperlink;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Hyperlink;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Hyperlink` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.HyperlinkData;
+    }
+    /**
+     * Contains a collection of {@link Word.Hyperlink} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class HyperlinkCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Hyperlink[];
+        /**
+         * Returns a `Hyperlink` object that represents a new hyperlink added to a range, selection, or document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param anchor - Required. The range to which the hyperlink is added.
+         * @param options - Optional. The options to further configure the new hyperlink.
+         */
+        add(anchor: Word.Range, options?: Word.HyperlinkAddOptions): Word.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.HyperlinkCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.HyperlinkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.HyperlinkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.HyperlinkCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.HyperlinkCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.HyperlinkCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.HyperlinkCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.HyperlinkCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.HyperlinkCollectionData;
+    }
+    /**
+     * Specifies the options for adding to a {@link Word.HyperlinkCollection} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface HyperlinkAddOptions {
+        /**
+         * If provided, specifies the address (e.g., URL or file path) of the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        address?: string;
+        /**
+         * If provided, specifies the text that appears as a tooltip.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        screenTip?: string;
+        /**
+         * If provided, specifies the location within the file or document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subAddress?: string;
+        /**
+         * If provided, specifies the name of the frame or window in which to load the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        target?: string;
+        /**
+         * If provided, specifies the visible text of the hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textToDisplay?: string;
+    }
+    /**
      * Represents an inline picture.
      *
      * @remarks
@@ -6072,6 +7821,14 @@ export declare namespace Word {
     export class Page extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Gets a `BreakCollection` object that represents the breaks on the page.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly breaks: Word.BreakCollection;
         /**
          * Gets the height, in points, of the paper defined in the Page Setup dialog box.
          *
@@ -7410,6 +9167,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
+        /**
+         * Returns a `HyperlinkCollection` object that represents all the hyperlinks in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hyperlinks: Word.HyperlinkCollection;
         /**
          * Gets the collection of inline picture objects in the range.
          *
@@ -18568,6 +20333,94 @@ export declare namespace Word {
         zulu = "Zulu",
     }
     /**
+     * Represents the type of a {@link Word.CustomXmlValidationError}.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CustomXmlValidationErrorType {
+        /**
+         * Represents a validation error generated by the schema.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        schemaGenerated = "schemaGenerated",
+        /**
+         * Represents a validation error that is automatically cleared.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        automaticallyCleared = "automaticallyCleared",
+        /**
+         * Represents a validation error that is manually created.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        manual = "manual",
+    }
+    /**
+     * Represents the type of a {@link Word.CustomXmlNode}.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CustomXmlNodeType {
+        /**
+         * Represents an XML element node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        element = "element",
+        /**
+         * Represents an XML attribute node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        attribute = "attribute",
+        /**
+         * Represents an XML text node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text = "text",
+        /**
+         * Represents an XML CDATA section node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cData = "cData",
+        /**
+         * Represents an XML processing instruction node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        processingInstruction = "processingInstruction",
+        /**
+         * Represents an XML comment node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comment = "comment",
+        /**
+         * Represents an XML document node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        document = "document",
+    }
+    /**
      * Represents the list formatting characteristics of a range.
      *
      * @remarks
@@ -24086,6 +25939,36 @@ export declare namespace Word {
          */
         text2 = "Text2",
     }
+    /**
+     * Specifies the hyperlink type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum HyperlinkType {
+        /**
+         * Represents a hyperlink to a range in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        range = "Range",
+        /**
+         * Represents a hyperlink to a shape in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shape = "Shape",
+        /**
+         * Represents a hyperlink to an inline shape in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inlineShape = "InlineShape",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -24215,6 +26098,21 @@ export declare namespace Word {
             outsideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
             items?: Word.Interfaces.BorderData[];
         }
+        /** An interface for updating data on the `Break` object, for use in `break.set({ ... })`. */
+        export interface BreakUpdateData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained in the break.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeUpdateData;
+        }
+        /** An interface for updating data on the `BreakCollection` object, for use in `breakCollection.set({ ... })`. */
+        export interface BreakCollectionUpdateData {
+            items?: Word.Interfaces.BreakData[];
+        }
         /** An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`. */
         export interface CheckboxContentControlUpdateData {
             /**
@@ -24319,6 +26217,119 @@ export declare namespace Word {
         export interface CommentReplyCollectionUpdateData {
             items?: Word.Interfaces.CommentReplyData[];
         }
+        /** An interface for updating data on the `XmlMapping` object, for use in `xmlMapping.set({ ... })`. */
+        export interface XmlMappingUpdateData {
+            /**
+             * Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customXmlNode?: Word.Interfaces.CustomXmlNodeUpdateData;
+            /**
+             * Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customXmlPart?: Word.Interfaces.CustomXmlPartUpdateData;
+        }
+        /** An interface for updating data on the `CustomXmlPrefixMappingCollection` object, for use in `customXmlPrefixMappingCollection.set({ ... })`. */
+        export interface CustomXmlPrefixMappingCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPrefixMappingData[];
+        }
+        /** An interface for updating data on the `CustomXmlSchemaCollection` object, for use in `customXmlSchemaCollection.set({ ... })`. */
+        export interface CustomXmlSchemaCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlSchemaData[];
+        }
+        /** An interface for updating data on the `CustomXmlValidationErrorCollection` object, for use in `customXmlValidationErrorCollection.set({ ... })`. */
+        export interface CustomXmlValidationErrorCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlValidationErrorData[];
+        }
+        /** An interface for updating data on the `CustomXmlValidationError` object, for use in `customXmlValidationError.set({ ... })`. */
+        export interface CustomXmlValidationErrorUpdateData {
+            /**
+             * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            node?: Word.Interfaces.CustomXmlNodeUpdateData;
+        }
+        /** An interface for updating data on the `CustomXmlNodeCollection` object, for use in `customXmlNodeCollection.set({ ... })`. */
+        export interface CustomXmlNodeCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlNodeData[];
+        }
+        /** An interface for updating data on the `CustomXmlNode` object, for use in `customXmlNode.set({ ... })`. */
+        export interface CustomXmlNodeUpdateData {
+            /**
+             * Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstChild?: Word.Interfaces.CustomXmlNodeUpdateData;
+            /**
+             * Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastChild?: Word.Interfaces.CustomXmlNodeUpdateData;
+            /**
+             * Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextSibling?: Word.Interfaces.CustomXmlNodeUpdateData;
+            /**
+             * Gets the object representing the part associated with this node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ownerPart?: Word.Interfaces.CustomXmlPartUpdateData;
+            /**
+             * Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentNode?: Word.Interfaces.CustomXmlNodeUpdateData;
+            /**
+             * Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previousSibling?: Word.Interfaces.CustomXmlNodeUpdateData;
+            /**
+             * Specifies the value of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: string;
+            /**
+             * Specifies the text for the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+        }
         /** An interface for updating data on the `ContentControl` object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
             /**
@@ -24335,6 +26346,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             font?: Word.Interfaces.FontUpdateData;
+            /**
+             * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlMapping?: Word.Interfaces.XmlMappingUpdateData;
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
@@ -24451,6 +26470,17 @@ export declare namespace Word {
         /** An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({ ... })`. */
         export interface CustomPropertyCollectionUpdateData {
             items?: Word.Interfaces.CustomPropertyData[];
+        }
+        /** An interface for updating data on the `CustomXmlPart` object, for use in `customXmlPart.set({ ... })`. */
+        export interface CustomXmlPartUpdateData {
+            /**
+             * Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            documentElement?: Word.Interfaces.CustomXmlNodeUpdateData;
         }
         /** An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ... })`. */
         export interface CustomXmlPartCollectionUpdateData {
@@ -25025,6 +27055,69 @@ export declare namespace Word {
              * @beta
              */
             underlineColor?: string;
+        }
+        /** An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`. */
+        export interface HyperlinkUpdateData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeUpdateData;
+            /**
+             * Specifies the address (for example, a file name or URL) of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: string;
+            /**
+             * Specifies the text string for the hyperlink's subject line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emailSubject?: string;
+            /**
+             * Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: string;
+            /**
+             * Specifies a named location in the destination of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subAddress?: string;
+            /**
+             * Specifies the name of the frame or window in which to load the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            target?: string;
+            /**
+             * Specifies the hyperlink's visible text in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textToDisplay?: string;
+        }
+        /** An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`. */
+        export interface HyperlinkCollectionUpdateData {
+            items?: Word.Interfaces.HyperlinkData[];
         }
         /** An interface for updating data on the `InlinePicture` object, for use in `inlinePicture.set({ ... })`. */
         export interface InlinePictureUpdateData {
@@ -27119,6 +29212,29 @@ export declare namespace Word {
         export interface BorderCollectionData {
             items?: Word.Interfaces.BorderData[];
         }
+        /** An interface describing the data returned by calling `break.toJSON()`. */
+        export interface BreakData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained in the break.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeData;
+            /**
+             * Returns the page number on which the break occurs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageIndex?: number;
+        }
+        /** An interface describing the data returned by calling `breakCollection.toJSON()`. */
+        export interface BreakCollectionData {
+            items?: Word.Interfaces.BreakData[];
+        }
         /** An interface describing the data returned by calling `checkboxContentControl.toJSON()`. */
         export interface CheckboxContentControlData {
             /**
@@ -27300,6 +29416,269 @@ export declare namespace Word {
         export interface CommentReplyCollectionData {
             items?: Word.Interfaces.CommentReplyData[];
         }
+        /** An interface describing the data returned by calling `xmlMapping.toJSON()`. */
+        export interface XmlMappingData {
+            /**
+             * Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customXmlNode?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customXmlPart?: Word.Interfaces.CustomXmlPartData;
+            /**
+             * Returns whether the content control in the document is mapped to an XML node in the document's XML data store.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMapped?: boolean;
+            /**
+             * Returns the prefix mappings used to evaluate the XPath for the current XML mapping.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            prefixMappings?: string;
+            /**
+             * Returns the XPath for the XML mapping, which evaluates to the currently mapped XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xpath?: string;
+        }
+        /** An interface describing the data returned by calling `customXmlPrefixMappingCollection.toJSON()`. */
+        export interface CustomXmlPrefixMappingCollectionData {
+            items?: Word.Interfaces.CustomXmlPrefixMappingData[];
+        }
+        /** An interface describing the data returned by calling `customXmlPrefixMapping.toJSON()`. */
+        export interface CustomXmlPrefixMappingData {
+            /**
+             * Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: string;
+            /**
+             * Gets the prefix for the `CustomXmlPrefixMapping` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            prefix?: string;
+        }
+        /** An interface describing the data returned by calling `customXmlSchema.toJSON()`. */
+        export interface CustomXmlSchemaData {
+            /**
+             * Gets the location of the schema on a computer.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            location?: string;
+            /**
+             * Gets the unique address identifier for the namespace of the `CustomXmlSchema` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: string;
+        }
+        /** An interface describing the data returned by calling `customXmlSchemaCollection.toJSON()`. */
+        export interface CustomXmlSchemaCollectionData {
+            items?: Word.Interfaces.CustomXmlSchemaData[];
+        }
+        /** An interface describing the data returned by calling `customXmlValidationErrorCollection.toJSON()`. */
+        export interface CustomXmlValidationErrorCollectionData {
+            items?: Word.Interfaces.CustomXmlValidationErrorData[];
+        }
+        /** An interface describing the data returned by calling `customXmlValidationError.toJSON()`. */
+        export interface CustomXmlValidationErrorData {
+            /**
+             * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            node?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets an integer representing the validation error in the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            errorCode?: number;
+            /**
+             * Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Gets the text in the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+            /**
+             * Gets the type of error generated from the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.CustomXmlValidationErrorType | "schemaGenerated" | "automaticallyCleared" | "manual";
+        }
+        /** An interface describing the data returned by calling `customXmlNodeCollection.toJSON()`. */
+        export interface CustomXmlNodeCollectionData {
+            items?: Word.Interfaces.CustomXmlNodeData[];
+        }
+        /** An interface describing the data returned by calling `customXmlNode.toJSON()`. */
+        export interface CustomXmlNodeData {
+            /**
+             * Gets a `CustomXmlNodeCollection` object representing the attributes of the current element in the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            attributes?: Word.Interfaces.CustomXmlNodeData[];
+            /**
+             * Gets a `CustomXmlNodeCollection` object containing all of the child elements of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            childNodes?: Word.Interfaces.CustomXmlNodeData[];
+            /**
+             * Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstChild?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastChild?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextSibling?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets the object representing the part associated with this node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ownerPart?: Word.Interfaces.CustomXmlPartData;
+            /**
+             * Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentNode?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previousSibling?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets the base name of the node without the namespace prefix, if one exists.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseName?: string;
+            /**
+             * Gets the unique address identifier for the namespace of the node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: string;
+            /**
+             * Gets the type of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeType?: Word.CustomXmlNodeType | "element" | "attribute" | "text" | "cData" | "processingInstruction" | "comment" | "document";
+            /**
+             * Specifies the value of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: string;
+            /**
+             * Specifies the text for the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+            /**
+             * Gets a string with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xpath?: string;
+            /**
+             * Gets the XML representation of the current node and its children.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: string;
+        }
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             /**
@@ -27374,6 +29753,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             tables?: Word.Interfaces.TableData[];
+            /**
+             * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlMapping?: Word.Interfaces.XmlMappingData;
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
@@ -27536,6 +29923,46 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
         export interface CustomXmlPartData {
             /**
+             * Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            documentElement?: Word.Interfaces.CustomXmlNodeData;
+            /**
+             * Gets a `CustomXmlValidationErrorCollection` object that provides access to any XML validation errors.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            errors?: Word.Interfaces.CustomXmlValidationErrorData[];
+            /**
+             * Gets the set of namespace prefix mappings used against the current `CustomXmlPart` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceManager?: Word.Interfaces.CustomXmlPrefixMappingData[];
+            /**
+             * Specifies a `CustomXmlSchemaCollection` object representing the set of schemas attached to a bound region of data in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            schemaCollection?: Word.Interfaces.CustomXmlSchemaData[];
+            /**
+             * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
              * Gets the ID of the custom XML part.
              *
              * @remarks
@@ -27549,6 +29976,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.4]
              */
             namespaceUri?: string;
+            /**
+             * Gets the XML representation of the current `CustomXmlPart` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: string;
         }
         /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
         export interface CustomXmlPartCollectionData {
@@ -27588,6 +30023,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.4]
              */
             customXmlParts?: Word.Interfaces.CustomXmlPartData[];
+            /**
+             * Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hyperlinks?: Word.Interfaces.HyperlinkData[];
             /**
              * Gets the properties of the document.
              *
@@ -28291,6 +30734,93 @@ export declare namespace Word {
              */
             underlineColor?: string;
         }
+        /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
+        export interface HyperlinkData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeData;
+            /**
+             * Specifies the address (for example, a file name or URL) of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: string;
+            /**
+             * Specifies the text string for the hyperlink's subject line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emailSubject?: string;
+            /**
+             * Returns `true` if extra information is required to resolve the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isExtraInfoRequired?: boolean;
+            /**
+             * Returns the name of the `Hyperlink` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: string;
+            /**
+             * Specifies a named location in the destination of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subAddress?: string;
+            /**
+             * Specifies the name of the frame or window in which to load the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            target?: string;
+            /**
+             * Specifies the hyperlink's visible text in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textToDisplay?: string;
+            /**
+             * Returns the hyperlink type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.HyperlinkType | "Range" | "Shape" | "InlineShape";
+        }
+        /** An interface describing the data returned by calling `hyperlinkCollection.toJSON()`. */
+        export interface HyperlinkCollectionData {
+            items?: Word.Interfaces.HyperlinkData[];
+        }
         /** An interface describing the data returned by calling `inlinePicture.toJSON()`. */
         export interface InlinePictureData {
             /**
@@ -28537,6 +31067,14 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `page.toJSON()`. */
         export interface PageData {
+            /**
+             * Gets a `BreakCollection` object that represents the breaks on the page.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            breaks?: Word.Interfaces.BreakData[];
             /**
              * Gets the height, in points, of the paper defined in the Page Setup dialog box.
              *
@@ -28876,6 +31414,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             font?: Word.Interfaces.FontData;
+            /**
+             * Returns a `HyperlinkCollection` object that represents all the hyperlinks in the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hyperlinks?: Word.Interfaces.HyperlinkData[];
             /**
              * Gets the collection of inline picture objects in the range.
              *
@@ -31111,6 +33657,64 @@ export declare namespace Word {
             width?: boolean;
         }
         /**
+         * Represents a break in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BreakLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained in the break.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Returns the page number on which the break occurs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageIndex?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Break} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BreakCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that's contained in the break.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns the page number on which the break occurs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageIndex?: boolean;
+        }
+        /**
          * The data specific to content controls of type CheckBox.
          *
          * @remarks
@@ -31433,6 +34037,515 @@ export declare namespace Word {
             id?: boolean;
         }
         /**
+         * Represents the XML mapping on a {@link Word.ContentControl} object between custom XML and that content control. An XML mapping is a link between the text in a content control and an XML element in the custom XML data store for this document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface XmlMappingLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customXmlNode?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customXmlPart?: Word.Interfaces.CustomXmlPartLoadOptions;
+            /**
+             * Returns whether the content control in the document is mapped to an XML node in the document's XML data store.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMapped?: boolean;
+            /**
+             * Returns the prefix mappings used to evaluate the XPath for the current XML mapping.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            prefixMappings?: boolean;
+            /**
+             * Returns the XPath for the XML mapping, which evaluates to the currently mapped XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xpath?: boolean;
+        }
+        /**
+         * Represents a collection of {@link Word.CustomXmlPrefixMapping} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPrefixMappingCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the prefix for the `CustomXmlPrefixMapping` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            prefix?: boolean;
+        }
+        /**
+         * Represents a `CustomXmlPrefixMapping` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPrefixMappingLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+            /**
+             * Gets the prefix for the `CustomXmlPrefixMapping` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            prefix?: boolean;
+        }
+        /**
+         * Represents a schema in a {@link Word.CustomXmlSchemaCollection} object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlSchemaLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the location of the schema on a computer.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            location?: boolean;
+            /**
+             * Gets the unique address identifier for the namespace of the `CustomXmlSchema` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         * Represents a collection of {@link Word.CustomXmlSchema} objects attached to a data stream.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlSchemaCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the location of the schema on a computer.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            location?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique address identifier for the namespace of the `CustomXmlSchema` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         * Represents a collection of {@link Word.CustomXmlValidationError} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlValidationErrorCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            node?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets an integer representing the validation error in the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            errorCode?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the text in the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the type of error generated from the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents a single validation error in a {@link Word.CustomXmlValidationErrorCollection} object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlValidationErrorLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            node?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Gets an integer representing the validation error in the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            errorCode?: boolean;
+            /**
+             * Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Gets the text in the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+            /**
+             * Gets the type of error generated from the `CustomXmlValidationError` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.CustomXmlNode} objects representing the XML nodes in a document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlNodeCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstChild?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastChild?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextSibling?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the object representing the part associated with this node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ownerPart?: Word.Interfaces.CustomXmlPartLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentNode?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previousSibling?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the base name of the node without the namespace prefix, if one exists.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseName?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique address identifier for the namespace of the node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the type of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeType?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the value of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the text for the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a string with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xpath?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the XML representation of the current node and its children.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: boolean;
+        }
+        /**
+         * Represents an XML node in a tree in the document. The `CustomXmlNode` object is a member of the {@link Word.CustomXmlNodeCollection} object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlNodeLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstChild?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn't of type {@link Word.CustomXmlNodeType | CustomXmlNodeType.element}), the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastChild?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextSibling?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Gets the object representing the part associated with this node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ownerPart?: Word.Interfaces.CustomXmlPartLoadOptions;
+            /**
+            * Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentNode?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+            * Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            previousSibling?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Gets the base name of the node without the namespace prefix, if one exists.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseName?: boolean;
+            /**
+             * Gets the unique address identifier for the namespace of the node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+            /**
+             * Gets the type of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeType?: boolean;
+            /**
+             * Specifies the value of the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: boolean;
+            /**
+             * Specifies the text for the current node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+            /**
+             * Gets a string with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xpath?: boolean;
+            /**
+             * Gets the XML representation of the current node and its children.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: boolean;
+        }
+        /**
          * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
@@ -31506,6 +34619,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlMapping?: Word.Interfaces.XmlMappingLoadOptions;
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
@@ -31679,6 +34800,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlMapping?: Word.Interfaces.XmlMappingLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
@@ -31922,6 +35051,22 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
              * Gets the ID of the custom XML part.
              *
              * @remarks
@@ -31935,6 +35080,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.4]
              */
             namespaceUri?: boolean;
+            /**
+             * Gets the XML representation of the current `CustomXmlPart` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: boolean;
         }
         /**
          * Contains the collection of {@link Word.CustomXmlPart} objects.
@@ -31948,6 +35101,22 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * For EACH ITEM in the collection: Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the ID of the custom XML part.
              *
              * @remarks
@@ -31961,6 +35130,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.4]
              */
             namespaceUri?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the XML representation of the current `CustomXmlPart` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: boolean;
         }
         /**
          * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
@@ -31974,6 +35151,22 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * For EACH ITEM in the collection: Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the ID of the custom XML part.
              *
              * @remarks
@@ -31987,6 +35180,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.4]
              */
             namespaceUri?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the XML representation of the current `CustomXmlPart` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xml?: boolean;
         }
         /**
          * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
@@ -32847,6 +36048,192 @@ export declare namespace Word {
              * @beta
              */
             underlineColor?: boolean;
+        }
+        /**
+         * Represents a hyperlink in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HyperlinkLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Specifies the address (for example, a file name or URL) of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: boolean;
+            /**
+             * Specifies the text string for the hyperlink's subject line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emailSubject?: boolean;
+            /**
+             * Returns `true` if extra information is required to resolve the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isExtraInfoRequired?: boolean;
+            /**
+             * Returns the name of the `Hyperlink` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: boolean;
+            /**
+             * Specifies a named location in the destination of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subAddress?: boolean;
+            /**
+             * Specifies the name of the frame or window in which to load the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            target?: boolean;
+            /**
+             * Specifies the hyperlink's visible text in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textToDisplay?: boolean;
+            /**
+             * Returns the hyperlink type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Hyperlink} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HyperlinkCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies the address (for example, a file name or URL) of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the text string for the hyperlink's subject line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emailSubject?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns `true` if extra information is required to resolve the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isExtraInfoRequired?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the name of the `Hyperlink` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a named location in the destination of the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subAddress?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the name of the frame or window in which to load the hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            target?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the hyperlink's visible text in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textToDisplay?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the hyperlink type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Represents an inline picture.

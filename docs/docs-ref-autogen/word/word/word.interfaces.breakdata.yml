@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: Word.Interfaces.BreakData
+uid: word!Word.Interfaces.BreakData:interface
+package: word!
+fullName: Word.Interfaces.BreakData
+summary: An interface describing the data returned by calling `break.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: pageIndex
+    uid: word!Word.Interfaces.BreakData#pageIndex:member
+    package: word!
+    fullName: pageIndex
+    summary: Returns the page number on which the break occurs.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageIndex?: number;'
+      return:
+        type: number
+  - name: range
+    uid: word!Word.Interfaces.BreakData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained in the break.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />

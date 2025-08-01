@@ -96,6 +96,23 @@ properties:
       content: 'customXmlParts?: Word.Interfaces.CustomXmlPartData[];'
       return:
         type: <xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />[]
+  - name: hyperlinks
+    uid: word!Word.Interfaces.DocumentData#hyperlinks:member
+    package: word!
+    fullName: hyperlinks
+    summary: >-
+      Returns a `HyperlinkCollection` object that represents all the hyperlinks
+      in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hyperlinks?: Word.Interfaces.HyperlinkData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.HyperlinkData:interface" />[]
   - name: properties
     uid: word!Word.Interfaces.DocumentData#properties:member
     package: word!
