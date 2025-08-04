@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - requirement set 1.11
 description: Outlook Mailbox API requirement set 1.11 version of the Mailbox object model.
-ms.date: 07/31/2025
+ms.date: 08/05/2025
 ms.localizationpriority: medium
 ---
 
