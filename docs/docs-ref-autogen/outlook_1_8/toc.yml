@@ -85,6 +85,16 @@ items:
             uid: outlook!Office.CustomProperties:interface
           - name: Diagnostics
             uid: outlook!Office.Diagnostics:interface
+          - name: DragAndDropEventArgs
+            uid: outlook!Office.DragAndDropEventArgs:interface
+          - name: DragoverEventData
+            uid: outlook!Office.DragoverEventData:interface
+          - name: DropEventData
+            uid: outlook!Office.DropEventData:interface
+          - name: DroppedItemDetails
+            uid: outlook!Office.DroppedItemDetails:interface
+          - name: DroppedItems
+            uid: outlook!Office.DroppedItems:interface
           - name: EmailAddressDetails
             uid: outlook!Office.EmailAddressDetails:interface
           - name: EmailUser
