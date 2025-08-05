@@ -52,6 +52,31 @@ properties:
       content: 'appearance?: boolean;'
       return:
         type: boolean
+  - name: buildingBlockGalleryContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlCollectionLoadOptions#buildingBlockGalleryContentControl:member
+    package: word!
+    fullName: buildingBlockGalleryContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the building block gallery-related
+      data if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `BuildingBlockGallery`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        buildingBlockGalleryContentControl?:
+        Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions:interface"
+          />
   - name: cannotDelete
     uid: >-
       word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member
@@ -95,7 +120,7 @@ properties:
     fullName: checkboxContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the data of the content control when
-      its type is 'CheckBox'. It's `null` otherwise.
+      its type is `CheckBox`<!-- -->. It's `null` otherwise.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -129,6 +154,31 @@ properties:
       content: 'color?: boolean;'
       return:
         type: boolean
+  - name: datePickerContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlCollectionLoadOptions#datePickerContentControl:member
+    package: word!
+    fullName: datePickerContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the date picker-related data if the
+      content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `DatePicker`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        datePickerContentControl?:
+        Word.Interfaces.DatePickerContentControlLoadOptions;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.DatePickerContentControlLoadOptions:interface"
+          />
   - name: font
     uid: word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member
     package: word!
@@ -147,6 +197,28 @@ properties:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.FontLoadOptions:interface" />
+  - name: groupContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlCollectionLoadOptions#groupContentControl:member
+    package: word!
+    fullName: groupContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the group-related data if the
+      content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `Group`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'groupContentControl?: Word.Interfaces.GroupContentControlLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.GroupContentControlLoadOptions:interface" />
   - name: id
     uid: word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member
     package: word!
@@ -309,6 +381,31 @@ properties:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.TableLoadOptions:interface" />
+  - name: pictureContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlCollectionLoadOptions#pictureContentControl:member
+    package: word!
+    fullName: pictureContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the picture-related data if the
+      content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `Picture`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        pictureContentControl?:
+        Word.Interfaces.PictureContentControlLoadOptions;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.PictureContentControlLoadOptions:interface"
+          />
   - name: placeholderText
     uid: >-
       word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member
@@ -347,6 +444,31 @@ properties:
       content: 'removeWhenEdited?: boolean;'
       return:
         type: boolean
+  - name: repeatingSectionContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlCollectionLoadOptions#repeatingSectionContentControl:member
+    package: word!
+    fullName: repeatingSectionContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the repeating section-related data
+      if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `RepeatingSection`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        repeatingSectionContentControl?:
+        Word.Interfaces.RepeatingSectionContentControlLoadOptions;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions:interface"
+          />
   - name: style
     uid: word!Word.Interfaces.ContentControlCollectionLoadOptions#style:member
     package: word!

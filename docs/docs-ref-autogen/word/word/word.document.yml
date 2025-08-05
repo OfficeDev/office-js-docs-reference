@@ -115,6 +115,70 @@ properties:
       content: 'readonly activeWindow: Word.Window;'
       return:
         type: <xref uid="word!Word.Window:class" />
+  - name: attachedTemplate
+    uid: word!Word.Document#attachedTemplate:member
+    package: word!
+    fullName: attachedTemplate
+    summary: >-
+      Specifies a `Template` object that represents the template attached to the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'attachedTemplate: Word.Template;'
+      return:
+        type: <xref uid="word!Word.Template:class" />
+  - name: autoHyphenation
+    uid: word!Word.Document#autoHyphenation:member
+    package: word!
+    fullName: autoHyphenation
+    summary: Specifies if automatic hyphenation is turned on for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoHyphenation: boolean;'
+      return:
+        type: boolean
+  - name: autoSaveOn
+    uid: word!Word.Document#autoSaveOn:member
+    package: word!
+    fullName: autoSaveOn
+    summary: Specifies if the edits in the document are automatically saved.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoSaveOn: boolean;'
+      return:
+        type: boolean
+  - name: bibliography
+    uid: word!Word.Document#bibliography:member
+    package: word!
+    fullName: bibliography
+    summary: >-
+      Returns a `Bibliography` object that represents the bibliography
+      references contained within the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly bibliography: Word.Bibliography;'
+      return:
+        type: <xref uid="word!Word.Bibliography:class" />
   - name: body
     uid: word!Word.Document#body:member
     package: word!
@@ -179,6 +243,23 @@ properties:
         type: >-
           <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
           | "TrackMineOnly"
+  - name: consecutiveHyphensLimit
+    uid: word!Word.Document#consecutiveHyphensLimit:member
+    package: word!
+    fullName: consecutiveHyphensLimit
+    summary: >-
+      Specifies the maximum number of consecutive lines that can end with
+      hyphens.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'consecutiveHyphensLimit: number;'
+      return:
+        type: number
   - name: contentControls
     uid: word!Word.Document#contentControls:member
     package: word!
@@ -227,6 +308,41 @@ properties:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
         type: <xref uid="word!Word.CustomXmlPartCollection:class" />
+  - name: documentLibraryVersions
+    uid: word!Word.Document#documentLibraryVersions:member
+    package: word!
+    fullName: documentLibraryVersions
+    summary: >-
+      Returns a `DocumentLibraryVersionCollection` object that represents the
+      collection of versions of a shared document that has versioning enabled
+      and that's stored in a document library on a server.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly documentLibraryVersions: Word.DocumentLibraryVersionCollection;'
+      return:
+        type: <xref uid="word!Word.DocumentLibraryVersionCollection:class" />
+  - name: frames
+    uid: word!Word.Document#frames:member
+    package: word!
+    fullName: frames
+    summary: >-
+      Returns a `FrameCollection` object that represents all the frames in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly frames: Word.FrameCollection;'
+      return:
+        type: <xref uid="word!Word.FrameCollection:class" />
   - name: hyperlinks
     uid: word!Word.Document#hyperlinks:member
     package: word!
@@ -244,6 +360,53 @@ properties:
       content: 'readonly hyperlinks: Word.HyperlinkCollection;'
       return:
         type: <xref uid="word!Word.HyperlinkCollection:class" />
+  - name: hyphenateCaps
+    uid: word!Word.Document#hyphenateCaps:member
+    package: word!
+    fullName: hyphenateCaps
+    summary: Specifies whether words in all capital letters can be hyphenated.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hyphenateCaps: boolean;'
+      return:
+        type: boolean
+  - name: languageDetected
+    uid: word!Word.Document#languageDetected:member
+    package: word!
+    fullName: languageDetected
+    summary: >-
+      Specifies whether Microsoft Word has detected the language of the document
+      text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageDetected: boolean;'
+      return:
+        type: boolean
+  - name: pageSetup
+    uid: word!Word.Document#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly pageSetup: Word.PageSetup;'
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
   - name: properties
     uid: word!Word.Document#properties:member
     package: word!
@@ -642,6 +805,22 @@ methods:
         - id: name
           description: Required. The case-insensitive bookmark name.
           type: string
+      return:
+        type: void
+        description: ''
+  - name: detectLanguage()
+    uid: word!Word.Document#detectLanguage:member(1)
+    package: word!
+    fullName: detectLanguage()
+    summary: Analyzes the document text to determine the language.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'detectLanguage(): void;'
       return:
         type: void
         description: ''
@@ -1238,6 +1417,22 @@ methods:
                     }
       return:
         type: <xref uid="word!Word.Document:class" />
+        description: ''
+  - name: manualHyphenation()
+    uid: word!Word.Document#manualHyphenation:member(1)
+    package: word!
+    fullName: manualHyphenation()
+    summary: Initiates manual hyphenation of a document, one line at a time.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'manualHyphenation(): void;'
+      return:
+        type: void
         description: ''
   - name: save(saveBehavior, fileName)
     uid: word!Word.Document#save:member(1)

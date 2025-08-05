@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: Word.Interfaces.BibliographyLoadOptions
+uid: word!Word.Interfaces.BibliographyLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.BibliographyLoadOptions
+summary: >-
+  Represents the list of available sources attached to the document (in the
+  current list) or the list of sources available in the application (in the
+  master list).
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.BibliographyLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: bibliographyStyle
+    uid: word!Word.Interfaces.BibliographyLoadOptions#bibliographyStyle:member
+    package: word!
+    fullName: bibliographyStyle
+    summary: Specifies the name of the active style to use for the bibliography.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bibliographyStyle?: boolean;'
+      return:
+        type: boolean

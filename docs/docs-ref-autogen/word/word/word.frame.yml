@@ -1,0 +1,544 @@
+### YamlMime:TSType
+name: Word.Frame
+uid: word!Word.Frame:class
+package: word!
+fullName: Word.Frame
+summary: >-
+  Represents a frame. The `Frame` object is a member of the
+  [Word.FrameCollection](xref:word!Word.FrameCollection:class) object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: borders
+    uid: word!Word.Frame#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` object that represents all the
+      borders for the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly borders: Word.BorderUniversalCollection;'
+      return:
+        type: <xref uid="word!Word.BorderUniversalCollection:class" />
+  - name: context
+    uid: word!Word.Frame#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: height
+    uid: word!Word.Frame#height:member
+    package: word!
+    fullName: height
+    summary: Specifies the height (in points) of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
+  - name: heightRule
+    uid: word!Word.Frame#heightRule:member
+    package: word!
+    fullName: heightRule
+    summary: >-
+      Specifies a `FrameSizeRule` value that represents the rule for determining
+      the height of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'heightRule: Word.FrameSizeRule | "Auto" | "AtLeast" | "Exact";'
+      return:
+        type: >-
+          <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" |
+          "Exact"
+  - name: horizontalDistanceFromText
+    uid: word!Word.Frame#horizontalDistanceFromText:member
+    package: word!
+    fullName: horizontalDistanceFromText
+    summary: >-
+      Specifies the horizontal distance between the frame and the surrounding
+      text, in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'horizontalDistanceFromText: number;'
+      return:
+        type: number
+  - name: horizontalPosition
+    uid: word!Word.Frame#horizontalPosition:member
+    package: word!
+    fullName: horizontalPosition
+    summary: >-
+      Specifies the horizontal distance between the edge of the frame and the
+      item specified by the `relativeHorizontalPosition` property.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'horizontalPosition: number;'
+      return:
+        type: number
+  - name: lockAnchor
+    uid: word!Word.Frame#lockAnchor:member
+    package: word!
+    fullName: lockAnchor
+    summary: Specifies if the frame is locked.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lockAnchor: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Frame#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained within the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly range: Word.Range;'
+      return:
+        type: <xref uid="word!Word.Range:class" />
+  - name: relativeHorizontalPosition
+    uid: word!Word.Frame#relativeHorizontalPosition:member
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: Specifies the relative horizontal position of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalPosition: Word.RelativeHorizontalPosition | "Margin" |
+        "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
+        "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" |
+          "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
+          "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalPosition
+    uid: word!Word.Frame#relativeVerticalPosition:member
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: Specifies the relative vertical position of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalPosition: Word.RelativeVerticalPosition | "Margin" |
+        "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
+        "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" |
+          "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
+          "InsideMargin" | "OutsideMargin"
+  - name: shading
+    uid: word!Word.Frame#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that refers to the shading formatting
+      for the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shading: Word.ShadingUniversal;'
+      return:
+        type: <xref uid="word!Word.ShadingUniversal:class" />
+  - name: textWrap
+    uid: word!Word.Frame#textWrap:member
+    package: word!
+    fullName: textWrap
+    summary: Specifies if document text wraps around the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textWrap: boolean;'
+      return:
+        type: boolean
+  - name: verticalDistanceFromText
+    uid: word!Word.Frame#verticalDistanceFromText:member
+    package: word!
+    fullName: verticalDistanceFromText
+    summary: >-
+      Specifies the vertical distance (in points) between the frame and the
+      surrounding text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'verticalDistanceFromText: number;'
+      return:
+        type: number
+  - name: verticalPosition
+    uid: word!Word.Frame#verticalPosition:member
+    package: word!
+    fullName: verticalPosition
+    summary: >-
+      Specifies the vertical distance between the edge of the frame and the item
+      specified by the `relativeVerticalPosition` property.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'verticalPosition: number;'
+      return:
+        type: number
+  - name: width
+    uid: word!Word.Frame#width:member
+    package: word!
+    fullName: width
+    summary: Specifies the width (in points) of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+  - name: widthRule
+    uid: word!Word.Frame#widthRule:member
+    package: word!
+    fullName: widthRule
+    summary: Specifies the rule used to determine the width of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'widthRule: Word.FrameSizeRule | "Auto" | "AtLeast" | "Exact";'
+      return:
+        type: >-
+          <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" |
+          "Exact"
+methods:
+  - name: copy()
+    uid: word!Word.Frame#copy:member(1)
+    package: word!
+    fullName: copy()
+    summary: Copies the frame to the Clipboard.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'copy(): void;'
+      return:
+        type: void
+        description: ''
+  - name: cut()
+    uid: word!Word.Frame#cut:member(1)
+    package: word!
+    fullName: cut()
+    summary: Removes the frame from the document and places it on the Clipboard.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cut(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete()
+    uid: word!Word.Frame#delete:member(1)
+    package: word!
+    fullName: delete()
+    summary: Deletes the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.Frame#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.FrameLoadOptions): Word.Frame;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.FrameLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Frame:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.Frame#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Frame;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.Frame:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.Frame#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Frame;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.Frame:class" />
+        description: ''
+  - name: select()
+    uid: word!Word.Frame#select:member(1)
+    package: word!
+    fullName: select()
+    summary: Selects the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.Frame#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.FrameUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.FrameUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.Frame#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Frame): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.Frame:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.Frame#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Frame` object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.FrameData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.FrameData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.FrameData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.Frame#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Frame;'
+      return:
+        type: <xref uid="word!Word.Frame:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.Frame#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Frame;'
+      return:
+        type: <xref uid="word!Word.Frame:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

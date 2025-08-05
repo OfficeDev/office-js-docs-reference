@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.FlowDirection
+uid: word!Word.FlowDirection:enum
+package: word!
+fullName: Word.FlowDirection
+summary: Specifies the direction in which text flows from one text column to the next.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: leftToRight
+    uid: word!Word.FlowDirection.leftToRight:member
+    package: word!
+    summary: >-
+      Text flows from left to right.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LeftToRight"'
+  - name: rightToLeft
+    uid: word!Word.FlowDirection.rightToLeft:member
+    package: word!
+    summary: >-
+      Text flows from right to left.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RightToLeft"'

@@ -72,8 +72,8 @@ properties:
     package: word!
     fullName: checkboxContentControl
     summary: >-
-      Gets the data of the content control when its type is 'CheckBox'. It's
-      `null` otherwise.
+      Gets the data of the content control when its type is `CheckBox`<!-- -->.
+      It's `null` otherwise.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -413,7 +413,7 @@ properties:
         "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" |
         "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
         "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" |
-        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText" | "Group";
       return:
         type: >-
           <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
@@ -421,7 +421,7 @@ properties:
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
           | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
-          "RichText" | "PlainText"
+          "RichText" | "PlainText" | "Group"
   - name: tables
     uid: word!Word.Interfaces.ContentControlData#tables:member
     package: word!
@@ -501,7 +501,7 @@ properties:
         "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" |
         "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
         "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" |
-        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText" | "Group";
       return:
         type: >-
           <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
@@ -509,4 +509,4 @@ properties:
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
           | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
-          "RichText" | "PlainText"
+          "RichText" | "PlainText" | "Group"

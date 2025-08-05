@@ -1,0 +1,592 @@
+### YamlMime:TSType
+name: Word.RepeatingSectionContentControl
+uid: word!Word.RepeatingSectionContentControl:class
+package: word!
+fullName: Word.RepeatingSectionContentControl
+summary: Represents the `RepeatingSectionContentControl` object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: allowInsertDeleteSection
+    uid: word!Word.RepeatingSectionContentControl#allowInsertDeleteSection:member
+    package: word!
+    fullName: allowInsertDeleteSection
+    summary: >-
+      Specifies whether users can add or remove sections from this repeating
+      section content control by using the user interface.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertDeleteSection: boolean;'
+      return:
+        type: boolean
+  - name: appearance
+    uid: word!Word.RepeatingSectionContentControl#appearance:member
+    package: word!
+    fullName: appearance
+    summary: Specifies the appearance of the content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" |
+        "Hidden";
+      return:
+        type: >-
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
+          | "Tags" | "Hidden"
+  - name: color
+    uid: word!Word.RepeatingSectionContentControl#color:member
+    package: word!
+    fullName: color
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the color of the content
+      control. You can provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color: string;'
+      return:
+        type: string
+  - name: context
+    uid: word!Word.RepeatingSectionContentControl#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: id
+    uid: word!Word.RepeatingSectionContentControl#id:member
+    package: word!
+    fullName: id
+    summary: Returns the identification for the content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: isTemporary
+    uid: word!Word.RepeatingSectionContentControl#isTemporary:member
+    package: word!
+    fullName: isTemporary
+    summary: >-
+      Specifies whether to remove the content control from the active document
+      when the user edits the contents of the control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isTemporary: boolean;'
+      return:
+        type: boolean
+  - name: level
+    uid: word!Word.RepeatingSectionContentControl#level:member
+    package: word!
+    fullName: level
+    summary: >-
+      Returns the level of the content control—whether the content control
+      surrounds text, paragraphs, table cells, or table rows; or if it is
+      inline.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly level: Word.ContentControlLevel | "Inline" | "Paragraph" |
+        "Row" | "Cell";
+      return:
+        type: >-
+          <xref uid="word!Word.ContentControlLevel:enum" /> | "Inline" |
+          "Paragraph" | "Row" | "Cell"
+  - name: lockContentControl
+    uid: word!Word.RepeatingSectionContentControl#lockContentControl:member
+    package: word!
+    fullName: lockContentControl
+    summary: >-
+      Specifies if the content control is locked (can't be deleted). `true`
+      means that the user can't delete it from the active document, `false`
+      means it can be deleted.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lockContentControl: boolean;'
+      return:
+        type: boolean
+  - name: lockContents
+    uid: word!Word.RepeatingSectionContentControl#lockContents:member
+    package: word!
+    fullName: lockContents
+    summary: >-
+      Specifies if the contents of the content control are locked (not
+      editable). `true` means the user can't edit the contents, `false` means
+      the contents are editable.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lockContents: boolean;'
+      return:
+        type: boolean
+  - name: placeholderText
+    uid: word!Word.RepeatingSectionContentControl#placeholderText:member
+    package: word!
+    fullName: placeholderText
+    summary: >-
+      Returns a `BuildingBlock` object that represents the placeholder text for
+      the content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly placeholderText: Word.BuildingBlock;'
+      return:
+        type: <xref uid="word!Word.BuildingBlock:class" />
+  - name: range
+    uid: word!Word.RepeatingSectionContentControl#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the contents of the content control
+      in the active document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly range: Word.Range;'
+      return:
+        type: <xref uid="word!Word.Range:class" />
+  - name: repeatingSectionItems
+    uid: word!Word.RepeatingSectionContentControl#repeatingSectionItems:member
+    package: word!
+    fullName: repeatingSectionItems
+    summary: >-
+      Returns the collection of repeating section items in this repeating
+      section content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly repeatingSectionItems: Word.RepeatingSectionItemCollection;'
+      return:
+        type: <xref uid="word!Word.RepeatingSectionItemCollection:class" />
+  - name: repeatingSectionItemTitle
+    uid: word!Word.RepeatingSectionContentControl#repeatingSectionItemTitle:member
+    package: word!
+    fullName: repeatingSectionItemTitle
+    summary: >-
+      Specifies the name of the repeating section items used in the context menu
+      associated with this repeating section content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'repeatingSectionItemTitle: string;'
+      return:
+        type: string
+  - name: showingPlaceholderText
+    uid: word!Word.RepeatingSectionContentControl#showingPlaceholderText:member
+    package: word!
+    fullName: showingPlaceholderText
+    summary: >-
+      Returns whether the placeholder text for the content control is being
+      displayed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly showingPlaceholderText: boolean;'
+      return:
+        type: boolean
+  - name: tag
+    uid: word!Word.RepeatingSectionContentControl#tag:member
+    package: word!
+    fullName: tag
+    summary: Specifies a tag to identify the content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tag: string;'
+      return:
+        type: string
+  - name: title
+    uid: word!Word.RepeatingSectionContentControl#title:member
+    package: word!
+    fullName: title
+    summary: Specifies the title for the content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string
+  - name: xmlapping
+    uid: word!Word.RepeatingSectionContentControl#xmlapping:member
+    package: word!
+    fullName: xmlapping
+    summary: >-
+      Returns an `XmlMapping` object that represents the mapping of the content
+      control to XML data in the data store of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly xmlapping: Word.XmlMapping;'
+      return:
+        type: <xref uid="word!Word.XmlMapping:class" />
+methods:
+  - name: copy()
+    uid: word!Word.RepeatingSectionContentControl#copy:member(1)
+    package: word!
+    fullName: copy()
+    summary: Copies the content control from the active document to the Clipboard.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'copy(): void;'
+      return:
+        type: void
+        description: ''
+  - name: cut()
+    uid: word!Word.RepeatingSectionContentControl#cut:member(1)
+    package: word!
+    fullName: cut()
+    summary: >-
+      Removes the content control from the active document and moves the content
+      control to the Clipboard.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cut(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete(deleteContents)
+    uid: word!Word.RepeatingSectionContentControl#delete:member(1)
+    package: word!
+    fullName: delete(deleteContents)
+    summary: Deletes the content control and the contents of the content control.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(deleteContents?: boolean): void;'
+      parameters:
+        - id: deleteContents
+          description: Optional. Whether to delete the contents inside the control.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.RepeatingSectionContentControl#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?:
+        Word.Interfaces.RepeatingSectionContentControlLoadOptions):
+        Word.RepeatingSectionContentControl;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="word!Word.RepeatingSectionContentControl:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.RepeatingSectionContentControl#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNames?: string | string[]):
+        Word.RepeatingSectionContentControl;
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.RepeatingSectionContentControl:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.RepeatingSectionContentControl#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.RepeatingSectionContentControl;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.RepeatingSectionContentControl:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.RepeatingSectionContentControl#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.RepeatingSectionContentControlUpdateData,
+        options?: OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.RepeatingSectionContentControl#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.RepeatingSectionContentControl): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.RepeatingSectionContentControl:class" />
+      return:
+        type: void
+        description: ''
+  - name: setPlaceholderText(options)
+    uid: word!Word.RepeatingSectionContentControl#setPlaceholderText:member(1)
+    package: word!
+    fullName: setPlaceholderText(options)
+    summary: >-
+      Sets the placeholder text that displays in the content control until a
+      user enters their own text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setPlaceholderText(options?: Word.ContentControlPlaceholderOptions):
+        void;
+      parameters:
+        - id: options
+          description: >-
+            Optional. The options for configuring the content control's
+            placeholder text.
+          type: <xref uid="word!Word.ContentControlPlaceholderOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.RepeatingSectionContentControl#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.RepeatingSectionContentControl` object is an API object, the
+      `toJSON` method returns a plain JavaScript object (typed as
+      `Word.Interfaces.RepeatingSectionContentControlData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.RepeatingSectionContentControlData;'
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.RepeatingSectionContentControlData:interface"
+          />
+        description: ''
+  - name: track()
+    uid: word!Word.RepeatingSectionContentControl#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.RepeatingSectionContentControl;'
+      return:
+        type: <xref uid="word!Word.RepeatingSectionContentControl:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.RepeatingSectionContentControl#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.RepeatingSectionContentControl;'
+      return:
+        type: <xref uid="word!Word.RepeatingSectionContentControl:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

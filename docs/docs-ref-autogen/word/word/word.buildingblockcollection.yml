@@ -1,0 +1,260 @@
+### YamlMime:TSType
+name: Word.BuildingBlockCollection
+uid: word!Word.BuildingBlockCollection:class
+package: word!
+fullName: Word.BuildingBlockCollection
+summary: >-
+  Represents a collection of
+  [Word.BuildingBlock](xref:word!Word.BuildingBlock:class) objects for a
+  specific building block type and category in a template.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.BuildingBlockCollection#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+methods:
+  - name: add(name, range, description, insertType)
+    uid: word!Word.BuildingBlockCollection#add:member(1)
+    package: word!
+    fullName: add(name, range, description, insertType)
+    summary: Creates a new building block and returns a `BuildingBlock` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        add(name: string, range: Word.Range, description: string, insertType:
+        Word.DocPartInsertType): Word.BuildingBlock;
+      parameters:
+        - id: name
+          description: The name of the building block.
+          type: string
+        - id: range
+          description: The range to insert the building block.
+          type: <xref uid="word!Word.Range:class" />
+        - id: description
+          description: The description of the building block.
+          type: string
+        - id: insertType
+          description: How to insert the contents of the building block.
+          type: <xref uid="word!Word.DocPartInsertType:enum" />
+      return:
+        type: <xref uid="word!Word.BuildingBlock:class" />
+        description: ''
+  - name: add(name, range, description, insertType)
+    uid: word!Word.BuildingBlockCollection#add:member(2)
+    package: word!
+    fullName: add(name, range, description, insertType)
+    summary: Creates a new building block and returns a `BuildingBlock` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        add(name: string, range: Word.Range, description: string, insertType:
+        "Content" | "Paragraph" | "Page"): Word.BuildingBlock;
+      parameters:
+        - id: name
+          description: The name of the building block.
+          type: string
+        - id: range
+          description: The range to insert the building block.
+          type: <xref uid="word!Word.Range:class" />
+        - id: description
+          description: The description of the building block.
+          type: string
+        - id: insertType
+          description: How to insert the contents of the building block.
+          type: '"Content" | "Paragraph" | "Page"'
+      return:
+        type: <xref uid="word!Word.BuildingBlock:class" />
+        description: ''
+  - name: getCount()
+    uid: word!Word.BuildingBlockCollection#getCount:member(1)
+    package: word!
+    fullName: getCount()
+    summary: Returns the number of items in the collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: getItemAt(index)
+    uid: word!Word.BuildingBlockCollection#getItemAt:member(1)
+    package: word!
+    fullName: getItemAt(index)
+    summary: >-
+      Returns a `BuildingBlock` object that represents the specified item in the
+      collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Word.BuildingBlock;'
+      parameters:
+        - id: index
+          description: The index of the item to retrieve.
+          type: number
+      return:
+        type: <xref uid="word!Word.BuildingBlock:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.BuildingBlockCollection#load:member(1)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.BuildingBlockCollection;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.BuildingBlockCollection:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.BuildingBlockCollection#load:member(2)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.BuildingBlockCollection;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.BuildingBlockCollection:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.BuildingBlockCollection#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.BuildingBlockCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Word.Interfaces.BuildingBlockCollectionData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: string;
+                  }
+        description: ''
+  - name: track()
+    uid: word!Word.BuildingBlockCollection#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.BuildingBlockCollection;'
+      return:
+        type: <xref uid="word!Word.BuildingBlockCollection:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.BuildingBlockCollection#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.BuildingBlockCollection;'
+      return:
+        type: <xref uid="word!Word.BuildingBlockCollection:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

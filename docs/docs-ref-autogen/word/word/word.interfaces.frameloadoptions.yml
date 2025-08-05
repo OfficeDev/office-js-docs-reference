@@ -1,0 +1,258 @@
+### YamlMime:TSType
+name: Word.Interfaces.FrameLoadOptions
+uid: word!Word.Interfaces.FrameLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.FrameLoadOptions
+summary: >-
+  Represents a frame. The `Frame` object is a member of the
+  [Word.FrameCollection](xref:word!Word.FrameCollection:class) object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.FrameLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: word!Word.Interfaces.FrameLoadOptions#height:member
+    package: word!
+    fullName: height
+    summary: Specifies the height (in points) of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: heightRule
+    uid: word!Word.Interfaces.FrameLoadOptions#heightRule:member
+    package: word!
+    fullName: heightRule
+    summary: >-
+      Specifies a `FrameSizeRule` value that represents the rule for determining
+      the height of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'heightRule?: boolean;'
+      return:
+        type: boolean
+  - name: horizontalDistanceFromText
+    uid: word!Word.Interfaces.FrameLoadOptions#horizontalDistanceFromText:member
+    package: word!
+    fullName: horizontalDistanceFromText
+    summary: >-
+      Specifies the horizontal distance between the frame and the surrounding
+      text, in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'horizontalDistanceFromText?: boolean;'
+      return:
+        type: boolean
+  - name: horizontalPosition
+    uid: word!Word.Interfaces.FrameLoadOptions#horizontalPosition:member
+    package: word!
+    fullName: horizontalPosition
+    summary: >-
+      Specifies the horizontal distance between the edge of the frame and the
+      item specified by the `relativeHorizontalPosition` property.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'horizontalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: lockAnchor
+    uid: word!Word.Interfaces.FrameLoadOptions#lockAnchor:member
+    package: word!
+    fullName: lockAnchor
+    summary: Specifies if the frame is locked.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lockAnchor?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.FrameLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained within the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: relativeHorizontalPosition
+    uid: word!Word.Interfaces.FrameLoadOptions#relativeHorizontalPosition:member
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: Specifies the relative horizontal position of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'relativeHorizontalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: relativeVerticalPosition
+    uid: word!Word.Interfaces.FrameLoadOptions#relativeVerticalPosition:member
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: Specifies the relative vertical position of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'relativeVerticalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: shading
+    uid: word!Word.Interfaces.FrameLoadOptions#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that refers to the shading formatting
+      for the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
+          />
+  - name: textWrap
+    uid: word!Word.Interfaces.FrameLoadOptions#textWrap:member
+    package: word!
+    fullName: textWrap
+    summary: Specifies if document text wraps around the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textWrap?: boolean;'
+      return:
+        type: boolean
+  - name: verticalDistanceFromText
+    uid: word!Word.Interfaces.FrameLoadOptions#verticalDistanceFromText:member
+    package: word!
+    fullName: verticalDistanceFromText
+    summary: >-
+      Specifies the vertical distance (in points) between the frame and the
+      surrounding text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'verticalDistanceFromText?: boolean;'
+      return:
+        type: boolean
+  - name: verticalPosition
+    uid: word!Word.Interfaces.FrameLoadOptions#verticalPosition:member
+    package: word!
+    fullName: verticalPosition
+    summary: >-
+      Specifies the vertical distance between the edge of the frame and the item
+      specified by the `relativeVerticalPosition` property.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'verticalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: word!Word.Interfaces.FrameLoadOptions#width:member
+    package: word!
+    fullName: width
+    summary: Specifies the width (in points) of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean
+  - name: widthRule
+    uid: word!Word.Interfaces.FrameLoadOptions#widthRule:member
+    package: word!
+    fullName: widthRule
+    summary: Specifies the rule used to determine the width of the frame.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'widthRule?: boolean;'
+      return:
+        type: boolean

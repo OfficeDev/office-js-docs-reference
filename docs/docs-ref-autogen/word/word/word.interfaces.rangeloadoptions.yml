@@ -96,6 +96,70 @@ properties:
       content: 'isEmpty?: boolean;'
       return:
         type: boolean
+  - name: languageDetected
+    uid: word!Word.Interfaces.RangeLoadOptions#languageDetected:member
+    package: word!
+    fullName: languageDetected
+    summary: >-
+      Specifies whether Microsoft Word has detected the language of the text in
+      the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageDetected?: boolean;'
+      return:
+        type: boolean
+  - name: languageId
+    uid: word!Word.Interfaces.RangeLoadOptions#languageId:member
+    package: word!
+    fullName: languageId
+    summary: Specifies a `LanguageId` value that represents the language for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageId?: boolean;'
+      return:
+        type: boolean
+  - name: languageIdFarEast
+    uid: word!Word.Interfaces.RangeLoadOptions#languageIdFarEast:member
+    package: word!
+    fullName: languageIdFarEast
+    summary: Specifies an East Asian language for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageIdFarEast?: boolean;'
+      return:
+        type: boolean
+  - name: languageIdOther
+    uid: word!Word.Interfaces.RangeLoadOptions#languageIdOther:member
+    package: word!
+    fullName: languageIdOther
+    summary: >-
+      Specifies a language for the range that isn't classified as an East Asian
+      language.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageIdOther?: boolean;'
+      return:
+        type: boolean
   - name: listFormat
     uid: word!Word.Interfaces.RangeLoadOptions#listFormat:member
     package: word!
@@ -249,6 +313,25 @@ properties:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.TableLoadOptions:interface" />
+  - name: shading
+    uid: word!Word.Interfaces.RangeLoadOptions#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that refers to the shading formatting
+      for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
+          />
   - name: style
     uid: word!Word.Interfaces.RangeLoadOptions#style:member
     package: word!

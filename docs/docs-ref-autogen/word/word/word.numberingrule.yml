@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.NumberingRule
+uid: word!Word.NumberingRule:enum
+package: word!
+fullName: Word.NumberingRule
+summary: Specifies the numbering rule to apply.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: restartContinuous
+    uid: word!Word.NumberingRule.restartContinuous:member
+    package: word!
+    summary: >-
+      Restart numbering continuously.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RestartContinuous"'
+  - name: restartPage
+    uid: word!Word.NumberingRule.restartPage:member
+    package: word!
+    summary: >-
+      Restart numbering at the beginning of each page.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RestartPage"'
+  - name: restartSection
+    uid: word!Word.NumberingRule.restartSection:member
+    package: word!
+    summary: >-
+      Restart numbering at the beginning of each section.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RestartSection"'

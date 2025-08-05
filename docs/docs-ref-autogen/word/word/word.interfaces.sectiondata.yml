@@ -29,3 +29,50 @@ properties:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
         type: <xref uid="word!Word.Interfaces.BodyData:interface" />
+  - name: borders
+    uid: word!Word.Interfaces.SectionData#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` object that represents all the
+      borders in the section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderUniversalData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.BorderUniversalData:interface" />[]
+  - name: pageSetup
+    uid: word!Word.Interfaces.SectionData#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageSetup?: Word.Interfaces.PageSetupData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PageSetupData:interface" />
+  - name: protectedForForms
+    uid: word!Word.Interfaces.SectionData#protectedForForms:member
+    package: word!
+    fullName: protectedForForms
+    summary: Specifies if the section is protected for forms.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectedForForms?: boolean;'
+      return:
+        type: boolean

@@ -52,6 +52,23 @@ properties:
       content: 'readonly body: Word.Body;'
       return:
         type: <xref uid="word!Word.Body:class" />
+  - name: borders
+    uid: word!Word.Section#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` object that represents all the
+      borders in the section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly borders: Word.BorderUniversalCollection;'
+      return:
+        type: <xref uid="word!Word.BorderUniversalCollection:class" />
   - name: context
     uid: word!Word.Section#context:member
     package: word!
@@ -67,6 +84,36 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: pageSetup
+    uid: word!Word.Section#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly pageSetup: Word.PageSetup;'
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
+  - name: protectedForForms
+    uid: word!Word.Section#protectedForForms:member
+    package: word!
+    fullName: protectedForForms
+    summary: Specifies if the section is protected for forms.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectedForForms: boolean;'
+      return:
+        type: boolean
 methods:
   - name: getFooter(type)
     uid: word!Word.Section#getFooter:member(1)

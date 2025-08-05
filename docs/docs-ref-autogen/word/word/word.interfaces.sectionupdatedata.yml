@@ -29,3 +29,33 @@ properties:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type: <xref uid="word!Word.Interfaces.BodyUpdateData:interface" />
+  - name: pageSetup
+    uid: word!Word.Interfaces.SectionUpdateData#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageSetup?: Word.Interfaces.PageSetupUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PageSetupUpdateData:interface" />
+  - name: protectedForForms
+    uid: word!Word.Interfaces.SectionUpdateData#protectedForForms:member
+    package: word!
+    fullName: protectedForForms
+    summary: Specifies if the section is protected for forms.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectedForForms?: boolean;'
+      return:
+        type: boolean

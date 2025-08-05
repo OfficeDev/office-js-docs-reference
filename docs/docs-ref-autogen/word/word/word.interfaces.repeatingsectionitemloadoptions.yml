@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Interfaces.RepeatingSectionItemLoadOptions
+uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.RepeatingSectionItemLoadOptions
+summary: Represents a single item in a .
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns the range of this repeating section item, excluding the start and
+      end tags.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />

@@ -1,0 +1,123 @@
+### YamlMime:TSEnum
+name: Word.CalendarType
+uid: word!Word.CalendarType:enum
+package: word!
+fullName: Word.CalendarType
+summary: Calendar types.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: arabic
+    uid: word!Word.CalendarType.arabic:member
+    package: word!
+    summary: >-
+      Arabic calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Arabic"'
+  - name: hebrew
+    uid: word!Word.CalendarType.hebrew:member
+    package: word!
+    summary: >-
+      Hebrew calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Hebrew"'
+  - name: japan
+    uid: word!Word.CalendarType.japan:member
+    package: word!
+    summary: >-
+      Japanese calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Japan"'
+  - name: korean
+    uid: word!Word.CalendarType.korean:member
+    package: word!
+    summary: >-
+      Korean calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Korean"'
+  - name: sakaEra
+    uid: word!Word.CalendarType.sakaEra:member
+    package: word!
+    summary: >-
+      Saka Era calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SakaEra"'
+  - name: taiwan
+    uid: word!Word.CalendarType.taiwan:member
+    package: word!
+    summary: >-
+      Taiwan calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Taiwan"'
+  - name: thai
+    uid: word!Word.CalendarType.thai:member
+    package: word!
+    summary: >-
+      Thai calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Thai"'
+  - name: translitEnglish
+    uid: word!Word.CalendarType.translitEnglish:member
+    package: word!
+    summary: >-
+      Transliterated English calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TranslitEnglish"'
+  - name: translitFrench
+    uid: word!Word.CalendarType.translitFrench:member
+    package: word!
+    summary: >-
+      Transliterated French calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TranslitFrench"'
+  - name: umalqura
+    uid: word!Word.CalendarType.umalqura:member
+    package: word!
+    summary: >-
+      Umm al-Qura calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Umalqura"'
+  - name: western
+    uid: word!Word.CalendarType.western:member
+    package: word!
+    summary: >-
+      Western calendar type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Western"'
