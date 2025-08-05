@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 07/31/2025
+ms.date: 08/05/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -26,16 +26,84 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[type](/javascript/api/word/word.body#word-word-body-type-member)|Gets the type of the body.|
+|[Application](/javascript/api/word/word.application)|[bibliography](/javascript/api/word/word.application#word-word-application-bibliography-member)|Returns a `Bibliography` object that represents the bibliography reference sources stored in Microsoft Word.|
+||[checkLanguage](/javascript/api/word/word.application#word-word-application-checklanguage-member)|Specifies if Microsoft Word automatically detects the language you are using as you type.|
+||[language](/javascript/api/word/word.application#word-word-application-language-member)|Gets a `LanguageId` value that represents the language selected for the Microsoft Word user interface.|
+||[templates](/javascript/api/word/word.application#word-word-application-templates-member)|Returns a `TemplateCollection` object that represents all the available templates: global templates and those attached to open documents.|
+|[Bibliography](/javascript/api/word/word.bibliography)|[bibliographyStyle](/javascript/api/word/word.bibliography#word-word-bibliography-bibliographystyle-member)|Specifies the name of the active style to use for the bibliography.|
+||[generateUniqueTag()](/javascript/api/word/word.bibliography#word-word-bibliography-generateuniquetag-member(1))|Generates a unique identification tag for a bibliography source and returns a string that represents the tag.|
+||[sources](/javascript/api/word/word.bibliography#word-word-bibliography-sources-member)|Returns a `SourceCollection` object that represents all the sources contained in the bibliography.|
+|[BorderUniversal](/javascript/api/word/word.borderuniversal)|[artStyle](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-artstyle-member)|Specifies the graphical page-border design for the document.|
+||[artWidth](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-artwidth-member)|Specifies the width (in points) of the graphical page border specified in the `artStyle` property.|
+||[color](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-color-member)|Specifies the color for the `BorderUniversal` object.|
+||[colorIndex](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-colorindex-member)|Specifies the color for the `BorderUniversal` or Word.Font object.|
+||[inside](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-inside-member)|Returns `true` if an inside border can be applied to the specified object.|
+||[isVisible](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-isvisible-member)|Specifies whether the border is visible.|
+||[lineStyle](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-linestyle-member)|Specifies the line style of the border.|
+||[lineWidth](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-linewidth-member)|Specifies the line width of an object's border.|
+|[BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection)|[applyPageBordersToAllSections()](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-applypageborderstoallsections-member(1))|Applies the specified page-border formatting to all sections in the document.|
+||[getItem(index: number)](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-getitem-member(1))|Gets a `Border` object by its index in the collection.|
+||[items](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-items-member)|Gets the loaded child items in this collection.|
 |[Break](/javascript/api/word/word.break)|[pageIndex](/javascript/api/word/word.break#word-word-break-pageindex-member)|Returns the page number on which the break occurs.|
 ||[range](/javascript/api/word/word.break#word-word-break-range-member)|Returns a `Range` object that represents the portion of the document that's contained in the break.|
 |[BreakCollection](/javascript/api/word/word.breakcollection)|[items](/javascript/api/word/word.breakcollection#word-word-breakcollection-items-member)|Gets the loaded child items in this collection.|
+|[BuildingBlock](/javascript/api/word/word.buildingblock)|[category](/javascript/api/word/word.buildingblock#word-word-buildingblock-category-member)|Returns a `BuildingBlockCategory` object that represents the category for the building block.|
+||[delete()](/javascript/api/word/word.buildingblock#word-word-buildingblock-delete-member(1))|Deletes the building block.|
+||[description](/javascript/api/word/word.buildingblock#word-word-buildingblock-description-member)|Specifies the description for the building block.|
+||[id](/javascript/api/word/word.buildingblock#word-word-buildingblock-id-member)|Returns the internal identification number for the building block.|
+||[index](/javascript/api/word/word.buildingblock#word-word-buildingblock-index-member)|Returns the position of this building block in a collection.|
+||[insert(range: Word.Range, richText: boolean)](/javascript/api/word/word.buildingblock#word-word-buildingblock-insert-member(1))|Inserts the value of the building block into the document and returns a `Range` object that represents the contents of the building block within the document.|
+||[insertType](/javascript/api/word/word.buildingblock#word-word-buildingblock-inserttype-member)|Specifies a `DocPartInsertType` value that represents how to insert the contents of the building block into the document.|
+||[name](/javascript/api/word/word.buildingblock#word-word-buildingblock-name-member)|Specifies the name of the building block.|
+||[type](/javascript/api/word/word.buildingblock#word-word-buildingblock-type-member)|Returns a `BuildingBlockTypeItem` object that represents the type for the building block.|
+||[value](/javascript/api/word/word.buildingblock#word-word-buildingblock-value-member)|Specifies the contents of the building block.|
+|[BuildingBlockCategory](/javascript/api/word/word.buildingblockcategory)|[buildingBlocks](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-buildingblocks-member)|Returns a `BuildingBlockCollection` object that represents the building blocks for the category.|
+||[index](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-index-member)|Returns the position of the `BuildingBlockCategory` object in a collection.|
+||[name](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-name-member)|Returns the name of the `BuildingBlockCategory` object.|
+||[type](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-type-member)|Returns a `BuildingBlockTypeItem` object that represents the type of building block for the building block category.|
+|[BuildingBlockCategoryCollection](/javascript/api/word/word.buildingblockcategorycollection)|[getCount()](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-getitemat-member(1))|Returns a `BuildingBlockCategory` object that represents the specified item in the collection.|
+|[BuildingBlockCollection](/javascript/api/word/word.buildingblockcollection)|[add(name: string, range: Word.Range, description: string, insertType: Word.DocPartInsertType)](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))|Creates a new building block and returns a `BuildingBlock` object.|
+||[getCount()](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-getitemat-member(1))|Returns a `BuildingBlock` object that represents the specified item in the collection.|
+|[BuildingBlockEntryCollection](/javascript/api/word/word.buildingblockentrycollection)|[add(name: string, type: Word.BuildingBlockType, category: string, range: Word.Range, description: string, insertType: Word.DocPartInsertType)](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))|Creates a new building block entry in a template and returns a `BuildingBlock` object that represents the new building block entry.|
+||[getCount()](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-getitemat-member(1))|Returns a `BuildingBlock` object that represents the specified item in the collection.|
+|[BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol)|[appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-appearance-member)|Specifies the appearance of the content control.|
+||[buildingBlockCategory](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-buildingblockcategory-member)|Specifies the category for the building block content control.|
+||[buildingBlockType](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-buildingblocktype-member)|Specifies a `BuildingBlockType` value that represents the type of building block for the building block content control.|
+||[color](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
+||[copy()](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|
+||[cut()](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-cut-member(1))|Removes the content control from the active document and moves the content control to the Clipboard.|
+||[delete(deleteContents?: boolean)](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-delete-member(1))|Deletes the content control and optionally its contents.|
+||[id](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-id-member)|Gets the identification for the content control.|
+||[isTemporary](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-istemporary-member)|Specifies whether to remove the content control from the active document when the user edits the contents of the control.|
+||[level](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-level-member)|Gets the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.|
+||[lockContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-lockcontentcontrol-member)|Specifies if the content control is locked (can't be deleted).|
+||[lockContents](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-lockcontents-member)|Specifies if the contents of the content control are locked (not editable).|
+||[placeholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-placeholdertext-member)|Returns a `BuildingBlock` object that represents the placeholder text for the content control.|
+||[range](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-range-member)|Returns a `Range` object that represents the contents of the content control in the active document.|
+||[setPlaceholderText(options?: Word.ContentControlPlaceholderOptions)](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-setplaceholdertext-member(1))|Sets the placeholder text that displays in the content control until a user enters their own text.|
+||[showingPlaceholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-showingplaceholdertext-member)|Gets if the placeholder text for the content control is being displayed.|
+||[tag](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-tag-member)|Specifies a tag to identify the content control.|
+||[title](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-title-member)|Specifies the title for the content control.|
+||[xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-xmlmapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
+|[BuildingBlockTypeItem](/javascript/api/word/word.buildingblocktypeitem)|[categories](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-categories-member)|Returns a `BuildingBlockCategoryCollection` object that represents the categories for a building block type.|
+||[index](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-index-member)|Returns the position of an item in a collection.|
+||[name](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-name-member)|Returns the localized name of a building block type.|
+|[BuildingBlockTypeItemCollection](/javascript/api/word/word.buildingblocktypeitemcollection)|[getByType(type: Word.BuildingBlockType)](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))|Gets a `BuildingBlockTypeItem` object by its type in the collection.|
+||[getCount()](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getcount-member(1))|Returns the number of items in the collection.|
 |[ColorFormat](/javascript/api/word/word.colorformat)|[brightness](/javascript/api/word/word.colorformat#word-word-colorformat-brightness-member)|Specifies the brightness of a specified shape color.|
 ||[objectThemeColor](/javascript/api/word/word.colorformat#word-word-colorformat-objectthemecolor-member)|Specifies the theme color for a color format.|
 ||[rgb](/javascript/api/word/word.colorformat#word-word-colorformat-rgb-member)|Specifies the red-green-blue (RGB) value of the specified color.|
 ||[tintAndShade](/javascript/api/word/word.colorformat#word-word-colorformat-tintandshade-member)|Specifies the lightening or darkening of a specified shape's color.|
 ||[type](/javascript/api/word/word.colorformat#word-word-colorformat-type-member)|Returns the shape color type.|
-|[ContentControl](/javascript/api/word/word.contentcontrol)|[resetState()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-resetstate-member(1))|Resets the state of the content control.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[buildingBlockGalleryContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-buildingblockgallerycontentcontrol-member)|Gets the building block gallery-related data if the content control's Word.ContentControlType is `BuildingBlockGallery`.|
+||[datePickerContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-datepickercontentcontrol-member)|Gets the date picker-related data if the content control's Word.ContentControlType is `DatePicker`.|
+||[groupContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-groupcontentcontrol-member)|Gets the group-related data if the content control's Word.ContentControlType is `Group`.|
+||[pictureContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-picturecontentcontrol-member)|Gets the picture-related data if the content control's Word.ContentControlType is `Picture`.|
+||[repeatingSectionContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-repeatingsectioncontentcontrol-member)|Gets the repeating section-related data if the content control's Word.ContentControlType is `RepeatingSection`.|
+||[resetState()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-resetstate-member(1))|Resets the state of the content control.|
 ||[setState(contentControlState: Word.ContentControlState)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-setstate-member(1))|Sets the state of the content control.|
 ||[xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
 |[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|The event type.|
@@ -43,6 +111,9 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |[ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs)|[eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)|The event type.|
 |[ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs)|[eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)|The event type.|
 |[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
+|[ContentControlPlaceholderOptions](/javascript/api/word/word.contentcontrolplaceholderoptions)|[buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-buildingblock-member)|If provided, specifies the `BuildingBlock` object to use as placeholder.|
+||[range](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-range-member)|If provided, specifies the `Range` object to use as placeholder.|
+||[text](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-text-member)|If provided, specifies the text to use as placeholder.|
 |[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
 |[CustomXmlAddNodeOptions](/javascript/api/word/word.customxmladdnodeoptions)|[name](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-name-member)|If provided, specifies the base name of the element to be added.|
 ||[namespaceUri](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-namespaceuri-member)|If provided, specifies the namespace of the element to be appended.|
@@ -137,7 +208,46 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[getCount()](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getcount-member(1))|Returns the number of items in the collection.|
 ||[getItem(index: number)](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getitem-member(1))|Returns a `CustomXmlValidationError` object that represents the specified item in the collection.|
 ||[items](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-items-member)|Gets the loaded child items in this collection.|
-|[Document](/javascript/api/word/word.document)|[hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.|
+|[DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol)|[appearance](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-appearance-member)|Specifies the appearance of the content control.|
+||[color](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
+||[copy()](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|
+||[cut()](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-cut-member(1))|Removes the content control from the active document and moves the content control to the Clipboard.|
+||[dateCalendarType](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datecalendartype-member)|Specifies a `CalendarType` value that represents the calendar type for the date picker content control.|
+||[dateDisplayFormat](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplayformat-member)|Specifies the format in which dates are displayed.|
+||[dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)|Specifies a `LanguageId` that represents the language format for the date displayed in the date picker content control.|
+||[dateStorageFormat](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datestorageformat-member)|Specifies a `ContentControlDateStorageFormat` value that represents the format for storage and retrieval of dates when the date picker content control is bound to the XML data store of the active document.|
+||[delete(deleteContents?: boolean)](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-delete-member(1))|Deletes this content control and the contents of the content control.|
+||[id](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-id-member)|Gets the identification for the content control.|
+||[isTemporary](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-istemporary-member)|Specifies whether to remove the content control from the active document when the user edits the contents of the control.|
+||[level](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-level-member)|Specifies the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.|
+||[lockContentControl](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-lockcontentcontrol-member)|Specifies if the content control is locked (can't be deleted).|
+||[lockContents](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-lockcontents-member)|Specifies if the contents of the content control are locked (not editable).|
+||[placeholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-placeholdertext-member)|Returns a `BuildingBlock` object that represents the placeholder text for the content control.|
+||[range](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-range-member)|Gets a `Range` object that represents the contents of the content control in the active document.|
+||[setPlaceholderText(options?: Word.ContentControlPlaceholderOptions)](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-setplaceholdertext-member(1))|Sets the placeholder text that displays in the content control until a user enters their own text.|
+||[showingPlaceholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-showingplaceholdertext-member)|Gets whether the placeholder text for the content control is being displayed.|
+||[tag](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-tag-member)|Specifies a tag to identify the content control.|
+||[title](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-title-member)|Specifies the title for the content control.|
+||[xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)|Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
+|[Document](/javascript/api/word/word.document)|[attachedTemplate](/javascript/api/word/word.document#word-word-document-attachedtemplate-member)|Specifies a `Template` object that represents the template attached to the document.|
+||[autoHyphenation](/javascript/api/word/word.document#word-word-document-autohyphenation-member)|Specifies if automatic hyphenation is turned on for the document.|
+||[autoSaveOn](/javascript/api/word/word.document#word-word-document-autosaveon-member)|Specifies if the edits in the document are automatically saved.|
+||[bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)|Returns a `Bibliography` object that represents the bibliography references contained within the document.|
+||[consecutiveHyphensLimit](/javascript/api/word/word.document#word-word-document-consecutivehyphenslimit-member)|Specifies the maximum number of consecutive lines that can end with hyphens.|
+||[detectLanguage()](/javascript/api/word/word.document#word-word-document-detectlanguage-member(1))|Analyzes the document text to determine the language.|
+||[documentLibraryVersions](/javascript/api/word/word.document#word-word-document-documentlibraryversions-member)|Returns a `DocumentLibraryVersionCollection` object that represents the collection of versions of a shared document that has versioning enabled and that's stored in a document library on a server.|
+||[frames](/javascript/api/word/word.document#word-word-document-frames-member)|Returns a `FrameCollection` object that represents all the frames in the document.|
+||[hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.|
+||[hyphenateCaps](/javascript/api/word/word.document#word-word-document-hyphenatecaps-member)|Specifies whether words in all capital letters can be hyphenated.|
+||[languageDetected](/javascript/api/word/word.document#word-word-document-languagedetected-member)|Specifies whether Microsoft Word has detected the language of the document text.|
+||[manualHyphenation()](/javascript/api/word/word.document#word-word-document-manualhyphenation-member(1))|Initiates manual hyphenation of a document, one line at a time.|
+||[pageSetup](/javascript/api/word/word.document#word-word-document-pagesetup-member)|Returns a `PageSetup` object that's associated with the document.|
+|[DocumentLibraryVersion](/javascript/api/word/word.documentlibraryversion)|[comments](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-comments-member)|Gets any optional comments associated with this version of the shared document.|
+||[modified](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-modified-member)|Gets the date and time at which this version of the shared document was last saved to the server.|
+||[modifiedBy](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-modifiedby-member)|Gets the name of the user who last saved this version of the shared document to the server.|
+|[DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection)|[getItem(index: number)](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-getitem-member(1))|Gets a `DocumentLibraryVersion` object by its index in the collection.|
+||[isVersioningEnabled()](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-isversioningenabled-member(1))|Returns whether the document library in which the active document is saved on the server is configured to create a backup copy, or version, each time the file is edited on the website.|
+||[items](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-items-member)|Gets the loaded child items in this collection.|
 |[FillFormat](/javascript/api/word/word.fillformat)|[backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)|Returns a `ColorFormat` object that represents the background color for the fill.|
 ||[foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)|Returns a `ColorFormat` object that represents the foreground color for the fill.|
 ||[gradientAngle](/javascript/api/word/word.fillformat#word-word-fillformat-gradientangle-member)|Specifies the angle of the gradient fill.|
@@ -168,6 +278,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[type](/javascript/api/word/word.fillformat#word-word-fillformat-type-member)|Gets the fill format type.|
 |[Font](/javascript/api/word/word.font)|[allCaps](/javascript/api/word/word.font#word-word-font-allcaps-member)|Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters.|
 ||[boldBidirectional](/javascript/api/word/word.font#word-word-font-boldbidirectional-member)|Specifies whether the font is formatted as bold in a right-to-left language document.|
+||[borders](/javascript/api/word/word.font#word-word-font-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the font.|
 ||[colorIndex](/javascript/api/word/word.font#word-word-font-colorindex-member)|Specifies a `ColorIndex` value that represents the color for the font.|
 ||[colorIndexBidirectional](/javascript/api/word/word.font#word-word-font-colorindexbidirectional-member)|Specifies the color for the `Font` object in a right-to-left language document.|
 ||[contextualAlternates](/javascript/api/word/word.font#word-word-font-contextualalternates-member)|Specifies whether contextual alternates are enabled for the font.|
@@ -205,9 +316,50 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[textShadow](/javascript/api/word/word.font#word-word-font-textshadow-member)|Returns a `ShadowFormat` object that specifies the shadow formatting for the font.|
 ||[threeDimensionalFormat](/javascript/api/word/word.font#word-word-font-threedimensionalformat-member)|Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.|
 ||[underlineColor](/javascript/api/word/word.font#word-word-font-underlinecolor-member)|Specifies the color of the underline for the `Font` object.|
+|[Frame](/javascript/api/word/word.frame)|[borders](/javascript/api/word/word.frame#word-word-frame-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the frame.|
+||[copy()](/javascript/api/word/word.frame#word-word-frame-copy-member(1))|Copies the frame to the Clipboard.|
+||[cut()](/javascript/api/word/word.frame#word-word-frame-cut-member(1))|Removes the frame from the document and places it on the Clipboard.|
+||[delete()](/javascript/api/word/word.frame#word-word-frame-delete-member(1))|Deletes the frame.|
+||[height](/javascript/api/word/word.frame#word-word-frame-height-member)|Specifies the height (in points) of the frame.|
+||[heightRule](/javascript/api/word/word.frame#word-word-frame-heightrule-member)|Specifies a `FrameSizeRule` value that represents the rule for determining the height of the frame.|
+||[horizontalDistanceFromText](/javascript/api/word/word.frame#word-word-frame-horizontaldistancefromtext-member)|Specifies the horizontal distance between the frame and the surrounding text, in points.|
+||[horizontalPosition](/javascript/api/word/word.frame#word-word-frame-horizontalposition-member)|Specifies the horizontal distance between the edge of the frame and the item specified by the `relativeHorizontalPosition` property.|
+||[lockAnchor](/javascript/api/word/word.frame#word-word-frame-lockanchor-member)|Specifies if the frame is locked.|
+||[range](/javascript/api/word/word.frame#word-word-frame-range-member)|Returns a `Range` object that represents the portion of the document that's contained within the frame.|
+||[relativeHorizontalPosition](/javascript/api/word/word.frame#word-word-frame-relativehorizontalposition-member)|Specifies the relative horizontal position of the frame.|
+||[relativeVerticalPosition](/javascript/api/word/word.frame#word-word-frame-relativeverticalposition-member)|Specifies the relative vertical position of the frame.|
+||[select()](/javascript/api/word/word.frame#word-word-frame-select-member(1))|Selects the frame.|
+||[shading](/javascript/api/word/word.frame#word-word-frame-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.|
+||[textWrap](/javascript/api/word/word.frame#word-word-frame-textwrap-member)|Specifies if document text wraps around the frame.|
+||[verticalDistanceFromText](/javascript/api/word/word.frame#word-word-frame-verticaldistancefromtext-member)|Specifies the vertical distance (in points) between the frame and the surrounding text.|
+||[verticalPosition](/javascript/api/word/word.frame#word-word-frame-verticalposition-member)|Specifies the vertical distance between the edge of the frame and the item specified by the `relativeVerticalPosition` property.|
+||[width](/javascript/api/word/word.frame#word-word-frame-width-member)|Specifies the width (in points) of the frame.|
+||[widthRule](/javascript/api/word/word.frame#word-word-frame-widthrule-member)|Specifies the rule used to determine the width of the frame.|
+|[FrameCollection](/javascript/api/word/word.framecollection)|[add(range: Word.Range)](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1))|Returns a `Frame` object that represents a new frame added to a range, selection, or document.|
+||[delete()](/javascript/api/word/word.framecollection#word-word-framecollection-delete-member(1))|Deletes the `FrameCollection` object.|
+||[getItem(index: number)](/javascript/api/word/word.framecollection#word-word-framecollection-getitem-member(1))|Gets a `Frame` object by its index in the collection.|
+||[items](/javascript/api/word/word.framecollection#word-word-framecollection-items-member)|Gets the loaded child items in this collection.|
 |[GlowFormat](/javascript/api/word/word.glowformat)|[color](/javascript/api/word/word.glowformat#word-word-glowformat-color-member)|Returns a `ColorFormat` object that represents the color for a glow effect.|
 ||[radius](/javascript/api/word/word.glowformat#word-word-glowformat-radius-member)|Specifies the length of the radius for a glow effect.|
 ||[transparency](/javascript/api/word/word.glowformat#word-word-glowformat-transparency-member)|Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).|
+|[GroupContentControl](/javascript/api/word/word.groupcontentcontrol)|[appearance](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-appearance-member)|Specifies the appearance of the content control.|
+||[color](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
+||[copy()](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|
+||[cut()](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-cut-member(1))|Removes the content control from the active document and moves the content control to the Clipboard.|
+||[delete(deleteContents: boolean)](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-delete-member(1))|Deletes the content control and optionally its contents.|
+||[id](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-id-member)|Returns the identification for the content control.|
+||[isTemporary](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-istemporary-member)|Specifies whether to remove the content control from the active document when the user edits the contents of the control.|
+||[level](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-level-member)|Gets the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.|
+||[lockContentControl](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-lockcontentcontrol-member)|Specifies if the content control is locked (can't be deleted).|
+||[lockContents](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-lockcontents-member)|Specifies if the contents of the content control are locked (not editable).|
+||[placeholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-placeholdertext-member)|Returns a `BuildingBlock` object that represents the placeholder text for the content control.|
+||[range](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-range-member)|Gets a `Range` object that represents the contents of the content control in the active document.|
+||[setPlaceholderText(options?: Word.ContentControlPlaceholderOptions)](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-setplaceholdertext-member(1))|Sets the placeholder text that displays in the content control until a user enters their own text.|
+||[showingPlaceholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-showingplaceholdertext-member)|Returns whether the placeholder text for the content control is being displayed.|
+||[tag](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-tag-member)|Specifies a tag to identify the content control.|
+||[title](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-title-member)|Specifies the title for the content control.|
+||[ungroup()](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-ungroup-member(1))|Removes the group content control from the document so that its child content controls are no longer nested and can be freely edited.|
+||[xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)|Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
 |[Hyperlink](/javascript/api/word/word.hyperlink)|[addToFavorites()](/javascript/api/word/word.hyperlink#word-word-hyperlink-addtofavorites-member(1))|Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.|
 ||[address](/javascript/api/word/word.hyperlink#word-word-hyperlink-address-member)|Specifies the address (for example, a file name or URL) of the hyperlink.|
 ||[createNewDocument(fileName: string, editNow: boolean, overwrite: boolean)](/javascript/api/word/word.hyperlink#word-word-hyperlink-createnewdocument-member(1))|Creates a new document linked to the hyperlink.|
@@ -243,6 +395,11 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[style](/javascript/api/word/word.lineformat#word-word-lineformat-style-member)|Specifies the line format style.|
 ||[transparency](/javascript/api/word/word.lineformat#word-word-lineformat-transparency-member)|Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).|
 ||[weight](/javascript/api/word/word.lineformat#word-word-lineformat-weight-member)|Specifies the thickness of the line in points.|
+|[LineNumbering](/javascript/api/word/word.linenumbering)|[countBy](/javascript/api/word/word.linenumbering#word-word-linenumbering-countby-member)|Specifies the numeric increment for line numbers.|
+||[distanceFromText](/javascript/api/word/word.linenumbering#word-word-linenumbering-distancefromtext-member)|Specifies the distance (in points) between the right edge of line numbers and the left edge of the document text.|
+||[isActive](/javascript/api/word/word.linenumbering#word-word-linenumbering-isactive-member)|Specifies if line numbering is active for the specified document, section, or sections.|
+||[restartMode](/javascript/api/word/word.linenumbering#word-word-linenumbering-restartmode-member)|Specifies the way line numbering runs; that is, whether it starts over at the beginning of a new page or section, or runs continuously.|
+||[startingNumber](/javascript/api/word/word.linenumbering#word-word-linenumbering-startingnumber-member)|Specifies the starting line number.|
 |[ListFormat](/javascript/api/word/word.listformat)|[applyBulletDefault(defaultListBehavior: Word.DefaultListBehavior)](/javascript/api/word/word.listformat#word-word-listformat-applybulletdefault-member(1))|Adds bullets and formatting to the paragraphs in the range.|
 ||[applyListTemplateWithLevel(listTemplate: Word.ListTemplate, options?: Word.ListTemplateApplyOptions)](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))|Applies a list template with a specific level to the paragraphs in the range.|
 ||[applyNumberDefault(defaultListBehavior: Word.DefaultListBehavior)](/javascript/api/word/word.listformat#word-word-listformat-applynumberdefault-member(1))|Adds numbering and formatting to the paragraphs in the range.|
@@ -268,17 +425,111 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[continuePreviousList](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-continuepreviouslist-member)|If provided, specifies whether to continue the previous list.|
 ||[defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)|If provided, specifies the default list behavior.|
 |[Page](/javascript/api/word/word.page)|[breaks](/javascript/api/word/word.page#word-word-page-breaks-member)|Gets a `BreakCollection` object that represents the breaks on the page.|
+|[PageSetup](/javascript/api/word/word.pagesetup)|[bookFoldPrinting](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldprinting-member)|Specifies whether Microsoft Word prints the document as a booklet.|
+||[bookFoldPrintingSheets](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldprintingsheets-member)|Specifies the number of pages for each booklet.|
+||[bookFoldReversePrinting](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldreverseprinting-member)|Specifies if Microsoft Word reverses the printing order for book fold printing of bidirectional or Asian language documents.|
+||[bottomMargin](/javascript/api/word/word.pagesetup#word-word-pagesetup-bottommargin-member)|Specifies the distance (in points) between the bottom edge of the page and the bottom boundary of the body text.|
+||[charsLine](/javascript/api/word/word.pagesetup#word-word-pagesetup-charsline-member)|Specifies the number of characters per line in the document grid.|
+||[differentFirstPageHeaderFooter](/javascript/api/word/word.pagesetup#word-word-pagesetup-differentfirstpageheaderfooter-member)|Specifies whether the first page has a different header and footer.|
+||[footerDistance](/javascript/api/word/word.pagesetup#word-word-pagesetup-footerdistance-member)|Specifies the distance between the footer and the bottom of the page in points.|
+||[gutter](/javascript/api/word/word.pagesetup#word-word-pagesetup-gutter-member)|Specifies the amount (in points) of extra margin space added to each page in a document or section for binding.|
+||[gutterPosition](/javascript/api/word/word.pagesetup#word-word-pagesetup-gutterposition-member)|Specifies on which side the gutter appears in a document.|
+||[gutterStyle](/javascript/api/word/word.pagesetup#word-word-pagesetup-gutterstyle-member)|Specifies whether Microsoft Word uses gutters for the current document based on a right-to-left language or a left-to-right language.|
+||[headerDistance](/javascript/api/word/word.pagesetup#word-word-pagesetup-headerdistance-member)|Specifies the distance between the header and the top of the page in points.|
+||[layoutMode](/javascript/api/word/word.pagesetup#word-word-pagesetup-layoutmode-member)|Specifies the layout mode for the current document.|
+||[leftMargin](/javascript/api/word/word.pagesetup#word-word-pagesetup-leftmargin-member)|Specifies the distance (in points) between the left edge of the page and the left boundary of the body text.|
+||[lineNumbering](/javascript/api/word/word.pagesetup#word-word-pagesetup-linenumbering-member)|Specifies a `LineNumbering` object that represents the line numbers for the `PageSetup` object.|
+||[linesPage](/javascript/api/word/word.pagesetup#word-word-pagesetup-linespage-member)|Specifies the number of lines per page in the document grid.|
+||[mirrorMargins](/javascript/api/word/word.pagesetup#word-word-pagesetup-mirrormargins-member)|Specifies if the inside and outside margins of facing pages are the same width.|
+||[oddAndEvenPagesHeaderFooter](/javascript/api/word/word.pagesetup#word-word-pagesetup-oddandevenpagesheaderfooter-member)|Specifies whether odd and even pages have different headers and footers.|
+||[orientation](/javascript/api/word/word.pagesetup#word-word-pagesetup-orientation-member)|Specifies the orientation of the page.|
+||[pageHeight](/javascript/api/word/word.pagesetup#word-word-pagesetup-pageheight-member)|Specifies the page height in points.|
+||[pageWidth](/javascript/api/word/word.pagesetup#word-word-pagesetup-pagewidth-member)|Specifies the page width in points.|
+||[paperSize](/javascript/api/word/word.pagesetup#word-word-pagesetup-papersize-member)|Specifies the paper size of the page.|
+||[rightMargin](/javascript/api/word/word.pagesetup#word-word-pagesetup-rightmargin-member)|Specifies the distance (in points) between the right edge of the page and the right boundary of the body text.|
+||[sectionDirection](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectiondirection-member)|Specifies the reading order and alignment for the specified sections.|
+||[sectionStart](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectionstart-member)|Specifies the type of section break for the specified object.|
+||[setAsTemplateDefault()](/javascript/api/word/word.pagesetup#word-word-pagesetup-setastemplatedefault-member(1))|Sets the specified page setup formatting as the default for the active document and all new documents based on the active template.|
+||[showGrid](/javascript/api/word/word.pagesetup#word-word-pagesetup-showgrid-member)|Specifies whether to show the grid.|
+||[suppressEndnotes](/javascript/api/word/word.pagesetup#word-word-pagesetup-suppressendnotes-member)|Specifies if endnotes are printed at the end of the next section that doesn't suppress endnotes.|
+||[textColumns](/javascript/api/word/word.pagesetup#word-word-pagesetup-textcolumns-member)|Gets a `TextColumnCollection` object that represents the set of text columns for the `PageSetup` object.|
+||[togglePortrait()](/javascript/api/word/word.pagesetup#word-word-pagesetup-toggleportrait-member(1))|Switches between portrait and landscape page orientations for a document or section.|
+||[topMargin](/javascript/api/word/word.pagesetup#word-word-pagesetup-topmargin-member)|Specifies the top margin of the page in points.|
+||[twoPagesOnOne](/javascript/api/word/word.pagesetup#word-word-pagesetup-twopagesonone-member)|Specifies whether to print two pages per sheet.|
+||[verticalAlignment](/javascript/api/word/word.pagesetup#word-word-pagesetup-verticalalignment-member)|Specifies the vertical alignment of text on each page in a document or section.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the paragraph.|
+||[shading](/javascript/api/word/word.paragraph#word-word-paragraph-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the paragraph.|
 |[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
 |[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
 |[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
-|[Range](/javascript/api/word/word.range)|[hasNoProofing](/javascript/api/word/word.range#word-word-range-hasnoproofing-member)|Specifies the proofing status (spelling and grammar checking) of the range.|
+|[PictureContentControl](/javascript/api/word/word.picturecontentcontrol)|[appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)|Specifies the appearance of the content control.|
+||[color](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
+||[copy()](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|
+||[cut()](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-cut-member(1))|Removes the content control from the active document and moves the content control to the Clipboard.|
+||[delete(deleteContents?: boolean)](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-delete-member(1))|Deletes the content control and optionally its contents.|
+||[id](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-id-member)|Returns the identification for the content control.|
+||[isTemporary](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-istemporary-member)|Specifies whether to remove the content control from the active document when the user edits the contents of the control.|
+||[level](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-level-member)|Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.|
+||[lockContentControl](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-lockcontentcontrol-member)|Specifies if the content control is locked (can't be deleted).|
+||[lockContents](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-lockcontents-member)|Specifies if the contents of the content control are locked (not editable).|
+||[placeholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-placeholdertext-member)|Returns a `BuildingBlock` object that represents the placeholder text for the content control.|
+||[range](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-range-member)|Returns a `Range` object that represents the contents of the content control in the active document.|
+||[setPlaceholderText(options?: Word.ContentControlPlaceholderOptions)](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-setplaceholdertext-member(1))|Sets the placeholder text that displays in the content control until a user enters their own text.|
+||[showingPlaceholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-showingplaceholdertext-member)|Returns whether the placeholder text for the content control is being displayed.|
+||[tag](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-tag-member)|Specifies a tag to identify the content control.|
+||[title](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-title-member)|Specifies the title for the content control.|
+||[xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
+|[Range](/javascript/api/word/word.range)|[borders](/javascript/api/word/word.range#word-word-range-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the range.|
+||[detectLanguage()](/javascript/api/word/word.range#word-word-range-detectlanguage-member(1))|Analyzes the range text to determine the language that it's written in.|
+||[frames](/javascript/api/word/word.range#word-word-range-frames-member)|Gets a `FrameCollection` object that represents all the frames in the range.|
+||[hasNoProofing](/javascript/api/word/word.range#word-word-range-hasnoproofing-member)|Specifies the proofing status (spelling and grammar checking) of the range.|
 ||[hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the range.|
+||[languageDetected](/javascript/api/word/word.range#word-word-range-languagedetected-member)|Specifies whether Microsoft Word has detected the language of the text in the range.|
+||[languageId](/javascript/api/word/word.range#word-word-range-languageid-member)|Specifies a `LanguageId` value that represents the language for the range.|
+||[languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member)|Specifies an East Asian language for the range.|
+||[languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)|Specifies a language for the range that isn't classified as an East Asian language.|
 ||[listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)|Returns a `ListFormat` object that represents all the list formatting characteristics of the range.|
+||[sections](/javascript/api/word/word.range#word-word-range-sections-member)|Gets the collection of sections in the range.|
+||[shading](/javascript/api/word/word.range#word-word-range-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the range.|
+||[tableColumns](/javascript/api/word/word.range#word-word-range-tablecolumns-member)|Gets a `TableColumnCollection` object that represents all the table columns in the range.|
 |[ReflectionFormat](/javascript/api/word/word.reflectionformat)|[blur](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-blur-member)|Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.|
 ||[offset](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-offset-member)|Specifies the amount of separation, in points, of the reflected image from the shape.|
 ||[size](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-size-member)|Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.|
 ||[transparency](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-transparency-member)|Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).|
 ||[type](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-type-member)|Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.|
+|[RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol)|[allowInsertDeleteSection](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-allowinsertdeletesection-member)|Specifies whether users can add or remove sections from this repeating section content control by using the user interface.|
+||[appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-appearance-member)|Specifies the appearance of the content control.|
+||[color](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
+||[copy()](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|
+||[cut()](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-cut-member(1))|Removes the content control from the active document and moves the content control to the Clipboard.|
+||[delete(deleteContents?: boolean)](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-delete-member(1))|Deletes the content control and the contents of the content control.|
+||[id](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-id-member)|Returns the identification for the content control.|
+||[isTemporary](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-istemporary-member)|Specifies whether to remove the content control from the active document when the user edits the contents of the control.|
+||[level](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-level-member)|Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.|
+||[lockContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-lockcontentcontrol-member)|Specifies if the content control is locked (can't be deleted).|
+||[lockContents](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-lockcontents-member)|Specifies if the contents of the content control are locked (not editable).|
+||[placeholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-placeholdertext-member)|Returns a `BuildingBlock` object that represents the placeholder text for the content control.|
+||[range](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-range-member)|Gets a `Range` object that represents the contents of the content control in the active document.|
+||[repeatingSectionItemTitle](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-repeatingsectionitemtitle-member)|Specifies the name of the repeating section items used in the context menu associated with this repeating section content control.|
+||[repeatingSectionItems](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-repeatingsectionitems-member)|Returns the collection of repeating section items in this repeating section content control.|
+||[setPlaceholderText(options?: Word.ContentControlPlaceholderOptions)](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-setplaceholdertext-member(1))|Sets the placeholder text that displays in the content control until a user enters their own text.|
+||[showingPlaceholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-showingplaceholdertext-member)|Returns whether the placeholder text for the content control is being displayed.|
+||[tag](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-tag-member)|Specifies a tag to identify the content control.|
+||[title](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-title-member)|Specifies the title for the content control.|
+||[xmlapping](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-xmlapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
+|[RepeatingSectionItem](/javascript/api/word/word.repeatingsectionitem)|[delete()](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-delete-member(1))|Deletes this `RepeatingSectionItem` object.|
+||[insertItemAfter()](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitemafter-member(1))|Adds a repeating section item after this item and returns the new item.|
+||[insertItemBefore()](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitembefore-member(1))|Adds a repeating section item before this item and returns the new item.|
+||[range](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-range-member)|Returns the range of this repeating section item, excluding the start and end tags.|
+|[RepeatingSectionItemCollection](/javascript/api/word/word.repeatingsectionitemcollection)|[getItemAt(index: number)](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-getitemat-member(1))|Returns an individual repeating section item.|
+|[Section](/javascript/api/word/word.section)|[borders](/javascript/api/word/word.section#word-word-section-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders in the section.|
+||[pageSetup](/javascript/api/word/word.section#word-word-section-pagesetup-member)|Returns a `PageSetup` object that's associated with the section.|
+||[protectedForForms](/javascript/api/word/word.section#word-word-section-protectedforforms-member)|Specifies if the section is protected for forms.|
+|[ShadingUniversal](/javascript/api/word/word.shadinguniversal)|[backgroundPatternColor](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolor-member)|Specifies the color that's applied to the background of the `ShadingUniversal` object.|
+||[backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member)|Specifies the color that's applied to the background of the `ShadingUniversal` object.|
+||[foregroundPatternColor](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolor-member)|Specifies the color that's applied to the foreground of the `ShadingUniversal` object.|
+||[foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolorindex-member)|Specifies the color that's applied to the foreground of the `ShadingUniversal` object.|
+||[texture](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-texture-member)|Specifies the shading texture of the object.|
 |[ShadowFormat](/javascript/api/word/word.shadowformat)|[blur](/javascript/api/word/word.shadowformat#word-word-shadowformat-blur-member)|Specifies the blur level for a shadow format as a value between 0.0 and 100.0.|
 ||[foregroundColor](/javascript/api/word/word.shadowformat#word-word-shadowformat-foregroundcolor-member)|Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.|
 ||[incrementOffsetX(increment: number)](/javascript/api/word/word.shadowformat#word-word-shadowformat-incrementoffsetx-member(1))|Changes the horizontal offset of the shadow by the number of points.|
@@ -292,7 +543,82 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[style](/javascript/api/word/word.shadowformat#word-word-shadowformat-style-member)|Specifies the type of shadow formatting to apply to a shape.|
 ||[transparency](/javascript/api/word/word.shadowformat#word-word-shadowformat-transparency-member)|Specifies the degree of transparency of the shadow as a value between 0.0 (opaque) and 1.0 (clear).|
 ||[type](/javascript/api/word/word.shadowformat#word-word-shadowformat-type-member)|Specifies the shape shadow type.|
-|[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
+|[Source](/javascript/api/word/word.source)|[delete()](/javascript/api/word/word.source#word-word-source-delete-member(1))|Deletes the `Source` object.|
+||[getFieldByName(name: string)](/javascript/api/word/word.source#word-word-source-getfieldbyname-member(1))|Returns the value of a field in the bibliography `Source` object.|
+||[isCited](/javascript/api/word/word.source#word-word-source-iscited-member)|Gets if the `Source` object has been cited in the document.|
+||[tag](/javascript/api/word/word.source#word-word-source-tag-member)|Gets the tag of the source.|
+||[xml](/javascript/api/word/word.source#word-word-source-xml-member)|Gets the XML representation of the source.|
+|[SourceCollection](/javascript/api/word/word.sourcecollection)|[add(xml: string)](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-add-member(1))|Adds a new `Source` object to the collection.|
+||[getItem(index: number)](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-getitem-member(1))|Gets a `Source` by its index in the collection.|
+||[items](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-items-member)|Gets the loaded child items in this collection.|
+|[Style](/javascript/api/word/word.style)|[automaticallyUpdate](/javascript/api/word/word.style#word-word-style-automaticallyupdate-member)|Specifies whether the style is automatically redefined based on the selection.|
+||[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
+||[frame](/javascript/api/word/word.style#word-word-style-frame-member)|Returns a `Frame` object that represents the frame formatting for the style.|
+||[hasProofing](/javascript/api/word/word.style#word-word-style-hasproofing-member)|Specifies whether the spelling and grammar checker ignores text formatted with this style.|
+||[languageId](/javascript/api/word/word.style#word-word-style-languageid-member)|Specifies a `LanguageId` value that represents the language for the style.|
+||[languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)|Specifies an East Asian language for the style.|
+||[linkStyle](/javascript/api/word/word.style#word-word-style-linkstyle-member)|Specifies a link between a paragraph and a character style.|
+||[linkToListTemplate(listTemplate: Word.ListTemplate)](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1))|Links this style to a list template so that the style's formatting can be applied to lists.|
+||[listLevelNumber](/javascript/api/word/word.style#word-word-style-listlevelnumber-member)|Returns the list level for the style.|
+||[locked](/javascript/api/word/word.style#word-word-style-locked-member)|Specifies whether the style cannot be changed or edited.|
+||[noSpaceBetweenParagraphsOfSameStyle](/javascript/api/word/word.style#word-word-style-nospacebetweenparagraphsofsamestyle-member)|Specifies whether to remove spacing between paragraphs that are formatted using the same style.|
+|[TableColumn](/javascript/api/word/word.tablecolumn)|[autoFit()](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-autofit-member(1))|Changes the width of the table column to accommodate the width of the text without changing the way text wraps in the cells.|
+||[borders](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the table column.|
+||[columnIndex](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-columnindex-member)|Returns the position of this column in a collection.|
+||[delete()](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-delete-member(1))|Deletes the column.|
+||[isFirst](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-isfirst-member)|Returns `true` if the column or row is the first one in the table; `false` otherwise.|
+||[isLast](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-islast-member)|Returns `true` if the column or row is the last one in the table; `false` otherwise.|
+||[nestingLevel](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-nestinglevel-member)|Returns the nesting level of the column.|
+||[preferredWidth](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-preferredwidth-member)|Specifies the preferred width (in points or as a percentage of the window width) for the column.|
+||[preferredWidthType](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-preferredwidthtype-member)|Specifies the preferred unit of measurement to use for the width of the table column.|
+||[select()](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-select-member(1))|Selects the table column.|
+||[setWidth(columnWidth: number, rulerStyle: Word.RulerStyle)](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-setwidth-member(1))|Sets the width of the column in a table.|
+||[shading](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the column.|
+||[sort()](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-sort-member(1))|Sorts the table column.|
+||[width](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-width-member)|Specifies the width of the column, in points.|
+|[TableColumnCollection](/javascript/api/word/word.tablecolumncollection)|[add(beforeColumn?: Word.TableColumn)](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-add-member(1))|Returns a `TableColumn` object that represents a column added to a table.|
+||[autoFit()](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-autofit-member(1))|Changes the width of a table column to accommodate the width of the text without changing the way text wraps in the cells.|
+||[delete()](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-delete-member(1))|Deletes the specified columns.|
+||[distributeWidth()](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-distributewidth-member(1))|Adjusts the width of the specified columns so that they are equal.|
+||[items](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-items-member)|Gets the loaded child items in this collection.|
+||[select()](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-select-member(1))|Selects the specified table columns.|
+||[setWidth(columnWidth: number, rulerStyle: Word.RulerStyle)](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-setwidth-member(1))|Sets the width of columns in a table.|
+|[Template](/javascript/api/word/word.template)|[buildingBlockEntries](/javascript/api/word/word.template#word-word-template-buildingblockentries-member)|Returns a `BuildingBlockEntryCollection` object that represents the collection of building block entries in the template.|
+||[buildingBlockTypes](/javascript/api/word/word.template#word-word-template-buildingblocktypes-member)|Returns a `BuildingBlockTypeItemCollection` object that represents the collection of building block types that are contained in the template.|
+||[farEastLineBreakLanguage](/javascript/api/word/word.template#word-word-template-fareastlinebreaklanguage-member)|Specifies the East Asian language to use when breaking lines of text in the document or template.|
+||[farEastLineBreakLevel](/javascript/api/word/word.template#word-word-template-fareastlinebreaklevel-member)|Specifies the line break control level for the document.|
+||[fullName](/javascript/api/word/word.template#word-word-template-fullname-member)|Returns the name of the template, including the drive or Web path.|
+||[hasNoProofing](/javascript/api/word/word.template#word-word-template-hasnoproofing-member)|Specifies whether the spelling and grammar checker ignores documents based on this template.|
+||[justificationMode](/javascript/api/word/word.template#word-word-template-justificationmode-member)|Specifies the character spacing adjustment for the template.|
+||[kerningByAlgorithm](/javascript/api/word/word.template#word-word-template-kerningbyalgorithm-member)|Specifies if Microsoft Word kerns half-width Latin characters and punctuation marks in the document.|
+||[languageId](/javascript/api/word/word.template#word-word-template-languageid-member)|Specifies a `LanguageId` value that represents the language in the template.|
+||[languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)|Specifies an East Asian language for the language in the template.|
+||[name](/javascript/api/word/word.template#word-word-template-name-member)|Returns only the name of the document template (excluding any path or other location information).|
+||[noLineBreakAfter](/javascript/api/word/word.template#word-word-template-nolinebreakafter-member)|Specifies the kinsoku characters after which Microsoft Word will not break a line.|
+||[noLineBreakBefore](/javascript/api/word/word.template#word-word-template-nolinebreakbefore-member)|Specifies the kinsoku characters before which Microsoft Word will not break a line.|
+||[path](/javascript/api/word/word.template#word-word-template-path-member)|Returns the path to the document template.|
+||[save()](/javascript/api/word/word.template#word-word-template-save-member(1))|Saves the template.|
+||[saved](/javascript/api/word/word.template#word-word-template-saved-member)|Specifies `true` if the template has not changed since it was last saved, `false` if Microsoft Word displays a prompt to save changes when the document is closed.|
+||[type](/javascript/api/word/word.template#word-word-template-type-member)|Returns the template type.|
+|[TemplateCollection](/javascript/api/word/word.templatecollection)|[getCount()](/javascript/api/word/word.templatecollection#word-word-templatecollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.templatecollection#word-word-templatecollection-getitemat-member(1))|Gets a `Template` object by its index in the collection.|
+||[importBuildingBlocks()](/javascript/api/word/word.templatecollection#word-word-templatecollection-importbuildingblocks-member(1))|Imports the building blocks for all templates into Microsoft Word.|
+||[items](/javascript/api/word/word.templatecollection#word-word-templatecollection-items-member)|Gets the loaded child items in this collection.|
+|[TextColumn](/javascript/api/word/word.textcolumn)|[spaceAfter](/javascript/api/word/word.textcolumn#word-word-textcolumn-spaceafter-member)|Specifies the amount of spacing (in points) after the specified paragraph or text column.|
+||[width](/javascript/api/word/word.textcolumn#word-word-textcolumn-width-member)|Specifies the width, in points, of the specified text columns.|
+|[TextColumnAddOptions](/javascript/api/word/word.textcolumnaddoptions)|[isEvenlySpaced](/javascript/api/word/word.textcolumnaddoptions#word-word-textcolumnaddoptions-isevenlyspaced-member)|If provided, specifies whether to evenly space all the text columns in the document.|
+||[spacing](/javascript/api/word/word.textcolumnaddoptions#word-word-textcolumnaddoptions-spacing-member)|If provided, specifies the spacing between the text columns in the document, in points.|
+||[width](/javascript/api/word/word.textcolumnaddoptions#word-word-textcolumnaddoptions-width-member)|If provided, specifies the width of the new text column in the document, in points.|
+|[TextColumnCollection](/javascript/api/word/word.textcolumncollection)|[add(options?: Word.TextColumnAddOptions)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-add-member(1))|Returns a `TextColumn` object that represents a new text column added to a section or document.|
+||[getFlowDirection()](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getflowdirection-member(1))|Gets the direction in which text flows from one text column to the next.|
+||[getHasLineBetween()](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-gethaslinebetween-member(1))|Gets whether vertical lines appear between all the columns in the `TextColumnCollection` object.|
+||[getIsEvenlySpaced()](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getisevenlyspaced-member(1))|Gets whether text columns are evenly spaced.|
+||[getItem(index: number)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getitem-member(1))|Gets a `TextColumn` by its index in the collection.|
+||[items](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-items-member)|Gets the loaded child items in this collection.|
+||[setCount(numColumns: number)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setcount-member(1))|Arranges text into the specified number of text columns.|
+||[setFlowDirection(value: Word.FlowDirection)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setflowdirection-member(1))|Sets the direction in which text flows from one text column to the next.|
+||[setHasLineBetween(value: boolean)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-sethaslinebetween-member(1))|Sets whether vertical lines appear between all the columns in the `TextColumnCollection` object.|
+||[setIsEvenlySpaced(value: boolean)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setisevenlyspaced-member(1))|Sets whether text columns are evenly spaced.|
 |[ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat)|[bevelBottomDepth](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-bevelbottomdepth-member)|Specifies the depth of the bottom bevel.|
 ||[bevelBottomInset](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-bevelbottominset-member)|Specifies the inset size for the bottom bevel.|
 ||[bevelBottomType](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-bevelbottomtype-member)|Specifies a `BevelType` value that represents the bevel type for the bottom bevel.|
