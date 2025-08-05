@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 04/11/2025
+ms.date: 08/05/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -27,7 +27,7 @@ NAA supports both Microsoft Accounts (MSA), such as personal outlook.com account
 | Application | Web        | Windows                                              | Mac        | iOS/iPad           | Android        |
 |-------------|------------|------------------------------------------------------|------------|--------------------|----------------|
 | Excel       | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
-| Outlook     | GA         | GA in Current Channel, Monthly Enterprise Channel, and Semi-Annual Channel (Version 2408 (Build 17928.20392)). Preview in Semi-Annual Channel Extended. | GA         | GA (iOS)           | GA             |
+| Outlook     | GA         | GA              | GA         | GA (iOS)           | GA             |
 | PowerPoint  | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 | Word        | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 
