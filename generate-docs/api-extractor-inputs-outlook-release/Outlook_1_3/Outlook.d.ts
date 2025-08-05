@@ -2562,6 +2562,11 @@ export declare namespace Office {
          */
         OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";
     }
+    
+    
+    
+    
+    
     /**
      * Provides the email properties of the sender or specified recipients of an email message or appointment.
      *

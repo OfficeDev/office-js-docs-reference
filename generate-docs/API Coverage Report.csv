@@ -7266,6 +7266,7 @@ Office.EventType,"EnhancedLocationsChanged",EnumField,Excellent,false
 Office.EventType,"InfobarClicked",EnumField,Excellent,false
 Office.EventType,"InitializationContextChanged",EnumField,Excellent,false
 Office.EventType,"ItemChanged",EnumField,Excellent,false
+Office.EventType,"ItemDraggedAndDropped",EnumField,Excellent,false
 Office.EventType,"NodeDeleted",EnumField,Fine,false
 Office.EventType,"NodeInserted",EnumField,Fine,false
 Office.EventType,"NodeReplaced",EnumField,Fine,false
@@ -9037,6 +9038,24 @@ Office.DisplayedBody,"setAsync(data, callback)",Method,Good,true
 Office.DisplayedSubject,N/A,Interface,Good,false
 Office.DisplayedSubject,"setAsync(data, options, callback)",Method,Good,false
 Office.DisplayedSubject,"setAsync(data, callback)",Method,Good,true
+Office.DragAndDropEventArgs,N/A,Interface,Unknown,false
+Office.DragAndDropEventArgs,"dragAndDropEventData",Property,Good,false
+Office.DragAndDropEventArgs,"type",Property,Fine,false
+Office.DragoverEventData,N/A,Interface,Unknown,false
+Office.DragoverEventData,"pageX",Property,Fine,false
+Office.DragoverEventData,"pageY",Property,Fine,false
+Office.DragoverEventData,"type",Property,Good,false
+Office.DropEventData,N/A,Interface,Unknown,false
+Office.DropEventData,"dataTransfer",Property,Fine,false
+Office.DropEventData,"pageX",Property,Fine,false
+Office.DropEventData,"pageY",Property,Fine,false
+Office.DropEventData,"type",Property,Good,false
+Office.DroppedItemDetails,N/A,Interface,Fine,false
+Office.DroppedItemDetails,"fileContent",Property,Fine,false
+Office.DroppedItemDetails,"name",Property,Fine,false
+Office.DroppedItemDetails,"type",Property,Fine,false
+Office.DroppedItems,N/A,Interface,Unknown,false
+Office.DroppedItems,"files",Property,Good,false
 Office.EmailAddressDetails,N/A,Interface,Unknown,false
 Office.EmailAddressDetails,"appointmentResponse",Property,Excellent,true
 Office.EmailAddressDetails,"displayName",Property,Fine,true

@@ -2616,6 +2616,176 @@ export declare namespace Office {
         OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";
     }
     /**
+     * Provides details about the mouse pointer position and the messages or file attachments being dragged and dropped into an add-in's task pane when the
+     * `Office.EventType.ItemDraggedAndDropped` event is raised.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.5]
+     * 
+     * To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items | Drag and drop messages and attachments into the task pane of an Outlook add-in}.
+     */
+    export interface DragAndDropEventArgs {
+        /**
+         * Gets the details about the mouse pointer position within an add-in's task pane and the messages or file attachments being dragged and dropped into the task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        dragAndDropEventData: DragoverEventData | DropEventData;
+        /**
+         * Gets the type of the event. For details, see {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        type: "olkDragAndDropEvent";
+    }
+    /**
+     * Represents the `DragAndDropEventArgs.dragAndDropEventData` object when messages or file attachments are dragged over an add-in's task pane.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.5]
+     *
+     * To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items | Drag and drop messages and attachments into the task pane of an Outlook add-in}.
+     */
+    export interface DragoverEventData {
+        /**
+         * Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.
+         * The position is relative to the left edge of the Outlook on the web or the new Outlook on Windows client window.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        pageX: number;
+        /**
+         * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
+         * The position is relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        pageY: number;
+        /**
+         * Gets the type of drag-and-drop event. The `dragover` event occurs when messages or file attachments are dragged over an add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        type: "dragover";
+    }
+    /**
+     * Represents the `DragAndDropEventArgs.dragAndDropEventData` object when messages or file attachments are dropped into an add-in's task pane.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.5]
+     *
+     * To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items | Drag and drop messages and attachments into the task pane of an Outlook add-in}.
+     */
+    export interface DropEventData {
+        /**
+         * Gets the messages or file attachments being dragged and dropped into an add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        dataTransfer: DroppedItems;
+        /**
+         * Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.
+         * The position is relative to the left edge of the Outlook on the web or the new Outlook on Windows client window.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        pageX: number;
+        /**
+         * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
+         * The position is relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        pageY: number;
+        /**
+         * Gets the type of drag-and-drop event. The `drop` event occurs when messages or file attachments are dropped into an add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        type: "drop";
+    }
+    /**
+     * Provides the messages or file attachments being dragged and dropped into an add-in's task pane.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.5]
+     *
+     * To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items | Drag and drop messages and attachments into the task pane of an Outlook add-in}.
+     */
+    export interface DroppedItems {
+        /**
+         * Gets an array of the messages or file attachments being dragged and dropped into an add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        files: DroppedItemDetails[]
+    }
+    /**
+     * Provides the contents and details of the message or file attachment being dragged and dropped into an add-in's task pane.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.5]
+     *
+     * To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items | Drag and drop messages and attachments into the task pane of an Outlook add-in}.
+     */
+    export interface DroppedItemDetails {
+        /**
+         * Gets the contents of the file being dragged and dropped.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         *
+         * For guidance on how to retrieve data from a `Blob`, see the {@link https://developer.mozilla.org/docs/Web/API/Blob | File API documentation}.
+         */
+        fileContent: Blob;
+        /**
+         * Gets the name of the file being dragged and dropped.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        name: string;
+        /**
+         * Gets the type of the file being dragged and dropped.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         *
+         * **Important**: When a message is dragged into an add-in's task pane, it's dropped as a .eml file.
+         */
+        type: string;
+    }
+    /**
      * Provides the email properties of the sender or specified recipients of an email message or appointment.
      *
      * @remarks

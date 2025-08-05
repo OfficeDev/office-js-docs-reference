@@ -21,6 +21,11 @@ interfaces:
   - outlook!Office.CustomProperties:interface
   - outlook!Office.DelayDeliveryTime:interface
   - outlook!Office.Diagnostics:interface
+  - outlook!Office.DragAndDropEventArgs:interface
+  - outlook!Office.DragoverEventData:interface
+  - outlook!Office.DropEventData:interface
+  - outlook!Office.DroppedItemDetails:interface
+  - outlook!Office.DroppedItems:interface
   - outlook!Office.EmailAddressDetails:interface
   - outlook!Office.EmailUser:interface
   - outlook!Office.EnhancedLocation:interface
