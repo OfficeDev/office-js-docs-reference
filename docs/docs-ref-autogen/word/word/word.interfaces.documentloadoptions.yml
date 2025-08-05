@@ -31,6 +31,70 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: attachedTemplate
+    uid: word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member
+    package: word!
+    fullName: attachedTemplate
+    summary: >-
+      Specifies a `Template` object that represents the template attached to the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'attachedTemplate?: Word.Interfaces.TemplateLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TemplateLoadOptions:interface" />
+  - name: autoHyphenation
+    uid: word!Word.Interfaces.DocumentLoadOptions#autoHyphenation:member
+    package: word!
+    fullName: autoHyphenation
+    summary: Specifies if automatic hyphenation is turned on for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoHyphenation?: boolean;'
+      return:
+        type: boolean
+  - name: autoSaveOn
+    uid: word!Word.Interfaces.DocumentLoadOptions#autoSaveOn:member
+    package: word!
+    fullName: autoSaveOn
+    summary: Specifies if the edits in the document are automatically saved.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoSaveOn?: boolean;'
+      return:
+        type: boolean
+  - name: bibliography
+    uid: word!Word.Interfaces.DocumentLoadOptions#bibliography:member
+    package: word!
+    fullName: bibliography
+    summary: >-
+      Returns a `Bibliography` object that represents the bibliography
+      references contained within the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bibliography?: Word.Interfaces.BibliographyLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.BibliographyLoadOptions:interface" />
   - name: body
     uid: word!Word.Interfaces.DocumentLoadOptions#body:member
     package: word!
@@ -63,6 +127,70 @@ properties:
       content: 'changeTrackingMode?: boolean;'
       return:
         type: boolean
+  - name: consecutiveHyphensLimit
+    uid: word!Word.Interfaces.DocumentLoadOptions#consecutiveHyphensLimit:member
+    package: word!
+    fullName: consecutiveHyphensLimit
+    summary: >-
+      Specifies the maximum number of consecutive lines that can end with
+      hyphens.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'consecutiveHyphensLimit?: boolean;'
+      return:
+        type: boolean
+  - name: hyphenateCaps
+    uid: word!Word.Interfaces.DocumentLoadOptions#hyphenateCaps:member
+    package: word!
+    fullName: hyphenateCaps
+    summary: Specifies whether words in all capital letters can be hyphenated.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hyphenateCaps?: boolean;'
+      return:
+        type: boolean
+  - name: languageDetected
+    uid: word!Word.Interfaces.DocumentLoadOptions#languageDetected:member
+    package: word!
+    fullName: languageDetected
+    summary: >-
+      Specifies whether Microsoft Word has detected the language of the document
+      text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageDetected?: boolean;'
+      return:
+        type: boolean
+  - name: pageSetup
+    uid: word!Word.Interfaces.DocumentLoadOptions#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageSetup?: Word.Interfaces.PageSetupLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PageSetupLoadOptions:interface" />
   - name: properties
     uid: word!Word.Interfaces.DocumentLoadOptions#properties:member
     package: word!

@@ -1,0 +1,433 @@
+### YamlMime:TSEnum
+name: Word.PaperSize
+uid: word!Word.PaperSize:enum
+package: word!
+fullName: Word.PaperSize
+summary: Specifies a paper size.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: a3
+    uid: word!Word.PaperSize.a3:member
+    package: word!
+    summary: >-
+      A3 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"A3"'
+  - name: a4
+    uid: word!Word.PaperSize.a4:member
+    package: word!
+    summary: >-
+      A4 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"A4"'
+  - name: a4Small
+    uid: word!Word.PaperSize.a4Small:member
+    package: word!
+    summary: >-
+      Small A4 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"A4Small"'
+  - name: a5
+    uid: word!Word.PaperSize.a5:member
+    package: word!
+    summary: >-
+      A5 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"A5"'
+  - name: b4
+    uid: word!Word.PaperSize.b4:member
+    package: word!
+    summary: >-
+      B4 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"B4"'
+  - name: b5
+    uid: word!Word.PaperSize.b5:member
+    package: word!
+    summary: >-
+      B5 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"B5"'
+  - name: csheet
+    uid: word!Word.PaperSize.csheet:member
+    package: word!
+    summary: >-
+      C-sheet paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"CSheet"'
+  - name: custom
+    uid: word!Word.PaperSize.custom:member
+    package: word!
+    summary: >-
+      Custom paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Custom"'
+  - name: dsheet
+    uid: word!Word.PaperSize.dsheet:member
+    package: word!
+    summary: >-
+      D-sheet paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DSheet"'
+  - name: envelope10
+    uid: word!Word.PaperSize.envelope10:member
+    package: word!
+    summary: >-
+      Envelope size 10.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Envelope10"'
+  - name: envelope11
+    uid: word!Word.PaperSize.envelope11:member
+    package: word!
+    summary: >-
+      Envelope size 11.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Envelope11"'
+  - name: envelope12
+    uid: word!Word.PaperSize.envelope12:member
+    package: word!
+    summary: >-
+      Envelope size 12.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Envelope12"'
+  - name: envelope14
+    uid: word!Word.PaperSize.envelope14:member
+    package: word!
+    summary: >-
+      Envelope size 14.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Envelope14"'
+  - name: envelope9
+    uid: word!Word.PaperSize.envelope9:member
+    package: word!
+    summary: >-
+      Envelope size 9.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Envelope9"'
+  - name: envelopeB4
+    uid: word!Word.PaperSize.envelopeB4:member
+    package: word!
+    summary: >-
+      Envelope B4 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeB4"'
+  - name: envelopeB5
+    uid: word!Word.PaperSize.envelopeB5:member
+    package: word!
+    summary: >-
+      Envelope B5 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeB5"'
+  - name: envelopeB6
+    uid: word!Word.PaperSize.envelopeB6:member
+    package: word!
+    summary: >-
+      Envelope B6 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeB6"'
+  - name: envelopeC3
+    uid: word!Word.PaperSize.envelopeC3:member
+    package: word!
+    summary: >-
+      Envelope C3 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeC3"'
+  - name: envelopeC4
+    uid: word!Word.PaperSize.envelopeC4:member
+    package: word!
+    summary: >-
+      Envelope C4 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeC4"'
+  - name: envelopeC5
+    uid: word!Word.PaperSize.envelopeC5:member
+    package: word!
+    summary: >-
+      Envelope C5 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeC5"'
+  - name: envelopeC6
+    uid: word!Word.PaperSize.envelopeC6:member
+    package: word!
+    summary: >-
+      Envelope C6 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeC6"'
+  - name: envelopeC65
+    uid: word!Word.PaperSize.envelopeC65:member
+    package: word!
+    summary: >-
+      Envelope C65 size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeC65"'
+  - name: envelopeDL
+    uid: word!Word.PaperSize.envelopeDL:member
+    package: word!
+    summary: >-
+      Envelope DL size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeDL"'
+  - name: envelopeItaly
+    uid: word!Word.PaperSize.envelopeItaly:member
+    package: word!
+    summary: >-
+      Envelope Italy size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeItaly"'
+  - name: envelopeMonarch
+    uid: word!Word.PaperSize.envelopeMonarch:member
+    package: word!
+    summary: >-
+      Envelope Monarch size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopeMonarch"'
+  - name: envelopePersonal
+    uid: word!Word.PaperSize.envelopePersonal:member
+    package: word!
+    summary: >-
+      Envelope Personal size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnvelopePersonal"'
+  - name: esheet
+    uid: word!Word.PaperSize.esheet:member
+    package: word!
+    summary: >-
+      E-sheet paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ESheet"'
+  - name: executive
+    uid: word!Word.PaperSize.executive:member
+    package: word!
+    summary: >-
+      Executive paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Executive"'
+  - name: fanfoldLegalGerman
+    uid: word!Word.PaperSize.fanfoldLegalGerman:member
+    package: word!
+    summary: >-
+      Fanfold legal German paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FanfoldLegalGerman"'
+  - name: fanfoldStdGerman
+    uid: word!Word.PaperSize.fanfoldStdGerman:member
+    package: word!
+    summary: >-
+      Fanfold standard German paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FanfoldStdGerman"'
+  - name: fanfoldUS
+    uid: word!Word.PaperSize.fanfoldUS:member
+    package: word!
+    summary: >-
+      Fanfold US paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FanfoldUS"'
+  - name: folio
+    uid: word!Word.PaperSize.folio:member
+    package: word!
+    summary: >-
+      Folio paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Folio"'
+  - name: ledger
+    uid: word!Word.PaperSize.ledger:member
+    package: word!
+    summary: >-
+      Ledger paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Ledger"'
+  - name: legal
+    uid: word!Word.PaperSize.legal:member
+    package: word!
+    summary: >-
+      Legal paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Legal"'
+  - name: letter
+    uid: word!Word.PaperSize.letter:member
+    package: word!
+    summary: >-
+      Letter paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Letter"'
+  - name: letterSmall
+    uid: word!Word.PaperSize.letterSmall:member
+    package: word!
+    summary: >-
+      Small letter paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LetterSmall"'
+  - name: note
+    uid: word!Word.PaperSize.note:member
+    package: word!
+    summary: >-
+      Note paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Note"'
+  - name: quarto
+    uid: word!Word.PaperSize.quarto:member
+    package: word!
+    summary: >-
+      Quarto paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Quarto"'
+  - name: size10x14
+    uid: word!Word.PaperSize.size10x14:member
+    package: word!
+    summary: >-
+      10x14 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Size10x14"'
+  - name: size11x17
+    uid: word!Word.PaperSize.size11x17:member
+    package: word!
+    summary: >-
+      11x17 paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Size11x17"'
+  - name: statement
+    uid: word!Word.PaperSize.statement:member
+    package: word!
+    summary: >-
+      Statement paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Statement"'
+  - name: tabloid
+    uid: word!Word.PaperSize.tabloid:member
+    package: word!
+    summary: >-
+      Tabloid paper size.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Tabloid"'

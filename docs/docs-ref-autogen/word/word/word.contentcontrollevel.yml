@@ -1,0 +1,53 @@
+### YamlMime:TSEnum
+name: Word.ContentControlLevel
+uid: word!Word.ContentControlLevel:enum
+package: word!
+fullName: Word.ContentControlLevel
+summary: Content control level types.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: cell
+    uid: word!Word.ContentControlLevel.cell:member
+    package: word!
+    summary: >-
+      Represents a cell-level content control.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Cell"'
+  - name: inline
+    uid: word!Word.ContentControlLevel.inline:member
+    package: word!
+    summary: >-
+      Represents an inline content control.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Inline"'
+  - name: paragraph
+    uid: word!Word.ContentControlLevel.paragraph:member
+    package: word!
+    summary: >-
+      Represents a paragraph-level content control.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Paragraph"'
+  - name: row
+    uid: word!Word.ContentControlLevel.row:member
+    package: word!
+    summary: >-
+      Represents a row-level content control.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Row"'

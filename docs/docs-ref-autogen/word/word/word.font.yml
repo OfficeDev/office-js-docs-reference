@@ -135,6 +135,23 @@ properties:
       content: 'boldBidirectional: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: word!Word.Font#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` object that represents all the
+      borders for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly borders: Word.BorderUniversalCollection;'
+      return:
+        type: <xref uid="word!Word.BorderUniversalCollection:class" />
   - name: color
     uid: word!Word.Font#color:member
     package: word!

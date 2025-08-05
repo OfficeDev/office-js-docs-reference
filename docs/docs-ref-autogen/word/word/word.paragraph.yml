@@ -75,6 +75,23 @@ properties:
         type: >-
           <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
+  - name: borders
+    uid: word!Word.Paragraph#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` object that represents all the
+      borders for the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly borders: Word.BorderUniversalCollection;'
+      return:
+        type: <xref uid="word!Word.BorderUniversalCollection:class" />
   - name: contentControls
     uid: word!Word.Paragraph#contentControls:member
     package: word!
@@ -605,6 +622,23 @@ properties:
       content: 'rightIndent: number;'
       return:
         type: number
+  - name: shading
+    uid: word!Word.Paragraph#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that refers to the shading formatting
+      for the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shading: Word.ShadingUniversal;'
+      return:
+        type: <xref uid="word!Word.ShadingUniversal:class" />
   - name: shapes
     uid: word!Word.Paragraph#shapes:member
     package: word!

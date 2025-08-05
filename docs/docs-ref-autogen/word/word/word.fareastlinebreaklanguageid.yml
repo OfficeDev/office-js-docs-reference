@@ -1,0 +1,55 @@
+### YamlMime:TSEnum
+name: Word.FarEastLineBreakLanguageId
+uid: word!Word.FarEastLineBreakLanguageId:enum
+package: word!
+fullName: Word.FarEastLineBreakLanguageId
+summary: >-
+  Represents the East Asian language to use when breaking lines of text in the
+  specified document or template.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: japanese
+    uid: word!Word.FarEastLineBreakLanguageId.japanese:member
+    package: word!
+    summary: >-
+      Represents Japanese language.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Japanese"'
+  - name: korean
+    uid: word!Word.FarEastLineBreakLanguageId.korean:member
+    package: word!
+    summary: >-
+      Represents Korean language.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Korean"'
+  - name: simplifiedChinese
+    uid: word!Word.FarEastLineBreakLanguageId.simplifiedChinese:member
+    package: word!
+    summary: >-
+      Represents Simplified Chinese language.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SimplifiedChinese"'
+  - name: traditionalChinese
+    uid: word!Word.FarEastLineBreakLanguageId.traditionalChinese:member
+    package: word!
+    summary: >-
+      Represents Traditional Chinese language.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TraditionalChinese"'

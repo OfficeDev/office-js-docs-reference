@@ -1,0 +1,768 @@
+### YamlMime:TSType
+name: Word.PageSetup
+uid: word!Word.PageSetup:class
+package: word!
+fullName: Word.PageSetup
+summary: Represents the page setup settings for a Word document or section.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: bookFoldPrinting
+    uid: word!Word.PageSetup#bookFoldPrinting:member
+    package: word!
+    fullName: bookFoldPrinting
+    summary: Specifies whether Microsoft Word prints the document as a booklet.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bookFoldPrinting: boolean;'
+      return:
+        type: boolean
+  - name: bookFoldPrintingSheets
+    uid: word!Word.PageSetup#bookFoldPrintingSheets:member
+    package: word!
+    fullName: bookFoldPrintingSheets
+    summary: Specifies the number of pages for each booklet.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bookFoldPrintingSheets: number;'
+      return:
+        type: number
+  - name: bookFoldReversePrinting
+    uid: word!Word.PageSetup#bookFoldReversePrinting:member
+    package: word!
+    fullName: bookFoldReversePrinting
+    summary: >-
+      Specifies if Microsoft Word reverses the printing order for book fold
+      printing of bidirectional or Asian language documents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bookFoldReversePrinting: boolean;'
+      return:
+        type: boolean
+  - name: bottomMargin
+    uid: word!Word.PageSetup#bottomMargin:member
+    package: word!
+    fullName: bottomMargin
+    summary: >-
+      Specifies the distance (in points) between the bottom edge of the page and
+      the bottom boundary of the body text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin: number;'
+      return:
+        type: number
+  - name: charsLine
+    uid: word!Word.PageSetup#charsLine:member
+    package: word!
+    fullName: charsLine
+    summary: Specifies the number of characters per line in the document grid.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'charsLine: number;'
+      return:
+        type: number
+  - name: context
+    uid: word!Word.PageSetup#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: differentFirstPageHeaderFooter
+    uid: word!Word.PageSetup#differentFirstPageHeaderFooter:member
+    package: word!
+    fullName: differentFirstPageHeaderFooter
+    summary: Specifies whether the first page has a different header and footer.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'differentFirstPageHeaderFooter: boolean;'
+      return:
+        type: boolean
+  - name: footerDistance
+    uid: word!Word.PageSetup#footerDistance:member
+    package: word!
+    fullName: footerDistance
+    summary: >-
+      Specifies the distance between the footer and the bottom of the page in
+      points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'footerDistance: number;'
+      return:
+        type: number
+  - name: gutter
+    uid: word!Word.PageSetup#gutter:member
+    package: word!
+    fullName: gutter
+    summary: >-
+      Specifies the amount (in points) of extra margin space added to each page
+      in a document or section for binding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gutter: number;'
+      return:
+        type: number
+  - name: gutterPosition
+    uid: word!Word.PageSetup#gutterPosition:member
+    package: word!
+    fullName: gutterPosition
+    summary: Specifies on which side the gutter appears in a document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gutterPosition: Word.GutterPosition | "Left" | "Right" | "Top";'
+      return:
+        type: >-
+          <xref uid="word!Word.GutterPosition:enum" /> | "Left" | "Right" |
+          "Top"
+  - name: gutterStyle
+    uid: word!Word.PageSetup#gutterStyle:member
+    package: word!
+    fullName: gutterStyle
+    summary: >-
+      Specifies whether Microsoft Word uses gutters for the current document
+      based on a right-to-left language or a left-to-right language.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gutterStyle: Word.GutterStyle | "Bidirectional" | "Latin";'
+      return:
+        type: <xref uid="word!Word.GutterStyle:enum" /> | "Bidirectional" | "Latin"
+  - name: headerDistance
+    uid: word!Word.PageSetup#headerDistance:member
+    package: word!
+    fullName: headerDistance
+    summary: >-
+      Specifies the distance between the header and the top of the page in
+      points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'headerDistance: number;'
+      return:
+        type: number
+  - name: layoutMode
+    uid: word!Word.PageSetup#layoutMode:member
+    package: word!
+    fullName: layoutMode
+    summary: Specifies the layout mode for the current document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'layoutMode: Word.LayoutMode | "Default" | "Grid" | "LineGrid" | "Genko";'
+      return:
+        type: >-
+          <xref uid="word!Word.LayoutMode:enum" /> | "Default" | "Grid" |
+          "LineGrid" | "Genko"
+  - name: leftMargin
+    uid: word!Word.PageSetup#leftMargin:member
+    package: word!
+    fullName: leftMargin
+    summary: >-
+      Specifies the distance (in points) between the left edge of the page and
+      the left boundary of the body text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin: number;'
+      return:
+        type: number
+  - name: lineNumbering
+    uid: word!Word.PageSetup#lineNumbering:member
+    package: word!
+    fullName: lineNumbering
+    summary: >-
+      Specifies a `LineNumbering` object that represents the line numbers for
+      the `PageSetup` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineNumbering: Word.LineNumbering;'
+      return:
+        type: <xref uid="word!Word.LineNumbering:class" />
+  - name: linesPage
+    uid: word!Word.PageSetup#linesPage:member
+    package: word!
+    fullName: linesPage
+    summary: Specifies the number of lines per page in the document grid.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linesPage: number;'
+      return:
+        type: number
+  - name: mirrorMargins
+    uid: word!Word.PageSetup#mirrorMargins:member
+    package: word!
+    fullName: mirrorMargins
+    summary: >-
+      Specifies if the inside and outside margins of facing pages are the same
+      width.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'mirrorMargins: boolean;'
+      return:
+        type: boolean
+  - name: oddAndEvenPagesHeaderFooter
+    uid: word!Word.PageSetup#oddAndEvenPagesHeaderFooter:member
+    package: word!
+    fullName: oddAndEvenPagesHeaderFooter
+    summary: Specifies whether odd and even pages have different headers and footers.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'oddAndEvenPagesHeaderFooter: boolean;'
+      return:
+        type: boolean
+  - name: orientation
+    uid: word!Word.PageSetup#orientation:member
+    package: word!
+    fullName: orientation
+    summary: Specifies the orientation of the page.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'orientation: Word.PageOrientation | "Portrait" | "Landscape";'
+      return:
+        type: >-
+          <xref uid="word!Word.PageOrientation:enum" /> | "Portrait" |
+          "Landscape"
+  - name: pageHeight
+    uid: word!Word.PageSetup#pageHeight:member
+    package: word!
+    fullName: pageHeight
+    summary: Specifies the page height in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageHeight: number;'
+      return:
+        type: number
+  - name: pageWidth
+    uid: word!Word.PageSetup#pageWidth:member
+    package: word!
+    fullName: pageWidth
+    summary: Specifies the page width in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageWidth: number;'
+      return:
+        type: number
+  - name: paperSize
+    uid: word!Word.PageSetup#paperSize:member
+    package: word!
+    fullName: paperSize
+    summary: Specifies the paper size of the page.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        paperSize: Word.PaperSize | "Size10x14" | "Size11x17" | "Letter" |
+        "LetterSmall" | "Legal" | "Executive" | "A3" | "A4" | "A4Small" | "A5" |
+        "B4" | "B5" | "CSheet" | "DSheet" | "ESheet" | "FanfoldLegalGerman" |
+        "FanfoldStdGerman" | "FanfoldUS" | "Folio" | "Ledger" | "Note" |
+        "Quarto" | "Statement" | "Tabloid" | "Envelope9" | "Envelope10" |
+        "Envelope11" | "Envelope12" | "Envelope14" | "EnvelopeB4" | "EnvelopeB5"
+        | "EnvelopeB6" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC5" |
+        "EnvelopeC6" | "EnvelopeC65" | "EnvelopeDL" | "EnvelopeItaly" |
+        "EnvelopeMonarch" | "EnvelopePersonal" | "Custom";
+      return:
+        type: >-
+          <xref uid="word!Word.PaperSize:enum" /> | "Size10x14" | "Size11x17" |
+          "Letter" | "LetterSmall" | "Legal" | "Executive" | "A3" | "A4" |
+          "A4Small" | "A5" | "B4" | "B5" | "CSheet" | "DSheet" | "ESheet" |
+          "FanfoldLegalGerman" | "FanfoldStdGerman" | "FanfoldUS" | "Folio" |
+          "Ledger" | "Note" | "Quarto" | "Statement" | "Tabloid" | "Envelope9" |
+          "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" |
+          "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeC3" |
+          "EnvelopeC4" | "EnvelopeC5" | "EnvelopeC6" | "EnvelopeC65" |
+          "EnvelopeDL" | "EnvelopeItaly" | "EnvelopeMonarch" |
+          "EnvelopePersonal" | "Custom"
+  - name: rightMargin
+    uid: word!Word.PageSetup#rightMargin:member
+    package: word!
+    fullName: rightMargin
+    summary: >-
+      Specifies the distance (in points) between the right edge of the page and
+      the right boundary of the body text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin: number;'
+      return:
+        type: number
+  - name: sectionDirection
+    uid: word!Word.PageSetup#sectionDirection:member
+    package: word!
+    fullName: sectionDirection
+    summary: Specifies the reading order and alignment for the specified sections.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sectionDirection: Word.SectionDirection | "RightToLeft" | "LeftToRight";'
+      return:
+        type: >-
+          <xref uid="word!Word.SectionDirection:enum" /> | "RightToLeft" |
+          "LeftToRight"
+  - name: sectionStart
+    uid: word!Word.PageSetup#sectionStart:member
+    package: word!
+    fullName: sectionStart
+    summary: Specifies the type of section break for the specified object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        sectionStart: Word.SectionStart | "Continuous" | "NewColumn" | "NewPage"
+        | "EvenPage" | "OddPage";
+      return:
+        type: >-
+          <xref uid="word!Word.SectionStart:enum" /> | "Continuous" |
+          "NewColumn" | "NewPage" | "EvenPage" | "OddPage"
+  - name: showGrid
+    uid: word!Word.PageSetup#showGrid:member
+    package: word!
+    fullName: showGrid
+    summary: Specifies whether to show the grid.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showGrid: boolean;'
+      return:
+        type: boolean
+  - name: suppressEndnotes
+    uid: word!Word.PageSetup#suppressEndnotes:member
+    package: word!
+    fullName: suppressEndnotes
+    summary: >-
+      Specifies if endnotes are printed at the end of the next section that
+      doesn't suppress endnotes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'suppressEndnotes: boolean;'
+      return:
+        type: boolean
+  - name: textColumns
+    uid: word!Word.PageSetup#textColumns:member
+    package: word!
+    fullName: textColumns
+    summary: >-
+      Gets a `TextColumnCollection` object that represents the set of text
+      columns for the `PageSetup` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly textColumns: Word.TextColumnCollection;'
+      return:
+        type: <xref uid="word!Word.TextColumnCollection:class" />
+  - name: topMargin
+    uid: word!Word.PageSetup#topMargin:member
+    package: word!
+    fullName: topMargin
+    summary: Specifies the top margin of the page in points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'topMargin: number;'
+      return:
+        type: number
+  - name: twoPagesOnOne
+    uid: word!Word.PageSetup#twoPagesOnOne:member
+    package: word!
+    fullName: twoPagesOnOne
+    summary: Specifies whether to print two pages per sheet.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'twoPagesOnOne: boolean;'
+      return:
+        type: boolean
+  - name: verticalAlignment
+    uid: word!Word.PageSetup#verticalAlignment:member
+    package: word!
+    fullName: verticalAlignment
+    summary: >-
+      Specifies the vertical alignment of text on each page in a document or
+      section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        verticalAlignment: Word.PageSetupVerticalAlignment | "Top" | "Center" |
+        "Justify" | "Bottom";
+      return:
+        type: >-
+          <xref uid="word!Word.PageSetupVerticalAlignment:enum" /> | "Top" |
+          "Center" | "Justify" | "Bottom"
+methods:
+  - name: load(options)
+    uid: word!Word.PageSetup#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.PageSetupLoadOptions): Word.PageSetup;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.PageSetupLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.PageSetup#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.PageSetup;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.PageSetup#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.PageSetup;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.PageSetup#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.PageSetupUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.PageSetupUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.PageSetup#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.PageSetup): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.PageSetup:class" />
+      return:
+        type: void
+        description: ''
+  - name: setAsTemplateDefault()
+    uid: word!Word.PageSetup#setAsTemplateDefault:member(1)
+    package: word!
+    fullName: setAsTemplateDefault()
+    summary: >-
+      Sets the specified page setup formatting as the default for the active
+      document and all new documents based on the active template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setAsTemplateDefault(): void;'
+      return:
+        type: void
+        description: ''
+  - name: togglePortrait()
+    uid: word!Word.PageSetup#togglePortrait:member(1)
+    package: word!
+    fullName: togglePortrait()
+    summary: >-
+      Switches between portrait and landscape page orientations for a document
+      or section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'togglePortrait(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.PageSetup#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.PageSetup` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.PageSetupData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.PageSetupData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PageSetupData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.PageSetup#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.PageSetup;'
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.PageSetup#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.PageSetup;'
+      return:
+        type: <xref uid="word!Word.PageSetup:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

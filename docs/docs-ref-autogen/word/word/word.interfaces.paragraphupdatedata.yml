@@ -198,6 +198,25 @@ properties:
       content: 'rightIndent?: number;'
       return:
         type: number
+  - name: shading
+    uid: word!Word.Interfaces.ParagraphUpdateData#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that refers to the shading formatting
+      for the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalUpdateData;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData:interface"
+          />
   - name: spaceAfter
     uid: word!Word.Interfaces.ParagraphUpdateData#spaceAfter:member
     package: word!

@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Word.GutterStyle
+uid: word!Word.GutterStyle:enum
+package: word!
+fullName: Word.GutterStyle
+summary: >-
+  Specifies whether the gutter style should conform to left-to-right text flow
+  or right-to-left text flow.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bidirectional
+    uid: word!Word.GutterStyle.bidirectional:member
+    package: word!
+    summary: >-
+      Gutter style for bidirectional text flow. This is mainly right to left.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bidirectional"'
+  - name: latin
+    uid: word!Word.GutterStyle.latin:member
+    package: word!
+    summary: >-
+      Gutter style for Latin text flow. This is mainly left to right.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Latin"'

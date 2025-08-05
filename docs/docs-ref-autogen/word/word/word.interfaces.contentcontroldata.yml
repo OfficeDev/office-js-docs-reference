@@ -33,6 +33,30 @@ properties:
         type: >-
           <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
           | "Tags" | "Hidden"
+  - name: buildingBlockGalleryContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlData#buildingBlockGalleryContentControl:member
+    package: word!
+    fullName: buildingBlockGalleryContentControl
+    summary: >-
+      Gets the building block gallery-related data if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `BuildingBlockGallery`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        buildingBlockGalleryContentControl?:
+        Word.Interfaces.BuildingBlockGalleryContentControlData;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData:interface"
+          />
   - name: cannotDelete
     uid: word!Word.Interfaces.ContentControlData#cannotDelete:member
     package: word!
@@ -72,8 +96,8 @@ properties:
     package: word!
     fullName: checkboxContentControl
     summary: >-
-      Gets the data of the content control when its type is 'CheckBox'. It's
-      `null` otherwise.
+      Gets the data of the content control when its type is `CheckBox`<!-- -->.
+      It's `null` otherwise.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -108,8 +132,8 @@ properties:
     package: word!
     fullName: comboBoxContentControl
     summary: >-
-      Gets the data of the content control when its type is 'ComboBox'. It's
-      `null` otherwise.
+      Gets the data of the content control when its type is `ComboBox`<!-- -->.
+      It's `null` otherwise.
     remarks: >-
       \[ [API set: WordApi
       1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -137,13 +161,33 @@ properties:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
         type: <xref uid="word!Word.Interfaces.ContentControlData:interface" />[]
+  - name: datePickerContentControl
+    uid: word!Word.Interfaces.ContentControlData#datePickerContentControl:member
+    package: word!
+    fullName: datePickerContentControl
+    summary: >-
+      Gets the date picker-related data if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `DatePicker`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'datePickerContentControl?: Word.Interfaces.DatePickerContentControlData;'
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.DatePickerContentControlData:interface" />
   - name: dropDownListContentControl
     uid: word!Word.Interfaces.ContentControlData#dropDownListContentControl:member
     package: word!
     fullName: dropDownListContentControl
     summary: >-
-      Gets the data of the content control when its type is 'DropDownList'. It's
-      `null` otherwise.
+      Gets the data of the content control when its type is `DropDownList`<!--
+      -->. It's `null` otherwise.
     remarks: >-
       \[ [API set: WordApi
       1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -190,6 +234,24 @@ properties:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type: <xref uid="word!Word.Interfaces.FontData:interface" />
+  - name: groupContentControl
+    uid: word!Word.Interfaces.ContentControlData#groupContentControl:member
+    package: word!
+    fullName: groupContentControl
+    summary: >-
+      Gets the group-related data if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `Group`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'groupContentControl?: Word.Interfaces.GroupContentControlData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.GroupContentControlData:interface" />
   - name: id
     uid: word!Word.Interfaces.ContentControlData#id:member
     package: word!
@@ -257,6 +319,26 @@ properties:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
         type: <xref uid="word!Word.Interfaces.ParagraphData:interface" />[]
+  - name: pictureContentControl
+    uid: word!Word.Interfaces.ContentControlData#pictureContentControl:member
+    package: word!
+    fullName: pictureContentControl
+    summary: >-
+      Gets the picture-related data if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `Picture`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pictureContentControl?: Word.Interfaces.PictureContentControlData;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.PictureContentControlData:interface"
+          />
   - name: placeholderText
     uid: word!Word.Interfaces.ContentControlData#placeholderText:member
     package: word!
@@ -291,6 +373,30 @@ properties:
       content: 'removeWhenEdited?: boolean;'
       return:
         type: boolean
+  - name: repeatingSectionContentControl
+    uid: >-
+      word!Word.Interfaces.ContentControlData#repeatingSectionContentControl:member
+    package: word!
+    fullName: repeatingSectionContentControl
+    summary: >-
+      Gets the repeating section-related data if the content control's
+      [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
+      `RepeatingSection`<!-- -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        repeatingSectionContentControl?:
+        Word.Interfaces.RepeatingSectionContentControlData;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.RepeatingSectionContentControlData:interface"
+          />
   - name: style
     uid: word!Word.Interfaces.ContentControlData#style:member
     package: word!
@@ -453,7 +559,7 @@ properties:
         "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" |
         "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
         "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" |
-        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText" | "Group";
       return:
         type: >-
           <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
@@ -461,7 +567,7 @@ properties:
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
           | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
-          "RichText" | "PlainText"
+          "RichText" | "PlainText" | "Group"
   - name: tables
     uid: word!Word.Interfaces.ContentControlData#tables:member
     package: word!
@@ -541,7 +647,7 @@ properties:
         "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" |
         "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
         "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" |
-        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText" | "Group";
       return:
         type: >-
           <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
@@ -549,7 +655,7 @@ properties:
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
           | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
-          "RichText" | "PlainText"
+          "RichText" | "PlainText" | "Group"
   - name: xmlMapping
     uid: word!Word.Interfaces.ContentControlData#xmlMapping:member
     package: word!

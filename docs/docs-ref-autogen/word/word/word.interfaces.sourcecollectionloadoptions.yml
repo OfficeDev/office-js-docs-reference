@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Word.Interfaces.SourceCollectionLoadOptions
+uid: word!Word.Interfaces.SourceCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.SourceCollectionLoadOptions
+summary: Represents a collection of [Word.Source](xref:word!Word.Source:class) objects.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.SourceCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: isCited
+    uid: word!Word.Interfaces.SourceCollectionLoadOptions#isCited:member
+    package: word!
+    fullName: isCited
+    summary: >-
+      For EACH ITEM in the collection: Gets if the `Source` object has been
+      cited in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isCited?: boolean;'
+      return:
+        type: boolean
+  - name: tag
+    uid: word!Word.Interfaces.SourceCollectionLoadOptions#tag:member
+    package: word!
+    fullName: tag
+    summary: 'For EACH ITEM in the collection: Gets the tag of the source.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tag?: boolean;'
+      return:
+        type: boolean
+  - name: xml
+    uid: word!Word.Interfaces.SourceCollectionLoadOptions#xml:member
+    package: word!
+    fullName: xml
+    summary: >-
+      For EACH ITEM in the collection: Gets the XML representation of the
+      source.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xml?: boolean;'
+      return:
+        type: boolean

@@ -28,6 +28,23 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: automaticallyUpdate
+    uid: word!Word.Interfaces.StyleLoadOptions#automaticallyUpdate:member
+    package: word!
+    fullName: automaticallyUpdate
+    summary: >-
+      Specifies whether the style is automatically redefined based on the
+      selection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'automaticallyUpdate?: boolean;'
+      return:
+        type: boolean
   - name: baseStyle
     uid: word!Word.Interfaces.StyleLoadOptions#baseStyle:member
     package: word!
@@ -114,6 +131,40 @@ properties:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.FontLoadOptions:interface" />
+  - name: frame
+    uid: word!Word.Interfaces.StyleLoadOptions#frame:member
+    package: word!
+    fullName: frame
+    summary: >-
+      Returns a `Frame` object that represents the frame formatting for the
+      style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'frame?: Word.Interfaces.FrameLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.FrameLoadOptions:interface" />
+  - name: hasProofing
+    uid: word!Word.Interfaces.StyleLoadOptions#hasProofing:member
+    package: word!
+    fullName: hasProofing
+    summary: >-
+      Specifies whether the spelling and grammar checker ignores text formatted
+      with this style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasProofing?: boolean;'
+      return:
+        type: boolean
   - name: inUse
     uid: word!Word.Interfaces.StyleLoadOptions#inUse:member
     package: word!
@@ -130,6 +181,36 @@ properties:
     isDeprecated: false
     syntax:
       content: 'inUse?: boolean;'
+      return:
+        type: boolean
+  - name: languageId
+    uid: word!Word.Interfaces.StyleLoadOptions#languageId:member
+    package: word!
+    fullName: languageId
+    summary: Specifies a `LanguageId` value that represents the language for the style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageId?: boolean;'
+      return:
+        type: boolean
+  - name: languageIdFarEast
+    uid: word!Word.Interfaces.StyleLoadOptions#languageIdFarEast:member
+    package: word!
+    fullName: languageIdFarEast
+    summary: Specifies an East Asian language for the style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageIdFarEast?: boolean;'
       return:
         type: boolean
   - name: linked
@@ -149,6 +230,36 @@ properties:
       content: 'linked?: boolean;'
       return:
         type: boolean
+  - name: linkStyle
+    uid: word!Word.Interfaces.StyleLoadOptions#linkStyle:member
+    package: word!
+    fullName: linkStyle
+    summary: Specifies a link between a paragraph and a character style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linkStyle?: Word.Interfaces.StyleLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.StyleLoadOptions:interface" />
+  - name: listLevelNumber
+    uid: word!Word.Interfaces.StyleLoadOptions#listLevelNumber:member
+    package: word!
+    fullName: listLevelNumber
+    summary: Returns the list level for the style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listLevelNumber?: boolean;'
+      return:
+        type: boolean
   - name: listTemplate
     uid: word!Word.Interfaces.StyleLoadOptions#listTemplate:member
     package: word!
@@ -166,6 +277,21 @@ properties:
       content: 'listTemplate?: Word.Interfaces.ListTemplateLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.ListTemplateLoadOptions:interface" />
+  - name: locked
+    uid: word!Word.Interfaces.StyleLoadOptions#locked:member
+    package: word!
+    fullName: locked
+    summary: Specifies whether the style cannot be changed or edited.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type: boolean
   - name: nameLocal
     uid: word!Word.Interfaces.StyleLoadOptions#nameLocal:member
     package: word!
@@ -201,6 +327,24 @@ properties:
     isDeprecated: false
     syntax:
       content: 'nextParagraphStyle?: boolean;'
+      return:
+        type: boolean
+  - name: noSpaceBetweenParagraphsOfSameStyle
+    uid: >-
+      word!Word.Interfaces.StyleLoadOptions#noSpaceBetweenParagraphsOfSameStyle:member
+    package: word!
+    fullName: noSpaceBetweenParagraphsOfSameStyle
+    summary: >-
+      Specifies whether to remove spacing between paragraphs that are formatted
+      using the same style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'noSpaceBetweenParagraphsOfSameStyle?: boolean;'
       return:
         type: boolean
   - name: paragraphFormat

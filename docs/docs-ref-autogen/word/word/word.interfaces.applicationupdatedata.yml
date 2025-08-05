@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: Word.Interfaces.ApplicationUpdateData
+uid: word!Word.Interfaces.ApplicationUpdateData:interface
+package: word!
+fullName: Word.Interfaces.ApplicationUpdateData
+summary: >-
+  An interface for updating data on the `Application` object, for use in
+  `application.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bibliography
+    uid: word!Word.Interfaces.ApplicationUpdateData#bibliography:member
+    package: word!
+    fullName: bibliography
+    summary: >-
+      Returns a `Bibliography` object that represents the bibliography reference
+      sources stored in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bibliography?: Word.Interfaces.BibliographyUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.BibliographyUpdateData:interface" />
+  - name: checkLanguage
+    uid: word!Word.Interfaces.ApplicationUpdateData#checkLanguage:member
+    package: word!
+    fullName: checkLanguage
+    summary: >-
+      Specifies if Microsoft Word automatically detects the language you are
+      using as you type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkLanguage?: boolean;'
+      return:
+        type: boolean
