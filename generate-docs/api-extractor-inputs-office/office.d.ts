@@ -680,6 +680,20 @@ export declare namespace Office {
          */
         ItemChanged,
         /**
+         * Occurs in Outlook on the web and the new Outlook on Windows when messages or file attachments in the Outlook client window are
+         * dragged then dropped into the task pane of an add-in.
+         *
+         * To add an event handler for the `ItemDraggedAndDropped` event, use the `addHandlerAsync` method of the `Mailbox` object.
+         * The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs | Office.DragAndDropEventArgs}.
+         *
+         * **Important**: The `ItemDraggedAndDropped` event isn't supported in Outlook on Windows (classic) and on Mac. If the `ItemDraggedAndDropped` handler
+         * runs on these clients, an error occurs ("This event isn't supported on this platform.").
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        ItemDraggedAndDropped,
+        /**
          * Triggers when a `customXmlPart` node is deleted.
          */
         NodeDeleted,

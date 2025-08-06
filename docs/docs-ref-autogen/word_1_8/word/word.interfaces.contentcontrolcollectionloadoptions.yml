@@ -95,7 +95,7 @@ properties:
     fullName: checkboxContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the data of the content control when
-      its type is 'CheckBox'. It's `null` otherwise.
+      its type is `CheckBox`<!-- -->. It's `null` otherwise.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

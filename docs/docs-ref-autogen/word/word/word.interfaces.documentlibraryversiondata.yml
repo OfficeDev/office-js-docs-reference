@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: Word.Interfaces.DocumentLibraryVersionData
+uid: word!Word.Interfaces.DocumentLibraryVersionData:interface
+package: word!
+fullName: Word.Interfaces.DocumentLibraryVersionData
+summary: >-
+  An interface describing the data returned by calling
+  `documentLibraryVersion.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: comments
+    uid: word!Word.Interfaces.DocumentLibraryVersionData#comments:member
+    package: word!
+    fullName: comments
+    summary: >-
+      Gets any optional comments associated with this version of the shared
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comments?: string;'
+      return:
+        type: string
+  - name: modified
+    uid: word!Word.Interfaces.DocumentLibraryVersionData#modified:member
+    package: word!
+    fullName: modified
+    summary: >-
+      Gets the date and time at which this version of the shared document was
+      last saved to the server.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'modified?: any;'
+      return:
+        type: any
+  - name: modifiedBy
+    uid: word!Word.Interfaces.DocumentLibraryVersionData#modifiedBy:member
+    package: word!
+    fullName: modifiedBy
+    summary: >-
+      Gets the name of the user who last saved this version of the shared
+      document to the server.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'modifiedBy?: string;'
+      return:
+        type: string

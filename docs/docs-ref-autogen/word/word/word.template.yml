@@ -1,0 +1,706 @@
+### YamlMime:TSType
+name: Word.Template
+uid: word!Word.Template:class
+package: word!
+fullName: Word.Template
+summary: Represents a document template.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: buildingBlockEntries
+    uid: word!Word.Template#buildingBlockEntries:member
+    package: word!
+    fullName: buildingBlockEntries
+    summary: >-
+      Returns a `BuildingBlockEntryCollection` object that represents the
+      collection of building block entries in the template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly buildingBlockEntries: Word.BuildingBlockEntryCollection;'
+      return:
+        type: <xref uid="word!Word.BuildingBlockEntryCollection:class" />
+  - name: buildingBlockTypes
+    uid: word!Word.Template#buildingBlockTypes:member
+    package: word!
+    fullName: buildingBlockTypes
+    summary: >-
+      Returns a `BuildingBlockTypeItemCollection` object that represents the
+      collection of building block types that are contained in the template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly buildingBlockTypes: Word.BuildingBlockTypeItemCollection;'
+      return:
+        type: <xref uid="word!Word.BuildingBlockTypeItemCollection:class" />
+  - name: context
+    uid: word!Word.Template#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: farEastLineBreakLanguage
+    uid: word!Word.Template#farEastLineBreakLanguage:member
+    package: word!
+    fullName: farEastLineBreakLanguage
+    summary: >-
+      Specifies the East Asian language to use when breaking lines of text in
+      the document or template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        farEastLineBreakLanguage: Word.FarEastLineBreakLanguageId |
+        "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+      return:
+        type: >-
+          <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> |
+          "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
+  - name: farEastLineBreakLevel
+    uid: word!Word.Template#farEastLineBreakLevel:member
+    package: word!
+    fullName: farEastLineBreakLevel
+    summary: Specifies the line break control level for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        farEastLineBreakLevel: Word.FarEastLineBreakLevel | "Normal" | "Strict"
+        | "Custom";
+      return:
+        type: >-
+          <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" |
+          "Strict" | "Custom"
+  - name: fullName
+    uid: word!Word.Template#fullName:member
+    package: word!
+    fullName: fullName
+    summary: Returns the name of the template, including the drive or Web path.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly fullName: string;'
+      return:
+        type: string
+  - name: hasNoProofing
+    uid: word!Word.Template#hasNoProofing:member
+    package: word!
+    fullName: hasNoProofing
+    summary: >-
+      Specifies whether the spelling and grammar checker ignores documents based
+      on this template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasNoProofing: boolean;'
+      return:
+        type: boolean
+  - name: justificationMode
+    uid: word!Word.Template#justificationMode:member
+    package: word!
+    fullName: justificationMode
+    summary: Specifies the character spacing adjustment for the template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        justificationMode: Word.JustificationMode | "Expand" | "Compress" |
+        "CompressKana";
+      return:
+        type: >-
+          <xref uid="word!Word.JustificationMode:enum" /> | "Expand" |
+          "Compress" | "CompressKana"
+  - name: kerningByAlgorithm
+    uid: word!Word.Template#kerningByAlgorithm:member
+    package: word!
+    fullName: kerningByAlgorithm
+    summary: >-
+      Specifies if Microsoft Word kerns half-width Latin characters and
+      punctuation marks in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'kerningByAlgorithm: boolean;'
+      return:
+        type: boolean
+  - name: languageId
+    uid: word!Word.Template#languageId:member
+    package: word!
+    fullName: languageId
+    summary: >-
+      Specifies a `LanguageId` value that represents the language in the
+      template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        languageId: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" |
+        "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" |
+        "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
+        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
+        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
+        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
+        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
+        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
+        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
+        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
+        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
+        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
+        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
+        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
+        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
+        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
+        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
+        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
+        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+        | "Galician" | "Georgian" | "German" | "GermanAustria" |
+        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
+        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
+        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
+        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
+        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
+        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
+        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
+        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
+        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
+        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
+        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
+        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
+        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
+        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
+        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
+        "Yiddish" | "Yoruba" | "Zulu";
+      return:
+        type: >-
+          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
+          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
+          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
+          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
+          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
+          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
+          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
+          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
+          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
+          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
+          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
+          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
+          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
+          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
+          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
+          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
+          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
+          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
+          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
+          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+          | "Galician" | "Georgian" | "German" | "GermanAustria" |
+          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
+          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
+          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
+          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
+          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
+          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
+          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
+          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
+          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
+          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
+          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
+          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
+          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
+          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
+          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
+          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
+          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
+          "Zulu"
+  - name: languageIdFarEast
+    uid: word!Word.Template#languageIdFarEast:member
+    package: word!
+    fullName: languageIdFarEast
+    summary: Specifies an East Asian language for the language in the template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        languageIdFarEast: Word.LanguageId | "Afrikaans" | "Albanian" |
+        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
+        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
+        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
+        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
+        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
+        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
+        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
+        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
+        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
+        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
+        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
+        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
+        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
+        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
+        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
+        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
+        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
+        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+        | "Galician" | "Georgian" | "German" | "GermanAustria" |
+        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
+        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
+        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
+        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
+        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
+        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
+        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
+        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
+        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
+        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
+        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
+        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
+        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
+        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
+        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
+        "Yiddish" | "Yoruba" | "Zulu";
+      return:
+        type: >-
+          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
+          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
+          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
+          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
+          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
+          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
+          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
+          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
+          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
+          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
+          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
+          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
+          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
+          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
+          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
+          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
+          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
+          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
+          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
+          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+          | "Galician" | "Georgian" | "German" | "GermanAustria" |
+          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
+          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
+          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
+          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
+          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
+          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
+          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
+          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
+          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
+          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
+          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
+          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
+          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
+          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
+          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
+          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
+          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
+          "Zulu"
+  - name: name
+    uid: word!Word.Template#name:member
+    package: word!
+    fullName: name
+    summary: >-
+      Returns only the name of the document template (excluding any path or
+      other location information).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
+  - name: noLineBreakAfter
+    uid: word!Word.Template#noLineBreakAfter:member
+    package: word!
+    fullName: noLineBreakAfter
+    summary: >-
+      Specifies the kinsoku characters after which Microsoft Word will not break
+      a line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'noLineBreakAfter: string;'
+      return:
+        type: string
+  - name: noLineBreakBefore
+    uid: word!Word.Template#noLineBreakBefore:member
+    package: word!
+    fullName: noLineBreakBefore
+    summary: >-
+      Specifies the kinsoku characters before which Microsoft Word will not
+      break a line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'noLineBreakBefore: string;'
+      return:
+        type: string
+  - name: path
+    uid: word!Word.Template#path:member
+    package: word!
+    fullName: path
+    summary: Returns the path to the document template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly path: string;'
+      return:
+        type: string
+  - name: saved
+    uid: word!Word.Template#saved:member
+    package: word!
+    fullName: saved
+    summary: >-
+      Specifies `true` if the template has not changed since it was last saved,
+      `false` if Microsoft Word displays a prompt to save changes when the
+      document is closed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'saved: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Template#type:member
+    package: word!
+    fullName: type
+    summary: Returns the template type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Word.TemplateType | "Normal" | "Global" | "Attached";'
+      return:
+        type: >-
+          <xref uid="word!Word.TemplateType:enum" /> | "Normal" | "Global" |
+          "Attached"
+methods:
+  - name: load(options)
+    uid: word!Word.Template#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.TemplateLoadOptions): Word.Template;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.TemplateLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Template:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.Template#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Template;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.Template:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.Template#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Template;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.Template:class" />
+        description: ''
+  - name: save()
+    uid: word!Word.Template#save:member(1)
+    package: word!
+    fullName: save()
+    summary: Saves the template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'save(): void;'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.Template#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.TemplateUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.TemplateUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.Template#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Template): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.Template:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.Template#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Template` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.TemplateData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TemplateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TemplateData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.Template#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Template;'
+      return:
+        type: <xref uid="word!Word.Template:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.Template#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Template;'
+      return:
+        type: <xref uid="word!Word.Template:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

@@ -24,6 +24,11 @@ interfaces:
   - outlook!Office.Display:interface
   - outlook!Office.DisplayedBody:interface
   - outlook!Office.DisplayedSubject:interface
+  - outlook!Office.DragAndDropEventArgs:interface
+  - outlook!Office.DragoverEventData:interface
+  - outlook!Office.DropEventData:interface
+  - outlook!Office.DroppedItemDetails:interface
+  - outlook!Office.DroppedItems:interface
   - outlook!Office.EmailAddressDetails:interface
   - outlook!Office.EmailUser:interface
   - outlook!Office.EnhancedLocation:interface

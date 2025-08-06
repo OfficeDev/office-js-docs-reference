@@ -284,7 +284,7 @@ properties:
         "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" |
         "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
         "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" |
-        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+        "DatePicker" | "RepeatingSection" | "RichText" | "PlainText" | "Group";
       return:
         type: >-
           <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" |
@@ -292,4 +292,4 @@ properties:
           "RichTextTableRow" | "RichTextTable" | "PlainTextInline" |
           "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox"
           | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
-          "RichText" | "PlainText"
+          "RichText" | "PlainText" | "Group"

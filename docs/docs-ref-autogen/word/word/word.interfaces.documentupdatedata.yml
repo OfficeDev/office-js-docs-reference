@@ -12,6 +12,53 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: autoHyphenation
+    uid: word!Word.Interfaces.DocumentUpdateData#autoHyphenation:member
+    package: word!
+    fullName: autoHyphenation
+    summary: Specifies if automatic hyphenation is turned on for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoHyphenation?: boolean;'
+      return:
+        type: boolean
+  - name: autoSaveOn
+    uid: word!Word.Interfaces.DocumentUpdateData#autoSaveOn:member
+    package: word!
+    fullName: autoSaveOn
+    summary: Specifies if the edits in the document are automatically saved.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoSaveOn?: boolean;'
+      return:
+        type: boolean
+  - name: bibliography
+    uid: word!Word.Interfaces.DocumentUpdateData#bibliography:member
+    package: word!
+    fullName: bibliography
+    summary: >-
+      Returns a `Bibliography` object that represents the bibliography
+      references contained within the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bibliography?: Word.Interfaces.BibliographyUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.BibliographyUpdateData:interface" />
   - name: body
     uid: word!Word.Interfaces.DocumentUpdateData#body:member
     package: word!
@@ -48,6 +95,70 @@ properties:
         type: >-
           <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
           | "TrackMineOnly"
+  - name: consecutiveHyphensLimit
+    uid: word!Word.Interfaces.DocumentUpdateData#consecutiveHyphensLimit:member
+    package: word!
+    fullName: consecutiveHyphensLimit
+    summary: >-
+      Specifies the maximum number of consecutive lines that can end with
+      hyphens.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'consecutiveHyphensLimit?: number;'
+      return:
+        type: number
+  - name: hyphenateCaps
+    uid: word!Word.Interfaces.DocumentUpdateData#hyphenateCaps:member
+    package: word!
+    fullName: hyphenateCaps
+    summary: Specifies whether words in all capital letters can be hyphenated.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hyphenateCaps?: boolean;'
+      return:
+        type: boolean
+  - name: languageDetected
+    uid: word!Word.Interfaces.DocumentUpdateData#languageDetected:member
+    package: word!
+    fullName: languageDetected
+    summary: >-
+      Specifies whether Microsoft Word has detected the language of the document
+      text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'languageDetected?: boolean;'
+      return:
+        type: boolean
+  - name: pageSetup
+    uid: word!Word.Interfaces.DocumentUpdateData#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageSetup?: Word.Interfaces.PageSetupUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PageSetupUpdateData:interface" />
   - name: properties
     uid: word!Word.Interfaces.DocumentUpdateData#properties:member
     package: word!

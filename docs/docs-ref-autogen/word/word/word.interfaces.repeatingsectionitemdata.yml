@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: Word.Interfaces.RepeatingSectionItemData
+uid: word!Word.Interfaces.RepeatingSectionItemData:interface
+package: word!
+fullName: Word.Interfaces.RepeatingSectionItemData
+summary: >-
+  An interface describing the data returned by calling
+  `repeatingSectionItem.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: range
+    uid: word!Word.Interfaces.RepeatingSectionItemData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns the range of this repeating section item, excluding the start and
+      end tags.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />

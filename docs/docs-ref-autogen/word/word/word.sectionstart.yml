@@ -1,0 +1,63 @@
+### YamlMime:TSEnum
+name: Word.SectionStart
+uid: word!Word.SectionStart:enum
+package: word!
+fullName: Word.SectionStart
+summary: Specifies the type of section break for the specified item.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: continuous
+    uid: word!Word.SectionStart.continuous:member
+    package: word!
+    summary: >-
+      Continuous section break.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Continuous"'
+  - name: evenPage
+    uid: word!Word.SectionStart.evenPage:member
+    package: word!
+    summary: >-
+      Even page section break.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EvenPage"'
+  - name: newColumn
+    uid: word!Word.SectionStart.newColumn:member
+    package: word!
+    summary: >-
+      New column section break.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"NewColumn"'
+  - name: newPage
+    uid: word!Word.SectionStart.newPage:member
+    package: word!
+    summary: >-
+      New page section break.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"NewPage"'
+  - name: oddPage
+    uid: word!Word.SectionStart.oddPage:member
+    package: word!
+    summary: >-
+      Odd page section break.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OddPage"'

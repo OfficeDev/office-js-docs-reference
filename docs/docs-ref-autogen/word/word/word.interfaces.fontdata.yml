@@ -81,6 +81,23 @@ properties:
       content: 'boldBidirectional?: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: word!Word.Interfaces.FontData#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` object that represents all the
+      borders for the font.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderUniversalData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.BorderUniversalData:interface" />[]
   - name: color
     uid: word!Word.Interfaces.FontData#color:member
     package: word!

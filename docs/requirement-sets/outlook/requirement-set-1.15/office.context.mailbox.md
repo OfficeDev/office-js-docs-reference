@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - requirement set 1.15
 description: Outlook Mailbox API requirement set 1.15 version of the Mailbox object model.
-ms.date: 03/11/2025
+ms.date: 08/05/2025
 ms.localizationpriority: medium
 ---
 
@@ -65,4 +65,5 @@ You can subscribe to and unsubscribe from the following events using [addHandler
 | [Event](/javascript/api/office/office.eventtype?view=outlook-js-1.15&preserve-view=true) | Description | Minimum<br>requirement set |
 |---|---|:---:|
 |`ItemChanged`| A different Outlook item is selected for viewing while the task pane is pinned. | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
+|`ItemDraggedAndDropped`| In Outlook on the web or the new Outlook on Windows, messages or file attachments are dragged and dropped into an add-in's task pane. | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 |`SelectedItemsChanged`| One or more messages are selected or deselected. | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |

@@ -45,3 +45,33 @@ properties:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />
+  - name: pageSetup
+    uid: word!Word.Interfaces.SectionLoadOptions#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the section.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageSetup?: Word.Interfaces.PageSetupLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PageSetupLoadOptions:interface" />
+  - name: protectedForForms
+    uid: word!Word.Interfaces.SectionLoadOptions#protectedForForms:member
+    package: word!
+    fullName: protectedForForms
+    summary: Specifies if the section is protected for forms.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectedForForms?: boolean;'
+      return:
+        type: boolean

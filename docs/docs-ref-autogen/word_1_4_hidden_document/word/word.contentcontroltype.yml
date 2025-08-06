@@ -137,6 +137,13 @@ fields:
       * \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DropDownList"'
+  - name: group
+    uid: word!Word.ContentControlType.group:member
+    package: word!
+    summary: >-
+      * \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Group"'
   - name: picture
     uid: word!Word.ContentControlType.picture:member
     package: word!
