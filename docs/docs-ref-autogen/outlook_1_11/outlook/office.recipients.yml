@@ -61,12 +61,10 @@ methods:
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
 
-      - In Outlook on Android and on iOS, the `addAsync` method isn't supported
-      in Message Compose mode. Only the Appointment Organizer mode is supported.
-      For more information on supported APIs in Outlook mobile, see [Outlook
-      JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
-      -->.
+      - In Outlook on Android and on iOS, the `addAsync` method is supported
+      starting in Version 4.2530.0. On these mobile clients, the `addAsync`
+      method isn't supported when a user replies from the the reply field at the
+      bottom of a message.
 
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new
@@ -193,12 +191,10 @@ methods:
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
 
-      - In Outlook on Android and on iOS, the `addAsync` method isn't supported
-      in Message Compose mode. Only the Appointment Organizer mode is supported.
-      For more information on supported APIs in Outlook mobile, see [Outlook
-      JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
-      -->.
+      - In Outlook on Android and on iOS, the `addAsync` method is supported
+      starting in Version 4.2530.0. On these mobile clients, the `addAsync`
+      method isn't supported when a user replies from the the reply field at the
+      bottom of a message.
 
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new
@@ -335,6 +331,10 @@ methods:
       must first remove the existing recipients, then add them back to the mail
       item.
 
+
+      In Outlook on Android and on iOS, only the `getAsync` method is supported
+      when a user replies from the reply field at the bottom of a message.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -443,6 +443,10 @@ methods:
       account. To get the correct recipient types after switching accounts, you
       must first remove the existing recipients, then add them back to the mail
       item.
+
+
+      In Outlook on Android and on iOS, only the `getAsync` method is supported
+      when a user replies from the reply field at the bottom of a message.
 
 
       #### Examples
@@ -608,12 +612,10 @@ methods:
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
 
-      - In Outlook on Android and on iOS, the `setAsync` method isn't supported
-      in the Message Compose mode. Only the Appointment Organizer mode is
-      supported. For more information on supported APIs in Outlook mobile, see
-      [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
-      -->.
+      - In Outlook on Android and on iOS, the `setAsync` method is supported
+      starting in Version 4.2530.0. On these mobile clients, the `setAsync`
+      method isn't supported when a user replies from the the reply field at the
+      bottom of a message.
 
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new
@@ -710,12 +712,10 @@ methods:
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
 
-      - In Outlook on Android and on iOS, the `setAsync` method isn't supported
-      in the Message Compose mode. Only the Appointment Organizer mode is
-      supported. For more information on supported APIs in Outlook mobile, see
-      [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
-      -->.
+      - In Outlook on Android and on iOS, the `setAsync` method is supported
+      starting in Version 4.2530.0. On these mobile clients, the `setAsync`
+      method isn't supported when a user replies from the the reply field at the
+      bottom of a message.
 
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new

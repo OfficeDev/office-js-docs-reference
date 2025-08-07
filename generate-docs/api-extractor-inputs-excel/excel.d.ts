@@ -6512,6 +6512,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityLoadServiceRequest {
         /**
@@ -6519,6 +6521,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         domainId: string;
         /**
@@ -6526,6 +6530,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         entities: LinkedEntityIdCulture[];
     }
@@ -6534,6 +6540,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityLoadServiceResult {
         /**
@@ -6541,6 +6549,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         entities: LinkedEntityCellValue[];
     }
@@ -6585,6 +6595,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityIdCulture {
         /**
@@ -6592,6 +6604,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         entityId: string;
         /**
@@ -6599,6 +6613,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         culture: string;
     }
@@ -35551,6 +35567,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This class isn't supported in Excel on the web.
      */
     export class LinkedEntityDataDomain extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -35561,6 +35579,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly dataProvider: string;
         /**
@@ -35569,6 +35589,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly id: string;
         /**
@@ -35577,6 +35599,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly lastRefreshed: Date;
         /**
@@ -35586,6 +35610,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly loadFunctionId: string;
         /**
@@ -35594,6 +35620,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly name: string;
         /**
@@ -35602,6 +35630,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly periodicRefreshInterval: number;
         /**
@@ -35611,6 +35641,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
@@ -35620,6 +35652,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly serviceId: number;
         /**
@@ -35628,6 +35662,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly supportedRefreshModes: Excel.LinkedEntityDataDomainRefreshMode[];
         /**
@@ -35637,6 +35673,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         delete(): void;
         /**
@@ -35645,6 +35683,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         refresh(): void;
         /**
@@ -35679,6 +35719,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainAddedEventArgs {
         /**
@@ -35687,6 +35729,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id?: string;
         /**
@@ -35694,6 +35738,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         serviceId: number;
         /**
@@ -35701,6 +35747,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
@@ -35708,6 +35756,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainLinkedEntityDataDomainAdded";
     }
@@ -35717,6 +35767,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This class isn't supported in Excel on the web.
      */
     export class LinkedEntityDataDomainCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -35729,6 +35781,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param options - Options that are used to create the linked entity data domain to be added.
          */
@@ -35738,6 +35792,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
@@ -35745,6 +35801,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
@@ -35755,6 +35813,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param index - The index of the linked entity data domain in the collection.
          * @returns The linked entity data domain at the given index.
@@ -35765,6 +35825,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `name`. If there are multiple linked entity data domains with the same `name`, the one defined by this Office Add-in will be returned.
@@ -35777,6 +35839,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `name`. If there are multiple linked entity data domains with the same `name`, the one defined by this Office Add-in will be returned.
@@ -35789,6 +35853,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
@@ -35800,6 +35866,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         refreshAll(): void;
         /**
@@ -35825,6 +35893,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This event isn't supported in Excel on the web.
          *
          * @eventproperty
          */
@@ -35834,6 +35904,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This event isn't supported in Excel on the web.
          *
          * @eventproperty
          */
@@ -35843,6 +35915,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This event isn't supported in Excel on the web.
          *
          * @eventproperty
          */
@@ -35858,6 +35932,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainCreateOptions {
         /**
@@ -35865,6 +35941,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         dataProvider: string;
         /**
@@ -35873,6 +35951,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id: string;
         /**
@@ -35881,6 +35961,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         loadFunctionId: string;
         /**
@@ -35889,6 +35971,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         name: string;
         /**
@@ -35898,6 +35982,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         periodicRefreshInterval?: number;
         /**
@@ -35909,6 +35995,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
     }
@@ -35917,6 +36005,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainRefreshCompletedEventArgs {
         /**
@@ -35924,6 +36014,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         errors?: string[];
         /**
@@ -35932,6 +36024,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id?: string;
         /**
@@ -35939,6 +36033,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         refreshed: boolean;
         /**
@@ -35946,6 +36042,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         serviceId: number;
         /**
@@ -35953,6 +36051,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
@@ -35960,6 +36060,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainRefreshCompleted";
     }
@@ -35968,12 +36070,16 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This enum isn't supported in Excel on the web.
      */
     enum LinkedEntityDataDomainRefreshMode {
         /**
          * Refresh mode is unknown or unsupported.
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         unknown = "Unknown",
         /**
@@ -35981,6 +36087,8 @@ export declare namespace Excel {
                     Refresh is not triggered automatically.
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         manual = "Manual",
         /**
@@ -35988,6 +36096,8 @@ export declare namespace Excel {
                     Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         onLoad = "OnLoad",
         /**
@@ -35996,6 +36106,8 @@ export declare namespace Excel {
                     For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         periodic = "Periodic"
     }
@@ -36004,6 +36116,8 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainRefreshModeChangedEventArgs {
         /**
@@ -36012,6 +36126,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id?: string;
         /**
@@ -36019,6 +36135,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
@@ -36026,6 +36144,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         serviceId: number;
         /**
@@ -36033,6 +36153,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
@@ -36040,6 +36162,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainRefreshModeChanged";
     }
@@ -52367,6 +52491,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         }
@@ -59507,6 +59633,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             dataProvider?: string;
             /**
@@ -59515,6 +59643,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             id?: string;
             /**
@@ -59523,6 +59653,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             lastRefreshed?: Date;
             /**
@@ -59532,6 +59664,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             loadFunctionId?: string;
             /**
@@ -59540,6 +59674,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             name?: string;
             /**
@@ -59548,6 +59684,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             periodicRefreshInterval?: number;
             /**
@@ -59557,6 +59695,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
             /**
@@ -59566,6 +59706,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             serviceId?: number;
             /**
@@ -59574,6 +59716,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
         }
@@ -71598,6 +71742,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This interface isn't supported in Excel on the web.
          */
         export interface LinkedEntityDataDomainLoadOptions {
             /**
@@ -71610,6 +71756,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             dataProvider?: boolean;
             /**
@@ -71618,6 +71766,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             id?: boolean;
             /**
@@ -71626,6 +71776,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             lastRefreshed?: boolean;
             /**
@@ -71635,6 +71787,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             loadFunctionId?: boolean;
             /**
@@ -71643,6 +71797,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             name?: boolean;
             /**
@@ -71651,6 +71807,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             periodicRefreshInterval?: boolean;
             /**
@@ -71660,6 +71818,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             refreshMode?: boolean;
             /**
@@ -71669,6 +71829,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             serviceId?: boolean;
             /**
@@ -71677,6 +71839,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             supportedRefreshModes?: boolean;
         }
@@ -71686,6 +71850,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This interface isn't supported in Excel on the web.
          */
         export interface LinkedEntityDataDomainCollectionLoadOptions {
             /**
@@ -71698,6 +71864,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             dataProvider?: boolean;
             /**
@@ -71706,6 +71874,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             id?: boolean;
             /**
@@ -71714,6 +71884,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             lastRefreshed?: boolean;
             /**
@@ -71723,6 +71895,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             loadFunctionId?: boolean;
             /**
@@ -71731,6 +71905,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             name?: boolean;
             /**
@@ -71739,6 +71915,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             periodicRefreshInterval?: boolean;
             /**
@@ -71748,6 +71926,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             refreshMode?: boolean;
             /**
@@ -71757,6 +71937,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             serviceId?: boolean;
             /**
@@ -71765,6 +71947,8 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             supportedRefreshModes?: boolean;
         }
