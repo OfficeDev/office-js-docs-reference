@@ -12,6 +12,9 @@ remarks: >-
   \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  This class isn't supported in Excel on the web.
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -58,6 +61,9 @@ methods:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This method isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,6 +89,9 @@ methods:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This method isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,6 +108,9 @@ methods:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This method isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -124,6 +136,9 @@ methods:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This method isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,6 +159,9 @@ methods:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This method isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -176,6 +194,9 @@ methods:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This method isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,6 +226,9 @@ methods:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This method isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -311,6 +335,9 @@ methods:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This method isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -356,6 +383,9 @@ events:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This event isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -379,6 +409,9 @@ events:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This event isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -399,6 +432,9 @@ events:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This event isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
