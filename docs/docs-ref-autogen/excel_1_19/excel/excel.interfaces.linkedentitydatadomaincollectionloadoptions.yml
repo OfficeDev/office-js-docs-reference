@@ -12,6 +12,9 @@ remarks: >-
   \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  This interface isn't supported in Excel on the web.
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,6 +50,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,6 +73,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -89,6 +98,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -114,6 +126,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,6 +148,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -154,6 +172,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -178,6 +199,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,6 +224,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,6 +246,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false

@@ -5007,7 +5007,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ListLevelCollectionData;
     }
     /**
-     * Represents a ListTemplate.
+     * Represents a list template.
      *
      * @remarks
      * [Api set: WordApiDesktop 1.1]
@@ -5016,14 +5016,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
+         * Gets a `ListLevelCollection` object that represents all the levels for the list template.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.1]
          */
         readonly listLevels: Word.ListLevelCollection;
         /**
-         * Specifies whether the specified ListTemplate object is outline numbered.
+         * Specifies whether the list template is outline numbered.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.1]

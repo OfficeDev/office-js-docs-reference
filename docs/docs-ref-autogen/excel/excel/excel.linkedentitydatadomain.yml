@@ -14,6 +14,9 @@ remarks: >-
   \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  This class isn't supported in Excel on the web.
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,6 +48,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,6 +69,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -83,6 +92,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -107,6 +119,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,6 +139,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -143,6 +161,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -165,6 +186,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -190,6 +214,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,6 +235,9 @@ properties:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This property isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -232,6 +262,9 @@ methods:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This method isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false
@@ -331,6 +364,9 @@ methods:
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This method isn't supported in Excel on the web.
 
     isPreview: false
     isDeprecated: false

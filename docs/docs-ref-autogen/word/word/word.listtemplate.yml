@@ -3,7 +3,7 @@ name: Word.ListTemplate
 uid: word!Word.ListTemplate:class
 package: word!
 fullName: Word.ListTemplate
-summary: Represents a ListTemplate.
+summary: Represents a list template.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -75,8 +75,8 @@ properties:
     package: word!
     fullName: listLevels
     summary: >-
-      Gets a ListLevels collection that represents all the levels for the
-      specified ListTemplate.
+      Gets a `ListLevelCollection` object that represents all the levels for the
+      list template.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -91,7 +91,7 @@ properties:
     uid: word!Word.ListTemplate#outlineNumbered:member
     package: word!
     fullName: outlineNumbered
-    summary: Specifies whether the specified ListTemplate object is outline numbered.
+    summary: Specifies whether the list template is outline numbered.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
