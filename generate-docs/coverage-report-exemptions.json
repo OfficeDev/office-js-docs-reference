@@ -1,0 +1,8 @@
+{
+    "exemptions": [
+        {
+            "className": "Office.Dialog",
+            "exemptedFieldCount": 4
+        }
+    ]
+}
