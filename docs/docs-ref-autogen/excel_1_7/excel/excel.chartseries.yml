@@ -8,6 +8,49 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+  // The following code adds data labels to the chart and positions them to
+  demonstrate leader lines.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem(sheetName);
+    const chart = sheet.charts.getItemAt(0);
+    const series = chart.series.getItemAt(0);
+    
+    // Enable data labels for the series. Leader lines are enabled by default.
+    series.hasDataLabels = true;
+    series.points.load("items");
+    await context.sync();
+    
+    // Load the top position for each data label.
+    series.points.items.forEach((point) => point.dataLabel.load("top"));
+    await context.sync();
+
+    // Move some data labels to create distance from their chart points.
+    const point1 = series.points.items[1]; 
+    const point2 = series.points.items[2]; 
+    point1.dataLabel.top -= 50; 
+    point2.dataLabel.top += 50;
+    
+    // Format the data labels.
+    series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+    series.dataLabels.showCategoryName = true;
+    series.dataLabels.format.border.weight = 1;
+    
+    await context.sync();
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -166,6 +209,49 @@ properties:
     remarks: >-
       \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+      // The following code adds data labels to the chart and positions them to
+      demonstrate leader lines.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem(sheetName);
+        const chart = sheet.charts.getItemAt(0);
+        const series = chart.series.getItemAt(0);
+        
+        // Enable data labels for the series. Leader lines are enabled by default.
+        series.hasDataLabels = true;
+        series.points.load("items");
+        await context.sync();
+        
+        // Load the top position for each data label.
+        series.points.items.forEach((point) => point.dataLabel.load("top"));
+        await context.sync();
+
+        // Move some data labels to create distance from their chart points.
+        const point1 = series.points.items[1]; 
+        const point2 = series.points.items[2]; 
+        point1.dataLabel.top -= 50; 
+        point2.dataLabel.top += 50;
+        
+        // Format the data labels.
+        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+        series.dataLabels.showCategoryName = true;
+        series.dataLabels.format.border.weight = 1;
+        
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -444,6 +530,49 @@ properties:
     remarks: >-
       \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+      // The following code adds data labels to the chart and positions them to
+      demonstrate leader lines.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem(sheetName);
+        const chart = sheet.charts.getItemAt(0);
+        const series = chart.series.getItemAt(0);
+        
+        // Enable data labels for the series. Leader lines are enabled by default.
+        series.hasDataLabels = true;
+        series.points.load("items");
+        await context.sync();
+        
+        // Load the top position for each data label.
+        series.points.items.forEach((point) => point.dataLabel.load("top"));
+        await context.sync();
+
+        // Move some data labels to create distance from their chart points.
+        const point1 = series.points.items[1]; 
+        const point2 = series.points.items[2]; 
+        point1.dataLabel.top -= 50; 
+        point2.dataLabel.top += 50;
+        
+        // Format the data labels.
+        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+        series.dataLabels.showCategoryName = true;
+        series.dataLabels.format.border.weight = 1;
+        
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

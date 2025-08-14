@@ -7275,6 +7275,14 @@ export declare namespace Office {
          * event.
          */
         themeId: ThemeId;
+        /**
+         * Gets the Office host native theme.
+         *
+         * @remarks
+         *
+         * **Important**: The `fluentThemeData` property is only supported on Win32.
+         */
+        fluentThemeData?: object;
     }
     /**
      * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
