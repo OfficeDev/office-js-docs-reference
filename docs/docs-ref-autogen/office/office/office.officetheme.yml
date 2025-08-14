@@ -134,6 +134,21 @@ properties:
       content: 'controlForegroundColor: string;'
       return:
         type: string
+  - name: fluentThemeData
+    uid: office!Office.OfficeTheme#fluentThemeData:member
+    package: office!
+    fullName: fluentThemeData
+    summary: Gets the Office host native theme.
+    remarks: >-
+      **Important**: The `fluentThemeData` property is only supported on
+      Win32.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fluentThemeData?: object;'
+      return:
+        type: object
   - name: isDarkTheme
     uid: office!Office.OfficeTheme#isDarkTheme:member
     package: office!
