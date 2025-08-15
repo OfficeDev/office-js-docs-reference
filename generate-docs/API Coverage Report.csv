@@ -1226,7 +1226,7 @@ Excel.ChartGridlinesFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.ChartGridlinesFormat,"set(properties, options)",Method,Good,false
 Excel.ChartGridlinesFormat,"set(properties)",Method,Good,false
 Excel.ChartGridlinesFormat,"toJSON()",Method,Excellent,false
-Excel.ChartLeaderLines,N/A,Class,Great,false
+Excel.ChartLeaderLines,N/A,Class,Great,true
 Excel.ChartLeaderLines,"context",Property,Excellent,false
 Excel.ChartLeaderLines,"format",Property,Fine,false
 Excel.ChartLeaderLines,"load(options)",Method,Excellent,false
@@ -1235,7 +1235,7 @@ Excel.ChartLeaderLines,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.ChartLeaderLines,"set(properties, options)",Method,Good,false
 Excel.ChartLeaderLines,"set(properties)",Method,Good,false
 Excel.ChartLeaderLines,"toJSON()",Method,Excellent,false
-Excel.ChartLeaderLinesFormat,N/A,Class,Great,false
+Excel.ChartLeaderLinesFormat,N/A,Class,Great,true
 Excel.ChartLeaderLinesFormat,"context",Property,Excellent,false
 Excel.ChartLeaderLinesFormat,"line",Property,Good,false
 Excel.ChartLeaderLinesFormat,"load(options)",Method,Excellent,false
@@ -1458,7 +1458,7 @@ Excel.ChartPointsCollection,"load(options)",Method,Excellent,false
 Excel.ChartPointsCollection,"load(propertyNames)",Method,Excellent,true
 Excel.ChartPointsCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 Excel.ChartPointsCollection,"toJSON()",Method,Excellent,false
-Excel.ChartSeries,N/A,Class,Unknown,false
+Excel.ChartSeries,N/A,Class,Unknown,true
 Excel.ChartSeries,"axisGroup",Property,Good,false
 Excel.ChartSeries,"binOptions",Property,Good,false
 Excel.ChartSeries,"boxwhiskerOptions",Property,Good,false
@@ -1482,7 +1482,7 @@ Excel.ChartSeries,"gradientMinimumColor",Property,Excellent,false
 Excel.ChartSeries,"gradientMinimumType",Property,Excellent,false
 Excel.ChartSeries,"gradientMinimumValue",Property,Excellent,false
 Excel.ChartSeries,"gradientStyle",Property,Great,false
-Excel.ChartSeries,"hasDataLabels",Property,Good,false
+Excel.ChartSeries,"hasDataLabels",Property,Good,true
 Excel.ChartSeries,"invertColor",Property,Great,false
 Excel.ChartSeries,"invertIfNegative",Property,Great,false
 Excel.ChartSeries,"mapOptions",Property,Fine,false
@@ -1494,10 +1494,10 @@ Excel.ChartSeries,"name",Property,Great,false
 Excel.ChartSeries,"overlap",Property,Excellent,false
 Excel.ChartSeries,"parentLabelStrategy",Property,Great,false
 Excel.ChartSeries,"plotOrder",Property,Excellent,false
-Excel.ChartSeries,"points",Property,Fine,false
+Excel.ChartSeries,"points",Property,Fine,true
 Excel.ChartSeries,"secondPlotSize",Property,Excellent,false
 Excel.ChartSeries,"showConnectorLines",Property,Great,false
-Excel.ChartSeries,"showLeaderLines",Property,Great,false
+Excel.ChartSeries,"showLeaderLines",Property,Great,true
 Excel.ChartSeries,"showShadow",Property,Good,false
 Excel.ChartSeries,"smooth",Property,Great,false
 Excel.ChartSeries,"splitType",Property,Great,false
@@ -7383,6 +7383,7 @@ Office.OfficeTheme,"bodyBackgroundColor",Property,Fine,false
 Office.OfficeTheme,"bodyForegroundColor",Property,Fine,false
 Office.OfficeTheme,"controlBackgroundColor",Property,Fine,false
 Office.OfficeTheme,"controlForegroundColor",Property,Fine,false
+Office.OfficeTheme,"fluentThemeData",Property,Poor,false
 Office.OfficeTheme,"isDarkTheme",Property,Great,false
 Office.OfficeTheme,"themeId",Property,Poor,false
 Office.PlatformType,N/A,Enum,Missing,true
