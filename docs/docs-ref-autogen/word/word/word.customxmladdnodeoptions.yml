@@ -34,8 +34,8 @@ properties:
     summary: >-
       If provided, specifies the namespace of the element to be appended. This
       property is required to add nodes of
-      [Word.CustomXmlNodeType](xref:word!Word.CustomXmlNodeType:enum) \|
-      type<!-- -->} `element` or `attribute`<!-- -->; otherwise, it's ignored.
+      [type](xref:word!Word.CustomXmlNodeType:enum) `element` or `attribute`<!--
+      -->; otherwise, it's ignored.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
