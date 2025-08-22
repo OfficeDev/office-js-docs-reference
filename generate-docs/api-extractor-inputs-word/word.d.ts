@@ -4959,7 +4959,7 @@ export declare namespace Word {
          */
         name?: string;
         /**
-         * If provided, specifies the namespace of the element to be appended. This property is required to add nodes of {@link Word.CustomXmlNodeType} | type} `element` or `attribute`; otherwise, it's ignored.
+         * If provided, specifies the namespace of the element to be appended. This property is required to add nodes of {@link Word.CustomXmlNodeType | type} `element` or `attribute`; otherwise, it's ignored.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
