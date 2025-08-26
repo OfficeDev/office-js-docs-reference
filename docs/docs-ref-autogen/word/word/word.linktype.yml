@@ -1,0 +1,103 @@
+### YamlMime:TSEnum
+name: Word.LinkType
+uid: word!Word.LinkType:enum
+package: word!
+fullName: Word.LinkType
+summary: Specifies the type of link.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: chart
+    uid: word!Word.LinkType.chart:member
+    package: word!
+    summary: >-
+      Microsoft Excel chart.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Chart"'
+  - name: dde
+    uid: word!Word.LinkType.dde:member
+    package: word!
+    summary: >-
+      Dynamic Data Exchange.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Dde"'
+  - name: ddeAuto
+    uid: word!Word.LinkType.ddeAuto:member
+    package: word!
+    summary: >-
+      Automatic DDE.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DdeAuto"'
+  - name: import
+    uid: word!Word.LinkType.import:member
+    package: word!
+    summary: >-
+      Import file.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Import"'
+  - name: include
+    uid: word!Word.LinkType.include:member
+    package: word!
+    summary: >-
+      Include file.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Include"'
+  - name: ole
+    uid: word!Word.LinkType.ole:member
+    package: word!
+    summary: >-
+      OLE object.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Ole"'
+  - name: picture
+    uid: word!Word.LinkType.picture:member
+    package: word!
+    summary: >-
+      Picture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Picture"'
+  - name: reference
+    uid: word!Word.LinkType.reference:member
+    package: word!
+    summary: >-
+      Reference library.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Reference"'
+  - name: text
+    uid: word!Word.LinkType.text:member
+    package: word!
+    summary: >-
+      Text.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Text"'

@@ -196,6 +196,23 @@ properties:
       content: 'readonly body: Word.Body;'
       return:
         type: <xref uid="word!Word.Body:class" />
+  - name: bookmarks
+    uid: word!Word.Document#bookmarks:member
+    package: word!
+    fullName: bookmarks
+    summary: >-
+      Returns a `BookmarkCollection` object that represents all the bookmarks in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly bookmarks: Word.BookmarkCollection;'
+      return:
+        type: <xref uid="word!Word.BookmarkCollection:class" />
   - name: changeTrackingMode
     uid: word!Word.Document#changeTrackingMode:member
     package: word!
@@ -375,6 +392,23 @@ properties:
       content: 'hyphenateCaps: boolean;'
       return:
         type: boolean
+  - name: indexes
+    uid: word!Word.Document#indexes:member
+    package: word!
+    fullName: indexes
+    summary: >-
+      Returns an `IndexCollection` object that represents all the indexes in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly indexes: Word.IndexCollection;'
+      return:
+        type: <xref uid="word!Word.IndexCollection:class" />
   - name: languageDetected
     uid: word!Word.Document#languageDetected:member
     package: word!

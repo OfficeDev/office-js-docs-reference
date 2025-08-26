@@ -16669,7 +16669,7 @@ export declare namespace Word {
         /** An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`. */
         export interface ListTemplateUpdateData {
             /**
-             * Specifies whether the specified ListTemplate object is outline numbered.
+             * Specifies whether the list template is outline numbered.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
@@ -18933,14 +18933,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `listTemplate.toJSON()`. */
         export interface ListTemplateData {
             /**
-             * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
+             * Gets a `ListLevelCollection` object that represents all the levels for the list template.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
              */
             listLevels?: Word.Interfaces.ListLevelData[];
             /**
-             * Specifies whether the specified ListTemplate object is outline numbered.
+             * Specifies whether the list template is outline numbered.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
@@ -22552,7 +22552,7 @@ export declare namespace Word {
             trailingCharacter?: boolean;
         }
         /**
-         * Represents a ListTemplate.
+         * Represents a list template.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.1]
@@ -22563,7 +22563,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies whether the specified ListTemplate object is outline numbered.
+             * Specifies whether the list template is outline numbered.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]

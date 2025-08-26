@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.ReadingOrder
+uid: word!Word.ReadingOrder:enum
+package: word!
+fullName: Word.ReadingOrder
+summary: Represents the reading order of text.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: leftToRight
+    uid: word!Word.ReadingOrder.leftToRight:member
+    package: word!
+    summary: >-
+      Represents left-to-right reading order.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LeftToRight"'
+  - name: rightToLeft
+    uid: word!Word.ReadingOrder.rightToLeft:member
+    package: word!
+    summary: >-
+      Represents right-to-left reading order.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RightToLeft"'

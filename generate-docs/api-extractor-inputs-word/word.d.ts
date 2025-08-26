@@ -5575,6 +5575,14 @@ export declare namespace Word {
          */
         readonly body: Word.Body;
         /**
+         * Returns a `BookmarkCollection` object that represents all the bookmarks in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly bookmarks: Word.BookmarkCollection;
+        /**
          * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
          *
          * @remarks
@@ -5612,6 +5620,14 @@ export declare namespace Word {
          * @beta
          */
         readonly hyperlinks: Word.HyperlinkCollection;
+        /**
+         * Returns an `IndexCollection` object that represents all the indexes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly indexes: Word.IndexCollection;
         /**
          * Returns a `PageSetup` object that's associated with the document.
          *
@@ -6598,6 +6614,22 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets a `LinkFormat` object that represents the link options of the field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly linkFormat: Word.LinkFormat;
+        /**
+         * Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly oleFormat: Word.OleFormat;
+        /**
          * Gets the parent body of the field.
          *
          * @remarks
@@ -6706,12 +6738,36 @@ export declare namespace Word {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Field): void;
         /**
+         * Copies the field to the Clipboard.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        copyToClipboard(): void;
+        /**
+         * Removes the field from the document and places it on the Clipboard.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cut(): void;
+        /**
          * Deletes the field.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          */
         delete(): void;
+        /**
+         * Clicks the field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doClick(): void;
         /**
          * Gets the next field. Throws an `ItemNotFound` error if this field is the last one.
          *
@@ -6745,12 +6801,28 @@ export declare namespace Word {
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
+         * Replaces the field with its most recent result.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unlink(): void;
+        /**
          * Updates the field.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          */
         updateResult(): void;
+        /**
+         * Saves the changes made to the results of an {@link https://support.microsoft.com/office/1c34d6d6-0de3-4b5c-916a-2ff950fb629e | INCLUDETEXT field} back to the source document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        updateSource(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -7967,6 +8039,123 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.InlinePictureCollectionData;
     }
     /**
+     * Represents the linking characteristics for an OLE object or picture.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class LinkFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies if the link is updated automatically when the container file is opened or when the source file is changed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isAutoUpdated: boolean;
+        /**
+         * Specifies if a `Field`, `InlineShape`, or `Shape` object is locked to prevent automatic updating.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isLocked: boolean;
+        /**
+         * Specifies if the linked picture is saved with the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isPictureSavedWithDocument: boolean;
+        /**
+         * Specifies the path and name of the source file for the linked OLE object, picture, or field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sourceFullName: string;
+        /**
+         * Gets the name of the source file for the linked OLE object, picture, or field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly sourceName: string;
+        /**
+         * Gets the path of the source file for the linked OLE object, picture, or field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly sourcePath: string;
+        /**
+         * Gets the link type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.LinkType | "Ole" | "Picture" | "Text" | "Reference" | "Include" | "Import" | "Dde" | "DdeAuto" | "Chart";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.LinkFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.LinkFormat): void;
+        /**
+         * Breaks the link between the source file and the OLE object, picture, or linked field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        breakLink(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.LinkFormatLoadOptions): Word.LinkFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.LinkFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.LinkFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.LinkFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.LinkFormat;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.LinkFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.LinkFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.LinkFormatData;
+    }
+    /**
      * Contains a collection of {@link Word.Paragraph} objects.
      *
      * @remarks
@@ -8779,6 +8968,185 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.NoteItemCollectionData;
     }
     /**
+     * Represents the OLE characteristics (other than linking) for an OLE object, ActiveX control, or field.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class OleFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the class type for the specified OLE object, picture, or field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        classType: string;
+        /**
+         * Specifies the icon that is used when the `displayAsIcon` property is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iconIndex: number;
+        /**
+         * Specifies the text displayed below the icon for the OLE object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iconLabel: string;
+        /**
+         * Specifies the program file in which the icon for the OLE object is stored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iconName: string;
+        /**
+         * Gets the path of the file in which the icon for the OLE object is stored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly iconPath: string;
+        /**
+         * Gets whether the specified object is displayed as an icon.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isDisplayedAsIcon: boolean;
+        /**
+         * Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFormattingPreservedOnUpdate: boolean;
+        /**
+         * Gets a string that's used to identify the portion of the source file that's being linked.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly label: string;
+        /**
+         * Gets the programmatic identifier (`ProgId`) for the specified OLE object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly progID: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.OleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.OleFormat): void;
+        /**
+         * Activates the `OleFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activate(): void;
+        /**
+         * Sets the Windows registry value that determines the default application used to activate the specified OLE object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param classType - The class type to activate as.
+         */
+        activateAs(classType: string): void;
+        /**
+         * Requests that the OLE object perform one of its available verbs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param verbIndex - Optional. The index of the verb to perform.
+         */
+        doVerb(verbIndex: Word.OleVerb): void;
+        /**
+         * Requests that the OLE object perform one of its available verbs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param verbIndex - Optional. The index of the verb to perform.
+         */
+        doVerb(verbIndex: "Primary" | "Show" | "Open" | "Hide" | "UiActivate" | "InPlaceActivate" | "DiscardUndoState"): void;
+        /**
+         * Opens the OLE object for editing in the application it was created in.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        edit(): void;
+        /**
+         * Opens the `OleFormat` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        open(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.OleFormatLoadOptions): Word.OleFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.OleFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.OleFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.OleFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.OleFormat;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.OleFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.OleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.OleFormatData;
+    }
+    /**
      * Represents a page in the document. `Page` objects manage the page layout and content.
      *
      * @remarks
@@ -9049,6 +9417,103 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.PaneCollectionData;
     }
     /**
+     * The options that define whether to save changes before closing and whether to route the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface WindowCloseOptions {
+        /**
+         * If provided, specifies whether to route the document to the next recipient. If the document doesn't have a routing slip attached, this property is ignored.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        routeDocument?: boolean;
+        /**
+         * If provided, specifies the save action for the document. For available values, see {@link Word.SaveConfiguration}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        saveChanges?: Word.SaveConfiguration | "DoNotSaveChanges" | "SaveChanges" | "PromptToSaveChanges";
+    }
+    /**
+     * The options that scrolls a window or pane by the specified number of units defined by the calling method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface WindowScrollOptions {
+        /**
+         * If provided, specifies the number of units to scroll the window down.
+                    If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three units.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        down?: number;
+        /**
+         * If provided, specifies the number of screens to scroll the window to the left.
+                    If `left` and `right` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `left` is 3 and `right` is 6, the contents are scrolled to the right three screens.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left?: number;
+        /**
+         * If provided, specifies the number of screens to scroll the window to the right.
+                    If `left` and `right` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `left` is 3 and `right` is 6, the contents are scrolled to the right three screens.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right?: number;
+        /**
+         * If provided, specifies the number of units to scroll the window up.
+                    If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three units.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        up?: number;
+    }
+    /**
+     * The options for scrolling through the specified pane or window page by page.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface WindowPageScrollOptions {
+        /**
+         * If provided, specifies the number of pages to scroll the window down.
+                    If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three pages.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        down?: number;
+        /**
+         * If provided, specifies the number of pages to scroll the window up.
+                    If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three pages.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        up?: number;
+    }
+    /**
      * Represents the window that displays the document. A window can be split to contain multiple reading panes.
      *
      * @remarks
@@ -9065,12 +9530,354 @@ export declare namespace Word {
          */
         readonly activePane: Word.Pane;
         /**
+         * Gets the next document window in the collection of open document windows.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly next: Word.Window;
+        /**
          * Gets the collection of panes in the window.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         readonly panes: Word.PaneCollection;
+        /**
+         * Gets the previous document window in the collection open document windows.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly previous: Word.Window;
+        /**
+         * Gets the `View` object that represents the view for the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly view: Word.View;
+        /**
+         * Specifies whether rulers are displayed for the window or pane.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areRulersDisplayed: boolean;
+        /**
+         * Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areScreenTipsDisplayed: boolean;
+        /**
+         * Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areThumbnailsDisplayed: boolean;
+        /**
+         * Specifies the caption text for the window that is displayed in the title bar of the document or application window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        caption: string;
+        /**
+         * Specifies the height of the window (in points).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly height: number;
+        /**
+         * Specifies the horizontal scroll position as a percentage of the document width.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontalPercentScrolled: number;
+        /**
+         * Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        imemode: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul";
+        /**
+         * Gets the position of an item in a collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly index: number;
+        /**
+         * Specifies whether the window is active.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isActive: boolean;
+        /**
+         * Specifies whether the document map is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isDocumentMapVisible: boolean;
+        /**
+         * Specifies whether the email message header is visible in the document window. The default value is `False`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isEnvelopeVisible: boolean;
+        /**
+         * Specifies whether a horizontal scroll bar is displayed for the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isHorizontalScrollBarDisplayed: boolean;
+        /**
+         * Specifies whether the vertical scroll bar appears on the left side of the document window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isLeftScrollBarDisplayed: boolean;
+        /**
+         * Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isRightRulerDisplayed: boolean;
+        /**
+         * Specifies whether the window is split into multiple panes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isSplit: boolean;
+        /**
+         * Specifies whether a vertical ruler is displayed for the window or pane.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVerticalRulerDisplayed: boolean;
+        /**
+         * Specifies whether a vertical scroll bar is displayed for the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVerticalScrollBarDisplayed: boolean;
+        /**
+         * Specifies whether the window is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Specifies the horizontal position of the window, measured in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly left: number;
+        /**
+         * Specifies how Microsoft Word displays source documents after a compare and merge process.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showSourceDocuments: Word.ShowSourceDocuments | "None" | "Original" | "Revised" | "Both";
+        /**
+         * Specifies the vertical split percentage for the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        splitVertical: number;
+        /**
+         * Specifies the width of the style area in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        styleAreaWidth: number;
+        /**
+         * Specifies the vertical position of the document window, in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly top: number;
+        /**
+         * Gets the window type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.WindowType | "Document" | "Template";
+        /**
+         * Gets the height (in points) of the active working area in the document window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly usableHeight: number;
+        /**
+         * Gets the width (in points) of the active working area in the document window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly usableWidth: number;
+        /**
+         * Specifies the vertical scroll position as a percentage of the document length.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalPercentScrolled: number;
+        /**
+         * Specifies the width of the document window, in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly width: number;
+        /**
+         * Gets an integer that represents the position of the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly windowNumber: number;
+        /**
+         * Specifies the state of the document window or task window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        windowState: Word.WindowState | "Normal" | "Maximize" | "Minimize";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.WindowUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Window): void;
+        /**
+         * Activates the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activate(): void;
+        /**
+         * Closes the window.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - The options that define whether to save changes before closing and whether to route the document.
+         */
+        close(options?: Word.WindowCloseOptions): void;
+        /**
+         * Scrolls the window by the specified number of screens.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - The options for scrolling the window by the specified number of screens. If no options are specified, the window is scrolled down one screen.
+         */
+        largeScroll(options?: Word.WindowScrollOptions): void;
+        /**
+         * Scrolls through the window page by page.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - The options for scrolling through the window page by page.
+         */
+        pageScroll(options?: Word.WindowPageScrollOptions): void;
+        /**
+         * Sets the focus of the document window to the body of an email message.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setFocus(): void;
+        /**
+         * Scrolls the window by the specified number of lines. A "line" corresponds to the distance scrolled by clicking the scroll arrow on the scroll bar once.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - The options for scrolling the window by the specified number of lines. If no options are specified, the window is scrolled down by one line.
+         */
+        smallScroll(options?: Word.WindowScrollOptions): void;
+        /**
+         * Shows or hides the ribbon.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        toggleRibbon(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.WindowLoadOptions): Word.Window;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -9125,6 +9932,12 @@ export declare namespace Word {
          * [Api set: WordApiDesktop 1.2]
          */
         getFirstOrNullObject(): Word.Window;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.WindowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.WindowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -9288,6 +10101,14 @@ export declare namespace Word {
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
+         * Gets a `Range` object that represents the portion of the document that's contained within the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
          * Returns a `ShadingUniversal` object that refers to the shading formatting for the paragraph.
          *
          * @remarks
@@ -9447,6 +10268,14 @@ export declare namespace Word {
          */
         clear(): void;
         /**
+         * Removes any spacing before the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        closeUp(): void;
+        /**
          * Deletes the paragraph and its content from the document.
          *
          * @remarks
@@ -9588,6 +10417,34 @@ export declare namespace Word {
          * [Api set: WordApi 1.6]
          */
         getTrackedChanges(): Word.TrackedChangeCollection;
+        /**
+         * Indents the paragraph by one level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indent(): void;
+        /**
+         * Indents the paragraph by a specified number of characters.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of characters for the indent.
+         */
+        indentCharacterWidth(count: number): void;
+        /**
+         * Indents the first line of the paragraph by the specified number of characters.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of characters for the first line indent.
+         */
+        indentFirstLineCharacterWidth(count: number): void;
         /**
          * Inserts annotations on this Paragraph object.
          *
@@ -9746,6 +10603,98 @@ export declare namespace Word {
          */
         insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
+         * Joins a list paragraph with the closest list above or below this paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        joinList(): void;
+        /**
+         * Returns a `Paragraph` object that represents the next paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - Optional. The number of paragraphs to move forward.
+         */
+        next(count: number): Word.Paragraph;
+        /**
+         * Toggles the spacing before the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openOrCloseUp(): void;
+        /**
+         * Sets spacing before the paragraph to 12 points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openUp(): void;
+        /**
+         * Removes one level of indent for the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outdent(): void;
+        /**
+         * Applies the next heading level style (Heading 1 through Heading 8) to the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineDemote(): void;
+        /**
+         * Demotes the paragraph to body text by applying the Normal style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineDemoteToBody(): void;
+        /**
+         * Applies the previous heading level style (Heading 1 through Heading 8) to the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlinePromote(): void;
+        /**
+         * Returns the previous paragraph as a `Paragraph` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - Optional. The number of paragraphs to move backward.
+         */
+        previous(count: number): Word.Paragraph;
+        /**
+         * Removes manual paragraph formatting (formatting not applied using a style).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reset(): void;
+        /**
+         * Resets the paragraph that uses custom list levels to the original level settings.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetAdvanceTo(): void;
+        /**
          * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
          *
          * @remarks
@@ -9782,6 +10731,46 @@ export declare namespace Word {
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
+         * Selects the number or bullet in a list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        selectNumber(): void;
+        /**
+         * Separates a list into two separate lists. For numbered lists, the new list restarts numbering at the starting number, usually 1.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        separateList(): void;
+        /**
+         * Sets the paragraph to single spacing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        space1(): void;
+        /**
+         * Sets the paragraph to 1.5-line spacing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        space1Pt5(): void;
+        /**
+         * Sets the paragraph to double spacing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        space2(): void;
+        /**
          * Splits the paragraph into child ranges by using delimiters.
          *
          * @remarks
@@ -9799,6 +10788,26 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         startNewList(): Word.List;
+        /**
+         * Sets a hanging indent to a specified number of tab stops.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of tab stops for the hanging indent.
+         */
+        tabHangingIndent(count: number): void;
+        /**
+         * Sets the left indent for the paragraph to a specified number of tab stops.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of tab stops for the left indent.
+         */
+        tabIndent(count: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -9896,6 +10905,32 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Paragraph[];
         /**
+         * Returns a `Paragraph` object that represents a new, blank paragraph added to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param range - The range before which you want the new paragraph to be added. The new paragraph doesn't replace the range.
+         */
+        add(range: Word.Range): Word.Paragraph;
+        /**
+         * Removes any spacing before the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        closeUp(): void;
+        /**
+         * Decreases the spacing before and after paragraphs in six-point increments.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        decreaseSpacing(): void;
+        /**
          * Gets the first paragraph in this collection. Throws an `ItemNotFound` error if the collection is empty.
          *
          * @remarks
@@ -9923,6 +10958,134 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         getLastOrNullObject(): Word.Paragraph;
+        /**
+         * Increases the spacing before and after paragraphs in six-point increments.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        increaseSpacing(): void;
+        /**
+         * Indents the paragraphs by one level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indent(): void;
+        /**
+         * Indents the paragraphs in the collection by the specified number of characters.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of characters by which the specified paragraphs are to be indented.
+         */
+        indentCharacterWidth(count: number): void;
+        /**
+         * Indents the first line of the paragraphs in the collection by the specified number of characters.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of characters by which the first line of each specified paragraph is to be indented.
+         */
+        indentFirstLineCharacterWidth(count: number): void;
+        /**
+         * Toggles spacing before paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openOrCloseUp(): void;
+        /**
+         * Sets spacing before the specified paragraphs to 12 points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openUp(): void;
+        /**
+         * Removes one level of indent for the paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outdent(): void;
+        /**
+         * Applies the next heading level style (Heading 1 through Heading 8) to the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineDemote(): void;
+        /**
+         * Demotes the specified paragraphs to body text by applying the Normal style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineDemoteToBody(): void;
+        /**
+         * Applies the previous heading level style (Heading 1 through Heading 8) to the paragraphs in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlinePromote(): void;
+        /**
+         * Sets the specified paragraphs to single spacing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        space1(): void;
+        /**
+         * Sets the specified paragraphs to 1.5-line spacing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        space1Pt5(): void;
+        /**
+         * Sets the specified paragraphs to double spacing.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        space2(): void;
+        /**
+         * Sets a hanging indent to the specified number of tab stops.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of tab stops to indent (if positive) or the number of tab stops to remove from the indent (if negative).
+         */
+        tabHangingIndent(count: number): void;
+        /**
+         * Sets the left indent for the specified paragraphs to the specified number of tab stops.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param count - The number of tab stops to indent (if positive) or the number of tab stops to remove from the indent (if negative).
+         */
+        tabIndent(count: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10115,6 +11278,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a `BookmarkCollection` object that represents all the bookmarks in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly bookmarks: Word.BookmarkCollection;
+        /**
          * Returns a `BorderUniversalCollection` object that represents all the borders for the range.
          *
          * @remarks
@@ -10299,6 +11470,86 @@ export declare namespace Word {
          */
         readonly tables: Word.TableCollection;
         /**
+         * Specifies whether the range is formatted as bold.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly bold: boolean;
+        /**
+         * Specifies whether the range is formatted as bold in a right-to-left language document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly boldBidirectional: boolean;
+        /**
+         * Specifies a `CharacterCase` value that represents the case of the text in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        case: Word.CharacterCase | "Next" | "Lower" | "Upper" | "TitleWord" | "TitleSentence" | "Toggle" | "HalfWidth" | "FullWidth" | "Katakana" | "Hiragana";
+        /**
+         * Specifies the character width of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        characterWidth: Word.CharacterWidth | "Half" | "Full";
+        /**
+         * Specifies if the range contains combined characters.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        combineCharacters: boolean;
+        /**
+         * Specifies if Microsoft Word ignores the number of characters per line for the corresponding `Range` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly disableCharacterSpaceGrid: boolean;
+        /**
+         * Specifies the emphasis mark for a character or designated character string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly emphasisMark: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+        /**
+         * Specifies the ending character position of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        end: number;
+        /**
+         * Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fitTextWidth: number;
+        /**
+         * Specifies if a grammar check has been run on the range or document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        grammarChecked: boolean;
+        /**
          * Specifies the proofing status (spelling and grammar checking) of the range.
          *
          * @remarks
@@ -10307,6 +11558,22 @@ export declare namespace Word {
          */
         hasNoProofing: boolean;
         /**
+         * Specifies the highlight color for the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly highlightColorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+        /**
+         * Specifies the formatting for horizontal text set within vertical text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontalInVertical: Word.HorizontalInVerticalType | "None" | "FitInLine" | "ResizeLine";
+        /**
          * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
          *
          * @remarks
@@ -10314,12 +11581,60 @@ export declare namespace Word {
          */
         hyperlink: string;
         /**
+         * Specifies the ID for the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        id: string;
+        /**
          * Checks whether the range length is zero.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly isEmpty: boolean;
+        /**
+         * Gets if the range is collapsed and is located at the end-of-row mark in a table.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isEndOfRowMark: boolean;
+        /**
+         * Gets whether the text in the range is visible on the screen.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isTextVisibleOnScreen: boolean;
+        /**
+         * Specifies if the font or range is formatted as italic.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly italic: boolean;
+        /**
+         * Specifies if the font or range is formatted as italic (right-to-left languages).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly italicBidirectional: boolean;
+        /**
+         * Specifies whether the range of Japanese language text is hiragana or katakana.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kana: Word.Kana | "Katakana" | "Hiragana";
         /**
          * Specifies whether Microsoft Word has detected the language of the text in the range.
          *
@@ -10353,6 +11668,46 @@ export declare namespace Word {
          */
         languageIdOther: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";
         /**
+         * Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showAll: boolean;
+        /**
+         * Specifies if spelling has been checked throughout the range or document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spellingChecked: boolean;
+        /**
+         * Specifies the starting character position of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        start: number;
+        /**
+         * Gets the number of characters in the story that contains the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly storyLength: number;
+        /**
+         * Gets the story type for the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly storyType: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";
+        /**
          * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
          *
          * @remarks
@@ -10373,6 +11728,22 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
+        /**
+         * Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoLinesInOne: Word.TwoLinesInOneType | "None" | "NoBrackets" | "Parentheses" | "SquareBrackets" | "AngleBrackets" | "CurlyBrackets";
+        /**
+         * Specifies the type of underline applied to the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly underline: Word.Underline | "None" | "Single" | "Words" | "Double" | "Dotted" | "Thick" | "Dash" | "DotDash" | "DotDotDash" | "Wavy" | "WavyHeavy" | "DottedHeavy" | "DashHeavy" | "DotDashHeavy" | "DotDotDashHeavy" | "DashLong" | "DashLongHeavy" | "WavyDouble";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -12752,6 +14123,225 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TableStyleData;
     }
     /**
+     * Represents a tab stop in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TabStop extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the next tab stop in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly next: Word.TabStop;
+        /**
+         * Gets the previous tab stop in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly previous: Word.TabStop;
+        /**
+         * Gets a `TabAlignment` value that represents the alignment for the tab stop.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly alignment: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal" | "Bar" | "List";
+        /**
+         * Gets whether this tab stop is a custom tab stop.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customTab: boolean;
+        /**
+         * Gets a `TabLeader` value that represents the leader for this `TabStop` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly leader: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";
+        /**
+         * Gets the position of the tab stop relative to the left margin.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly position: number;
+        /**
+         * Removes this custom tab stop.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clear(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.TabStopLoadOptions): Word.TabStop;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.TabStop;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.TabStop;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.TabStop;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.TabStop;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.TabStop` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TabStopData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.TabStopData;
+    }
+    /**
+     * Represents a collection of {@link Word.TabStop | tab stops} in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TabStopCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.TabStop[];
+        /**
+         * Returns a `TabStop` object that represents a custom tab stop added to the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param position - The position of the tab stop.
+         * @param options - Optional. The options to further configure the new tab stop.
+         */
+        add(position: number, options?: Word.TabStopAddOptions): Word.TabStop;
+        /**
+         * Returns the next `TabStop` object to the right of the specified position.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param Position - The position to check.
+         */
+        after(Position: number): Word.TabStop;
+        /**
+         * Returns the next `TabStop` object to the left of the specified position.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param Position - The position to check.
+         */
+        before(Position: number): Word.TabStop;
+        /**
+         * Clears all the custom tab stops from the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clearAll(): void;
+        /**
+         * Gets a `TabStop` object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a `TabStop` object.
+         */
+        getItem(index: number): Word.TabStop;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.TabStopCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TabStopCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.TabStopCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.TabStopCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.TabStopCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.TabStopCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.TabStopCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TabStopCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.TabStopCollectionData;
+    }
+    /**
+     * Specifies the options for adding to a {@link Word.TabStopCollection} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface TabStopAddOptions {
+        /**
+         * If provided, specifies the alignment of the tab stop. The default value is `left`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alignment?: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal" | "Bar" | "List";
+        /**
+         * If provided, specifies the leader character for the tab stop. The default value is `spaces`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";
+    }
+    /**
      * Contains the collection of the document's Table objects.
      *
      * @remarks
@@ -14264,6 +15854,545 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TrackedChangeCollectionData;
     }
     /**
+     * Contains the view attributes (such as show all, field shading, and table gridlines) for a window or pane.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class View extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the instance of a `RevisionsFilter` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly revisionsFilter: Word.RevisionsFilter;
+        /**
+         * Specifies whether all nonprinting characters are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areAllNonprintingCharactersDisplayed: boolean;
+        /**
+         * Gets whether background colors and images are shown when the document is displayed in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areBackgroundsDisplayed: boolean;
+        /**
+         * Gets whether square brackets are displayed at the beginning and end of each bookmark.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areBookmarksIndicated: boolean;
+        /**
+         * Specifies whether Microsoft Word displays the comments in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areCommentsDisplayed: boolean;
+        /**
+         * Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areConnectingLinesToRevisionsBalloonDisplayed: boolean;
+        /**
+         * Gets whether crop marks are shown in the corners of pages to indicate where margins are located.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areCropMarksDisplayed: boolean;
+        /**
+         * Gets whether objects created with the drawing tools are displayed in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areDrawingsDisplayed: boolean;
+        /**
+         * Specifies whether shading is applied to the ranges in the document that users have permission to modify.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areEditableRangesShaded: boolean;
+        /**
+         * Specifies whether field codes are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areFieldCodesDisplayed: boolean;
+        /**
+         * Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areFormatChangesDisplayed: boolean;
+        /**
+         * Specifies whether handwritten ink annotations are shown or hidden.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areInkAnnotationsDisplayed: boolean;
+        /**
+         * Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areInsertionsAndDeletionsDisplayed: boolean;
+        /**
+         * Gets whether lines wrap at the right edge of the document window rather than at the right margin or the right column boundary.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areLinesWrappedToWindow: boolean;
+        /**
+         * Gets whether object anchors are displayed next to items that can be positioned in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areObjectAnchorsDisplayed: boolean;
+        /**
+         * Gets whether Microsoft Word displays optional line breaks.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areOptionalBreaksDisplayed: boolean;
+        /**
+         * Gets whether optional hyphens are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areOptionalHyphensDisplayed: boolean;
+        /**
+         * Gets whether other authors' presence should be visible in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areOtherAuthorsVisible: boolean;
+        /**
+         * Gets whether the top and bottom margins and the gray area between pages in the document are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly arePageBoundariesDisplayed: boolean;
+        /**
+         * Gets whether paragraph marks are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areParagraphsMarksDisplayed: boolean;
+        /**
+         * Gets whether blank boxes are displayed as placeholders for pictures.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly arePicturePlaceholdersDisplayed: boolean;
+        /**
+         * Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areRevisionsAndCommentsDisplayed: boolean;
+        /**
+         * Gets whether space characters are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areSpacesIndicated: boolean;
+        /**
+         * Specifies whether table gridlines are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areTableGridlinesDisplayed: boolean;
+        /**
+         * Gets whether tab characters are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areTabsDisplayed: boolean;
+        /**
+         * Gets whether dotted lines are displayed around page margins, text columns, objects, and frames in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areTextBoundariesDisplayed: boolean;
+        /**
+         * Specifies the column width in Reading mode.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        columnWidth: Word.ColumnWidth | "Narrow" | "Default" | "Wide";
+        /**
+         * Gets on-screen shading for fields.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fieldShading: Word.FieldShading | "Never" | "Always" | "WhenSelected";
+        /**
+         * Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isDraft: boolean;
+        /**
+         * Specifies whether only the first line of body text is shown in outline view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFirstLineOnlyDisplayed: boolean;
+        /**
+         * Specifies whether character formatting is visible in outline view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFormatDisplayed: boolean;
+        /**
+         * Specifies whether the window is in full-screen view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFullScreen: boolean;
+        /**
+         * Gets whether text formatted as hidden text is displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isHiddenTextDisplayed: boolean;
+        /**
+         * Gets whether highlight formatting is displayed and printed with the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isHighlightingDisplayed: boolean;
+        /**
+         * Specifies whether the document is in conflict mode view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isInConflictMode: boolean;
+        /**
+         * Specifies whether Microsoft Word is in Panning mode.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isInPanning: boolean;
+        /**
+         * Specifies whether the document is being viewed in reading layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isInReadingLayout: boolean;
+        /**
+         * Specifies whether mail merge data is displayed instead of mail merge fields.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isMailMergeDataView: boolean;
+        /**
+         * Specifies whether the text in the document is visible when the header and footer areas are displayed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isMainTextLayerVisible: boolean;
+        /**
+         * Specifies whether the pointer is displayed as a magnifying glass in print preview.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isPointerShownAsMagnifier: boolean;
+        /**
+         * Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isReadingLayoutActualView: boolean;
+        /**
+         * Specifies whether XML tags are visible in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isXmlMarkupVisible: boolean;
+        /**
+         * Specifies the display mode for tracked changes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        markupMode: Word.RevisionsMode | "Balloon" | "Inline" | "Mixed";
+        /**
+         * Specifies the page color in Reading mode.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pageColor: Word.PageColor | "None" | "Sepia" | "Inverse";
+        /**
+         * Specifies the page movement type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pageMovementType: Word.PageMovementType | "Vertical" | "SideToSide";
+        /**
+         * Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readingLayoutTruncateMargins: Word.ReadingLayoutMargin | "Automatic" | "Suppress" | "Full";
+        /**
+         * Gets whether Word displays revision balloons in the left or right margin in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly revisionsBalloonSide: Word.RevisionsBalloonMargin | "Left" | "Right";
+        /**
+         * Specifies the width of the revision balloons.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisionsBalloonWidth: number;
+        /**
+         * Specifies how Microsoft Word measures the width of revision balloons.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisionsBalloonWidthType: Word.RevisionsBalloonWidthType | "Percent" | "Points";
+        /**
+         * Specifies the document element displayed in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        seekView: Word.SeekView | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "CurrentPageHeader" | "CurrentPageFooter";
+        /**
+         * Specifies the active window pane.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        splitSpecial: Word.SpecialPane | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" | "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" | "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert";
+        /**
+         * Specifies the view type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.ViewType | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" | "Reading" | "Conflict";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.View): void;
+        /**
+         * Collapses all the headings in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        collapseAllHeadings(): void;
+        /**
+         * Collapses the text under the selection or the specified range by one heading level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param range - A `Range` object that specifies the range to collapse.
+         */
+        collapseOutline(range: Word.Range): void;
+        /**
+         * Expands all the headings in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        expandAllHeadings(): void;
+        /**
+         * Expands the text under the selection by one heading level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param range - A `Range` object that specifies the range to expand.
+         */
+        expandOutline(range: Word.Range): void;
+        /**
+         * Moves to the next header or footer, depending on whether a header or footer is displayed in the view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nextHeaderFooter(): void;
+        /**
+         * Moves to the previous header or footer, depending on whether a header or footer is displayed in the view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        previousHeaderFooter(): void;
+        /**
+         * Switches between showing all text (headings and body text) and showing only headings.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showAllHeadings(): void;
+        /**
+         * Shows all headings up to the specified heading level and hides subordinate headings and body text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param level - The heading level to show.
+         */
+        showHeading(level: number): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ViewLoadOptions): Word.View;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.View;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.View;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.View;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.View;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.View` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ViewData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.ViewData;
+    }
+    /**
      * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
      *
      * @remarks
@@ -15187,6 +17316,206 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ShapeTextWrapData;
     }
     /**
+     * Represents a single reviewer of a document in which changes have been tracked. The `Reviewer` object is a member of the {@link Word.ReviewerCollection} object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Reviewer extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies if the `Reviewer` object is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ReviewerUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Reviewer): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ReviewerLoadOptions): Word.Reviewer;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Reviewer;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Reviewer;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Reviewer;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Reviewer;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Reviewer` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReviewerData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.ReviewerData;
+    }
+    /**
+     * A collection of {@link Word.Reviewer} objects that represents the reviewers of one or more documents. The `ReviewerCollection` object contains the names of all reviewers who have reviewed documents opened or edited on a computer.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ReviewerCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Reviewer[];
+        /**
+         * Returns a `Reviewer` object that represents the specified item in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the item to retrieve.
+         */
+        getItem(index: number): Word.Reviewer;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ReviewerCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ReviewerCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ReviewerCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ReviewerCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ReviewerCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ReviewerCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ReviewerCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReviewerCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.ReviewerCollectionData;
+    }
+    /**
+     * Represents the current settings related to the display of reviewers' comments and revision marks in the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class RevisionsFilter extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the `ReviewerCollection` object that represents the collection of reviewers of one or more documents.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly reviewers: Word.ReviewerCollection;
+        /**
+         * Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        markup: Word.RevisionsMarkup | "None" | "Simple" | "All";
+        /**
+         * Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        view: Word.RevisionsView | "Final" | "Original";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.RevisionsFilterUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.RevisionsFilter): void;
+        /**
+         * Shows or hides all revisions in the document that contain comments and tracked changes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        toggleShowAllReviewers(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.RevisionsFilterLoadOptions): Word.RevisionsFilter;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.RevisionsFilter;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.RevisionsFilter;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.RevisionsFilter;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.RevisionsFilter;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.RevisionsFilter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RevisionsFilterData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.RevisionsFilterData;
+    }
+    /**
      * Represents a single item in a {@link Word.RepeatingSectionControlControl}.
      *
      * @remarks
@@ -15316,9 +17645,9 @@ export declare namespace Word {
          */
         untrack(): Word.RepeatingSectionItemCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.RepeatingSectionItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RepeatingSectionItemCollectionData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.RepeatingSectionItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RepeatingSectionItemCollectionData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): {
             [key: string]: string;
         };
@@ -15543,9 +17872,9 @@ export declare namespace Word {
          */
         untrack(): Word.DatePickerContentControl;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.DatePickerContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DatePickerContentControlData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.DatePickerContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DatePickerContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.DatePickerContentControlData;
     }
     /**
@@ -17339,6 +19668,99 @@ export declare namespace Word {
         source: Word.EventSource | "Local" | "Remote";
     }
     /**
+     * Represents a dropped capital letter in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class DropCap extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the distance (in points) between the dropped capital letter and the paragraph text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly distanceFromText: number;
+        /**
+         * Gets the name of the font for the dropped capital letter.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fontName: string;
+        /**
+         * Gets the height (in lines) of the dropped capital letter.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly linesToDrop: number;
+        /**
+         * Gets the position of the dropped capital letter.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly position: Word.DropPosition | "None" | "Normal" | "Margin";
+        /**
+         * Removes the dropped capital letter formatting.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clear(): void;
+        /**
+         * Formats the first character in the specified paragraph as a dropped capital letter.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enable(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.DropCapLoadOptions): Word.DropCap;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.DropCap;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.DropCap;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.DropCap;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.DropCap;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.DropCap` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DropCapData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.DropCapData;
+    }
+    /**
      * Provides information about the content control that raised contentControlSelectionChanged event.
      *
      * @remarks
@@ -18660,6 +21082,50 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         bottom = "Bottom",
+    }
+    /**
+     * Represents the type of baseline alignment.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum BaselineAlignment {
+        /**
+         * Represents top baseline alignment.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top = "Top",
+        /**
+         * Represents center baseline alignment.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        center = "Center",
+        /**
+         * Represents baseline alignment.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        baseline = "Baseline",
+        /**
+         * Represents Far East 50% baseline alignment.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        farEast50 = "FarEast50",
+        /**
+         * Represents automatic baseline alignment.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        auto = "Auto",
     }
     /**
      * @remarks
@@ -23962,6 +26428,29 @@ export declare namespace Word {
         points = "Points",
     }
     /**
+     * Represents the reading order of text.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ReadingOrder {
+        /**
+         * Represents right-to-left reading order.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightToLeft = "RightToLeft",
+        /**
+         * Represents left-to-right reading order.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftToRight = "LeftToRight",
+    }
+    /**
      * Specifies the way Word adjusts the table when the left indent is changed.
      *
      * @remarks
@@ -25935,6 +28424,136 @@ export declare namespace Word {
         document = "document",
     }
     /**
+     * Specifies the type of link.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LinkType {
+        /**
+         * OLE object.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ole = "Ole",
+        /**
+         * Picture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        picture = "Picture",
+        /**
+         * Text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text = "Text",
+        /**
+         * Reference library.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reference = "Reference",
+        /**
+         * Include file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        include = "Include",
+        /**
+         * Import file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        import = "Import",
+        /**
+         * Dynamic Data Exchange.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dde = "Dde",
+        /**
+         * Automatic DDE.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ddeAuto = "DdeAuto",
+        /**
+         * Microsoft Excel chart.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chart = "Chart",
+    }
+    /**
+     * Specifies the action associated with the verb that the OLE object should perform.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum OleVerb {
+        /**
+         * Performs the verb that is invoked when the user double-clicks the object.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primary = "Primary",
+        /**
+         * Shows the object to the user for editing or viewing. Use it to show a newly inserted object for initial editing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        show = "Show",
+        /**
+         * Opens the object in a separate window.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        open = "Open",
+        /**
+         * Removes the object's user interface from view.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hide = "Hide",
+        /**
+         * Activates the object in place and displays any user-interface tools that the object needs, such as menus or toolbars.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        uiActivate = "UiActivate",
+        /**
+         * Runs the object and installs its window, but doesn't install any user-interface tools.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inPlaceActivate = "InPlaceActivate",
+        /**
+         * Forces the object to discard any undo state that it might be maintaining; note that the object remains active, however.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        discardUndoState = "DiscardUndoState",
+    }
+    /**
      * Represents the list formatting characteristics of a range.
      *
      * @remarks
@@ -26195,9 +28814,9 @@ export declare namespace Word {
          */
         untrack(): Word.ListFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.ListFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ListFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ListFormatData;
     }
     /**
@@ -26668,9 +29287,9 @@ export declare namespace Word {
          */
         untrack(): Word.GlowFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.GlowFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.GlowFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.GlowFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.GlowFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.GlowFormatData;
     }
     /**
@@ -26842,9 +29461,9 @@ export declare namespace Word {
          */
         untrack(): Word.LineFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.LineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.LineFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.LineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.LineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.LineFormatData;
     }
     /**
@@ -26935,9 +29554,9 @@ export declare namespace Word {
          */
         untrack(): Word.ReflectionFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.ReflectionFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReflectionFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ReflectionFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReflectionFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ReflectionFormatData;
     }
     /**
@@ -27028,9 +29647,9 @@ export declare namespace Word {
          */
         untrack(): Word.ColorFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.ColorFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ColorFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ColorFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ColorFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ColorFormatData;
     }
     /**
@@ -27190,9 +29809,9 @@ export declare namespace Word {
          */
         untrack(): Word.ShadowFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.ShadowFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadowFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ShadowFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadowFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ShadowFormatData;
     }
     /**
@@ -27570,9 +30189,9 @@ export declare namespace Word {
          */
         untrack(): Word.ThreeDimensionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.ThreeDimensionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ThreeDimensionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ThreeDimensionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ThreeDimensionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ThreeDimensionalFormatData;
     }
     /**
@@ -32358,6 +34977,1288 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TextColumnData;
     }
     /**
+     * Specifies the case of the text in the specified range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CharacterCase {
+        /**
+         * Specifies the next case.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        next = "Next",
+        /**
+         * Specifies lowercase.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lower = "Lower",
+        /**
+         * Specifies uppercase.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upper = "Upper",
+        /**
+         * Specifies title case for each word.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        titleWord = "TitleWord",
+        /**
+         * Specifies title case for the sentence.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        titleSentence = "TitleSentence",
+        /**
+         * Specifies toggle case.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        toggle = "Toggle",
+        /**
+         * Specifies half-width characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        halfWidth = "HalfWidth",
+        /**
+         * Specifies full-width characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fullWidth = "FullWidth",
+        /**
+         * Specifies Katakana characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        katakana = "Katakana",
+        /**
+         * Specifies Hiragana characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hiragana = "Hiragana",
+    }
+    /**
+     * Specifies the character width of the text in the specified range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CharacterWidth {
+        /**
+         * Specifies half-width characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        half = "Half",
+        /**
+         * Specifies full-width characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        full = "Full",
+    }
+    /**
+     * Specifies the seek view options in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SeekView {
+        /**
+         * Main document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mainDocument = "MainDocument",
+        /**
+         * Primary header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primaryHeader = "PrimaryHeader",
+        /**
+         * First page header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstPageHeader = "FirstPageHeader",
+        /**
+         * Even pages header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenPagesHeader = "EvenPagesHeader",
+        /**
+         * Primary footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primaryFooter = "PrimaryFooter",
+        /**
+         * First page footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstPageFooter = "FirstPageFooter",
+        /**
+         * Even pages footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenPagesFooter = "EvenPagesFooter",
+        /**
+         * Footnotes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnotes = "Footnotes",
+        /**
+         * Endnotes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnotes = "Endnotes",
+        /**
+         * Current page header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        currentPageHeader = "CurrentPageHeader",
+        /**
+         * Current page footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        currentPageFooter = "CurrentPageFooter",
+    }
+    /**
+     * Specifies the source documents to show.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShowSourceDocuments {
+        /**
+         * Specifies that no source documents are shown.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Specifies that the original source document is shown.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        original = "Original",
+        /**
+         * Specifies that the revised source document is shown.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revised = "Revised",
+        /**
+         * Specifies that both the original and revised source documents are shown.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        both = "Both",
+    }
+    /**
+     * Specifies the special pane options in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SpecialPane {
+        /**
+         * None.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Primary header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primaryHeader = "PrimaryHeader",
+        /**
+         * First page header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstPageHeader = "FirstPageHeader",
+        /**
+         * Even pages header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenPagesHeader = "EvenPagesHeader",
+        /**
+         * Primary footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primaryFooter = "PrimaryFooter",
+        /**
+         * First page footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstPageFooter = "FirstPageFooter",
+        /**
+         * Even pages footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenPagesFooter = "EvenPagesFooter",
+        /**
+         * Footnotes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnotes = "Footnotes",
+        /**
+         * Endnotes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnotes = "Endnotes",
+        /**
+         * Footnote continuation notice.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnoteContinuationNotice = "FootnoteContinuationNotice",
+        /**
+         * Footnote continuation separator.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnoteContinuationSeparator = "FootnoteContinuationSeparator",
+        /**
+         * Footnote separator.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnoteSeparator = "FootnoteSeparator",
+        /**
+         * Endnote continuation notice.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnoteContinuationNotice = "EndnoteContinuationNotice",
+        /**
+         * Endnote continuation separator.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnoteContinuationSeparator = "EndnoteContinuationSeparator",
+        /**
+         * Endnote separator.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnoteSeparator = "EndnoteSeparator",
+        /**
+         * Comments.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comments = "Comments",
+        /**
+         * Current page header.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        currentPageHeader = "CurrentPageHeader",
+        /**
+         * Current page footer.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        currentPageFooter = "CurrentPageFooter",
+        /**
+         * Revisions.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisions = "Revisions",
+        /**
+         * Revisions horizontal.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisionsHoriz = "RevisionsHoriz",
+        /**
+         * Revisions vertical.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisionsVert = "RevisionsVert",
+    }
+    /**
+     * Specifies the save options.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SaveConfiguration {
+        /**
+         * Specifies not to save changes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doNotSaveChanges = "DoNotSaveChanges",
+        /**
+         * Specifies to save changes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        saveChanges = "SaveChanges",
+        /**
+         * Specifies to prompt to save changes.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        promptToSaveChanges = "PromptToSaveChanges",
+    }
+    /**
+     * Specifies the page color options in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PageColor {
+        /**
+         * None.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Sepia.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sepia = "Sepia",
+        /**
+         * Inverse.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inverse = "Inverse",
+    }
+    /**
+     * Specifies the page movement type in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PageMovementType {
+        /**
+         * Vertical.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical = "Vertical",
+        /**
+         * Side to side.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sideToSide = "SideToSide",
+    }
+    /**
+     * Specifies the margin options in reading layout view in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ReadingLayoutMargin {
+        /**
+         * Microsoft Word determines automatically whether to show or hide the margins based on the available space.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        automatic = "Automatic",
+        /**
+         * Hides margins.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        suppress = "Suppress",
+        /**
+         * Shows margins.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        full = "Full",
+    }
+    /**
+     * Specifies the margin for revision balloons in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RevisionsBalloonMargin {
+        /**
+         * Left margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Right margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+    }
+    /**
+     * Specifies the width type for revision balloons in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RevisionsBalloonWidthType {
+        /**
+         * Balloon width as a percentage.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent = "Percent",
+        /**
+         * Balloon width in points.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        points = "Points",
+    }
+    /**
+     * Specifies the extent of markup visible in the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RevisionsMarkup {
+        /**
+         * No markup.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Simple markup.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simple = "Simple",
+        /**
+         * All markup.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        all = "All",
+    }
+    /**
+     * Specifies the display mode for tracked changes in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RevisionsMode {
+        /**
+         * Balloon.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        balloon = "Balloon",
+        /**
+         * Inline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inline = "Inline",
+        /**
+         * Mixed.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+    }
+    /**
+     * Specifies whether Word displays the original version of a document or a version with revisions and formatting changes applied.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RevisionsView {
+        /**
+         * Final view.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        final = "Final",
+        /**
+         * Original view.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        original = "Original",
+    }
+    /**
+     * Specifies the revision type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RevisionType {
+        /**
+         * No revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Insert revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insert = "Insert",
+        /**
+         * Delete revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete = "Delete",
+        /**
+         * Property revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        property = "Property",
+        /**
+         * Paragraph number revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraphNumber = "ParagraphNumber",
+        /**
+         * Display field revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        displayField = "DisplayField",
+        /**
+         * Reconcile revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reconcile = "Reconcile",
+        /**
+         * Conflict revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        conflict = "Conflict",
+        /**
+         * Style revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        style = "Style",
+        /**
+         * Replace revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        replace = "Replace",
+        /**
+         * Paragraph property revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraphProperty = "ParagraphProperty",
+        /**
+         * Table property revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tableProperty = "TableProperty",
+        /**
+         * Section property revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sectionProperty = "SectionProperty",
+        /**
+         * Style definition revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        styleDefinition = "StyleDefinition",
+        /**
+         * Moved from revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        movedFrom = "MovedFrom",
+        /**
+         * Moved to revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        movedTo = "MovedTo",
+        /**
+         * Cell insertion revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cellInsertion = "CellInsertion",
+        /**
+         * Cell deletion revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cellDeletion = "CellDeletion",
+        /**
+         * Cell merge revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cellMerge = "CellMerge",
+        /**
+         * Cell split revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cellSplit = "CellSplit",
+        /**
+         * Conflict insert revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        conflictInsert = "ConflictInsert",
+        /**
+         * Conflict delete revision.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        conflictDelete = "ConflictDelete",
+    }
+    /**
+     * Specifies the column width options in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ColumnWidth {
+        /**
+         * Narrow column width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        narrow = "Narrow",
+        /**
+         * Default column width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        default = "Default",
+        /**
+         * Wide column width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wide = "Wide",
+    }
+    /**
+     * Specifies the field shading options in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum FieldShading {
+        /**
+         * Never shade fields.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        never = "Never",
+        /**
+         * Always shade fields.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        always = "Always",
+        /**
+         * Shade fields when selected.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        whenSelected = "WhenSelected",
+    }
+    /**
+     * Specifies the format for horizontal text set within vertical text.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum HorizontalInVerticalType {
+        /**
+         * No formatting is applied to the horizontal text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * The horizontal text is sized to fit in the line of vertical text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fitInLine = "FitInLine",
+        /**
+         * The line of vertical text is sized to accommodate the horizontal text.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resizeLine = "ResizeLine",
+    }
+    /**
+     * Specifies the IME (Input Method Editor) mode.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ImeMode {
+        /**
+         * Specifies no control over the IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noControl = "NoControl",
+        /**
+         * Specifies the IME mode is on.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        on = "On",
+        /**
+         * Specifies the IME mode is off.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        off = "Off",
+        /**
+         * Specifies the Hiragana IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hiragana = "Hiragana",
+        /**
+         * Specifies the Katakana (double-byte) IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        katakana = "Katakana",
+        /**
+         * Specifies the Katakana (half-width) IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        katakanaHalf = "KatakanaHalf",
+        /**
+         * Specifies the full-width alphanumeric IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphaFull = "AlphaFull",
+        /**
+         * Specifies the half-width alphanumeric IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alpha = "Alpha",
+        /**
+         * Specifies the full-width Hangul IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hangulFull = "HangulFull",
+        /**
+         * Specifies the half-width Hangul IME mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hangul = "Hangul",
+    }
+    /**
+     * Specifies the Kana type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum Kana {
+        /**
+         * Katakana Kana type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        katakana = "Katakana",
+        /**
+         * Hiragana Kana type.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hiragana = "Hiragana",
+    }
+    /**
+     * Specifies the two lines in one type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TwoLinesInOneType {
+        /**
+         * No two lines in one.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Two lines in one without brackets.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noBrackets = "NoBrackets",
+        /**
+         * Two lines in one with parentheses.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        parentheses = "Parentheses",
+        /**
+         * Two lines in one with square brackets.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        squareBrackets = "SquareBrackets",
+        /**
+         * Two lines in one with angle brackets.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        angleBrackets = "AngleBrackets",
+        /**
+         * Two lines in one with curly brackets.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        curlyBrackets = "CurlyBrackets",
+    }
+    /**
+     * Specifies the underline type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum Underline {
+        /**
+         * No underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Single underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        single = "Single",
+        /**
+         * Underline words only.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        words = "Words",
+        /**
+         * Double underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        double = "Double",
+        /**
+         * Dotted underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dotted = "Dotted",
+        /**
+         * Thick underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thick = "Thick",
+        /**
+         * Dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dash = "Dash",
+        /**
+         * Dot dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dotDash = "DotDash",
+        /**
+         * Dot dot dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dotDotDash = "DotDotDash",
+        /**
+         * Wavy underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wavy = "Wavy",
+        /**
+         * Heavy wavy underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wavyHeavy = "WavyHeavy",
+        /**
+         * Heavy dotted underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dottedHeavy = "DottedHeavy",
+        /**
+         * Heavy dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashHeavy = "DashHeavy",
+        /**
+         * Heavy dot dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dotDashHeavy = "DotDashHeavy",
+        /**
+         * Heavy dot dot dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dotDotDashHeavy = "DotDotDashHeavy",
+        /**
+         * Long dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashLong = "DashLong",
+        /**
+         * Heavy long dash underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashLongHeavy = "DashLongHeavy",
+        /**
+         * Double wavy underline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wavyDouble = "WavyDouble",
+    }
+    /**
+     * Specifies the view type in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ViewType {
+        /**
+         * Normal.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        normal = "Normal",
+        /**
+         * Outline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outline = "Outline",
+        /**
+         * Print.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        print = "Print",
+        /**
+         * Print preview.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printPreview = "PrintPreview",
+        /**
+         * Master.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        master = "Master",
+        /**
+         * Web.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        web = "Web",
+        /**
+         * Reading.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reading = "Reading",
+        /**
+         * Conflict.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        conflict = "Conflict",
+    }
+    /**
+     * Represents the state of the window.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum WindowState {
+        /**
+         * Represents the normal state of the window.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        normal = "Normal",
+        /**
+         * Represents the maximized state of the window.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        maximize = "Maximize",
+        /**
+         * Represents the minimized state of the window.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        minimize = "Minimize",
+    }
+    /**
+     * Specifies the type of the window.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum WindowType {
+        /**
+         * Specifies a document window.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        document = "Document",
+        /**
+         * Specifies a template window.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+    }
+    /**
      * Specifies the direction in which text flows from one text column to the next.
      *
      * @remarks
@@ -32929,6 +36830,1208 @@ export declare namespace Word {
          * @beta
          */
         oddPage = "OddPage",
+    }
+    /**
+     * Represents a single bookmark in a document, selection, or range. The `Bookmark` object is a member of the `Bookmark` collection.
+                The {@link Word.BookmarkCollection} includes all the bookmarks listed in the **Bookmark** dialog box (**Insert** menu).
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Bookmark extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
+         * Specifies the ending character position of the bookmark.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        end: number;
+        /**
+         * Returns `true` if the bookmark is a table column.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isColumn: boolean;
+        /**
+         * Returns `true` if the bookmark is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isEmpty: boolean;
+        /**
+         * Returns the name of the `Bookmark` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Specifies the starting character position of the bookmark.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        start: number;
+        /**
+         * Returns the story type for the bookmark.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly storyType: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.BookmarkUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Bookmark): void;
+        /**
+         * Copies this bookmark to the new bookmark specified in the `name` argument and returns a `Bookmark` object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - The name of the new bookmark.
+         */
+        copyTo(name: string): Word.Bookmark;
+        /**
+         * Deletes the bookmark.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Selects the bookmark.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        select(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.BookmarkLoadOptions): Word.Bookmark;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Bookmark;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Bookmark;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Bookmark;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Bookmark;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Bookmark` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BookmarkData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.BookmarkData;
+    }
+    /**
+     * A collection of {@link Word.Bookmark} objects that represent the bookmarks in the specified selection, range, or document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class BookmarkCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Bookmark[];
+        /**
+         * Determines whether the specified bookmark exists.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - A bookmark name than cannot include more than 40 characters or more than one word.
+         * @returns `true` if the bookmark exists.
+         */
+        exists(name: string): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Gets a `Bookmark` object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a `Bookmark` object.
+         */
+        getItem(index: number): Word.Bookmark;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.BookmarkCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.BookmarkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.BookmarkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.BookmarkCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.BookmarkCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.BookmarkCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.BookmarkCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BookmarkCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.BookmarkCollectionData;
+    }
+    /**
+     * Specifies the type of story in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum StoryType {
+        /**
+         * Main text story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mainText = "MainText",
+        /**
+         * Footnotes story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnotes = "Footnotes",
+        /**
+         * Endnotes story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnotes = "Endnotes",
+        /**
+         * Comments story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comments = "Comments",
+        /**
+         * Text frame story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textFrame = "TextFrame",
+        /**
+         * Even pages header story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenPagesHeader = "EvenPagesHeader",
+        /**
+         * Primary header story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primaryHeader = "PrimaryHeader",
+        /**
+         * Even pages footer story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenPagesFooter = "EvenPagesFooter",
+        /**
+         * Primary footer story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        primaryFooter = "PrimaryFooter",
+        /**
+         * First page header story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstPageHeader = "FirstPageHeader",
+        /**
+         * First page footer story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstPageFooter = "FirstPageFooter",
+        /**
+         * Footnote separator story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnoteSeparator = "FootnoteSeparator",
+        /**
+         * Footnote continuation separator story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnoteContinuationSeparator = "FootnoteContinuationSeparator",
+        /**
+         * Footnote continuation notice story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footnoteContinuationNotice = "FootnoteContinuationNotice",
+        /**
+         * Endnote separator story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnoteSeparator = "EndnoteSeparator",
+        /**
+         * Endnote continuation separator story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnoteContinuationSeparator = "EndnoteContinuationSeparator",
+        /**
+         * Endnote continuation notice story.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        endnoteContinuationNotice = "EndnoteContinuationNotice",
+    }
+    /**
+     * Represents a single index. The `Index` object is a member of the {@link Word.IndexCollection}. The `IndexCollection` includes all the
+                indexes in the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Index extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a `Range` object that represents the portion of the document that is contained within the index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
+         * Gets a value that represents how Microsoft Word classifies the first character of entries in the index.
+                    See `IndexFilter` for available values.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly filter: Word.IndexFilter | "None" | "Aiueo" | "Akasatana" | "Chosung" | "Low" | "Medium" | "Full";
+        /**
+         * Gets the text between alphabetical groups (entries that start with the same letter) in the index. Corresponds to
+                    the **\h** switch for an {@link https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e | INDEX field}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly headingSeparator: Word.HeadingSeparator | "None" | "BlankLine" | "Letter" | "LetterLow" | "LetterFull";
+        /**
+         * Gets a `LanguageId` value that represents the sorting language to use for the index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly indexLanguage: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";
+        /**
+         * Gets the number of columns for each page of the index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly numberOfColumns: number;
+        /**
+         * Specifies if page numbers are aligned with the right margin in the index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rightAlignPageNumbers: boolean;
+        /**
+         * Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under
+                    one heading and words that begin with "A" are under another).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly separateAccentedLetterHeadings: boolean;
+        /**
+         * Specifies the sorting criteria for the index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly sortBy: Word.IndexSortBy | "Stroke" | "Syllable";
+        /**
+         * Specifies the leader character between entries in the index and their associated page numbers.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tabLeader: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";
+        /**
+         * Gets the index type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.IndexType | "Indent" | "Runin";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.IndexUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Index): void;
+        /**
+         * Deletes this index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.IndexLoadOptions): Word.Index;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Index;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Index;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Index;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Index;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Index` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.IndexData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.IndexData;
+    }
+    /**
+     * A collection of {@link Word.Index} objects that represents all the indexes in the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class IndexCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Index[];
+        /**
+         * Returns an `Index` object that represents a new index added to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param range - The range where you want the index to appear. The index replaces the range, if the range is not collapsed.
+         * @param indexAddOptions - Optional. The options for adding the index.
+         */
+        add(range: Word.Range, indexAddOptions?: Word.IndexAddOptions): Word.Index;
+        /**
+         * Gets the `IndexFormat` value that represents the formatting for the indexes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFormat(): OfficeExtension.ClientResult<Word.IndexFormat>;
+        /**
+         * Gets an `Index` object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of an `Index` object.
+         */
+        getItem(index: number): Word.Index;
+        /**
+         * Inserts an {@link https://support.microsoft.com/office/abaf7c78-6e21-418d-bf8b-f8186d2e4d08 | XE (Index Entry) field} after all instances of the text in the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param range - The range whose text is marked with an `XE` field throughout the document.
+         * @param markAllEntriesOptions - Optional. The options for marking all entries.
+         */
+        markAllEntries(range: Word.Range, markAllEntriesOptions?: Word.IndexMarkAllEntriesOptions): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.IndexCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.IndexCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.IndexCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.IndexCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.IndexCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.IndexCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.IndexCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.IndexCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.IndexCollectionData;
+    }
+    /**
+     * Represents options for creating an index in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface IndexAddOptions {
+        /**
+         * If provided, specifies the text between alphabetical groups (entries that start with the same letter) in the index.
+                    See `HeadingSeparator` for available values. The default value is `Word.HeadingSeparator.blankLine`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        headingSeparator?: Word.HeadingSeparator | "None" | "BlankLine" | "Letter" | "LetterLow" | "LetterFull";
+        /**
+         * If provided, specifies the sorting language to be used for the index being added.
+                    See `LanguageId` for available values. The default value is the installed language of the Word application.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indexLanguage?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";
+        /**
+         * If provided, specifies the number of columns for each page of the index.
+                    Specifying 0 (zero) sets the number of columns in the index to the same number as in the document. The default value is 1.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberOfColumns?: number;
+        /**
+         * If provided, specifies whether the page numbers in the generated index are aligned with the right margin. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightAlignPageNumbers?: boolean;
+        /**
+         * If provided, specifies whether to include separate headings for accented letters in the index. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        separateAccentedLetterHeadings?: boolean;
+        /**
+         * If provided, specifies the sorting criteria to be used for the index being added. Can be either of the following `IndexSortBy` values: `stroke` or `syllable`. The default value is `Word.IndexSortBy.stroke`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sortBy?: Word.IndexSortBy | "Stroke" | "Syllable";
+        /**
+         * If provided, specifies whether subentries are on the same line (run-in) as the main entry or on a separate line (indented) from the main entry.
+                    Can be either of the following `IndexType` values: `indent` or `runin`. The default value is `Word.IndexType.indent`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type?: Word.IndexType | "Indent" | "Runin";
+    }
+    /**
+     * Represents options for marking all index entries in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface IndexMarkAllEntriesOptions {
+        /**
+         * If provided, specifies whether to add bold formatting to page numbers for index entries. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bold?: boolean;
+        /**
+         * If provided, specifies the bookmark name that marks the range of pages you want to appear in the index. If this property is omitted, the number of the page that contains the `XE` field appears in the index. The default value is "".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bookmarkName?: string;
+        /**
+         * If provided, specifies the cross-reference that will appear in the index. The default value is "".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crossReference?: string;
+        /**
+         * If provided, specifies the name of the `AutoText` entry that contains the text for a cross-reference (if this property is specified, `crossReference` is ignored). The default value is "".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crossReferenceAutoText?: string;
+        /**
+         * If provided, specifies the text you want to appear in the index, in the form `MainEntry[:Subentry]`. The default value is "".
+                    Either this property or `entryAutoText` must be provided.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        entry?: string;
+        /**
+         * If provided, specifies the `AutoText` entry that contains the text you want to appear in the index (if this property is specified, `entry` is ignored). The default value is "".
+                    Either this property or `entry` must be provided.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        entryAutoText?: string;
+        /**
+         * If provided, specifies whether to add italic formatting to page numbers for index entries. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        italic?: boolean;
+    }
+    /**
+     * Represents options for marking an index entry in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface IndexMarkEntryOptions {
+        /**
+         * If provided, specifies whether to add bold formatting to page numbers for index entries. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bold?: boolean;
+        /**
+         * If provided, specifies the bookmark name that marks the range of pages you want to appear in the index. If this property is omitted, the number of the page that contains the `XE` field appears in the index. The default value is "".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bookmarkName?: string;
+        /**
+         * If provided, specifies the cross-reference that will appear in the index. The default value is "".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crossReference?: string;
+        /**
+         * If provided, specifies the name of the `AutoText` entry that contains the text for a cross-reference (if this property is specified, `crossReference` is ignored). The default value is "".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crossReferenceAutoText?: string;
+        /**
+         * If provided, specifies the text you want to appear in the index, in the form `MainEntry[:Subentry]`. The default value is "".
+                    Either this property or `entryAutoText` must be provided.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        entry?: string;
+        /**
+         * If provided, specifies the `AutoText` entry that contains the text you want to appear in the index (if this property is specified, `entry` is ignored). The default value is "".
+                    Either this property or `entry` must be provided.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        entryAutoText?: string;
+        /**
+         * If provided, specifies whether to add italic formatting to page numbers for index entries. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        italic?: boolean;
+        /**
+         * If provided, specifies whether to show an index entry in the right location when indexes are sorted phonetically (East Asian languages only). The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reading?: boolean;
+    }
+    /**
+     * Specifies the type of separator to use for headings.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum HeadingSeparator {
+        /**
+         * No separator is used for headings.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * A blank line is used as a separator for headings.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blankLine = "BlankLine",
+        /**
+         * A single letter is used as a separator for headings.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        letter = "Letter",
+        /**
+         * A lowercase letter is used as a separator for headings.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        letterLow = "LetterLow",
+        /**
+         * A full-width letter is used as a separator for headings.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        letterFull = "LetterFull",
+    }
+    /**
+     * Represents the position of a dropped capital letter.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DropPosition {
+        /**
+         * Represents that there's no dropped capital letter.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents a normal dropped capital letter.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        normal = "Normal",
+        /**
+         * Represents a dropped capital letter in the margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        margin = "Margin",
+    }
+    /**
+     * Represents the type of line spacing.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LineSpacing {
+        /**
+         * Represents single line spacing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        single = "Single",
+        /**
+         * Represents 1.5 line spacing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        onePt5 = "OnePt5",
+        /**
+         * Represents double line spacing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        double = "Double",
+        /**
+         * Represents at least line spacing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        atLeast = "AtLeast",
+        /**
+         * Represents exact line spacing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        exactly = "Exactly",
+        /**
+         * Represents multiple line spacing.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        multiple = "Multiple",
+    }
+    /**
+     * Represents the alignment of a tab stop.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TabAlignment {
+        /**
+         * Represents that the tab stop is aligned to the left.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Represents that the tab stop is aligned to the center.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        center = "Center",
+        /**
+         * Represents that the tab stop is aligned to the right.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+        /**
+         * Represents that the tab stop is aligned to the decimal point.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        decimal = "Decimal",
+        /**
+         * Represents that the tab stop is aligned to the bar.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bar = "Bar",
+        /**
+         * Represents that the tab stop is aligned to the list.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        list = "List",
+    }
+    /**
+     * Represents the type of tight wrap for a text box.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TextboxTightWrap {
+        /**
+         * Represents that there's no tight wrap.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents tight wrap around all lines.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        all = "All",
+        /**
+         * Represents tight wrap around the first and last lines.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstAndLastLines = "FirstAndLastLines",
+        /**
+         * Represents tight wrap around the first line only.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstLineOnly = "FirstLineOnly",
+        /**
+         * Represents tight wrap around the last line only.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lastLineOnly = "LastLineOnly",
+    }
+    /**
+     * Specifies the filter type for an index.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum IndexFilter {
+        /**
+         * No filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Aiueo filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        aiueo = "Aiueo",
+        /**
+         * Akasatana filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        akasatana = "Akasatana",
+        /**
+         * Chosung filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chosung = "Chosung",
+        /**
+         * Low filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        low = "Low",
+        /**
+         * Medium filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        medium = "Medium",
+        /**
+         * Full filter is applied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        full = "Full",
+    }
+    /**
+     * Specifies the format for an index.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum IndexFormat {
+        /**
+         * Template format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+        /**
+         * Classic format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        classic = "Classic",
+        /**
+         * Fancy format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fancy = "Fancy",
+        /**
+         * Modern format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        modern = "Modern",
+        /**
+         * Bulleted format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bulleted = "Bulleted",
+        /**
+         * Formal format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formal = "Formal",
+        /**
+         * Simple format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simple = "Simple",
+    }
+    /**
+     * Specifies how an index is sorted.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum IndexSortBy {
+        /**
+         * Sort by stroke.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        stroke = "Stroke",
+        /**
+         * Sort by syllable.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        syllable = "Syllable",
+    }
+    /**
+     * Specifies the type of index to create.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum IndexType {
+        /**
+         * Creates an indented index.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indent = "Indent",
+        /**
+         * Creates a run-in index.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        runin = "Runin",
+    }
+    /**
+     * Specifies the tab leader style.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TabLeader {
+        /**
+         * Spaces are used as the tab leader.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spaces = "Spaces",
+        /**
+         * Dots are used as the tab leader.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dots = "Dots",
+        /**
+         * Dashes are used as the tab leader.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashes = "Dashes",
+        /**
+         * Lines are used as the tab leader.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lines = "Lines",
+        /**
+         * Heavy lines are used as the tab leader.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        heavy = "Heavy",
+        /**
+         * Middle dots are used as the tab leader.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        middleDot = "MiddleDot",
     }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
@@ -33611,6 +38714,13 @@ export declare namespace Word {
         /** An interface for updating data on the `Document` object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
             /**
+             * Gets the active window for the document.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
+            activeWindow?: Word.Interfaces.WindowUpdateData;
+            /**
              * Returns a `Bibliography` object that represents the bibliography references contained within the document.
              *
              * @remarks
@@ -33818,60 +38928,60 @@ export declare namespace Word {
         /** An interface for updating data on the `Font` object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
             /**
-            * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             fill?: Word.Interfaces.FillFormatUpdateData;
             /**
-            * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             glow?: Word.Interfaces.GlowFormatUpdateData;
             /**
-            * Returns a `LineFormat` object that specifies the formatting for a line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `LineFormat` object that specifies the formatting for a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             line?: Word.Interfaces.LineFormatUpdateData;
             /**
-            * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             reflection?: Word.Interfaces.ReflectionFormatUpdateData;
             /**
-            * Returns a `ColorFormat` object that represents the color for the font.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             textColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
-            * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             textShadow?: Word.Interfaces.ShadowFormatUpdateData;
             /**
-            * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             threeDimensionalFormat?: Word.Interfaces.ThreeDimensionalFormatUpdateData;
             /**
              * Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
@@ -34342,6 +39452,41 @@ export declare namespace Word {
         export interface InlinePictureCollectionUpdateData {
             items?: Word.Interfaces.InlinePictureData[];
         }
+        /** An interface for updating data on the `LinkFormat` object, for use in `linkFormat.set({ ... })`. */
+        export interface LinkFormatUpdateData {
+            /**
+             * Specifies if the link is updated automatically when the container file is opened or when the source file is changed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAutoUpdated?: boolean;
+            /**
+             * Specifies if a `Field`, `InlineShape`, or `Shape` object is locked to prevent automatic updating.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLocked?: boolean;
+            /**
+             * Specifies if the linked picture is saved with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPictureSavedWithDocument?: boolean;
+            /**
+             * Specifies the path and name of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourceFullName?: string;
+        }
         /** An interface for updating data on the `ListCollection` object, for use in `listCollection.set({ ... })`. */
         export interface ListCollectionUpdateData {
             items?: Word.Interfaces.ListData[];
@@ -34443,7 +39588,7 @@ export declare namespace Word {
         /** An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`. */
         export interface ListTemplateUpdateData {
             /**
-             * Specifies whether the specified ListTemplate object is outline numbered.
+             * Specifies whether the list template is outline numbered.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
@@ -34471,6 +39616,49 @@ export declare namespace Word {
         export interface NoteItemCollectionUpdateData {
             items?: Word.Interfaces.NoteItemData[];
         }
+        /** An interface for updating data on the `OleFormat` object, for use in `oleFormat.set({ ... })`. */
+        export interface OleFormatUpdateData {
+            /**
+             * Specifies the class type for the specified OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            classType?: string;
+            /**
+             * Specifies the icon that is used when the `displayAsIcon` property is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconIndex?: number;
+            /**
+             * Specifies the text displayed below the icon for the OLE object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconLabel?: string;
+            /**
+             * Specifies the program file in which the icon for the OLE object is stored.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconName?: string;
+            /**
+             * Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormattingPreservedOnUpdate?: boolean;
+        }
         /** An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`. */
         export interface PageCollectionUpdateData {
             items?: Word.Interfaces.PageData[];
@@ -34478,6 +39666,177 @@ export declare namespace Word {
         /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
         export interface PaneCollectionUpdateData {
             items?: Word.Interfaces.PaneData[];
+        }
+        /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
+        export interface WindowUpdateData {
+            /**
+             * Gets the next document window in the collection of open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            next?: Word.Interfaces.WindowUpdateData;
+            /**
+             * Gets the previous document window in the collection open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previous?: Word.Interfaces.WindowUpdateData;
+            /**
+             * Specifies whether rulers are displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRulersDisplayed?: boolean;
+            /**
+             * Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areThumbnailsDisplayed?: boolean;
+            /**
+             * Specifies the caption text for the window that is displayed in the title bar of the document or application window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: string;
+            /**
+             * Specifies the horizontal scroll position as a percentage of the document width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalPercentScrolled?: number;
+            /**
+             * Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imemode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul";
+            /**
+             * Specifies whether the document map is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDocumentMapVisible?: boolean;
+            /**
+             * Specifies whether the email message header is visible in the document window. The default value is `False`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnvelopeVisible?: boolean;
+            /**
+             * Specifies whether a horizontal scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHorizontalScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the vertical scroll bar appears on the left side of the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLeftScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isRightRulerDisplayed?: boolean;
+            /**
+             * Specifies whether the window is split into multiple panes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSplit?: boolean;
+            /**
+             * Specifies whether a vertical ruler is displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalRulerDisplayed?: boolean;
+            /**
+             * Specifies whether a vertical scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the window is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies how Microsoft Word displays source documents after a compare and merge process.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showSourceDocuments?: Word.ShowSourceDocuments | "None" | "Original" | "Revised" | "Both";
+            /**
+             * Specifies the vertical split percentage for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: number;
+            /**
+             * Specifies the width of the style area in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleAreaWidth?: number;
+            /**
+             * Specifies the vertical scroll position as a percentage of the document length.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalPercentScrolled?: number;
+            /**
+             * Specifies the state of the document window or task window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: Word.WindowState | "Normal" | "Maximize" | "Minimize";
         }
         /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
         export interface WindowCollectionUpdateData {
@@ -34714,12 +40073,12 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontUpdateData;
             /**
-            * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listFormat?: Word.Interfaces.ListFormatUpdateData;
             /**
              * Returns a `ShadingUniversal` object that refers to the shading formatting for the range.
@@ -34730,6 +40089,54 @@ export declare namespace Word {
              */
             shading?: Word.Interfaces.ShadingUniversalUpdateData;
             /**
+             * Specifies a `CharacterCase` value that represents the case of the text in the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            case?: Word.CharacterCase | "Next" | "Lower" | "Upper" | "TitleWord" | "TitleSentence" | "Toggle" | "HalfWidth" | "FullWidth" | "Katakana" | "Hiragana";
+            /**
+             * Specifies the character width of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            characterWidth?: Word.CharacterWidth | "Half" | "Full";
+            /**
+             * Specifies if the range contains combined characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            combineCharacters?: boolean;
+            /**
+             * Specifies the ending character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: number;
+            /**
+             * Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fitTextWidth?: number;
+            /**
+             * Specifies if a grammar check has been run on the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            grammarChecked?: boolean;
+            /**
              * Specifies the proofing status (spelling and grammar checking) of the range.
              *
              * @remarks
@@ -34738,12 +40145,36 @@ export declare namespace Word {
              */
             hasNoProofing?: boolean;
             /**
+             * Specifies the formatting for horizontal text set within vertical text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalInVertical?: Word.HorizontalInVerticalType | "None" | "FitInLine" | "ResizeLine";
+            /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             hyperlink?: string;
+            /**
+             * Specifies the ID for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             * Specifies whether the range of Japanese language text is hiragana or katakana.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kana?: Word.Kana | "Katakana" | "Hiragana";
             /**
              * Specifies whether Microsoft Word has detected the language of the text in the range.
              *
@@ -34777,6 +40208,30 @@ export declare namespace Word {
              */
             languageIdOther?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";
             /**
+             * Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showAll?: boolean;
+            /**
+             * Specifies if spelling has been checked throughout the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spellingChecked?: boolean;
+            /**
+             * Specifies the starting character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: number;
+            /**
              * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
@@ -34790,6 +40245,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            /**
+             * Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            twoLinesInOne?: Word.TwoLinesInOneType | "None" | "NoBrackets" | "Parentheses" | "SquareBrackets" | "AngleBrackets" | "CurlyBrackets";
         }
         /** An interface for updating data on the `RangeCollection` object, for use in `rangeCollection.set({ ... })`. */
         export interface RangeCollectionUpdateData {
@@ -35277,6 +40740,10 @@ export declare namespace Word {
              */
             topCellMargin?: number;
         }
+        /** An interface for updating data on the `TabStopCollection` object, for use in `tabStopCollection.set({ ... })`. */
+        export interface TabStopCollectionUpdateData {
+            items?: Word.Interfaces.TabStopData[];
+        }
         /** An interface for updating data on the `TableCollection` object, for use in `tableCollection.set({ ... })`. */
         export interface TableCollectionUpdateData {
             items?: Word.Interfaces.TableData[];
@@ -35284,12 +40751,12 @@ export declare namespace Word {
         /** An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`. */
         export interface TableColumnUpdateData {
             /**
-            * Returns a `ShadingUniversal` object that refers to the shading formatting for the column.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ShadingUniversal` object that refers to the shading formatting for the column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingUniversalUpdateData;
             /**
              * Specifies the preferred width (in points or as a percentage of the window width) for the column.
@@ -35533,6 +41000,281 @@ export declare namespace Word {
         /** An interface for updating data on the `TrackedChangeCollection` object, for use in `trackedChangeCollection.set({ ... })`. */
         export interface TrackedChangeCollectionUpdateData {
             items?: Word.Interfaces.TrackedChangeData[];
+        }
+        /** An interface for updating data on the `View` object, for use in `view.set({ ... })`. */
+        export interface ViewUpdateData {
+            /**
+             * Specifies whether all nonprinting characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areAllNonprintingCharactersDisplayed?: boolean;
+            /**
+             * Gets whether background colors and images are shown when the document is displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays the comments in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areCommentsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areConnectingLinesToRevisionsBalloonDisplayed?: boolean;
+            /**
+             * Specifies whether shading is applied to the ranges in the document that users have permission to modify.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areEditableRangesShaded?: boolean;
+            /**
+             * Specifies whether field codes are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFieldCodesDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFormatChangesDisplayed?: boolean;
+            /**
+             * Specifies whether handwritten ink annotations are shown or hidden.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areInkAnnotationsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areInsertionsAndDeletionsDisplayed?: boolean;
+            /**
+             * Gets whether other authors' presence should be visible in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOtherAuthorsVisible?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRevisionsAndCommentsDisplayed?: boolean;
+            /**
+             * Specifies whether table gridlines are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTableGridlinesDisplayed?: boolean;
+            /**
+             * Specifies the column width in Reading mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnWidth?: Word.ColumnWidth | "Narrow" | "Default" | "Wide";
+            /**
+             * Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDraft?: boolean;
+            /**
+             * Specifies whether only the first line of body text is shown in outline view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFirstLineOnlyDisplayed?: boolean;
+            /**
+             * Specifies whether character formatting is visible in outline view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormatDisplayed?: boolean;
+            /**
+             * Specifies whether the window is in full-screen view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFullScreen?: boolean;
+            /**
+             * Specifies whether the document is in conflict mode view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInConflictMode?: boolean;
+            /**
+             * Specifies whether Microsoft Word is in Panning mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInPanning?: boolean;
+            /**
+             * Specifies whether the document is being viewed in reading layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInReadingLayout?: boolean;
+            /**
+             * Specifies whether mail merge data is displayed instead of mail merge fields.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMailMergeDataView?: boolean;
+            /**
+             * Specifies whether the text in the document is visible when the header and footer areas are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMainTextLayerVisible?: boolean;
+            /**
+             * Specifies whether the pointer is displayed as a magnifying glass in print preview.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPointerShownAsMagnifier?: boolean;
+            /**
+             * Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadingLayoutActualView?: boolean;
+            /**
+             * Specifies whether XML tags are visible in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isXmlMarkupVisible?: boolean;
+            /**
+             * Specifies the display mode for tracked changes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            markupMode?: Word.RevisionsMode | "Balloon" | "Inline" | "Mixed";
+            /**
+             * Specifies the page color in Reading mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageColor?: Word.PageColor | "None" | "Sepia" | "Inverse";
+            /**
+             * Specifies the page movement type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageMovementType?: Word.PageMovementType | "Vertical" | "SideToSide";
+            /**
+             * Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutTruncateMargins?: Word.ReadingLayoutMargin | "Automatic" | "Suppress" | "Full";
+            /**
+             * Specifies the width of the revision balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonWidth?: number;
+            /**
+             * Specifies how Microsoft Word measures the width of revision balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonWidthType?: Word.RevisionsBalloonWidthType | "Percent" | "Points";
+            /**
+             * Specifies the document element displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            seekView?: Word.SeekView | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "CurrentPageHeader" | "CurrentPageFooter";
+            /**
+             * Specifies the active window pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitSpecial?: Word.SpecialPane | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" | "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" | "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert";
+            /**
+             * Specifies the view type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ViewType | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" | "Reading" | "Conflict";
         }
         /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
@@ -35884,6 +41626,40 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
+        }
+        /** An interface for updating data on the `Reviewer` object, for use in `reviewer.set({ ... })`. */
+        export interface ReviewerUpdateData {
+            /**
+             * Specifies if the `Reviewer` object is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+        }
+        /** An interface for updating data on the `ReviewerCollection` object, for use in `reviewerCollection.set({ ... })`. */
+        export interface ReviewerCollectionUpdateData {
+            items?: Word.Interfaces.ReviewerData[];
+        }
+        /** An interface for updating data on the `RevisionsFilter` object, for use in `revisionsFilter.set({ ... })`. */
+        export interface RevisionsFilterUpdateData {
+            /**
+             * Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            markup?: Word.RevisionsMarkup | "None" | "Simple" | "All";
+            /**
+             * Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: Word.RevisionsView | "Final" | "Original";
         }
         /** An interface for updating data on the `RepeatingSectionItem` object, for use in `repeatingSectionItem.set({ ... })`. */
         export interface RepeatingSectionItemUpdateData {
@@ -36378,20 +42154,20 @@ export declare namespace Word {
         /** An interface for updating data on the `Frame` object, for use in `frame.set({ ... })`. */
         export interface FrameUpdateData {
             /**
-            * Returns a `Range` object that represents the portion of the document that's contained within the frame.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `Range` object that represents the portion of the document that's contained within the frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeUpdateData;
             /**
-            * Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingUniversalUpdateData;
             /**
              * Specifies the height (in points) of the frame.
@@ -36501,12 +42277,12 @@ export declare namespace Word {
         /** An interface for updating data on the `ListFormat` object, for use in `listFormat.set({ ... })`. */
         export interface ListFormatUpdateData {
             /**
-            * Gets the list template associated with the `ListFormat` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the list template associated with the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateUpdateData;
             /**
              * Specifies the list level number for the first paragraph for the `ListFormat` object.
@@ -36520,20 +42296,20 @@ export declare namespace Word {
         /** An interface for updating data on the `FillFormat` object, for use in `fillFormat.set({ ... })`. */
         export interface FillFormatUpdateData {
             /**
-            * Returns a `ColorFormat` object that represents the background color for the fill.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the background color for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             backgroundColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
-            * Returns a `ColorFormat` object that represents the foreground color for the fill.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the foreground color for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
              * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
@@ -36619,12 +42395,12 @@ export declare namespace Word {
         /** An interface for updating data on the `GlowFormat` object, for use in `glowFormat.set({ ... })`. */
         export interface GlowFormatUpdateData {
             /**
-            * Returns a `ColorFormat` object that represents the color for a glow effect.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color for a glow effect.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             color?: Word.Interfaces.ColorFormatUpdateData;
             /**
              * Specifies the length of the radius for a glow effect.
@@ -36646,20 +42422,20 @@ export declare namespace Word {
         /** An interface for updating data on the `LineFormat` object, for use in `lineFormat.set({ ... })`. */
         export interface LineFormatUpdateData {
             /**
-            * Gets a `ColorFormat` object that represents the background color for a patterned line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `ColorFormat` object that represents the background color for a patterned line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             backgroundColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
-            * Gets a `ColorFormat` object that represents the foreground color for the line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `ColorFormat` object that represents the foreground color for the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
              * Specifies the length of the arrowhead at the beginning of the line.
@@ -36847,12 +42623,12 @@ export declare namespace Word {
         /** An interface for updating data on the `ShadowFormat` object, for use in `shadowFormat.set({ ... })`. */
         export interface ShadowFormatUpdateData {
             /**
-            * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
              * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
@@ -36941,20 +42717,20 @@ export declare namespace Word {
         /** An interface for updating data on the `ThreeDimensionalFormat` object, for use in `threeDimensionalFormat.set({ ... })`. */
         export interface ThreeDimensionalFormatUpdateData {
             /**
-            * Returns a `ColorFormat` object that represents color of the contour of a shape.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents color of the contour of a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             contourColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
-            * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             extrusionColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
              * Specifies the depth of the bottom bevel.
@@ -37450,6 +43226,60 @@ export declare namespace Word {
              * @beta
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Bookmark` object, for use in `bookmark.set({ ... })`. */
+        export interface BookmarkUpdateData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeUpdateData;
+            /**
+             * Specifies the ending character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: number;
+            /**
+             * Specifies the starting character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: number;
+        }
+        /** An interface for updating data on the `BookmarkCollection` object, for use in `bookmarkCollection.set({ ... })`. */
+        export interface BookmarkCollectionUpdateData {
+            items?: Word.Interfaces.BookmarkData[];
+        }
+        /** An interface for updating data on the `Index` object, for use in `index.set({ ... })`. */
+        export interface IndexUpdateData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that is contained within the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeUpdateData;
+            /**
+             * Specifies the leader character between entries in the index and their associated page numbers.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";
+        }
+        /** An interface for updating data on the `IndexCollection` object, for use in `indexCollection.set({ ... })`. */
+        export interface IndexCollectionUpdateData {
+            items?: Word.Interfaces.IndexData[];
         }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
@@ -39585,6 +45415,65 @@ export declare namespace Word {
         export interface InlinePictureCollectionData {
             items?: Word.Interfaces.InlinePictureData[];
         }
+        /** An interface describing the data returned by calling `linkFormat.toJSON()`. */
+        export interface LinkFormatData {
+            /**
+             * Specifies if the link is updated automatically when the container file is opened or when the source file is changed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAutoUpdated?: boolean;
+            /**
+             * Specifies if a `Field`, `InlineShape`, or `Shape` object is locked to prevent automatic updating.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLocked?: boolean;
+            /**
+             * Specifies if the linked picture is saved with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPictureSavedWithDocument?: boolean;
+            /**
+             * Specifies the path and name of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourceFullName?: string;
+            /**
+             * Gets the name of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourceName?: string;
+            /**
+             * Gets the path of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourcePath?: string;
+            /**
+             * Gets the link type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.LinkType | "Ole" | "Picture" | "Text" | "Reference" | "Include" | "Import" | "Dde" | "DdeAuto" | "Chart";
+        }
         /** An interface describing the data returned by calling `list.toJSON()`. */
         export interface ListData {
             /**
@@ -39731,14 +45620,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `listTemplate.toJSON()`. */
         export interface ListTemplateData {
             /**
-             * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
+             * Gets a `ListLevelCollection` object that represents all the levels for the list template.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
              */
             listLevels?: Word.Interfaces.ListLevelData[];
             /**
-             * Specifies whether the specified ListTemplate object is outline numbered.
+             * Specifies whether the list template is outline numbered.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
@@ -39772,6 +45661,81 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `noteItemCollection.toJSON()`. */
         export interface NoteItemCollectionData {
             items?: Word.Interfaces.NoteItemData[];
+        }
+        /** An interface describing the data returned by calling `oleFormat.toJSON()`. */
+        export interface OleFormatData {
+            /**
+             * Specifies the class type for the specified OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            classType?: string;
+            /**
+             * Specifies the icon that is used when the `displayAsIcon` property is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconIndex?: number;
+            /**
+             * Specifies the text displayed below the icon for the OLE object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconLabel?: string;
+            /**
+             * Specifies the program file in which the icon for the OLE object is stored.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconName?: string;
+            /**
+             * Gets the path of the file in which the icon for the OLE object is stored.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconPath?: string;
+            /**
+             * Gets whether the specified object is displayed as an icon.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDisplayedAsIcon?: boolean;
+            /**
+             * Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormattingPreservedOnUpdate?: boolean;
+            /**
+             * Gets a string that's used to identify the portion of the source file that's being linked.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            label?: string;
+            /**
+             * Gets the programmatic identifier (`ProgId`) for the specified OLE object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            progID?: string;
         }
         /** An interface describing the data returned by calling `page.toJSON()`. */
         export interface PageData {
@@ -39832,6 +45796,262 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `window.toJSON()`. */
         export interface WindowData {
+            /**
+             * Gets the next document window in the collection of open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            next?: Word.Interfaces.WindowData;
+            /**
+             * Gets the previous document window in the collection open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previous?: Word.Interfaces.WindowData;
+            /**
+             * Specifies whether rulers are displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRulersDisplayed?: boolean;
+            /**
+             * Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areScreenTipsDisplayed?: boolean;
+            /**
+             * Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areThumbnailsDisplayed?: boolean;
+            /**
+             * Specifies the caption text for the window that is displayed in the title bar of the document or application window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: string;
+            /**
+             * Specifies the height of the window (in points).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Specifies the horizontal scroll position as a percentage of the document width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalPercentScrolled?: number;
+            /**
+             * Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imemode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul";
+            /**
+             * Gets the position of an item in a collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: number;
+            /**
+             * Specifies whether the window is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+            /**
+             * Specifies whether the document map is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDocumentMapVisible?: boolean;
+            /**
+             * Specifies whether the email message header is visible in the document window. The default value is `False`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnvelopeVisible?: boolean;
+            /**
+             * Specifies whether a horizontal scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHorizontalScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the vertical scroll bar appears on the left side of the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLeftScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isRightRulerDisplayed?: boolean;
+            /**
+             * Specifies whether the window is split into multiple panes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSplit?: boolean;
+            /**
+             * Specifies whether a vertical ruler is displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalRulerDisplayed?: boolean;
+            /**
+             * Specifies whether a vertical scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the window is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the horizontal position of the window, measured in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             * Specifies how Microsoft Word displays source documents after a compare and merge process.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showSourceDocuments?: Word.ShowSourceDocuments | "None" | "Original" | "Revised" | "Both";
+            /**
+             * Specifies the vertical split percentage for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: number;
+            /**
+             * Specifies the width of the style area in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleAreaWidth?: number;
+            /**
+             * Specifies the vertical position of the document window, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             * Gets the window type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.WindowType | "Document" | "Template";
+            /**
+             * Gets the height (in points) of the active working area in the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableHeight?: number;
+            /**
+             * Gets the width (in points) of the active working area in the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableWidth?: number;
+            /**
+             * Specifies the vertical scroll position as a percentage of the document length.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalPercentScrolled?: number;
+            /**
+             * Specifies the width of the document window, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+            /**
+             * Gets an integer that represents the position of the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowNumber?: number;
+            /**
+             * Specifies the state of the document window or task window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: Word.WindowState | "Normal" | "Maximize" | "Minimize";
         }
         /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
         export interface WindowCollectionData {
@@ -40216,6 +46436,86 @@ export declare namespace Word {
              */
             tableColumns?: Word.Interfaces.TableColumnData[];
             /**
+             * Specifies whether the range is formatted as bold.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bold?: boolean;
+            /**
+             * Specifies whether the range is formatted as bold in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            boldBidirectional?: boolean;
+            /**
+             * Specifies a `CharacterCase` value that represents the case of the text in the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            case?: Word.CharacterCase | "Next" | "Lower" | "Upper" | "TitleWord" | "TitleSentence" | "Toggle" | "HalfWidth" | "FullWidth" | "Katakana" | "Hiragana";
+            /**
+             * Specifies the character width of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            characterWidth?: Word.CharacterWidth | "Half" | "Full";
+            /**
+             * Specifies if the range contains combined characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            combineCharacters?: boolean;
+            /**
+             * Specifies if Microsoft Word ignores the number of characters per line for the corresponding `Range` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            disableCharacterSpaceGrid?: boolean;
+            /**
+             * Specifies the emphasis mark for a character or designated character string.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emphasisMark?: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+            /**
+             * Specifies the ending character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: number;
+            /**
+             * Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fitTextWidth?: number;
+            /**
+             * Specifies if a grammar check has been run on the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            grammarChecked?: boolean;
+            /**
              * Specifies the proofing status (spelling and grammar checking) of the range.
              *
              * @remarks
@@ -40224,6 +46524,22 @@ export declare namespace Word {
              */
             hasNoProofing?: boolean;
             /**
+             * Specifies the highlight color for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            highlightColorIndex?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+            /**
+             * Specifies the formatting for horizontal text set within vertical text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalInVertical?: Word.HorizontalInVerticalType | "None" | "FitInLine" | "ResizeLine";
+            /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
@@ -40231,12 +46547,60 @@ export declare namespace Word {
              */
             hyperlink?: string;
             /**
+             * Specifies the ID for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
              * Checks whether the range length is zero.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isEmpty?: boolean;
+            /**
+             * Gets if the range is collapsed and is located at the end-of-row mark in a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEndOfRowMark?: boolean;
+            /**
+             * Gets whether the text in the range is visible on the screen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isTextVisibleOnScreen?: boolean;
+            /**
+             * Specifies if the font or range is formatted as italic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italic?: boolean;
+            /**
+             * Specifies if the font or range is formatted as italic (right-to-left languages).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italicBidirectional?: boolean;
+            /**
+             * Specifies whether the range of Japanese language text is hiragana or katakana.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kana?: Word.Kana | "Katakana" | "Hiragana";
             /**
              * Specifies whether Microsoft Word has detected the language of the text in the range.
              *
@@ -40270,6 +46634,46 @@ export declare namespace Word {
              */
             languageIdOther?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";
             /**
+             * Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showAll?: boolean;
+            /**
+             * Specifies if spelling has been checked throughout the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spellingChecked?: boolean;
+            /**
+             * Specifies the starting character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: number;
+            /**
+             * Gets the number of characters in the story that contains the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyLength?: number;
+            /**
+             * Gets the story type for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";
+            /**
              * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
@@ -40290,6 +46694,22 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: string;
+            /**
+             * Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            twoLinesInOne?: Word.TwoLinesInOneType | "None" | "NoBrackets" | "Parentheses" | "SquareBrackets" | "AngleBrackets" | "CurlyBrackets";
+            /**
+             * Specifies the type of underline applied to the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underline?: Word.Underline | "None" | "Single" | "Words" | "Double" | "Dotted" | "Thick" | "Dash" | "DotDash" | "DotDotDash" | "Wavy" | "WavyHeavy" | "DottedHeavy" | "DashHeavy" | "DotDashHeavy" | "DotDotDashHeavy" | "DashLong" | "DashLongHeavy" | "WavyDouble";
         }
         /** An interface describing the data returned by calling `rangeCollection.toJSON()`. */
         export interface RangeCollectionData {
@@ -40885,6 +47305,45 @@ export declare namespace Word {
              */
             topCellMargin?: number;
         }
+        /** An interface describing the data returned by calling `tabStop.toJSON()`. */
+        export interface TabStopData {
+            /**
+             * Gets a `TabAlignment` value that represents the alignment for the tab stop.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal" | "Bar" | "List";
+            /**
+             * Gets whether this tab stop is a custom tab stop.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customTab?: boolean;
+            /**
+             * Gets a `TabLeader` value that represents the leader for this `TabStop` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";
+            /**
+             * Gets the position of the tab stop relative to the left margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: number;
+        }
+        /** An interface describing the data returned by calling `tabStopCollection.toJSON()`. */
+        export interface TabStopCollectionData {
+            items?: Word.Interfaces.TabStopData[];
+        }
         /** An interface describing the data returned by calling `tableCollection.toJSON()`. */
         export interface TableCollectionData {
             items?: Word.Interfaces.TableData[];
@@ -40892,20 +47351,20 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
         export interface TableColumnData {
             /**
-            * Returns a `BorderUniversalCollection` object that represents all the borders for the table column.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BorderUniversalCollection` object that represents all the borders for the table column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             borders?: Word.Interfaces.BorderUniversalData[];
             /**
-            * Returns a `ShadingUniversal` object that refers to the shading formatting for the column.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ShadingUniversal` object that refers to the shading formatting for the column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingUniversalData;
             /**
              * Returns the position of this column in a collection.
@@ -41300,6 +47759,417 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `trackedChangeCollection.toJSON()`. */
         export interface TrackedChangeCollectionData {
             items?: Word.Interfaces.TrackedChangeData[];
+        }
+        /** An interface describing the data returned by calling `view.toJSON()`. */
+        export interface ViewData {
+            /**
+             * Specifies whether all nonprinting characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areAllNonprintingCharactersDisplayed?: boolean;
+            /**
+             * Gets whether background colors and images are shown when the document is displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundsDisplayed?: boolean;
+            /**
+             * Gets whether square brackets are displayed at the beginning and end of each bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBookmarksIndicated?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays the comments in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areCommentsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areConnectingLinesToRevisionsBalloonDisplayed?: boolean;
+            /**
+             * Gets whether crop marks are shown in the corners of pages to indicate where margins are located.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areCropMarksDisplayed?: boolean;
+            /**
+             * Gets whether objects created with the drawing tools are displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areDrawingsDisplayed?: boolean;
+            /**
+             * Specifies whether shading is applied to the ranges in the document that users have permission to modify.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areEditableRangesShaded?: boolean;
+            /**
+             * Specifies whether field codes are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFieldCodesDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFormatChangesDisplayed?: boolean;
+            /**
+             * Specifies whether handwritten ink annotations are shown or hidden.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areInkAnnotationsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areInsertionsAndDeletionsDisplayed?: boolean;
+            /**
+             * Gets whether lines wrap at the right edge of the document window rather than at the right margin or the right column boundary.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areLinesWrappedToWindow?: boolean;
+            /**
+             * Gets whether object anchors are displayed next to items that can be positioned in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areObjectAnchorsDisplayed?: boolean;
+            /**
+             * Gets whether Microsoft Word displays optional line breaks.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOptionalBreaksDisplayed?: boolean;
+            /**
+             * Gets whether optional hyphens are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOptionalHyphensDisplayed?: boolean;
+            /**
+             * Gets whether other authors' presence should be visible in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOtherAuthorsVisible?: boolean;
+            /**
+             * Gets whether the top and bottom margins and the gray area between pages in the document are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            arePageBoundariesDisplayed?: boolean;
+            /**
+             * Gets whether paragraph marks are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areParagraphsMarksDisplayed?: boolean;
+            /**
+             * Gets whether blank boxes are displayed as placeholders for pictures.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            arePicturePlaceholdersDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRevisionsAndCommentsDisplayed?: boolean;
+            /**
+             * Gets whether space characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areSpacesIndicated?: boolean;
+            /**
+             * Specifies whether table gridlines are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTableGridlinesDisplayed?: boolean;
+            /**
+             * Gets whether tab characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTabsDisplayed?: boolean;
+            /**
+             * Gets whether dotted lines are displayed around page margins, text columns, objects, and frames in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTextBoundariesDisplayed?: boolean;
+            /**
+             * Specifies the column width in Reading mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnWidth?: Word.ColumnWidth | "Narrow" | "Default" | "Wide";
+            /**
+             * Gets on-screen shading for fields.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fieldShading?: Word.FieldShading | "Never" | "Always" | "WhenSelected";
+            /**
+             * Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDraft?: boolean;
+            /**
+             * Specifies whether only the first line of body text is shown in outline view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFirstLineOnlyDisplayed?: boolean;
+            /**
+             * Specifies whether character formatting is visible in outline view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormatDisplayed?: boolean;
+            /**
+             * Specifies whether the window is in full-screen view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFullScreen?: boolean;
+            /**
+             * Gets whether text formatted as hidden text is displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHiddenTextDisplayed?: boolean;
+            /**
+             * Gets whether highlight formatting is displayed and printed with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHighlightingDisplayed?: boolean;
+            /**
+             * Specifies whether the document is in conflict mode view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInConflictMode?: boolean;
+            /**
+             * Specifies whether Microsoft Word is in Panning mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInPanning?: boolean;
+            /**
+             * Specifies whether the document is being viewed in reading layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInReadingLayout?: boolean;
+            /**
+             * Specifies whether mail merge data is displayed instead of mail merge fields.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMailMergeDataView?: boolean;
+            /**
+             * Specifies whether the text in the document is visible when the header and footer areas are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMainTextLayerVisible?: boolean;
+            /**
+             * Specifies whether the pointer is displayed as a magnifying glass in print preview.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPointerShownAsMagnifier?: boolean;
+            /**
+             * Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadingLayoutActualView?: boolean;
+            /**
+             * Specifies whether XML tags are visible in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isXmlMarkupVisible?: boolean;
+            /**
+             * Specifies the display mode for tracked changes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            markupMode?: Word.RevisionsMode | "Balloon" | "Inline" | "Mixed";
+            /**
+             * Specifies the page color in Reading mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageColor?: Word.PageColor | "None" | "Sepia" | "Inverse";
+            /**
+             * Specifies the page movement type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageMovementType?: Word.PageMovementType | "Vertical" | "SideToSide";
+            /**
+             * Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutTruncateMargins?: Word.ReadingLayoutMargin | "Automatic" | "Suppress" | "Full";
+            /**
+             * Gets whether Word displays revision balloons in the left or right margin in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonSide?: Word.RevisionsBalloonMargin | "Left" | "Right";
+            /**
+             * Specifies the width of the revision balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonWidth?: number;
+            /**
+             * Specifies how Microsoft Word measures the width of revision balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonWidthType?: Word.RevisionsBalloonWidthType | "Percent" | "Points";
+            /**
+             * Specifies the document element displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            seekView?: Word.SeekView | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "CurrentPageHeader" | "CurrentPageFooter";
+            /**
+             * Specifies the active window pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitSpecial?: Word.SpecialPane | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" | "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" | "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert";
+            /**
+             * Specifies the view type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ViewType | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" | "Reading" | "Conflict";
         }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
@@ -41715,42 +48585,76 @@ export declare namespace Word {
              */
             type?: Word.ShapeTextWrapType | "Inline" | "Square" | "Tight" | "Through" | "TopBottom" | "Behind" | "Front";
         }
+        /** An interface describing the data returned by calling `reviewer.toJSON()`. */
+        export interface ReviewerData {
+            /**
+             * Specifies if the `Reviewer` object is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+        }
+        /** An interface describing the data returned by calling `reviewerCollection.toJSON()`. */
+        export interface ReviewerCollectionData {
+            items?: Word.Interfaces.ReviewerData[];
+        }
+        /** An interface describing the data returned by calling `revisionsFilter.toJSON()`. */
+        export interface RevisionsFilterData {
+            /**
+             * Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            markup?: Word.RevisionsMarkup | "None" | "Simple" | "All";
+            /**
+             * Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: Word.RevisionsView | "Final" | "Original";
+        }
         /** An interface describing the data returned by calling `repeatingSectionItem.toJSON()`. */
         export interface RepeatingSectionItemData {
             /**
-            * Returns the range of this repeating section item, excluding the start and end tags.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns the range of this repeating section item, excluding the start and end tags.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
         }
         /** An interface describing the data returned by calling `datePickerContentControl.toJSON()`. */
         export interface DatePickerContentControlData {
             /**
-            * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            placeholderText?: Word.Interfaces.BuildingBlockData;
+             * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+             placeholderText?: Word.Interfaces.BuildingBlockData;
             /**
-            * Gets a `Range` object that represents the contents of the content control in the active document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `Range` object that represents the contents of the content control in the active document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
             /**
-            * Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             xmlMapping?: Word.Interfaces.XmlMappingData;
             /**
              * Specifies the appearance of the content control.
@@ -41868,28 +48772,28 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `pictureContentControl.toJSON()`. */
         export interface PictureContentControlData {
             /**
-            * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             placeholderText?: Word.Interfaces.BuildingBlockData;
             /**
-            * Returns a `Range` object that represents the contents of the content control in the active document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `Range` object that represents the contents of the content control in the active document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
             /**
-            * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             xmlMapping?: Word.Interfaces.XmlMappingData;
             /**
              * Specifies the appearance of the content control.
@@ -41975,28 +48879,28 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `groupContentControl.toJSON()`. */
         export interface GroupContentControlData {
             /**
-            * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             placeholderText?: Word.Interfaces.BuildingBlockData;
             /**
-            * Gets a `Range` object that represents the contents of the content control in the active document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `Range` object that represents the contents of the content control in the active document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
             /**
-            * Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             xmlMapping?: Word.Interfaces.XmlMappingData;
             /**
              * Specifies the appearance of the content control.
@@ -42082,28 +48986,28 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `buildingBlockGalleryContentControl.toJSON()`. */
         export interface BuildingBlockGalleryContentControlData {
             /**
-            * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             placeholderText?: Word.Interfaces.BuildingBlockData;
             /**
-            * Returns a `Range` object that represents the contents of the content control in the active document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `Range` object that represents the contents of the content control in the active document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
             /**
-            * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             xmlMapping?: Word.Interfaces.XmlMappingData;
             /**
              * Specifies the appearance of the content control.
@@ -42205,28 +49109,28 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `repeatingSectionContentControl.toJSON()`. */
         export interface RepeatingSectionContentControlData {
             /**
-            * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             placeholderText?: Word.Interfaces.BuildingBlockData;
             /**
-            * Gets a `Range` object that represents the contents of the content control in the active document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `Range` object that represents the contents of the content control in the active document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
             /**
-            * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             xmlapping?: Word.Interfaces.XmlMappingData;
             /**
              * Specifies whether users can add or remove sections from this repeating section content control by using the user interface.
@@ -42328,28 +49232,28 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `frame.toJSON()`. */
         export interface FrameData {
             /**
-            * Returns a `BorderUniversalCollection` object that represents all the borders for the frame.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BorderUniversalCollection` object that represents all the borders for the frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             borders?: Word.Interfaces.BorderUniversalData[];
             /**
-            * Returns a `Range` object that represents the portion of the document that's contained within the frame.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `Range` object that represents the portion of the document that's contained within the frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             range?: Word.Interfaces.RangeData;
             /**
-            * Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingUniversalData;
             /**
              * Specifies the height (in points) of the frame.
@@ -42483,23 +49387,58 @@ export declare namespace Word {
         export interface DocumentLibraryVersionCollectionData {
             items?: Word.Interfaces.DocumentLibraryVersionData[];
         }
+        /** An interface describing the data returned by calling `dropCap.toJSON()`. */
+        export interface DropCapData {
+            /**
+             * Gets the distance (in points) between the dropped capital letter and the paragraph text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            distanceFromText?: number;
+            /**
+             * Gets the name of the font for the dropped capital letter.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fontName?: string;
+            /**
+             * Gets the height (in lines) of the dropped capital letter.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linesToDrop?: number;
+            /**
+             * Gets the position of the dropped capital letter.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: Word.DropPosition | "None" | "Normal" | "Margin";
+        }
         /** An interface describing the data returned by calling `listFormat.toJSON()`. */
         export interface ListFormatData {
             /**
-            * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             list?: Word.Interfaces.ListData;
             /**
-            * Gets the list template associated with the `ListFormat` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the list template associated with the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateData;
             /**
              * Indicates whether the `ListFormat` object contains a single list.
@@ -42553,20 +49492,20 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `fillFormat.toJSON()`. */
         export interface FillFormatData {
             /**
-            * Returns a `ColorFormat` object that represents the background color for the fill.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the background color for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             backgroundColor?: Word.Interfaces.ColorFormatData;
             /**
-            * Returns a `ColorFormat` object that represents the foreground color for the fill.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the foreground color for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatData;
             /**
              * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
@@ -42735,12 +49674,12 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `glowFormat.toJSON()`. */
         export interface GlowFormatData {
             /**
-            * Returns a `ColorFormat` object that represents the color for a glow effect.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color for a glow effect.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             color?: Word.Interfaces.ColorFormatData;
             /**
              * Specifies the length of the radius for a glow effect.
@@ -42762,20 +49701,20 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `lineFormat.toJSON()`. */
         export interface LineFormatData {
             /**
-            * Gets a `ColorFormat` object that represents the background color for a patterned line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `ColorFormat` object that represents the background color for a patterned line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             backgroundColor?: Word.Interfaces.ColorFormatData;
             /**
-            * Gets a `ColorFormat` object that represents the foreground color for the line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `ColorFormat` object that represents the foreground color for the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatData;
             /**
              * Specifies the length of the arrowhead at the beginning of the line.
@@ -42971,12 +49910,12 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `shadowFormat.toJSON()`. */
         export interface ShadowFormatData {
             /**
-            * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatData;
             /**
              * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
@@ -43065,20 +50004,20 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `threeDimensionalFormat.toJSON()`. */
         export interface ThreeDimensionalFormatData {
             /**
-            * Returns a `ColorFormat` object that represents color of the contour of a shape.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents color of the contour of a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             contourColor?: Word.Interfaces.ColorFormatData;
             /**
-            * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             extrusionColor?: Word.Interfaces.ColorFormatData;
             /**
              * Specifies the depth of the bottom bevel.
@@ -43286,12 +50225,12 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `bibliography.toJSON()`. */
         export interface BibliographyData {
             /**
-            * Returns a `SourceCollection` object that represents all the sources contained in the bibliography.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `SourceCollection` object that represents all the sources contained in the bibliography.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             sources?: Word.Interfaces.SourceData[];
             /**
              * Specifies the name of the active style to use for the bibliography.
@@ -43336,20 +50275,20 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `pageSetup.toJSON()`. */
         export interface PageSetupData {
             /**
-            * Specifies a `LineNumbering` object that represents the line numbers for the `PageSetup` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Specifies a `LineNumbering` object that represents the line numbers for the `PageSetup` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             lineNumbering?: Word.Interfaces.LineNumberingData;
             /**
-            * Gets a `TextColumnCollection` object that represents the set of text columns for the `PageSetup` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `TextColumnCollection` object that represents the set of text columns for the `PageSetup` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             textColumns?: Word.Interfaces.TextColumnData[];
             /**
              * Specifies whether Microsoft Word prints the document as a booklet.
@@ -43641,6 +50580,159 @@ export declare namespace Word {
              * @beta
              */
             width?: number;
+        }
+        /** An interface describing the data returned by calling `bookmark.toJSON()`. */
+        export interface BookmarkData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeData;
+            /**
+             * Specifies the ending character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: number;
+            /**
+             * Returns `true` if the bookmark is a table column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isColumn?: boolean;
+            /**
+             * Returns `true` if the bookmark is empty.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEmpty?: boolean;
+            /**
+             * Returns the name of the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Specifies the starting character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: number;
+            /**
+             * Returns the story type for the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";
+        }
+        /** An interface describing the data returned by calling `bookmarkCollection.toJSON()`. */
+        export interface BookmarkCollectionData {
+            items?: Word.Interfaces.BookmarkData[];
+        }
+        /** An interface describing the data returned by calling `index.toJSON()`. */
+        export interface IndexData {
+            /**
+             * Returns a `Range` object that represents the portion of the document that is contained within the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeData;
+            /**
+             * Gets a value that represents how Microsoft Word classifies the first character of entries in the index.
+                        See `IndexFilter` for available values.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            filter?: Word.IndexFilter | "None" | "Aiueo" | "Akasatana" | "Chosung" | "Low" | "Medium" | "Full";
+            /**
+             * Gets the text between alphabetical groups (entries that start with the same letter) in the index. Corresponds to
+                        the **\h** switch for an {@link https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e | INDEX field}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            headingSeparator?: Word.HeadingSeparator | "None" | "BlankLine" | "Letter" | "LetterLow" | "LetterFull";
+            /**
+             * Gets a `LanguageId` value that represents the sorting language to use for the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indexLanguage?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";
+            /**
+             * Gets the number of columns for each page of the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberOfColumns?: number;
+            /**
+             * Specifies if page numbers are aligned with the right margin in the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightAlignPageNumbers?: boolean;
+            /**
+             * Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under
+                        one heading and words that begin with "A" are under another).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            separateAccentedLetterHeadings?: boolean;
+            /**
+             * Specifies the sorting criteria for the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: Word.IndexSortBy | "Stroke" | "Syllable";
+            /**
+             * Specifies the leader character between entries in the index and their associated page numbers.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";
+            /**
+             * Gets the index type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.IndexType | "Indent" | "Runin";
+        }
+        /** An interface describing the data returned by calling `indexCollection.toJSON()`. */
+        export interface IndexCollectionData {
+            items?: Word.Interfaces.IndexData[];
         }
         /**
          * Represents an annotation wrapper around critique displayed in the document.
@@ -44178,20 +51270,20 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `BuildingBlockCategory` object that represents the category for the building block.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlockCategory` object that represents the category for the building block.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             category?: Word.Interfaces.BuildingBlockCategoryLoadOptions;
             /**
-            * Returns a `BuildingBlockTypeItem` object that represents the type for the building block.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlockTypeItem` object that represents the type for the building block.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             type?: Word.Interfaces.BuildingBlockTypeItemLoadOptions;
             /**
              * Specifies the description for the building block.
@@ -44255,12 +51347,12 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `BuildingBlockTypeItem` object that represents the type of building block for the building block category.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `BuildingBlockTypeItem` object that represents the type of building block for the building block category.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             type?: Word.Interfaces.BuildingBlockTypeItemLoadOptions;
             /**
              * Returns the position of the `BuildingBlockCategory` object in a collection.
@@ -45875,6 +52967,13 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * Gets the active window for the document.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.2]
+             */
+            activeWindow?: Word.Interfaces.WindowLoadOptions;
+            /**
              * Specifies a `Template` object that represents the template attached to the document.
              *
              * @remarks
@@ -46147,6 +53246,22 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * Gets a `LinkFormat` object that represents the link options of the field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkFormat?: Word.Interfaces.LinkFormatLoadOptions;
+            /**
+             * Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            oleFormat?: Word.Interfaces.OleFormatLoadOptions;
+            /**
              * Gets the parent body of the field.
              *
              * @remarks
@@ -46263,6 +53378,22 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * For EACH ITEM in the collection: Gets a `LinkFormat` object that represents the link options of the field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkFormat?: Word.Interfaces.LinkFormatLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            oleFormat?: Word.Interfaces.OleFormatLoadOptions;
+            /**
              * For EACH ITEM in the collection: Gets the parent body of the field.
              *
              * @remarks
@@ -46375,60 +53506,60 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             fill?: Word.Interfaces.FillFormatLoadOptions;
             /**
-            * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             glow?: Word.Interfaces.GlowFormatLoadOptions;
             /**
-            * Returns a `LineFormat` object that specifies the formatting for a line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `LineFormat` object that specifies the formatting for a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             line?: Word.Interfaces.LineFormatLoadOptions;
             /**
-            * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             reflection?: Word.Interfaces.ReflectionFormatLoadOptions;
             /**
-            * Returns a `ColorFormat` object that represents the color for the font.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             textColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
-            * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             textShadow?: Word.Interfaces.ShadowFormatLoadOptions;
             /**
-            * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             threeDimensionalFormat?: Word.Interfaces.ThreeDimensionalFormatLoadOptions;
             /**
              * Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
@@ -47194,6 +54325,75 @@ export declare namespace Word {
             width?: boolean;
         }
         /**
+         * Represents the linking characteristics for an OLE object or picture.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface LinkFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies if the link is updated automatically when the container file is opened or when the source file is changed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAutoUpdated?: boolean;
+            /**
+             * Specifies if a `Field`, `InlineShape`, or `Shape` object is locked to prevent automatic updating.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLocked?: boolean;
+            /**
+             * Specifies if the linked picture is saved with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPictureSavedWithDocument?: boolean;
+            /**
+             * Specifies the path and name of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourceFullName?: boolean;
+            /**
+             * Gets the name of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourceName?: boolean;
+            /**
+             * Gets the path of the source file for the linked OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sourcePath?: boolean;
+            /**
+             * Gets the link type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
          * Contains a collection of {@link Word.Paragraph} objects.
          *
          * @remarks
@@ -47471,7 +54671,7 @@ export declare namespace Word {
             trailingCharacter?: boolean;
         }
         /**
-         * Represents a ListTemplate.
+         * Represents a list template.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.1]
@@ -47482,7 +54682,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies whether the specified ListTemplate object is outline numbered.
+             * Specifies whether the list template is outline numbered.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.1]
@@ -47556,6 +54756,91 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
+         * Represents the OLE characteristics (other than linking) for an OLE object, ActiveX control, or field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface OleFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the class type for the specified OLE object, picture, or field.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            classType?: boolean;
+            /**
+             * Specifies the icon that is used when the `displayAsIcon` property is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconIndex?: boolean;
+            /**
+             * Specifies the text displayed below the icon for the OLE object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconLabel?: boolean;
+            /**
+             * Specifies the program file in which the icon for the OLE object is stored.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconName?: boolean;
+            /**
+             * Gets the path of the file in which the icon for the OLE object is stored.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            iconPath?: boolean;
+            /**
+             * Gets whether the specified object is displayed as an icon.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDisplayedAsIcon?: boolean;
+            /**
+             * Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormattingPreservedOnUpdate?: boolean;
+            /**
+             * Gets a string that's used to identify the portion of the source file that's being linked.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            label?: boolean;
+            /**
+             * Gets the programmatic identifier (`ProgId`) for the specified OLE object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            progID?: boolean;
+        }
+        /**
          * Represents a page in the document. `Page` objects manage the page layout and content.
          *
          * @remarks
@@ -47620,6 +54905,558 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             width?: boolean;
+        }
+        /**
+         * Represents the window that displays the document. A window can be split to contain multiple reading panes.
+         *
+         * @remarks
+         * [Api set: WordApiDesktop 1.2]
+         */
+        export interface WindowLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the next document window in the collection of open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            next?: Word.Interfaces.WindowLoadOptions;
+            /**
+             * Gets the previous document window in the collection open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previous?: Word.Interfaces.WindowLoadOptions;
+            /**
+             * Gets the `View` object that represents the view for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: Word.Interfaces.ViewLoadOptions;
+            /**
+             * Specifies whether rulers are displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRulersDisplayed?: boolean;
+            /**
+             * Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areScreenTipsDisplayed?: boolean;
+            /**
+             * Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areThumbnailsDisplayed?: boolean;
+            /**
+             * Specifies the caption text for the window that is displayed in the title bar of the document or application window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: boolean;
+            /**
+             * Specifies the height of the window (in points).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * Specifies the horizontal scroll position as a percentage of the document width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalPercentScrolled?: boolean;
+            /**
+             * Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imemode?: boolean;
+            /**
+             * Gets the position of an item in a collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+            /**
+             * Specifies whether the window is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+            /**
+             * Specifies whether the document map is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDocumentMapVisible?: boolean;
+            /**
+             * Specifies whether the email message header is visible in the document window. The default value is `False`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnvelopeVisible?: boolean;
+            /**
+             * Specifies whether a horizontal scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHorizontalScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the vertical scroll bar appears on the left side of the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLeftScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isRightRulerDisplayed?: boolean;
+            /**
+             * Specifies whether the window is split into multiple panes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSplit?: boolean;
+            /**
+             * Specifies whether a vertical ruler is displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalRulerDisplayed?: boolean;
+            /**
+             * Specifies whether a vertical scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalScrollBarDisplayed?: boolean;
+            /**
+             * Specifies whether the window is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the horizontal position of the window, measured in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             * Specifies how Microsoft Word displays source documents after a compare and merge process.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showSourceDocuments?: boolean;
+            /**
+             * Specifies the vertical split percentage for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: boolean;
+            /**
+             * Specifies the width of the style area in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleAreaWidth?: boolean;
+            /**
+             * Specifies the vertical position of the document window, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             * Gets the window type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * Gets the height (in points) of the active working area in the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableHeight?: boolean;
+            /**
+             * Gets the width (in points) of the active working area in the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableWidth?: boolean;
+            /**
+             * Specifies the vertical scroll position as a percentage of the document length.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalPercentScrolled?: boolean;
+            /**
+             * Specifies the width of the document window, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             * Gets an integer that represents the position of the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowNumber?: boolean;
+            /**
+             * Specifies the state of the document window or task window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: boolean;
+        }
+        /**
+         * Represents the collection of window objects.
+         *
+         * @remarks
+         * [Api set: WordApiDesktop 1.2]
+         */
+        export interface WindowCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the next document window in the collection of open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            next?: Word.Interfaces.WindowLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the previous document window in the collection open document windows.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previous?: Word.Interfaces.WindowLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the `View` object that represents the view for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: Word.Interfaces.ViewLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies whether rulers are displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRulersDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areScreenTipsDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areThumbnailsDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the caption text for the window that is displayed in the title bar of the document or application window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the height of the window (in points).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the horizontal scroll position as a percentage of the document width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalPercentScrolled?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imemode?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the position of an item in a collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the window is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the document map is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDocumentMapVisible?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the email message header is visible in the document window. The default value is `False`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnvelopeVisible?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether a horizontal scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHorizontalScrollBarDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the vertical scroll bar appears on the left side of the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLeftScrollBarDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isRightRulerDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the window is split into multiple panes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSplit?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether a vertical ruler is displayed for the window or pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalRulerDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether a vertical scroll bar is displayed for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVerticalScrollBarDisplayed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the window is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the horizontal position of the window, measured in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies how Microsoft Word displays source documents after a compare and merge process.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showSourceDocuments?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the vertical split percentage for the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the width of the style area in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleAreaWidth?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the vertical position of the document window, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the window type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the height (in points) of the active working area in the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableHeight?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the width (in points) of the active working area in the document window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableWidth?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the vertical scroll position as a percentage of the document length.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalPercentScrolled?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the width of the document window, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets an integer that represents the position of the window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowNumber?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the state of the document window or task window.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: boolean;
         }
         /**
          * Represents a single paragraph in a selection, range, content control, or document body.
@@ -48196,12 +56033,12 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listFormat?: Word.Interfaces.ListFormatLoadOptions;
             /**
              * Gets the parent body of the range.
@@ -48261,6 +56098,86 @@ export declare namespace Word {
              */
             shading?: Word.Interfaces.ShadingUniversalLoadOptions;
             /**
+             * Specifies whether the range is formatted as bold.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bold?: boolean;
+            /**
+             * Specifies whether the range is formatted as bold in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            boldBidirectional?: boolean;
+            /**
+             * Specifies a `CharacterCase` value that represents the case of the text in the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            case?: boolean;
+            /**
+             * Specifies the character width of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            characterWidth?: boolean;
+            /**
+             * Specifies if the range contains combined characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            combineCharacters?: boolean;
+            /**
+             * Specifies if Microsoft Word ignores the number of characters per line for the corresponding `Range` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            disableCharacterSpaceGrid?: boolean;
+            /**
+             * Specifies the emphasis mark for a character or designated character string.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emphasisMark?: boolean;
+            /**
+             * Specifies the ending character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: boolean;
+            /**
+             * Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fitTextWidth?: boolean;
+            /**
+             * Specifies if a grammar check has been run on the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            grammarChecked?: boolean;
+            /**
              * Specifies the proofing status (spelling and grammar checking) of the range.
              *
              * @remarks
@@ -48269,6 +56186,22 @@ export declare namespace Word {
              */
             hasNoProofing?: boolean;
             /**
+             * Specifies the highlight color for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            highlightColorIndex?: boolean;
+            /**
+             * Specifies the formatting for horizontal text set within vertical text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalInVertical?: boolean;
+            /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
@@ -48276,12 +56209,60 @@ export declare namespace Word {
              */
             hyperlink?: boolean;
             /**
+             * Specifies the ID for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
              * Checks whether the range length is zero.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isEmpty?: boolean;
+            /**
+             * Gets if the range is collapsed and is located at the end-of-row mark in a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEndOfRowMark?: boolean;
+            /**
+             * Gets whether the text in the range is visible on the screen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isTextVisibleOnScreen?: boolean;
+            /**
+             * Specifies if the font or range is formatted as italic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italic?: boolean;
+            /**
+             * Specifies if the font or range is formatted as italic (right-to-left languages).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italicBidirectional?: boolean;
+            /**
+             * Specifies whether the range of Japanese language text is hiragana or katakana.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kana?: boolean;
             /**
              * Specifies whether Microsoft Word has detected the language of the text in the range.
              *
@@ -48315,6 +56296,46 @@ export declare namespace Word {
              */
             languageIdOther?: boolean;
             /**
+             * Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showAll?: boolean;
+            /**
+             * Specifies if spelling has been checked throughout the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spellingChecked?: boolean;
+            /**
+             * Specifies the starting character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: boolean;
+            /**
+             * Gets the number of characters in the story that contains the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyLength?: boolean;
+            /**
+             * Gets the story type for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyType?: boolean;
+            /**
              * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
@@ -48335,6 +56356,22 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
+            /**
+             * Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            twoLinesInOne?: boolean;
+            /**
+             * Specifies the type of underline applied to the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underline?: boolean;
         }
         /**
          * Contains a collection of {@link Word.Range} objects.
@@ -48355,12 +56392,12 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listFormat?: Word.Interfaces.ListFormatLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the parent body of the range.
@@ -48420,6 +56457,86 @@ export declare namespace Word {
              */
             shading?: Word.Interfaces.ShadingUniversalLoadOptions;
             /**
+             * For EACH ITEM in the collection: Specifies whether the range is formatted as bold.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bold?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the range is formatted as bold in a right-to-left language document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            boldBidirectional?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a `CharacterCase` value that represents the case of the text in the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            case?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the character width of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            characterWidth?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the range contains combined characters.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            combineCharacters?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if Microsoft Word ignores the number of characters per line for the corresponding `Range` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            disableCharacterSpaceGrid?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the emphasis mark for a character or designated character string.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            emphasisMark?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the ending character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fitTextWidth?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if a grammar check has been run on the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            grammarChecked?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies the proofing status (spelling and grammar checking) of the range.
              *
              * @remarks
@@ -48428,6 +56545,22 @@ export declare namespace Word {
              */
             hasNoProofing?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies the highlight color for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            highlightColorIndex?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the formatting for horizontal text set within vertical text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalInVertical?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
@@ -48435,12 +56568,60 @@ export declare namespace Word {
              */
             hyperlink?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies the ID for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
              * For EACH ITEM in the collection: Checks whether the range length is zero.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isEmpty?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets if the range is collapsed and is located at the end-of-row mark in a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEndOfRowMark?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether the text in the range is visible on the screen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isTextVisibleOnScreen?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the font or range is formatted as italic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italic?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the font or range is formatted as italic (right-to-left languages).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italicBidirectional?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the range of Japanese language text is hiragana or katakana.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kana?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether Microsoft Word has detected the language of the text in the range.
              *
@@ -48474,6 +56655,46 @@ export declare namespace Word {
              */
             languageIdOther?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showAll?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if spelling has been checked throughout the range or document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spellingChecked?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the starting character position of the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the number of characters in the story that contains the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyLength?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the story type for the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyType?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
@@ -48494,6 +56715,22 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            twoLinesInOne?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the type of underline applied to the range.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underline?: boolean;
         }
         /**
          * Specifies the options to be included in a search operation.
@@ -48611,12 +56848,12 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns a `PageSetup` object that's associated with the section.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Returns a `PageSetup` object that's associated with the section.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             pageSetup?: Word.Interfaces.PageSetupLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies if the section is protected for forms.
@@ -49442,6 +57679,128 @@ export declare namespace Word {
              * [Api set: WordApi 1.6]
              */
             topCellMargin?: boolean;
+        }
+        /**
+         * Represents a tab stop in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TabStopLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the next tab stop in the collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            next?: Word.Interfaces.TabStopLoadOptions;
+            /**
+             * Gets the previous tab stop in the collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previous?: Word.Interfaces.TabStopLoadOptions;
+            /**
+             * Gets a `TabAlignment` value that represents the alignment for the tab stop.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: boolean;
+            /**
+             * Gets whether this tab stop is a custom tab stop.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customTab?: boolean;
+            /**
+             * Gets a `TabLeader` value that represents the leader for this `TabStop` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leader?: boolean;
+            /**
+             * Gets the position of the tab stop relative to the left margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: boolean;
+        }
+        /**
+         * Represents a collection of {@link Word.TabStop | tab stops} in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TabStopCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the next tab stop in the collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            next?: Word.Interfaces.TabStopLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the previous tab stop in the collection.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previous?: Word.Interfaces.TabStopLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets a `TabAlignment` value that represents the alignment for the tab stop.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether this tab stop is a custom tab stop.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customTab?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a `TabLeader` value that represents the leader for this `TabStop` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leader?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the position of the tab stop relative to the left margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: boolean;
         }
         /**
          * Contains the collection of the document's Table objects.
@@ -50494,6 +58853,435 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
+         * Contains the view attributes (such as show all, field shading, and table gridlines) for a window or pane.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ViewLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the instance of a `RevisionsFilter` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsFilter?: Word.Interfaces.RevisionsFilterLoadOptions;
+            /**
+             * Specifies whether all nonprinting characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areAllNonprintingCharactersDisplayed?: boolean;
+            /**
+             * Gets whether background colors and images are shown when the document is displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundsDisplayed?: boolean;
+            /**
+             * Gets whether square brackets are displayed at the beginning and end of each bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBookmarksIndicated?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays the comments in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areCommentsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areConnectingLinesToRevisionsBalloonDisplayed?: boolean;
+            /**
+             * Gets whether crop marks are shown in the corners of pages to indicate where margins are located.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areCropMarksDisplayed?: boolean;
+            /**
+             * Gets whether objects created with the drawing tools are displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areDrawingsDisplayed?: boolean;
+            /**
+             * Specifies whether shading is applied to the ranges in the document that users have permission to modify.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areEditableRangesShaded?: boolean;
+            /**
+             * Specifies whether field codes are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFieldCodesDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFormatChangesDisplayed?: boolean;
+            /**
+             * Specifies whether handwritten ink annotations are shown or hidden.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areInkAnnotationsDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areInsertionsAndDeletionsDisplayed?: boolean;
+            /**
+             * Gets whether lines wrap at the right edge of the document window rather than at the right margin or the right column boundary.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areLinesWrappedToWindow?: boolean;
+            /**
+             * Gets whether object anchors are displayed next to items that can be positioned in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areObjectAnchorsDisplayed?: boolean;
+            /**
+             * Gets whether Microsoft Word displays optional line breaks.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOptionalBreaksDisplayed?: boolean;
+            /**
+             * Gets whether optional hyphens are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOptionalHyphensDisplayed?: boolean;
+            /**
+             * Gets whether other authors' presence should be visible in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areOtherAuthorsVisible?: boolean;
+            /**
+             * Gets whether the top and bottom margins and the gray area between pages in the document are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            arePageBoundariesDisplayed?: boolean;
+            /**
+             * Gets whether paragraph marks are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areParagraphsMarksDisplayed?: boolean;
+            /**
+             * Gets whether blank boxes are displayed as placeholders for pictures.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            arePicturePlaceholdersDisplayed?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areRevisionsAndCommentsDisplayed?: boolean;
+            /**
+             * Gets whether space characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areSpacesIndicated?: boolean;
+            /**
+             * Specifies whether table gridlines are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTableGridlinesDisplayed?: boolean;
+            /**
+             * Gets whether tab characters are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTabsDisplayed?: boolean;
+            /**
+             * Gets whether dotted lines are displayed around page margins, text columns, objects, and frames in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTextBoundariesDisplayed?: boolean;
+            /**
+             * Specifies the column width in Reading mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnWidth?: boolean;
+            /**
+             * Gets on-screen shading for fields.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fieldShading?: boolean;
+            /**
+             * Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDraft?: boolean;
+            /**
+             * Specifies whether only the first line of body text is shown in outline view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFirstLineOnlyDisplayed?: boolean;
+            /**
+             * Specifies whether character formatting is visible in outline view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormatDisplayed?: boolean;
+            /**
+             * Specifies whether the window is in full-screen view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFullScreen?: boolean;
+            /**
+             * Gets whether text formatted as hidden text is displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHiddenTextDisplayed?: boolean;
+            /**
+             * Gets whether highlight formatting is displayed and printed with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isHighlightingDisplayed?: boolean;
+            /**
+             * Specifies whether the document is in conflict mode view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInConflictMode?: boolean;
+            /**
+             * Specifies whether Microsoft Word is in Panning mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInPanning?: boolean;
+            /**
+             * Specifies whether the document is being viewed in reading layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInReadingLayout?: boolean;
+            /**
+             * Specifies whether mail merge data is displayed instead of mail merge fields.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMailMergeDataView?: boolean;
+            /**
+             * Specifies whether the text in the document is visible when the header and footer areas are displayed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMainTextLayerVisible?: boolean;
+            /**
+             * Specifies whether the pointer is displayed as a magnifying glass in print preview.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPointerShownAsMagnifier?: boolean;
+            /**
+             * Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadingLayoutActualView?: boolean;
+            /**
+             * Specifies whether XML tags are visible in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isXmlMarkupVisible?: boolean;
+            /**
+             * Specifies the display mode for tracked changes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            markupMode?: boolean;
+            /**
+             * Specifies the page color in Reading mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageColor?: boolean;
+            /**
+             * Specifies the page movement type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageMovementType?: boolean;
+            /**
+             * Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutTruncateMargins?: boolean;
+            /**
+             * Gets whether Word displays revision balloons in the left or right margin in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonSide?: boolean;
+            /**
+             * Specifies the width of the revision balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonWidth?: boolean;
+            /**
+             * Specifies how Microsoft Word measures the width of revision balloons.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionsBalloonWidthType?: boolean;
+            /**
+             * Specifies the document element displayed in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            seekView?: boolean;
+            /**
+             * Specifies the active window pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitSpecial?: boolean;
+            /**
+             * Specifies the view type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
          * Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text boxes, geometric shapes, groups, pictures, and canvases.
          *
          * @remarks
@@ -51164,6 +59952,77 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.2]
              */
             type?: boolean;
+        }
+        /**
+         * Represents a single reviewer of a document in which changes have been tracked. The `Reviewer` object is a member of the {@link Word.ReviewerCollection} object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ReviewerLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies if the `Reviewer` object is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+        }
+        /**
+         * A collection of {@link Word.Reviewer} objects that represents the reviewers of one or more documents. The `ReviewerCollection` object contains the names of all reviewers who have reviewed documents opened or edited on a computer.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ReviewerCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the `Reviewer` object is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+        }
+        /**
+         * Represents the current settings related to the display of reviewers' comments and revision marks in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface RevisionsFilterLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            markup?: boolean;
+            /**
+             * Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: boolean;
         }
         /**
          * Represents a single item in a {@link Word.RepeatingSectionControlControl}.
@@ -52160,6 +61019,51 @@ export declare namespace Word {
             modifiedBy?: boolean;
         }
         /**
+         * Represents a dropped capital letter in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface DropCapLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the distance (in points) between the dropped capital letter and the paragraph text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            distanceFromText?: boolean;
+            /**
+             * Gets the name of the font for the dropped capital letter.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fontName?: boolean;
+            /**
+             * Gets the height (in lines) of the dropped capital letter.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linesToDrop?: boolean;
+            /**
+             * Gets the position of the dropped capital letter.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            position?: boolean;
+        }
+        /**
          * Represents the list formatting characteristics of a range.
          *
          * @remarks
@@ -52249,20 +61153,20 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `ColorFormat` object that represents the background color for the fill.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the background color for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
-            * Returns a `ColorFormat` object that represents the foreground color for the fill.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the foreground color for the fill.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
              * Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
@@ -52441,12 +61345,12 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `ColorFormat` object that represents the color for a glow effect.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color for a glow effect.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             color?: Word.Interfaces.ColorFormatLoadOptions;
             /**
              * Specifies the length of the radius for a glow effect.
@@ -52479,20 +61383,20 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets a `ColorFormat` object that represents the background color for a patterned line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `ColorFormat` object that represents the background color for a patterned line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
-            * Gets a `ColorFormat` object that represents the foreground color for the line.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a `ColorFormat` object that represents the foreground color for the line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
              * Specifies the length of the arrowhead at the beginning of the line.
@@ -52718,12 +61622,12 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
              * Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
@@ -52822,20 +61726,20 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `ColorFormat` object that represents color of the contour of a shape.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents color of the contour of a shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             contourColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
-            * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `ColorFormat` object that represents the color of the shape's extrusion.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             extrusionColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
              * Specifies the depth of the bottom bevel.
@@ -53490,6 +62394,338 @@ export declare namespace Word {
              * @beta
              */
             width?: boolean;
+        }
+        /**
+         * Represents a single bookmark in a document, selection, or range. The `Bookmark` object is a member of the `Bookmark` collection.
+                    The {@link Word.BookmarkCollection} includes all the bookmarks listed in the **Bookmark** dialog box (**Insert** menu).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BookmarkLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Specifies the ending character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: boolean;
+            /**
+             * Returns `true` if the bookmark is a table column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isColumn?: boolean;
+            /**
+             * Returns `true` if the bookmark is empty.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEmpty?: boolean;
+            /**
+             * Returns the name of the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Specifies the starting character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: boolean;
+            /**
+             * Returns the story type for the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyType?: boolean;
+        }
+        /**
+         * A collection of {@link Word.Bookmark} objects that represent the bookmarks in the specified selection, range, or document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BookmarkCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies the ending character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            end?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns `true` if the bookmark is a table column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isColumn?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns `true` if the bookmark is empty.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEmpty?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the name of the `Bookmark` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the starting character position of the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            start?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the story type for the bookmark.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            storyType?: boolean;
+        }
+        /**
+         * Represents a single index. The `Index` object is a member of the {@link Word.IndexCollection}. The `IndexCollection` includes all the
+                    indexes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface IndexLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns a `Range` object that represents the portion of the document that is contained within the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Gets a value that represents how Microsoft Word classifies the first character of entries in the index.
+                        See `IndexFilter` for available values.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            filter?: boolean;
+            /**
+             * Gets the text between alphabetical groups (entries that start with the same letter) in the index. Corresponds to
+                        the **\h** switch for an {@link https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e | INDEX field}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            headingSeparator?: boolean;
+            /**
+             * Gets a `LanguageId` value that represents the sorting language to use for the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indexLanguage?: boolean;
+            /**
+             * Gets the number of columns for each page of the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberOfColumns?: boolean;
+            /**
+             * Specifies if page numbers are aligned with the right margin in the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightAlignPageNumbers?: boolean;
+            /**
+             * Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under
+                        one heading and words that begin with "A" are under another).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            separateAccentedLetterHeadings?: boolean;
+            /**
+             * Specifies the sorting criteria for the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: boolean;
+            /**
+             * Specifies the leader character between entries in the index and their associated page numbers.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabLeader?: boolean;
+            /**
+             * Gets the index type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * A collection of {@link Word.Index} objects that represents all the indexes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface IndexCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that is contained within the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets a value that represents how Microsoft Word classifies the first character of entries in the index.
+                        See `IndexFilter` for available values.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            filter?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the text between alphabetical groups (entries that start with the same letter) in the index. Corresponds to
+                        the **\h** switch for an {@link https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e | INDEX field}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            headingSeparator?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a `LanguageId` value that represents the sorting language to use for the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indexLanguage?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the number of columns for each page of the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberOfColumns?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if page numbers are aligned with the right margin in the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightAlignPageNumbers?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under
+                        one heading and words that begin with "A" are under another).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            separateAccentedLetterHeadings?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the sorting criteria for the index.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the leader character between entries in the index and their associated page numbers.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabLeader?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the index type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
     }
 }

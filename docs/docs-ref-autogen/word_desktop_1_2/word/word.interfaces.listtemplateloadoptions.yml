@@ -3,7 +3,7 @@ name: Word.Interfaces.ListTemplateLoadOptions
 uid: word!Word.Interfaces.ListTemplateLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateLoadOptions
-summary: Represents a ListTemplate.
+summary: Represents a list template.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -32,7 +32,7 @@ properties:
     uid: word!Word.Interfaces.ListTemplateLoadOptions#outlineNumbered:member
     package: word!
     fullName: outlineNumbered
-    summary: Specifies whether the specified ListTemplate object is outline numbered.
+    summary: Specifies whether the list template is outline numbered.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

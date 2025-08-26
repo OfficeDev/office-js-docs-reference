@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: Word.Interfaces.DropCapLoadOptions
+uid: word!Word.Interfaces.DropCapLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.DropCapLoadOptions
+summary: Represents a dropped capital letter in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.DropCapLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: distanceFromText
+    uid: word!Word.Interfaces.DropCapLoadOptions#distanceFromText:member
+    package: word!
+    fullName: distanceFromText
+    summary: >-
+      Gets the distance (in points) between the dropped capital letter and the
+      paragraph text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'distanceFromText?: boolean;'
+      return:
+        type: boolean
+  - name: fontName
+    uid: word!Word.Interfaces.DropCapLoadOptions#fontName:member
+    package: word!
+    fullName: fontName
+    summary: Gets the name of the font for the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fontName?: boolean;'
+      return:
+        type: boolean
+  - name: linesToDrop
+    uid: word!Word.Interfaces.DropCapLoadOptions#linesToDrop:member
+    package: word!
+    fullName: linesToDrop
+    summary: Gets the height (in lines) of the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linesToDrop?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: word!Word.Interfaces.DropCapLoadOptions#position:member
+    package: word!
+    fullName: position
+    summary: Gets the position of the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean

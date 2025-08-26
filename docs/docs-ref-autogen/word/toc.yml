@@ -29,6 +29,8 @@ items:
                 uid: word!Word.ArrowheadStyle:enum
               - name: ArrowheadWidth
                 uid: word!Word.ArrowheadWidth:enum
+              - name: BaselineAlignment
+                uid: word!Word.BaselineAlignment:enum
               - name: BevelType
                 uid: word!Word.BevelType:enum
               - name: BodyType
@@ -57,12 +59,18 @@ items:
                 uid: word!Word.ChangeTrackingState:enum
               - name: ChangeTrackingVersion
                 uid: word!Word.ChangeTrackingVersion:enum
+              - name: CharacterCase
+                uid: word!Word.CharacterCase:enum
+              - name: CharacterWidth
+                uid: word!Word.CharacterWidth:enum
               - name: CloseBehavior
                 uid: word!Word.CloseBehavior:enum
               - name: ColorIndex
                 uid: word!Word.ColorIndex:enum
               - name: ColorType
                 uid: word!Word.ColorType:enum
+              - name: ColumnWidth
+                uid: word!Word.ColumnWidth:enum
               - name: CommentChangeType
                 uid: word!Word.CommentChangeType:enum
               - name: CompareTarget
@@ -91,6 +99,8 @@ items:
                 uid: word!Word.DocPartInsertType:enum
               - name: DocumentPropertyType
                 uid: word!Word.DocumentPropertyType:enum
+              - name: DropPosition
+                uid: word!Word.DropPosition:enum
               - name: EmphasisMark
                 uid: word!Word.EmphasisMark:enum
               - name: ErrorCodes
@@ -107,6 +117,8 @@ items:
                 uid: word!Word.FarEastLineBreakLevel:enum
               - name: FieldKind
                 uid: word!Word.FieldKind:enum
+              - name: FieldShading
+                uid: word!Word.FieldShading:enum
               - name: FieldType
                 uid: word!Word.FieldType:enum
               - name: FillType
@@ -127,16 +139,32 @@ items:
                 uid: word!Word.GutterStyle:enum
               - name: HeaderFooterType
                 uid: word!Word.HeaderFooterType:enum
+              - name: HeadingSeparator
+                uid: word!Word.HeadingSeparator:enum
+              - name: HorizontalInVerticalType
+                uid: word!Word.HorizontalInVerticalType:enum
               - name: HyperlinkType
                 uid: word!Word.HyperlinkType:enum
               - name: ImageFormat
                 uid: word!Word.ImageFormat:enum
+              - name: ImeMode
+                uid: word!Word.ImeMode:enum
               - name: ImportedStylesConflictBehavior
                 uid: word!Word.ImportedStylesConflictBehavior:enum
+              - name: IndexFilter
+                uid: word!Word.IndexFilter:enum
+              - name: IndexFormat
+                uid: word!Word.IndexFormat:enum
+              - name: IndexSortBy
+                uid: word!Word.IndexSortBy:enum
+              - name: IndexType
+                uid: word!Word.IndexType:enum
               - name: InsertLocation
                 uid: word!Word.InsertLocation:enum
               - name: JustificationMode
                 uid: word!Word.JustificationMode:enum
+              - name: Kana
+                uid: word!Word.Kana:enum
               - name: LanguageId
                 uid: word!Word.LanguageId:enum
               - name: LayoutMode
@@ -149,8 +177,12 @@ items:
                 uid: word!Word.LineDashStyle:enum
               - name: LineFormatStyle
                 uid: word!Word.LineFormatStyle:enum
+              - name: LineSpacing
+                uid: word!Word.LineSpacing:enum
               - name: LineWidth
                 uid: word!Word.LineWidth:enum
+              - name: LinkType
+                uid: word!Word.LinkType:enum
               - name: ListApplyTo
                 uid: word!Word.ListApplyTo:enum
               - name: ListBuiltInNumberStyle
@@ -175,10 +207,16 @@ items:
                 uid: word!Word.NumberSpacing:enum
               - name: NumberType
                 uid: word!Word.NumberType:enum
+              - name: OleVerb
+                uid: word!Word.OleVerb:enum
               - name: OutlineLevel
                 uid: word!Word.OutlineLevel:enum
               - name: PageBorderArt
                 uid: word!Word.PageBorderArt:enum
+              - name: PageColor
+                uid: word!Word.PageColor:enum
+              - name: PageMovementType
+                uid: word!Word.PageMovementType:enum
               - name: PageOrientation
                 uid: word!Word.PageOrientation:enum
               - name: PageSetupVerticalAlignment
@@ -207,6 +245,10 @@ items:
                 uid: word!Word.PresetThreeDimensionalFormat:enum
               - name: RangeLocation
                 uid: word!Word.RangeLocation:enum
+              - name: ReadingLayoutMargin
+                uid: word!Word.ReadingLayoutMargin:enum
+              - name: ReadingOrder
+                uid: word!Word.ReadingOrder:enum
               - name: ReflectionType
                 uid: word!Word.ReflectionType:enum
               - name: RelativeHorizontalPosition
@@ -215,14 +257,30 @@ items:
                 uid: word!Word.RelativeSize:enum
               - name: RelativeVerticalPosition
                 uid: word!Word.RelativeVerticalPosition:enum
+              - name: RevisionsBalloonMargin
+                uid: word!Word.RevisionsBalloonMargin:enum
+              - name: RevisionsBalloonWidthType
+                uid: word!Word.RevisionsBalloonWidthType:enum
+              - name: RevisionsMarkup
+                uid: word!Word.RevisionsMarkup:enum
+              - name: RevisionsMode
+                uid: word!Word.RevisionsMode:enum
+              - name: RevisionsView
+                uid: word!Word.RevisionsView:enum
+              - name: RevisionType
+                uid: word!Word.RevisionType:enum
               - name: RulerStyle
                 uid: word!Word.RulerStyle:enum
               - name: SaveBehavior
                 uid: word!Word.SaveBehavior:enum
+              - name: SaveConfiguration
+                uid: word!Word.SaveConfiguration:enum
               - name: SectionDirection
                 uid: word!Word.SectionDirection:enum
               - name: SectionStart
                 uid: word!Word.SectionStart:enum
+              - name: SeekView
+                uid: word!Word.SeekView:enum
               - name: SelectionMode
                 uid: word!Word.SelectionMode:enum
               - name: ShadingTextureType
@@ -249,12 +307,24 @@ items:
                 uid: word!Word.ShapeTextWrapType:enum
               - name: ShapeType
                 uid: word!Word.ShapeType:enum
+              - name: ShowSourceDocuments
+                uid: word!Word.ShowSourceDocuments:enum
+              - name: SpecialPane
+                uid: word!Word.SpecialPane:enum
+              - name: StoryType
+                uid: word!Word.StoryType:enum
               - name: StyleType
                 uid: word!Word.StyleType:enum
               - name: StylisticSet
                 uid: word!Word.StylisticSet:enum
+              - name: TabAlignment
+                uid: word!Word.TabAlignment:enum
+              - name: TabLeader
+                uid: word!Word.TabLeader:enum
               - name: TemplateType
                 uid: word!Word.TemplateType:enum
+              - name: TextboxTightWrap
+                uid: word!Word.TextboxTightWrap:enum
               - name: TextureAlignment
                 uid: word!Word.TextureAlignment:enum
               - name: TextureType
@@ -265,10 +335,20 @@ items:
                 uid: word!Word.TrackedChangeType:enum
               - name: TrailingCharacter
                 uid: word!Word.TrailingCharacter:enum
+              - name: TwoLinesInOneType
+                uid: word!Word.TwoLinesInOneType:enum
+              - name: Underline
+                uid: word!Word.Underline:enum
               - name: UnderlineType
                 uid: word!Word.UnderlineType:enum
               - name: VerticalAlignment
                 uid: word!Word.VerticalAlignment:enum
+              - name: ViewType
+                uid: word!Word.ViewType:enum
+              - name: WindowState
+                uid: word!Word.WindowState:enum
+              - name: WindowType
+                uid: word!Word.WindowType:enum
           - name: Annotation
             uid: word!Word.Annotation:class
           - name: AnnotationClickedEventArgs
@@ -291,6 +371,10 @@ items:
             uid: word!Word.Bibliography:class
           - name: Body
             uid: word!Word.Body:class
+          - name: Bookmark
+            uid: word!Word.Bookmark:class
+          - name: BookmarkCollection
+            uid: word!Word.BookmarkCollection:class
           - name: Border
             uid: word!Word.Border:class
           - name: BorderCollection
@@ -425,6 +509,8 @@ items:
             uid: word!Word.DocumentLibraryVersionCollection:class
           - name: DocumentProperties
             uid: word!Word.DocumentProperties:class
+          - name: DropCap
+            uid: word!Word.DropCap:class
           - name: DropDownListContentControl
             uid: word!Word.DropDownListContentControl:class
           - name: Field
@@ -451,6 +537,16 @@ items:
             uid: word!Word.HyperlinkAddOptions:interface
           - name: HyperlinkCollection
             uid: word!Word.HyperlinkCollection:class
+          - name: Index
+            uid: word!Word.Index:class
+          - name: IndexAddOptions
+            uid: word!Word.IndexAddOptions:interface
+          - name: IndexCollection
+            uid: word!Word.IndexCollection:class
+          - name: IndexMarkAllEntriesOptions
+            uid: word!Word.IndexMarkAllEntriesOptions:interface
+          - name: IndexMarkEntryOptions
+            uid: word!Word.IndexMarkEntryOptions:interface
           - name: InlinePicture
             uid: word!Word.InlinePicture:class
           - name: InlinePictureCollection
@@ -463,6 +559,8 @@ items:
             uid: word!Word.LineFormat:class
           - name: LineNumbering
             uid: word!Word.LineNumbering:class
+          - name: LinkFormat
+            uid: word!Word.LinkFormat:class
           - name: List
             uid: word!Word.List:class
           - name: ListCollection
@@ -485,6 +583,8 @@ items:
             uid: word!Word.NoteItem:class
           - name: NoteItemCollection
             uid: word!Word.NoteItemCollection:class
+          - name: OleFormat
+            uid: word!Word.OleFormat:class
           - name: Page
             uid: word!Word.Page:class
           - name: PageCollection
@@ -523,6 +623,12 @@ items:
             uid: word!Word.RepeatingSectionItemCollection:class
           - name: RequestContext
             uid: word!Word.RequestContext:class
+          - name: Reviewer
+            uid: word!Word.Reviewer:class
+          - name: ReviewerCollection
+            uid: word!Word.ReviewerCollection:class
+          - name: RevisionsFilter
+            uid: word!Word.RevisionsFilter:class
           - name: SearchOptions
             uid: word!Word.SearchOptions:class
           - name: Section
@@ -577,6 +683,12 @@ items:
             uid: word!Word.TableRowCollection:class
           - name: TableStyle
             uid: word!Word.TableStyle:class
+          - name: TabStop
+            uid: word!Word.TabStop:class
+          - name: TabStopAddOptions
+            uid: word!Word.TabStopAddOptions:interface
+          - name: TabStopCollection
+            uid: word!Word.TabStopCollection:class
           - name: Template
             uid: word!Word.Template:class
           - name: TemplateCollection
@@ -595,10 +707,18 @@ items:
             uid: word!Word.TrackedChange:class
           - name: TrackedChangeCollection
             uid: word!Word.TrackedChangeCollection:class
+          - name: View
+            uid: word!Word.View:class
           - name: Window
             uid: word!Word.Window:class
+          - name: WindowCloseOptions
+            uid: word!Word.WindowCloseOptions:interface
           - name: WindowCollection
             uid: word!Word.WindowCollection:class
+          - name: WindowPageScrollOptions
+            uid: word!Word.WindowPageScrollOptions:interface
+          - name: WindowScrollOptions
+            uid: word!Word.WindowScrollOptions:interface
           - name: XmlMapping
             uid: word!Word.XmlMapping:class
           - name: XmlSetMappingOptions

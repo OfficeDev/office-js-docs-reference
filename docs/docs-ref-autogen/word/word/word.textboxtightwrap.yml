@@ -1,0 +1,63 @@
+### YamlMime:TSEnum
+name: Word.TextboxTightWrap
+uid: word!Word.TextboxTightWrap:enum
+package: word!
+fullName: Word.TextboxTightWrap
+summary: Represents the type of tight wrap for a text box.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: all
+    uid: word!Word.TextboxTightWrap.all:member
+    package: word!
+    summary: >-
+      Represents tight wrap around all lines.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"All"'
+  - name: firstAndLastLines
+    uid: word!Word.TextboxTightWrap.firstAndLastLines:member
+    package: word!
+    summary: >-
+      Represents tight wrap around the first and last lines.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FirstAndLastLines"'
+  - name: firstLineOnly
+    uid: word!Word.TextboxTightWrap.firstLineOnly:member
+    package: word!
+    summary: >-
+      Represents tight wrap around the first line only.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FirstLineOnly"'
+  - name: lastLineOnly
+    uid: word!Word.TextboxTightWrap.lastLineOnly:member
+    package: word!
+    summary: >-
+      Represents tight wrap around the last line only.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LastLineOnly"'
+  - name: none
+    uid: word!Word.TextboxTightWrap.none:member
+    package: word!
+    summary: >-
+      Represents that there's no tight wrap.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'

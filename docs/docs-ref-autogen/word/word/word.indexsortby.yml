@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.IndexSortBy
+uid: word!Word.IndexSortBy:enum
+package: word!
+fullName: Word.IndexSortBy
+summary: Specifies how an index is sorted.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: stroke
+    uid: word!Word.IndexSortBy.stroke:member
+    package: word!
+    summary: >-
+      Sort by stroke.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Stroke"'
+  - name: syllable
+    uid: word!Word.IndexSortBy.syllable:member
+    package: word!
+    summary: >-
+      Sort by syllable.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Syllable"'
