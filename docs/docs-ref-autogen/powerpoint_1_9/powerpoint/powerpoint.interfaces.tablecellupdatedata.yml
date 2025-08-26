@@ -76,9 +76,10 @@ properties:
     package: powerpoint!
     fullName: textRuns
     summary: >-
-      Specifies the contents of the table cell as an array of  objects. Each
-      `TextRun` object represents a sequence of one or more characters that
-      share the same font attributes.
+      Specifies the contents of the table cell as an array of
+      [PowerPoint.TextRun](xref:powerpoint!PowerPoint.TextRun:interface)
+      objects. Each `TextRun` object represents a sequence of one or more
+      characters that share the same font attributes.
     remarks: >-
       \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

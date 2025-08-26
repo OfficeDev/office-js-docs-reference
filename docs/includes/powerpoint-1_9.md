@@ -27,7 +27,7 @@
 ||[margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)|Gets the set of margins in the table cell.|
 ||[resize(rowCount: number, columnCount: number)](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-resize-member(1))|Resizes the table cell to span across a specified number of rows and columns.|
 ||[split(rowCount: number, columnCount: number)](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-split-member(1))|Splits the cell into the specified number of rows and columns.|
-||[textRuns](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-textruns-member)|Specifies the contents of the table cell as an array of TextRun objects.|
+||[textRuns](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-textruns-member)|Specifies the contents of the table cell as an array of PowerPoint.TextRun objects.|
 ||[verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-verticalalignment-member)|Specifies the vertical alignment of the text in the table cell.|
 |[TableClearOptions](/javascript/api/powerpoint/powerpoint.tableclearoptions)|[all](/javascript/api/powerpoint/powerpoint.tableclearoptions#powerpoint-powerpoint-tableclearoptions-all-member)|Specifies if both values and formatting of the table should be cleared.|
 ||[format](/javascript/api/powerpoint/powerpoint.tableclearoptions#powerpoint-powerpoint-tableclearoptions-format-member)|Specifies if the formatting of the table should be cleared.|

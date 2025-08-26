@@ -2976,7 +2976,7 @@ export declare namespace PowerPoint {
          */
         text: string;
         /**
-         * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+         * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
@@ -3354,7 +3354,7 @@ export declare namespace PowerPoint {
          */
         text?: string;
         /**
-         * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+         * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
@@ -9152,7 +9152,7 @@ export declare namespace PowerPoint {
              */
             text?: string;
             /**
-             * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -10083,7 +10083,7 @@ export declare namespace PowerPoint {
              */
             text?: string;
             /**
-             * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -11476,7 +11476,7 @@ export declare namespace PowerPoint {
              */
             text?: boolean;
             /**
-             * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -11582,7 +11582,7 @@ export declare namespace PowerPoint {
              */
             text?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * For EACH ITEM in the collection: Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
