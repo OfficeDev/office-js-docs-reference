@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: Word.WindowCloseOptions
+uid: word!Word.WindowCloseOptions:interface
+package: word!
+fullName: Word.WindowCloseOptions
+summary: >-
+  The options that define whether to save changes before closing and whether to
+  route the document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: routeDocument
+    uid: word!Word.WindowCloseOptions#routeDocument:member
+    package: word!
+    fullName: routeDocument
+    summary: >-
+      If provided, specifies whether to route the document to the next
+      recipient. If the document doesn't have a routing slip attached, this
+      property is ignored.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'routeDocument?: boolean;'
+      return:
+        type: boolean
+  - name: saveChanges
+    uid: word!Word.WindowCloseOptions#saveChanges:member
+    package: word!
+    fullName: saveChanges
+    summary: >-
+      If provided, specifies the save action for the document. For available
+      values, see
+      [Word.SaveConfiguration](xref:word!Word.SaveConfiguration:enum)<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        saveChanges?: Word.SaveConfiguration | "DoNotSaveChanges" |
+        "SaveChanges" | "PromptToSaveChanges";
+      return:
+        type: >-
+          <xref uid="word!Word.SaveConfiguration:enum" /> | "DoNotSaveChanges" |
+          "SaveChanges" | "PromptToSaveChanges"

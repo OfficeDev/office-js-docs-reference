@@ -43,6 +43,55 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: bold
+    uid: word!Word.Range#bold:member
+    package: word!
+    fullName: bold
+    summary: Specifies whether the range is formatted as bold.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly bold: boolean;'
+      return:
+        type: boolean
+  - name: boldBidirectional
+    uid: word!Word.Range#boldBidirectional:member
+    package: word!
+    fullName: boldBidirectional
+    summary: >-
+      Specifies whether the range is formatted as bold in a right-to-left
+      language document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly boldBidirectional: boolean;'
+      return:
+        type: boolean
+  - name: bookmarks
+    uid: word!Word.Range#bookmarks:member
+    package: word!
+    fullName: bookmarks
+    summary: >-
+      Returns a `BookmarkCollection` object that represents all the bookmarks in
+      the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly bookmarks: Word.BookmarkCollection;'
+      return:
+        type: <xref uid="word!Word.BookmarkCollection:class" />
   - name: borders
     uid: word!Word.Range#borders:member
     package: word!
@@ -60,6 +109,59 @@ properties:
       content: 'readonly borders: Word.BorderUniversalCollection;'
       return:
         type: <xref uid="word!Word.BorderUniversalCollection:class" />
+  - name: case
+    uid: word!Word.Range#case:member
+    package: word!
+    fullName: case
+    summary: >-
+      Specifies a `CharacterCase` value that represents the case of the text in
+      the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        case: Word.CharacterCase | "Next" | "Lower" | "Upper" | "TitleWord" |
+        "TitleSentence" | "Toggle" | "HalfWidth" | "FullWidth" | "Katakana" |
+        "Hiragana";
+      return:
+        type: >-
+          <xref uid="word!Word.CharacterCase:enum" /> | "Next" | "Lower" |
+          "Upper" | "TitleWord" | "TitleSentence" | "Toggle" | "HalfWidth" |
+          "FullWidth" | "Katakana" | "Hiragana"
+  - name: characterWidth
+    uid: word!Word.Range#characterWidth:member
+    package: word!
+    fullName: characterWidth
+    summary: Specifies the character width of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'characterWidth: Word.CharacterWidth | "Half" | "Full";'
+      return:
+        type: <xref uid="word!Word.CharacterWidth:enum" /> | "Half" | "Full"
+  - name: combineCharacters
+    uid: word!Word.Range#combineCharacters:member
+    package: word!
+    fullName: combineCharacters
+    summary: Specifies if the range contains combined characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'combineCharacters: boolean;'
+      return:
+        type: boolean
   - name: contentControls
     uid: word!Word.Range#contentControls:member
     package: word!
@@ -90,6 +192,60 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: disableCharacterSpaceGrid
+    uid: word!Word.Range#disableCharacterSpaceGrid:member
+    package: word!
+    fullName: disableCharacterSpaceGrid
+    summary: >-
+      Specifies if Microsoft Word ignores the number of characters per line for
+      the corresponding `Range` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly disableCharacterSpaceGrid: boolean;'
+      return:
+        type: boolean
+  - name: emphasisMark
+    uid: word!Word.Range#emphasisMark:member
+    package: word!
+    fullName: emphasisMark
+    summary: >-
+      Specifies the emphasis mark for a character or designated character
+      string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly emphasisMark: Word.EmphasisMark | "None" | "OverSolidCircle" |
+        "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+      return:
+        type: >-
+          <xref uid="word!Word.EmphasisMark:enum" /> | "None" |
+          "OverSolidCircle" | "OverComma" | "OverWhiteCircle" |
+          "UnderSolidCircle"
+  - name: end
+    uid: word!Word.Range#end:member
+    package: word!
+    fullName: end
+    summary: Specifies the ending character position of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'end: number;'
+      return:
+        type: number
   - name: endnotes
     uid: word!Word.Range#endnotes:member
     package: word!
@@ -120,6 +276,23 @@ properties:
       content: 'readonly fields: Word.FieldCollection;'
       return:
         type: <xref uid="word!Word.FieldCollection:class" />
+  - name: fitTextWidth
+    uid: word!Word.Range#fitTextWidth:member
+    package: word!
+    fullName: fitTextWidth
+    summary: >-
+      Specifies the width (in the current measurement units) in which Microsoft
+      Word fits the text in the current selection or range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fitTextWidth: number;'
+      return:
+        type: number
   - name: font
     uid: word!Word.Range#font:member
     package: word!
@@ -191,6 +364,21 @@ properties:
       content: 'readonly frames: Word.FrameCollection;'
       return:
         type: <xref uid="word!Word.FrameCollection:class" />
+  - name: grammarChecked
+    uid: word!Word.Range#grammarChecked:member
+    package: word!
+    fullName: grammarChecked
+    summary: Specifies if a grammar check has been run on the range or document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'grammarChecked: boolean;'
+      return:
+        type: boolean
   - name: hasNoProofing
     uid: word!Word.Range#hasNoProofing:member
     package: word!
@@ -208,6 +396,49 @@ properties:
       content: 'hasNoProofing: boolean;'
       return:
         type: boolean
+  - name: highlightColorIndex
+    uid: word!Word.Range#highlightColorIndex:member
+    package: word!
+    fullName: highlightColorIndex
+    summary: Specifies the highlight color for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly highlightColorIndex: Word.ColorIndex | "Auto" | "Black" |
+        "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" |
+        "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" |
+        "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" |
+        "ByAuthor";
+      return:
+        type: >-
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+  - name: horizontalInVertical
+    uid: word!Word.Range#horizontalInVertical:member
+    package: word!
+    fullName: horizontalInVertical
+    summary: Specifies the formatting for horizontal text set within vertical text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        horizontalInVertical: Word.HorizontalInVerticalType | "None" |
+        "FitInLine" | "ResizeLine";
+      return:
+        type: >-
+          <xref uid="word!Word.HorizontalInVerticalType:enum" /> | "None" |
+          "FitInLine" | "ResizeLine"
   - name: hyperlink
     uid: word!Word.Range#hyperlink:member
     package: word!
@@ -244,6 +475,21 @@ properties:
       content: 'readonly hyperlinks: Word.HyperlinkCollection;'
       return:
         type: <xref uid="word!Word.HyperlinkCollection:class" />
+  - name: id
+    uid: word!Word.Range#id:member
+    package: word!
+    fullName: id
+    summary: Specifies the ID for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string
   - name: inlinePictures
     uid: word!Word.Range#inlinePictures:member
     package: word!
@@ -274,6 +520,87 @@ properties:
       content: 'readonly isEmpty: boolean;'
       return:
         type: boolean
+  - name: isEndOfRowMark
+    uid: word!Word.Range#isEndOfRowMark:member
+    package: word!
+    fullName: isEndOfRowMark
+    summary: >-
+      Gets if the range is collapsed and is located at the end-of-row mark in a
+      table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isEndOfRowMark: boolean;'
+      return:
+        type: boolean
+  - name: isTextVisibleOnScreen
+    uid: word!Word.Range#isTextVisibleOnScreen:member
+    package: word!
+    fullName: isTextVisibleOnScreen
+    summary: Gets whether the text in the range is visible on the screen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isTextVisibleOnScreen: boolean;'
+      return:
+        type: boolean
+  - name: italic
+    uid: word!Word.Range#italic:member
+    package: word!
+    fullName: italic
+    summary: Specifies if the font or range is formatted as italic.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly italic: boolean;'
+      return:
+        type: boolean
+  - name: italicBidirectional
+    uid: word!Word.Range#italicBidirectional:member
+    package: word!
+    fullName: italicBidirectional
+    summary: >-
+      Specifies if the font or range is formatted as italic (right-to-left
+      languages).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly italicBidirectional: boolean;'
+      return:
+        type: boolean
+  - name: kana
+    uid: word!Word.Range#kana:member
+    package: word!
+    fullName: kana
+    summary: >-
+      Specifies whether the range of Japanese language text is hiragana or
+      katakana.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'kana: Word.Kana | "Katakana" | "Hiragana";'
+      return:
+        type: <xref uid="word!Word.Kana:enum" /> | "Katakana" | "Hiragana"
   - name: languageDetected
     uid: word!Word.Range#languageDetected:member
     package: word!
@@ -926,6 +1253,97 @@ properties:
       content: 'readonly shapes: Word.ShapeCollection;'
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
+  - name: showAll
+    uid: word!Word.Range#showAll:member
+    package: word!
+    fullName: showAll
+    summary: >-
+      Specifies if all nonprinting characters (such as hidden text, tab marks,
+      space marks, and paragraph marks) are displayed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showAll: boolean;'
+      return:
+        type: boolean
+  - name: spellingChecked
+    uid: word!Word.Range#spellingChecked:member
+    package: word!
+    fullName: spellingChecked
+    summary: Specifies if spelling has been checked throughout the range or document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spellingChecked: boolean;'
+      return:
+        type: boolean
+  - name: start
+    uid: word!Word.Range#start:member
+    package: word!
+    fullName: start
+    summary: Specifies the starting character position of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start: number;'
+      return:
+        type: number
+  - name: storyLength
+    uid: word!Word.Range#storyLength:member
+    package: word!
+    fullName: storyLength
+    summary: Gets the number of characters in the story that contains the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly storyLength: number;'
+      return:
+        type: number
+  - name: storyType
+    uid: word!Word.Range#storyType:member
+    package: word!
+    fullName: storyType
+    summary: Gets the story type for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly storyType: Word.StoryType | "MainText" | "Footnotes" |
+        "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
+        "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
+        "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
+        "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
+        "EndnoteSeparator" | "EndnoteContinuationSeparator" |
+        "EndnoteContinuationNotice";
+      return:
+        type: >-
+          <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" |
+          "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
+          "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
+          "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
+          "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
+          "EndnoteSeparator" | "EndnoteContinuationSeparator" |
+          "EndnoteContinuationNotice"
   - name: style
     uid: word!Word.Range#style:member
     package: word!
@@ -1133,6 +1551,51 @@ properties:
       content: 'readonly text: string;'
       return:
         type: string
+  - name: twoLinesInOne
+    uid: word!Word.Range#twoLinesInOne:member
+    package: word!
+    fullName: twoLinesInOne
+    summary: >-
+      Specifies whether Microsoft Word sets two lines of text in one and
+      specifies the characters that enclose the text, if any.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        twoLinesInOne: Word.TwoLinesInOneType | "None" | "NoBrackets" |
+        "Parentheses" | "SquareBrackets" | "AngleBrackets" | "CurlyBrackets";
+      return:
+        type: >-
+          <xref uid="word!Word.TwoLinesInOneType:enum" /> | "None" |
+          "NoBrackets" | "Parentheses" | "SquareBrackets" | "AngleBrackets" |
+          "CurlyBrackets"
+  - name: underline
+    uid: word!Word.Range#underline:member
+    package: word!
+    fullName: underline
+    summary: Specifies the type of underline applied to the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly underline: Word.Underline | "None" | "Single" | "Words" |
+        "Double" | "Dotted" | "Thick" | "Dash" | "DotDash" | "DotDotDash" |
+        "Wavy" | "WavyHeavy" | "DottedHeavy" | "DashHeavy" | "DotDashHeavy" |
+        "DotDotDashHeavy" | "DashLong" | "DashLongHeavy" | "WavyDouble";
+      return:
+        type: >-
+          <xref uid="word!Word.Underline:enum" /> | "None" | "Single" | "Words"
+          | "Double" | "Dotted" | "Thick" | "Dash" | "DotDash" | "DotDotDash" |
+          "Wavy" | "WavyHeavy" | "DottedHeavy" | "DashHeavy" | "DotDashHeavy" |
+          "DotDotDashHeavy" | "DashLong" | "DashLongHeavy" | "WavyDouble"
 methods:
   - name: clear()
     uid: word!Word.Range#clear:member(1)

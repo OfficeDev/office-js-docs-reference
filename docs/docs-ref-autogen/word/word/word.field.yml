@@ -173,6 +173,21 @@ properties:
         type: >-
           <xref uid="word!Word.FieldKind:enum" /> | "None" | "Hot" | "Warm" |
           "Cold"
+  - name: linkFormat
+    uid: word!Word.Field#linkFormat:member
+    package: word!
+    fullName: linkFormat
+    summary: Gets a `LinkFormat` object that represents the link options of the field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly linkFormat: Word.LinkFormat;'
+      return:
+        type: <xref uid="word!Word.LinkFormat:class" />
   - name: locked
     uid: word!Word.Field#locked:member
     package: word!
@@ -221,6 +236,23 @@ properties:
       content: 'locked: boolean;'
       return:
         type: boolean
+  - name: oleFormat
+    uid: word!Word.Field#oleFormat:member
+    package: word!
+    fullName: oleFormat
+    summary: >-
+      Gets an `OleFormat` object that represents the OLE characteristics (other
+      than linking) for the field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly oleFormat: Word.OleFormat;'
+      return:
+        type: <xref uid="word!Word.OleFormat:class" />
   - name: parentBody
     uid: word!Word.Field#parentBody:member
     package: word!
@@ -514,6 +546,38 @@ properties:
           "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" |
           "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined"
 methods:
+  - name: copyToClipboard()
+    uid: word!Word.Field#copyToClipboard:member(1)
+    package: word!
+    fullName: copyToClipboard()
+    summary: Copies the field to the Clipboard.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'copyToClipboard(): void;'
+      return:
+        type: void
+        description: ''
+  - name: cut()
+    uid: word!Word.Field#cut:member(1)
+    package: word!
+    fullName: cut()
+    summary: Removes the field from the document and places it on the Clipboard.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cut(): void;'
+      return:
+        type: void
+        description: ''
   - name: delete()
     uid: word!Word.Field#delete:member(1)
     package: word!
@@ -557,6 +621,22 @@ methods:
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: doClick()
+    uid: word!Word.Field#doClick:member(1)
+    package: word!
+    fullName: doClick()
+    summary: Clicks the field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'doClick(): void;'
       return:
         type: void
         description: ''
@@ -848,6 +928,22 @@ methods:
       return:
         type: <xref uid="word!Word.Field:class" />
         description: ''
+  - name: unlink()
+    uid: word!Word.Field#unlink:member(1)
+    package: word!
+    fullName: unlink()
+    summary: Replaces the field with its most recent result.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unlink(): void;'
+      return:
+        type: void
+        description: ''
   - name: untrack()
     uid: word!Word.Field#untrack:member(1)
     package: word!
@@ -918,6 +1014,25 @@ methods:
     isDeprecated: false
     syntax:
       content: 'updateResult(): void;'
+      return:
+        type: void
+        description: ''
+  - name: updateSource()
+    uid: word!Word.Field#updateSource:member(1)
+    package: word!
+    fullName: updateSource()
+    summary: >-
+      Saves the changes made to the results of an [INCLUDETEXT
+      field](https://support.microsoft.com/office/1c34d6d6-0de3-4b5c-916a-2ff950fb629e)
+      back to the source document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'updateSource(): void;'
       return:
         type: void
         description: ''

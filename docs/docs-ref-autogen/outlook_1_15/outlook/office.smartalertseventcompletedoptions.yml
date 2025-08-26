@@ -163,9 +163,9 @@ properties:
       prior to Version 2412 (Build 18324.20000) that support [Mailbox
       requirement set
       1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
-      -->), and Outlook on Mac (preview), the `cancelLabel` property customizes
-      the text of the **Don't Send** button. The **Don't Send** button
-      cancels the item being sent.
+      -->), and Outlook on Mac, the `cancelLabel` property customizes the text
+      of the **Don't Send** button. The **Don't Send** button cancels
+      the item being sent.
 
     isPreview: false
     isDeprecated: false
@@ -189,8 +189,9 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \[ [API set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function
+      command
+      support)](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
 
@@ -231,8 +232,8 @@ properties:
       Windows (versions prior to Version 2412 (Build 18324.20000) that support
       [Mailbox requirement set
       1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
-      -->), and Outlook on Mac (preview), the **Don't Send** button opens a
-      task pane or runs a function.
+      -->), and Outlook on Mac, the **Don't Send** button opens a task pane
+      or runs a function.
 
 
       If you customized the text and functionality of the **Don't Send**

@@ -91,6 +91,23 @@ properties:
       content: 'kind?: boolean;'
       return:
         type: boolean
+  - name: linkFormat
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#linkFormat:member
+    package: word!
+    fullName: linkFormat
+    summary: >-
+      For EACH ITEM in the collection: Gets a `LinkFormat` object that
+      represents the link options of the field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linkFormat?: Word.Interfaces.LinkFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.LinkFormatLoadOptions:interface" />
   - name: locked
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#locked:member
     package: word!
@@ -108,6 +125,23 @@ properties:
       content: 'locked?: boolean;'
       return:
         type: boolean
+  - name: oleFormat
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#oleFormat:member
+    package: word!
+    fullName: oleFormat
+    summary: >-
+      For EACH ITEM in the collection: Gets an `OleFormat` object that
+      represents the OLE characteristics (other than linking) for the field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'oleFormat?: Word.Interfaces.OleFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.OleFormatLoadOptions:interface" />
   - name: parentBody
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member
     package: word!

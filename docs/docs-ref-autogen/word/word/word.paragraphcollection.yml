@@ -106,6 +106,62 @@ properties:
 
           ```
 methods:
+  - name: add(range)
+    uid: word!Word.ParagraphCollection#add:member(1)
+    package: word!
+    fullName: add(range)
+    summary: >-
+      Returns a `Paragraph` object that represents a new, blank paragraph added
+      to the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'add(range: Word.Range): Word.Paragraph;'
+      parameters:
+        - id: range
+          description: >-
+            The range before which you want the new paragraph to be added. The
+            new paragraph doesn't replace the range.
+          type: <xref uid="word!Word.Range:class" />
+      return:
+        type: <xref uid="word!Word.Paragraph:class" />
+        description: ''
+  - name: closeUp()
+    uid: word!Word.ParagraphCollection#closeUp:member(1)
+    package: word!
+    fullName: closeUp()
+    summary: Removes any spacing before the specified paragraphs.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'closeUp(): void;'
+      return:
+        type: void
+        description: ''
+  - name: decreaseSpacing()
+    uid: word!Word.ParagraphCollection#decreaseSpacing:member(1)
+    package: word!
+    fullName: decreaseSpacing()
+    summary: Decreases the spacing before and after paragraphs in six-point increments.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'decreaseSpacing(): void;'
+      return:
+        type: void
+        description: ''
   - name: getFirst()
     uid: word!Word.ParagraphCollection#getFirst:member(1)
     package: word!
@@ -239,6 +295,86 @@ methods:
       return:
         type: <xref uid="word!Word.Paragraph:class" />
         description: ''
+  - name: increaseSpacing()
+    uid: word!Word.ParagraphCollection#increaseSpacing:member(1)
+    package: word!
+    fullName: increaseSpacing()
+    summary: Increases the spacing before and after paragraphs in six-point increments.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'increaseSpacing(): void;'
+      return:
+        type: void
+        description: ''
+  - name: indent()
+    uid: word!Word.ParagraphCollection#indent:member(1)
+    package: word!
+    fullName: indent()
+    summary: Indents the paragraphs by one level.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indent(): void;'
+      return:
+        type: void
+        description: ''
+  - name: indentCharacterWidth(count)
+    uid: word!Word.ParagraphCollection#indentCharacterWidth:member(1)
+    package: word!
+    fullName: indentCharacterWidth(count)
+    summary: >-
+      Indents the paragraphs in the collection by the specified number of
+      characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentCharacterWidth(count: number): void;'
+      parameters:
+        - id: count
+          description: >-
+            The number of characters by which the specified paragraphs are to be
+            indented.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: indentFirstLineCharacterWidth(count)
+    uid: word!Word.ParagraphCollection#indentFirstLineCharacterWidth:member(1)
+    package: word!
+    fullName: indentFirstLineCharacterWidth(count)
+    summary: >-
+      Indents the first line of the paragraphs in the collection by the
+      specified number of characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentFirstLineCharacterWidth(count: number): void;'
+      parameters:
+        - id: count
+          description: >-
+            The number of characters by which the first line of each specified
+            paragraph is to be indented.
+          type: number
+      return:
+        type: void
+        description: ''
   - name: load(options)
     uid: word!Word.ParagraphCollection#load:member(1)
     package: word!
@@ -338,6 +474,202 @@ methods:
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.ParagraphCollection:class" />
+        description: ''
+  - name: openOrCloseUp()
+    uid: word!Word.ParagraphCollection#openOrCloseUp:member(1)
+    package: word!
+    fullName: openOrCloseUp()
+    summary: Toggles spacing before paragraphs.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'openOrCloseUp(): void;'
+      return:
+        type: void
+        description: ''
+  - name: openUp()
+    uid: word!Word.ParagraphCollection#openUp:member(1)
+    package: word!
+    fullName: openUp()
+    summary: Sets spacing before the specified paragraphs to 12 points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'openUp(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outdent()
+    uid: word!Word.ParagraphCollection#outdent:member(1)
+    package: word!
+    fullName: outdent()
+    summary: Removes one level of indent for the paragraphs.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outdent(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outlineDemote()
+    uid: word!Word.ParagraphCollection#outlineDemote:member(1)
+    package: word!
+    fullName: outlineDemote()
+    summary: >-
+      Applies the next heading level style (Heading 1 through Heading 8) to the
+      specified paragraphs.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlineDemote(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outlineDemoteToBody()
+    uid: word!Word.ParagraphCollection#outlineDemoteToBody:member(1)
+    package: word!
+    fullName: outlineDemoteToBody()
+    summary: >-
+      Demotes the specified paragraphs to body text by applying the Normal
+      style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlineDemoteToBody(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outlinePromote()
+    uid: word!Word.ParagraphCollection#outlinePromote:member(1)
+    package: word!
+    fullName: outlinePromote()
+    summary: >-
+      Applies the previous heading level style (Heading 1 through Heading 8) to
+      the paragraphs in the collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlinePromote(): void;'
+      return:
+        type: void
+        description: ''
+  - name: space1()
+    uid: word!Word.ParagraphCollection#space1:member(1)
+    package: word!
+    fullName: space1()
+    summary: Sets the specified paragraphs to single spacing.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'space1(): void;'
+      return:
+        type: void
+        description: ''
+  - name: space1Pt5()
+    uid: word!Word.ParagraphCollection#space1Pt5:member(1)
+    package: word!
+    fullName: space1Pt5()
+    summary: Sets the specified paragraphs to 1.5-line spacing.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'space1Pt5(): void;'
+      return:
+        type: void
+        description: ''
+  - name: space2()
+    uid: word!Word.ParagraphCollection#space2:member(1)
+    package: word!
+    fullName: space2()
+    summary: Sets the specified paragraphs to double spacing.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'space2(): void;'
+      return:
+        type: void
+        description: ''
+  - name: tabHangingIndent(count)
+    uid: word!Word.ParagraphCollection#tabHangingIndent:member(1)
+    package: word!
+    fullName: tabHangingIndent(count)
+    summary: Sets a hanging indent to the specified number of tab stops.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabHangingIndent(count: number): void;'
+      parameters:
+        - id: count
+          description: >-
+            The number of tab stops to indent (if positive) or the number of tab
+            stops to remove from the indent (if negative).
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: tabIndent(count)
+    uid: word!Word.ParagraphCollection#tabIndent:member(1)
+    package: word!
+    fullName: tabIndent(count)
+    summary: >-
+      Sets the left indent for the specified paragraphs to the specified number
+      of tab stops.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabIndent(count: number): void;'
+      parameters:
+        - id: count
+          description: >-
+            The number of tab stops to indent (if positive) or the number of tab
+            stops to remove from the indent (if negative).
+          type: number
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: word!Word.ParagraphCollection#toJSON:member(1)

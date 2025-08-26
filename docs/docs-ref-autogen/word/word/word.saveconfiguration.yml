@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.SaveConfiguration
+uid: word!Word.SaveConfiguration:enum
+package: word!
+fullName: Word.SaveConfiguration
+summary: Specifies the save options.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: doNotSaveChanges
+    uid: word!Word.SaveConfiguration.doNotSaveChanges:member
+    package: word!
+    summary: >-
+      Specifies not to save changes.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DoNotSaveChanges"'
+  - name: promptToSaveChanges
+    uid: word!Word.SaveConfiguration.promptToSaveChanges:member
+    package: word!
+    summary: >-
+      Specifies to prompt to save changes.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PromptToSaveChanges"'
+  - name: saveChanges
+    uid: word!Word.SaveConfiguration.saveChanges:member
+    package: word!
+    summary: >-
+      Specifies to save changes.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SaveChanges"'

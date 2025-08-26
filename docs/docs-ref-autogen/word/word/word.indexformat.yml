@@ -1,0 +1,83 @@
+### YamlMime:TSEnum
+name: Word.IndexFormat
+uid: word!Word.IndexFormat:enum
+package: word!
+fullName: Word.IndexFormat
+summary: Specifies the format for an index.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bulleted
+    uid: word!Word.IndexFormat.bulleted:member
+    package: word!
+    summary: >-
+      Bulleted format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bulleted"'
+  - name: classic
+    uid: word!Word.IndexFormat.classic:member
+    package: word!
+    summary: >-
+      Classic format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Classic"'
+  - name: fancy
+    uid: word!Word.IndexFormat.fancy:member
+    package: word!
+    summary: >-
+      Fancy format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Fancy"'
+  - name: formal
+    uid: word!Word.IndexFormat.formal:member
+    package: word!
+    summary: >-
+      Formal format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Formal"'
+  - name: modern
+    uid: word!Word.IndexFormat.modern:member
+    package: word!
+    summary: >-
+      Modern format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Modern"'
+  - name: simple
+    uid: word!Word.IndexFormat.simple:member
+    package: word!
+    summary: >-
+      Simple format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Simple"'
+  - name: template
+    uid: word!Word.IndexFormat.template:member
+    package: word!
+    summary: >-
+      Template format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Template"'

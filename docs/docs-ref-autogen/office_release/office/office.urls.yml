@@ -55,7 +55,7 @@ properties:
       -->.
 
 
-      - In Outlook on the web and [new Outlook on
+      - In Outlook on the web, on Mac, and in the [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->, this API isn't supported in add-ins that implement a task pane. On
       these clients, the API is only supported in add-ins that implement

@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: Word.TabStopAddOptions
+uid: word!Word.TabStopAddOptions:interface
+package: word!
+fullName: Word.TabStopAddOptions
+summary: >-
+  Specifies the options for adding to a
+  [Word.TabStopCollection](xref:word!Word.TabStopCollection:class) object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: word!Word.TabStopAddOptions#alignment:member
+    package: word!
+    fullName: alignment
+    summary: >-
+      If provided, specifies the alignment of the tab stop. The default value is
+      `left`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        alignment?: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal"
+        | "Bar" | "List";
+      return:
+        type: >-
+          <xref uid="word!Word.TabAlignment:enum" /> | "Left" | "Center" |
+          "Right" | "Decimal" | "Bar" | "List"
+  - name: leader
+    uid: word!Word.TabStopAddOptions#leader:member
+    package: word!
+    fullName: leader
+    summary: >-
+      If provided, specifies the leader character for the tab stop. The default
+      value is `spaces`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        leader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
+      return:
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"

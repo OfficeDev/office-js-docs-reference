@@ -81,8 +81,34 @@ methods:
       return:
         type: <xref uid="word!Word.Window:class" />
         description: ''
-  - name: load(propertyNames)
+  - name: load(options)
     uid: word!Word.WindowCollection#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.WindowCollectionLoadOptions &
+        Word.Interfaces.CollectionLoadOptions): Word.WindowCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.WindowCollectionLoadOptions:interface" />
+            & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="word!Word.WindowCollection:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.WindowCollection#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: >-
@@ -104,7 +130,7 @@ methods:
         type: <xref uid="word!Word.WindowCollection:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: word!Word.WindowCollection#load:member(2)
+    uid: word!Word.WindowCollection#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
