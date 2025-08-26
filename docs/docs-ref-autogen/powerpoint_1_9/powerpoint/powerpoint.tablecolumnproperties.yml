@@ -1,0 +1,88 @@
+### YamlMime:TSType
+name: PowerPoint.TableColumnProperties
+uid: powerpoint!PowerPoint.TableColumnProperties:interface
+package: powerpoint!
+fullName: PowerPoint.TableColumnProperties
+summary: Provides the table column properties.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Specifies the column widths and row heights of a table.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table, specifying column widths and row heights.
+    shapes.addTable(3, 4, {
+      columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+      rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+    });
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: columnWidth
+    uid: powerpoint!PowerPoint.TableColumnProperties#columnWidth:member
+    package: powerpoint!
+    fullName: columnWidth
+    summary: >-
+      Represents the desired width of each column in points, or is undefined.
+
+
+      When a table is being added, for columns whose width is undefined, the
+      column width will be calculated by evenly dividing the remaining width of
+      the table amongst those columns. If the table doesn't have a defined
+      width, a default column width will be used.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the column widths and row heights of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying column widths and row heights.
+        shapes.addTable(3, 4, {
+          columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+          rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+        });
+        await context.sync();
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'columnWidth?: number | undefined;'
+      return:
+        type: number | undefined

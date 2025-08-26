@@ -1,0 +1,489 @@
+### YamlMime:TSType
+name: PowerPoint.TableCell
+uid: powerpoint!PowerPoint.TableCell:class
+package: powerpoint!
+fullName: PowerPoint.TableCell
+summary: Represents a table.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Updates a table's values.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table (which is a type of Shape).
+    const shape = shapes.addTable(4, 3);
+    let table = shape.getTable();
+    table.load();
+    await context.sync();
+
+    // Update values in the table.
+    for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+      for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+        const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+        cell.text = generateRandomString();
+      }
+    }
+
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: borders
+    uid: powerpoint!PowerPoint.TableCell#borders:member
+    package: powerpoint!
+    fullName: borders
+    summary: Gets the collection of borders for the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly borders: PowerPoint.Borders;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Borders:class" />
+  - name: columnCount
+    uid: powerpoint!PowerPoint.TableCell#columnCount:member
+    package: powerpoint!
+    fullName: columnCount
+    summary: >-
+      Gets the number of table columns this cell spans across. Will be greater
+      than or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly columnCount: number;'
+      return:
+        type: number
+  - name: columnIndex
+    uid: powerpoint!PowerPoint.TableCell#columnIndex:member
+    package: powerpoint!
+    fullName: columnIndex
+    summary: Gets the zero-based column index of the cell within the table.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly columnIndex: number;'
+      return:
+        type: number
+  - name: context
+    uid: powerpoint!PowerPoint.TableCell#context:member
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
+  - name: fill
+    uid: powerpoint!PowerPoint.TableCell#fill:member
+    package: powerpoint!
+    fullName: fill
+    summary: Gets the fill color of the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fill: PowerPoint.ShapeFill;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.ShapeFill:class" />
+  - name: font
+    uid: powerpoint!PowerPoint.TableCell#font:member
+    package: powerpoint!
+    fullName: font
+    summary: Gets the font of the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly font: PowerPoint.ShapeFont;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.ShapeFont:class" />
+  - name: horizontalAlignment
+    uid: powerpoint!PowerPoint.TableCell#horizontalAlignment:member
+    package: powerpoint!
+    fullName: horizontalAlignment
+    summary: >-
+      Specifies the horizontal alignment of the table cell. Returns `null` if
+      the cell text contains different alignments.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" |
+        "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+        "ThaiDistributed" | null;
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
+          | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
+          "Distributed" | "ThaiDistributed" | null
+  - name: indentLevel
+    uid: powerpoint!PowerPoint.TableCell#indentLevel:member
+    package: powerpoint!
+    fullName: indentLevel
+    summary: >-
+      Specifies the indent level of the table cell. Returns `null` if the cell
+      text contains different indent levels.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'indentLevel: number | null;'
+      return:
+        type: number | null
+  - name: margins
+    uid: powerpoint!PowerPoint.TableCell#margins:member
+    package: powerpoint!
+    fullName: margins
+    summary: Gets the set of margins in the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly margins: PowerPoint.Margins;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Margins:class" />
+  - name: rowCount
+    uid: powerpoint!PowerPoint.TableCell#rowCount:member
+    package: powerpoint!
+    fullName: rowCount
+    summary: >-
+      Gets the number of table rows this cell spans across. Will be greater than
+      or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rowCount: number;'
+      return:
+        type: number
+  - name: rowIndex
+    uid: powerpoint!PowerPoint.TableCell#rowIndex:member
+    package: powerpoint!
+    fullName: rowIndex
+    summary: Gets the zero-based row index of the cell within the table.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rowIndex: number;'
+      return:
+        type: number
+  - name: text
+    uid: powerpoint!PowerPoint.TableCell#text:member
+    package: powerpoint!
+    fullName: text
+    summary: Specifies the text content of the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Updates a table's values.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table (which is a type of Shape).
+        const shape = shapes.addTable(4, 3);
+        let table = shape.getTable();
+        table.load();
+        await context.sync();
+
+        // Update values in the table.
+        for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+          for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+            const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+            cell.text = generateRandomString();
+          }
+        }
+
+        await context.sync();
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text: string;'
+      return:
+        type: string
+  - name: textRuns
+    uid: powerpoint!PowerPoint.TableCell#textRuns:member
+    package: powerpoint!
+    fullName: textRuns
+    summary: >-
+      Specifies the contents of the table cell as an array of  objects. Each
+      `TextRun` object represents a sequence of one or more characters that
+      share the same font attributes.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRuns: PowerPoint.TextRun[];'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TextRun:interface" />[]
+  - name: verticalAlignment
+    uid: powerpoint!PowerPoint.TableCell#verticalAlignment:member
+    package: powerpoint!
+    fullName: verticalAlignment
+    summary: Specifies the vertical alignment of the text in the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        verticalAlignment: PowerPoint.TextVerticalAlignment | "Top" | "Middle" |
+        "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.TextVerticalAlignment:enum" /> |
+          "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" |
+          "BottomCentered"
+methods:
+  - name: load(options)
+    uid: powerpoint!PowerPoint.TableCell#load:member(1)
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: PowerPoint.Interfaces.TableCellLoadOptions):
+        PowerPoint.TableCell;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: powerpoint!PowerPoint.TableCell#load:member(2)
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.TableCell;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: powerpoint!PowerPoint.TableCell#load:member(3)
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.TableCell;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
+        description: ''
+  - name: resize(rowCount, columnCount)
+    uid: powerpoint!PowerPoint.TableCell#resize:member(1)
+    package: powerpoint!
+    fullName: resize(rowCount, columnCount)
+    summary: >-
+      Resizes the table cell to span across a specified number of rows and
+      columns. If rowCount or columnCount are greater than 1, the cell will
+      become a merged area. If the cell is already a merged area and rowCount
+      and columnCount are set to 1, the cell will no longer be a merged area.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resize(rowCount: number, columnCount: number): void;'
+      parameters:
+        - id: rowCount
+          description: >-
+            The number of rows the cell will span across. Must be greater than
+            0.
+          type: number
+        - id: columnCount
+          description: >-
+            The number of columns the cell will span across. Must be greater
+            than 0.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: split(rowCount, columnCount)
+    uid: powerpoint!PowerPoint.TableCell#split:member(1)
+    package: powerpoint!
+    fullName: split(rowCount, columnCount)
+    summary: Splits the cell into the specified number of rows and columns.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'split(rowCount: number, columnCount: number): void;'
+      parameters:
+        - id: rowCount
+          description: The number of rows to split into. Must be greater than 0.
+          type: number
+        - id: columnCount
+          description: The number of columns to split into. Must be greater than 0.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: powerpoint!PowerPoint.TableCell#toJSON:member(1)
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `PowerPoint.TableCell`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `PowerPoint.Interfaces.TableCellData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.TableCellData;'
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData:interface"
+          />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

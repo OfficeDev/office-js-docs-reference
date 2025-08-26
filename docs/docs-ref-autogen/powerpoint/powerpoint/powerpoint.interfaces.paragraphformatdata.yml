@@ -40,3 +40,19 @@ properties:
           <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
           | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
           "Distributed" | "ThaiDistributed" | null
+  - name: indentLevel
+    uid: powerpoint!PowerPoint.Interfaces.ParagraphFormatData#indentLevel:member
+    package: powerpoint!
+    fullName: indentLevel
+    summary: Represents the indent level of the paragraph.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentLevel?: number;'
+      return:
+        type: number

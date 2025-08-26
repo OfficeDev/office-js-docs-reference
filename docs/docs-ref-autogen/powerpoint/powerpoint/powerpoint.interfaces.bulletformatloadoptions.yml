@@ -32,6 +32,48 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: style
+    uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#style:member
+    package: powerpoint!
+    fullName: style
+    summary: >-
+      Specifies the style of the bullets in the paragraph. See
+      [PowerPoint.BulletStyle](xref:powerpoint!PowerPoint.BulletStyle:enum) for
+      details. Returns `null` if the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet formatting properties.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#type:member
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      Specifies the type of the bullets in the paragraph. See
+      [PowerPoint.BulletType](xref:powerpoint!PowerPoint.BulletType:enum) for
+      details. Returns `null` if the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet formatting properties.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
   - name: visible
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#visible:member
     package: powerpoint!

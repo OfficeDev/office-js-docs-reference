@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions
+summary: Represents the background of a slide layout.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: areBackgroundGraphicsHidden
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#areBackgroundGraphicsHidden:member
+    package: powerpoint!
+    fullName: areBackgroundGraphicsHidden
+    summary: >-
+      Specifies whether the slide layout background fill hides or displays
+      background graphic objects from the slide master.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areBackgroundGraphicsHidden?: boolean;'
+      return:
+        type: boolean
+  - name: fill
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#fill:member
+    package: powerpoint!
+    fullName: fill
+    summary: Returns the fill formatting of the background.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fill?: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillLoadOptions:interface"
+          />
+  - name: isMasterBackgroundFollowed
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#isMasterBackgroundFollowed:member
+    package: powerpoint!
+    fullName: isMasterBackgroundFollowed
+    summary: >-
+      Specifies if the slide layout background follows the slide master
+      background.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isMasterBackgroundFollowed?: boolean;'
+      return:
+        type: boolean

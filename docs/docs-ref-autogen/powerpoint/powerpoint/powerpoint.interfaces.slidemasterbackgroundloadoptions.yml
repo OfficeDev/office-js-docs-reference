@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions
+summary: Represents the background of a slide master.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: fill
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions#fill:member
+    package: powerpoint!
+    fullName: fill
+    summary: Returns the fill formatting of the background.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fill?: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillLoadOptions:interface"
+          />

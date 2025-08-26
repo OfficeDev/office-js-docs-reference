@@ -1,0 +1,58 @@
+### YamlMime:TSEnum
+name: PowerPoint.BulletType
+uid: powerpoint!PowerPoint.BulletType:enum
+package: powerpoint!
+fullName: PowerPoint.BulletType
+summary: Specifies the type of a bullet.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: none
+    uid: powerpoint!PowerPoint.BulletType.none:member
+    package: powerpoint!
+    summary: >-
+      No bullets.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"None"'
+  - name: numbered
+    uid: powerpoint!PowerPoint.BulletType.numbered:member
+    package: powerpoint!
+    summary: >-
+      Numbered bullet (e.g., 1, 2, 3 or a, b, c).
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Numbered"'
+  - name: unnumbered
+    uid: powerpoint!PowerPoint.BulletType.unnumbered:member
+    package: powerpoint!
+    summary: >-
+      Symbol-based bullet (e.g., disc, circle, square).
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Unnumbered"'
+  - name: unsupported
+    uid: powerpoint!PowerPoint.BulletType.unsupported:member
+    package: powerpoint!
+    summary: >-
+      Type is unsupported.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Unsupported"'

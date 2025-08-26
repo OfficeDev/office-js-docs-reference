@@ -1,0 +1,114 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TableCellUpdateData
+uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TableCellUpdateData
+summary: >-
+  An interface for updating data on the `TableCell` object, for use in
+  `tableCell.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: horizontalAlignment
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member
+    package: powerpoint!
+    fullName: horizontalAlignment
+    summary: >-
+      Specifies the horizontal alignment of the table cell. Returns `null` if
+      the cell text contains different alignments.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" |
+        "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+        "ThaiDistributed" | null;
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
+          | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
+          "Distributed" | "ThaiDistributed" | null
+  - name: indentLevel
+    uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData#indentLevel:member
+    package: powerpoint!
+    fullName: indentLevel
+    summary: >-
+      Specifies the indent level of the table cell. Returns `null` if the cell
+      text contains different indent levels.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'indentLevel?: number | null;'
+      return:
+        type: number | null
+  - name: text
+    uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData#text:member
+    package: powerpoint!
+    fullName: text
+    summary: Specifies the text content of the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: textRuns
+    uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member
+    package: powerpoint!
+    fullName: textRuns
+    summary: >-
+      Specifies the contents of the table cell as an array of  objects. Each
+      `TextRun` object represents a sequence of one or more characters that
+      share the same font attributes.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRuns?: PowerPoint.TextRun[];'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TextRun:interface" />[]
+  - name: verticalAlignment
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellUpdateData#verticalAlignment:member
+    package: powerpoint!
+    fullName: verticalAlignment
+    summary: Specifies the vertical alignment of the text in the table cell.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle"
+        | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.TextVerticalAlignment:enum" /> |
+          "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" |
+          "BottomCentered"

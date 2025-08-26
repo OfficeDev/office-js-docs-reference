@@ -2059,6 +2059,9 @@ export declare namespace PowerPoint {
          */
         systemDashDot = "SystemDashDot",
     }
+    
+    
+    
     /**
      * Represents the horizontal alignment of the {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
      *
@@ -2682,6 +2685,10 @@ export declare namespace PowerPoint {
     export class TableCell extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
         /**
          * Gets the number of table columns this cell spans across.
                     Will be greater than or equal to 1.
@@ -2697,6 +2704,8 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         readonly columnIndex: number;
+        
+        
         /**
          * Gets the number of table rows this cell spans across.
                     Will be greater than or equal to 1.
@@ -2719,6 +2728,10 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         text: string;
+        
+        
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2741,9 +2754,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.TableCell;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TableCellData;
     }
     /**
@@ -2795,11 +2808,12 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TableCellCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.TableCellCollectionData;
     }
+    
     /**
      * Represents the fill formatting of a table cell.
      *
@@ -3018,6 +3032,11 @@ export declare namespace PowerPoint {
          */
         verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" | undefined;
     }
+    
+    
+    
+    
+    
     /**
      * Represents a table.
      *
@@ -3027,6 +3046,8 @@ export declare namespace PowerPoint {
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
         /**
          * Gets the number of columns in the table.
          *
@@ -3048,6 +3069,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         readonly values: string[][];
+        
         /**
          * Gets the cell at the specified `rowIndex` and `columnIndex`.
          *
@@ -3074,6 +3096,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         getShape(): PowerPoint.Shape;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3096,9 +3119,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Table;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TableData;
     }
     /**
@@ -3240,6 +3263,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         specificCellProperties?: PowerPoint.TableCellProperties[][];
+        
         /**
          * Specifies the distance, in points, from the top edge of the table to the top edge of the slide.
                     A default value is used when this parameter isn't provided.
@@ -3363,8 +3387,8 @@ export declare namespace PowerPoint {
          * @param options - Provides options describing the new table.
          * @returns The newly inserted shape.
          */
-                    addTable(rowCount: number, columnCount: number, options?: PowerPoint.TableAddOptions): PowerPoint.Shape;
-                    /**
+        addTable(rowCount: number, columnCount: number, options?: PowerPoint.TableAddOptions): PowerPoint.Shape;
+        /**
          * Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the new text box.
          *
          * @remarks
@@ -5874,6 +5898,20 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionUpdateData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
+        export interface BorderUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `Margins` object, for use in `margins.set({ ... })`. */
+        export interface MarginsUpdateData {
+            
+            
+            
+            
+        }
         /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
         export interface ShapeFillUpdateData {
             /**
@@ -6028,6 +6066,8 @@ export declare namespace PowerPoint {
         }
         /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
         export interface TableCellUpdateData {
+            
+            
             /**
              * Specifies the text content of the table cell.
              *
@@ -6035,10 +6075,28 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             text?: string;
+            
+            
         }
         /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
         export interface TableCellCollectionUpdateData {
             items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`. */
+        export interface TableColumnUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ... })`. */
+        export interface TableColumnCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableColumnData[];
+        }
+        /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
+        export interface TableRowUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`. */
+        export interface TableRowCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableRowData[];
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -6419,6 +6477,23 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface describing the data returned by calling `border.toJSON()`. */
+        export interface BorderData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `borders.toJSON()`. */
+        export interface BordersData {
+        }
+        /** An interface describing the data returned by calling `margins.toJSON()`. */
+        export interface MarginsData {
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
         export interface ShapeFillData {
             /**
@@ -6458,7 +6533,7 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             allCaps?: boolean | null;
-           /**
+            /**
              * Specifies whether the text in the `TextRange` is set to bold. The possible values are as follows:
                         
                          - `true`: All the text is bold.
@@ -6595,6 +6670,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             columnIndex?: number;
+            
+            
             /**
              * Gets the number of table rows this cell spans across.
                         Will be greater than or equal to 1.
@@ -6617,10 +6694,31 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             text?: string;
+            
+            
         }
         /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
         export interface TableCellCollectionData {
             items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
+        export interface TableColumnData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableColumnCollection.toJSON()`. */
+        export interface TableColumnCollectionData {
+            items?: PowerPoint.Interfaces.TableColumnData[];
+        }
+        /** An interface describing the data returned by calling `tableRow.toJSON()`. */
+        export interface TableRowData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
+        export interface TableRowCollectionData {
+            items?: PowerPoint.Interfaces.TableRowData[];
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -7296,6 +7394,9 @@ export declare namespace PowerPoint {
              */
             screenTip?: boolean;
         }
+        
+        
+        
         /**
          * Represents the fill formatting of a shape object.
          *
@@ -7484,6 +7585,10 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
             /**
              * Gets the number of table columns this cell spans across.
                         Will be greater than or equal to 1.
@@ -7499,6 +7604,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             columnIndex?: boolean;
+            
+            
             /**
              * Gets the number of table rows this cell spans across.
                         Will be greater than or equal to 1.
@@ -7521,6 +7628,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             text?: boolean;
+            
+            
         }
         /**
          * Represents a collection of table cells.
@@ -7533,6 +7642,10 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
             /**
              * For EACH ITEM in the collection: Gets the number of table columns this cell spans across.
                         Will be greater than or equal to 1.
@@ -7548,6 +7661,8 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             columnIndex?: boolean;
+            
+            
             /**
              * For EACH ITEM in the collection: Gets the number of table rows this cell spans across.
                         Will be greater than or equal to 1.
@@ -7570,7 +7685,13 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.8]
              */
             text?: boolean;
+            
+            
         }
+        
+        
+        
+        
         /**
          * Represents a table.
          *
@@ -7934,12 +8055,12 @@ export declare namespace PowerPoint {
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
+             * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
             If the shape type isn't `group`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.8]
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.8]
+             */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
              * For EACH ITEM in the collection: Returns the line formatting of this shape.
@@ -7949,23 +8070,23 @@ export declare namespace PowerPoint {
              */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the parent group of this shape.
+             * For EACH ITEM in the collection: Returns the parent group of this shape.
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.8]
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.8]
+             */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the properties that apply specifically to this placeholder.
+             * For EACH ITEM in the collection: Returns the properties that apply specifically to this placeholder.
             If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.8]
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.8]
+             */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
+             * For EACH ITEM in the collection: Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.5]
@@ -8310,12 +8431,12 @@ export declare namespace PowerPoint {
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * Returns the `ShapeGroup` associated with the shape.
+             * Returns the `ShapeGroup` associated with the shape.
             If the shape type isn't `group`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.8]
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.8]
+             */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
              * Returns the line formatting of this shape.
@@ -8325,23 +8446,23 @@ export declare namespace PowerPoint {
              */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * Returns the parent group of this shape.
+             * Returns the parent group of this shape.
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.8]
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.8]
+             */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
-            * Returns the properties that apply specifically to this placeholder.
+             * Returns the properties that apply specifically to this placeholder.
             If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.8]
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.8]
+             */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-            * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
+             * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -8380,8 +8501,8 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.8]
              */
-                        level?: boolean;
-                        /**
+            level?: boolean;
+            /**
              * Specifies the name of this shape.
              *
              * @remarks
@@ -8639,18 +8760,18 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the layout of the slide.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the layout of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the slide.
@@ -8679,18 +8800,18 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the layout of the slide.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Gets the layout of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the slide.

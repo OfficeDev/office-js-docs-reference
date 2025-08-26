@@ -29,6 +29,25 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: background
+    uid: powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#background:member
+    package: powerpoint!
+    fullName: background
+    summary: Gets the background of the slide layout.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'background?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface"
+          />
   - name: id
     uid: powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#id:member
     package: powerpoint!

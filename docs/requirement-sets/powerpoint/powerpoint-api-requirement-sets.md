@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement sets
 description: Learn more about the PowerPoint JavaScript API requirement sets.
-ms.date: 04/30/2025
+ms.date: 08/28/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -15,6 +15,7 @@ The following table lists the PowerPoint requirement sets, the supported Office 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](powerpoint-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
+| [PowerPointApi 1.9](powerpoint-api-1-9-requirement-set.md) | Supported | Version 2507 (Build xxxxx.xxxxx) | Not available | Version 16.xx (2507xxxx) | Not available |
 | [PowerPointApi 1.8](powerpoint-api-1-8-requirement-set.md) | Supported | Version 2504 (Build 18730.20030) | Not available | Version 16.96 (25041326) | Not available |
 | [PowerPointApi 1.7](powerpoint-api-1-7-requirement-set.md) | Supported | Version 2412 (Build 18324.20030) | Not available | Version 16.92 (24120731) | Not available |
 | [PowerPointApi 1.6](powerpoint-api-1-6-requirement-set.md) | Supported | Version 2410 (Build 18129.20030) | Not available | Version 16.90 (24101387) | Not available |
@@ -61,6 +62,10 @@ PowerPoint JavaScript API 1.7 includes APIs to manage custom and document proper
 ## PowerPoint JavaScript API 1.8
 
 PowerPoint JavaScript API 1.8 includes APIs to manage bindings, shapes, and tables within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.8](powerpoint-api-1-8-requirement-set.md).
+
+## PowerPoint JavaScript API 1.9
+
+PowerPoint JavaScript API 1.9 includes APIs to format and manage tables within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.9](powerpoint-api-1-9-requirement-set.md).
 
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 

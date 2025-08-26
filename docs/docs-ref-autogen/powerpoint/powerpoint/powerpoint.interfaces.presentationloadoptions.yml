@@ -45,6 +45,27 @@ properties:
       content: 'id?: boolean;'
       return:
         type: boolean
+  - name: pageSetup
+    uid: powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#pageSetup:member
+    package: powerpoint!
+    fullName: pageSetup
+    summary: >-
+      Returns the page setup information whose properties control slide setup
+      attributes for the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pageSetup?: PowerPoint.Interfaces.PageSetupLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions:interface"
+          />
   - name: properties
     uid: powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#properties:member
     package: powerpoint!
