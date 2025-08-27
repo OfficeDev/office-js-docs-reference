@@ -77,3 +77,20 @@ properties:
       content: 'horizontalAlignment?: boolean;'
       return:
         type: boolean
+  - name: indentLevel
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#indentLevel:member
+    package: powerpoint!
+    fullName: indentLevel
+    summary: Represents the indent level of the paragraph.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentLevel?: boolean;'
+      return:
+        type: boolean

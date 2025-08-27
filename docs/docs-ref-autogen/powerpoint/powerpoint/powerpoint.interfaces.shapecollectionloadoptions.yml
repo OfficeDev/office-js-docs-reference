@@ -232,6 +232,26 @@ properties:
           <xref
           uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions:interface"
           />
+  - name: rotation
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#rotation:member
+    package: powerpoint!
+    fullName: rotation
+    summary: >-
+      For EACH ITEM in the collection: Specifies the rotation, in degrees, of
+      the shape around the z-axis. A positive value indicates clockwise
+      rotation, and a negative value indicates counterclockwise rotation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotation?: boolean;'
+      return:
+        type: boolean
   - name: textFrame
     uid: >-
       powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#textFrame:member
@@ -291,6 +311,22 @@ properties:
     isDeprecated: false
     syntax:
       content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#visible:member
+    package: powerpoint!
+    fullName: visible
+    summary: 'For EACH ITEM in the collection: Specifies if the shape is visible.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
       return:
         type: boolean
   - name: width

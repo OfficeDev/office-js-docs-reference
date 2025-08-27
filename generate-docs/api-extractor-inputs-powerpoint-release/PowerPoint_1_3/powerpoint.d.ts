@@ -176,7 +176,7 @@ export declare namespace PowerPoint {
         
         
         
-                    
+        
         /**
          * Gets the number of shapes in the collection.
          *
@@ -1184,7 +1184,7 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             
-           
+            
             
             
             
@@ -1651,7 +1651,7 @@ export declare namespace PowerPoint {
             id?: boolean;
             
             
-                        
+            
             
             
             
@@ -1674,18 +1674,18 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the layout of the slide.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the layout of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the slide.
