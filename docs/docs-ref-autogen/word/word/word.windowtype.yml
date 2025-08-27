@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.WindowType
+uid: word!Word.WindowType:enum
+package: word!
+fullName: Word.WindowType
+summary: Specifies the type of the window.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: document
+    uid: word!Word.WindowType.document:member
+    package: word!
+    summary: >-
+      Specifies a document window.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Document"'
+  - name: template
+    uid: word!Word.WindowType.template:member
+    package: word!
+    summary: >-
+      Specifies a template window.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Template"'

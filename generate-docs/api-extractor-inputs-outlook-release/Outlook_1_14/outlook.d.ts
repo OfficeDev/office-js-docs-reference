@@ -8033,7 +8033,7 @@ export declare namespace Office {
          */
         from: From;
         /**
-         * Gets the message ID of the original message being replied to by the current message.
+         * Gets the internet message ID of the original message being replied to by the current message.
          *
          * @remarks
          * [Api set: Mailbox 1.14]
@@ -8513,9 +8513,13 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * **Important**:
+         *
+         * - The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - When the `closeAsync` method successfully closes and discards the current message, the add-in that called it ceases running.
          *
          * **Errors**:
          *
@@ -8549,9 +8553,13 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * **Important**:
+         *
+         * - The `closeAsync` method is only supported in task pane and function command implementations. It isn't supported in
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - When the `closeAsync` method successfully closes and discards the current message, the add-in that called it ceases running.
          *
          * **Errors**:
          *
@@ -12720,7 +12728,7 @@ export declare namespace Office {
          *
          * - In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
          * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
-         * and Outlook on Mac (preview), the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
+         * and Outlook on Mac, the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
          */
         cancelLabel?: string;
         /**
@@ -12732,7 +12740,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox 1.14]
+         * [Api set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function command support)]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
@@ -12752,7 +12760,7 @@ export declare namespace Office {
          * task pane or runs a function. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
          * In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
          * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
-         * and Outlook on Mac (preview), the **Don't Send** button opens a task pane or runs a function.
+         * and Outlook on Mac, the **Don't Send** button opens a task pane or runs a function.
          *
          * If you customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows,
          * no additional action is needed to implement the **Take Action** button in the latest supported versions. The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog.

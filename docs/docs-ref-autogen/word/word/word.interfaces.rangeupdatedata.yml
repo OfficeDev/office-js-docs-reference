@@ -12,6 +12,91 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: case
+    uid: word!Word.Interfaces.RangeUpdateData#case:member
+    package: word!
+    fullName: case
+    summary: >-
+      Specifies a `CharacterCase` value that represents the case of the text in
+      the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        case?: Word.CharacterCase | "Next" | "Lower" | "Upper" | "TitleWord" |
+        "TitleSentence" | "Toggle" | "HalfWidth" | "FullWidth" | "Katakana" |
+        "Hiragana";
+      return:
+        type: >-
+          <xref uid="word!Word.CharacterCase:enum" /> | "Next" | "Lower" |
+          "Upper" | "TitleWord" | "TitleSentence" | "Toggle" | "HalfWidth" |
+          "FullWidth" | "Katakana" | "Hiragana"
+  - name: characterWidth
+    uid: word!Word.Interfaces.RangeUpdateData#characterWidth:member
+    package: word!
+    fullName: characterWidth
+    summary: Specifies the character width of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'characterWidth?: Word.CharacterWidth | "Half" | "Full";'
+      return:
+        type: <xref uid="word!Word.CharacterWidth:enum" /> | "Half" | "Full"
+  - name: combineCharacters
+    uid: word!Word.Interfaces.RangeUpdateData#combineCharacters:member
+    package: word!
+    fullName: combineCharacters
+    summary: Specifies if the range contains combined characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'combineCharacters?: boolean;'
+      return:
+        type: boolean
+  - name: end
+    uid: word!Word.Interfaces.RangeUpdateData#end:member
+    package: word!
+    fullName: end
+    summary: Specifies the ending character position of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'end?: number;'
+      return:
+        type: number
+  - name: fitTextWidth
+    uid: word!Word.Interfaces.RangeUpdateData#fitTextWidth:member
+    package: word!
+    fullName: fitTextWidth
+    summary: >-
+      Specifies the width (in the current measurement units) in which Microsoft
+      Word fits the text in the current selection or range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fitTextWidth?: number;'
+      return:
+        type: number
   - name: font
     uid: word!Word.Interfaces.RangeUpdateData#font:member
     package: word!
@@ -29,6 +114,21 @@ properties:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type: <xref uid="word!Word.Interfaces.FontUpdateData:interface" />
+  - name: grammarChecked
+    uid: word!Word.Interfaces.RangeUpdateData#grammarChecked:member
+    package: word!
+    fullName: grammarChecked
+    summary: Specifies if a grammar check has been run on the range or document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'grammarChecked?: boolean;'
+      return:
+        type: boolean
   - name: hasNoProofing
     uid: word!Word.Interfaces.RangeUpdateData#hasNoProofing:member
     package: word!
@@ -46,6 +146,25 @@ properties:
       content: 'hasNoProofing?: boolean;'
       return:
         type: boolean
+  - name: horizontalInVertical
+    uid: word!Word.Interfaces.RangeUpdateData#horizontalInVertical:member
+    package: word!
+    fullName: horizontalInVertical
+    summary: Specifies the formatting for horizontal text set within vertical text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        horizontalInVertical?: Word.HorizontalInVerticalType | "None" |
+        "FitInLine" | "ResizeLine";
+      return:
+        type: >-
+          <xref uid="word!Word.HorizontalInVerticalType:enum" /> | "None" |
+          "FitInLine" | "ResizeLine"
   - name: hyperlink
     uid: word!Word.Interfaces.RangeUpdateData#hyperlink:member
     package: word!
@@ -65,6 +184,38 @@ properties:
       content: 'hyperlink?: string;'
       return:
         type: string
+  - name: id
+    uid: word!Word.Interfaces.RangeUpdateData#id:member
+    package: word!
+    fullName: id
+    summary: Specifies the ID for the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: kana
+    uid: word!Word.Interfaces.RangeUpdateData#kana:member
+    package: word!
+    fullName: kana
+    summary: >-
+      Specifies whether the range of Japanese language text is hiragana or
+      katakana.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'kana?: Word.Kana | "Katakana" | "Hiragana";'
+      return:
+        type: <xref uid="word!Word.Kana:enum" /> | "Katakana" | "Hiragana"
   - name: languageDetected
     uid: word!Word.Interfaces.RangeUpdateData#languageDetected:member
     package: word!
@@ -456,6 +607,53 @@ properties:
         type: >-
           <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData:interface"
           />
+  - name: showAll
+    uid: word!Word.Interfaces.RangeUpdateData#showAll:member
+    package: word!
+    fullName: showAll
+    summary: >-
+      Specifies if all nonprinting characters (such as hidden text, tab marks,
+      space marks, and paragraph marks) are displayed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showAll?: boolean;'
+      return:
+        type: boolean
+  - name: spellingChecked
+    uid: word!Word.Interfaces.RangeUpdateData#spellingChecked:member
+    package: word!
+    fullName: spellingChecked
+    summary: Specifies if spelling has been checked throughout the range or document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spellingChecked?: boolean;'
+      return:
+        type: boolean
+  - name: start
+    uid: word!Word.Interfaces.RangeUpdateData#start:member
+    package: word!
+    fullName: start
+    summary: Specifies the starting character position of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start?: number;'
+      return:
+        type: number
   - name: style
     uid: word!Word.Interfaces.RangeUpdateData#style:member
     package: word!
@@ -596,3 +794,25 @@ properties:
           "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" |
           "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
           "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+  - name: twoLinesInOne
+    uid: word!Word.Interfaces.RangeUpdateData#twoLinesInOne:member
+    package: word!
+    fullName: twoLinesInOne
+    summary: >-
+      Specifies whether Microsoft Word sets two lines of text in one and
+      specifies the characters that enclose the text, if any.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        twoLinesInOne?: Word.TwoLinesInOneType | "None" | "NoBrackets" |
+        "Parentheses" | "SquareBrackets" | "AngleBrackets" | "CurlyBrackets";
+      return:
+        type: >-
+          <xref uid="word!Word.TwoLinesInOneType:enum" /> | "None" |
+          "NoBrackets" | "Parentheses" | "SquareBrackets" | "AngleBrackets" |
+          "CurlyBrackets"

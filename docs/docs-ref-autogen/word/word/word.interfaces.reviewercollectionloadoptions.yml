@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Word.Interfaces.ReviewerCollectionLoadOptions
+uid: word!Word.Interfaces.ReviewerCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.ReviewerCollectionLoadOptions
+summary: >-
+  A collection of [Word.Reviewer](xref:word!Word.Reviewer:class) objects that
+  represents the reviewers of one or more documents. The `ReviewerCollection`
+  object contains the names of all reviewers who have reviewed documents opened
+  or edited on a computer.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.ReviewerCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.Interfaces.ReviewerCollectionLoadOptions#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: >-
+      For EACH ITEM in the collection: Specifies if the `Reviewer` object is
+      visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean

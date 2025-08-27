@@ -1,0 +1,47 @@
+### YamlMime:TSEnum
+name: Word.RevisionsMarkup
+uid: word!Word.RevisionsMarkup:enum
+package: word!
+fullName: Word.RevisionsMarkup
+summary: Specifies the extent of markup visible in the document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: all
+    uid: word!Word.RevisionsMarkup.all:member
+    package: word!
+    summary: >-
+      All markup.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"All"'
+  - name: none
+    uid: word!Word.RevisionsMarkup.none:member
+    package: word!
+    summary: >-
+      No markup.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"None"'
+  - name: simple
+    uid: word!Word.RevisionsMarkup.simple:member
+    package: word!
+    summary: >-
+      Simple markup.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Simple"'

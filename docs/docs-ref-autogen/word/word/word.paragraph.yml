@@ -607,6 +607,23 @@ properties:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type: <xref uid="word!Word.Table:class" />
+  - name: range
+    uid: word!Word.Paragraph#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained within the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly range: Word.Range;'
+      return:
+        type: <xref uid="word!Word.Range:class" />
   - name: rightIndent
     uid: word!Word.Paragraph#rightIndent:member
     package: word!
@@ -1125,6 +1142,22 @@ methods:
     isDeprecated: false
     syntax:
       content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: closeUp()
+    uid: word!Word.Paragraph#closeUp:member(1)
+    package: word!
+    fullName: closeUp()
+    summary: Removes any spacing before the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'closeUp(): void;'
       return:
         type: void
         description: ''
@@ -1682,6 +1715,64 @@ methods:
       content: 'getTrackedChanges(): Word.TrackedChangeCollection;'
       return:
         type: <xref uid="word!Word.TrackedChangeCollection:class" />
+        description: ''
+  - name: indent()
+    uid: word!Word.Paragraph#indent:member(1)
+    package: word!
+    fullName: indent()
+    summary: Indents the paragraph by one level.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indent(): void;'
+      return:
+        type: void
+        description: ''
+  - name: indentCharacterWidth(count)
+    uid: word!Word.Paragraph#indentCharacterWidth:member(1)
+    package: word!
+    fullName: indentCharacterWidth(count)
+    summary: Indents the paragraph by a specified number of characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentCharacterWidth(count: number): void;'
+      parameters:
+        - id: count
+          description: The number of characters for the indent.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: indentFirstLineCharacterWidth(count)
+    uid: word!Word.Paragraph#indentFirstLineCharacterWidth:member(1)
+    package: word!
+    fullName: indentFirstLineCharacterWidth(count)
+    summary: >-
+      Indents the first line of the paragraph by the specified number of
+      characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'indentFirstLineCharacterWidth(count: number): void;'
+      parameters:
+        - id: count
+          description: The number of characters for the first line indent.
+          type: number
+      return:
+        type: void
         description: ''
   - name: insertAnnotations(annotations)
     uid: word!Word.Paragraph#insertAnnotations:member(1)
@@ -2549,6 +2640,24 @@ methods:
       return:
         type: <xref uid="word!Word.Shape:class" />
         description: ''
+  - name: joinList()
+    uid: word!Word.Paragraph#joinList:member(1)
+    package: word!
+    fullName: joinList()
+    summary: >-
+      Joins a list paragraph with the closest list above or below this
+      paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'joinList(): void;'
+      return:
+        type: void
+        description: ''
   - name: load(options)
     uid: word!Word.Paragraph#load:member(1)
     package: word!
@@ -2622,6 +2731,182 @@ methods:
                     }
       return:
         type: <xref uid="word!Word.Paragraph:class" />
+        description: ''
+  - name: next(count)
+    uid: word!Word.Paragraph#next:member(1)
+    package: word!
+    fullName: next(count)
+    summary: Returns a `Paragraph` object that represents the next paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'next(count: number): Word.Paragraph;'
+      parameters:
+        - id: count
+          description: Optional. The number of paragraphs to move forward.
+          type: number
+      return:
+        type: <xref uid="word!Word.Paragraph:class" />
+        description: ''
+  - name: openOrCloseUp()
+    uid: word!Word.Paragraph#openOrCloseUp:member(1)
+    package: word!
+    fullName: openOrCloseUp()
+    summary: Toggles the spacing before the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'openOrCloseUp(): void;'
+      return:
+        type: void
+        description: ''
+  - name: openUp()
+    uid: word!Word.Paragraph#openUp:member(1)
+    package: word!
+    fullName: openUp()
+    summary: Sets spacing before the paragraph to 12 points.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'openUp(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outdent()
+    uid: word!Word.Paragraph#outdent:member(1)
+    package: word!
+    fullName: outdent()
+    summary: Removes one level of indent for the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outdent(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outlineDemote()
+    uid: word!Word.Paragraph#outlineDemote:member(1)
+    package: word!
+    fullName: outlineDemote()
+    summary: >-
+      Applies the next heading level style (Heading 1 through Heading 8) to the
+      paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlineDemote(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outlineDemoteToBody()
+    uid: word!Word.Paragraph#outlineDemoteToBody:member(1)
+    package: word!
+    fullName: outlineDemoteToBody()
+    summary: Demotes the paragraph to body text by applying the Normal style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlineDemoteToBody(): void;'
+      return:
+        type: void
+        description: ''
+  - name: outlinePromote()
+    uid: word!Word.Paragraph#outlinePromote:member(1)
+    package: word!
+    fullName: outlinePromote()
+    summary: >-
+      Applies the previous heading level style (Heading 1 through Heading 8) to
+      the paragraph.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlinePromote(): void;'
+      return:
+        type: void
+        description: ''
+  - name: previous(count)
+    uid: word!Word.Paragraph#previous:member(1)
+    package: word!
+    fullName: previous(count)
+    summary: Returns the previous paragraph as a `Paragraph` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'previous(count: number): Word.Paragraph;'
+      parameters:
+        - id: count
+          description: Optional. The number of paragraphs to move backward.
+          type: number
+      return:
+        type: <xref uid="word!Word.Paragraph:class" />
+        description: ''
+  - name: reset()
+    uid: word!Word.Paragraph#reset:member(1)
+    package: word!
+    fullName: reset()
+    summary: >-
+      Removes manual paragraph formatting (formatting not applied using a
+      style).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'reset(): void;'
+      return:
+        type: void
+        description: ''
+  - name: resetAdvanceTo()
+    uid: word!Word.Paragraph#resetAdvanceTo:member(1)
+    package: word!
+    fullName: resetAdvanceTo()
+    summary: >-
+      Resets the paragraph that uses custom list levels to the original level
+      settings.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resetAdvanceTo(): void;'
+      return:
+        type: void
         description: ''
   - name: search(searchText, searchOptions)
     uid: word!Word.Paragraph#search:member(1)
@@ -2740,6 +3025,40 @@ methods:
       return:
         type: void
         description: ''
+  - name: selectNumber()
+    uid: word!Word.Paragraph#selectNumber:member(1)
+    package: word!
+    fullName: selectNumber()
+    summary: Selects the number or bullet in a list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selectNumber(): void;'
+      return:
+        type: void
+        description: ''
+  - name: separateList()
+    uid: word!Word.Paragraph#separateList:member(1)
+    package: word!
+    fullName: separateList()
+    summary: >-
+      Separates a list into two separate lists. For numbered lists, the new list
+      restarts numbering at the starting number, usually 1.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'separateList(): void;'
+      return:
+        type: void
+        description: ''
   - name: set(properties, options)
     uid: word!Word.Paragraph#set:member(1)
     package: word!
@@ -2829,6 +3148,54 @@ methods:
         - id: properties
           description: ''
           type: <xref uid="word!Word.Paragraph:class" />
+      return:
+        type: void
+        description: ''
+  - name: space1()
+    uid: word!Word.Paragraph#space1:member(1)
+    package: word!
+    fullName: space1()
+    summary: Sets the paragraph to single spacing.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'space1(): void;'
+      return:
+        type: void
+        description: ''
+  - name: space1Pt5()
+    uid: word!Word.Paragraph#space1Pt5:member(1)
+    package: word!
+    fullName: space1Pt5()
+    summary: Sets the paragraph to 1.5-line spacing.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'space1Pt5(): void;'
+      return:
+        type: void
+        description: ''
+  - name: space2()
+    uid: word!Word.Paragraph#space2:member(1)
+    package: word!
+    fullName: space2()
+    summary: Sets the paragraph to double spacing.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'space2(): void;'
       return:
         type: void
         description: ''
@@ -2955,6 +3322,46 @@ methods:
       content: 'startNewList(): Word.List;'
       return:
         type: <xref uid="word!Word.List:class" />
+        description: ''
+  - name: tabHangingIndent(count)
+    uid: word!Word.Paragraph#tabHangingIndent:member(1)
+    package: word!
+    fullName: tabHangingIndent(count)
+    summary: Sets a hanging indent to a specified number of tab stops.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabHangingIndent(count: number): void;'
+      parameters:
+        - id: count
+          description: The number of tab stops for the hanging indent.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: tabIndent(count)
+    uid: word!Word.Paragraph#tabIndent:member(1)
+    package: word!
+    fullName: tabIndent(count)
+    summary: Sets the left indent for the paragraph to a specified number of tab stops.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabIndent(count: number): void;'
+      parameters:
+        - id: count
+          description: The number of tab stops for the left indent.
+          type: number
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: word!Word.Paragraph#toJSON:member(1)

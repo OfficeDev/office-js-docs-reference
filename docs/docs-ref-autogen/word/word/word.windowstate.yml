@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.WindowState
+uid: word!Word.WindowState:enum
+package: word!
+fullName: Word.WindowState
+summary: Represents the state of the window.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: maximize
+    uid: word!Word.WindowState.maximize:member
+    package: word!
+    summary: >-
+      Represents the maximized state of the window.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Maximize"'
+  - name: minimize
+    uid: word!Word.WindowState.minimize:member
+    package: word!
+    summary: >-
+      Represents the minimized state of the window.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Minimize"'
+  - name: normal
+    uid: word!Word.WindowState.normal:member
+    package: word!
+    summary: >-
+      Represents the normal state of the window.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Normal"'

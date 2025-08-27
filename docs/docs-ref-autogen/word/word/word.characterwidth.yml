@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.CharacterWidth
+uid: word!Word.CharacterWidth:enum
+package: word!
+fullName: Word.CharacterWidth
+summary: Specifies the character width of the text in the specified range.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: full
+    uid: word!Word.CharacterWidth.full:member
+    package: word!
+    summary: >-
+      Specifies full-width characters.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Full"'
+  - name: half
+    uid: word!Word.CharacterWidth.half:member
+    package: word!
+    summary: >-
+      Specifies half-width characters.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Half"'

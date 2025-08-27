@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: Word.Interfaces.BookmarkUpdateData
+uid: word!Word.Interfaces.BookmarkUpdateData:interface
+package: word!
+fullName: Word.Interfaces.BookmarkUpdateData
+summary: >-
+  An interface for updating data on the `Bookmark` object, for use in
+  `bookmark.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: end
+    uid: word!Word.Interfaces.BookmarkUpdateData#end:member
+    package: word!
+    fullName: end
+    summary: Specifies the ending character position of the bookmark.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'end?: number;'
+      return:
+        type: number
+  - name: range
+    uid: word!Word.Interfaces.BookmarkUpdateData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained in the `Bookmark` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />
+  - name: start
+    uid: word!Word.Interfaces.BookmarkUpdateData#start:member
+    package: word!
+    fullName: start
+    summary: Specifies the starting character position of the bookmark.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start?: number;'
+      return:
+        type: number

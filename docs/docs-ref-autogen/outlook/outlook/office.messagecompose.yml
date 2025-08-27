@@ -553,8 +553,8 @@ properties:
     package: outlook!
     fullName: inReplyTo
     summary: >-
-      Gets the message ID of the original message being replied to by the
-      current message.
+      Gets the internet message ID of the original message being replied to by
+      the current message.
     remarks: >-
       \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -2171,12 +2171,19 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: The `closeAsync` method is only supported in task pane
-      and function command implementations. It isn't supported in [event-based
+      **Important**:
+
+
+      - The `closeAsync` method is only supported in task pane and function
+      command implementations. It isn't supported in [event-based
       handlers](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
       or [item multi-select
       scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
+
+
+      - When the `closeAsync` method successfully closes and discards the
+      current message, the add-in that called it ceases running.
 
 
       **Errors**:
@@ -2255,12 +2262,19 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: The `closeAsync` method is only supported in task pane
-      and function command implementations. It isn't supported in [event-based
+      **Important**:
+
+
+      - The `closeAsync` method is only supported in task pane and function
+      command implementations. It isn't supported in [event-based
       handlers](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
       or [item multi-select
       scenarios](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
+
+
+      - When the `closeAsync` method successfully closes and discards the
+      current message, the add-in that called it ceases running.
 
 
       **Errors**:

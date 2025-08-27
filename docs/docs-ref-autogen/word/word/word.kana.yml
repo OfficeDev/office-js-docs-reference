@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.Kana
+uid: word!Word.Kana:enum
+package: word!
+fullName: Word.Kana
+summary: Specifies the Kana type.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: hiragana
+    uid: word!Word.Kana.hiragana:member
+    package: word!
+    summary: >-
+      Hiragana Kana type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Hiragana"'
+  - name: katakana
+    uid: word!Word.Kana.katakana:member
+    package: word!
+    summary: >-
+      Katakana Kana type.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Katakana"'

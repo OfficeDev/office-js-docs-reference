@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: Word.Interfaces.DropCapData
+uid: word!Word.Interfaces.DropCapData:interface
+package: word!
+fullName: Word.Interfaces.DropCapData
+summary: >-
+  An interface describing the data returned by calling `dropCap.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: distanceFromText
+    uid: word!Word.Interfaces.DropCapData#distanceFromText:member
+    package: word!
+    fullName: distanceFromText
+    summary: >-
+      Gets the distance (in points) between the dropped capital letter and the
+      paragraph text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'distanceFromText?: number;'
+      return:
+        type: number
+  - name: fontName
+    uid: word!Word.Interfaces.DropCapData#fontName:member
+    package: word!
+    fullName: fontName
+    summary: Gets the name of the font for the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fontName?: string;'
+      return:
+        type: string
+  - name: linesToDrop
+    uid: word!Word.Interfaces.DropCapData#linesToDrop:member
+    package: word!
+    fullName: linesToDrop
+    summary: Gets the height (in lines) of the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linesToDrop?: number;'
+      return:
+        type: number
+  - name: position
+    uid: word!Word.Interfaces.DropCapData#position:member
+    package: word!
+    fullName: position
+    summary: Gets the position of the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'position?: Word.DropPosition | "None" | "Normal" | "Margin";'
+      return:
+        type: >-
+          <xref uid="word!Word.DropPosition:enum" /> | "None" | "Normal" |
+          "Margin"

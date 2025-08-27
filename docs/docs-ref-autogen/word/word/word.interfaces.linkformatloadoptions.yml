@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: Word.Interfaces.LinkFormatLoadOptions
+uid: word!Word.Interfaces.LinkFormatLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.LinkFormatLoadOptions
+summary: Represents the linking characteristics for an OLE object or picture.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: isAutoUpdated
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#isAutoUpdated:member
+    package: word!
+    fullName: isAutoUpdated
+    summary: >-
+      Specifies if the link is updated automatically when the container file is
+      opened or when the source file is changed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAutoUpdated?: boolean;'
+      return:
+        type: boolean
+  - name: isLocked
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#isLocked:member
+    package: word!
+    fullName: isLocked
+    summary: >-
+      Specifies if a `Field`<!-- -->, `InlineShape`<!-- -->, or `Shape` object
+      is locked to prevent automatic updating.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isLocked?: boolean;'
+      return:
+        type: boolean
+  - name: isPictureSavedWithDocument
+    uid: >-
+      word!Word.Interfaces.LinkFormatLoadOptions#isPictureSavedWithDocument:member
+    package: word!
+    fullName: isPictureSavedWithDocument
+    summary: Specifies if the linked picture is saved with the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPictureSavedWithDocument?: boolean;'
+      return:
+        type: boolean
+  - name: sourceFullName
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#sourceFullName:member
+    package: word!
+    fullName: sourceFullName
+    summary: >-
+      Specifies the path and name of the source file for the linked OLE object,
+      picture, or field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sourceFullName?: boolean;'
+      return:
+        type: boolean
+  - name: sourceName
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#sourceName:member
+    package: word!
+    fullName: sourceName
+    summary: >-
+      Gets the name of the source file for the linked OLE object, picture, or
+      field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sourceName?: boolean;'
+      return:
+        type: boolean
+  - name: sourcePath
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#sourcePath:member
+    package: word!
+    fullName: sourcePath
+    summary: >-
+      Gets the path of the source file for the linked OLE object, picture, or
+      field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sourcePath?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: Gets the link type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

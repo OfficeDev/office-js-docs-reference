@@ -7208,7 +7208,7 @@ export declare namespace Office {
      *    <td><strong>Outlook</strong></td>
      *    <td>Supported</td>
      *    <td>Supported</td>
-     *    <td>Not available</td>
+     *    <td>Supported</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *  </tr>
@@ -8816,7 +8816,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Activate add-ins with events} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
-         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * - In Outlook on the web, on Mac, and in the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * this API isn't supported in add-ins that implement a task pane. On these clients, the API is only supported in add-ins that implement event-based activation
          * or integrated spam reporting.
          *

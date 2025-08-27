@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.PageColor
+uid: word!Word.PageColor:enum
+package: word!
+fullName: Word.PageColor
+summary: Specifies the page color options in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: inverse
+    uid: word!Word.PageColor.inverse:member
+    package: word!
+    summary: >-
+      Inverse.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Inverse"'
+  - name: none
+    uid: word!Word.PageColor.none:member
+    package: word!
+    summary: >-
+      None.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: sepia
+    uid: word!Word.PageColor.sepia:member
+    package: word!
+    summary: >-
+      Sepia.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Sepia"'

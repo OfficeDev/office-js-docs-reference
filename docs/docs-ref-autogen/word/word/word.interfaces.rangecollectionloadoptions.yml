@@ -28,6 +28,161 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: bold
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#bold:member
+    package: word!
+    fullName: bold
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the range is formatted
+      as bold.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: boldBidirectional
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#boldBidirectional:member
+    package: word!
+    fullName: boldBidirectional
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the range is formatted
+      as bold in a right-to-left language document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'boldBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: case
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#case:member
+    package: word!
+    fullName: case
+    summary: >-
+      For EACH ITEM in the collection: Specifies a `CharacterCase` value that
+      represents the case of the text in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'case?: boolean;'
+      return:
+        type: boolean
+  - name: characterWidth
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#characterWidth:member
+    package: word!
+    fullName: characterWidth
+    summary: >-
+      For EACH ITEM in the collection: Specifies the character width of the
+      range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'characterWidth?: boolean;'
+      return:
+        type: boolean
+  - name: combineCharacters
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#combineCharacters:member
+    package: word!
+    fullName: combineCharacters
+    summary: >-
+      For EACH ITEM in the collection: Specifies if the range contains combined
+      characters.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'combineCharacters?: boolean;'
+      return:
+        type: boolean
+  - name: disableCharacterSpaceGrid
+    uid: >-
+      word!Word.Interfaces.RangeCollectionLoadOptions#disableCharacterSpaceGrid:member
+    package: word!
+    fullName: disableCharacterSpaceGrid
+    summary: >-
+      For EACH ITEM in the collection: Specifies if Microsoft Word ignores the
+      number of characters per line for the corresponding `Range` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'disableCharacterSpaceGrid?: boolean;'
+      return:
+        type: boolean
+  - name: emphasisMark
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#emphasisMark:member
+    package: word!
+    fullName: emphasisMark
+    summary: >-
+      For EACH ITEM in the collection: Specifies the emphasis mark for a
+      character or designated character string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'emphasisMark?: boolean;'
+      return:
+        type: boolean
+  - name: end
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#end:member
+    package: word!
+    fullName: end
+    summary: >-
+      For EACH ITEM in the collection: Specifies the ending character position
+      of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'end?: boolean;'
+      return:
+        type: boolean
+  - name: fitTextWidth
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#fitTextWidth:member
+    package: word!
+    fullName: fitTextWidth
+    summary: >-
+      For EACH ITEM in the collection: Specifies the width (in the current
+      measurement units) in which Microsoft Word fits the text in the current
+      selection or range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fitTextWidth?: boolean;'
+      return:
+        type: boolean
   - name: font
     uid: word!Word.Interfaces.RangeCollectionLoadOptions#font:member
     package: word!
@@ -45,6 +200,23 @@ properties:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.FontLoadOptions:interface" />
+  - name: grammarChecked
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#grammarChecked:member
+    package: word!
+    fullName: grammarChecked
+    summary: >-
+      For EACH ITEM in the collection: Specifies if a grammar check has been run
+      on the range or document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'grammarChecked?: boolean;'
+      return:
+        type: boolean
   - name: hasNoProofing
     uid: word!Word.Interfaces.RangeCollectionLoadOptions#hasNoProofing:member
     package: word!
@@ -60,6 +232,41 @@ properties:
     isDeprecated: false
     syntax:
       content: 'hasNoProofing?: boolean;'
+      return:
+        type: boolean
+  - name: highlightColorIndex
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#highlightColorIndex:member
+    package: word!
+    fullName: highlightColorIndex
+    summary: >-
+      For EACH ITEM in the collection: Specifies the highlight color for the
+      range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'highlightColorIndex?: boolean;'
+      return:
+        type: boolean
+  - name: horizontalInVertical
+    uid: >-
+      word!Word.Interfaces.RangeCollectionLoadOptions#horizontalInVertical:member
+    package: word!
+    fullName: horizontalInVertical
+    summary: >-
+      For EACH ITEM in the collection: Specifies the formatting for horizontal
+      text set within vertical text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'horizontalInVertical?: boolean;'
       return:
         type: boolean
   - name: hyperlink
@@ -81,6 +288,21 @@ properties:
       content: 'hyperlink?: boolean;'
       return:
         type: boolean
+  - name: id
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#id:member
+    package: word!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Specifies the ID for the range.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
   - name: isEmpty
     uid: word!Word.Interfaces.RangeCollectionLoadOptions#isEmpty:member
     package: word!
@@ -94,6 +316,92 @@ properties:
     isDeprecated: false
     syntax:
       content: 'isEmpty?: boolean;'
+      return:
+        type: boolean
+  - name: isEndOfRowMark
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#isEndOfRowMark:member
+    package: word!
+    fullName: isEndOfRowMark
+    summary: >-
+      For EACH ITEM in the collection: Gets if the range is collapsed and is
+      located at the end-of-row mark in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isEndOfRowMark?: boolean;'
+      return:
+        type: boolean
+  - name: isTextVisibleOnScreen
+    uid: >-
+      word!Word.Interfaces.RangeCollectionLoadOptions#isTextVisibleOnScreen:member
+    package: word!
+    fullName: isTextVisibleOnScreen
+    summary: >-
+      For EACH ITEM in the collection: Gets whether the text in the range is
+      visible on the screen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isTextVisibleOnScreen?: boolean;'
+      return:
+        type: boolean
+  - name: italic
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#italic:member
+    package: word!
+    fullName: italic
+    summary: >-
+      For EACH ITEM in the collection: Specifies if the font or range is
+      formatted as italic.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: italicBidirectional
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#italicBidirectional:member
+    package: word!
+    fullName: italicBidirectional
+    summary: >-
+      For EACH ITEM in the collection: Specifies if the font or range is
+      formatted as italic (right-to-left languages).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'italicBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: kana
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#kana:member
+    package: word!
+    fullName: kana
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the range of Japanese
+      language text is hiragana or katakana.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'kana?: boolean;'
       return:
         type: boolean
   - name: languageDetected
@@ -342,6 +650,90 @@ properties:
         type: >-
           <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
           />
+  - name: showAll
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#showAll:member
+    package: word!
+    fullName: showAll
+    summary: >-
+      For EACH ITEM in the collection: Specifies if all nonprinting characters
+      (such as hidden text, tab marks, space marks, and paragraph marks) are
+      displayed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showAll?: boolean;'
+      return:
+        type: boolean
+  - name: spellingChecked
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#spellingChecked:member
+    package: word!
+    fullName: spellingChecked
+    summary: >-
+      For EACH ITEM in the collection: Specifies if spelling has been checked
+      throughout the range or document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spellingChecked?: boolean;'
+      return:
+        type: boolean
+  - name: start
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#start:member
+    package: word!
+    fullName: start
+    summary: >-
+      For EACH ITEM in the collection: Specifies the starting character position
+      of the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start?: boolean;'
+      return:
+        type: boolean
+  - name: storyLength
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#storyLength:member
+    package: word!
+    fullName: storyLength
+    summary: >-
+      For EACH ITEM in the collection: Gets the number of characters in the
+      story that contains the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'storyLength?: boolean;'
+      return:
+        type: boolean
+  - name: storyType
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#storyType:member
+    package: word!
+    fullName: storyType
+    summary: 'For EACH ITEM in the collection: Gets the story type for the range.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'storyType?: boolean;'
+      return:
+        type: boolean
   - name: style
     uid: word!Word.Interfaces.RangeCollectionLoadOptions#style:member
     package: word!
@@ -393,5 +785,40 @@ properties:
     isDeprecated: false
     syntax:
       content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: twoLinesInOne
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#twoLinesInOne:member
+    package: word!
+    fullName: twoLinesInOne
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether Microsoft Word sets two
+      lines of text in one and specifies the characters that enclose the text,
+      if any.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'twoLinesInOne?: boolean;'
+      return:
+        type: boolean
+  - name: underline
+    uid: word!Word.Interfaces.RangeCollectionLoadOptions#underline:member
+    package: word!
+    fullName: underline
+    summary: >-
+      For EACH ITEM in the collection: Specifies the type of underline applied
+      to the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'underline?: boolean;'
       return:
         type: boolean
