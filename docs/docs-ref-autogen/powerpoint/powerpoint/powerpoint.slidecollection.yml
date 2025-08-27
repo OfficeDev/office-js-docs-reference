@@ -121,6 +121,35 @@ methods:
       return:
         type: void
         description: ''
+  - name: exportAsBase64Presentation(values)
+    uid: powerpoint!PowerPoint.SlideCollection#exportAsBase64Presentation:member(1)
+    package: powerpoint!
+    fullName: exportAsBase64Presentation(values)
+    summary: >-
+      Exports one or more slides found in this collection to their own
+      presentation file, returned as Base64-encoded data. Throws an
+      `InvalidArgument` exception if provided slide IDs or `Slide` objects are
+      not found in this collection.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsBase64Presentation(values: Array<string | Slide>):
+        OfficeExtension.ClientResult<string>;
+      parameters:
+        - id: values
+          description: An array of slide IDs or `Slide` objects.
+          type: >-
+            Array&lt;string | <xref uid="powerpoint!PowerPoint.Slide:class"
+            />&gt;
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        description: A Base64-encoded string.
   - name: getCount()
     uid: powerpoint!PowerPoint.SlideCollection#getCount:member(1)
     package: powerpoint!

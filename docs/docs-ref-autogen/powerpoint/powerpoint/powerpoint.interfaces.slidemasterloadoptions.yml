@@ -29,6 +29,25 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: background
+    uid: powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#background:member
+    package: powerpoint!
+    fullName: background
+    summary: Gets the background of the Slide Master.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'background?: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions:interface"
+          />
   - name: id
     uid: powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#id:member
     package: powerpoint!

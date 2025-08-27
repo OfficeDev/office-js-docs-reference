@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData
+uid: >-
+  powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData
+summary: >-
+  An interface for updating data on the `SlideBackgroundGradientFill` object,
+  for use in `slideBackgroundGradientFill.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData#type:member
+    package: powerpoint!
+    fullName: type
+    summary: Specifies the type of gradient fill.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" |
+        "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum"
+          /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" |
+          "ShadeFromTitle"

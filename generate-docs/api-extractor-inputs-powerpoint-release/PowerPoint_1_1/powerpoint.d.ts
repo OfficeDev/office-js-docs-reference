@@ -337,7 +337,7 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             
-           
+            
             
             
             

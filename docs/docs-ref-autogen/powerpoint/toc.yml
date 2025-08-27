@@ -17,6 +17,10 @@ items:
             items:
               - name: BindingType
                 uid: powerpoint!PowerPoint.BindingType:enum
+              - name: BulletStyle
+                uid: powerpoint!PowerPoint.BulletStyle:enum
+              - name: BulletType
+                uid: powerpoint!PowerPoint.BulletType:enum
               - name: ConnectorType
                 uid: powerpoint!PowerPoint.ConnectorType:enum
               - name: DocumentPropertyType
@@ -37,6 +41,8 @@ items:
                 uid: powerpoint!PowerPoint.ShapeFillType:enum
               - name: ShapeFontUnderlineStyle
                 uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum
+              - name: ShapeGetImageFormatType
+                uid: powerpoint!PowerPoint.ShapeGetImageFormatType:enum
               - name: ShapeLineDashStyle
                 uid: powerpoint!PowerPoint.ShapeLineDashStyle:enum
               - name: ShapeLineStyle
@@ -45,12 +51,20 @@ items:
                 uid: powerpoint!PowerPoint.ShapeType:enum
               - name: ShapeZOrder
                 uid: powerpoint!PowerPoint.ShapeZOrder:enum
+              - name: SlideBackgroundFillType
+                uid: powerpoint!PowerPoint.SlideBackgroundFillType:enum
+              - name: SlideBackgroundGradientFillType
+                uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum
+              - name: SlideBackgroundPatternFillType
+                uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType:enum
               - name: SlideLayoutType
                 uid: powerpoint!PowerPoint.SlideLayoutType:enum
               - name: TableStyle
                 uid: powerpoint!PowerPoint.TableStyle:enum
               - name: TextVerticalAlignment
                 uid: powerpoint!PowerPoint.TextVerticalAlignment:enum
+              - name: ThemeColor
+                uid: powerpoint!PowerPoint.ThemeColor:enum
           - name: AddSlideOptions
             uid: powerpoint!PowerPoint.AddSlideOptions:interface
           - name: Application
@@ -91,6 +105,8 @@ items:
             uid: powerpoint!PowerPoint.InsertSlideOptions:interface
           - name: Margins
             uid: powerpoint!PowerPoint.Margins:class
+          - name: PageSetup
+            uid: powerpoint!PowerPoint.PageSetup:class
           - name: ParagraphFormat
             uid: powerpoint!PowerPoint.ParagraphFormat:class
           - name: PlaceholderFormat
@@ -109,6 +125,8 @@ items:
             uid: powerpoint!PowerPoint.ShapeFill:class
           - name: ShapeFont
             uid: powerpoint!PowerPoint.ShapeFont:class
+          - name: ShapeGetImageOptions
+            uid: powerpoint!PowerPoint.ShapeGetImageOptions:interface
           - name: ShapeGroup
             uid: powerpoint!PowerPoint.ShapeGroup:class
           - name: ShapeLineFormat
@@ -117,16 +135,41 @@ items:
             uid: powerpoint!PowerPoint.ShapeScopedCollection:class
           - name: Slide
             uid: powerpoint!PowerPoint.Slide:class
+          - name: SlideBackground
+            uid: powerpoint!PowerPoint.SlideBackground:class
+          - name: SlideBackgroundFill
+            uid: powerpoint!PowerPoint.SlideBackgroundFill:class
+          - name: SlideBackgroundGradientFill
+            uid: powerpoint!PowerPoint.SlideBackgroundGradientFill:class
+          - name: SlideBackgroundGradientFillOptions
+            uid: powerpoint!PowerPoint.SlideBackgroundGradientFillOptions:interface
+          - name: SlideBackgroundPatternFill
+            uid: powerpoint!PowerPoint.SlideBackgroundPatternFill:class
+          - name: SlideBackgroundPatternFillOptions
+            uid: powerpoint!PowerPoint.SlideBackgroundPatternFillOptions:interface
+          - name: SlideBackgroundPictureOrTextureFill
+            uid: powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFill:class
+          - name: SlideBackgroundPictureOrTextureFillOptions
+            uid: >-
+              powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions:interface
+          - name: SlideBackgroundSolidFill
+            uid: powerpoint!PowerPoint.SlideBackgroundSolidFill:class
+          - name: SlideBackgroundSolidFillOptions
+            uid: powerpoint!PowerPoint.SlideBackgroundSolidFillOptions:interface
           - name: SlideCollection
             uid: powerpoint!PowerPoint.SlideCollection:class
           - name: SlideGetImageOptions
             uid: powerpoint!PowerPoint.SlideGetImageOptions:interface
           - name: SlideLayout
             uid: powerpoint!PowerPoint.SlideLayout:class
+          - name: SlideLayoutBackground
+            uid: powerpoint!PowerPoint.SlideLayoutBackground:class
           - name: SlideLayoutCollection
             uid: powerpoint!PowerPoint.SlideLayoutCollection:class
           - name: SlideMaster
             uid: powerpoint!PowerPoint.SlideMaster:class
+          - name: SlideMasterBackground
+            uid: powerpoint!PowerPoint.SlideMasterBackground:class
           - name: SlideMasterCollection
             uid: powerpoint!PowerPoint.SlideMasterCollection:class
           - name: SlideScopedCollection
@@ -149,8 +192,6 @@ items:
             uid: powerpoint!PowerPoint.TableClearOptions:interface
           - name: TableColumn
             uid: powerpoint!PowerPoint.TableColumn:class
-          - name: TableColumnAddOptions
-            uid: powerpoint!PowerPoint.TableColumnAddOptions:interface
           - name: TableColumnCollection
             uid: powerpoint!PowerPoint.TableColumnCollection:class
           - name: TableColumnProperties
@@ -159,8 +200,6 @@ items:
             uid: powerpoint!PowerPoint.TableMergedAreaProperties:interface
           - name: TableRow
             uid: powerpoint!PowerPoint.TableRow:class
-          - name: TableRowAddOptions
-            uid: powerpoint!PowerPoint.TableRowAddOptions:interface
           - name: TableRowCollection
             uid: powerpoint!PowerPoint.TableRowCollection:class
           - name: TableRowProperties
@@ -177,6 +216,8 @@ items:
             uid: powerpoint!PowerPoint.TextRange:class
           - name: TextRun
             uid: powerpoint!PowerPoint.TextRun:interface
+          - name: ThemeColorScheme
+            uid: powerpoint!PowerPoint.ThemeColorScheme:class
       - name: Visio
         href: /javascript/api/visio
       - name: Word

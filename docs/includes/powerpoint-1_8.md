@@ -102,7 +102,7 @@
 ||[indentLevel](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-indentlevel-member)|Represents the indent level of the text in the table cell.|
 ||[margins](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-margins-member)|Specifies the margin settings in the table cell.|
 ||[text](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-text-member)|Specifies the text content of the table cell.|
-||[textRuns](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-textruns-member)|Specifies the contents of the table cell as an array of TextRun objects.|
+||[textRuns](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-textruns-member)|Specifies the contents of the table cell as an array of PowerPoint.TextRun objects.|
 ||[verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-verticalalignment-member)|Represents the vertical alignment of the table cell.|
 |[TableColumnProperties](/javascript/api/powerpoint/powerpoint.tablecolumnproperties)|[columnWidth](/javascript/api/powerpoint/powerpoint.tablecolumnproperties#powerpoint-powerpoint-tablecolumnproperties-columnwidth-member)|Represents the desired width of each column in points, or is undefined.|
 |[TableMergedAreaProperties](/javascript/api/powerpoint/powerpoint.tablemergedareaproperties)|[columnCount](/javascript/api/powerpoint/powerpoint.tablemergedareaproperties#powerpoint-powerpoint-tablemergedareaproperties-columncount-member)|Specifies the number of columns for the merged cells area.|

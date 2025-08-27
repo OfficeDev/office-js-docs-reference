@@ -76,6 +76,26 @@ properties:
       return:
         type: <xref uid="powerpoint!PowerPoint.Slide:class" />[]
 methods:
+  - name: exportAsBase64Presentation()
+    uid: >-
+      powerpoint!PowerPoint.SlideScopedCollection#exportAsBase64Presentation:member(1)
+    package: powerpoint!
+    fullName: exportAsBase64Presentation()
+    summary: >-
+      Exports all slides in this collection to their own presentation file,
+      returned as Base64-encoded data.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'exportAsBase64Presentation(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        description: A Base64-encoded string.
   - name: getCount()
     uid: powerpoint!PowerPoint.SlideScopedCollection#getCount:member(1)
     package: powerpoint!

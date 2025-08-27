@@ -34,6 +34,22 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: background
+    uid: powerpoint!PowerPoint.Slide#background:member
+    package: powerpoint!
+    fullName: background
+    summary: Gets the background of the slide.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly background: PowerPoint.SlideBackground;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SlideBackground:class" />
   - name: context
     uid: powerpoint!PowerPoint.Slide#context:member
     package: powerpoint!
@@ -179,6 +195,22 @@ properties:
       content: 'readonly tags: PowerPoint.TagCollection;'
       return:
         type: <xref uid="powerpoint!PowerPoint.TagCollection:class" />
+  - name: themeColorScheme
+    uid: powerpoint!PowerPoint.Slide#themeColorScheme:member
+    package: powerpoint!
+    fullName: themeColorScheme
+    summary: Returns the `ThemeColorScheme` of the slide.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly themeColorScheme: PowerPoint.ThemeColorScheme;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.ThemeColorScheme:class" />
 methods:
   - name: applyLayout(slideLayout)
     uid: powerpoint!PowerPoint.Slide#applyLayout:member(1)
