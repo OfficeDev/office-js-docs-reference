@@ -17516,7 +17516,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.RevisionsFilterData;
     }
     /**
-     * Represents a single item in a {@link Word.RepeatingSectionControlControl}.
+     * Represents a single item in a {@link Word.RepeatingSectionContentControl}.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -60025,7 +60025,7 @@ export declare namespace Word {
             view?: boolean;
         }
         /**
-         * Represents a single item in a {@link Word.RepeatingSectionControlControl}.
+         * Represents a single item in a {@link Word.RepeatingSectionContentControl}.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]

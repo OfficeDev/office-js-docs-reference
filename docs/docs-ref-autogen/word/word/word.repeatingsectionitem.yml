@@ -3,7 +3,10 @@ name: Word.RepeatingSectionItem
 uid: word!Word.RepeatingSectionItem:class
 package: word!
 fullName: Word.RepeatingSectionItem
-summary: Represents a single item in a .
+summary: >-
+  Represents a single item in a
+  [Word.RepeatingSectionContentControl](xref:word!Word.RepeatingSectionContentControl:class)<!--
+  -->.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

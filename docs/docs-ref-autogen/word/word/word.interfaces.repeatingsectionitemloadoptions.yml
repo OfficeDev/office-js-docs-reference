@@ -3,7 +3,10 @@ name: Word.Interfaces.RepeatingSectionItemLoadOptions
 uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionItemLoadOptions
-summary: Represents a single item in a .
+summary: >-
+  Represents a single item in a
+  [Word.RepeatingSectionContentControl](xref:word!Word.RepeatingSectionContentControl:class)<!--
+  -->.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
