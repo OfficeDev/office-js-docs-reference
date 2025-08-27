@@ -43,6 +43,22 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: background
+    uid: powerpoint!PowerPoint.SlideLayout#background:member
+    package: powerpoint!
+    fullName: background
+    summary: Gets the background of the slide layout.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly background: PowerPoint.SlideLayoutBackground;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SlideLayoutBackground:class" />
   - name: context
     uid: powerpoint!PowerPoint.SlideLayout#context:member
     package: powerpoint!
@@ -152,6 +168,22 @@ properties:
       content: 'readonly shapes: PowerPoint.ShapeCollection;'
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeCollection:class" />
+  - name: themeColorScheme
+    uid: powerpoint!PowerPoint.SlideLayout#themeColorScheme:member
+    package: powerpoint!
+    fullName: themeColorScheme
+    summary: Returns the `ThemeColorScheme` of the slide layout.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly themeColorScheme: PowerPoint.ThemeColorScheme;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.ThemeColorScheme:class" />
   - name: type
     uid: powerpoint!PowerPoint.SlideLayout#type:member
     package: powerpoint!

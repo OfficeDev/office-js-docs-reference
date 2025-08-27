@@ -54,6 +54,9 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.MarginsData:interface
   - powerpoint!PowerPoint.Interfaces.MarginsLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.MarginsUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.PageSetupData:interface
+  - powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.PageSetupUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface
@@ -81,16 +84,47 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundFillLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillLoadOptions:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface
@@ -135,16 +169,19 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface
   - powerpoint!PowerPoint.ShapeAddOptions:interface
+  - powerpoint!PowerPoint.ShapeGetImageOptions:interface
+  - powerpoint!PowerPoint.SlideBackgroundGradientFillOptions:interface
+  - powerpoint!PowerPoint.SlideBackgroundPatternFillOptions:interface
+  - powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions:interface
+  - powerpoint!PowerPoint.SlideBackgroundSolidFillOptions:interface
   - powerpoint!PowerPoint.SlideGetImageOptions:interface
   - powerpoint!PowerPoint.TableAddOptions:interface
   - powerpoint!PowerPoint.TableCellBorders:interface
   - powerpoint!PowerPoint.TableCellMargins:interface
   - powerpoint!PowerPoint.TableCellProperties:interface
   - powerpoint!PowerPoint.TableClearOptions:interface
-  - powerpoint!PowerPoint.TableColumnAddOptions:interface
   - powerpoint!PowerPoint.TableColumnProperties:interface
   - powerpoint!PowerPoint.TableMergedAreaProperties:interface
-  - powerpoint!PowerPoint.TableRowAddOptions:interface
   - powerpoint!PowerPoint.TableRowProperties:interface
   - powerpoint!PowerPoint.TextRun:interface
 classes:
@@ -163,6 +200,7 @@ classes:
   - powerpoint!PowerPoint.Hyperlink:class
   - powerpoint!PowerPoint.HyperlinkCollection:class
   - powerpoint!PowerPoint.Margins:class
+  - powerpoint!PowerPoint.PageSetup:class
   - powerpoint!PowerPoint.ParagraphFormat:class
   - powerpoint!PowerPoint.PlaceholderFormat:class
   - powerpoint!PowerPoint.Presentation:class
@@ -175,10 +213,18 @@ classes:
   - powerpoint!PowerPoint.ShapeLineFormat:class
   - powerpoint!PowerPoint.ShapeScopedCollection:class
   - powerpoint!PowerPoint.Slide:class
+  - powerpoint!PowerPoint.SlideBackground:class
+  - powerpoint!PowerPoint.SlideBackgroundFill:class
+  - powerpoint!PowerPoint.SlideBackgroundGradientFill:class
+  - powerpoint!PowerPoint.SlideBackgroundPatternFill:class
+  - powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFill:class
+  - powerpoint!PowerPoint.SlideBackgroundSolidFill:class
   - powerpoint!PowerPoint.SlideCollection:class
   - powerpoint!PowerPoint.SlideLayout:class
+  - powerpoint!PowerPoint.SlideLayoutBackground:class
   - powerpoint!PowerPoint.SlideLayoutCollection:class
   - powerpoint!PowerPoint.SlideMaster:class
+  - powerpoint!PowerPoint.SlideMasterBackground:class
   - powerpoint!PowerPoint.SlideMasterCollection:class
   - powerpoint!PowerPoint.SlideScopedCollection:class
   - powerpoint!PowerPoint.Table:class
@@ -193,8 +239,11 @@ classes:
   - powerpoint!PowerPoint.TagCollection:class
   - powerpoint!PowerPoint.TextFrame:class
   - powerpoint!PowerPoint.TextRange:class
+  - powerpoint!PowerPoint.ThemeColorScheme:class
 enums:
   - powerpoint!PowerPoint.BindingType:enum
+  - powerpoint!PowerPoint.BulletStyle:enum
+  - powerpoint!PowerPoint.BulletType:enum
   - powerpoint!PowerPoint.ConnectorType:enum
   - powerpoint!PowerPoint.DocumentPropertyType:enum
   - powerpoint!PowerPoint.ErrorCodes:enum
@@ -205,13 +254,18 @@ enums:
   - powerpoint!PowerPoint.ShapeAutoSize:enum
   - powerpoint!PowerPoint.ShapeFillType:enum
   - powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum
+  - powerpoint!PowerPoint.ShapeGetImageFormatType:enum
   - powerpoint!PowerPoint.ShapeLineDashStyle:enum
   - powerpoint!PowerPoint.ShapeLineStyle:enum
   - powerpoint!PowerPoint.ShapeType:enum
   - powerpoint!PowerPoint.ShapeZOrder:enum
+  - powerpoint!PowerPoint.SlideBackgroundFillType:enum
+  - powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum
+  - powerpoint!PowerPoint.SlideBackgroundPatternFillType:enum
   - powerpoint!PowerPoint.SlideLayoutType:enum
   - powerpoint!PowerPoint.TableStyle:enum
   - powerpoint!PowerPoint.TextVerticalAlignment:enum
+  - powerpoint!PowerPoint.ThemeColor:enum
 functions:
   - name: PowerPoint.createPresentation(base64File)
     uid: powerpoint!PowerPoint.createPresentation:function(1)

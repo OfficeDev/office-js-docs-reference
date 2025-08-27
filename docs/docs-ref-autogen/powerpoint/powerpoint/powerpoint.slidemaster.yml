@@ -43,6 +43,22 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: background
+    uid: powerpoint!PowerPoint.SlideMaster#background:member
+    package: powerpoint!
+    fullName: background
+    summary: Gets the background of the Slide Master.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly background: PowerPoint.SlideMasterBackground;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SlideMasterBackground:class" />
   - name: context
     uid: powerpoint!PowerPoint.SlideMaster#context:member
     package: powerpoint!
@@ -168,6 +184,22 @@ properties:
       content: 'readonly shapes: PowerPoint.ShapeCollection;'
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeCollection:class" />
+  - name: themeColorScheme
+    uid: powerpoint!PowerPoint.SlideMaster#themeColorScheme:member
+    package: powerpoint!
+    fullName: themeColorScheme
+    summary: Returns the `ThemeColorScheme` of the Slide Master.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly themeColorScheme: PowerPoint.ThemeColorScheme;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.ThemeColorScheme:class" />
 methods:
   - name: load(options)
     uid: powerpoint!PowerPoint.SlideMaster#load:member(1)

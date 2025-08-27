@@ -46,6 +46,14 @@ export declare namespace PowerPoint {
          */
         readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
         /**
+         * Returns the page setup information whose properties control slide setup attributes for the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly pageSetup: PowerPoint.PageSetup;
+        /**
          * Gets the properties of the presentation.
          *
          * @remarks
@@ -2208,9 +2216,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Borders;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.Borders` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BordersData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Borders` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BordersData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.BordersData;
     }
     /**
@@ -2277,9 +2285,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Margins;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.Margins` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.MarginsData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Margins` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.MarginsData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.MarginsData;
     }
     /**
@@ -2991,7 +2999,7 @@ export declare namespace PowerPoint {
          */
         text: string;
         /**
-         * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+         * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
@@ -3169,9 +3177,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.TableColumn;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableColumn` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableColumn` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TableColumnData;
     }
     /**
@@ -3377,7 +3385,7 @@ export declare namespace PowerPoint {
          */
         text?: string;
         /**
-         * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+         * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
@@ -3391,32 +3399,6 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" | undefined;
-    }
-    /**
-     * Represents the available options when adding a table column.
-     *
-     * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface TableColumnAddOptions {
-        /**
-         * If provided, specifies properties for each cell in the table column.
-                    If a cell doesn't require specific formatting, specify an empty object for that cell.
-         *
-         * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        specificCellProperties?: PowerPoint.TableCellProperties[][];
-        /**
-         * Specifies the formatting which applies uniformly to all of the table column cells.
-         *
-         * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        uniformCellProperties?: PowerPoint.TableCellProperties;
     }
     /**
      * Represents a collection of table columns.
@@ -3491,9 +3473,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TableColumnCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.TableColumnCollectionData;
     }
     /**
@@ -3593,36 +3575,10 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.TableRow;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TableRowData;
-    }
-    /**
-     * Represents the available options when adding a table row.
-     *
-     * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface TableRowAddOptions {
-        /**
-         * If provided, specifies properties for each cell in the table row.
-                    If a cell doesn't require specific formatting, specify an empty object for that cell.
-         *
-         * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        specificCellProperties?: PowerPoint.TableCellProperties[][];
-        /**
-         * Specifies the formatting which applies uniformly to all of the table row cells.
-         *
-         * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        uniformCellProperties?: PowerPoint.TableCellProperties;
     }
     /**
      * Represents a collection of table rows.
@@ -3697,9 +3653,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TableRowCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.TableRowCollectionData;
     }
     /**
@@ -4317,9 +4273,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.TableStyleOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.TableStyleOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableStyleOptionsData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TableStyleOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableStyleOptionsData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TableStyleOptionsData;
     }
     /**
@@ -4447,9 +4403,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Table;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `PowerPoint.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TableData;
     }
     /**
@@ -4797,6 +4753,999 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeCollectionData;
     }
     /**
+     * Specifies the gradient fill type for a {@link PowerPoint.SlideBackgroundGradientFill}.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SlideBackgroundGradientFillType {
+        /**
+         * Unsupported gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupported = "Unsupported",
+        /**
+         * Linear gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        linear = "Linear",
+        /**
+         * Radial gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        radial = "Radial",
+        /**
+         * Rectangular gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rectangular = "Rectangular",
+        /**
+         * Path gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        path = "Path",
+        /**
+         * Shade from title gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shadeFromTitle = "ShadeFromTitle",
+    }
+    /**
+     * Represents {@link PowerPoint.SlideBackground} gradient fill properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideBackgroundGradientFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the type of gradient fill.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions): PowerPoint.SlideBackgroundGradientFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundGradientFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideBackgroundGradientFill;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideBackgroundGradientFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundGradientFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideBackgroundGradientFillData;
+    }
+    /**
+     * Represents the available options for setting a {@link PowerPoint.SlideBackground} gradient fill.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SlideBackgroundGradientFillOptions {
+        /**
+         * If provided, specifies the type of gradient fill.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+    }
+    /**
+     * Specifies the pattern fill type for a {@link PowerPoint.SlideBackgroundPatternFill}.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SlideBackgroundPatternFillType {
+        /**
+         * Unsupported pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupported = "Unsupported",
+        /**
+         * 5 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent5 = "Percent5",
+        /**
+         * 10 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent10 = "Percent10",
+        /**
+         * 20 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent20 = "Percent20",
+        /**
+         * 25 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent25 = "Percent25",
+        /**
+         * 30 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent30 = "Percent30",
+        /**
+         * 40 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent40 = "Percent40",
+        /**
+         * 50 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent50 = "Percent50",
+        /**
+         * 60 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent60 = "Percent60",
+        /**
+         * 70 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent70 = "Percent70",
+        /**
+         * 75 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent75 = "Percent75",
+        /**
+         * 80 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent80 = "Percent80",
+        /**
+         * 90 percent pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent90 = "Percent90",
+        /**
+         * Horizontal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontal = "Horizontal",
+        /**
+         * Vertical pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical = "Vertical",
+        /**
+         * Light horizontal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightHorizontal = "LightHorizontal",
+        /**
+         * Light vertical pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightVertical = "LightVertical",
+        /**
+         * Dark horizontal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkHorizontal = "DarkHorizontal",
+        /**
+         * Dark vertical pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkVertical = "DarkVertical",
+        /**
+         * Narrow horizontal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        narrowHorizontal = "NarrowHorizontal",
+        /**
+         * Narrow vertical pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        narrowVertical = "NarrowVertical",
+        /**
+         * Dashed horizontal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedHorizontal = "DashedHorizontal",
+        /**
+         * Dashed vertical pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedVertical = "DashedVertical",
+        /**
+         * Cross pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cross = "Cross",
+        /**
+         * Downward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        downwardDiagonal = "DownwardDiagonal",
+        /**
+         * Upward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upwardDiagonal = "UpwardDiagonal",
+        /**
+         * Light downward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightDownwardDiagonal = "LightDownwardDiagonal",
+        /**
+         * Light upward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightUpwardDiagonal = "LightUpwardDiagonal",
+        /**
+         * Dark downward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkDownwardDiagonal = "DarkDownwardDiagonal",
+        /**
+         * Dark upward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        darkUpwardDiagonal = "DarkUpwardDiagonal",
+        /**
+         * Wide downward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wideDownwardDiagonal = "WideDownwardDiagonal",
+        /**
+         * Wide upward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wideUpwardDiagonal = "WideUpwardDiagonal",
+        /**
+         * Dashed downward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedDownwardDiagonal = "DashedDownwardDiagonal",
+        /**
+         * Dashed upward diagonal pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashedUpwardDiagonal = "DashedUpwardDiagonal",
+        /**
+         * Diagonal cross pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalCross = "DiagonalCross",
+        /**
+         * Small checker board pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallCheckerBoard = "SmallCheckerBoard",
+        /**
+         * Large checker board pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeCheckerBoard = "LargeCheckerBoard",
+        /**
+         * Small grid pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallGrid = "SmallGrid",
+        /**
+         * Large grid pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeGrid = "LargeGrid",
+        /**
+         * Dotted grid pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dottedGrid = "DottedGrid",
+        /**
+         * Small confetti pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallConfetti = "SmallConfetti",
+        /**
+         * Large confetti pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeConfetti = "LargeConfetti",
+        /**
+         * Horizontal brick pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontalBrick = "HorizontalBrick",
+        /**
+         * Diagonal brick pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalBrick = "DiagonalBrick",
+        /**
+         * Solid diamond pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solidDiamond = "SolidDiamond",
+        /**
+         * Outlined diamond pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlinedDiamond = "OutlinedDiamond",
+        /**
+         * Dotted diamond pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dottedDiamond = "DottedDiamond",
+        /**
+         * Plaid pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plaid = "Plaid",
+        /**
+         * Sphere pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sphere = "Sphere",
+        /**
+         * Weave pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        weave = "Weave",
+        /**
+         * Divot pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        divot = "Divot",
+        /**
+         * Shingle pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shingle = "Shingle",
+        /**
+         * Wave pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wave = "Wave",
+        /**
+         * Trellis pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trellis = "Trellis",
+        /**
+         * Zig zag pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        zigZag = "ZigZag",
+    }
+    /**
+     * Represents {@link PowerPoint.SlideBackground} pattern fill properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideBackgroundPatternFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the background color in HTML color format (e.g., "#FFFFFF" or "white").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        backgroundColor: string;
+        /**
+         * Specifies the foreground color in HTML color format (e.g., "#FFA500" or "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        foregroundColor: string;
+        /**
+         * Specifies the pattern type.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pattern: PowerPoint.SlideBackgroundPatternFillType | "Unsupported" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" | "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" | "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis" | "ZigZag";
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions): PowerPoint.SlideBackgroundPatternFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundPatternFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideBackgroundPatternFill;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideBackgroundPatternFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundPatternFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideBackgroundPatternFillData;
+    }
+    /**
+     * Represents the available options for setting a {@link PowerPoint.SlideBackground} pattern fill.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SlideBackgroundPatternFillOptions {
+        /**
+         * If provided, specifies the background color in HTML color format (e.g., "#FFFFFF" or "white").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        backgroundColor?: string;
+        /**
+         * If provided, specifies the foreground color in HTML color format (e.g., "#FFA500" or "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        foregroundColor?: string;
+        /**
+         * If provided, specifies the pattern type.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pattern?: PowerPoint.SlideBackgroundPatternFillType | "Unsupported" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" | "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" | "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis" | "ZigZag";
+    }
+    /**
+     * Represents {@link PowerPoint.SlideBackground} picture or texture fill properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideBackgroundPictureOrTextureFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Sets the image used to fill.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param base64EncodedImage - A string that is a Base64 encoding of the image data.
+         */
+        setImage(base64EncodedImage: string): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions): PowerPoint.SlideBackgroundPictureOrTextureFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundPictureOrTextureFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideBackgroundPictureOrTextureFill;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideBackgroundPictureOrTextureFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData;
+    }
+    /**
+     * Represents {@link PowerPoint.SlideBackground} picture or texture fill options.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SlideBackgroundPictureOrTextureFillOptions {
+        /**
+         * If provided, specifies the Base64-encoded image data for the fill.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        imageBase64?: string;
+        /**
+         * If provided, specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+    }
+    /**
+     * Specifies the fill type for a {@link PowerPoint.SlideBackground}.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SlideBackgroundFillType {
+        /**
+         * Unsupported slide background fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupported = "Unsupported",
+        /**
+         * Specifies that the slide background should have regular solid fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solid = "Solid",
+        /**
+         * Specifies that the slide background should have gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gradient = "Gradient",
+        /**
+         * Specifies that the slide background should have picture or texture fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pictureOrTexture = "PictureOrTexture",
+        /**
+         * Specifies that the slide background should have pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pattern = "Pattern",
+    }
+    /**
+     * Represents {@link PowerPoint.SlideBackground} solid fill properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideBackgroundSolidFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the fill color in HTML color format (e.g., "#FFA500" or "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        color: string;
+        /**
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideBackgroundSolidFillLoadOptions): PowerPoint.SlideBackgroundSolidFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundSolidFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideBackgroundSolidFill;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideBackgroundSolidFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundSolidFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideBackgroundSolidFillData;
+    }
+    /**
+     * Represents the available options for setting a {@link PowerPoint.SlideBackground} solid fill.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SlideBackgroundSolidFillOptions {
+        /**
+         * If provided, specifies the fill color in HTML color format (e.g., "#FFA500" or "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        color?: string;
+        /**
+         * If provided, specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency?: number;
+    }
+    /**
+     * Represents the fill formatting of a slide background object.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideBackgroundFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the fill type of the slide background. See {@link PowerPoint.SlideBackgroundFillType} for details.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: PowerPoint.SlideBackgroundFillType | "Unsupported" | "Solid" | "Gradient" | "PictureOrTexture" | "Pattern";
+        /**
+         * Gets the gradient fill properties. If the fill type is not `gradient`, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getGradientFillOrNullObject(): PowerPoint.SlideBackgroundGradientFill;
+        /**
+         * Gets the pattern fill properties. If the fill type is not `pattern`, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getPatternFillOrNullObject(): PowerPoint.SlideBackgroundPatternFill;
+        /**
+         * Gets the picture or texture fill properties. If the fill type is not `pictureOrTexture`, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getPictureOrTextureFillOrNullObject(): PowerPoint.SlideBackgroundPictureOrTextureFill;
+        /**
+         * Gets the solid fill properties. If the fill type is not `solid`, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getSolidFillOrNullObject(): PowerPoint.SlideBackgroundSolidFill;
+        /**
+         * Sets the fill formatting of the slide background to a gradient fill. This changes the fill type to `gradient`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Options for the gradient fill.
+         */
+        setGradientFill(options?: PowerPoint.SlideBackgroundGradientFillOptions): void;
+        /**
+         * Sets the fill formatting of the slide background to a pattern fill. This changes the fill type to `pattern`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Options for the pattern fill.
+         */
+        setPatternFill(options?: PowerPoint.SlideBackgroundPatternFillOptions): void;
+        /**
+         * Sets the fill formatting of the slide background to a picture or texture fill. This changes the fill type to `pictureOrTexture`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Options for the picture or texture fill.
+         */
+        setPictureOrTextureFill(options?: PowerPoint.SlideBackgroundPictureOrTextureFillOptions): void;
+        /**
+         * Sets the fill formatting of the slide background to a solid fill. This changes the fill type to `solid`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Options for the solid fill.
+         */
+        setSolidFill(options?: PowerPoint.SlideBackgroundSolidFillOptions): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions): PowerPoint.SlideBackgroundFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideBackgroundFill;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideBackgroundFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideBackgroundFillData;
+    }
+    /**
+     * Represents a background of a slide.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideBackground extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the fill formatting of the background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fill: PowerPoint.SlideBackgroundFill;
+        /**
+         * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areBackgroundGraphicsHidden: boolean;
+        /**
+         * Specifies if the slide background follows the slide master background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isMasterBackgroundFollowed: boolean;
+        /**
+         * Resets the fill formatting of the slide background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reset(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideBackgroundLoadOptions): PowerPoint.SlideBackground;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideBackground;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideBackground;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideBackground` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideBackgroundData;
+    }
+    /**
      * Represents the available options when getting an image of a slide.
      *
      * @remarks
@@ -4817,6 +5766,75 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         width?: number;
+    }
+    /**
+     * Represents the background of a slide layout.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideLayoutBackground extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the fill formatting of the background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fill: PowerPoint.SlideBackgroundFill;
+        /**
+         * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areBackgroundGraphicsHidden: boolean;
+        /**
+         * Specifies if the slide layout background follows the slide master background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isMasterBackgroundFollowed: boolean;
+        /**
+         * Resets the fill formatting of the slide layout background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reset(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions): PowerPoint.SlideLayoutBackground;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideLayoutBackground;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideLayoutBackground;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideLayoutBackground` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutBackgroundData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideLayoutBackgroundData;
     }
     /**
      * Specifies the type of a slide layout.
@@ -5049,6 +6067,175 @@ export declare namespace PowerPoint {
         verticalTitleAndTextOverChart = "VerticalTitleAndTextOverChart",
     }
     /**
+     * Specifies the theme colors used in PowerPoint.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ThemeColor {
+        /**
+         * Specifies a mixed theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Specifies no theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Specifies the Accent 1 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent1 = "Accent1",
+        /**
+         * Specifies the Accent 2 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent2 = "Accent2",
+        /**
+         * Specifies the Accent 3 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent3 = "Accent3",
+        /**
+         * Specifies the Accent 4 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent4 = "Accent4",
+        /**
+         * Specifies the Accent 5 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent5 = "Accent5",
+        /**
+         * Specifies the Accent 6 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accent6 = "Accent6",
+        /**
+         * Specifies the Dark 1 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dark1 = "Dark1",
+        /**
+         * Specifies the Dark 2 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dark2 = "Dark2",
+        /**
+         * Specifies the clicked hyperlink theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        followedHyperlink = "FollowedHyperlink",
+        /**
+         * Specifies the hyperlink theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hyperlink = "Hyperlink",
+        /**
+         * Specifies the Light 1 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        light1 = "Light1",
+        /**
+         * Specifies the Light 2 theme color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        light2 = "Light2",
+    }
+    /**
+     * Represents a theme color scheme.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ThemeColorScheme extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the color value for the specified `ThemeColor`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param color - The theme color.
+         * @returns The color value in #RRGGBB format (e.g., "FFA500").
+         */
+        getThemeColor(color: PowerPoint.ThemeColor): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets the color value for the specified `ThemeColor`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param color - The theme color.
+         * @returns The color value in #RRGGBB format (e.g., "FFA500").
+         */
+        getThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"): OfficeExtension.ClientResult<string>;
+        /**
+         * Sets the color value for the specified `ThemeColor`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param color - The theme color.
+         * @param rgbColor - The color value in #RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+         */
+        setThemeColor(color: PowerPoint.ThemeColor, rgbColor: string): void;
+        /**
+         * Sets the color value for the specified `ThemeColor`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param color - The theme color.
+         * @param rgbColor - The color value in #RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+         */
+        setThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2", rgbColor: string): void;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ThemeColorScheme` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ThemeColorSchemeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): {
+            [key: string]: string;
+        };
+    }
+    /**
      * Represents the layout of a slide.
      *
      * @remarks
@@ -5057,6 +6244,14 @@ export declare namespace PowerPoint {
     export class SlideLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Gets the background of the slide layout.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly background: PowerPoint.SlideLayoutBackground;
         /**
          * Returns a collection of custom XML parts in the slide layout.
          *
@@ -5071,6 +6266,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly shapes: PowerPoint.ShapeCollection;
+        /**
+         * Returns the `ThemeColorScheme` of the slide layout.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly themeColorScheme: PowerPoint.ThemeColorScheme;
         /**
          * Gets the unique ID of the slide layout.
          *
@@ -5194,6 +6397,51 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideLayoutCollectionData;
     }
     /**
+     * Represents the background of a slide master.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlideMasterBackground extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the fill formatting of the background.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fill: PowerPoint.SlideBackgroundFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions): PowerPoint.SlideMasterBackground;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SlideMasterBackground;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SlideMasterBackground;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideMasterBackground` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterBackgroundData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.SlideMasterBackgroundData;
+    }
+    /**
      * Represents the Slide Master of a slide.
      *
      * @remarks
@@ -5202,6 +6450,14 @@ export declare namespace PowerPoint {
     export class SlideMaster extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Gets the background of the Slide Master.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly background: PowerPoint.SlideMasterBackground;
         /**
          * Returns a collection of custom XML parts in the Slide Master.
          *
@@ -5223,6 +6479,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly shapes: PowerPoint.ShapeCollection;
+        /**
+         * Returns the `ThemeColorScheme` of the Slide Master.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly themeColorScheme: PowerPoint.ThemeColorScheme;
         /**
          * Gets the unique ID of the Slide Master.
          *
@@ -5416,6 +6680,14 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets the background of the slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly background: PowerPoint.SlideBackground;
+        /**
          * Returns a collection of custom XML parts in the slide.
          *
          * @remarks
@@ -5457,6 +6729,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly tags: PowerPoint.TagCollection;
+        /**
+         * Returns the `ThemeColorScheme` of the slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly themeColorScheme: PowerPoint.ThemeColorScheme;
         /**
          * Gets the unique ID of the slide.
          *
@@ -5552,6 +6832,60 @@ export declare namespace PowerPoint {
          * Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): PowerPoint.Interfaces.SlideData;
+    }
+    /**
+     * Represents the format of an image.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeGetImageFormatType {
+        /**
+         * The picture is in PNG format.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        png = "Png",
+    }
+    /**
+     * Represents the available options when getting an image of a shape.
+                The image is scaled to fit into the desired dimensions. If width and height aren't specified, the true size of the shape is used.
+                If only one of either width or height is specified, the other will be calculated to preserve aspect ratio.
+                The resulting dimensions will automatically be clamped to the maximum supported size if too large.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ShapeGetImageOptions {
+        /**
+         * The desired format of the resulting image.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        format?: PowerPoint.ShapeGetImageFormatType | "Png";
+        /**
+         * The desired height of the resulting image in pixels. This value will automatically be clamped to the maximum supported size if too large.
+                    Throws an `InvalidArgument` exception when set with a non-positive integer.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height?: number;
+        /**
+         * The desired width of the resulting image in pixels. This value will automatically be clamped to the maximum supported size if too large.
+                    Throws an `InvalidArgument` exception when set with a non-positive integer.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width?: number;
     }
     /**
      * Represents a collection of shapes.
@@ -5848,6 +7182,346 @@ export declare namespace PowerPoint {
         autoSizeMixed = "AutoSizeMixed",
     }
     /**
+     * Specifies the style of a bullet.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum BulletStyle {
+        /**
+         * Style is unsupported.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupported = "Unsupported",
+        /**
+         * Lowercase alphabetical characters with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphabetLowercasePeriod = "AlphabetLowercasePeriod",
+        /**
+         * Uppercase alphabetical characters with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphabetUppercasePeriod = "AlphabetUppercasePeriod",
+        /**
+         * Arabic numerals with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicNumeralParenthesisRight = "ArabicNumeralParenthesisRight",
+        /**
+         * Arabic numerals with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicNumeralPeriod = "ArabicNumeralPeriod",
+        /**
+         * Lowercase Roman numerals with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanLowercaseParenthesesBoth = "RomanLowercaseParenthesesBoth",
+        /**
+         * Lowercase Roman numerals with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanLowercaseParenthesisRight = "RomanLowercaseParenthesisRight",
+        /**
+         * Lowercase Roman numerals with period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanLowercasePeriod = "RomanLowercasePeriod",
+        /**
+         * Uppercase Roman numerals with period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanUppercasePeriod = "RomanUppercasePeriod",
+        /**
+         * Lowercase alphabetical characters with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphabetLowercaseParenthesesBoth = "AlphabetLowercaseParenthesesBoth",
+        /**
+         * Lowercase alphabetical characters with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphabetLowercaseParenthesisRight = "AlphabetLowercaseParenthesisRight",
+        /**
+         * Uppercase alphabetical characters with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphabetUppercaseParenthesesBoth = "AlphabetUppercaseParenthesesBoth",
+        /**
+         * Uppercase alphabetical characters with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alphabetUppercaseParenthesisRight = "AlphabetUppercaseParenthesisRight",
+        /**
+         * Arabic numerals with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicNumeralParenthesesBoth = "ArabicNumeralParenthesesBoth",
+        /**
+         * Arabic numerals.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicNumeralPlain = "ArabicNumeralPlain",
+        /**
+         * Uppercase Roman numerals with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanUppercaseParenthesesBoth = "RomanUppercaseParenthesesBoth",
+        /**
+         * Uppercase Roman numerals with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        romanUppercaseParenthesisRight = "RomanUppercaseParenthesisRight",
+        /**
+         * Simplified Chinese without a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simplifiedChinesePlain = "SimplifiedChinesePlain",
+        /**
+         * Simplified Chinese with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simplifiedChinesePeriod = "SimplifiedChinesePeriod",
+        /**
+         * Double-byte circled number for values up to 10.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        circleNumberDoubleBytePlain = "CircleNumberDoubleBytePlain",
+        /**
+         * Text colored number with same color circle drawn around it.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        circleNumberWideDoubleByteWhitePlain = "CircleNumberWideDoubleByteWhitePlain",
+        /**
+         * Shadow color number with circular background of normal text color.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        circleNumberWideDoubleByteBlackPlain = "CircleNumberWideDoubleByteBlackPlain",
+        /**
+         * Traditional Chinese without a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        traditionalChinesePlain = "TraditionalChinesePlain",
+        /**
+         * Traditional Chinese with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        traditionalChinesePeriod = "TraditionalChinesePeriod",
+        /**
+         * Arabic alphabet with a dash.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicAlphabetDash = "ArabicAlphabetDash",
+        /**
+         * Arabic Abjad alphabet with a dash.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicAbjadDash = "ArabicAbjadDash",
+        /**
+         * Hebrew alphabet with a dash.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hebrewAlphabetDash = "HebrewAlphabetDash",
+        /**
+         * Japanese/Korean numbers without a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kanjiKoreanPlain = "KanjiKoreanPlain",
+        /**
+         * Japanese/Korean numbers with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kanjiKoreanPeriod = "KanjiKoreanPeriod",
+        /**
+         * Double-byte Arabic numbering scheme (no punctuation).
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicDoubleBytePlain = "ArabicDoubleBytePlain",
+        /**
+         * Double-byte Arabic numbering scheme with double-byte period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicDoubleBytePeriod = "ArabicDoubleBytePeriod",
+        /**
+         * Thai alphabet with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thaiAlphabetPeriod = "ThaiAlphabetPeriod",
+        /**
+         * Thai alphabet with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thaiAlphabetParenthesisRight = "ThaiAlphabetParenthesisRight",
+        /**
+         * Thai alphabet with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thaiAlphabetParenthesesBoth = "ThaiAlphabetParenthesesBoth",
+        /**
+         * Thai numerals with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thaiNumeralPeriod = "ThaiNumeralPeriod",
+        /**
+         * Thai numerals with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thaiNumeralParenthesisRight = "ThaiNumeralParenthesisRight",
+        /**
+         * Thai numerals with both parentheses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thaiNumeralParenthesesBoth = "ThaiNumeralParenthesesBoth",
+        /**
+         * Hindi alphabet (vowels) with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hindiAlphabetPeriod = "HindiAlphabetPeriod",
+        /**
+         * Hindi numerals with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hindiNumeralPeriod = "HindiNumeralPeriod",
+        /**
+         * Kanji Simplified Chinese with double-byte period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kanjiSimplifiedChineseDoubleBytePeriod = "KanjiSimplifiedChineseDoubleBytePeriod",
+        /**
+         * Hindi numerals with closing parenthesis.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hindiNumeralParenthesisRight = "HindiNumeralParenthesisRight",
+        /**
+         * Hindi alphabet (consonants) with a period.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hindiAlphabet1Period = "HindiAlphabet1Period",
+    }
+    /**
+     * Specifies the type of a bullet.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum BulletType {
+        /**
+         * Type is unsupported.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupported = "Unsupported",
+        /**
+         * No bullets.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Numbered bullet (e.g., 1, 2, 3 or a, b, c).
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numbered = "Numbered",
+        /**
+         * Symbol-based bullet (e.g., disc, circle, square).
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unnumbered = "Unnumbered",
+    }
+    /**
      * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
      *
      * @remarks
@@ -5856,6 +7530,24 @@ export declare namespace PowerPoint {
     export class BulletFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Specifies the style of the bullets in the paragraph. See {@link PowerPoint.BulletStyle} for details.
+                    Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        style: PowerPoint.BulletStyle | "Unsupported" | "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" | "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" | "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" | "RomanLowercasePeriod" | "RomanUppercasePeriod" | "AlphabetLowercaseParenthesesBoth" | "AlphabetLowercaseParenthesisRight" | "AlphabetUppercaseParenthesesBoth" | "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" | "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" | "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" | "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" | "CircleNumberWideDoubleByteWhitePlain" | "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" | "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash" | "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" | "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" | "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" | "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" | "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" | "HindiAlphabetPeriod" | "HindiNumeralPeriod" | "KanjiSimplifiedChineseDoubleBytePeriod" | "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null;
+        /**
+         * Specifies the type of the bullets in the paragraph. See {@link PowerPoint.BulletType} for details.
+                    Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: PowerPoint.BulletType | "Unsupported" | "None" | "Numbered" | "Unnumbered" | null;
         /**
          * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
          *
@@ -5913,6 +7605,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
+        /**
+         * Represents the indent level of the paragraph.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        indentLevel: number;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6292,6 +7992,15 @@ export declare namespace PowerPoint {
          */
         name: string;
         /**
+         * Specifies the rotation, in degrees, of the shape around the z-axis.
+                    A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rotation: number;
+        /**
          * The distance, in points, from the top edge of the shape to the top edge of the slide.
          *
          * @remarks
@@ -6305,6 +8014,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox";
+        /**
+         * Specifies if the shape is visible.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        visible: boolean;
         /**
          * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
@@ -6327,6 +8044,17 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         delete(): void;
+        /**
+         * Renders an image of the shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options to specify the desired output image properties.
+         * @returns A Base64-encoded string of the shape image in the specified format.
+         */
+        getImageAsBase64(options?: PowerPoint.ShapeGetImageOptions): OfficeExtension.ClientResult<string>;
         /**
          * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. Throws an exception if this shape doesn't belong to a `Slide`.
          *
@@ -6376,6 +8104,15 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.8]
          */
         getTable(): PowerPoint.Table;
+        /**
+         * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. If the shape doesn't support a `TextFrame`, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getTextFrameOrNullObject(): PowerPoint.TextFrame;
         /**
          * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
          *
@@ -6956,6 +8693,59 @@ export declare namespace PowerPoint {
         targetSlideId?: string;
     }
     /**
+     * Represents the page setup information for the presentation.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class PageSetup extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the height of the slides in the presentation, in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slideHeight: number;
+        /**
+         * Specifies the width of the slides in the presentation, in points.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slideWidth: number;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.PageSetupLoadOptions): PowerPoint.PageSetup;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.PageSetup;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.PageSetup;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.PageSetup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PageSetupData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): PowerPoint.Interfaces.PageSetupData;
+    }
+    /**
      * Represents the collection of slides in the presentation.
      *
      * @remarks
@@ -6975,6 +8765,18 @@ export declare namespace PowerPoint {
          * @param options - The options that define the theme of the new slide.
          */
         add(options?: PowerPoint.AddSlideOptions): void;
+        /**
+         * Exports one or more slides found in this collection to their own presentation file, returned as Base64-encoded data.
+                    Throws an `InvalidArgument` exception if provided slide IDs or `Slide` objects are not found in this collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param values - An array of slide IDs or `Slide` objects.
+         * @returns A Base64-encoded string.
+         */
+        exportAsBase64Presentation(values: Array<string | Slide>): OfficeExtension.ClientResult<string>;
         /**
          * Gets the number of slides in the collection.
          *
@@ -7050,6 +8852,15 @@ export declare namespace PowerPoint {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Slide[];
+        /**
+         * Exports all slides in this collection to their own presentation file, returned as Base64-encoded data.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns A Base64-encoded string.
+         */
+        exportAsBase64Presentation(): OfficeExtension.ClientResult<string>;
         /**
          * Gets the number of slides in the collection.
          *
@@ -7481,7 +9292,7 @@ export declare namespace PowerPoint {
              */
             text?: string;
             /**
-             * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -7595,6 +9406,112 @@ export declare namespace PowerPoint {
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
         }
+        /** An interface for updating data on the `SlideBackgroundGradientFill` object, for use in `slideBackgroundGradientFill.set({ ... })`. */
+        export interface SlideBackgroundGradientFillUpdateData {
+            /**
+             * Specifies the type of gradient fill.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+        }
+        /** An interface for updating data on the `SlideBackgroundPatternFill` object, for use in `slideBackgroundPatternFill.set({ ... })`. */
+        export interface SlideBackgroundPatternFillUpdateData {
+            /**
+             * Specifies the background color in HTML color format (e.g., "#FFFFFF" or "white").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundColor?: string;
+            /**
+             * Specifies the foreground color in HTML color format (e.g., "#FFA500" or "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundColor?: string;
+            /**
+             * Specifies the pattern type.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: PowerPoint.SlideBackgroundPatternFillType | "Unsupported" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" | "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" | "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis" | "ZigZag";
+        }
+        /** An interface for updating data on the `SlideBackgroundPictureOrTextureFill` object, for use in `slideBackgroundPictureOrTextureFill.set({ ... })`. */
+        export interface SlideBackgroundPictureOrTextureFillUpdateData {
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface for updating data on the `SlideBackgroundSolidFill` object, for use in `slideBackgroundSolidFill.set({ ... })`. */
+        export interface SlideBackgroundSolidFillUpdateData {
+            /**
+             * Specifies the fill color in HTML color format (e.g., "#FFA500" or "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: string;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface for updating data on the `SlideBackground` object, for use in `slideBackground.set({ ... })`. */
+        export interface SlideBackgroundUpdateData {
+            /**
+             * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundGraphicsHidden?: boolean;
+            /**
+             * Specifies if the slide background follows the slide master background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterBackgroundFollowed?: boolean;
+        }
+        /** An interface for updating data on the `SlideLayoutBackground` object, for use in `slideLayoutBackground.set({ ... })`. */
+        export interface SlideLayoutBackgroundUpdateData {
+            /**
+             * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundGraphicsHidden?: boolean;
+            /**
+             * Specifies if the slide layout background follows the slide master background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterBackgroundFollowed?: boolean;
+        }
         /** An interface for updating data on the `SlideLayoutCollection` object, for use in `slideLayoutCollection.set({ ... })`. */
         export interface SlideLayoutCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideLayoutData[];
@@ -7665,6 +9582,24 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `BulletFormat` object, for use in `bulletFormat.set({ ... })`. */
         export interface BulletFormatUpdateData {
             /**
+             * Specifies the style of the bullets in the paragraph. See {@link PowerPoint.BulletStyle} for details.
+                        Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: PowerPoint.BulletStyle | "Unsupported" | "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" | "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" | "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" | "RomanLowercasePeriod" | "RomanUppercasePeriod" | "AlphabetLowercaseParenthesesBoth" | "AlphabetLowercaseParenthesisRight" | "AlphabetUppercaseParenthesesBoth" | "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" | "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" | "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" | "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" | "CircleNumberWideDoubleByteWhitePlain" | "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" | "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash" | "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" | "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" | "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" | "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" | "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" | "HindiAlphabetPeriod" | "HindiNumeralPeriod" | "KanjiSimplifiedChineseDoubleBytePeriod" | "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null;
+            /**
+             * Specifies the type of the bullets in the paragraph. See {@link PowerPoint.BulletType} for details.
+                        Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.BulletType | "Unsupported" | "None" | "Numbered" | "Unnumbered" | null;
+            /**
              * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
              *
              * @remarks
@@ -7681,6 +9616,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
+            /**
+             * Represents the indent level of the paragraph.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indentLevel?: number;
         }
         /** An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
@@ -7784,12 +9727,29 @@ export declare namespace PowerPoint {
              */
             name?: string;
             /**
+             * Specifies the rotation, in degrees, of the shape around the z-axis.
+                        A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: number;
+            /**
              * The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             top?: number;
+            /**
+             * Specifies if the shape is visible.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -7882,6 +9842,25 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.7]
              */
             title?: string;
+        }
+        /** An interface for updating data on the `PageSetup` object, for use in `pageSetup.set({ ... })`. */
+        export interface PageSetupUpdateData {
+            /**
+             * Specifies the height of the slides in the presentation, in points.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            slideHeight?: number;
+            /**
+             * Specifies the width of the slides in the presentation, in points.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            slideWidth?: number;
         }
         /** An interface for updating data on the `SlideCollection` object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
@@ -8258,7 +10237,7 @@ export declare namespace PowerPoint {
              */
             text?: string;
             /**
-             * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -8420,6 +10399,123 @@ export declare namespace PowerPoint {
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
         }
+        /** An interface describing the data returned by calling `slideBackgroundGradientFill.toJSON()`. */
+        export interface SlideBackgroundGradientFillData {
+            /**
+             * Specifies the type of gradient fill.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+        }
+        /** An interface describing the data returned by calling `slideBackgroundPatternFill.toJSON()`. */
+        export interface SlideBackgroundPatternFillData {
+            /**
+             * Specifies the background color in HTML color format (e.g., "#FFFFFF" or "white").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundColor?: string;
+            /**
+             * Specifies the foreground color in HTML color format (e.g., "#FFA500" or "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundColor?: string;
+            /**
+             * Specifies the pattern type.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: PowerPoint.SlideBackgroundPatternFillType | "Unsupported" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" | "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" | "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis" | "ZigZag";
+        }
+        /** An interface describing the data returned by calling `slideBackgroundPictureOrTextureFill.toJSON()`. */
+        export interface SlideBackgroundPictureOrTextureFillData {
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface describing the data returned by calling `slideBackgroundSolidFill.toJSON()`. */
+        export interface SlideBackgroundSolidFillData {
+            /**
+             * Specifies the fill color in HTML color format (e.g., "#FFA500" or "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: string;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+        }
+        /** An interface describing the data returned by calling `slideBackgroundFill.toJSON()`. */
+        export interface SlideBackgroundFillData {
+            /**
+             * Returns the fill type of the slide background. See {@link PowerPoint.SlideBackgroundFillType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.SlideBackgroundFillType | "Unsupported" | "Solid" | "Gradient" | "PictureOrTexture" | "Pattern";
+        }
+        /** An interface describing the data returned by calling `slideBackground.toJSON()`. */
+        export interface SlideBackgroundData {
+            /**
+             * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundGraphicsHidden?: boolean;
+            /**
+             * Specifies if the slide background follows the slide master background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterBackgroundFollowed?: boolean;
+        }
+        /** An interface describing the data returned by calling `slideLayoutBackground.toJSON()`. */
+        export interface SlideLayoutBackgroundData {
+            /**
+             * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundGraphicsHidden?: boolean;
+            /**
+             * Specifies if the slide layout background follows the slide master background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterBackgroundFollowed?: boolean;
+        }
         /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
         export interface SlideLayoutData {
             /**
@@ -8447,6 +10543,9 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
         export interface SlideLayoutCollectionData {
             items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
+        /** An interface describing the data returned by calling `slideMasterBackground.toJSON()`. */
+        export interface SlideMasterBackgroundData {
         }
         /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
         export interface SlideMasterData {
@@ -8565,6 +10664,24 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
         export interface BulletFormatData {
             /**
+             * Specifies the style of the bullets in the paragraph. See {@link PowerPoint.BulletStyle} for details.
+                        Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: PowerPoint.BulletStyle | "Unsupported" | "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" | "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" | "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" | "RomanLowercasePeriod" | "RomanUppercasePeriod" | "AlphabetLowercaseParenthesesBoth" | "AlphabetLowercaseParenthesisRight" | "AlphabetUppercaseParenthesesBoth" | "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" | "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" | "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" | "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" | "CircleNumberWideDoubleByteWhitePlain" | "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" | "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash" | "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" | "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" | "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" | "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" | "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" | "HindiAlphabetPeriod" | "HindiNumeralPeriod" | "KanjiSimplifiedChineseDoubleBytePeriod" | "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null;
+            /**
+             * Specifies the type of the bullets in the paragraph. See {@link PowerPoint.BulletType} for details.
+                        Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.BulletType | "Unsupported" | "None" | "Numbered" | "Unnumbered" | null;
+            /**
              * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
              *
              * @remarks
@@ -8581,6 +10698,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
+            /**
+             * Represents the indent level of the paragraph.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indentLevel?: number;
         }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
@@ -8711,6 +10836,15 @@ export declare namespace PowerPoint {
              */
             name?: string;
             /**
+             * Specifies the rotation, in degrees, of the shape around the z-axis.
+                        A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: number;
+            /**
              * The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
              * @remarks
@@ -8724,6 +10858,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox";
+            /**
+             * Specifies if the shape is visible.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -8870,6 +11012,25 @@ export declare namespace PowerPoint {
              */
             title?: string;
         }
+        /** An interface describing the data returned by calling `pageSetup.toJSON()`. */
+        export interface PageSetupData {
+            /**
+             * Specifies the height of the slides in the presentation, in points.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            slideHeight?: number;
+            /**
+             * Specifies the width of the slides in the presentation, in points.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            slideWidth?: number;
+        }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -8891,6 +11052,14 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * Returns the page setup information whose properties control slide setup attributes for the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pageSetup?: PowerPoint.Interfaces.PageSetupLoadOptions;
             /**
              * Gets the properties of the presentation.
              *
@@ -9124,52 +11293,52 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * Gets the bottom border.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the bottom border.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             bottom?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
-            * Gets the diagonal border (top-left to bottom-right).
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the diagonal border (top-left to bottom-right).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             diagonalDown?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
-            * Gets the diagonal border (bottom-left to top-right).
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the diagonal border (bottom-left to top-right).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             diagonalUp?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
-            * Gets the left border.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the left border.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             left?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
-            * Gets the right border.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the right border.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             right?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
-            * Gets the top border.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the top border.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             top?: PowerPoint.Interfaces.BorderLoadOptions;
         }
         /**
@@ -9406,36 +11575,36 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * Gets the collection of borders for the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the collection of borders for the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             borders?: PowerPoint.Interfaces.BordersLoadOptions;
             /**
-            * Gets the fill color of the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the fill color of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * Gets the font of the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the font of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             font?: PowerPoint.Interfaces.ShapeFontLoadOptions;
             /**
-            * Gets the set of margins in the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the set of margins in the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             margins?: PowerPoint.Interfaces.MarginsLoadOptions;
             /**
              * Gets the number of table columns this cell spans across.
@@ -9491,7 +11660,7 @@ export declare namespace PowerPoint {
              */
             text?: boolean;
             /**
-             * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -9520,36 +11689,36 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the collection of borders for the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Gets the collection of borders for the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             borders?: PowerPoint.Interfaces.BordersLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the fill color of the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Gets the fill color of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the font of the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Gets the font of the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             font?: PowerPoint.Interfaces.ShapeFontLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the set of margins in the table cell.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Gets the set of margins in the table cell.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             margins?: PowerPoint.Interfaces.MarginsLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the number of table columns this cell spans across.
@@ -9605,7 +11774,7 @@ export declare namespace PowerPoint {
              */
             text?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the contents of the table cell as an array of {@link TextRun} objects.
+             * For EACH ITEM in the collection: Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
@@ -9835,12 +12004,12 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * Gets the table style options.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the table style options.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             styleOptions?: PowerPoint.Interfaces.TableStyleOptionsLoadOptions;
             /**
              * Gets the number of columns in the table.
@@ -9962,6 +12131,15 @@ export declare namespace PowerPoint {
              */
             name?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape around the z-axis.
+                        A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: boolean;
+            /**
              * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
              * @remarks
@@ -9975,6 +12153,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             type?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the shape is visible.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -9992,6 +12178,209 @@ export declare namespace PowerPoint {
             zOrderPosition?: boolean;
         }
         /**
+         * Represents {@link PowerPoint.SlideBackground} gradient fill properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideBackgroundGradientFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the type of gradient fill.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents {@link PowerPoint.SlideBackground} pattern fill properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideBackgroundPatternFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the background color in HTML color format (e.g., "#FFFFFF" or "white").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundColor?: boolean;
+            /**
+             * Specifies the foreground color in HTML color format (e.g., "#FFA500" or "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundColor?: boolean;
+            /**
+             * Specifies the pattern type.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: boolean;
+        }
+        /**
+         * Represents {@link PowerPoint.SlideBackground} picture or texture fill properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideBackgroundPictureOrTextureFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+        }
+        /**
+         * Represents {@link PowerPoint.SlideBackground} solid fill properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideBackgroundSolidFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the fill color in HTML color format (e.g., "#FFA500" or "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+        }
+        /**
+         * Represents the fill formatting of a slide background object.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideBackgroundFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns the fill type of the slide background. See {@link PowerPoint.SlideBackgroundFillType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents a background of a slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideBackgroundLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns the fill formatting of the background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions;
+            /**
+             * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundGraphicsHidden?: boolean;
+            /**
+             * Specifies if the slide background follows the slide master background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterBackgroundFollowed?: boolean;
+        }
+        /**
+         * Represents the background of a slide layout.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideLayoutBackgroundLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns the fill formatting of the background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions;
+            /**
+             * Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areBackgroundGraphicsHidden?: boolean;
+            /**
+             * Specifies if the slide layout background follows the slide master background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterBackgroundFollowed?: boolean;
+        }
+        /**
          * Represents the layout of a slide.
          *
          * @remarks
@@ -10002,6 +12391,14 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * Gets the background of the slide layout.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions;
             /**
              * Gets the unique ID of the slide layout.
              *
@@ -10036,6 +12433,14 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
+             * For EACH ITEM in the collection: Gets the background of the slide layout.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions;
+            /**
              * For EACH ITEM in the collection: Gets the unique ID of the slide layout.
              *
              * @remarks
@@ -10058,6 +12463,27 @@ export declare namespace PowerPoint {
             type?: boolean;
         }
         /**
+         * Represents the background of a slide master.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlideMasterBackgroundLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns the fill formatting of the background.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fill?: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions;
+        }
+        /**
          * Represents the Slide Master of a slide.
          *
          * @remarks
@@ -10068,6 +12494,14 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * Gets the background of the Slide Master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions;
             /**
              * Gets the unique ID of the Slide Master.
              *
@@ -10147,6 +12581,14 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
+             * Gets the background of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideBackgroundLoadOptions;
+            /**
             * Gets the layout of the slide.
             *
             * @remarks
@@ -10225,7 +12667,7 @@ export declare namespace PowerPoint {
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
+             * For EACH ITEM in the collection: Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.5]
@@ -10273,6 +12715,15 @@ export declare namespace PowerPoint {
              */
             name?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape around the z-axis.
+                        A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: boolean;
+            /**
              * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
              * @remarks
@@ -10286,6 +12737,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             type?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the shape is visible.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -10394,6 +12853,24 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
+             * Specifies the style of the bullets in the paragraph. See {@link PowerPoint.BulletStyle} for details.
+                        Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+            /**
+             * Specifies the type of the bullets in the paragraph. See {@link PowerPoint.BulletType} for details.
+                        Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet formatting properties.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
              * Specifies if the bullets in the paragraph are visible. Returns `null` if the {@link PowerPoint.TextRange} includes text fragments with different bullet visibility values.
              *
              * @remarks
@@ -10426,6 +12903,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             horizontalAlignment?: boolean;
+            /**
+             * Represents the indent level of the paragraph.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indentLevel?: boolean;
         }
         /**
          * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
@@ -10601,7 +13086,7 @@ export declare namespace PowerPoint {
              */
             placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
             /**
-            * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
+             * Returns the {@link PowerPoint.TextFrame} object of this `Shape`. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
@@ -10649,6 +13134,15 @@ export declare namespace PowerPoint {
              */
             name?: boolean;
             /**
+             * Specifies the rotation, in degrees, of the shape around the z-axis.
+                        A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: boolean;
+            /**
              * The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
              * @remarks
@@ -10662,6 +13156,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             type?: boolean;
+            /**
+             * Specifies if the shape is visible.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -10888,6 +13390,35 @@ export declare namespace PowerPoint {
             title?: boolean;
         }
         /**
+         * Represents the page setup information for the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface PageSetupLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the height of the slides in the presentation, in points.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            slideHeight?: boolean;
+            /**
+             * Specifies the width of the slides in the presentation, in points.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            slideWidth?: boolean;
+        }
+        /**
          * Represents the collection of slides in the presentation.
          *
          * @remarks
@@ -10899,18 +13430,26 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the layout of the slide.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the background of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideBackgroundLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the layout of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.3]
-            */
+             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the slide.
@@ -10939,18 +13478,26 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the layout of the slide.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Gets the background of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideBackgroundLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the layout of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the slide.
@@ -10978,6 +13525,14 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the background of the Slide Master.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the Slide Master.
              *

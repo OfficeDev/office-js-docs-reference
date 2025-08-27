@@ -384,6 +384,25 @@ properties:
       content: 'readonly placeholderFormat: PowerPoint.PlaceholderFormat;'
       return:
         type: <xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />
+  - name: rotation
+    uid: powerpoint!PowerPoint.Shape#rotation:member
+    package: powerpoint!
+    fullName: rotation
+    summary: >-
+      Specifies the rotation, in degrees, of the shape around the z-axis. A
+      positive value indicates clockwise rotation, and a negative value
+      indicates counterclockwise rotation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotation: number;'
+      return:
+        type: number
   - name: tags
     uid: powerpoint!PowerPoint.Shape#tags:member
     package: powerpoint!
@@ -529,6 +548,22 @@ properties:
           "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" |
           "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" |
           "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox"
+  - name: visible
+    uid: powerpoint!PowerPoint.Shape#visible:member
+    package: powerpoint!
+    fullName: visible
+    summary: Specifies if the shape is visible.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type: boolean
   - name: width
     uid: powerpoint!PowerPoint.Shape#width:member
     package: powerpoint!
@@ -713,6 +748,29 @@ methods:
       return:
         type: void
         description: ''
+  - name: getImageAsBase64(options)
+    uid: powerpoint!PowerPoint.Shape#getImageAsBase64:member(1)
+    package: powerpoint!
+    fullName: getImageAsBase64(options)
+    summary: Renders an image of the shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getImageAsBase64(options?: PowerPoint.ShapeGetImageOptions):
+        OfficeExtension.ClientResult<string>;
+      parameters:
+        - id: options
+          description: Optional. Options to specify the desired output image properties.
+          type: <xref uid="powerpoint!PowerPoint.ShapeGetImageOptions:interface" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        description: A Base64-encoded string of the shape image in the specified format.
   - name: getParentSlide()
     uid: powerpoint!PowerPoint.Shape#getParentSlide:member(1)
     package: powerpoint!
@@ -906,6 +964,30 @@ methods:
       content: 'getTable(): PowerPoint.Table;'
       return:
         type: <xref uid="powerpoint!PowerPoint.Table:class" />
+        description: ''
+  - name: getTextFrameOrNullObject()
+    uid: powerpoint!PowerPoint.Shape#getTextFrameOrNullObject:member(1)
+    package: powerpoint!
+    fullName: getTextFrameOrNullObject()
+    summary: >-
+      Returns the
+      [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object
+      of this `Shape`<!-- -->. If the shape doesn't support a `TextFrame`<!--
+      -->, an object with an `isNullObject` property set to `true` is returned.
+      For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getTextFrameOrNullObject(): PowerPoint.TextFrame;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TextFrame:class" />
         description: ''
   - name: load(options)
     uid: powerpoint!PowerPoint.Shape#load:member(1)

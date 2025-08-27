@@ -101,6 +101,25 @@ properties:
       content: 'name?: string;'
       return:
         type: string
+  - name: rotation
+    uid: powerpoint!PowerPoint.Interfaces.ShapeData#rotation:member
+    package: powerpoint!
+    fullName: rotation
+    summary: >-
+      Specifies the rotation, in degrees, of the shape around the z-axis. A
+      positive value indicates clockwise rotation, and a negative value
+      indicates counterclockwise rotation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rotation?: number;'
+      return:
+        type: number
   - name: top
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#top:member
     package: powerpoint!
@@ -146,6 +165,22 @@ properties:
           "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" |
           "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" |
           "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox"
+  - name: visible
+    uid: powerpoint!PowerPoint.Interfaces.ShapeData#visible:member
+    package: powerpoint!
+    fullName: visible
+    summary: Specifies if the shape is visible.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
   - name: width
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#width:member
     package: powerpoint!
