@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TableColumnData
+uid: powerpoint!PowerPoint.Interfaces.TableColumnData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TableColumnData
+summary: >-
+  An interface describing the data returned by calling
+  `tableColumn.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

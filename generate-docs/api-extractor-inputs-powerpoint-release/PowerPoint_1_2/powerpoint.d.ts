@@ -129,6 +129,15 @@ export declare namespace PowerPoint {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Represents a single slide of a presentation.
      *
@@ -375,6 +384,20 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionUpdateData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
+        export interface BorderUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `Margins` object, for use in `margins.set({ ... })`. */
+        export interface MarginsUpdateData {
+            
+            
+            
+            
+        }
         /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
         export interface ShapeFillUpdateData {
             
@@ -398,10 +421,30 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
         export interface TableCellUpdateData {
             
+            
+            
+            
+            
         }
         /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
         export interface TableCellCollectionUpdateData {
             items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`. */
+        export interface TableColumnUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ... })`. */
+        export interface TableColumnCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableColumnData[];
+        }
+        /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
+        export interface TableRowUpdateData {
+            
+        }
+        /** An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`. */
+        export interface TableRowCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TableRowData[];
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -532,6 +575,23 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface describing the data returned by calling `border.toJSON()`. */
+        export interface BorderData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `borders.toJSON()`. */
+        export interface BordersData {
+        }
+        /** An interface describing the data returned by calling `margins.toJSON()`. */
+        export interface MarginsData {
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
         export interface ShapeFillData {
             
@@ -560,10 +620,33 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
         export interface TableCellCollectionData {
             items?: PowerPoint.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
+        export interface TableColumnData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableColumnCollection.toJSON()`. */
+        export interface TableColumnCollectionData {
+            items?: PowerPoint.Interfaces.TableColumnData[];
+        }
+        /** An interface describing the data returned by calling `tableRow.toJSON()`. */
+        export interface TableRowData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
+        export interface TableRowCollectionData {
+            items?: PowerPoint.Interfaces.TableRowData[];
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -722,6 +805,13 @@ export declare namespace PowerPoint {
             
             title?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
         
         
         
