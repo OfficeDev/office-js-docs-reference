@@ -13,6 +13,9 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.BindingCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.BindingData:interface
+  - powerpoint!PowerPoint.Interfaces.BorderData:interface
+  - powerpoint!PowerPoint.Interfaces.BordersData:interface
+  - powerpoint!PowerPoint.Interfaces.BorderUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatData:interface
   - powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface
@@ -33,6 +36,8 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.MarginsData:interface
+  - powerpoint!PowerPoint.Interfaces.MarginsUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface
@@ -66,7 +71,15 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TableCellCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TableCellData:interface
   - powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnData:interface
+  - powerpoint!PowerPoint.Interfaces.TableColumnUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TableData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowData:interface
+  - powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TagData:interface

@@ -7262,11 +7262,11 @@ Office.EventType,"DialogEventReceived",EnumField,Good,false
 Office.EventType,"DialogMessageReceived",EnumField,Good,false
 Office.EventType,"DialogParentMessageReceived",EnumField,Good,false
 Office.EventType,"DocumentSelectionChanged",EnumField,Good,false
+Office.EventType,"DragAndDropEvent",EnumField,Excellent,false
 Office.EventType,"EnhancedLocationsChanged",EnumField,Excellent,false
 Office.EventType,"InfobarClicked",EnumField,Excellent,false
 Office.EventType,"InitializationContextChanged",EnumField,Excellent,false
 Office.EventType,"ItemChanged",EnumField,Excellent,false
-Office.EventType,"ItemDraggedAndDropped",EnumField,Excellent,false
 Office.EventType,"NodeDeleted",EnumField,Fine,false
 Office.EventType,"NodeInserted",EnumField,Fine,false
 Office.EventType,"NodeReplaced",EnumField,Fine,false

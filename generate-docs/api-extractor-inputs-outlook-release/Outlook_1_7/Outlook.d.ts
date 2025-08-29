@@ -3606,7 +3606,7 @@ export declare namespace Office {
     }
     /**
      * Provides details about the mouse pointer position and the messages or file attachments being dragged and dropped into an add-in's task pane when the
-     * `Office.EventType.ItemDraggedAndDropped` event is raised.
+     * `Office.EventType.DragAndDropEvent` event is raised.
      *
      * @remarks
      *

@@ -144,6 +144,30 @@ fields:
     uid: office!Office.EventType.DocumentSelectionChanged:member
     package: office!
     summary: Triggers when a document-level selection happens in Excel or Word.
+  - name: DragAndDropEvent
+    uid: office!Office.EventType.DragAndDropEvent:member
+    package: office!
+    summary: >-
+      Occurs in Outlook on the web and the new Outlook on Windows when messages
+      or file attachments in the Outlook client window are dragged then dropped
+      into the task pane of an add-in.
+
+
+      To add an event handler for the `DragAndDropEvent` event, use the
+      `addHandlerAsync` method of the `Mailbox` object. The event handler
+      receives an argument of type
+      [Office.DragAndDropEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs)<!--
+      -->.
+
+
+      **Important**: The `DragAndDropEvent` event isn't supported in Outlook
+      on Windows (classic) and on Mac. If the `DragAndDropEvent` handler runs on
+      these clients, an error occurs ("This event isn't supported on this
+      platform.").
+
+
+      \[ [API set: Mailbox
+      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: EnhancedLocationsChanged
     uid: office!Office.EventType.EnhancedLocationsChanged:member
     package: office!
@@ -243,30 +267,6 @@ fields:
 
       To add an event handler for the `ItemChanged` event, use the
       `addHandlerAsync` method of the `Mailbox` object.
-
-
-      \[ [API set: Mailbox
-      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
-  - name: ItemDraggedAndDropped
-    uid: office!Office.EventType.ItemDraggedAndDropped:member
-    package: office!
-    summary: >-
-      Occurs in Outlook on the web and the new Outlook on Windows when messages
-      or file attachments in the Outlook client window are dragged then dropped
-      into the task pane of an add-in.
-
-
-      To add an event handler for the `ItemDraggedAndDropped` event, use the
-      `addHandlerAsync` method of the `Mailbox` object. The event handler
-      receives an argument of type
-      [Office.DragAndDropEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs)<!--
-      -->.
-
-
-      **Important**: The `ItemDraggedAndDropped` event isn't supported in
-      Outlook on Windows (classic) and on Mac. If the `ItemDraggedAndDropped`
-      handler runs on these clients, an error occurs ("This event isn't
-      supported on this platform.").
 
 
       \[ [API set: Mailbox

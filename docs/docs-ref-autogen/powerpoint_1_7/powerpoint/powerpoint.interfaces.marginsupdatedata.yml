@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.MarginsUpdateData
+uid: powerpoint!PowerPoint.Interfaces.MarginsUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.MarginsUpdateData
+summary: >-
+  An interface for updating data on the `Margins` object, for use in
+  `margins.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

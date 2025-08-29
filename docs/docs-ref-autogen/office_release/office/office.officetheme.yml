@@ -140,8 +140,8 @@ properties:
     fullName: fluentThemeData
     summary: Gets the Office host native theme.
     remarks: >-
-      **Important**: The `fluentThemeData` property is only supported on
-      Win32.
+      **Important**: The `fluentThemeData` property is only supported on the
+      Excel, PowerPoint, and Word desktop clients for Windows.
 
     isPreview: false
     isDeprecated: false

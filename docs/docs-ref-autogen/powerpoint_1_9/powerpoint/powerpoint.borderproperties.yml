@@ -1,0 +1,235 @@
+### YamlMime:TSType
+name: PowerPoint.BorderProperties
+uid: powerpoint!PowerPoint.BorderProperties:interface
+package: powerpoint!
+fullName: PowerPoint.BorderProperties
+summary: Represents the properties for a table cell border.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Specifies a table's borders.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table, specifying border styles.
+    shapes.addTable(3, 4, {
+      values: [
+        ["A", "BB", "CCC", "DDDD"],
+        ["E", "FF", "GGG", "HHHH"],
+        ["1", "12", "123", "1234"]
+      ],
+      uniformCellProperties: {
+        borders: {
+          left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+          right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+          top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+          bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+        }
+      }
+    });
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: powerpoint!PowerPoint.BorderProperties#color:member
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
+      "FFA500") or as a named HTML color value (e.g., "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies a table's borders.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying border styles.
+        shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "GGG", "HHHH"],
+            ["1", "12", "123", "1234"]
+          ],
+          uniformCellProperties: {
+            borders: {
+              left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+              bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+            }
+          }
+        });
+        await context.sync();
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string | undefined;'
+      return:
+        type: string | undefined
+  - name: dashStyle
+    uid: powerpoint!PowerPoint.BorderProperties#dashStyle:member
+    package: powerpoint!
+    fullName: dashStyle
+    summary: Represents the dash style of the line.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies a table's borders.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying border styles.
+        shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "GGG", "HHHH"],
+            ["1", "12", "123", "1234"]
+          ],
+          uniformCellProperties: {
+            borders: {
+              left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+              bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+            }
+          }
+        });
+        await context.sync();
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" |
+        "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" |
+        "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" |
+        "SystemDashDot" | undefined;
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeLineDashStyle:enum" /> | "Dash"
+          | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" |
+          "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot"
+          | "SystemDashDot" | undefined
+  - name: transparency
+    uid: powerpoint!PowerPoint.BorderProperties#transparency:member
+    package: powerpoint!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the line as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: number | undefined;'
+      return:
+        type: number | undefined
+  - name: weight
+    uid: powerpoint!PowerPoint.BorderProperties#weight:member
+    package: powerpoint!
+    fullName: weight
+    summary: Represents the weight of the line, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies a table's borders.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying border styles.
+        shapes.addTable(3, 4, {
+          values: [
+            ["A", "BB", "CCC", "DDDD"],
+            ["E", "FF", "GGG", "HHHH"],
+            ["1", "12", "123", "1234"]
+          ],
+          uniformCellProperties: {
+            borders: {
+              left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
+              top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
+              bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
+            }
+          }
+        });
+        await context.sync();
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight?: number | undefined;'
+      return:
+        type: number | undefined
