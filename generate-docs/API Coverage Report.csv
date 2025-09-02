@@ -9021,6 +9021,16 @@ Office.CustomProperties,"remove(name)",Method,Excellent,true
 Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Excellent,true
 Office.CustomProperties,"saveAsync(asyncContext)",Method,Excellent,false
 Office.CustomProperties,"set(name, value)",Method,Excellent,true
+Office.DecryptedMessageAttachment,N/A,Interface,Unknown,false
+Office.DecryptedMessageAttachment,"attachmentType",Property,Good,false
+Office.DecryptedMessageAttachment,"content",Property,Great,false
+Office.DecryptedMessageAttachment,"contentId",Property,Excellent,false
+Office.DecryptedMessageAttachment,"isInline",Property,Excellent,false
+Office.DecryptedMessageAttachment,"name",Property,Good,false
+Office.DecryptedMessageAttachment,"path",Property,Excellent,false
+Office.DecryptedMessageBody,N/A,Interface,Unknown,false
+Office.DecryptedMessageBody,"coercionType",Property,Good,false
+Office.DecryptedMessageBody,"content",Property,Great,false
 Office.DelayDeliveryTime,N/A,Interface,Unknown,false
 Office.DelayDeliveryTime,"getAsync(options, callback)",Method,Poor,false
 Office.DelayDeliveryTime,"getAsync(callback)",Method,Poor,true
@@ -9637,6 +9647,11 @@ Office.MessageCompose,"sendAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"sendAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
+Office.MessageDecryptEventCompletedOptions,N/A,Interface,Excellent,false
+Office.MessageDecryptEventCompletedOptions,"allowEvent",Property,Excellent,false
+Office.MessageDecryptEventCompletedOptions,"attachments",Property,Excellent,false
+Office.MessageDecryptEventCompletedOptions,"contextData",Property,Excellent,false
+Office.MessageDecryptEventCompletedOptions,"emailBody",Property,Excellent,false
 Office.MessageRead,N/A,Interface,Unknown,true
 Office.MessageRead,"attachments",Property,Fine,true
 Office.MessageRead,"body",Property,Great,true

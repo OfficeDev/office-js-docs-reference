@@ -5,11 +5,11 @@ package: powerpoint!
 fullName: PowerPoint.TableRowCollection
 summary: Represents a collection of table rows.
 remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: class
 properties:
@@ -22,7 +22,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -35,7 +35,7 @@ properties:
     summary: Gets the loaded child items in this collection.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'readonly items: PowerPoint.TableRow[];'
@@ -48,11 +48,11 @@ methods:
     fullName: add(index, count)
     summary: Adds one or more rows to the table.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -81,11 +81,11 @@ methods:
     fullName: deleteRows(rows)
     summary: Deletes the specified rows from the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'deleteRows(rows: PowerPoint.TableRow[]): void;'
@@ -102,11 +102,11 @@ methods:
     fullName: getCount()
     summary: Gets the number of rows in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
@@ -119,11 +119,11 @@ methods:
     fullName: getItemAt(index)
     summary: Gets the row using its zero-based index in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'getItemAt(index: number): PowerPoint.TableRow;'
@@ -143,7 +143,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -171,7 +171,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TableRowCollection;'
@@ -193,7 +193,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -226,7 +226,7 @@ methods:
       collection's items.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TableRowCollectionData;'

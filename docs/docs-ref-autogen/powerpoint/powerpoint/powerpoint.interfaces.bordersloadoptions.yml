@@ -5,11 +5,11 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.BordersLoadOptions
 summary: Represents the borders for a table cell.
 remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -23,7 +23,7 @@ properties:
       (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -35,11 +35,11 @@ properties:
     fullName: bottom
     summary: Gets the bottom border.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'bottom?: PowerPoint.Interfaces.BorderLoadOptions;'
@@ -53,11 +53,11 @@ properties:
     fullName: diagonalDown
     summary: Gets the diagonal border (top-left to bottom-right).
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'diagonalDown?: PowerPoint.Interfaces.BorderLoadOptions;'
@@ -71,11 +71,11 @@ properties:
     fullName: diagonalUp
     summary: Gets the diagonal border (bottom-left to top-right).
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'diagonalUp?: PowerPoint.Interfaces.BorderLoadOptions;'
@@ -89,11 +89,11 @@ properties:
     fullName: left
     summary: Gets the left border.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'left?: PowerPoint.Interfaces.BorderLoadOptions;'
@@ -107,11 +107,11 @@ properties:
     fullName: right
     summary: Gets the right border.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'right?: PowerPoint.Interfaces.BorderLoadOptions;'
@@ -125,11 +125,11 @@ properties:
     fullName: top
     summary: Gets the top border.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'top?: PowerPoint.Interfaces.BorderLoadOptions;'

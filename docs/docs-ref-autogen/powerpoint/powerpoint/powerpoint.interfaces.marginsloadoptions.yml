@@ -5,11 +5,11 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.MarginsLoadOptions
 summary: Represents the margins of a table cell.
 remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -23,7 +23,7 @@ properties:
       (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -35,11 +35,11 @@ properties:
     fullName: bottom
     summary: Specifies the bottom margin in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'bottom?: boolean;'
@@ -51,11 +51,11 @@ properties:
     fullName: left
     summary: Specifies the left margin in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'left?: boolean;'
@@ -67,11 +67,11 @@ properties:
     fullName: right
     summary: Specifies the right margin in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'right?: boolean;'
@@ -83,11 +83,11 @@ properties:
     fullName: top
     summary: Specifies the top margin in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'top?: boolean;'

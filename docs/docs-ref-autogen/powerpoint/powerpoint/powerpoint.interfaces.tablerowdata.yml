@@ -18,11 +18,11 @@ properties:
     fullName: currentHeight
     summary: Retrieves the current height of the row in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'currentHeight?: number;'
@@ -37,11 +37,11 @@ properties:
       than the minimum height, the row height will be increased to the minimum
       height.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'height?: number;'
@@ -55,11 +55,11 @@ properties:
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'rowIndex?: number;'

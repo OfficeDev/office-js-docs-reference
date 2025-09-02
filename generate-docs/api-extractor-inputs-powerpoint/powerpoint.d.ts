@@ -2071,7 +2071,8 @@ export declare namespace PowerPoint {
      * Represents the properties for a table cell border.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class Border extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2080,28 +2081,32 @@ export declare namespace PowerPoint {
          * Represents the line color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         color: string | undefined;
         /**
          * Represents the dash style of the line.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dashStyle: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot" | undefined;
         /**
          * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         transparency: number | undefined;
         /**
          * Represents the weight of the line, in points.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         weight: number | undefined;
         /**
@@ -2135,7 +2140,8 @@ export declare namespace PowerPoint {
      * Represents the borders for a table cell.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class Borders extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2144,42 +2150,48 @@ export declare namespace PowerPoint {
          * Gets the bottom border.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly bottom: PowerPoint.Border;
         /**
          * Gets the diagonal border (top-left to bottom-right).
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly diagonalDown: PowerPoint.Border;
         /**
          * Gets the diagonal border (bottom-left to top-right).
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly diagonalUp: PowerPoint.Border;
         /**
          * Gets the left border.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly left: PowerPoint.Border;
         /**
          * Gets the right border.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly right: PowerPoint.Border;
         /**
          * Gets the top border.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly top: PowerPoint.Border;
         /**
@@ -2213,7 +2225,8 @@ export declare namespace PowerPoint {
      * Represents the margins of a table cell.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class Margins extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2222,28 +2235,32 @@ export declare namespace PowerPoint {
          * Specifies the bottom margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bottom: number | undefined;
         /**
          * Specifies the left margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         left: number | undefined;
         /**
          * Specifies the right margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         right: number | undefined;
         /**
          * Specifies the top margin in points.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         top: number | undefined;
         /**
@@ -2900,28 +2917,32 @@ export declare namespace PowerPoint {
          * Gets the collection of borders for the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly borders: PowerPoint.Borders;
         /**
          * Gets the fill color of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly fill: PowerPoint.ShapeFill;
         /**
          * Gets the font of the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly font: PowerPoint.ShapeFont;
         /**
          * Gets the set of margins in the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly margins: PowerPoint.Margins;
         /**
@@ -2943,14 +2964,16 @@ export declare namespace PowerPoint {
          * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
         /**
          * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         indentLevel: number | null;
         /**
@@ -2980,14 +3003,16 @@ export declare namespace PowerPoint {
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         textRuns: PowerPoint.TextRun[];
         /**
          * Specifies the vertical alignment of the text in the table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         verticalAlignment: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
         /**
@@ -2997,7 +3022,8 @@ export declare namespace PowerPoint {
                     a merged area.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param rowCount - The number of rows the cell will span across. Must be greater than 0.
          * @param columnCount - The number of columns the cell will span across. Must be greater than 0.
@@ -3007,7 +3033,8 @@ export declare namespace PowerPoint {
          * Splits the cell into the specified number of rows and columns.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param rowCount - The number of rows to split into. Must be greater than 0.
          * @param columnCount - The number of columns to split into. Must be greater than 0.
@@ -3098,7 +3125,8 @@ export declare namespace PowerPoint {
      * Represents a column in a table.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class TableColumn extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3107,21 +3135,24 @@ export declare namespace PowerPoint {
          * Returns the index number of the column within the column collection of the table. Zero-indexed.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly columnIndex: number;
         /**
          * Retrieves the width of the column in points. If the set column width is less than the minimum width, the column width will be increased to the minimum width.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         width: number;
         /**
          * Deletes the column.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         delete(): void;
         /**
@@ -3373,7 +3404,8 @@ export declare namespace PowerPoint {
      * Represents a collection of table columns.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class TableColumnCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3384,7 +3416,8 @@ export declare namespace PowerPoint {
          * Adds one or more columns to the table.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param index - Optional. Specifies the zero-based index where the new columns are added. Existing columns starting at the index location are shifted right. If the index value is undefined, null, -1, or greater than the number of columns in the table, the new columns are added at the end of the table.
          * @param count - Optional. The number of columns to add. If the value is undefined or 0, only one column is added.
@@ -3395,7 +3428,8 @@ export declare namespace PowerPoint {
          * Deletes the specified columns from the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param columns - An array of `TableColumn` objects representing the columns to be deleted.
          */
@@ -3404,7 +3438,8 @@ export declare namespace PowerPoint {
          * Gets the number of columns in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          * @returns The number of columns in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -3412,7 +3447,8 @@ export declare namespace PowerPoint {
          * Gets the column using its zero-based index in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param index - Index value of the column to be retrieved, as a zero-based index.
          * @returns The column object.
@@ -3446,28 +3482,32 @@ export declare namespace PowerPoint {
      * Represents the available options when clearing a table.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export interface TableClearOptions {
         /**
          * Specifies if both values and formatting of the table should be cleared.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         all?: boolean;
         /**
          * Specifies if the formatting of the table should be cleared.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         format?: boolean;
         /**
          * Specifies if the values of the table should be cleared.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         text?: boolean;
     }
@@ -3475,7 +3515,8 @@ export declare namespace PowerPoint {
      * Represents a row in a table.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class TableRow extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3484,28 +3525,32 @@ export declare namespace PowerPoint {
          * Retrieves the current height of the row in points.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly currentHeight: number;
         /**
          * Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         height: number;
         /**
          * Returns the index number of the row within the rows collection of the table. Zero-indexed.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly rowIndex: number;
         /**
          * Deletes the row.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         delete(): void;
         /**
@@ -3539,7 +3584,8 @@ export declare namespace PowerPoint {
      * Represents a collection of table rows.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3550,7 +3596,8 @@ export declare namespace PowerPoint {
          * Adds one or more rows to the table.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param index - Optional. Specifies the zero-based index where the new rows are added. Existing rows starting at the index location are shifted down. If the index value is undefined, null, -1, or greater than the number of rows in the table, the new rows are added at the end of the table.
          * @param count - Optional. The number of rows to add. If the value is undefined or 0, only one row is added.
@@ -3561,7 +3608,8 @@ export declare namespace PowerPoint {
          * Deletes the specified rows from the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param rows - An array of `TableRow` objects representing the rows to be deleted.
          */
@@ -3570,7 +3618,8 @@ export declare namespace PowerPoint {
          * Gets the number of rows in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          * @returns The number of rows in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -3578,7 +3627,8 @@ export declare namespace PowerPoint {
          * Gets the row using its zero-based index in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param index - Index value of the row to be retrieved, as a zero-based index.
          * @returns The row object.
@@ -3612,451 +3662,526 @@ export declare namespace PowerPoint {
      * Represents the available built-in table styles.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.9]
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
      */
     enum TableStyle {
         /**
          * Specifies the style "No style, No grid" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         noStyleNoGrid = "NoStyleNoGrid",
         /**
          * Specifies the style "Themed style 1 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle1Accent1 = "ThemedStyle1Accent1",
         /**
          * Specifies the style "Themed style 1 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle1Accent2 = "ThemedStyle1Accent2",
         /**
          * Specifies the style "Themed style 1 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle1Accent3 = "ThemedStyle1Accent3",
         /**
          * Specifies the style "Themed style 1 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle1Accent4 = "ThemedStyle1Accent4",
         /**
          * Specifies the style "Themed style 1 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle1Accent5 = "ThemedStyle1Accent5",
         /**
          * Specifies the style "Themed style 1 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle1Accent6 = "ThemedStyle1Accent6",
         /**
          * Specifies the style "No style, Table grid" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         noStyleTableGrid = "NoStyleTableGrid",
         /**
          * Specifies the style "Themed style 2 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle2Accent1 = "ThemedStyle2Accent1",
         /**
          * Specifies the style "Themed style 2 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle2Accent2 = "ThemedStyle2Accent2",
         /**
          * Specifies the style "Themed style 2 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle2Accent3 = "ThemedStyle2Accent3",
         /**
          * Specifies the style "Themed style 2 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle2Accent4 = "ThemedStyle2Accent4",
         /**
          * Specifies the style "Themed style 2 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle2Accent5 = "ThemedStyle2Accent5",
         /**
          * Specifies the style "Themed style 2 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         themedStyle2Accent6 = "ThemedStyle2Accent6",
         /**
          * Specifies the style "Light Style 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1 = "LightStyle1",
         /**
          * Specifies the style "Light style 1 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1Accent1 = "LightStyle1Accent1",
         /**
          * Specifies the style "Light style 1 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1Accent2 = "LightStyle1Accent2",
         /**
          * Specifies the style "Light style 1 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1Accent3 = "LightStyle1Accent3",
         /**
          * Specifies the style "Light style 1 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1Accent4 = "LightStyle1Accent4",
         /**
          * Specifies the style "Light style 1 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1Accent5 = "LightStyle1Accent5",
         /**
          * Specifies the style "Light style 1 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle1Accent6 = "LightStyle1Accent6",
         /**
          * Specifies the style "Light Style 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2 = "LightStyle2",
         /**
          * Specifies the style "Light style 2 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2Accent1 = "LightStyle2Accent1",
         /**
          * Specifies the style "Light style 2 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2Accent2 = "LightStyle2Accent2",
         /**
          * Specifies the style "Light style 2 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2Accent3 = "LightStyle2Accent3",
         /**
          * Specifies the style "Light style 2 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2Accent4 = "LightStyle2Accent4",
         /**
          * Specifies the style "Light style 2 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2Accent5 = "LightStyle2Accent5",
         /**
          * Specifies the style "Light style 2 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle2Accent6 = "LightStyle2Accent6",
         /**
          * Specifies the style "Light Style 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3 = "LightStyle3",
         /**
          * Specifies the style "Light style 3 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3Accent1 = "LightStyle3Accent1",
         /**
          * Specifies the style "Light style 3 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3Accent2 = "LightStyle3Accent2",
         /**
          * Specifies the style "Light style 3 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3Accent3 = "LightStyle3Accent3",
         /**
          * Specifies the style "Light style 3 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3Accent4 = "LightStyle3Accent4",
         /**
          * Specifies the style "Light style 3 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3Accent5 = "LightStyle3Accent5",
         /**
          * Specifies the style "Light style 3 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightStyle3Accent6 = "LightStyle3Accent6",
         /**
          * Specifies the style "Medium Style 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1 = "MediumStyle1",
         /**
          * Specifies the style "Medium style 1 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1Accent1 = "MediumStyle1Accent1",
         /**
          * Specifies the style "Medium style 1 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1Accent2 = "MediumStyle1Accent2",
         /**
          * Specifies the style "Medium style 1 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1Accent3 = "MediumStyle1Accent3",
         /**
          * Specifies the style "Medium style 1 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1Accent4 = "MediumStyle1Accent4",
         /**
          * Specifies the style "Medium style 1 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1Accent5 = "MediumStyle1Accent5",
         /**
          * Specifies the style "Medium style 1 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle1Accent6 = "MediumStyle1Accent6",
         /**
          * Specifies the style "Medium Style 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2 = "MediumStyle2",
         /**
          * Specifies the style "Medium style 2 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2Accent1 = "MediumStyle2Accent1",
         /**
          * Specifies the style "Medium style 2 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2Accent2 = "MediumStyle2Accent2",
         /**
          * Specifies the style "Medium style 2 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2Accent3 = "MediumStyle2Accent3",
         /**
          * Specifies the style "Medium style 2 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2Accent4 = "MediumStyle2Accent4",
         /**
          * Specifies the style "Medium style 2 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2Accent5 = "MediumStyle2Accent5",
         /**
          * Specifies the style "Medium style 2 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle2Accent6 = "MediumStyle2Accent6",
         /**
          * Specifies the style "Medium Style 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3 = "MediumStyle3",
         /**
          * Specifies the style "Medium style 3 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3Accent1 = "MediumStyle3Accent1",
         /**
          * Specifies the style "Medium style 3 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3Accent2 = "MediumStyle3Accent2",
         /**
          * Specifies the style "Medium style 3 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3Accent3 = "MediumStyle3Accent3",
         /**
          * Specifies the style "Medium style 3 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3Accent4 = "MediumStyle3Accent4",
         /**
          * Specifies the style "Medium style 3 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3Accent5 = "MediumStyle3Accent5",
         /**
          * Specifies the style "Medium style 3 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle3Accent6 = "MediumStyle3Accent6",
         /**
          * Specifies the style "Medium Style 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4 = "MediumStyle4",
         /**
          * Specifies the style "Medium style 4 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4Accent1 = "MediumStyle4Accent1",
         /**
          * Specifies the style "Medium style 4 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4Accent2 = "MediumStyle4Accent2",
         /**
          * Specifies the style "Medium style 4 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4Accent3 = "MediumStyle4Accent3",
         /**
          * Specifies the style "Medium style 4 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4Accent4 = "MediumStyle4Accent4",
         /**
          * Specifies the style "Medium style 4 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4Accent5 = "MediumStyle4Accent5",
         /**
          * Specifies the style "Medium style 4 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mediumStyle4Accent6 = "MediumStyle4Accent6",
         /**
          * Specifies the style "Dark Style 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1 = "DarkStyle1",
         /**
          * Specifies the style "Dark style 1 - Accent 1" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1Accent1 = "DarkStyle1Accent1",
         /**
          * Specifies the style "Dark style 1 - Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1Accent2 = "DarkStyle1Accent2",
         /**
          * Specifies the style "Dark style 1 - Accent 3" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1Accent3 = "DarkStyle1Accent3",
         /**
          * Specifies the style "Dark style 1 - Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1Accent4 = "DarkStyle1Accent4",
         /**
          * Specifies the style "Dark style 1 - Accent 5" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1Accent5 = "DarkStyle1Accent5",
         /**
          * Specifies the style "Dark style 1 - Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle1Accent6 = "DarkStyle1Accent6",
         /**
          * Specifies the style "Dark Style 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle2 = "DarkStyle2",
         /**
          * Specifies the style "Dark style 2 - Accent 1/Accent 2" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle2Accent1 = "DarkStyle2Accent1",
         /**
          * Specifies the style "Dark style 2 - Accent 3/Accent 4" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle2Accent2 = "DarkStyle2Accent2",
         /**
          * Specifies the style "Dark style 2 - Accent 5/Accent 6" in UI.
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         darkStyle2Accent3 = "DarkStyle2Accent3",
     }
@@ -4166,14 +4291,16 @@ export declare namespace PowerPoint {
          * Gets the collection of columns in the table.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly columns: PowerPoint.TableColumnCollection;
         /**
          * Gets the collection of rows in the table.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         readonly rows: PowerPoint.TableRowCollection;
         /**
@@ -4209,7 +4336,8 @@ export declare namespace PowerPoint {
          * Clears table values and formatting.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param options - Provides options for clearing the table.
          */
@@ -4244,7 +4372,8 @@ export declare namespace PowerPoint {
          * Creates a merged area starting at the cell specified by rowIndex and columnIndex. The merged area spans across a specified number of rows and columns.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          *
          * @param rowIndex - The zero-based row index of the cell to start the merged area.
          * @param columnIndex - The zero-based column index of the cell to start the merged area.
@@ -4422,7 +4551,8 @@ export declare namespace PowerPoint {
          * Specifies value that represents the table style.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         style?: PowerPoint.TableStyle | "NoStyleNoGrid" | "ThemedStyle1Accent1" | "ThemedStyle1Accent2" | "ThemedStyle1Accent3" | "ThemedStyle1Accent4" | "ThemedStyle1Accent5" | "ThemedStyle1Accent6" | "NoStyleTableGrid" | "ThemedStyle2Accent1" | "ThemedStyle2Accent2" | "ThemedStyle2Accent3" | "ThemedStyle2Accent4" | "ThemedStyle2Accent5" | "ThemedStyle2Accent6" | "LightStyle1" | "LightStyle1Accent1" | "LightStyle1Accent2" | "LightStyle1Accent3" | "LightStyle1Accent4" | "LightStyle1Accent5" | "LightStyle1Accent6" | "LightStyle2" | "LightStyle2Accent1" | "LightStyle2Accent2" | "LightStyle2Accent3" | "LightStyle2Accent4" | "LightStyle2Accent5" | "LightStyle2Accent6" | "LightStyle3" | "LightStyle3Accent1" | "LightStyle3Accent2" | "LightStyle3Accent3" | "LightStyle3Accent4" | "LightStyle3Accent5" | "LightStyle3Accent6" | "MediumStyle1" | "MediumStyle1Accent1" | "MediumStyle1Accent2" | "MediumStyle1Accent3" | "MediumStyle1Accent4" | "MediumStyle1Accent5" | "MediumStyle1Accent6" | "MediumStyle2" | "MediumStyle2Accent1" | "MediumStyle2Accent2" | "MediumStyle2Accent3" | "MediumStyle2Accent4" | "MediumStyle2Accent5" | "MediumStyle2Accent6" | "MediumStyle3" | "MediumStyle3Accent1" | "MediumStyle3Accent2" | "MediumStyle3Accent3" | "MediumStyle3Accent4" | "MediumStyle3Accent5" | "MediumStyle3Accent6" | "MediumStyle4" | "MediumStyle4Accent1" | "MediumStyle4Accent2" | "MediumStyle4Accent3" | "MediumStyle4Accent4" | "MediumStyle4Accent5" | "MediumStyle4Accent6" | "DarkStyle1" | "DarkStyle1Accent1" | "DarkStyle1Accent2" | "DarkStyle1Accent3" | "DarkStyle1Accent4" | "DarkStyle1Accent5" | "DarkStyle1Accent6" | "DarkStyle2" | "DarkStyle2Accent1" | "DarkStyle2Accent2" | "DarkStyle2Accent3";
         /**
@@ -8920,28 +9050,32 @@ export declare namespace PowerPoint {
              * Represents the line color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             color?: string | undefined;
             /**
              * Represents the dash style of the line.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot" | undefined;
             /**
              * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             transparency?: number | undefined;
             /**
              * Represents the weight of the line, in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             weight?: number | undefined;
         }
@@ -8951,28 +9085,32 @@ export declare namespace PowerPoint {
              * Specifies the bottom margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             bottom?: number | undefined;
             /**
              * Specifies the left margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             left?: number | undefined;
             /**
              * Specifies the right margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             right?: number | undefined;
             /**
              * Specifies the top margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             top?: number | undefined;
         }
@@ -9134,14 +9272,16 @@ export declare namespace PowerPoint {
              * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
             /**
              * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             indentLevel?: number | null;
             /**
@@ -9156,14 +9296,16 @@ export declare namespace PowerPoint {
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             textRuns?: PowerPoint.TextRun[];
             /**
              * Specifies the vertical alignment of the text in the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
         }
@@ -9177,7 +9319,8 @@ export declare namespace PowerPoint {
              * Retrieves the width of the column in points. If the set column width is less than the minimum width, the column width will be increased to the minimum width.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             width?: number;
         }
@@ -9191,7 +9334,8 @@ export declare namespace PowerPoint {
              * Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             height?: number;
         }
@@ -9811,28 +9955,32 @@ export declare namespace PowerPoint {
              * Represents the line color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             color?: string | undefined;
             /**
              * Represents the dash style of the line.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot" | undefined;
             /**
              * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             transparency?: number | undefined;
             /**
              * Represents the weight of the line, in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             weight?: number | undefined;
         }
@@ -9845,28 +9993,32 @@ export declare namespace PowerPoint {
              * Specifies the bottom margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             bottom?: number | undefined;
             /**
              * Specifies the left margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             left?: number | undefined;
             /**
              * Specifies the right margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             right?: number | undefined;
             /**
              * Specifies the top margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             top?: number | undefined;
         }
@@ -10050,14 +10202,16 @@ export declare namespace PowerPoint {
              * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;
             /**
              * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             indentLevel?: number | null;
             /**
@@ -10087,14 +10241,16 @@ export declare namespace PowerPoint {
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             textRuns?: PowerPoint.TextRun[];
             /**
              * Specifies the vertical alignment of the text in the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
         }
@@ -10108,14 +10264,16 @@ export declare namespace PowerPoint {
              * Returns the index number of the column within the column collection of the table. Zero-indexed.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             columnIndex?: number;
             /**
              * Retrieves the width of the column in points. If the set column width is less than the minimum width, the column width will be increased to the minimum width.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             width?: number;
         }
@@ -10129,21 +10287,24 @@ export declare namespace PowerPoint {
              * Retrieves the current height of the row in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             currentHeight?: number;
             /**
              * Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             height?: number;
             /**
              * Returns the index number of the row within the rows collection of the table. Zero-indexed.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             rowIndex?: number;
         }
@@ -11078,7 +11239,8 @@ export declare namespace PowerPoint {
          * Represents the properties for a table cell border.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface BorderLoadOptions {
             /**
@@ -11089,28 +11251,32 @@ export declare namespace PowerPoint {
              * Represents the line color in the hexadecimal format #RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             color?: boolean;
             /**
              * Represents the dash style of the line.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             dashStyle?: boolean;
             /**
              * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             transparency?: boolean;
             /**
              * Represents the weight of the line, in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             weight?: boolean;
         }
@@ -11118,7 +11284,8 @@ export declare namespace PowerPoint {
          * Represents the borders for a table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface BordersLoadOptions {
             /**
@@ -11129,42 +11296,48 @@ export declare namespace PowerPoint {
              * Gets the bottom border.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             bottom?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
              * Gets the diagonal border (top-left to bottom-right).
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             diagonalDown?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
              * Gets the diagonal border (bottom-left to top-right).
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             diagonalUp?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
              * Gets the left border.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             left?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
              * Gets the right border.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             right?: PowerPoint.Interfaces.BorderLoadOptions;
             /**
              * Gets the top border.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             top?: PowerPoint.Interfaces.BorderLoadOptions;
         }
@@ -11172,7 +11345,8 @@ export declare namespace PowerPoint {
          * Represents the margins of a table cell.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface MarginsLoadOptions {
             /**
@@ -11183,28 +11357,32 @@ export declare namespace PowerPoint {
              * Specifies the bottom margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             bottom?: boolean;
             /**
              * Specifies the left margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             left?: boolean;
             /**
              * Specifies the right margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             right?: boolean;
             /**
              * Specifies the top margin in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             top?: boolean;
         }
@@ -11400,28 +11578,32 @@ export declare namespace PowerPoint {
              * Gets the collection of borders for the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             borders?: PowerPoint.Interfaces.BordersLoadOptions;
             /**
              * Gets the fill color of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
              * Gets the font of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             font?: PowerPoint.Interfaces.ShapeFontLoadOptions;
             /**
              * Gets the set of margins in the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             margins?: PowerPoint.Interfaces.MarginsLoadOptions;
             /**
@@ -11443,14 +11625,16 @@ export declare namespace PowerPoint {
              * Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             horizontalAlignment?: boolean;
             /**
              * Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             indentLevel?: boolean;
             /**
@@ -11480,14 +11664,16 @@ export declare namespace PowerPoint {
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             textRuns?: boolean;
             /**
              * Specifies the vertical alignment of the text in the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             verticalAlignment?: boolean;
         }
@@ -11506,28 +11692,32 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Gets the collection of borders for the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             borders?: PowerPoint.Interfaces.BordersLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the fill color of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the font of the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             font?: PowerPoint.Interfaces.ShapeFontLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the set of margins in the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             margins?: PowerPoint.Interfaces.MarginsLoadOptions;
             /**
@@ -11549,14 +11739,16 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             horizontalAlignment?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             indentLevel?: boolean;
             /**
@@ -11586,14 +11778,16 @@ export declare namespace PowerPoint {
                         Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             textRuns?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the vertical alignment of the text in the table cell.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             verticalAlignment?: boolean;
         }
@@ -11601,7 +11795,8 @@ export declare namespace PowerPoint {
          * Represents a column in a table.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface TableColumnLoadOptions {
             /**
@@ -11612,14 +11807,16 @@ export declare namespace PowerPoint {
              * Returns the index number of the column within the column collection of the table. Zero-indexed.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             columnIndex?: boolean;
             /**
              * Retrieves the width of the column in points. If the set column width is less than the minimum width, the column width will be increased to the minimum width.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             width?: boolean;
         }
@@ -11627,7 +11824,8 @@ export declare namespace PowerPoint {
          * Represents a collection of table columns.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface TableColumnCollectionLoadOptions {
             /**
@@ -11638,14 +11836,16 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Returns the index number of the column within the column collection of the table. Zero-indexed.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             columnIndex?: boolean;
             /**
              * For EACH ITEM in the collection: Retrieves the width of the column in points. If the set column width is less than the minimum width, the column width will be increased to the minimum width.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             width?: boolean;
         }
@@ -11653,7 +11853,8 @@ export declare namespace PowerPoint {
          * Represents a row in a table.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface TableRowLoadOptions {
             /**
@@ -11664,21 +11865,24 @@ export declare namespace PowerPoint {
              * Retrieves the current height of the row in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             currentHeight?: boolean;
             /**
              * Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             height?: boolean;
             /**
              * Returns the index number of the row within the rows collection of the table. Zero-indexed.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             rowIndex?: boolean;
         }
@@ -11686,7 +11890,8 @@ export declare namespace PowerPoint {
          * Represents a collection of table rows.
          *
          * @remarks
-         * [Api set: PowerPointApi 1.9]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         export interface TableRowCollectionLoadOptions {
             /**
@@ -11697,21 +11902,24 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Retrieves the current height of the row in points.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             currentHeight?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             height?: boolean;
             /**
              * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed.
              *
              * @remarks
-             * [Api set: PowerPointApi 1.9]
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
              */
             rowIndex?: boolean;
         }

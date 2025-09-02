@@ -5,11 +5,11 @@ package: powerpoint!
 fullName: PowerPoint.Border
 summary: Represents the properties for a table cell border.
 remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: class
 properties:
@@ -21,11 +21,11 @@ properties:
       Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
       "FFA500") or as a named HTML color value (e.g., "orange").
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'color: string | undefined;'
@@ -40,7 +40,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -52,11 +52,11 @@ properties:
     fullName: dashStyle
     summary: Represents the dash style of the line.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -78,11 +78,11 @@ properties:
       Specifies the transparency percentage of the line as a value from 0.0
       (opaque) through 1.0 (clear).
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'transparency: number | undefined;'
@@ -94,11 +94,11 @@ properties:
     fullName: weight
     summary: Represents the weight of the line, in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'weight: number | undefined;'
@@ -114,7 +114,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -139,7 +139,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Border;'
@@ -161,7 +161,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: |-
@@ -198,7 +198,7 @@ methods:
       shallow copies of any loaded child properties from the original object.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.BorderData;'

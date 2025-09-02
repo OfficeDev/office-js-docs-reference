@@ -5,11 +5,11 @@ package: powerpoint!
 fullName: PowerPoint.TableRow
 summary: Represents a row in a table.
 remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: class
 properties:
@@ -22,7 +22,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -34,11 +34,11 @@ properties:
     fullName: currentHeight
     summary: Retrieves the current height of the row in points.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'readonly currentHeight: number;'
@@ -53,11 +53,11 @@ properties:
       than the minimum height, the row height will be increased to the minimum
       height.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'height: number;'
@@ -71,11 +71,11 @@ properties:
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'readonly rowIndex: number;'
@@ -88,11 +88,11 @@ methods:
     fullName: delete()
     summary: Deletes the row.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -108,7 +108,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -133,7 +133,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TableRow;'
@@ -155,7 +155,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: |-
@@ -193,7 +193,7 @@ methods:
       object.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TableRowData;'

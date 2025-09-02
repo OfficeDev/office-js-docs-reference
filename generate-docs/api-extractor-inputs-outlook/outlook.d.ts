@@ -5349,6 +5349,154 @@ export declare namespace Office {
         set(name: string, value: string): void;
     }
     /**
+     * Represents an attachment in a decrypted message.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface DecryptedMessageAttachment {
+        /**
+         * Specifies the type of attachment.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        attachmentType: MailboxEnums.AttachmentType;
+        /**
+         * Specifies the Base64-encoded content of the attachment.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        content: string;
+        /**
+         * Specifies the content identifier of an inline attachment.
+         *
+         * The `contentId` property must be specified if `isInline` is set to `true`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: You can use the `contentId` property to easily reference an inline attachment from the body of a message.
+         *
+         * @beta
+         */
+        contentId?: string;
+        /**
+         * If true, specifies that the decrypted attachment appears as an image in the body of the message instead of in the attachment list.
+         * If the `isInline` property isn't specified, its value is set to false.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        isInline?: boolean;
+        /**
+         * Specifies the name of the attachment.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        name: string;
+        /**
+         * Specifies the URL reference path of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
+         * The `path` property must be specified for attachments of type `MailboxEnums.AttachmentType.Cloud`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        path?: string;
+    }
+    /**
+     * Represents the body of a decrypted message.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface DecryptedMessageBody {
+        /**
+         * Specifies the format of the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        coercionType: CommonAPI.CoercionType.Html | Office.CoercionType.Text;
+        /**
+         * Specifies the content displayed in the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        content: string;
+    }
+    /**
      * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
      *
      * @remarks
@@ -9835,8 +9983,9 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
-     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}, the
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}, or
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption | encryption} (preview).
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -9858,7 +10007,7 @@ export declare namespace Office {
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
+         * Indicates that the event-based, spam-reporting, or encryption (preview) add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -9873,9 +10022,9 @@ export declare namespace Office {
          *
          * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
+         * @param options - Optional. An object that specifies the behavior of an event-based, spam-reporting, or encryption add-in when it completes processing an event.
          */
-        completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions): void;
+        completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions | MessageDecryptEventCompletedOptions): void;
     }
     /**
      * Represents the categories master list on the mailbox.
@@ -11755,6 +11904,91 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
+     * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption | encryption add-in} after it completes processing an
+     * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OnMessageDecrypt} event.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface MessageDecryptEventCompletedOptions {
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
+         * this value indicates if the `OnMessageDecrypt` event should continue to run or be canceled. If the `allowEvent` property is set to `true`, the decrypted content of the message is displayed.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        allowEvent: boolean;
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
+         * and set its `allowEvent` property to `true`, this property sets the decrypted attachments of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        attachments?: DecryptedMessageAttachment[];
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
+         * and set its `allowEvent` property to `true`, this property specifies any JSON data passed to the add-in for processing.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync`.
+         * If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
+         *
+         * - You can use the `contextData` property to store custom internet headers to decrypt messages in reply and forward scenarios.
+         *
+         * @beta
+         */
+        contextData?: any;
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
+         * and set its `allowEvent` property to `true`, this property sets the decrypted contents of the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: If the `emailBody` property isn't specified, an empty body is set.
+         *
+         * @beta
+         */
+        emailBody?: DecryptedMessageBody;
     }
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.

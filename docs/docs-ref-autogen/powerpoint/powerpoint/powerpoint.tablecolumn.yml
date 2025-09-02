@@ -5,11 +5,11 @@ package: powerpoint!
 fullName: PowerPoint.TableColumn
 summary: Represents a column in a table.
 remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: class
 properties:
@@ -21,11 +21,11 @@ properties:
       Returns the index number of the column within the column collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'readonly columnIndex: number;'
@@ -40,7 +40,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -55,11 +55,11 @@ properties:
       less than the minimum width, the column width will be increased to the
       minimum width.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'width: number;'
@@ -72,11 +72,11 @@ methods:
     fullName: delete()
     summary: Deletes the column.
     remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -92,7 +92,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -117,7 +117,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TableColumn;'
@@ -139,7 +139,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: |-
@@ -177,7 +177,7 @@ methods:
       object.
     remarks: ''
 
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TableColumnData;'

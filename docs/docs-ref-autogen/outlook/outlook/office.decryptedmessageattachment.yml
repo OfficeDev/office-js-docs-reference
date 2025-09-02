@@ -1,0 +1,197 @@
+### YamlMime:TSType
+name: Office.DecryptedMessageAttachment
+uid: outlook!Office.DecryptedMessageAttachment:interface
+package: outlook!
+fullName: Office.DecryptedMessageAttachment
+summary: Represents an attachment in a decrypted message.
+remarks: >-
+  \[ [API set: Mailbox
+  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read/write item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Message Read
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: attachmentType
+    uid: outlook!Office.DecryptedMessageAttachment#attachmentType:member
+    package: outlook!
+    fullName: attachmentType
+    summary: Specifies the type of attachment.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'attachmentType: MailboxEnums.AttachmentType;'
+      return:
+        type: <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" />
+  - name: content
+    uid: outlook!Office.DecryptedMessageAttachment#content:member
+    package: outlook!
+    fullName: content
+    summary: Specifies the Base64-encoded content of the attachment.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'content: string;'
+      return:
+        type: string
+  - name: contentId
+    uid: outlook!Office.DecryptedMessageAttachment#contentId:member
+    package: outlook!
+    fullName: contentId
+    summary: >-
+      Specifies the content identifier of an inline attachment.
+
+
+      The `contentId` property must be specified if `isInline` is set to
+      `true`<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**: You can use the `contentId` property to easily
+      reference an inline attachment from the body of a message.
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentId?: string;'
+      return:
+        type: string
+  - name: isInline
+    uid: outlook!Office.DecryptedMessageAttachment#isInline:member
+    package: outlook!
+    fullName: isInline
+    summary: >-
+      If true, specifies that the decrypted attachment appears as an image in
+      the body of the message instead of in the attachment list. If the
+      `isInline` property isn't specified, its value is set to false.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isInline?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: outlook!Office.DecryptedMessageAttachment#name:member
+    package: outlook!
+    fullName: name
+    summary: Specifies the name of the attachment.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: path
+    uid: outlook!Office.DecryptedMessageAttachment#path:member
+    package: outlook!
+    fullName: path
+    summary: >-
+      Specifies the URL reference path of the attachment if its type is
+      `MailboxEnums.AttachmentType.Cloud`<!-- -->. The `path` property must be
+      specified for attachments of type `MailboxEnums.AttachmentType.Cloud`<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'path?: string;'
+      return:
+        type: string
