@@ -6676,7 +6676,7 @@ Excel.Workbook,"getIsActiveCollabSession()",Method,Excellent,false
 Excel.Workbook,"getLinkedEntityCellValue(linkedEntityCellValueId)",Method,Great,false
 Excel.Workbook,"getSelectedRange()",Method,Excellent,true
 Excel.Workbook,"getSelectedRanges()",Method,Excellent,true
-Excel.Workbook,"insertWorksheetsFromBase64(base64File, options)",Method,Good,true
+Excel.Workbook,"insertWorksheetsFromBase64(base64File, options)",Method,Great,true
 Excel.Workbook,"load(options)",Method,Excellent,false
 Excel.Workbook,"load(propertyNames)",Method,Excellent,false
 Excel.Workbook,"load(propertyNamesAndPaths)",Method,Excellent,false

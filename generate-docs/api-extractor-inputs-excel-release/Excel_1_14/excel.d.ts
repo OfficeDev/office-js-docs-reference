@@ -581,6 +581,7 @@ export declare namespace Excel {
     /**
      *
      * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
+     * The `extensionHardening` Windows registry key affects the `base64File` param. The file extension defined by the param must match the real file type of the file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
      * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
      * [Api set: ExcelApi 1.8]
@@ -3609,11 +3610,12 @@ export declare namespace Excel {
         getSelectedRanges(): Excel.RangeAreas;
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
-                    
-                     **Note**: This API is currently only supported for Office on Windows, Mac, and the web.
+         * The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
+         * 
+         * This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
@@ -5362,7 +5364,7 @@ export declare namespace Excel {
          */
         getEntireRow(): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -5372,7 +5374,7 @@ export declare namespace Excel {
          */
         getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -5467,7 +5469,7 @@ export declare namespace Excel {
          */
         getPrecedents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -5477,7 +5479,7 @@ export declare namespace Excel {
          */
         getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]

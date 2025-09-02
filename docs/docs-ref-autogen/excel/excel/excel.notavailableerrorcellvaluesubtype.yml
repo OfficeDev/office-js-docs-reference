@@ -3,7 +3,7 @@ name: Excel.NotAvailableErrorCellValueSubType
 uid: excel!Excel.NotAvailableErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.NotAvailableErrorCellValueSubType
-summary: Represents types of \#N/A! errors.
+summary: Represents types of \#N/A errors.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -15,7 +15,7 @@ fields:
     uid: excel!Excel.NotAvailableErrorCellValueSubType.eRegexMatchNoCapture:member
     package: excel!
     summary: >-
-      No capture groups were matched. Displays as error type \#N/A! in Excel.
+      No capture groups were matched. Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -27,7 +27,7 @@ fields:
     package: excel!
     summary: >-
       No match was found for the pattern in the text provided. Displays as error
-      type \#N/A! in Excel.
+      type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -40,7 +40,7 @@ fields:
     package: excel!
     summary: >-
       Occurrence is greater than the total number of matches. Displays as error
-      type \#N/A! in Excel.
+      type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -52,7 +52,7 @@ fields:
     package: excel!
     summary: >-
       An error caused by `HLOOKUP` not finding its `lookup_value` in the search
-      range. Displays as error type \#N/A! in Excel.
+      range. Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -64,7 +64,7 @@ fields:
     package: excel!
     summary: >-
       An error caused by an external code service returning an unknown object.
-      Displays as error type \#N/A! in Excel.
+      Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -77,7 +77,7 @@ fields:
     package: excel!
     summary: >-
       An error caused by an invalid property argument to `STOCKHISTORY`<!-- -->.
-      Displays as error type \#N/A! in Excel.
+      Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -89,7 +89,7 @@ fields:
     package: excel!
     summary: >-
       An error caused by no data being available for a `STOCKHISTORY` function.
-      Displays as error type \#N/A! in Excel.
+      Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -100,7 +100,7 @@ fields:
     uid: excel!Excel.NotAvailableErrorCellValueSubType.unknown:member
     package: excel!
     summary: >-
-      An unknown type of error. Displays as error type \#N/A! in Excel.
+      An unknown type of error. Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -112,7 +112,7 @@ fields:
     package: excel!
     summary: >-
       An error caused by `VLOOKUP` not finding its `lookup_value` in the search
-      range. Displays as error type \#N/A! in Excel.
+      range. Displays as error type \#N/A in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
