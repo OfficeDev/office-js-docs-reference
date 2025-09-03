@@ -25,6 +25,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
   <LaunchEvents>
     <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
     <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
+    <LaunchEvent Type="OnMessageDecrypt" FunctionName="onMessageDecryptHandler" HeaderName="contoso-encrypted"/>
     <LaunchEvent Type="OnMessageReadWithCustomHeader" FunctionName="onMessageReadWithCustomHeaderHandler" HeaderName="contoso-spam-simulation"/>
     <LaunchEvent Type="OnMessageReadWithCustomAttachment" FunctionName="onMessageReadWithCustomAttachmentHandler">
       <MessageAttachments>
