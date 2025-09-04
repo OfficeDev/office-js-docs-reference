@@ -606,19 +606,28 @@ export declare namespace Office {
          */
         BindingSelectionChanged,
         /**
-         * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
+         * Occurs when a dialog is closed or when dialog navigation failed.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogEventReceived,
         /**
-         * Triggers when a dialog sends a message via `messageParent`.
+         * Occurs when a dialog sends a message using `Office.context.ui.messageParent`.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogMessageReceived,
         /**
-         * Triggers when a host page sends a message to a child dialog box with `messageChild`.
+         * Occurs when a host page sends a message to a child dialog box with `Dialog.messageChild`.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogParentMessageReceived,
         /**
-         * Triggers when a document-level selection happens in Excel or Word.
+         * Occurs when a document-level selection happens in Excel or Word.
          */
         DocumentSelectionChanged,
         /**
@@ -694,15 +703,15 @@ export declare namespace Office {
          */
         DragAndDropEvent,
         /**
-         * Triggers when a `customXmlPart` node is deleted.
+         * Occurs when a `customXmlPart` node is deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a `customXmlPart` node is inserted.
+         * Occurs when a `customXmlPart` node is inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a `customXmlPart` node is replaced.
+         * Occurs when a `customXmlPart` node is replaced.
          */
         NodeReplaced,
         /**
@@ -747,7 +756,7 @@ export declare namespace Office {
          */
         RecurrenceChanged,
         /**
-         * Triggers when a Resource selection happens in Project.
+         * Occurs when a Resource selection happens in Project.
          */
         ResourceSelectionChanged,
         /**
@@ -784,11 +793,11 @@ export declare namespace Office {
          */
         SpamReporting,
         /**
-         * Triggers when a Task selection happens in Project.
+         * Occurs when a Task selection happens in Project.
          */
         TaskSelectionChanged,
         /**
-         * Triggers when a View selection happens in Project.
+         * Occurs when a View selection happens in Project.
          */
         ViewSelectionChanged
     }

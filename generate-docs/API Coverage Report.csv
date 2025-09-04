@@ -7259,7 +7259,7 @@ Office.EventType,"AttachmentsChanged",EnumField,Excellent,false
 Office.EventType,"BindingDataChanged",EnumField,Excellent,false
 Office.EventType,"BindingSelectionChanged",EnumField,Excellent,false
 Office.EventType,"DialogEventReceived",EnumField,Good,false
-Office.EventType,"DialogMessageReceived",EnumField,Good,false
+Office.EventType,"DialogMessageReceived",EnumField,Excellent,false
 Office.EventType,"DialogParentMessageReceived",EnumField,Good,false
 Office.EventType,"DocumentSelectionChanged",EnumField,Good,false
 Office.EventType,"DragAndDropEvent",EnumField,Excellent,false
