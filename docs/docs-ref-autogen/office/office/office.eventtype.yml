@@ -128,22 +128,41 @@ fields:
     uid: office!Office.EventType.DialogEventReceived:member
     package: office!
     summary: >-
-      Triggers when Dialog has an event, such as dialog closed or dialog
-      navigation failed.
+      Occurs when a dialog is closed or when dialog navigation failed.
+
+
+      For guidance on how to implement a dialog in your add-in, see [Use the
+      Office dialog API in Office
+      Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
+      -->.
   - name: DialogMessageReceived
     uid: office!Office.EventType.DialogMessageReceived:member
     package: office!
-    summary: Triggers when a dialog sends a message via `messageParent`<!-- -->.
+    summary: >-
+      Occurs when a dialog sends a message using
+      `Office.context.ui.messageParent`<!-- -->.
+
+
+      For guidance on how to implement a dialog in your add-in, see [Use the
+      Office dialog API in Office
+      Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
+      -->.
   - name: DialogParentMessageReceived
     uid: office!Office.EventType.DialogParentMessageReceived:member
     package: office!
     summary: >-
-      Triggers when a host page sends a message to a child dialog box with
-      `messageChild`<!-- -->.
+      Occurs when a host page sends a message to a child dialog box with
+      `Dialog.messageChild`<!-- -->.
+
+
+      For guidance on how to implement a dialog in your add-in, see [Use the
+      Office dialog API in Office
+      Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
+      -->.
   - name: DocumentSelectionChanged
     uid: office!Office.EventType.DocumentSelectionChanged:member
     package: office!
-    summary: Triggers when a document-level selection happens in Excel or Word.
+    summary: Occurs when a document-level selection happens in Excel or Word.
   - name: DragAndDropEvent
     uid: office!Office.EventType.DragAndDropEvent:member
     package: office!
@@ -274,15 +293,15 @@ fields:
   - name: NodeDeleted
     uid: office!Office.EventType.NodeDeleted:member
     package: office!
-    summary: Triggers when a `customXmlPart` node is deleted.
+    summary: Occurs when a `customXmlPart` node is deleted.
   - name: NodeInserted
     uid: office!Office.EventType.NodeInserted:member
     package: office!
-    summary: Triggers when a `customXmlPart` node is inserted.
+    summary: Occurs when a `customXmlPart` node is inserted.
   - name: NodeReplaced
     uid: office!Office.EventType.NodeReplaced:member
     package: office!
-    summary: Triggers when a `customXmlPart` node is replaced.
+    summary: Occurs when a `customXmlPart` node is replaced.
   - name: OfficeThemeChanged
     uid: office!Office.EventType.OfficeThemeChanged:member
     package: office!
@@ -357,7 +376,7 @@ fields:
   - name: ResourceSelectionChanged
     uid: office!Office.EventType.ResourceSelectionChanged:member
     package: office!
-    summary: Triggers when a Resource selection happens in Project.
+    summary: Occurs when a Resource selection happens in Project.
   - name: SelectedItemsChanged
     uid: office!Office.EventType.SelectedItemsChanged:member
     package: office!
@@ -417,8 +436,8 @@ fields:
   - name: TaskSelectionChanged
     uid: office!Office.EventType.TaskSelectionChanged:member
     package: office!
-    summary: Triggers when a Task selection happens in Project.
+    summary: Occurs when a Task selection happens in Project.
   - name: ViewSelectionChanged
     uid: office!Office.EventType.ViewSelectionChanged:member
     package: office!
-    summary: Triggers when a View selection happens in Project.
+    summary: Occurs when a View selection happens in Project.
