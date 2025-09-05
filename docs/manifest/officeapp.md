@@ -50,8 +50,8 @@ The **\<OfficeApp\>** element can contain the following child elements depending
 |Element|Content|Mail|TaskPane|
 |:-----|:-----:|:-----:|:-----:|
 |[AlternateId](alternateid.md)|Yes|Yes|Yes|
-|[IconUrl](iconurl.md)|Yes|Yes|Yes|
-|[HighResolutionIconUrl](highresolutioniconurl.md)|Yes|Yes|Yes|
+|[IconUrl](iconurl.md)\*|Yes|Yes|Yes|
+|[HighResolutionIconUrl](highresolutioniconurl.md)\*|Yes|Yes|Yes|
 |[SupportUrl](supporturl.md)|Yes|Yes|Yes|
 |[AppDomains](appdomains.md)|Yes|Yes|Yes|
 |[Hosts](hosts.md)|Yes|Yes|Yes|
@@ -62,6 +62,10 @@ The **\<OfficeApp\>** element can contain the following child elements depending
 |[Dictionary](dictionary.md)|No|No|Yes|
 |[VersionOverrides](versionoverrides.md)|Yes|Yes|Yes|
 |[ExtendedOverrides](extendedoverrides.md)|No|No|Yes|
+
+> 
+> [!IMPORTANT]
+> \*  The [IconUrl](iconurl.md) and [HighResolutionIconUrl](highresolutioniconurl.md) elements are formally optional, but are now required for add-ins distributed in [AppSource](https://appsource.microsoft.com).
 
 ## Attributes
 

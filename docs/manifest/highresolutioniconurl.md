@@ -1,13 +1,17 @@
 ---
 title: HighResolutionIconUrl element in the manifest file
 description: Specifies the URL of the image that is used to represent your Office Add-in in the insertion UX and Office Store on high DPI screens.
-ms.date: 03/30/2021
+ms.date: 09/08/2025
 ms.localizationpriority: medium
 ---
 
 # HighResolutionIconUrl element
 
-Specifies the URL of the image that is used to represent your Office Add-in in the insertion UX and Office Store on high DPI screens.
+Specifies the URL of the image that is used to represent your Office Add-in in the insertion UX, [AppSource](https://appsource.microsoft.com), and the vertical task pane tab bar on high DPI screens.
+
+> [!IMPORTANT]
+> This element, and the [IconUrl](highresolutioniconurl.md) element, are now required for add-ins distributed in [AppSource](https://appsource.microsoft.com). 
+
 
 **Add-in type:** Content, Task pane, Mail
 
