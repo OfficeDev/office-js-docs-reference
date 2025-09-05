@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Specifies the URL of the image that is used to represent your Office Add-in in the insertion UX, [AppSource](https://appsource.microsoft.com), and the vertical task pane tab bar on high DPI screens.
 
 > [!IMPORTANT]
-> This element, and the [IconUrl](highresolutioniconurl.md) element, are now required for add-ins distributed in [AppSource](https://appsource.microsoft.com). 
+> This element, and the [IconUrl](iconurl.md) element, are now required for add-ins distributed in [AppSource](https://appsource.microsoft.com). 
 
 
 **Add-in type:** Content, Task pane, Mail
