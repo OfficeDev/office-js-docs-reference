@@ -1,0 +1,20 @@
+{
+  "replacements": [
+    {
+      "find": "@param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.",
+      "replace": "",
+      "description": "Remove importedStylesConflictBehavior parameter documentation when removing WordApiDesktop 1.1"
+    },
+    {
+      "find": "Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.",
+      "replace": "",
+      "description": "Remove WordApiDesktop 1.1 note when removing WordApiDesktop 1.1"
+    },
+    {
+      "find": "/,\\s*importedStylesConflictBehavior\\?:\\s*Word\\.ImportedStylesConflictBehavior[\\w\\W]*?importedStylesConflictBehaviorString\\?:\\s*\"Ignore\"\\s*\\|\\s*\"Overwrite\"\\s*\\|\\s*\"CreateNew\"\\):\\s*OfficeExtension\\.ClientResult<string\\[\\]>;/gm",
+      "replace": "): OfficeExtension.ClientResult<string[]>;",
+      "isRegex": true,
+      "description": "Remove importedStylesConflictBehavior parameter from method signature when removing WordApiDesktop 1.1"
+    }
+  ]
+}

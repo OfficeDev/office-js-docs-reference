@@ -1,0 +1,19 @@
+{
+  "replacements": [
+    {
+      "find": "outlook/requirement-set-1.13",
+      "replace": "outlook/requirement-set-1.12",
+      "description": "Fix requirement set references in outlook_1_12 baseline to match filename"
+    },
+    {
+      "find": "options?: SmartAlertsEventCompletedOptions",
+      "replace": "",
+      "description": "Address SmartAlertsEventCompletedOptions reference when removing Mailbox 1.12"
+    },
+    {
+      "find": "@param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.",
+      "replace": "",
+      "description": "Remove @param options documentation when removing Mailbox 1.12"
+    }
+  ]
+}
