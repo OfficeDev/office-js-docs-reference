@@ -19,6 +19,12 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Message Read
 
+
+  To learn how to develop an encryption add-in in Outlook, see [Create an
+  encryption Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!--
+  -->.
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -27,7 +33,10 @@ properties:
     uid: outlook!Office.DecryptedMessageBody#coercionType:member
     package: outlook!
     fullName: coercionType
-    summary: Specifies the format of the body of the message.
+    summary: >-
+      Specifies the format of the body of a message. The body of a message can
+      be formatted as `Office.CoercionType.Html` or
+      `Office.CoercionType.Text`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -46,11 +55,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'coercionType: Office.CoercionType.Html | Office.CoercionType.Text;'
+      content: 'coercionType: Office.CoercionType;'
       return:
-        type: >-
-          <xref uid="outlook!~Office_2.CoercionType.Html:member" /> |
-          Office.CoercionType.Text
+        type: <xref uid="office!Office.CoercionType:enum" />
   - name: content
     uid: outlook!Office.DecryptedMessageBody#content:member
     package: outlook!

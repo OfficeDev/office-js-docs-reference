@@ -8962,6 +8962,7 @@ Office.AttachmentContent,"content",Property,Fine,false
 Office.AttachmentContent,"format",Property,Excellent,false
 Office.AttachmentDetails,N/A,Interface,Unknown,true
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
+Office.AttachmentDetails,"contentId",Property,Good,true
 Office.AttachmentDetails,"contentType",Property,Deprecated,false
 Office.AttachmentDetails,"id",Property,Good,false
 Office.AttachmentDetails,"isInline",Property,Good,false
@@ -8969,6 +8970,7 @@ Office.AttachmentDetails,"name",Property,Poor,false
 Office.AttachmentDetails,"size",Property,Poor,false
 Office.AttachmentDetailsCompose,N/A,Interface,Unknown,false
 Office.AttachmentDetailsCompose,"attachmentType",Property,Fine,false
+Office.AttachmentDetailsCompose,"contentId",Property,Good,true
 Office.AttachmentDetailsCompose,"id",Property,Poor,false
 Office.AttachmentDetailsCompose,"isInline",Property,Good,false
 Office.AttachmentDetailsCompose,"name",Property,Poor,false
@@ -9024,12 +9026,12 @@ Office.CustomProperties,"set(name, value)",Method,Excellent,true
 Office.DecryptedMessageAttachment,N/A,Interface,Unknown,false
 Office.DecryptedMessageAttachment,"attachmentType",Property,Good,false
 Office.DecryptedMessageAttachment,"content",Property,Great,false
-Office.DecryptedMessageAttachment,"contentId",Property,Excellent,false
+Office.DecryptedMessageAttachment,"contentId",Property,Excellent,true
 Office.DecryptedMessageAttachment,"isInline",Property,Excellent,false
 Office.DecryptedMessageAttachment,"name",Property,Good,false
 Office.DecryptedMessageAttachment,"path",Property,Excellent,false
-Office.DecryptedMessageBody,N/A,Interface,Unknown,false
-Office.DecryptedMessageBody,"coercionType",Property,Good,false
+Office.DecryptedMessageBody,N/A,Interface,Good,false
+Office.DecryptedMessageBody,"coercionType",Property,Great,false
 Office.DecryptedMessageBody,"content",Property,Great,false
 Office.DelayDeliveryTime,N/A,Interface,Unknown,false
 Office.DelayDeliveryTime,"getAsync(options, callback)",Method,Poor,false

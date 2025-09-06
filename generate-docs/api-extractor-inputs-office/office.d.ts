@@ -417,7 +417,7 @@ export declare namespace Office {
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
      * 
      */
-    export enum CoercionType {
+    enum CoercionType {
         /**
          * Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
          */

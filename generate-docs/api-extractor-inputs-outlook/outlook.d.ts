@@ -4096,6 +4096,18 @@ export declare namespace Office {
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**: When images are added to a message as inline attachments, they're automatically assigned a content ID.
+         * In the body of a message, the content ID of an inline attachment is specified in the `src` attribute of the `<img>` element
+         * (for example, `<img width=96 height=96 id="Picture_1" src="cid:image001.png@01DC1E6F.FC7C7410">`).
+         *
+         * @beta
+         */
+        contentId: string;
+        /**
          * Gets the index of the attachment.
          */
         id: string;
@@ -4150,6 +4162,18 @@ export declare namespace Office {
          * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
+        /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**: When images are added to a message as inline attachments, they're automatically assigned a content ID.
+         * In the body of a message, the content ID of an inline attachment is specified in the `src` attribute of the `<img>` element
+         * (for example, `<img width=96 height=96 id="Picture_1" src="cid:image001.png@01DC1E6F.FC7C7410">`).
+         *
+         * @beta
+         */
+        contentId: string;
         /**
          * Gets the MIME content type of the attachment.
          *
@@ -5359,6 +5383,8 @@ export declare namespace Office {
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
      *
+     * To learn how to develop an encryption add-in in Outlook, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | Create an encryption Outlook add-in}.
+     *
      * @beta
      */
     export interface DecryptedMessageAttachment {
@@ -5403,7 +5429,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Important**: You can use the `contentId` property to easily reference an inline attachment from the body of a message.
+         * **Important**: When images are added to a message as inline attachments, they're automatically assigned a content ID. In the body of a message, the content ID of an inline attachment is
+         * specified in the `src` attribute of the `<img>` element (for example, `<img width=96 height=96 id="Picture_1" src="cid:image001.png@01DC1E6F.FC7C7410">`).
+         * To easily identify and provide these inline attachments during decryption, we recommend saving the content IDs of inline attachments to the message header during encryption.
+         * Call `Office.context.mailbox.item.getAttachmentsAsync` to get the content ID of an inline attachment. Then, call `Office.context.mailbox.item.internetHeaders.setAsync` to save the ID to the header of the message.
          *
          * @beta
          */
@@ -5464,11 +5493,14 @@ export declare namespace Office {
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
      *
+     * To learn how to develop an encryption add-in in Outlook, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | Create an encryption Outlook add-in}.
+     *
      * @beta
      */
     export interface DecryptedMessageBody {
         /**
-         * Specifies the format of the body of the message.
+         * Specifies the format of the body of a message.
+         * The body of a message can be formatted as `Office.CoercionType.Html` or `Office.CoercionType.Text`.
          *
          * @remarks
          *
@@ -5480,7 +5512,7 @@ export declare namespace Office {
          *
          * @beta
          */
-        coercionType: CommonAPI.CoercionType.Html | Office.CoercionType.Text;
+        coercionType: CommonAPI.CoercionType;
         /**
          * Specifies the content displayed in the body of the message.
          *
@@ -9985,7 +10017,7 @@ export declare namespace Office {
      * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}, the
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}, or
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption | encryption} (preview).
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | encryption} (preview).
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -11906,7 +11938,7 @@ export declare namespace Office {
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
-     * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption | encryption add-in} after it completes processing an
+     * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | encryption add-in} after it completes processing an
      * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OnMessageDecrypt} event.
      *
      * @remarks

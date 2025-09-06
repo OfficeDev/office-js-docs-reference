@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.MessageDecryptEventCompletedOptions
 summary: >-
   Specifies the behavior of an [encryption
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption)
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)
   after it completes processing an
   [OnMessageDecrypt](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
   event.
