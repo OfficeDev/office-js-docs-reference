@@ -1,0 +1,10 @@
+{
+  "replacements": [
+    {
+      "find": "/outlook/requirement-set-1.[\\d]*/",
+      "replace": "/outlook/requirement-set-1.1/",
+      "isRegex": true,
+      "description": "Update Outlook requirement set URL references to version 1.1"
+    }
+  ]
+}
