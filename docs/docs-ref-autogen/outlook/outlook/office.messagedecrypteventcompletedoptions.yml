@@ -37,7 +37,7 @@ properties:
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler, this value indicates if the
       `OnMessageDecrypt` event should continue to run or be canceled. If the
-      `allowEvent` property is set to `true`<!-- -->, the decrypted content of
+      `allowEvent` property is set to `true`<!-- -->, the decrypted contents of
       the message is displayed.
     remarks: >-
       \[ [API set: Mailbox
@@ -163,7 +163,7 @@ properties:
 
 
       **Important**: If the `emailBody` property isn't specified, an empty
-      body is set.
+      body is returned.
 
     isPreview: true
     isDeprecated: false

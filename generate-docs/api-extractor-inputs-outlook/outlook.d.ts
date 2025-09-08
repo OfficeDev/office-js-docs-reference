@@ -10017,7 +10017,7 @@ export declare namespace Office {
      * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}, the
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}, or
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | encryption} (preview).
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | decryption} (preview).
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -10039,7 +10039,7 @@ export declare namespace Office {
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based, spam-reporting, or encryption (preview) add-in has completed processing an event.
+         * Indicates that the event-based, spam-reporting, or decryption (preview) add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -10054,7 +10054,7 @@ export declare namespace Office {
          *
          * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based, spam-reporting, or encryption add-in when it completes processing an event.
+         * @param options - Optional. An object that specifies the behavior of an event-based, spam-reporting, or decryption add-in when it completes processing an event.
          */
         completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions | MessageDecryptEventCompletedOptions): void;
     }
@@ -11954,7 +11954,7 @@ export declare namespace Office {
     export interface MessageDecryptEventCompletedOptions {
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
-         * this value indicates if the `OnMessageDecrypt` event should continue to run or be canceled. If the `allowEvent` property is set to `true`, the decrypted content of the message is displayed.
+         * this value indicates if the `OnMessageDecrypt` event should continue to run or be canceled. If the `allowEvent` property is set to `true`, the decrypted contents of the message is displayed.
          *
          * @remarks
          *
@@ -12016,7 +12016,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Important**: If the `emailBody` property isn't specified, an empty body is set.
+         * **Important**: If the `emailBody` property isn't specified, an empty body is returned.
          *
          * @beta
          */
