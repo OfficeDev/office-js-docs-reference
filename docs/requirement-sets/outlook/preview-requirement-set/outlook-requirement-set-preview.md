@@ -109,7 +109,7 @@ Added an object that represents an attachment in a decrypted message.
 
 #### [Office.DecryptedMessageBody](/javascript/api/outlook/office.decryptedmessagebody?view=outlook-js-preview&preserve-view=true)
 
-Added an object that represents the body a decrypted message.
+Added an object that represents the body of a decrypted message.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
