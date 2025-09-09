@@ -1,0 +1,17 @@
+{
+  "linkConfigs": [
+    {
+      "name": "Excel Standard Pattern", 
+      "pathPattern": "javascript/api/excel",
+      "description": "Standard URL pattern for Excel APIs",
+      "globalFunctionTemplate": "/javascript/api/excel/excel#{fieldName}",
+      "classTemplate": "/javascript/api/excel/excel.{className}",
+      "classMemberTemplate": "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
+      "enumTemplate": "/javascript/api/excel/excel.{className}",
+      "enumMemberTemplate": "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}",
+      "interfaceTemplate": "/javascript/api/excel/excel.{className}",
+      "interfaceMemberTemplate": "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
+      "typeAliasTemplate": "/javascript/api/excel/excel.{className}"
+    }
+  ]
+}
