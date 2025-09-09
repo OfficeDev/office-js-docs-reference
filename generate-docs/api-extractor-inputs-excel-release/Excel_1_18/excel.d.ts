@@ -7118,6 +7118,7 @@ export declare namespace Excel {
          * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
+        
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -25905,6 +25906,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
     }
+    
+    
     /**
      * An object encapsulating a style's format and other properties.
      *

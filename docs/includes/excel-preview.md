@@ -16,9 +16,6 @@
 ||[getTask()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))|Gets the task associated with this comment reply's thread.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))|Gets the task associated with this comment reply's thread.|
 |[ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue)|[errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#excel-excel-connecterrorcellvalue-errorsubtype-member)|Represents the type of `ConnectErrorCellValue`.|
-|[CustomFunctionManager](/javascript/api/excel/excel.customfunctionmanager)|||
-|[CustomFunctionVisibilityOptions](/javascript/api/excel/excel.customfunctionvisibilityoptions)|[hide](/javascript/api/excel/excel.customfunctionvisibilityoptions#excel-excel-customfunctionvisibilityoptions-hide-member)|A list of custom functions to hide from Excel AutoComplete.|
-||[show](/javascript/api/excel/excel.customfunctionvisibilityoptions#excel-excel-customfunctionvisibilityoptions-show-member)|A list of custom functions to show in Excel AutoComplete.|
 |[DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo)|[shortDateTimePattern](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-shortdatetimepattern-member)|Gets the format string for a short date and time value.|
 |[DocumentTask](/javascript/api/excel/excel.documenttask)|[assign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))|Adds the given user to the list of assignees attached to the task.|
 ||[assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)|Returns a collection of assignees of the task.|

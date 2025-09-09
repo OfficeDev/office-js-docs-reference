@@ -251,6 +251,7 @@ classes:
   - excel!Excel.ConditionalRangeFormat:class
   - excel!Excel.CultureInfo:class
   - excel!Excel.CustomConditionalFormat:class
+  - excel!Excel.CustomFunctionManager:class
   - excel!Excel.CustomProperty:class
   - excel!Excel.CustomPropertyCollection:class
   - excel!Excel.CustomXmlPart:class
@@ -427,6 +428,7 @@ interfaces:
   - excel!Excel.ConditionalTopBottomRule:interface
   - excel!Excel.ConnectErrorCellValue:interface
   - excel!Excel.CustomDataValidation:interface
+  - excel!Excel.CustomFunctionVisibilityOptions:interface
   - excel!Excel.DataValidationErrorAlert:interface
   - excel!Excel.DataValidationPrompt:interface
   - excel!Excel.DataValidationRule:interface

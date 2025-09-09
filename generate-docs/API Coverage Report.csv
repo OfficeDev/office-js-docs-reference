@@ -5615,6 +5615,7 @@ Excel.RowPropertiesLoadOptions,"rowHidden",Property,Excellent,false
 Excel.RowPropertiesLoadOptions,"rowIndex",Property,Excellent,false
 Excel.RunOptions,N/A,Interface,Excellent,false
 Excel.RunOptions,"delayForCellEdit",Property,Excellent,false
+Excel.RunOptions,"mergeUndoGroup",Property,Excellent,false
 Excel.Runtime,N/A,Class,Unknown,false
 Excel.Runtime,"context",Property,Excellent,false
 Excel.Runtime,"enableEvents",Property,Fine,true

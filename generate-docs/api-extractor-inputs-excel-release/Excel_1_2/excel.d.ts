@@ -300,6 +300,7 @@ export declare namespace Excel {
          * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
+        
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -5415,6 +5416,8 @@ export declare namespace Excel {
          */
         set: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
     }
+    
+    
     
     
     
