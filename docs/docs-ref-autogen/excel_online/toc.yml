@@ -697,6 +697,10 @@ items:
             uid: excel!Excel.CustomConditionalFormat:class
           - name: CustomDataValidation
             uid: excel!Excel.CustomDataValidation:interface
+          - name: CustomFunctionManager
+            uid: excel!Excel.CustomFunctionManager:class
+          - name: CustomFunctionVisibilityOptions
+            uid: excel!Excel.CustomFunctionVisibilityOptions:interface
           - name: CustomProperty
             uid: excel!Excel.CustomProperty:class
           - name: CustomPropertyCollection
@@ -1630,6 +1634,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.20 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-20-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.19 requirement set
             href: ../../requirement-sets/excel/excel-api-1-19-requirement-set.md

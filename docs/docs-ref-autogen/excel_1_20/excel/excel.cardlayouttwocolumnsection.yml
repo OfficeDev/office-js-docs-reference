@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: Excel.CardLayoutTwoColumnSection
+uid: excel!Excel.CardLayoutTwoColumnSection:interface
+package: excel!
+fullName: Excel.CardLayoutTwoColumnSection
+summary: Represents a section of a card that is arranged as two columns in card view.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: layout
+    uid: excel!Excel.CardLayoutTwoColumnSection#layout:member
+    package: excel!
+    fullName: layout
+    summary: Represents the type of layout for this section.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'layout: "TwoColumn";'
+      return:
+        type: '"TwoColumn"'
+extends: <xref uid="excel!Excel.CardLayoutSectionStandardProperties:interface" />
