@@ -1,8 +1,8 @@
 {
   "replacements": [
     {
-      "find": "outlook/requirement-set-1.6",
-      "replace": "outlook/requirement-set-1.5",
+      "find": "outlook/requirement-set-1.5",
+      "replace": "outlook/requirement-set-1.4",
       "description": "Fix requirement set references in outlook_1_5 baseline to match filename"
     }
   ]

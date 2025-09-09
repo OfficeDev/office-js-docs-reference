@@ -66,20 +66,20 @@ npx version-remover api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts api-
 npx version-remover api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts "Api set: ExcelApi 1.2"
 npx version-remover api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts "Api set: ExcelApi 1.1"
 
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts "Api set: Mailbox 1.15" configs/outlook-1.14.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts "Api set: Mailbox 1.14" configs/outlook-1.13.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts "Api set: Mailbox 1.13" configs/outlook-1.12.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts "Api set: Mailbox 1.12" configs/outlook-1.11.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts "Api set: Mailbox 1.11" configs/outlook-1.10.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts "Api set: Mailbox 1.10" configs/outlook-1.9.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts "Api set: Mailbox 1.9" configs/outlook-1.8.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts "Api set: Mailbox 1.8" configs/outlook-1.7.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts "Api set: Mailbox 1.7" configs/outlook-1.6.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts "Api set: Mailbox 1.6" configs/outlook-1.5.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts "Api set: Mailbox 1.5" configs/outlook-1.4.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts "Api set: Mailbox 1.4" configs/outlook-1.3.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts "Api set: Mailbox 1.3" configs/outlook-1.2.json
-npx version-remover api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts "Api set: Mailbox 1.2"
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts "Api set: Mailbox 1.15" configs/outlook-1.15-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts "Api set: Mailbox 1.14" configs/outlook-1.14-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts "Api set: Mailbox 1.13" configs/outlook-1.13-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts "Api set: Mailbox 1.12" configs/outlook-1.12-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts "Api set: Mailbox 1.11" configs/outlook-1.11-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts "Api set: Mailbox 1.10" configs/outlook-1.10-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts "Api set: Mailbox 1.9" configs/outlook-1.9-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts "Api set: Mailbox 1.8" configs/outlook-1.8-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts "Api set: Mailbox 1.7" configs/outlook-1.7-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts "Api set: Mailbox 1.6" configs/outlook-1.6-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts "Api set: Mailbox 1.5" configs/outlook-1.5-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts "Api set: Mailbox 1.4" configs/outlook-1.4-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts "Api set: Mailbox 1.3" configs/outlook-1.3-config.json
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts "Api set: Mailbox 1.2" configs/outlook-1.2-config.json
 npx version-remover api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts "Api set: Mailbox 1.1"
 
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts "Api set: PowerPointApi 1.9"
@@ -127,72 +127,72 @@ npx version-remover api-extractor-inputs-word-release/word_1_2/word.d.ts api-ext
 npx version-remover api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts "Api set: WordApi 1.1"
 
 
-npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../docs/includes/excel-preview javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../docs/includes/excel-online javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../docs/includes/excel-1_19 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts ../docs/includes/excel-1_18 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts ../docs/includes/excel-1_17 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts ../docs/includes/excel-1_16 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts ../docs/includes/excel-1_15 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts ../docs/includes/excel-1_14 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts ../docs/includes/excel-1_13 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts ../docs/includes/excel-1_12 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts ../docs/includes/excel-1_11 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts ../docs/includes/excel-1_10 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts ../docs/includes/excel-1_9 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts ../docs/includes/excel-1_8 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts ../docs/includes/excel-1_7 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts ../docs/includes/excel-1_6 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts ../docs/includes/excel-1_5 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts ../docs/includes/excel-1_4 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts ../docs/includes/excel-1_3 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ../docs/includes/excel-1_2 javascript/api/excel/
-npx whats-new api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts ../docs/includes/excel-1_1 javascript/api/excel/
+npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../docs/includes/excel-preview javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../docs/includes/excel-online javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../docs/includes/excel-1_19 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts ../docs/includes/excel-1_18 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts ../docs/includes/excel-1_17 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts ../docs/includes/excel-1_16 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts ../docs/includes/excel-1_15 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts ../docs/includes/excel-1_14 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts ../docs/includes/excel-1_13 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts ../docs/includes/excel-1_12 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts ../docs/includes/excel-1_11 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts ../docs/includes/excel-1_10 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts ../docs/includes/excel-1_9 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts ../docs/includes/excel-1_8 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts ../docs/includes/excel-1_7 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts ../docs/includes/excel-1_6 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts ../docs/includes/excel-1_5 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts ../docs/includes/excel-1_4 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts ../docs/includes/excel-1_3 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ../docs/includes/excel-1_2 javascript/api/excel/ configs/excel-link-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts ../docs/includes/excel-1_1 javascript/api/excel/ configs/excel-link-config.json
 
-npx whats-new api-extractor-inputs-outlook/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts ../docs/includes/outlook-preview javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts ../docs/includes/outlook-1_15 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts ../docs/includes/outlook-1_14 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../docs/includes/outlook-1_13 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../docs/includes/outlook-1_12 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../docs/includes/outlook-1_11 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts ../docs/includes/outlook-1_10 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts ../docs/includes/outlook-1_9 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts ../docs/includes/outlook-1_8 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts ../docs/includes/outlook-1_7 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts ../docs/includes/outlook-1_6 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts ../docs/includes/outlook-1_5 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts ../docs/includes/outlook-1_4 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts ../docs/includes/outlook-1_3 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ../docs/includes/outlook-1_2 javascript/api/outlook/
-npx whats-new api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts ../docs/includes/outlook-1_1 javascript/api/outlook/
+npx whats-new api-extractor-inputs-outlook/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts ../docs/includes/outlook-preview javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts ../docs/includes/outlook-1_15 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts ../docs/includes/outlook-1_14 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../docs/includes/outlook-1_13 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../docs/includes/outlook-1_12 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../docs/includes/outlook-1_11 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts ../docs/includes/outlook-1_10 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts ../docs/includes/outlook-1_9 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts ../docs/includes/outlook-1_8 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts ../docs/includes/outlook-1_7 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts ../docs/includes/outlook-1_6 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts ../docs/includes/outlook-1_5 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts ../docs/includes/outlook-1_4 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts ../docs/includes/outlook-1_3 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ../docs/includes/outlook-1_2 javascript/api/outlook/ configs/outlook-link-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts ../docs/includes/outlook-1_1 javascript/api/outlook/ configs/outlook-link-config.json
 
-npx whats-new api-extractor-inputs-powerpoint/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts ../docs/includes/powerpoint-preview javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts ../docs/includes/powerpoint-1_9 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../docs/includes/powerpoint-1_8 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../docs/includes/powerpoint-1_7 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../docs/includes/powerpoint-1_6 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../docs/includes/powerpoint-1_5 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts ../docs/includes/powerpoint-1_4 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../docs/includes/powerpoint-1_3 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ../docs/includes/powerpoint-1_2 javascript/api/powerpoint/
-npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts ../docs/includes/powerpoint-1_1 javascript/api/powerpoint/
+npx whats-new api-extractor-inputs-powerpoint/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts ../docs/includes/powerpoint-preview javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts ../docs/includes/powerpoint-1_9 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../docs/includes/powerpoint-1_8 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../docs/includes/powerpoint-1_7 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../docs/includes/powerpoint-1_6 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../docs/includes/powerpoint-1_5 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts ../docs/includes/powerpoint-1_4 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../docs/includes/powerpoint-1_3 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ../docs/includes/powerpoint-1_2 javascript/api/powerpoint/ configs/powerpoint-link-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts ../docs/includes/powerpoint-1_1 javascript/api/powerpoint/ configs/powerpoint-link-config.json
 
-npx whats-new api-extractor-inputs-word/word.d.ts api-extractor-inputs-word-release/word_online/word-init.d.ts ../docs/includes/word-preview javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_online/word.d.ts api-extractor-inputs-word-release/word_1_9/word.d.ts ../docs/includes/word-online javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts ../docs/includes/word-desktop-1_2 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts api-extractor-inputs-word-release/word_1_8/word.d.ts ../docs/includes/word-desktop-1_1 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_5_hidden_document javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_4_hidden_document javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_3/word.d.ts ../docs/includes/word-1_3_hidden_document javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_9/word.d.ts api-extractor-inputs-word-release/word_1_8/word.d.ts ../docs/includes/word-1_9 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_8/word.d.ts api-extractor-inputs-word-release/word_1_7/word.d.ts ../docs/includes/word-1_8 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_7/word.d.ts api-extractor-inputs-word-release/word_1_6/word.d.ts ../docs/includes/word-1_7 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_6/word.d.ts api-extractor-inputs-word-release/word_1_5/word.d.ts ../docs/includes/word-1_6 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_5/word.d.ts api-extractor-inputs-word-release/word_1_4/word.d.ts ../docs/includes/word-1_5 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_4/word.d.ts api-extractor-inputs-word-release/word_1_3/word.d.ts ../docs/includes/word-1_4 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_3/word.d.ts api-extractor-inputs-word-release/word_1_2/word.d.ts ../docs/includes/word-1_3 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_2/word.d.ts api-extractor-inputs-word-release/word_1_1/word.d.ts ../docs/includes/word-1_2 javascript/api/word/
-npx whats-new api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts ../docs/includes/word-1_1 javascript/api/word/
+npx whats-new api-extractor-inputs-word/word.d.ts api-extractor-inputs-word-release/word_online/word-init.d.ts ../docs/includes/word-preview javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_online/word.d.ts api-extractor-inputs-word-release/word_1_9/word.d.ts ../docs/includes/word-online javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts ../docs/includes/word-desktop-1_2 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts api-extractor-inputs-word-release/word_1_8/word.d.ts ../docs/includes/word-desktop-1_1 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_5_hidden_document javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_4_hidden_document javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_3/word.d.ts ../docs/includes/word-1_3_hidden_document javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_9/word.d.ts api-extractor-inputs-word-release/word_1_8/word.d.ts ../docs/includes/word-1_9 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_8/word.d.ts api-extractor-inputs-word-release/word_1_7/word.d.ts ../docs/includes/word-1_8 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_7/word.d.ts api-extractor-inputs-word-release/word_1_6/word.d.ts ../docs/includes/word-1_7 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_6/word.d.ts api-extractor-inputs-word-release/word_1_5/word.d.ts ../docs/includes/word-1_6 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_5/word.d.ts api-extractor-inputs-word-release/word_1_4/word.d.ts ../docs/includes/word-1_5 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_4/word.d.ts api-extractor-inputs-word-release/word_1_3/word.d.ts ../docs/includes/word-1_4 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_3/word.d.ts api-extractor-inputs-word-release/word_1_2/word.d.ts ../docs/includes/word-1_3 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_2/word.d.ts api-extractor-inputs-word-release/word_1_1/word.d.ts ../docs/includes/word-1_2 javascript/api/word/ configs/word-link-config.json
+npx whats-new api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts ../docs/includes/word-1_1 javascript/api/word/ configs/word-link-config.json
 
 popd
 

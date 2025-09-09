@@ -1,0 +1,17 @@
+{
+  "linkConfigs": [
+    {
+      "name": "Outlook Standard Pattern",
+      "pathPattern": "javascript/api/outlook",
+      "description": "Standard URL pattern for Outlook APIs",
+      "globalFunctionTemplate": "/javascript/api/outlook/office#{fieldName}",
+      "classTemplate": "/javascript/api/outlook/office.{className}",
+      "classMemberTemplate": "/javascript/api/outlook/office.{className}#outlook-office-{className}-{fieldName}{suffix}",
+      "enumTemplate": "/javascript/api/outlook/office.{className}",
+      "enumMemberTemplate": "/javascript/api/outlook/office.{className}#outlook-office-{className}-{fieldName}",
+      "interfaceTemplate": "/javascript/api/outlook/office.{className}",
+      "interfaceMemberTemplate": "/javascript/api/outlook/office.{className}#outlook-office-{className}-{fieldName}{suffix}",
+      "typeAliasTemplate": "/javascript/api/outlook/office.{className}"
+    }
+  ]
+}

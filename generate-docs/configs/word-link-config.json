@@ -1,0 +1,17 @@
+{
+  "linkConfigs": [
+    {
+      "name": "Word Standard Pattern",
+      "pathPattern": "javascript/api/word",
+      "description": "Standard URL pattern for Word APIs",
+      "globalFunctionTemplate": "/javascript/api/word/word#{fieldName}",
+      "classTemplate": "/javascript/api/word/word.{className}",
+      "classMemberTemplate": "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}{suffix}",
+      "enumTemplate": "/javascript/api/word/word.{className}",
+      "enumMemberTemplate": "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}",
+      "interfaceTemplate": "/javascript/api/word/word.{className}",
+      "interfaceMemberTemplate": "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}{suffix}",
+      "typeAliasTemplate": "/javascript/api/word/word.{className}"
+    }
+  ]
+}
