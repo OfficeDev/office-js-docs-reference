@@ -8,12 +8,7 @@ ms.localizationpriority: medium
 
 # What's new in Excel JavaScript API 1.20
 
-The ExcelApi 1.20 adds ...
-
-The following table provides a concise summary of the APIs, while the subsequent [API list](#api-list) table gives a detailed list.
-
-| Feature area | Description | Relevant objects |
-|:--- |:--- |:--- |
+The ExcelApi 1.20 adds [undo support for Excel JavaScript APIs](/office/dev/add-ins/excel/excel-add-ins-undo-capabilities) and controls for showing and hiding custom functions in Excel AutoComplete.
 
 ## API list
 
