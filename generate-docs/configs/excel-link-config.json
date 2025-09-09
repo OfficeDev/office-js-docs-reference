@@ -4,7 +4,7 @@
       "name": "Excel Standard Pattern", 
       "pathPattern": "javascript/api/excel",
       "description": "Standard URL pattern for Excel APIs",
-      "globalFunctionTemplate": "/javascript/api/excel/excel#{fieldName}",
+      "globalFunctionTemplate": "/javascript/api/excel/#excel-excel-{fieldName}-function(1)",
       "classTemplate": "/javascript/api/excel/excel.{className}",
       "classMemberTemplate": "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
       "enumTemplate": "/javascript/api/excel/excel.{className}",
