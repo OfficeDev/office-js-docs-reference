@@ -1,13 +1,16 @@
 ---
 title: IconUrl element in the manifest file
 description: The IconUrl element specifies the URL of the image that represents your Office Add-in in the insertion UX, AppSource, and the tab bar.
-ms.date: 06/19/2024
+ms.date: 09/08/2025
 ms.localizationpriority: medium
 ---
 
 # IconUrl element
 
 Specifies the full, absolute URL of the image that is used to represent your Office Add-in in the insertion UX, [AppSource](https://appsource.microsoft.com), and the vertical task pane tab bar.
+
+> [!IMPORTANT]
+> This element, and the [HighResolutionIconUrl](highresolutioniconurl.md) element, are now required for add-ins distributed in [AppSource](https://appsource.microsoft.com). 
 
 **Add-in type:** Content, Task pane, Mail
 

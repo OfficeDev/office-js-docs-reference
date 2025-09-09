@@ -1,5 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|*global*|[createWorkbook(base64?: string)](/javascript/api/excel/excel#createworkbook)|Creates and opens a new workbook.|
 |[BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|[formula1](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula1-member)|Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell).|
 ||[formula2](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula2-member)|With the ternary operators Between and NotBetween, specifies the upper bound operand.|
 ||[operator](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-operator-member)|The operator to use for validating the data.|

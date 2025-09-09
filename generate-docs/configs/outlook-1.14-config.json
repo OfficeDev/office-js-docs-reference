@@ -1,0 +1,14 @@
+{
+  "replacements": [
+    {
+      "find": "outlook/requirement-set-1.14",
+      "replace": "outlook/requirement-set-1.13",
+      "description": "Fix requirement set references in outlook_1_14 baseline to match filename"
+    },
+    {
+      "find": "options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions",
+      "replace": "options?: SmartAlertsEventCompletedOptions",
+      "description": "Address SpamReportingEventCompletedOptions reference when removing Mailbox 1.14"
+    }
+  ]
+}

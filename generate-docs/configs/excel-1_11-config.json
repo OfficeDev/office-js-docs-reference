@@ -1,0 +1,9 @@
+{
+  "replacements": [
+    {
+      "find": "content: CommentRichContent | string,",
+      "replace": "content: string,",
+      "description": "Address CommentRichContent reference for when removing ExcelApi 1.11"
+    }
+  ]
+}

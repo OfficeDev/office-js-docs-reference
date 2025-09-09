@@ -9167,6 +9167,16 @@ export declare namespace Excel {
          * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
+        /**
+         * Determines whether the batch requests should be merged to one undo group.
+         *
+         * When false, each `context.sync()` call creates an undo record.
+         * When true, all `context.sync()` calls in a single `Excel.run` are merged into one `undo` group.
+         * 
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        mergeUndoGroup?: boolean;
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -30916,8 +30926,7 @@ export declare namespace Excel {
      * Manages settings on custom functions.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.20]
      */
     export class CustomFunctionManager extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -30926,8 +30935,7 @@ export declare namespace Excel {
          * Show or hide custom functions in Excel AutoComplete.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.20]
          *
          * @param customFunctionVisibilityOptions - Specifies which custom functions to show or hide.
          */
@@ -30944,8 +30952,7 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.20]
          */
         load(propertyNamesAndPaths?: {
             select?: string;
@@ -30954,8 +30961,7 @@ export declare namespace Excel {
         /**
          * Create a new instance of the `Excel.CustomFunctionManager` object.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.20]
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Excel.CustomFunctionManager;
         /**
@@ -30968,24 +30974,21 @@ export declare namespace Excel {
      * Represents which custom functions to show or hide in Excel AutoComplete.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.20]
      */
     export interface CustomFunctionVisibilityOptions {
         /**
          * A list of custom functions to hide from Excel AutoComplete.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.20]
          */
         hide?: string[];
         /**
          * A list of custom functions to show in Excel AutoComplete.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.20]
          */
         show?: string[];
     }

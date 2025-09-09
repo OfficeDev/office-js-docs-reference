@@ -1,0 +1,9 @@
+{
+  "replacements": [
+    {
+      "find": "outlook/requirement-set-1.11",
+      "replace": "outlook/requirement-set-1.10",
+      "description": "Fix requirement set references in outlook_1_11 baseline to match filename"
+    }
+  ]
+}
