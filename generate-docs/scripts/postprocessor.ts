@@ -4,9 +4,6 @@ import { generateEnumList } from './util';
 import * as fsx from 'fs-extra';
 import * as jsyaml from "js-yaml";
 import * as path from "path";
-import * as os from "os";
-
-const EOL = os.EOL;
 
 
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
@@ -128,7 +125,7 @@ const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const tocTemplateLocation = path.resolve("../../docs");
 
 tryCatch(async () => {
-    console.log(`${EOL}Starting postprocessor script...`);
+    console.log(`\nStarting postprocessor script...`);
 
     console.log(`Deleting old docs at: ${docsDestination}`);
     // delete everything except the 'overview' folder from the /docs folder
@@ -257,7 +254,7 @@ tryCatch(async () => {
     fsx.removeSync(docsDestination + "/office_release/toc.yml");
     fsx.removeSync(docsDestination + "/office-runtime/toc.yml");
 
-    console.log(`${EOL}Postprocessor script complete${EOL}`);
+    console.log(`\nPostprocessor script complete\n`);
 
     process.exit(0);
 });
@@ -397,7 +394,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
 }
 
 function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
-    console.log(`${EOL}Updating the structure of the Common TOC file: ${tocPath}`);
+    console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.load(fsx.readFileSync(tocPath).toString()) as Toc);
     let runtimeToc = (jsyaml.load(fsx.readFileSync(path.resolve("../../docs/docs-ref-autogen/office-runtime/toc.yml")).toString()) as Toc);
@@ -483,7 +480,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
 
     // Add links for type aliases.
     if (apiYaml.uid.endsWith(":type") && (apiYaml.uid.indexOf("Office") < 0)) {
-        let remarks = `${EOL}${EOL}Learn more about the types in this type alias through the following links. ${EOL}${EOL}`
+        let remarks = `\n\nLearn more about the types in this type alias through the following links. \n\n`
         apiYaml.syntax.substring(apiYaml.syntax.indexOf('=')).match(/[\w]+/g).forEach((match, matchIndex, matches) => {
             remarks += `[${capitalizeFirstLetter(hostName)}.${match}](/javascript/api/${hostName}/${hostName}.${match.toLowerCase()})`;
             if (matchIndex < matches.length - 1) {
@@ -493,7 +490,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
 
         let exampleIndex = apiYaml.remarks.indexOf("#### Examples");
         if (exampleIndex > 0) {
-            apiYaml.remarks = `${apiYaml.remarks.substring(0, exampleIndex)}${remarks}${EOL}${EOL}${apiYaml.remarks.substring(exampleIndex)}`;
+            apiYaml.remarks = `${apiYaml.remarks.substring(0, exampleIndex)}${remarks}\n\n${apiYaml.remarks.substring(exampleIndex)}`;
         } else {
             apiYaml.remarks += remarks;
         }
