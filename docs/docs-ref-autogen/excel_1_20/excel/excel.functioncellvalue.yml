@@ -4,15 +4,7 @@ uid: excel!Excel.FunctionCellValue:type
 package: excel!
 fullName: Excel.FunctionCellValue
 summary: Represents a cell value which can be evaluated as a function.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  Learn more about the types in this type alias through the following links. 
-
-
-  [Excel.JavaScriptCustomFunctionReferenceCellValue](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue)
+remarks: "\\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \\]\r\n\r\nLearn more about the types in this type alias through the following links. \r\n\r\n[Excel.JavaScriptCustomFunctionReferenceCellValue](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue)"
 
 isPreview: false
 isDeprecated: false
