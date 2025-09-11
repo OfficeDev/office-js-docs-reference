@@ -10761,7 +10761,7 @@ PowerPoint.SlideCollection,"load(options)",Method,Excellent,false
 PowerPoint.SlideCollection,"load(propertyNames)",Method,Excellent,false
 PowerPoint.SlideCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 PowerPoint.SlideCollection,"toJSON()",Method,Excellent,false
-PowerPoint.SlideGetImageOptions,N/A,Interface,Unknown,false
+PowerPoint.SlideGetImageOptions,N/A,Interface,Unknown,true
 PowerPoint.SlideGetImageOptions,"height",Property,Fine,false
 PowerPoint.SlideGetImageOptions,"width",Property,Fine,false
 PowerPoint.SlideLayout,N/A,Class,Unknown,true
