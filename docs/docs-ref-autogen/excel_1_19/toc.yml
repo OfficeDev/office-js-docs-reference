@@ -1325,6 +1325,7 @@ items:
               - name: VisibilityModeChangedMessage
                 uid: office!Office.VisibilityModeChangedMessage:interface
           - name: OfficeExtension
+            uid: ''
             items:
               - name: ClientObject
                 uid: office!OfficeExtension.ClientObject:class
