@@ -14,19 +14,15 @@
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
-          "**/_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "**/_themes.pdf/**"
         ]
       },
       {
         "files": ["**/*.md"],
-        "exclude": ["manifest.md"],
         "group": "all",
         "src": "manifest",
-        "dest": "api/manifest"
+        "dest": "api/manifest",
+        "exclude": ["manifest.md"]
       },
       {
         "files": ["manifest.md"],
@@ -36,10 +32,10 @@
       },
       {
         "files": ["**/*.md"],
-        "exclude": ["requirement-sets.md"],
         "group": "all",
         "src": "requirement-sets",
-        "dest": "api/requirement-sets"
+        "dest": "api/requirement-sets",
+        "exclude": ["requirement-sets.md"]
       },
       {
         "files": ["requirement-sets.md"],
@@ -60,22 +56,10 @@
         "dest": "office_js_breadcrumb"
       },
       {
-        "files": ["**/toc.yml"],
-        "group": "common-js-toc",
-        "src": "docs-ref-autogen/common",
-        "dest": "api/office-js-docs-reference"
-      },
-      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "common-js-toc",
         "src": "docs-ref-autogen/common",
         "dest": "api"
-      },
-      {
-        "files": ["**/toc.yml"],
-        "group": "common-js-preview-toc",
-        "src": "docs-ref-autogen/common_preview",
-        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -84,34 +68,16 @@
         "dest": "api"
       },
       {
-        "files": ["**/toc.yml"],
-        "group": "common-js",
-        "src": "docs-ref-autogen/office_release",
-        "dest": "api/office-js-docs-reference"
-      },
-      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "common-js",
         "src": "docs-ref-autogen/office_release",
         "dest": "api"
       },
       {
-        "files": ["**/toc.yml"],
-        "group": "common-js-preview",
-        "src": "docs-ref-autogen/office",
-        "dest": "api/office-js-docs-reference"
-      },
-      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "common-js-preview",
         "src": "docs-ref-autogen/office",
         "dest": "api"
-      },
-      {
-        "files": ["**/toc.yml"],
-        "group": "office-runtime",
-        "src": "docs-ref-autogen/office-runtime",
-        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -909,7 +875,6 @@
       },
       {
         "files": ["**/*.png", "**/*.jpg", "**/*.svg"],
-        "exclude": ["**/obj/**", "**/includes/**"],
         "src": "manifest",
         "dest": "api/manifest"
       }
@@ -1228,72 +1193,13 @@
     },
     "fileMetadata": {
       "ms.service": {
-        "docs-ref-autogen/excel/**": "excel",
+        "docs-ref-autogen/excel*/**": "excel",
         "docs-ref-autogen/excel/office-runtime/**": "microsoft-365",
-        "docs-ref-autogen/excel_1_1/**": "excel",
-        "docs-ref-autogen/excel_1_2/**": "excel",
-        "docs-ref-autogen/excel_1_3/**": "excel",
-        "docs-ref-autogen/excel_1_4/**": "excel",
-        "docs-ref-autogen/excel_1_5/**": "excel",
-        "docs-ref-autogen/excel_1_6/**": "excel",
-        "docs-ref-autogen/excel_1_7/**": "excel",
-        "docs-ref-autogen/excel_1_8/**": "excel",
-        "docs-ref-autogen/excel_1_9/**": "excel",
-        "docs-ref-autogen/excel_1_10/**": "excel",
-        "docs-ref-autogen/excel_1_11/**": "excel",
-        "docs-ref-autogen/excel_1_12/**": "excel",
-        "docs-ref-autogen/excel_1_13/**": "excel",
-        "docs-ref-autogen/excel_1_14/**": "excel",
-        "docs-ref-autogen/excel_1_15/**": "excel",
-        "docs-ref-autogen/excel_1_16/**": "excel",
-        "docs-ref-autogen/excel_1_17/**": "excel",
-        "docs-ref-autogen/excel_1_18/**": "excel",
-        "docs-ref-autogen/excel_1_19/**": "excel",
-        "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/onenote/**": "onenote",
-        "docs-ref-autogen/outlook/**": "outlook",
-        "docs-ref-autogen/outlook_1_1/**": "outlook",
-        "docs-ref-autogen/outlook_1_2/**": "outlook",
-        "docs-ref-autogen/outlook_1_3/**": "outlook",
-        "docs-ref-autogen/outlook_1_4/**": "outlook",
-        "docs-ref-autogen/outlook_1_5/**": "outlook",
-        "docs-ref-autogen/outlook_1_6/**": "outlook",
-        "docs-ref-autogen/outlook_1_7/**": "outlook",
-        "docs-ref-autogen/outlook_1_8/**": "outlook",
-        "docs-ref-autogen/outlook_1_9/**": "outlook",
-        "docs-ref-autogen/outlook_1_10/**": "outlook",
-        "docs-ref-autogen/outlook_1_11/**": "outlook",
-        "docs-ref-autogen/outlook_1_12/**": "outlook",
-        "docs-ref-autogen/outlook_1_13/**": "outlook",
-        "docs-ref-autogen/outlook_1_14/**": "outlook",
-        "docs-ref-autogen/outlook_1_15/**": "outlook",
-        "docs-ref-autogen/powerpoint/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_1/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_2/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_3/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_4/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_5/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_6/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_7/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_8/**": "powerpoint",
-        "docs-ref-autogen/powerpoint_1_9/**": "powerpoint",
+        "docs-ref-autogen/outlook*/**": "outlook",
+        "docs-ref-autogen/powerpoint*/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
-        "docs-ref-autogen/word/**": "word",
-        "docs-ref-autogen/word_1_1/**": "word",
-        "docs-ref-autogen/word_1_2/**": "word",
-        "docs-ref-autogen/word_1_3/**": "word",
-        "docs-ref-autogen/word_1_4/**": "word",
-        "docs-ref-autogen/word_1_5/**": "word",
-        "docs-ref-autogen/word_1_6/**": "word",
-        "docs-ref-autogen/word_1_7/**": "word",
-        "docs-ref-autogen/word_1_8/**": "word",
-        "docs-ref-autogen/word_1_9/**": "word",
-        "docs-ref-autogen/word_online/**": "word",
-        "docs-ref-autogen/word_1_3_hidden_document/**": "word",
-        "docs-ref-autogen/word_1_4_hidden_document/**": "word",
-        "docs-ref-autogen/word_1_5_hidden_document/**": "word",
-        "docs-ref-autogen/word_desktop_1_1/**": "word",
-        "docs-ref-autogen/word_desktop_1_2/**": "word",
+        "docs-ref-autogen/word*/**": "word",
         "requirement-sets/excel/**": "excel",
         "requirement-sets/onenote/**": "onenote",
         "requirement-sets/outlook/**": "outlook",
