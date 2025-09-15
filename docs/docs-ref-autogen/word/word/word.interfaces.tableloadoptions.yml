@@ -45,6 +45,21 @@ properties:
       content: 'alignment?: boolean;'
       return:
         type: boolean
+  - name: description
+    uid: word!Word.Interfaces.TableLoadOptions#description:member
+    package: word!
+    fullName: description
+    summary: Specifies the description of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'description?: boolean;'
+      return:
+        type: boolean
   - name: font
     uid: word!Word.Interfaces.TableLoadOptions#font:member
     package: word!
@@ -275,6 +290,25 @@ properties:
       content: 'rowCount?: boolean;'
       return:
         type: boolean
+  - name: shading
+    uid: word!Word.Interfaces.TableLoadOptions#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns the `ShadingUniversal` object that represents the shading of the
+      table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
+          />
   - name: shadingColor
     uid: word!Word.Interfaces.TableLoadOptions#shadingColor:member
     package: word!
@@ -401,6 +435,21 @@ properties:
     isDeprecated: false
     syntax:
       content: 'styleTotalRow?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: word!Word.Interfaces.TableLoadOptions#title:member
+    package: word!
+    fullName: title
+    summary: Specifies the title of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
       return:
         type: boolean
   - name: values

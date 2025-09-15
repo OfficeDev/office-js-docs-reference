@@ -1,36 +1,51 @@
 {
-  "replacements": [
-    {
-      "find": "type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection | CardLayoutTwoColumnSection;",
-      "replace": "type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;",
-      "description": "Address CardLayoutTwoColumnSection reference for when removing ExcelApi 1.19"
-    },
-    {
-      "find": "icon?: string | EntityCompactLayoutIcons;",
-      "replace": "icon?: string;",
-      "description": "Address EntityCompactLayoutIcons reference for when removing ExcelApi 1.19"
-    },
-    {
-      "find": "type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | FunctionCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;",
-      "replace": "type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;",
-      "description": "Remove FormattedNumberCellValue from CellValue union type"
-    }
-  ],
-  "excludedFieldPatterns": [
-    "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
-  ],
-  "excludedFieldNames": [
-    "load",
-    "set",
-    "toJSON",
-    "context",
-    "track",
-    "untrack"
-  ],
-  "excludedClassPatterns": [
-    "LoadOptions$",
-    "Data$"
-  ],
-  "includeStaticFields": false,
-  "includeEnums": false
+    "replacements":  [
+                         {
+                             "find":  "type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection | CardLayoutTwoColumnSection;",
+                             "replace":  "type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;",
+                             "description":  "Address CardLayoutTwoColumnSection reference for when removing ExcelApi 1.19"
+                         },
+                         {
+                             "find":  "icon?: string | EntityCompactLayoutIcons;",
+                             "replace":  "icon?: string;",
+                             "description":  "Address EntityCompactLayoutIcons reference for when removing ExcelApi 1.19"
+                         },
+                         {
+                             "find":  "type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | FunctionCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) \u0026 CellValueExtraProperties;",
+                             "replace":  "type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) \u0026 CellValueExtraProperties;",
+                             "description":  "Remove FormattedNumberCellValue from CellValue union type"
+                         }
+                     ],
+    "excludedFieldPatterns":  [
+                                  "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+                              ],
+    "excludedFieldNames":  [
+                               "load",
+                               "set",
+                               "toJSON",
+                               "context",
+                               "track",
+                               "untrack"
+                           ],
+    "excludedClassPatterns":  [
+                                  "LoadOptions$",
+                                  "Data$"
+                              ],
+    "includeStaticFields":  false,
+    "includeEnums":  false,
+    "linkConfigs":  [
+                        {
+                            "pathPattern":  "javascript/api/excel",
+                            "description":  "Standard URL pattern for Excel APIs",
+                            "globalFunctionTemplate":  "/javascript/api/excel/#excel-excel-{fieldName}-function(1)",
+                            "interfaceMemberTemplate":  "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
+                            "classMemberTemplate":  "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
+                            "typeAliasTemplate":  "/javascript/api/excel/excel.{className}",
+                            "name":  "Excel Standard Pattern",
+                            "classTemplate":  "/javascript/api/excel/excel.{className}",
+                            "interfaceTemplate":  "/javascript/api/excel/excel.{className}",
+                            "enumMemberTemplate":  "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}",
+                            "enumTemplate":  "/javascript/api/excel/excel.{className}"
+                        }
+                    ]
 }

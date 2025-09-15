@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.FontBias
+uid: word!Word.FontBias:enum
+package: word!
+fullName: Word.FontBias
+summary: Specifies the font bias to use when formatting East Asian text.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: farEast
+    uid: word!Word.FontBias.farEast:member
+    package: word!
+    summary: >-
+      Uses the font bias for Far East text.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FarEast"'
+  - name: noSpecified
+    uid: word!Word.FontBias.noSpecified:member
+    package: word!
+    summary: >-
+      No font bias specified.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"NoSpecified"'
+  - name: standard
+    uid: word!Word.FontBias.standard:member
+    package: word!
+    summary: >-
+      Uses the default font bias.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Standard"'

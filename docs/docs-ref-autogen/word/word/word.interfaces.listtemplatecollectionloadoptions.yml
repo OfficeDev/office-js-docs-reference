@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListTemplateCollectionLoadOptions
+uid: word!Word.Interfaces.ListTemplateCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.ListTemplateCollectionLoadOptions
+summary: >-
+  Contains a collection of
+  [Word.ListTemplate](xref:word!Word.ListTemplate:class) objects in a document,
+  list template gallery, or document template.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.ListTemplateCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.ListTemplateCollectionLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: 'For EACH ITEM in the collection: Specifies the name of the list template.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: outlineNumbered
+    uid: >-
+      word!Word.Interfaces.ListTemplateCollectionLoadOptions#outlineNumbered:member
+    package: word!
+    fullName: outlineNumbered
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the list template is
+      outline numbered.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlineNumbered?: boolean;'
+      return:
+        type: boolean

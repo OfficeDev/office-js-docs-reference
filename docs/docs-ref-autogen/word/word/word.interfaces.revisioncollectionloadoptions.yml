@@ -1,0 +1,159 @@
+### YamlMime:TSType
+name: Word.Interfaces.RevisionCollectionLoadOptions
+uid: word!Word.Interfaces.RevisionCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.RevisionCollectionLoadOptions
+summary: >-
+  A collection of Revision objects that represent the changes marked with
+  revision marks in a range or document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: author
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#author:member
+    package: word!
+    fullName: author
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the user who made the
+      tracked change.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type: boolean
+  - name: date
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#date:member
+    package: word!
+    fullName: date
+    summary: >-
+      For EACH ITEM in the collection: Gets the date and time when the tracked
+      change was made.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'date?: boolean;'
+      return:
+        type: boolean
+  - name: formatDescription
+    uid: >-
+      word!Word.Interfaces.RevisionCollectionLoadOptions#formatDescription:member
+    package: word!
+    fullName: formatDescription
+    summary: >-
+      For EACH ITEM in the collection: Gets the description of tracked
+      formatting changes in the revision.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'formatDescription?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#index:member
+    package: word!
+    fullName: index
+    summary: >-
+      For EACH ITEM in the collection: Gets a number that represents the
+      position of this item in a collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: movedRange
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member
+    package: word!
+    fullName: movedRange
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Range` object that represents the
+      range of text that was moved from one place to another in the document
+      with tracked changes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'movedRange?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: range
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Range` object that represents the
+      portion of the document that's contained within a revision mark.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: type
+    uid: word!Word.Interfaces.RevisionCollectionLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: 'For EACH ITEM in the collection: Gets the revision type.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Word.SelectionMoveOptions
+uid: word!Word.SelectionMoveOptions:interface
+package: word!
+fullName: Word.SelectionMoveOptions
+summary: >-
+  Represents the options for the
+  [Selection.move](xref:word!Word.Selection:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: word!Word.SelectionMoveOptions#count:member
+    package: word!
+    fullName: count
+    summary: >-
+      If provided, specifies the number of units by which the range or selection
+      is to be moved. If `count` is a positive number, the object is collapsed
+      to its end position and moved backward in the document by the specified
+      number of units. If `count` is a negative number, the object is collapsed
+      to its start position and moved forward by the specified number of units.
+      The default value is 1. You can also control the collapse direction by
+      using the [Selection.collapse](xref:word!Word.Selection:class) method
+      before using the `move` method. If the range or selection is in the middle
+      of a unit or isn't collapsed, moving it to the beginning or end of the
+      unit counts as moving it one full unit.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'count?: number;'
+      return:
+        type: number
+  - name: unit
+    uid: word!Word.SelectionMoveOptions#unit:member
+    package: word!
+    fullName: unit
+    summary: >-
+      If provided, specifies the unit by which to move the ending character
+      position. The default value is `character`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
+        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
+        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
+        "Item";
+      return:
+        type: >-
+          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
+          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
+          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
+          "ParagraphFormat" | "Table" | "Item"

@@ -67,6 +67,23 @@ properties:
       content: 'readonly cellIndex: number;'
       return:
         type: number
+  - name: column
+    uid: word!Word.TableCell#column:member
+    package: word!
+    fullName: column
+    summary: >-
+      Returns the `TableColumn` object that represents the table column that
+      contains this cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly column: Word.TableColumn;'
+      return:
+        type: <xref uid="word!Word.TableColumn:class" />
   - name: columnWidth
     uid: word!Word.TableCell#columnWidth:member
     package: word!
@@ -190,6 +207,23 @@ properties:
       content: 'readonly rowIndex: number;'
       return:
         type: number
+  - name: shading
+    uid: word!Word.TableCell#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns the `ShadingUniversal` object that represents the shading of the
+      table cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shading: Word.ShadingUniversal;'
+      return:
+        type: <xref uid="word!Word.ShadingUniversal:class" />
   - name: shadingColor
     uid: word!Word.TableCell#shadingColor:member
     package: word!
@@ -284,6 +318,50 @@ properties:
       return:
         type: number
 methods:
+  - name: autoSum()
+    uid: word!Word.TableCell#autoSum:member(1)
+    package: word!
+    fullName: autoSum()
+    summary: >-
+      Inserts a [= (Formula)
+      field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
+      that calculates and displays the sum of the values in table cells above or
+      to the left of the cell specified in the expression.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoSum(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete(shiftCells)
+    uid: word!Word.TableCell#delete:member(1)
+    package: word!
+    fullName: delete(shiftCells)
+    summary: >-
+      Deletes the table cell and optionally controls how the remaining cells are
+      shifted.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(shiftCells: any): void;'
+      parameters:
+        - id: shiftCells
+          description: >-
+            Optional. Specifies how the remaining cells are shifted after the
+            deletion. The default is `shiftLeft`<!-- -->.
+          type: any
+      return:
+        type: void
+        description: ''
   - name: deleteColumn()
     uid: word!Word.TableCell#deleteColumn:member(1)
     package: word!
@@ -315,6 +393,29 @@ methods:
     isDeprecated: false
     syntax:
       content: 'deleteRow(): void;'
+      return:
+        type: void
+        description: ''
+  - name: formula(options)
+    uid: word!Word.TableCell#formula:member(1)
+    package: word!
+    fullName: formula(options)
+    summary: >-
+      Inserts a [= (Formula)
+      field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
+      that contains the specified formula into a table cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'formula(options?: Word.TableCellFormulaOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. An object that specifies the options for the formula.
+          type: <xref uid="word!Word.TableCellFormulaOptions:interface" />
       return:
         type: void
         description: ''
@@ -646,6 +747,42 @@ methods:
                     }
       return:
         type: <xref uid="word!Word.TableCell:class" />
+        description: ''
+  - name: merge(mergeTo)
+    uid: word!Word.TableCell#merge:member(1)
+    package: word!
+    fullName: merge(mergeTo)
+    summary: Merges this table cell with the specified table cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'merge(mergeTo: Word.TableCell): void;'
+      parameters:
+        - id: mergeTo
+          description: The cell to be merged with.
+          type: <xref uid="word!Word.TableCell:class" />
+      return:
+        type: void
+        description: ''
+  - name: select()
+    uid: word!Word.TableCell#select:member(1)
+    package: word!
+    fullName: select()
+    summary: Selects the table cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
         description: ''
   - name: set(properties, options)
     uid: word!Word.TableCell#set:member(1)

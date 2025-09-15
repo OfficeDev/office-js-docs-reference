@@ -1,0 +1,302 @@
+### YamlMime:TSType
+name: Word.Coauthoring
+uid: word!Word.Coauthoring:class
+package: word!
+fullName: Word.Coauthoring
+summary: >-
+  Represents the `Coauthoring` object. This tracks the updates, changes,
+  conflicts, and other interactions in the document done through coauthoring.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: authors
+    uid: word!Word.Coauthoring#authors:member
+    package: word!
+    fullName: authors
+    summary: >-
+      Gets a `CoauthorCollection` object that represents all the coauthors
+      currently editing the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly authors: Word.CoauthorCollection;'
+      return:
+        type: <xref uid="word!Word.CoauthorCollection:class" />
+  - name: canCoauthor
+    uid: word!Word.Coauthoring#canCoauthor:member
+    package: word!
+    fullName: canCoauthor
+    summary: Gets whether this document can be coauthored.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly canCoauthor: boolean;'
+      return:
+        type: boolean
+  - name: canMerge
+    uid: word!Word.Coauthoring#canMerge:member
+    package: word!
+    fullName: canMerge
+    summary: Gets whether the document can be automatically merged.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly canMerge: boolean;'
+      return:
+        type: boolean
+  - name: conflicts
+    uid: word!Word.Coauthoring#conflicts:member
+    package: word!
+    fullName: conflicts
+    summary: >-
+      Gets a `ConflictCollection` object that represents all the conflicts in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly conflicts: Word.ConflictCollection;'
+      return:
+        type: <xref uid="word!Word.ConflictCollection:class" />
+  - name: context
+    uid: word!Word.Coauthoring#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: locks
+    uid: word!Word.Coauthoring#locks:member
+    package: word!
+    fullName: locks
+    summary: >-
+      Gets a `CoauthoringLockCollection` object that represents the locks in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly locks: Word.CoauthoringLockCollection;'
+      return:
+        type: <xref uid="word!Word.CoauthoringLockCollection:class" />
+  - name: me
+    uid: word!Word.Coauthoring#me:member
+    package: word!
+    fullName: me
+    summary: Gets a `Coauthor` object that represents the current user.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly me: Word.Coauthor;'
+      return:
+        type: <xref uid="word!Word.Coauthor:class" />
+  - name: pendingUpdates
+    uid: word!Word.Coauthoring#pendingUpdates:member
+    package: word!
+    fullName: pendingUpdates
+    summary: Gets whether the document has pending updates that have not been accepted.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly pendingUpdates: boolean;'
+      return:
+        type: boolean
+  - name: updates
+    uid: word!Word.Coauthoring#updates:member
+    package: word!
+    fullName: updates
+    summary: >-
+      Gets a `CoauthoringUpdateCollection` object that represents the most
+      recent updates that were merged into the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly updates: Word.CoauthoringUpdateCollection;'
+      return:
+        type: <xref uid="word!Word.CoauthoringUpdateCollection:class" />
+methods:
+  - name: load(options)
+    uid: word!Word.Coauthoring#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.CoauthoringLoadOptions):
+        Word.Coauthoring;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.CoauthoringLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Coauthoring:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.Coauthoring#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Coauthoring;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.Coauthoring:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.Coauthoring#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Coauthoring;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.Coauthoring:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.Coauthoring#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Coauthoring`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.CoauthoringData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CoauthoringData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthoringData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.Coauthoring#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Coauthoring;'
+      return:
+        type: <xref uid="word!Word.Coauthoring:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.Coauthoring#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Coauthoring;'
+      return:
+        type: <xref uid="word!Word.Coauthoring:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

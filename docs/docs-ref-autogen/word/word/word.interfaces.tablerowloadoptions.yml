@@ -124,6 +124,21 @@ properties:
       content: 'preferredHeight?: boolean;'
       return:
         type: boolean
+  - name: range
+    uid: word!Word.Interfaces.TableRowLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: Returns the `Range` object that represents the table row.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
   - name: rowIndex
     uid: word!Word.Interfaces.TableRowLoadOptions#rowIndex:member
     package: word!
@@ -139,6 +154,25 @@ properties:
       content: 'rowIndex?: boolean;'
       return:
         type: boolean
+  - name: shading
+    uid: word!Word.Interfaces.TableRowLoadOptions#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns the `ShadingUniversal` object that represents the shading of the
+      table row.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
+          />
   - name: shadingColor
     uid: word!Word.Interfaces.TableRowLoadOptions#shadingColor:member
     package: word!

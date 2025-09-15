@@ -260,6 +260,21 @@ properties:
         type: >-
           <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
           | "TrackMineOnly"
+  - name: coauthoring
+    uid: word!Word.Document#coauthoring:member
+    package: word!
+    fullName: coauthoring
+    summary: Gets a `Coauthoring` object for managing coauthoring in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly coauthoring: Word.Coauthoring;'
+      return:
+        type: <xref uid="word!Word.Coauthoring:class" />
   - name: consecutiveHyphensLimit
     uid: word!Word.Document#consecutiveHyphensLimit:member
     package: word!
@@ -426,6 +441,23 @@ properties:
       content: 'languageDetected: boolean;'
       return:
         type: boolean
+  - name: listTemplates
+    uid: word!Word.Document#listTemplates:member
+    package: word!
+    fullName: listTemplates
+    summary: >-
+      Returns a `ListTemplateCollection` object that represents all the list
+      templates in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listTemplates: Word.ListTemplateCollection;'
+      return:
+        type: <xref uid="word!Word.ListTemplateCollection:class" />
   - name: pageSetup
     uid: word!Word.Document#pageSetup:member
     package: word!
@@ -476,6 +508,24 @@ properties:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type: <xref uid="word!Word.DocumentProperties:class" />
+  - name: revisions
+    uid: word!Word.Document#revisions:member
+    package: word!
+    fullName: revisions
+    summary: >-
+      Gets the collection of revisions that represents the tracked changes in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly revisions: Word.RevisionCollection;'
+      return:
+        type: <xref uid="word!Word.RevisionCollection:class" />
   - name: saved
     uid: word!Word.Document#saved:member
     package: word!
@@ -508,6 +558,23 @@ properties:
       content: 'readonly sections: Word.SectionCollection;'
       return:
         type: <xref uid="word!Word.SectionCollection:class" />
+  - name: selection
+    uid: word!Word.Document#selection:member
+    package: word!
+    fullName: selection
+    summary: >-
+      Returns a `Selection` object that represents the current selection in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly selection: Word.Selection;'
+      return:
+        type: <xref uid="word!Word.Selection:class" />
   - name: settings
     uid: word!Word.Document#settings:member
     package: word!
@@ -552,6 +619,76 @@ properties:
       content: 'readonly settings: Word.SettingCollection;'
       return:
         type: <xref uid="word!Word.SettingCollection:class" />
+  - name: tableOfAuthoritiesCategories
+    uid: word!Word.Document#tableOfAuthoritiesCategories:member
+    package: word!
+    fullName: tableOfAuthoritiesCategories
+    summary: >-
+      Returns a `TableOfAuthoritiesCategoryCollection` object that represents
+      the available table of authorities categories in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly tableOfAuthoritiesCategories:
+        Word.TableOfAuthoritiesCategoryCollection;
+      return:
+        type: <xref uid="word!Word.TableOfAuthoritiesCategoryCollection:class" />
+  - name: tablesOfAuthorities
+    uid: word!Word.Document#tablesOfAuthorities:member
+    package: word!
+    fullName: tablesOfAuthorities
+    summary: >-
+      Returns a `TableOfAuthoritiesCollection` object that represents all the
+      tables of authorities in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tablesOfAuthorities: Word.TableOfAuthoritiesCollection;'
+      return:
+        type: <xref uid="word!Word.TableOfAuthoritiesCollection:class" />
+  - name: tablesOfContents
+    uid: word!Word.Document#tablesOfContents:member
+    package: word!
+    fullName: tablesOfContents
+    summary: >-
+      Returns a `TableOfContentsCollection` object that represents all the
+      tables of contents in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tablesOfContents: Word.TableOfContentsCollection;'
+      return:
+        type: <xref uid="word!Word.TableOfContentsCollection:class" />
+  - name: tablesOfFigures
+    uid: word!Word.Document#tablesOfFigures:member
+    package: word!
+    fullName: tablesOfFigures
+    summary: >-
+      Returns a `TableOfFiguresCollection` object that represents all the tables
+      of figures in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tablesOfFigures: Word.TableOfFiguresCollection;'
+      return:
+        type: <xref uid="word!Word.TableOfFiguresCollection:class" />
   - name: windows
     uid: word!Word.Document#windows:member
     package: word!

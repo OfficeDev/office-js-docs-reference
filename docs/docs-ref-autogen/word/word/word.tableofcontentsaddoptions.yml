@@ -1,0 +1,226 @@
+### YamlMime:TSType
+name: Word.TableOfContentsAddOptions
+uid: word!Word.TableOfContentsAddOptions:interface
+package: word!
+fullName: Word.TableOfContentsAddOptions
+summary: >-
+  Specifies the options for adding to a
+  [Word.TableOfContentsCollection](xref:word!Word.TableOfContentsCollection:class)
+  object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: addedStyles
+    uid: word!Word.TableOfContentsAddOptions#addedStyles:member
+    package: word!
+    fullName: addedStyles
+    summary: >-
+      If provided, specifies the string names of additional styles to use for
+      the table of contents. Use
+      [HeadingStyleCollection.add](xref:word!Word.HeadingStyleCollection:class)
+      to create new heading styles.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addedStyles?: string;'
+      return:
+        type: string
+  - name: hidePageNumbersOnWeb
+    uid: word!Word.TableOfContentsAddOptions#hidePageNumbersOnWeb:member
+    package: word!
+    fullName: hidePageNumbersOnWeb
+    summary: >-
+      If provided, specifies whether the page numbers in a table of contents
+      should be hidden when publishing to the web. The default value is
+      `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hidePageNumbersOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: includePageNumbers
+    uid: word!Word.TableOfContentsAddOptions#includePageNumbers:member
+    package: word!
+    fullName: includePageNumbers
+    summary: >-
+      If provided, specifies whether to include page numbers in a table of
+      contents. The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'includePageNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: lowerHeadingLevel
+    uid: word!Word.TableOfContentsAddOptions#lowerHeadingLevel:member
+    package: word!
+    fullName: lowerHeadingLevel
+    summary: >-
+      If provided, specifies the ending heading level for a table of contents
+      and must be a value from 1 to 9. Must be greater than
+      `upperHeadingLevel`<!-- -->. Corresponds to the ending value used with the
+      `\o` switch for a [Table of Contents (TOC)
+      field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
+      -->. The default value is `9`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lowerHeadingLevel?: number;'
+      return:
+        type: number
+  - name: rightAlignPageNumbers
+    uid: word!Word.TableOfContentsAddOptions#rightAlignPageNumbers:member
+    package: word!
+    fullName: rightAlignPageNumbers
+    summary: >-
+      If provided, specifies whether page numbers in a table of contents are
+      aligned with the right margin. The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightAlignPageNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: tableId
+    uid: word!Word.TableOfContentsAddOptions#tableId:member
+    package: word!
+    fullName: tableId
+    summary: >-
+      If provided, specifies a one-letter identifier from [TC
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      that's used for a table of contents. Corresponds to the `\f` switch for a
+      [Table of Contents (TOC)
+      field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
+      -->. For example, "T" indicates a table of contents includes TC fields
+      that use the table identifier T. If this argument is omitted, TC fields
+      aren't used.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableId?: string;'
+      return:
+        type: string
+  - name: upperHeadingLevel
+    uid: word!Word.TableOfContentsAddOptions#upperHeadingLevel:member
+    package: word!
+    fullName: upperHeadingLevel
+    summary: >-
+      If provided, specifies the starting heading level for a table of contents
+      and must be a value from 1 to 9. Should be smaller than
+      `lowerHeadingLevel`<!-- -->. Corresponds to the starting value used with
+      the `\o` switch for a [Table of Contents (TOC)
+      field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
+      -->. The default value is `1`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'upperHeadingLevel?: number;'
+      return:
+        type: number
+  - name: useBuiltInHeadingStyles
+    uid: word!Word.TableOfContentsAddOptions#useBuiltInHeadingStyles:member
+    package: word!
+    fullName: useBuiltInHeadingStyles
+    summary: >-
+      If provided, specifies whether to use built-in heading styles to create a
+      table of contents. The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useBuiltInHeadingStyles?: boolean;'
+      return:
+        type: boolean
+  - name: useFields
+    uid: word!Word.TableOfContentsAddOptions#useFields:member
+    package: word!
+    fullName: useFields
+    summary: >-
+      If provided, specifies whether [Table of Contents Entry (TC)
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      are used to create a table of contents. Use the
+      [TableOfContentsCollection.markTocEntry](xref:word!Word.TableOfContentsCollection:class)
+      method to mark entries to be included in a table of contents. The default
+      value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useFields?: boolean;'
+      return:
+        type: boolean
+  - name: useHyperlinksOnWeb
+    uid: word!Word.TableOfContentsAddOptions#useHyperlinksOnWeb:member
+    package: word!
+    fullName: useHyperlinksOnWeb
+    summary: >-
+      If provided, specifies whether entries in a table of contents should be
+      formatted as hyperlinks when the document is published to the web. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useHyperlinksOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: useOutlineLevels
+    uid: word!Word.TableOfContentsAddOptions#useOutlineLevels:member
+    package: word!
+    fullName: useOutlineLevels
+    summary: >-
+      If provided, specifies whether to use outline levels to create a table of
+      contents. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useOutlineLevels?: boolean;'
+      return:
+        type: boolean

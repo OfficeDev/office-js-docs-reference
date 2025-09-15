@@ -1,0 +1,173 @@
+### YamlMime:TSType
+name: Word.TableOfFiguresAddOptions
+uid: word!Word.TableOfFiguresAddOptions:interface
+package: word!
+fullName: Word.TableOfFiguresAddOptions
+summary: >-
+  Specifies the options for adding to a
+  [Word.TableOfFiguresCollection](xref:word!Word.TableOfFiguresCollection:class)
+  object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: addedStyles
+    uid: word!Word.TableOfFiguresAddOptions#addedStyles:member
+    package: word!
+    fullName: addedStyles
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addedStyles?: string;'
+      return:
+        type: string
+  - name: captionLabel
+    uid: word!Word.TableOfFiguresAddOptions#captionLabel:member
+    package: word!
+    fullName: captionLabel
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'captionLabel?: string;'
+      return:
+        type: string
+  - name: hidePageNumbersOnWeb
+    uid: word!Word.TableOfFiguresAddOptions#hidePageNumbersOnWeb:member
+    package: word!
+    fullName: hidePageNumbersOnWeb
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hidePageNumbersOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: includeLabel
+    uid: word!Word.TableOfFiguresAddOptions#includeLabel:member
+    package: word!
+    fullName: includeLabel
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'includeLabel?: boolean;'
+      return:
+        type: boolean
+  - name: includePageNumbers
+    uid: word!Word.TableOfFiguresAddOptions#includePageNumbers:member
+    package: word!
+    fullName: includePageNumbers
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'includePageNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: lowerHeadingLevel
+    uid: word!Word.TableOfFiguresAddOptions#lowerHeadingLevel:member
+    package: word!
+    fullName: lowerHeadingLevel
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lowerHeadingLevel?: number;'
+      return:
+        type: number
+  - name: rightAlignPageNumbers
+    uid: word!Word.TableOfFiguresAddOptions#rightAlignPageNumbers:member
+    package: word!
+    fullName: rightAlignPageNumbers
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightAlignPageNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: tableId
+    uid: word!Word.TableOfFiguresAddOptions#tableId:member
+    package: word!
+    fullName: tableId
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableId?: string;'
+      return:
+        type: string
+  - name: upperHeadingLevel
+    uid: word!Word.TableOfFiguresAddOptions#upperHeadingLevel:member
+    package: word!
+    fullName: upperHeadingLevel
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'upperHeadingLevel?: number;'
+      return:
+        type: number
+  - name: useBuiltInHeadingStyles
+    uid: word!Word.TableOfFiguresAddOptions#useBuiltInHeadingStyles:member
+    package: word!
+    fullName: useBuiltInHeadingStyles
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useBuiltInHeadingStyles?: boolean;'
+      return:
+        type: boolean
+  - name: useFields
+    uid: word!Word.TableOfFiguresAddOptions#useFields:member
+    package: word!
+    fullName: useFields
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useFields?: boolean;'
+      return:
+        type: boolean
+  - name: useHyperlinksOnWeb
+    uid: word!Word.TableOfFiguresAddOptions#useHyperlinksOnWeb:member
+    package: word!
+    fullName: useHyperlinksOnWeb
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useHyperlinksOnWeb?: boolean;'
+      return:
+        type: boolean

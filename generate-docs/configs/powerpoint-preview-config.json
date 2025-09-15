@@ -1,19 +1,34 @@
 {
-  "excludedFieldPatterns": [
-    "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
-  ],
-  "excludedFieldNames": [
-    "load",
-    "set",
-    "toJSON",
-    "context",
-    "track",
-    "untrack"
-  ],
-  "excludedClassPatterns": [
-    "LoadOptions$",
-    "Data$"
-  ],
-  "includeStaticFields": false,
-  "includeEnums": false
+    "excludedFieldPatterns":  [
+                                  "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+                              ],
+    "excludedFieldNames":  [
+                               "load",
+                               "set",
+                               "toJSON",
+                               "context",
+                               "track",
+                               "untrack"
+                           ],
+    "excludedClassPatterns":  [
+                                  "LoadOptions$",
+                                  "Data$"
+                              ],
+    "includeStaticFields":  false,
+    "includeEnums":  false,
+    "linkConfigs":  [
+                        {
+                            "pathPattern":  "javascript/api/powerpoint",
+                            "description":  "Standard URL pattern for PowerPoint APIs",
+                            "globalFunctionTemplate":  "/javascript/api/powerpoint/powerpoint#{fieldName}",
+                            "interfaceMemberTemplate":  "/javascript/api/powerpoint/powerpoint.{className}#powerpoint-powerpoint-{className}-{fieldName}{suffix}",
+                            "classMemberTemplate":  "/javascript/api/powerpoint/powerpoint.{className}#powerpoint-powerpoint-{className}-{fieldName}{suffix}",
+                            "typeAliasTemplate":  "/javascript/api/powerpoint/powerpoint.{className}",
+                            "name":  "PowerPoint Standard Pattern",
+                            "classTemplate":  "/javascript/api/powerpoint/powerpoint.{className}",
+                            "interfaceTemplate":  "/javascript/api/powerpoint/powerpoint.{className}",
+                            "enumMemberTemplate":  "/javascript/api/powerpoint/powerpoint.{className}#powerpoint-powerpoint-{className}-{fieldName}",
+                            "enumTemplate":  "/javascript/api/powerpoint/powerpoint.{className}"
+                        }
+                    ]
 }

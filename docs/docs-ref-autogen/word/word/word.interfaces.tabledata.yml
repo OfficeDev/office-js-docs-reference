@@ -31,6 +31,21 @@ properties:
         type: >-
           <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
+  - name: description
+    uid: word!Word.Interfaces.TableData#description:member
+    package: word!
+    fullName: description
+    summary: Specifies the description of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'description?: string;'
+      return:
+        type: string
   - name: fields
     uid: word!Word.Interfaces.TableData#fields:member
     package: word!
@@ -406,6 +421,21 @@ properties:
       content: 'tables?: Word.Interfaces.TableData[];'
       return:
         type: <xref uid="word!Word.Interfaces.TableData:interface" />[]
+  - name: title
+    uid: word!Word.Interfaces.TableData#title:member
+    package: word!
+    fullName: title
+    summary: Specifies the title of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string
   - name: values
     uid: word!Word.Interfaces.TableData#values:member
     package: word!
