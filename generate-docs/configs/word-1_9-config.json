@@ -1,4 +1,21 @@
 {
+  "excludedFieldPatterns": [
+    "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+  ],
+  "excludedFieldNames": [
+    "load",
+    "set",
+    "toJSON",
+    "context",
+    "track",
+    "untrack"
+  ],
+  "excludedClassPatterns": [
+    "LoadOptions$",
+    "Data$"
+  ],
+  "includeStaticFields": false,
+  "includeEnums": false,
   "linkConfigs": [
     {
       "name": "Word Standard Pattern",
