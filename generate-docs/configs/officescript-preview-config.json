@@ -1,0 +1,12 @@
+{
+  "excludedFieldPatterns": [
+    "toJSON",
+    "^_"
+  ],
+  "excludedFieldNames": [
+    "context",
+    "isNullObject"
+  ],
+  "includeStaticFields": false,
+  "includeEnums": false
+}

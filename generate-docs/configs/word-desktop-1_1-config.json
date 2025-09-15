@@ -16,5 +16,22 @@
       "isRegex": true,
       "description": "Remove importedStylesConflictBehavior parameter from method signature when removing WordApiDesktop 1.1"
     }
-  ]
+  ],
+  "excludedFieldPatterns": [
+    "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+  ],
+  "excludedFieldNames": [
+    "load",
+    "set",
+    "toJSON",
+    "context",
+    "track",
+    "untrack"
+  ],
+  "excludedClassPatterns": [
+    "LoadOptions$",
+    "Data$"
+  ],
+  "includeStaticFields": false,
+  "includeEnums": false
 }

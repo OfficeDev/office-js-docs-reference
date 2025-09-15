@@ -15,5 +15,22 @@
       "replace": "type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;",
       "description": "Remove FormattedNumberCellValue from CellValue union type"
     }
-  ]
+  ],
+  "excludedFieldPatterns": [
+    "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+  ],
+  "excludedFieldNames": [
+    "load",
+    "set",
+    "toJSON",
+    "context",
+    "track",
+    "untrack"
+  ],
+  "excludedClassPatterns": [
+    "LoadOptions$",
+    "Data$"
+  ],
+  "includeStaticFields": false,
+  "includeEnums": false
 }

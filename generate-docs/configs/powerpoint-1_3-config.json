@@ -1,0 +1,19 @@
+{
+  "excludedFieldPatterns": [
+    "\\w+\\??:\\s*\".*\""
+  ],
+  "excludedFieldNames": [
+    "load",
+    "set",
+    "toJSON",
+    "context",
+    "track",
+    "untrack"
+  ],
+  "excludedClassPatterns": [
+    "LoadOptions$",
+    "Data$"
+  ],
+  "includeStaticFields": false,
+  "includeEnums": false
+}

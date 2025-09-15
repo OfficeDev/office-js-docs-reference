@@ -1,9 +1,11 @@
 {
-  "replacements": [
-    {
-      "find": "outlook/requirement-set-1.2",
-      "replace": "outlook/requirement-set-1.1",
-      "description": "Fix requirement set references in outlook_1_2 baseline to match filename"
-    }
-  ]
+    "replacements":  [
+                         {
+                             "find":  "outlook/requirement-set-1.2",
+                             "replace":  "outlook/requirement-set-1.1",
+                             "description":  "Fix requirement set references in outlook_1_2 baseline to match filename"
+                         }
+                     ],
+    "includeStaticFields":  false,
+    "includeEnums":  false
 }
