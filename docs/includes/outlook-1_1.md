@@ -35,6 +35,7 @@
 ||[remove(name: string)](/javascript/api/outlook/office.customproperties#outlook-office-customproperties-remove-member(1))|Removes the specified property from the custom property collection.|
 ||[saveAsync(asyncContext?: any)](/javascript/api/outlook/office.customproperties#outlook-office-customproperties-saveasync-member(1))|Saves custom properties to a message or appointment.|
 ||[saveAsync(callback: (asyncResult: Office.AsyncResult<void>) => void, asyncContext?: any)](/javascript/api/outlook/office.customproperties#outlook-office-customproperties-saveasync-member(1))|Saves custom properties to a message or appointment.|
+||[set(name: string, value: string)](/javascript/api/outlook/office.customproperties#outlook-office-customproperties-set-member(1))|Sets the specified property to the specified value.|
 |[Diagnostics](/javascript/api/outlook/office.diagnostics)|[OWAView](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-owaview-member)|Gets a string that represents the current view of Outlook on the web.|
 ||[hostName](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-hostname-member)|Gets a string that represents the type of Outlook client.|
 ||[hostVersion](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-hostversion-member)|Gets a string that represents the version of either the Outlook client or the Exchange Server (for example, "15.0.468.0").|
@@ -75,6 +76,7 @@
 |[RoamingSettings](/javascript/api/outlook/office.roamingsettings)|[get(name: string)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-get-member(1))|Retrieves the specified setting.|
 ||[remove(name: string)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-remove-member(1))|Removes the specified setting.|
 ||[saveAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-saveasync-member(1))|Saves the settings.|
+||[set(name: string, value: any)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-set-member(1))|Sets or creates the specified setting.|
 |[Subject](/javascript/api/outlook/office.subject)|[getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.subject#outlook-office-subject-getasync-member(1))|Gets the subject of an appointment or message.|
 ||[getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.subject#outlook-office-subject-getasync-member(1))|Gets the subject of an appointment or message.|
 ||[setAsync(subject: string, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.subject#outlook-office-subject-setasync-member(1))|Sets the subject of an appointment or message.|
