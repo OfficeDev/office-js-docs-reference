@@ -36,8 +36,9 @@ properties:
     package: powerpoint!
     fullName: address
     summary: >-
-      For EACH ITEM in the collection: Specifies the URL target of the
-      hyperlink.
+      For EACH ITEM in the collection: Specifies the address of the hyperlink,
+      which can be a URL, a file name or file path, or an email address with the
+      `mailto` URI scheme.
     remarks: >-
       \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

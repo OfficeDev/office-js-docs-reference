@@ -395,6 +395,23 @@ properties:
           "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
           "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
           "Zulu"
+  - name: listTemplates
+    uid: word!Word.Template#listTemplates:member
+    package: word!
+    fullName: listTemplates
+    summary: >-
+      Returns a `ListTemplateCollection` object that represents all the list
+      templates in the template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listTemplates: Word.ListTemplateCollection;'
+      return:
+        type: <xref uid="word!Word.ListTemplateCollection:class" />
   - name: name
     uid: word!Word.Template#name:member
     package: word!

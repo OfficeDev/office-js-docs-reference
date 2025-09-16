@@ -80,8 +80,33 @@ methods:
       return:
         type: <xref uid="word!Word.Pane:class" />
         description: ''
-  - name: load(propertyNames)
+  - name: load(options)
     uid: word!Word.PaneCollection#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.PaneCollectionLoadOptions &
+        Word.Interfaces.CollectionLoadOptions): Word.PaneCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.PaneCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.PaneCollection:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.PaneCollection#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: >-
@@ -103,7 +128,7 @@ methods:
         type: <xref uid="word!Word.PaneCollection:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: word!Word.PaneCollection#load:member(2)
+    uid: word!Word.PaneCollection#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-

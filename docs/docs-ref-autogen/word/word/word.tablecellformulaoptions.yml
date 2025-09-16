@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: Word.TableCellFormulaOptions
+uid: word!Word.TableCellFormulaOptions:interface
+package: word!
+fullName: Word.TableCellFormulaOptions
+summary: >-
+  Represents the options for the
+  [TableCell.formula](xref:word!Word.TableCell:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: formula
+    uid: word!Word.TableCellFormulaOptions#formula:member
+    package: word!
+    fullName: formula
+    summary: >-
+      The mathematical formula you want the = (Formula) field to evaluate.
+      Spreadsheet-type references to table cells are valid. For example,
+      "=SUM(A4:C4)" specifies the first three values in the fourth row. For more
+      information about the = (Formula) field, see [Field codes: = (Formula)
+      field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: numFormat
+    uid: word!Word.TableCellFormulaOptions#numFormat:member
+    package: word!
+    fullName: numFormat
+    summary: >-
+      A format for the result of the [= (Formula)
+      field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)<!--
+      -->. For information about the types of formats you can apply, see the
+      Numeric Picture (\#) field switch.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'numFormat?: string;'
+      return:
+        type: string

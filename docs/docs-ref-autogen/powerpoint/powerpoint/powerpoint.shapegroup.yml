@@ -67,6 +67,24 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
+  - name: creationId
+    uid: powerpoint!PowerPoint.ShapeGroup#creationId:member
+    package: powerpoint!
+    fullName: creationId
+    summary: >-
+      Gets the creation ID of the shape group. Returns `null` if the shape group
+      has no creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly creationId: string | null;'
+      return:
+        type: string | null
   - name: id
     uid: powerpoint!PowerPoint.ShapeGroup#id:member
     package: powerpoint!

@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: Word.Interfaces.CoauthoringUpdateData
+uid: word!Word.Interfaces.CoauthoringUpdateData:interface
+package: word!
+fullName: Word.Interfaces.CoauthoringUpdateData
+summary: >-
+  An interface describing the data returned by calling
+  `coauthoringUpdate.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: range
+    uid: word!Word.Interfaces.CoauthoringUpdateData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `CoauthoringUpdate` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />

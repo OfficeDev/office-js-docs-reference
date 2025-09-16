@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: Word.Interfaces.CoauthorData
+uid: word!Word.Interfaces.CoauthorData:interface
+package: word!
+fullName: Word.Interfaces.CoauthorData
+summary: >-
+  An interface describing the data returned by calling `coauthor.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: emailAddress
+    uid: word!Word.Interfaces.CoauthorData#emailAddress:member
+    package: word!
+    fullName: emailAddress
+    summary: Gets the email address of the coauthor.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'emailAddress?: string;'
+      return:
+        type: string
+  - name: id
+    uid: word!Word.Interfaces.CoauthorData#id:member
+    package: word!
+    fullName: id
+    summary: Gets the unique identifier for the `Coauthor` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isMe
+    uid: word!Word.Interfaces.CoauthorData#isMe:member
+    package: word!
+    fullName: isMe
+    summary: Gets whether this author represents the current user.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isMe?: boolean;'
+      return:
+        type: boolean
+  - name: locks
+    uid: word!Word.Interfaces.CoauthorData#locks:member
+    package: word!
+    fullName: locks
+    summary: >-
+      Gets a `CoauthoringLockCollection` object that represents the locks in the
+      document that are associated with this coauthor.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'locks?: Word.Interfaces.CoauthoringLockData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthoringLockData:interface" />[]
+  - name: name
+    uid: word!Word.Interfaces.CoauthorData#name:member
+    package: word!
+    fullName: name
+    summary: Gets the display name of the coauthor.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string

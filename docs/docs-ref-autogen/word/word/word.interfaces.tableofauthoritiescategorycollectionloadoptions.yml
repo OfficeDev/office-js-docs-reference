@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableOfAuthoritiesCategoryCollectionLoadOptions
+uid: word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.TableOfAuthoritiesCategoryCollectionLoadOptions
+summary: >-
+  Represents a collection of
+  [Word.TableOfAuthoritiesCategory](xref:word!Word.TableOfAuthoritiesCategory:class)
+  objects in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of this table of
+      authorities category. Changing the name of the category doesn't change the
+      index in the collection. The value for
+      [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class)
+      will remain the same.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean

@@ -29,6 +29,21 @@ properties:
       content: 'listLevels?: Word.Interfaces.ListLevelData[];'
       return:
         type: <xref uid="word!Word.Interfaces.ListLevelData:interface" />[]
+  - name: name
+    uid: word!Word.Interfaces.ListTemplateData#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of the list template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
   - name: outlineNumbered
     uid: word!Word.Interfaces.ListTemplateData#outlineNumbered:member
     package: word!

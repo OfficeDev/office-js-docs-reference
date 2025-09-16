@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.CaptionPosition
+uid: word!Word.CaptionPosition:enum
+package: word!
+fullName: Word.CaptionPosition
+summary: Specifies the position of a caption relative to the object it describes.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: above
+    uid: word!Word.CaptionPosition.above:member
+    package: word!
+    summary: >-
+      Places the caption above the selected item.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Above"'
+  - name: below
+    uid: word!Word.CaptionPosition.below:member
+    package: word!
+    summary: >-
+      Places the caption below the selected item.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Below"'

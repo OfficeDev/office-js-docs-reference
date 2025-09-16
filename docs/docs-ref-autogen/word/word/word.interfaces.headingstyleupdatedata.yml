@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Word.Interfaces.HeadingStyleUpdateData
+uid: word!Word.Interfaces.HeadingStyleUpdateData:interface
+package: word!
+fullName: Word.Interfaces.HeadingStyleUpdateData
+summary: >-
+  An interface for updating data on the `HeadingStyle` object, for use in
+  `headingStyle.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: level
+    uid: word!Word.Interfaces.HeadingStyleUpdateData#level:member
+    package: word!
+    fullName: level
+    summary: >-
+      Specifies the level for the heading style in a table of contents or table
+      of figures. Must be a value from 1 to 9.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'level?: number;'
+      return:
+        type: number
+  - name: name
+    uid: word!Word.Interfaces.HeadingStyleUpdateData#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of style for a heading.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string

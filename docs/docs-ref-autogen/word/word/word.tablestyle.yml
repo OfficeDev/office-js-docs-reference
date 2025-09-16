@@ -91,6 +91,23 @@ properties:
       content: 'allowBreakAcrossPage: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: word!Word.TableStyle#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Returns a `BorderUniversalCollection` that represents all the borders for
+      the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly borders: Word.BorderUniversalCollection;'
+      return:
+        type: <xref uid="word!Word.BorderUniversalCollection:class" />
   - name: bottomCellMargin
     uid: word!Word.TableStyle#bottomCellMargin:member
     package: word!
@@ -123,6 +140,23 @@ properties:
       content: 'cellSpacing: number;'
       return:
         type: number
+  - name: columnStripe
+    uid: word!Word.TableStyle#columnStripe:member
+    package: word!
+    fullName: columnStripe
+    summary: >-
+      Specifies the number of columns in the banding when a style specifies odd-
+      or even-column banding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'columnStripe: number;'
+      return:
+        type: number
   - name: context
     uid: word!Word.TableStyle#context:member
     package: word!
@@ -138,6 +172,23 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: isBreakAcrossPagesAllowed
+    uid: word!Word.TableStyle#isBreakAcrossPagesAllowed:member
+    package: word!
+    fullName: isBreakAcrossPagesAllowed
+    summary: >-
+      Specifies whether Microsoft Word allows to break the specified table
+      across pages.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isBreakAcrossPagesAllowed: boolean;'
+      return:
+        type: boolean
   - name: leftCellMargin
     uid: word!Word.TableStyle#leftCellMargin:member
     package: word!
@@ -153,6 +204,23 @@ properties:
     isDeprecated: false
     syntax:
       content: 'leftCellMargin: number;'
+      return:
+        type: number
+  - name: leftIndent
+    uid: word!Word.TableStyle#leftIndent:member
+    package: word!
+    fullName: leftIndent
+    summary: >-
+      Specifies the left indent value (in points) for the rows in the table
+      style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent: number;'
       return:
         type: number
   - name: rightCellMargin
@@ -172,6 +240,59 @@ properties:
       content: 'rightCellMargin: number;'
       return:
         type: number
+  - name: rowStripe
+    uid: word!Word.TableStyle#rowStripe:member
+    package: word!
+    fullName: rowStripe
+    summary: >-
+      Specifies the number of rows to include in the banding when the style
+      specifies odd- or even-row banding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rowStripe: number;'
+      return:
+        type: number
+  - name: shading
+    uid: word!Word.TableStyle#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that refers to the shading formatting
+      for the table style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shading: Word.Shading;'
+      return:
+        type: <xref uid="word!Word.Shading:class" />
+  - name: tableDirection
+    uid: word!Word.TableStyle#tableDirection:member
+    package: word!
+    fullName: tableDirection
+    summary: >-
+      Specifies the direction in which Microsoft Word orders cells in the table
+      style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableDirection: Word.TableDirection | "RightToLeft" | "LeftToRight";'
+      return:
+        type: >-
+          <xref uid="word!Word.TableDirection:enum" /> | "RightToLeft" |
+          "LeftToRight"
   - name: topCellMargin
     uid: word!Word.TableStyle#topCellMargin:member
     package: word!
@@ -190,6 +311,58 @@ properties:
       return:
         type: number
 methods:
+  - name: condition(conditionCode)
+    uid: word!Word.TableStyle#condition:member(1)
+    package: word!
+    fullName: condition(conditionCode)
+    summary: >-
+      Returns a `ConditionalStyle` object that represents special style
+      formatting for a portion of a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'condition(conditionCode: Word.ConditionCode): Word.ConditionalStyle;'
+      parameters:
+        - id: conditionCode
+          description: The area of the table to which to apply the formatting.
+          type: <xref uid="word!Word.ConditionCode:enum" />
+      return:
+        type: <xref uid="word!Word.ConditionalStyle:class" />
+        description: ''
+  - name: condition(conditionCode)
+    uid: word!Word.TableStyle#condition:member(2)
+    package: word!
+    fullName: condition(conditionCode)
+    summary: >-
+      Returns a `ConditionalStyle` object that represents special style
+      formatting for a portion of a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        condition(conditionCode: "FirstRow" | "LastRow" | "OddRowBanding" |
+        "EvenRowBanding" | "FirstColumn" | "LastColumn" | "OddColumnBanding" |
+        "EvenColumnBanding" | "TopRightCell" | "TopLeftCell" | "BottomRightCell"
+        | "BottomLeftCell"): Word.ConditionalStyle;
+      parameters:
+        - id: conditionCode
+          description: The area of the table to which to apply the formatting.
+          type: >-
+            "FirstRow" | "LastRow" | "OddRowBanding" | "EvenRowBanding" |
+            "FirstColumn" | "LastColumn" | "OddColumnBanding" |
+            "EvenColumnBanding" | "TopRightCell" | "TopLeftCell" |
+            "BottomRightCell" | "BottomLeftCell"
+      return:
+        type: <xref uid="word!Word.ConditionalStyle:class" />
+        description: ''
   - name: load(options)
     uid: word!Word.TableStyle#load:member(1)
     package: word!

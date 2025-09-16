@@ -142,6 +142,21 @@ properties:
       content: 'changeTrackingMode?: boolean;'
       return:
         type: boolean
+  - name: coauthoring
+    uid: word!Word.Interfaces.DocumentLoadOptions#coauthoring:member
+    package: word!
+    fullName: coauthoring
+    summary: Gets a `Coauthoring` object for managing coauthoring in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'coauthoring?: Word.Interfaces.CoauthoringLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthoringLoadOptions:interface" />
   - name: consecutiveHyphensLimit
     uid: word!Word.Interfaces.DocumentLoadOptions#consecutiveHyphensLimit:member
     package: word!
@@ -240,3 +255,20 @@ properties:
       content: 'saved?: boolean;'
       return:
         type: boolean
+  - name: selection
+    uid: word!Word.Interfaces.DocumentLoadOptions#selection:member
+    package: word!
+    fullName: selection
+    summary: >-
+      Returns a `Selection` object that represents the current selection in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selection?: Word.Interfaces.SelectionLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.SelectionLoadOptions:interface" />

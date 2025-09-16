@@ -110,6 +110,21 @@ properties:
         type: >-
           <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
           | "TrackMineOnly"
+  - name: coauthoring
+    uid: word!Word.Interfaces.DocumentData#coauthoring:member
+    package: word!
+    fullName: coauthoring
+    summary: Gets a `Coauthoring` object for managing coauthoring in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'coauthoring?: Word.Interfaces.CoauthoringData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthoringData:interface" />
   - name: consecutiveHyphensLimit
     uid: word!Word.Interfaces.DocumentData#consecutiveHyphensLimit:member
     package: word!
@@ -246,6 +261,23 @@ properties:
       content: 'languageDetected?: boolean;'
       return:
         type: boolean
+  - name: listTemplates
+    uid: word!Word.Interfaces.DocumentData#listTemplates:member
+    package: word!
+    fullName: listTemplates
+    summary: >-
+      Returns a `ListTemplateCollection` object that represents all the list
+      templates in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listTemplates?: Word.Interfaces.ListTemplateData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListTemplateData:interface" />[]
   - name: pageSetup
     uid: word!Word.Interfaces.DocumentData#pageSetup:member
     package: word!
@@ -308,6 +340,23 @@ properties:
       content: 'sections?: Word.Interfaces.SectionData[];'
       return:
         type: <xref uid="word!Word.Interfaces.SectionData:interface" />[]
+  - name: selection
+    uid: word!Word.Interfaces.DocumentData#selection:member
+    package: word!
+    fullName: selection
+    summary: >-
+      Returns a `Selection` object that represents the current selection in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selection?: Word.Interfaces.SelectionData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.SelectionData:interface" />
   - name: settings
     uid: word!Word.Interfaces.DocumentData#settings:member
     package: word!

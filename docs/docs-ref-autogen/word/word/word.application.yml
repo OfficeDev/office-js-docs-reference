@@ -97,6 +97,23 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: fontNames
+    uid: word!Word.Application#fontNames:member
+    package: word!
+    fullName: fontNames
+    summary: >-
+      Returns a `FontNameCollection` object that represents all the available
+      font names in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly fontNames: Word.FontNameCollection;'
+      return:
+        type: <xref uid="word!Word.FontNameCollection:class" />
   - name: language
     uid: word!Word.Application#language:member
     package: word!
@@ -211,6 +228,23 @@ properties:
           "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
           "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
           "Zulu"
+  - name: listTemplateGalleries
+    uid: word!Word.Application#listTemplateGalleries:member
+    package: word!
+    fullName: listTemplateGalleries
+    summary: >-
+      Returns a `ListTemplateGalleryCollection` object that represents all the
+      list template galleries in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly listTemplateGalleries: Word.ListTemplateGalleryCollection;'
+      return:
+        type: <xref uid="word!Word.ListTemplateGalleryCollection:class" />
   - name: templates
     uid: word!Word.Application#templates:member
     package: word!

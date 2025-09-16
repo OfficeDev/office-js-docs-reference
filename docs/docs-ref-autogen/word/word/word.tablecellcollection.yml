@@ -66,6 +66,106 @@ properties:
       return:
         type: <xref uid="word!Word.TableCell:class" />[]
 methods:
+  - name: autoFit()
+    uid: word!Word.TableCellCollection#autoFit:member(1)
+    package: word!
+    fullName: autoFit()
+    summary: >-
+      Changes the width of a table column to accommodate the width of the text
+      without changing the way text wraps in the cells.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoFit(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete(shiftCells)
+    uid: word!Word.TableCellCollection#delete:member(1)
+    package: word!
+    fullName: delete(shiftCells)
+    summary: >-
+      Deletes the table cells and optionally controls how the remaining cells
+      are shifted.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(shiftCells?: Word.DeleteCells): void;'
+      parameters:
+        - id: shiftCells
+          description: >-
+            Optional. Specifies how the remaining cells are shifted after the
+            deletion. The default is `shiftLeft`<!-- -->.
+          type: <xref uid="word!Word.DeleteCells:enum" />
+      return:
+        type: void
+        description: ''
+  - name: delete(shiftCells)
+    uid: word!Word.TableCellCollection#delete:member(2)
+    package: word!
+    fullName: delete(shiftCells)
+    summary: >-
+      Deletes the table cells and optionally controls how the remaining cells
+      are shifted.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        delete(shiftCells?: "ShiftLeft" | "ShiftUp" | "EntireRow" |
+        "EntireColumn"): void;
+      parameters:
+        - id: shiftCells
+          description: >-
+            Optional. Specifies how the remaining cells are shifted after the
+            deletion. The default is `shiftLeft`<!-- -->.
+          type: '"ShiftLeft" | "ShiftUp" | "EntireRow" | "EntireColumn"'
+      return:
+        type: void
+        description: ''
+  - name: distributeHeight()
+    uid: word!Word.TableCellCollection#distributeHeight:member(1)
+    package: word!
+    fullName: distributeHeight()
+    summary: Adjusts the height of the specified cells so that they are equal.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'distributeHeight(): void;'
+      return:
+        type: void
+        description: ''
+  - name: distributeWidth()
+    uid: word!Word.TableCellCollection#distributeWidth:member(1)
+    package: word!
+    fullName: distributeWidth()
+    summary: Adjusts the width of the specified cells so that they are equal.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'distributeWidth(): void;'
+      return:
+        type: void
+        description: ''
   - name: getFirst()
     uid: word!Word.TableCellCollection#getFirst:member(1)
     package: word!
@@ -179,6 +279,138 @@ methods:
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.TableCellCollection:class" />
+        description: ''
+  - name: merge()
+    uid: word!Word.TableCellCollection#merge:member(1)
+    package: word!
+    fullName: merge()
+    summary: Merges the specified cells into a single cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'merge(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setHeight(rowHeight, heightRule)
+    uid: word!Word.TableCellCollection#setHeight:member(1)
+    package: word!
+    fullName: setHeight(rowHeight, heightRule)
+    summary: Sets the height of the cells in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setHeight(rowHeight: number, heightRule: Word.RowHeightRule): void;'
+      parameters:
+        - id: rowHeight
+          description: The height of the row to set, in points.
+          type: number
+        - id: heightRule
+          description: The rule for determining the height of the specified rows.
+          type: <xref uid="word!Word.RowHeightRule:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setHeight(rowHeight, heightRule)
+    uid: word!Word.TableCellCollection#setHeight:member(2)
+    package: word!
+    fullName: setHeight(rowHeight, heightRule)
+    summary: Sets the height of the cells in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setHeight(rowHeight: number, heightRule: "Auto" | "AtLeast" |
+        "Exactly"): void;
+      parameters:
+        - id: rowHeight
+          description: The height of the row to set, in points.
+          type: number
+        - id: heightRule
+          description: The rule for determining the height of the specified rows.
+          type: '"Auto" | "AtLeast" | "Exactly"'
+      return:
+        type: void
+        description: ''
+  - name: setWidth(columnWidth, rulerStyle)
+    uid: word!Word.TableCellCollection#setWidth:member(1)
+    package: word!
+    fullName: setWidth(columnWidth, rulerStyle)
+    summary: Sets the width of the cells in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setWidth(columnWidth: number, rulerStyle: Word.RulerStyle): void;'
+      parameters:
+        - id: columnWidth
+          description: The width of the row to set, in points.
+          type: number
+        - id: rulerStyle
+          description: The ruler style to apply.
+          type: <xref uid="word!Word.RulerStyle:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setWidth(columnWidth, rulerStyle)
+    uid: word!Word.TableCellCollection#setWidth:member(2)
+    package: word!
+    fullName: setWidth(columnWidth, rulerStyle)
+    summary: Sets the width of the cells in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setWidth(columnWidth: number, rulerStyle: "None" | "Proportional" |
+        "FirstColumn" | "SameWidth"): void;
+      parameters:
+        - id: columnWidth
+          description: The width of the row to set, in points.
+          type: number
+        - id: rulerStyle
+          description: The ruler style to apply.
+          type: '"None" | "Proportional" | "FirstColumn" | "SameWidth"'
+      return:
+        type: void
+        description: ''
+  - name: split(options)
+    uid: word!Word.TableCellCollection#split:member(1)
+    package: word!
+    fullName: split(options)
+    summary: Splits this range of table cells.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'split(options?: Word.TableCellCollectionSplitOptions): void;'
+      parameters:
+        - id: options
+          description: TableCellCollectionSplitOptions.
+          type: <xref uid="word!Word.TableCellCollectionSplitOptions:interface" />
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: word!Word.TableCellCollection#toJSON:member(1)

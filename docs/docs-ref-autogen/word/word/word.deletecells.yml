@@ -1,0 +1,57 @@
+### YamlMime:TSEnum
+name: Word.DeleteCells
+uid: word!Word.DeleteCells:enum
+package: word!
+fullName: Word.DeleteCells
+summary: >-
+  Specifies a range of cells to be deleted from a table in a delete cells action
+  or the behavior of the remaining cells after the deletion has occurred.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: entireColumn
+    uid: word!Word.DeleteCells.entireColumn:member
+    package: word!
+    summary: >-
+      Delete the entire column of cells from the table.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EntireColumn"'
+  - name: entireRow
+    uid: word!Word.DeleteCells.entireRow:member
+    package: word!
+    summary: >-
+      Delete the entire row of cells from the table.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EntireRow"'
+  - name: shiftLeft
+    uid: word!Word.DeleteCells.shiftLeft:member
+    package: word!
+    summary: >-
+      Shift remaining cells left in the row where the deletion occurred after a
+      cell or range of cells has been deleted.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ShiftLeft"'
+  - name: shiftUp
+    uid: word!Word.DeleteCells.shiftUp:member
+    package: word!
+    summary: >-
+      Shift remaining cells up in the column where the deletion occurred after a
+      cell or range of cells has been deleted.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ShiftUp"'

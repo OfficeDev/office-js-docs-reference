@@ -1,56 +1,56 @@
 ### YamlMime:TSType
-name: PowerPoint.TableStyleOptions
-uid: powerpoint!PowerPoint.TableStyleOptions:class
+name: PowerPoint.TableStyleSettings
+uid: powerpoint!PowerPoint.TableStyleSettings:class
 package: powerpoint!
-fullName: PowerPoint.TableStyleOptions
-summary: Represents the available table style options.
+fullName: PowerPoint.TableStyleSettings
+summary: Represents the available table style settings.
 remarks: >-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \[ [API set: PowerPointApi
+  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: areColumnsBanded
-    uid: powerpoint!PowerPoint.TableStyleOptions#areColumnsBanded:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#areColumnsBanded:member
     package: powerpoint!
     fullName: areColumnsBanded
     summary: >-
       Specifies if the columns show banded formatting in which odd columns are
       highlighted differently from even ones, to make reading the table easier.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areColumnsBanded: boolean;'
       return:
         type: boolean
   - name: areRowsBanded
-    uid: powerpoint!PowerPoint.TableStyleOptions#areRowsBanded:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#areRowsBanded:member
     package: powerpoint!
     fullName: areRowsBanded
     summary: >-
       Specifies if the rows show banded formatting in which odd rows are
       highlighted differently from even ones, to make reading the table easier.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areRowsBanded: boolean;'
       return:
         type: boolean
   - name: context
-    uid: powerpoint!PowerPoint.TableStyleOptions#context:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#context:member
     package: powerpoint!
     fullName: context
     summary: >-
@@ -58,87 +58,87 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
   - name: isFirstColumnHighlighted
-    uid: powerpoint!PowerPoint.TableStyleOptions#isFirstColumnHighlighted:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#isFirstColumnHighlighted:member
     package: powerpoint!
     fullName: isFirstColumnHighlighted
     summary: Specifies if the first column contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFirstColumnHighlighted: boolean;'
       return:
         type: boolean
   - name: isFirstRowHighlighted
-    uid: powerpoint!PowerPoint.TableStyleOptions#isFirstRowHighlighted:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#isFirstRowHighlighted:member
     package: powerpoint!
     fullName: isFirstRowHighlighted
     summary: Specifies if the first row contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFirstRowHighlighted: boolean;'
       return:
         type: boolean
   - name: isLastColumnHighlighted
-    uid: powerpoint!PowerPoint.TableStyleOptions#isLastColumnHighlighted:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#isLastColumnHighlighted:member
     package: powerpoint!
     fullName: isLastColumnHighlighted
     summary: Specifies if the last column contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isLastColumnHighlighted: boolean;'
       return:
         type: boolean
   - name: isLastRowHighlighted
-    uid: powerpoint!PowerPoint.TableStyleOptions#isLastRowHighlighted:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#isLastRowHighlighted:member
     package: powerpoint!
     fullName: isLastRowHighlighted
     summary: Specifies if the last row contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isLastRowHighlighted: boolean;'
       return:
         type: boolean
   - name: style
-    uid: powerpoint!PowerPoint.TableStyleOptions#style:member
+    uid: powerpoint!PowerPoint.TableStyleSettings#style:member
     package: powerpoint!
     fullName: style
     summary: Specifies the table style.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -198,7 +198,7 @@ properties:
           "DarkStyle2Accent3"
 methods:
   - name: load(options)
-    uid: powerpoint!PowerPoint.TableStyleOptions#load:member(1)
+    uid: powerpoint!PowerPoint.TableStyleSettings#load:member(1)
     package: powerpoint!
     fullName: load(options)
     summary: >-
@@ -206,24 +206,24 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: PowerPoint.Interfaces.TableStyleOptionsLoadOptions):
-        PowerPoint.TableStyleOptions;
+        load(options?: PowerPoint.Interfaces.TableStyleSettingsLoadOptions):
+        PowerPoint.TableStyleSettings;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
             <xref
-            uid="powerpoint!PowerPoint.Interfaces.TableStyleOptionsLoadOptions:interface"
+            uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsLoadOptions:interface"
             />
       return:
-        type: <xref uid="powerpoint!PowerPoint.TableStyleOptions:class" />
+        type: <xref uid="powerpoint!PowerPoint.TableStyleSettings:class" />
         description: ''
   - name: load(propertyNames)
-    uid: powerpoint!PowerPoint.TableStyleOptions#load:member(2)
+    uid: powerpoint!PowerPoint.TableStyleSettings#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
     summary: >-
@@ -231,10 +231,10 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): PowerPoint.TableStyleOptions;'
+      content: 'load(propertyNames?: string | string[]): PowerPoint.TableStyleSettings;'
       parameters:
         - id: propertyNames
           description: >-
@@ -242,10 +242,10 @@ methods:
             properties to load.
           type: string | string[]
       return:
-        type: <xref uid="powerpoint!PowerPoint.TableStyleOptions:class" />
+        type: <xref uid="powerpoint!PowerPoint.TableStyleSettings:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: powerpoint!PowerPoint.TableStyleOptions#load:member(3)
+    uid: powerpoint!PowerPoint.TableStyleSettings#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
     summary: >-
@@ -253,14 +253,14 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
         load(propertyNamesAndPaths?: {
                     select?: string;
                     expand?: string;
-                }): PowerPoint.TableStyleOptions;
+                }): PowerPoint.TableStyleSettings;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
@@ -274,10 +274,10 @@ methods:
                         expand?: string;
                     }
       return:
-        type: <xref uid="powerpoint!PowerPoint.TableStyleOptions:class" />
+        type: <xref uid="powerpoint!PowerPoint.TableStyleSettings:class" />
         description: ''
   - name: toJSON()
-    uid: powerpoint!PowerPoint.TableStyleOptions#toJSON:member(1)
+    uid: powerpoint!PowerPoint.TableStyleSettings#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
     summary: >-
@@ -285,20 +285,20 @@ methods:
       output when an API object is passed to `JSON.stringify()`<!-- -->.
       (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
       object that's passed to it.) Whereas the original
-      `PowerPoint.TableStyleOptions` object is an API object, the `toJSON`
+      `PowerPoint.TableStyleSettings` object is an API object, the `toJSON`
       method returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.TableStyleOptionsData`<!-- -->) that contains
+      `PowerPoint.Interfaces.TableStyleSettingsData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'toJSON(): PowerPoint.Interfaces.TableStyleOptionsData;'
+      content: 'toJSON(): PowerPoint.Interfaces.TableStyleSettingsData;'
       return:
         type: >-
           <xref
-          uid="powerpoint!PowerPoint.Interfaces.TableStyleOptionsData:interface"
+          uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsData:interface"
           />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

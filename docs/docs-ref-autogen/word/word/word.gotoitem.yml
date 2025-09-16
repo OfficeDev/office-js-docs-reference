@@ -1,0 +1,185 @@
+### YamlMime:TSEnum
+name: Word.GoToItem
+uid: word!Word.GoToItem:enum
+package: word!
+fullName: Word.GoToItem
+summary: >-
+  Specifies the item or location to which to move or extend a
+  [selection](xref:word!Word.Selection:class)<!-- -->.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bookmark
+    uid: word!Word.GoToItem.bookmark:member
+    package: word!
+    summary: >-
+      Moves to a bookmark.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bookmark"'
+  - name: comment
+    uid: word!Word.GoToItem.comment:member
+    package: word!
+    summary: >-
+      Moves to a comment.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Comment"'
+  - name: embeddedObject
+    uid: word!Word.GoToItem.embeddedObject:member
+    package: word!
+    summary: >-
+      Moves to an embedded object.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EmbeddedObject"'
+  - name: endnote
+    uid: word!Word.GoToItem.endnote:member
+    package: word!
+    summary: >-
+      Moves to a endnote.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Endnote"'
+  - name: equation
+    uid: word!Word.GoToItem.equation:member
+    package: word!
+    summary: >-
+      Moves to an equation.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Equation"'
+  - name: field
+    uid: word!Word.GoToItem.field:member
+    package: word!
+    summary: >-
+      Moves to a field.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Field"'
+  - name: footnote
+    uid: word!Word.GoToItem.footnote:member
+    package: word!
+    summary: >-
+      Moves to a footnote.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Footnote"'
+  - name: grammaticalError
+    uid: word!Word.GoToItem.grammaticalError:member
+    package: word!
+    summary: >-
+      Moves to a grammatical error.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"GrammaticalError"'
+  - name: graphic
+    uid: word!Word.GoToItem.graphic:member
+    package: word!
+    summary: >-
+      Moves to a graphic.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Graphic"'
+  - name: heading
+    uid: word!Word.GoToItem.heading:member
+    package: word!
+    summary: >-
+      Moves to a heading.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Heading"'
+  - name: line
+    uid: word!Word.GoToItem.line:member
+    package: word!
+    summary: >-
+      Moves to a line.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Line"'
+  - name: page
+    uid: word!Word.GoToItem.page:member
+    package: word!
+    summary: >-
+      Moves to a page.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Page"'
+  - name: percent
+    uid: word!Word.GoToItem.percent:member
+    package: word!
+    summary: >-
+      Moves to a percent.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent"'
+  - name: proofreadingError
+    uid: word!Word.GoToItem.proofreadingError:member
+    package: word!
+    summary: >-
+      Moves to a proofreading error.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ProofreadingError"'
+  - name: section
+    uid: word!Word.GoToItem.section:member
+    package: word!
+    summary: >-
+      Moves to a section.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Section"'
+  - name: spellingError
+    uid: word!Word.GoToItem.spellingError:member
+    package: word!
+    summary: >-
+      Moves to a spelling error.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SpellingError"'
+  - name: table
+    uid: word!Word.GoToItem.table:member
+    package: word!
+    summary: >-
+      Moves to a table.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Table"'
