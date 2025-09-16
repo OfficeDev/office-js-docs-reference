@@ -61,6 +61,25 @@ properties:
       content: 'rowCount?: boolean;'
       return:
         type: boolean
+  - name: styleSettings
+    uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#styleSettings:member
+    package: powerpoint!
+    fullName: styleSettings
+    summary: Gets the table style settings.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styleSettings?: PowerPoint.Interfaces.TableStyleSettingsLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsLoadOptions:interface"
+          />
   - name: values
     uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#values:member
     package: powerpoint!

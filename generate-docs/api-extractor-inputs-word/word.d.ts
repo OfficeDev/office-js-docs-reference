@@ -17259,17 +17259,116 @@ export declare namespace Word {
      * @beta
      */
     export interface TableOfFiguresAddOptions {
+        /**
+         * If provided, specifies the string names of additional styles to use for the table of figures.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         addedStyles?: string;
+        /**
+         * If provided, specifies the label that identifies the items to include in a table of figures.
+         * Corresponds to the `\c` switch for a {@link https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c | Table of Contents (TOC) field}.
+         * The default value is "Figure".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         captionLabel?: string;
+        /**
+         * If provided, specifies whether the page numbers in the table of figures should be hidden when publishing to the web.
+         * The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         hidePageNumbersOnWeb?: boolean;
+        /**
+         * If provided, specifies whether to include the caption label and caption number in a table of figures.
+         * The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         includeLabel?: boolean;
+        /**
+         * If provided, specifies whether page numbers are included in a table of figures.
+         * The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         includePageNumbers?: boolean;
+        /**
+         * If provided, specifies the ending heading level for a table of figures when `useBuiltInHeadingStyles` is set to `true`. Should be a value from 1 to 9 and greater than `upperHeadingLevel`.
+         * Corresponds to the ending value used with the `\o` switch for a {@link https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c | Table of Contents (TOC) field}.
+         * The default value is `9`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         lowerHeadingLevel?: number;
+        /**
+         * If provided, specifies whether to align page numbers with the right margin in a table of figures.
+         * The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         rightAlignPageNumbers?: boolean;
+        /**
+         * If provided, specifies a one-letter identifier from {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | TC fields} that's used for a table of figures.
+         * Corresponds to the `\f` switch for a {@link https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c | Table of Contents (TOC) field}. For example, "T" indicates a table of figures includes TC fields that use the table identifier T.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         tableId?: string;
+        /**
+         * If provided, specifies the starting heading level for a table of figures when `useBuiltInHeadingStyles` is set to `true`. Should be a value from 1 to 9 and smaller than `lowerHeadingLevel`.
+         * Corresponds to the starting value used with the `\o` switch for a {@link https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c | Table of Contents (TOC) field}.
+         * The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         upperHeadingLevel?: number;
+        /**
+         * If provided, specifies whether to use built-in heading styles to create a table of figures.
+         * The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         useBuiltInHeadingStyles?: boolean;
+        /**
+         * If provided, specifies whether to use {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) fields} to create a table of figures.
+         * Use the {@link Word.TableOfFiguresCollection | TableOfFiguresCollection.markTocEntry} method to mark entries to include in a table of figures.
+         * The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         useFields?: boolean;
+        /**
+         * If provided, specifies whether entries in a table of figures should be formatted as hyperlinks when the document is published to the web.
+         * The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         useHyperlinksOnWeb?: boolean;
     }
     /**

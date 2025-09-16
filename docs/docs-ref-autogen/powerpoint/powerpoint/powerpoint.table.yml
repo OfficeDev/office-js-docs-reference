@@ -126,22 +126,22 @@ properties:
       content: 'readonly rows: PowerPoint.TableRowCollection;'
       return:
         type: <xref uid="powerpoint!PowerPoint.TableRowCollection:class" />
-  - name: styleOptions
-    uid: powerpoint!PowerPoint.Table#styleOptions:member
+  - name: styleSettings
+    uid: powerpoint!PowerPoint.Table#styleSettings:member
     package: powerpoint!
-    fullName: styleOptions
-    summary: Gets the table style options.
+    fullName: styleSettings
+    summary: Gets the table style settings.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly styleOptions: PowerPoint.TableStyleOptions;'
+      content: 'readonly styleSettings: PowerPoint.TableStyleSettings;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.TableStyleOptions:class" />
+        type: <xref uid="powerpoint!PowerPoint.TableStyleSettings:class" />
   - name: values
     uid: powerpoint!PowerPoint.Table#values:member
     package: powerpoint!

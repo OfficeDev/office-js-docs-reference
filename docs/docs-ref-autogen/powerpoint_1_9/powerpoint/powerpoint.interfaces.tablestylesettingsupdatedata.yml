@@ -1,11 +1,11 @@
 ### YamlMime:TSType
-name: PowerPoint.Interfaces.TableStyleOptionsUpdateData
-uid: powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData:interface
+name: PowerPoint.Interfaces.TableStyleSettingsUpdateData
+uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
 package: powerpoint!
-fullName: PowerPoint.Interfaces.TableStyleOptionsUpdateData
+fullName: PowerPoint.Interfaces.TableStyleSettingsUpdateData
 summary: >-
-  An interface for updating data on the `TableStyleOptions` object, for use in
-  `tableStyleOptions.set({ ... })`<!-- -->.
+  An interface for updating data on the `TableStyleSettings` object, for use in
+  `tableStyleSettings.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -14,18 +14,18 @@ type: interface
 properties:
   - name: areColumnsBanded
     uid: >-
-      powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#areColumnsBanded:member
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#areColumnsBanded:member
     package: powerpoint!
     fullName: areColumnsBanded
     summary: >-
       Specifies if the columns show banded formatting in which odd columns are
       highlighted differently from even ones, to make reading the table easier.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areColumnsBanded?: boolean;'
@@ -33,18 +33,18 @@ properties:
         type: boolean
   - name: areRowsBanded
     uid: >-
-      powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#areRowsBanded:member
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#areRowsBanded:member
     package: powerpoint!
     fullName: areRowsBanded
     summary: >-
       Specifies if the rows show banded formatting in which odd rows are
       highlighted differently from even ones, to make reading the table easier.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areRowsBanded?: boolean;'
@@ -52,16 +52,16 @@ properties:
         type: boolean
   - name: isFirstColumnHighlighted
     uid: >-
-      powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#isFirstColumnHighlighted:member
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isFirstColumnHighlighted:member
     package: powerpoint!
     fullName: isFirstColumnHighlighted
     summary: Specifies if the first column contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFirstColumnHighlighted?: boolean;'
@@ -69,16 +69,16 @@ properties:
         type: boolean
   - name: isFirstRowHighlighted
     uid: >-
-      powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#isFirstRowHighlighted:member
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isFirstRowHighlighted:member
     package: powerpoint!
     fullName: isFirstRowHighlighted
     summary: Specifies if the first row contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFirstRowHighlighted?: boolean;'
@@ -86,16 +86,16 @@ properties:
         type: boolean
   - name: isLastColumnHighlighted
     uid: >-
-      powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#isLastColumnHighlighted:member
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isLastColumnHighlighted:member
     package: powerpoint!
     fullName: isLastColumnHighlighted
     summary: Specifies if the last column contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isLastColumnHighlighted?: boolean;'
@@ -103,32 +103,32 @@ properties:
         type: boolean
   - name: isLastRowHighlighted
     uid: >-
-      powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#isLastRowHighlighted:member
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isLastRowHighlighted:member
     package: powerpoint!
     fullName: isLastRowHighlighted
     summary: Specifies if the last row contains special formatting.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isLastRowHighlighted?: boolean;'
       return:
         type: boolean
   - name: style
-    uid: powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData#style:member
+    uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#style:member
     package: powerpoint!
     fullName: style
     summary: Specifies the table style.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
