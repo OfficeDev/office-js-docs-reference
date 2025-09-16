@@ -58,6 +58,23 @@ properties:
       content: 'cellIndex?: boolean;'
       return:
         type: boolean
+  - name: column
+    uid: word!Word.Interfaces.TableCellCollectionLoadOptions#column:member
+    package: word!
+    fullName: column
+    summary: >-
+      For EACH ITEM in the collection: Returns the `TableColumn` object that
+      represents the table column that contains this cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'column?: Word.Interfaces.TableColumnLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TableColumnLoadOptions:interface" />
   - name: columnWidth
     uid: word!Word.Interfaces.TableCellCollectionLoadOptions#columnWidth:member
     package: word!
@@ -140,6 +157,25 @@ properties:
       content: 'rowIndex?: boolean;'
       return:
         type: boolean
+  - name: shading
+    uid: word!Word.Interfaces.TableCellCollectionLoadOptions#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      For EACH ITEM in the collection: Returns the `ShadingUniversal` object
+      that represents the shading of the table cell.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
+          />
   - name: shadingColor
     uid: word!Word.Interfaces.TableCellCollectionLoadOptions#shadingColor:member
     package: word!

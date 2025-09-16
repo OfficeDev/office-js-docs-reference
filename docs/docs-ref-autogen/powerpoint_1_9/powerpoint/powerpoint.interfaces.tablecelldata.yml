@@ -51,8 +51,8 @@ properties:
     package: powerpoint!
     fullName: horizontalAlignment
     summary: >-
-      Specifies the horizontal alignment of the table cell. Returns `null` if
-      the cell text contains different alignments.
+      Specifies the horizontal alignment of the text in the table cell. Returns
+      `null` if the cell text contains different alignments.
     remarks: >-
       \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -75,8 +75,8 @@ properties:
     package: powerpoint!
     fullName: indentLevel
     summary: >-
-      Specifies the indent level of the table cell. Returns `null` if the cell
-      text contains different indent levels.
+      Specifies the indent level of the text in the table cell. Returns `null`
+      if the cell text contains different indent levels.
     remarks: >-
       \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

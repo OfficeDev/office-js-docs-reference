@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.DateLanguage
+uid: word!Word.DateLanguage:enum
+package: word!
+fullName: Word.DateLanguage
+summary: Specifies the language to use for date formatting.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bidirectional
+    uid: word!Word.DateLanguage.bidirectional:member
+    package: word!
+    summary: >-
+      Uses the bidirectional date/time format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bidirectional"'
+  - name: latin
+    uid: word!Word.DateLanguage.latin:member
+    package: word!
+    summary: >-
+      Uses the latin date/time format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Latin"'

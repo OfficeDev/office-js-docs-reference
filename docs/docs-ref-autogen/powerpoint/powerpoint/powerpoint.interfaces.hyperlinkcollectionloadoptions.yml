@@ -36,8 +36,9 @@ properties:
     package: powerpoint!
     fullName: address
     summary: >-
-      For EACH ITEM in the collection: Specifies the URL target of the
-      hyperlink.
+      For EACH ITEM in the collection: Specifies the address of the hyperlink,
+      which can be a URL, a file name or file path, or an email address with the
+      `mailto` URI scheme.
     remarks: >-
       \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -66,5 +67,26 @@ properties:
     isDeprecated: false
     syntax:
       content: 'screenTip?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.HyperlinkCollectionLoadOptions#type:member
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      For EACH ITEM in the collection: Returns the type of object that the
+      hyperlink is applied to. See
+      [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
       return:
         type: boolean

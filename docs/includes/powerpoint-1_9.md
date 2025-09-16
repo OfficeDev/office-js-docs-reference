@@ -18,12 +18,13 @@
 ||[columns](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-columns-member)|Gets the collection of columns in the table.|
 ||[mergeCells(rowIndex: number, columnIndex: number, rowCount: number, columnCount: number)](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-mergecells-member(1))|Creates a merged area starting at the cell specified by rowIndex and columnIndex.|
 ||[rows](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-rows-member)|Gets the collection of rows in the table.|
+||[styleSettings](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-stylesettings-member)|Gets the table style settings.|
 |[TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions)|[style](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-style-member)|Specifies value that represents the table style.|
 |[TableCell](/javascript/api/powerpoint/powerpoint.tablecell)|[borders](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-borders-member)|Gets the collection of borders for the table cell.|
 ||[fill](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-fill-member)|Gets the fill color of the table cell.|
 ||[font](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-font-member)|Gets the font of the table cell.|
-||[horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-horizontalalignment-member)|Specifies the horizontal alignment of the table cell.|
-||[indentLevel](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-indentlevel-member)|Specifies the indent level of the table cell.|
+||[horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-horizontalalignment-member)|Specifies the horizontal alignment of the text in the table cell.|
+||[indentLevel](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-indentlevel-member)|Specifies the indent level of the text in the table cell.|
 ||[margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)|Gets the set of margins in the table cell.|
 ||[resize(rowCount: number, columnCount: number)](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-resize-member(1))|Resizes the table cell to span across a specified number of rows and columns.|
 ||[split(rowCount: number, columnCount: number)](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-split-member(1))|Splits the cell into the specified number of rows and columns.|
@@ -49,3 +50,10 @@
 ||[getCount()](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-getcount-member(1))|Gets the number of rows in the collection.|
 ||[getItemAt(index: number)](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-getitemat-member(1))|Gets the row using its zero-based index in the collection.|
 ||[items](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-items-member)|Gets the loaded child items in this collection.|
+|[TableStyleSettings](/javascript/api/powerpoint/powerpoint.tablestylesettings)|[areColumnsBanded](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-arecolumnsbanded-member)|Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones, to make reading the table easier.|
+||[areRowsBanded](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-arerowsbanded-member)|Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones, to make reading the table easier.|
+||[isFirstColumnHighlighted](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-isfirstcolumnhighlighted-member)|Specifies if the first column contains special formatting.|
+||[isFirstRowHighlighted](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-isfirstrowhighlighted-member)|Specifies if the first row contains special formatting.|
+||[isLastColumnHighlighted](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-islastcolumnhighlighted-member)|Specifies if the last column contains special formatting.|
+||[isLastRowHighlighted](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-islastrowhighlighted-member)|Specifies if the last row contains special formatting.|
+||[style](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-style-member)|Specifies the table style.|

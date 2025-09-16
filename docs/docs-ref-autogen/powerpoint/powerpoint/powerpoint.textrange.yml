@@ -88,6 +88,22 @@ properties:
       content: 'readonly font: PowerPoint.ShapeFont;'
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeFont:class" />
+  - name: hyperlinks
+    uid: powerpoint!PowerPoint.TextRange#hyperlinks:member
+    package: powerpoint!
+    fullName: hyperlinks
+    summary: Returns a collection of hyperlinks that exist on this `TextRange`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly hyperlinks: PowerPoint.HyperlinkScopedCollection;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.HyperlinkScopedCollection:class" />
   - name: length
     uid: powerpoint!PowerPoint.TextRange#length:member
     package: powerpoint!
@@ -292,6 +308,34 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.TextRange:class" />
         description: ''
+  - name: setHyperlink(options)
+    uid: powerpoint!PowerPoint.TextRange#setHyperlink:member(1)
+    package: powerpoint!
+    fullName: setHyperlink(options)
+    summary: >-
+      Sets a hyperlink on this `TextRange` with the specified options. This will
+      delete all existing hyperlinks on this `TextRange`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setHyperlink(options?: PowerPoint.HyperlinkAddOptions):
+        PowerPoint.Hyperlink;
+      parameters:
+        - id: options
+          description: Optional. The options for the hyperlink.
+          type: <xref uid="powerpoint!PowerPoint.HyperlinkAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
+        description: >-
+          The newly created
+          [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)
+          object.
   - name: setSelected()
     uid: powerpoint!PowerPoint.TextRange#setSelected:member(1)
     package: powerpoint!

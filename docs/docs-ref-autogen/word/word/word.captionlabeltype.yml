@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.CaptionLabelType
+uid: word!Word.CaptionLabelType:enum
+package: word!
+fullName: Word.CaptionLabelType
+summary: Specifies the type of caption label to use.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: equation
+    uid: word!Word.CaptionLabelType.equation:member
+    package: word!
+    summary: >-
+      Specifies an equation caption label.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Equation"'
+  - name: figure
+    uid: word!Word.CaptionLabelType.figure:member
+    package: word!
+    summary: >-
+      Specifies a figure caption label.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Figure"'
+  - name: table
+    uid: word!Word.CaptionLabelType.table:member
+    package: word!
+    summary: >-
+      Specifies a table caption label.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Table"'

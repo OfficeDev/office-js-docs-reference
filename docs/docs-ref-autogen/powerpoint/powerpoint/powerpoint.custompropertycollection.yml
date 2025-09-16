@@ -133,6 +133,29 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.CustomProperty:class" />
         description: ''
+  - name: getItemAt(index)
+    uid: powerpoint!PowerPoint.CustomPropertyCollection#getItemAt:member(1)
+    package: powerpoint!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a `CustomProperty` by its zero-based index in the collection. Throws
+      an `InvalidArgument` exception when the index is out of range.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): PowerPoint.CustomProperty;'
+      parameters:
+        - id: index
+          description: The index of the custom property in the collection.
+          type: number
+      return:
+        type: <xref uid="powerpoint!PowerPoint.CustomProperty:class" />
+        description: The custom property at the given index.
   - name: getItemOrNullObject(key)
     uid: >-
       powerpoint!PowerPoint.CustomPropertyCollection#getItemOrNullObject:member(1)

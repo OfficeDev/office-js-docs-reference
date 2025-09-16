@@ -80,6 +80,23 @@ properties:
         type: >-
           <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
+  - name: columns
+    uid: word!Word.Table#columns:member
+    package: word!
+    fullName: columns
+    summary: >-
+      Returns the `TableColumnCollection` object that represents the columns in
+      the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly columns: Word.TableColumnCollection;'
+      return:
+        type: <xref uid="word!Word.TableColumnCollection:class" />
   - name: context
     uid: word!Word.Table#context:member
     package: word!
@@ -95,6 +112,21 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: description
+    uid: word!Word.Table#description:member
+    package: word!
+    fullName: description
+    summary: Specifies the description of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'description: string;'
+      return:
+        type: string
   - name: endnotes
     uid: word!Word.Table#endnotes:member
     package: word!
@@ -428,6 +460,23 @@ properties:
       content: 'readonly rows: Word.TableRowCollection;'
       return:
         type: <xref uid="word!Word.TableRowCollection:class" />
+  - name: shading
+    uid: word!Word.Table#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns the `ShadingUniversal` object that represents the shading of the
+      table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shading: Word.ShadingUniversal;'
+      return:
+        type: <xref uid="word!Word.ShadingUniversal:class" />
   - name: shadingColor
     uid: word!Word.Table#shadingColor:member
     package: word!
@@ -675,6 +724,21 @@ properties:
       content: 'readonly tables: Word.TableCollection;'
       return:
         type: <xref uid="word!Word.TableCollection:class" />
+  - name: title
+    uid: word!Word.Table#title:member
+    package: word!
+    fullName: title
+    summary: Specifies the title of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string
   - name: values
     uid: word!Word.Table#values:member
     package: word!
@@ -823,6 +887,76 @@ methods:
       return:
         type: <xref uid="word!Word.TableRowCollection:class" />
         description: ''
+  - name: applyStyleDirectFormatting(styleName)
+    uid: word!Word.Table#applyStyleDirectFormatting:member(1)
+    package: word!
+    fullName: applyStyleDirectFormatting(styleName)
+    summary: >-
+      Applies the specified style but maintains any formatting that a user
+      directly applies.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyStyleDirectFormatting(styleName: string): void;'
+      parameters:
+        - id: styleName
+          description: The name of the style to apply.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: autoFitBehavior(behavior)
+    uid: word!Word.Table#autoFitBehavior:member(1)
+    package: word!
+    fullName: autoFitBehavior(behavior)
+    summary: >-
+      Determines how Microsoft Word resizes a table when the AutoFit feature is
+      used.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoFitBehavior(behavior: Word.AutoFitBehavior): void;'
+      parameters:
+        - id: behavior
+          description: >-
+            How Word resizes the specified table with the AutoFit feature is
+            used.
+          type: <xref uid="word!Word.AutoFitBehavior:enum" />
+      return:
+        type: void
+        description: ''
+  - name: autoFitBehavior(behavior)
+    uid: word!Word.Table#autoFitBehavior:member(2)
+    package: word!
+    fullName: autoFitBehavior(behavior)
+    summary: >-
+      Determines how Microsoft Word resizes a table when the AutoFit feature is
+      used.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoFitBehavior(behavior: "FixedSize" | "Content" | "Window"): void;'
+      parameters:
+        - id: behavior
+          description: >-
+            How Word resizes the specified table with the AutoFit feature is
+            used.
+          type: '"FixedSize" | "Content" | "Window"'
+      return:
+        type: void
+        description: ''
   - name: autoFitWindow()
     uid: word!Word.Table#autoFitWindow:member(1)
     package: word!
@@ -836,6 +970,28 @@ methods:
     isDeprecated: false
     syntax:
       content: 'autoFitWindow(): void;'
+      return:
+        type: void
+        description: ''
+  - name: autoFormat(options)
+    uid: word!Word.Table#autoFormat:member(1)
+    package: word!
+    fullName: autoFormat(options)
+    summary: Applies a predefined look to a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoFormat(options?: Word.TableAutoFormatOptions): void;'
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object that specifies the options for applying the
+            table format.
+          type: <xref uid="word!Word.TableAutoFormatOptions:interface" />
       return:
         type: void
         description: ''
@@ -855,6 +1011,28 @@ methods:
       return:
         type: void
         description: ''
+  - name: convertToText(options)
+    uid: word!Word.Table#convertToText:member(1)
+    package: word!
+    fullName: convertToText(options)
+    summary: Converts a table to text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convertToText(options?: Word.TableConvertToTextOptions): Word.Range;'
+      parameters:
+        - id: options
+          description: >-
+            An object that specifies the options for converting the table to
+            text.
+          type: <xref uid="word!Word.TableConvertToTextOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Range:class" />
+        description: A `Range` object that represents the converted text.
   - name: delete()
     uid: word!Word.Table#delete:member(1)
     package: word!
@@ -1492,6 +1670,25 @@ methods:
       return:
         type: <xref uid="word!Word.TableCell:class" />
         description: ''
+  - name: reapplyAutoFormat()
+    uid: word!Word.Table#reapplyAutoFormat:member(1)
+    package: word!
+    fullName: reapplyAutoFormat()
+    summary: >-
+      Updates the table with the characteristics of the predefined table format
+      set when the `autoFormat` method was called. The default predefined format
+      is [TableFormatType.none](xref:word!Word.TableFormatType:enum)<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'reapplyAutoFormat(): void;'
+      return:
+        type: void
+        description: ''
   - name: search(searchText, searchOptions)
     uid: word!Word.Table#search:member(1)
     package: word!
@@ -1685,6 +1882,26 @@ methods:
         - id: cellPadding
           description: Required. The cell padding.
           type: number
+      return:
+        type: void
+        description: ''
+  - name: sort(options)
+    uid: word!Word.Table#sort:member(1)
+    package: word!
+    fullName: sort(options)
+    summary: Sorts the specified table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sort(options?: Word.TableSortOptions): void;'
+      parameters:
+        - id: options
+          description: An object that specifies the options for sorting the table.
+          type: <xref uid="word!Word.TableSortOptions:interface" />
       return:
         type: void
         description: ''

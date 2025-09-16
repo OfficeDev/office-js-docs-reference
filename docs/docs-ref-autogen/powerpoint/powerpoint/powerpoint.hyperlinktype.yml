@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: PowerPoint.HyperlinkType
+uid: powerpoint!PowerPoint.HyperlinkType:enum
+package: powerpoint!
+fullName: PowerPoint.HyperlinkType
+summary: Specifies the type of object that a hyperlink is applied to.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: shape
+    uid: powerpoint!PowerPoint.HyperlinkType.shape:member
+    package: powerpoint!
+    summary: >-
+      Specifies that the hyperlink is applied to a Shape.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Shape"'
+  - name: textRange
+    uid: powerpoint!PowerPoint.HyperlinkType.textRange:member
+    package: powerpoint!
+    summary: >-
+      Specifies that the hyperlink is applied to a TextRange.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"TextRange"'

@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.MovementType
+uid: word!Word.MovementType:enum
+package: word!
+fullName: Word.MovementType
+summary: Specifies the type of movement when navigating through a document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: extend
+    uid: word!Word.MovementType.extend:member
+    package: word!
+    summary: >-
+      Extends the selection.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Extend"'
+  - name: move
+    uid: word!Word.MovementType.move:member
+    package: word!
+    summary: >-
+      Moves the insertion point or selection.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Move"'

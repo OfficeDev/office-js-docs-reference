@@ -1,0 +1,113 @@
+### YamlMime:TSEnum
+name: Word.PasteDataType
+uid: word!Word.PasteDataType:enum
+package: word!
+fullName: Word.PasteDataType
+summary: Specifies the format to use when pasting data.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bitmap
+    uid: word!Word.PasteDataType.bitmap:member
+    package: word!
+    summary: >-
+      Pastes the data as a bitmap.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bitmap"'
+  - name: deviceIndependentBitmap
+    uid: word!Word.PasteDataType.deviceIndependentBitmap:member
+    package: word!
+    summary: >-
+      Pastes the data as a device-independent bitmap (DIB).
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DeviceIndependentBitmap"'
+  - name: enhancedMetafile
+    uid: word!Word.PasteDataType.enhancedMetafile:member
+    package: word!
+    summary: >-
+      Pastes the data as an enhanced metafile.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EnhancedMetafile"'
+  - name: html
+    uid: word!Word.PasteDataType.html:member
+    package: word!
+    summary: >-
+      Pastes the data as HTML.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Html"'
+  - name: hyperlink
+    uid: word!Word.PasteDataType.hyperlink:member
+    package: word!
+    summary: >-
+      Pastes the data as a hyperlink.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Hyperlink"'
+  - name: metafilePicture
+    uid: word!Word.PasteDataType.metafilePicture:member
+    package: word!
+    summary: >-
+      Pastes the data as a metafile picture.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"MetafilePicture"'
+  - name: oleObject
+    uid: word!Word.PasteDataType.oleObject:member
+    package: word!
+    summary: >-
+      Pastes the data as an OLE object.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OleObject"'
+  - name: rtf
+    uid: word!Word.PasteDataType.rtf:member
+    package: word!
+    summary: >-
+      Pastes the data as rich text format (RTF).
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Rtf"'
+  - name: shape
+    uid: word!Word.PasteDataType.shape:member
+    package: word!
+    summary: >-
+      Pastes the data as a shape.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Shape"'
+  - name: text
+    uid: word!Word.PasteDataType.text:member
+    package: word!
+    summary: >-
+      Pastes the data as plain text.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Text"'

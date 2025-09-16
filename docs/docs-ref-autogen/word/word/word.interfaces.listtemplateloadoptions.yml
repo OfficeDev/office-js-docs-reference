@@ -28,6 +28,21 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: name
+    uid: word!Word.Interfaces.ListTemplateLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of the list template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
   - name: outlineNumbered
     uid: word!Word.Interfaces.ListTemplateLoadOptions#outlineNumbered:member
     package: word!
