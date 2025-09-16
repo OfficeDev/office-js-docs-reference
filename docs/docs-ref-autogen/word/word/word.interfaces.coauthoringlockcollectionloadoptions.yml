@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Word.Interfaces.CoauthoringLockCollectionLoadOptions
+uid: word!Word.Interfaces.CoauthoringLockCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.CoauthoringLockCollectionLoadOptions
+summary: Represents a collection of coauthoring locks in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: owner
+    uid: word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#owner:member
+    package: word!
+    fullName: owner
+    summary: 'For EACH ITEM in the collection: Gets the owner of the lock.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'owner?: Word.Interfaces.CoauthorLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthorLoadOptions:interface" />
+  - name: range
+    uid: word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Range` object that represents the
+      portion of the document that's contained in the `CoauthoringLock` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: type
+    uid: word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: >-
+      For EACH ITEM in the collection: Gets a `CoauthoringLockType` value that
+      represents the lock type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

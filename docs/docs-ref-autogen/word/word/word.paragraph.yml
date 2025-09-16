@@ -607,23 +607,6 @@ properties:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type: <xref uid="word!Word.Table:class" />
-  - name: range
-    uid: word!Word.Paragraph#range:member
-    package: word!
-    fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained within the paragraph.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly range: Word.Range;'
-      return:
-        type: <xref uid="word!Word.Range:class" />
   - name: rightIndent
     uid: word!Word.Paragraph#rightIndent:member
     package: word!

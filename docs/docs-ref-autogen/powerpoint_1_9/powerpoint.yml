@@ -119,6 +119,9 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TableRowData:interface
   - powerpoint!PowerPoint.Interfaces.TableRowLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface
@@ -183,6 +186,7 @@ classes:
   - powerpoint!PowerPoint.TableColumnCollection:class
   - powerpoint!PowerPoint.TableRow:class
   - powerpoint!PowerPoint.TableRowCollection:class
+  - powerpoint!PowerPoint.TableStyleSettings:class
   - powerpoint!PowerPoint.Tag:class
   - powerpoint!PowerPoint.TagCollection:class
   - powerpoint!PowerPoint.TextFrame:class

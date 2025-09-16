@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 08/05/2025
+ms.date: 09/16/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -28,11 +28,27 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |:---|:---|:---|
 |[Application](/javascript/api/word/word.application)|[bibliography](/javascript/api/word/word.application#word-word-application-bibliography-member)|Returns a `Bibliography` object that represents the bibliography reference sources stored in Microsoft Word.|
 ||[checkLanguage](/javascript/api/word/word.application#word-word-application-checklanguage-member)|Specifies if Microsoft Word automatically detects the language you are using as you type.|
+||[fontNames](/javascript/api/word/word.application#word-word-application-fontnames-member)|Returns a `FontNameCollection` object that represents all the available font names in Microsoft Word.|
 ||[language](/javascript/api/word/word.application#word-word-application-language-member)|Gets a `LanguageId` value that represents the language selected for the Microsoft Word user interface.|
+||[listTemplateGalleries](/javascript/api/word/word.application#word-word-application-listtemplategalleries-member)|Returns a `ListTemplateGalleryCollection` object that represents all the list template galleries in Microsoft Word.|
 ||[templates](/javascript/api/word/word.application#word-word-application-templates-member)|Returns a `TemplateCollection` object that represents all the available templates: global templates and those attached to open documents.|
 |[Bibliography](/javascript/api/word/word.bibliography)|[bibliographyStyle](/javascript/api/word/word.bibliography#word-word-bibliography-bibliographystyle-member)|Specifies the name of the active style to use for the bibliography.|
 ||[generateUniqueTag()](/javascript/api/word/word.bibliography#word-word-bibliography-generateuniquetag-member(1))|Generates a unique identification tag for a bibliography source and returns a string that represents the tag.|
 ||[sources](/javascript/api/word/word.bibliography#word-word-bibliography-sources-member)|Returns a `SourceCollection` object that represents all the sources contained in the bibliography.|
+|[Body](/javascript/api/word/word.body)|[type](/javascript/api/word/word.body#word-word-body-type-member)|Gets the type of the body.|
+|[Bookmark](/javascript/api/word/word.bookmark)|[copyTo(name: string)](/javascript/api/word/word.bookmark#word-word-bookmark-copyto-member(1))|Copies this bookmark to the new bookmark specified in the `name` argument and returns a `Bookmark` object.|
+||[delete()](/javascript/api/word/word.bookmark#word-word-bookmark-delete-member(1))|Deletes the bookmark.|
+||[end](/javascript/api/word/word.bookmark#word-word-bookmark-end-member)|Specifies the ending character position of the bookmark.|
+||[isColumn](/javascript/api/word/word.bookmark#word-word-bookmark-iscolumn-member)|Returns `true` if the bookmark is a table column.|
+||[isEmpty](/javascript/api/word/word.bookmark#word-word-bookmark-isempty-member)|Returns `true` if the bookmark is empty.|
+||[name](/javascript/api/word/word.bookmark#word-word-bookmark-name-member)|Returns the name of the `Bookmark` object.|
+||[range](/javascript/api/word/word.bookmark#word-word-bookmark-range-member)|Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.|
+||[select()](/javascript/api/word/word.bookmark#word-word-bookmark-select-member(1))|Selects the bookmark.|
+||[start](/javascript/api/word/word.bookmark#word-word-bookmark-start-member)|Specifies the starting character position of the bookmark.|
+||[storyType](/javascript/api/word/word.bookmark#word-word-bookmark-storytype-member)|Returns the story type for the bookmark.|
+|[BookmarkCollection](/javascript/api/word/word.bookmarkcollection)|[exists(name: string)](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-exists-member(1))|Determines whether the specified bookmark exists.|
+||[getItem(index: number)](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-getitem-member(1))|Gets a `Bookmark` object by its index in the collection.|
+||[items](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-items-member)|Gets the loaded child items in this collection.|
 |[BorderUniversal](/javascript/api/word/word.borderuniversal)|[artStyle](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-artstyle-member)|Specifies the graphical page-border design for the document.|
 ||[artWidth](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-artwidth-member)|Specifies the width (in points) of the graphical page border specified in the `artStyle` property.|
 ||[color](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-color-member)|Specifies the color for the `BorderUniversal` object.|
@@ -93,11 +109,52 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[name](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-name-member)|Returns the localized name of a building block type.|
 |[BuildingBlockTypeItemCollection](/javascript/api/word/word.buildingblocktypeitemcollection)|[getByType(type: Word.BuildingBlockType)](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))|Gets a `BuildingBlockTypeItem` object by its type in the collection.|
 ||[getCount()](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getcount-member(1))|Returns the number of items in the collection.|
+|[Coauthor](/javascript/api/word/word.coauthor)|[emailAddress](/javascript/api/word/word.coauthor#word-word-coauthor-emailaddress-member)|Gets the email address of the coauthor.|
+||[id](/javascript/api/word/word.coauthor#word-word-coauthor-id-member)|Gets the unique identifier for the `Coauthor` object.|
+||[isMe](/javascript/api/word/word.coauthor#word-word-coauthor-isme-member)|Gets whether this author represents the current user.|
+||[locks](/javascript/api/word/word.coauthor#word-word-coauthor-locks-member)|Gets a `CoauthoringLockCollection` object that represents the locks in the document that are associated with this coauthor.|
+||[name](/javascript/api/word/word.coauthor#word-word-coauthor-name-member)|Gets the display name of the coauthor.|
+|[CoauthorCollection](/javascript/api/word/word.coauthorcollection)|[items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)|Gets the loaded child items in this collection.|
+|[Coauthoring](/javascript/api/word/word.coauthoring)|[authors](/javascript/api/word/word.coauthoring#word-word-coauthoring-authors-member)|Gets a `CoauthorCollection` object that represents all the coauthors currently editing the document.|
+||[canCoauthor](/javascript/api/word/word.coauthoring#word-word-coauthoring-cancoauthor-member)|Gets whether this document can be coauthored.|
+||[canMerge](/javascript/api/word/word.coauthoring#word-word-coauthoring-canmerge-member)|Gets whether the document can be automatically merged.|
+||[conflicts](/javascript/api/word/word.coauthoring#word-word-coauthoring-conflicts-member)|Gets a `ConflictCollection` object that represents all the conflicts in the document.|
+||[locks](/javascript/api/word/word.coauthoring#word-word-coauthoring-locks-member)|Gets a `CoauthoringLockCollection` object that represents the locks in the document.|
+||[me](/javascript/api/word/word.coauthoring#word-word-coauthoring-me-member)|Gets a `Coauthor` object that represents the current user.|
+||[pendingUpdates](/javascript/api/word/word.coauthoring#word-word-coauthoring-pendingupdates-member)|Gets whether the document has pending updates that have not been accepted.|
+||[updates](/javascript/api/word/word.coauthoring#word-word-coauthoring-updates-member)|Gets a `CoauthoringUpdateCollection` object that represents the most recent updates that were merged into the document.|
+|[CoauthoringLock](/javascript/api/word/word.coauthoringlock)|[owner](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-owner-member)|Gets the owner of the lock.|
+||[range](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-range-member)|Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringLock` object.|
+||[type](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-type-member)|Gets a `CoauthoringLockType` value that represents the lock type.|
+||[unlock()](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-unlock-member(1))|Removes this lock, even if it belongs to a different user.|
+|[CoauthoringLockAddOptions](/javascript/api/word/word.coauthoringlockaddoptions)|[range](/javascript/api/word/word.coauthoringlockaddoptions#word-word-coauthoringlockaddoptions-range-member)|If provided, specifies the range to which the lock is added.|
+||[type](/javascript/api/word/word.coauthoringlockaddoptions#word-word-coauthoringlockaddoptions-type-member)|If provided, specifies the type of lock.|
+|[CoauthoringLockCollection](/javascript/api/word/word.coauthoringlockcollection)|[add(options?: Word.CoauthoringLockAddOptions)](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-add-member(1))|Returns a `CoauthoringLock` object that represents a lock added to a specified range.|
+||[items](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-items-member)|Gets the loaded child items in this collection.|
+||[unlockEphemeralLocks()](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-unlockephemerallocks-member(1))|Removes all ephemeral locks from the document.|
+|[CoauthoringUpdate](/javascript/api/word/word.coauthoringupdate)|[range](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-range-member)|Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringUpdate` object.|
+|[CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection)|[items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)|Gets the loaded child items in this collection.|
 |[ColorFormat](/javascript/api/word/word.colorformat)|[brightness](/javascript/api/word/word.colorformat#word-word-colorformat-brightness-member)|Specifies the brightness of a specified shape color.|
 ||[objectThemeColor](/javascript/api/word/word.colorformat#word-word-colorformat-objectthemecolor-member)|Specifies the theme color for a color format.|
 ||[rgb](/javascript/api/word/word.colorformat#word-word-colorformat-rgb-member)|Specifies the red-green-blue (RGB) value of the specified color.|
 ||[tintAndShade](/javascript/api/word/word.colorformat#word-word-colorformat-tintandshade-member)|Specifies the lightening or darkening of a specified shape's color.|
 ||[type](/javascript/api/word/word.colorformat#word-word-colorformat-type-member)|Returns the shape color type.|
+|[ConditionalStyle](/javascript/api/word/word.conditionalstyle)|[borders](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the conditional style.|
+||[bottomPadding](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-bottompadding-member)|Specifies the amount of space (in points) to add below the contents of a single cell or all the cells in a table.|
+||[font](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-font-member)|Returns a `Font` object that represents the font formatting for the conditional style.|
+||[leftPadding](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-leftpadding-member)|Specifies the amount of space (in points) to add to the left of the contents of a single cell or all the cells in a table.|
+||[paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)|Returns a `ParagraphFormat` object that represents the paragraph formatting for the conditional style.|
+||[rightPadding](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-rightpadding-member)|Specifies the amount of space (in points) to add to the right of the contents of a single cell or all the cells in a table.|
+||[shading](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-shading-member)|Returns a `ShadingUniversal` object that represents the shading of the conditional style.|
+||[topPadding](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-toppadding-member)|Specifies the amount of space (in points) to add above the contents of a single cell or all the cells in a table.|
+|[Conflict](/javascript/api/word/word.conflict)|[accept()](/javascript/api/word/word.conflict#word-word-conflict-accept-member(1))|Accepts the user's change and removes the conflict.|
+||[range](/javascript/api/word/word.conflict#word-word-conflict-range-member)|Gets a `Range` object that represents the portion of the document that's contained in the `Conflict` object.|
+||[reject()](/javascript/api/word/word.conflict#word-word-conflict-reject-member(1))|Rejects the user's change, removes the conflict, and accepts the server copy of the change for the conflict.|
+||[type](/javascript/api/word/word.conflict#word-word-conflict-type-member)|Gets the `RevisionType` for the `Conflict` object.|
+|[ConflictCollection](/javascript/api/word/word.conflictcollection)|[acceptAll()](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-acceptall-member(1))|Accepts all of the user's changes, removes the conflicts, and merges the changes into the server copy of the document.|
+||[getItem(index: number)](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-getitem-member(1))|Gets a `Conflict` object by its index in the collection.|
+||[items](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-items-member)|Gets the loaded child items in this collection.|
+||[rejectAll()](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-rejectall-member(1))|Rejects all of the user's changes and retains the server copy of the document.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[buildingBlockGalleryContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-buildingblockgallerycontentcontrol-member)|Gets the building block gallery-related data if the content control's Word.ContentControlType is `BuildingBlockGallery`.|
 ||[datePickerContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-datepickercontentcontrol-member)|Gets the date picker-related data if the content control's Word.ContentControlType is `DatePicker`.|
 ||[groupContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-groupcontentcontrol-member)|Gets the group-related data if the content control's Word.ContentControlType is `Group`.|
@@ -233,21 +290,55 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[autoHyphenation](/javascript/api/word/word.document#word-word-document-autohyphenation-member)|Specifies if automatic hyphenation is turned on for the document.|
 ||[autoSaveOn](/javascript/api/word/word.document#word-word-document-autosaveon-member)|Specifies if the edits in the document are automatically saved.|
 ||[bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)|Returns a `Bibliography` object that represents the bibliography references contained within the document.|
+||[bookmarks](/javascript/api/word/word.document#word-word-document-bookmarks-member)|Returns a `BookmarkCollection` object that represents all the bookmarks in the document.|
+||[coauthoring](/javascript/api/word/word.document#word-word-document-coauthoring-member)|Gets a `Coauthoring` object for managing coauthoring in the document.|
 ||[consecutiveHyphensLimit](/javascript/api/word/word.document#word-word-document-consecutivehyphenslimit-member)|Specifies the maximum number of consecutive lines that can end with hyphens.|
 ||[detectLanguage()](/javascript/api/word/word.document#word-word-document-detectlanguage-member(1))|Analyzes the document text to determine the language.|
 ||[documentLibraryVersions](/javascript/api/word/word.document#word-word-document-documentlibraryversions-member)|Returns a `DocumentLibraryVersionCollection` object that represents the collection of versions of a shared document that has versioning enabled and that's stored in a document library on a server.|
 ||[frames](/javascript/api/word/word.document#word-word-document-frames-member)|Returns a `FrameCollection` object that represents all the frames in the document.|
 ||[hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.|
 ||[hyphenateCaps](/javascript/api/word/word.document#word-word-document-hyphenatecaps-member)|Specifies whether words in all capital letters can be hyphenated.|
+||[indexes](/javascript/api/word/word.document#word-word-document-indexes-member)|Returns an `IndexCollection` object that represents all the indexes in the document.|
 ||[languageDetected](/javascript/api/word/word.document#word-word-document-languagedetected-member)|Specifies whether Microsoft Word has detected the language of the document text.|
+||[listTemplates](/javascript/api/word/word.document#word-word-document-listtemplates-member)|Returns a `ListTemplateCollection` object that represents all the list templates in the document.|
 ||[manualHyphenation()](/javascript/api/word/word.document#word-word-document-manualhyphenation-member(1))|Initiates manual hyphenation of a document, one line at a time.|
 ||[pageSetup](/javascript/api/word/word.document#word-word-document-pagesetup-member)|Returns a `PageSetup` object that's associated with the document.|
+||[revisions](/javascript/api/word/word.document#word-word-document-revisions-member)|Gets the collection of revisions that represents the tracked changes in the document.|
+||[selection](/javascript/api/word/word.document#word-word-document-selection-member)|Returns a `Selection` object that represents the current selection in the document.|
+||[tableOfAuthoritiesCategories](/javascript/api/word/word.document#word-word-document-tableofauthoritiescategories-member)|Returns a `TableOfAuthoritiesCategoryCollection` object that represents the available table of authorities categories in the document.|
+||[tablesOfAuthorities](/javascript/api/word/word.document#word-word-document-tablesofauthorities-member)|Returns a `TableOfAuthoritiesCollection` object that represents all the tables of authorities in the document.|
+||[tablesOfContents](/javascript/api/word/word.document#word-word-document-tablesofcontents-member)|Returns a `TableOfContentsCollection` object that represents all the tables of contents in the document.|
+||[tablesOfFigures](/javascript/api/word/word.document#word-word-document-tablesoffigures-member)|Returns a `TableOfFiguresCollection` object that represents all the tables of figures in the document.|
 |[DocumentLibraryVersion](/javascript/api/word/word.documentlibraryversion)|[comments](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-comments-member)|Gets any optional comments associated with this version of the shared document.|
 ||[modified](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-modified-member)|Gets the date and time at which this version of the shared document was last saved to the server.|
 ||[modifiedBy](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-modifiedby-member)|Gets the name of the user who last saved this version of the shared document to the server.|
 |[DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection)|[getItem(index: number)](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-getitem-member(1))|Gets a `DocumentLibraryVersion` object by its index in the collection.|
 ||[isVersioningEnabled()](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-isversioningenabled-member(1))|Returns whether the document library in which the active document is saved on the server is configured to create a backup copy, or version, each time the file is edited on the website.|
 ||[items](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-items-member)|Gets the loaded child items in this collection.|
+|[DropCap](/javascript/api/word/word.dropcap)|[clear()](/javascript/api/word/word.dropcap#word-word-dropcap-clear-member(1))|Removes the dropped capital letter formatting.|
+||[distanceFromText](/javascript/api/word/word.dropcap#word-word-dropcap-distancefromtext-member)|Gets the distance (in points) between the dropped capital letter and the paragraph text.|
+||[enable()](/javascript/api/word/word.dropcap#word-word-dropcap-enable-member(1))|Formats the first character in the specified paragraph as a dropped capital letter.|
+||[fontName](/javascript/api/word/word.dropcap#word-word-dropcap-fontname-member)|Gets the name of the font for the dropped capital letter.|
+||[linesToDrop](/javascript/api/word/word.dropcap#word-word-dropcap-linestodrop-member)|Gets the height (in lines) of the dropped capital letter.|
+||[position](/javascript/api/word/word.dropcap#word-word-dropcap-position-member)|Gets the position of the dropped capital letter.|
+|[Editor](/javascript/api/word/word.editor)|[delete()](/javascript/api/word/word.editor#word-word-editor-delete-member(1))|Deletes the `Editor` object.|
+||[id](/javascript/api/word/word.editor#word-word-editor-id-member)|Gets the identifier for the `Editor` object when the parent document is saved as a webpage.|
+||[name](/javascript/api/word/word.editor#word-word-editor-name-member)|Gets the name of the editor.|
+||[nextRange](/javascript/api/word/word.editor#word-word-editor-nextrange-member)|Gets a `Range` object that represents the next range that the editor has permissions to modify.|
+||[range](/javascript/api/word/word.editor#word-word-editor-range-member)|Gets a `Range` object that represents the portion of the document that's contained in the `Editor` object.|
+||[removeAllPermissions()](/javascript/api/word/word.editor#word-word-editor-removeallpermissions-member(1))|Removes all editing permissions in the document for the editor.|
+||[selectAllShapes()](/javascript/api/word/word.editor#word-word-editor-selectallshapes-member(1))|Selects all the shapes in the document that were inserted or edited by the editor.|
+|[EditorCollection](/javascript/api/word/word.editorcollection)|[addById(editorId: string)](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbyid-member(1))|Returns an `Editor` object that represents a new permission for the specified user to modify a range within the document.|
+||[addByType(editorType: Word.EditorType)](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1))|Returns an `Editor` object that represents a new permission for the specified group of users to modify a range within the document.|
+||[getCount()](/javascript/api/word/word.editorcollection#word-word-editorcollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.editorcollection#word-word-editorcollection-getitemat-member(1))|Gets an `Editor` object by its index in the collection.|
+|[Field](/javascript/api/word/word.field)|[copyToClipboard()](/javascript/api/word/word.field#word-word-field-copytoclipboard-member(1))|Copies the field to the Clipboard.|
+||[cut()](/javascript/api/word/word.field#word-word-field-cut-member(1))|Removes the field from the document and places it on the Clipboard.|
+||[doClick()](/javascript/api/word/word.field#word-word-field-doclick-member(1))|Clicks the field.|
+||[linkFormat](/javascript/api/word/word.field#word-word-field-linkformat-member)|Gets a `LinkFormat` object that represents the link options of the field.|
+||[oleFormat](/javascript/api/word/word.field#word-word-field-oleformat-member)|Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.|
+||[unlink()](/javascript/api/word/word.field#word-word-field-unlink-member(1))|Replaces the field with its most recent result.|
+||[updateSource()](/javascript/api/word/word.field#word-word-field-updatesource-member(1))|Saves the changes made to the results of an {@link https://support.microsoft.com/office/1c34d6d6-0de3-4b5c-916a-2ff950fb629e | INCLUDETEXT field} back to the source document.|
 |[FillFormat](/javascript/api/word/word.fillformat)|[backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)|Returns a `ColorFormat` object that represents the background color for the fill.|
 ||[foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)|Returns a `ColorFormat` object that represents the foreground color for the fill.|
 ||[gradientAngle](/javascript/api/word/word.fillformat#word-word-fillformat-gradientangle-member)|Specifies the angle of the gradient fill.|
@@ -316,6 +407,8 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[textShadow](/javascript/api/word/word.font#word-word-font-textshadow-member)|Returns a `ShadowFormat` object that specifies the shadow formatting for the font.|
 ||[threeDimensionalFormat](/javascript/api/word/word.font#word-word-font-threedimensionalformat-member)|Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.|
 ||[underlineColor](/javascript/api/word/word.font#word-word-font-underlinecolor-member)|Specifies the color of the underline for the `Font` object.|
+|[FontNameCollection](/javascript/api/word/word.fontnamecollection)|[getCount()](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-getitemat-member(1))|Gets the font name at the specified index.|
 |[Frame](/javascript/api/word/word.frame)|[borders](/javascript/api/word/word.frame#word-word-frame-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the frame.|
 ||[copy()](/javascript/api/word/word.frame#word-word-frame-copy-member(1))|Copies the frame to the Clipboard.|
 ||[cut()](/javascript/api/word/word.frame#word-word-frame-cut-member(1))|Removes the frame from the document and places it on the Clipboard.|
@@ -360,6 +453,11 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[title](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-title-member)|Specifies the title for the content control.|
 ||[ungroup()](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-ungroup-member(1))|Removes the group content control from the document so that its child content controls are no longer nested and can be freely edited.|
 ||[xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)|Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
+|[HeadingStyle](/javascript/api/word/word.headingstyle)|[delete()](/javascript/api/word/word.headingstyle#word-word-headingstyle-delete-member(1))|Deletes the heading style.|
+||[level](/javascript/api/word/word.headingstyle#word-word-headingstyle-level-member)|Specifies the level for the heading style in a table of contents or table of figures.|
+||[name](/javascript/api/word/word.headingstyle#word-word-headingstyle-name-member)|Specifies the name of style for a heading.|
+|[HeadingStyleCollection](/javascript/api/word/word.headingstylecollection)|[add(name: string, level: number)](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1))|Adds a new heading style to a document.|
+||[items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)|Gets the loaded child items in this collection.|
 |[Hyperlink](/javascript/api/word/word.hyperlink)|[addToFavorites()](/javascript/api/word/word.hyperlink#word-word-hyperlink-addtofavorites-member(1))|Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.|
 ||[address](/javascript/api/word/word.hyperlink#word-word-hyperlink-address-member)|Specifies the address (for example, a file name or URL) of the hyperlink.|
 ||[createNewDocument(fileName: string, editNow: boolean, overwrite: boolean)](/javascript/api/word/word.hyperlink#word-word-hyperlink-createnewdocument-member(1))|Creates a new document linked to the hyperlink.|
@@ -380,6 +478,44 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[textToDisplay](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-texttodisplay-member)|If provided, specifies the visible text of the hyperlink.|
 |[HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection)|[add(anchor: Word.Range, options?: Word.HyperlinkAddOptions)](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1))|Returns a `Hyperlink` object that represents a new hyperlink added to a range, selection, or document.|
 ||[items](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-items-member)|Gets the loaded child items in this collection.|
+|[Index](/javascript/api/word/word.index)|[delete()](/javascript/api/word/word.index#word-word-index-delete-member(1))|Deletes this index.|
+||[filter](/javascript/api/word/word.index#word-word-index-filter-member)|Gets a value that represents how Microsoft Word classifies the first character of entries in the index.|
+||[headingSeparator](/javascript/api/word/word.index#word-word-index-headingseparator-member)|Gets the text between alphabetical groups (entries that start with the same letter) in the index.|
+||[indexLanguage](/javascript/api/word/word.index#word-word-index-indexlanguage-member)|Gets a `LanguageId` value that represents the sorting language to use for the index.|
+||[numberOfColumns](/javascript/api/word/word.index#word-word-index-numberofcolumns-member)|Gets the number of columns for each page of the index.|
+||[range](/javascript/api/word/word.index#word-word-index-range-member)|Returns a `Range` object that represents the portion of the document that is contained within the index.|
+||[rightAlignPageNumbers](/javascript/api/word/word.index#word-word-index-rightalignpagenumbers-member)|Specifies if page numbers are aligned with the right margin in the index.|
+||[separateAccentedLetterHeadings](/javascript/api/word/word.index#word-word-index-separateaccentedletterheadings-member)|Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under|
+||[sortBy](/javascript/api/word/word.index#word-word-index-sortby-member)|Specifies the sorting criteria for the index.|
+||[tabLeader](/javascript/api/word/word.index#word-word-index-tableader-member)|Specifies the leader character between entries in the index and their associated page numbers.|
+||[type](/javascript/api/word/word.index#word-word-index-type-member)|Gets the index type.|
+|[IndexAddOptions](/javascript/api/word/word.indexaddoptions)|[headingSeparator](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-headingseparator-member)|If provided, specifies the text between alphabetical groups (entries that start with the same letter) in the index.|
+||[indexLanguage](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-indexlanguage-member)|If provided, specifies the sorting language to be used for the index being added.|
+||[numberOfColumns](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-numberofcolumns-member)|If provided, specifies the number of columns for each page of the index.|
+||[rightAlignPageNumbers](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-rightalignpagenumbers-member)|If provided, specifies whether the page numbers in the generated index are aligned with the right margin.|
+||[separateAccentedLetterHeadings](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-separateaccentedletterheadings-member)|If provided, specifies whether to include separate headings for accented letters in the index.|
+||[sortBy](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-sortby-member)|If provided, specifies the sorting criteria to be used for the index being added.|
+||[type](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-type-member)|If provided, specifies whether subentries are on the same line (run-in) as the main entry or on a separate line (indented) from the main entry.|
+|[IndexCollection](/javascript/api/word/word.indexcollection)|[add(range: Word.Range, indexAddOptions?: Word.IndexAddOptions)](/javascript/api/word/word.indexcollection#word-word-indexcollection-add-member(1))|Returns an `Index` object that represents a new index added to the document.|
+||[getFormat()](/javascript/api/word/word.indexcollection#word-word-indexcollection-getformat-member(1))|Gets the `IndexFormat` value that represents the formatting for the indexes in the document.|
+||[getItem(index: number)](/javascript/api/word/word.indexcollection#word-word-indexcollection-getitem-member(1))|Gets an `Index` object by its index in the collection.|
+||[items](/javascript/api/word/word.indexcollection#word-word-indexcollection-items-member)|Gets the loaded child items in this collection.|
+||[markAllEntries(range: Word.Range, markAllEntriesOptions?: Word.IndexMarkAllEntriesOptions)](/javascript/api/word/word.indexcollection#word-word-indexcollection-markallentries-member(1))|Inserts an {@link https://support.microsoft.com/office/abaf7c78-6e21-418d-bf8b-f8186d2e4d08 | XE (Index Entry) field} after all instances of the text in the range.|
+|[IndexMarkAllEntriesOptions](/javascript/api/word/word.indexmarkallentriesoptions)|[bold](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-bold-member)|If provided, specifies whether to add bold formatting to page numbers for index entries.|
+||[bookmarkName](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-bookmarkname-member)|If provided, specifies the bookmark name that marks the range of pages you want to appear in the index.|
+||[crossReference](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-crossreference-member)|If provided, specifies the cross-reference that will appear in the index.|
+||[crossReferenceAutoText](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-crossreferenceautotext-member)|If provided, specifies the name of the `AutoText` entry that contains the text for a cross-reference (if this property is specified, `crossReference` is ignored).|
+||[entry](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-entry-member)|If provided, specifies the text you want to appear in the index, in the form `MainEntry[:Subentry]`.|
+||[entryAutoText](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-entryautotext-member)|If provided, specifies the `AutoText` entry that contains the text you want to appear in the index (if this property is specified, `entry` is ignored).|
+||[italic](/javascript/api/word/word.indexmarkallentriesoptions#word-word-indexmarkallentriesoptions-italic-member)|If provided, specifies whether to add italic formatting to page numbers for index entries.|
+|[IndexMarkEntryOptions](/javascript/api/word/word.indexmarkentryoptions)|[bold](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-bold-member)|If provided, specifies whether to add bold formatting to page numbers for index entries.|
+||[bookmarkName](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-bookmarkname-member)|If provided, specifies the bookmark name that marks the range of pages you want to appear in the index.|
+||[crossReference](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-crossreference-member)|If provided, specifies the cross-reference that will appear in the index.|
+||[crossReferenceAutoText](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-crossreferenceautotext-member)|If provided, specifies the name of the `AutoText` entry that contains the text for a cross-reference (if this property is specified, `crossReference` is ignored).|
+||[entry](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-entry-member)|If provided, specifies the text you want to appear in the index, in the form `MainEntry[:Subentry]`.|
+||[entryAutoText](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-entryautotext-member)|If provided, specifies the `AutoText` entry that contains the text you want to appear in the index (if this property is specified, `entry` is ignored).|
+||[italic](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-italic-member)|If provided, specifies whether to add italic formatting to page numbers for index entries.|
+||[reading](/javascript/api/word/word.indexmarkentryoptions#word-word-indexmarkentryoptions-reading-member)|If provided, specifies whether to show an index entry in the right location when indexes are sorted phonetically (East Asian languages only).|
 |[LineFormat](/javascript/api/word/word.lineformat)|[backgroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-backgroundcolor-member)|Gets a `ColorFormat` object that represents the background color for a patterned line.|
 ||[beginArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadlength-member)|Specifies the length of the arrowhead at the beginning of the line.|
 ||[beginArrowheadStyle](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadstyle-member)|Specifies the style of the arrowhead at the beginning of the line.|
@@ -400,6 +536,14 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[isActive](/javascript/api/word/word.linenumbering#word-word-linenumbering-isactive-member)|Specifies if line numbering is active for the specified document, section, or sections.|
 ||[restartMode](/javascript/api/word/word.linenumbering#word-word-linenumbering-restartmode-member)|Specifies the way line numbering runs; that is, whether it starts over at the beginning of a new page or section, or runs continuously.|
 ||[startingNumber](/javascript/api/word/word.linenumbering#word-word-linenumbering-startingnumber-member)|Specifies the starting line number.|
+|[LinkFormat](/javascript/api/word/word.linkformat)|[breakLink()](/javascript/api/word/word.linkformat#word-word-linkformat-breaklink-member(1))|Breaks the link between the source file and the OLE object, picture, or linked field.|
+||[isAutoUpdated](/javascript/api/word/word.linkformat#word-word-linkformat-isautoupdated-member)|Specifies if the link is updated automatically when the container file is opened or when the source file is changed.|
+||[isLocked](/javascript/api/word/word.linkformat#word-word-linkformat-islocked-member)|Specifies if a `Field`, `InlineShape`, or `Shape` object is locked to prevent automatic updating.|
+||[isPictureSavedWithDocument](/javascript/api/word/word.linkformat#word-word-linkformat-ispicturesavedwithdocument-member)|Specifies if the linked picture is saved with the document.|
+||[sourceFullName](/javascript/api/word/word.linkformat#word-word-linkformat-sourcefullname-member)|Specifies the path and name of the source file for the linked OLE object, picture, or field.|
+||[sourceName](/javascript/api/word/word.linkformat#word-word-linkformat-sourcename-member)|Gets the name of the source file for the linked OLE object, picture, or field.|
+||[sourcePath](/javascript/api/word/word.linkformat#word-word-linkformat-sourcepath-member)|Gets the path of the source file for the linked OLE object, picture, or field.|
+||[type](/javascript/api/word/word.linkformat#word-word-linkformat-type-member)|Gets the link type.|
 |[ListFormat](/javascript/api/word/word.listformat)|[applyBulletDefault(defaultListBehavior: Word.DefaultListBehavior)](/javascript/api/word/word.listformat#word-word-listformat-applybulletdefault-member(1))|Adds bullets and formatting to the paragraphs in the range.|
 ||[applyListTemplateWithLevel(listTemplate: Word.ListTemplate, options?: Word.ListTemplateApplyOptions)](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))|Applies a list template with a specific level to the paragraphs in the range.|
 ||[applyNumberDefault(defaultListBehavior: Word.DefaultListBehavior)](/javascript/api/word/word.listformat#word-word-listformat-applynumberdefault-member(1))|Adds numbering and formatting to the paragraphs in the range.|
@@ -420,10 +564,34 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[removeNumbers(numberType: Word.NumberType)](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))|Removes numbering from the list.|
 |[ListFormatCountNumberedItemsOptions](/javascript/api/word/word.listformatcountnumbereditemsoptions)|[level](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-level-member)|If provided, specifies the level to count.|
 ||[numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)|If provided, specifies the type of number to count.|
+|[ListTemplate](/javascript/api/word/word.listtemplate)|[name](/javascript/api/word/word.listtemplate#word-word-listtemplate-name-member)|Specifies the name of the list template.|
 |[ListTemplateApplyOptions](/javascript/api/word/word.listtemplateapplyoptions)|[applyLevel](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-applylevel-member)|If provided, specifies the level to apply in the list template.|
 ||[applyTo](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-applyto-member)|If provided, specifies which part of the list to apply the template to.|
 ||[continuePreviousList](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-continuepreviouslist-member)|If provided, specifies whether to continue the previous list.|
 ||[defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)|If provided, specifies the default list behavior.|
+|[ListTemplateCollection](/javascript/api/word/word.listtemplatecollection)|[add(options?: Word.ListTemplateCollectionAddOptions)](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-add-member(1))|Adds a new `ListTemplate` object.|
+||[getItem(index: number)](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-getitem-member(1))|Gets a `ListTemplate` object by its index in the collection.|
+||[items](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-items-member)|Gets the loaded child items in this collection.|
+|[ListTemplateCollectionAddOptions](/javascript/api/word/word.listtemplatecollectionaddoptions)|[name](/javascript/api/word/word.listtemplatecollectionaddoptions#word-word-listtemplatecollectionaddoptions-name-member)|If provided, specifies the name of the list template to be added.|
+||[outlineNumbered](/javascript/api/word/word.listtemplatecollectionaddoptions#word-word-listtemplatecollectionaddoptions-outlinenumbered-member)|If provided, specifies whether to apply outline numbering to the new list template.|
+|[ListTemplateGallery](/javascript/api/word/word.listtemplategallery)|[listTemplates](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-listtemplates-member)|Returns a `ListTemplateCollection` object that represents all the list templates for the specified list gallery.|
+|[ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection)|[getByType(type: Word.ListTemplateGalleryType)](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))|Gets a `ListTemplateGallery` object by its type in the collection.|
+||[getItem(index: number)](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getitem-member(1))|Gets a `ListTemplateGallery` object by its index in the collection.|
+||[items](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-items-member)|Gets the loaded child items in this collection.|
+|[OleFormat](/javascript/api/word/word.oleformat)|[activate()](/javascript/api/word/word.oleformat#word-word-oleformat-activate-member(1))|Activates the `OleFormat` object.|
+||[activateAs(classType: string)](/javascript/api/word/word.oleformat#word-word-oleformat-activateas-member(1))|Sets the Windows registry value that determines the default application used to activate the specified OLE object.|
+||[classType](/javascript/api/word/word.oleformat#word-word-oleformat-classtype-member)|Specifies the class type for the specified OLE object, picture, or field.|
+||[doVerb(verbIndex: Word.OleVerb)](/javascript/api/word/word.oleformat#word-word-oleformat-doverb-member(1))|Requests that the OLE object perform one of its available verbs.|
+||[edit()](/javascript/api/word/word.oleformat#word-word-oleformat-edit-member(1))|Opens the OLE object for editing in the application it was created in.|
+||[iconIndex](/javascript/api/word/word.oleformat#word-word-oleformat-iconindex-member)|Specifies the icon that is used when the `displayAsIcon` property is `true`.|
+||[iconLabel](/javascript/api/word/word.oleformat#word-word-oleformat-iconlabel-member)|Specifies the text displayed below the icon for the OLE object.|
+||[iconName](/javascript/api/word/word.oleformat#word-word-oleformat-iconname-member)|Specifies the program file in which the icon for the OLE object is stored.|
+||[iconPath](/javascript/api/word/word.oleformat#word-word-oleformat-iconpath-member)|Gets the path of the file in which the icon for the OLE object is stored.|
+||[isDisplayedAsIcon](/javascript/api/word/word.oleformat#word-word-oleformat-isdisplayedasicon-member)|Gets whether the specified object is displayed as an icon.|
+||[isFormattingPreservedOnUpdate](/javascript/api/word/word.oleformat#word-word-oleformat-isformattingpreservedonupdate-member)|Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.|
+||[label](/javascript/api/word/word.oleformat#word-word-oleformat-label-member)|Gets a string that's used to identify the portion of the source file that's being linked.|
+||[open()](/javascript/api/word/word.oleformat#word-word-oleformat-open-member(1))|Opens the `OleFormat` object.|
+||[progID](/javascript/api/word/word.oleformat#word-word-oleformat-progid-member)|Gets the programmatic identifier (`ProgId`) for the specified OLE object.|
 |[Page](/javascript/api/word/word.page)|[breaks](/javascript/api/word/word.page#word-word-page-breaks-member)|Gets a `BreakCollection` object that represents the breaks on the page.|
 |[PageSetup](/javascript/api/word/word.pagesetup)|[bookFoldPrinting](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldprinting-member)|Specifies whether Microsoft Word prints the document as a booklet.|
 ||[bookFoldPrintingSheets](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldprintingsheets-member)|Specifies the number of pages for each booklet.|
@@ -457,10 +625,52 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[topMargin](/javascript/api/word/word.pagesetup#word-word-pagesetup-topmargin-member)|Specifies the top margin of the page in points.|
 ||[twoPagesOnOne](/javascript/api/word/word.pagesetup#word-word-pagesetup-twopagesonone-member)|Specifies whether to print two pages per sheet.|
 ||[verticalAlignment](/javascript/api/word/word.pagesetup#word-word-pagesetup-verticalalignment-member)|Specifies the vertical alignment of text on each page in a document or section.|
+|[Pane](/javascript/api/word/word.pane)|[selection](/javascript/api/word/word.pane#word-word-pane-selection-member)|Returns a `Selection` object that represents the current selection in the pane.|
+|[PaneCollection](/javascript/api/word/word.panecollection)|||
 |[Paragraph](/javascript/api/word/word.paragraph)|[borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the paragraph.|
+||[closeUp()](/javascript/api/word/word.paragraph#word-word-paragraph-closeup-member(1))|Removes any spacing before the paragraph.|
+||[indent()](/javascript/api/word/word.paragraph#word-word-paragraph-indent-member(1))|Indents the paragraph by one level.|
+||[indentCharacterWidth(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-indentcharacterwidth-member(1))|Indents the paragraph by a specified number of characters.|
+||[indentFirstLineCharacterWidth(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-indentfirstlinecharacterwidth-member(1))|Indents the first line of the paragraph by the specified number of characters.|
+||[joinList()](/javascript/api/word/word.paragraph#word-word-paragraph-joinlist-member(1))|Joins a list paragraph with the closest list above or below this paragraph.|
+||[next(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-next-member(1))|Returns a `Paragraph` object that represents the next paragraph.|
+||[openOrCloseUp()](/javascript/api/word/word.paragraph#word-word-paragraph-openorcloseup-member(1))|Toggles the spacing before the paragraph.|
+||[openUp()](/javascript/api/word/word.paragraph#word-word-paragraph-openup-member(1))|Sets spacing before the paragraph to 12 points.|
+||[outdent()](/javascript/api/word/word.paragraph#word-word-paragraph-outdent-member(1))|Removes one level of indent for the paragraph.|
+||[outlineDemote()](/javascript/api/word/word.paragraph#word-word-paragraph-outlinedemote-member(1))|Applies the next heading level style (Heading 1 through Heading 8) to the paragraph.|
+||[outlineDemoteToBody()](/javascript/api/word/word.paragraph#word-word-paragraph-outlinedemotetobody-member(1))|Demotes the paragraph to body text by applying the Normal style.|
+||[outlinePromote()](/javascript/api/word/word.paragraph#word-word-paragraph-outlinepromote-member(1))|Applies the previous heading level style (Heading 1 through Heading 8) to the paragraph.|
+||[previous(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-previous-member(1))|Returns the previous paragraph as a `Paragraph` object.|
+||[reset()](/javascript/api/word/word.paragraph#word-word-paragraph-reset-member(1))|Removes manual paragraph formatting (formatting not applied using a style).|
+||[resetAdvanceTo()](/javascript/api/word/word.paragraph#word-word-paragraph-resetadvanceto-member(1))|Resets the paragraph that uses custom list levels to the original level settings.|
+||[selectNumber()](/javascript/api/word/word.paragraph#word-word-paragraph-selectnumber-member(1))|Selects the number or bullet in a list.|
+||[separateList()](/javascript/api/word/word.paragraph#word-word-paragraph-separatelist-member(1))|Separates a list into two separate lists.|
 ||[shading](/javascript/api/word/word.paragraph#word-word-paragraph-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the paragraph.|
+||[space1()](/javascript/api/word/word.paragraph#word-word-paragraph-space1-member(1))|Sets the paragraph to single spacing.|
+||[space1Pt5()](/javascript/api/word/word.paragraph#word-word-paragraph-space1pt5-member(1))|Sets the paragraph to 1.5-line spacing.|
+||[space2()](/javascript/api/word/word.paragraph#word-word-paragraph-space2-member(1))|Sets the paragraph to double spacing.|
+||[tabHangingIndent(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-tabhangingindent-member(1))|Sets a hanging indent to a specified number of tab stops.|
+||[tabIndent(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-tabindent-member(1))|Sets the left indent for the paragraph to a specified number of tab stops.|
 |[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
 |[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
+|[ParagraphCollection](/javascript/api/word/word.paragraphcollection)|[add(range: Word.Range)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-add-member(1))|Returns a `Paragraph` object that represents a new, blank paragraph added to the document.|
+||[closeUp()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-closeup-member(1))|Removes any spacing before the specified paragraphs.|
+||[decreaseSpacing()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-decreasespacing-member(1))|Decreases the spacing before and after paragraphs in six-point increments.|
+||[increaseSpacing()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-increasespacing-member(1))|Increases the spacing before and after paragraphs in six-point increments.|
+||[indent()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-indent-member(1))|Indents the paragraphs by one level.|
+||[indentCharacterWidth(count: number)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-indentcharacterwidth-member(1))|Indents the paragraphs in the collection by the specified number of characters.|
+||[indentFirstLineCharacterWidth(count: number)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-indentfirstlinecharacterwidth-member(1))|Indents the first line of the paragraphs in the collection by the specified number of characters.|
+||[openOrCloseUp()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-openorcloseup-member(1))|Toggles spacing before paragraphs.|
+||[openUp()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-openup-member(1))|Sets spacing before the specified paragraphs to 12 points.|
+||[outdent()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-outdent-member(1))|Removes one level of indent for the paragraphs.|
+||[outlineDemote()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-outlinedemote-member(1))|Applies the next heading level style (Heading 1 through Heading 8) to the specified paragraphs.|
+||[outlineDemoteToBody()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-outlinedemotetobody-member(1))|Demotes the specified paragraphs to body text by applying the Normal style.|
+||[outlinePromote()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-outlinepromote-member(1))|Applies the previous heading level style (Heading 1 through Heading 8) to the paragraphs in the collection.|
+||[space1()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-space1-member(1))|Sets the specified paragraphs to single spacing.|
+||[space1Pt5()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-space1pt5-member(1))|Sets the specified paragraphs to 1.5-line spacing.|
+||[space2()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-space2-member(1))|Sets the specified paragraphs to double spacing.|
+||[tabHangingIndent(count: number)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-tabhangingindent-member(1))|Sets a hanging indent to the specified number of tab stops.|
+||[tabIndent(count: number)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-tabindent-member(1))|Sets the left indent for the specified paragraphs to the specified number of tab stops.|
 |[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
 |[PictureContentControl](/javascript/api/word/word.picturecontentcontrol)|[appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)|Specifies the appearance of the content control.|
 ||[color](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
@@ -479,19 +689,50 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[tag](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-tag-member)|Specifies a tag to identify the content control.|
 ||[title](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-title-member)|Specifies the title for the content control.|
 ||[xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
-|[Range](/javascript/api/word/word.range)|[borders](/javascript/api/word/word.range#word-word-range-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the range.|
+|[Range](/javascript/api/word/word.range)|[bold](/javascript/api/word/word.range#word-word-range-bold-member)|Specifies whether the range is formatted as bold.|
+||[boldBidirectional](/javascript/api/word/word.range#word-word-range-boldbidirectional-member)|Specifies whether the range is formatted as bold in a right-to-left language document.|
+||[bookmarks](/javascript/api/word/word.range#word-word-range-bookmarks-member)|Returns a `BookmarkCollection` object that represents all the bookmarks in the range.|
+||[borders](/javascript/api/word/word.range#word-word-range-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the range.|
+||[case](/javascript/api/word/word.range#word-word-range-case-member)|Specifies a `CharacterCase` value that represents the case of the text in the range.|
+||[characterWidth](/javascript/api/word/word.range#word-word-range-characterwidth-member)|Specifies the character width of the range.|
+||[combineCharacters](/javascript/api/word/word.range#word-word-range-combinecharacters-member)|Specifies if the range contains combined characters.|
+||[conflicts](/javascript/api/word/word.range#word-word-range-conflicts-member)|Returns a `ConflictCollection` object that contains all the Word.Conflict objects in the range.|
 ||[detectLanguage()](/javascript/api/word/word.range#word-word-range-detectlanguage-member(1))|Analyzes the range text to determine the language that it's written in.|
+||[disableCharacterSpaceGrid](/javascript/api/word/word.range#word-word-range-disablecharacterspacegrid-member)|Specifies if Microsoft Word ignores the number of characters per line for the corresponding `Range` object.|
+||[editors](/javascript/api/word/word.range#word-word-range-editors-member)|Returns an `EditorCollection` object that represents all the users authorized to modify the range when the document is in protected (read-only) mode.|
+||[emphasisMark](/javascript/api/word/word.range#word-word-range-emphasismark-member)|Specifies the emphasis mark for a character or designated character string.|
+||[end](/javascript/api/word/word.range#word-word-range-end-member)|Specifies the ending character position of the range.|
+||[fitTextWidth](/javascript/api/word/word.range#word-word-range-fittextwidth-member)|Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.|
 ||[frames](/javascript/api/word/word.range#word-word-range-frames-member)|Gets a `FrameCollection` object that represents all the frames in the range.|
+||[grammarChecked](/javascript/api/word/word.range#word-word-range-grammarchecked-member)|Specifies if a grammar check has been run on the range or document.|
 ||[hasNoProofing](/javascript/api/word/word.range#word-word-range-hasnoproofing-member)|Specifies the proofing status (spelling and grammar checking) of the range.|
+||[highlightColorIndex](/javascript/api/word/word.range#word-word-range-highlightcolorindex-member)|Specifies the highlight color for the range.|
+||[horizontalInVertical](/javascript/api/word/word.range#word-word-range-horizontalinvertical-member)|Specifies the formatting for horizontal text set within vertical text.|
 ||[hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the range.|
+||[id](/javascript/api/word/word.range#word-word-range-id-member)|Specifies the ID for the range.|
+||[isEndOfRowMark](/javascript/api/word/word.range#word-word-range-isendofrowmark-member)|Gets if the range is collapsed and is located at the end-of-row mark in a table.|
+||[isTextVisibleOnScreen](/javascript/api/word/word.range#word-word-range-istextvisibleonscreen-member)|Gets whether the text in the range is visible on the screen.|
+||[italic](/javascript/api/word/word.range#word-word-range-italic-member)|Specifies if the font or range is formatted as italic.|
+||[italicBidirectional](/javascript/api/word/word.range#word-word-range-italicbidirectional-member)|Specifies if the font or range is formatted as italic (right-to-left languages).|
+||[kana](/javascript/api/word/word.range#word-word-range-kana-member)|Specifies whether the range of Japanese language text is hiragana or katakana.|
 ||[languageDetected](/javascript/api/word/word.range#word-word-range-languagedetected-member)|Specifies whether Microsoft Word has detected the language of the text in the range.|
 ||[languageId](/javascript/api/word/word.range#word-word-range-languageid-member)|Specifies a `LanguageId` value that represents the language for the range.|
 ||[languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member)|Specifies an East Asian language for the range.|
 ||[languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)|Specifies a language for the range that isn't classified as an East Asian language.|
 ||[listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)|Returns a `ListFormat` object that represents all the list formatting characteristics of the range.|
+||[revisions](/javascript/api/word/word.range#word-word-range-revisions-member)|Gets the collection of revisions that represents the tracked changes in the range.|
 ||[sections](/javascript/api/word/word.range#word-word-range-sections-member)|Gets the collection of sections in the range.|
 ||[shading](/javascript/api/word/word.range#word-word-range-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the range.|
+||[showAll](/javascript/api/word/word.range#word-word-range-showall-member)|Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.|
+||[spellingChecked](/javascript/api/word/word.range#word-word-range-spellingchecked-member)|Specifies if spelling has been checked throughout the range or document.|
+||[start](/javascript/api/word/word.range#word-word-range-start-member)|Specifies the starting character position of the range.|
+||[storyLength](/javascript/api/word/word.range#word-word-range-storylength-member)|Gets the number of characters in the story that contains the range.|
+||[storyType](/javascript/api/word/word.range#word-word-range-storytype-member)|Gets the story type for the range.|
 ||[tableColumns](/javascript/api/word/word.range#word-word-range-tablecolumns-member)|Gets a `TableColumnCollection` object that represents all the table columns in the range.|
+||[twoLinesInOne](/javascript/api/word/word.range#word-word-range-twolinesinone-member)|Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.|
+||[underline](/javascript/api/word/word.range#word-word-range-underline-member)|Specifies the type of underline applied to the range.|
+|[RangeScopedCollection](/javascript/api/word/word.rangescopedcollection)|[getItem(index: number)](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-getitem-member(1))|Gets a `Range` object by its index in the collection.|
+||[items](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-items-member)|Gets the loaded child items in this collection.|
 |[ReflectionFormat](/javascript/api/word/word.reflectionformat)|[blur](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-blur-member)|Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.|
 ||[offset](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-offset-member)|Specifies the amount of separation, in points, of the reflected image from the shape.|
 ||[size](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-size-member)|Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.|
@@ -522,9 +763,195 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[insertItemBefore()](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitembefore-member(1))|Adds a repeating section item before this item and returns the new item.|
 ||[range](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-range-member)|Returns the range of this repeating section item, excluding the start and end tags.|
 |[RepeatingSectionItemCollection](/javascript/api/word/word.repeatingsectionitemcollection)|[getItemAt(index: number)](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-getitemat-member(1))|Returns an individual repeating section item.|
+|[Reviewer](/javascript/api/word/word.reviewer)|[isVisible](/javascript/api/word/word.reviewer#word-word-reviewer-isvisible-member)|Specifies if the `Reviewer` object is visible.|
+|[ReviewerCollection](/javascript/api/word/word.reviewercollection)|[getItem(index: number)](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-getitem-member(1))|Returns a `Reviewer` object that represents the specified item in the collection.|
+||[items](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-items-member)|Gets the loaded child items in this collection.|
+|[Revision](/javascript/api/word/word.revision)|[accept()](/javascript/api/word/word.revision#word-word-revision-accept-member(1))|Accepts the tracked change, removes the revision mark, and incorporates the change into the document.|
+||[author](/javascript/api/word/word.revision#word-word-revision-author-member)|Gets the name of the user who made the tracked change.|
+||[date](/javascript/api/word/word.revision#word-word-revision-date-member)|Gets the date and time when the tracked change was made.|
+||[formatDescription](/javascript/api/word/word.revision#word-word-revision-formatdescription-member)|Gets the description of tracked formatting changes in the revision.|
+||[index](/javascript/api/word/word.revision#word-word-revision-index-member)|Gets a number that represents the position of this item in a collection.|
+||[movedRange](/javascript/api/word/word.revision#word-word-revision-movedrange-member)|Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.|
+||[range](/javascript/api/word/word.revision#word-word-revision-range-member)|Gets a `Range` object that represents the portion of the document that's contained within a revision mark.|
+||[reject()](/javascript/api/word/word.revision#word-word-revision-reject-member(1))|Rejects the tracked change.|
+||[type](/javascript/api/word/word.revision#word-word-revision-type-member)|Gets the revision type.|
+|[RevisionCollection](/javascript/api/word/word.revisioncollection)|[acceptAll()](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-acceptall-member(1))|Accepts all the tracked changes in the document or range, removes all revision marks, and incorporates the changes into the document.|
+||[getItem(index: number)](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-getitem-member(1))|Returns a `Revision` object that represents the specified item in the collection.|
+||[items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)|Gets the loaded child items in this collection.|
+||[rejectAll()](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-rejectall-member(1))|Rejects all the tracked changes in the document or range.|
+|[RevisionsFilter](/javascript/api/word/word.revisionsfilter)|[markup](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-markup-member)|Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.|
+||[reviewers](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-reviewers-member)|Gets the `ReviewerCollection` object that represents the collection of reviewers of one or more documents.|
+||[toggleShowAllReviewers()](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-toggleshowallreviewers-member(1))|Shows or hides all revisions in the document that contain comments and tracked changes.|
+||[view](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-view-member)|Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.|
 |[Section](/javascript/api/word/word.section)|[borders](/javascript/api/word/word.section#word-word-section-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders in the section.|
 ||[pageSetup](/javascript/api/word/word.section#word-word-section-pagesetup-member)|Returns a `PageSetup` object that's associated with the section.|
 ||[protectedForForms](/javascript/api/word/word.section#word-word-section-protectedforforms-member)|Specifies if the section is protected for forms.|
+|[Selection](/javascript/api/word/word.selection)|[borders](/javascript/api/word/word.selection#word-word-selection-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the objects in the selection.|
+||[calculate()](/javascript/api/word/word.selection#word-word-selection-calculate-member(1))|Calculates the first mathematical expression within the selection.|
+||[cancelMode()](/javascript/api/word/word.selection#word-word-selection-cancelmode-member(1))|Cancels a mode such as extend or column select.|
+||[characters](/javascript/api/word/word.selection#word-word-selection-characters-member)|Returns a `RangeScopedCollection` object that represents each character in the selection.|
+||[clearCharacterStyleFormatting()](/javascript/api/word/word.selection#word-word-selection-clearcharacterstyleformatting-member(1))|Removes character formatting applied through character styles.|
+||[clearFormatting()](/javascript/api/word/word.selection#word-word-selection-clearformatting-member(1))|Removes character and paragraph formatting from the selection.|
+||[clearManualCharacterFormatting()](/javascript/api/word/word.selection#word-word-selection-clearmanualcharacterformatting-member(1))|Removes manually applied character formatting from the selected text.|
+||[clearManualParagraphFormatting()](/javascript/api/word/word.selection#word-word-selection-clearmanualparagraphformatting-member(1))|Removes manually applied paragraph formatting from the selected text.|
+||[clearParagraphFormatting()](/javascript/api/word/word.selection#word-word-selection-clearparagraphformatting-member(1))|Removes all paragraph formatting from the selected text.|
+||[clearParagraphStyle()](/javascript/api/word/word.selection#word-word-selection-clearparagraphstyle-member(1))|Removes paragraph formatting applied through paragraph styles.|
+||[collapse(direction?: Word.CollapseDirection)](/javascript/api/word/word.selection#word-word-selection-collapse-member(1))|Collapses the selection to the starting or ending position.|
+||[comments](/javascript/api/word/word.selection#word-word-selection-comments-member)|Returns a `CommentCollection` object that represents all the comments in the selection.|
+||[convertToTable(options?: Word.SelectionConvertToTableOptions)](/javascript/api/word/word.selection#word-word-selection-converttotable-member(1))|Converts text within a range to a table.|
+||[copyAsPictureToClipboard()](/javascript/api/word/word.selection#word-word-selection-copyaspicturetoclipboard-member(1))|Copies the selection to the Clipboard as a picture.|
+||[copyFormat()](/javascript/api/word/word.selection#word-word-selection-copyformat-member(1))|Copies the character formatting of the first character in the selected text.|
+||[copyToClipboard()](/javascript/api/word/word.selection#word-word-selection-copytoclipboard-member(1))|Copies the selection to the Clipboard.|
+||[createTextBox()](/javascript/api/word/word.selection#word-word-selection-createtextbox-member(1))|Adds a default-sized text box around the selection.|
+||[cut()](/javascript/api/word/word.selection#word-word-selection-cut-member(1))|Removes the selected content from the document and moves it to the Clipboard.|
+||[delete(options?: Word.SelectionDeleteOptions)](/javascript/api/word/word.selection#word-word-selection-delete-member(1))|Deletes the specified number of characters or words.|
+||[detectLanguage()](/javascript/api/word/word.selection#word-word-selection-detectlanguage-member(1))|Analyzes the selected text to determine the language that it's written in.|
+||[end](/javascript/api/word/word.selection#word-word-selection-end-member)|Specifies the ending character position of the selection.|
+||[expand(unit?: Word.OperationUnit)](/javascript/api/word/word.selection#word-word-selection-expand-member(1))|Expands the selection.|
+||[expandToWholeStory()](/javascript/api/word/word.selection#word-word-selection-expandtowholestory-member(1))|Expands the selection to include the entire story.|
+||[extend(character?: Word.OperationUnit)](/javascript/api/word/word.selection#word-word-selection-extend-member(1))|Turns on extend mode, or if extend mode is already on, extends the selection to the next larger unit of text.|
+||[fields](/javascript/api/word/word.selection#word-word-selection-fields-member)|Returns a `FieldCollection` object that represents all the fields in the selection.|
+||[fitTextWidth](/javascript/api/word/word.selection#word-word-selection-fittextwidth-member)|Specifies the width in which Word fits the text in the current selection.|
+||[font](/javascript/api/word/word.selection#word-word-selection-font-member)|Returns the `Font` object that represents the character formatting of the selection.|
+||[formattedText](/javascript/api/word/word.selection#word-word-selection-formattedtext-member)|Specifies a `Range` object that includes the formatted text in the range or selection.|
+||[getNextRange(options?: Word.SelectionNextOptions)](/javascript/api/word/word.selection#word-word-selection-getnextrange-member(1))|Returns a `Range` object that represents the next unit relative to the selection.|
+||[getPreviousRange(options?: Word.SelectionPreviousOptions)](/javascript/api/word/word.selection#word-word-selection-getpreviousrange-member(1))|Returns a `Range` object that represents the previous unit relative to the selection.|
+||[goTo(options?: Word.SelectionGoToOptions)](/javascript/api/word/word.selection#word-word-selection-goto-member(1))|Returns a `Range` object that represents the area specified by the `options` and moves the insertion point to the character position immediately preceding the specified item.|
+||[goToNext(what: Word.GoToItem)](/javascript/api/word/word.selection#word-word-selection-gotonext-member(1))|Returns a `Range` object that refers to the start position of the next item or location specified by the `what` argument and moves the selection to the specified item.|
+||[goToPrevious(what: Word.GoToItem)](/javascript/api/word/word.selection#word-word-selection-gotoprevious-member(1))|Returns a `Range` object that refers to the start position of the previous item or location specified by the `what` argument and moves the selection to the specified item.|
+||[hasNoProofing](/javascript/api/word/word.selection#word-word-selection-hasnoproofing-member)|Returns whether the spelling and grammar checker ignores the selected text.|
+||[insertAfter(text: string)](/javascript/api/word/word.selection#word-word-selection-insertafter-member(1))|Inserts the specified text at the end of the range or selection.|
+||[insertBefore(text: string)](/javascript/api/word/word.selection#word-word-selection-insertbefore-member(1))|Inserts the specified text before the selection.|
+||[insertCells(shiftCells?: Word.TableCellInsertionLocation)](/javascript/api/word/word.selection#word-word-selection-insertcells-member(1))|Adds cells to an existing table.|
+||[insertColumnsLeft()](/javascript/api/word/word.selection#word-word-selection-insertcolumnsleft-member(1))|Inserts columns to the left of the column that contains the selection.|
+||[insertColumnsRight()](/javascript/api/word/word.selection#word-word-selection-insertcolumnsright-member(1))|Inserts columns to the right of the current selection.|
+||[insertDateTime(options?: Word.SelectionInsertDateTimeOptions)](/javascript/api/word/word.selection#word-word-selection-insertdatetime-member(1))|Inserts the current date or time, or both, either as text or as a {@link https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90 | TIME field}.|
+||[insertFormula(options?: Word.SelectionInsertFormulaOptions)](/javascript/api/word/word.selection#word-word-selection-insertformula-member(1))|Inserts a {@link https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d | Formula field} at the selection.|
+||[insertNewPage()](/javascript/api/word/word.selection#word-word-selection-insertnewpage-member(1))|Inserts a new page at the position of the insertion point.|
+||[insertParagraphAfter()](/javascript/api/word/word.selection#word-word-selection-insertparagraphafter-member(1))|Inserts a paragraph mark after the selection.|
+||[insertParagraphBefore()](/javascript/api/word/word.selection#word-word-selection-insertparagraphbefore-member(1))|Inserts a new paragraph before the selection or range.|
+||[insertParagraphStyleSeparator()](/javascript/api/word/word.selection#word-word-selection-insertparagraphstyleseparator-member(1))|Inserts a special hidden paragraph mark that allows Word to join paragraphs formatted using different paragraph styles.|
+||[insertRowsAbove(numRows: number)](/javascript/api/word/word.selection#word-word-selection-insertrowsabove-member(1))|Inserts rows above the current selection.|
+||[insertRowsBelow(numRows: number)](/javascript/api/word/word.selection#word-word-selection-insertrowsbelow-member(1))|Inserts rows below the current selection.|
+||[insertSymbol(characterNumber: number, options?: Word.SelectionInsertSymbolOptions)](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))|Inserts a symbol in place of the specified selection.|
+||[insertText(Text: string)](/javascript/api/word/word.selection#word-word-selection-inserttext-member(1))|Inserts the specified text.|
+||[insertXML(xml: string, transform?: string)](/javascript/api/word/word.selection#word-word-selection-insertxml-member(1))|Inserts the specified XML into the document at the cursor, replacing any selected text.|
+||[isActive](/javascript/api/word/word.selection#word-word-selection-isactive-member)|Returns whether the selection in the specified window or pane is active.|
+||[isColumnSelectModeActive](/javascript/api/word/word.selection#word-word-selection-iscolumnselectmodeactive-member)|Specifies whether column selection mode is active.|
+||[isEndOfRowMark](/javascript/api/word/word.selection#word-word-selection-isendofrowmark-member)|Returns whether the selection is at the end-of-row mark in a table.|
+||[isEqual(range: Word.Range)](/javascript/api/word/word.selection#word-word-selection-isequal-member(1))|Returns whether the selection is equal to the specified range.|
+||[isExtendModeActive](/javascript/api/word/word.selection#word-word-selection-isextendmodeactive-member)|Specifies whether Extend mode is active.|
+||[isInRange(range: Word.Range)](/javascript/api/word/word.selection#word-word-selection-isinrange-member(1))|Returns `true` if the selection is contained within the specified range.|
+||[isInStory(range: Word.Range)](/javascript/api/word/word.selection#word-word-selection-isinstory-member(1))|Returns whether the selection is in the same story as the specified range.|
+||[isInsertionPointAtEndOfLine](/javascript/api/word/word.selection#word-word-selection-isinsertionpointatendofline-member)|Returns whether the insertion point is at the end of a line.|
+||[isStartActive](/javascript/api/word/word.selection#word-word-selection-isstartactive-member)|Specifies whether the beginning of the selection is active.|
+||[languageDetected](/javascript/api/word/word.selection#word-word-selection-languagedetected-member)|Specifies whether Word has detected the language of the selected text.|
+||[languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member)|Returns the language for the selection.|
+||[languageIdFarEast](/javascript/api/word/word.selection#word-word-selection-languageidfareast-member)|Returns the East Asian language for the selection.|
+||[languageIdOther](/javascript/api/word/word.selection#word-word-selection-languageidother-member)|Returns the language for the selection that isn't classified as an East Asian language.|
+||[move(options?: Word.SelectionMoveOptions)](/javascript/api/word/word.selection#word-word-selection-move-member(1))|Collapses the selection to its start or end position and then moves the collapsed object by the specified number of units.|
+||[moveDown(options?: Word.SelectionMoveUpDownOptions)](/javascript/api/word/word.selection#word-word-selection-movedown-member(1))|Moves the selection down.|
+||[moveEnd(options?: Word.SelectionMoveStartEndOptions)](/javascript/api/word/word.selection#word-word-selection-moveend-member(1))|Moves the ending character position of the range or selection.|
+||[moveEndUntil(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-moveenduntil-member(1))|Moves the end position of the selection until any of the specified characters are found in the document.|
+||[moveEndWhile(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-moveendwhile-member(1))|Moves the ending character position of the selection while any of the specified characters are found in the document.|
+||[moveLeft(options?: Word.SelectionMoveLeftRightOptions)](/javascript/api/word/word.selection#word-word-selection-moveleft-member(1))|Moves the selection to the left.|
+||[moveRight(options?: Word.SelectionMoveLeftRightOptions)](/javascript/api/word/word.selection#word-word-selection-moveright-member(1))|Moves the selection to the right.|
+||[moveStart(options?: Word.SelectionMoveStartEndOptions)](/javascript/api/word/word.selection#word-word-selection-movestart-member(1))|Moves the start position of the selection.|
+||[moveStartUntil(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-movestartuntil-member(1))|Moves the start position of the selection until one of the specified characters is found in the document.|
+||[moveStartWhile(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-movestartwhile-member(1))|Moves the start position of the selection while any of the specified characters are found in the document.|
+||[moveUntil(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-moveuntil-member(1))|Moves the selection until one of the specified characters is found in the document.|
+||[moveUp(options?: Word.SelectionMoveUpDownOptions)](/javascript/api/word/word.selection#word-word-selection-moveup-member(1))|Moves the selection up.|
+||[moveWhile(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-movewhile-member(1))|Moves the selection while any of the specified characters are found in the document.|
+||[nextField()](/javascript/api/word/word.selection#word-word-selection-nextfield-member(1))|Selects the next field.|
+||[nextSubdocument()](/javascript/api/word/word.selection#word-word-selection-nextsubdocument-member(1))|Moves the selection to the next subDocument.|
+||[orientation](/javascript/api/word/word.selection#word-word-selection-orientation-member)|Specifies the orientation of text in the selection.|
+||[paragraphs](/javascript/api/word/word.selection#word-word-selection-paragraphs-member)|Returns a `ParagraphCollection` object that represents all the paragraphs in the selection.|
+||[pasteAndFormat(type: Word.PasteFormatType)](/javascript/api/word/word.selection#word-word-selection-pasteandformat-member(1))|Pastes the content from clipboard and formats them as specified.|
+||[pasteExcelTable(linkedToExcel: boolean, wordFormatting: boolean, rtf: boolean)](/javascript/api/word/word.selection#word-word-selection-pasteexceltable-member(1))|Pastes and formats a Microsoft Excel table.|
+||[pasteFormat()](/javascript/api/word/word.selection#word-word-selection-pasteformat-member(1))|Applies formatting copied with the `copyFormat` method to the selection.|
+||[pasteTableCellsAppendTable()](/javascript/api/word/word.selection#word-word-selection-pastetablecellsappendtable-member(1))|Merges pasted cells into an existing table by inserting the pasted rows between the selected rows.|
+||[pasteTableCellsAsNestedTable()](/javascript/api/word/word.selection#word-word-selection-pastetablecellsasnestedtable-member(1))|Pastes a cell or group of cells as a nested table into the selection.|
+||[previousField()](/javascript/api/word/word.selection#word-word-selection-previousfield-member(1))|Selects and returns the previous field.|
+||[previousSubdocument()](/javascript/api/word/word.selection#word-word-selection-previoussubdocument-member(1))|Moves the selection to the previous subDocument.|
+||[range](/javascript/api/word/word.selection#word-word-selection-range-member)|Returns the `Range` object for the portion of the document contained in the selection.|
+||[replaceParagraph()](/javascript/api/word/word.selection#word-word-selection-replaceparagraph-member(1))|Replaces the selection with a new paragraph.|
+||[sections](/javascript/api/word/word.selection#word-word-selection-sections-member)|Returns the `SectionCollection` object in the selection.|
+||[select()](/javascript/api/word/word.selection#word-word-selection-select-member(1))|Selects the current text.|
+||[selectCell()](/javascript/api/word/word.selection#word-word-selection-selectcell-member(1))|Selects the entire cell containing the current selection when the selection is in a table.|
+||[selectColumn()](/javascript/api/word/word.selection#word-word-selection-selectcolumn-member(1))|Selects the column that contains the insertion point, or selects all columns that contain the selection when the selection is in a table.|
+||[selectCurrentAlignment()](/javascript/api/word/word.selection#word-word-selection-selectcurrentalignment-member(1))|Extends the selection forward until text with a different paragraph alignment is encountered.|
+||[selectCurrentColor()](/javascript/api/word/word.selection#word-word-selection-selectcurrentcolor-member(1))|Extends the selection forward until text with a different color is encountered.|
+||[selectCurrentFont()](/javascript/api/word/word.selection#word-word-selection-selectcurrentfont-member(1))|Extends the selection forward until text in a different font or font size is encountered.|
+||[selectCurrentIndent()](/javascript/api/word/word.selection#word-word-selection-selectcurrentindent-member(1))|Extends the selection forward until text with different left or right paragraph indents is encountered.|
+||[selectCurrentSpacing()](/javascript/api/word/word.selection#word-word-selection-selectcurrentspacing-member(1))|Extends the selection forward until a paragraph with different line spacing is encountered.|
+||[selectCurrentTabs()](/javascript/api/word/word.selection#word-word-selection-selectcurrenttabs-member(1))|Extends the selection forward until a paragraph with different tab stops is encountered.|
+||[selectRow()](/javascript/api/word/word.selection#word-word-selection-selectrow-member(1))|Selects the row that contains the insertion point, or selects all rows that contain the selection when the selection is in a table.|
+||[sentences](/javascript/api/word/word.selection#word-word-selection-sentences-member)|Returns the `RangeScopedCollection` object for each sentence in the selection.|
+||[setRange(start: number, end: number)](/javascript/api/word/word.selection#word-word-selection-setrange-member(1))|Sets the starting and ending character positions for the selection.|
+||[shading](/javascript/api/word/word.selection#word-word-selection-shading-member)|Returns the `ShadingUniversal` object for the shading formatting for the selection.|
+||[shrink()](/javascript/api/word/word.selection#word-word-selection-shrink-member(1))|Shrinks the selection to the next smaller unit of text.|
+||[shrinkDiscontiguousSelection()](/javascript/api/word/word.selection#word-word-selection-shrinkdiscontiguousselection-member(1))|Cancels the selection of all but the most recently selected text when the current selection contains multiple, unconnected selections.|
+||[splitTable()](/javascript/api/word/word.selection#word-word-selection-splittable-member(1))|Inserts an empty paragraph above the first row in the selection.|
+||[start](/javascript/api/word/word.selection#word-word-selection-start-member)|Specifies the starting character position of the selection.|
+||[storyLength](/javascript/api/word/word.selection#word-word-selection-storylength-member)|Returns the number of characters in the story that contains the selection.|
+||[storyType](/javascript/api/word/word.selection#word-word-selection-storytype-member)|Returns the story type for the selection.|
+||[tables](/javascript/api/word/word.selection#word-word-selection-tables-member)|Returns the `TableCollection` object in the selection.|
+||[text](/javascript/api/word/word.selection#word-word-selection-text-member)|Specifies the text in the selection.|
+||[toggleCharacterCode()](/javascript/api/word/word.selection#word-word-selection-togglecharactercode-member(1))|Switches the selection between a Unicode character and its corresponding hexadecimal value.|
+||[topLevelTables](/javascript/api/word/word.selection#word-word-selection-topleveltables-member)|Returns the tables at the outermost nesting level in the current selection.|
+||[type](/javascript/api/word/word.selection#word-word-selection-type-member)|Returns the selection type.|
+||[typeBackspace()](/javascript/api/word/word.selection#word-word-selection-typebackspace-member(1))|Deletes the character preceding the selection (if collapsed) or the insertion point.|
+||[words](/javascript/api/word/word.selection#word-word-selection-words-member)|Returns the `RangeScopedCollection` object that represents each word in the selection.|
+|[SelectionConvertToTableOptions](/javascript/api/word/word.selectionconverttotableoptions)|[applyBorders](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applyborders-member)|If provided, specifies whether to apply borders to the table of the specified format.|
+||[applyColor](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applycolor-member)|If provided, specifies whether to apply color formatting to the table of the specified format.|
+||[applyFirstColumn](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applyfirstcolumn-member)|If provided, specifies whether to apply special formatting to the first column of the specified format.|
+||[applyFont](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applyfont-member)|If provided, specifies whether to apply font formatting to the table of the specified format.|
+||[applyHeadingRows](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applyheadingrows-member)|If provided, specifies whether to format the first row as a header row of the specified format.|
+||[applyLastColumn](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applylastcolumn-member)|If provided, specifies whether to apply special formatting to the last column of the specified format.|
+||[applyLastRow](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applylastrow-member)|If provided, specifies whether to apply special formatting to the last row of the specified format.|
+||[applyShading](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-applyshading-member)|If provided, specifies whether to apply shading to the table of the specified format.|
+||[autoFit](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-autofit-member)|If provided, specifies whether to automatically resize the table to fit the contents.|
+||[autoFitBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-autofitbehavior-member)|If provided, specifies the auto-fit behavior for the table.|
+||[defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-defaulttablebehavior-member)|If provided, specifies whether Microsoft Word automatically resizes cells in a table to fit the contents.|
+||[format](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-format-member)|If provided, specifies a preset format to apply to the table.|
+||[initialColumnWidth](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-initialcolumnwidth-member)|If provided, specifies the initial width of each column in the table, in points.|
+||[numColumns](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-numcolumns-member)|If provided, specifies the number of columns in the table.|
+||[numRows](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-numrows-member)|If provided, specifies the number of rows in the table.|
+||[separator](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-separator-member)|If provided, specifies the character used to separate text into cells.|
+|[SelectionDeleteOptions](/javascript/api/word/word.selectiondeleteoptions)|[count](/javascript/api/word/word.selectiondeleteoptions#word-word-selectiondeleteoptions-count-member)|If provided, specifies the number of units to be deleted.|
+||[unit](/javascript/api/word/word.selectiondeleteoptions#word-word-selectiondeleteoptions-unit-member)|If provided, specifies the unit by which the collapsed selection is to be deleted.|
+|[SelectionGoToOptions](/javascript/api/word/word.selectiongotooptions)|[count](/javascript/api/word/word.selectiongotooptions#word-word-selectiongotooptions-count-member)|If provided, specifies the number of the item in the document.|
+||[direction](/javascript/api/word/word.selectiongotooptions#word-word-selectiongotooptions-direction-member)|If provided, specifies the direction the range or selection is moved to.|
+||[item](/javascript/api/word/word.selectiongotooptions#word-word-selectiongotooptions-item-member)|If provided, specifies the kind of item the range or selection is moved to.|
+||[name](/javascript/api/word/word.selectiongotooptions#word-word-selectiongotooptions-name-member)|If provided, specifies the name if the `item` property is set to Word.GoToItem type `bookmark`, `comment`, `field`, or `object`.|
+|[SelectionInsertCrossReferenceOptions](/javascript/api/word/word.selectioninsertcrossreferenceoptions)|[includePosition](/javascript/api/word/word.selectioninsertcrossreferenceoptions#word-word-selectioninsertcrossreferenceoptions-includeposition-member)|If provided, specifies whether to include position.|
+||[insertAsHyperlink](/javascript/api/word/word.selectioninsertcrossreferenceoptions#word-word-selectioninsertcrossreferenceoptions-insertashyperlink-member)|If provided, specifies whether to insert the cross-reference as a hyperlink.|
+||[separateNumbers](/javascript/api/word/word.selectioninsertcrossreferenceoptions#word-word-selectioninsertcrossreferenceoptions-separatenumbers-member)|If provided, specifies whether to use a separator to separate the numbers from the associated text.|
+||[separatorString](/javascript/api/word/word.selectioninsertcrossreferenceoptions#word-word-selectioninsertcrossreferenceoptions-separatorstring-member)|If provided, specifies the string to use as a separator if the `separateNumbers` parameter is set to `true` when the `Selection.insertCrossReference` method is called.|
+|[SelectionInsertDateTimeOptions](/javascript/api/word/word.selectioninsertdatetimeoptions)|[calendarType](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-calendartype-member)|If provided, specifies the calendar type to use when displaying the date or time.|
+||[dateLanguage](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-datelanguage-member)|If provided, specifies the language in which to display the date or time.|
+||[dateTimeFormat](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-datetimeformat-member)|If provided, specifies the format to be used for displaying the date or time, or both.|
+||[insertAsField](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-insertasfield-member)|If provided, specifies whether to insert the specified information as a {@link https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90 | TIME field}.|
+||[insertAsFullWidth](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-insertasfullwidth-member)|If provided, specifies whether to insert the specified information as full-width (double-byte) digits.|
+|[SelectionInsertFormulaOptions](/javascript/api/word/word.selectioninsertformulaoptions)|[formula](/javascript/api/word/word.selectioninsertformulaoptions#word-word-selectioninsertformulaoptions-formula-member)|If provided, specifies the mathematical formula you want the {@link https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d | = (Formula) field} to evaluate.|
+||[numberFormat](/javascript/api/word/word.selectioninsertformulaoptions#word-word-selectioninsertformulaoptions-numberformat-member)|If provided, specifies the format for the result of the `= (Formula)` field.|
+|[SelectionInsertSymbolOptions](/javascript/api/word/word.selectioninsertsymboloptions)|[bias](/javascript/api/word/word.selectioninsertsymboloptions#word-word-selectioninsertsymboloptions-bias-member)|If provided, specifies the font bias for symbols.|
+||[font](/javascript/api/word/word.selectioninsertsymboloptions#word-word-selectioninsertsymboloptions-font-member)|If provided, specifies the name of the font that contains the symbol.|
+||[unicode](/javascript/api/word/word.selectioninsertsymboloptions#word-word-selectioninsertsymboloptions-unicode-member)|If provided, specifies whether the character is Unicode.|
+|[SelectionMoveLeftRightOptions](/javascript/api/word/word.selectionmoveleftrightoptions)|[count](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-count-member)|If provided, specifies the number of units the selection is to be moved.|
+||[extend](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-extend-member)|If provided, specifies the type of movement.|
+||[unit](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-unit-member)|If provided, specifies the unit by which the selection is to be moved.|
+|[SelectionMoveOptions](/javascript/api/word/word.selectionmoveoptions)|[count](/javascript/api/word/word.selectionmoveoptions#word-word-selectionmoveoptions-count-member)|If provided, specifies the number of units by which the range or selection is to be moved.|
+||[unit](/javascript/api/word/word.selectionmoveoptions#word-word-selectionmoveoptions-unit-member)|If provided, specifies the unit by which to move the ending character position.|
+|[SelectionMoveStartEndOptions](/javascript/api/word/word.selectionmovestartendoptions)|[count](/javascript/api/word/word.selectionmovestartendoptions#word-word-selectionmovestartendoptions-count-member)|If provided, specifies the number of units to move.|
+||[unit](/javascript/api/word/word.selectionmovestartendoptions#word-word-selectionmovestartendoptions-unit-member)|If provided, specifies the unit by which the selection's start or end position (per the calling method) is to be moved.|
+|[SelectionMoveUpDownOptions](/javascript/api/word/word.selectionmoveupdownoptions)|[count](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-count-member)|If provided, specifies the number of units the selection is to be moved.|
+||[extend](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-extend-member)|If provided, specifies the type of movement.|
+||[unit](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-unit-member)|If provided, specifies the unit by which to move the selection.|
+|[SelectionNextOptions](/javascript/api/word/word.selectionnextoptions)|[count](/javascript/api/word/word.selectionnextoptions#word-word-selectionnextoptions-count-member)|If provided, specifies the number of units by which you want to move ahead.|
+||[unit](/javascript/api/word/word.selectionnextoptions#word-word-selectionnextoptions-unit-member)|If provided, specifies the type of units by which to move the selection.|
+|[SelectionPreviousOptions](/javascript/api/word/word.selectionpreviousoptions)|[count](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-count-member)|If provided, specifies the number of units by which you want to move.|
+||[unit](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-unit-member)|If provided, specifies the type of unit by which to move the selection.|
 |[ShadingUniversal](/javascript/api/word/word.shadinguniversal)|[backgroundPatternColor](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolor-member)|Specifies the color that's applied to the background of the `ShadingUniversal` object.|
 ||[backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member)|Specifies the color that's applied to the background of the `ShadingUniversal` object.|
 ||[foregroundPatternColor](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolor-member)|Specifies the color that's applied to the foreground of the `ShadingUniversal` object.|
@@ -562,6 +989,61 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[listLevelNumber](/javascript/api/word/word.style#word-word-style-listlevelnumber-member)|Returns the list level for the style.|
 ||[locked](/javascript/api/word/word.style#word-word-style-locked-member)|Specifies whether the style cannot be changed or edited.|
 ||[noSpaceBetweenParagraphsOfSameStyle](/javascript/api/word/word.style#word-word-style-nospacebetweenparagraphsofsamestyle-member)|Specifies whether to remove spacing between paragraphs that are formatted using the same style.|
+|[TabStop](/javascript/api/word/word.tabstop)|[alignment](/javascript/api/word/word.tabstop#word-word-tabstop-alignment-member)|Gets a `TabAlignment` value that represents the alignment for the tab stop.|
+||[clear()](/javascript/api/word/word.tabstop#word-word-tabstop-clear-member(1))|Removes this custom tab stop.|
+||[customTab](/javascript/api/word/word.tabstop#word-word-tabstop-customtab-member)|Gets whether this tab stop is a custom tab stop.|
+||[leader](/javascript/api/word/word.tabstop#word-word-tabstop-leader-member)|Gets a `TabLeader` value that represents the leader for this `TabStop` object.|
+||[next](/javascript/api/word/word.tabstop#word-word-tabstop-next-member)|Gets the next tab stop in the collection.|
+||[position](/javascript/api/word/word.tabstop#word-word-tabstop-position-member)|Gets the position of the tab stop relative to the left margin.|
+||[previous](/javascript/api/word/word.tabstop#word-word-tabstop-previous-member)|Gets the previous tab stop in the collection.|
+|[TabStopAddOptions](/javascript/api/word/word.tabstopaddoptions)|[alignment](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-alignment-member)|If provided, specifies the alignment of the tab stop.|
+||[leader](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-leader-member)|If provided, specifies the leader character for the tab stop.|
+|[TabStopCollection](/javascript/api/word/word.tabstopcollection)|[add(position: number, options?: Word.TabStopAddOptions)](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))|Returns a `TabStop` object that represents a custom tab stop added to the paragraph.|
+||[after(Position: number)](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1))|Returns the next `TabStop` object to the right of the specified position.|
+||[before(Position: number)](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1))|Returns the next `TabStop` object to the left of the specified position.|
+||[clearAll()](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-clearall-member(1))|Clears all the custom tab stops from the paragraph.|
+||[getItem(index: number)](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-getitem-member(1))|Gets a `TabStop` object by its index in the collection.|
+||[items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)|Gets the loaded child items in this collection.|
+|[Table](/javascript/api/word/word.table)|[applyStyleDirectFormatting(styleName: string)](/javascript/api/word/word.table#word-word-table-applystyledirectformatting-member(1))|Applies the specified style but maintains any formatting that a user directly applies.|
+||[autoFitBehavior(behavior: Word.AutoFitBehavior)](/javascript/api/word/word.table#word-word-table-autofitbehavior-member(1))|Determines how Microsoft Word resizes a table when the AutoFit feature is used.|
+||[autoFormat(options?: Word.TableAutoFormatOptions)](/javascript/api/word/word.table#word-word-table-autoformat-member(1))|Applies a predefined look to a table.|
+||[columns](/javascript/api/word/word.table#word-word-table-columns-member)|Returns the `TableColumnCollection` object that represents the columns in the table.|
+||[convertToText(options?: Word.TableConvertToTextOptions)](/javascript/api/word/word.table#word-word-table-converttotext-member(1))|Converts a table to text.|
+||[description](/javascript/api/word/word.table#word-word-table-description-member)|Specifies the description of the table.|
+||[reapplyAutoFormat()](/javascript/api/word/word.table#word-word-table-reapplyautoformat-member(1))|Updates the table with the characteristics of the predefined table format set when the `autoFormat` method was called.|
+||[shading](/javascript/api/word/word.table#word-word-table-shading-member)|Returns the `ShadingUniversal` object that represents the shading of the table.|
+||[sort(options?: Word.TableSortOptions)](/javascript/api/word/word.table#word-word-table-sort-member(1))|Sorts the specified table.|
+||[title](/javascript/api/word/word.table#word-word-table-title-member)|Specifies the title of the table.|
+|[TableAutoFormatOptions](/javascript/api/word/word.tableautoformatoptions)|[applyBorders](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applyborders-member)|If provided, specifies whether to apply borders of the specified format.|
+||[applyColor](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applycolor-member)|If provided, specifies whether to apply color of the specified format.|
+||[applyFirstColumn](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applyfirstcolumn-member)|If provided, specifies whether to apply first column formatting of the specified format.|
+||[applyFont](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applyfont-member)|If provided, specifies whether to apply font of the specified format.|
+||[applyHeadingRows](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applyheadingrows-member)|If provided, specifies whether to apply heading row formatting of the specified format.|
+||[applyLastColumn](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applylastcolumn-member)|If provided, specifies whether to apply last column formatting of the specified format.|
+||[applyLastRow](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applylastrow-member)|If provided, specifies whether to apply last row formatting of the specified format.|
+||[applyShading](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-applyshading-member)|If provided, specifies whether to apply shading of the specified format.|
+||[autoFit](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-autofit-member)|If provided, specifies whether to decrease the width of the table columns as much as possible without changing the way text wraps in the cells.|
+||[format](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-format-member)|If provided, specifies the format to apply.|
+|[TableCell](/javascript/api/word/word.tablecell)|[autoSum()](/javascript/api/word/word.tablecell#word-word-tablecell-autosum-member(1))|Inserts a {@link https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d | = (Formula) field} that calculates and displays the sum of the values in table cells above or to the left of the cell specified in the expression.|
+||[column](/javascript/api/word/word.tablecell#word-word-tablecell-column-member)|Returns the `TableColumn` object that represents the table column that contains this cell.|
+||[delete(shiftCells: any)](/javascript/api/word/word.tablecell#word-word-tablecell-delete-member(1))|Deletes the table cell and optionally controls how the remaining cells are shifted.|
+||[formula(options?: Word.TableCellFormulaOptions)](/javascript/api/word/word.tablecell#word-word-tablecell-formula-member(1))|Inserts a {@link https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d | = (Formula) field} that contains the specified formula into a table cell.|
+||[merge(mergeTo: Word.TableCell)](/javascript/api/word/word.tablecell#word-word-tablecell-merge-member(1))|Merges this table cell with the specified table cell.|
+||[select()](/javascript/api/word/word.tablecell#word-word-tablecell-select-member(1))|Selects the table cell.|
+||[shading](/javascript/api/word/word.tablecell#word-word-tablecell-shading-member)|Returns the `ShadingUniversal` object that represents the shading of the table cell.|
+|[TableCellCollection](/javascript/api/word/word.tablecellcollection)|[autoFit()](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-autofit-member(1))|Changes the width of a table column to accommodate the width of the text without changing the way text wraps in the cells.|
+||[delete(shiftCells?: Word.DeleteCells)](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-delete-member(1))|Deletes the table cells and optionally controls how the remaining cells are shifted.|
+||[distributeHeight()](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-distributeheight-member(1))|Adjusts the height of the specified cells so that they are equal.|
+||[distributeWidth()](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-distributewidth-member(1))|Adjusts the width of the specified cells so that they are equal.|
+||[merge()](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-merge-member(1))|Merges the specified cells into a single cell.|
+||[setHeight(rowHeight: number, heightRule: Word.RowHeightRule)](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setheight-member(1))|Sets the height of the cells in a table.|
+||[setWidth(columnWidth: number, rulerStyle: Word.RulerStyle)](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setwidth-member(1))|Sets the width of the cells in a table.|
+||[split(options?: Word.TableCellCollectionSplitOptions)](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-split-member(1))|Splits this range of table cells.|
+|[TableCellCollectionSplitOptions](/javascript/api/word/word.tablecellcollectionsplitoptions)|[mergeBeforeSplit](/javascript/api/word/word.tablecellcollectionsplitoptions#word-word-tablecellcollectionsplitoptions-mergebeforesplit-member)|If provided, specifies whether to merge the cells with one another before splitting them.|
+||[numColumns](/javascript/api/word/word.tablecellcollectionsplitoptions#word-word-tablecellcollectionsplitoptions-numcolumns-member)|If provided, specifies the number of columns that the group of cells is to be split into.|
+||[numRows](/javascript/api/word/word.tablecellcollectionsplitoptions#word-word-tablecellcollectionsplitoptions-numrows-member)|If provided, specifies the number of rows that the group of cells is to be split into.|
+|[TableCellFormulaOptions](/javascript/api/word/word.tablecellformulaoptions)|[formula](/javascript/api/word/word.tablecellformulaoptions#word-word-tablecellformulaoptions-formula-member)|The mathematical formula you want the = (Formula) field to evaluate.|
+||[numFormat](/javascript/api/word/word.tablecellformulaoptions#word-word-tablecellformulaoptions-numformat-member)|A format for the result of the {@link https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d | = (Formula) field}.|
 |[TableColumn](/javascript/api/word/word.tablecolumn)|[autoFit()](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-autofit-member(1))|Changes the width of the table column to accommodate the width of the text without changing the way text wraps in the cells.|
 ||[borders](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the table column.|
 ||[columnIndex](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-columnindex-member)|Returns the position of this column in a collection.|
@@ -583,6 +1065,142 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[items](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-items-member)|Gets the loaded child items in this collection.|
 ||[select()](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-select-member(1))|Selects the specified table columns.|
 ||[setWidth(columnWidth: number, rulerStyle: Word.RulerStyle)](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-setwidth-member(1))|Sets the width of columns in a table.|
+|[TableConvertToTextOptions](/javascript/api/word/word.tableconverttotextoptions)|[nestedTables](/javascript/api/word/word.tableconverttotextoptions#word-word-tableconverttotextoptions-nestedtables-member)|If provided, specifies whether to convert the nested tables to text.|
+||[separator](/javascript/api/word/word.tableconverttotextoptions#word-word-tableconverttotextoptions-separator-member)|If provided, specifies the character that delimits the converted columns (paragraph marks delimit the converted rows).|
+|[TableOfAuthorities](/javascript/api/word/word.tableofauthorities)|[bookmark](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-bookmark-member)|Specifies the name of the bookmark from which to collect table of authorities entries.|
+||[category](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-category-member)|Specifies the category of entries to be included in the table of authorities.|
+||[delete()](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-delete-member(1))|Deletes this table of authorities.|
+||[entrySeparator](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-entryseparator-member)|Specifies a separator of up to five characters.|
+||[isCategoryHeaderIncluded](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-iscategoryheaderincluded-member)|Specifies whether the category name for a group of entries appears in the table of authorities.|
+||[isEntryFormattingKept](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-isentryformattingkept-member)|Specifies whether the entries in the table of authorities are displayed with their formatting in the table.|
+||[isPassimUsed](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-ispassimused-member)|Specifies whether references to the same authority that are repeated on five or more pages are replaced with "Passim".|
+||[pageNumberSeparator](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-pagenumberseparator-member)|Specifies a separator of up to five characters.|
+||[pageRangeSeparator](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-pagerangeseparator-member)|Specifies a separator of up to five characters.|
+||[range](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-range-member)|Gets the portion of a document that is this table of authorities.|
+||[sequenceName](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-sequencename-member)|Specifies the {@link https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be | Sequence (SEQ) field} identifier for the table of authorities.|
+||[sequenceSeparator](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-sequenceseparator-member)|Specifies a separator of up to five characters.|
+||[tabLeader](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-tableader-member)|Specifies the leader character that appears between entries and their associated page numbers in the table of authorities.|
+|[TableOfAuthoritiesAddOptions](/javascript/api/word/word.tableofauthoritiesaddoptions)|[bookmark](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-bookmark-member)|If provided, specifies the string name of the bookmark from which to collect entries for a table of authorities.|
+||[category](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-category-member)|If provided, specifies the category of entries to include in a table of authorities.|
+||[entrySeparator](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-entryseparator-member)|If provided, specifies a separator of up to five characters.|
+||[includeCategoryHeader](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-includecategoryheader-member)|If provided, specifies whether the category name for each group of entries appears in a table of authorities (e.g., "Cases").|
+||[keepEntryFormatting](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-keepentryformatting-member)|If provided, specifies whether the entries in a table of authorities are displayed with their formatting in the table.|
+||[pageNumberSeparator](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-pagenumberseparator-member)|If provided, specifies a separator of up to five characters.|
+||[pageRangeSeparator](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-pagerangeseparator-member)|If provided, specifies a separator of up to five characters.|
+||[sequenceName](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-sequencename-member)|If provided, specifies the string that identifies the Sequence (SEQ) field identifier for a table of authorities.|
+||[sequenceSeparator](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-sequenceseparator-member)|If provided, specifies a separator of up to five characters.|
+||[usePassim](/javascript/api/word/word.tableofauthoritiesaddoptions#word-word-tableofauthoritiesaddoptions-usepassim-member)|If provided, specifies whether references to the same authority that are repeated on five or more pages are replaced with "Passim".|
+|[TableOfAuthoritiesCategory](/javascript/api/word/word.tableofauthoritiescategory)|[name](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-name-member)|Specifies the name of this table of authorities category.|
+|[TableOfAuthoritiesCategoryCollection](/javascript/api/word/word.tableofauthoritiescategorycollection)|[getCount()](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getitemat-member(1))|Returns a `TableOfAuthoritiesCategory` object that represents the specified item in the collection.|
+||[items](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-items-member)|Gets the loaded child items in this collection.|
+|[TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection)|[add(range: Word.Range, options?: Word.TableOfAuthoritiesAddOptions)](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1))|Adds a table of authorities to the document at the specified range.|
+||[items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)|Gets the loaded child items in this collection.|
+||[markAllCitations(shortCitation: string, options?: Word.TableOfAuthoritiesMarkCitationOptions)](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markallcitations-member(1))|Inserts a {@link https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c | Table of Authorities Entry (TA) field} after all instances of the specified citation text.|
+||[markCitation(range: Word.Range, shortCitation: string, options?: Word.TableOfAuthoritiesMarkCitationOptions)](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))|Inserts a {@link https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c | Table of Authorities Entry (TA) field} at the specified range.|
+||[selectNextCitation(shortCitation: string)](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-selectnextcitation-member(1))|Finds and selects the next instance of the specified citation text.|
+|[TableOfAuthoritiesMarkCitationOptions](/javascript/api/word/word.tableofauthoritiesmarkcitationoptions)|[category](/javascript/api/word/word.tableofauthoritiesmarkcitationoptions#word-word-tableofauthoritiesmarkcitationoptions-category-member)|If provided, specifies the category number to be associated with the entry.|
+||[longCitation](/javascript/api/word/word.tableofauthoritiesmarkcitationoptions#word-word-tableofauthoritiesmarkcitationoptions-longcitation-member)|If provided, specifies the long citation for the entry as it will appear in a table of authorities.|
+||[longCitationAutoText](/javascript/api/word/word.tableofauthoritiesmarkcitationoptions#word-word-tableofauthoritiesmarkcitationoptions-longcitationautotext-member)|If provided, specifies the name of the AutoText entry that contains the text of the long citation as it will appear in a table of authorities.|
+|[TableOfContents](/javascript/api/word/word.tableofcontents)|[additionalHeadingStyles](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-additionalheadingstyles-member)|Gets the additional styles used for the table of contents.|
+||[areBuiltInHeadingStylesUsed](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-arebuiltinheadingstylesused-member)|Specifies whether built-in heading styles are used for the table of contents.|
+||[areFieldsUsed](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-arefieldsused-member)|Specifies whether {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) fields} are included in the table of contents.|
+||[areHyperlinksUsedOnWeb](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-arehyperlinksusedonweb-member)|Specifies whether entries in the table of contents should be formatted as hyperlinks when publishing to the web.|
+||[arePageNumbersHiddenOnWeb](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-arepagenumbershiddenonweb-member)|Specifies whether the page numbers in the table of contents should be hidden when publishing to the web.|
+||[arePageNumbersIncluded](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-arepagenumbersincluded-member)|Specifies whether page numbers are included in the table of contents.|
+||[arePageNumbersRightAligned](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-arepagenumbersrightaligned-member)|Specifies whether page numbers are aligned with the right margin in the table of contents.|
+||[delete()](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-delete-member(1))|Deletes this table of contents.|
+||[lowerHeadingLevel](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-lowerheadinglevel-member)|Specifies the ending heading level for the table of contents.|
+||[range](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-range-member)|Gets the portion of a document that is this table of contents.|
+||[tabLeader](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tableader-member)|Specifies the character between entries and their page numbers in the table of contents.|
+||[tableId](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tableid-member)|Specifies a one-letter identifier from {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | TC fields} that's used for the table of contents.|
+||[updatePageNumbers()](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-updatepagenumbers-member(1))|Updates the entire table of contents.|
+||[upperHeadingLevel](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-upperheadinglevel-member)|Specifies the starting heading level for the table of contents.|
+|[TableOfContentsAddOptions](/javascript/api/word/word.tableofcontentsaddoptions)|[addedStyles](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-addedstyles-member)|If provided, specifies the string names of additional styles to use for the table of contents.|
+||[hidePageNumbersOnWeb](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-hidepagenumbersonweb-member)|If provided, specifies whether the page numbers in a table of contents should be hidden when publishing to the web.|
+||[includePageNumbers](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-includepagenumbers-member)|If provided, specifies whether to include page numbers in a table of contents.|
+||[lowerHeadingLevel](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-lowerheadinglevel-member)|If provided, specifies the ending heading level for a table of contents and must be a value from 1 to 9.|
+||[rightAlignPageNumbers](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-rightalignpagenumbers-member)|If provided, specifies whether page numbers in a table of contents are aligned with the right margin.|
+||[tableId](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-tableid-member)|If provided, specifies a one-letter identifier from {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | TC fields} that's used for a table of contents.|
+||[upperHeadingLevel](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-upperheadinglevel-member)|If provided, specifies the starting heading level for a table of contents and must be a value from 1 to 9.|
+||[useBuiltInHeadingStyles](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-usebuiltinheadingstyles-member)|If provided, specifies whether to use built-in heading styles to create a table of contents.|
+||[useFields](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-usefields-member)|If provided, specifies whether {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) fields} are used to create a table of contents.|
+||[useHyperlinksOnWeb](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-usehyperlinksonweb-member)|If provided, specifies whether entries in a table of contents should be formatted as hyperlinks when the document is published to the web.|
+||[useOutlineLevels](/javascript/api/word/word.tableofcontentsaddoptions#word-word-tableofcontentsaddoptions-useoutlinelevels-member)|If provided, specifies whether to use outline levels to create a table of contents.|
+|[TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection)|[add(range: Word.Range, options?: Word.TableOfContentsAddOptions)](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-add-member(1))|Adds a table of contents to the document at the specified range.|
+||[items](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-items-member)|Gets the loaded child items in this collection.|
+||[markTocEntry(range: Word.Range, options?: Word.TableOfContentsMarkEntryOptions)](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))|Inserts a {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) field} after the specified range.|
+|[TableOfContentsMarkEntryOptions](/javascript/api/word/word.tableofcontentsmarkentryoptions)|[entry](/javascript/api/word/word.tableofcontentsmarkentryoptions#word-word-tableofcontentsmarkentryoptions-entry-member)|If provided, specifies the text that appears in a table of contents or table of figures.|
+||[entryAutoText](/javascript/api/word/word.tableofcontentsmarkentryoptions#word-word-tableofcontentsmarkentryoptions-entryautotext-member)|If provided, specifies the AutoText entry name that includes text for the table of figures, or table of contents.|
+||[level](/javascript/api/word/word.tableofcontentsmarkentryoptions#word-word-tableofcontentsmarkentryoptions-level-member)|If provided, specifies the level for the entry in a table of contents or table of figures and should be a value from 1 to 9.|
+||[tableId](/javascript/api/word/word.tableofcontentsmarkentryoptions#word-word-tableofcontentsmarkentryoptions-tableid-member)|If provided, specifies a one-letter identifier for a table of contents or table of figures (e.g., "i" for an "illustration").|
+|[TableOfFigures](/javascript/api/word/word.tableoffigures)|[additionalHeadingStyles](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-additionalheadingstyles-member)|Gets the additional styles used for the table of figures.|
+||[areBuiltInHeadingStylesUsed](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-arebuiltinheadingstylesused-member)|Specifies whether built-in heading styles are used for the table of figures.|
+||[areFieldsUsed](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-arefieldsused-member)|Specifies whether {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) fields} are included in the table of figures.|
+||[areHyperlinksUsedOnWeb](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-arehyperlinksusedonweb-member)|Specifies whether entries in the table of figures should be formatted as hyperlinks when publishing to the web.|
+||[arePageNumbersHiddenOnWeb](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-arepagenumbershiddenonweb-member)|Specifies whether the page numbers in the table of figures should be hidden when publishing to the web.|
+||[arePageNumbersIncluded](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-arepagenumbersincluded-member)|Specifies whether page numbers are included in the table of figures.|
+||[arePageNumbersRightAligned](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-arepagenumbersrightaligned-member)|Specifies whether page numbers are aligned with the right margin in the table of figures.|
+||[captionLabel](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-captionlabel-member)|Specifies the label that identifies the items to be included in the table of figures.|
+||[delete()](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-delete-member(1))|Deletes this table of figures.|
+||[isLabelIncluded](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-islabelincluded-member)|Specifies whether the caption label and caption number are included in the table of figures.|
+||[lowerHeadingLevel](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-lowerheadinglevel-member)|Specifies the ending heading level for the table of figures.|
+||[range](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-range-member)|Gets the portion of a document that is this table of figures.|
+||[tabLeader](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-tableader-member)|Specifies the character between entries and their page numbers in the table of figures.|
+||[tableId](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-tableid-member)|Specifies a one-letter identifier from {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | TC fields} that's used for the table of figures.|
+||[updatePageNumbers()](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-updatepagenumbers-member(1))|Updates the entire table of figures.|
+||[upperHeadingLevel](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-upperheadinglevel-member)|Specifies the starting heading level for the table of figures.|
+|[TableOfFiguresAddOptions](/javascript/api/word/word.tableoffiguresaddoptions)|[addedStyles](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-addedstyles-member)|If provided, specifies the string names of additional styles to use for the table of figures.|
+||[captionLabel](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-captionlabel-member)|If provided, specifies the label that identifies the items to include in a table of figures.|
+||[hidePageNumbersOnWeb](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-hidepagenumbersonweb-member)|If provided, specifies whether the page numbers in the table of figures should be hidden when publishing to the web.|
+||[includeLabel](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-includelabel-member)|If provided, specifies whether to include the caption label and caption number in a table of figures.|
+||[includePageNumbers](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-includepagenumbers-member)|If provided, specifies whether page numbers are included in a table of figures.|
+||[lowerHeadingLevel](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-lowerheadinglevel-member)|If provided, specifies the ending heading level for a table of figures when `useBuiltInHeadingStyles` is set to `true`.|
+||[rightAlignPageNumbers](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-rightalignpagenumbers-member)|If provided, specifies whether to align page numbers with the right margin in a table of figures.|
+||[tableId](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-tableid-member)|If provided, specifies a one-letter identifier from {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | TC fields} that's used for a table of figures.|
+||[upperHeadingLevel](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-upperheadinglevel-member)|If provided, specifies the starting heading level for a table of figures when `useBuiltInHeadingStyles` is set to `true`.|
+||[useBuiltInHeadingStyles](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-usebuiltinheadingstyles-member)|If provided, specifies whether to use built-in heading styles to create a table of figures.|
+||[useFields](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-usefields-member)|If provided, specifies whether to use {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) fields} to create a table of figures.|
+||[useHyperlinksOnWeb](/javascript/api/word/word.tableoffiguresaddoptions#word-word-tableoffiguresaddoptions-usehyperlinksonweb-member)|If provided, specifies whether entries in a table of figures should be formatted as hyperlinks when the document is published to the web.|
+|[TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection)|[add(range: Word.Range, options?: Word.TableOfFiguresAddOptions)](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-add-member(1))|Adds a table of figures to the document at the specified range.|
+||[items](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-items-member)|Gets the loaded child items in this collection.|
+||[markTocEntry(range: Word.Range, options?: Word.TableOfContentsMarkEntryOptions)](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))|Inserts a {@link https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3 | Table of Contents Entry (TC) field} after the specified range for marking entries in a table of figures.|
+|[TableRow](/javascript/api/word/word.tablerow)|[convertToText(options?: Word.TableConvertToTextOptions)](/javascript/api/word/word.tablerow#word-word-tablerow-converttotext-member(1))|Converts the table row to text.|
+||[range](/javascript/api/word/word.tablerow#word-word-tablerow-range-member)|Returns the `Range` object that represents the table row.|
+||[setHeight(rowHeight: number, heightRule: Word.RowHeightRule)](/javascript/api/word/word.tablerow#word-word-tablerow-setheight-member(1))|Sets the height of the row.|
+||[setLeftIndent(leftIndent: number, rulerStyle: Word.RulerStyle)](/javascript/api/word/word.tablerow#word-word-tablerow-setleftindent-member(1))|Sets the left indent for the table row.|
+||[shading](/javascript/api/word/word.tablerow#word-word-tablerow-shading-member)|Returns the `ShadingUniversal` object that represents the shading of the table row.|
+|[TableRowCollection](/javascript/api/word/word.tablerowcollection)|[convertToText(options?: Word.TableConvertToTextOptions)](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-converttotext-member(1))|Converts rows in a table to text.|
+||[delete()](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-delete-member(1))|Deletes the table rows.|
+||[distributeHeight()](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-distributeheight-member(1))|Adjusts the height of the rows so that they're equal.|
+||[select()](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-select-member(1))|Selects the table rows.|
+||[setHeight(rowHeight: number, heightRule: Word.RowHeightRule)](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setheight-member(1))|Sets the height of the cells in a table.|
+||[setLeftIndent(leftIndent: number, rulerStyle: Word.RulerStyle)](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setleftindent-member(1))|Sets the left indent for the table row.|
+|[TableSortOptions](/javascript/api/word/word.tablesortoptions)|[bidirectionalSort](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-bidirectionalsort-member)|If provided, specifies whether to use bidirectional sort.|
+||[caseSensitive](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-casesensitive-member)|If provided, specifies whether sorting is case-sensitive.|
+||[excludeHeader](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-excludeheader-member)|If provided, specifies whether to exclude the header row from the sort operation.|
+||[fieldNumber2](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-fieldnumber2-member)|If provided, specifies the second field to sort by.|
+||[fieldNumber3](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-fieldnumber3-member)|If provided, specifies the third field to sort by.|
+||[fieldNumber](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-fieldnumber-member)|If provided, specifies the first field to sort by.|
+||[ignoreArabicThe](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-ignorearabicthe-member)|If provided, specifies whether to ignore Arabic character alef lam when sorting right-to-left language text.|
+||[ignoreDiacritics](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-ignorediacritics-member)|If provided, specifies whether to ignore bidirectional control characters when sorting right-to-left language text.|
+||[ignoreHebrew](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-ignorehebrew-member)|If provided, specifies whether to ignore Hebrew characters when sorting right-to-left language text.|
+||[ignoreKashida](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-ignorekashida-member)|If provided, specifies whether to ignore kashida when sorting right-to-left language text.|
+||[languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)|If provided, specifies the sorting language.|
+||[sortFieldType2](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortfieldtype2-member)|If provided, specifies the type of the second field to sort by.|
+||[sortFieldType3](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortfieldtype3-member)|If provided, specifies the type of the third field to sort by.|
+||[sortFieldType](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortfieldtype-member)|If provided, specifies the type of the first field to sort by.|
+||[sortOrder2](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortorder2-member)|If provided, specifies the sort order of the second field to sort by.|
+||[sortOrder3](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortorder3-member)|If provided, specifies the sort order of the third field to sort by.|
+||[sortOrder](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortorder-member)|If provided, specifies the sort order of the first field to sort by.|
+|[TableStyle](/javascript/api/word/word.tablestyle)|[borders](/javascript/api/word/word.tablestyle#word-word-tablestyle-borders-member)|Returns a `BorderUniversalCollection` that represents all the borders for the table.|
+||[columnStripe](/javascript/api/word/word.tablestyle#word-word-tablestyle-columnstripe-member)|Specifies the number of columns in the banding when a style specifies odd- or even-column banding.|
+||[condition(conditionCode: Word.ConditionCode)](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))|Returns a `ConditionalStyle` object that represents special style formatting for a portion of a table.|
+||[isBreakAcrossPagesAllowed](/javascript/api/word/word.tablestyle#word-word-tablestyle-isbreakacrosspagesallowed-member)|Specifies whether Microsoft Word allows to break the specified table across pages.|
+||[leftIndent](/javascript/api/word/word.tablestyle#word-word-tablestyle-leftindent-member)|Specifies the left indent value (in points) for the rows in the table style.|
+||[rowStripe](/javascript/api/word/word.tablestyle#word-word-tablestyle-rowstripe-member)|Specifies the number of rows to include in the banding when the style specifies odd- or even-row banding.|
+||[shading](/javascript/api/word/word.tablestyle#word-word-tablestyle-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the table style.|
+||[tableDirection](/javascript/api/word/word.tablestyle#word-word-tablestyle-tabledirection-member)|Specifies the direction in which Microsoft Word orders cells in the table style.|
 |[Template](/javascript/api/word/word.template)|[buildingBlockEntries](/javascript/api/word/word.template#word-word-template-buildingblockentries-member)|Returns a `BuildingBlockEntryCollection` object that represents the collection of building block entries in the template.|
 ||[buildingBlockTypes](/javascript/api/word/word.template#word-word-template-buildingblocktypes-member)|Returns a `BuildingBlockTypeItemCollection` object that represents the collection of building block types that are contained in the template.|
 ||[farEastLineBreakLanguage](/javascript/api/word/word.template#word-word-template-fareastlinebreaklanguage-member)|Specifies the East Asian language to use when breaking lines of text in the document or template.|
@@ -593,6 +1211,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[kerningByAlgorithm](/javascript/api/word/word.template#word-word-template-kerningbyalgorithm-member)|Specifies if Microsoft Word kerns half-width Latin characters and punctuation marks in the document.|
 ||[languageId](/javascript/api/word/word.template#word-word-template-languageid-member)|Specifies a `LanguageId` value that represents the language in the template.|
 ||[languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)|Specifies an East Asian language for the language in the template.|
+||[listTemplates](/javascript/api/word/word.template#word-word-template-listtemplates-member)|Returns a `ListTemplateCollection` object that represents all the list templates in the template.|
 ||[name](/javascript/api/word/word.template#word-word-template-name-member)|Returns only the name of the document template (excluding any path or other location information).|
 ||[noLineBreakAfter](/javascript/api/word/word.template#word-word-template-nolinebreakafter-member)|Specifies the kinsoku characters after which Microsoft Word will not break a line.|
 ||[noLineBreakBefore](/javascript/api/word/word.template#word-word-template-nolinebreakbefore-member)|Specifies the kinsoku characters before which Microsoft Word will not break a line.|
@@ -655,6 +1274,115 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[setPresetCamera(presetCamera: Word.PresetCamera)](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setpresetcamera-member(1))|Sets the camera preset for the shape.|
 ||[setThreeDimensionalFormat(presetThreeDimensionalFormat: Word.PresetThreeDimensionalFormat)](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setthreedimensionalformat-member(1))|Sets the preset extrusion format.|
 ||[z](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-z-member)|Specifies the position on the z-axis for the shape.|
+|[View](/javascript/api/word/word.view)|[areAllNonprintingCharactersDisplayed](/javascript/api/word/word.view#word-word-view-areallnonprintingcharactersdisplayed-member)|Specifies whether all nonprinting characters are displayed.|
+||[areBackgroundsDisplayed](/javascript/api/word/word.view#word-word-view-arebackgroundsdisplayed-member)|Gets whether background colors and images are shown when the document is displayed in print layout view.|
+||[areBookmarksIndicated](/javascript/api/word/word.view#word-word-view-arebookmarksindicated-member)|Gets whether square brackets are displayed at the beginning and end of each bookmark.|
+||[areCommentsDisplayed](/javascript/api/word/word.view#word-word-view-arecommentsdisplayed-member)|Specifies whether Microsoft Word displays the comments in the document.|
+||[areConnectingLinesToRevisionsBalloonDisplayed](/javascript/api/word/word.view#word-word-view-areconnectinglinestorevisionsballoondisplayed-member)|Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.|
+||[areCropMarksDisplayed](/javascript/api/word/word.view#word-word-view-arecropmarksdisplayed-member)|Gets whether crop marks are shown in the corners of pages to indicate where margins are located.|
+||[areDrawingsDisplayed](/javascript/api/word/word.view#word-word-view-aredrawingsdisplayed-member)|Gets whether objects created with the drawing tools are displayed in print layout view.|
+||[areEditableRangesShaded](/javascript/api/word/word.view#word-word-view-areeditablerangesshaded-member)|Specifies whether shading is applied to the ranges in the document that users have permission to modify.|
+||[areFieldCodesDisplayed](/javascript/api/word/word.view#word-word-view-arefieldcodesdisplayed-member)|Specifies whether field codes are displayed.|
+||[areFormatChangesDisplayed](/javascript/api/word/word.view#word-word-view-areformatchangesdisplayed-member)|Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.|
+||[areInkAnnotationsDisplayed](/javascript/api/word/word.view#word-word-view-areinkannotationsdisplayed-member)|Specifies whether handwritten ink annotations are shown or hidden.|
+||[areInsertionsAndDeletionsDisplayed](/javascript/api/word/word.view#word-word-view-areinsertionsanddeletionsdisplayed-member)|Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.|
+||[areLinesWrappedToWindow](/javascript/api/word/word.view#word-word-view-arelineswrappedtowindow-member)|Gets whether lines wrap at the right edge of the document window rather than at the right margin or the right column boundary.|
+||[areObjectAnchorsDisplayed](/javascript/api/word/word.view#word-word-view-areobjectanchorsdisplayed-member)|Gets whether object anchors are displayed next to items that can be positioned in print layout view.|
+||[areOptionalBreaksDisplayed](/javascript/api/word/word.view#word-word-view-areoptionalbreaksdisplayed-member)|Gets whether Microsoft Word displays optional line breaks.|
+||[areOptionalHyphensDisplayed](/javascript/api/word/word.view#word-word-view-areoptionalhyphensdisplayed-member)|Gets whether optional hyphens are displayed.|
+||[areOtherAuthorsVisible](/javascript/api/word/word.view#word-word-view-areotherauthorsvisible-member)|Gets whether other authors' presence should be visible in the document.|
+||[arePageBoundariesDisplayed](/javascript/api/word/word.view#word-word-view-arepageboundariesdisplayed-member)|Gets whether the top and bottom margins and the gray area between pages in the document are displayed.|
+||[areParagraphsMarksDisplayed](/javascript/api/word/word.view#word-word-view-areparagraphsmarksdisplayed-member)|Gets whether paragraph marks are displayed.|
+||[arePicturePlaceholdersDisplayed](/javascript/api/word/word.view#word-word-view-arepictureplaceholdersdisplayed-member)|Gets whether blank boxes are displayed as placeholders for pictures.|
+||[areRevisionsAndCommentsDisplayed](/javascript/api/word/word.view#word-word-view-arerevisionsandcommentsdisplayed-member)|Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.|
+||[areSpacesIndicated](/javascript/api/word/word.view#word-word-view-arespacesindicated-member)|Gets whether space characters are displayed.|
+||[areTableGridlinesDisplayed](/javascript/api/word/word.view#word-word-view-aretablegridlinesdisplayed-member)|Specifies whether table gridlines are displayed.|
+||[areTabsDisplayed](/javascript/api/word/word.view#word-word-view-aretabsdisplayed-member)|Gets whether tab characters are displayed.|
+||[areTextBoundariesDisplayed](/javascript/api/word/word.view#word-word-view-aretextboundariesdisplayed-member)|Gets whether dotted lines are displayed around page margins, text columns, objects, and frames in print layout view.|
+||[collapseAllHeadings()](/javascript/api/word/word.view#word-word-view-collapseallheadings-member(1))|Collapses all the headings in the document.|
+||[collapseOutline(range: Word.Range)](/javascript/api/word/word.view#word-word-view-collapseoutline-member(1))|Collapses the text under the selection or the specified range by one heading level.|
+||[columnWidth](/javascript/api/word/word.view#word-word-view-columnwidth-member)|Specifies the column width in Reading mode.|
+||[expandAllHeadings()](/javascript/api/word/word.view#word-word-view-expandallheadings-member(1))|Expands all the headings in the document.|
+||[expandOutline(range: Word.Range)](/javascript/api/word/word.view#word-word-view-expandoutline-member(1))|Expands the text under the selection by one heading level.|
+||[fieldShading](/javascript/api/word/word.view#word-word-view-fieldshading-member)|Gets on-screen shading for fields.|
+||[isDraft](/javascript/api/word/word.view#word-word-view-isdraft-member)|Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.|
+||[isFirstLineOnlyDisplayed](/javascript/api/word/word.view#word-word-view-isfirstlineonlydisplayed-member)|Specifies whether only the first line of body text is shown in outline view.|
+||[isFormatDisplayed](/javascript/api/word/word.view#word-word-view-isformatdisplayed-member)|Specifies whether character formatting is visible in outline view.|
+||[isFullScreen](/javascript/api/word/word.view#word-word-view-isfullscreen-member)|Specifies whether the window is in full-screen view.|
+||[isHiddenTextDisplayed](/javascript/api/word/word.view#word-word-view-ishiddentextdisplayed-member)|Gets whether text formatted as hidden text is displayed.|
+||[isHighlightingDisplayed](/javascript/api/word/word.view#word-word-view-ishighlightingdisplayed-member)|Gets whether highlight formatting is displayed and printed with the document.|
+||[isInConflictMode](/javascript/api/word/word.view#word-word-view-isinconflictmode-member)|Specifies whether the document is in conflict mode view.|
+||[isInPanning](/javascript/api/word/word.view#word-word-view-isinpanning-member)|Specifies whether Microsoft Word is in Panning mode.|
+||[isInReadingLayout](/javascript/api/word/word.view#word-word-view-isinreadinglayout-member)|Specifies whether the document is being viewed in reading layout view.|
+||[isMailMergeDataView](/javascript/api/word/word.view#word-word-view-ismailmergedataview-member)|Specifies whether mail merge data is displayed instead of mail merge fields.|
+||[isMainTextLayerVisible](/javascript/api/word/word.view#word-word-view-ismaintextlayervisible-member)|Specifies whether the text in the document is visible when the header and footer areas are displayed.|
+||[isPointerShownAsMagnifier](/javascript/api/word/word.view#word-word-view-ispointershownasmagnifier-member)|Specifies whether the pointer is displayed as a magnifying glass in print preview.|
+||[isReadingLayoutActualView](/javascript/api/word/word.view#word-word-view-isreadinglayoutactualview-member)|Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.|
+||[isXmlMarkupVisible](/javascript/api/word/word.view#word-word-view-isxmlmarkupvisible-member)|Specifies whether XML tags are visible in the document.|
+||[markupMode](/javascript/api/word/word.view#word-word-view-markupmode-member)|Specifies the display mode for tracked changes.|
+||[nextHeaderFooter()](/javascript/api/word/word.view#word-word-view-nextheaderfooter-member(1))|Moves to the next header or footer, depending on whether a header or footer is displayed in the view.|
+||[pageColor](/javascript/api/word/word.view#word-word-view-pagecolor-member)|Specifies the page color in Reading mode.|
+||[pageMovementType](/javascript/api/word/word.view#word-word-view-pagemovementtype-member)|Specifies the page movement type.|
+||[previousHeaderFooter()](/javascript/api/word/word.view#word-word-view-previousheaderfooter-member(1))|Moves to the previous header or footer, depending on whether a header or footer is displayed in the view.|
+||[readingLayoutTruncateMargins](/javascript/api/word/word.view#word-word-view-readinglayouttruncatemargins-member)|Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.|
+||[revisionsBalloonSide](/javascript/api/word/word.view#word-word-view-revisionsballoonside-member)|Gets whether Word displays revision balloons in the left or right margin in the document.|
+||[revisionsBalloonWidth](/javascript/api/word/word.view#word-word-view-revisionsballoonwidth-member)|Specifies the width of the revision balloons.|
+||[revisionsBalloonWidthType](/javascript/api/word/word.view#word-word-view-revisionsballoonwidthtype-member)|Specifies how Microsoft Word measures the width of revision balloons.|
+||[revisionsFilter](/javascript/api/word/word.view#word-word-view-revisionsfilter-member)|Gets the instance of a `RevisionsFilter` object.|
+||[seekView](/javascript/api/word/word.view#word-word-view-seekview-member)|Specifies the document element displayed in print layout view.|
+||[showAllHeadings()](/javascript/api/word/word.view#word-word-view-showallheadings-member(1))|Switches between showing all text (headings and body text) and showing only headings.|
+||[showHeading(level: number)](/javascript/api/word/word.view#word-word-view-showheading-member(1))|Shows all headings up to the specified heading level and hides subordinate headings and body text.|
+||[splitSpecial](/javascript/api/word/word.view#word-word-view-splitspecial-member)|Specifies the active window pane.|
+||[type](/javascript/api/word/word.view#word-word-view-type-member)|Specifies the view type.|
+|[Window](/javascript/api/word/word.window)|[activate()](/javascript/api/word/word.window#word-word-window-activate-member(1))|Activates the window.|
+||[areRulersDisplayed](/javascript/api/word/word.window#word-word-window-arerulersdisplayed-member)|Specifies whether rulers are displayed for the window or pane.|
+||[areScreenTipsDisplayed](/javascript/api/word/word.window#word-word-window-arescreentipsdisplayed-member)|Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.|
+||[areThumbnailsDisplayed](/javascript/api/word/word.window#word-word-window-arethumbnailsdisplayed-member)|Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.|
+||[caption](/javascript/api/word/word.window#word-word-window-caption-member)|Specifies the caption text for the window that is displayed in the title bar of the document or application window.|
+||[close(options?: Word.WindowCloseOptions)](/javascript/api/word/word.window#word-word-window-close-member(1))|Closes the window.|
+||[height](/javascript/api/word/word.window#word-word-window-height-member)|Specifies the height of the window (in points).|
+||[horizontalPercentScrolled](/javascript/api/word/word.window#word-word-window-horizontalpercentscrolled-member)|Specifies the horizontal scroll position as a percentage of the document width.|
+||[imeMode](/javascript/api/word/word.window#word-word-window-imemode-member)|Specifies the default start-up mode for the Japanese Input Method Editor (IME).|
+||[index](/javascript/api/word/word.window#word-word-window-index-member)|Gets the position of an item in a collection.|
+||[isActive](/javascript/api/word/word.window#word-word-window-isactive-member)|Specifies whether the window is active.|
+||[isDocumentMapVisible](/javascript/api/word/word.window#word-word-window-isdocumentmapvisible-member)|Specifies whether the document map is visible.|
+||[isEnvelopeVisible](/javascript/api/word/word.window#word-word-window-isenvelopevisible-member)|Specifies whether the email message header is visible in the document window.|
+||[isHorizontalScrollBarDisplayed](/javascript/api/word/word.window#word-word-window-ishorizontalscrollbardisplayed-member)|Specifies whether a horizontal scroll bar is displayed for the window.|
+||[isLeftScrollBarDisplayed](/javascript/api/word/word.window#word-word-window-isleftscrollbardisplayed-member)|Specifies whether the vertical scroll bar appears on the left side of the document window.|
+||[isRightRulerDisplayed](/javascript/api/word/word.window#word-word-window-isrightrulerdisplayed-member)|Specifies whether the vertical ruler appears on the right side of the document window in print layout view.|
+||[isSplit](/javascript/api/word/word.window#word-word-window-issplit-member)|Specifies whether the window is split into multiple panes.|
+||[isVerticalRulerDisplayed](/javascript/api/word/word.window#word-word-window-isverticalrulerdisplayed-member)|Specifies whether a vertical ruler is displayed for the window or pane.|
+||[isVerticalScrollBarDisplayed](/javascript/api/word/word.window#word-word-window-isverticalscrollbardisplayed-member)|Specifies whether a vertical scroll bar is displayed for the window.|
+||[isVisible](/javascript/api/word/word.window#word-word-window-isvisible-member)|Specifies whether the window is visible.|
+||[largeScroll(options?: Word.WindowScrollOptions)](/javascript/api/word/word.window#word-word-window-largescroll-member(1))|Scrolls the window by the specified number of screens.|
+||[left](/javascript/api/word/word.window#word-word-window-left-member)|Specifies the horizontal position of the window, measured in points.|
+||[next](/javascript/api/word/word.window#word-word-window-next-member)|Gets the next document window in the collection of open document windows.|
+||[pageScroll(options?: Word.WindowPageScrollOptions)](/javascript/api/word/word.window#word-word-window-pagescroll-member(1))|Scrolls through the window page by page.|
+||[previous](/javascript/api/word/word.window#word-word-window-previous-member)|Gets the previous document window in the collection open document windows.|
+||[setFocus()](/javascript/api/word/word.window#word-word-window-setfocus-member(1))|Sets the focus of the document window to the body of an email message.|
+||[showSourceDocuments](/javascript/api/word/word.window#word-word-window-showsourcedocuments-member)|Specifies how Microsoft Word displays source documents after a compare and merge process.|
+||[smallScroll(options?: Word.WindowScrollOptions)](/javascript/api/word/word.window#word-word-window-smallscroll-member(1))|Scrolls the window by the specified number of lines.|
+||[splitVertical](/javascript/api/word/word.window#word-word-window-splitvertical-member)|Specifies the vertical split percentage for the window.|
+||[styleAreaWidth](/javascript/api/word/word.window#word-word-window-styleareawidth-member)|Specifies the width of the style area in points.|
+||[toggleRibbon()](/javascript/api/word/word.window#word-word-window-toggleribbon-member(1))|Shows or hides the ribbon.|
+||[top](/javascript/api/word/word.window#word-word-window-top-member)|Specifies the vertical position of the document window, in points.|
+||[type](/javascript/api/word/word.window#word-word-window-type-member)|Gets the window type.|
+||[usableHeight](/javascript/api/word/word.window#word-word-window-usableheight-member)|Gets the height (in points) of the active working area in the document window.|
+||[usableWidth](/javascript/api/word/word.window#word-word-window-usablewidth-member)|Gets the width (in points) of the active working area in the document window.|
+||[verticalPercentScrolled](/javascript/api/word/word.window#word-word-window-verticalpercentscrolled-member)|Specifies the vertical scroll position as a percentage of the document length.|
+||[view](/javascript/api/word/word.window#word-word-window-view-member)|Gets the `View` object that represents the view for the window.|
+||[width](/javascript/api/word/word.window#word-word-window-width-member)|Specifies the width of the document window, in points.|
+||[windowNumber](/javascript/api/word/word.window#word-word-window-windownumber-member)|Gets an integer that represents the position of the window.|
+||[windowState](/javascript/api/word/word.window#word-word-window-windowstate-member)|Specifies the state of the document window or task window.|
+|[WindowCloseOptions](/javascript/api/word/word.windowcloseoptions)|[routeDocument](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-routedocument-member)|If provided, specifies whether to route the document to the next recipient.|
+||[saveChanges](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-savechanges-member)|If provided, specifies the save action for the document.|
+|[WindowCollection](/javascript/api/word/word.windowcollection)|||
+|[WindowPageScrollOptions](/javascript/api/word/word.windowpagescrolloptions)|[down](/javascript/api/word/word.windowpagescrolloptions#word-word-windowpagescrolloptions-down-member)|If provided, specifies the number of pages to scroll the window down.|
+||[up](/javascript/api/word/word.windowpagescrolloptions#word-word-windowpagescrolloptions-up-member)|If provided, specifies the number of pages to scroll the window up.|
+|[WindowScrollOptions](/javascript/api/word/word.windowscrolloptions)|[down](/javascript/api/word/word.windowscrolloptions#word-word-windowscrolloptions-down-member)|If provided, specifies the number of units to scroll the window down.|
+||[left](/javascript/api/word/word.windowscrolloptions#word-word-windowscrolloptions-left-member)|If provided, specifies the number of screens to scroll the window to the left.|
+||[right](/javascript/api/word/word.windowscrolloptions#word-word-windowscrolloptions-right-member)|If provided, specifies the number of screens to scroll the window to the right.|
+||[up](/javascript/api/word/word.windowscrolloptions#word-word-windowscrolloptions-up-member)|If provided, specifies the number of units to scroll the window up.|
 |[XmlMapping](/javascript/api/word/word.xmlmapping)|[customXmlNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlnode-member)|Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.|
 ||[customXmlPart](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlpart-member)|Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.|
 ||[delete()](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-delete-member(1))|Deletes the XML mapping from the parent content control.|

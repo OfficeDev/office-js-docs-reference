@@ -80,6 +80,40 @@ properties:
       content: 'cellSpacing?: number;'
       return:
         type: number
+  - name: columnStripe
+    uid: word!Word.Interfaces.TableStyleData#columnStripe:member
+    package: word!
+    fullName: columnStripe
+    summary: >-
+      Specifies the number of columns in the banding when a style specifies odd-
+      or even-column banding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'columnStripe?: number;'
+      return:
+        type: number
+  - name: isBreakAcrossPagesAllowed
+    uid: word!Word.Interfaces.TableStyleData#isBreakAcrossPagesAllowed:member
+    package: word!
+    fullName: isBreakAcrossPagesAllowed
+    summary: >-
+      Specifies whether Microsoft Word allows to break the specified table
+      across pages.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isBreakAcrossPagesAllowed?: boolean;'
+      return:
+        type: boolean
   - name: leftCellMargin
     uid: word!Word.Interfaces.TableStyleData#leftCellMargin:member
     package: word!
@@ -95,6 +129,23 @@ properties:
     isDeprecated: false
     syntax:
       content: 'leftCellMargin?: number;'
+      return:
+        type: number
+  - name: leftIndent
+    uid: word!Word.Interfaces.TableStyleData#leftIndent:member
+    package: word!
+    fullName: leftIndent
+    summary: >-
+      Specifies the left indent value (in points) for the rows in the table
+      style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent?: number;'
       return:
         type: number
   - name: rightCellMargin
@@ -114,6 +165,42 @@ properties:
       content: 'rightCellMargin?: number;'
       return:
         type: number
+  - name: rowStripe
+    uid: word!Word.Interfaces.TableStyleData#rowStripe:member
+    package: word!
+    fullName: rowStripe
+    summary: >-
+      Specifies the number of rows to include in the banding when the style
+      specifies odd- or even-row banding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rowStripe?: number;'
+      return:
+        type: number
+  - name: tableDirection
+    uid: word!Word.Interfaces.TableStyleData#tableDirection:member
+    package: word!
+    fullName: tableDirection
+    summary: >-
+      Specifies the direction in which Microsoft Word orders cells in the table
+      style.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableDirection?: Word.TableDirection | "RightToLeft" | "LeftToRight";'
+      return:
+        type: >-
+          <xref uid="word!Word.TableDirection:enum" /> | "RightToLeft" |
+          "LeftToRight"
   - name: topCellMargin
     uid: word!Word.Interfaces.TableStyleData#topCellMargin:member
     package: word!

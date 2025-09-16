@@ -160,3 +160,22 @@ properties:
           "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
           "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
           "Zulu"
+  - name: listTemplateGalleries
+    uid: word!Word.Interfaces.ApplicationData#listTemplateGalleries:member
+    package: word!
+    fullName: listTemplateGalleries
+    summary: >-
+      Returns a `ListTemplateGalleryCollection` object that represents all the
+      list template galleries in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listTemplateGalleries?: Word.Interfaces.ListTemplateGalleryData[];'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ListTemplateGalleryData:interface"
+          />[]

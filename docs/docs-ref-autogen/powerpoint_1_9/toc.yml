@@ -161,6 +161,8 @@ items:
             uid: powerpoint!PowerPoint.TableRowCollection:class
           - name: TableRowProperties
             uid: powerpoint!PowerPoint.TableRowProperties:interface
+          - name: TableStyleSettings
+            uid: powerpoint!PowerPoint.TableStyleSettings:class
           - name: Tag
             uid: powerpoint!PowerPoint.Tag:class
           - name: TagCollection

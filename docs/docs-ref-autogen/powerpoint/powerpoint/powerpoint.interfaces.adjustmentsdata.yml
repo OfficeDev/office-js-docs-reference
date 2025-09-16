@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.AdjustmentsData
+uid: powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.AdjustmentsData
+summary: >-
+  An interface describing the data returned by calling
+  `adjustments.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: powerpoint!PowerPoint.Interfaces.AdjustmentsData#count:member
+    package: powerpoint!
+    fullName: count
+    summary: Specifies the number of adjustment points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'count?: number;'
+      return:
+        type: number

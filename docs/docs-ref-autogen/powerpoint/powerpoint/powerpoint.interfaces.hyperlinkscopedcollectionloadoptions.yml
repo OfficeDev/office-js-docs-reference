@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions
+uid: >-
+  powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions
+summary: Represents a scoped collection of hyperlinks.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: address
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions#address:member
+    package: powerpoint!
+    fullName: address
+    summary: >-
+      For EACH ITEM in the collection: Specifies the address of the hyperlink,
+      which can be a URL, a file name or file path, or an email address with the
+      `mailto` URI scheme.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type: boolean
+  - name: screenTip
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions#screenTip:member
+    package: powerpoint!
+    fullName: screenTip
+    summary: >-
+      For EACH ITEM in the collection: Specifies the string displayed when
+      hovering over the hyperlink.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions#type:member
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      For EACH ITEM in the collection: Returns the type of object that the
+      hyperlink is applied to. See
+      [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

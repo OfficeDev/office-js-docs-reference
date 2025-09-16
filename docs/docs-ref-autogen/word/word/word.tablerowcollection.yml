@@ -65,6 +65,60 @@ properties:
       return:
         type: <xref uid="word!Word.TableRow:class" />[]
 methods:
+  - name: convertToText(options)
+    uid: word!Word.TableRowCollection#convertToText:member(1)
+    package: word!
+    fullName: convertToText(options)
+    summary: Converts rows in a table to text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convertToText(options?: Word.TableConvertToTextOptions): Word.Range;'
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object that specifies the options for converting the
+            table rows to text.
+          type: <xref uid="word!Word.TableConvertToTextOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Range:class" />
+        description: A `Range` object that represents the converted text.
+  - name: delete()
+    uid: word!Word.TableRowCollection#delete:member(1)
+    package: word!
+    fullName: delete()
+    summary: Deletes the table rows.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: distributeHeight()
+    uid: word!Word.TableRowCollection#distributeHeight:member(1)
+    package: word!
+    fullName: distributeHeight()
+    summary: Adjusts the height of the rows so that they're equal.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'distributeHeight(): void;'
+      return:
+        type: void
+        description: ''
   - name: getFirst()
     uid: word!Word.TableRowCollection#getFirst:member(1)
     package: word!
@@ -203,6 +257,122 @@ methods:
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.TableRowCollection:class" />
+        description: ''
+  - name: select()
+    uid: word!Word.TableRowCollection#select:member(1)
+    package: word!
+    fullName: select()
+    summary: Selects the table rows.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setHeight(rowHeight, heightRule)
+    uid: word!Word.TableRowCollection#setHeight:member(1)
+    package: word!
+    fullName: setHeight(rowHeight, heightRule)
+    summary: Sets the height of the cells in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setHeight(rowHeight: number, heightRule: Word.RowHeightRule): void;'
+      parameters:
+        - id: rowHeight
+          description: The height of the row, in points.
+          type: number
+        - id: heightRule
+          description: The rule for determining the height of the specified rows.
+          type: <xref uid="word!Word.RowHeightRule:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setHeight(rowHeight, heightRule)
+    uid: word!Word.TableRowCollection#setHeight:member(2)
+    package: word!
+    fullName: setHeight(rowHeight, heightRule)
+    summary: Sets the height of the cells in a table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setHeight(rowHeight: number, heightRule: "Auto" | "AtLeast" |
+        "Exactly"): void;
+      parameters:
+        - id: rowHeight
+          description: The height of the row, in points.
+          type: number
+        - id: heightRule
+          description: The rule for determining the height of the specified rows.
+          type: '"Auto" | "AtLeast" | "Exactly"'
+      return:
+        type: void
+        description: ''
+  - name: setLeftIndent(leftIndent, rulerStyle)
+    uid: word!Word.TableRowCollection#setLeftIndent:member(1)
+    package: word!
+    fullName: setLeftIndent(leftIndent, rulerStyle)
+    summary: Sets the left indent for the table row.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setLeftIndent(leftIndent: number, rulerStyle: Word.RulerStyle): void;'
+      parameters:
+        - id: leftIndent
+          description: >-
+            The distance (in points) between the current left edge of the
+            specified rows and the desired left edge.
+          type: number
+        - id: rulerStyle
+          description: The ruler style to apply.
+          type: <xref uid="word!Word.RulerStyle:enum" />
+      return:
+        type: void
+        description: ''
+  - name: setLeftIndent(leftIndent, rulerStyle)
+    uid: word!Word.TableRowCollection#setLeftIndent:member(2)
+    package: word!
+    fullName: setLeftIndent(leftIndent, rulerStyle)
+    summary: Sets the left indent for the table row.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setLeftIndent(leftIndent: number, rulerStyle: "None" | "Proportional" |
+        "FirstColumn" | "SameWidth"): void;
+      parameters:
+        - id: leftIndent
+          description: >-
+            The distance (in points) between the current left edge of the
+            specified rows and the desired left edge.
+          type: number
+        - id: rulerStyle
+          description: The ruler style to apply.
+          type: '"None" | "Proportional" | "FirstColumn" | "SameWidth"'
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: word!Word.TableRowCollection#toJSON:member(1)

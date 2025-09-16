@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.EndnoteLocation
+uid: word!Word.EndnoteLocation:enum
+package: word!
+fullName: Word.EndnoteLocation
+summary: Specifies the location of endnotes in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: endOfDocument
+    uid: word!Word.EndnoteLocation.endOfDocument:member
+    package: word!
+    summary: >-
+      Places endnotes at the end of the document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EndOfDocument"'
+  - name: endOfSection
+    uid: word!Word.EndnoteLocation.endOfSection:member
+    package: word!
+    summary: >-
+      Places endnotes at the end of the section.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EndOfSection"'

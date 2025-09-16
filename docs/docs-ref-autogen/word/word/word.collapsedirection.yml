@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.CollapseDirection
+uid: word!Word.CollapseDirection:enum
+package: word!
+fullName: Word.CollapseDirection
+summary: Specifies the direction in which to collapse a selection.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: end
+    uid: word!Word.CollapseDirection.end:member
+    package: word!
+    summary: >-
+      Collapses the selection to the end position.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"End"'
+  - name: start
+    uid: word!Word.CollapseDirection.start:member
+    package: word!
+    summary: >-
+      Collapses the selection to the start position.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Start"'

@@ -1,0 +1,443 @@
+### YamlMime:TSEnum
+name: Word.TableFormat
+uid: word!Word.TableFormat:enum
+package: word!
+fullName: Word.TableFormat
+summary: Specifies the predefined table formatting options.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: classic1
+    uid: word!Word.TableFormat.classic1:member
+    package: word!
+    summary: >-
+      Applies the classic 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Classic1"'
+  - name: classic2
+    uid: word!Word.TableFormat.classic2:member
+    package: word!
+    summary: >-
+      Applies the classic 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Classic2"'
+  - name: classic3
+    uid: word!Word.TableFormat.classic3:member
+    package: word!
+    summary: >-
+      Applies the classic 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Classic3"'
+  - name: classic4
+    uid: word!Word.TableFormat.classic4:member
+    package: word!
+    summary: >-
+      Applies the classic 4 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Classic4"'
+  - name: colorful1
+    uid: word!Word.TableFormat.colorful1:member
+    package: word!
+    summary: >-
+      Applies the colorful 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Colorful1"'
+  - name: colorful2
+    uid: word!Word.TableFormat.colorful2:member
+    package: word!
+    summary: >-
+      Applies the colorful 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Colorful2"'
+  - name: colorful3
+    uid: word!Word.TableFormat.colorful3:member
+    package: word!
+    summary: >-
+      Applies the colorful 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Colorful3"'
+  - name: columns1
+    uid: word!Word.TableFormat.columns1:member
+    package: word!
+    summary: >-
+      Applies the columns 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Columns1"'
+  - name: columns2
+    uid: word!Word.TableFormat.columns2:member
+    package: word!
+    summary: >-
+      Applies the columns 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Columns2"'
+  - name: columns3
+    uid: word!Word.TableFormat.columns3:member
+    package: word!
+    summary: >-
+      Applies the columns 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Columns3"'
+  - name: columns4
+    uid: word!Word.TableFormat.columns4:member
+    package: word!
+    summary: >-
+      Applies the columns 4 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Columns4"'
+  - name: columns5
+    uid: word!Word.TableFormat.columns5:member
+    package: word!
+    summary: >-
+      Applies the columns 5 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Columns5"'
+  - name: contemporary
+    uid: word!Word.TableFormat.contemporary:member
+    package: word!
+    summary: >-
+      Applies the contemporary table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Contemporary"'
+  - name: elegant
+    uid: word!Word.TableFormat.elegant:member
+    package: word!
+    summary: >-
+      Applies the elegant table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Elegant"'
+  - name: grid1
+    uid: word!Word.TableFormat.grid1:member
+    package: word!
+    summary: >-
+      Applies the grid 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid1"'
+  - name: grid2
+    uid: word!Word.TableFormat.grid2:member
+    package: word!
+    summary: >-
+      Applies the grid 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid2"'
+  - name: grid3
+    uid: word!Word.TableFormat.grid3:member
+    package: word!
+    summary: >-
+      Applies the grid 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid3"'
+  - name: grid4
+    uid: word!Word.TableFormat.grid4:member
+    package: word!
+    summary: >-
+      Applies the grid 4 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid4"'
+  - name: grid5
+    uid: word!Word.TableFormat.grid5:member
+    package: word!
+    summary: >-
+      Applies the grid 5 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid5"'
+  - name: grid6
+    uid: word!Word.TableFormat.grid6:member
+    package: word!
+    summary: >-
+      Applies the grid 6 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid6"'
+  - name: grid7
+    uid: word!Word.TableFormat.grid7:member
+    package: word!
+    summary: >-
+      Applies the grid 7 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid7"'
+  - name: grid8
+    uid: word!Word.TableFormat.grid8:member
+    package: word!
+    summary: >-
+      Applies the grid 8 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Grid8"'
+  - name: list1
+    uid: word!Word.TableFormat.list1:member
+    package: word!
+    summary: >-
+      Applies the list 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List1"'
+  - name: list2
+    uid: word!Word.TableFormat.list2:member
+    package: word!
+    summary: >-
+      Applies the list 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List2"'
+  - name: list3
+    uid: word!Word.TableFormat.list3:member
+    package: word!
+    summary: >-
+      Applies the list 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List3"'
+  - name: list4
+    uid: word!Word.TableFormat.list4:member
+    package: word!
+    summary: >-
+      Applies the list 4 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List4"'
+  - name: list5
+    uid: word!Word.TableFormat.list5:member
+    package: word!
+    summary: >-
+      Applies the list 5 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List5"'
+  - name: list6
+    uid: word!Word.TableFormat.list6:member
+    package: word!
+    summary: >-
+      Applies the list 6 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List6"'
+  - name: list7
+    uid: word!Word.TableFormat.list7:member
+    package: word!
+    summary: >-
+      Applies the list 7 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List7"'
+  - name: list8
+    uid: word!Word.TableFormat.list8:member
+    package: word!
+    summary: >-
+      Applies the list 8 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List8"'
+  - name: none
+    uid: word!Word.TableFormat.none:member
+    package: word!
+    summary: >-
+      No table format is applied.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: professional
+    uid: word!Word.TableFormat.professional:member
+    package: word!
+    summary: >-
+      Applies the professional table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Professional"'
+  - name: simple1
+    uid: word!Word.TableFormat.simple1:member
+    package: word!
+    summary: >-
+      Applies the simple 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Simple1"'
+  - name: simple2
+    uid: word!Word.TableFormat.simple2:member
+    package: word!
+    summary: >-
+      Applies the simple 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Simple2"'
+  - name: simple3
+    uid: word!Word.TableFormat.simple3:member
+    package: word!
+    summary: >-
+      Applies the simple 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Simple3"'
+  - name: subtle1
+    uid: word!Word.TableFormat.subtle1:member
+    package: word!
+    summary: >-
+      Applies the subtle 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Subtle1"'
+  - name: subtle2
+    uid: word!Word.TableFormat.subtle2:member
+    package: word!
+    summary: >-
+      Applies the subtle 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Subtle2"'
+  - name: threeDEffects1
+    uid: word!Word.TableFormat.threeDEffects1:member
+    package: word!
+    summary: >-
+      Applies the 3D effects 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ThreeDEffects1"'
+  - name: threeDEffects2
+    uid: word!Word.TableFormat.threeDEffects2:member
+    package: word!
+    summary: >-
+      Applies the 3D effects 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ThreeDEffects2"'
+  - name: threeDEffects3
+    uid: word!Word.TableFormat.threeDEffects3:member
+    package: word!
+    summary: >-
+      Applies the 3D effects 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ThreeDEffects3"'
+  - name: web1
+    uid: word!Word.TableFormat.web1:member
+    package: word!
+    summary: >-
+      Applies the web 1 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Web1"'
+  - name: web2
+    uid: word!Word.TableFormat.web2:member
+    package: word!
+    summary: >-
+      Applies the web 2 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Web2"'
+  - name: web3
+    uid: word!Word.TableFormat.web3:member
+    package: word!
+    summary: >-
+      Applies the web 3 table format.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Web3"'

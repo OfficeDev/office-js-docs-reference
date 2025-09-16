@@ -30,6 +30,21 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: activePane
+    uid: word!Word.Interfaces.WindowLoadOptions#activePane:member
+    package: word!
+    fullName: activePane
+    summary: Gets the active pane in the window.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activePane?: Word.Interfaces.PaneLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.PaneLoadOptions:interface" />
   - name: areRulersDisplayed
     uid: word!Word.Interfaces.WindowLoadOptions#areRulersDisplayed:member
     package: word!
@@ -128,10 +143,10 @@ properties:
       content: 'horizontalPercentScrolled?: boolean;'
       return:
         type: boolean
-  - name: imemode
-    uid: word!Word.Interfaces.WindowLoadOptions#imemode:member
+  - name: imeMode
+    uid: word!Word.Interfaces.WindowLoadOptions#imeMode:member
     package: word!
-    fullName: imemode
+    fullName: imeMode
     summary: >-
       Specifies the default start-up mode for the Japanese Input Method Editor
       (IME).
@@ -142,7 +157,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'imemode?: boolean;'
+      content: 'imeMode?: boolean;'
       return:
         type: boolean
   - name: index
