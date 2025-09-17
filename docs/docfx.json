@@ -54,6 +54,11 @@
         "group": "all",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      }, {
+        "files": ["**/toc.yml"],
+        "group": "common-js-toc",
+        "src": "docs-ref-autogen/common",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -62,10 +67,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "common-js-preview-toc",
+        "src": "docs-ref-autogen/common_preview",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "common-js-preview-toc",
         "src": "docs-ref-autogen/common_preview",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office_release",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -74,10 +91,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen/office",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "common-js-preview",
         "src": "docs-ref-autogen/office",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "office-runtime",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
