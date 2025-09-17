@@ -42,6 +42,24 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: adjustments
+    uid: powerpoint!PowerPoint.Shape#adjustments:member
+    package: powerpoint!
+    fullName: adjustments
+    summary: >-
+      Returns an `Adjustments` object that contains adjustment values for all
+      the adjustments in this shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly adjustments: PowerPoint.Adjustments;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Adjustments:class" />
   - name: context
     uid: powerpoint!PowerPoint.Shape#context:member
     package: powerpoint!
@@ -57,6 +75,24 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
+  - name: creationId
+    uid: powerpoint!PowerPoint.Shape#creationId:member
+    package: powerpoint!
+    fullName: creationId
+    summary: >-
+      Gets the creation ID of the shape. Returns `null` if the shape has no
+      creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly creationId: string | null;'
+      return:
+        type: string | null
   - name: customXmlParts
     uid: powerpoint!PowerPoint.Shape#customXmlParts:member
     package: powerpoint!
@@ -1067,6 +1103,34 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: ''
+  - name: setHyperlink(options)
+    uid: powerpoint!PowerPoint.Shape#setHyperlink:member(1)
+    package: powerpoint!
+    fullName: setHyperlink(options)
+    summary: >-
+      Sets a hyperlink on this `Shape` with the specified options. This will
+      delete any existing hyperlink on this `Shape`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setHyperlink(options?: PowerPoint.HyperlinkAddOptions):
+        PowerPoint.Hyperlink;
+      parameters:
+        - id: options
+          description: Optional. The options for the hyperlink.
+          type: <xref uid="powerpoint!PowerPoint.HyperlinkAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
+        description: >-
+          The newly created
+          [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)
+          object.
   - name: setZOrder(position)
     uid: powerpoint!PowerPoint.Shape#setZOrder:member(1)
     package: powerpoint!

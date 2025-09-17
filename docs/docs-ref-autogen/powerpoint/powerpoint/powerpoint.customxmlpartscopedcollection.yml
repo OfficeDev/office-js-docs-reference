@@ -83,6 +83,29 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />
         description: ''
+  - name: getItemAt(index)
+    uid: powerpoint!PowerPoint.CustomXmlPartScopedCollection#getItemAt:member(1)
+    package: powerpoint!
+    fullName: getItemAt(index)
+    summary: >-
+      Gets a `CustomXmlPart` by its zero-based index in the collection. Throws
+      an `InvalidArgument` exception when the index is out of range.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): PowerPoint.CustomXmlPart;'
+      parameters:
+        - id: index
+          description: The index of the custom XML part in the collection.
+          type: number
+      return:
+        type: <xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />
+        description: The custom XML part at the given index.
   - name: getItemOrNullObject(id)
     uid: >-
       powerpoint!PowerPoint.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)

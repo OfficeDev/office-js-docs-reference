@@ -87,6 +87,21 @@ properties:
       content: 'readonly listLevels: Word.ListLevelCollection;'
       return:
         type: <xref uid="word!Word.ListLevelCollection:class" />
+  - name: name
+    uid: word!Word.ListTemplate#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of the list template.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
   - name: outlineNumbered
     uid: word!Word.ListTemplate#outlineNumbered:member
     package: word!

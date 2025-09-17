@@ -1,0 +1,234 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableOfContentsCollectionLoadOptions
+uid: word!Word.Interfaces.TableOfContentsCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.TableOfContentsCollectionLoadOptions
+summary: >-
+  Represents a collection of
+  [Word.TableOfContents](xref:word!Word.TableOfContents:class) objects in a Word
+  document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.TableOfContentsCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: areBuiltInHeadingStylesUsed
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#areBuiltInHeadingStylesUsed:member
+    package: word!
+    fullName: areBuiltInHeadingStylesUsed
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether built-in heading styles
+      are used for the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areBuiltInHeadingStylesUsed?: boolean;'
+      return:
+        type: boolean
+  - name: areFieldsUsed
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#areFieldsUsed:member
+    package: word!
+    fullName: areFieldsUsed
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether [Table of Contents
+      Entry (TC)
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      are included in the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areFieldsUsed?: boolean;'
+      return:
+        type: boolean
+  - name: areHyperlinksUsedOnWeb
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#areHyperlinksUsedOnWeb:member
+    package: word!
+    fullName: areHyperlinksUsedOnWeb
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether entries in the table of
+      contents should be formatted as hyperlinks when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areHyperlinksUsedOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersHiddenOnWeb
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#arePageNumbersHiddenOnWeb:member
+    package: word!
+    fullName: arePageNumbersHiddenOnWeb
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the page numbers in the
+      table of contents should be hidden when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersHiddenOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersIncluded
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#arePageNumbersIncluded:member
+    package: word!
+    fullName: arePageNumbersIncluded
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether page numbers are
+      included in the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersIncluded?: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersRightAligned
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#arePageNumbersRightAligned:member
+    package: word!
+    fullName: arePageNumbersRightAligned
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether page numbers are
+      aligned with the right margin in the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersRightAligned?: boolean;'
+      return:
+        type: boolean
+  - name: lowerHeadingLevel
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#lowerHeadingLevel:member
+    package: word!
+    fullName: lowerHeadingLevel
+    summary: >-
+      For EACH ITEM in the collection: Specifies the ending heading level for
+      the table of contents. Must be a value from 1 to 9 and greater than
+      `upperHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lowerHeadingLevel?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      For EACH ITEM in the collection: Gets the portion of a document that is
+      this table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: tabLeader
+    uid: word!Word.Interfaces.TableOfContentsCollectionLoadOptions#tabLeader:member
+    package: word!
+    fullName: tabLeader
+    summary: >-
+      For EACH ITEM in the collection: Specifies the character between entries
+      and their page numbers in the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabLeader?: boolean;'
+      return:
+        type: boolean
+  - name: tableId
+    uid: word!Word.Interfaces.TableOfContentsCollectionLoadOptions#tableId:member
+    package: word!
+    fullName: tableId
+    summary: >-
+      For EACH ITEM in the collection: Specifies a one-letter identifier from
+      [TC
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      that's used for the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableId?: boolean;'
+      return:
+        type: boolean
+  - name: upperHeadingLevel
+    uid: >-
+      word!Word.Interfaces.TableOfContentsCollectionLoadOptions#upperHeadingLevel:member
+    package: word!
+    fullName: upperHeadingLevel
+    summary: >-
+      For EACH ITEM in the collection: Specifies the starting heading level for
+      the table of contents. Must be a value from 1 to 9 and smaller than
+      `lowerHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'upperHeadingLevel?: boolean;'
+      return:
+        type: boolean

@@ -110,10 +110,10 @@ properties:
       content: 'horizontalPercentScrolled?: number;'
       return:
         type: number
-  - name: imemode
-    uid: word!Word.Interfaces.WindowData#imemode:member
+  - name: imeMode
+    uid: word!Word.Interfaces.WindowData#imeMode:member
     package: word!
-    fullName: imemode
+    fullName: imeMode
     summary: >-
       Specifies the default start-up mode for the Japanese Input Method Editor
       (IME).
@@ -125,7 +125,7 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        imemode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" |
+        imeMode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" |
         "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" |
         "Hangul";
       return:

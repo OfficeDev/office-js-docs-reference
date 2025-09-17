@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: Word.SelectionInsertSymbolOptions
+uid: word!Word.SelectionInsertSymbolOptions:interface
+package: word!
+fullName: Word.SelectionInsertSymbolOptions
+summary: >-
+  Represents the options for the
+  [Selection.insertSymbol](xref:word!Word.Selection:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: bias
+    uid: word!Word.SelectionInsertSymbolOptions#bias:member
+    package: word!
+    fullName: bias
+    summary: >-
+      If provided, specifies the font bias for symbols. This argument is useful
+      for setting the correct font bias for East Asian characters. The default
+      value is `default`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bias?: Word.FontBias | "Standard" | "FarEast" | "NoSpecified";'
+      return:
+        type: >-
+          <xref uid="word!Word.FontBias:enum" /> | "Standard" | "FarEast" |
+          "NoSpecified"
+  - name: font
+    uid: word!Word.SelectionInsertSymbolOptions#font:member
+    package: word!
+    fullName: font
+    summary: If provided, specifies the name of the font that contains the symbol.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'font?: string;'
+      return:
+        type: string
+  - name: unicode
+    uid: word!Word.SelectionInsertSymbolOptions#unicode:member
+    package: word!
+    fullName: unicode
+    summary: >-
+      If provided, specifies whether the character is Unicode. `true` to insert
+      the Unicode character specified by the `characterNumber` property when the
+      `Selection.insertSymbol` method is called; `false` to instead insert the
+      ANSI character specified by the `characterNumber` property. The default
+      value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unicode?: boolean;'
+      return:
+        type: boolean

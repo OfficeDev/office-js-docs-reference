@@ -161,6 +161,8 @@ items:
             uid: powerpoint!PowerPoint.TableRowCollection:class
           - name: TableRowProperties
             uid: powerpoint!PowerPoint.TableRowProperties:interface
+          - name: TableStyleSettings
+            uid: powerpoint!PowerPoint.TableStyleSettings:class
           - name: Tag
             uid: powerpoint!PowerPoint.Tag:class
           - name: TagCollection
@@ -371,6 +373,7 @@ items:
               - name: VisibilityModeChangedMessage
                 uid: office!Office.VisibilityModeChangedMessage:interface
           - name: OfficeExtension
+            uid: ''
             items:
               - name: ClientObject
                 uid: office!OfficeExtension.ClientObject:class

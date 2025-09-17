@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Interfaces.CoauthoringUpdateLoadOptions
+uid: word!Word.Interfaces.CoauthoringUpdateLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.CoauthoringUpdateLoadOptions
+summary: Represents a coauthoring update in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.CoauthoringUpdateLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `CoauthoringUpdate` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />

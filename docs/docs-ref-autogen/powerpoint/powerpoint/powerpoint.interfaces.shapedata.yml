@@ -10,6 +10,24 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: creationId
+    uid: powerpoint!PowerPoint.Interfaces.ShapeData#creationId:member
+    package: powerpoint!
+    fullName: creationId
+    summary: >-
+      Gets the creation ID of the shape. Returns `null` if the shape has no
+      creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'creationId?: string | null;'
+      return:
+        type: string | null
   - name: height
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#height:member
     package: powerpoint!

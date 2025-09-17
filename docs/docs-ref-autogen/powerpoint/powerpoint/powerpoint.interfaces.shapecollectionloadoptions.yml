@@ -29,6 +29,47 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: adjustments
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#adjustments:member
+    package: powerpoint!
+    fullName: adjustments
+    summary: >-
+      For EACH ITEM in the collection: Returns an `Adjustments` object that
+      contains adjustment values for all the adjustments in this shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'adjustments?: PowerPoint.Interfaces.AdjustmentsLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface"
+          />
+  - name: creationId
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#creationId:member
+    package: powerpoint!
+    fullName: creationId
+    summary: >-
+      For EACH ITEM in the collection: Gets the creation ID of the shape.
+      Returns `null` if the shape has no creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'creationId?: boolean;'
+      return:
+        type: boolean
   - name: fill
     uid: powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member
     package: powerpoint!

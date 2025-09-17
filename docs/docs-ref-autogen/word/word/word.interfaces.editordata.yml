@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: Word.Interfaces.EditorData
+uid: word!Word.Interfaces.EditorData:interface
+package: word!
+fullName: Word.Interfaces.EditorData
+summary: >-
+  An interface describing the data returned by calling `editor.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: word!Word.Interfaces.EditorData#id:member
+    package: word!
+    fullName: id
+    summary: >-
+      Gets the identifier for the `Editor` object when the parent document is
+      saved as a webpage.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: name
+    uid: word!Word.Interfaces.EditorData#name:member
+    package: word!
+    fullName: name
+    summary: Gets the name of the editor.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: nextRange
+    uid: word!Word.Interfaces.EditorData#nextRange:member
+    package: word!
+    fullName: nextRange
+    summary: >-
+      Gets a `Range` object that represents the next range that the editor has
+      permissions to modify.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nextRange?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />
+  - name: range
+    uid: word!Word.Interfaces.EditorData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `Editor` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />

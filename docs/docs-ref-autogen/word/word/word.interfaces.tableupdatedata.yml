@@ -33,6 +33,21 @@ properties:
         type: >-
           <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
           | "Centered" | "Right" | "Justified"
+  - name: description
+    uid: word!Word.Interfaces.TableUpdateData#description:member
+    package: word!
+    fullName: description
+    summary: Specifies the description of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'description?: string;'
+      return:
+        type: string
   - name: font
     uid: word!Word.Interfaces.TableUpdateData#font:member
     package: word!
@@ -318,6 +333,21 @@ properties:
       content: 'styleTotalRow?: boolean;'
       return:
         type: boolean
+  - name: title
+    uid: word!Word.Interfaces.TableUpdateData#title:member
+    package: word!
+    fullName: title
+    summary: Specifies the title of the table.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string
   - name: values
     uid: word!Word.Interfaces.TableUpdateData#values:member
     package: word!

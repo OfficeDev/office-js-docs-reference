@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: Word.Interfaces.RevisionUpdateData
+uid: word!Word.Interfaces.RevisionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.RevisionUpdateData
+summary: >-
+  An interface for updating data on the `Revision` object, for use in
+  `revision.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: movedRange
+    uid: word!Word.Interfaces.RevisionUpdateData#movedRange:member
+    package: word!
+    fullName: movedRange
+    summary: >-
+      Gets a `Range` object that represents the range of text that was moved
+      from one place to another in the document with tracked changes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'movedRange?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />
+  - name: range
+    uid: word!Word.Interfaces.RevisionUpdateData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained within a revision mark.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />

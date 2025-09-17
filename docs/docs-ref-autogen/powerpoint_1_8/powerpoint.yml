@@ -112,6 +112,8 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TableRowCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TableRowData:interface
   - powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface

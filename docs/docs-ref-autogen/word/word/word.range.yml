@@ -162,6 +162,23 @@ properties:
       content: 'combineCharacters: boolean;'
       return:
         type: boolean
+  - name: conflicts
+    uid: word!Word.Range#conflicts:member
+    package: word!
+    fullName: conflicts
+    summary: >-
+      Returns a `ConflictCollection` object that contains all the
+      [Word.Conflict](xref:word!Word.Conflict:class) objects in the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly conflicts: Word.ConflictCollection;'
+      return:
+        type: <xref uid="word!Word.ConflictCollection:class" />
   - name: contentControls
     uid: word!Word.Range#contentControls:member
     package: word!
@@ -209,6 +226,24 @@ properties:
       content: 'readonly disableCharacterSpaceGrid: boolean;'
       return:
         type: boolean
+  - name: editors
+    uid: word!Word.Range#editors:member
+    package: word!
+    fullName: editors
+    summary: >-
+      Returns an `EditorCollection` object that represents all the users
+      authorized to modify the range when the document is in protected
+      (read-only) mode.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly editors: Word.EditorCollection;'
+      return:
+        type: <xref uid="word!Word.EditorCollection:class" />
   - name: emphasisMark
     uid: word!Word.Range#emphasisMark:member
     package: word!
@@ -1203,6 +1238,24 @@ properties:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type: <xref uid="word!Word.Table:class" />
+  - name: revisions
+    uid: word!Word.Range#revisions:member
+    package: word!
+    fullName: revisions
+    summary: >-
+      Gets the collection of revisions that represents the tracked changes in
+      the range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly revisions: Word.RevisionCollection;'
+      return:
+        type: <xref uid="word!Word.RevisionCollection:class" />
   - name: sections
     uid: word!Word.Range#sections:member
     package: word!

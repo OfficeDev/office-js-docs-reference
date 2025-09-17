@@ -43,7 +43,9 @@ properties:
     uid: powerpoint!PowerPoint.Hyperlink#address:member
     package: powerpoint!
     fullName: address
-    summary: Specifies the URL target of the hyperlink.
+    summary: >-
+      Specifies the address of the hyperlink, which can be a URL, a file name or
+      file path, or an email address with the `mailto` URI scheme.
     remarks: >-
       \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -86,7 +88,98 @@ properties:
       content: 'screenTip: string;'
       return:
         type: string
+  - name: type
+    uid: powerpoint!PowerPoint.Hyperlink#type:member
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      Returns the type of object that the hyperlink is applied to. See
+      [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: PowerPoint.HyperlinkType | "TextRange" | "Shape";'
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.HyperlinkType:enum" /> | "TextRange"
+          | "Shape"
 methods:
+  - name: delete()
+    uid: powerpoint!PowerPoint.Hyperlink#delete:member(1)
+    package: powerpoint!
+    fullName: delete()
+    summary: Deletes the hyperlink.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getLinkedShapeOrNullObject()
+    uid: powerpoint!PowerPoint.Hyperlink#getLinkedShapeOrNullObject:member(1)
+    package: powerpoint!
+    fullName: getLinkedShapeOrNullObject()
+    summary: >-
+      Returns the [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)
+      object that the hyperlink is applied to. If the hyperlink is not of type
+      `shape`<!-- -->, or it is within a domain that does not currently support
+      a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->, then
+      this method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLinkedShapeOrNullObject(): PowerPoint.Shape;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Shape:class" />
+        description: ''
+  - name: getLinkedTextRangeOrNullObject()
+    uid: powerpoint!PowerPoint.Hyperlink#getLinkedTextRangeOrNullObject:member(1)
+    package: powerpoint!
+    fullName: getLinkedTextRangeOrNullObject()
+    summary: >-
+      Returns the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) object
+      that the hyperlink is applied to. If the hyperlink is not of type
+      `textRange`<!-- -->, or it is within a domain that does not currently
+      support a
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
+      -->, then this method returns an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLinkedTextRangeOrNullObject(): PowerPoint.TextRange;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.TextRange:class" />
+        description: ''
   - name: load(options)
     uid: powerpoint!PowerPoint.Hyperlink#load:member(1)
     package: powerpoint!

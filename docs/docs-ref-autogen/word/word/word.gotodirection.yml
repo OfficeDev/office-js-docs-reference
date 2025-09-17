@@ -1,0 +1,55 @@
+### YamlMime:TSEnum
+name: Word.GoToDirection
+uid: word!Word.GoToDirection:enum
+package: word!
+fullName: Word.GoToDirection
+summary: >-
+  Specifies the direction in which to move when using the
+  [Selection.goTo](xref:word!Word.Selection:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: first
+    uid: word!Word.GoToDirection.first:member
+    package: word!
+    summary: >-
+      Moves to the first item.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"First"'
+  - name: last
+    uid: word!Word.GoToDirection.last:member
+    package: word!
+    summary: >-
+      Moves to the last item.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Last"'
+  - name: next
+    uid: word!Word.GoToDirection.next:member
+    package: word!
+    summary: >-
+      Moves to the next item.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Next"'
+  - name: previous
+    uid: word!Word.GoToDirection.previous:member
+    package: word!
+    summary: >-
+      Moves to the previous item.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Previous"'
