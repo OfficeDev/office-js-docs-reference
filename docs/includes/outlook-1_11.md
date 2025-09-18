@@ -1,7 +1,7 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[sessionData](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sessiondata-member)|Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.|
-|[MessageCompose](/javascript/api/outlook/office.messagecompose)|[sessionData](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-sessiondata-member)|Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.|
+|[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[sessionData](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sessiondata-member)|Manages the SessionData of an item in Compose mode.|
+|[MessageCompose](/javascript/api/outlook/office.messagecompose)|[sessionData](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-sessiondata-member)|Manages the SessionData of an item in Compose mode.|
 |[SessionData](/javascript/api/outlook/office.sessiondata)|[clearAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.sessiondata#outlook-office-sessiondata-clearasync-member(1))|Clears all session data key-value pairs.|
 ||[clearAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.sessiondata#outlook-office-sessiondata-clearasync-member(1))|Clears all session data key-value pairs.|
 ||[getAllAsync(callback: (asyncResult: Office.AsyncResult<object>) => void)](/javascript/api/outlook/office.sessiondata#outlook-office-sessiondata-getallasync-member(1))|Gets all session data key-value pairs.|
