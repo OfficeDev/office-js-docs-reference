@@ -1,0 +1,1147 @@
+### YamlMime:TSType
+name: Excel.Window
+uid: excel!Excel.Window:class
+package: excel!
+fullName: Excel.Window
+summary: Represents a window in the workbook.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: activeCell
+    uid: excel!Excel.Window#activeCell:member
+    package: excel!
+    fullName: activeCell
+    summary: Specifies the active cell in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeCell: Excel.Range;'
+      return:
+        type: <xref uid="excel!Excel.Range:class" />
+  - name: activePane
+    uid: excel!Excel.Window#activePane:member
+    package: excel!
+    fullName: activePane
+    summary: Specifies the active pane in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly activePane: Excel.Pane;'
+      return:
+        type: <xref uid="excel!Excel.Pane:class" />
+  - name: activeWorksheet
+    uid: excel!Excel.Window#activeWorksheet:member
+    package: excel!
+    fullName: activeWorksheet
+    summary: Specifies the active sheet in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeWorksheet: Excel.Worksheet;'
+      return:
+        type: <xref uid="excel!Excel.Worksheet:class" />
+  - name: autoFilterDateGroupingEnabled
+    uid: excel!Excel.Window#autoFilterDateGroupingEnabled:member
+    package: excel!
+    fullName: autoFilterDateGroupingEnabled
+    summary: Specifies whether AutoFilter date grouping is enabled in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoFilterDateGroupingEnabled: boolean;'
+      return:
+        type: boolean
+  - name: context
+    uid: excel!Excel.Window#context:member
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="excel!Excel.RequestContext:class" />
+  - name: enableResize
+    uid: excel!Excel.Window#enableResize:member
+    package: excel!
+    fullName: enableResize
+    summary: Specifies a value indicating whether resizing is enabled for the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly enableResize: boolean;'
+      return:
+        type: boolean
+  - name: freezePanes
+    uid: excel!Excel.Window#freezePanes:member
+    package: excel!
+    fullName: freezePanes
+    summary: Specifies a value indicating whether panes are frozen in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'freezePanes: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: excel!Excel.Window#height:member
+    package: excel!
+    fullName: height
+    summary: Specifies the height of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
+  - name: index
+    uid: excel!Excel.Window#index:member
+    package: excel!
+    fullName: index
+    summary: Gets the index of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type: number
+  - name: isVisible
+    uid: excel!Excel.Window#isVisible:member
+    package: excel!
+    fullName: isVisible
+    summary: Specifies the visibility of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: excel!Excel.Window#left:member
+    package: excel!
+    fullName: left
+    summary: Specifies the left position of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left: number;'
+      return:
+        type: number
+  - name: name
+    uid: excel!Excel.Window#name:member
+    package: excel!
+    fullName: name
+    summary: Specifies the name of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: panes
+    uid: excel!Excel.Window#panes:member
+    package: excel!
+    fullName: panes
+    summary: Gets the panes associated with the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly panes: Excel.PaneCollection;'
+      return:
+        type: <xref uid="excel!Excel.PaneCollection:class" />
+  - name: rangeSelection
+    uid: excel!Excel.Window#rangeSelection:member
+    package: excel!
+    fullName: rangeSelection
+    summary: Gets the range selection in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly rangeSelection: Excel.RangeAreas;'
+      return:
+        type: <xref uid="excel!Excel.RangeAreas:class" />
+  - name: scrollColumn
+    uid: excel!Excel.Window#scrollColumn:member
+    package: excel!
+    fullName: scrollColumn
+    summary: Specifies the scroll column of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'scrollColumn: number;'
+      return:
+        type: number
+  - name: scrollRow
+    uid: excel!Excel.Window#scrollRow:member
+    package: excel!
+    fullName: scrollRow
+    summary: Specifies the scroll row of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'scrollRow: number;'
+      return:
+        type: number
+  - name: showFormulas
+    uid: excel!Excel.Window#showFormulas:member
+    package: excel!
+    fullName: showFormulas
+    summary: Specifies the display of formulas in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showFormulas: boolean;'
+      return:
+        type: boolean
+  - name: showGridlines
+    uid: excel!Excel.Window#showGridlines:member
+    package: excel!
+    fullName: showGridlines
+    summary: Specifies the display of gridlines in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showGridlines: boolean;'
+      return:
+        type: boolean
+  - name: showHeadings
+    uid: excel!Excel.Window#showHeadings:member
+    package: excel!
+    fullName: showHeadings
+    summary: Specifies the display of headings in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showHeadings: boolean;'
+      return:
+        type: boolean
+  - name: showHorizontalScrollBar
+    uid: excel!Excel.Window#showHorizontalScrollBar:member
+    package: excel!
+    fullName: showHorizontalScrollBar
+    summary: Specifies the display of the horizontal scroll bar in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showHorizontalScrollBar: boolean;'
+      return:
+        type: boolean
+  - name: showOutline
+    uid: excel!Excel.Window#showOutline:member
+    package: excel!
+    fullName: showOutline
+    summary: Specifies the display of the outline in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showOutline: boolean;'
+      return:
+        type: boolean
+  - name: showRightToLeft
+    uid: excel!Excel.Window#showRightToLeft:member
+    package: excel!
+    fullName: showRightToLeft
+    summary: Specifies the display of the right-to-left layout in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly showRightToLeft: boolean;'
+      return:
+        type: boolean
+  - name: showRuler
+    uid: excel!Excel.Window#showRuler:member
+    package: excel!
+    fullName: showRuler
+    summary: Specifies the display of the ruler in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showRuler: boolean;'
+      return:
+        type: boolean
+  - name: showVerticalScrollBar
+    uid: excel!Excel.Window#showVerticalScrollBar:member
+    package: excel!
+    fullName: showVerticalScrollBar
+    summary: Specifies the display of the vertical scroll bar in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showVerticalScrollBar: boolean;'
+      return:
+        type: boolean
+  - name: showWhitespace
+    uid: excel!Excel.Window#showWhitespace:member
+    package: excel!
+    fullName: showWhitespace
+    summary: Specifies the display of whitespace in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showWhitespace: boolean;'
+      return:
+        type: boolean
+  - name: showWorkbookTabs
+    uid: excel!Excel.Window#showWorkbookTabs:member
+    package: excel!
+    fullName: showWorkbookTabs
+    summary: Specifies the display of workbook tabs in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showWorkbookTabs: boolean;'
+      return:
+        type: boolean
+  - name: showZeros
+    uid: excel!Excel.Window#showZeros:member
+    package: excel!
+    fullName: showZeros
+    summary: Specifies the display of zeros in the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showZeros: boolean;'
+      return:
+        type: boolean
+  - name: split
+    uid: excel!Excel.Window#split:member
+    package: excel!
+    fullName: split
+    summary: Specifies the split state of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'split: boolean;'
+      return:
+        type: boolean
+  - name: splitColumn
+    uid: excel!Excel.Window#splitColumn:member
+    package: excel!
+    fullName: splitColumn
+    summary: Specifies the split column of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'splitColumn: number;'
+      return:
+        type: number
+  - name: splitHorizontal
+    uid: excel!Excel.Window#splitHorizontal:member
+    package: excel!
+    fullName: splitHorizontal
+    summary: Specifies the horizontal split of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'splitHorizontal: number;'
+      return:
+        type: number
+  - name: splitRow
+    uid: excel!Excel.Window#splitRow:member
+    package: excel!
+    fullName: splitRow
+    summary: Specifies the split row of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'splitRow: number;'
+      return:
+        type: number
+  - name: splitVertical
+    uid: excel!Excel.Window#splitVertical:member
+    package: excel!
+    fullName: splitVertical
+    summary: Specifies the vertical split of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'splitVertical: number;'
+      return:
+        type: number
+  - name: tabRatio
+    uid: excel!Excel.Window#tabRatio:member
+    package: excel!
+    fullName: tabRatio
+    summary: Specifies the tab ratio of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabRatio: number;'
+      return:
+        type: number
+  - name: top
+    uid: excel!Excel.Window#top:member
+    package: excel!
+    fullName: top
+    summary: Specifies the top position of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top: number;'
+      return:
+        type: number
+  - name: type
+    uid: excel!Excel.Window#type:member
+    package: excel!
+    fullName: type
+    summary: Specifies the type of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: Excel.WindowType | "chartAsWindow" | "chartInPlace" |
+        "clipboard" | "workbook";
+      return:
+        type: >-
+          <xref uid="excel!Excel.WindowType:enum" /> | "chartAsWindow" |
+          "chartInPlace" | "clipboard" | "workbook"
+  - name: usableHeight
+    uid: excel!Excel.Window#usableHeight:member
+    package: excel!
+    fullName: usableHeight
+    summary: Specifies the usable height of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly usableHeight: number;'
+      return:
+        type: number
+  - name: usableWidth
+    uid: excel!Excel.Window#usableWidth:member
+    package: excel!
+    fullName: usableWidth
+    summary: Specifies the usable width of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly usableWidth: number;'
+      return:
+        type: number
+  - name: view
+    uid: excel!Excel.Window#view:member
+    package: excel!
+    fullName: view
+    summary: Specifies the view of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        view: Excel.WindowView | "normalView" | "pageBreakPreview" |
+        "pageLayoutView";
+      return:
+        type: >-
+          <xref uid="excel!Excel.WindowView:enum" /> | "normalView" |
+          "pageBreakPreview" | "pageLayoutView"
+  - name: visibleRange
+    uid: excel!Excel.Window#visibleRange:member
+    package: excel!
+    fullName: visibleRange
+    summary: Gets the visible range of the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly visibleRange: Excel.Range;'
+      return:
+        type: <xref uid="excel!Excel.Range:class" />
+  - name: width
+    uid: excel!Excel.Window#width:member
+    package: excel!
+    fullName: width
+    summary: >-
+      Returns or sets an integer value that represents the display size of the
+      window. It can be set to a percentage between 10 and 400.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+  - name: windowNumber
+    uid: excel!Excel.Window#windowNumber:member
+    package: excel!
+    fullName: windowNumber
+    summary: Specifies the window number.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly windowNumber: number;'
+      return:
+        type: number
+  - name: windowState
+    uid: excel!Excel.Window#windowState:member
+    package: excel!
+    fullName: windowState
+    summary: >-
+      Returns or sets an integer value that represents the display size of the
+      window. It can be set to a percentage between 10 and 400.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'windowState: Excel.WindowState | "maximized" | "minimized" | "normal";'
+      return:
+        type: >-
+          <xref uid="excel!Excel.WindowState:enum" /> | "maximized" |
+          "minimized" | "normal"
+  - name: zoom
+    uid: excel!Excel.Window#zoom:member
+    package: excel!
+    fullName: zoom
+    summary: >-
+      Specifies an integer value that represents the display size of the window.
+      It can be set to a percentage between 10 and 400.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'zoom: number;'
+      return:
+        type: number
+methods:
+  - name: activate()
+    uid: excel!Excel.Window#activate:member(1)
+    package: excel!
+    fullName: activate()
+    summary: Activates the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: activateNext()
+    uid: excel!Excel.Window#activateNext:member(1)
+    package: excel!
+    fullName: activateNext()
+    summary: Activates the next window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activateNext(): void;'
+      return:
+        type: void
+        description: ''
+  - name: activatePrevious()
+    uid: excel!Excel.Window#activatePrevious:member(1)
+    package: excel!
+    fullName: activatePrevious()
+    summary: Activates the previous window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activatePrevious(): void;'
+      return:
+        type: void
+        description: ''
+  - name: close()
+    uid: excel!Excel.Window#close:member(1)
+    package: excel!
+    fullName: close()
+    summary: Closes the window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'close(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
+  - name: largeScroll(Down, Up, ToRight, ToLeft)
+    uid: excel!Excel.Window#largeScroll:member(1)
+    package: excel!
+    fullName: largeScroll(Down, Up, ToRight, ToLeft)
+    summary: Scrolls the window by a large amount.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        largeScroll(Down: number, Up: number, ToRight: number, ToLeft: number):
+        void;
+      parameters:
+        - id: Down
+          description: ''
+          type: number
+        - id: Up
+          description: ''
+          type: number
+        - id: ToRight
+          description: ''
+          type: number
+        - id: ToLeft
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: excel!Excel.Window#load:member(1)
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.WindowLoadOptions): Excel.Window;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="excel!Excel.Interfaces.WindowLoadOptions:interface" />
+      return:
+        type: <xref uid="excel!Excel.Window:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: excel!Excel.Window#load:member(2)
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Window;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="excel!Excel.Window:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: excel!Excel.Window#load:member(3)
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Window;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="excel!Excel.Window:class" />
+        description: ''
+  - name: newWindow()
+    uid: excel!Excel.Window#newWindow:member(1)
+    package: excel!
+    fullName: newWindow()
+    summary: Open a new window
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'newWindow(): Excel.Window;'
+      return:
+        type: <xref uid="excel!Excel.Window:class" />
+        description: ''
+  - name: pointsToScreenPixelsX(Points)
+    uid: excel!Excel.Window#pointsToScreenPixelsX:member(1)
+    package: excel!
+    fullName: pointsToScreenPixelsX(Points)
+    summary: Converts horizontal points to screen pixels.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        pointsToScreenPixelsX(Points: number):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: Points
+          description: ''
+          type: number
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: pointsToScreenPixelsY(Points)
+    uid: excel!Excel.Window#pointsToScreenPixelsY:member(1)
+    package: excel!
+    fullName: pointsToScreenPixelsY(Points)
+    summary: Converts vertical points to screen pixels.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        pointsToScreenPixelsY(Points: number):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: Points
+          description: ''
+          type: number
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: scrollIntoView(Left, Top, Width, Height, Start)
+    uid: excel!Excel.Window#scrollIntoView:member(1)
+    package: excel!
+    fullName: scrollIntoView(Left, Top, Width, Height, Start)
+    summary: Scrolls the window to bring the specified range into view.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        scrollIntoView(Left: number, Top: number, Width: number, Height: number,
+        Start?: boolean): void;
+      parameters:
+        - id: Left
+          description: ''
+          type: number
+        - id: Top
+          description: ''
+          type: number
+        - id: Width
+          description: ''
+          type: number
+        - id: Height
+          description: ''
+          type: number
+        - id: Start
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: scrollWorkbookTabs(Sheets, Position)
+    uid: excel!Excel.Window#scrollWorkbookTabs:member(1)
+    package: excel!
+    fullName: scrollWorkbookTabs(Sheets, Position)
+    summary: Scrolls the workbook tabs.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        scrollWorkbookTabs(Sheets?: number, Position?:
+        Excel.ScrollWorkbookTabPosition): void;
+      parameters:
+        - id: Sheets
+          description: ''
+          type: number
+        - id: Position
+          description: ''
+          type: <xref uid="excel!Excel.ScrollWorkbookTabPosition:enum" />
+      return:
+        type: void
+        description: ''
+  - name: scrollWorkbookTabs(Sheets, Position)
+    uid: excel!Excel.Window#scrollWorkbookTabs:member(2)
+    package: excel!
+    fullName: scrollWorkbookTabs(Sheets, Position)
+    summary: Scrolls the workbook tabs.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'scrollWorkbookTabs(Sheets?: number, Position?: "First" | "Last"): void;'
+      parameters:
+        - id: Sheets
+          description: ''
+          type: number
+        - id: Position
+          description: ''
+          type: '"First" | "Last"'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: excel!Excel.Window#set:member(1)
+    package: excel!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.WindowUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="excel!Excel.Interfaces.WindowUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: excel!Excel.Window#set:member(2)
+    package: excel!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Window): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="excel!Excel.Window:class" />
+      return:
+        type: void
+        description: ''
+  - name: smallScroll(Down, Up, ToRight, ToLeft)
+    uid: excel!Excel.Window#smallScroll:member(1)
+    package: excel!
+    fullName: smallScroll(Down, Up, ToRight, ToLeft)
+    summary: Scrolls the window by a small amount.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        smallScroll(Down: number, Up: number, ToRight: number, ToLeft: number):
+        void;
+      parameters:
+        - id: Down
+          description: ''
+          type: number
+        - id: Up
+          description: ''
+          type: number
+        - id: ToRight
+          description: ''
+          type: number
+        - id: ToLeft
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: excel!Excel.Window#toJSON:member(1)
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.Window` object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.WindowData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WindowData;'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.WindowData:interface" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

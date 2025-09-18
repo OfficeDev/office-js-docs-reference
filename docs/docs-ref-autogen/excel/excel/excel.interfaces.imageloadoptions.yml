@@ -30,6 +30,128 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: brightness
+    uid: excel!Excel.Interfaces.ImageLoadOptions#brightness:member
+    package: excel!
+    fullName: brightness
+    summary: >-
+      Specifies the brightness of the image. The value for this property must be
+      a number from 0.0 (dimmest) to 1.0 (brightest).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'brightness?: boolean;'
+      return:
+        type: boolean
+  - name: colorType
+    uid: excel!Excel.Interfaces.ImageLoadOptions#colorType:member
+    package: excel!
+    fullName: colorType
+    summary: Specifies the type of color transformation applied to the image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'colorType?: boolean;'
+      return:
+        type: boolean
+  - name: contrast
+    uid: excel!Excel.Interfaces.ImageLoadOptions#contrast:member
+    package: excel!
+    fullName: contrast
+    summary: >-
+      Specifies the contrast of the image. The value for this property must be a
+      number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contrast?: boolean;'
+      return:
+        type: boolean
+  - name: cropBottom
+    uid: excel!Excel.Interfaces.ImageLoadOptions#cropBottom:member
+    package: excel!
+    fullName: cropBottom
+    summary: >-
+      Specifies the number of points that are cropped off the bottom of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropBottom?: boolean;'
+      return:
+        type: boolean
+  - name: cropLeft
+    uid: excel!Excel.Interfaces.ImageLoadOptions#cropLeft:member
+    package: excel!
+    fullName: cropLeft
+    summary: >-
+      Specifies the number of points that are cropped off the left side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropLeft?: boolean;'
+      return:
+        type: boolean
+  - name: cropRight
+    uid: excel!Excel.Interfaces.ImageLoadOptions#cropRight:member
+    package: excel!
+    fullName: cropRight
+    summary: >-
+      Specifies the number of points that are cropped off the right side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropRight?: boolean;'
+      return:
+        type: boolean
+  - name: cropTop
+    uid: excel!Excel.Interfaces.ImageLoadOptions#cropTop:member
+    package: excel!
+    fullName: cropTop
+    summary: Specifies the number of points that are cropped off the top of the image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropTop?: boolean;'
+      return:
+        type: boolean
   - name: format
     uid: excel!Excel.Interfaces.ImageLoadOptions#format:member
     package: excel!

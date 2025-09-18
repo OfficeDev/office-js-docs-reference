@@ -36,7 +36,7 @@ properties:
     summary: >-
       Source of the list for data validation When setting the value, it can be
       passed in as a `Range` object, or a string that contains a comma-separated
-      number, boolean, or date.
+      number, Boolean, or date.
     remarks: >-
       \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

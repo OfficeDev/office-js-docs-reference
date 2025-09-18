@@ -119,7 +119,6 @@ enums:
   - excel!Excel.InsertShiftDirection:enum
   - excel!Excel.KeyboardDirection:enum
   - excel!Excel.LabelFilterCondition:enum
-  - excel!Excel.LinkedDataTypeRefreshMode:enum
   - excel!Excel.LinkedDataTypeState:enum
   - excel!Excel.LinkedEntityDataDomainRefreshMode:enum
   - excel!Excel.LoadToType:enum
@@ -131,6 +130,7 @@ enums:
   - excel!Excel.NumErrorCellValueSubType:enum
   - excel!Excel.PageOrientation:enum
   - excel!Excel.PaperType:enum
+  - excel!Excel.PictureColorType:enum
   - excel!Excel.PictureFormat:enum
   - excel!Excel.PivotAxis:enum
   - excel!Excel.PivotFilterTopBottomCriterion:enum
@@ -154,6 +154,7 @@ enums:
   - excel!Excel.RibbonTab:enum
   - excel!Excel.RowHiddenChangeType:enum
   - excel!Excel.SaveBehavior:enum
+  - excel!Excel.ScrollWorkbookTabPosition:enum
   - excel!Excel.SearchDirection:enum
   - excel!Excel.ShapeAutoSize:enum
   - excel!Excel.ShapeFillType:enum
@@ -182,11 +183,15 @@ enums:
   - excel!Excel.SpecialCellValueType:enum
   - excel!Excel.SpillErrorCellValueSubType:enum
   - excel!Excel.SubtotalLocationType:enum
+  - excel!Excel.TableSource:enum
   - excel!Excel.TimeoutErrorCellValueSubType:enum
   - excel!Excel.TopBottomSelectionType:enum
   - excel!Excel.ValueErrorCellValueSubType:enum
   - excel!Excel.ValueFilterCondition:enum
   - excel!Excel.VerticalAlignment:enum
+  - excel!Excel.WindowState:enum
+  - excel!Excel.WindowType:enum
+  - excel!Excel.WindowView:enum
   - excel!Excel.WorkbookLinksRefreshMode:enum
   - excel!Excel.WorksheetPositionType:enum
 classes:
@@ -289,12 +294,11 @@ classes:
   - excel!Excel.GroupShapeCollection:class
   - excel!Excel.HeaderFooter:class
   - excel!Excel.HeaderFooterGroup:class
+  - excel!Excel.HeaderFooterPicture:class
   - excel!Excel.IconSetConditionalFormat:class
   - excel!Excel.Image:class
   - excel!Excel.IterativeCalculation:class
   - excel!Excel.Line:class
-  - excel!Excel.LinkedDataType:class
-  - excel!Excel.LinkedDataTypeCollection:class
   - excel!Excel.LinkedEntityDataDomain:class
   - excel!Excel.LinkedEntityDataDomainCollection:class
   - excel!Excel.LinkedWorkbook:class
@@ -311,6 +315,8 @@ classes:
   - excel!Excel.PageBreak:class
   - excel!Excel.PageBreakCollection:class
   - excel!Excel.PageLayout:class
+  - excel!Excel.Pane:class
+  - excel!Excel.PaneCollection:class
   - excel!Excel.PivotField:class
   - excel!Excel.PivotFieldCollection:class
   - excel!Excel.PivotHierarchy:class
@@ -375,6 +381,8 @@ classes:
   - excel!Excel.TimelineStyle:class
   - excel!Excel.TimelineStyleCollection:class
   - excel!Excel.TopBottomConditionalFormat:class
+  - excel!Excel.Window:class
+  - excel!Excel.WindowCollection:class
   - excel!Excel.Workbook:class
   - excel!Excel.WorkbookCreated:class
   - excel!Excel.WorkbookProtection:class
@@ -429,6 +437,7 @@ interfaces:
   - excel!Excel.ChartDeactivatedEventArgs:interface
   - excel!Excel.ChartDeletedEventArgs:interface
   - excel!Excel.CheckboxCellControl:interface
+  - excel!Excel.CheckSpellingOptions:interface
   - excel!Excel.ColumnProperties:interface
   - excel!Excel.ColumnPropertiesLoadOptions:interface
   - excel!Excel.CommentAddedEventArgs:interface
@@ -763,23 +772,22 @@ interfaces:
   - excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface
   - excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface
   - excel!Excel.Interfaces.HeaderFooterLoadOptions:interface
+  - excel!Excel.Interfaces.HeaderFooterPictureData:interface
+  - excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface
+  - excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface
   - excel!Excel.Interfaces.HeaderFooterUpdateData:interface
   - excel!Excel.Interfaces.IconSetConditionalFormatData:interface
   - excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface
   - excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface
   - excel!Excel.Interfaces.ImageData:interface
   - excel!Excel.Interfaces.ImageLoadOptions:interface
+  - excel!Excel.Interfaces.ImageUpdateData:interface
   - excel!Excel.Interfaces.IterativeCalculationData:interface
   - excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface
   - excel!Excel.Interfaces.IterativeCalculationUpdateData:interface
   - excel!Excel.Interfaces.LineData:interface
   - excel!Excel.Interfaces.LineLoadOptions:interface
   - excel!Excel.Interfaces.LineUpdateData:interface
-  - excel!Excel.Interfaces.LinkedDataTypeCollectionData:interface
-  - excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface
-  - excel!Excel.Interfaces.LinkedDataTypeCollectionUpdateData:interface
-  - excel!Excel.Interfaces.LinkedDataTypeData:interface
-  - excel!Excel.Interfaces.LinkedDataTypeLoadOptions:interface
   - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface
   - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions:interface
   - excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData:interface
@@ -821,6 +829,11 @@ interfaces:
   - excel!Excel.Interfaces.PageLayoutData:interface
   - excel!Excel.Interfaces.PageLayoutLoadOptions:interface
   - excel!Excel.Interfaces.PageLayoutUpdateData:interface
+  - excel!Excel.Interfaces.PaneCollectionData:interface
+  - excel!Excel.Interfaces.PaneCollectionLoadOptions:interface
+  - excel!Excel.Interfaces.PaneCollectionUpdateData:interface
+  - excel!Excel.Interfaces.PaneData:interface
+  - excel!Excel.Interfaces.PaneLoadOptions:interface
   - excel!Excel.Interfaces.PivotFieldCollectionData:interface
   - excel!Excel.Interfaces.PivotFieldCollectionLoadOptions:interface
   - excel!Excel.Interfaces.PivotFieldCollectionUpdateData:interface
@@ -1005,6 +1018,12 @@ interfaces:
   - excel!Excel.Interfaces.TopBottomConditionalFormatData:interface
   - excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface
   - excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface
+  - excel!Excel.Interfaces.WindowCollectionData:interface
+  - excel!Excel.Interfaces.WindowCollectionLoadOptions:interface
+  - excel!Excel.Interfaces.WindowCollectionUpdateData:interface
+  - excel!Excel.Interfaces.WindowData:interface
+  - excel!Excel.Interfaces.WindowLoadOptions:interface
+  - excel!Excel.Interfaces.WindowUpdateData:interface
   - excel!Excel.Interfaces.WorkbookCreatedData:interface
   - excel!Excel.Interfaces.WorkbookData:interface
   - excel!Excel.Interfaces.WorkbookLoadOptions:interface
@@ -1029,7 +1048,6 @@ interfaces:
   - excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface
   - excel!Excel.Interfaces.WorksheetUpdateData:interface
   - excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
-  - excel!Excel.LinkedDataTypeAddedEventArgs:interface
   - excel!Excel.LinkedEntityCellValue:interface
   - excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainCreateOptions:interface
@@ -1061,8 +1079,6 @@ interfaces:
   - excel!Excel.RangeTextRun:interface
   - excel!Excel.ReferenceCellValue:interface
   - excel!Excel.RefErrorCellValue:interface
-  - excel!Excel.RefreshModeChangedEventArgs:interface
-  - excel!Excel.RefreshRequestCompletedEventArgs:interface
   - excel!Excel.ReplaceCriteria:interface
   - excel!Excel.RootReferenceCellValue:interface
   - excel!Excel.RowProperties:interface

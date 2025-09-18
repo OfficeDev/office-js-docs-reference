@@ -26,7 +26,7 @@
 |[NamedSheetView](/javascript/api/excel/excel.namedsheetview)|[activate()](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-activate-member(1))|Activates this sheet view.|
 ||[delete()](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-delete-member(1))|Removes the sheet view from the worksheet.|
 ||[duplicate(name?: string)](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-duplicate-member(1))|Creates a copy of this sheet view.|
-||[name](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-name-member)|Gets or sets the name of the sheet view.|
+||[name](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-name-member)|Specifies the name of the sheet view.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[add(name: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-add-member(1))|Creates a new sheet view with the given name.|
 ||[enterTemporary()](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-entertemporary-member(1))|Creates and activates a new temporary sheet view.|
 ||[exit()](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-exit-member(1))|Exits the currently active sheet view.|

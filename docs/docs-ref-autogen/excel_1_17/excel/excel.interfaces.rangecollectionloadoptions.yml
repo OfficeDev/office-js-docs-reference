@@ -564,7 +564,7 @@ properties:
     fullName: values
     summary: >-
       For EACH ITEM in the collection: Represents the raw values of the
-      specified range. The data returned could be a string, number, or boolean.
+      specified range. The data returned could be a string, number, or Boolean.
       Cells that contain an error will return the error string. If the returned
       value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel
       interprets this value as a formula.
@@ -587,7 +587,7 @@ properties:
       the cells in this range. Unlike `Range.values`<!-- -->,
       `Range.valuesAsJson` supports all data types which can be in a cell.
       Examples include formatted number values and web images, in addition to
-      the standard boolean, number, and string values. Data returned from this
+      the standard Boolean, number, and string values. Data returned from this
       API always aligns with the en-US locale. To retrieve data in the user's
       display locale, use `Range.valuesAsJsonLocal`<!-- -->.
     remarks: >-
@@ -610,7 +610,7 @@ properties:
       the cells in this range. Unlike `Range.values`<!-- -->,
       `Range.valuesAsJsonLocal` supports all data types which can be in a cell.
       Examples include formatted number values and web images, in addition to
-      the standard boolean, number, and string values. Data returned from this
+      the standard Boolean, number, and string values. Data returned from this
       API always aligns with the user's display locale. To retrieve data
       independent of locale, use `Range.valuesAsJson`<!-- -->.
     remarks: >-

@@ -450,7 +450,7 @@ properties:
     fullName: values
     summary: >-
       For EACH ITEM in the collection: Represents the raw values of the
-      specified range. The data returned could be a string, number, or boolean.
+      specified range. The data returned could be a string, number, or Boolean.
       Cells that contain an error will return the error string. If the returned
       value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel
       interprets this value as a formula.

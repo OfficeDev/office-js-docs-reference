@@ -20,7 +20,7 @@ properties:
     fullName: valueAfter
     summary: >-
       Represents the value after the change. The data returned could be a
-      string, number, or boolean. Cells that contain an error will return the
+      string, number, or Boolean. Cells that contain an error will return the
       error string.
     remarks: >-
       \[ [API set: ExcelApi
@@ -38,7 +38,7 @@ properties:
     fullName: valueBefore
     summary: >-
       Represents the value before the change. The data returned could be a
-      string, number, or boolean. Cells that contain an error will return the
+      string, number, or Boolean. Cells that contain an error will return the
       error string.
     remarks: >-
       \[ [API set: ExcelApi

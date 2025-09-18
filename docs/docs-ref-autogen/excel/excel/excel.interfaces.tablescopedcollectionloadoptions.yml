@@ -31,6 +31,44 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: altTextDescription
+    uid: >-
+      excel!Excel.Interfaces.TableScopedCollectionLoadOptions#altTextDescription:member
+    package: excel!
+    fullName: altTextDescription
+    summary: >-
+      For EACH ITEM in the collection: Specifies the alternative text for
+      accessibility.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type: boolean
+  - name: altTextTitle
+    uid: >-
+      excel!Excel.Interfaces.TableScopedCollectionLoadOptions#altTextTitle:member
+    package: excel!
+    fullName: altTextTitle
+    summary: >-
+      For EACH ITEM in the collection: Specifies a summary for the table, such
+      as one used by screen readers.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: boolean;'
+      return:
+        type: boolean
   - name: autoFilter
     uid: excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member
     package: excel!
@@ -68,6 +106,24 @@ properties:
           <xref
           uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
           />
+  - name: comment
+    uid: excel!Excel.Interfaces.TableScopedCollectionLoadOptions#comment:member
+    package: excel!
+    fullName: comment
+    summary: >-
+      For EACH ITEM in the collection: Specifies a comment associated with the
+      table.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comment?: boolean;'
+      return:
+        type: boolean
   - name: highlightFirstColumn
     uid: >-
       excel!Excel.Interfaces.TableScopedCollectionLoadOptions#highlightFirstColumn:member
@@ -120,6 +176,24 @@ properties:
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isActive
+    uid: excel!Excel.Interfaces.TableScopedCollectionLoadOptions#isActive:member
+    package: excel!
+    fullName: isActive
+    summary: >-
+      For EACH ITEM in the collection: Retrieves whether the table is currently
+      active.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isActive?: boolean;'
       return:
         type: boolean
   - name: legacyId
@@ -285,6 +359,24 @@ properties:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
         type: <xref uid="excel!Excel.Interfaces.TableSortLoadOptions:interface" />
+  - name: source
+    uid: excel!Excel.Interfaces.TableScopedCollectionLoadOptions#source:member
+    package: excel!
+    fullName: source
+    summary: >-
+      For EACH ITEM in the collection: Retrieves the data source type from which
+      the table originates.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'source?: boolean;'
+      return:
+        type: boolean
   - name: style
     uid: excel!Excel.Interfaces.TableScopedCollectionLoadOptions#style:member
     package: excel!

@@ -52,7 +52,7 @@ properties:
     uid: excel!Excel.Interfaces.DocumentTaskUpdateData#startAndDueDateTime:member
     package: excel!
     fullName: startAndDueDateTime
-    summary: Gets or sets the date and time the task should start and is due.
+    summary: Specifies the date and time the task should start and is due.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
