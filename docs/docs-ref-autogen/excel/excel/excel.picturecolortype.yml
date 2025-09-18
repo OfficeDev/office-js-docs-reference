@@ -1,0 +1,70 @@
+### YamlMime:TSEnum
+name: Excel.PictureColorType
+uid: excel!Excel.PictureColorType:enum
+package: excel!
+fullName: Excel.PictureColorType
+summary: >-
+  Specifies the color transformation of a picture in the header or footer of a
+  worksheet.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: excel!Excel.PictureColorType.automatic:member
+    package: excel!
+    summary: >-
+      Default color transformation.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Automatic"'
+  - name: blackAndWhite
+    uid: excel!Excel.PictureColorType.blackAndWhite:member
+    package: excel!
+    summary: >-
+      Black-and-white transformation.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"BlackAndWhite"'
+  - name: grayScale
+    uid: excel!Excel.PictureColorType.grayScale:member
+    package: excel!
+    summary: >-
+      Grayscale transformation.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"GrayScale"'
+  - name: mixed
+    uid: excel!Excel.PictureColorType.mixed:member
+    package: excel!
+    summary: >-
+      Mixed transformation.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Mixed"'
+  - name: watermark
+    uid: excel!Excel.PictureColorType.watermark:member
+    package: excel!
+    summary: >-
+      Watermark transformation.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Watermark"'

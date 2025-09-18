@@ -96,6 +96,19 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"FunctionInCell"'
+  - name: imageExceedsSizeLimit
+    uid: excel!Excel.CalcErrorCellValueSubType.imageExceedsSizeLimit:member
+    package: excel!
+    summary: >-
+      An error caused by a formula generating a request containing images that's
+      too large for an external code service. Displays as error type \#CALC! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageExceedsSizeLimit"'
   - name: invalidPythonObject
     uid: excel!Excel.CalcErrorCellValueSubType.invalidPythonObject:member
     package: excel!
@@ -117,10 +130,9 @@ fields:
       as error type \#CALC! in Excel.
 
 
-      Warning: `lambdaInCell` was deprecated in ExcelAPI 1.19.
-
-
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"LambdaInCell"'
   - name: pythonGridQuery
     uid: excel!Excel.CalcErrorCellValueSubType.pythonGridQuery:member

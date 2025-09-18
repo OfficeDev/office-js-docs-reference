@@ -197,7 +197,7 @@ properties:
     package: excel!
     fullName: startAndDueDateTime
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the date and time the task
+      For EACH ITEM in the collection: Specifies the date and time the task
       should start and is due.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW

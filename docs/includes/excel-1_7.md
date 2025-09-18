@@ -84,7 +84,7 @@
 ||[left](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-left-member)|Specifies the distance, in points, from the left edge of chart title to the left edge of chart area.|
 ||[position](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-position-member)|Represents the position of chart title.|
 ||[setFormula(formula: string)](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-setformula-member(1))|Sets a string value that represents the formula of chart title using A1-style notation.|
-||[showShadow](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-showshadow-member)|Represents a boolean value that determines if the chart title has a shadow.|
+||[showShadow](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-showshadow-member)|Represents a Boolean value that determines if the chart title has a shadow.|
 ||[textOrientation](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-textorientation-member)|Specifies the angle to which the text is oriented for the chart title.|
 ||[top](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-top-member)|Specifies the distance, in points, from the top edge of chart title to the top of chart area.|
 ||[verticalAlignment](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-verticalalignment-member)|Specifies the vertical alignment of chart title.|

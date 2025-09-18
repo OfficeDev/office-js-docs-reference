@@ -57,10 +57,7 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: ''
 
     isPreview: false
     isDeprecated: false

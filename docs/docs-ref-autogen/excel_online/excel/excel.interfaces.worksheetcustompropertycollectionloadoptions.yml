@@ -56,7 +56,7 @@ properties:
     package: excel!
     fullName: value
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the value of the custom
+      For EACH ITEM in the collection: Specifies the value of the custom
       property.
     remarks: >-
       \[ [API set: ExcelApi

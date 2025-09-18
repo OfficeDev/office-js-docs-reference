@@ -210,22 +210,6 @@ properties:
       content: 'isDirty: boolean;'
       return:
         type: boolean
-  - name: linkedDataTypes
-    uid: excel!Excel.Workbook#linkedDataTypes:member
-    package: excel!
-    fullName: linkedDataTypes
-    summary: Returns a collection of linked data types that are part of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly linkedDataTypes: Excel.LinkedDataTypeCollection;'
-      return:
-        type: <xref uid="excel!Excel.LinkedDataTypeCollection:class" />
   - name: linkedEntityDataDomains
     uid: excel!Excel.Workbook#linkedEntityDataDomains:member
     package: excel!
@@ -829,6 +813,25 @@ methods:
       return:
         type: void
         description: ''
+  - name: focus()
+    uid: excel!Excel.Workbook#focus:member(1)
+    package: excel!
+    fullName: focus()
+    summary: >-
+      Sets focus on the workbook. This causes the Excel grid or the currently
+      active object to receive keyboard events.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'focus(): void;'
+      return:
+        type: void
+        description: ''
   - name: getActiveCell()
     uid: excel!Excel.Workbook#getActiveCell:member(1)
     package: excel!
@@ -913,8 +916,8 @@ methods:
     package: excel!
     fullName: getActiveShape()
     summary: >-
-      Gets the active shape in the workbook. Throws an `ItemNotFound` if there
-      is no active shape.
+      Gets the active shape in the workbook. Throws an `ItemNotFound` error if
+      there is no active shape.
     remarks: >-
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

@@ -1,0 +1,49 @@
+### YamlMime:TSEnum
+name: Excel.WindowView
+uid: excel!Excel.WindowView:enum
+package: excel!
+fullName: Excel.WindowView
+summary: Specifies the view mode of the window.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: normalView
+    uid: excel!Excel.WindowView.normalView:member
+    package: excel!
+    summary: >-
+      The window displays the worksheet in normal view for general data entry
+      and editing.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"normalView"'
+  - name: pageBreakPreview
+    uid: excel!Excel.WindowView.pageBreakPreview:member
+    package: excel!
+    summary: >-
+      The window displays the worksheet in Page Break Preview mode to show where
+      pages will break when printed.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"pageBreakPreview"'
+  - name: pageLayoutView
+    uid: excel!Excel.WindowView.pageLayoutView:member
+    package: excel!
+    summary: >-
+      The window displays the worksheet in Page Layout view to show how the
+      worksheet will look when printed.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"pageLayoutView"'

@@ -68,10 +68,9 @@ fields:
       as error type \#CALC! in Excel.
 
 
-      Warning: `lambdaInCell` was deprecated in ExcelAPI 1.19.
-
-
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"LambdaInCell"'
   - name: textOverflow
     uid: excel!Excel.CalcErrorCellValueSubType.textOverflow:member

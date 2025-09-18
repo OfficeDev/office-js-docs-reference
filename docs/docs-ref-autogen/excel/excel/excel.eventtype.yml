@@ -109,42 +109,6 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ExternalCodeServiceDiffResultReceived"'
-  - name: linkedDataTypeLinkedDataTypeAdded
-    uid: excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member
-    package: excel!
-    summary: >-
-      `LinkedDataTypeAdded` represents the type of event registered on a
-      `LinkedDataType` and occurs when a new linked data type is added to the
-      workbook.
-
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"LinkedDataTypeLinkedDataTypeAdded"'
-  - name: linkedDataTypeRefreshModeChanged
-    uid: excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member
-    package: excel!
-    summary: >-
-      `RefreshModeChanged` represents the type of event registered on a
-      `LinkedDataType` and occurs when the linked data type refresh mode is
-      changed.
-
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"LinkedDataTypeRefreshModeChanged"'
-  - name: linkedDataTypeRefreshRequestCompleted
-    uid: excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member
-    package: excel!
-    summary: >-
-      `RefreshRequestCompleted` represents the type of event registered on a
-      `LinkedDataType` and occurs when a request to refresh a data source is
-      completed.
-
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"LinkedDataTypeRefreshRequestCompleted"'
   - name: linkedEntityDataDomainLinkedEntityDataDomainAdded
     uid: >-
       excel!Excel.EventType.linkedEntityDataDomainLinkedEntityDataDomainAdded:member

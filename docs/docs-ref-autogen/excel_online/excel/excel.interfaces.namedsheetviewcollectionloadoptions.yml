@@ -33,8 +33,8 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the name of the sheet view.
-      The temporary sheet view name is the empty string (""). Naming the view by
+      For EACH ITEM in the collection: Specifies the name of the sheet view. The
+      temporary sheet view name is the empty string (""). Naming the view by
       using the name property causes the sheet view to be saved.
     remarks: >-
       \[ [API set: ExcelApiOnline

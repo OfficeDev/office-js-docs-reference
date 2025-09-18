@@ -16,6 +16,38 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: altTextDescription
+    uid: excel!Excel.Table#altTextDescription:member
+    package: excel!
+    fullName: altTextDescription
+    summary: Specifies the alternative text for accessibility.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type: string
+  - name: altTextTitle
+    uid: excel!Excel.Table#altTextTitle:member
+    package: excel!
+    fullName: altTextTitle
+    summary: Specifies a summary for the table, such as one used by screen readers.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle: string;'
+      return:
+        type: string
   - name: autoFilter
     uid: excel!Excel.Table#autoFilter:member
     package: excel!
@@ -46,6 +78,22 @@ properties:
       content: 'readonly columns: Excel.TableColumnCollection;'
       return:
         type: <xref uid="excel!Excel.TableColumnCollection:class" />
+  - name: comment
+    uid: excel!Excel.Table#comment:member
+    package: excel!
+    fullName: comment
+    summary: Specifies a comment associated with the table.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comment: string;'
+      return:
+        type: string
   - name: context
     uid: excel!Excel.Table#context:member
     package: excel!
@@ -109,6 +157,22 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: isActive
+    uid: excel!Excel.Table#isActive:member
+    package: excel!
+    fullName: isActive
+    summary: Retrieves whether the table is currently active.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isActive: boolean;'
+      return:
+        type: boolean
   - name: legacyId
     uid: excel!Excel.Table#legacyId:member
     package: excel!
@@ -261,6 +325,26 @@ properties:
       content: 'readonly sort: Excel.TableSort;'
       return:
         type: <xref uid="excel!Excel.TableSort:class" />
+  - name: source
+    uid: excel!Excel.Table#source:member
+    package: excel!
+    fullName: source
+    summary: Retrieves the data source type from which the table originates.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly source: Excel.TableSource | "External" | "Range" | "Xml" |
+        "Query" | "Model";
+      return:
+        type: >-
+          <xref uid="excel!Excel.TableSource:enum" /> | "External" | "Range" |
+          "Xml" | "Query" | "Model"
   - name: style
     uid: excel!Excel.Table#style:member
     package: excel!
