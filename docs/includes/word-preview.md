@@ -615,7 +615,7 @@
 ||[twoPagesOnOne](/javascript/api/word/word.pagesetup#word-word-pagesetup-twopagesonone-member)|Specifies whether to print two pages per sheet.|
 ||[verticalAlignment](/javascript/api/word/word.pagesetup#word-word-pagesetup-verticalalignment-member)|Specifies the vertical alignment of text on each page in a document or section.|
 |[Pane](/javascript/api/word/word.pane)|[selection](/javascript/api/word/word.pane#word-word-pane-selection-member)|Returns a `Selection` object that represents the current selection in the pane.|
-|[PaneCollection](/javascript/api/word/word.panecollection)|||
+|[PaneCollection](/javascript/api/word/word.panecollection)||Represents the collection of pane.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the paragraph.|
 ||[closeUp()](/javascript/api/word/word.paragraph#word-word-paragraph-closeup-member(1))|Removes any spacing before the paragraph.|
 ||[indent()](/javascript/api/word/word.paragraph#word-word-paragraph-indent-member(1))|Indents the paragraph by one level.|
@@ -1374,7 +1374,7 @@
 ||[windowState](/javascript/api/word/word.window#word-word-window-windowstate-member)|Specifies the state of the document window or task window.|
 |[WindowCloseOptions](/javascript/api/word/word.windowcloseoptions)|[routeDocument](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-routedocument-member)|If provided, specifies whether to route the document to the next recipient.|
 ||[saveChanges](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-savechanges-member)|If provided, specifies the save action for the document.|
-|[WindowCollection](/javascript/api/word/word.windowcollection)|||
+|[WindowCollection](/javascript/api/word/word.windowcollection)||Represents the collection of window objects.|
 |[WindowPageScrollOptions](/javascript/api/word/word.windowpagescrolloptions)|[down](/javascript/api/word/word.windowpagescrolloptions#word-word-windowpagescrolloptions-down-member)|If provided, specifies the number of pages to scroll the window down.|
 ||[up](/javascript/api/word/word.windowpagescrolloptions#word-word-windowpagescrolloptions-up-member)|If provided, specifies the number of pages to scroll the window up.|
 |[WindowScrollOptions](/javascript/api/word/word.windowscrolloptions)|[down](/javascript/api/word/word.windowscrolloptions#word-word-windowscrolloptions-down-member)|If provided, specifies the number of units to scroll the window down.|
