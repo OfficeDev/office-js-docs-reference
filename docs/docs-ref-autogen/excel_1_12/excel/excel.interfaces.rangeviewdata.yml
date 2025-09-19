@@ -179,7 +179,7 @@ properties:
     fullName: values
     summary: >-
       Represents the raw values of the specified range view. The data returned
-      could be of type string, number, or a boolean. Cells that contain an error
+      could be of type string, number, or a Boolean. Cells that contain an error
       will return the error string.
     remarks: >-
       \[ [API set: ExcelApi

@@ -15,7 +15,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.all:member
     package: excel!
     summary: >-
-      Cells that have errors, boolean, numeric, or string values.
+      Cells that have errors, Boolean, numeric, or string values.
 
 
       * \[ [API set: ExcelApi
@@ -35,7 +35,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.errorsLogical:member
     package: excel!
     summary: >-
-      Cells that have errors or boolean values.
+      Cells that have errors or Boolean values.
 
 
       * \[ [API set: ExcelApi
@@ -45,7 +45,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.errorsLogicalNumber:member
     package: excel!
     summary: >-
-      Cells that have errors, boolean, or numeric values.
+      Cells that have errors, Boolean, or numeric values.
 
 
       * \[ [API set: ExcelApi
@@ -55,7 +55,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.errorsLogicalText:member
     package: excel!
     summary: >-
-      Cells that have errors, boolean, or string values.
+      Cells that have errors, Boolean, or string values.
 
 
       * \[ [API set: ExcelApi
@@ -95,7 +95,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.logical:member
     package: excel!
     summary: >-
-      Cells that have a boolean value.
+      Cells that have a Boolean value.
 
 
       * \[ [API set: ExcelApi
@@ -105,7 +105,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.logicalNumbers:member
     package: excel!
     summary: >-
-      Cells that have a boolean or numeric value.
+      Cells that have a Boolean or numeric value.
 
 
       * \[ [API set: ExcelApi
@@ -115,7 +115,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.logicalNumbersText:member
     package: excel!
     summary: >-
-      Cells that have a boolean, numeric, or string value.
+      Cells that have a Boolean, numeric, or string value.
 
 
       * \[ [API set: ExcelApi
@@ -125,7 +125,7 @@ fields:
     uid: excel!Excel.SpecialCellValueType.logicalText:member
     package: excel!
     summary: >-
-      Cells that have a boolean or string value.
+      Cells that have a Boolean or string value.
 
 
       * \[ [API set: ExcelApi

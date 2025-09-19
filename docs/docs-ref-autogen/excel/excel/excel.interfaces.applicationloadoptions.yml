@@ -28,6 +28,24 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: activeWindow
+    uid: excel!Excel.Interfaces.ApplicationLoadOptions#activeWindow:member
+    package: excel!
+    fullName: activeWindow
+    summary: >-
+      Returns a `window` object that represents the active window (the window on
+      top).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activeWindow?: Excel.Interfaces.WindowLoadOptions;'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.WindowLoadOptions:interface" />
   - name: calculationEngineVersion
     uid: >-
       excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member

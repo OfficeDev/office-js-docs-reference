@@ -15,6 +15,24 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: alignMarginsHeaderFooter
+    uid: excel!Excel.PageLayout#alignMarginsHeaderFooter:member
+    package: excel!
+    fullName: alignMarginsHeaderFooter
+    summary: >-
+      Specifies whether Excel aligns the header and the footer with the margins
+      set in the page setup options.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'alignMarginsHeaderFooter: boolean;'
+      return:
+        type: boolean
   - name: blackAndWhite
     uid: excel!Excel.PageLayout#blackAndWhite:member
     package: excel!
@@ -382,6 +400,27 @@ properties:
         type: >-
           <xref uid="excel!Excel.PrintOrder:enum" /> | "DownThenOver" |
           "OverThenDown"
+  - name: printQuality
+    uid: excel!Excel.PageLayout#printQuality:member
+    package: excel!
+    fullName: printQuality
+    summary: >-
+      Specifies a two-element array that contains both horizontal and vertical
+      print quality values. The first element is the horizontal print quality,
+      and the second element is the vertical print quality. Some printers may
+      not support vertical print quality and the supported values may vary by
+      printer.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'printQuality: number[];'
+      return:
+        type: number[]
   - name: rightMargin
     uid: excel!Excel.PageLayout#rightMargin:member
     package: excel!

@@ -1,9 +1,9 @@
 ### YamlMime:TSType
-name: Excel.LinkedDataTypeCollection
-uid: excel!Excel.LinkedDataTypeCollection:class
+name: Excel.WindowCollection
+uid: excel!Excel.WindowCollection:class
 package: excel!
-fullName: Excel.LinkedDataTypeCollection
-summary: Represents a collection of linked data types.
+fullName: Excel.WindowCollection
+summary: Represents the collection of all Window objects.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -13,7 +13,7 @@ isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: excel!Excel.LinkedDataTypeCollection#context:member
+    uid: excel!Excel.WindowCollection#context:member
     package: excel!
     fullName: context
     summary: >-
@@ -28,7 +28,7 @@ properties:
       return:
         type: <xref uid="excel!Excel.RequestContext:class" />
   - name: items
-    uid: excel!Excel.LinkedDataTypeCollection#items:member
+    uid: excel!Excel.WindowCollection#items:member
     package: excel!
     fullName: items
     summary: Gets the loaded child items in this collection.
@@ -37,15 +37,53 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly items: Excel.LinkedDataType[];'
+      content: 'readonly items: Excel.Window[];'
       return:
-        type: <xref uid="excel!Excel.LinkedDataType:class" />[]
+        type: <xref uid="excel!Excel.Window:class" />[]
 methods:
+  - name: breakSideBySide()
+    uid: excel!Excel.WindowCollection#breakSideBySide:member(1)
+    package: excel!
+    fullName: breakSideBySide()
+    summary: Breaks the side-by-side view of windows.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'breakSideBySide(): void;'
+      return:
+        type: void
+        description: ''
+  - name: compareCurrentSideBySideWith(windowName)
+    uid: excel!Excel.WindowCollection#compareCurrentSideBySideWith:member(1)
+    package: excel!
+    fullName: compareCurrentSideBySideWith(windowName)
+    summary: Compares the current window side by side with the specified window.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'compareCurrentSideBySideWith(windowName: string): void;'
+      parameters:
+        - id: windowName
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
   - name: getCount()
-    uid: excel!Excel.LinkedDataTypeCollection#getCount:member(1)
+    uid: excel!Excel.WindowCollection#getCount:member(1)
     package: excel!
     fullName: getCount()
-    summary: Gets the number of linked data types in the collection.
+    summary: Gets the number of windows in the collection.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -58,32 +96,11 @@ methods:
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
-  - name: getItem(key)
-    uid: excel!Excel.LinkedDataTypeCollection#getItem:member(1)
-    package: excel!
-    fullName: getItem(key)
-    summary: Gets a linked data type by service ID.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getItem(key: number): Excel.LinkedDataType;'
-      parameters:
-        - id: key
-          description: The ID of the linked data type.
-          type: number
-      return:
-        type: <xref uid="excel!Excel.LinkedDataType:class" />
-        description: ''
   - name: getItemAt(index)
-    uid: excel!Excel.LinkedDataTypeCollection#getItemAt:member(1)
+    uid: excel!Excel.WindowCollection#getItemAt:member(1)
     package: excel!
     fullName: getItemAt(index)
-    summary: Gets a linked data type by its index in the collection.
+    summary: Gets the Window in the collection by index.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -92,42 +109,16 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getItemAt(index: number): Excel.LinkedDataType;'
+      content: 'getItemAt(index: number): Excel.Window;'
       parameters:
         - id: index
-          description: The index of the linked data type object in the collection.
+          description: ''
           type: number
       return:
-        type: <xref uid="excel!Excel.LinkedDataType:class" />
-        description: The linked data type at the given index.
-  - name: getItemOrNullObject(key)
-    uid: excel!Excel.LinkedDataTypeCollection#getItemOrNullObject:member(1)
-    package: excel!
-    fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a linked data type by ID. If the linked data type doesn't exist, then
-      this method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getItemOrNullObject(key: number): Excel.LinkedDataType;'
-      parameters:
-        - id: key
-          description: The service ID of the linked data type.
-          type: number
-      return:
-        type: <xref uid="excel!Excel.LinkedDataType:class" />
+        type: <xref uid="excel!Excel.Window:class" />
         description: ''
   - name: load(options)
-    uid: excel!Excel.LinkedDataTypeCollection#load:member(1)
+    uid: excel!Excel.WindowCollection#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
@@ -139,21 +130,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.LinkedDataTypeCollection;
+        load(options?: Excel.Interfaces.WindowCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.WindowCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
             <xref
-            uid="excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface"
+            uid="excel!Excel.Interfaces.WindowCollectionLoadOptions:interface"
             /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: <xref uid="excel!Excel.LinkedDataTypeCollection:class" />
+        type: <xref uid="excel!Excel.WindowCollection:class" />
         description: ''
   - name: load(propertyNames)
-    uid: excel!Excel.LinkedDataTypeCollection#load:member(2)
+    uid: excel!Excel.WindowCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
@@ -164,7 +155,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.LinkedDataTypeCollection;'
+      content: 'load(propertyNames?: string | string[]): Excel.WindowCollection;'
       parameters:
         - id: propertyNames
           description: >-
@@ -172,10 +163,10 @@ methods:
             properties to load.
           type: string | string[]
       return:
-        type: <xref uid="excel!Excel.LinkedDataTypeCollection:class" />
+        type: <xref uid="excel!Excel.WindowCollection:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: excel!Excel.LinkedDataTypeCollection#load:member(3)
+    uid: excel!Excel.WindowCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
@@ -188,7 +179,7 @@ methods:
     syntax:
       content: >-
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.LinkedDataTypeCollection;
+        Excel.WindowCollection;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
@@ -198,16 +189,13 @@ methods:
             to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
-        type: <xref uid="excel!Excel.LinkedDataTypeCollection:class" />
+        type: <xref uid="excel!Excel.WindowCollection:class" />
         description: ''
-  - name: requestRefreshAll()
-    uid: excel!Excel.LinkedDataTypeCollection#requestRefreshAll:member(1)
+  - name: resetPositionsSideBySide()
+    uid: excel!Excel.WindowCollection#resetPositionsSideBySide:member(1)
     package: excel!
-    fullName: requestRefreshAll()
-    summary: >-
-      Makes a request to refresh all the linked data types in the collection. If
-      the service is busy or otherwise temporarily inaccessible, the request
-      will not be fulfilled.
+    fullName: resetPositionsSideBySide()
+    summary: Resets the positions of windows in side-by-side view.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -216,33 +204,30 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'requestRefreshAll(): void;'
+      content: 'resetPositionsSideBySide(): void;'
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: excel!Excel.LinkedDataTypeCollection#toJSON:member(1)
+    uid: excel!Excel.WindowCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful
       output when an API object is passed to `JSON.stringify()`<!-- -->.
       (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Excel.LinkedDataTypeCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.LinkedDataTypeCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      object that's passed to it.) Whereas the original `Excel.WindowCollection`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.WindowCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties
+      from the collection's items.
     remarks: ''
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'toJSON(): Excel.Interfaces.LinkedDataTypeCollectionData;'
+      content: 'toJSON(): Excel.Interfaces.WindowCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.LinkedDataTypeCollectionData:interface" />
+        type: <xref uid="excel!Excel.Interfaces.WindowCollectionData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

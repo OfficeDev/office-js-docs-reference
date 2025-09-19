@@ -746,8 +746,8 @@ methods:
     package: excel!
     fullName: getActiveShape()
     summary: >-
-      Gets the active shape in the workbook. Throws an `ItemNotFound` if there
-      is no active shape.
+      Gets the active shape in the workbook. Throws an `ItemNotFound` error if
+      there is no active shape.
     remarks: >-
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

@@ -30,6 +30,27 @@ properties:
       content: 'centerFooter?: string;'
       return:
         type: string
+  - name: centerFooterPicture
+    uid: excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooterPicture:member
+    package: excel!
+    fullName: centerFooterPicture
+    summary: >-
+      Gets a `HeaderFooterPicture` object that represents the picture for the
+      center section of the footer.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface"
+          />
   - name: centerHeader
     uid: excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member
     package: excel!
@@ -48,6 +69,27 @@ properties:
       content: 'centerHeader?: string;'
       return:
         type: string
+  - name: centerHeaderPicture
+    uid: excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeaderPicture:member
+    package: excel!
+    fullName: centerHeaderPicture
+    summary: >-
+      Gets a `HeaderFooterPicture` object that represents the picture for the
+      center section of the header.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface"
+          />
   - name: leftFooter
     uid: excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member
     package: excel!
@@ -66,6 +108,27 @@ properties:
       content: 'leftFooter?: string;'
       return:
         type: string
+  - name: leftFooterPicture
+    uid: excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooterPicture:member
+    package: excel!
+    fullName: leftFooterPicture
+    summary: >-
+      Gets a `HeaderFooterPicture` object that represents the picture for the
+      left section of the footer.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface"
+          />
   - name: leftHeader
     uid: excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member
     package: excel!
@@ -84,6 +147,27 @@ properties:
       content: 'leftHeader?: string;'
       return:
         type: string
+  - name: leftHeaderPicture
+    uid: excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeaderPicture:member
+    package: excel!
+    fullName: leftHeaderPicture
+    summary: >-
+      Gets a `HeaderFooterPicture` object that represents the picture for the
+      left section of the header.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface"
+          />
   - name: rightFooter
     uid: excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member
     package: excel!
@@ -102,6 +186,27 @@ properties:
       content: 'rightFooter?: string;'
       return:
         type: string
+  - name: rightFooterPicture
+    uid: excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooterPicture:member
+    package: excel!
+    fullName: rightFooterPicture
+    summary: >-
+      Gets a `HeaderFooterPicture` object that represents the picture for the
+      right section of the footer.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface"
+          />
   - name: rightHeader
     uid: excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member
     package: excel!
@@ -120,3 +225,24 @@ properties:
       content: 'rightHeader?: string;'
       return:
         type: string
+  - name: rightHeaderPicture
+    uid: excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeaderPicture:member
+    package: excel!
+    fullName: rightHeaderPicture
+    summary: >-
+      Gets a `HeaderFooterPicture` object that represents the picture for the
+      right section of the header.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface"
+          />

@@ -12,6 +12,24 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: activeWindow
+    uid: excel!Excel.Interfaces.ApplicationUpdateData#activeWindow:member
+    package: excel!
+    fullName: activeWindow
+    summary: >-
+      Returns a `window` object that represents the active window (the window on
+      top).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activeWindow?: Excel.Interfaces.WindowUpdateData;'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.WindowUpdateData:interface" />
   - name: calculationMode
     uid: excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member
     package: excel!
