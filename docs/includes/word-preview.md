@@ -152,15 +152,9 @@
 ||[resetState()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-resetstate-member(1))|Resets the state of the content control.|
 ||[setState(contentControlState: Word.ContentControlState)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-setstate-member(1))|Sets the state of the content control.|
 ||[xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)|Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
-|[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|The event type.|
-|[ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs)|[eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)|The event type.|
-|[ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs)|[eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)|The event type.|
-|[ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs)|[eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)|The event type.|
-|[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
 |[ContentControlPlaceholderOptions](/javascript/api/word/word.contentcontrolplaceholderoptions)|[buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-buildingblock-member)|If provided, specifies the `BuildingBlock` object to use as placeholder.|
 ||[range](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-range-member)|If provided, specifies the `Range` object to use as placeholder.|
 ||[text](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-text-member)|If provided, specifies the text to use as placeholder.|
-|[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
 |[CustomXmlAddNodeOptions](/javascript/api/word/word.customxmladdnodeoptions)|[name](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-name-member)|If provided, specifies the base name of the element to be added.|
 ||[namespaceUri](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-namespaceuri-member)|If provided, specifies the namespace of the element to be appended.|
 ||[nextSibling](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-nextsibling-member)|If provided, specifies the node which should become the next sibling of the new node.|
@@ -645,8 +639,6 @@
 ||[space2()](/javascript/api/word/word.paragraph#word-word-paragraph-space2-member(1))|Sets the paragraph to double spacing.|
 ||[tabHangingIndent(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-tabhangingindent-member(1))|Sets a hanging indent to a specified number of tab stops.|
 ||[tabIndent(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-tabindent-member(1))|Sets the left indent for the paragraph to a specified number of tab stops.|
-|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
-|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
 |[ParagraphCollection](/javascript/api/word/word.paragraphcollection)|[add(range: Word.Range)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-add-member(1))|Returns a `Paragraph` object that represents a new, blank paragraph added to the document.|
 ||[closeUp()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-closeup-member(1))|Removes any spacing before the specified paragraphs.|
 ||[decreaseSpacing()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-decreasespacing-member(1))|Decreases the spacing before and after paragraphs in six-point increments.|
@@ -665,7 +657,6 @@
 ||[space2()](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-space2-member(1))|Sets the specified paragraphs to double spacing.|
 ||[tabHangingIndent(count: number)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-tabhangingindent-member(1))|Sets a hanging indent to the specified number of tab stops.|
 ||[tabIndent(count: number)](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-tabindent-member(1))|Sets the left indent for the specified paragraphs to the specified number of tab stops.|
-|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
 |[PictureContentControl](/javascript/api/word/word.picturecontentcontrol)|[appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)|Specifies the appearance of the content control.|
 ||[color](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
 ||[copy()](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|

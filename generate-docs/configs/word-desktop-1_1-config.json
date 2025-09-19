@@ -33,7 +33,8 @@
                                   "Data$"
                               ],
     "includeStaticFields":  false,
-    "includeEnums":  false,
+    "includeEnums": false,
+    "filterUnionAdditions": true,
     "linkConfigs":  [
                         {
                             "pathPattern":  "javascript/api/word",
