@@ -8,10 +8,6 @@
 ||[windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)|Returns all the Excel windows.|
 |[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The Base64-encoded string.|
 ||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the Base64-encoded image.|
-|[BlockedErrorCellValue](/javascript/api/excel/excel.blockederrorcellvalue)|[errorSubType](/javascript/api/excel/excel.blockederrorcellvalue#excel-excel-blockederrorcellvalue-errorsubtype-member)|Represents the type of `BlockedErrorCellValue`.|
-|[BooleanCellValue](/javascript/api/excel/excel.booleancellvalue)|[type](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-type-member)|Represents the type of this cell value.|
-|[BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-errorsubtype-member)|Represents the type of `BusyErrorCellValue`.|
-|[CalcErrorCellValue](/javascript/api/excel/excel.calcerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)|Represents the type of `CalcErrorCellValue`.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
 |[CheckSpellingOptions](/javascript/api/excel/excel.checkspellingoptions)|[customDictionary](/javascript/api/excel/excel.checkspellingoptions#excel-excel-checkspellingoptions-customdictionary-member)|Optional.|
@@ -22,7 +18,6 @@
 |[CommentReply](/javascript/api/excel/excel.commentreply)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))|Assigns the task attached to the comment to the given user as the sole assignee.|
 ||[getTask()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))|Gets the task associated with this comment reply's thread.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))|Gets the task associated with this comment reply's thread.|
-|[ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue)|[errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#excel-excel-connecterrorcellvalue-errorsubtype-member)|Represents the type of `ConnectErrorCellValue`.|
 |[DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo)|[shortDateTimePattern](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-shortdatetimepattern-member)|Gets the format string for a short date and time value.|
 |[DocumentTask](/javascript/api/excel/excel.documenttask)|[assign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))|Adds the given user to the list of assignees attached to the task.|
 ||[assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)|Returns a collection of assignees of the task.|
@@ -61,7 +56,6 @@
 ||[items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)|Gets the loaded child items in this collection.|
 |[DocumentTaskSchedule](/javascript/api/excel/excel.documenttaskschedule)|[dueDateTime](/javascript/api/excel/excel.documenttaskschedule#excel-excel-documenttaskschedule-duedatetime-member)|Gets the date and time that the task is due.|
 ||[startDateTime](/javascript/api/excel/excel.documenttaskschedule#excel-excel-documenttaskschedule-startdatetime-member)|Gets the date and time that the task should start.|
-|[DoubleCellValue](/javascript/api/excel/excel.doublecellvalue)|[type](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-type-member)|Represents the type of this cell value.|
 |[EmailIdentity](/javascript/api/excel/excel.emailidentity)|[displayName](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-displayname-member)|Represents the user's display name.|
 ||[email](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-email-member)|Represents the user's email.|
 ||[id](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-id-member)|Represents the user's unique ID.|
@@ -71,7 +65,6 @@
 ||[firstRowIsHeader](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-firstrowisheader-member)|Represents whether the first row of the array is treated as a header.|
 ||[layout](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-layout-member)|Represents the type of this layout.|
 ||[rowsToReport](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-rowstoreport-member)|Represents the count of rows which the card claims are in the array.|
-|[EntityCardLayout](/javascript/api/excel/excel.entitycardlayout)|[layout](/javascript/api/excel/excel.entitycardlayout#excel-excel-entitycardlayout-layout-member)|Represents the type of this layout.|
 |[ExternalCodeServiceObjectCellValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue)|[Python_str](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_str-member)|Represents the output of the `str()` function when used on this object.|
 ||[Python_type](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_type-member)|Represents the full type name of this object.|
 ||[Python_typeName](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_typename-member)|Represents the short type name of this object.|
@@ -143,8 +136,6 @@
 ||[showDependents(remove?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-showdependents-member(1))|Draws tracer arrows to the direct dependents of the range.|
 ||[showPrecedents(remove?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-showprecedents-member(1))|Draws tracer arrows to the direct precedents of the range.|
 ||[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
-|[RangeAreas](/javascript/api/excel/excel.rangeareas)|||
-|[RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue)|[errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)|Represents the type of `RefErrorCellValue`.|
 |[RequestContext](/javascript/api/excel/excel.requestcontext)|[setInvocation(invocation: { invocationId: number isInCFSyncScenario: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
 ||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
@@ -155,7 +146,6 @@
 |[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Specifies the slicer name used in the formula.|
 ||[setStyle(style: string \| SlicerStyle \| BuiltInSlicerStyle)](/javascript/api/excel/excel.slicer#excel-excel-slicer-setstyle-member(1))|Sets the style applied to the slicer.|
 ||[slicerStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-slicerstyle-member)|The style applied to the slicer.|
-|[StringCellValue](/javascript/api/excel/excel.stringcellvalue)|[type](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-type-member)|Represents the type of this cell value.|
 |[Table](/javascript/api/excel/excel.table)|[altTextDescription](/javascript/api/excel/excel.table#excel-excel-table-alttextdescription-member)|Specifies the alternative text for accessibility.|
 ||[altTextTitle](/javascript/api/excel/excel.table#excel-excel-table-alttexttitle-member)|Specifies a summary for the table, such as one used by screen readers.|
 ||[clearStyle()](/javascript/api/excel/excel.table#excel-excel-table-clearstyle-member(1))|Changes the table to use the default table style.|
@@ -174,7 +164,6 @@
 ||[errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)|Represents the type of `TimeoutErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
-|[ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)|Represents the type of `ValueErrorCellValue`.|
 |[Window](/javascript/api/excel/excel.window)|[activate()](/javascript/api/excel/excel.window#excel-excel-window-activate-member(1))|Activates the window.|
 ||[activateNext()](/javascript/api/excel/excel.window#excel-excel-window-activatenext-member(1))|Activates the next window.|
 ||[activatePrevious()](/javascript/api/excel/excel.window#excel-excel-window-activateprevious-member(1))|Activates the previous window.|

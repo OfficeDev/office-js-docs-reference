@@ -16,6 +16,7 @@
                               ],
     "includeStaticFields":  false,
     "includeEnums":  false,
+    "filterUnionAdditions": true,
     "linkConfigs":  [
                         {
                             "pathPattern":  "javascript/api/excel",
