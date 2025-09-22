@@ -16,7 +16,8 @@
   ],
   "includeStaticFields": false,
   "includeEnums": false,
-  "linkConfigs": [
+    "filterUnionAdditions": true,
+    "linkConfigs": [
     {
       "name": "Word Standard Pattern",
       "pathPattern": "javascript/api/word",
