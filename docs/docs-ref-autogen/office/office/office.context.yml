@@ -205,8 +205,9 @@ properties:
     fullName: diagnostics
     summary: Gets information about the environment in which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox
-      requirement set 1.5. For all Mailbox requirement sets, you can use the
+      **Important**: In Outlook, this property is available starting with
+      Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use
+      the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
 
@@ -348,10 +349,10 @@ properties:
     fullName: host
     summary: Contains the Office application in which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox
-      requirement set 1.5. You can also use the `Office.context.diagnostics`
-      property to get the application starting with requirement set 1.5. For all
-      Mailbox requirement sets, you can use the
+      **Important**: In Outlook, this property is available starting with
+      Mailbox requirement set 1.5. You can also use the
+      `Office.context.diagnostics` property to get the application starting with
+      requirement set 1.5. For all Mailbox requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
 
@@ -569,10 +570,10 @@ properties:
       **Important**:
 
 
-      - In Outlook, this property is available from Mailbox requirement set 1.5.
-      You can also use the `Office.context.diagnostics` property to get the
-      platform starting with requirement set 1.5. For all Mailbox requirement
-      sets, you can use the
+      - In Outlook, this property is available starting with Mailbox requirement
+      set 1.5. You can also use the `Office.context.diagnostics` property to get
+      the platform starting with requirement set 1.5. For all Mailbox
+      requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
 

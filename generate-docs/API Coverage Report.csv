@@ -9099,7 +9099,7 @@ Office.AttachmentDetails,"id",Property,Good,false
 Office.AttachmentDetails,"isInline",Property,Good,false
 Office.AttachmentDetails,"name",Property,Poor,false
 Office.AttachmentDetails,"size",Property,Poor,false
-Office.AttachmentDetailsCompose,N/A,Interface,Unknown,false
+Office.AttachmentDetailsCompose,N/A,Interface,Unknown,true
 Office.AttachmentDetailsCompose,"attachmentType",Property,Fine,false
 Office.AttachmentDetailsCompose,"id",Property,Poor,false
 Office.AttachmentDetailsCompose,"isInline",Property,Good,false
