@@ -282,6 +282,30 @@ export declare namespace Word {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
@@ -291,6 +315,7 @@ export declare namespace Word {
     export class ContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         
         
         /**
@@ -303,6 +328,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
          *
@@ -310,6 +336,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        
         
         /**
          * Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating images.
@@ -336,6 +363,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
+        
+        
+        
         
         
         
@@ -706,6 +736,7 @@ export declare namespace Word {
     
     
     
+    
     /**
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
      *
@@ -715,6 +746,8 @@ export declare namespace Word {
     export class Document extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
         
         /**
          * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
@@ -732,6 +765,10 @@ export declare namespace Word {
         readonly contentControls: Word.ContentControlCollection;
         
         
+        
+        
+        
+        
         /**
          * Gets the collection of section objects in the document.
          *
@@ -739,6 +776,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly sections: Word.SectionCollection;
+        
+        
+        
+        
+        
         
         
         
@@ -771,6 +813,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Gets the current selection of the document. Multiple selections aren't supported.
          *
@@ -778,6 +821,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getSelection(): Word.Range;
+        
         
         
         
@@ -865,6 +909,15 @@ export declare namespace Word {
     export class Font extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
          *
@@ -872,6 +925,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         bold: boolean;
+        
         /**
          * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
          *
@@ -879,6 +933,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         color: string;
+        
+        
+        
+        
+        
         /**
          * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
          *
@@ -886,6 +945,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         doubleStrikeThrough: boolean;
+        
+        
+        
         
         /**
          * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
@@ -901,6 +963,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         italic: boolean;
+        
+        
+        
         /**
          * Specifies a value that represents the name of the font.
          *
@@ -908,6 +973,16 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         name: string;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Specifies a value that represents the font size in points.
          *
@@ -915,6 +990,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         size: number;
+        
+        
+        
         /**
          * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
          *
@@ -922,6 +1000,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         strikeThrough: boolean;
+        
         /**
          * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
          *
@@ -943,6 +1022,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -951,6 +1031,10 @@ export declare namespace Word {
         set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Font): void;
+        
+        
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -986,6 +1070,9 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.FontData;
     }
+    
+    
+    
     /**
      * Represents an inline picture.
      *
@@ -1189,6 +1276,7 @@ export declare namespace Word {
     export class Paragraph extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the collection of content control objects in the paragraph.
          *
@@ -1225,6 +1313,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
+        
         
         
         
@@ -1611,6 +1700,9 @@ export declare namespace Word {
         
         
         
+        
+        
+        
         /**
          * Gets the collection of paragraph objects in the range.
          *
@@ -1628,6 +1720,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1675,6 +1775,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         delete(): void;
+        
         
         
         
@@ -2028,6 +2129,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
+        
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -2154,6 +2258,25 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -2322,6 +2445,7 @@ export declare namespace Word {
          */
         hidden = "Hidden",
     }
+    
     /**
      * The supported styles for underline format.
      *
@@ -2692,6 +2816,89 @@ export declare namespace Word {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -2720,6 +2927,11 @@ export declare namespace Word {
         export interface AnnotationCollectionUpdateData {
             items?: Word.Interfaces.AnnotationData[];
         }
+        /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
+        export interface ApplicationUpdateData {
+            
+            
+        }
         /** An interface for updating data on the `Body` object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**
@@ -2745,6 +2957,16 @@ export declare namespace Word {
             
             
         }
+        /** An interface for updating data on the `BorderUniversal` object, for use in `borderUniversal.set({ ... })`. */
+        export interface BorderUniversalUpdateData {
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`. */
         export interface BorderCollectionUpdateData {
             
@@ -2754,6 +2976,25 @@ export declare namespace Word {
             
             
             items?: Word.Interfaces.BorderData[];
+        }
+        /** An interface for updating data on the `BorderUniversalCollection` object, for use in `borderUniversalCollection.set({ ... })`. */
+        export interface BorderUniversalCollectionUpdateData {
+            items?: Word.Interfaces.BorderUniversalData[];
+        }
+        /** An interface for updating data on the `Break` object, for use in `break.set({ ... })`. */
+        export interface BreakUpdateData {
+            
+        }
+        /** An interface for updating data on the `BreakCollection` object, for use in `breakCollection.set({ ... })`. */
+        export interface BreakCollectionUpdateData {
+            items?: Word.Interfaces.BreakData[];
+        }
+        /** An interface for updating data on the `BuildingBlock` object, for use in `buildingBlock.set({ ... })`. */
+        export interface BuildingBlockUpdateData {
+            
+            
+            
+            
         }
         /** An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`. */
         export interface CheckboxContentControlUpdateData {
@@ -2787,8 +3028,38 @@ export declare namespace Word {
         export interface CommentReplyCollectionUpdateData {
             items?: Word.Interfaces.CommentReplyData[];
         }
+        /** An interface for updating data on the `XmlMapping` object, for use in `xmlMapping.set({ ... })`. */
+        export interface XmlMappingUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `CustomXmlPrefixMappingCollection` object, for use in `customXmlPrefixMappingCollection.set({ ... })`. */
+        export interface CustomXmlPrefixMappingCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPrefixMappingData[];
+        }
+        /** An interface for updating data on the `CustomXmlSchemaCollection` object, for use in `customXmlSchemaCollection.set({ ... })`. */
+        export interface CustomXmlSchemaCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlSchemaData[];
+        }
+        /** An interface for updating data on the `CustomXmlNodeCollection` object, for use in `customXmlNodeCollection.set({ ... })`. */
+        export interface CustomXmlNodeCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlNodeData[];
+        }
+        /** An interface for updating data on the `CustomXmlNode` object, for use in `customXmlNode.set({ ... })`. */
+        export interface CustomXmlNodeUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface for updating data on the `ContentControl` object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
+            
+            
             
             /**
              * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
@@ -2797,6 +3068,10 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             font?: Word.Interfaces.FontUpdateData;
+            
+            
+            
+            
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
@@ -2884,6 +3159,10 @@ export declare namespace Word {
         export interface CustomPropertyCollectionUpdateData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
+        /** An interface for updating data on the `CustomXmlPart` object, for use in `customXmlPart.set({ ... })`. */
+        export interface CustomXmlPartUpdateData {
+            
+        }
         /** An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ... })`. */
         export interface CustomXmlPartCollectionUpdateData {
             items?: Word.Interfaces.CustomXmlPartData[];
@@ -2894,6 +3173,7 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `Document` object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
+            
             /**
              * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
              *
@@ -2901,6 +3181,12 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             body?: Word.Interfaces.BodyUpdateData;
+            
+            
+            
+            
+            
+            
             
             
         }
@@ -2935,6 +3221,14 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `Font` object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
@@ -2942,6 +3236,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
+            
             /**
              * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -2949,6 +3244,11 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             color?: string;
+            
+            
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
@@ -2956,6 +3256,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
+            
+            
+            
             
             /**
              * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
@@ -2971,6 +3274,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             italic?: boolean;
+            
+            
+            
             /**
              * Specifies a value that represents the name of the font.
              *
@@ -2978,6 +3284,16 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             name?: string;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies a value that represents the font size in points.
              *
@@ -2985,6 +3301,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             size?: number;
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
@@ -2992,6 +3311,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
+            
             /**
              * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
@@ -3013,6 +3333,21 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+            
+        }
+        /** An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`. */
+        export interface HyperlinkUpdateData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`. */
+        export interface HyperlinkCollectionUpdateData {
+            items?: Word.Interfaces.HyperlinkData[];
         }
         /** An interface for updating data on the `InlinePicture` object, for use in `inlinePicture.set({ ... })`. */
         export interface InlinePictureUpdateData {
@@ -3125,6 +3460,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontUpdateData;
             
             
+            
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
@@ -3235,6 +3571,13 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontUpdateData;
             
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
@@ -3309,6 +3652,8 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             body?: Word.Interfaces.BodyUpdateData;
+            
+            
         }
         /** An interface for updating data on the `SectionCollection` object, for use in `sectionCollection.set({ ... })`. */
         export interface SectionCollectionUpdateData {
@@ -3340,9 +3685,25 @@ export declare namespace Word {
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `Shading` object, for use in `shading.set({ ... })`. */
         export interface ShadingUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the `ShadingUniversal` object, for use in `shadingUniversal.set({ ... })`. */
+        export interface ShadingUniversalUpdateData {
+            
+            
             
             
             
@@ -3379,6 +3740,17 @@ export declare namespace Word {
         export interface TableCollectionUpdateData {
             items?: Word.Interfaces.TableData[];
         }
+        /** An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`. */
+        export interface TableColumnUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ... })`. */
+        export interface TableColumnCollectionUpdateData {
+            items?: Word.Interfaces.TableColumnData[];
+        }
         /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             
@@ -3410,6 +3782,23 @@ export declare namespace Word {
             
             
             
+        }
+        /** An interface for updating data on the `Template` object, for use in `template.set({ ... })`. */
+        export interface TemplateUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `TemplateCollection` object, for use in `templateCollection.set({ ... })`. */
+        export interface TemplateCollectionUpdateData {
+            items?: Word.Interfaces.TemplateData[];
         }
         /** An interface for updating data on the `TrackedChangeCollection` object, for use in `trackedChangeCollection.set({ ... })`. */
         export interface TrackedChangeCollectionUpdateData {
@@ -3484,6 +3873,264 @@ export declare namespace Word {
             
             
         }
+        /** An interface for updating data on the `RepeatingSectionItem` object, for use in `repeatingSectionItem.set({ ... })`. */
+        export interface RepeatingSectionItemUpdateData {
+            
+        }
+        /** An interface for updating data on the `DatePickerContentControl` object, for use in `datePickerContentControl.set({ ... })`. */
+        export interface DatePickerContentControlUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `PictureContentControl` object, for use in `pictureContentControl.set({ ... })`. */
+        export interface PictureContentControlUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `GroupContentControl` object, for use in `groupContentControl.set({ ... })`. */
+        export interface GroupContentControlUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `BuildingBlockGalleryContentControl` object, for use in `buildingBlockGalleryContentControl.set({ ... })`. */
+        export interface BuildingBlockGalleryContentControlUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `RepeatingSectionContentControl` object, for use in `repeatingSectionContentControl.set({ ... })`. */
+        export interface RepeatingSectionContentControlUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `Frame` object, for use in `frame.set({ ... })`. */
+        export interface FrameUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `FrameCollection` object, for use in `frameCollection.set({ ... })`. */
+        export interface FrameCollectionUpdateData {
+            items?: Word.Interfaces.FrameData[];
+        }
+        /** An interface for updating data on the `DocumentLibraryVersionCollection` object, for use in `documentLibraryVersionCollection.set({ ... })`. */
+        export interface DocumentLibraryVersionCollectionUpdateData {
+            items?: Word.Interfaces.DocumentLibraryVersionData[];
+        }
+        /** An interface for updating data on the `ListFormat` object, for use in `listFormat.set({ ... })`. */
+        export interface ListFormatUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `FillFormat` object, for use in `fillFormat.set({ ... })`. */
+        export interface FillFormatUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `GlowFormat` object, for use in `glowFormat.set({ ... })`. */
+        export interface GlowFormatUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the `LineFormat` object, for use in `lineFormat.set({ ... })`. */
+        export interface LineFormatUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ReflectionFormat` object, for use in `reflectionFormat.set({ ... })`. */
+        export interface ReflectionFormatUpdateData {
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ColorFormat` object, for use in `colorFormat.set({ ... })`. */
+        export interface ColorFormatUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ShadowFormat` object, for use in `shadowFormat.set({ ... })`. */
+        export interface ShadowFormatUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ThreeDimensionalFormat` object, for use in `threeDimensionalFormat.set({ ... })`. */
+        export interface ThreeDimensionalFormatUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `Bibliography` object, for use in `bibliography.set({ ... })`. */
+        export interface BibliographyUpdateData {
+            
+        }
+        /** An interface for updating data on the `SourceCollection` object, for use in `sourceCollection.set({ ... })`. */
+        export interface SourceCollectionUpdateData {
+            items?: Word.Interfaces.SourceData[];
+        }
+        /** An interface for updating data on the `PageSetup` object, for use in `pageSetup.set({ ... })`. */
+        export interface PageSetupUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `LineNumbering` object, for use in `lineNumbering.set({ ... })`. */
+        export interface LineNumberingUpdateData {
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `TextColumnCollection` object, for use in `textColumnCollection.set({ ... })`. */
+        export interface TextColumnCollectionUpdateData {
+            items?: Word.Interfaces.TextColumnData[];
+        }
+        /** An interface for updating data on the `TextColumn` object, for use in `textColumn.set({ ... })`. */
+        export interface TextColumnUpdateData {
+            
+            
+        }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
             
@@ -3496,6 +4143,12 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `annotationCollection.toJSON()`. */
         export interface AnnotationCollectionData {
             items?: Word.Interfaces.AnnotationData[];
+        }
+        /** An interface describing the data returned by calling `application.toJSON()`. */
+        export interface ApplicationData {
+            
+            
+            
         }
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
@@ -3558,9 +4211,52 @@ export declare namespace Word {
             
             
         }
+        /** An interface describing the data returned by calling `borderUniversal.toJSON()`. */
+        export interface BorderUniversalData {
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `borderCollection.toJSON()`. */
         export interface BorderCollectionData {
             items?: Word.Interfaces.BorderData[];
+        }
+        /** An interface describing the data returned by calling `borderUniversalCollection.toJSON()`. */
+        export interface BorderUniversalCollectionData {
+            items?: Word.Interfaces.BorderUniversalData[];
+        }
+        /** An interface describing the data returned by calling `break.toJSON()`. */
+        export interface BreakData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `breakCollection.toJSON()`. */
+        export interface BreakCollectionData {
+            items?: Word.Interfaces.BreakData[];
+        }
+        /** An interface describing the data returned by calling `buildingBlock.toJSON()`. */
+        export interface BuildingBlockData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `buildingBlockCategory.toJSON()`. */
+        export interface BuildingBlockCategoryData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `buildingBlockTypeItem.toJSON()`. */
+        export interface BuildingBlockTypeItemData {
+            
+            
         }
         /** An interface describing the data returned by calling `checkboxContentControl.toJSON()`. */
         export interface CheckboxContentControlData {
@@ -3605,8 +4301,57 @@ export declare namespace Word {
         export interface CommentReplyCollectionData {
             items?: Word.Interfaces.CommentReplyData[];
         }
+        /** An interface describing the data returned by calling `xmlMapping.toJSON()`. */
+        export interface XmlMappingData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `customXmlPrefixMappingCollection.toJSON()`. */
+        export interface CustomXmlPrefixMappingCollectionData {
+            items?: Word.Interfaces.CustomXmlPrefixMappingData[];
+        }
+        /** An interface describing the data returned by calling `customXmlPrefixMapping.toJSON()`. */
+        export interface CustomXmlPrefixMappingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `customXmlSchema.toJSON()`. */
+        export interface CustomXmlSchemaData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `customXmlSchemaCollection.toJSON()`. */
+        export interface CustomXmlSchemaCollectionData {
+            items?: Word.Interfaces.CustomXmlSchemaData[];
+        }
+        /** An interface describing the data returned by calling `customXmlNodeCollection.toJSON()`. */
+        export interface CustomXmlNodeCollectionData {
+            items?: Word.Interfaces.CustomXmlNodeData[];
+        }
+        /** An interface describing the data returned by calling `customXmlNode.toJSON()`. */
+        export interface CustomXmlNodeData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
+            
             
             
             /**
@@ -3618,6 +4363,7 @@ export declare namespace Word {
             contentControls?: Word.Interfaces.ContentControlData[];
             
             
+            
             /**
              * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
              *
@@ -3625,6 +4371,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             font?: Word.Interfaces.FontData;
+            
             /**
              * Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating images.
              *
@@ -3642,6 +4389,9 @@ export declare namespace Word {
              * Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
              */
             paragraphs?: Word.Interfaces.ParagraphData[];
+            
+            
+            
             
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
@@ -3758,6 +4508,11 @@ export declare namespace Word {
         export interface CustomXmlPartData {
             
             
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
         export interface CustomXmlPartCollectionData {
@@ -3769,6 +4524,7 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
+            
             
             /**
              * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
@@ -3786,6 +4542,10 @@ export declare namespace Word {
             contentControls?: Word.Interfaces.ContentControlData[];
             
             
+            
+            
+            
+            
             /**
              * Gets the collection of section objects in the document.
              *
@@ -3793,6 +4553,11 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             sections?: Word.Interfaces.SectionData[];
+            
+            
+            
+            
+            
             
             
             
@@ -3857,6 +4622,15 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `font.toJSON()`. */
         export interface FontData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
@@ -3864,6 +4638,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
+            
             /**
              * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -3871,6 +4646,11 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             color?: string;
+            
+            
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
@@ -3878,6 +4658,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
+            
+            
+            
             
             /**
              * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
@@ -3893,6 +4676,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             italic?: boolean;
+            
+            
+            
             /**
              * Specifies a value that represents the name of the font.
              *
@@ -3900,6 +4686,16 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             name?: string;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies a value that represents the font size in points.
              *
@@ -3907,6 +4703,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             size?: number;
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
@@ -3914,6 +4713,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
+            
             /**
              * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
@@ -3935,6 +4735,24 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+            
+        }
+        /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
+        export interface HyperlinkData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `hyperlinkCollection.toJSON()`. */
+        export interface HyperlinkCollectionData {
+            items?: Word.Interfaces.HyperlinkData[];
         }
         /** An interface describing the data returned by calling `inlinePicture.toJSON()`. */
         export interface InlinePictureData {
@@ -4041,6 +4859,7 @@ export declare namespace Word {
             
             
             
+            
         }
         /** An interface describing the data returned by calling `pageCollection.toJSON()`. */
         export interface PageCollectionData {
@@ -4065,6 +4884,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             
+            
             /**
              * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
              *
@@ -4079,6 +4899,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
+            
             
             
             
@@ -4208,6 +5029,17 @@ export declare namespace Word {
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
@@ -4289,6 +5121,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             body?: Word.Interfaces.BodyData;
+            
+            
+            
         }
         /** An interface describing the data returned by calling `sectionCollection.toJSON()`. */
         export interface SectionCollectionData {
@@ -4326,9 +5161,26 @@ export declare namespace Word {
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `shading.toJSON()`. */
         export interface ShadingData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shadingUniversal.toJSON()`. */
+        export interface ShadingUniversalData {
+            
+            
             
             
             
@@ -4371,6 +5223,22 @@ export declare namespace Word {
         export interface TableCollectionData {
             items?: Word.Interfaces.TableData[];
         }
+        /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
+        export interface TableColumnData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableColumnCollection.toJSON()`. */
+        export interface TableColumnCollectionData {
+            items?: Word.Interfaces.TableColumnData[];
+        }
         /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
             
@@ -4410,6 +5278,27 @@ export declare namespace Word {
             
             
             
+        }
+        /** An interface describing the data returned by calling `template.toJSON()`. */
+        export interface TemplateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `templateCollection.toJSON()`. */
+        export interface TemplateCollectionData {
+            items?: Word.Interfaces.TemplateData[];
         }
         /** An interface describing the data returned by calling `trackedChange.toJSON()`. */
         export interface TrackedChangeData {
@@ -4500,6 +5389,315 @@ export declare namespace Word {
             
             
         }
+        /** An interface describing the data returned by calling `repeatingSectionItem.toJSON()`. */
+        export interface RepeatingSectionItemData {
+            
+        }
+        /** An interface describing the data returned by calling `datePickerContentControl.toJSON()`. */
+        export interface DatePickerContentControlData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `pictureContentControl.toJSON()`. */
+        export interface PictureContentControlData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `groupContentControl.toJSON()`. */
+        export interface GroupContentControlData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `buildingBlockGalleryContentControl.toJSON()`. */
+        export interface BuildingBlockGalleryContentControlData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `repeatingSectionContentControl.toJSON()`. */
+        export interface RepeatingSectionContentControlData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `frame.toJSON()`. */
+        export interface FrameData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `frameCollection.toJSON()`. */
+        export interface FrameCollectionData {
+            items?: Word.Interfaces.FrameData[];
+        }
+        /** An interface describing the data returned by calling `documentLibraryVersion.toJSON()`. */
+        export interface DocumentLibraryVersionData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `documentLibraryVersionCollection.toJSON()`. */
+        export interface DocumentLibraryVersionCollectionData {
+            items?: Word.Interfaces.DocumentLibraryVersionData[];
+        }
+        /** An interface describing the data returned by calling `listFormat.toJSON()`. */
+        export interface ListFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `fillFormat.toJSON()`. */
+        export interface FillFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `glowFormat.toJSON()`. */
+        export interface GlowFormatData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `lineFormat.toJSON()`. */
+        export interface LineFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `reflectionFormat.toJSON()`. */
+        export interface ReflectionFormatData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `colorFormat.toJSON()`. */
+        export interface ColorFormatData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shadowFormat.toJSON()`. */
+        export interface ShadowFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `threeDimensionalFormat.toJSON()`. */
+        export interface ThreeDimensionalFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `bibliography.toJSON()`. */
+        export interface BibliographyData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `sourceCollection.toJSON()`. */
+        export interface SourceCollectionData {
+            items?: Word.Interfaces.SourceData[];
+        }
+        /** An interface describing the data returned by calling `source.toJSON()`. */
+        export interface SourceData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `pageSetup.toJSON()`. */
+        export interface PageSetupData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `lineNumbering.toJSON()`. */
+        export interface LineNumberingData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `textColumnCollection.toJSON()`. */
+        export interface TextColumnCollectionData {
+            items?: Word.Interfaces.TextColumnData[];
+        }
+        /** An interface describing the data returned by calling `textColumn.toJSON()`. */
+        export interface TextColumnData {
+            
+            
+        }
+        
         
         
         
@@ -4558,6 +5756,20 @@ export declare namespace Word {
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
@@ -4570,6 +5782,8 @@ export declare namespace Word {
              */
             $all?: boolean;
             
+            
+            
             /**
              * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
              *
@@ -4578,6 +5792,7 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             
+            
             /**
              * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
              *
@@ -4585,6 +5800,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            
+            
+            
             
             
             
@@ -4689,6 +5907,8 @@ export declare namespace Word {
              */
             $all?: boolean;
             
+            
+            
             /**
              * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
              *
@@ -4697,6 +5917,7 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             
+            
             /**
              * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
              *
@@ -4704,6 +5925,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            
+            
+            
             
             
             
@@ -4814,6 +6038,8 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
             /**
              * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
              *
@@ -4821,6 +6047,12 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             body?: Word.Interfaces.BodyLoadOptions;
+            
+            
+            
+            
+            
+            
             
             
             /**
@@ -4846,6 +6078,14 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
@@ -4853,6 +6093,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
+            
             /**
              * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -4860,6 +6101,11 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             color?: boolean;
+            
+            
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
@@ -4867,6 +6113,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
+            
+            
+            
             
             /**
              * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
@@ -4882,6 +6131,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             italic?: boolean;
+            
+            
+            
             /**
              * Specifies a value that represents the name of the font.
              *
@@ -4889,6 +6141,16 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             name?: boolean;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies a value that represents the font size in points.
              *
@@ -4896,6 +6158,9 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             size?: boolean;
+            
+            
+            
             /**
              * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
@@ -4903,6 +6168,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
+            
             /**
              * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
@@ -4924,7 +6190,10 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             underline?: boolean;
+            
         }
+        
+        
         /**
          * Represents an inline picture.
          *
@@ -5106,6 +6375,7 @@ export declare namespace Word {
             
             
             
+            
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
@@ -5231,6 +6501,7 @@ export declare namespace Word {
             
             
             
+            
             /**
              * For EACH ITEM in the collection: Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
@@ -5341,6 +6612,7 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             
+            
             /**
              * Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
              *
@@ -5348,6 +6620,12 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            
+            
+            
+            
+            
+            
             
             
             
@@ -5390,6 +6668,7 @@ export declare namespace Word {
              */
             font?: Word.Interfaces.FontLoadOptions;
             
+            
             /**
              * For EACH ITEM in the collection: Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
              *
@@ -5397,6 +6676,12 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            
+            
+            
+            
+            
+            
             
             
             
@@ -5500,6 +6785,8 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             body?: Word.Interfaces.BodyLoadOptions;
+            
+            
         }
         /**
          * Contains the collection of the document's {@link Word.Section} objects.
@@ -5519,7 +6806,39 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             body?: Word.Interfaces.BodyLoadOptions;
+            
+            
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

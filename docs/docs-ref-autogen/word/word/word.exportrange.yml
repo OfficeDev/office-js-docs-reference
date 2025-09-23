@@ -1,0 +1,53 @@
+### YamlMime:TSEnum
+name: Word.ExportRange
+uid: word!Word.ExportRange:enum
+package: word!
+fullName: Word.ExportRange
+summary: Specifies the range to export from a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: allDocument
+    uid: word!Word.ExportRange.allDocument:member
+    package: word!
+    summary: >-
+      Exports the entire document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AllDocument"'
+  - name: currentPage
+    uid: word!Word.ExportRange.currentPage:member
+    package: word!
+    summary: >-
+      Exports the current page.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"CurrentPage"'
+  - name: fromTo
+    uid: word!Word.ExportRange.fromTo:member
+    package: word!
+    summary: >-
+      Exports a specific range of pages.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FromTo"'
+  - name: selection
+    uid: word!Word.ExportRange.selection:member
+    package: word!
+    summary: >-
+      Exports the current selection.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Selection"'

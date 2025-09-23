@@ -6,10 +6,12 @@ summary: ''
 enums:
   - word!Word.Alignment:enum
   - word!Word.AnnotationState:enum
+  - word!Word.ApplyQuickStyleSet:enum
   - word!Word.ArrowheadLength:enum
   - word!Word.ArrowheadStyle:enum
   - word!Word.ArrowheadWidth:enum
   - word!Word.AutoFitBehavior:enum
+  - word!Word.AutoMacro:enum
   - word!Word.BaselineAlignment:enum
   - word!Word.BevelType:enum
   - word!Word.BodyType:enum
@@ -30,6 +32,7 @@ enums:
   - word!Word.ChangeTrackingVersion:enum
   - word!Word.CharacterCase:enum
   - word!Word.CharacterWidth:enum
+  - word!Word.CheckInVersionType:enum
   - word!Word.CloseBehavior:enum
   - word!Word.CoauthoringLockType:enum
   - word!Word.CollapseDirection:enum
@@ -38,6 +41,7 @@ enums:
   - word!Word.ColumnWidth:enum
   - word!Word.CommentChangeType:enum
   - word!Word.CompareTarget:enum
+  - word!Word.CompatibilityMode:enum
   - word!Word.ConditionCode:enum
   - word!Word.ContentControlAppearance:enum
   - word!Word.ContentControlDateStorageFormat:enum
@@ -53,7 +57,10 @@ enums:
   - word!Word.DefaultTableBehavior:enum
   - word!Word.DeleteCells:enum
   - word!Word.DocPartInsertType:enum
+  - word!Word.DocumentEncoding:enum
+  - word!Word.DocumentKind:enum
   - word!Word.DocumentPropertyType:enum
+  - word!Word.DocumentType:enum
   - word!Word.DropPosition:enum
   - word!Word.EditorType:enum
   - word!Word.EmphasisMark:enum
@@ -61,12 +68,18 @@ enums:
   - word!Word.ErrorCodes:enum
   - word!Word.EventSource:enum
   - word!Word.EventType:enum
+  - word!Word.ExportCreateBookmarks:enum
+  - word!Word.ExportFormat:enum
+  - word!Word.ExportItem:enum
+  - word!Word.ExportOptimizeFor:enum
+  - word!Word.ExportRange:enum
   - word!Word.ExtrusionColorType:enum
   - word!Word.FarEastLineBreakLanguageId:enum
   - word!Word.FarEastLineBreakLevel:enum
   - word!Word.FieldKind:enum
   - word!Word.FieldShading:enum
   - word!Word.FieldType:enum
+  - word!Word.FileSaveFormat:enum
   - word!Word.FillType:enum
   - word!Word.FlowDirection:enum
   - word!Word.FontBias:enum
@@ -98,6 +111,7 @@ enums:
   - word!Word.Ligature:enum
   - word!Word.LightRigType:enum
   - word!Word.LineDashStyle:enum
+  - word!Word.LineEndingType:enum
   - word!Word.LineFormatStyle:enum
   - word!Word.LineSpacing:enum
   - word!Word.LineWidth:enum
@@ -110,6 +124,7 @@ enums:
   - word!Word.ListTemplateGalleryType:enum
   - word!Word.ListType:enum
   - word!Word.LocationRelation:enum
+  - word!Word.MergeTarget:enum
   - word!Word.MovementType:enum
   - word!Word.NoteItemType:enum
   - word!Word.NoteNumberStyle:enum
@@ -138,6 +153,10 @@ enums:
   - word!Word.PresetMaterial:enum
   - word!Word.PresetTexture:enum
   - word!Word.PresetThreeDimensionalFormat:enum
+  - word!Word.PrintOutItem:enum
+  - word!Word.PrintOutPages:enum
+  - word!Word.PrintOutRange:enum
+  - word!Word.ProtectionType:enum
   - word!Word.RangeLocation:enum
   - word!Word.ReadingLayoutMargin:enum
   - word!Word.ReadingOrder:enum
@@ -147,6 +166,7 @@ enums:
   - word!Word.RelativeHorizontalPosition:enum
   - word!Word.RelativeSize:enum
   - word!Word.RelativeVerticalPosition:enum
+  - word!Word.RemoveDocInfoType:enum
   - word!Word.RevisionsBalloonMargin:enum
   - word!Word.RevisionsBalloonWidthType:enum
   - word!Word.RevisionsMarkup:enum
@@ -157,6 +177,7 @@ enums:
   - word!Word.RulerStyle:enum
   - word!Word.SaveBehavior:enum
   - word!Word.SaveConfiguration:enum
+  - word!Word.ScreenSize:enum
   - word!Word.SectionDirection:enum
   - word!Word.SectionStart:enum
   - word!Word.SeekView:enum
@@ -178,6 +199,7 @@ enums:
   - word!Word.SortFieldType:enum
   - word!Word.SortOrder:enum
   - word!Word.SpecialPane:enum
+  - word!Word.Statistic:enum
   - word!Word.StoryType:enum
   - word!Word.StyleType:enum
   - word!Word.StylisticSet:enum
@@ -188,6 +210,7 @@ enums:
   - word!Word.TableFieldSeparator:enum
   - word!Word.TableFormat:enum
   - word!Word.TableFormatType:enum
+  - word!Word.TargetBrowser:enum
   - word!Word.TemplateType:enum
   - word!Word.TextboxTightWrap:enum
   - word!Word.TextOrientation:enum
@@ -199,10 +222,14 @@ enums:
   - word!Word.TwoLinesInOneType:enum
   - word!Word.Underline:enum
   - word!Word.UnderlineType:enum
+  - word!Word.UseFormattingFrom:enum
   - word!Word.VerticalAlignment:enum
   - word!Word.ViewType:enum
   - word!Word.WindowState:enum
   - word!Word.WindowType:enum
+  - word!Word.XmlNodeLevel:enum
+  - word!Word.XmlNodeType:enum
+  - word!Word.XmlValidationStatus:enum
 classes:
   - word!Word.Annotation:class
   - word!Word.AnnotationCollection:class
@@ -283,6 +310,8 @@ classes:
   - word!Word.GroupContentControl:class
   - word!Word.HeadingStyle:class
   - word!Word.HeadingStyleCollection:class
+  - word!Word.HtmlDivision:class
+  - word!Word.HtmlDivisionCollection:class
   - word!Word.Hyperlink:class
   - word!Word.HyperlinkCollection:class
   - word!Word.Index:class
@@ -317,6 +346,8 @@ classes:
   - word!Word.Range:class
   - word!Word.RangeCollection:class
   - word!Word.RangeScopedCollection:class
+  - word!Word.ReadabilityStatistic:class
+  - word!Word.ReadabilityStatisticCollection:class
   - word!Word.ReflectionFormat:class
   - word!Word.RepeatingSectionContentControl:class
   - word!Word.RepeatingSectionItem:class
@@ -374,9 +405,12 @@ classes:
   - word!Word.TrackedChange:class
   - word!Word.TrackedChangeCollection:class
   - word!Word.View:class
+  - word!Word.WebSettings:class
   - word!Word.Window:class
   - word!Word.WindowCollection:class
   - word!Word.XmlMapping:class
+  - word!Word.XmlNode:class
+  - word!Word.XmlNodeCollection:class
 interfaces:
   - word!Word.AnnotationClickedEventArgs:interface
   - word!Word.AnnotationHoveredEventArgs:interface
@@ -404,8 +438,25 @@ interfaces:
   - word!Word.CustomXmlInsertNodeBeforeOptions:interface
   - word!Word.CustomXmlInsertSubtreeBeforeOptions:interface
   - word!Word.CustomXmlReplaceChildNodeOptions:interface
+  - word!Word.DocumentCheckInOptions:interface
+  - word!Word.DocumentCheckInWithVersionOptions:interface
+  - word!Word.DocumentCheckSpellingOptions:interface
   - word!Word.DocumentCompareOptions:interface
+  - word!Word.DocumentCountNumberedItemsOptions:interface
+  - word!Word.DocumentEndReviewOptions:interface
+  - word!Word.DocumentExportAsFixedFormat2Options:interface
+  - word!Word.DocumentExportAsFixedFormat3Options:interface
+  - word!Word.DocumentExportAsFixedFormatOptions:interface
+  - word!Word.DocumentFollowHyperlinkOptions:interface
+  - word!Word.DocumentMergeOptions:interface
+  - word!Word.DocumentPrintOutOptions:interface
+  - word!Word.DocumentProtectOptions:interface
+  - word!Word.DocumentRangeOptions:interface
+  - word!Word.DocumentReplyWithChangesOptions:interface
+  - word!Word.DocumentSendFaxOverInternetOptions:interface
+  - word!Word.DocumentSendForReviewOptions:interface
   - word!Word.GetTextOptions:interface
+  - word!Word.GoToOptions:interface
   - word!Word.HyperlinkAddOptions:interface
   - word!Word.IndexAddOptions:interface
   - word!Word.IndexMarkAllEntriesOptions:interface
@@ -618,6 +669,12 @@ interfaces:
   - word!Word.Interfaces.HeadingStyleData:interface
   - word!Word.Interfaces.HeadingStyleLoadOptions:interface
   - word!Word.Interfaces.HeadingStyleUpdateData:interface
+  - word!Word.Interfaces.HtmlDivisionCollectionData:interface
+  - word!Word.Interfaces.HtmlDivisionCollectionLoadOptions:interface
+  - word!Word.Interfaces.HtmlDivisionCollectionUpdateData:interface
+  - word!Word.Interfaces.HtmlDivisionData:interface
+  - word!Word.Interfaces.HtmlDivisionLoadOptions:interface
+  - word!Word.Interfaces.HtmlDivisionUpdateData:interface
   - word!Word.Interfaces.HyperlinkCollectionData:interface
   - word!Word.Interfaces.HyperlinkCollectionLoadOptions:interface
   - word!Word.Interfaces.HyperlinkCollectionUpdateData:interface
@@ -714,6 +771,11 @@ interfaces:
   - word!Word.Interfaces.RangeScopedCollectionLoadOptions:interface
   - word!Word.Interfaces.RangeScopedCollectionUpdateData:interface
   - word!Word.Interfaces.RangeUpdateData:interface
+  - word!Word.Interfaces.ReadabilityStatisticCollectionData:interface
+  - word!Word.Interfaces.ReadabilityStatisticCollectionLoadOptions:interface
+  - word!Word.Interfaces.ReadabilityStatisticCollectionUpdateData:interface
+  - word!Word.Interfaces.ReadabilityStatisticData:interface
+  - word!Word.Interfaces.ReadabilityStatisticLoadOptions:interface
   - word!Word.Interfaces.ReflectionFormatData:interface
   - word!Word.Interfaces.ReflectionFormatLoadOptions:interface
   - word!Word.Interfaces.ReflectionFormatUpdateData:interface
@@ -877,6 +939,9 @@ interfaces:
   - word!Word.Interfaces.ViewData:interface
   - word!Word.Interfaces.ViewLoadOptions:interface
   - word!Word.Interfaces.ViewUpdateData:interface
+  - word!Word.Interfaces.WebSettingsData:interface
+  - word!Word.Interfaces.WebSettingsLoadOptions:interface
+  - word!Word.Interfaces.WebSettingsUpdateData:interface
   - word!Word.Interfaces.WindowCollectionData:interface
   - word!Word.Interfaces.WindowCollectionLoadOptions:interface
   - word!Word.Interfaces.WindowCollectionUpdateData:interface
@@ -886,6 +951,12 @@ interfaces:
   - word!Word.Interfaces.XmlMappingData:interface
   - word!Word.Interfaces.XmlMappingLoadOptions:interface
   - word!Word.Interfaces.XmlMappingUpdateData:interface
+  - word!Word.Interfaces.XmlNodeCollectionData:interface
+  - word!Word.Interfaces.XmlNodeCollectionLoadOptions:interface
+  - word!Word.Interfaces.XmlNodeCollectionUpdateData:interface
+  - word!Word.Interfaces.XmlNodeData:interface
+  - word!Word.Interfaces.XmlNodeLoadOptions:interface
+  - word!Word.Interfaces.XmlNodeUpdateData:interface
   - word!Word.ListFormatCountNumberedItemsOptions:interface
   - word!Word.ListTemplateApplyOptions:interface
   - word!Word.ListTemplateCollectionAddOptions:interface
@@ -905,6 +976,8 @@ interfaces:
   - word!Word.SelectionMoveUpDownOptions:interface
   - word!Word.SelectionNextOptions:interface
   - word!Word.SelectionPreviousOptions:interface
+  - word!Word.SelectNodesOptions:interface
+  - word!Word.SelectSingleNodeOptions:interface
   - word!Word.TableAutoFormatOptions:interface
   - word!Word.TableCellCollectionSplitOptions:interface
   - word!Word.TableCellFormulaOptions:interface
@@ -920,6 +993,7 @@ interfaces:
   - word!Word.WindowCloseOptions:interface
   - word!Word.WindowPageScrollOptions:interface
   - word!Word.WindowScrollOptions:interface
+  - word!Word.XmlNodeSetValidationErrorOptions:interface
   - word!Word.XmlSetMappingOptions:interface
 functions:
   - name: Word.run(objects, batch)

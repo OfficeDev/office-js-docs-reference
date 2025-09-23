@@ -43,6 +43,36 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: activeTheme
+    uid: word!Word.Document#activeTheme:member
+    package: word!
+    fullName: activeTheme
+    summary: Gets the name of the active theme and formatting options.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeTheme: string;'
+      return:
+        type: string
+  - name: activeThemeDisplayName
+    uid: word!Word.Document#activeThemeDisplayName:member
+    package: word!
+    fullName: activeThemeDisplayName
+    summary: Gets the display name of the active theme.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeThemeDisplayName: string;'
+      return:
+        type: string
   - name: activeWindow
     uid: word!Word.Document#activeWindow:member
     package: word!
@@ -115,6 +145,125 @@ properties:
       content: 'readonly activeWindow: Word.Window;'
       return:
         type: <xref uid="word!Word.Window:class" />
+  - name: areFilePropertiesPasswordEncrypted
+    uid: word!Word.Document#areFilePropertiesPasswordEncrypted:member
+    package: word!
+    fullName: areFilePropertiesPasswordEncrypted
+    summary: >-
+      Gets whether Word encrypts file properties for password-protected
+      documents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly areFilePropertiesPasswordEncrypted: boolean;'
+      return:
+        type: boolean
+  - name: areGrammaticalErrorsShown
+    uid: word!Word.Document#areGrammaticalErrorsShown:member
+    package: word!
+    fullName: areGrammaticalErrorsShown
+    summary: >-
+      Specifies whether grammatical errors are marked by a wavy green line in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areGrammaticalErrorsShown: boolean;'
+      return:
+        type: boolean
+  - name: areMathDefaultsUsed
+    uid: word!Word.Document#areMathDefaultsUsed:member
+    package: word!
+    fullName: areMathDefaultsUsed
+    summary: >-
+      Specifies whether to use the default math settings when creating new
+      equations.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areMathDefaultsUsed: boolean;'
+      return:
+        type: boolean
+  - name: areNewerFeaturesDisabled
+    uid: word!Word.Document#areNewerFeaturesDisabled:member
+    package: word!
+    fullName: areNewerFeaturesDisabled
+    summary: >-
+      Specifies whether to disable features introduced after a specified
+      version.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areNewerFeaturesDisabled: boolean;'
+      return:
+        type: boolean
+  - name: areSpellingErrorsShown
+    uid: word!Word.Document#areSpellingErrorsShown:member
+    package: word!
+    fullName: areSpellingErrorsShown
+    summary: >-
+      Specifies whether Microsoft Word underlines spelling errors in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areSpellingErrorsShown: boolean;'
+      return:
+        type: boolean
+  - name: areStylesUpdatedOnOpen
+    uid: word!Word.Document#areStylesUpdatedOnOpen:member
+    package: word!
+    fullName: areStylesUpdatedOnOpen
+    summary: >-
+      Specifies whether the styles in this document are updated to match the
+      styles in the attached template each time the document is opened.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areStylesUpdatedOnOpen: boolean;'
+      return:
+        type: boolean
+  - name: areTrueTypeFontsEmbedded
+    uid: word!Word.Document#areTrueTypeFontsEmbedded:member
+    package: word!
+    fullName: areTrueTypeFontsEmbedded
+    summary: >-
+      Specifies whether Microsoft Word embeds TrueType fonts in the document
+      when it's saved.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areTrueTypeFontsEmbedded: boolean;'
+      return:
+        type: boolean
   - name: attachedTemplate
     uid: word!Word.Document#attachedTemplate:member
     package: word!
@@ -123,10 +272,10 @@ properties:
       Specifies a `Template` object that represents the template attached to the
       document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachedTemplate: Word.Template;'
@@ -138,10 +287,10 @@ properties:
     fullName: autoHyphenation
     summary: Specifies if automatic hyphenation is turned on for the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'autoHyphenation: boolean;'
@@ -153,15 +302,32 @@ properties:
     fullName: autoSaveOn
     summary: Specifies if the edits in the document are automatically saved.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoSaveOn: boolean;'
+      return:
+        type: boolean
+  - name: background
+    uid: word!Word.Document#background:member
+    package: word!
+    fullName: background
+    summary: >-
+      Gets a `Shape` object that represents the background image for the
+      document.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'autoSaveOn: boolean;'
+      content: 'readonly background: Word.Shape;'
       return:
-        type: boolean
+        type: <xref uid="word!Word.Shape:class" />
   - name: bibliography
     uid: word!Word.Document#bibliography:member
     package: word!
@@ -170,10 +336,10 @@ properties:
       Returns a `Bibliography` object that represents the bibliography
       references contained within the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly bibliography: Word.Bibliography;'
@@ -213,6 +379,23 @@ properties:
       content: 'readonly bookmarks: Word.BookmarkCollection;'
       return:
         type: <xref uid="word!Word.BookmarkCollection:class" />
+  - name: builtInDocumentProperties
+    uid: word!Word.Document#builtInDocumentProperties:member
+    package: word!
+    fullName: builtInDocumentProperties
+    summary: >-
+      Gets a `DocumentProperties` object that represents all the built-in
+      document properties for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly builtInDocumentProperties: Word.DocumentProperties;'
+      return:
+        type: <xref uid="word!Word.DocumentProperties:class" />
   - name: changeTrackingMode
     uid: word!Word.Document#changeTrackingMode:member
     package: word!
@@ -260,6 +443,23 @@ properties:
         type: >-
           <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
           | "TrackMineOnly"
+  - name: characters
+    uid: word!Word.Document#characters:member
+    package: word!
+    fullName: characters
+    summary: >-
+      Gets the `RangeScopedCollection` object that represents all the characters
+      in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly characters: Word.RangeScopedCollection;'
+      return:
+        type: <xref uid="word!Word.RangeScopedCollection:class" />
   - name: coauthoring
     uid: word!Word.Document#coauthoring:member
     package: word!
@@ -275,6 +475,57 @@ properties:
       content: 'readonly coauthoring: Word.Coauthoring;'
       return:
         type: <xref uid="word!Word.Coauthoring:class" />
+  - name: codeName
+    uid: word!Word.Document#codeName:member
+    package: word!
+    fullName: codeName
+    summary: Gets the code name for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly codeName: string;'
+      return:
+        type: string
+  - name: comments
+    uid: word!Word.Document#comments:member
+    package: word!
+    fullName: comments
+    summary: >-
+      Gets a `CommentCollection` object that represents all the comments in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly comments: Word.CommentCollection;'
+      return:
+        type: <xref uid="word!Word.CommentCollection:class" />
+  - name: compatibilityMode
+    uid: word!Word.Document#compatibilityMode:member
+    package: word!
+    fullName: compatibilityMode
+    summary: Gets the compatibility mode that Word uses when opening the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly compatibilityMode: Word.CompatibilityMode | "Word2003" |
+        "Word2007" | "Word2010" | "Word2013" | "Current";
+      return:
+        type: >-
+          <xref uid="word!Word.CompatibilityMode:enum" /> | "Word2003" |
+          "Word2007" | "Word2010" | "Word2013" | "Current"
   - name: consecutiveHyphensLimit
     uid: word!Word.Document#consecutiveHyphensLimit:member
     package: word!
@@ -283,15 +534,30 @@ properties:
       Specifies the maximum number of consecutive lines that can end with
       hyphens.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'consecutiveHyphensLimit: number;'
+      return:
+        type: number
+  - name: content
+    uid: word!Word.Document#content:member
+    package: word!
+    fullName: content
+    summary: Gets a `Range` object that represents the main document story.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'consecutiveHyphensLimit: number;'
+      content: 'readonly content: Word.Range;'
       return:
-        type: number
+        type: <xref uid="word!Word.Range:class" />
   - name: contentControls
     uid: word!Word.Document#contentControls:member
     package: word!
@@ -325,6 +591,38 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: currentRsid
+    uid: word!Word.Document#currentRsid:member
+    package: word!
+    fullName: currentRsid
+    summary: Gets a random number that Word assigns to changes in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly currentRsid: number;'
+      return:
+        type: number
+  - name: customDocumentProperties
+    uid: word!Word.Document#customDocumentProperties:member
+    package: word!
+    fullName: customDocumentProperties
+    summary: >-
+      Gets a `DocumentProperties` collection that represents all the custom
+      document properties for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly customDocumentProperties: Word.DocumentProperties;'
+      return:
+        type: <xref uid="word!Word.DocumentProperties:class" />
   - name: customXmlParts
     uid: word!Word.Document#customXmlParts:member
     package: word!
@@ -340,6 +638,38 @@ properties:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
         type: <xref uid="word!Word.CustomXmlPartCollection:class" />
+  - name: defaultTabStop
+    uid: word!Word.Document#defaultTabStop:member
+    package: word!
+    fullName: defaultTabStop
+    summary: >-
+      Specifies the interval (in points) between the default tab stops in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'defaultTabStop: number;'
+      return:
+        type: number
+  - name: defaultTargetFrame
+    uid: word!Word.Document#defaultTargetFrame:member
+    package: word!
+    fullName: defaultTargetFrame
+    summary: Specifies the browser frame for displaying a webpage via hyperlink.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'defaultTargetFrame: string;'
+      return:
+        type: string
   - name: documentLibraryVersions
     uid: word!Word.Document#documentLibraryVersions:member
     package: word!
@@ -349,21 +679,91 @@ properties:
       collection of versions of a shared document that has versioning enabled
       and that's stored in a document library on a server.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly documentLibraryVersions: Word.DocumentLibraryVersionCollection;'
+      return:
+        type: <xref uid="word!Word.DocumentLibraryVersionCollection:class" />
+  - name: doNotEmbedSystemFonts
+    uid: word!Word.Document#doNotEmbedSystemFonts:member
+    package: word!
+    fullName: doNotEmbedSystemFonts
+    summary: Specifies whether Word should not embed common system fonts.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly documentLibraryVersions: Word.DocumentLibraryVersionCollection;'
+      content: 'doNotEmbedSystemFonts: boolean;'
       return:
-        type: <xref uid="word!Word.DocumentLibraryVersionCollection:class" />
-  - name: frames
-    uid: word!Word.Document#frames:member
+        type: boolean
+  - name: encryptionProvider
+    uid: word!Word.Document#encryptionProvider:member
     package: word!
-    fullName: frames
+    fullName: encryptionProvider
     summary: >-
-      Returns a `FrameCollection` object that represents all the frames in the
+      Specifies the name of the algorithm encryption provider that Microsoft
+      Word uses when encrypting documents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'encryptionProvider: string;'
+      return:
+        type: string
+  - name: farEastLineBreakLanguage
+    uid: word!Word.Document#farEastLineBreakLanguage:member
+    package: word!
+    fullName: farEastLineBreakLanguage
+    summary: Specifies the East Asian language used for line breaking.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        farEastLineBreakLanguage: Word.FarEastLineBreakLanguageId |
+        "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+      return:
+        type: >-
+          <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> |
+          "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
+  - name: farEastLineBreakLevel
+    uid: word!Word.Document#farEastLineBreakLevel:member
+    package: word!
+    fullName: farEastLineBreakLevel
+    summary: Specifies the line break control level.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        farEastLineBreakLevel: Word.FarEastLineBreakLevel | "Normal" | "Strict"
+        | "Custom";
+      return:
+        type: >-
+          <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" |
+          "Strict" | "Custom"
+  - name: fields
+    uid: word!Word.Document#fields:member
+    package: word!
+    fullName: fields
+    summary: >-
+      Gets a `FieldCollection` object that represents all the fields in the
       document.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
@@ -372,9 +772,239 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
+      content: 'readonly fields: Word.FieldCollection;'
+      return:
+        type: <xref uid="word!Word.FieldCollection:class" />
+  - name: formattingIsNextLevelShown
+    uid: word!Word.Document#formattingIsNextLevelShown:member
+    package: word!
+    fullName: formattingIsNextLevelShown
+    summary: >-
+      Specifies whether Word shows the next heading level when the previous is
+      used.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'formattingIsNextLevelShown: boolean;'
+      return:
+        type: boolean
+  - name: formattingIsUserStyleNameShown
+    uid: word!Word.Document#formattingIsUserStyleNameShown:member
+    package: word!
+    fullName: formattingIsUserStyleNameShown
+    summary: Specifies whether to show user-defined styles.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'formattingIsUserStyleNameShown: boolean;'
+      return:
+        type: boolean
+  - name: frames
+    uid: word!Word.Document#frames:member
+    package: word!
+    fullName: frames
+    summary: >-
+      Returns a `FrameCollection` object that represents all the frames in the
+      document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
       content: 'readonly frames: Word.FrameCollection;'
       return:
         type: <xref uid="word!Word.FrameCollection:class" />
+  - name: fullName
+    uid: word!Word.Document#fullName:member
+    package: word!
+    fullName: fullName
+    summary: Gets the name of a document, including the path.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly fullName: string;'
+      return:
+        type: string
+  - name: grammaticalErrors
+    uid: word!Word.Document#grammaticalErrors:member
+    package: word!
+    fullName: grammaticalErrors
+    summary: >-
+      Gets a `RangeCollection` object that represents the sentences that failed
+      the grammar check in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly grammaticalErrors: Word.RangeCollection;'
+      return:
+        type: <xref uid="word!Word.RangeCollection:class" />
+  - name: gridDistanceHorizontal
+    uid: word!Word.Document#gridDistanceHorizontal:member
+    package: word!
+    fullName: gridDistanceHorizontal
+    summary: >-
+      Specifies the horizontal space between invisible gridlines that Microsoft
+      Word uses when you draw, move, and resize AutoShapes or East Asian
+      characters in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridDistanceHorizontal: number;'
+      return:
+        type: number
+  - name: gridDistanceVertical
+    uid: word!Word.Document#gridDistanceVertical:member
+    package: word!
+    fullName: gridDistanceVertical
+    summary: >-
+      Specifies the vertical space between invisible gridlines that Microsoft
+      Word uses when you draw, move, and resize AutoShapes or East Asian
+      characters in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridDistanceVertical: number;'
+      return:
+        type: number
+  - name: gridIsOriginFromMargin
+    uid: word!Word.Document#gridIsOriginFromMargin:member
+    package: word!
+    fullName: gridIsOriginFromMargin
+    summary: >-
+      Specifies whether the character grid starts from the upper-left corner of
+      the page.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridIsOriginFromMargin: boolean;'
+      return:
+        type: boolean
+  - name: gridOriginHorizontal
+    uid: word!Word.Document#gridOriginHorizontal:member
+    package: word!
+    fullName: gridOriginHorizontal
+    summary: Specifies the horizontal origin point for the invisible grid.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridOriginHorizontal: number;'
+      return:
+        type: number
+  - name: gridOriginVertical
+    uid: word!Word.Document#gridOriginVertical:member
+    package: word!
+    fullName: gridOriginVertical
+    summary: Specifies the vertical origin point for the invisible grid.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridOriginVertical: number;'
+      return:
+        type: number
+  - name: gridSpaceBetweenHorizontalLines
+    uid: word!Word.Document#gridSpaceBetweenHorizontalLines:member
+    package: word!
+    fullName: gridSpaceBetweenHorizontalLines
+    summary: >-
+      Specifies the interval for horizontal character gridlines in print layout
+      view.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridSpaceBetweenHorizontalLines: number;'
+      return:
+        type: number
+  - name: gridSpaceBetweenVerticalLines
+    uid: word!Word.Document#gridSpaceBetweenVerticalLines:member
+    package: word!
+    fullName: gridSpaceBetweenVerticalLines
+    summary: >-
+      Specifies the interval for vertical character gridlines in print layout
+      view.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'gridSpaceBetweenVerticalLines: number;'
+      return:
+        type: number
+  - name: hasPassword
+    uid: word!Word.Document#hasPassword:member
+    package: word!
+    fullName: hasPassword
+    summary: Gets whether a password is required to open the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly hasPassword: boolean;'
+      return:
+        type: boolean
+  - name: hasVbProject
+    uid: word!Word.Document#hasVbProject:member
+    package: word!
+    fullName: hasVbProject
+    summary: >-
+      Gets whether the document has an attached Microsoft Visual Basic for
+      Applications project.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly hasVbProject: boolean;'
+      return:
+        type: boolean
   - name: hyperlinks
     uid: word!Word.Document#hyperlinks:member
     package: word!
@@ -383,10 +1013,10 @@ properties:
       Returns a `HyperlinkCollection` object that represents all the hyperlinks
       in the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly hyperlinks: Word.HyperlinkCollection;'
@@ -398,15 +1028,30 @@ properties:
     fullName: hyphenateCaps
     summary: Specifies whether words in all capital letters can be hyphenated.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyphenateCaps: boolean;'
+      return:
+        type: boolean
+  - name: hyphenationZone
+    uid: word!Word.Document#hyphenationZone:member
+    package: word!
+    fullName: hyphenationZone
+    summary: Specifies the width of the hyphenation zone, in points.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'hyphenateCaps: boolean;'
+      content: 'hyphenationZone: number;'
       return:
-        type: boolean
+        type: number
   - name: indexes
     uid: word!Word.Document#indexes:member
     package: word!
@@ -424,6 +1069,480 @@ properties:
       content: 'readonly indexes: Word.IndexCollection;'
       return:
         type: <xref uid="word!Word.IndexCollection:class" />
+  - name: isAutoFormatOverrideOn
+    uid: word!Word.Document#isAutoFormatOverrideOn:member
+    package: word!
+    fullName: isAutoFormatOverrideOn
+    summary: >-
+      Specifies whether automatic formatting options override formatting
+      restrictions.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAutoFormatOverrideOn: boolean;'
+      return:
+        type: boolean
+  - name: isChartDataPointTracked
+    uid: word!Word.Document#isChartDataPointTracked:member
+    package: word!
+    fullName: isChartDataPointTracked
+    summary: >-
+      Specifies whether charts in the active document use cell-reference
+      data-point tracking.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isChartDataPointTracked: boolean;'
+      return:
+        type: boolean
+  - name: isCompatible
+    uid: word!Word.Document#isCompatible:member
+    package: word!
+    fullName: isCompatible
+    summary: >-
+      Specifies whether the compatibility option specified by the `type`
+      property is enabled.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isCompatible: boolean;'
+      return:
+        type: boolean
+  - name: isFinal
+    uid: word!Word.Document#isFinal:member
+    package: word!
+    fullName: isFinal
+    summary: Specifies whether the document is final.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isFinal: boolean;'
+      return:
+        type: boolean
+  - name: isFontsSubsetSaved
+    uid: word!Word.Document#isFontsSubsetSaved:member
+    package: word!
+    fullName: isFontsSubsetSaved
+    summary: >-
+      Specifies whether Microsoft Word saves a subset of the embedded TrueType
+      fonts with the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isFontsSubsetSaved: boolean;'
+      return:
+        type: boolean
+  - name: isFormsDataPrinted
+    uid: word!Word.Document#isFormsDataPrinted:member
+    package: word!
+    fullName: isFormsDataPrinted
+    summary: >-
+      Specifies whether Microsoft Word prints onto a preprinted form only the
+      data entered in the corresponding online form.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isFormsDataPrinted: boolean;'
+      return:
+        type: boolean
+  - name: isFormsDataSaved
+    uid: word!Word.Document#isFormsDataSaved:member
+    package: word!
+    fullName: isFormsDataSaved
+    summary: >-
+      Specifies whether Microsoft Word saves the data entered in a form as a
+      tab-delimited record for use in a database.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isFormsDataSaved: boolean;'
+      return:
+        type: boolean
+  - name: isGrammarChecked
+    uid: word!Word.Document#isGrammarChecked:member
+    package: word!
+    fullName: isGrammarChecked
+    summary: Specifies whether a grammar check has been run on the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isGrammarChecked: boolean;'
+      return:
+        type: boolean
+  - name: isInAutoSave
+    uid: word!Word.Document#isInAutoSave:member
+    package: word!
+    fullName: isInAutoSave
+    summary: >-
+      Gets whether the most recent firing of the
+      `Application.DocumentBeforeSave` event was the result of an automatic save
+      by the document or a manual save by the user.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isInAutoSave: boolean;'
+      return:
+        type: boolean
+  - name: isInFormsDesign
+    uid: word!Word.Document#isInFormsDesign:member
+    package: word!
+    fullName: isInFormsDesign
+    summary: Gets whether the document is in form design mode.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isInFormsDesign: boolean;'
+      return:
+        type: boolean
+  - name: isKerningByAlgorithm
+    uid: word!Word.Document#isKerningByAlgorithm:member
+    package: word!
+    fullName: isKerningByAlgorithm
+    summary: >-
+      Specifies whether Word kerns half-width Latin characters and punctuation
+      marks.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isKerningByAlgorithm: boolean;'
+      return:
+        type: boolean
+  - name: isLinguisticDataEmbedded
+    uid: word!Word.Document#isLinguisticDataEmbedded:member
+    package: word!
+    fullName: isLinguisticDataEmbedded
+    summary: Specifies whether to embed speech and handwriting data.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isLinguisticDataEmbedded: boolean;'
+      return:
+        type: boolean
+  - name: isMasterDocument
+    uid: word!Word.Document#isMasterDocument:member
+    package: word!
+    fullName: isMasterDocument
+    summary: Gets whether this document is a master document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isMasterDocument: boolean;'
+      return:
+        type: boolean
+  - name: isOptimizedForWord97
+    uid: word!Word.Document#isOptimizedForWord97:member
+    package: word!
+    fullName: isOptimizedForWord97
+    summary: Specifies whether Word optimizes the document for Word 97.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isOptimizedForWord97: boolean;'
+      return:
+        type: boolean
+  - name: isPostScriptPrintedOverText
+    uid: word!Word.Document#isPostScriptPrintedOverText:member
+    package: word!
+    fullName: isPostScriptPrintedOverText
+    summary: >-
+      Specifies whether [PRINT
+      field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f)
+      instructions (such as PostScript commands) in the document are to be
+      printed on top of text and graphics when a PostScript printer is used.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPostScriptPrintedOverText: boolean;'
+      return:
+        type: boolean
+  - name: isQuickStyleSetLocked
+    uid: word!Word.Document#isQuickStyleSetLocked:member
+    package: word!
+    fullName: isQuickStyleSetLocked
+    summary: Specifies whether users can change the Quick Style set.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isQuickStyleSetLocked: boolean;'
+      return:
+        type: boolean
+  - name: isReadOnly
+    uid: word!Word.Document#isReadOnly:member
+    package: word!
+    fullName: isReadOnly
+    summary: >-
+      Gets whether changes to the document cannot be saved to the original
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isReadOnly: boolean;'
+      return:
+        type: boolean
+  - name: isReadOnlyRecommended
+    uid: word!Word.Document#isReadOnlyRecommended:member
+    package: word!
+    fullName: isReadOnlyRecommended
+    summary: >-
+      Specifies whether Microsoft Word displays a message box whenever a user
+      opens the document, suggesting that it be opened as read-only.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isReadOnlyRecommended: boolean;'
+      return:
+        type: boolean
+  - name: isSnappedToGrid
+    uid: word!Word.Document#isSnappedToGrid:member
+    package: word!
+    fullName: isSnappedToGrid
+    summary: >-
+      Specifies whether AutoShapes or East Asian characters are automatically
+      aligned with an invisible grid.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isSnappedToGrid: boolean;'
+      return:
+        type: boolean
+  - name: isSnappedToShapes
+    uid: word!Word.Document#isSnappedToShapes:member
+    package: word!
+    fullName: isSnappedToShapes
+    summary: >-
+      Specifies whether AutoShapes or East Asian characters align with invisible
+      gridlines through other shapes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isSnappedToShapes: boolean;'
+      return:
+        type: boolean
+  - name: isSpellingChecked
+    uid: word!Word.Document#isSpellingChecked:member
+    package: word!
+    fullName: isSpellingChecked
+    summary: Specifies whether spelling has been checked throughout the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isSpellingChecked: boolean;'
+      return:
+        type: boolean
+  - name: isStyleEnforced
+    uid: word!Word.Document#isStyleEnforced:member
+    package: word!
+    fullName: isStyleEnforced
+    summary: >-
+      Specifies whether formatting restrictions are enforced in a protected
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isStyleEnforced: boolean;'
+      return:
+        type: boolean
+  - name: isSubdocument
+    uid: word!Word.Document#isSubdocument:member
+    package: word!
+    fullName: isSubdocument
+    summary: Gets whether this document is a subdocument of a master document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isSubdocument: boolean;'
+      return:
+        type: boolean
+  - name: isThemeLocked
+    uid: word!Word.Document#isThemeLocked:member
+    package: word!
+    fullName: isThemeLocked
+    summary: Specifies whether users can change the document theme.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isThemeLocked: boolean;'
+      return:
+        type: boolean
+  - name: isUserControl
+    uid: word!Word.Document#isUserControl:member
+    package: word!
+    fullName: isUserControl
+    summary: Specifies whether the document was created or opened by the user.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isUserControl: boolean;'
+      return:
+        type: boolean
+  - name: isVbaSigned
+    uid: word!Word.Document#isVbaSigned:member
+    package: word!
+    fullName: isVbaSigned
+    summary: Gets whether the VBA project is digitally signed.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isVbaSigned: boolean;'
+      return:
+        type: boolean
+  - name: isWriteReserved
+    uid: word!Word.Document#isWriteReserved:member
+    package: word!
+    fullName: isWriteReserved
+    summary: Gets whether the document is protected with a write password.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isWriteReserved: boolean;'
+      return:
+        type: boolean
+  - name: justificationMode
+    uid: word!Word.Document#justificationMode:member
+    package: word!
+    fullName: justificationMode
+    summary: Specifies the character spacing adjustment.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        justificationMode: Word.JustificationMode | "Expand" | "Compress" |
+        "CompressKana";
+      return:
+        type: >-
+          <xref uid="word!Word.JustificationMode:enum" /> | "Expand" |
+          "Compress" | "CompressKana"
+  - name: kind
+    uid: word!Word.Document#kind:member
+    package: word!
+    fullName: kind
+    summary: >-
+      Specifies the format type that Microsoft Word uses when automatically
+      formatting the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'kind: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";'
+      return:
+        type: >-
+          <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter"
+          | "Email"
   - name: languageDetected
     uid: word!Word.Document#languageDetected:member
     package: word!
@@ -432,15 +1551,49 @@ properties:
       Specifies whether Microsoft Word has detected the language of the document
       text.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'languageDetected: boolean;'
+      return:
+        type: boolean
+  - name: listParagraphs
+    uid: word!Word.Document#listParagraphs:member
+    package: word!
+    fullName: listParagraphs
+    summary: >-
+      Gets a `ParagraphCollection` object that represents all the numbered
+      paragraphs in the document.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'languageDetected: boolean;'
+      content: 'readonly listParagraphs: Word.ParagraphCollection;'
       return:
-        type: boolean
+        type: <xref uid="word!Word.ParagraphCollection:class" />
+  - name: lists
+    uid: word!Word.Document#lists:member
+    package: word!
+    fullName: lists
+    summary: >-
+      Gets a `ListCollection` object that contains all the formatted lists in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly lists: Word.ListCollection;'
+      return:
+        type: <xref uid="word!Word.ListCollection:class" />
   - name: listTemplates
     uid: word!Word.Document#listTemplates:member
     package: word!
@@ -458,11 +1611,11 @@ properties:
       content: 'readonly listTemplates: Word.ListTemplateCollection;'
       return:
         type: <xref uid="word!Word.ListTemplateCollection:class" />
-  - name: pageSetup
-    uid: word!Word.Document#pageSetup:member
+  - name: noLineBreakAfter
+    uid: word!Word.Document#noLineBreakAfter:member
     package: word!
-    fullName: pageSetup
-    summary: Returns a `PageSetup` object that's associated with the document.
+    fullName: noLineBreakAfter
+    summary: Specifies the kinsoku characters after which Word will not break a line.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -470,9 +1623,269 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
+      content: 'noLineBreakAfter: string;'
+      return:
+        type: string
+  - name: noLineBreakBefore
+    uid: word!Word.Document#noLineBreakBefore:member
+    package: word!
+    fullName: noLineBreakBefore
+    summary: Specifies the kinsoku characters before which Word will not break a line.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'noLineBreakBefore: string;'
+      return:
+        type: string
+  - name: openEncoding
+    uid: word!Word.Document#openEncoding:member
+    package: word!
+    fullName: openEncoding
+    summary: Gets the encoding used to open the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly openEncoding: Word.DocumentEncoding | "Thai" |
+        "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+        "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" |
+        "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+        "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+        "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+        "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+        "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+        "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+        "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+        "Iso885915Latin9" | "Iso88598HebrewLogical" |
+        "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+        "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
+        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+        "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" |
+        "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+        "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+        "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" |
+        "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+        "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+        "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+        "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+        "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+        "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+        "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      return:
+        type: >-
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+  - name: originalDocumentTitle
+    uid: word!Word.Document#originalDocumentTitle:member
+    package: word!
+    fullName: originalDocumentTitle
+    summary: Gets the title of the original document after legal-blackline comparison.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly originalDocumentTitle: string;'
+      return:
+        type: string
+  - name: pageSetup
+    uid: word!Word.Document#pageSetup:member
+    package: word!
+    fullName: pageSetup
+    summary: Returns a `PageSetup` object that's associated with the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
       content: 'readonly pageSetup: Word.PageSetup;'
       return:
         type: <xref uid="word!Word.PageSetup:class" />
+  - name: paragraphs
+    uid: word!Word.Document#paragraphs:member
+    package: word!
+    fullName: paragraphs
+    summary: >-
+      Gets a `ParagraphCollection` object that represents all the paragraphs in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
+      return:
+        type: <xref uid="word!Word.ParagraphCollection:class" />
+  - name: password
+    uid: word!Word.Document#password:member
+    package: word!
+    fullName: password
+    summary: Sets a password that must be supplied to open the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'password: string;'
+      return:
+        type: string
+  - name: passwordEncryptionAlgorithm
+    uid: word!Word.Document#passwordEncryptionAlgorithm:member
+    package: word!
+    fullName: passwordEncryptionAlgorithm
+    summary: Gets the algorithm used for password encryption.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly passwordEncryptionAlgorithm: string;'
+      return:
+        type: string
+  - name: passwordEncryptionKeyLength
+    uid: word!Word.Document#passwordEncryptionKeyLength:member
+    package: word!
+    fullName: passwordEncryptionKeyLength
+    summary: Gets the key length used for password encryption.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly passwordEncryptionKeyLength: number;'
+      return:
+        type: number
+  - name: passwordEncryptionProvider
+    uid: word!Word.Document#passwordEncryptionProvider:member
+    package: word!
+    fullName: passwordEncryptionProvider
+    summary: Gets the name of the password encryption provider.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly passwordEncryptionProvider: string;'
+      return:
+        type: string
+  - name: path
+    uid: word!Word.Document#path:member
+    package: word!
+    fullName: path
+    summary: >-
+      Gets the disk or the web path to the document (excludes the document
+      name).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly path: string;'
+      return:
+        type: string
+  - name: printRevisions
+    uid: word!Word.Document#printRevisions:member
+    package: word!
+    fullName: printRevisions
+    summary: Specifies whether revision marks are printed with the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'printRevisions: boolean;'
+      return:
+        type: boolean
   - name: properties
     uid: word!Word.Document#properties:member
     package: word!
@@ -508,6 +1921,121 @@ properties:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type: <xref uid="word!Word.DocumentProperties:class" />
+  - name: protectionType
+    uid: word!Word.Document#protectionType:member
+    package: word!
+    fullName: protectionType
+    summary: Gets the protection type for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly protectionType: Word.ProtectionType | "NoProtection" |
+        "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" |
+        "AllowOnlyReading";
+      return:
+        type: >-
+          <xref uid="word!Word.ProtectionType:enum" /> | "NoProtection" |
+          "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" |
+          "AllowOnlyReading"
+  - name: readabilityStatistics
+    uid: word!Word.Document#readabilityStatistics:member
+    package: word!
+    fullName: readabilityStatistics
+    summary: >-
+      Gets a `ReadabilityStatisticCollection` object that represents the
+      readability statistics for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly readabilityStatistics: Word.ReadabilityStatisticCollection;'
+      return:
+        type: <xref uid="word!Word.ReadabilityStatisticCollection:class" />
+  - name: readingLayoutSizeX
+    uid: word!Word.Document#readingLayoutSizeX:member
+    package: word!
+    fullName: readingLayoutSizeX
+    summary: Specifies the width of pages in reading layout view when frozen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readingLayoutSizeX: number;'
+      return:
+        type: number
+  - name: readingLayoutSizeY
+    uid: word!Word.Document#readingLayoutSizeY:member
+    package: word!
+    fullName: readingLayoutSizeY
+    summary: Specifies the height of pages in reading layout view when frozen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readingLayoutSizeY: number;'
+      return:
+        type: number
+  - name: readingModeIsLayoutFrozen
+    uid: word!Word.Document#readingModeIsLayoutFrozen:member
+    package: word!
+    fullName: readingModeIsLayoutFrozen
+    summary: >-
+      Specifies whether pages in reading layout view are frozen for handwritten
+      markup.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readingModeIsLayoutFrozen: boolean;'
+      return:
+        type: boolean
+  - name: removePersonalInformationOnSave
+    uid: word!Word.Document#removePersonalInformationOnSave:member
+    package: word!
+    fullName: removePersonalInformationOnSave
+    summary: Specifies whether Word removes user information upon saving.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removePersonalInformationOnSave: boolean;'
+      return:
+        type: boolean
+  - name: revisedDocumentTitle
+    uid: word!Word.Document#revisedDocumentTitle:member
+    package: word!
+    fullName: revisedDocumentTitle
+    summary: Gets the title of the revised document after legal-blackline comparison.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly revisedDocumentTitle: string;'
+      return:
+        type: string
   - name: revisions
     uid: word!Word.Document#revisions:member
     package: word!
@@ -543,6 +2071,141 @@ properties:
       content: 'readonly saved: boolean;'
       return:
         type: boolean
+  - name: saveEncoding
+    uid: word!Word.Document#saveEncoding:member
+    package: word!
+    fullName: saveEncoding
+    summary: Specifies the encoding used when saving the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        saveEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
+        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
+        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
+        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
+        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
+        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
+        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
+        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
+        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
+        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
+        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
+        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
+        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
+        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
+        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
+        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
+        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      return:
+        type: >-
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+  - name: saveFormat
+    uid: word!Word.Document#saveFormat:member
+    package: word!
+    fullName: saveFormat
+    summary: Gets the file format of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly saveFormat: Word.FileSaveFormat | "Document" | "Template" |
+        "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" |
+        "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" |
+        "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" |
+        "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
+        "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" |
+        "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
+        "StrictOpenXmlDocument";
+      return:
+        type: >-
+          <xref uid="word!Word.FileSaveFormat:enum" /> | "Document" | "Template"
+          | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf"
+          | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" |
+          "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" |
+          "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
+          "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" |
+          "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
+          "StrictOpenXmlDocument"
   - name: sections
     uid: word!Word.Document#sections:member
     package: word!
@@ -575,6 +2238,23 @@ properties:
       content: 'readonly selection: Word.Selection;'
       return:
         type: <xref uid="word!Word.Selection:class" />
+  - name: sentences
+    uid: word!Word.Document#sentences:member
+    package: word!
+    fullName: sentences
+    summary: >-
+      Gets the `RangeScopedCollection` object that represents all the sentences
+      in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly sentences: Word.RangeScopedCollection;'
+      return:
+        type: <xref uid="word!Word.RangeScopedCollection:class" />
   - name: settings
     uid: word!Word.Document#settings:member
     package: word!
@@ -619,6 +2299,55 @@ properties:
       content: 'readonly settings: Word.SettingCollection;'
       return:
         type: <xref uid="word!Word.SettingCollection:class" />
+  - name: spellingErrors
+    uid: word!Word.Document#spellingErrors:member
+    package: word!
+    fullName: spellingErrors
+    summary: >-
+      Gets a `RangeCollection` object that represents the words identified as
+      spelling errors in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly spellingErrors: Word.RangeCollection;'
+      return:
+        type: <xref uid="word!Word.RangeCollection:class" />
+  - name: storyRanges
+    uid: word!Word.Document#storyRanges:member
+    package: word!
+    fullName: storyRanges
+    summary: >-
+      Gets a `RangeCollection` object that represents all the stories in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly storyRanges: Word.RangeCollection;'
+      return:
+        type: <xref uid="word!Word.RangeCollection:class" />
+  - name: styles
+    uid: word!Word.Document#styles:member
+    package: word!
+    fullName: styles
+    summary: Gets a `StyleCollection` for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly styles: Word.StyleCollection;'
+      return:
+        type: <xref uid="word!Word.StyleCollection:class" />
   - name: tableOfAuthoritiesCategories
     uid: word!Word.Document#tableOfAuthoritiesCategories:member
     package: word!
@@ -638,6 +2367,23 @@ properties:
         Word.TableOfAuthoritiesCategoryCollection;
       return:
         type: <xref uid="word!Word.TableOfAuthoritiesCategoryCollection:class" />
+  - name: tables
+    uid: word!Word.Document#tables:member
+    package: word!
+    fullName: tables
+    summary: >-
+      Gets a `TableCollection` object that represents all the tables in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tables: Word.TableCollection;'
+      return:
+        type: <xref uid="word!Word.TableCollection:class" />
   - name: tablesOfAuthorities
     uid: word!Word.Document#tablesOfAuthorities:member
     package: word!
@@ -689,6 +2435,224 @@ properties:
       content: 'readonly tablesOfFigures: Word.TableOfFiguresCollection;'
       return:
         type: <xref uid="word!Word.TableOfFiguresCollection:class" />
+  - name: textEncoding
+    uid: word!Word.Document#textEncoding:member
+    package: word!
+    fullName: textEncoding
+    summary: Specifies the encoding for saving as encoded text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        textEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
+        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
+        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
+        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
+        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
+        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
+        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
+        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
+        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
+        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
+        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
+        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
+        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
+        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
+        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
+        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
+        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      return:
+        type: >-
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+  - name: textLineEnding
+    uid: word!Word.Document#textLineEnding:member
+    package: word!
+    fullName: textLineEnding
+    summary: Specifies how Word marks line and paragraph breaks in text files.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        textLineEnding: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" |
+        "Lfcr" | "Lsps";
+      return:
+        type: >-
+          <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" |
+          "LfOnly" | "Lfcr" | "Lsps"
+  - name: trackedChangesAreDateAndTimeRemoved
+    uid: word!Word.Document#trackedChangesAreDateAndTimeRemoved:member
+    package: word!
+    fullName: trackedChangesAreDateAndTimeRemoved
+    summary: >-
+      Specifies whether to remove or store date and time metadata for tracked
+      changes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'trackedChangesAreDateAndTimeRemoved: boolean;'
+      return:
+        type: boolean
+  - name: trackFormatting
+    uid: word!Word.Document#trackFormatting:member
+    package: word!
+    fullName: trackFormatting
+    summary: Specifies whether to track formatting changes when change tracking is on.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'trackFormatting: boolean;'
+      return:
+        type: boolean
+  - name: trackMoves
+    uid: word!Word.Document#trackMoves:member
+    package: word!
+    fullName: trackMoves
+    summary: Specifies whether to mark moved text when Track Changes is on.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'trackMoves: boolean;'
+      return:
+        type: boolean
+  - name: trackRevisions
+    uid: word!Word.Document#trackRevisions:member
+    package: word!
+    fullName: trackRevisions
+    summary: Specifies whether changes are tracked in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'trackRevisions: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Document#type:member
+    package: word!
+    fullName: type
+    summary: Gets the document type (template or document).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Word.DocumentType | "Document" | "Template" | "Frameset";'
+      return:
+        type: >-
+          <xref uid="word!Word.DocumentType:enum" /> | "Document" | "Template" |
+          "Frameset"
+  - name: webSettings
+    uid: word!Word.Document#webSettings:member
+    package: word!
+    fullName: webSettings
+    summary: Gets the `WebSettings` object for webpage-related attributes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly webSettings: Word.WebSettings;'
+      return:
+        type: <xref uid="word!Word.WebSettings:class" />
   - name: windows
     uid: word!Word.Document#windows:member
     package: word!
@@ -704,7 +2668,140 @@ properties:
       content: 'readonly windows: Word.WindowCollection;'
       return:
         type: <xref uid="word!Word.WindowCollection:class" />
+  - name: words
+    uid: word!Word.Document#words:member
+    package: word!
+    fullName: words
+    summary: >-
+      Gets the `RangeScopedCollection` object that represents each word in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly words: Word.RangeScopedCollection;'
+      return:
+        type: <xref uid="word!Word.RangeScopedCollection:class" />
+  - name: writePassword
+    uid: word!Word.Document#writePassword:member
+    package: word!
+    fullName: writePassword
+    summary: Sets a password for saving changes to the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'writePassword: string;'
+      return:
+        type: string
+  - name: xmlAreAdvancedErrorsShown
+    uid: word!Word.Document#xmlAreAdvancedErrorsShown:member
+    package: word!
+    fullName: xmlAreAdvancedErrorsShown
+    summary: >-
+      Specifies whether error messages are generated from built-in Word messages
+      or MSXML (Microsoft XML).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xmlAreAdvancedErrorsShown: boolean;'
+      return:
+        type: boolean
+  - name: xmlIsXsltUsedWhenSaving
+    uid: word!Word.Document#xmlIsXsltUsedWhenSaving:member
+    package: word!
+    fullName: xmlIsXsltUsedWhenSaving
+    summary: >-
+      Specifies whether to save a document through an Extensible Stylesheet
+      Language Transformation (XSLT).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xmlIsXsltUsedWhenSaving: boolean;'
+      return:
+        type: boolean
+  - name: xmlSaveThroughXSLT
+    uid: word!Word.Document#xmlSaveThroughXSLT:member
+    package: word!
+    fullName: xmlSaveThroughXSLT
+    summary: >-
+      Specifies the path and file name for the XSLT to apply when saving a
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'xmlSaveThroughXSLT: string;'
+      return:
+        type: string
 methods:
+  - name: acceptAllRevisions()
+    uid: word!Word.Document#acceptAllRevisions:member(1)
+    package: word!
+    fullName: acceptAllRevisions()
+    summary: Accepts all tracked changes in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'acceptAllRevisions(): void;'
+      return:
+        type: void
+        description: ''
+  - name: acceptAllRevisionsShown()
+    uid: word!Word.Document#acceptAllRevisionsShown:member(1)
+    package: word!
+    fullName: acceptAllRevisionsShown()
+    summary: Accepts all revisions in the document that are displayed on the screen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'acceptAllRevisionsShown(): void;'
+      return:
+        type: void
+        description: ''
+  - name: activate()
+    uid: word!Word.Document#activate:member(1)
+    package: word!
+    fullName: activate()
+    summary: Activates the document so that it becomes the active document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
   - name: addStyle(name, type)
     uid: word!Word.Document#addStyle:member(1)
     package: word!
@@ -796,6 +2893,220 @@ methods:
       return:
         type: <xref uid="word!Word.Style:class" />
         description: ''
+  - name: addToFavorites()
+    uid: word!Word.Document#addToFavorites:member(1)
+    package: word!
+    fullName: addToFavorites()
+    summary: >-
+      Creates a shortcut to the document or hyperlink and adds it to the
+      **Favorites** folder.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addToFavorites(): void;'
+      return:
+        type: void
+        description: ''
+  - name: applyQuickStyleSet(style)
+    uid: word!Word.Document#applyQuickStyleSet:member(1)
+    package: word!
+    fullName: applyQuickStyleSet(style)
+    summary: Applies the specified Quick Style set to the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyQuickStyleSet(style: Word.ApplyQuickStyleSet): void;'
+      parameters:
+        - id: style
+          description: The style set to apply.
+          type: <xref uid="word!Word.ApplyQuickStyleSet:enum" />
+      return:
+        type: void
+        description: ''
+  - name: applyQuickStyleSet(style)
+    uid: word!Word.Document#applyQuickStyleSet:member(2)
+    package: word!
+    fullName: applyQuickStyleSet(style)
+    summary: Applies the specified Quick Style set to the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyQuickStyleSet(style: "SessionStart" | "Template"): void;'
+      parameters:
+        - id: style
+          description: The style set to apply.
+          type: '"SessionStart" | "Template"'
+      return:
+        type: void
+        description: ''
+  - name: applyTheme(name)
+    uid: word!Word.Document#applyTheme:member(1)
+    package: word!
+    fullName: applyTheme(name)
+    summary: Applies the specified theme to this document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'applyTheme(name: string): void;'
+      parameters:
+        - id: name
+          description: The name of the theme.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: autoFormat()
+    uid: word!Word.Document#autoFormat:member(1)
+    package: word!
+    fullName: autoFormat()
+    summary: Automatically formats the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'autoFormat(): void;'
+      return:
+        type: void
+        description: ''
+  - name: canCheckin()
+    uid: word!Word.Document#canCheckin:member(1)
+    package: word!
+    fullName: canCheckin()
+    summary: Returns `true` if Microsoft Word can check in the document to a server.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'canCheckin(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: '`true` if the document can be checked in; otherwise, `false`<!-- -->.'
+  - name: checkConsistencyJapanese()
+    uid: word!Word.Document#checkConsistencyJapanese:member(1)
+    package: word!
+    fullName: checkConsistencyJapanese()
+    summary: >-
+      Searches all text in a Japanese language document and displays instances
+      where character usage is inconsistent for the same words.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkConsistencyJapanese(): void;'
+      return:
+        type: void
+        description: ''
+  - name: checkGrammar()
+    uid: word!Word.Document#checkGrammar:member(1)
+    package: word!
+    fullName: checkGrammar()
+    summary: Begins a spelling and grammar check for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkGrammar(): void;'
+      return:
+        type: void
+        description: ''
+  - name: checkIn(options)
+    uid: word!Word.Document#checkIn:member(1)
+    package: word!
+    fullName: checkIn(options)
+    summary: >-
+      Checks in the document from the local computer to a server and sets the
+      local document to read-only so that it cannot be edited locally.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkIn(options?: Word.DocumentCheckInOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for checking in the document.
+          type: <xref uid="word!Word.DocumentCheckInOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: checkInWithVersion(options)
+    uid: word!Word.Document#checkInWithVersion:member(1)
+    package: word!
+    fullName: checkInWithVersion(options)
+    summary: >-
+      Saves the document to a server from a local computer, and sets the local
+      document to read-only so that it cannot be edited locally.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        checkInWithVersion(options?: Word.DocumentCheckInWithVersionOptions):
+        void;
+      parameters:
+        - id: options
+          description: >-
+            Optional. Configuration options for checking in the document with
+            version control.
+          type: <xref uid="word!Word.DocumentCheckInWithVersionOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: checkSpelling(options)
+    uid: word!Word.Document#checkSpelling:member(1)
+    package: word!
+    fullName: checkSpelling(options)
+    summary: Begins a spelling check for the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkSpelling(options?: Word.DocumentCheckSpellingOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for the spell checking operation.
+          type: <xref uid="word!Word.DocumentCheckSpellingOptions:interface" />
+      return:
+        type: void
+        description: ''
   - name: close(closeBehavior)
     uid: word!Word.Document#close:member(1)
     package: word!
@@ -863,6 +3174,22 @@ methods:
             Optional. The close behavior must be 'Save' or 'SkipSave'. Default
             value is 'Save'.
           type: '"Save" | "SkipSave"'
+      return:
+        type: void
+        description: ''
+  - name: closePrintPreview()
+    uid: word!Word.Document#closePrintPreview:member(1)
+    package: word!
+    fullName: closePrintPreview()
+    summary: Switches the document from print preview to the previous view.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'closePrintPreview(): void;'
       return:
         type: void
         description: ''
@@ -959,6 +3286,260 @@ methods:
       return:
         type: void
         description: ''
+  - name: computeStatistics(statistic, includeFootnotesAndEndnotes)
+    uid: word!Word.Document#computeStatistics:member(1)
+    package: word!
+    fullName: computeStatistics(statistic, includeFootnotesAndEndnotes)
+    summary: Returns a statistic based on the contents of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        computeStatistics(statistic: Word.Statistic,
+        includeFootnotesAndEndnotes?: boolean):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: statistic
+          description: The type of statistic to return.
+          type: <xref uid="word!Word.Statistic:enum" />
+        - id: includeFootnotesAndEndnotes
+          description: >-
+            Optional. Whether to include footnotes and endnotes. The default
+            value is `false`<!-- -->.
+          type: boolean
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: computeStatistics(statistic, includeFootnotesAndEndnotes)
+    uid: word!Word.Document#computeStatistics:member(2)
+    package: word!
+    fullName: computeStatistics(statistic, includeFootnotesAndEndnotes)
+    summary: Returns a statistic based on the contents of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        computeStatistics(statistic: "Words" | "Lines" | "Pages" | "Characters"
+        | "Paragraphs" | "CharactersWithSpaces" | "FarEastCharacters",
+        includeFootnotesAndEndnotes?: boolean):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: statistic
+          description: The type of statistic to return.
+          type: >-
+            "Words" | "Lines" | "Pages" | "Characters" | "Paragraphs" |
+            "CharactersWithSpaces" | "FarEastCharacters"
+        - id: includeFootnotesAndEndnotes
+          description: >-
+            Optional. Whether to include footnotes and endnotes. The default
+            value is `false`<!-- -->.
+          type: boolean
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: convert()
+    uid: word!Word.Document#convert:member(1)
+    package: word!
+    fullName: convert()
+    summary: Converts the file to the newest format and enables all features.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convert(): void;'
+      return:
+        type: void
+        description: ''
+  - name: convertAutoHyphens()
+    uid: word!Word.Document#convertAutoHyphens:member(1)
+    package: word!
+    fullName: convertAutoHyphens()
+    summary: Converts automatic hyphens to manual hyphens.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convertAutoHyphens(): void;'
+      return:
+        type: void
+        description: ''
+  - name: convertNumbersToText(numberType)
+    uid: word!Word.Document#convertNumbersToText:member(1)
+    package: word!
+    fullName: convertNumbersToText(numberType)
+    summary: >-
+      Changes the list numbers and [LISTNUM
+      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
+      in the document to text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convertNumbersToText(numberType?: Word.NumberType): void;'
+      parameters:
+        - id: numberType
+          description: Optional. The type of numbering to convert.
+          type: <xref uid="word!Word.NumberType:enum" />
+      return:
+        type: void
+        description: ''
+  - name: convertNumbersToText(numberType)
+    uid: word!Word.Document#convertNumbersToText:member(2)
+    package: word!
+    fullName: convertNumbersToText(numberType)
+    summary: >-
+      Changes the list numbers and [LISTNUM
+      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
+      in the document to text.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        convertNumbersToText(numberType?: "Paragraph" | "ListNum" |
+        "AllNumbers"): void;
+      parameters:
+        - id: numberType
+          description: Optional. The type of numbering to convert.
+          type: '"Paragraph" | "ListNum" | "AllNumbers"'
+      return:
+        type: void
+        description: ''
+  - name: convertVietnameseDocument(codePageOrigin)
+    uid: word!Word.Document#convertVietnameseDocument:member(1)
+    package: word!
+    fullName: convertVietnameseDocument(codePageOrigin)
+    summary: >-
+      Reconverts a Vietnamese document to Unicode using a code page other than
+      the default.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'convertVietnameseDocument(codePageOrigin: number): void;'
+      parameters:
+        - id: codePageOrigin
+          description: The code page to use.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: copyStylesFromTemplate(StyleTemplate)
+    uid: word!Word.Document#copyStylesFromTemplate:member(1)
+    package: word!
+    fullName: copyStylesFromTemplate(StyleTemplate)
+    summary: Copies styles from the specified template to the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'copyStylesFromTemplate(StyleTemplate: string): void;'
+      parameters:
+        - id: StyleTemplate
+          description: The template to copy styles from.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: countNumberedItems(options)
+    uid: word!Word.Document#countNumberedItems:member(1)
+    package: word!
+    fullName: countNumberedItems(options)
+    summary: >-
+      Returns the number of bulleted or numbered items and [LISTNUM
+      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
+      in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        countNumberedItems(options?: Word.DocumentCountNumberedItemsOptions):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: options
+          description: Optional. Configuration options for counting numbered items.
+          type: <xref uid="word!Word.DocumentCountNumberedItemsOptions:interface" />
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: The count of numbered items.
+  - name: deleteAllComments()
+    uid: word!Word.Document#deleteAllComments:member(1)
+    package: word!
+    fullName: deleteAllComments()
+    summary: Deletes all comments from the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'deleteAllComments(): void;'
+      return:
+        type: void
+        description: ''
+  - name: deleteAllCommentsShown()
+    uid: word!Word.Document#deleteAllCommentsShown:member(1)
+    package: word!
+    fullName: deleteAllCommentsShown()
+    summary: Deletes all revisions in the document that are displayed on the screen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'deleteAllCommentsShown(): void;'
+      return:
+        type: void
+        description: ''
+  - name: deleteAllInkAnnotations()
+    uid: word!Word.Document#deleteAllInkAnnotations:member(1)
+    package: word!
+    fullName: deleteAllInkAnnotations()
+    summary: Deletes all handwritten ink annotations in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'deleteAllInkAnnotations(): void;'
+      return:
+        type: void
+        description: ''
   - name: deleteBookmark(name)
     uid: word!Word.Document#deleteBookmark:member(1)
     package: word!
@@ -985,13 +3566,273 @@ methods:
     fullName: detectLanguage()
     summary: Analyzes the document text to determine the language.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'detectLanguage(): void;'
+      return:
+        type: void
+        description: ''
+  - name: endReview(options)
+    uid: word!Word.Document#endReview:member(1)
+    package: word!
+    fullName: endReview(options)
+    summary: Terminates a review of the file that has been sent for review.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'detectLanguage(): void;'
+      content: 'endReview(options?: Word.DocumentEndReviewOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for ending the review process.
+          type: <xref uid="word!Word.DocumentEndReviewOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: exportAsFixedFormat(outputFileName, exportFormat, options)
+    uid: word!Word.Document#exportAsFixedFormat:member(1)
+    package: word!
+    fullName: exportAsFixedFormat(outputFileName, exportFormat, options)
+    summary: Saves the document in PDF or XPS format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsFixedFormat(outputFileName: string, exportFormat:
+        Word.ExportFormat, options?: Word.DocumentExportAsFixedFormatOptions):
+        void;
+      parameters:
+        - id: outputFileName
+          description: The name of the output file.
+          type: string
+        - id: exportFormat
+          description: The export format.
+          type: <xref uid="word!Word.ExportFormat:enum" />
+        - id: options
+          description: Optional. Configuration options for the export operation.
+          type: >-
+            <xref uid="word!Word.DocumentExportAsFixedFormatOptions:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: exportAsFixedFormat(outputFileName, exportFormat, options)
+    uid: word!Word.Document#exportAsFixedFormat:member(2)
+    package: word!
+    fullName: exportAsFixedFormat(outputFileName, exportFormat, options)
+    summary: Saves the document in PDF or XPS format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsFixedFormat(outputFileName: string, exportFormat: "Pdf" | "Xps",
+        options?: Word.DocumentExportAsFixedFormatOptions): void;
+      parameters:
+        - id: outputFileName
+          description: The name of the output file.
+          type: string
+        - id: exportFormat
+          description: The export format.
+          type: '"Pdf" | "Xps"'
+        - id: options
+          description: Optional. Configuration options for the export operation.
+          type: >-
+            <xref uid="word!Word.DocumentExportAsFixedFormatOptions:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: exportAsFixedFormat2(outputFileName, exportFormat, options)
+    uid: word!Word.Document#exportAsFixedFormat2:member(1)
+    package: word!
+    fullName: exportAsFixedFormat2(outputFileName, exportFormat, options)
+    summary: Saves the document in PDF or XPS format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsFixedFormat2(outputFileName: string, exportFormat:
+        Word.ExportFormat, options?: Word.DocumentExportAsFixedFormat2Options):
+        void;
+      parameters:
+        - id: outputFileName
+          description: The output file name.
+          type: string
+        - id: exportFormat
+          description: The format to export (PDF/XPS).
+          type: <xref uid="word!Word.ExportFormat:enum" />
+        - id: options
+          description: Optional. Configuration options for the export operation.
+          type: >-
+            <xref uid="word!Word.DocumentExportAsFixedFormat2Options:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: exportAsFixedFormat2(outputFileName, exportFormat, options)
+    uid: word!Word.Document#exportAsFixedFormat2:member(2)
+    package: word!
+    fullName: exportAsFixedFormat2(outputFileName, exportFormat, options)
+    summary: Saves the document in PDF or XPS format.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsFixedFormat2(outputFileName: string, exportFormat: "Pdf" |
+        "Xps", options?: Word.DocumentExportAsFixedFormat2Options): void;
+      parameters:
+        - id: outputFileName
+          description: The output file name.
+          type: string
+        - id: exportFormat
+          description: The format to export (PDF/XPS).
+          type: '"Pdf" | "Xps"'
+        - id: options
+          description: Optional. Configuration options for the export operation.
+          type: >-
+            <xref uid="word!Word.DocumentExportAsFixedFormat2Options:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: exportAsFixedFormat3(outputFileName, exportFormat, options)
+    uid: word!Word.Document#exportAsFixedFormat3:member(1)
+    package: word!
+    fullName: exportAsFixedFormat3(outputFileName, exportFormat, options)
+    summary: Saves the document in PDF or XPS format with improved tagging.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsFixedFormat3(outputFileName: string, exportFormat:
+        Word.ExportFormat, options?: Word.DocumentExportAsFixedFormat3Options):
+        void;
+      parameters:
+        - id: outputFileName
+          description: The output file name.
+          type: string
+        - id: exportFormat
+          description: The format to export (PDF/XPS).
+          type: <xref uid="word!Word.ExportFormat:enum" />
+        - id: options
+          description: Optional. Configuration options for the export operation.
+          type: >-
+            <xref uid="word!Word.DocumentExportAsFixedFormat3Options:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: exportAsFixedFormat3(outputFileName, exportFormat, options)
+    uid: word!Word.Document#exportAsFixedFormat3:member(2)
+    package: word!
+    fullName: exportAsFixedFormat3(outputFileName, exportFormat, options)
+    summary: Saves the document in PDF or XPS format with improved tagging.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        exportAsFixedFormat3(outputFileName: string, exportFormat: "Pdf" |
+        "Xps", options?: Word.DocumentExportAsFixedFormat3Options): void;
+      parameters:
+        - id: outputFileName
+          description: The output file name.
+          type: string
+        - id: exportFormat
+          description: The format to export (PDF/XPS).
+          type: '"Pdf" | "Xps"'
+        - id: options
+          description: Optional. Configuration options for the export operation.
+          type: >-
+            <xref uid="word!Word.DocumentExportAsFixedFormat3Options:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: fitToPages()
+    uid: word!Word.Document#fitToPages:member(1)
+    package: word!
+    fullName: fitToPages()
+    summary: >-
+      Decreases the font size of text just enough so that the document page
+      count drops by one.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fitToPages(): void;'
+      return:
+        type: void
+        description: ''
+  - name: followHyperlink(options)
+    uid: word!Word.Document#followHyperlink:member(1)
+    package: word!
+    fullName: followHyperlink(options)
+    summary: >-
+      Displays a cached document, if it has already been downloaded. Otherwise,
+      this method resolves the hyperlink, downloads the target document, and
+      displays the document in the appropriate application.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'followHyperlink(options?: Word.DocumentFollowHyperlinkOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for following the hyperlink.
+          type: <xref uid="word!Word.DocumentFollowHyperlinkOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: freezeLayout()
+    uid: word!Word.Document#freezeLayout:member(1)
+    package: word!
+    fullName: freezeLayout()
+    summary: Fixes the layout of the document in Web view.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'freezeLayout(): void;'
       return:
         type: void
         description: ''
@@ -1156,6 +3997,59 @@ methods:
       return:
         type: <xref uid="word!Word.ContentControlCollection:class" />
         description: ''
+  - name: getCrossReferenceItems(referenceType)
+    uid: word!Word.Document#getCrossReferenceItems:member(1)
+    package: word!
+    fullName: getCrossReferenceItems(referenceType)
+    summary: >-
+      Returns an array of items that can be cross-referenced based on the
+      specified cross-reference type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getCrossReferenceItems(referenceType: Word.ReferenceType):
+        OfficeExtension.ClientResult<string[]>;
+      parameters:
+        - id: referenceType
+          description: The type of reference.
+          type: <xref uid="word!Word.ReferenceType:enum" />
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;string[]&gt;
+        description: ''
+  - name: getCrossReferenceItems(referenceType)
+    uid: word!Word.Document#getCrossReferenceItems:member(2)
+    package: word!
+    fullName: getCrossReferenceItems(referenceType)
+    summary: >-
+      Returns an array of items that can be cross-referenced based on the
+      specified cross-reference type.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getCrossReferenceItems(referenceType: "NumberedItem" | "Heading" |
+        "Bookmark" | "Footnote" | "Endnote"):
+        OfficeExtension.ClientResult<string[]>;
+      parameters:
+        - id: referenceType
+          description: The type of reference.
+          type: '"NumberedItem" | "Heading" | "Bookmark" | "Footnote" | "Endnote"'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;string[]&gt;
+        description: ''
   - name: getEndnoteBody()
     uid: word!Word.Document#getEndnoteBody:member(1)
     package: word!
@@ -1233,6 +4127,28 @@ methods:
           type: string
       return:
         type: <xref uid="word!Word.Paragraph:class" />
+        description: ''
+  - name: getRange(options)
+    uid: word!Word.Document#getRange:member(1)
+    package: word!
+    fullName: getRange(options)
+    summary: >-
+      Returns a `Range` object by using the specified starting and ending
+      character positions.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getRange(options?: Word.DocumentRangeOptions): Word.Range;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for specifying the range parameters.
+          type: <xref uid="word!Word.DocumentRangeOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Range:class" />
         description: ''
   - name: getSelection()
     uid: word!Word.Document#getSelection:member(1)
@@ -1321,6 +4237,30 @@ methods:
       content: 'getStyles(): Word.StyleCollection;'
       return:
         type: <xref uid="word!Word.StyleCollection:class" />
+        description: ''
+  - name: goTo(options)
+    uid: word!Word.Document#goTo:member(1)
+    package: word!
+    fullName: goTo(options)
+    summary: >-
+      Returns a `Range` object that represents the start position of the
+      specified item, such as a page, bookmark, or field.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'goTo(options?: Word.GoToOptions): Word.Range;'
+      parameters:
+        - id: options
+          description: >-
+            Optional. Configuration options for specifying the `goTo`
+            parameters.
+          type: <xref uid="word!Word.GoToOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Range:class" />
         description: ''
   - name: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     uid: word!Word.Document#importStylesFromJson:member(1)
@@ -1593,11 +4533,11 @@ methods:
       return:
         type: <xref uid="word!Word.Document:class" />
         description: ''
-  - name: manualHyphenation()
-    uid: word!Word.Document#manualHyphenation:member(1)
+  - name: lockServerFile()
+    uid: word!Word.Document#lockServerFile:member(1)
     package: word!
-    fullName: manualHyphenation()
-    summary: Initiates manual hyphenation of a document, one line at a time.
+    fullName: lockServerFile()
+    summary: Locks the file on the server preventing anyone else from editing it.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1605,7 +4545,650 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
+      content: 'lockServerFile(): void;'
+      return:
+        type: void
+        description: ''
+  - name: makeCompatibilityDefault()
+    uid: word!Word.Document#makeCompatibilityDefault:member(1)
+    package: word!
+    fullName: makeCompatibilityDefault()
+    summary: Sets the compatibility options.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'makeCompatibilityDefault(): void;'
+      return:
+        type: void
+        description: ''
+  - name: manualHyphenation()
+    uid: word!Word.Document#manualHyphenation:member(1)
+    package: word!
+    fullName: manualHyphenation()
+    summary: Initiates manual hyphenation of a document, one line at a time.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
       content: 'manualHyphenation(): void;'
+      return:
+        type: void
+        description: ''
+  - name: merge(fileName, options)
+    uid: word!Word.Document#merge:member(1)
+    package: word!
+    fullName: merge(fileName, options)
+    summary: >-
+      Merges the changes marked with revision marks from one document to
+      another.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'merge(fileName: string, options?: Word.DocumentMergeOptions): void;'
+      parameters:
+        - id: fileName
+          description: The name of the file to merge.
+          type: string
+        - id: options
+          description: Optional. Configuration options for the merge operation.
+          type: <xref uid="word!Word.DocumentMergeOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: post()
+    uid: word!Word.Document#post:member(1)
+    package: word!
+    fullName: post()
+    summary: Posts the document to a public folder in Microsoft Exchange.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'post(): void;'
+      return:
+        type: void
+        description: ''
+  - name: presentIt()
+    uid: word!Word.Document#presentIt:member(1)
+    package: word!
+    fullName: presentIt()
+    summary: Opens PowerPoint with the Word document loaded.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'presentIt(): void;'
+      return:
+        type: void
+        description: ''
+  - name: printOut(options)
+    uid: word!Word.Document#printOut:member(1)
+    package: word!
+    fullName: printOut(options)
+    summary: Prints all or part of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'printOut(options?: Word.DocumentPrintOutOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for the print operation.
+          type: <xref uid="word!Word.DocumentPrintOutOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: printPreview()
+    uid: word!Word.Document#printPreview:member(1)
+    package: word!
+    fullName: printPreview()
+    summary: Switches the view to print preview.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'printPreview(): void;'
+      return:
+        type: void
+        description: ''
+  - name: protect(type, options)
+    uid: word!Word.Document#protect:member(1)
+    package: word!
+    fullName: protect(type, options)
+    summary: Protects the document from unauthorized changes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        protect(type: Word.ProtectionType, options?:
+        Word.DocumentProtectOptions): void;
+      parameters:
+        - id: type
+          description: The type of protection.
+          type: <xref uid="word!Word.ProtectionType:enum" />
+        - id: options
+          description: Optional. Configuration options for document protection.
+          type: <xref uid="word!Word.DocumentProtectOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: protect(type, options)
+    uid: word!Word.Document#protect:member(2)
+    package: word!
+    fullName: protect(type, options)
+    summary: Protects the document from unauthorized changes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        protect(type: "NoProtection" | "AllowOnlyRevisions" |
+        "AllowOnlyComments" | "AllowOnlyFormFields" | "AllowOnlyReading",
+        options?: Word.DocumentProtectOptions): void;
+      parameters:
+        - id: type
+          description: The type of protection.
+          type: >-
+            "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" |
+            "AllowOnlyFormFields" | "AllowOnlyReading"
+        - id: options
+          description: Optional. Configuration options for document protection.
+          type: <xref uid="word!Word.DocumentProtectOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: redo(times)
+    uid: word!Word.Document#redo:member(1)
+    package: word!
+    fullName: redo(times)
+    summary: Redoes the last action that was undone (reverses the `undo` method).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'redo(times?: number): OfficeExtension.ClientResult<boolean>;'
+      parameters:
+        - id: times
+          description: Optional. The number of actions to redo.
+          type: number
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: >-
+          `true` if the actions were redone successfully; otherwise, `false`<!--
+          -->.
+  - name: rejectAllRevisions()
+    uid: word!Word.Document#rejectAllRevisions:member(1)
+    package: word!
+    fullName: rejectAllRevisions()
+    summary: Rejects all tracked changes in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rejectAllRevisions(): void;'
+      return:
+        type: void
+        description: ''
+  - name: rejectAllRevisionsShown()
+    uid: word!Word.Document#rejectAllRevisionsShown:member(1)
+    package: word!
+    fullName: rejectAllRevisionsShown()
+    summary: Rejects all revisions in the document that are displayed on the screen.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rejectAllRevisionsShown(): void;'
+      return:
+        type: void
+        description: ''
+  - name: reload()
+    uid: word!Word.Document#reload:member(1)
+    package: word!
+    fullName: reload()
+    summary: >-
+      Reloads a cached document by resolving the hyperlink to the document and
+      downloading it.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'reload(): void;'
+      return:
+        type: void
+        description: ''
+  - name: reloadAs(encoding)
+    uid: word!Word.Document#reloadAs:member(1)
+    package: word!
+    fullName: reloadAs(encoding)
+    summary: >-
+      Reloads the document based on an HTML document, using the document
+      encoding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'reloadAs(encoding: Word.DocumentEncoding): void;'
+      parameters:
+        - id: encoding
+          description: The encoding to use.
+          type: <xref uid="word!Word.DocumentEncoding:enum" />
+      return:
+        type: void
+        description: ''
+  - name: reloadAs(encoding)
+    uid: word!Word.Document#reloadAs:member(2)
+    package: word!
+    fullName: reloadAs(encoding)
+    summary: >-
+      Reloads the document based on an HTML document, using the document
+      encoding.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        reloadAs(encoding: "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk"
+        | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" |
+        "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" |
+        "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" |
+        "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+        "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+        "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+        "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+        "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+        "Iso885915Latin9" | "Iso88598HebrewLogical" |
+        "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+        "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
+        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+        "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" |
+        "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+        "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+        "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" |
+        "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+        "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+        "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+        "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+        "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+        "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+        "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8"): void;
+      parameters:
+        - id: encoding
+          description: The encoding to use.
+          type: >-
+            "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+            "TraditionalChineseBig5" | "UnicodeLittleEndian" |
+            "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" |
+            "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese"
+            | "AutoDetect" | "JapaneseAutoDetect" |
+            "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+            "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+            "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+            "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+            "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+            "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+            "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+            "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+            "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+            "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" |
+            "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" |
+            "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" |
+            "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" |
+            "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" |
+            "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+            "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+            "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+            "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+            "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+            "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+            "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+            "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+            "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+            "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+            "EbcdicUsCanadaAndTraditionalChinese" |
+            "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+            "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+            "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+            "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench"
+            | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+            "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+            "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" |
+            "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" |
+            "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" |
+            "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" |
+            "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
+            "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" |
+            "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" |
+            "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U"
+            | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" |
+            "Utf7" | "Utf8"
+      return:
+        type: void
+        description: ''
+  - name: removeDocumentInformation(removeDocInfoType)
+    uid: word!Word.Document#removeDocumentInformation:member(1)
+    package: word!
+    fullName: removeDocumentInformation(removeDocInfoType)
+    summary: >-
+      Removes sensitive information, properties, comments, and other metadata
+      from the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeDocumentInformation(removeDocInfoType: Word.RemoveDocInfoType):
+        void;
+      parameters:
+        - id: removeDocInfoType
+          description: The type of document info to remove.
+          type: <xref uid="word!Word.RemoveDocInfoType:enum" />
+      return:
+        type: void
+        description: ''
+  - name: removeDocumentInformation(removeDocInfoType)
+    uid: word!Word.Document#removeDocumentInformation:member(2)
+    package: word!
+    fullName: removeDocumentInformation(removeDocInfoType)
+    summary: >-
+      Removes sensitive information, properties, comments, and other metadata
+      from the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeDocumentInformation(removeDocInfoType: "Comments" | "Revisions" |
+        "Versions" | "RemovePersonalInformation" | "EmailHeader" | "RoutingSlip"
+        | "SendForReview" | "DocumentProperties" | "Template" |
+        "DocumentWorkspace" | "InkAnnotations" | "DocumentServerProperties" |
+        "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions" |
+        "AtMentions" | "DocumentTasks" | "DocumentIntelligence" |
+        "CommentReactions" | "All"): void;
+      parameters:
+        - id: removeDocInfoType
+          description: The type of document info to remove.
+          type: >-
+            "Comments" | "Revisions" | "Versions" | "RemovePersonalInformation"
+            | "EmailHeader" | "RoutingSlip" | "SendForReview" |
+            "DocumentProperties" | "Template" | "DocumentWorkspace" |
+            "InkAnnotations" | "DocumentServerProperties" |
+            "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions"
+            | "AtMentions" | "DocumentTasks" | "DocumentIntelligence" |
+            "CommentReactions" | "All"
+      return:
+        type: void
+        description: ''
+  - name: removeLockedStyles()
+    uid: word!Word.Document#removeLockedStyles:member(1)
+    package: word!
+    fullName: removeLockedStyles()
+    summary: >-
+      Purges the document of locked styles when formatting restrictions have
+      been applied in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removeLockedStyles(): void;'
+      return:
+        type: void
+        description: ''
+  - name: removeNumbers(numberType)
+    uid: word!Word.Document#removeNumbers:member(1)
+    package: word!
+    fullName: removeNumbers(numberType)
+    summary: Removes numbers or bullets from the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removeNumbers(numberType?: Word.NumberType): void;'
+      parameters:
+        - id: numberType
+          description: Optional. The type of numbering to remove.
+          type: <xref uid="word!Word.NumberType:enum" />
+      return:
+        type: void
+        description: ''
+  - name: removeNumbers(numberType)
+    uid: word!Word.Document#removeNumbers:member(2)
+    package: word!
+    fullName: removeNumbers(numberType)
+    summary: Removes numbers or bullets from the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeNumbers(numberType?: "Paragraph" | "ListNum" | "AllNumbers"):
+        void;
+      parameters:
+        - id: numberType
+          description: Optional. The type of numbering to remove.
+          type: '"Paragraph" | "ListNum" | "AllNumbers"'
+      return:
+        type: void
+        description: ''
+  - name: removeTheme()
+    uid: word!Word.Document#removeTheme:member(1)
+    package: word!
+    fullName: removeTheme()
+    summary: Removes the active theme from the current document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removeTheme(): void;'
+      return:
+        type: void
+        description: ''
+  - name: repaginate()
+    uid: word!Word.Document#repaginate:member(1)
+    package: word!
+    fullName: repaginate()
+    summary: Repaginates the entire document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'repaginate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: replyWithChanges(options)
+    uid: word!Word.Document#replyWithChanges:member(1)
+    package: word!
+    fullName: replyWithChanges(options)
+    summary: >-
+      Sends an email message to the author of the document that has been sent
+      out for review, notifying them that a reviewer has completed review of the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'replyWithChanges(options?: Word.DocumentReplyWithChangesOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for replying with changes.
+          type: <xref uid="word!Word.DocumentReplyWithChangesOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: resetFormFields()
+    uid: word!Word.Document#resetFormFields:member(1)
+    package: word!
+    fullName: resetFormFields()
+    summary: >-
+      Clears all form fields in the document, preparing the form to be filled in
+      again.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resetFormFields(): void;'
+      return:
+        type: void
+        description: ''
+  - name: returnToLastReadPosition()
+    uid: word!Word.Document#returnToLastReadPosition:member(1)
+    package: word!
+    fullName: returnToLastReadPosition()
+    summary: Returns the document to the last saved reading position.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'returnToLastReadPosition(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: runAutoMacro(autoMacro)
+    uid: word!Word.Document#runAutoMacro:member(1)
+    package: word!
+    fullName: runAutoMacro(autoMacro)
+    summary: >-
+      Runs an auto macro that's stored in the document. If the specified auto
+      macro doesn't exist, nothing happens.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'runAutoMacro(autoMacro: Word.AutoMacro): void;'
+      parameters:
+        - id: autoMacro
+          description: The auto macro to run.
+          type: <xref uid="word!Word.AutoMacro:enum" />
+      return:
+        type: void
+        description: ''
+  - name: runAutoMacro(autoMacro)
+    uid: word!Word.Document#runAutoMacro:member(2)
+    package: word!
+    fullName: runAutoMacro(autoMacro)
+    summary: >-
+      Runs an auto macro that's stored in the document. If the specified auto
+      macro doesn't exist, nothing happens.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        runAutoMacro(autoMacro: "StartWord" | "New" | "Open" | "Close" | "Exit"
+        | "Sync"): void;
+      parameters:
+        - id: autoMacro
+          description: The auto macro to run.
+          type: '"StartWord" | "New" | "Open" | "Close" | "Exit" | "Sync"'
       return:
         type: void
         description: ''
@@ -1723,6 +5306,26 @@ methods:
       return:
         type: void
         description: ''
+  - name: saveAsQuickStyleSet(fileName)
+    uid: word!Word.Document#saveAsQuickStyleSet:member(1)
+    package: word!
+    fullName: saveAsQuickStyleSet(fileName)
+    summary: Saves the group of quick styles currently in use.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'saveAsQuickStyleSet(fileName: string): void;'
+      parameters:
+        - id: fileName
+          description: The name of the file to save.
+          type: string
+      return:
+        type: void
+        description: ''
   - name: search(searchText, searchOptions)
     uid: word!Word.Document#search:member(1)
     package: word!
@@ -1765,6 +5368,260 @@ methods:
                     }
       return:
         type: <xref uid="word!Word.RangeCollection:class" />
+        description: ''
+  - name: select()
+    uid: word!Word.Document#select:member(1)
+    package: word!
+    fullName: select()
+    summary: Selects the contents of the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
+  - name: selectContentControlsByTag(tag)
+    uid: word!Word.Document#selectContentControlsByTag:member(1)
+    package: word!
+    fullName: selectContentControlsByTag(tag)
+    summary: Returns all content controls with the specified tag.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selectContentControlsByTag(tag: string): Word.ContentControlCollection;'
+      parameters:
+        - id: tag
+          description: The tag value to filter content controls.
+          type: string
+      return:
+        type: <xref uid="word!Word.ContentControlCollection:class" />
+        description: ''
+  - name: selectContentControlsByTitle(title)
+    uid: word!Word.Document#selectContentControlsByTitle:member(1)
+    package: word!
+    fullName: selectContentControlsByTitle(title)
+    summary: >-
+      Returns a `ContentControlCollection` object that represents all the
+      content controls in the document with the specified title.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        selectContentControlsByTitle(title: string):
+        Word.ContentControlCollection;
+      parameters:
+        - id: title
+          description: The title of the content controls.
+          type: string
+      return:
+        type: <xref uid="word!Word.ContentControlCollection:class" />
+        description: ''
+  - name: selectLinkedControls(node)
+    uid: word!Word.Document#selectLinkedControls:member(1)
+    package: word!
+    fullName: selectLinkedControls(node)
+    summary: >-
+      Returns a `ContentControlCollection` object that represents all content
+      controls in the document that are linked to the specific custom XML node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        selectLinkedControls(node: Word.CustomXmlNode):
+        Word.ContentControlCollection;
+      parameters:
+        - id: node
+          description: The custom XML node.
+          type: <xref uid="word!Word.CustomXmlNode:class" />
+      return:
+        type: <xref uid="word!Word.ContentControlCollection:class" />
+        description: ''
+  - name: selectNodes(xPath, options)
+    uid: word!Word.Document#selectNodes:member(1)
+    package: word!
+    fullName: selectNodes(xPath, options)
+    summary: >-
+      Returns an `XmlNodeCollection` object that represents all the nodes that
+      match the XPath parameter in the order in which they appear in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        selectNodes(xPath: string, options?: Word.SelectNodesOptions):
+        Word.XmlNodeCollection;
+      parameters:
+        - id: xPath
+          description: The XPath expression.
+          type: string
+        - id: options
+          description: Optional. Configuration options for the nodes selection.
+          type: <xref uid="word!Word.SelectNodesOptions:interface" />
+      return:
+        type: <xref uid="word!Word.XmlNodeCollection:class" />
+        description: ''
+  - name: selectSingleNode(xPath, options)
+    uid: word!Word.Document#selectSingleNode:member(1)
+    package: word!
+    fullName: selectSingleNode(xPath, options)
+    summary: >-
+      Returns an `XmlNode` object that represents the first node that matches
+      the XPath parameter in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions):
+        Word.XmlNode;
+      parameters:
+        - id: xPath
+          description: The XPath expression.
+          type: string
+        - id: options
+          description: Optional. Configuration options for the node selection.
+          type: <xref uid="word!Word.SelectSingleNodeOptions:interface" />
+      return:
+        type: <xref uid="word!Word.XmlNode:class" />
+        description: ''
+  - name: selectUnlinkedControls(stream)
+    uid: word!Word.Document#selectUnlinkedControls:member(1)
+    package: word!
+    fullName: selectUnlinkedControls(stream)
+    summary: >-
+      Returns a `ContentControlCollection` object that represents all content
+      controls in the document that are not linked to an XML node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        selectUnlinkedControls(stream?: Word.CustomXmlPart):
+        Word.ContentControlCollection;
+      parameters:
+        - id: stream
+          description: Optional. The custom XML part.
+          type: <xref uid="word!Word.CustomXmlPart:class" />
+      return:
+        type: <xref uid="word!Word.ContentControlCollection:class" />
+        description: ''
+  - name: sendFax(address, subject)
+    uid: word!Word.Document#sendFax:member(1)
+    package: word!
+    fullName: sendFax(address, subject)
+    summary: Sends the document as a fax, without any user interaction.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sendFax(address: string, subject?: string): void;'
+      parameters:
+        - id: address
+          description: The fax address.
+          type: string
+        - id: subject
+          description: Optional. The subject of the fax.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: sendFaxOverInternet(options)
+    uid: word!Word.Document#sendFaxOverInternet:member(1)
+    package: word!
+    fullName: sendFaxOverInternet(options)
+    summary: >-
+      Sends the document to a fax service provider, who faxes the document to
+      one or more specified recipients.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        sendFaxOverInternet(options?: Word.DocumentSendFaxOverInternetOptions):
+        void;
+      parameters:
+        - id: options
+          description: >-
+            Optional. Configuration options for sending the fax over the
+            internet.
+          type: >-
+            <xref uid="word!Word.DocumentSendFaxOverInternetOptions:interface"
+            />
+      return:
+        type: void
+        description: ''
+  - name: sendForReview(options)
+    uid: word!Word.Document#sendForReview:member(1)
+    package: word!
+    fullName: sendForReview(options)
+    summary: >-
+      Sends the document in an email message for review by the specified
+      recipients.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sendForReview(options?: Word.DocumentSendForReviewOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. Configuration options for sending the document for review.
+          type: <xref uid="word!Word.DocumentSendForReviewOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: sendMail()
+    uid: word!Word.Document#sendMail:member(1)
+    package: word!
+    fullName: sendMail()
+    summary: >-
+      Opens a message window for sending the document through Microsoft
+      Exchange.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sendMail(): void;'
+      return:
+        type: void
         description: ''
   - name: set(properties, options)
     uid: word!Word.Document#set:member(1)
@@ -1817,6 +5674,85 @@ methods:
       return:
         type: void
         description: ''
+  - name: setDefaultTableStyle(style, setInTemplate)
+    uid: word!Word.Document#setDefaultTableStyle:member(1)
+    package: word!
+    fullName: setDefaultTableStyle(style, setInTemplate)
+    summary: Specifies the table style to use for newly created tables in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setDefaultTableStyle(style: string, setInTemplate: boolean): void;'
+      parameters:
+        - id: style
+          description: The style to apply.
+          type: string
+        - id: setInTemplate
+          description: Whether to set the style in the template.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: >-
+      setPasswordEncryptionOptions(passwordEncryptionProvider,
+      passwordEncryptionAlgorithm, passwordEncryptionKeyLength,
+      passwordEncryptFileProperties)
+    uid: word!Word.Document#setPasswordEncryptionOptions:member(1)
+    package: word!
+    fullName: >-
+      setPasswordEncryptionOptions(passwordEncryptionProvider,
+      passwordEncryptionAlgorithm, passwordEncryptionKeyLength,
+      passwordEncryptFileProperties)
+    summary: >-
+      Sets the options Microsoft Word uses for encrypting documents with
+      passwords.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setPasswordEncryptionOptions(passwordEncryptionProvider: string,
+        passwordEncryptionAlgorithm: string, passwordEncryptionKeyLength:
+        number, passwordEncryptFileProperties?: boolean): void;
+      parameters:
+        - id: passwordEncryptionProvider
+          description: The encryption provider.
+          type: string
+        - id: passwordEncryptionAlgorithm
+          description: The encryption algorithm.
+          type: string
+        - id: passwordEncryptionKeyLength
+          description: The key length.
+          type: number
+        - id: passwordEncryptFileProperties
+          description: Optional. Whether to encrypt file properties.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: toggleFormsDesign()
+    uid: word!Word.Document#toggleFormsDesign:member(1)
+    package: word!
+    fullName: toggleFormsDesign()
+    summary: Switches form design mode on or off.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toggleFormsDesign(): void;'
+      return:
+        type: void
+        description: ''
   - name: toJSON()
     uid: word!Word.Document#toJSON:member(1)
     package: word!
@@ -1861,6 +5797,93 @@ methods:
       return:
         type: <xref uid="word!Word.Document:class" />
         description: ''
+  - name: transformDocument(path, dataOnly)
+    uid: word!Word.Document#transformDocument:member(1)
+    package: word!
+    fullName: transformDocument(path, dataOnly)
+    summary: >-
+      Applies the specified Extensible Stylesheet Language Transformation (XSLT)
+      file to this document and replaces the document with the results.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'transformDocument(path: string, dataOnly?: boolean): void;'
+      parameters:
+        - id: path
+          description: The path to the XSLT file.
+          type: string
+        - id: dataOnly
+          description: Optional. Whether to use data only.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: undo(times)
+    uid: word!Word.Document#undo:member(1)
+    package: word!
+    fullName: undo(times)
+    summary: >-
+      Undoes the last action or a sequence of actions, which are displayed in
+      the Undo list.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'undo(times?: number): OfficeExtension.ClientResult<boolean>;'
+      parameters:
+        - id: times
+          description: Optional. The number of actions to undo.
+          type: number
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: >-
+          `true` if the actions were undone successfully; otherwise, `false`<!--
+          -->.
+  - name: undoClear()
+    uid: word!Word.Document#undoClear:member(1)
+    package: word!
+    fullName: undoClear()
+    summary: Clears the list of actions that can be undone in the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'undoClear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: unprotect(password)
+    uid: word!Word.Document#unprotect:member(1)
+    package: word!
+    fullName: unprotect(password)
+    summary: Removes protection from the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      parameters:
+        - id: password
+          description: Optional. The password to unprotect the document.
+          type: string
+      return:
+        type: void
+        description: ''
   - name: untrack()
     uid: word!Word.Document#untrack:member(1)
     package: word!
@@ -1881,6 +5904,78 @@ methods:
       content: 'untrack(): Word.Document;'
       return:
         type: <xref uid="word!Word.Document:class" />
+        description: ''
+  - name: updateStyles()
+    uid: word!Word.Document#updateStyles:member(1)
+    package: word!
+    fullName: updateStyles()
+    summary: >-
+      Copies all styles from the attached template into the document,
+      overwriting any existing styles in the document that have the same name.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'updateStyles(): void;'
+      return:
+        type: void
+        description: ''
+  - name: viewCode()
+    uid: word!Word.Document#viewCode:member(1)
+    package: word!
+    fullName: viewCode()
+    summary: >-
+      Displays the code window for the selected Microsoft ActiveX control in the
+      document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'viewCode(): void;'
+      return:
+        type: void
+        description: ''
+  - name: viewPropertyBrowser()
+    uid: word!Word.Document#viewPropertyBrowser:member(1)
+    package: word!
+    fullName: viewPropertyBrowser()
+    summary: >-
+      Displays the property window for the selected Microsoft ActiveX control in
+      the document.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'viewPropertyBrowser(): void;'
+      return:
+        type: void
+        description: ''
+  - name: webPagePreview()
+    uid: word!Word.Document#webPagePreview:member(1)
+    package: word!
+    fullName: webPagePreview()
+    summary: >-
+      Displays a preview of the current document as it would look if saved as a
+      webpage.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'webPagePreview(): void;'
+      return:
+        type: void
         description: ''
 events:
   - name: onAnnotationClicked

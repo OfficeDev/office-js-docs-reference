@@ -15,7 +15,7 @@ if [ -e "build-errors.txt" ]; then
     rm build-errors.txt
 fi
 
-#exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
+exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
 
 if [ -d "node_modules" ]; then
     rm -rf "node_modules"
@@ -94,25 +94,23 @@ npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_2/power
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts "Api set: PowerPointApi 1.1" configs/powerpoint-1_1-config.json
 
 npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word-desktop1.d.ts "Api set: WordApiOnline 1.1" configs/word-online-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop1.d.ts "Api set: WordApiDesktop 1.3" configs/word-desktop-1_3-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop2.d.ts "Api set: WordApi 1.9" configs/word-1_9-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop2.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop3.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop3.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop4.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop4.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_online/word-online1.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online1.d.ts api-extractor-inputs-word-release/word_online/word-online2.d.ts "Api set: WordApiDesktop 1.1" configs/word-desktop-1_1-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online2.d.ts api-extractor-inputs-word-release/word_online/word-online3.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online3.d.ts api-extractor-inputs-word-release/word_online/word-online4.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online4.d.ts api-extractor-inputs-word-release/word_online/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop2.d.ts "Api set: WordApi 1.9" configs/word-1_9-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop2.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop3.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop3.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop4.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop4.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop2.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "Api set: WordApiDesktop 1.1" configs/word-desktop-1_1-config.json
-npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts "Api set: WordApi 1.8" configs/word-1_8-config.json
-npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts "Api set: WordApi 1.7" configs/word-1_7-config.json
-npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts "Api set: WordApi 1.6" configs/word-1_6-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word-desktop2.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop2.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word-desktop3.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop3.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts "Api set: WordApiDesktop 1.3" configs/word-1_3_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_online/word-online1.d.ts "Api set: WordApiDesktop 1.3" configs/word-desktop-1_3-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online1.d.ts api-extractor-inputs-word-release/word_online/word-online2.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online2.d.ts api-extractor-inputs-word-release/word_online/word-online3.d.ts "Api set: WordApiDesktop 1.1" configs/word-desktop-1_1-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online3.d.ts api-extractor-inputs-word-release/word_online/word-online4.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online4.d.ts api-extractor-inputs-word-release/word_online/word-online5.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online5.d.ts api-extractor-inputs-word-release/word_online/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts "Api set: WordApi 1.9" configs/word-1_9-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online3.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "Api set: WordApiOnline 1.1" configs/word-online-config.json
+npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts "Api set: WordApi 1.9" configs/word-1_9-config.json
+npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts "Api set: WordApi 1.8" configs/word-1_8-config.json
+npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop4.d.ts "Api set: WordApi 1.7" configs/word-1_7-config.json
+npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop4.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts "Api set: WordApi 1.6" configs/word-1_6-config.json
 npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
 npx version-remover api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts "Api set: WordApi 1.5" configs/word-1_5-config.json
 npx version-remover api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
@@ -183,7 +181,7 @@ npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.
 npx whats-new api-extractor-inputs-word/word.d.ts api-extractor-inputs-word-release/word_online/word-init.d.ts ../docs/includes/word-preview javascript/api/word/ configs/word-preview-config.json
 npx whats-new api-extractor-inputs-word-release/word_online/word.d.ts api-extractor-inputs-word-release/word_1_9/word.d.ts ../docs/includes/word-online javascript/api/word/ configs/word-online-config.json
 npx whats-new api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts ../docs/includes/word-desktop-1_3 javascript/api/word/ configs/word-desktop-1_3-config.json
-npx whats-new api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts ../docs/includes/word-desktop-1_2 javascript/api/word/ configs/word-desktop-1_2-config.json
+npx whats-new api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts ../docs/includes/word-desktop-1_2 javascript/api/word/ configs/word-desktop-1_2-config.json
 npx whats-new api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts api-extractor-inputs-word-release/word_1_8/word.d.ts ../docs/includes/word-desktop-1_1 javascript/api/word/ configs/word-desktop-1_1-config.json
 npx whats-new api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_5_hidden_document javascript/api/word/ configs/word-1_5_hidden_document-config.json
 npx whats-new api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_4_hidden_document javascript/api/word/ configs/word-1_4_hidden_document-config.json

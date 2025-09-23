@@ -1,0 +1,75 @@
+### YamlMime:TSEnum
+name: Word.AutoMacro
+uid: word!Word.AutoMacro:enum
+package: word!
+fullName: Word.AutoMacro
+summary: Indicates the auto macros that can run automatically in Word.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: close
+    uid: word!Word.AutoMacro.close:member
+    package: word!
+    summary: >-
+      Indicates that the macro runs automatically when the document is closed.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Close"'
+  - name: exit
+    uid: word!Word.AutoMacro.exit:member
+    package: word!
+    summary: >-
+      Indicates that the macro runs automatically when the document is saved.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Exit"'
+  - name: new
+    uid: word!Word.AutoMacro.new:member
+    package: word!
+    summary: >-
+      Indicates that the macro runs automatically when a new document is
+      created.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"New"'
+  - name: open
+    uid: word!Word.AutoMacro.open:member
+    package: word!
+    summary: >-
+      Indicates that the macro runs automatically when the document is opened.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Open"'
+  - name: startWord
+    uid: word!Word.AutoMacro.startWord:member
+    package: word!
+    summary: >-
+      Indicates that the macro runs automatically when Word starts.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"StartWord"'
+  - name: sync
+    uid: word!Word.AutoMacro.sync:member
+    package: word!
+    summary: >-
+      Indicates that the macro runs automatically when the document is
+      synchronized.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Sync"'
