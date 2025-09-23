@@ -869,7 +869,7 @@ export declare namespace Office {
      * Specifies the Office application in which the add-in is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+     * **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
      */
     enum HostType {
         /**
@@ -941,7 +941,7 @@ export declare namespace Office {
      * Specifies the OS or other platform on which the Office application is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+     * **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
      */
     enum PlatformType {
         /**
@@ -4656,7 +4656,7 @@ export declare namespace Office {
          * Gets information about the environment in which the add-in is running.
          * 
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.
+         * **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5.
          * For all Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
@@ -4698,7 +4698,7 @@ export declare namespace Office {
          * Contains the Office application in which the add-in is running.
          *
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
@@ -4745,7 +4745,7 @@ export declare namespace Office {
          * @remarks
          * **Important**:
          *
-         * - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * - In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
@@ -4829,7 +4829,7 @@ export declare namespace Office {
      * Provides information about the environment in which the add-in is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
+     * **Important**: In Outlook, this object is available starting with Mailbox requirement set 1.5.
      * For all Mailbox requirement sets, you can use the 
      * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
      * property to get similar information.
