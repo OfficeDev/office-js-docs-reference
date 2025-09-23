@@ -375,9 +375,10 @@ methods:
 
       - In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, if the body contains formatted elements, such as tables, lists, and
-      links, specify `Office.CoercionType.Html` in the `getAsync` call.
-      Otherwise, you may receive an unexpected value, such as an empty string.
+      -->, specifying `Office.CoercionType.Text` in the `getAsync` call may not
+      always provide reliable formatting. Specify `Office.CoercionType.Html`
+      instead especially if the body contains formatted elements, such as
+      tables, lists, and links.
 
 
       - In Outlook on the web and new Outlook on Windows, users can organize
@@ -476,9 +477,10 @@ methods:
 
       - In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, if the body contains formatted elements, such as tables, lists, and
-      links, specify `Office.CoercionType.Html` in the `getAsync` call.
-      Otherwise, you may receive an unexpected value, such as an empty string.
+      -->, specifying `Office.CoercionType.Text` in the `getAsync` call may not
+      always provide reliable formatting. Specify `Office.CoercionType.Html`
+      instead especially if the body contains formatted elements, such as
+      tables, lists, and links.
 
 
       - In Outlook on the web and new Outlook on Windows, users can organize
