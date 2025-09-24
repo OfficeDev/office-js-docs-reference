@@ -2386,7 +2386,6 @@ export declare namespace Word {
          */
         getStyles(): Word.StyleCollection;
         
-        
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.

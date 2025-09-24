@@ -775,10 +775,10 @@ methods:
       return:
         type: <xref uid="word!Word.StyleCollection:class" />
         description: ''
-  - name: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
+  - name: importStylesFromJson(stylesJson)
     uid: word!Word.Document#importStylesFromJson:member(1)
     package: word!
-    fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
+    fullName: importStylesFromJson(stylesJson)
     summary: Import styles from a JSON-formatted string.
     remarks: >-
       \[ [API set: WordApi
@@ -814,44 +814,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        importStylesFromJson(stylesJson: string,
-        importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior):
+        importStylesFromJson(stylesJson: string):
         OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: stylesJson
           description: Required. A JSON-formatted string representing the styles.
           type: string
-        - id: importedStylesConflictBehavior
-          description: ''
-          type: Word.ImportedStylesConflictBehavior
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
-        description: ''
-  - name: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
-    uid: word!Word.Document#importStylesFromJson:member(2)
-    package: word!
-    fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
-    summary: Import styles from a JSON-formatted string.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        importStylesFromJson(stylesJson: string,
-        importedStylesConflictBehavior?: "Ignore" | "Overwrite" | "CreateNew"):
-        OfficeExtension.ClientResult<string[]>;
-      parameters:
-        - id: stylesJson
-          description: Required. A JSON-formatted string representing the styles.
-          type: string
-        - id: importedStylesConflictBehavior
-          description: ''
-          type: '"Ignore" | "Overwrite" | "CreateNew"'
       return:
         type: >-
           <xref uid="office!OfficeExtension.ClientResult:class"

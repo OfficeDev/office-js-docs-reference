@@ -286,7 +286,10 @@ function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, keywo
     const jsonRoot = "../json";
     const yamlRoot = "../yaml";
     
-    let existingDts = fsx.readFileSync(dtsFilePath).toString();
+    let existingDts = "";
+    if (fsx.existsSync(dtsFilePath)) {
+        existingDts = fsx.readFileSync(dtsFilePath).toString();
+    }
     if (existingDts !== dtsContent || forceNew) {
         fsx.writeFileSync(dtsFilePath, dtsContent);
         

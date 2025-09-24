@@ -11,7 +11,7 @@
                              "description":  "Remove WordApiDesktop 1.1 note when removing WordApiDesktop 1.1"
                          },
                          {
-                             "find":  "/,\\s*importedStylesConflictBehavior\\?:\\s*Word\\.ImportedStylesConflictBehavior[\\w\\W]*?importedStylesConflictBehaviorString\\?:\\s*\"Ignore\"\\s*\\|\\s*\"Overwrite\"\\s*\\|\\s*\"CreateNew\"\\):\\s*OfficeExtension\\.ClientResult\u003cstring\\[\\]\u003e;/gm",
+                             "find":  "/,\\s*importedStylesConflictBehavior\\?:\\s*Word\\.ImportedStylesConflictBehavior[\\w\\W]*?importedStylesConflictBehavior\\?:\\s*\"Ignore\"\\s*\\|\\s*\"Overwrite\"\\s*\\|\\s*\"CreateNew\"\\):\\s*OfficeExtension\\.ClientResult\u003cstring\\[\\]\u003e;/gm",
                              "replace":  "): OfficeExtension.ClientResult\u003cstring[]\u003e;",
                              "isRegex":  true,
                              "description":  "Remove importedStylesConflictBehavior parameter from method signature when removing WordApiDesktop 1.1"
@@ -33,7 +33,8 @@
                                   "Data$"
                               ],
     "includeStaticFields":  false,
-    "includeEnums":  false,
+    "includeEnums": false,
+    "filterUnionAdditions": true,
     "linkConfigs":  [
                         {
                             "pathPattern":  "javascript/api/word",

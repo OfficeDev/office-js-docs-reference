@@ -1826,9 +1826,9 @@ export declare namespace Office {
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
          *
-         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
-         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
-         * Otherwise, you may receive an unexpected value, such as an empty string.
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, specifying `Office.CoercionType.Text`
+         * in the `getAsync` call may not always provide reliable formatting. Specify `Office.CoercionType.Html` instead especially if the body contains
+         * formatted elements, such as tables, lists, and links.
          *
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
@@ -1866,9 +1866,9 @@ export declare namespace Office {
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
          *
-         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
-         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
-         * Otherwise, you may receive an unexpected value, such as an empty string.
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, specifying `Office.CoercionType.Text`
+         * in the `getAsync` call may not always provide reliable formatting. Specify `Office.CoercionType.Html` instead especially if the body contains
+         * formatted elements, such as tables, lists, and links.
          *
          * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).

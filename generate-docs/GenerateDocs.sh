@@ -842,4 +842,4 @@ pushd scripts
 node postprocessor.js
 popd
 
-./node_modules/.bin/reference-coverage-tester reference-coverage-tester.json
+./node_modules/.bin/reference-coverage-tester ./configs/reference-coverage-tester.json
