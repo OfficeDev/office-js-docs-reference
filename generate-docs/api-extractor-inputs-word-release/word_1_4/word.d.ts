@@ -2290,7 +2290,6 @@ export declare namespace Word {
         
         
         
-        
         /**
          * Saves the document.
          *
