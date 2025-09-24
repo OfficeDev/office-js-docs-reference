@@ -15,7 +15,7 @@ if [ -e "build-errors.txt" ]; then
     rm build-errors.txt
 fi
 
-#exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
+exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
 
 if [ -d "node_modules" ]; then
     rm -rf "node_modules"
@@ -851,4 +851,4 @@ pushd scripts
 node postprocessor.js
 popd
 
-./node_modules/.bin/reference-coverage-tester reference-coverage-tester.json
+./node_modules/.bin/reference-coverage-tester ./configs/reference-coverage-tester.json
