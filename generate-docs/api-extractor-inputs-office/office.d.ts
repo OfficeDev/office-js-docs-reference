@@ -6881,6 +6881,23 @@ export declare namespace Office {
         name: string;
     }
     /**
+     * Provides options to manage the user interface of an Office Add-in while the add-in is running.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface ExtensionLifeCycle {
+        /**
+         * Gets an object that represents the task pane of an add-in.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         */
+        taskpane: TaskPane;
+    }
+    /**
      * Represents the document file associated with an Office Add-in.
      *
      * @remarks
@@ -8568,6 +8585,29 @@ export declare namespace Office {
          * - If you overwrite or update an existing table, the existing rows are not altered.
          */
         rows: any[][];
+    }
+    /**
+     * Provides methods to manage the task pane of an add-in.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface TaskPane {
+        /**
+         * Sets the width of the task pane of an add-in in pixels.
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         *
+         * **Important**:
+         *
+         * - The default size of the task pane of an add-in is 320 px.
+         *
+         * - If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
+         *
+         * @param width - The width of a task pane in pixels. Must be between 320 and 500 px (inclusive).
+         */
+        setWidth(width: number): void;
     }
     /**
      * Represents a bound text selection in the document.
