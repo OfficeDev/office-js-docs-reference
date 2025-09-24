@@ -8597,15 +8597,20 @@ export declare namespace Office {
         /**
          * Sets the width of the task pane of an add-in in pixels.
          *
+         * @remarks
+         *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
          *
-         * **Important**:
+         * **Important**: The default width of the task pane of an add-in varies depending on the platform.
          *
-         * - The default size of the task pane of an add-in is 320 px.
+         * - **Web**: 320 px
          *
-         * - If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
+         * - **Windows**: 51 px
          *
-         * @param width - The width of a task pane in pixels. Must be between 320 and 500 px (inclusive).
+         * If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
+         *
+         * @param width - The width of a task pane in pixels. In Office on the web, the width must be between 320 and 500 px (inclusive).
+         *        In Office on Windows, the width must be between 51 px and 50% of the client window.
          */
         setWidth(width: number): void;
     }

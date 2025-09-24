@@ -8136,8 +8136,8 @@ Office.TableBinding,"setTableOptionsAsync(tableOptions, callback)",Method,Great,
 Office.TableData,N/A,Class,Unknown,false
 Office.TableData,"headers",Property,Poor,true
 Office.TableData,"rows",Property,Excellent,true
-Office.TaskPane,N/A,Interface,Great,false
-Office.TaskPane,"setWidth(width)",Method,Excellent,false
+Office.TaskPane,N/A,Interface,Unknown,false
+Office.TaskPane,"setWidth(width)",Method,Fine,false
 Office.TextBinding,N/A,Interface,Excellent,false
 Office.ThemeId,N/A,Enum,Fine,true
 Office.ThemeId,"Black",EnumField,Poor,false
