@@ -159,6 +159,8 @@ items:
             uid: word!Word.Canvas:class
           - name: CheckboxContentControl
             uid: word!Word.CheckboxContentControl:class
+          - name: ComboBoxContentControl
+            uid: word!Word.ComboBoxContentControl:class
           - name: Comment
             uid: word!Word.Comment:class
           - name: CommentCollection
@@ -183,6 +185,10 @@ items:
             uid: word!Word.ContentControlEnteredEventArgs:interface
           - name: ContentControlExitedEventArgs
             uid: word!Word.ContentControlExitedEventArgs:interface
+          - name: ContentControlListItem
+            uid: word!Word.ContentControlListItem:class
+          - name: ContentControlListItemCollection
+            uid: word!Word.ContentControlListItemCollection:class
           - name: ContentControlOptions
             uid: word!Word.ContentControlOptions:interface
           - name: ContentControlSelectionChangedEventArgs
@@ -211,6 +217,8 @@ items:
             uid: word!Word.DocumentCreated:class
           - name: DocumentProperties
             uid: word!Word.DocumentProperties:class
+          - name: DropDownListContentControl
+            uid: word!Word.DropDownListContentControl:class
           - name: Field
             uid: word!Word.Field:class
           - name: FieldCollection

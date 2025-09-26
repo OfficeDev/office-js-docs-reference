@@ -4232,7 +4232,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+         * Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4248,7 +4248,7 @@ export declare namespace Word {
          */
         readonly errorCode: number;
         /**
-         * Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+         * Gets the name of the error in the `CustomXmlValidationError` object. If no errors exist, the property returns `Nothing`
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6553,6 +6553,14 @@ export declare namespace Word {
          */
         attachedTemplate: Word.Template;
         /**
+         * Gets a `Shape` object that represents the background image for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly background: Word.Shape;
+        /**
          * Returns a `Bibliography` object that represents the bibliography references contained within the document.
          *
          * @remarks
@@ -6576,6 +6584,22 @@ export declare namespace Word {
          */
         readonly bookmarks: Word.BookmarkCollection;
         /**
+         * Gets a `DocumentProperties` object that represents all the built-in document properties for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly builtInDocumentProperties: Word.DocumentProperties;
+        /**
+         * Gets the `RangeScopedCollection` object that represents all the characters in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly characters: Word.RangeScopedCollection;
+        /**
          * Gets a `Coauthoring` object for managing coauthoring in the document.
          *
          * @remarks
@@ -6584,12 +6608,36 @@ export declare namespace Word {
          */
         readonly coauthoring: Word.Coauthoring;
         /**
+         * Gets a `CommentCollection` object that represents all the comments in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly comments: Word.CommentCollection;
+        /**
+         * Gets a `Range` object that represents the main document story.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly content: Word.Range;
+        /**
          * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        /**
+         * Gets a `DocumentProperties` collection that represents all the custom document properties for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customDocumentProperties: Word.DocumentProperties;
         /**
          * Gets the custom XML parts in the document.
          *
@@ -6606,6 +6654,14 @@ export declare namespace Word {
          */
         readonly documentLibraryVersions: Word.DocumentLibraryVersionCollection;
         /**
+         * Gets a `FieldCollection` object that represents all the fields in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fields: Word.FieldCollection;
+        /**
          * Returns a `FrameCollection` object that represents all the frames in the document.
          *
          * @remarks
@@ -6613,6 +6669,14 @@ export declare namespace Word {
          * @beta
          */
         readonly frames: Word.FrameCollection;
+        /**
+         * Gets a `RangeCollection` object that represents the sentences that failed the grammar check in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly grammaticalErrors: Word.RangeCollection;
         /**
          * Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.
          *
@@ -6630,6 +6694,14 @@ export declare namespace Word {
          */
         readonly indexes: Word.IndexCollection;
         /**
+         * Gets a `ParagraphCollection` object that represents all the numbered paragraphs in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listParagraphs: Word.ParagraphCollection;
+        /**
          * Returns a `ListTemplateCollection` object that represents all the list templates in the document.
          *
          * @remarks
@@ -6637,6 +6709,14 @@ export declare namespace Word {
          * @beta
          */
         readonly listTemplates: Word.ListTemplateCollection;
+        /**
+         * Gets a `ListCollection` object that contains all the formatted lists in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly lists: Word.ListCollection;
         /**
          * Returns a `PageSetup` object that's associated with the document.
          *
@@ -6646,12 +6726,28 @@ export declare namespace Word {
          */
         readonly pageSetup: Word.PageSetup;
         /**
+         * Gets a `ParagraphCollection` object that represents all the paragraphs in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly paragraphs: Word.ParagraphCollection;
+        /**
          * Gets the properties of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly properties: Word.DocumentProperties;
+        /**
+         * Gets a `ReadabilityStatisticCollection` object that represents the readability statistics for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly readabilityStatistics: Word.ReadabilityStatisticCollection;
         /**
          * Gets the collection of revisions that represents the tracked changes in the document.
          *
@@ -6676,12 +6772,44 @@ export declare namespace Word {
          */
         readonly selection: Word.Selection;
         /**
+         * Gets the `RangeScopedCollection` object that represents all the sentences in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly sentences: Word.RangeScopedCollection;
+        /**
          * Gets the add-in's settings in the document.
          *
          * @remarks
          * [Api set: WordApi 1.4]
          */
         readonly settings: Word.SettingCollection;
+        /**
+         * Gets a `RangeCollection` object that represents the words identified as spelling errors in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly spellingErrors: Word.RangeCollection;
+        /**
+         * Gets a `RangeCollection` object that represents all the stories in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly storyRanges: Word.RangeCollection;
+        /**
+         * Gets a `StyleCollection` for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly styles: Word.StyleCollection;
         /**
          * Returns a `TableOfAuthoritiesCategoryCollection` object that represents the available table of authorities categories in the document.
          *
@@ -6690,6 +6818,14 @@ export declare namespace Word {
          * @beta
          */
         readonly tableOfAuthoritiesCategories: Word.TableOfAuthoritiesCategoryCollection;
+        /**
+         * Gets a `TableCollection` object that represents all the tables in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tables: Word.TableCollection;
         /**
          * Returns a `TableOfAuthoritiesCollection` object that represents all the tables of authorities in the document.
          *
@@ -6715,12 +6851,100 @@ export declare namespace Word {
          */
         readonly tablesOfFigures: Word.TableOfFiguresCollection;
         /**
+         * Gets the `WebSettings` object for webpage-related attributes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly webSettings: Word.WebSettings;
+        /**
          * Gets the collection of `Word.Window` objects for the document.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         readonly windows: Word.WindowCollection;
+        /**
+         * Gets the `RangeScopedCollection` object that represents each word in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly words: Word.RangeScopedCollection;
+        /**
+         * Gets the name of the active theme and formatting options.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activeTheme: string;
+        /**
+         * Gets the display name of the active theme.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activeThemeDisplayName: string;
+        /**
+         * Gets whether Word encrypts file properties for password-protected documents.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly areFilePropertiesPasswordEncrypted: boolean;
+        /**
+         * Specifies whether grammatical errors are marked by a wavy green line in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areGrammaticalErrorsShown: boolean;
+        /**
+         * Specifies whether to use the default math settings when creating new equations.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areMathDefaultsUsed: boolean;
+        /**
+         * Specifies whether to disable features introduced after a specified version.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areNewerFeaturesDisabled: boolean;
+        /**
+         * Specifies whether Microsoft Word underlines spelling errors in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areSpellingErrorsShown: boolean;
+        /**
+         * Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areStylesUpdatedOnOpen: boolean;
+        /**
+         * Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        areTrueTypeFontsEmbedded: boolean;
         /**
          * Specifies if automatic hyphenation is turned on for the document.
          *
@@ -6745,6 +6969,22 @@ export declare namespace Word {
          */
         changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
         /**
+         * Gets the code name for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly codeName: string;
+        /**
+         * Gets the compatibility mode that Word uses when opening the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly compatibilityMode: Word.CompatibilityMode | "Word2003" | "Word2007" | "Word2010" | "Word2013" | "Current";
+        /**
          * Specifies the maximum number of consecutive lines that can end with hyphens.
          *
          * @remarks
@@ -6752,6 +6992,158 @@ export declare namespace Word {
          * @beta
          */
         consecutiveHyphensLimit: number;
+        /**
+         * Gets a random number that Word assigns to changes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly currentRsid: number;
+        /**
+         * Specifies the interval (in points) between the default tab stops in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        defaultTabStop: number;
+        /**
+         * Specifies the browser frame for displaying a webpage via hyperlink.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        defaultTargetFrame: string;
+        /**
+         * Specifies whether Word should not embed common system fonts.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doNotEmbedSystemFonts: boolean;
+        /**
+         * Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        encryptionProvider: string;
+        /**
+         * Specifies the East Asian language used for line breaking.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        farEastLineBreakLanguage: Word.FarEastLineBreakLanguageId | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+        /**
+         * Specifies the line break control level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        farEastLineBreakLevel: Word.FarEastLineBreakLevel | "Normal" | "Strict" | "Custom";
+        /**
+         * Specifies whether Word shows the next heading level when the previous is used.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formattingIsNextLevelShown: boolean;
+        /**
+         * Specifies whether to show user-defined styles.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formattingIsUserStyleNameShown: boolean;
+        /**
+         * Gets the name of a document, including the path.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly fullName: string;
+        /**
+         * Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridDistanceHorizontal: number;
+        /**
+         * Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridDistanceVertical: number;
+        /**
+         * Specifies whether the character grid starts from the upper-left corner of the page.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridIsOriginFromMargin: boolean;
+        /**
+         * Specifies the horizontal origin point for the invisible grid.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridOriginHorizontal: number;
+        /**
+         * Specifies the vertical origin point for the invisible grid.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridOriginVertical: number;
+        /**
+         * Specifies the interval for horizontal character gridlines in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridSpaceBetweenHorizontalLines: number;
+        /**
+         * Specifies the interval for vertical character gridlines in print layout view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gridSpaceBetweenVerticalLines: number;
+        /**
+         * Gets whether a password is required to open the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hasPassword: boolean;
+        /**
+         * Gets whether the document has an attached Microsoft Visual Basic for Applications project.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hasVbProject: boolean;
         /**
          * Specifies whether words in all capital letters can be hyphenated.
          *
@@ -6761,6 +7153,246 @@ export declare namespace Word {
          */
         hyphenateCaps: boolean;
         /**
+         * Specifies the width of the hyphenation zone, in points.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hyphenationZone: number;
+        /**
+         * Specifies whether automatic formatting options override formatting restrictions.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isAutoFormatOverrideOn: boolean;
+        /**
+         * Specifies whether charts in the active document use cell-reference data-point tracking.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isChartDataPointTracked: boolean;
+        /**
+         * Specifies whether the compatibility option specified by the `type` property is enabled.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isCompatible: boolean;
+        /**
+         * Specifies whether the document is final.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFinal: boolean;
+        /**
+         * Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFontsSubsetSaved: boolean;
+        /**
+         * Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFormsDataPrinted: boolean;
+        /**
+         * Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isFormsDataSaved: boolean;
+        /**
+         * Specifies whether a grammar check has been run on the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isGrammarChecked: boolean;
+        /**
+         * Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic save by the document or a manual save by the user.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isInAutoSave: boolean;
+        /**
+         * Gets whether the document is in form design mode.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isInFormsDesign: boolean;
+        /**
+         * Specifies whether Word kerns half-width Latin characters and punctuation marks.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isKerningByAlgorithm: boolean;
+        /**
+         * Specifies whether to embed speech and handwriting data.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isLinguisticDataEmbedded: boolean;
+        /**
+         * Gets whether this document is a master document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isMasterDocument: boolean;
+        /**
+         * Specifies whether Word optimizes the document for Word 97.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isOptimizedForWord97: boolean;
+        /**
+         * Specifies whether {@link https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f | PRINT field} instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isPostScriptPrintedOverText: boolean;
+        /**
+         * Specifies whether users can change the Quick Style set.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isQuickStyleSetLocked: boolean;
+        /**
+         * Gets whether changes to the document cannot be saved to the original document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isReadOnly: boolean;
+        /**
+         * Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isReadOnlyRecommended: boolean;
+        /**
+         * Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isSnappedToGrid: boolean;
+        /**
+         * Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isSnappedToShapes: boolean;
+        /**
+         * Specifies whether spelling has been checked throughout the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isSpellingChecked: boolean;
+        /**
+         * Specifies whether formatting restrictions are enforced in a protected document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isStyleEnforced: boolean;
+        /**
+         * Gets whether this document is a subdocument of a master document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isSubdocument: boolean;
+        /**
+         * Specifies whether users can change the document theme.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isThemeLocked: boolean;
+        /**
+         * Specifies whether the document was created or opened by the user.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isUserControl: boolean;
+        /**
+         * Gets whether the VBA project is digitally signed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isVbaSigned: boolean;
+        /**
+         * Gets whether the document is protected with a write password.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isWriteReserved: boolean;
+        /**
+         * Specifies the character spacing adjustment.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        justificationMode: Word.JustificationMode | "Expand" | "Compress" | "CompressKana";
+        /**
+         * Specifies the format type that Microsoft Word uses when automatically formatting the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        kind: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";
+        /**
          * Specifies whether Microsoft Word has detected the language of the document text.
          *
          * @remarks
@@ -6769,12 +7401,244 @@ export declare namespace Word {
          */
         languageDetected: boolean;
         /**
+         * Specifies the kinsoku characters after which Word will not break a line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noLineBreakAfter: string;
+        /**
+         * Specifies the kinsoku characters before which Word will not break a line.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noLineBreakBefore: string;
+        /**
+         * Gets the encoding used to open the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly openEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        /**
+         * Gets the title of the original document after legal-blackline comparison.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly originalDocumentTitle: string;
+        /**
+         * Sets a password that must be supplied to open the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        password: string;
+        /**
+         * Gets the algorithm used for password encryption.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly passwordEncryptionAlgorithm: string;
+        /**
+         * Gets the key length used for password encryption.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly passwordEncryptionKeyLength: number;
+        /**
+         * Gets the name of the password encryption provider.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly passwordEncryptionProvider: string;
+        /**
+         * Gets the disk or the web path to the document (excludes the document name).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly path: string;
+        /**
+         * Specifies whether revision marks are printed with the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printRevisions: boolean;
+        /**
+         * Gets the protection type for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly protectionType: Word.ProtectionType | "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" | "AllowOnlyReading";
+        /**
+         * Specifies the width of pages in reading layout view when frozen.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readingLayoutSizeX: number;
+        /**
+         * Specifies the height of pages in reading layout view when frozen.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readingLayoutSizeY: number;
+        /**
+         * Specifies whether pages in reading layout view are frozen for handwritten markup.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readingModeIsLayoutFrozen: boolean;
+        /**
+         * Specifies whether Word removes user information upon saving.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removePersonalInformationOnSave: boolean;
+        /**
+         * Gets the title of the revised document after legal-blackline comparison.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly revisedDocumentTitle: string;
+        /**
+         * Specifies the encoding used when saving the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        saveEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        /**
+         * Gets the file format of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly saveFormat: Word.FileSaveFormat | "Document" | "Template" | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" | "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" | "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" | "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" | "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" | "StrictOpenXmlDocument";
+        /**
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly saved: boolean;
+        /**
+         * Specifies the encoding for saving as encoded text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        /**
+         * Specifies how Word marks line and paragraph breaks in text files.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textLineEnding: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps";
+        /**
+         * Specifies whether to track formatting changes when change tracking is on.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trackFormatting: boolean;
+        /**
+         * Specifies whether to mark moved text when Track Changes is on.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trackMoves: boolean;
+        /**
+         * Specifies whether changes are tracked in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trackRevisions: boolean;
+        /**
+         * Specifies whether to remove or store date and time metadata for tracked changes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trackedChangesAreDateAndTimeRemoved: boolean;
+        /**
+         * Gets the document type (template or document).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.DocumentType | "Document" | "Template" | "Frameset";
+        /**
+         * Sets a password for saving changes to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        writePassword: string;
+        /**
+         * Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlAreAdvancedErrorsShown: boolean;
+        /**
+         * Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlIsXsltUsedWhenSaving: boolean;
+        /**
+         * Specifies the path and file name for the XSLT to apply when saving a document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlSaveThroughXSLT: string;
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -6783,6 +7647,30 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
+        /**
+         * Accepts all tracked changes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        acceptAllRevisions(): void;
+        /**
+         * Accepts all revisions in the document that are displayed on the screen.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        acceptAllRevisionsShown(): void;
+        /**
+         * Activates the document so that it becomes the active document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activate(): void;
         /**
          * Adds a style into the document by name and type.
          *
@@ -6803,6 +7691,107 @@ export declare namespace Word {
          * @param type - Required. The style type, including character, list, paragraph, or table.
          */
         addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
+        /**
+         * Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addToFavorites(): void;
+        /**
+         * Applies the specified Quick Style set to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param style - The style set to apply.
+         */
+        applyQuickStyleSet(style: Word.ApplyQuickStyleSet): void;
+        /**
+         * Applies the specified Quick Style set to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param style - The style set to apply.
+         */
+        applyQuickStyleSet(style: "SessionStart" | "Template"): void;
+        /**
+         * Applies the specified theme to this document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - The name of the theme.
+         */
+        applyTheme(name: string): void;
+        /**
+         * Automatically formats the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoFormat(): void;
+        /**
+         * Returns `true` if Microsoft Word can check in the document to a server.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns `true` if the document can be checked in; otherwise, `false`.
+         */
+        canCheckin(): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Searches all text in a Japanese language document and displays instances where character usage is inconsistent for the same words.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        checkConsistencyJapanese(): void;
+        /**
+         * Begins a spelling and grammar check for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        checkGrammar(): void;
+        /**
+         * Checks in the document from the local computer to a server and sets the local document to read-only so that it cannot be edited locally.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for checking in the document.
+         */
+        checkIn(options?: Word.DocumentCheckInOptions): void;
+        /**
+         * Saves the document to a server from a local computer, and sets the local document to read-only so that it cannot be edited locally.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for checking in the document with version control.
+         */
+        checkInWithVersion(options?: Word.DocumentCheckInWithVersionOptions): void;
+        /**
+         * Begins a spelling check for the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for the spell checking operation.
+         */
+        checkSpelling(options?: Word.DocumentCheckSpellingOptions): void;
         /**
          * Closes the current document.
                     
@@ -6826,6 +7815,14 @@ export declare namespace Word {
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
         /**
+         * Switches the document from print preview to the previous view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        closePrintPreview(): void;
+        /**
          * Displays revision marks that indicate where the specified document differs from another document.
          *
          * @remarks
@@ -6846,6 +7843,119 @@ export declare namespace Word {
          */
         compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;
         /**
+         * Returns a statistic based on the contents of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param statistic - The type of statistic to return.
+         * @param includeFootnotesAndEndnotes - Optional. Whether to include footnotes and endnotes. The default value is `false`.
+         */
+        computeStatistics(statistic: Word.Statistic, includeFootnotesAndEndnotes?: boolean): OfficeExtension.ClientResult<number>;
+        /**
+         * Returns a statistic based on the contents of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param statistic - The type of statistic to return.
+         * @param includeFootnotesAndEndnotes - Optional. Whether to include footnotes and endnotes. The default value is `false`.
+         */
+        computeStatistics(statistic: "Words" | "Lines" | "Pages" | "Characters" | "Paragraphs" | "CharactersWithSpaces" | "FarEastCharacters", includeFootnotesAndEndnotes?: boolean): OfficeExtension.ClientResult<number>;
+        /**
+         * Converts the file to the newest format and enables all features.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        convert(): void;
+        /**
+         * Converts automatic hyphens to manual hyphens.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        convertAutoHyphens(): void;
+        /**
+         * Changes the list numbers and {@link https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82 | LISTNUM fields} in the document to text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberType - Optional. The type of numbering to convert.
+         */
+        convertNumbersToText(numberType?: Word.NumberType): void;
+        /**
+         * Changes the list numbers and {@link https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82 | LISTNUM fields} in the document to text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberType - Optional. The type of numbering to convert.
+         */
+        convertNumbersToText(numberType?: "Paragraph" | "ListNum" | "AllNumbers"): void;
+        /**
+         * Reconverts a Vietnamese document to Unicode using a code page other than the default.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param codePageOrigin - The code page to use.
+         */
+        convertVietnameseDocument(codePageOrigin: number): void;
+        /**
+         * Copies styles from the specified template to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param StyleTemplate - The template to copy styles from.
+         */
+        copyStylesFromTemplate(StyleTemplate: string): void;
+        /**
+         * Returns the number of bulleted or numbered items and {@link https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82 | LISTNUM fields} in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for counting numbered items.
+         * @returns The count of numbered items.
+         */
+        countNumberedItems(options?: Word.DocumentCountNumberedItemsOptions): OfficeExtension.ClientResult<number>;
+        /**
+         * Deletes all comments from the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteAllComments(): void;
+        /**
+         * Deletes all revisions in the document that are displayed on the screen.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteAllCommentsShown(): void;
+        /**
+         * Deletes all handwritten ink annotations in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteAllInkAnnotations(): void;
+        /**
          * Deletes a bookmark, if it exists, from the document.
          *
          * @remarks
@@ -6862,6 +7972,114 @@ export declare namespace Word {
          * @beta
          */
         detectLanguage(): void;
+        /**
+         * Terminates a review of the file that has been sent for review.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for ending the review process.
+         */
+        endReview(options?: Word.DocumentEndReviewOptions): void;
+        /**
+         * Saves the document in PDF or XPS format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param outputFileName - The name of the output file.
+         * @param exportFormat - The export format.
+         * @param options - Optional. Configuration options for the export operation.
+         */
+        exportAsFixedFormat(outputFileName: string, exportFormat: Word.ExportFormat, options?: Word.DocumentExportAsFixedFormatOptions): void;
+        /**
+         * Saves the document in PDF or XPS format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param outputFileName - The name of the output file.
+         * @param exportFormat - The export format.
+         * @param options - Optional. Configuration options for the export operation.
+         */
+        exportAsFixedFormat(outputFileName: string, exportFormat: "Pdf" | "Xps", options?: Word.DocumentExportAsFixedFormatOptions): void;
+        /**
+         * Saves the document in PDF or XPS format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param outputFileName - The output file name.
+         * @param exportFormat - The format to export (PDF/XPS).
+         * @param options - Optional. Configuration options for the export operation.
+         */
+        exportAsFixedFormat2(outputFileName: string, exportFormat: Word.ExportFormat, options?: Word.DocumentExportAsFixedFormat2Options): void;
+        /**
+         * Saves the document in PDF or XPS format.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param outputFileName - The output file name.
+         * @param exportFormat - The format to export (PDF/XPS).
+         * @param options - Optional. Configuration options for the export operation.
+         */
+        exportAsFixedFormat2(outputFileName: string, exportFormat: "Pdf" | "Xps", options?: Word.DocumentExportAsFixedFormat2Options): void;
+        /**
+         * Saves the document in PDF or XPS format with improved tagging.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param outputFileName - The output file name.
+         * @param exportFormat - The format to export (PDF/XPS).
+         * @param options - Optional. Configuration options for the export operation.
+         */
+        exportAsFixedFormat3(outputFileName: string, exportFormat: Word.ExportFormat, options?: Word.DocumentExportAsFixedFormat3Options): void;
+        /**
+         * Saves the document in PDF or XPS format with improved tagging.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param outputFileName - The output file name.
+         * @param exportFormat - The format to export (PDF/XPS).
+         * @param options - Optional. Configuration options for the export operation.
+         */
+        exportAsFixedFormat3(outputFileName: string, exportFormat: "Pdf" | "Xps", options?: Word.DocumentExportAsFixedFormat3Options): void;
+        /**
+         * Decreases the font size of text just enough so that the document page count drops by one.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fitToPages(): void;
+        /**
+         * Displays a cached document, if it has already been downloaded. Otherwise, this method resolves the hyperlink, downloads the target document, and displays the document in the appropriate application.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for following the hyperlink.
+         */
+        followHyperlink(options?: Word.DocumentFollowHyperlinkOptions): void;
+        /**
+         * Fixes the layout of the document in Web view.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        freezeLayout(): void;
         /**
          * Gets the annotation by ID. Throws an `ItemNotFound` error if annotation isn't found.
          *
@@ -6903,6 +8121,26 @@ export declare namespace Word {
          */
         getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
+         * Returns an array of items that can be cross-referenced based on the specified cross-reference type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param referenceType - The type of reference.
+         */
+        getCrossReferenceItems(referenceType: Word.ReferenceType): OfficeExtension.ClientResult<string[]>;
+        /**
+         * Returns an array of items that can be cross-referenced based on the specified cross-reference type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param referenceType - The type of reference.
+         */
+        getCrossReferenceItems(referenceType: "NumberedItem" | "Heading" | "Bookmark" | "Footnote" | "Endnote"): OfficeExtension.ClientResult<string[]>;
+        /**
          * Gets the document's endnotes in a single body.
          *
          * @remarks
@@ -6926,6 +8164,16 @@ export declare namespace Word {
          */
         getParagraphByUniqueLocalId(id: string): Word.Paragraph;
         /**
+         * Returns a `Range` object by using the specified starting and ending character positions.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for specifying the range parameters.
+         */
+        getRange(options?: Word.DocumentRangeOptions): Word.Range;
+        /**
          * Gets the current selection of the document. Multiple selections aren't supported.
          *
          * @remarks
@@ -6939,6 +8187,16 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         getStyles(): Word.StyleCollection;
+        /**
+         * Returns a `Range` object that represents the start position of the specified item, such as a page, bookmark, or field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for specifying the `goTo` parameters.
+         */
+        goTo(options?: Word.GoToOptions): Word.Range;
         /**
          * Import styles from a JSON-formatted string.
          *
@@ -6978,6 +8236,22 @@ export declare namespace Word {
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
+         * Locks the file on the server preventing anyone else from editing it.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lockServerFile(): void;
+        /**
+         * Sets the compatibility options.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        makeCompatibilityDefault(): void;
+        /**
          * Initiates manual hyphenation of a document, one line at a time.
          *
          * @remarks
@@ -6985,6 +8259,238 @@ export declare namespace Word {
          * @beta
          */
         manualHyphenation(): void;
+        /**
+         * Merges the changes marked with revision marks from one document to another.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param fileName - The name of the file to merge.
+         * @param options - Optional. Configuration options for the merge operation.
+         */
+        merge(fileName: string, options?: Word.DocumentMergeOptions): void;
+        /**
+         * Posts the document to a public folder in Microsoft Exchange.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        post(): void;
+        /**
+         * Opens PowerPoint with the Word document loaded.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        presentIt(): void;
+        /**
+         * Prints all or part of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for the print operation.
+         */
+        printOut(options?: Word.DocumentPrintOutOptions): void;
+        /**
+         * Switches the view to print preview.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printPreview(): void;
+        /**
+         * Protects the document from unauthorized changes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param type - The type of protection.
+         * @param options - Optional. Configuration options for document protection.
+         */
+        protect(type: Word.ProtectionType, options?: Word.DocumentProtectOptions): void;
+        /**
+         * Protects the document from unauthorized changes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param type - The type of protection.
+         * @param options - Optional. Configuration options for document protection.
+         */
+        protect(type: "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" | "AllowOnlyReading", options?: Word.DocumentProtectOptions): void;
+        /**
+         * Redoes the last action that was undone (reverses the `undo` method).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param times - Optional. The number of actions to redo.
+         * @returns `true` if the actions were redone successfully; otherwise, `false`.
+         */
+        redo(times?: number): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Rejects all tracked changes in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rejectAllRevisions(): void;
+        /**
+         * Rejects all revisions in the document that are displayed on the screen.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rejectAllRevisionsShown(): void;
+        /**
+         * Reloads a cached document by resolving the hyperlink to the document and downloading it.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        reload(): void;
+        /**
+         * Reloads the document based on an HTML document, using the document encoding.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param encoding - The encoding to use.
+         */
+        reloadAs(encoding: Word.DocumentEncoding): void;
+        /**
+         * Reloads the document based on an HTML document, using the document encoding.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param encoding - The encoding to use.
+         */
+        reloadAs(encoding: "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"): void;
+        /**
+         * Removes sensitive information, properties, comments, and other metadata from the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param removeDocInfoType - The type of document info to remove.
+         */
+        removeDocumentInformation(removeDocInfoType: Word.RemoveDocInfoType): void;
+        /**
+         * Removes sensitive information, properties, comments, and other metadata from the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param removeDocInfoType - The type of document info to remove.
+         */
+        removeDocumentInformation(removeDocInfoType: "Comments" | "Revisions" | "Versions" | "RemovePersonalInformation" | "EmailHeader" | "RoutingSlip" | "SendForReview" | "DocumentProperties" | "Template" | "DocumentWorkspace" | "InkAnnotations" | "DocumentServerProperties" | "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions" | "AtMentions" | "DocumentTasks" | "DocumentIntelligence" | "CommentReactions" | "All"): void;
+        /**
+         * Purges the document of locked styles when formatting restrictions have been applied in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removeLockedStyles(): void;
+        /**
+         * Removes numbers or bullets from the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberType - Optional. The type of numbering to remove.
+         */
+        removeNumbers(numberType?: Word.NumberType): void;
+        /**
+         * Removes numbers or bullets from the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param numberType - Optional. The type of numbering to remove.
+         */
+        removeNumbers(numberType?: "Paragraph" | "ListNum" | "AllNumbers"): void;
+        /**
+         * Removes the active theme from the current document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removeTheme(): void;
+        /**
+         * Repaginates the entire document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        repaginate(): void;
+        /**
+         * Sends an email message to the author of the document that has been sent out for review, notifying them that a reviewer has completed review of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for replying with changes.
+         */
+        replyWithChanges(options?: Word.DocumentReplyWithChangesOptions): void;
+        /**
+         * Clears all form fields in the document, preparing the form to be filled in again.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetFormFields(): void;
+        /**
+         * Returns the document to the last saved reading position.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        returnToLastReadPosition(): OfficeExtension.ClientResult<number>;
+        /**
+         * Runs an auto macro that's stored in the document. If the specified auto macro doesn't exist, nothing happens.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param autoMacro - The auto macro to run.
+         */
+        runAutoMacro(autoMacro: Word.AutoMacro): void;
+        /**
+         * Runs an auto macro that's stored in the document. If the specified auto macro doesn't exist, nothing happens.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param autoMacro - The auto macro to run.
+         */
+        runAutoMacro(autoMacro: "StartWord" | "New" | "Open" | "Close" | "Exit" | "Sync"): void;
         /**
          * Saves the document.
          *
@@ -7010,6 +8516,16 @@ export declare namespace Word {
          */
         save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
         /**
+         * Saves the group of quick styles currently in use.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param fileName - The name of the file to save.
+         */
+        saveAsQuickStyleSet(fileName: string): void;
+        /**
          * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
          *
          * @remarks
@@ -7024,6 +8540,219 @@ export declare namespace Word {
             matchWholeWord?: boolean;
             matchWildcards?: boolean;
         }): Word.RangeCollection;
+        /**
+         * Selects the contents of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        select(): void;
+        /**
+         * Returns all content controls with the specified tag.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param tag - The tag value to filter content controls.
+         */
+        selectContentControlsByTag(tag: string): Word.ContentControlCollection;
+        /**
+         * Returns a `ContentControlCollection` object that represents all the content controls in the document with the specified title.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param title - The title of the content controls.
+         */
+        selectContentControlsByTitle(title: string): Word.ContentControlCollection;
+        /**
+         * Returns a `ContentControlCollection` object that represents all content controls in the document that are linked to the specific custom XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param node - The custom XML node.
+         */
+        selectLinkedControls(node: Word.CustomXmlNode): Word.ContentControlCollection;
+        /**
+         * Returns an `XmlNodeCollection` object that represents all the nodes that match the XPath parameter in the order in which they appear in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression.
+         * @param options - Optional. Configuration options for the nodes selection.
+         */
+        selectNodes(xPath: string, options?: Word.SelectNodesOptions): Word.XmlNodeCollection;
+        /**
+         * Returns an `XmlNode` object that represents the first node that matches the XPath parameter in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression.
+         * @param options - Optional. Configuration options for the node selection.
+         */
+        selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions): Word.XmlNode;
+        /**
+         * Returns a `ContentControlCollection` object that represents all content controls in the document that are not linked to an XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param stream - Optional. The custom XML part.
+         */
+        selectUnlinkedControls(stream?: Word.CustomXmlPart): Word.ContentControlCollection;
+        /**
+         * Sends the document as a fax, without any user interaction.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param address - The fax address.
+         * @param subject - Optional. The subject of the fax.
+         */
+        sendFax(address: string, subject?: string): void;
+        /**
+         * Sends the document to a fax service provider, who faxes the document to one or more specified recipients.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for sending the fax over the internet.
+         */
+        sendFaxOverInternet(options?: Word.DocumentSendFaxOverInternetOptions): void;
+        /**
+         * Sends the document in an email message for review by the specified recipients.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Configuration options for sending the document for review.
+         */
+        sendForReview(options?: Word.DocumentSendForReviewOptions): void;
+        /**
+         * Opens a message window for sending the document through Microsoft Exchange.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sendMail(): void;
+        /**
+         * Specifies the table style to use for newly created tables in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param style - The style to apply.
+         * @param setInTemplate - Whether to set the style in the template.
+         */
+        setDefaultTableStyle(style: string, setInTemplate: boolean): void;
+        /**
+         * Sets the options Microsoft Word uses for encrypting documents with passwords.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param passwordEncryptionProvider - The encryption provider.
+         * @param passwordEncryptionAlgorithm - The encryption algorithm.
+         * @param passwordEncryptionKeyLength - The key length.
+         * @param passwordEncryptFileProperties - Optional. Whether to encrypt file properties.
+         */
+        setPasswordEncryptionOptions(passwordEncryptionProvider: string, passwordEncryptionAlgorithm: string, passwordEncryptionKeyLength: number, passwordEncryptFileProperties?: boolean): void;
+        /**
+         * Switches form design mode on or off.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        toggleFormsDesign(): void;
+        /**
+         * Applies the specified Extensible Stylesheet Language Transformation (XSLT) file to this document and replaces the document with the results.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param path - The path to the XSLT file.
+         * @param dataOnly - Optional. Whether to use data only.
+         */
+        transformDocument(path: string, dataOnly?: boolean): void;
+        /**
+         * Undoes the last action or a sequence of actions, which are displayed in the Undo list.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param times - Optional. The number of actions to undo.
+         * @returns `true` if the actions were undone successfully; otherwise, `false`.
+         */
+        undo(times?: number): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Clears the list of actions that can be undone in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        undoClear(): void;
+        /**
+         * Removes protection from the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param password - Optional. The password to unprotect the document.
+         */
+        unprotect(password?: string): void;
+        /**
+         * Copies all styles from the attached template into the document, overwriting any existing styles in the document that have the same name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        updateStyles(): void;
+        /**
+         * Displays the code window for the selected Microsoft ActiveX control in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        viewCode(): void;
+        /**
+         * Displays the property window for the selected Microsoft ActiveX control in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        viewPropertyBrowser(): void;
+        /**
+         * Displays a preview of the current document as it would look if saved as a webpage.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        webPagePreview(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10246,7 +11975,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly progID: string;
+        readonly progId: string;
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -21935,6 +23664,1062 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.RepeatingSectionContentControlData;
     }
     /**
+     * Represents one of the readability statistics for the document or range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ReadabilityStatistic extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the name of the readability statistic.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Returns the value of the grammar statistic.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly value: number;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ReadabilityStatisticLoadOptions): Word.ReadabilityStatistic;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ReadabilityStatistic;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ReadabilityStatistic;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ReadabilityStatistic;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ReadabilityStatistic;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ReadabilityStatistic` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReadabilityStatisticData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.ReadabilityStatisticData;
+    }
+    /**
+     * Represents a collection of {@link Word.ReadabilityStatistic} objects for the document or range.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ReadabilityStatisticCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.ReadabilityStatistic[];
+        /**
+         * Gets the readability statistic at the specified index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The zero-based index of the readability statistic to get.
+         */
+        getItemAt(index: number): Word.ReadabilityStatistic;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ReadabilityStatisticCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ReadabilityStatisticCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ReadabilityStatisticCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ReadabilityStatisticCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ReadabilityStatisticCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ReadabilityStatisticCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ReadabilityStatisticCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ReadabilityStatisticCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.ReadabilityStatisticCollectionData;
+    }
+    /**
+     * Represents the settings for saving a Word document as a webpage.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class WebSettings extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowPng: boolean;
+        /**
+         * Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        encoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        /**
+         * Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly folderSuffix: string;
+        /**
+         * Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        organizeInFolder: boolean;
+        /**
+         * Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pixelsPerInch: number;
+        /**
+         * Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        relyOnCSS: boolean;
+        /**
+         * Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        relyOnVectorMarkupLanguage: boolean;
+        /**
+         * Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        screenSize: Word.ScreenSize | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200";
+        /**
+         * Specifies the target browser for documents viewed in a web browser.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        targetBrowser: Word.TargetBrowser | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6";
+        /**
+         * Specifies whether long file names are used when saving the document as a webpage. Default is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useLongFileNames: boolean;
+        /**
+         * Sets the folder suffix for the specified document to the default suffix for the language support you have selected or installed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useDefaultFolderSuffix(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.WebSettingsLoadOptions): Word.WebSettings;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.WebSettings;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.WebSettings;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.WebSettings;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.WebSettings;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.WebSettings` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.WebSettingsData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.WebSettingsData;
+    }
+    /**
+     * Represents the collection of {@link Word.XmlNode} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class XmlNodeCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.XmlNode[];
+        /**
+         * Gets a `XmlNode` object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a `XmlNode` object.
+         */
+        getItem(index: number): Word.XmlNode;
+        /**
+         * Returns an individual `XmlNode` object in a collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the XML node to retrieve.
+         */
+        getItemAt(index: number): Word.XmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.XmlNodeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.XmlNodeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.XmlNodeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.XmlNodeCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.XmlNodeCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.XmlNodeCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.XmlNodeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.XmlNodeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.XmlNodeCollectionData;
+    }
+    /**
+     * Provides configuration options for the {@link Word.XmlNode | XmlNode.setValidationError} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface XmlNodeSetValidationErrorOptions {
+        /**
+         * If provided, specifies whether the validation error should be cleared automatically. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clearedAutomatically?: boolean;
+        /**
+         * If provided, specifies the error text to display for the validation error.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        errorText?: string;
+    }
+    /**
+     * Represents a single XML node applied to the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class XmlNode extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the attributes for this XML node. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly attributes: Word.XmlNodeCollection;
+        /**
+         * Gets the child elements of this XML node. Returns an empty collection if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly childNodes: Word.XmlNodeCollection;
+        /**
+         * Gets the first child node if this is a parent node. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly firstChild: Word.XmlNode;
+        /**
+         * Gets the last child node if this is a parent node. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly lastChild: Word.XmlNode;
+        /**
+         * Gets the next element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly nextSibling: Word.XmlNode;
+        /**
+         * Gets the parent document of this XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly ownerDocument: Word.Document;
+        /**
+         * Gets the parent element of this XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentNode: Word.XmlNode;
+        /**
+         * Gets the previous element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly previousSibling: Word.XmlNode;
+        /**
+         * Gets the portion of a document that is contained in this XML node. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
+         * Gets the name of the element without any prefix.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly baseName: string;
+        /**
+         * Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have children.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hasChildNodes: boolean;
+        /**
+         * Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row. Returns `null` if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly level: Word.XmlNodeLevel | "Inline" | "Paragraph" | "Row" | "Cell";
+        /**
+         * Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceUri: string;
+        /**
+         * Gets the type of node.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly nodeType: Word.XmlNodeType | "Element" | "Attribute";
+        /**
+         * Specifies the value of this XML node. For element nodes, represents the text content; for attribute nodes, represents the attribute value.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nodeValue: string;
+        /**
+         * Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        placeholderText: string;
+        /**
+         * Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text: string;
+        /**
+         * Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly validationErrorText: string;
+        /**
+         * Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly validationStatus: Word.XmlValidationStatus | "Ok" | "Custom";
+        /**
+         * Copies this XML node, excluding XML markup, to the Clipboard. For attribute nodes, copies only the attribute value as text.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        copy(): void;
+        /**
+         * Removes this XML node from the document and places it on the Clipboard. For attribute nodes, removes the attribute from its parent element and copies only the attribute value as text to the clipboard.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cut(): void;
+        /**
+         * Deletes the XML node from the XML document. For element nodes, removes the entire element and its content; for attribute nodes, removes the attribute from its parent element.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Removes a child element from this XML node. This method has no effect if the node type is `attribute` (since attribute nodes have no child elements).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param childElement - The child element to remove.
+         */
+        removeChild(childElement: Word.XmlNode): void;
+        /**
+         * Returns all the child elements that match the XPath parameter, in the order in which they appear within this XML node. Returns `null` if the node type is `attribute` (since attribute nodes have no child elements to search).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression to evaluate.
+         * @param options - Optional. Configuration options for the XPath search.
+         * @returns A collection of XML nodes that match the XPath expression.
+         */
+        selectNodes(xPath: string, options?: Word.SelectNodesOptions): Word.XmlNodeCollection;
+        /**
+         * Returns the first child element that matches the XPath parameter within this XML node. Returns `null` if the node type is `attribute` (since attribute nodes have no child elements to search).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xPath - The XPath expression to evaluate.
+         * @param options - Optional. Configuration options for the XPath search.
+         * @returns The first XML node that matches the XPath expression, or `null` if no match is found.
+         */
+        selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions): Word.XmlNode;
+        /**
+         * Changes the validation error text displayed to a user for this XML node and whether to force Word to report the node as invalid. May not be meaningful for attribute nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param status - The validation status to set.
+         * @param options - Optional. Configuration options for setting the validation error.
+         */
+        setValidationError(status: Word.XmlValidationStatus, options?: Word.XmlNodeSetValidationErrorOptions): void;
+        /**
+         * Changes the validation error text displayed to a user for this XML node and whether to force Word to report the node as invalid. May not be meaningful for attribute nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param status - The validation status to set.
+         * @param options - Optional. Configuration options for setting the validation error.
+         */
+        setValidationError(status: "Ok" | "Custom", options?: Word.XmlNodeSetValidationErrorOptions): void;
+        /**
+         * Validates this XML node against the XML schemas that are attached to the document. May not be meaningful for attribute nodes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        validate(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.XmlNodeLoadOptions): Word.XmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.XmlNode;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.XmlNode;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.XmlNode;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.XmlNode;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.XmlNode` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.XmlNodeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.XmlNodeData;
+    }
+    /**
+     * Specifies the type of an XML node.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum XmlNodeType {
+        /**
+         * Element node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        element = "Element",
+        /**
+         * Attribute node.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        attribute = "Attribute",
+    }
+    /**
+     * Specifies the validation status of an XML node.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum XmlValidationStatus {
+        /**
+         * The node is valid.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ok = "Ok",
+        /**
+         * The node has a custom (user-defined) validation error.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        custom = "Custom",
+    }
+    /**
+     * Specifies the level of an XML node.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum XmlNodeLevel {
+        /**
+         * Inline node level.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inline = "Inline",
+        /**
+         * Paragraph node level.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraph = "Paragraph",
+        /**
+         * Row node level.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        row = "Row",
+        /**
+         * Cell node level.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cell = "Cell",
+    }
+    /**
+     * Specifies which Quick Style set to apply to the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ApplyQuickStyleSet {
+        /**
+         * Resets the Quick Style to the style set in use when the document was opened.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sessionStart = "SessionStart",
+        /**
+         * Resets the Quick Style to the style set from the template, if any.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+    }
+    /**
+     * Provides configuration options for the {@link Word.XmlNode | XmlNode.selectNodes} and {@link Word.Document| Document.selectNodes} methods.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SelectNodesOptions {
+        /**
+         * If provided, specifies whether to skip text nodes in the search. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fastSearchSkippingTextNodes?: boolean;
+        /**
+         * If provided, specifies the prefix mapping for the XPath expression. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        prefixMapping?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.XmlNode | XmlNode.selectSingleNode} and {@link Word.Document| Document.selectSingleNode} methods.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SelectSingleNodeOptions {
+        /**
+         * If provided, specifies whether to skip text nodes in the search. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fastSearchSkippingTextNodes?: boolean;
+        /**
+         * If provided, specifies the prefix mapping for the XPath expression. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        prefixMapping?: string;
+    }
+    /**
+     * Specifies the screen size for web page preview and HTML export optimization.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ScreenSize {
+        /**
+         * Screen resolution 544x376 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size544x376 = "Size544x376",
+        /**
+         * Screen resolution 640x480 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size640x480 = "Size640x480",
+        /**
+         * Screen resolution 720x512 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size720x512 = "Size720x512",
+        /**
+         * Screen resolution 800x600 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size800x600 = "Size800x600",
+        /**
+         * Screen resolution 1024x768 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1024x768 = "Size1024x768",
+        /**
+         * Screen resolution 1152x882 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1152x882 = "Size1152x882",
+        /**
+         * Screen resolution 1152x900 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1152x900 = "Size1152x900",
+        /**
+         * Screen resolution 1280x1024 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1280x1024 = "Size1280x1024",
+        /**
+         * Screen resolution 1600x1200 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1600x1200 = "Size1600x1200",
+        /**
+         * Screen resolution 1800x1440 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1800x1440 = "Size1800x1440",
+        /**
+         * Screen resolution 1920x1200 pixels.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        size1920x1200 = "Size1920x1200",
+    }
+    /**
+     * Specifies the target web browser for HTML export and web page optimization.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TargetBrowser {
+        /**
+         * Browser version 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        v3 = "V3",
+        /**
+         * Browser version 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        v4 = "V4",
+        /**
+         * Microsoft Internet Explorer 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ie4 = "Ie4",
+        /**
+         * Microsoft Internet Explorer 5.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ie5 = "Ie5",
+        /**
+         * Microsoft Internet Explorer 6.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ie6 = "Ie6",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class HtmlDivision extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        readonly htmlDivisions: Word.HtmlDivisionCollection;
+        /**
+         * Gets a `Range` object that represents the portion of a document that's contained in this HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly range: Word.Range;
+        /**
+         * Specifies the left indent value (in points) for this HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftIndent: number;
+        /**
+         * Specifies the right indent (in points) for this HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightIndent: number;
+        /**
+         * Specifies the amount of spacing (in points) after this HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spaceAfter: number;
+        /**
+         * Specifies the spacing (in points) before this HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spaceBefore: number;
+        /**
+         * Deletes this HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Returns an `HtmlDivision` object that represents a parent division of the current HTML division.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param levelsUp - Optional. The number of levels to go up to retrieve the parent division.
+         */
+        htmlDivisionParent(levelsUp?: number): Word.HtmlDivision;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.HtmlDivisionLoadOptions): Word.HtmlDivision;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.HtmlDivision;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.HtmlDivision;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.HtmlDivision;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.HtmlDivision;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.HtmlDivision` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.HtmlDivisionData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.HtmlDivisionData;
+    }
+    /**
+     * Represents a collection of {@link Word.HtmlDivision} objects in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class HtmlDivisionCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.HtmlDivision[];
+        /**
+         * Returns an `HtmlDivision` object from the collection based on the specified index.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the `HtmlDivision` to retrieve.
+         */
+        getItemAt(index: number): Word.HtmlDivision;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.HtmlDivisionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.HtmlDivisionCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.HtmlDivisionCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.HtmlDivisionCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.HtmlDivisionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.HtmlDivisionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.HtmlDivisionCollectionData;
+    }
+    /**
      * Calendar types.
      *
      * @remarks
@@ -25216,6 +28001,3069 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         boolean = "Boolean",
+    }
+    /**
+     * Specifies the type of item to print from a document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PrintOutItem {
+        /**
+         * Represents printing the document content.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentContent = "DocumentContent",
+        /**
+         * Represents printing the document properties.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        properties = "Properties",
+        /**
+         * Represents printing the comments.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comments = "Comments",
+        /**
+         * Represents printing the markup.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        markup = "Markup",
+        /**
+         * Represents printing the styles.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        styles = "Styles",
+        /**
+         * Represents printing the AutoText entries.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoTextEntries = "AutoTextEntries",
+        /**
+         * Represents printing the key assignments.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keyAssignments = "KeyAssignments",
+        /**
+         * Represents printing the envelope.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        envelope = "Envelope",
+        /**
+         * Represents printing the document with markup.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentWithMarkup = "DocumentWithMarkup",
+    }
+    /**
+     * Specifies which pages to print based on odd or even page numbers.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PrintOutPages {
+        /**
+         * Represents printing all pages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        all = "All",
+        /**
+         * Represents printing only odd-numbered pages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oddOnly = "OddOnly",
+        /**
+         * Represents printing only even-numbered pages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        evenOnly = "EvenOnly",
+    }
+    /**
+     * Specifies the range of content to print from a document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PrintOutRange {
+        /**
+         * Represents printing the entire document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allDocument = "AllDocument",
+        /**
+         * Represents printing the current selection.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        selection = "Selection",
+        /**
+         * Represents printing the current page.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        currentPage = "CurrentPage",
+        /**
+         * Represents printing a range from one page to another.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fromTo = "FromTo",
+        /**
+         * Represents printing specific ranges of pages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rangeOfPages = "RangeOfPages",
+    }
+    /**
+     * Specifies the export format for a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ExportFormat {
+        /**
+         * PDF export format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pdf = "Pdf",
+        /**
+         * XPS export format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xps = "Xps",
+    }
+    /**
+     * Specifies the export item type for a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ExportItem {
+        /**
+         * Exports document content only.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentContent = "DocumentContent",
+        /**
+         * Exports document with markup (annotations).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentWithMarkup = "DocumentWithMarkup",
+    }
+    /**
+     * Specifies the optimization target for document export.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ExportOptimizeFor {
+        /**
+         * Optimizes for print.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        print = "Print",
+        /**
+         * Optimizes for on-screen display.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        onScreen = "OnScreen",
+    }
+    /**
+     * Specifies the range to export from a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ExportRange {
+        /**
+         * Exports the entire document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allDocument = "AllDocument",
+        /**
+         * Exports the current selection.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        selection = "Selection",
+        /**
+         * Exports the current page.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        currentPage = "CurrentPage",
+        /**
+         * Exports a specific range of pages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fromTo = "FromTo",
+    }
+    /**
+     * Specifies the type of bookmarks to create during export.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ExportCreateBookmarks {
+        /**
+         * Do not create bookmarks.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Creates bookmarks from headings.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        headings = "Headings",
+        /**
+         * Creates bookmarks from Word bookmarks.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wordBookmarks = "WordBookmarks",
+    }
+    /**
+     * Specifies the source of formatting to use during document operations.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum UseFormattingFrom {
+        /**
+         * Represents using formatting from the current document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        current = "Current",
+        /**
+         * Represents using formatting from the selected document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        selected = "Selected",
+        /**
+         * Represents prompting the user for formatting preferences.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        prompt = "Prompt",
+    }
+    /**
+     * Indicates the auto macros that can run automatically in Word.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum AutoMacro {
+        /**
+         * Indicates that the macro runs automatically when Word starts.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        startWord = "StartWord",
+        /**
+         * Indicates that the macro runs automatically when a new document is created.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        new = "New",
+        /**
+         * Indicates that the macro runs automatically when the document is opened.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        open = "Open",
+        /**
+         * Indicates that the macro runs automatically when the document is closed.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        close = "Close",
+        /**
+         * Indicates that the macro runs automatically when the document is saved.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        exit = "Exit",
+        /**
+         * Indicates that the macro runs automatically when the document is synchronized.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sync = "Sync",
+    }
+    /**
+     * Document statistic types.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum Statistic {
+        /**
+         * Words in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        words = "Words",
+        /**
+         * Lines in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lines = "Lines",
+        /**
+         * Pages in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pages = "Pages",
+        /**
+         * Characters in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        characters = "Characters",
+        /**
+         * Paragraphs in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraphs = "Paragraphs",
+        /**
+         * Characters including spaces.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        charactersWithSpaces = "CharactersWithSpaces",
+        /**
+         * Far East (DBCS) characters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        farEastCharacters = "FarEastCharacters",
+    }
+    /**
+     * Specifies the type of document information to remove.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RemoveDocInfoType {
+        /**
+         * Comments in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comments = "Comments",
+        /**
+         * Revisions in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisions = "Revisions",
+        /**
+         * Versions in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        versions = "Versions",
+        /**
+         * Personal information in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removePersonalInformation = "RemovePersonalInformation",
+        /**
+         * Email header in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        emailHeader = "EmailHeader",
+        /**
+         * Routing slip in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        routingSlip = "RoutingSlip",
+        /**
+         * Send for review information in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sendForReview = "SendForReview",
+        /**
+         * Document properties.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentProperties = "DocumentProperties",
+        /**
+         * Template information.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+        /**
+         * Document workspace properties.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentWorkspace = "DocumentWorkspace",
+        /**
+         * Ink annotations in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inkAnnotations = "InkAnnotations",
+        /**
+         * Document server properties.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentServerProperties = "DocumentServerProperties",
+        /**
+         * Document management policy.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentManagementPolicy = "DocumentManagementPolicy",
+        /**
+         * Content type information.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contentType = "ContentType",
+        /**
+         * Taskpane web extensions.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taskpaneWebExtensions = "TaskpaneWebExtensions",
+        /**
+         * At mentions in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        atMentions = "AtMentions",
+        /**
+         * Document tasks.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentTasks = "DocumentTasks",
+        /**
+         * Document intelligence information.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentIntelligence = "DocumentIntelligence",
+        /**
+         * Comment reactions in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        commentReactions = "CommentReactions",
+        /**
+         * All document information types.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        all = "All",
+    }
+    /**
+     * Specifies the version type for document check-in operations.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CheckInVersionType {
+        /**
+         * Represents a minor version check-in.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        minor = "Minor",
+        /**
+         * Represents a major version check-in.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        major = "Major",
+        /**
+         * Represents an overwrite version check-in.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        overwrite = "Overwrite",
+    }
+    /**
+     * Specifies the target document for merge operations.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum MergeTarget {
+        /**
+         * Represents merging into the selected document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        selected = "Selected",
+        /**
+         * Represents merging into the current document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        current = "Current",
+        /**
+         * Represents merging into a new document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        new = "New",
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.checkSpelling} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentCheckSpellingOptions {
+        /**
+         * If provided, specifies whether to always suggest spelling corrections. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alwaysSuggest?: boolean;
+        /**
+         * If provided, specifies the custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary10?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary2?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary3?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary4?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary5?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary6?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary7?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary8?: string;
+        /**
+         * If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary9?: string;
+        /**
+         * If provided, specifies whether to ignore uppercase words during spell checking. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ignoreUppercase?: boolean;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.range} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentRangeOptions {
+        /**
+         * If provided, specifies the ending character position. The default value is the end of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        end?: number;
+        /**
+         * If provided, specifies the starting character position. The default value is `0`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        start?: number;
+    }
+    /**
+     * Represents the options for the {@link Word.Selection | Selection.goTo} and {@link Word.Document| Document.goTo} methods.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface GoToOptions {
+        /**
+         * If provided, specifies the number of the item in the document. Only positive values are valid. The default value is 1.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        count?: number;
+        /**
+         * If provided, specifies the direction the range or selection is moved to. The default value is `next`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        direction?: Word.GoToDirection | "First" | "Last" | "Next" | "Previous";
+        /**
+         * If provided, specifies the kind of item the range or selection is moved to. The default value is `page`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        item?: Word.GoToItem | "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError";
+        /**
+         * If provided, specifies the name if the `item` property is set to {@link Word.GoToItem} type `bookmark`, `comment`, `field`, or `object`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.printOut} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentPrintOutOptions {
+        /**
+         * If provided, specifies the printer name. The default value is an empty string. This argument is available only in Microsoft Office Macintosh Edition.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activePrinterMacGX?: string;
+        /**
+         * If provided, specifies whether to append to an existing file. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        append?: boolean;
+        /**
+         * If provided, specifies whether to print in the background. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        background?: boolean;
+        /**
+         * If provided, specifies whether to collate pages. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        collate?: boolean;
+        /**
+         * If provided, specifies the number of copies to print. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        copies?: number;
+        /**
+         * If provided, specifies the starting page number. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        from?: number;
+        /**
+         * If provided, specifies the item to print. The default value is `PrintOutItem.documentContent`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        item?: Word.PrintOutItem | "DocumentContent" | "Properties" | "Comments" | "Markup" | "Styles" | "AutoTextEntries" | "KeyAssignments" | "Envelope" | "DocumentWithMarkup";
+        /**
+         * If provided, specifies whether to manually duplex print. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        manualDuplexPrint?: boolean;
+        /**
+         * If provided, specifies the name of the output file. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outputFileName?: string;
+        /**
+         * If provided, specifies the page order. The default value is `PrintOutPages.allPages`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pageType?: Word.PrintOutPages | "All" | "OddOnly" | "EvenOnly";
+        /**
+         * If provided, specifies specific pages to print. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pages?: string;
+        /**
+         * If provided, specifies whether to print to file. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printToFile?: boolean;
+        /**
+         * If provided, specifies the zoom column setting. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printZoomColumn?: number;
+        /**
+         * If provided, specifies the paper height for printing in twips (20 twips = 1 point; 72 points = 1 inch). The default value is `0` (use original height).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printZoomPaperHeight?: number;
+        /**
+         * If provided, specifies the paper width for printing in twips (20 twips = 1 point; 72 points = 1 inch). The default value is `0` (use original width).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printZoomPaperWidth?: number;
+        /**
+         * If provided, specifies the zoom row setting. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printZoomRow?: number;
+        /**
+         * If provided, specifies the range to print. The default value is `allDocument`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        range?: Word.PrintOutRange | "AllDocument" | "Selection" | "CurrentPage" | "FromTo" | "RangeOfPages";
+        /**
+         * If provided, specifies the ending page number. The default value is the last page of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        to?: number;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.exportAsFixedFormat} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentExportAsFixedFormatOptions {
+        /**
+         * If provided, specifies whether to bitmap missing fonts. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bitmapMissingFonts?: boolean;
+        /**
+         * If provided, specifies the bookmark creation mode. The default value is `none`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        createBookmarks?: Word.ExportCreateBookmarks | "None" | "Headings" | "WordBookmarks";
+        /**
+         * If provided, specifies whether to include document structure tags. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentStructureTags?: boolean;
+        /**
+         * If provided, specifies the extension class pointer. The default value is `null`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fixedFormatExtensionClassPointer?: any;
+        /**
+         * If provided, specifies the starting page number. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        from?: number;
+        /**
+         * If provided, specifies whether to include document properties. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeDocProps?: boolean;
+        /**
+         * If provided, specifies the item to export. The default value is `documentContent`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        item?: Word.ExportItem | "DocumentContent" | "DocumentWithMarkup";
+        /**
+         * If provided, specifies whether to keep Information Rights Management (IRM) settings. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keepInformationRightsManagement?: boolean;
+        /**
+         * If provided, specifies whether to open the file after export. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openAfterExport?: boolean;
+        /**
+         * If provided, specifies the optimization target for the export. The default value is `print`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        optimizeFor?: Word.ExportOptimizeFor | "Print" | "OnScreen";
+        /**
+         * If provided, specifies the range to export. The default value is `allDocument`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        range?: Word.ExportRange | "AllDocument" | "Selection" | "CurrentPage" | "FromTo";
+        /**
+         * If provided, specifies the ending page number. The default value is the last page of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        to?: number;
+        /**
+         * If provided, specifies whether to use {@link https://www.iso.org/standard/38920.html | ISO 19005-1 compliance}. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useIso19005_1?: boolean;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.followHyperlink} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentFollowHyperlinkOptions {
+        /**
+         * If provided, specifies whether to add the link to the browsing history. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addHistory?: boolean;
+        /**
+         * If provided, specifies the hyperlink address to follow. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        address?: string;
+        /**
+         * If provided, specifies additional information to pass with the request. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        extraInfo?: string;
+        /**
+         * If provided, specifies header information for the HTTP request. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        headerInfo?: string;
+        /**
+         * If provided, specifies the HTTP method to use for the request. The default value is "GET".
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        httpMethod?: string;
+        /**
+         * If provided, specifies whether to open the link in a new window. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        newWindow?: boolean;
+        /**
+         * If provided, specifies the sub-address within the document. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subAddress?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.countNumberedItems} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentCountNumberedItemsOptions {
+        /**
+         * If provided, specifies the level of numbering to count. If omitted, all levels are counted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        level?: number;
+        /**
+         * If provided, specifies the type of numbered items to count. The default value is `allNumbers`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberType?: Word.NumberType | "Paragraph" | "ListNum" | "AllNumbers";
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.merge} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentMergeOptions {
+        /**
+         * If provided, specifies whether to add the merged document to recent files. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addToRecentFiles?: boolean;
+        /**
+         * If provided, specifies whether to detect format changes during the merge. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        detectFormatChanges?: boolean;
+        /**
+         * If provided, specifies the target of the merge operation. The default value is `current`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mergeTarget?: Word.MergeTarget | "Selected" | "Current" | "New";
+        /**
+         * If provided, specifies the source of formatting to use in the merge. The default value is `current`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useFormattingFrom?: Word.UseFormattingFrom | "Current" | "Selected" | "Prompt";
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.sendForReview} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentSendForReviewOptions {
+        /**
+         * If provided, specifies whether to include the document as an attachment. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeAttachment?: boolean;
+        /**
+         * If provided, specifies the recipients of the review request. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        recipients?: string;
+        /**
+         * If provided, specifies whether to show the message before sending. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showMessage?: boolean;
+        /**
+         * If provided, specifies the subject of the review email. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subject?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.replyWithChanges} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentReplyWithChangesOptions {
+        /**
+         * If provided, specifies whether to include the document as an attachment. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeAttachment?: boolean;
+        /**
+         * If provided, specifies the recipients of the reply. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        recipients?: string;
+        /**
+         * If provided, specifies whether to show the message before sending. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showMessage?: boolean;
+        /**
+         * If provided, specifies the subject of the reply email. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subject?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.endReview} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentEndReviewOptions {
+        /**
+         * If provided, specifies whether to include the document as an attachment. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeAttachment?: boolean;
+        /**
+         * If provided, specifies the recipients to notify when ending the review. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        recipients?: string;
+        /**
+         * If provided, specifies whether to show the message before sending. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showMessage?: boolean;
+        /**
+         * If provided, specifies the subject of the notification email. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subject?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.sendFaxOverInternet} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentSendFaxOverInternetOptions {
+        /**
+         * If provided, specifies the recipients of the fax. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        recipients?: string;
+        /**
+         * If provided, specifies whether to show the message before sending. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showMessage?: boolean;
+        /**
+         * If provided, specifies the subject of the fax. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subject?: string;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.protect} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentProtectOptions {
+        /**
+         * If provided, specifies whether to enforce style lock restrictions. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enforceStyleLock?: boolean;
+        /**
+         * If provided, specifies whether to reset form fields when protecting the document. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noReset?: boolean;
+        /**
+         * If provided, specifies the password to apply for document protection. The default value is an empty string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        password?: string;
+        /**
+         * If provided, specifies whether to use Information Rights Management (IRM). The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useInformationRightsManagement?: boolean;
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.checkInWithVersion} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentCheckInWithVersionOptions {
+        /**
+         * If provided, specifies a comment for the check-in operation.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comment?: string;
+        /**
+         * If provided, specifies whether to make the document public after check-in. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        makePublic?: boolean;
+        /**
+         * If provided, specifies whether to save changes before checking in. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        saveChanges?: boolean;
+        /**
+         * If provided, specifies the version type for the check-in. The default value is `minorVersion`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        versionType?: Word.CheckInVersionType | "Minor" | "Major" | "Overwrite";
+    }
+    /**
+     * Provides configuration options for the {@link Word.Document | Document.checkIn} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentCheckInOptions {
+        /**
+         * If provided, specifies a comment for the check-in operation.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comment?: string;
+        /**
+         * If provided, specifies whether to make the document public after check-in. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        makePublic?: boolean;
+        /**
+         * If provided, specifies whether to save changes before checking in. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        saveChanges?: boolean;
+    }
+    /**
+     * Represents the options for exporting a document as a fixed format (PDF or XPS) using the {@link Word.Document | Document.exportAsFixedFormat2} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentExportAsFixedFormat2Options {
+        /**
+         * If provided, specifies whether to bitmap missing fonts. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bitmapMissingFonts?: boolean;
+        /**
+         * If provided, specifies the bookmark creation mode. The default value is `none`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        createBookmarks?: Word.ExportCreateBookmarks | "None" | "Headings" | "WordBookmarks";
+        /**
+         * If provided, specifies whether to include document structure tags. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentStructureTags?: boolean;
+        /**
+         * If provided, specifies the extension class pointer. The default value is `null`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fixedFormatExtClassPtr?: any;
+        /**
+         * If provided, specifies the starting page number. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        from?: number;
+        /**
+         * If provided, specifies whether to include document properties. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeDocProps?: boolean;
+        /**
+         * If provided, specifies the item to export. The default value is `documentContent`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        item?: Word.ExportItem | "DocumentContent" | "DocumentWithMarkup";
+        /**
+         * If provided, specifies whether to keep Information Rights Management (IRM) settings. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keepInformationRightsManagement?: boolean;
+        /**
+         * If provided, specifies whether to open the file after export. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openAfterExport?: boolean;
+        /**
+         * If provided, specifies the optimization target for the export. The default value is `print`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        optimizeFor?: Word.ExportOptimizeFor | "Print" | "OnScreen";
+        /**
+         * If provided, specifies whether to optimize for image quality in the exported file. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        optimizeForImageQuality?: boolean;
+        /**
+         * If provided, specifies the range to export. The default value is `allDocument`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        range?: Word.ExportRange | "AllDocument" | "Selection" | "CurrentPage" | "FromTo";
+        /**
+         * If provided, specifies the ending page number. The default value is the last page of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        to?: number;
+        /**
+         * If provided, specifies whether to use {@link https://www.iso.org/standard/38920.html | ISO 19005-1 compliance}. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useIso19005_1?: boolean;
+    }
+    /**
+     * Represents the options for exporting a document as a fixed format (PDF or XPS) with improved tagging using the {@link Word.Document | Document.exportAsFixedFormat3} method.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentExportAsFixedFormat3Options {
+        /**
+         * If provided, specifies whether to bitmap missing fonts. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bitmapMissingFonts?: boolean;
+        /**
+         * If provided, specifies the bookmark creation mode. The default value is `none`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        createBookmarks?: Word.ExportCreateBookmarks | "None" | "Headings" | "WordBookmarks";
+        /**
+         * If provided, specifies whether to include document structure tags. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentStructureTags?: boolean;
+        /**
+         * If provided, specifies the extension class pointer. The default value is `null`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fixedFormatExtClassPtr?: any;
+        /**
+         * If provided, specifies the starting page number. The default value is `1`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        from?: number;
+        /**
+         * If provided, specifies to improve export tagging for better accessibility. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        improveExportTagging?: boolean;
+        /**
+         * If provided, specifies whether to include document properties. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeDocProps?: boolean;
+        /**
+         * If provided, specifies the item to export. The default value is `documentContent`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        item?: Word.ExportItem | "DocumentContent" | "DocumentWithMarkup";
+        /**
+         * If provided, specifies whether to keep Information Rights Management (IRM) settings. The default value is `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keepInformationRightsManagement?: boolean;
+        /**
+         * If provided, specifies whether to open the file after export. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openAfterExport?: boolean;
+        /**
+         * If provided, specifies the optimization target for the export. The default value is `print`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        optimizeFor?: Word.ExportOptimizeFor | "Print" | "OnScreen";
+        /**
+         * If provided, specifies whether to optimize for image quality in the exported file. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        optimizeForImageQuality?: boolean;
+        /**
+         * If provided, specifies the range to export. The default value is `allDocument`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        range?: Word.ExportRange | "AllDocument" | "Selection" | "CurrentPage" | "FromTo";
+        /**
+         * If provided, specifies the ending page number. The default value is the last page of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        to?: number;
+        /**
+         * If provided, specifies whether to use {@link https://www.iso.org/standard/38920.html | ISO 19005-1 compliance}. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        useIso19005_1?: boolean;
+    }
+    /**
+     * Specifies the type of document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DocumentType {
+        /**
+         * Represents a standard document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        document = "Document",
+        /**
+         * Represents a document template.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+        /**
+         * Represents a frameset document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frameset = "Frameset",
+    }
+    /**
+     * Specifies the kind or purpose of a document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DocumentKind {
+        /**
+         * Represents a document with no specified kind.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        notSpecified = "NotSpecified",
+        /**
+         * Represents a letter document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        letter = "Letter",
+        /**
+         * Represents an email document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        email = "Email",
+    }
+    /**
+     * Represents the file format to use when saving a document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum FileSaveFormat {
+        /**
+         * Represents Microsoft Office Word 97 - 2003 binary file format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        document = "Document",
+        /**
+         * Represents Word template format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+        /**
+         * Represents Microsoft Windows text format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text = "Text",
+        /**
+         * Represents Windows text format with line breaks preserved.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textLineBreaks = "TextLineBreaks",
+        /**
+         * Represents Microsoft DOS text format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dosText = "DosText",
+        /**
+         * Represents Microsoft DOS text with line breaks preserved.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dosTextLineBreaks = "DosTextLineBreaks",
+        /**
+         * Represents Rich Text Format (RTF).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rtf = "Rtf",
+        /**
+         * Represents Unicode text format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unicodeText = "UnicodeText",
+        /**
+         * Represents standard HTML format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        html = "Html",
+        /**
+         * Represents Web archive format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        webArchive = "WebArchive",
+        /**
+         * Represents filtered HTML format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        filteredHtml = "FilteredHtml",
+        /**
+         * Represents Extensible Markup Language (XML) format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xml = "Xml",
+        /**
+         * Represents XML document format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlDocument = "XmlDocument",
+        /**
+         * Represents XML document format with macros enabled.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlDocumentMacroEnabled = "XmlDocumentMacroEnabled",
+        /**
+         * Represents XML template format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlTemplate = "XmlTemplate",
+        /**
+         * Represents XML template format with macros enabled.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xmlTemplateMacroEnabled = "XmlTemplateMacroEnabled",
+        /**
+         * Represents Word default document file format. For Word, this is the DOCX format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentDefault = "DocumentDefault",
+        /**
+         * Represents PDF format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pdf = "Pdf",
+        /**
+         * Represents XPS format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xps = "Xps",
+        /**
+         * Represents Open XML file format saved as a single XML file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flatXml = "FlatXml",
+        /**
+         * Represents Open XML file format with macros enabled saved as a single XML file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flatXmlMacroEnabled = "FlatXmlMacroEnabled",
+        /**
+         * Represents Open XML template format saved as a single XML file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flatXmlTemplate = "FlatXmlTemplate",
+        /**
+         * Represents Open XML template format with macros enabled saved as a single XML file.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flatXmlTemplateMacroEnabled = "FlatXmlTemplateMacroEnabled",
+        /**
+         * Represents OpenDocument Text format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        openDocumentText = "OpenDocumentText",
+        /**
+         * Represents Strict Open XML document format.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        strictOpenXmlDocument = "StrictOpenXmlDocument",
+    }
+    /**
+     * Specifies the protection type for a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ProtectionType {
+        /**
+         * No protection is applied to the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noProtection = "NoProtection",
+        /**
+         * Only revisions are allowed in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowOnlyRevisions = "AllowOnlyRevisions",
+        /**
+         * Only comments are allowed in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowOnlyComments = "AllowOnlyComments",
+        /**
+         * Only form fields are allowed in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowOnlyFormFields = "AllowOnlyFormFields",
+        /**
+         * Only reading is allowed in the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowOnlyReading = "AllowOnlyReading",
+    }
+    /**
+     * Represents how Word marks line and paragraph breaks in text files.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LineEndingType {
+        /**
+         * Represents carriage return and line feed (Windows standard).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crlf = "Crlf",
+        /**
+         * Represents carriage return only (Mac classic standard).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crOnly = "CrOnly",
+        /**
+         * Represents line feed only (Unix/Linux standard).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lfOnly = "LfOnly",
+        /**
+         * Represents line feed and carriage return.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lfcr = "Lfcr",
+        /**
+         * Represents line separator and paragraph separator.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lsps = "Lsps",
+    }
+    /**
+     * Specifies the document encoding types.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DocumentEncoding {
+        /**
+         * Thai encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thai = "Thai",
+        /**
+         * Japanese Shift Japanese Industrial Standards (Shift JIS) encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        japaneseShiftJis = "JapaneseShiftJis",
+        /**
+         * Simplified Chinese Guojia Biaozhun Kuozhan (GBK, which means "National Standard Extended" in Chinese) encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simplifiedChineseGbk = "SimplifiedChineseGbk",
+        /**
+         * Korean encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        korean = "Korean",
+        /**
+         * Traditional Chinese Big5 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        traditionalChineseBig5 = "TraditionalChineseBig5",
+        /**
+         * Unicode Little Endian encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unicodeLittleEndian = "UnicodeLittleEndian",
+        /**
+         * Unicode Big Endian encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unicodeBigEndian = "UnicodeBigEndian",
+        /**
+         * Central European encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        centralEuropean = "CentralEuropean",
+        /**
+         * Cyrillic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cyrillic = "Cyrillic",
+        /**
+         * Western encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        western = "Western",
+        /**
+         * Greek encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        greek = "Greek",
+        /**
+         * Turkish encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        turkish = "Turkish",
+        /**
+         * Hebrew encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hebrew = "Hebrew",
+        /**
+         * Arabic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabic = "Arabic",
+        /**
+         * Baltic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        baltic = "Baltic",
+        /**
+         * Vietnamese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vietnamese = "Vietnamese",
+        /**
+         * Auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoDetect = "AutoDetect",
+        /**
+         * Japanese auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        japaneseAutoDetect = "JapaneseAutoDetect",
+        /**
+         * Simplified Chinese auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simplifiedChineseAutoDetect = "SimplifiedChineseAutoDetect",
+        /**
+         * Korean auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        koreanAutoDetect = "KoreanAutoDetect",
+        /**
+         * Traditional Chinese auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        traditionalChineseAutoDetect = "TraditionalChineseAutoDetect",
+        /**
+         * Cyrillic auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cyrillicAutoDetect = "CyrillicAutoDetect",
+        /**
+         * Greek auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        greekAutoDetect = "GreekAutoDetect",
+        /**
+         * Arabic auto detect encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicAutoDetect = "ArabicAutoDetect",
+        /**
+         * ISO 8859-1 Latin1 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88591Latin1 = "Iso88591Latin1",
+        /**
+         * ISO 8859-2 Central Europe encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88592CentralEurope = "Iso88592CentralEurope",
+        /**
+         * ISO 8859-3 Latin3 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88593Latin3 = "Iso88593Latin3",
+        /**
+         * ISO 8859-4 Baltic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88594Baltic = "Iso88594Baltic",
+        /**
+         * ISO 8859-5 Cyrillic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88595Cyrillic = "Iso88595Cyrillic",
+        /**
+         * ISO 8859-6 Arabic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88596Arabic = "Iso88596Arabic",
+        /**
+         * ISO 8859-7 Greek encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88597Greek = "Iso88597Greek",
+        /**
+         * ISO 8859-8 Hebrew encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88598Hebrew = "Iso88598Hebrew",
+        /**
+         * ISO 8859-9 Turkish encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88599Turkish = "Iso88599Turkish",
+        /**
+         * ISO 8859-15 Latin9 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso885915Latin9 = "Iso885915Latin9",
+        /**
+         * ISO 8859-8 Hebrew logical encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso88598HebrewLogical = "Iso88598HebrewLogical",
+        /**
+         * ISO 2022-JP no halfwidth katakana encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso2022JpNoHalfwidthKatakana = "Iso2022JpNoHalfwidthKatakana",
+        /**
+         * ISO 2022-JP JIS X 0202-1984 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso2022JpJisX02021984 = "Iso2022JpJisX02021984",
+        /**
+         * ISO 2022-JP JIS X 0201-1989 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso2022JpJisX02011989 = "Iso2022JpJisX02011989",
+        /**
+         * ISO 2022-KR encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso2022Kr = "Iso2022Kr",
+        /**
+         * ISO 2022-CN Traditional Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso2022CnTraditionalChinese = "Iso2022CnTraditionalChinese",
+        /**
+         * ISO 2022-CN Simplified Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso2022CnSimplifiedChinese = "Iso2022CnSimplifiedChinese",
+        /**
+         * Mac Roman encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macRoman = "MacRoman",
+        /**
+         * Mac Japanese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macJapanese = "MacJapanese",
+        /**
+         * Mac Traditional Chinese Big5 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macTraditionalChineseBig5 = "MacTraditionalChineseBig5",
+        /**
+         * Mac Korean encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macKorean = "MacKorean",
+        /**
+         * Mac Arabic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macArabic = "MacArabic",
+        /**
+         * Mac Hebrew encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macHebrew = "MacHebrew",
+        /**
+         * Mac Greek1 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macGreek1 = "MacGreek1",
+        /**
+         * Mac Cyrillic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macCyrillic = "MacCyrillic",
+        /**
+         * Mac Simplified Chinese GB2312 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macSimplifiedChineseGb2312 = "MacSimplifiedChineseGb2312",
+        /**
+         * Mac Romania encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macRomania = "MacRomania",
+        /**
+         * Mac Ukraine encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macUkraine = "MacUkraine",
+        /**
+         * Mac Latin2 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macLatin2 = "MacLatin2",
+        /**
+         * Mac Icelandic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macIcelandic = "MacIcelandic",
+        /**
+         * Mac Turkish encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macTurkish = "MacTurkish",
+        /**
+         * Mac Croatia encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macCroatia = "MacCroatia",
+        /**
+         * EBCDIC US-Canada encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicUsCanada = "EbcdicUsCanada",
+        /**
+         * EBCDIC International encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicInternational = "EbcdicInternational",
+        /**
+         * EBCDIC Multilingual ROECE Latin2 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicMultilingualRoeceLatin2 = "EbcdicMultilingualRoeceLatin2",
+        /**
+         * EBCDIC Greek Modern encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicGreekModern = "EbcdicGreekModern",
+        /**
+         * EBCDIC Turkish Latin5 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicTurkishLatin5 = "EbcdicTurkishLatin5",
+        /**
+         * EBCDIC Germany encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicGermany = "EbcdicGermany",
+        /**
+         * EBCDIC Denmark-Norway encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicDenmarkNorway = "EbcdicDenmarkNorway",
+        /**
+         * EBCDIC Finland-Sweden encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicFinlandSweden = "EbcdicFinlandSweden",
+        /**
+         * EBCDIC Italy encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicItaly = "EbcdicItaly",
+        /**
+         * EBCDIC Latin America-Spain encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicLatinAmericaSpain = "EbcdicLatinAmericaSpain",
+        /**
+         * EBCDIC United Kingdom encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicUnitedKingdom = "EbcdicUnitedKingdom",
+        /**
+         * EBCDIC Japanese Katakana Extended encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicJapaneseKatakanaExtended = "EbcdicJapaneseKatakanaExtended",
+        /**
+         * EBCDIC France encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicFrance = "EbcdicFrance",
+        /**
+         * EBCDIC Arabic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicArabic = "EbcdicArabic",
+        /**
+         * EBCDIC Greek encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicGreek = "EbcdicGreek",
+        /**
+         * EBCDIC Hebrew encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicHebrew = "EbcdicHebrew",
+        /**
+         * EBCDIC Korean Extended encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicKoreanExtended = "EbcdicKoreanExtended",
+        /**
+         * EBCDIC Thai encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicThai = "EbcdicThai",
+        /**
+         * EBCDIC Icelandic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicIcelandic = "EbcdicIcelandic",
+        /**
+         * EBCDIC Turkish encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicTurkish = "EbcdicTurkish",
+        /**
+         * EBCDIC Russian encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicRussian = "EbcdicRussian",
+        /**
+         * EBCDIC Serbian-Bulgarian encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicSerbianBulgarian = "EbcdicSerbianBulgarian",
+        /**
+         * EBCDIC Japanese Katakana Extended and Japanese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicJapaneseKatakanaExtendedAndJapanese = "EbcdicJapaneseKatakanaExtendedAndJapanese",
+        /**
+         * EBCDIC US-Canada and Japanese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicUsCanadaAndJapanese = "EbcdicUsCanadaAndJapanese",
+        /**
+         * EBCDIC Korean Extended and Korean encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicKoreanExtendedAndKorean = "EbcdicKoreanExtendedAndKorean",
+        /**
+         * EBCDIC Simplified Chinese Extended and Simplified Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicSimplifiedChineseExtendedAndSimplifiedChinese = "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese",
+        /**
+         * EBCDIC US-Canada and Traditional Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicUsCanadaAndTraditionalChinese = "EbcdicUsCanadaAndTraditionalChinese",
+        /**
+         * EBCDIC Japanese Latin Extended and Japanese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ebcdicJapaneseLatinExtendedAndJapanese = "EbcdicJapaneseLatinExtendedAndJapanese",
+        /**
+         * OEM United States encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemUnitedStates = "OemUnitedStates",
+        /**
+         * OEM Greek 437G encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemGreek437G = "OemGreek437G",
+        /**
+         * OEM Baltic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemBaltic = "OemBaltic",
+        /**
+         * OEM Multilingual Latin I encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemMultilingualLatinI = "OemMultilingualLatinI",
+        /**
+         * OEM Multilingual Latin II encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemMultilingualLatinIi = "OemMultilingualLatinIi",
+        /**
+         * OEM Cyrillic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemCyrillic = "OemCyrillic",
+        /**
+         * OEM Turkish encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemTurkish = "OemTurkish",
+        /**
+         * OEM Portuguese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemPortuguese = "OemPortuguese",
+        /**
+         * OEM Icelandic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemIcelandic = "OemIcelandic",
+        /**
+         * OEM Hebrew encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemHebrew = "OemHebrew",
+        /**
+         * OEM Canadian French encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemCanadianFrench = "OemCanadianFrench",
+        /**
+         * OEM Arabic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemArabic = "OemArabic",
+        /**
+         * OEM Nordic encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemNordic = "OemNordic",
+        /**
+         * OEM Cyrillic II encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemCyrillicIi = "OemCyrillicIi",
+        /**
+         * OEM Modern Greek encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        oemModernGreek = "OemModernGreek",
+        /**
+         * EUC Japanese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eucJapanese = "EucJapanese",
+        /**
+         * EUC Chinese Simplified Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eucChineseSimplifiedChinese = "EucChineseSimplifiedChinese",
+        /**
+         * EUC Korean encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eucKorean = "EucKorean",
+        /**
+         * EUC Taiwanese Traditional Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eucTaiwaneseTraditionalChinese = "EucTaiwaneseTraditionalChinese",
+        /**
+         * ISCII Devanagari encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiDevanagari = "IsciiDevanagari",
+        /**
+         * ISCII Bengali encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiBengali = "IsciiBengali",
+        /**
+         * ISCII Tamil encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiTamil = "IsciiTamil",
+        /**
+         * ISCII Telugu encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiTelugu = "IsciiTelugu",
+        /**
+         * ISCII Assamese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiAssamese = "IsciiAssamese",
+        /**
+         * ISCII Oriya encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiOriya = "IsciiOriya",
+        /**
+         * ISCII Kannada encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiKannada = "IsciiKannada",
+        /**
+         * ISCII Malayalam encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiMalayalam = "IsciiMalayalam",
+        /**
+         * ISCII Gujarati encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiGujarati = "IsciiGujarati",
+        /**
+         * ISCII Punjabi encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isciiPunjabi = "IsciiPunjabi",
+        /**
+         * Arabic ASMO encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicAsmo = "ArabicAsmo",
+        /**
+         * Arabic Transparent ASMO encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arabicTransparentAsmo = "ArabicTransparentAsmo",
+        /**
+         * Korean Johab encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        koreanJohab = "KoreanJohab",
+        /**
+         * Taiwan CNS encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taiwanCns = "TaiwanCns",
+        /**
+         * Taiwan TCA encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taiwanTca = "TaiwanTca",
+        /**
+         * Taiwan Eten encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taiwanEten = "TaiwanEten",
+        /**
+         * Taiwan IBM5550 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taiwanIbm5550 = "TaiwanIbm5550",
+        /**
+         * Taiwan TeleText encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taiwanTeleText = "TaiwanTeleText",
+        /**
+         * Taiwan Wang encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        taiwanWang = "TaiwanWang",
+        /**
+         * IA5 IRV encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ia5Irv = "Ia5Irv",
+        /**
+         * IA5 German encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ia5German = "Ia5German",
+        /**
+         * IA5 Swedish encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ia5Swedish = "Ia5Swedish",
+        /**
+         * IA5 Norwegian encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ia5Norwegian = "Ia5Norwegian",
+        /**
+         * US ASCII encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        usaAscii = "UsaAscii",
+        /**
+         * T61 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        t61 = "T61",
+        /**
+         * ISO 6937 Non-Spacing Accent encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        iso6937NonSpacingAccent = "Iso6937NonSpacingAccent",
+        /**
+         * KOI8-R encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        koi8R = "Koi8R",
+        /**
+         * Ext Alpha Lowercase encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        extAlphaLowercase = "ExtAlphaLowercase",
+        /**
+         * KOI8-U encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        koi8U = "Koi8U",
+        /**
+         * Europa3 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        europa3 = "Europa3",
+        /**
+         * HZ GB Simplified Chinese encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hzGbSimplifiedChinese = "HzGbSimplifiedChinese",
+        /**
+         * Simplified Chinese GB18030 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        simplifiedChineseGb18030 = "SimplifiedChineseGb18030",
+        /**
+         * UTF-7 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        utf7 = "Utf7",
+        /**
+         * UTF-8 encoding.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        utf8 = "Utf8",
+    }
+    /**
+     * Specifies the compatibility mode that Word uses when opening the document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CompatibilityMode {
+        /**
+         * Word 2003 compatibility mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word2003 = "Word2003",
+        /**
+         * Word 2007 compatibility mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word2007 = "Word2007",
+        /**
+         * Word 2010 compatibility mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word2010 = "Word2010",
+        /**
+         * Word 2013 compatibility mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        word2013 = "Word2013",
+        /**
+         * Current Word version compatibility mode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        current = "Current",
     }
     /**
      * Represents the type of style.
@@ -32414,9 +38262,9 @@ export declare namespace Word {
          */
         untrack(): Word.FillFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Word.FillFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FillFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.FillFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FillFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.FillFormatData;
     }
     /**
@@ -37984,16 +43832,6 @@ export declare namespace Word {
          * @beta
          */
         getIsEvenlySpaced(): OfficeExtension.ClientResult<boolean>;
-        /**
-         * Gets a `TextColumn` by its index in the collection.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - A number that identifies the index location of a `TextColumn` object.
-         */
-        getItem(index: number): Word.TextColumn;
         /**
          * Arranges text into the specified number of text columns.
          *
@@ -46382,7 +52220,7 @@ export declare namespace Word {
         /** An interface for updating data on the `CustomXmlValidationError` object, for use in `customXmlValidationError.set({ ... })`. */
         export interface CustomXmlValidationErrorUpdateData {
             /**
-             * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             * Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -46701,6 +52539,54 @@ export declare namespace Word {
              */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
             /**
+             * Specifies whether grammatical errors are marked by a wavy green line in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areGrammaticalErrorsShown?: boolean;
+            /**
+             * Specifies whether to use the default math settings when creating new equations.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areMathDefaultsUsed?: boolean;
+            /**
+             * Specifies whether to disable features introduced after a specified version.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areNewerFeaturesDisabled?: boolean;
+            /**
+             * Specifies whether Microsoft Word underlines spelling errors in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areSpellingErrorsShown?: boolean;
+            /**
+             * Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areStylesUpdatedOnOpen?: boolean;
+            /**
+             * Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTrueTypeFontsEmbedded?: boolean;
+            /**
              * Specifies if automatic hyphenation is turned on for the document.
              *
              * @remarks
@@ -46732,6 +52618,126 @@ export declare namespace Word {
              */
             consecutiveHyphensLimit?: number;
             /**
+             * Specifies the interval (in points) between the default tab stops in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            defaultTabStop?: number;
+            /**
+             * Specifies the browser frame for displaying a webpage via hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            defaultTargetFrame?: string;
+            /**
+             * Specifies whether Word should not embed common system fonts.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            doNotEmbedSystemFonts?: boolean;
+            /**
+             * Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            encryptionProvider?: string;
+            /**
+             * Specifies the East Asian language used for line breaking.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            farEastLineBreakLanguage?: Word.FarEastLineBreakLanguageId | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+            /**
+             * Specifies the line break control level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            farEastLineBreakLevel?: Word.FarEastLineBreakLevel | "Normal" | "Strict" | "Custom";
+            /**
+             * Specifies whether Word shows the next heading level when the previous is used.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formattingIsNextLevelShown?: boolean;
+            /**
+             * Specifies whether to show user-defined styles.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formattingIsUserStyleNameShown?: boolean;
+            /**
+             * Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridDistanceHorizontal?: number;
+            /**
+             * Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridDistanceVertical?: number;
+            /**
+             * Specifies whether the character grid starts from the upper-left corner of the page.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridIsOriginFromMargin?: boolean;
+            /**
+             * Specifies the horizontal origin point for the invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridOriginHorizontal?: number;
+            /**
+             * Specifies the vertical origin point for the invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridOriginVertical?: number;
+            /**
+             * Specifies the interval for horizontal character gridlines in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridSpaceBetweenHorizontalLines?: number;
+            /**
+             * Specifies the interval for vertical character gridlines in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridSpaceBetweenVerticalLines?: number;
+            /**
              * Specifies whether words in all capital letters can be hyphenated.
              *
              * @remarks
@@ -46740,6 +52746,190 @@ export declare namespace Word {
              */
             hyphenateCaps?: boolean;
             /**
+             * Specifies the width of the hyphenation zone, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hyphenationZone?: number;
+            /**
+             * Specifies whether automatic formatting options override formatting restrictions.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAutoFormatOverrideOn?: boolean;
+            /**
+             * Specifies whether charts in the active document use cell-reference data-point tracking.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isChartDataPointTracked?: boolean;
+            /**
+             * Specifies whether the compatibility option specified by the `type` property is enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isCompatible?: boolean;
+            /**
+             * Specifies whether the document is final.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFinal?: boolean;
+            /**
+             * Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFontsSubsetSaved?: boolean;
+            /**
+             * Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormsDataPrinted?: boolean;
+            /**
+             * Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormsDataSaved?: boolean;
+            /**
+             * Specifies whether a grammar check has been run on the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isGrammarChecked?: boolean;
+            /**
+             * Specifies whether Word kerns half-width Latin characters and punctuation marks.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isKerningByAlgorithm?: boolean;
+            /**
+             * Specifies whether to embed speech and handwriting data.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLinguisticDataEmbedded?: boolean;
+            /**
+             * Specifies whether Word optimizes the document for Word 97.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isOptimizedForWord97?: boolean;
+            /**
+             * Specifies whether {@link https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f | PRINT field} instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPostScriptPrintedOverText?: boolean;
+            /**
+             * Specifies whether users can change the Quick Style set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isQuickStyleSetLocked?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadOnlyRecommended?: boolean;
+            /**
+             * Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSnappedToGrid?: boolean;
+            /**
+             * Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSnappedToShapes?: boolean;
+            /**
+             * Specifies whether spelling has been checked throughout the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSpellingChecked?: boolean;
+            /**
+             * Specifies whether formatting restrictions are enforced in a protected document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isStyleEnforced?: boolean;
+            /**
+             * Specifies whether users can change the document theme.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isThemeLocked?: boolean;
+            /**
+             * Specifies whether the document was created or opened by the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isUserControl?: boolean;
+            /**
+             * Specifies the character spacing adjustment.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            justificationMode?: Word.JustificationMode | "Expand" | "Compress" | "CompressKana";
+            /**
+             * Specifies the format type that Microsoft Word uses when automatically formatting the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kind?: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";
+            /**
              * Specifies whether Microsoft Word has detected the language of the document text.
              *
              * @remarks
@@ -46747,6 +52937,158 @@ export declare namespace Word {
              * @beta
              */
             languageDetected?: boolean;
+            /**
+             * Specifies the kinsoku characters after which Word will not break a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noLineBreakAfter?: string;
+            /**
+             * Specifies the kinsoku characters before which Word will not break a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noLineBreakBefore?: string;
+            /**
+             * Sets a password that must be supplied to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            password?: string;
+            /**
+             * Specifies whether revision marks are printed with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printRevisions?: boolean;
+            /**
+             * Specifies the width of pages in reading layout view when frozen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutSizeX?: number;
+            /**
+             * Specifies the height of pages in reading layout view when frozen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutSizeY?: number;
+            /**
+             * Specifies whether pages in reading layout view are frozen for handwritten markup.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingModeIsLayoutFrozen?: boolean;
+            /**
+             * Specifies whether Word removes user information upon saving.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            removePersonalInformationOnSave?: boolean;
+            /**
+             * Specifies the encoding used when saving the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            saveEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Specifies the encoding for saving as encoded text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Specifies how Word marks line and paragraph breaks in text files.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textLineEnding?: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps";
+            /**
+             * Specifies whether to track formatting changes when change tracking is on.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackFormatting?: boolean;
+            /**
+             * Specifies whether to mark moved text when Track Changes is on.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackMoves?: boolean;
+            /**
+             * Specifies whether changes are tracked in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackRevisions?: boolean;
+            /**
+             * Specifies whether to remove or store date and time metadata for tracked changes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackedChangesAreDateAndTimeRemoved?: boolean;
+            /**
+             * Sets a password for saving changes to the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            writePassword?: string;
+            /**
+             * Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlAreAdvancedErrorsShown?: boolean;
+            /**
+             * Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlIsXsltUsedWhenSaving?: boolean;
+            /**
+             * Specifies the path and file name for the XSLT to apply when saving a document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlSaveThroughXSLT?: string;
         }
         /** An interface for updating data on the `DocumentCreated` object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
@@ -50501,6 +56843,155 @@ export declare namespace Word {
              */
             title?: string;
         }
+        /** An interface for updating data on the `ReadabilityStatisticCollection` object, for use in `readabilityStatisticCollection.set({ ... })`. */
+        export interface ReadabilityStatisticCollectionUpdateData {
+            items?: Word.Interfaces.ReadabilityStatisticData[];
+        }
+        /** An interface for updating data on the `WebSettings` object, for use in `webSettings.set({ ... })`. */
+        export interface WebSettingsUpdateData {
+            /**
+             * Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowPng?: boolean;
+            /**
+             * Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            encoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            organizeInFolder?: boolean;
+            /**
+             * Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pixelsPerInch?: number;
+            /**
+             * Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relyOnCSS?: boolean;
+            /**
+             * Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relyOnVectorMarkupLanguage?: boolean;
+            /**
+             * Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenSize?: Word.ScreenSize | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200";
+            /**
+             * Specifies the target browser for documents viewed in a web browser.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            targetBrowser?: Word.TargetBrowser | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6";
+            /**
+             * Specifies whether long file names are used when saving the document as a webpage. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useLongFileNames?: boolean;
+        }
+        /** An interface for updating data on the `XmlNodeCollection` object, for use in `xmlNodeCollection.set({ ... })`. */
+        export interface XmlNodeCollectionUpdateData {
+            items?: Word.Interfaces.XmlNodeData[];
+        }
+        /** An interface for updating data on the `XmlNode` object, for use in `xmlNode.set({ ... })`. */
+        export interface XmlNodeUpdateData {
+            /**
+             * Specifies the value of this XML node. For element nodes, represents the text content; for attribute nodes, represents the attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: string;
+            /**
+             * Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderText?: string;
+            /**
+             * Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+        }
+        /** An interface for updating data on the `HtmlDivision` object, for use in `htmlDivision.set({ ... })`. */
+        export interface HtmlDivisionUpdateData {
+            /**
+             * Specifies the left indent value (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: number;
+            /**
+             * Specifies the right indent (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: number;
+            /**
+             * Specifies the amount of spacing (in points) after this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: number;
+            /**
+             * Specifies the spacing (in points) before this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: number;
+        }
+        /** An interface for updating data on the `HtmlDivisionCollection` object, for use in `htmlDivisionCollection.set({ ... })`. */
+        export interface HtmlDivisionCollectionUpdateData {
+            items?: Word.Interfaces.HtmlDivisionData[];
+        }
         /** An interface for updating data on the `Frame` object, for use in `frame.set({ ... })`. */
         export interface FrameUpdateData {
             /**
@@ -52628,7 +59119,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `customXmlValidationError.toJSON()`. */
         export interface CustomXmlValidationErrorData {
             /**
-             * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             * Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -52644,7 +59135,7 @@ export declare namespace Word {
              */
             errorCode?: number;
             /**
-             * Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+             * Gets the name of the error in the `CustomXmlValidationError` object. If no errors exist, the property returns `Nothing`
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -53272,6 +59763,78 @@ export declare namespace Word {
              */
             windows?: Word.Interfaces.WindowData[];
             /**
+             * Gets the name of the active theme and formatting options.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            activeTheme?: string;
+            /**
+             * Gets the display name of the active theme.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            activeThemeDisplayName?: string;
+            /**
+             * Gets whether Word encrypts file properties for password-protected documents.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFilePropertiesPasswordEncrypted?: boolean;
+            /**
+             * Specifies whether grammatical errors are marked by a wavy green line in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areGrammaticalErrorsShown?: boolean;
+            /**
+             * Specifies whether to use the default math settings when creating new equations.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areMathDefaultsUsed?: boolean;
+            /**
+             * Specifies whether to disable features introduced after a specified version.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areNewerFeaturesDisabled?: boolean;
+            /**
+             * Specifies whether Microsoft Word underlines spelling errors in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areSpellingErrorsShown?: boolean;
+            /**
+             * Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areStylesUpdatedOnOpen?: boolean;
+            /**
+             * Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTrueTypeFontsEmbedded?: boolean;
+            /**
              * Specifies if automatic hyphenation is turned on for the document.
              *
              * @remarks
@@ -53295,6 +59858,22 @@ export declare namespace Word {
              */
             changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
             /**
+             * Gets the code name for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            codeName?: string;
+            /**
+             * Gets the compatibility mode that Word uses when opening the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            compatibilityMode?: Word.CompatibilityMode | "Word2003" | "Word2007" | "Word2010" | "Word2013" | "Current";
+            /**
              * Specifies the maximum number of consecutive lines that can end with hyphens.
              *
              * @remarks
@@ -53302,6 +59881,158 @@ export declare namespace Word {
              * @beta
              */
             consecutiveHyphensLimit?: number;
+            /**
+             * Gets a random number that Word assigns to changes in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            currentRsid?: number;
+            /**
+             * Specifies the interval (in points) between the default tab stops in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            defaultTabStop?: number;
+            /**
+             * Specifies the browser frame for displaying a webpage via hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            defaultTargetFrame?: string;
+            /**
+             * Specifies whether Word should not embed common system fonts.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            doNotEmbedSystemFonts?: boolean;
+            /**
+             * Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            encryptionProvider?: string;
+            /**
+             * Specifies the East Asian language used for line breaking.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            farEastLineBreakLanguage?: Word.FarEastLineBreakLanguageId | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+            /**
+             * Specifies the line break control level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            farEastLineBreakLevel?: Word.FarEastLineBreakLevel | "Normal" | "Strict" | "Custom";
+            /**
+             * Specifies whether Word shows the next heading level when the previous is used.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formattingIsNextLevelShown?: boolean;
+            /**
+             * Specifies whether to show user-defined styles.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formattingIsUserStyleNameShown?: boolean;
+            /**
+             * Gets the name of a document, including the path.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fullName?: string;
+            /**
+             * Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridDistanceHorizontal?: number;
+            /**
+             * Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridDistanceVertical?: number;
+            /**
+             * Specifies whether the character grid starts from the upper-left corner of the page.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridIsOriginFromMargin?: boolean;
+            /**
+             * Specifies the horizontal origin point for the invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridOriginHorizontal?: number;
+            /**
+             * Specifies the vertical origin point for the invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridOriginVertical?: number;
+            /**
+             * Specifies the interval for horizontal character gridlines in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridSpaceBetweenHorizontalLines?: number;
+            /**
+             * Specifies the interval for vertical character gridlines in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridSpaceBetweenVerticalLines?: number;
+            /**
+             * Gets whether a password is required to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasPassword?: boolean;
+            /**
+             * Gets whether the document has an attached Microsoft Visual Basic for Applications project.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasVbProject?: boolean;
             /**
              * Specifies whether words in all capital letters can be hyphenated.
              *
@@ -53311,6 +60042,246 @@ export declare namespace Word {
              */
             hyphenateCaps?: boolean;
             /**
+             * Specifies the width of the hyphenation zone, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hyphenationZone?: number;
+            /**
+             * Specifies whether automatic formatting options override formatting restrictions.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAutoFormatOverrideOn?: boolean;
+            /**
+             * Specifies whether charts in the active document use cell-reference data-point tracking.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isChartDataPointTracked?: boolean;
+            /**
+             * Specifies whether the compatibility option specified by the `type` property is enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isCompatible?: boolean;
+            /**
+             * Specifies whether the document is final.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFinal?: boolean;
+            /**
+             * Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFontsSubsetSaved?: boolean;
+            /**
+             * Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormsDataPrinted?: boolean;
+            /**
+             * Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormsDataSaved?: boolean;
+            /**
+             * Specifies whether a grammar check has been run on the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isGrammarChecked?: boolean;
+            /**
+             * Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic save by the document or a manual save by the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInAutoSave?: boolean;
+            /**
+             * Gets whether the document is in form design mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInFormsDesign?: boolean;
+            /**
+             * Specifies whether Word kerns half-width Latin characters and punctuation marks.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isKerningByAlgorithm?: boolean;
+            /**
+             * Specifies whether to embed speech and handwriting data.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLinguisticDataEmbedded?: boolean;
+            /**
+             * Gets whether this document is a master document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterDocument?: boolean;
+            /**
+             * Specifies whether Word optimizes the document for Word 97.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isOptimizedForWord97?: boolean;
+            /**
+             * Specifies whether {@link https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f | PRINT field} instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPostScriptPrintedOverText?: boolean;
+            /**
+             * Specifies whether users can change the Quick Style set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isQuickStyleSetLocked?: boolean;
+            /**
+             * Gets whether changes to the document cannot be saved to the original document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadOnly?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadOnlyRecommended?: boolean;
+            /**
+             * Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSnappedToGrid?: boolean;
+            /**
+             * Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSnappedToShapes?: boolean;
+            /**
+             * Specifies whether spelling has been checked throughout the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSpellingChecked?: boolean;
+            /**
+             * Specifies whether formatting restrictions are enforced in a protected document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isStyleEnforced?: boolean;
+            /**
+             * Gets whether this document is a subdocument of a master document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSubdocument?: boolean;
+            /**
+             * Specifies whether users can change the document theme.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isThemeLocked?: boolean;
+            /**
+             * Specifies whether the document was created or opened by the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isUserControl?: boolean;
+            /**
+             * Gets whether the VBA project is digitally signed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVbaSigned?: boolean;
+            /**
+             * Gets whether the document is protected with a write password.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isWriteReserved?: boolean;
+            /**
+             * Specifies the character spacing adjustment.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            justificationMode?: Word.JustificationMode | "Expand" | "Compress" | "CompressKana";
+            /**
+             * Specifies the format type that Microsoft Word uses when automatically formatting the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kind?: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";
+            /**
              * Specifies whether Microsoft Word has detected the language of the document text.
              *
              * @remarks
@@ -53319,12 +60290,244 @@ export declare namespace Word {
              */
             languageDetected?: boolean;
             /**
+             * Specifies the kinsoku characters after which Word will not break a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noLineBreakAfter?: string;
+            /**
+             * Specifies the kinsoku characters before which Word will not break a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noLineBreakBefore?: string;
+            /**
+             * Gets the encoding used to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            openEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Gets the title of the original document after legal-blackline comparison.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            originalDocumentTitle?: string;
+            /**
+             * Sets a password that must be supplied to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            password?: string;
+            /**
+             * Gets the algorithm used for password encryption.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            passwordEncryptionAlgorithm?: string;
+            /**
+             * Gets the key length used for password encryption.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            passwordEncryptionKeyLength?: number;
+            /**
+             * Gets the name of the password encryption provider.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            passwordEncryptionProvider?: string;
+            /**
+             * Gets the disk or the web path to the document (excludes the document name).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            path?: string;
+            /**
+             * Specifies whether revision marks are printed with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printRevisions?: boolean;
+            /**
+             * Gets the protection type for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: Word.ProtectionType | "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" | "AllowOnlyReading";
+            /**
+             * Specifies the width of pages in reading layout view when frozen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutSizeX?: number;
+            /**
+             * Specifies the height of pages in reading layout view when frozen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutSizeY?: number;
+            /**
+             * Specifies whether pages in reading layout view are frozen for handwritten markup.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingModeIsLayoutFrozen?: boolean;
+            /**
+             * Specifies whether Word removes user information upon saving.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            removePersonalInformationOnSave?: boolean;
+            /**
+             * Gets the title of the revised document after legal-blackline comparison.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisedDocumentTitle?: string;
+            /**
+             * Specifies the encoding used when saving the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            saveEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Gets the file format of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            saveFormat?: Word.FileSaveFormat | "Document" | "Template" | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" | "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" | "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" | "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" | "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" | "StrictOpenXmlDocument";
+            /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             saved?: boolean;
+            /**
+             * Specifies the encoding for saving as encoded text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Specifies how Word marks line and paragraph breaks in text files.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textLineEnding?: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps";
+            /**
+             * Specifies whether to track formatting changes when change tracking is on.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackFormatting?: boolean;
+            /**
+             * Specifies whether to mark moved text when Track Changes is on.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackMoves?: boolean;
+            /**
+             * Specifies whether changes are tracked in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackRevisions?: boolean;
+            /**
+             * Specifies whether to remove or store date and time metadata for tracked changes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackedChangesAreDateAndTimeRemoved?: boolean;
+            /**
+             * Gets the document type (template or document).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.DocumentType | "Document" | "Template" | "Frameset";
+            /**
+             * Sets a password for saving changes to the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            writePassword?: string;
+            /**
+             * Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlAreAdvancedErrorsShown?: boolean;
+            /**
+             * Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlIsXsltUsedWhenSaving?: boolean;
+            /**
+             * Specifies the path and file name for the XSLT to apply when saving a document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlSaveThroughXSLT?: string;
         }
         /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
         export interface DocumentCreatedData {
@@ -54488,7 +61691,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            progID?: string;
+            progId?: string;
         }
         /** An interface describing the data returned by calling `page.toJSON()`. */
         export interface PageData {
@@ -57821,7 +65024,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-             placeholderText?: Word.Interfaces.BuildingBlockData;
+            placeholderText?: Word.Interfaces.BuildingBlockData;
             /**
              * Gets a `Range` object that represents the contents of the content control in the active document.
              *
@@ -58410,6 +65613,238 @@ export declare namespace Word {
              * @beta
              */
             title?: string;
+        }
+        /** An interface describing the data returned by calling `readabilityStatistic.toJSON()`. */
+        export interface ReadabilityStatisticData {
+            /**
+             * Returns the name of the readability statistic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Returns the value of the grammar statistic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: number;
+        }
+        /** An interface describing the data returned by calling `readabilityStatisticCollection.toJSON()`. */
+        export interface ReadabilityStatisticCollectionData {
+            items?: Word.Interfaces.ReadabilityStatisticData[];
+        }
+        /** An interface describing the data returned by calling `webSettings.toJSON()`. */
+        export interface WebSettingsData {
+            /**
+             * Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowPng?: boolean;
+            /**
+             * Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            encoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+            /**
+             * Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            folderSuffix?: string;
+            /**
+             * Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            organizeInFolder?: boolean;
+            /**
+             * Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pixelsPerInch?: number;
+            /**
+             * Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relyOnCSS?: boolean;
+            /**
+             * Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relyOnVectorMarkupLanguage?: boolean;
+            /**
+             * Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenSize?: Word.ScreenSize | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200";
+            /**
+             * Specifies the target browser for documents viewed in a web browser.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            targetBrowser?: Word.TargetBrowser | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6";
+            /**
+             * Specifies whether long file names are used when saving the document as a webpage. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useLongFileNames?: boolean;
+        }
+        /** An interface describing the data returned by calling `xmlNodeCollection.toJSON()`. */
+        export interface XmlNodeCollectionData {
+            items?: Word.Interfaces.XmlNodeData[];
+        }
+        /** An interface describing the data returned by calling `xmlNode.toJSON()`. */
+        export interface XmlNodeData {
+            /**
+             * Gets the name of the element without any prefix.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseName?: string;
+            /**
+             * Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have children.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasChildNodes?: boolean;
+            /**
+             * Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: Word.XmlNodeLevel | "Inline" | "Paragraph" | "Row" | "Cell";
+            /**
+             * Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: string;
+            /**
+             * Gets the type of node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeType?: Word.XmlNodeType | "Element" | "Attribute";
+            /**
+             * Specifies the value of this XML node. For element nodes, represents the text content; for attribute nodes, represents the attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: string;
+            /**
+             * Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderText?: string;
+            /**
+             * Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: string;
+            /**
+             * Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            validationErrorText?: string;
+            /**
+             * Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            validationStatus?: Word.XmlValidationStatus | "Ok" | "Custom";
+        }
+        /** An interface describing the data returned by calling `htmlDivision.toJSON()`. */
+        export interface HtmlDivisionData {
+            /**
+             * Specifies the left indent value (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: number;
+            /**
+             * Specifies the right indent (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: number;
+            /**
+             * Specifies the amount of spacing (in points) after this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: number;
+            /**
+             * Specifies the spacing (in points) before this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: number;
+        }
+        /** An interface describing the data returned by calling `htmlDivisionCollection.toJSON()`. */
+        export interface HtmlDivisionCollectionData {
+            items?: Word.Interfaces.HtmlDivisionData[];
         }
         /** An interface describing the data returned by calling `frame.toJSON()`. */
         export interface FrameData {
@@ -61680,7 +69115,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             * For EACH ITEM in the collection: Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -61696,7 +69131,7 @@ export declare namespace Word {
              */
             errorCode?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+             * For EACH ITEM in the collection: Gets the name of the error in the `CustomXmlValidationError` object. If no errors exist, the property returns `Nothing`
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -61733,7 +69168,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.
+             * Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -61749,7 +69184,7 @@ export declare namespace Word {
              */
             errorCode?: boolean;
             /**
-             * Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`
+             * Gets the name of the error in the `CustomXmlValidationError` object. If no errors exist, the property returns `Nothing`
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -61935,20 +69370,20 @@ export declare namespace Word {
              */
             ownerPart?: Word.Interfaces.CustomXmlPartLoadOptions;
             /**
-            * Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             parentNode?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-            * Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             previousSibling?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
              * Gets the base name of the node without the namespace prefix, if one exists.
@@ -62758,6 +70193,14 @@ export declare namespace Word {
              */
             attachedTemplate?: Word.Interfaces.TemplateLoadOptions;
             /**
+             * Gets a `Shape` object that represents the background image for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            background?: Word.Interfaces.ShapeLoadOptions;
+            /**
              * Returns a `Bibliography` object that represents the bibliography references contained within the document.
              *
              * @remarks
@@ -62773,6 +70216,14 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
+             * Gets a `DocumentProperties` object that represents all the built-in document properties for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtInDocumentProperties?: Word.Interfaces.DocumentPropertiesLoadOptions;
+            /**
              * Gets a `Coauthoring` object for managing coauthoring in the document.
              *
              * @remarks
@@ -62780,6 +70231,22 @@ export declare namespace Word {
              * @beta
              */
             coauthoring?: Word.Interfaces.CoauthoringLoadOptions;
+            /**
+             * Gets a `Range` object that represents the main document story.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Gets a `DocumentProperties` collection that represents all the custom document properties for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            customDocumentProperties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
              * Returns a `PageSetup` object that's associated with the document.
              *
@@ -62804,6 +70271,86 @@ export declare namespace Word {
              */
             selection?: Word.Interfaces.SelectionLoadOptions;
             /**
+             * Gets the `WebSettings` object for webpage-related attributes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            webSettings?: Word.Interfaces.WebSettingsLoadOptions;
+            /**
+             * Gets the name of the active theme and formatting options.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            activeTheme?: boolean;
+            /**
+             * Gets the display name of the active theme.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            activeThemeDisplayName?: boolean;
+            /**
+             * Gets whether Word encrypts file properties for password-protected documents.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areFilePropertiesPasswordEncrypted?: boolean;
+            /**
+             * Specifies whether grammatical errors are marked by a wavy green line in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areGrammaticalErrorsShown?: boolean;
+            /**
+             * Specifies whether to use the default math settings when creating new equations.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areMathDefaultsUsed?: boolean;
+            /**
+             * Specifies whether to disable features introduced after a specified version.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areNewerFeaturesDisabled?: boolean;
+            /**
+             * Specifies whether Microsoft Word underlines spelling errors in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areSpellingErrorsShown?: boolean;
+            /**
+             * Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areStylesUpdatedOnOpen?: boolean;
+            /**
+             * Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areTrueTypeFontsEmbedded?: boolean;
+            /**
              * Specifies if automatic hyphenation is turned on for the document.
              *
              * @remarks
@@ -62827,6 +70374,22 @@ export declare namespace Word {
              */
             changeTrackingMode?: boolean;
             /**
+             * Gets the code name for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            codeName?: boolean;
+            /**
+             * Gets the compatibility mode that Word uses when opening the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            compatibilityMode?: boolean;
+            /**
              * Specifies the maximum number of consecutive lines that can end with hyphens.
              *
              * @remarks
@@ -62834,6 +70397,158 @@ export declare namespace Word {
              * @beta
              */
             consecutiveHyphensLimit?: boolean;
+            /**
+             * Gets a random number that Word assigns to changes in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            currentRsid?: boolean;
+            /**
+             * Specifies the interval (in points) between the default tab stops in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            defaultTabStop?: boolean;
+            /**
+             * Specifies the browser frame for displaying a webpage via hyperlink.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            defaultTargetFrame?: boolean;
+            /**
+             * Specifies whether Word should not embed common system fonts.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            doNotEmbedSystemFonts?: boolean;
+            /**
+             * Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            encryptionProvider?: boolean;
+            /**
+             * Specifies the East Asian language used for line breaking.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            farEastLineBreakLanguage?: boolean;
+            /**
+             * Specifies the line break control level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            farEastLineBreakLevel?: boolean;
+            /**
+             * Specifies whether Word shows the next heading level when the previous is used.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formattingIsNextLevelShown?: boolean;
+            /**
+             * Specifies whether to show user-defined styles.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formattingIsUserStyleNameShown?: boolean;
+            /**
+             * Gets the name of a document, including the path.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            fullName?: boolean;
+            /**
+             * Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridDistanceHorizontal?: boolean;
+            /**
+             * Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridDistanceVertical?: boolean;
+            /**
+             * Specifies whether the character grid starts from the upper-left corner of the page.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridIsOriginFromMargin?: boolean;
+            /**
+             * Specifies the horizontal origin point for the invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridOriginHorizontal?: boolean;
+            /**
+             * Specifies the vertical origin point for the invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridOriginVertical?: boolean;
+            /**
+             * Specifies the interval for horizontal character gridlines in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridSpaceBetweenHorizontalLines?: boolean;
+            /**
+             * Specifies the interval for vertical character gridlines in print layout view.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gridSpaceBetweenVerticalLines?: boolean;
+            /**
+             * Gets whether a password is required to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasPassword?: boolean;
+            /**
+             * Gets whether the document has an attached Microsoft Visual Basic for Applications project.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasVbProject?: boolean;
             /**
              * Specifies whether words in all capital letters can be hyphenated.
              *
@@ -62843,6 +70558,246 @@ export declare namespace Word {
              */
             hyphenateCaps?: boolean;
             /**
+             * Specifies the width of the hyphenation zone, in points.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hyphenationZone?: boolean;
+            /**
+             * Specifies whether automatic formatting options override formatting restrictions.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAutoFormatOverrideOn?: boolean;
+            /**
+             * Specifies whether charts in the active document use cell-reference data-point tracking.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isChartDataPointTracked?: boolean;
+            /**
+             * Specifies whether the compatibility option specified by the `type` property is enabled.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isCompatible?: boolean;
+            /**
+             * Specifies whether the document is final.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFinal?: boolean;
+            /**
+             * Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFontsSubsetSaved?: boolean;
+            /**
+             * Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormsDataPrinted?: boolean;
+            /**
+             * Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFormsDataSaved?: boolean;
+            /**
+             * Specifies whether a grammar check has been run on the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isGrammarChecked?: boolean;
+            /**
+             * Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic save by the document or a manual save by the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInAutoSave?: boolean;
+            /**
+             * Gets whether the document is in form design mode.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isInFormsDesign?: boolean;
+            /**
+             * Specifies whether Word kerns half-width Latin characters and punctuation marks.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isKerningByAlgorithm?: boolean;
+            /**
+             * Specifies whether to embed speech and handwriting data.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isLinguisticDataEmbedded?: boolean;
+            /**
+             * Gets whether this document is a master document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMasterDocument?: boolean;
+            /**
+             * Specifies whether Word optimizes the document for Word 97.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isOptimizedForWord97?: boolean;
+            /**
+             * Specifies whether {@link https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f | PRINT field} instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isPostScriptPrintedOverText?: boolean;
+            /**
+             * Specifies whether users can change the Quick Style set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isQuickStyleSetLocked?: boolean;
+            /**
+             * Gets whether changes to the document cannot be saved to the original document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadOnly?: boolean;
+            /**
+             * Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isReadOnlyRecommended?: boolean;
+            /**
+             * Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSnappedToGrid?: boolean;
+            /**
+             * Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSnappedToShapes?: boolean;
+            /**
+             * Specifies whether spelling has been checked throughout the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSpellingChecked?: boolean;
+            /**
+             * Specifies whether formatting restrictions are enforced in a protected document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isStyleEnforced?: boolean;
+            /**
+             * Gets whether this document is a subdocument of a master document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSubdocument?: boolean;
+            /**
+             * Specifies whether users can change the document theme.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isThemeLocked?: boolean;
+            /**
+             * Specifies whether the document was created or opened by the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isUserControl?: boolean;
+            /**
+             * Gets whether the VBA project is digitally signed.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVbaSigned?: boolean;
+            /**
+             * Gets whether the document is protected with a write password.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isWriteReserved?: boolean;
+            /**
+             * Specifies the character spacing adjustment.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            justificationMode?: boolean;
+            /**
+             * Specifies the format type that Microsoft Word uses when automatically formatting the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kind?: boolean;
+            /**
              * Specifies whether Microsoft Word has detected the language of the document text.
              *
              * @remarks
@@ -62851,12 +70806,244 @@ export declare namespace Word {
              */
             languageDetected?: boolean;
             /**
+             * Specifies the kinsoku characters after which Word will not break a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noLineBreakAfter?: boolean;
+            /**
+             * Specifies the kinsoku characters before which Word will not break a line.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            noLineBreakBefore?: boolean;
+            /**
+             * Gets the encoding used to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            openEncoding?: boolean;
+            /**
+             * Gets the title of the original document after legal-blackline comparison.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            originalDocumentTitle?: boolean;
+            /**
+             * Sets a password that must be supplied to open the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            password?: boolean;
+            /**
+             * Gets the algorithm used for password encryption.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            passwordEncryptionAlgorithm?: boolean;
+            /**
+             * Gets the key length used for password encryption.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            passwordEncryptionKeyLength?: boolean;
+            /**
+             * Gets the name of the password encryption provider.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            passwordEncryptionProvider?: boolean;
+            /**
+             * Gets the disk or the web path to the document (excludes the document name).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            path?: boolean;
+            /**
+             * Specifies whether revision marks are printed with the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printRevisions?: boolean;
+            /**
+             * Gets the protection type for the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: boolean;
+            /**
+             * Specifies the width of pages in reading layout view when frozen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutSizeX?: boolean;
+            /**
+             * Specifies the height of pages in reading layout view when frozen.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingLayoutSizeY?: boolean;
+            /**
+             * Specifies whether pages in reading layout view are frozen for handwritten markup.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingModeIsLayoutFrozen?: boolean;
+            /**
+             * Specifies whether Word removes user information upon saving.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            removePersonalInformationOnSave?: boolean;
+            /**
+             * Gets the title of the revised document after legal-blackline comparison.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisedDocumentTitle?: boolean;
+            /**
+             * Specifies the encoding used when saving the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            saveEncoding?: boolean;
+            /**
+             * Gets the file format of the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            saveFormat?: boolean;
+            /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             saved?: boolean;
+            /**
+             * Specifies the encoding for saving as encoded text.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textEncoding?: boolean;
+            /**
+             * Specifies how Word marks line and paragraph breaks in text files.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textLineEnding?: boolean;
+            /**
+             * Specifies whether to track formatting changes when change tracking is on.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackFormatting?: boolean;
+            /**
+             * Specifies whether to mark moved text when Track Changes is on.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackMoves?: boolean;
+            /**
+             * Specifies whether changes are tracked in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackRevisions?: boolean;
+            /**
+             * Specifies whether to remove or store date and time metadata for tracked changes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trackedChangesAreDateAndTimeRemoved?: boolean;
+            /**
+             * Gets the document type (template or document).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * Sets a password for saving changes to the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            writePassword?: boolean;
+            /**
+             * Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlAreAdvancedErrorsShown?: boolean;
+            /**
+             * Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlIsXsltUsedWhenSaving?: boolean;
+            /**
+             * Specifies the path and file name for the XSLT to apply when saving a document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            xmlSaveThroughXSLT?: boolean;
         }
         /**
          * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
@@ -64696,7 +72883,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            progID?: boolean;
+            progId?: boolean;
         }
         /**
          * Represents a page in the document. `Page` objects manage the page layout and content.
@@ -71605,6 +79792,559 @@ export declare namespace Word {
             title?: boolean;
         }
         /**
+         * Represents one of the readability statistics for the document or range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ReadabilityStatisticLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns the name of the readability statistic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Returns the value of the grammar statistic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
+        }
+        /**
+         * Represents a collection of {@link Word.ReadabilityStatistic} objects for the document or range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ReadabilityStatisticCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the name of the readability statistic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the value of the grammar statistic.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
+        }
+        /**
+         * Represents the settings for saving a Word document as a webpage.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface WebSettingsLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowPng?: boolean;
+            /**
+             * Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            encoding?: boolean;
+            /**
+             * Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            folderSuffix?: boolean;
+            /**
+             * Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            organizeInFolder?: boolean;
+            /**
+             * Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pixelsPerInch?: boolean;
+            /**
+             * Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relyOnCSS?: boolean;
+            /**
+             * Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relyOnVectorMarkupLanguage?: boolean;
+            /**
+             * Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenSize?: boolean;
+            /**
+             * Specifies the target browser for documents viewed in a web browser.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            targetBrowser?: boolean;
+            /**
+             * Specifies whether long file names are used when saving the document as a webpage. Default is `true`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useLongFileNames?: boolean;
+        }
+        /**
+         * Represents the collection of {@link Word.XmlNode} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface XmlNodeCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the first child node if this is a parent node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstChild?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the last child node if this is a parent node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastChild?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the next element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextSibling?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the parent document of this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ownerDocument?: Word.Interfaces.DocumentLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the parent element of this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentNode?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the previous element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previousSibling?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the portion of a document that is contained in this XML node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the element without any prefix.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseName?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have children.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasChildNodes?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the type of node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeType?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the value of this XML node. For element nodes, represents the text content; for attribute nodes, represents the attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderText?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            validationErrorText?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            validationStatus?: boolean;
+        }
+        /**
+         * Represents a single XML node applied to the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface XmlNodeLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the first child node if this is a parent node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstChild?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * Gets the last child node if this is a parent node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastChild?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * Gets the next element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextSibling?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * Gets the parent document of this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            ownerDocument?: Word.Interfaces.DocumentLoadOptions;
+            /**
+             * Gets the parent element of this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentNode?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * Gets the previous element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previousSibling?: Word.Interfaces.XmlNodeLoadOptions;
+            /**
+             * Gets the portion of a document that is contained in this XML node. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Gets the name of the element without any prefix.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseName?: boolean;
+            /**
+             * Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have children.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasChildNodes?: boolean;
+            /**
+             * Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row. Returns `null` if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
+             * Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+            /**
+             * Gets the type of node.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeType?: boolean;
+            /**
+             * Specifies the value of this XML node. For element nodes, represents the text content; for attribute nodes, represents the attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nodeValue?: boolean;
+            /**
+             * Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderText?: boolean;
+            /**
+             * Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+            /**
+             * Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            validationErrorText?: boolean;
+            /**
+             * Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            validationStatus?: boolean;
+        }
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HtmlDivisionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets a `Range` object that represents the portion of a document that's contained in this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Specifies the left indent value (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: boolean;
+            /**
+             * Specifies the right indent (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: boolean;
+            /**
+             * Specifies the amount of spacing (in points) after this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: boolean;
+            /**
+             * Specifies the spacing (in points) before this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: boolean;
+        }
+        /**
+         * Represents a collection of {@link Word.HtmlDivision} objects in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HtmlDivisionCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a `Range` object that represents the portion of a document that's contained in this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies the left indent value (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the right indent (in points) for this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the amount of spacing (in points) after this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the spacing (in points) before this HTML division.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: boolean;
+        }
+        /**
          * Represents a frame. The `Frame` object is a member of the {@link Word.FrameCollection} object.
          *
          * @remarks
@@ -71986,20 +80726,20 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             list?: Word.Interfaces.ListLoadOptions;
             /**
-            * Gets the list template associated with the `ListFormat` object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets the list template associated with the `ListFormat` object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
              * Indicates whether the `ListFormat` object contains a single list.
@@ -73529,7 +82269,6 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
              */
             listFormat?: Word.Interfaces.ListFormatLoadOptions;
             /**
@@ -73586,7 +82325,6 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
              */
             shading?: Word.Interfaces.ShadingUniversalLoadOptions;
             /**

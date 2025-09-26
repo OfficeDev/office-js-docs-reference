@@ -221,6 +221,68 @@ properties:
       content: 'color: string;'
       return:
         type: string
+  - name: comboBoxContentControl
+    uid: word!Word.ContentControl#comboBoxContentControl:member
+    package: word!
+    fullName: comboBoxContentControl
+    summary: >-
+      Gets the data of the content control when its type is `ComboBox`<!-- -->.
+      It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
+
+
+      // Adds the provided list item to the first combo box content control in
+      the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.comboBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,comboBoxContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,comboBoxContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+            console.warn("No combo box content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        selectedContentControl.comboBoxContentControl.addListItem(listItemText);
+        await context.sync();
+
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly comboBoxContentControl: Word.ComboBoxContentControl;'
+      return:
+        type: <xref uid="word!Word.ComboBoxContentControl:class" />
   - name: contentControls
     uid: word!Word.ContentControl#contentControls:member
     package: word!
@@ -251,6 +313,68 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: dropDownListContentControl
+    uid: word!Word.ContentControl#dropDownListContentControl:member
+    package: word!
+    fullName: dropDownListContentControl
+    summary: >-
+      Gets the data of the content control when its type is `DropDownList`<!--
+      -->. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
+
+
+      // Adds the provided list item to the first dropdown list content control
+      in the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.dropDownList]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,dropDownListContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,dropDownListContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+            console.warn("No dropdown list content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        selectedContentControl.dropDownListContentControl.addListItem(listItemText);
+        await context.sync();
+
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly dropDownListContentControl: Word.DropDownListContentControl;'
+      return:
+        type: <xref uid="word!Word.DropDownListContentControl:class" />
   - name: endnotes
     uid: word!Word.ContentControl#endnotes:member
     package: word!
