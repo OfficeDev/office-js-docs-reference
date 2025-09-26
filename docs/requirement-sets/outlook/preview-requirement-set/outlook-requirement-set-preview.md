@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 03/11/2025
+ms.date: 09/26/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -66,6 +66,20 @@ Added a new object that represents the all-day event property of an appointment 
 #### [Office.context.mailbox.item.isAllDayEvent](office.context.mailbox.item.md#properties)
 
 Added a new property that represents if an appointment is an all-day event.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Store even more custom data for a mail item during an Outlook session
+
+#### [Office.context.mailbox.item.sessionData.setAsync](/javascript/api/outlook/office.sessiondata?view=outlook-js-preview&preserve-view=true#outlook-office-sessiondata-setasync-member)
+
+Updated the `SessionData` object limit to 2,621,440 characters.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
