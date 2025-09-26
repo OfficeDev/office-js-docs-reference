@@ -240,8 +240,8 @@
 ||[validate()](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-validate-member(1))|Specifies whether the schemas in the schema collection are valid (conforms to the syntactic rules of XML and the rules for a specified vocabulary).|
 |[CustomXmlValidationError](/javascript/api/word/word.customxmlvalidationerror)|[delete()](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-delete-member(1))|Deletes this `CustomXmlValidationError` object.|
 ||[errorCode](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-errorcode-member)|Gets an integer representing the validation error in the `CustomXmlValidationError` object.|
-||[name](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-name-member)|Gets the name of the error in the `CustomXmlValidationError` object.If no errors exist, the property returns `Nothing`|
-||[node](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-node-member)|Gets the node associated with this `CustomXmlValidationError` object, if any exist.If no nodes exist, the property returns `Nothing`.|
+||[name](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-name-member)|Gets the name of the error in the `CustomXmlValidationError` object.|
+||[node](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-node-member)|Gets the node associated with this `CustomXmlValidationError` object, if any exist.|
 ||[text](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-text-member)|Gets the text in the `CustomXmlValidationError` object.|
 ||[type](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-type-member)|Gets the type of error generated from the `CustomXmlValidationError` object.|
 |[CustomXmlValidationErrorCollection](/javascript/api/word/word.customxmlvalidationerrorcollection)|[add(node: Word.CustomXmlNode, errorName: string, options?: Word.CustomXmlAddValidationErrorOptions)](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-add-member(1))|Adds a `CustomXmlValidationError` object containing an XML validation error to the `CustomXmlValidationErrorCollection` object.|
@@ -269,35 +269,335 @@
 ||[tag](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-tag-member)|Specifies a tag to identify the content control.|
 ||[title](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-title-member)|Specifies the title for the content control.|
 ||[xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)|Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.|
-|[Document](/javascript/api/word/word.document)|[attachedTemplate](/javascript/api/word/word.document#word-word-document-attachedtemplate-member)|Specifies a `Template` object that represents the template attached to the document.|
+|[Document](/javascript/api/word/word.document)|[acceptAllRevisions()](/javascript/api/word/word.document#word-word-document-acceptallrevisions-member(1))|Accepts all tracked changes in the document.|
+||[acceptAllRevisionsShown()](/javascript/api/word/word.document#word-word-document-acceptallrevisionsshown-member(1))|Accepts all revisions in the document that are displayed on the screen.|
+||[activate()](/javascript/api/word/word.document#word-word-document-activate-member(1))|Activates the document so that it becomes the active document.|
+||[activeTheme](/javascript/api/word/word.document#word-word-document-activetheme-member)|Gets the name of the active theme and formatting options.|
+||[activeThemeDisplayName](/javascript/api/word/word.document#word-word-document-activethemedisplayname-member)|Gets the display name of the active theme.|
+||[addToFavorites()](/javascript/api/word/word.document#word-word-document-addtofavorites-member(1))|Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.|
+||[applyQuickStyleSet(style: Word.ApplyQuickStyleSet)](/javascript/api/word/word.document#word-word-document-applyquickstyleset-member(1))|Applies the specified Quick Style set to the document.|
+||[applyTheme(name: string)](/javascript/api/word/word.document#word-word-document-applytheme-member(1))|Applies the specified theme to this document.|
+||[areFilePropertiesPasswordEncrypted](/javascript/api/word/word.document#word-word-document-arefilepropertiespasswordencrypted-member)|Gets whether Word encrypts file properties for password-protected documents.|
+||[areGrammaticalErrorsShown](/javascript/api/word/word.document#word-word-document-aregrammaticalerrorsshown-member)|Specifies whether grammatical errors are marked by a wavy green line in the document.|
+||[areMathDefaultsUsed](/javascript/api/word/word.document#word-word-document-aremathdefaultsused-member)|Specifies whether to use the default math settings when creating new equations.|
+||[areNewerFeaturesDisabled](/javascript/api/word/word.document#word-word-document-arenewerfeaturesdisabled-member)|Specifies whether to disable features introduced after a specified version.|
+||[areSpellingErrorsShown](/javascript/api/word/word.document#word-word-document-arespellingerrorsshown-member)|Specifies whether Microsoft Word underlines spelling errors in the document.|
+||[areStylesUpdatedOnOpen](/javascript/api/word/word.document#word-word-document-arestylesupdatedonopen-member)|Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.|
+||[areTrueTypeFontsEmbedded](/javascript/api/word/word.document#word-word-document-aretruetypefontsembedded-member)|Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.|
+||[attachedTemplate](/javascript/api/word/word.document#word-word-document-attachedtemplate-member)|Specifies a `Template` object that represents the template attached to the document.|
+||[autoFormat()](/javascript/api/word/word.document#word-word-document-autoformat-member(1))|Automatically formats the document.|
 ||[autoHyphenation](/javascript/api/word/word.document#word-word-document-autohyphenation-member)|Specifies if automatic hyphenation is turned on for the document.|
 ||[autoSaveOn](/javascript/api/word/word.document#word-word-document-autosaveon-member)|Specifies if the edits in the document are automatically saved.|
+||[background](/javascript/api/word/word.document#word-word-document-background-member)|Gets a `Shape` object that represents the background image for the document.|
 ||[bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)|Returns a `Bibliography` object that represents the bibliography references contained within the document.|
 ||[bookmarks](/javascript/api/word/word.document#word-word-document-bookmarks-member)|Returns a `BookmarkCollection` object that represents all the bookmarks in the document.|
+||[builtInDocumentProperties](/javascript/api/word/word.document#word-word-document-builtindocumentproperties-member)|Gets a `DocumentProperties` object that represents all the built-in document properties for the document.|
+||[canCheckin()](/javascript/api/word/word.document#word-word-document-cancheckin-member(1))|Returns `true` if Microsoft Word can check in the document to a server.|
+||[characters](/javascript/api/word/word.document#word-word-document-characters-member)|Gets the `RangeScopedCollection` object that represents all the characters in the document.|
+||[checkConsistencyJapanese()](/javascript/api/word/word.document#word-word-document-checkconsistencyjapanese-member(1))|Searches all text in a Japanese language document and displays instances where character usage is inconsistent for the same words.|
+||[checkGrammar()](/javascript/api/word/word.document#word-word-document-checkgrammar-member(1))|Begins a spelling and grammar check for the document.|
+||[checkIn(options?: Word.DocumentCheckInOptions)](/javascript/api/word/word.document#word-word-document-checkin-member(1))|Checks in the document from the local computer to a server and sets the local document to read-only so that it cannot be edited locally.|
+||[checkInWithVersion(options?: Word.DocumentCheckInWithVersionOptions)](/javascript/api/word/word.document#word-word-document-checkinwithversion-member(1))|Saves the document to a server from a local computer, and sets the local document to read-only so that it cannot be edited locally.|
+||[checkSpelling(options?: Word.DocumentCheckSpellingOptions)](/javascript/api/word/word.document#word-word-document-checkspelling-member(1))|Begins a spelling check for the document.|
+||[closePrintPreview()](/javascript/api/word/word.document#word-word-document-closeprintpreview-member(1))|Switches the document from print preview to the previous view.|
 ||[coauthoring](/javascript/api/word/word.document#word-word-document-coauthoring-member)|Gets a `Coauthoring` object for managing coauthoring in the document.|
+||[codeName](/javascript/api/word/word.document#word-word-document-codename-member)|Gets the code name for the document.|
+||[comments](/javascript/api/word/word.document#word-word-document-comments-member)|Gets a `CommentCollection` object that represents all the comments in the document.|
+||[compatibilityMode](/javascript/api/word/word.document#word-word-document-compatibilitymode-member)|Gets the compatibility mode that Word uses when opening the document.|
+||[computeStatistics(statistic: Word.Statistic, includeFootnotesAndEndnotes?: boolean)](/javascript/api/word/word.document#word-word-document-computestatistics-member(1))|Returns a statistic based on the contents of the document.|
 ||[consecutiveHyphensLimit](/javascript/api/word/word.document#word-word-document-consecutivehyphenslimit-member)|Specifies the maximum number of consecutive lines that can end with hyphens.|
+||[content](/javascript/api/word/word.document#word-word-document-content-member)|Gets a `Range` object that represents the main document story.|
+||[convert()](/javascript/api/word/word.document#word-word-document-convert-member(1))|Converts the file to the newest format and enables all features.|
+||[convertAutoHyphens()](/javascript/api/word/word.document#word-word-document-convertautohyphens-member(1))|Converts automatic hyphens to manual hyphens.|
+||[convertNumbersToText(numberType?: Word.NumberType)](/javascript/api/word/word.document#word-word-document-convertnumberstotext-member(1))|Changes the list numbers and LISTNUM fields in the document to text.|
+||[convertVietnameseDocument(codePageOrigin: number)](/javascript/api/word/word.document#word-word-document-convertvietnamesedocument-member(1))|Reconverts a Vietnamese document to Unicode using a code page other than the default.|
+||[copyStylesFromTemplate(StyleTemplate: string)](/javascript/api/word/word.document#word-word-document-copystylesfromtemplate-member(1))|Copies styles from the specified template to the document.|
+||[countNumberedItems(options?: Word.DocumentCountNumberedItemsOptions)](/javascript/api/word/word.document#word-word-document-countnumbereditems-member(1))|Returns the number of bulleted or numbered items and LISTNUM fields in the document.|
+||[currentRsid](/javascript/api/word/word.document#word-word-document-currentrsid-member)|Gets a random number that Word assigns to changes in the document.|
+||[customDocumentProperties](/javascript/api/word/word.document#word-word-document-customdocumentproperties-member)|Gets a `DocumentProperties` collection that represents all the custom document properties for the document.|
+||[defaultTabStop](/javascript/api/word/word.document#word-word-document-defaulttabstop-member)|Specifies the interval (in points) between the default tab stops in the document.|
+||[defaultTargetFrame](/javascript/api/word/word.document#word-word-document-defaulttargetframe-member)|Specifies the browser frame for displaying a webpage via hyperlink.|
+||[deleteAllComments()](/javascript/api/word/word.document#word-word-document-deleteallcomments-member(1))|Deletes all comments from the document.|
+||[deleteAllCommentsShown()](/javascript/api/word/word.document#word-word-document-deleteallcommentsshown-member(1))|Deletes all revisions in the document that are displayed on the screen.|
+||[deleteAllInkAnnotations()](/javascript/api/word/word.document#word-word-document-deleteallinkannotations-member(1))|Deletes all handwritten ink annotations in the document.|
 ||[detectLanguage()](/javascript/api/word/word.document#word-word-document-detectlanguage-member(1))|Analyzes the document text to determine the language.|
+||[doNotEmbedSystemFonts](/javascript/api/word/word.document#word-word-document-donotembedsystemfonts-member)|Specifies whether Word should not embed common system fonts.|
 ||[documentLibraryVersions](/javascript/api/word/word.document#word-word-document-documentlibraryversions-member)|Returns a `DocumentLibraryVersionCollection` object that represents the collection of versions of a shared document that has versioning enabled and that's stored in a document library on a server.|
+||[encryptionProvider](/javascript/api/word/word.document#word-word-document-encryptionprovider-member)|Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.|
+||[endReview(options?: Word.DocumentEndReviewOptions)](/javascript/api/word/word.document#word-word-document-endreview-member(1))|Terminates a review of the file that has been sent for review.|
+||[exportAsFixedFormat(outputFileName: string, exportFormat: Word.ExportFormat, options?: Word.DocumentExportAsFixedFormatOptions)](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))|Saves the document in PDF or XPS format.|
+||[exportAsFixedFormat2(outputFileName: string, exportFormat: Word.ExportFormat, options?: Word.DocumentExportAsFixedFormat2Options)](/javascript/api/word/word.document#word-word-document-exportasfixedformat2-member(1))|Saves the document in PDF or XPS format.|
+||[exportAsFixedFormat3(outputFileName: string, exportFormat: Word.ExportFormat, options?: Word.DocumentExportAsFixedFormat3Options)](/javascript/api/word/word.document#word-word-document-exportasfixedformat3-member(1))|Saves the document in PDF or XPS format with improved tagging.|
+||[farEastLineBreakLanguage](/javascript/api/word/word.document#word-word-document-fareastlinebreaklanguage-member)|Specifies the East Asian language used for line breaking.|
+||[farEastLineBreakLevel](/javascript/api/word/word.document#word-word-document-fareastlinebreaklevel-member)|Specifies the line break control level.|
+||[fields](/javascript/api/word/word.document#word-word-document-fields-member)|Gets a `FieldCollection` object that represents all the fields in the document.|
+||[fitToPages()](/javascript/api/word/word.document#word-word-document-fittopages-member(1))|Decreases the font size of text just enough so that the document page count drops by one.|
+||[followHyperlink(options?: Word.DocumentFollowHyperlinkOptions)](/javascript/api/word/word.document#word-word-document-followhyperlink-member(1))|Displays a cached document, if it has already been downloaded.|
+||[formattingIsNextLevelShown](/javascript/api/word/word.document#word-word-document-formattingisnextlevelshown-member)|Specifies whether Word shows the next heading level when the previous is used.|
+||[formattingIsUserStyleNameShown](/javascript/api/word/word.document#word-word-document-formattingisuserstylenameshown-member)|Specifies whether to show user-defined styles.|
 ||[frames](/javascript/api/word/word.document#word-word-document-frames-member)|Returns a `FrameCollection` object that represents all the frames in the document.|
+||[freezeLayout()](/javascript/api/word/word.document#word-word-document-freezelayout-member(1))|Fixes the layout of the document in Web view.|
+||[fullName](/javascript/api/word/word.document#word-word-document-fullname-member)|Gets the name of a document, including the path.|
+||[getCrossReferenceItems(referenceType: Word.ReferenceType)](/javascript/api/word/word.document#word-word-document-getcrossreferenceitems-member(1))|Returns an array of items that can be cross-referenced based on the specified cross-reference type.|
+||[getRange(options?: Word.DocumentRangeOptions)](/javascript/api/word/word.document#word-word-document-getrange-member(1))|Returns a `Range` object by using the specified starting and ending character positions.|
+||[goTo(options?: Word.GoToOptions)](/javascript/api/word/word.document#word-word-document-goto-member(1))|Returns a `Range` object that represents the start position of the specified item, such as a page, bookmark, or field.|
+||[grammaticalErrors](/javascript/api/word/word.document#word-word-document-grammaticalerrors-member)|Gets a `RangeCollection` object that represents the sentences that failed the grammar check in the document.|
+||[gridDistanceHorizontal](/javascript/api/word/word.document#word-word-document-griddistancehorizontal-member)|Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.|
+||[gridDistanceVertical](/javascript/api/word/word.document#word-word-document-griddistancevertical-member)|Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.|
+||[gridIsOriginFromMargin](/javascript/api/word/word.document#word-word-document-gridisoriginfrommargin-member)|Specifies whether the character grid starts from the upper-left corner of the page.|
+||[gridOriginHorizontal](/javascript/api/word/word.document#word-word-document-gridoriginhorizontal-member)|Specifies the horizontal origin point for the invisible grid.|
+||[gridOriginVertical](/javascript/api/word/word.document#word-word-document-gridoriginvertical-member)|Specifies the vertical origin point for the invisible grid.|
+||[gridSpaceBetweenHorizontalLines](/javascript/api/word/word.document#word-word-document-gridspacebetweenhorizontallines-member)|Specifies the interval for horizontal character gridlines in print layout view.|
+||[gridSpaceBetweenVerticalLines](/javascript/api/word/word.document#word-word-document-gridspacebetweenverticallines-member)|Specifies the interval for vertical character gridlines in print layout view.|
+||[hasPassword](/javascript/api/word/word.document#word-word-document-haspassword-member)|Gets whether a password is required to open the document.|
+||[hasVbProject](/javascript/api/word/word.document#word-word-document-hasvbproject-member)|Gets whether the document has an attached Microsoft Visual Basic for Applications project.|
 ||[hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)|Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.|
 ||[hyphenateCaps](/javascript/api/word/word.document#word-word-document-hyphenatecaps-member)|Specifies whether words in all capital letters can be hyphenated.|
+||[hyphenationZone](/javascript/api/word/word.document#word-word-document-hyphenationzone-member)|Specifies the width of the hyphenation zone, in points.|
 ||[indexes](/javascript/api/word/word.document#word-word-document-indexes-member)|Returns an `IndexCollection` object that represents all the indexes in the document.|
+||[isAutoFormatOverrideOn](/javascript/api/word/word.document#word-word-document-isautoformatoverrideon-member)|Specifies whether automatic formatting options override formatting restrictions.|
+||[isChartDataPointTracked](/javascript/api/word/word.document#word-word-document-ischartdatapointtracked-member)|Specifies whether charts in the active document use cell-reference data-point tracking.|
+||[isCompatible](/javascript/api/word/word.document#word-word-document-iscompatible-member)|Specifies whether the compatibility option specified by the `type` property is enabled.|
+||[isFinal](/javascript/api/word/word.document#word-word-document-isfinal-member)|Specifies whether the document is final.|
+||[isFontsSubsetSaved](/javascript/api/word/word.document#word-word-document-isfontssubsetsaved-member)|Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.|
+||[isFormsDataPrinted](/javascript/api/word/word.document#word-word-document-isformsdataprinted-member)|Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.|
+||[isFormsDataSaved](/javascript/api/word/word.document#word-word-document-isformsdatasaved-member)|Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.|
+||[isGrammarChecked](/javascript/api/word/word.document#word-word-document-isgrammarchecked-member)|Specifies whether a grammar check has been run on the document.|
+||[isInAutoSave](/javascript/api/word/word.document#word-word-document-isinautosave-member)|Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic save by the document or a manual save by the user.|
+||[isInFormsDesign](/javascript/api/word/word.document#word-word-document-isinformsdesign-member)|Gets whether the document is in form design mode.|
+||[isKerningByAlgorithm](/javascript/api/word/word.document#word-word-document-iskerningbyalgorithm-member)|Specifies whether Word kerns half-width Latin characters and punctuation marks.|
+||[isLinguisticDataEmbedded](/javascript/api/word/word.document#word-word-document-islinguisticdataembedded-member)|Specifies whether to embed speech and handwriting data.|
+||[isMasterDocument](/javascript/api/word/word.document#word-word-document-ismasterdocument-member)|Gets whether this document is a master document.|
+||[isOptimizedForWord97](/javascript/api/word/word.document#word-word-document-isoptimizedforword97-member)|Specifies whether Word optimizes the document for Word 97.|
+||[isPostScriptPrintedOverText](/javascript/api/word/word.document#word-word-document-ispostscriptprintedovertext-member)|Specifies whether PRINT field instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.|
+||[isQuickStyleSetLocked](/javascript/api/word/word.document#word-word-document-isquickstylesetlocked-member)|Specifies whether users can change the Quick Style set.|
+||[isReadOnly](/javascript/api/word/word.document#word-word-document-isreadonly-member)|Gets whether changes to the document cannot be saved to the original document.|
+||[isReadOnlyRecommended](/javascript/api/word/word.document#word-word-document-isreadonlyrecommended-member)|Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.|
+||[isSnappedToGrid](/javascript/api/word/word.document#word-word-document-issnappedtogrid-member)|Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.|
+||[isSnappedToShapes](/javascript/api/word/word.document#word-word-document-issnappedtoshapes-member)|Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.|
+||[isSpellingChecked](/javascript/api/word/word.document#word-word-document-isspellingchecked-member)|Specifies whether spelling has been checked throughout the document.|
+||[isStyleEnforced](/javascript/api/word/word.document#word-word-document-isstyleenforced-member)|Specifies whether formatting restrictions are enforced in a protected document.|
+||[isSubdocument](/javascript/api/word/word.document#word-word-document-issubdocument-member)|Gets whether this document is a subdocument of a master document.|
+||[isThemeLocked](/javascript/api/word/word.document#word-word-document-isthemelocked-member)|Specifies whether users can change the document theme.|
+||[isUserControl](/javascript/api/word/word.document#word-word-document-isusercontrol-member)|Specifies whether the document was created or opened by the user.|
+||[isVbaSigned](/javascript/api/word/word.document#word-word-document-isvbasigned-member)|Gets whether the VBA project is digitally signed.|
+||[isWriteReserved](/javascript/api/word/word.document#word-word-document-iswritereserved-member)|Gets whether the document is protected with a write password.|
+||[justificationMode](/javascript/api/word/word.document#word-word-document-justificationmode-member)|Specifies the character spacing adjustment.|
+||[kind](/javascript/api/word/word.document#word-word-document-kind-member)|Specifies the format type that Microsoft Word uses when automatically formatting the document.|
 ||[languageDetected](/javascript/api/word/word.document#word-word-document-languagedetected-member)|Specifies whether Microsoft Word has detected the language of the document text.|
+||[listParagraphs](/javascript/api/word/word.document#word-word-document-listparagraphs-member)|Gets a `ParagraphCollection` object that represents all the numbered paragraphs in the document.|
 ||[listTemplates](/javascript/api/word/word.document#word-word-document-listtemplates-member)|Returns a `ListTemplateCollection` object that represents all the list templates in the document.|
+||[lists](/javascript/api/word/word.document#word-word-document-lists-member)|Gets a `ListCollection` object that contains all the formatted lists in the document.|
+||[lockServerFile()](/javascript/api/word/word.document#word-word-document-lockserverfile-member(1))|Locks the file on the server preventing anyone else from editing it.|
+||[makeCompatibilityDefault()](/javascript/api/word/word.document#word-word-document-makecompatibilitydefault-member(1))|Sets the compatibility options.|
 ||[manualHyphenation()](/javascript/api/word/word.document#word-word-document-manualhyphenation-member(1))|Initiates manual hyphenation of a document, one line at a time.|
+||[merge(fileName: string, options?: Word.DocumentMergeOptions)](/javascript/api/word/word.document#word-word-document-merge-member(1))|Merges the changes marked with revision marks from one document to another.|
+||[noLineBreakAfter](/javascript/api/word/word.document#word-word-document-nolinebreakafter-member)|Specifies the kinsoku characters after which Word will not break a line.|
+||[noLineBreakBefore](/javascript/api/word/word.document#word-word-document-nolinebreakbefore-member)|Specifies the kinsoku characters before which Word will not break a line.|
+||[openEncoding](/javascript/api/word/word.document#word-word-document-openencoding-member)|Gets the encoding used to open the document.|
+||[originalDocumentTitle](/javascript/api/word/word.document#word-word-document-originaldocumenttitle-member)|Gets the title of the original document after legal-blackline comparison.|
 ||[pageSetup](/javascript/api/word/word.document#word-word-document-pagesetup-member)|Returns a `PageSetup` object that's associated with the document.|
+||[paragraphs](/javascript/api/word/word.document#word-word-document-paragraphs-member)|Gets a `ParagraphCollection` object that represents all the paragraphs in the document.|
+||[password](/javascript/api/word/word.document#word-word-document-password-member)|Sets a password that must be supplied to open the document.|
+||[passwordEncryptionAlgorithm](/javascript/api/word/word.document#word-word-document-passwordencryptionalgorithm-member)|Gets the algorithm used for password encryption.|
+||[passwordEncryptionKeyLength](/javascript/api/word/word.document#word-word-document-passwordencryptionkeylength-member)|Gets the key length used for password encryption.|
+||[passwordEncryptionProvider](/javascript/api/word/word.document#word-word-document-passwordencryptionprovider-member)|Gets the name of the password encryption provider.|
+||[path](/javascript/api/word/word.document#word-word-document-path-member)|Gets the disk or the web path to the document (excludes the document name).|
+||[post()](/javascript/api/word/word.document#word-word-document-post-member(1))|Posts the document to a public folder in Microsoft Exchange.|
+||[presentIt()](/javascript/api/word/word.document#word-word-document-presentit-member(1))|Opens PowerPoint with the Word document loaded.|
+||[printOut(options?: Word.DocumentPrintOutOptions)](/javascript/api/word/word.document#word-word-document-printout-member(1))|Prints all or part of the document.|
+||[printPreview()](/javascript/api/word/word.document#word-word-document-printpreview-member(1))|Switches the view to print preview.|
+||[printRevisions](/javascript/api/word/word.document#word-word-document-printrevisions-member)|Specifies whether revision marks are printed with the document.|
+||[protect(type: Word.ProtectionType, options?: Word.DocumentProtectOptions)](/javascript/api/word/word.document#word-word-document-protect-member(1))|Protects the document from unauthorized changes.|
+||[protectionType](/javascript/api/word/word.document#word-word-document-protectiontype-member)|Gets the protection type for the document.|
+||[readabilityStatistics](/javascript/api/word/word.document#word-word-document-readabilitystatistics-member)|Gets a `ReadabilityStatisticCollection` object that represents the readability statistics for the document.|
+||[readingLayoutSizeX](/javascript/api/word/word.document#word-word-document-readinglayoutsizex-member)|Specifies the width of pages in reading layout view when frozen.|
+||[readingLayoutSizeY](/javascript/api/word/word.document#word-word-document-readinglayoutsizey-member)|Specifies the height of pages in reading layout view when frozen.|
+||[readingModeIsLayoutFrozen](/javascript/api/word/word.document#word-word-document-readingmodeislayoutfrozen-member)|Specifies whether pages in reading layout view are frozen for handwritten markup.|
+||[redo(times?: number)](/javascript/api/word/word.document#word-word-document-redo-member(1))|Redoes the last action that was undone (reverses the `undo` method).|
+||[rejectAllRevisions()](/javascript/api/word/word.document#word-word-document-rejectallrevisions-member(1))|Rejects all tracked changes in the document.|
+||[rejectAllRevisionsShown()](/javascript/api/word/word.document#word-word-document-rejectallrevisionsshown-member(1))|Rejects all revisions in the document that are displayed on the screen.|
+||[reload()](/javascript/api/word/word.document#word-word-document-reload-member(1))|Reloads a cached document by resolving the hyperlink to the document and downloading it.|
+||[reloadAs(encoding: Word.DocumentEncoding)](/javascript/api/word/word.document#word-word-document-reloadas-member(1))|Reloads the document based on an HTML document, using the document encoding.|
+||[removeDocumentInformation(removeDocInfoType: Word.RemoveDocInfoType)](/javascript/api/word/word.document#word-word-document-removedocumentinformation-member(1))|Removes sensitive information, properties, comments, and other metadata from the document.|
+||[removeLockedStyles()](/javascript/api/word/word.document#word-word-document-removelockedstyles-member(1))|Purges the document of locked styles when formatting restrictions have been applied in the document.|
+||[removeNumbers(numberType?: Word.NumberType)](/javascript/api/word/word.document#word-word-document-removenumbers-member(1))|Removes numbers or bullets from the document.|
+||[removePersonalInformationOnSave](/javascript/api/word/word.document#word-word-document-removepersonalinformationonsave-member)|Specifies whether Word removes user information upon saving.|
+||[removeTheme()](/javascript/api/word/word.document#word-word-document-removetheme-member(1))|Removes the active theme from the current document.|
+||[repaginate()](/javascript/api/word/word.document#word-word-document-repaginate-member(1))|Repaginates the entire document.|
+||[replyWithChanges(options?: Word.DocumentReplyWithChangesOptions)](/javascript/api/word/word.document#word-word-document-replywithchanges-member(1))|Sends an email message to the author of the document that has been sent out for review, notifying them that a reviewer has completed review of the document.|
+||[resetFormFields()](/javascript/api/word/word.document#word-word-document-resetformfields-member(1))|Clears all form fields in the document, preparing the form to be filled in again.|
+||[returnToLastReadPosition()](/javascript/api/word/word.document#word-word-document-returntolastreadposition-member(1))|Returns the document to the last saved reading position.|
+||[revisedDocumentTitle](/javascript/api/word/word.document#word-word-document-reviseddocumenttitle-member)|Gets the title of the revised document after legal-blackline comparison.|
 ||[revisions](/javascript/api/word/word.document#word-word-document-revisions-member)|Gets the collection of revisions that represents the tracked changes in the document.|
+||[runAutoMacro(autoMacro: Word.AutoMacro)](/javascript/api/word/word.document#word-word-document-runautomacro-member(1))|Runs an auto macro that's stored in the document.|
+||[saveAsQuickStyleSet(fileName: string)](/javascript/api/word/word.document#word-word-document-saveasquickstyleset-member(1))|Saves the group of quick styles currently in use.|
+||[saveEncoding](/javascript/api/word/word.document#word-word-document-saveencoding-member)|Specifies the encoding used when saving the document.|
+||[saveFormat](/javascript/api/word/word.document#word-word-document-saveformat-member)|Gets the file format of the document.|
+||[select()](/javascript/api/word/word.document#word-word-document-select-member(1))|Selects the contents of the document.|
+||[selectContentControlsByTag(tag: string)](/javascript/api/word/word.document#word-word-document-selectcontentcontrolsbytag-member(1))|Returns all content controls with the specified tag.|
+||[selectContentControlsByTitle(title: string)](/javascript/api/word/word.document#word-word-document-selectcontentcontrolsbytitle-member(1))|Returns a `ContentControlCollection` object that represents all the content controls in the document with the specified title.|
+||[selectLinkedControls(node: Word.CustomXmlNode)](/javascript/api/word/word.document#word-word-document-selectlinkedcontrols-member(1))|Returns a `ContentControlCollection` object that represents all content controls in the document that are linked to the specific custom XML node.|
+||[selectNodes(xPath: string, options?: Word.SelectNodesOptions)](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))|Returns an `XmlNodeCollection` object that represents all the nodes that match the XPath parameter in the order in which they appear in the document.|
+||[selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions)](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))|Returns an `XmlNode` object that represents the first node that matches the XPath parameter in the document.|
+||[selectUnlinkedControls(stream?: Word.CustomXmlPart)](/javascript/api/word/word.document#word-word-document-selectunlinkedcontrols-member(1))|Returns a `ContentControlCollection` object that represents all content controls in the document that are not linked to an XML node.|
 ||[selection](/javascript/api/word/word.document#word-word-document-selection-member)|Returns a `Selection` object that represents the current selection in the document.|
+||[sendFax(address: string, subject?: string)](/javascript/api/word/word.document#word-word-document-sendfax-member(1))|Sends the document as a fax, without any user interaction.|
+||[sendFaxOverInternet(options?: Word.DocumentSendFaxOverInternetOptions)](/javascript/api/word/word.document#word-word-document-sendfaxoverinternet-member(1))|Sends the document to a fax service provider, who faxes the document to one or more specified recipients.|
+||[sendForReview(options?: Word.DocumentSendForReviewOptions)](/javascript/api/word/word.document#word-word-document-sendforreview-member(1))|Sends the document in an email message for review by the specified recipients.|
+||[sendMail()](/javascript/api/word/word.document#word-word-document-sendmail-member(1))|Opens a message window for sending the document through Microsoft Exchange.|
+||[sentences](/javascript/api/word/word.document#word-word-document-sentences-member)|Gets the `RangeScopedCollection` object that represents all the sentences in the document.|
+||[setDefaultTableStyle(style: string, setInTemplate: boolean)](/javascript/api/word/word.document#word-word-document-setdefaulttablestyle-member(1))|Specifies the table style to use for newly created tables in the document.|
+||[setPasswordEncryptionOptions(passwordEncryptionProvider: string, passwordEncryptionAlgorithm: string, passwordEncryptionKeyLength: number, passwordEncryptFileProperties?: boolean)](/javascript/api/word/word.document#word-word-document-setpasswordencryptionoptions-member(1))|Sets the options Microsoft Word uses for encrypting documents with passwords.|
+||[spellingErrors](/javascript/api/word/word.document#word-word-document-spellingerrors-member)|Gets a `RangeCollection` object that represents the words identified as spelling errors in the document.|
+||[storyRanges](/javascript/api/word/word.document#word-word-document-storyranges-member)|Gets a `RangeCollection` object that represents all the stories in the document.|
+||[styles](/javascript/api/word/word.document#word-word-document-styles-member)|Gets a `StyleCollection` for the document.|
 ||[tableOfAuthoritiesCategories](/javascript/api/word/word.document#word-word-document-tableofauthoritiescategories-member)|Returns a `TableOfAuthoritiesCategoryCollection` object that represents the available table of authorities categories in the document.|
+||[tables](/javascript/api/word/word.document#word-word-document-tables-member)|Gets a `TableCollection` object that represents all the tables in the document.|
 ||[tablesOfAuthorities](/javascript/api/word/word.document#word-word-document-tablesofauthorities-member)|Returns a `TableOfAuthoritiesCollection` object that represents all the tables of authorities in the document.|
 ||[tablesOfContents](/javascript/api/word/word.document#word-word-document-tablesofcontents-member)|Returns a `TableOfContentsCollection` object that represents all the tables of contents in the document.|
 ||[tablesOfFigures](/javascript/api/word/word.document#word-word-document-tablesoffigures-member)|Returns a `TableOfFiguresCollection` object that represents all the tables of figures in the document.|
+||[textEncoding](/javascript/api/word/word.document#word-word-document-textencoding-member)|Specifies the encoding for saving as encoded text.|
+||[textLineEnding](/javascript/api/word/word.document#word-word-document-textlineending-member)|Specifies how Word marks line and paragraph breaks in text files.|
+||[toggleFormsDesign()](/javascript/api/word/word.document#word-word-document-toggleformsdesign-member(1))|Switches form design mode on or off.|
+||[trackFormatting](/javascript/api/word/word.document#word-word-document-trackformatting-member)|Specifies whether to track formatting changes when change tracking is on.|
+||[trackMoves](/javascript/api/word/word.document#word-word-document-trackmoves-member)|Specifies whether to mark moved text when Track Changes is on.|
+||[trackRevisions](/javascript/api/word/word.document#word-word-document-trackrevisions-member)|Specifies whether changes are tracked in the document.|
+||[trackedChangesAreDateAndTimeRemoved](/javascript/api/word/word.document#word-word-document-trackedchangesaredateandtimeremoved-member)|Specifies whether to remove or store date and time metadata for tracked changes.|
+||[transformDocument(path: string, dataOnly?: boolean)](/javascript/api/word/word.document#word-word-document-transformdocument-member(1))|Applies the specified Extensible Stylesheet Language Transformation (XSLT) file to this document and replaces the document with the results.|
+||[type](/javascript/api/word/word.document#word-word-document-type-member)|Gets the document type (template or document).|
+||[undo(times?: number)](/javascript/api/word/word.document#word-word-document-undo-member(1))|Undoes the last action or a sequence of actions, which are displayed in the Undo list.|
+||[undoClear()](/javascript/api/word/word.document#word-word-document-undoclear-member(1))|Clears the list of actions that can be undone in the document.|
+||[unprotect(password?: string)](/javascript/api/word/word.document#word-word-document-unprotect-member(1))|Removes protection from the document.|
+||[updateStyles()](/javascript/api/word/word.document#word-word-document-updatestyles-member(1))|Copies all styles from the attached template into the document, overwriting any existing styles in the document that have the same name.|
+||[viewCode()](/javascript/api/word/word.document#word-word-document-viewcode-member(1))|Displays the code window for the selected Microsoft ActiveX control in the document.|
+||[viewPropertyBrowser()](/javascript/api/word/word.document#word-word-document-viewpropertybrowser-member(1))|Displays the property window for the selected Microsoft ActiveX control in the document.|
+||[webPagePreview()](/javascript/api/word/word.document#word-word-document-webpagepreview-member(1))|Displays a preview of the current document as it would look if saved as a webpage.|
+||[webSettings](/javascript/api/word/word.document#word-word-document-websettings-member)|Gets the `WebSettings` object for webpage-related attributes.|
+||[words](/javascript/api/word/word.document#word-word-document-words-member)|Gets the `RangeScopedCollection` object that represents each word in the document.|
+||[writePassword](/javascript/api/word/word.document#word-word-document-writepassword-member)|Sets a password for saving changes to the document.|
+||[xmlAreAdvancedErrorsShown](/javascript/api/word/word.document#word-word-document-xmlareadvancederrorsshown-member)|Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).|
+||[xmlIsXsltUsedWhenSaving](/javascript/api/word/word.document#word-word-document-xmlisxsltusedwhensaving-member)|Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).|
+||[xmlSaveThroughXSLT](/javascript/api/word/word.document#word-word-document-xmlsavethroughxslt-member)|Specifies the path and file name for the XSLT to apply when saving a document.|
+|[DocumentCheckInOptions](/javascript/api/word/word.documentcheckinoptions)|[comment](/javascript/api/word/word.documentcheckinoptions#word-word-documentcheckinoptions-comment-member)|If provided, specifies a comment for the check-in operation.|
+||[makePublic](/javascript/api/word/word.documentcheckinoptions#word-word-documentcheckinoptions-makepublic-member)|If provided, specifies whether to make the document public after check-in.|
+||[saveChanges](/javascript/api/word/word.documentcheckinoptions#word-word-documentcheckinoptions-savechanges-member)|If provided, specifies whether to save changes before checking in.|
+|[DocumentCheckInWithVersionOptions](/javascript/api/word/word.documentcheckinwithversionoptions)|[comment](/javascript/api/word/word.documentcheckinwithversionoptions#word-word-documentcheckinwithversionoptions-comment-member)|If provided, specifies a comment for the check-in operation.|
+||[makePublic](/javascript/api/word/word.documentcheckinwithversionoptions#word-word-documentcheckinwithversionoptions-makepublic-member)|If provided, specifies whether to make the document public after check-in.|
+||[saveChanges](/javascript/api/word/word.documentcheckinwithversionoptions#word-word-documentcheckinwithversionoptions-savechanges-member)|If provided, specifies whether to save changes before checking in.|
+||[versionType](/javascript/api/word/word.documentcheckinwithversionoptions#word-word-documentcheckinwithversionoptions-versiontype-member)|If provided, specifies the version type for the check-in.|
+|[DocumentCheckSpellingOptions](/javascript/api/word/word.documentcheckspellingoptions)|[alwaysSuggest](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-alwayssuggest-member)|If provided, specifies whether to always suggest spelling corrections.|
+||[customDictionary10](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary10-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary2](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary2-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary3](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary3-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary4](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary4-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary5](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary5-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary6](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary6-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary7](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary7-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary8](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary8-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary9](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary9-member)|If provided, specifies an additional custom dictionary to use for spell checking.|
+||[customDictionary](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-customdictionary-member)|If provided, specifies the custom dictionary to use for spell checking.|
+||[ignoreUppercase](/javascript/api/word/word.documentcheckspellingoptions#word-word-documentcheckspellingoptions-ignoreuppercase-member)|If provided, specifies whether to ignore uppercase words during spell checking.|
+|[DocumentCountNumberedItemsOptions](/javascript/api/word/word.documentcountnumbereditemsoptions)|[level](/javascript/api/word/word.documentcountnumbereditemsoptions#word-word-documentcountnumbereditemsoptions-level-member)|If provided, specifies the level of numbering to count.|
+||[numberType](/javascript/api/word/word.documentcountnumbereditemsoptions#word-word-documentcountnumbereditemsoptions-numbertype-member)|If provided, specifies the type of numbered items to count.|
+|[DocumentEndReviewOptions](/javascript/api/word/word.documentendreviewoptions)|[includeAttachment](/javascript/api/word/word.documentendreviewoptions#word-word-documentendreviewoptions-includeattachment-member)|If provided, specifies whether to include the document as an attachment.|
+||[recipients](/javascript/api/word/word.documentendreviewoptions#word-word-documentendreviewoptions-recipients-member)|If provided, specifies the recipients to notify when ending the review.|
+||[showMessage](/javascript/api/word/word.documentendreviewoptions#word-word-documentendreviewoptions-showmessage-member)|If provided, specifies whether to show the message before sending.|
+||[subject](/javascript/api/word/word.documentendreviewoptions#word-word-documentendreviewoptions-subject-member)|If provided, specifies the subject of the notification email.|
+|[DocumentExportAsFixedFormat2Options](/javascript/api/word/word.documentexportasfixedformat2options)|[bitmapMissingFonts](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-bitmapmissingfonts-member)|If provided, specifies whether to bitmap missing fonts.|
+||[createBookmarks](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-createbookmarks-member)|If provided, specifies the bookmark creation mode.|
+||[documentStructureTags](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-documentstructuretags-member)|If provided, specifies whether to include document structure tags.|
+||[fixedFormatExtClassPtr](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-fixedformatextclassptr-member)|If provided, specifies the extension class pointer.|
+||[from](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-from-member)|If provided, specifies the starting page number.|
+||[includeDocProps](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-includedocprops-member)|If provided, specifies whether to include document properties.|
+||[item](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-item-member)|If provided, specifies the item to export.|
+||[keepInformationRightsManagement](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-keepinformationrightsmanagement-member)|If provided, specifies whether to keep Information Rights Management (IRM) settings.|
+||[openAfterExport](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-openafterexport-member)|If provided, specifies whether to open the file after export.|
+||[optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-optimizefor-member)|If provided, specifies the optimization target for the export.|
+||[optimizeForImageQuality](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-optimizeforimagequality-member)|If provided, specifies whether to optimize for image quality in the exported file.|
+||[range](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-range-member)|If provided, specifies the range to export.|
+||[to](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-to-member)|If provided, specifies the ending page number.|
+||[useIso19005_1](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-useiso19005_1-member)|If provided, specifies whether to use ISO 19005-1 compliance.|
+|[DocumentExportAsFixedFormat3Options](/javascript/api/word/word.documentexportasfixedformat3options)|[bitmapMissingFonts](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-bitmapmissingfonts-member)|If provided, specifies whether to bitmap missing fonts.|
+||[createBookmarks](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-createbookmarks-member)|If provided, specifies the bookmark creation mode.|
+||[documentStructureTags](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-documentstructuretags-member)|If provided, specifies whether to include document structure tags.|
+||[fixedFormatExtClassPtr](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-fixedformatextclassptr-member)|If provided, specifies the extension class pointer.|
+||[from](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-from-member)|If provided, specifies the starting page number.|
+||[improveExportTagging](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-improveexporttagging-member)|If provided, specifies to improve export tagging for better accessibility.|
+||[includeDocProps](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-includedocprops-member)|If provided, specifies whether to include document properties.|
+||[item](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-item-member)|If provided, specifies the item to export.|
+||[keepInformationRightsManagement](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-keepinformationrightsmanagement-member)|If provided, specifies whether to keep Information Rights Management (IRM) settings.|
+||[openAfterExport](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-openafterexport-member)|If provided, specifies whether to open the file after export.|
+||[optimizeFor](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-optimizefor-member)|If provided, specifies the optimization target for the export.|
+||[optimizeForImageQuality](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-optimizeforimagequality-member)|If provided, specifies whether to optimize for image quality in the exported file.|
+||[range](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-range-member)|If provided, specifies the range to export.|
+||[to](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-to-member)|If provided, specifies the ending page number.|
+||[useIso19005_1](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-useiso19005_1-member)|If provided, specifies whether to use ISO 19005-1 compliance.|
+|[DocumentExportAsFixedFormatOptions](/javascript/api/word/word.documentexportasfixedformatoptions)|[bitmapMissingFonts](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-bitmapmissingfonts-member)|If provided, specifies whether to bitmap missing fonts.|
+||[createBookmarks](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-createbookmarks-member)|If provided, specifies the bookmark creation mode.|
+||[documentStructureTags](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-documentstructuretags-member)|If provided, specifies whether to include document structure tags.|
+||[fixedFormatExtensionClassPointer](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-fixedformatextensionclasspointer-member)|If provided, specifies the extension class pointer.|
+||[from](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-from-member)|If provided, specifies the starting page number.|
+||[includeDocProps](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-includedocprops-member)|If provided, specifies whether to include document properties.|
+||[item](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-item-member)|If provided, specifies the item to export.|
+||[keepInformationRightsManagement](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-keepinformationrightsmanagement-member)|If provided, specifies whether to keep Information Rights Management (IRM) settings.|
+||[openAfterExport](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-openafterexport-member)|If provided, specifies whether to open the file after export.|
+||[optimizeFor](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-optimizefor-member)|If provided, specifies the optimization target for the export.|
+||[range](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-range-member)|If provided, specifies the range to export.|
+||[to](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-to-member)|If provided, specifies the ending page number.|
+||[useIso19005_1](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-useiso19005_1-member)|If provided, specifies whether to use ISO 19005-1 compliance.|
+|[DocumentFollowHyperlinkOptions](/javascript/api/word/word.documentfollowhyperlinkoptions)|[addHistory](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-addhistory-member)|If provided, specifies whether to add the link to the browsing history.|
+||[address](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-address-member)|If provided, specifies the hyperlink address to follow.|
+||[extraInfo](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-extrainfo-member)|If provided, specifies additional information to pass with the request.|
+||[headerInfo](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-headerinfo-member)|If provided, specifies header information for the HTTP request.|
+||[httpMethod](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-httpmethod-member)|If provided, specifies the HTTP method to use for the request.|
+||[newWindow](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-newwindow-member)|If provided, specifies whether to open the link in a new window.|
+||[subAddress](/javascript/api/word/word.documentfollowhyperlinkoptions#word-word-documentfollowhyperlinkoptions-subaddress-member)|If provided, specifies the sub-address within the document.|
 |[DocumentLibraryVersion](/javascript/api/word/word.documentlibraryversion)|[comments](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-comments-member)|Gets any optional comments associated with this version of the shared document.|
 ||[modified](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-modified-member)|Gets the date and time at which this version of the shared document was last saved to the server.|
 ||[modifiedBy](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-modifiedby-member)|Gets the name of the user who last saved this version of the shared document to the server.|
 |[DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection)|[getItem(index: number)](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-getitem-member(1))|Gets a `DocumentLibraryVersion` object by its index in the collection.|
 ||[isVersioningEnabled()](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-isversioningenabled-member(1))|Returns whether the document library in which the active document is saved on the server is configured to create a backup copy, or version, each time the file is edited on the website.|
 ||[items](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-items-member)|Gets the loaded child items in this collection.|
+|[DocumentMergeOptions](/javascript/api/word/word.documentmergeoptions)|[addToRecentFiles](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-addtorecentfiles-member)|If provided, specifies whether to add the merged document to recent files.|
+||[detectFormatChanges](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-detectformatchanges-member)|If provided, specifies whether to detect format changes during the merge.|
+||[mergeTarget](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-mergetarget-member)|If provided, specifies the target of the merge operation.|
+||[useFormattingFrom](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-useformattingfrom-member)|If provided, specifies the source of formatting to use in the merge.|
+|[DocumentPrintOutOptions](/javascript/api/word/word.documentprintoutoptions)|[activePrinterMacGX](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-activeprintermacgx-member)|If provided, specifies the printer name.|
+||[append](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-append-member)|If provided, specifies whether to append to an existing file.|
+||[background](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-background-member)|If provided, specifies whether to print in the background.|
+||[collate](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-collate-member)|If provided, specifies whether to collate pages.|
+||[copies](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-copies-member)|If provided, specifies the number of copies to print.|
+||[from](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-from-member)|If provided, specifies the starting page number.|
+||[item](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-item-member)|If provided, specifies the item to print.|
+||[manualDuplexPrint](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-manualduplexprint-member)|If provided, specifies whether to manually duplex print.|
+||[outputFileName](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-outputfilename-member)|If provided, specifies the name of the output file.|
+||[pageType](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-pagetype-member)|If provided, specifies the page order.|
+||[pages](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-pages-member)|If provided, specifies specific pages to print.|
+||[printToFile](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-printtofile-member)|If provided, specifies whether to print to file.|
+||[printZoomColumn](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-printzoomcolumn-member)|If provided, specifies the zoom column setting.|
+||[printZoomPaperHeight](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-printzoompaperheight-member)|If provided, specifies the paper height for printing in twips (20 twips = 1 point; 72 points = 1 inch).|
+||[printZoomPaperWidth](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-printzoompaperwidth-member)|If provided, specifies the paper width for printing in twips (20 twips = 1 point; 72 points = 1 inch).|
+||[printZoomRow](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-printzoomrow-member)|If provided, specifies the zoom row setting.|
+||[range](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-range-member)|If provided, specifies the range to print.|
+||[to](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-to-member)|If provided, specifies the ending page number.|
+|[DocumentProtectOptions](/javascript/api/word/word.documentprotectoptions)|[enforceStyleLock](/javascript/api/word/word.documentprotectoptions#word-word-documentprotectoptions-enforcestylelock-member)|If provided, specifies whether to enforce style lock restrictions.|
+||[noReset](/javascript/api/word/word.documentprotectoptions#word-word-documentprotectoptions-noreset-member)|If provided, specifies whether to reset form fields when protecting the document.|
+||[password](/javascript/api/word/word.documentprotectoptions#word-word-documentprotectoptions-password-member)|If provided, specifies the password to apply for document protection.|
+||[useInformationRightsManagement](/javascript/api/word/word.documentprotectoptions#word-word-documentprotectoptions-useinformationrightsmanagement-member)|If provided, specifies whether to use Information Rights Management (IRM).|
+|[DocumentRangeOptions](/javascript/api/word/word.documentrangeoptions)|[end](/javascript/api/word/word.documentrangeoptions#word-word-documentrangeoptions-end-member)|If provided, specifies the ending character position.|
+||[start](/javascript/api/word/word.documentrangeoptions#word-word-documentrangeoptions-start-member)|If provided, specifies the starting character position.|
+|[DocumentReplyWithChangesOptions](/javascript/api/word/word.documentreplywithchangesoptions)|[includeAttachment](/javascript/api/word/word.documentreplywithchangesoptions#word-word-documentreplywithchangesoptions-includeattachment-member)|If provided, specifies whether to include the document as an attachment.|
+||[recipients](/javascript/api/word/word.documentreplywithchangesoptions#word-word-documentreplywithchangesoptions-recipients-member)|If provided, specifies the recipients of the reply.|
+||[showMessage](/javascript/api/word/word.documentreplywithchangesoptions#word-word-documentreplywithchangesoptions-showmessage-member)|If provided, specifies whether to show the message before sending.|
+||[subject](/javascript/api/word/word.documentreplywithchangesoptions#word-word-documentreplywithchangesoptions-subject-member)|If provided, specifies the subject of the reply email.|
+|[DocumentSendFaxOverInternetOptions](/javascript/api/word/word.documentsendfaxoverinternetoptions)|[recipients](/javascript/api/word/word.documentsendfaxoverinternetoptions#word-word-documentsendfaxoverinternetoptions-recipients-member)|If provided, specifies the recipients of the fax.|
+||[showMessage](/javascript/api/word/word.documentsendfaxoverinternetoptions#word-word-documentsendfaxoverinternetoptions-showmessage-member)|If provided, specifies whether to show the message before sending.|
+||[subject](/javascript/api/word/word.documentsendfaxoverinternetoptions#word-word-documentsendfaxoverinternetoptions-subject-member)|If provided, specifies the subject of the fax.|
+|[DocumentSendForReviewOptions](/javascript/api/word/word.documentsendforreviewoptions)|[includeAttachment](/javascript/api/word/word.documentsendforreviewoptions#word-word-documentsendforreviewoptions-includeattachment-member)|If provided, specifies whether to include the document as an attachment.|
+||[recipients](/javascript/api/word/word.documentsendforreviewoptions#word-word-documentsendforreviewoptions-recipients-member)|If provided, specifies the recipients of the review request.|
+||[showMessage](/javascript/api/word/word.documentsendforreviewoptions#word-word-documentsendforreviewoptions-showmessage-member)|If provided, specifies whether to show the message before sending.|
+||[subject](/javascript/api/word/word.documentsendforreviewoptions#word-word-documentsendforreviewoptions-subject-member)|If provided, specifies the subject of the review email.|
 |[DropCap](/javascript/api/word/word.dropcap)|[clear()](/javascript/api/word/word.dropcap#word-word-dropcap-clear-member(1))|Removes the dropped capital letter formatting.|
 ||[distanceFromText](/javascript/api/word/word.dropcap#word-word-dropcap-distancefromtext-member)|Gets the distance (in points) between the dropped capital letter and the paragraph text.|
 ||[enable()](/javascript/api/word/word.dropcap#word-word-dropcap-enable-member(1))|Formats the first character in the specified paragraph as a dropped capital letter.|
@@ -418,6 +718,10 @@
 |[GlowFormat](/javascript/api/word/word.glowformat)|[color](/javascript/api/word/word.glowformat#word-word-glowformat-color-member)|Returns a `ColorFormat` object that represents the color for a glow effect.|
 ||[radius](/javascript/api/word/word.glowformat#word-word-glowformat-radius-member)|Specifies the length of the radius for a glow effect.|
 ||[transparency](/javascript/api/word/word.glowformat#word-word-glowformat-transparency-member)|Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).|
+|[GoToOptions](/javascript/api/word/word.gotooptions)|[count](/javascript/api/word/word.gotooptions#word-word-gotooptions-count-member)|If provided, specifies the number of the item in the document.|
+||[direction](/javascript/api/word/word.gotooptions#word-word-gotooptions-direction-member)|If provided, specifies the direction the range or selection is moved to.|
+||[item](/javascript/api/word/word.gotooptions#word-word-gotooptions-item-member)|If provided, specifies the kind of item the range or selection is moved to.|
+||[name](/javascript/api/word/word.gotooptions#word-word-gotooptions-name-member)|If provided, specifies the name if the `item` property is set to Word.GoToItem type `bookmark`, `comment`, `field`, or `object`.|
 |[GroupContentControl](/javascript/api/word/word.groupcontentcontrol)|[appearance](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-appearance-member)|Specifies the appearance of the content control.|
 ||[color](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-color-member)|Specifies the red-green-blue (RGB) value of the color of the content control.|
 ||[copy()](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-copy-member(1))|Copies the content control from the active document to the Clipboard.|
@@ -441,6 +745,16 @@
 ||[name](/javascript/api/word/word.headingstyle#word-word-headingstyle-name-member)|Specifies the name of style for a heading.|
 |[HeadingStyleCollection](/javascript/api/word/word.headingstylecollection)|[add(name: string, level: number)](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1))|Adds a new heading style to a document.|
 ||[items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)|Gets the loaded child items in this collection.|
+|[HtmlDivision](/javascript/api/word/word.htmldivision)|[delete()](/javascript/api/word/word.htmldivision#word-word-htmldivision-delete-member(1))|Deletes this HTML division.|
+||[htmlDivisionParent(levelsUp?: number)](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisionparent-member(1))|Returns an `HtmlDivision` object that represents a parent division of the current HTML division.|
+||[htmlDivisions](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisions-member)||
+||[leftIndent](/javascript/api/word/word.htmldivision#word-word-htmldivision-leftindent-member)|Specifies the left indent value (in points) for this HTML division.|
+||[range](/javascript/api/word/word.htmldivision#word-word-htmldivision-range-member)|Gets a `Range` object that represents the portion of a document that's contained in this HTML division.|
+||[rightIndent](/javascript/api/word/word.htmldivision#word-word-htmldivision-rightindent-member)|Specifies the right indent (in points) for this HTML division.|
+||[spaceAfter](/javascript/api/word/word.htmldivision#word-word-htmldivision-spaceafter-member)|Specifies the amount of spacing (in points) after this HTML division.|
+||[spaceBefore](/javascript/api/word/word.htmldivision#word-word-htmldivision-spacebefore-member)|Specifies the spacing (in points) before this HTML division.|
+|[HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection)|[getItemAt(index: number)](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1))|Returns an `HtmlDivision` object from the collection based on the specified index.|
+||[items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)|Gets the loaded child items in this collection.|
 |[Hyperlink](/javascript/api/word/word.hyperlink)|[addToFavorites()](/javascript/api/word/word.hyperlink#word-word-hyperlink-addtofavorites-member(1))|Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.|
 ||[address](/javascript/api/word/word.hyperlink#word-word-hyperlink-address-member)|Specifies the address (for example, a file name or URL) of the hyperlink.|
 ||[createNewDocument(fileName: string, editNow: boolean, overwrite: boolean)](/javascript/api/word/word.hyperlink#word-word-hyperlink-createnewdocument-member(1))|Creates a new document linked to the hyperlink.|
@@ -574,7 +888,7 @@
 ||[isFormattingPreservedOnUpdate](/javascript/api/word/word.oleformat#word-word-oleformat-isformattingpreservedonupdate-member)|Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.|
 ||[label](/javascript/api/word/word.oleformat#word-word-oleformat-label-member)|Gets a string that's used to identify the portion of the source file that's being linked.|
 ||[open()](/javascript/api/word/word.oleformat#word-word-oleformat-open-member(1))|Opens the `OleFormat` object.|
-||[progID](/javascript/api/word/word.oleformat#word-word-oleformat-progid-member)|Gets the programmatic identifier (`ProgId`) for the specified OLE object.|
+||[progId](/javascript/api/word/word.oleformat#word-word-oleformat-progid-member)|Gets the programmatic identifier (`ProgId`) for the specified OLE object.|
 |[Page](/javascript/api/word/word.page)|[breaks](/javascript/api/word/word.page#word-word-page-breaks-member)|Gets a `BreakCollection` object that represents the breaks on the page.|
 |[PageSetup](/javascript/api/word/word.pagesetup)|[bookFoldPrinting](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldprinting-member)|Specifies whether Microsoft Word prints the document as a booklet.|
 ||[bookFoldPrintingSheets](/javascript/api/word/word.pagesetup#word-word-pagesetup-bookfoldprintingsheets-member)|Specifies the number of pages for each booklet.|
@@ -722,6 +1036,10 @@
 ||[underline](/javascript/api/word/word.range#word-word-range-underline-member)|Specifies the type of underline applied to the range.|
 |[RangeScopedCollection](/javascript/api/word/word.rangescopedcollection)|[getItem(index: number)](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-getitem-member(1))|Gets a `Range` object by its index in the collection.|
 ||[items](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-items-member)|Gets the loaded child items in this collection.|
+|[ReadabilityStatistic](/javascript/api/word/word.readabilitystatistic)|[name](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-name-member)|Returns the name of the readability statistic.|
+||[value](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-value-member)|Returns the value of the grammar statistic.|
+|[ReadabilityStatisticCollection](/javascript/api/word/word.readabilitystatisticcollection)|[getItemAt(index: number)](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-getitemat-member(1))|Gets the readability statistic at the specified index.|
+||[items](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-items-member)|Gets the loaded child items in this collection.|
 |[ReflectionFormat](/javascript/api/word/word.reflectionformat)|[blur](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-blur-member)|Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.|
 ||[offset](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-offset-member)|Specifies the amount of separation, in points, of the reflected image from the shape.|
 ||[size](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-size-member)|Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.|
@@ -775,6 +1093,10 @@
 |[Section](/javascript/api/word/word.section)|[borders](/javascript/api/word/word.section#word-word-section-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders in the section.|
 ||[pageSetup](/javascript/api/word/word.section#word-word-section-pagesetup-member)|Returns a `PageSetup` object that's associated with the section.|
 ||[protectedForForms](/javascript/api/word/word.section#word-word-section-protectedforforms-member)|Specifies if the section is protected for forms.|
+|[SelectNodesOptions](/javascript/api/word/word.selectnodesoptions)|[fastSearchSkippingTextNodes](/javascript/api/word/word.selectnodesoptions#word-word-selectnodesoptions-fastsearchskippingtextnodes-member)|If provided, specifies whether to skip text nodes in the search.|
+||[prefixMapping](/javascript/api/word/word.selectnodesoptions#word-word-selectnodesoptions-prefixmapping-member)|If provided, specifies the prefix mapping for the XPath expression.|
+|[SelectSingleNodeOptions](/javascript/api/word/word.selectsinglenodeoptions)|[fastSearchSkippingTextNodes](/javascript/api/word/word.selectsinglenodeoptions#word-word-selectsinglenodeoptions-fastsearchskippingtextnodes-member)|If provided, specifies whether to skip text nodes in the search.|
+||[prefixMapping](/javascript/api/word/word.selectsinglenodeoptions#word-word-selectsinglenodeoptions-prefixmapping-member)|If provided, specifies the prefix mapping for the XPath expression.|
 |[Selection](/javascript/api/word/word.selection)|[borders](/javascript/api/word/word.selection#word-word-selection-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the objects in the selection.|
 ||[calculate()](/javascript/api/word/word.selection#word-word-selection-calculate-member(1))|Calculates the first mathematical expression within the selection.|
 ||[cancelMode()](/javascript/api/word/word.selection#word-word-selection-cancelmode-member(1))|Cancels a mode such as extend or column select.|
@@ -1221,7 +1543,6 @@
 ||[getFlowDirection()](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getflowdirection-member(1))|Gets the direction in which text flows from one text column to the next.|
 ||[getHasLineBetween()](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-gethaslinebetween-member(1))|Gets whether vertical lines appear between all the columns in the `TextColumnCollection` object.|
 ||[getIsEvenlySpaced()](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getisevenlyspaced-member(1))|Gets whether text columns are evenly spaced.|
-||[getItem(index: number)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getitem-member(1))|Gets a `TextColumn` by its index in the collection.|
 ||[items](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-items-member)|Gets the loaded child items in this collection.|
 ||[setCount(numColumns: number)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setcount-member(1))|Arranges text into the specified number of text columns.|
 ||[setFlowDirection(value: Word.FlowDirection)](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setflowdirection-member(1))|Sets the direction in which text flows from one text column to the next.|
@@ -1323,6 +1644,17 @@
 ||[showHeading(level: number)](/javascript/api/word/word.view#word-word-view-showheading-member(1))|Shows all headings up to the specified heading level and hides subordinate headings and body text.|
 ||[splitSpecial](/javascript/api/word/word.view#word-word-view-splitspecial-member)|Specifies the active window pane.|
 ||[type](/javascript/api/word/word.view#word-word-view-type-member)|Specifies the view type.|
+|[WebSettings](/javascript/api/word/word.websettings)|[allowPng](/javascript/api/word/word.websettings#word-word-websettings-allowpng-member)|Specifies whether PNG is allowed as an image format when saving a document as a webpage.|
+||[encoding](/javascript/api/word/word.websettings#word-word-websettings-encoding-member)|Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.|
+||[folderSuffix](/javascript/api/word/word.websettings#word-word-websettings-foldersuffix-member)|Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.|
+||[organizeInFolder](/javascript/api/word/word.websettings#word-word-websettings-organizeinfolder-member)|Specifies whether supporting files are organized in a separate folder when saving the document as a webpage.|
+||[pixelsPerInch](/javascript/api/word/word.websettings#word-word-websettings-pixelsperinch-member)|Specifies the density (pixels per inch) of graphics images and table cells on a webpage.|
+||[relyOnCSS](/javascript/api/word/word.websettings#word-word-websettings-relyoncss-member)|Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser.|
+||[relyOnVectorMarkupLanguage](/javascript/api/word/word.websettings#word-word-websettings-relyonvectormarkuplanguage-member)|Specifies whether image files are not generated from drawing objects when saving a document as a webpage.|
+||[screenSize](/javascript/api/word/word.websettings#word-word-websettings-screensize-member)|Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.|
+||[targetBrowser](/javascript/api/word/word.websettings#word-word-websettings-targetbrowser-member)|Specifies the target browser for documents viewed in a web browser.|
+||[useDefaultFolderSuffix()](/javascript/api/word/word.websettings#word-word-websettings-usedefaultfoldersuffix-member(1))|Sets the folder suffix for the specified document to the default suffix for the language support you have selected or installed.|
+||[useLongFileNames](/javascript/api/word/word.websettings#word-word-websettings-uselongfilenames-member)|Specifies whether long file names are used when saving the document as a webpage.|
 |[Window](/javascript/api/word/word.window)|[activate()](/javascript/api/word/word.window#word-word-window-activate-member(1))|Activates the window.|
 ||[areRulersDisplayed](/javascript/api/word/word.window#word-word-window-arerulersdisplayed-member)|Specifies whether rulers are displayed for the window or pane.|
 ||[areScreenTipsDisplayed](/javascript/api/word/word.window#word-word-window-arescreentipsdisplayed-member)|Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.|
@@ -1380,5 +1712,37 @@
 ||[setMapping(xPath: string, options?: Word.XmlSetMappingOptions)](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmapping-member(1))|Allows creating or changing the XML mapping on the content control.|
 ||[setMappingByNode(node: Word.CustomXmlNode)](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmappingbynode-member(1))|Allows creating or changing the XML data mapping on the content control.|
 ||[xpath](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-xpath-member)|Returns the XPath for the XML mapping, which evaluates to the currently mapped XML node.|
+|[XmlNode](/javascript/api/word/word.xmlnode)|[attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member)|Gets the attributes for this XML node.|
+||[baseName](/javascript/api/word/word.xmlnode#word-word-xmlnode-basename-member)|Gets the name of the element without any prefix.|
+||[childNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-childnodes-member)|Gets the child elements of this XML node.|
+||[copy()](/javascript/api/word/word.xmlnode#word-word-xmlnode-copy-member(1))|Copies this XML node, excluding XML markup, to the Clipboard.|
+||[cut()](/javascript/api/word/word.xmlnode#word-word-xmlnode-cut-member(1))|Removes this XML node from the document and places it on the Clipboard.|
+||[delete()](/javascript/api/word/word.xmlnode#word-word-xmlnode-delete-member(1))|Deletes the XML node from the XML document.|
+||[firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member)|Gets the first child node if this is a parent node.|
+||[hasChildNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-haschildnodes-member)|Gets whether this XML node has child nodes.|
+||[lastChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-lastchild-member)|Gets the last child node if this is a parent node.|
+||[level](/javascript/api/word/word.xmlnode#word-word-xmlnode-level-member)|Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row.|
+||[namespaceUri](/javascript/api/word/word.xmlnode#word-word-xmlnode-namespaceuri-member)|Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.|
+||[nextSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-nextsibling-member)|Gets the next element in the document that's at the same level as this XML node.|
+||[nodeType](/javascript/api/word/word.xmlnode#word-word-xmlnode-nodetype-member)|Gets the type of node.|
+||[nodeValue](/javascript/api/word/word.xmlnode#word-word-xmlnode-nodevalue-member)|Specifies the value of this XML node.|
+||[ownerDocument](/javascript/api/word/word.xmlnode#word-word-xmlnode-ownerdocument-member)|Gets the parent document of this XML node.|
+||[parentNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-parentnode-member)|Gets the parent element of this XML node.|
+||[placeholderText](/javascript/api/word/word.xmlnode#word-word-xmlnode-placeholdertext-member)|Specifies the text displayed for this element if it contains no text.|
+||[previousSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-previoussibling-member)|Gets the previous element in the document that's at the same level as this XML node.|
+||[range](/javascript/api/word/word.xmlnode#word-word-xmlnode-range-member)|Gets the portion of a document that is contained in this XML node.|
+||[removeChild(childElement: Word.XmlNode)](/javascript/api/word/word.xmlnode#word-word-xmlnode-removechild-member(1))|Removes a child element from this XML node.|
+||[selectNodes(xPath: string, options?: Word.SelectNodesOptions)](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))|Returns all the child elements that match the XPath parameter, in the order in which they appear within this XML node.|
+||[selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions)](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))|Returns the first child element that matches the XPath parameter within this XML node.|
+||[setValidationError(status: Word.XmlValidationStatus, options?: Word.XmlNodeSetValidationErrorOptions)](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1))|Changes the validation error text displayed to a user for this XML node and whether to force Word to report the node as invalid.|
+||[text](/javascript/api/word/word.xmlnode#word-word-xmlnode-text-member)|Specifies the text contained within the XML element.|
+||[validate()](/javascript/api/word/word.xmlnode#word-word-xmlnode-validate-member(1))|Validates this XML node against the XML schemas that are attached to the document.|
+||[validationErrorText](/javascript/api/word/word.xmlnode#word-word-xmlnode-validationerrortext-member)|Gets the description for a validation error on this `XmlNode` object.|
+||[validationStatus](/javascript/api/word/word.xmlnode#word-word-xmlnode-validationstatus-member)|Gets whether this element is valid according to the attached schema.|
+|[XmlNodeCollection](/javascript/api/word/word.xmlnodecollection)|[getItem(index: number)](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitem-member(1))|Gets a `XmlNode` object by its index in the collection.|
+||[getItemAt(index: number)](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1))|Returns an individual `XmlNode` object in a collection.|
+||[items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)|Gets the loaded child items in this collection.|
+|[XmlNodeSetValidationErrorOptions](/javascript/api/word/word.xmlnodesetvalidationerroroptions)|[clearedAutomatically](/javascript/api/word/word.xmlnodesetvalidationerroroptions#word-word-xmlnodesetvalidationerroroptions-clearedautomatically-member)|If provided, specifies whether the validation error should be cleared automatically.|
+||[errorText](/javascript/api/word/word.xmlnodesetvalidationerroroptions#word-word-xmlnodesetvalidationerroroptions-errortext-member)|If provided, specifies the error text to display for the validation error.|
 |[XmlSetMappingOptions](/javascript/api/word/word.xmlsetmappingoptions)|[prefixMapping](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-prefixmapping-member)|If provided, specifies the prefix mappings to use when querying the expression provided in the `xPath` parameter of the `XmlMapping.setMapping` calling method.|
 ||[source](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-source-member)|If provided, specifies the desired custom XML data to map the content control to.|

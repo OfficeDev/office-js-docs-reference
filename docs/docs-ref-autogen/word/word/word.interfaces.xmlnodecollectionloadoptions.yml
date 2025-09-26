@@ -1,0 +1,328 @@
+### YamlMime:TSType
+name: Word.Interfaces.XmlNodeCollectionLoadOptions
+uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.XmlNodeCollectionLoadOptions
+summary: >-
+  Represents the collection of [Word.XmlNode](xref:word!Word.XmlNode:class)
+  objects.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: baseName
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#baseName:member
+    package: word!
+    fullName: baseName
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the element without any
+      prefix.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'baseName?: boolean;'
+      return:
+        type: boolean
+  - name: firstChild
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member
+    package: word!
+    fullName: firstChild
+    summary: >-
+      For EACH ITEM in the collection: Gets the first child node if this is a
+      parent node. Returns `null` if the node type is `attribute`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'firstChild?: Word.Interfaces.XmlNodeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlNodeLoadOptions:interface" />
+  - name: hasChildNodes
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#hasChildNodes:member
+    package: word!
+    fullName: hasChildNodes
+    summary: >-
+      For EACH ITEM in the collection: Gets whether this XML node has child
+      nodes. Always returns `false` for attribute nodes since they cannot have
+      children.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hasChildNodes?: boolean;'
+      return:
+        type: boolean
+  - name: lastChild
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member
+    package: word!
+    fullName: lastChild
+    summary: >-
+      For EACH ITEM in the collection: Gets the last child node if this is a
+      parent node. Returns `null` if the node type is `attribute`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lastChild?: Word.Interfaces.XmlNodeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlNodeLoadOptions:interface" />
+  - name: level
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#level:member
+    package: word!
+    fullName: level
+    summary: >-
+      For EACH ITEM in the collection: Gets whether this XML element is part of
+      a paragraph, is a paragraph, or is contained within a table cell or
+      contains a table row. Returns `null` if the node type is `attribute`<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type: boolean
+  - name: namespaceUri
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#namespaceUri:member
+    package: word!
+    fullName: namespaceUri
+    summary: >-
+      For EACH ITEM in the collection: Gets the Uniform Resource Identifier
+      (URI) of the schema namespace for this XML node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: boolean;'
+      return:
+        type: boolean
+  - name: nextSibling
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member
+    package: word!
+    fullName: nextSibling
+    summary: >-
+      For EACH ITEM in the collection: Gets the next element in the document
+      that's at the same level as this XML node. Returns `null` if the node type
+      is `attribute`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nextSibling?: Word.Interfaces.XmlNodeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlNodeLoadOptions:interface" />
+  - name: nodeType
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#nodeType:member
+    package: word!
+    fullName: nodeType
+    summary: 'For EACH ITEM in the collection: Gets the type of node.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nodeType?: boolean;'
+      return:
+        type: boolean
+  - name: nodeValue
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#nodeValue:member
+    package: word!
+    fullName: nodeValue
+    summary: >-
+      For EACH ITEM in the collection: Specifies the value of this XML node. For
+      element nodes, represents the text content; for attribute nodes,
+      represents the attribute value.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nodeValue?: boolean;'
+      return:
+        type: boolean
+  - name: ownerDocument
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member
+    package: word!
+    fullName: ownerDocument
+    summary: >-
+      For EACH ITEM in the collection: Gets the parent document of this XML
+      node.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'ownerDocument?: Word.Interfaces.DocumentLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.DocumentLoadOptions:interface" />
+  - name: parentNode
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member
+    package: word!
+    fullName: parentNode
+    summary: 'For EACH ITEM in the collection: Gets the parent element of this XML node.'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentNode?: Word.Interfaces.XmlNodeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlNodeLoadOptions:interface" />
+  - name: placeholderText
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#placeholderText:member
+    package: word!
+    fullName: placeholderText
+    summary: >-
+      For EACH ITEM in the collection: Specifies the text displayed for this
+      element if it contains no text. Only applies to element nodes, not
+      attribute nodes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'placeholderText?: boolean;'
+      return:
+        type: boolean
+  - name: previousSibling
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#previousSibling:member
+    package: word!
+    fullName: previousSibling
+    summary: >-
+      For EACH ITEM in the collection: Gets the previous element in the document
+      that's at the same level as this XML node. Returns `null` if the node type
+      is `attribute`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'previousSibling?: Word.Interfaces.XmlNodeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlNodeLoadOptions:interface" />
+  - name: range
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      For EACH ITEM in the collection: Gets the portion of a document that is
+      contained in this XML node. Returns `null` if the node type is
+      `attribute`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: text
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#text:member
+    package: word!
+    fullName: text
+    summary: >-
+      For EACH ITEM in the collection: Specifies the text contained within the
+      XML element. Returns an empty string if the node type is `attribute`<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: validationErrorText
+    uid: >-
+      word!Word.Interfaces.XmlNodeCollectionLoadOptions#validationErrorText:member
+    package: word!
+    fullName: validationErrorText
+    summary: >-
+      For EACH ITEM in the collection: Gets the description for a validation
+      error on this `XmlNode` object. May not be meaningful for attribute nodes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'validationErrorText?: boolean;'
+      return:
+        type: boolean
+  - name: validationStatus
+    uid: word!Word.Interfaces.XmlNodeCollectionLoadOptions#validationStatus:member
+    package: word!
+    fullName: validationStatus
+    summary: >-
+      For EACH ITEM in the collection: Gets whether this element is valid
+      according to the attached schema. May not be meaningful for attribute
+      nodes.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'validationStatus?: boolean;'
+      return:
+        type: boolean

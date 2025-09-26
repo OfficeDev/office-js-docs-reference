@@ -3489,55 +3489,13 @@ export declare namespace Word {
     export class DocumentCreated extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
-        /**
-         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly body: Word.Body;
-        /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the custom XML parts in the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         */
-        readonly customXmlParts: Word.CustomXmlPartCollection;
-        /**
-         * Gets the properties of the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly properties: Word.DocumentProperties;
-        /**
-         * Gets the collection of section objects in the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly sections: Word.SectionCollection;
-        /**
-         * Gets the add-in's settings in the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         */
-        readonly settings: Word.SettingCollection;
-        /**
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly saved: boolean;
+        
+        
+        
+        
+        
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -3546,87 +3504,14 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.DocumentCreated): void;
-        /**
-         * Adds a style into the document by name and type.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.5]
-         *
-         * @param name - Required. A string representing the style name.
-         * @param type - Required. The style type, including character, list, paragraph, or table.
-         */
-        addStyle(name: string, type: Word.StyleType): Word.Style;
-        /**
-         * Adds a style into the document by name and type.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.5]
-         *
-         * @param name - Required. A string representing the style name.
-         * @param type - Required. The style type, including character, list, paragraph, or table.
-         */
-        addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
-        /**
-         * Deletes a bookmark, if it exists, from the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         *
-         * @param name - Required. The case-insensitive bookmark name.
-         */
-        deleteBookmark(name: string): void;
-        /**
-         * Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         *
-         * @param name - Required. The case-insensitive bookmark name.
-         */
-        getBookmarkRange(name: string): Word.Range;
-        /**
-         * Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         *
-         * @param name - Required. The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an underscore character. Names can't be longer than 40 characters.
-         */
-        getBookmarkRangeOrNullObject(name: string): Word.Range;
-        /**
-         * Gets the currently supported content controls in the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.5]
-         *
-         * Important: If specific types are provided in the options parameter, only content controls of supported types are returned.
-         * Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-         * With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
-         *
-         * @param options - Optional. Options that define which content controls are returned.
-         */
-        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
-        /**
-         * Gets a StyleCollection object that represents the whole style set of the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.5]
-         */
-        getStyles(): Word.StyleCollection;
-        /**
-         * Inserts a document into the target document at a specific location with additional properties.
-                    Headers, footers, watermarks, and other section properties are copied by default.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.5]
-         *
-         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
-         *
-         * @param base64File - Required. The Base64-encoded content of a .docx file.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
-         */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Opens the document.
          *
@@ -3634,30 +3519,8 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         open(): void;
-        /**
-         * Saves the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         *
-         * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
-         *
-         * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.
-         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
-         */
-        save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
-        /**
-         * Saves the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         *
-         * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
-         *
-         * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.
-         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
-         */
-        save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -13753,20 +13616,8 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `DocumentCreated` object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
-            /**
-             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            body?: Word.Interfaces.BodyUpdateData;
-            /**
-             * Gets the properties of the document.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            properties?: Word.Interfaces.DocumentPropertiesUpdateData;
+            
+            
         }
         /** An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
@@ -15613,55 +15464,13 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
         export interface DocumentCreatedData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            contentControls?: Word.Interfaces.ContentControlData[];
-            /**
-            * Gets the custom XML parts in the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.4]
-            */
-            customXmlParts?: Word.Interfaces.CustomXmlPartData[];
-            /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesData;
-            /**
-            * Gets the collection of section objects in the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            sections?: Word.Interfaces.SectionData[];
-            /**
-            * Gets the add-in's settings in the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.4]
-            */
-            settings?: Word.Interfaces.SettingData[];
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
@@ -18477,27 +18286,9 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
-            /**
-             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            body?: Word.Interfaces.BodyLoadOptions;
-            /**
-             * Gets the properties of the document.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
+            
+            
+            
         }
         /**
          * Represents document properties.

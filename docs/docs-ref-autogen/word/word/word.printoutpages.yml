@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.PrintOutPages
+uid: word!Word.PrintOutPages:enum
+package: word!
+fullName: Word.PrintOutPages
+summary: Specifies which pages to print based on odd or even page numbers.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: all
+    uid: word!Word.PrintOutPages.all:member
+    package: word!
+    summary: >-
+      Represents printing all pages.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"All"'
+  - name: evenOnly
+    uid: word!Word.PrintOutPages.evenOnly:member
+    package: word!
+    summary: >-
+      Represents printing only even-numbered pages.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EvenOnly"'
+  - name: oddOnly
+    uid: word!Word.PrintOutPages.oddOnly:member
+    package: word!
+    summary: >-
+      Represents printing only odd-numbered pages.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OddOnly"'

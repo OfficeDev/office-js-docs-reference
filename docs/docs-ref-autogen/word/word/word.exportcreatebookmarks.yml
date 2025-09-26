@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.ExportCreateBookmarks
+uid: word!Word.ExportCreateBookmarks:enum
+package: word!
+fullName: Word.ExportCreateBookmarks
+summary: Specifies the type of bookmarks to create during export.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: headings
+    uid: word!Word.ExportCreateBookmarks.headings:member
+    package: word!
+    summary: >-
+      Creates bookmarks from headings.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Headings"'
+  - name: none
+    uid: word!Word.ExportCreateBookmarks.none:member
+    package: word!
+    summary: >-
+      Do not create bookmarks.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: wordBookmarks
+    uid: word!Word.ExportCreateBookmarks.wordBookmarks:member
+    package: word!
+    summary: >-
+      Creates bookmarks from Word bookmarks.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WordBookmarks"'
