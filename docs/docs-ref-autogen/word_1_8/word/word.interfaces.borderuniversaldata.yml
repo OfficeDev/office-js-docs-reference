@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderUniversalData
+uid: word!Word.Interfaces.BorderUniversalData:interface
+package: word!
+fullName: Word.Interfaces.BorderUniversalData
+summary: >-
+  An interface describing the data returned by calling
+  `borderUniversal.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

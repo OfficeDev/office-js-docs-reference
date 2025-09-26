@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlSchemaCollectionUpdateData
+uid: word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.CustomXmlSchemaCollectionUpdateData
+summary: >-
+  An interface for updating data on the `CustomXmlSchemaCollection` object, for
+  use in `customXmlSchemaCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.CustomXmlSchemaData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlSchemaData:interface" />[]

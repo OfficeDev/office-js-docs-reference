@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.ThreeDimensionalFormatData
+uid: word!Word.Interfaces.ThreeDimensionalFormatData:interface
+package: word!
+fullName: Word.Interfaces.ThreeDimensionalFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `threeDimensionalFormat.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

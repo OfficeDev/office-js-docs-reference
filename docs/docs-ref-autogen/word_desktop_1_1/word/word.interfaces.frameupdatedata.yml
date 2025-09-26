@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.FrameUpdateData
+uid: word!Word.Interfaces.FrameUpdateData:interface
+package: word!
+fullName: Word.Interfaces.FrameUpdateData
+summary: >-
+  An interface for updating data on the `Frame` object, for use in `frame.set({
+  ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

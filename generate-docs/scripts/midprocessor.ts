@@ -203,6 +203,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.dump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_3/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_2/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_1/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_5_hidden_document/snippets.yaml", yaml.dump(wordSnippets), "word");
@@ -262,6 +263,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle WordApiDesktop 1.3 case.
+        console.log(`\nStarting ${host}_desktop_1_3...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_3/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_3/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_3`);
         // Handle WordApiDesktop 1.2 case.
         console.log(`\nStarting ${host}_desktop_1_2...`);
         json = fsx.readFileSync(`${jsonPath}_desktop_1_2/${fileName}`).toString();

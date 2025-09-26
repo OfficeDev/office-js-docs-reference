@@ -13,7 +13,7 @@ The `WordApiDesktop` requirement set is a special requirement set that includes 
 When APIs in the `WordApiDesktop` requirement set are supported across all platforms, they'll be added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also continue to be tagged in this `WordApiDesktop` requirement set. To learn more about platform-specific requirements in general, see [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets).
 
 > [!IMPORTANT]
-> `WordApiDesktop 1.2` is a desktop-only requirement set. It's a superset of the WordApi 1.9 and WordApiDesktop 1.1.
+> `WordApiDesktop 1.2` is a desktop-only requirement set. It's a superset of WordApi 1.9 and WordApiDesktop 1.1.
 
 ## Recommended usage
 

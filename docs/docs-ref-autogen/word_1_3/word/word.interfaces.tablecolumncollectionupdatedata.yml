@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableColumnCollectionUpdateData
+uid: word!Word.Interfaces.TableColumnCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.TableColumnCollectionUpdateData
+summary: >-
+  An interface for updating data on the `TableColumnCollection` object, for use
+  in `tableColumnCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.TableColumnCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.TableColumnData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.TableColumnData:interface" />[]

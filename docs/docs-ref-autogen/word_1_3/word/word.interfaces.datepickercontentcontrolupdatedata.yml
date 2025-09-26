@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.DatePickerContentControlUpdateData
+uid: word!Word.Interfaces.DatePickerContentControlUpdateData:interface
+package: word!
+fullName: Word.Interfaces.DatePickerContentControlUpdateData
+summary: >-
+  An interface for updating data on the `DatePickerContentControl` object, for
+  use in `datePickerContentControl.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

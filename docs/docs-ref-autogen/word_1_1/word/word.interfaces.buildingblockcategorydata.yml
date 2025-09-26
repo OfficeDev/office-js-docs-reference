@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.BuildingBlockCategoryData
+uid: word!Word.Interfaces.BuildingBlockCategoryData:interface
+package: word!
+fullName: Word.Interfaces.BuildingBlockCategoryData
+summary: >-
+  An interface describing the data returned by calling
+  `buildingBlockCategory.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -962,6 +962,59 @@ methods:
         description: >-
           An array where each item represents an entry matched by the XPath
           query.
+  - name: set(properties, options)
+    uid: word!Word.CustomXmlPart#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.CustomXmlPartUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.CustomXmlPartUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.CustomXmlPart#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.CustomXmlPart): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.CustomXmlPart:class" />
+      return:
+        type: void
+        description: ''
   - name: setXml(xml)
     uid: word!Word.CustomXmlPart#setXml:member(1)
     package: word!

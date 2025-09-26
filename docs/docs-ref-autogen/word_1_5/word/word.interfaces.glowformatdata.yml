@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.GlowFormatData
+uid: word!Word.Interfaces.GlowFormatData:interface
+package: word!
+fullName: Word.Interfaces.GlowFormatData
+summary: >-
+  An interface describing the data returned by calling `glowFormat.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -1,0 +1,11 @@
+### YamlMime:TSType
+name: Word.Interfaces.BreakData
+uid: word!Word.Interfaces.BreakData:interface
+package: word!
+fullName: Word.Interfaces.BreakData
+summary: An interface describing the data returned by calling `break.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
