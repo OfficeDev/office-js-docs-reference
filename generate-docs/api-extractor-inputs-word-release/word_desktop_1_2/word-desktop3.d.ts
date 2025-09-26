@@ -1643,7 +1643,13 @@ export declare namespace Word {
          * [Api set: WordApi 1.7]
          */
         readonly checkboxContentControl: Word.CheckboxContentControl;
-        
+        /**
+         * Gets the data of the content control when its type is `ComboBox`. It's `null` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        readonly comboBoxContentControl: Word.ComboBoxContentControl;
         /**
          * Gets the collection of content control objects in the content control.
          *
@@ -1651,7 +1657,13 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
-        
+        /**
+         * Gets the data of the content control when its type is `DropDownList`. It's `null` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        readonly dropDownListContentControl: Word.DropDownListContentControl;
         /**
          * Gets the collection of endnotes in the content control.
          *
@@ -2291,8 +2303,152 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
-    
-    
+    /**
+     * Represents a list item in a dropdown list or combo box content control.
+     *
+     * @remarks
+     * [Api set: WordApi 1.9]
+     */
+    export class ContentControlListItem extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the display text of a list item for a dropdown list or combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        displayText: string;
+        /**
+         * Specifies the index location of a content control list item in the collection of list items.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        index: number;
+        /**
+         * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        value: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ContentControlListItemUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ContentControlListItem): void;
+        /**
+         * Deletes the list item.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        delete(): void;
+        /**
+         * Selects the list item and sets the text of the content control to the value of the list item.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        select(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ContentControlListItemLoadOptions): Word.ContentControlListItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ContentControlListItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ContentControlListItem;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ContentControlListItem;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ContentControlListItem;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ContentControlListItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ContentControlListItemData;
+    }
+    /**
+     * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
+     *
+     * @remarks
+     * [Api set: WordApi 1.9]
+     */
+    export class ContentControlListItemCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.ContentControlListItem[];
+        /**
+         * Gets the first list item in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        getFirst(): Word.ContentControlListItem;
+        /**
+         * Gets the first list item in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`.
+                    For further information,
+                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        getFirstOrNullObject(): Word.ContentControlListItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ContentControlListItemCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlListItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ContentControlListItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ContentControlListItemCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ContentControlListItemCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ContentControlListItemCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ContentControlListItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.ContentControlListItemCollectionData;
+    }
     /**
      * Specifies the options that define which content controls are returned.
      *
@@ -3374,13 +3530,7 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the custom XML parts in the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         */
-        readonly customXmlParts: Word.CustomXmlPartCollection;
+        
         /**
          * Gets the properties of the document.
          *
@@ -3395,13 +3545,7 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly sections: Word.SectionCollection;
-        /**
-         * Gets the add-in's settings in the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         */
-        readonly settings: Word.SettingCollection;
+        
         /**
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
          *
@@ -3419,33 +3563,9 @@ export declare namespace Word {
         set(properties: Word.DocumentCreated): void;
         
         
-        /**
-         * Deletes a bookmark, if it exists, from the document.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         *
-         * @param name - Required. The case-insensitive bookmark name.
-         */
-        deleteBookmark(name: string): void;
-        /**
-         * Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         *
-         * @param name - Required. The case-insensitive bookmark name.
-         */
-        getBookmarkRange(name: string): Word.Range;
-        /**
-         * Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.4]
-         *
-         * @param name - Required. The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an underscore character. Names can't be longer than 40 characters.
-         */
-        getBookmarkRangeOrNullObject(name: string): Word.Range;
+        
+        
+        
         
         
         
@@ -3693,8 +3813,132 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.DocumentPropertiesData;
     }
-    
-    
+    /**
+     * The data specific to content controls of type DropDownList.
+     *
+     * @remarks
+     * [Api set: WordApi 1.9]
+     */
+    export class DropDownListContentControl extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the collection of list items in the dropdown list content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        readonly listItems: Word.ContentControlListItemCollection;
+        /**
+         * Adds a new list item to this dropdown list content control and returns a {@link Word.ContentControlListItem} object.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         *
+         * @param displayText - Required. Display text of the list item.
+         * @param value - Optional. Value of the list item.
+         * @param index - Optional. Index location of the new item in the list. If an item exists at the position specified, the existing item is pushed down in the list. If omitted, the new item is added to the end of the list.
+         */
+        addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;
+        /**
+         * Deletes all list items in this dropdown list content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        deleteAllListItems(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.DropDownListContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.DropDownListContentControl;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.DropDownListContentControl;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.DropDownListContentControl;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.DropDownListContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DropDownListContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.DropDownListContentControlData;
+    }
+    /**
+     * The data specific to content controls of type 'ComboBox'.
+     *
+     * @remarks
+     * [Api set: WordApi 1.9]
+     */
+    export class ComboBoxContentControl extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the collection of list items in the combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        readonly listItems: Word.ContentControlListItemCollection;
+        /**
+         * Adds a new list item to this combo box content control and returns a {@link Word.ContentControlListItem} object.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         *
+         * @param displayText - Required. Display text of the list item.
+         * @param value - Optional. Value of the list item.
+         * @param index - Optional. Index location of the new item in the list. If an item exists at the position specified, the existing item is pushed down in the list. If omitted, the new item is added to the end of the list.
+         */
+        addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;
+        /**
+         * Deletes all list items in this combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        deleteAllListItems(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ComboBoxContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ComboBoxContentControl;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ComboBoxContentControl;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ComboBoxContentControl;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ComboBoxContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ComboBoxContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ComboBoxContentControlData;
+    }
     /**
      * Represents a field.
      *
@@ -16351,9 +16595,27 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `ContentControlListItem` object, for use in `contentControlListItem.set({ ... })`. */
         export interface ContentControlListItemUpdateData {
-            
-            
-            
+            /**
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            displayText?: string;
+            /**
+             * Specifies the index location of a content control list item in the collection of list items.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            index?: number;
+            /**
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            value?: string;
         }
         /** An interface for updating data on the `ContentControlListItemCollection` object, for use in `contentControlListItemCollection.set({ ... })`. */
         export interface ContentControlListItemCollectionUpdateData {
@@ -18249,7 +18511,13 @@ export declare namespace Word {
              * [Api set: WordApi 1.7]
              */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlData;
-            
+            /**
+            * Gets the data of the content control when its type is `ComboBox`. It's `null` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            comboBoxContentControl?: Word.Interfaces.ComboBoxContentControlData;
             /**
              * Gets the collection of content control objects in the content control.
              *
@@ -18257,7 +18525,13 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             contentControls?: Word.Interfaces.ContentControlData[];
-            
+            /**
+             * Gets the data of the content control when its type is `DropDownList`. It's `null` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            dropDownListContentControl?: Word.Interfaces.DropDownListContentControlData;
             /**
              * Gets the collection of field objects in the content control.
              *
@@ -18407,9 +18681,27 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `contentControlListItem.toJSON()`. */
         export interface ContentControlListItemData {
-            
-            
-            
+            /**
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            displayText?: string;
+            /**
+             * Specifies the index location of a content control list item in the collection of list items.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            index?: number;
+            /**
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            value?: string;
         }
         /** An interface describing the data returned by calling `contentControlListItemCollection.toJSON()`. */
         export interface ContentControlListItemCollectionData {
@@ -18557,13 +18849,7 @@ export declare namespace Word {
             * [Api set: WordApiHiddenDocument 1.3]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
-            /**
-            * Gets the custom XML parts in the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.4]
-            */
-            customXmlParts?: Word.Interfaces.CustomXmlPartData[];
+            
             /**
             * Gets the properties of the document.
             *
@@ -18578,13 +18864,7 @@ export declare namespace Word {
             * [Api set: WordApiHiddenDocument 1.3]
             */
             sections?: Word.Interfaces.SectionData[];
-            /**
-            * Gets the add-in's settings in the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.4]
-            */
-            settings?: Word.Interfaces.SettingData[];
+            
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
@@ -21536,8 +21816,72 @@ export declare namespace Word {
              */
             type?: boolean;
         }
-        
-        
+        /**
+         * Represents a list item in a dropdown list or combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        export interface ContentControlListItemLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            displayText?: boolean;
+            /**
+             * Specifies the index location of a content control list item in the collection of list items.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            index?: boolean;
+            /**
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            value?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        export interface ContentControlListItemCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            displayText?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the index location of a content control list item in the collection of list items.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            index?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.9]
+             */
+            value?: boolean;
+        }
         /**
          * Represents a custom property.
          *

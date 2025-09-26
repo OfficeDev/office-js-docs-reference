@@ -5,19 +5,380 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 ////////////////////////////////////////////////////////////////
 
 export declare namespace Word {
+    /**
+     * Represents the color scheme of a critique in the document, affecting underline and highlight.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    enum CritiqueColorScheme {
+        /**
+         * Red color.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        red = "Red",
+        /**
+         * Green color.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        green = "Green",
+        /**
+         * Blue color.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        blue = "Blue",
+        /**
+         * Lavender color.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        lavender = "Lavender",
+        /**
+         * Berry color.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        berry = "Berry",
+    }
     
+    /**
+     * Critique that will be rendered as underline for the specified part of paragraph in the document.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface Critique {
+        /**
+         * Specifies the color scheme of the critique.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";
+        /**
+         * Specifies the length of the critique inside paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        length: number;
+        
+        /**
+         * Specifies the start index of the critique inside paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        start: number;
+    }
+    /**
+     * Represents an annotation wrapper around critique displayed in the document.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export class CritiqueAnnotation extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the range of text that is annotated.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        readonly range: Word.Range;
+        /**
+         * Gets the critique that was passed when the annotation was inserted.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        readonly critique: Word.Critique;
+        /**
+         * Accepts the critique. This will change the annotation state to `accepted`.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        accept(): void;
+        /**
+         * Rejects the critique. This will change the annotation state to `rejected`.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        reject(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CritiqueAnnotationLoadOptions): Word.CritiqueAnnotation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CritiqueAnnotation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CritiqueAnnotation;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CritiqueAnnotation;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CritiqueAnnotation;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CritiqueAnnotation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CritiqueAnnotationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CritiqueAnnotationData;
+    }
+    /**
+     * Represents the state of the annotation.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    enum AnnotationState {
+        /**
+         * Created.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        created = "Created",
+        /**
+         * Accepted.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        accepted = "Accepted",
+        /**
+         * Rejected.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        rejected = "Rejected",
+    }
+    /**
+     * Annotations set produced by the add-in. Currently supporting only critiques.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface AnnotationSet {
+        /**
+         * Critiques.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        critiques: Word.Critique[];
+    }
+    /**
+     * Represents an annotation attached to a paragraph.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export class Annotation extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the critique annotation object.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        readonly critiqueAnnotation: Word.CritiqueAnnotation;
+        /**
+         * Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        readonly id: string;
+        /**
+         * Gets the state of the annotation.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        readonly state: Word.AnnotationState | "Created" | "Accepted" | "Rejected";
+        /**
+         * Deletes the annotation.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.AnnotationLoadOptions): Word.Annotation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Annotation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Annotation;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Annotation;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Annotation;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.Annotation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.AnnotationData;
+    }
+    /**
+     * Holds annotation information that is passed back on annotation added event.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface AnnotationInsertedEventArgs {
+        /**
+         * Specifies the annotation IDs for which the event was fired.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        ids: string[];
+    }
+    /**
+     * Holds annotation information that is passed back on annotation inserted event.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface AnnotationClickedEventArgs {
+        /**
+         * Specifies the annotation ID for which the event was fired.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        id: string;
+    }
+    /**
+     * Holds annotation information that is passed back on annotation removed event.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface AnnotationRemovedEventArgs {
+        /**
+         * Specifies the annotation IDs for which the event was fired.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        ids: string[];
+    }
+    /**
+     * Holds annotation information that is passed back on annotation hovered event.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface AnnotationHoveredEventArgs {
+        /**
+         * Specifies the annotation ID for which the event was fired.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        id: string;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    /**
+     * Contains a collection of {@link Word.Annotation} objects.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export class AnnotationCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Annotation[];
+        /**
+         * Gets the first annotation in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        getFirst(): Word.Annotation;
+        /**
+         * Gets the first annotation in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`.
+                    For further information,
+                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        getFirstOrNullObject(): Word.Annotation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.AnnotationCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.AnnotationCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.AnnotationCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.AnnotationCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.AnnotationCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.AnnotationCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.AnnotationCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): Word.Interfaces.AnnotationCollectionData;
+    }
     /**
      * Represents the application object.
      *
@@ -470,7 +831,65 @@ export declare namespace Word {
     }
     
     
-    
+    /**
+     * The data specific to content controls of type CheckBox.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export class CheckboxContentControl extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the current state of the checkbox.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        isChecked: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CheckboxContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.CheckboxContentControl): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CheckboxContentControlLoadOptions): Word.CheckboxContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CheckboxContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CheckboxContentControl;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.CheckboxContentControl;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CheckboxContentControl;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CheckboxContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CheckboxContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.CheckboxContentControlData;
+    }
     /**
      * Represents a comment in the document.
      *
@@ -942,7 +1361,13 @@ export declare namespace Word {
     export class ContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
-        
+        /**
+         * Gets the data of the content control when its type is `CheckBox`. It's `null` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        readonly checkboxContentControl: Word.CheckboxContentControl;
         
         /**
          * Gets the collection of content control objects in the content control.
@@ -2351,7 +2776,15 @@ export declare namespace Word {
          * @param name - Required. The case-insensitive bookmark name.
          */
         deleteBookmark(name: string): void;
-        
+        /**
+         * Gets the annotation by ID. Throws an `ItemNotFound` error if annotation isn't found.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * @param id - The ID of the annotation to get.
+         */
+        getAnnotationById(id: string): Word.Annotation;
         /**
          * Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
          *
@@ -2470,7 +2903,22 @@ export declare namespace Word {
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;
-                /**
+        /**
+         * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+            ignorePunct?: boolean;
+            ignoreSpace?: boolean;
+            matchCase?: boolean;
+            matchPrefix?: boolean;
+            matchSuffix?: boolean;
+            matchWholeWord?: boolean;
+            matchWildcards?: boolean;
+        }): Word.RangeCollection;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -2491,11 +2939,43 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Document;
+        /**
+         * Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * @eventproperty
+         */
+        readonly onAnnotationClicked: OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;
+        /**
+         * Occurs when the user hovers the cursor over an annotation.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * @eventproperty
+         */
+        readonly onAnnotationHovered: OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;
+        /**
+         * Occurs when the user adds one or more annotations.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * @eventproperty
+         */
+        readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;
         
-        
-        
-        
-        
+        /**
+         * Occurs when the user deletes one or more annotations.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * @eventproperty
+         */
+        readonly onAnnotationRemoved: OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;
         /**
          * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
          *
@@ -4492,7 +4972,15 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         detachFromList(): void;
-        
+        /**
+         * Gets annotations set on this Paragraph object.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * Important: This API requires a Microsoft 365 subscription in order to work properly because of an underlying service's requirement. For more about this, see {@link https://github.com/OfficeDev/office-js/issues/4953 | GitHub issue 4953}.
+         */
+        getAnnotations(): Word.AnnotationCollection;
         /**
          * Gets comments associated with the paragraph.
          *
@@ -4582,7 +5070,20 @@ export declare namespace Word {
          * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
         getReviewedText(changeTrackingVersion?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
-                /**
+        /**
+         * Returns the text of the paragraph. This excludes equations, graphics (e.g., images, videos, drawings), and special characters that mark various content (e.g., for content controls, fields, comments, footnotes, endnotes).
+                    By default, hidden text and text marked as deleted are excluded.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * @param options - Optional. Options that define whether the final result should include hidden text and text marked as deleted.
+         */
+        getText(options?: Word.GetTextOptions | {
+            IncludeHiddenText?: boolean;
+            IncludeTextMarkedAsDeleted?: boolean;
+        }): OfficeExtension.ClientResult<string>;
+        /**
          * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
          *
          * @remarks
@@ -4599,7 +5100,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.6]
          */
         getTrackedChanges(): Word.TrackedChangeCollection;
-        
+        /**
+         * Inserts annotations on this Paragraph object.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         *
+         * Important: This API requires a Microsoft 365 subscription in order to work properly because of an underlying service's requirement. For more about this, see {@link https://github.com/OfficeDev/office-js/issues/4953 | GitHub issue 4953}.
+         *
+         * @param annotations - Annotations to set.
+         * @returns An array of the inserted annotations identifiers.
+         */
+        insertAnnotations(annotations: Word.AnnotationSet): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts a break at the specified location in the main document.
          *
@@ -5695,7 +6207,13 @@ export declare namespace Word {
          * [Api set: WordApi 1.6]
          */
         importCustomXmlParts?: boolean;
-        
+        /**
+         * Represents whether to import the Different Odd and Even Pages setting for the header and footer from the source document.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        importDifferentOddEvenPages?: boolean;
         /**
          * Represents whether the page color and other background information from the source document should be imported.
          *
@@ -5823,7 +6341,28 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.SearchOptionsData;
     }
-    
+    /**
+     * Specifies the options to be included in a getText operation.
+     *
+     * @remarks
+     * [Api set: WordApi 1.7]
+     */
+    export interface GetTextOptions {
+        /**
+         * Specifies a value that indicates whether to include hidden text in the result of the GetText method. The default value is False.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        includeHiddenText?: boolean;
+        /**
+         * Specifies a value that indicates whether to include text marked as deleted in the result of the GetText method. The default value is False.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        includeTextMarkedAsDeleted?: boolean;
+    }
     
     /**
      * Represents a section in a Word document.
@@ -8228,7 +8767,31 @@ export declare namespace Word {
          * [Api set: WordApi 1.6]
          */
         paragraphDeleted = "ParagraphDeleted",
-                                            }
+        /**
+         * Represents that an annotation was clicked (or selected with **Alt+Down**) in the document.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        annotationClicked = "AnnotationClicked",
+        /**
+         * Represents that an annotation was hovered over in the document.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        annotationHovered = "AnnotationHovered",
+        /**
+         * Represents that one or more annotations were added in the document.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        annotationInserted = "AnnotationInserted",
+        /**
+         * Represents that one or more annotations were deleted from the document.
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        annotationRemoved = "AnnotationRemoved",
+            }
     /**
      * An enum that specifies an event's source. It can be local or remote (through coauthoring).
      *
@@ -11073,7 +11636,13 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`. */
         export interface CheckboxContentControlUpdateData {
-            
+            /**
+             * Specifies the current state of the checkbox.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            isChecked?: boolean;
         }
         /** An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
@@ -11171,7 +11740,13 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `ContentControl` object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
-            
+            /**
+             * Gets the data of the content control when its type is `CheckBox`. It's `null` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            checkboxContentControl?: Word.Interfaces.CheckboxContentControlUpdateData;
             /**
              * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
              *
@@ -12402,12 +12977,30 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
-            
+            /**
+             * Gets the critique that was passed when the annotation was inserted.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            critique?: Word.Critique;
         }
         /** An interface describing the data returned by calling `annotation.toJSON()`. */
         export interface AnnotationData {
-            
-            
+            /**
+             * Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            id?: string;
+            /**
+             * Gets the state of the annotation.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            state?: Word.AnnotationState | "Created" | "Accepted" | "Rejected";
         }
         /** An interface describing the data returned by calling `annotationCollection.toJSON()`. */
         export interface AnnotationCollectionData {
@@ -12510,7 +13103,13 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `checkboxContentControl.toJSON()`. */
         export interface CheckboxContentControlData {
-            
+            /**
+             * Specifies the current state of the checkbox.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            isChecked?: boolean;
         }
         /** An interface describing the data returned by calling `comment.toJSON()`. */
         export interface CommentData {
@@ -12685,7 +13284,13 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
-            
+            /**
+             * Gets the data of the content control when its type is `CheckBox`. It's `null` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            checkboxContentControl?: Word.Interfaces.CheckboxContentControlData;
             
             /**
              * Gets the collection of content control objects in the content control.
@@ -14502,9 +15107,98 @@ export declare namespace Word {
             
             
         }
-        
-        
-        
+        /**
+         * Represents an annotation wrapper around critique displayed in the document.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        export interface CritiqueAnnotationLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the range of text that is annotated.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            range?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Gets the critique that was passed when the annotation was inserted.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            critique?: boolean;
+        }
+        /**
+         * Represents an annotation attached to a paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        export interface AnnotationLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the critique annotation object.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;
+            /**
+             * Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            id?: boolean;
+            /**
+             * Gets the state of the annotation.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            state?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Annotation} objects.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        export interface AnnotationCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the critique annotation object.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the state of the annotation.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            state?: boolean;
+        }
         /**
          * Represents the body of a document or a section.
          *
@@ -14596,7 +15290,25 @@ export declare namespace Word {
         }
         
         
-        
+        /**
+         * The data specific to content controls of type CheckBox.
+         *
+         * @remarks
+         * [Api set: WordApi 1.7]
+         */
+        export interface CheckboxContentControlLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the current state of the checkbox.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            isChecked?: boolean;
+        }
         /**
          * Represents a comment in the document.
          *
@@ -14911,7 +15623,13 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
-            
+            /**
+             * Gets the data of the content control when its type is `CheckBox`. It's `null` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            checkboxContentControl?: Word.Interfaces.CheckboxContentControlLoadOptions;
             /**
              * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
              *
@@ -15078,7 +15796,13 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
-            
+            /**
+            * For EACH ITEM in the collection: Gets the data of the content control when its type is `CheckBox`. It's `null` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
+            checkboxContentControl?: Word.Interfaces.CheckboxContentControlLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
              *

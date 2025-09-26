@@ -124,28 +124,6 @@ methods:
           <xref uid="office!OfficeExtension.ClientResult:class"
           />&lt;boolean&gt;
         description: ''
-  - name: getItem(index)
-    uid: word!Word.TextColumnCollection#getItem:member(1)
-    package: word!
-    fullName: getItem(index)
-    summary: Gets a `TextColumn` by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getItem(index: number): Word.TextColumn;'
-      parameters:
-        - id: index
-          description: >-
-            A number that identifies the index location of a `TextColumn`
-            object.
-          type: number
-      return:
-        type: <xref uid="word!Word.TextColumn:class" />
-        description: ''
   - name: load(options)
     uid: word!Word.TextColumnCollection#load:member(1)
     package: word!

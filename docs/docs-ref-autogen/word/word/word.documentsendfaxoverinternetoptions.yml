@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Word.DocumentSendFaxOverInternetOptions
+uid: word!Word.DocumentSendFaxOverInternetOptions:interface
+package: word!
+fullName: Word.DocumentSendFaxOverInternetOptions
+summary: >-
+  Provides configuration options for the
+  [Document.sendFaxOverInternet](xref:word!Word.Document:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: recipients
+    uid: word!Word.DocumentSendFaxOverInternetOptions#recipients:member
+    package: word!
+    fullName: recipients
+    summary: >-
+      If provided, specifies the recipients of the fax. The default value is ""
+      (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'recipients?: string;'
+      return:
+        type: string
+  - name: showMessage
+    uid: word!Word.DocumentSendFaxOverInternetOptions#showMessage:member
+    package: word!
+    fullName: showMessage
+    summary: >-
+      If provided, specifies whether to show the message before sending. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showMessage?: boolean;'
+      return:
+        type: boolean
+  - name: subject
+    uid: word!Word.DocumentSendFaxOverInternetOptions#subject:member
+    package: word!
+    fullName: subject
+    summary: >-
+      If provided, specifies the subject of the fax. The default value is ""
+      (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string;'
+      return:
+        type: string
