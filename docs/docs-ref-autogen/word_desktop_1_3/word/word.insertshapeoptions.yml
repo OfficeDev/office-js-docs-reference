@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: Word.InsertShapeOptions
+uid: word!Word.InsertShapeOptions:interface
+package: word!
+fullName: Word.InsertShapeOptions
+summary: Specifies the options to determine location and size when inserting a shape.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+
+
+  await Word.run(async (context) => {
+    // Inserts a text box at the beginning of the selection.
+    const range: Word.Range = context.document.getSelection();
+    const insertShapeOptions: Word.InsertShapeOptions = {
+      top: 0,
+      left: 0,
+      height: 100,
+      width: 100
+    };
+
+    const newTextBox: Word.Shape = range.insertTextBox("placeholder text", insertShapeOptions);
+    await context.sync();
+
+    console.log("Inserted a text box at the beginning of the current selection.");
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: word!Word.InsertShapeOptions#height:member
+    package: word!
+    fullName: height
+    summary: Represents the height of the shape being inserted.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: left
+    uid: word!Word.InsertShapeOptions#left:member
+    package: word!
+    fullName: left
+    summary: Represents the left position of the shape being inserted.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: top
+    uid: word!Word.InsertShapeOptions#top:member
+    package: word!
+    fullName: top
+    summary: Represents the top position of the shape being inserted.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: width
+    uid: word!Word.InsertShapeOptions#width:member
+    package: word!
+    fullName: width
+    summary: Represents the width of the shape being inserted.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

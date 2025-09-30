@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.GroupContentControlData
+uid: word!Word.Interfaces.GroupContentControlData:interface
+package: word!
+fullName: Word.Interfaces.GroupContentControlData
+summary: >-
+  An interface describing the data returned by calling
+  `groupContentControl.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

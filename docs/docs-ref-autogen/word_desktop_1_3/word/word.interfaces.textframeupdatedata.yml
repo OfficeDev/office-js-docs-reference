@@ -1,0 +1,172 @@
+### YamlMime:TSType
+name: Word.Interfaces.TextFrameUpdateData
+uid: word!Word.Interfaces.TextFrameUpdateData:interface
+package: word!
+fullName: Word.Interfaces.TextFrameUpdateData
+summary: >-
+  An interface for updating data on the `TextFrame` object, for use in
+  `textFrame.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: autoSizeSetting
+    uid: word!Word.Interfaces.TextFrameUpdateData#autoSizeSetting:member
+    package: word!
+    fullName: autoSizeSetting
+    summary: >-
+      The automatic sizing settings for the text frame. A text frame can be set
+      to automatically fit the text to the text frame, to automatically fit the
+      text frame to the text, or not perform any automatic sizing.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        autoSizeSetting?: Word.ShapeAutoSize | "None" | "TextToFitShape" |
+        "ShapeToFitText" | "Mixed";
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeAutoSize:enum" /> | "None" |
+          "TextToFitShape" | "ShapeToFitText" | "Mixed"
+  - name: bottomMargin
+    uid: word!Word.Interfaces.TextFrameUpdateData#bottomMargin:member
+    package: word!
+    fullName: bottomMargin
+    summary: Represents the bottom margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin?: number;'
+      return:
+        type: number
+  - name: leftMargin
+    uid: word!Word.Interfaces.TextFrameUpdateData#leftMargin:member
+    package: word!
+    fullName: leftMargin
+    summary: Represents the left margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin?: number;'
+      return:
+        type: number
+  - name: noTextRotation
+    uid: word!Word.Interfaces.TextFrameUpdateData#noTextRotation:member
+    package: word!
+    fullName: noTextRotation
+    summary: >-
+      Returns True if text in the text frame shouldn't rotate when the shape is
+      rotated.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'noTextRotation?: boolean;'
+      return:
+        type: boolean
+  - name: orientation
+    uid: word!Word.Interfaces.TextFrameUpdateData#orientation:member
+    package: word!
+    fullName: orientation
+    summary: >-
+      Represents the angle to which the text is oriented for the text frame. See
+      `Word.ShapeTextOrientation` for details.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        orientation?: Word.ShapeTextOrientation | "None" | "Horizontal" |
+        "EastAsianVertical" | "Vertical270" | "Vertical" |
+        "EastAsianHorizontalRotated" | "Mixed";
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeTextOrientation:enum" /> | "None" |
+          "Horizontal" | "EastAsianVertical" | "Vertical270" | "Vertical" |
+          "EastAsianHorizontalRotated" | "Mixed"
+  - name: rightMargin
+    uid: word!Word.Interfaces.TextFrameUpdateData#rightMargin:member
+    package: word!
+    fullName: rightMargin
+    summary: Represents the right margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin?: number;'
+      return:
+        type: number
+  - name: topMargin
+    uid: word!Word.Interfaces.TextFrameUpdateData#topMargin:member
+    package: word!
+    fullName: topMargin
+    summary: Represents the top margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topMargin?: number;'
+      return:
+        type: number
+  - name: verticalAlignment
+    uid: word!Word.Interfaces.TextFrameUpdateData#verticalAlignment:member
+    package: word!
+    fullName: verticalAlignment
+    summary: >-
+      Represents the vertical alignment of the text frame. See
+      `Word.ShapeTextVerticalAlignment` for details.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        verticalAlignment?: Word.ShapeTextVerticalAlignment | "Top" | "Middle" |
+        "Bottom";
+      return:
+        type: >-
+          <xref uid="word!Word.ShapeTextVerticalAlignment:enum" /> | "Top" |
+          "Middle" | "Bottom"
+  - name: wordWrap
+    uid: word!Word.Interfaces.TextFrameUpdateData#wordWrap:member
+    package: word!
+    fullName: wordWrap
+    summary: Determines whether lines break automatically to fit text inside the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'wordWrap?: boolean;'
+      return:
+        type: boolean

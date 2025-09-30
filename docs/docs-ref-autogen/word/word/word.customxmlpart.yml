@@ -51,10 +51,10 @@ properties:
     fullName: builtIn
     summary: Gets a value that indicates whether the `CustomXmlPart` is built-in.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly builtIn: boolean;'
@@ -83,10 +83,10 @@ properties:
       Gets the root element of a bound region of data in the document. If the
       region is empty, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly documentElement: Word.CustomXmlNode;'
@@ -165,10 +165,10 @@ properties:
       Gets the set of namespace prefix mappings used against the current
       `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly namespaceManager: Word.CustomXmlPrefixMappingCollection;'
@@ -233,10 +233,10 @@ properties:
       Specifies a `CustomXmlSchemaCollection` object representing the set of
       schemas attached to a bound region of data in the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'schemaCollection: Word.CustomXmlSchemaCollection;'
@@ -248,10 +248,10 @@ properties:
     fullName: xml
     summary: Gets the XML representation of the current `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly xml: string;'
@@ -264,10 +264,10 @@ methods:
     fullName: addNode(parent, options)
     summary: Adds a node to the XML tree.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -954,10 +954,10 @@ methods:
     fullName: loadXml(xml)
     summary: Populates the `CustomXmlPart` object from an XML string.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadXml(xml: string): OfficeExtension.ClientResult<boolean>;'
@@ -1113,10 +1113,10 @@ methods:
     fullName: selectNodes(xPath)
     summary: Selects a collection of nodes from a custom XML part.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'selectNodes(xPath: string): Word.CustomXmlNodeCollection;'
@@ -1135,10 +1135,10 @@ methods:
       Selects a single node within a custom XML part matching an XPath
       expression.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'selectSingleNode(xPath: string): Word.CustomXmlNode;'
