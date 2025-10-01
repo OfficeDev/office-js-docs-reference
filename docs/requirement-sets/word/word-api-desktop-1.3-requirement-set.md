@@ -34,7 +34,7 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 The following table lists the Word JavaScript APIs currently included in the `WordApiDesktop 1.3` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiDesktop 1.3` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-desktop-1.1&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-desktop-1_2.md)]
+[!INCLUDE[API table](../../includes/word-desktop-1_3.md)]
 
 ## See also
 
