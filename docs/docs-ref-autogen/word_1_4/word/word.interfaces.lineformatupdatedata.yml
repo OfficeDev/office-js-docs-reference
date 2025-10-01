@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.LineFormatUpdateData
+uid: word!Word.Interfaces.LineFormatUpdateData:interface
+package: word!
+fullName: Word.Interfaces.LineFormatUpdateData
+summary: >-
+  An interface for updating data on the `LineFormat` object, for use in
+  `lineFormat.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

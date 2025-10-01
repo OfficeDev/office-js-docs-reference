@@ -111,10 +111,10 @@ properties:
       [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
       `BuildingBlockGallery`<!-- -->. It's `null` otherwise.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -342,10 +342,10 @@ properties:
       [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
       `DatePicker`<!-- -->. It's `null` otherwise.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly datePickerContentControl: Word.DatePickerContentControl;'
@@ -484,10 +484,10 @@ properties:
       [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
       `Group`<!-- -->. It's `null` otherwise.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly groupContentControl: Word.GroupContentControl;'
@@ -698,10 +698,10 @@ properties:
       [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
       `Picture`<!-- -->. It's `null` otherwise.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly pictureContentControl: Word.PictureContentControl;'
@@ -750,10 +750,10 @@ properties:
       [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is
       `RepeatingSection`<!-- -->. It's `null` otherwise.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1063,10 +1063,10 @@ properties:
       Returns an `XmlMapping` object that represents the mapping of the content
       control to XML data in the data store of the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly xmlMapping: Word.XmlMapping;'
