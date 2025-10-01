@@ -2,6 +2,7 @@
     "inputFolders": [
         "../docs/docs-ref-autogen/excel/custom-functions-runtime",
         "../docs/docs-ref-autogen/excel/excel",
+        "../docs/docs-ref-autogen/excel",
         "../docs/docs-ref-autogen/office/office",
         "../docs/docs-ref-autogen/office-runtime/office-runtime",
         "../docs/docs-ref-autogen/onenote/onenote",
@@ -12,6 +13,12 @@
     ],
     "outputFolder": "",
     "notIncludedPatterns": [
-        ".interfaces."
+        "*.interfaces.*",
+        "../docs/docs-ref-autogen/excel_*/*",
+        "../docs/docs-ref-autogen/office_*/*",
+        "../docs/docs-ref-autogen/outlook_*/*",
+        "../docs/docs-ref-autogen/powerpoint_*/*",
+        "../docs/docs-ref-autogen/visio_*/*",
+        "../docs/docs-ref-autogen/word_*/*"
     ]
 }
