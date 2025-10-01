@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.19
 description: Details about the ExcelApi 1.19 requirement set.
-ms.date: 05/13/2025
+ms.date: 10/01/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -15,7 +15,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
 | Chart labels | Control the appearance of chart labels. | [ChartDataLabel](/javascript/api/excel/excel.chartdatalabel), [ChartDataLabelAnchor](/javascript/api/excel/excel.chartdatalabelanchor), [ChartLeaderLines](/javascript/api/excel/excel.chartleaderlines), [ChartLeaderLinesFormat](/javascript/api/excel/excel.chartleaderlinesformat) |
-| Linked data types | Adds support for data types connected to Excel from external sources. To learn more, see [Create linked entity cell values](/office/dev/add-ins/excel/excel-data-types-linked-entity-cell-values) | [LinkedDataType](/javascript/api/excel/excel.linkeddatatype), [LinkedDataTypeAddedEventArgs](/javascript/api/excel/excel.linkeddatatypeaddedeventargs), [LinkedDataTypeCollection](/javascript/api/excel/excel.linkeddatatypecollection) |
+| Linked entities | Adds support for data types connected to Excel from external sources. To learn more, see [Create linked entity cell values](/office/dev/add-ins/excel/excel-data-types-linked-entity-cell-values) | [LinkedEntityDataDomain](/javascript/api/excel/excel.linkedentitydatadomain), [LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection), [LinkedEntityDataDomainAddedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainaddedeventargs), [LinkedEntityDataDomainCreateOptions](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions), [LinkedEntityDataDomainRefreshCompletedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs), [LinkedEntityDataDomainRefreshModeChangedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs), [LinkedEntityIdCulture](/javascript/api/excel/excel.linkedentityidculture), [LinkedEntityLoadServiceRequest](/javascript/api/excel/excel.linkedentityloadservicerequest), [LinkedEntityLoadServiceResult](/javascript/api/excel/excel.linkedentityloadserviceresult) |
 
 ## API list
 
