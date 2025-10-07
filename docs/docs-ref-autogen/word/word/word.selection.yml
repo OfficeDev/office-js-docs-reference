@@ -1815,10 +1815,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: insertXML(xml, transform)
-    uid: word!Word.Selection#insertXML:member(1)
+  - name: insertXml(xml, transform)
+    uid: word!Word.Selection#insertXml:member(1)
     package: word!
-    fullName: insertXML(xml, transform)
+    fullName: insertXml(xml, transform)
     summary: >-
       Inserts the specified XML into the document at the cursor, replacing any
       selected text.
@@ -1829,7 +1829,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'insertXML(xml: string, transform?: string): void;'
+      content: 'insertXml(xml: string, transform?: string): void;'
       parameters:
         - id: xml
           description: The XML string to insert.
