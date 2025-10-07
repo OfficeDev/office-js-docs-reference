@@ -291,6 +291,15 @@ properties:
       -->**: Appointment Organizer
 
 
+      **Important**: To manage the locations of an appointment in Outlook
+      clients that don't support Mailbox requirement set 1.8, use the `location`
+      property instead. For guidance on selecting the right location API for
+      your scenario, see [Get or set the location when composing an appointmnt
+      in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
+
+
       #### Examples
 
 
@@ -434,6 +443,11 @@ properties:
       provides methods that are used to get and set the location of the
       appointment.
     remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -442,6 +456,16 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**: The `enhancedLocation` property was introduced in
+      Mailbox requirement set 1.8. Use the `enhancedLocation` property to better
+      identify and manage appointment locations, especially if you need to
+      determine the location type. For guidance on selecting the right location
+      API for your scenario, see [Get or set the location when composing an
+      appointmnt in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
 
 
       #### Examples

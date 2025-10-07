@@ -1512,6 +1512,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead.
+         * For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         enhancedLocation: EnhancedLocation;
         /**
@@ -1532,9 +1536,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: Location;
         /**
@@ -2956,6 +2966,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead.
+         * For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         enhancedLocation: EnhancedLocation;
         /**
@@ -3011,9 +3025,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: string;
         /**
@@ -5573,6 +5593,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the Office.Location API instead.
+     * For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface EnhancedLocation {
         /**
@@ -5618,9 +5642,6 @@ export declare namespace Office {
         /**
          * Gets the set of locations associated with the appointment.
          *
-         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
-         * added as appointment locations aren't returned by this method.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
@@ -5628,18 +5649,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getAsync` method doesn't return {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | personal contact groups} that
+         * were added to the **Location** field of an appointment.
+         *
+         * - If a location was added using `Office.context.mailbox.item.location.setAsync`, its location type is `Office.MailboxEnums.LocationType.Custom`.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. An array of `Office.LocationDetails` objects representing the locations of the
+         *        appointment is returned in the `asyncResult.value` property.
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
          *
-         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
-         * added as appointment locations aren't returned by this method.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
@@ -5647,8 +5673,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getAsync` method doesn't return {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | personal contact groups} that
+         * were added to the **Location** field of an appointment.
+         *
+         * - If a location was added using `Office.context.mailbox.item.location.setAsync`, its location type is `Office.MailboxEnums.LocationType.Custom`.
+         *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. An array of `Office.LocationDetails` objects representing the locations of the
+         *        appointment is returned in the `asyncResult.value` property.
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
@@ -6268,6 +6302,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: The Office.EnhancedLocation API was introduced in Mailbox requirement set 1.8. Use the EnhancedLocation API to better identify and manage
+     * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface Location {
         /**
@@ -6319,6 +6357,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
+         *
          * **Errors**:
          *
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
@@ -6342,6 +6383,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
          *
          * **Errors**:
          *

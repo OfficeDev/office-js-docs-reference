@@ -542,7 +542,7 @@ excel,Excel.CardLayoutListSection,N/A,Interface,Unknown,false
 excel,Excel.CardLayoutListSection,"layout",Property,Poor,false
 excel,Excel.CardLayoutPropertyReference,N/A,Interface,Unknown,false
 excel,Excel.CardLayoutPropertyReference,"property",Property,Good,false
-excel,Excel.CardLayoutSection,N/A,TypeAlias,Fine,false
+excel,Excel.CardLayoutSection,N/A,TypeAlias,Fine,true
 excel,Excel.CardLayoutSectionStandardProperties,N/A,Interface,Unknown,false
 excel,Excel.CardLayoutSectionStandardProperties,"collapsed",Property,Fine,false
 excel,Excel.CardLayoutSectionStandardProperties,"collapsible",Property,Excellent,false
@@ -557,7 +557,7 @@ excel,Excel.CardLayoutTableSection,N/A,Interface,Unknown,false
 excel,Excel.CardLayoutTableSection,"layout",Property,Poor,false
 excel,Excel.CardLayoutTwoColumnSection,N/A,Interface,Unknown,false
 excel,Excel.CardLayoutTwoColumnSection,"layout",Property,Poor,false
-excel,Excel.CellBorder,N/A,Interface,Unknown,false
+excel,Excel.CellBorder,N/A,Interface,Unknown,true
 excel,Excel.CellBorder,"color",Property,Good,false
 excel,Excel.CellBorder,"style",Property,Good,false
 excel,Excel.CellBorder,"tintAndShade",Property,Good,false
@@ -2435,7 +2435,7 @@ excel,Excel.DataValidationAlertStyle,N/A,Enum,Unknown,false
 excel,Excel.DataValidationAlertStyle,"information",EnumField,Fine,false
 excel,Excel.DataValidationAlertStyle,"stop",EnumField,Fine,false
 excel,Excel.DataValidationAlertStyle,"warning",EnumField,Fine,false
-excel,Excel.DataValidationErrorAlert,N/A,Interface,Unknown,false
+excel,Excel.DataValidationErrorAlert,N/A,Interface,Unknown,true
 excel,Excel.DataValidationErrorAlert,"message",Property,Fine,false
 excel,Excel.DataValidationErrorAlert,"showAlert",Property,Excellent,false
 excel,Excel.DataValidationErrorAlert,"style",Property,Fine,false
@@ -2717,7 +2717,7 @@ excel,Excel.EntityArrayCardLayout,"displayName",Property,Excellent,false
 excel,Excel.EntityArrayCardLayout,"firstRowIsHeader",Property,Good,false
 excel,Excel.EntityArrayCardLayout,"layout",Property,Poor,false
 excel,Excel.EntityArrayCardLayout,"rowsToReport",Property,Good,false
-excel,Excel.EntityCardLayout,N/A,Interface,Fine,false
+excel,Excel.EntityCardLayout,N/A,Interface,Fine,true
 excel,Excel.EntityCardLayout,"layout",Property,Poor,false
 excel,Excel.EntityCardLayoutType,N/A,Enum,Fine,false
 excel,Excel.EntityCardLayoutType,"array",EnumField,Good,false
@@ -3286,8 +3286,8 @@ excel,Excel.EntityCompactLayoutIcons,"xray",EnumField,Fine,false
 excel,Excel.EntityCompactLayoutIcons,"yoga",EnumField,Fine,false
 excel,Excel.EntityPropertyExtraProperties,N/A,Interface,Unknown,false
 excel,Excel.EntityPropertyExtraProperties,"propertyMetadata",Property,Fine,false
-excel,Excel.EntityPropertyType,N/A,TypeAlias,Good,false
-excel,Excel.EntityViewLayouts,N/A,Interface,Unknown,false
+excel,Excel.EntityPropertyType,N/A,TypeAlias,Good,true
+excel,Excel.EntityViewLayouts,N/A,Interface,Unknown,true
 excel,Excel.EntityViewLayouts,"card",Property,Excellent,false
 excel,Excel.EntityViewLayouts,"compact",Property,Great,false
 excel,Excel.ErrorCellValue,N/A,TypeAlias,Good,true
@@ -9224,8 +9224,8 @@ outlook,Office.EmailUser,"emailAddress",Property,Poor,false
 outlook,Office.EnhancedLocation,N/A,Interface,Unknown,false
 outlook,Office.EnhancedLocation,"addAsync(locationIdentifiers, options, callback)",Method,Fine,true
 outlook,Office.EnhancedLocation,"addAsync(locationIdentifiers, callback)",Method,Fine,false
-outlook,Office.EnhancedLocation,"getAsync(options, callback)",Method,Good,true
-outlook,Office.EnhancedLocation,"getAsync(callback)",Method,Good,false
+outlook,Office.EnhancedLocation,"getAsync(options, callback)",Method,Fine,true
+outlook,Office.EnhancedLocation,"getAsync(callback)",Method,Fine,false
 outlook,Office.EnhancedLocation,"removeAsync(locationIdentifiers, options, callback)",Method,Good,true
 outlook,Office.EnhancedLocation,"removeAsync(locationIdentifiers, callback)",Method,Good,false
 outlook,Office.EnhancedLocationsChangedEventArgs,N/A,Interface,Fine,true
@@ -9361,7 +9361,7 @@ outlook,Office.Location,N/A,Interface,Unknown,false
 outlook,Office.Location,"getAsync(options, callback)",Method,Excellent,true
 outlook,Office.Location,"getAsync(callback)",Method,Excellent,true
 outlook,Office.Location,"setAsync(location, options, callback)",Method,Good,true
-outlook,Office.Location,"setAsync(location, callback)",Method,Good,false
+outlook,Office.Location,"setAsync(location, callback)",Method,Good,true
 outlook,Office.LocationDetails,N/A,Interface,Unknown,true
 outlook,Office.LocationDetails,"displayName",Property,Poor,false
 outlook,Office.LocationDetails,"emailAddress",Property,Fine,false
@@ -10780,7 +10780,7 @@ powerpoint,PowerPoint.ShapeZOrder,"bringForward",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeZOrder,"bringToFront",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeZOrder,"sendBackward",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeZOrder,"sendToBack",EnumField,Fine,false
-powerpoint,PowerPoint.Slide,N/A,Class,Good,true
+powerpoint,PowerPoint.Slide,N/A,Class,Unknown,true
 powerpoint,PowerPoint.Slide,"background",Property,Poor,false
 powerpoint,PowerPoint.Slide,"context",Property,Excellent,false
 powerpoint,PowerPoint.Slide,"customXmlParts",Property,Good,false
@@ -10794,7 +10794,7 @@ powerpoint,PowerPoint.Slide,"tags",Property,Fine,false
 powerpoint,PowerPoint.Slide,"themeColorScheme",Property,Fine,false
 powerpoint,PowerPoint.Slide,"applyLayout(slideLayout)",Method,Good,false
 powerpoint,PowerPoint.Slide,"delete()",Method,Great,true
-powerpoint,PowerPoint.Slide,"exportAsBase64()",Method,Fine,true
+powerpoint,PowerPoint.Slide,"exportAsBase64()",Method,Good,true
 powerpoint,PowerPoint.Slide,"getImageAsBase64(options)",Method,Great,true
 powerpoint,PowerPoint.Slide,"load(options)",Method,Excellent,false
 powerpoint,PowerPoint.Slide,"load(propertyNames)",Method,Excellent,false
@@ -17219,7 +17219,7 @@ word,Word.Selection,"insertRowsAbove(numRows)",Method,Poor,false
 word,Word.Selection,"insertRowsBelow(numRows)",Method,Poor,false
 word,Word.Selection,"insertSymbol(characterNumber, options)",Method,Good,false
 word,Word.Selection,"insertText(Text)",Method,Fine,false
-word,Word.Selection,"insertXML(xml, transform)",Method,Good,false
+word,Word.Selection,"insertXml(xml, transform)",Method,Good,false
 word,Word.Selection,"isEqual(range)",Method,Great,false
 word,Word.Selection,"isInRange(range)",Method,Excellent,false
 word,Word.Selection,"isInStory(range)",Method,Great,false
