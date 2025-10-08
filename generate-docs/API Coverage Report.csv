@@ -9125,6 +9125,7 @@ outlook,Office.AttachmentDetails,"name",Property,Poor,false
 outlook,Office.AttachmentDetails,"size",Property,Poor,false
 outlook,Office.AttachmentDetailsCompose,N/A,Interface,Unknown,true
 outlook,Office.AttachmentDetailsCompose,"attachmentType",Property,Fine,false
+outlook,Office.AttachmentDetailsCompose,"contentId",Property,Good,false
 outlook,Office.AttachmentDetailsCompose,"id",Property,Poor,false
 outlook,Office.AttachmentDetailsCompose,"isInline",Property,Good,false
 outlook,Office.AttachmentDetailsCompose,"name",Property,Poor,false

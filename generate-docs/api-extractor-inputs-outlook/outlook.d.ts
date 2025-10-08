@@ -4116,6 +4116,24 @@ export declare namespace Office {
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `contentId` property is only supported in Outlook on the web and the new Outlook on Windows.
+         *
+         * - Starting November 15, 2025, changes to how inline images are represented in the HTML body of Outlook emails in
+         * Outlook on the web and the new Outlook on Windows will begin rolling out to production users.
+         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
+         * After the change, the image will be represented by a content ID (`cid`) in the `src` attribute instead.
+         * As a result, you'll need to update your add-in's parsing logic if you parse the attachment ID from the HTML editor or
+         * get the Base64 value of the image from the URL in the `src` attribute. For more information, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         */
+        contentId: string;
+        /**
          * Gets the index of the attachment.
          */
         id: string;
