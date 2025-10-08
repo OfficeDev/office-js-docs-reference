@@ -58,7 +58,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the name of the error in the
       `CustomXmlValidationError` object. If no errors exist, the property
-      returns `Nothing`
+      returns `"Nothing"`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

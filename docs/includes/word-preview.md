@@ -676,7 +676,7 @@
 ||[insertRowsBelow(numRows: number)](/javascript/api/word/word.selection#word-word-selection-insertrowsbelow-member(1))|Inserts rows below the current selection.|
 ||[insertSymbol(characterNumber: number, options?: Word.SelectionInsertSymbolOptions)](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))|Inserts a symbol in place of the specified selection.|
 ||[insertText(Text: string)](/javascript/api/word/word.selection#word-word-selection-inserttext-member(1))|Inserts the specified text.|
-||[insertXML(xml: string, transform?: string)](/javascript/api/word/word.selection#word-word-selection-insertxml-member(1))|Inserts the specified XML into the document at the cursor, replacing any selected text.|
+||[insertXml(xml: string, transform?: string)](/javascript/api/word/word.selection#word-word-selection-insertxml-member(1))|Inserts the specified XML into the document at the cursor, replacing any selected text.|
 ||[isActive](/javascript/api/word/word.selection#word-word-selection-isactive-member)|Returns whether the selection in the specified window or pane is active.|
 ||[isColumnSelectModeActive](/javascript/api/word/word.selection#word-word-selection-iscolumnselectmodeactive-member)|Specifies whether column selection mode is active.|
 ||[isEndOfRowMark](/javascript/api/word/word.selection#word-word-selection-isendofrowmark-member)|Returns whether the selection is at the end-of-row mark in a table.|
