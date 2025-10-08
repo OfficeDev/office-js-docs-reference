@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 09/11/2025
+ms.date: 10/09/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -77,7 +77,7 @@ Added a new property that represents if an appointment is an all-day event.
 
 ### Decrypt a message and its attachments
 
-#### [OnMessageDecrypt event](/office/dev/add-ins/develop/event-based-activation#outlook-events)
+#### [OnMessageRead event](/office/dev/add-ins/develop/event-based-activation#outlook-events)
 
 Added a decryption event that occurs when the header of an encrypted message matches the header key of an installed encryption add-in.
 
@@ -91,13 +91,13 @@ Updated the `HeaderName` attribute of the **\<LaunchEvent\>** XML element to spe
 
 #### [Event.completed method](/javascript/api/outlook/office.mailboxevent?view=outlook-js-preview&preserve-view=true#outlook-office-mailboxevent-completed-member(1))
 
-Updated the `event.completed` method to indicate when an encryption add-in has completed processing the `OnMessageDecrypt` event.
+Updated the `event.completed` method to indicate when an encryption add-in has completed processing the `OnMessageRead` event.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.MessageDecryptEventCompletedOptions](/javascript/api/outlook/office.messagedecrypteventcompletedoptions?view=outlook-js-preview&preserve-view=true)
 
-Added an object to specify the behavior of an encryption add-in after it completes processing an `OnMessageDecrypt` event.
+Added an object to specify the behavior of an encryption add-in after it completes processing an `OnMessageRead` event.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
