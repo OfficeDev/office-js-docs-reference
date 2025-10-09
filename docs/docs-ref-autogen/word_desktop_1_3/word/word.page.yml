@@ -32,11 +32,11 @@ remarks: >-
     const pagesText = [];
     for (let i = 0; i < pages.items.length; i++) {
       const page = pages.items[i];
-      page.load('index');
+      page.load("index");
       pagesIndexes.push(page);
 
       const range = page.getRange();
-      range.load('text');
+      range.load("text");
       pagesText.push(range);
     }
 
@@ -140,11 +140,11 @@ properties:
         const pagesText = [];
         for (let i = 0; i < pages.items.length; i++) {
           const page = pages.items[i];
-          page.load('index');
+          page.load("index");
           pagesIndexes.push(page);
 
           const range = page.getRange();
-          range.load('text');
+          range.load("text");
           pagesText.push(range);
         }
 
@@ -254,11 +254,11 @@ methods:
         const pagesText = [];
         for (let i = 0; i < pages.items.length; i++) {
           const page = pages.items[i];
-          page.load('index');
+          page.load("index");
           pagesIndexes.push(page);
 
           const range = page.getRange();
-          range.load('text');
+          range.load("text");
           pagesText.push(range);
         }
 
