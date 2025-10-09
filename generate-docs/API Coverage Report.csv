@@ -16059,7 +16059,7 @@ word,Word.Pane,"load(propertyNamesAndPaths)",Method,Excellent,false
 word,Word.Pane,"toJSON()",Method,Excellent,false
 word,Word.Pane,"track()",Method,Excellent,false
 word,Word.Pane,"untrack()",Method,Excellent,false
-word,Word.PaneCollection,N/A,Class,Unknown,false
+word,Word.PaneCollection,N/A,Class,Unknown,true
 word,Word.PaneCollection,"context",Property,Excellent,false
 word,Word.PaneCollection,"items",Property,Poor,false
 word,Word.PaneCollection,"getFirst()",Method,Great,false
@@ -18958,7 +18958,7 @@ word,Word.Window,"untrack()",Method,Excellent,false
 word,Word.WindowCloseOptions,N/A,Interface,Unknown,false
 word,Word.WindowCloseOptions,"routeDocument",Property,Excellent,false
 word,Word.WindowCloseOptions,"saveChanges",Property,Excellent,false
-word,Word.WindowCollection,N/A,Class,Unknown,false
+word,Word.WindowCollection,N/A,Class,Unknown,true
 word,Word.WindowCollection,"context",Property,Excellent,false
 word,Word.WindowCollection,"items",Property,Poor,false
 word,Word.WindowCollection,"getFirst()",Method,Great,false
