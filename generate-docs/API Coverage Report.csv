@@ -7424,6 +7424,8 @@ office,Office.EventType,"SettingsChanged",EnumField,Fine,false
 office,Office.EventType,"SpamReporting",EnumField,Great,false
 office,Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 office,Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
+office,Office.ExtensionLifeCycle,N/A,Interface,Good,false
+office,Office.ExtensionLifeCycle,"taskpane",Property,Good,false
 office,Office.File,N/A,Interface,Unknown,true
 office,Office.File,"size",Property,Poor,false
 office,Office.File,"sliceCount",Property,Fine,false
@@ -8146,6 +8148,8 @@ office,Office.TableBinding,"setTableOptionsAsync(tableOptions, callback)",Method
 office,Office.TableData,N/A,Class,Unknown,false
 office,Office.TableData,"headers",Property,Poor,true
 office,Office.TableData,"rows",Property,Excellent,true
+office,Office.TaskPane,N/A,Interface,Unknown,false
+office,Office.TaskPane,"setWidth(width)",Method,Fine,false
 office,Office.TextBinding,N/A,Interface,Excellent,false
 office,Office.ThemeId,N/A,Enum,Fine,true
 office,Office.ThemeId,"Black",EnumField,Poor,false
