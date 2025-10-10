@@ -9178,6 +9178,16 @@ outlook,Office.CustomProperties,"remove(name)",Method,Excellent,true
 outlook,Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Excellent,true
 outlook,Office.CustomProperties,"saveAsync(asyncContext)",Method,Excellent,false
 outlook,Office.CustomProperties,"set(name, value)",Method,Excellent,true
+outlook,Office.DecryptedMessageAttachment,N/A,Interface,Unknown,false
+outlook,Office.DecryptedMessageAttachment,"attachmentType",Property,Good,false
+outlook,Office.DecryptedMessageAttachment,"content",Property,Great,false
+outlook,Office.DecryptedMessageAttachment,"contentId",Property,Excellent,true
+outlook,Office.DecryptedMessageAttachment,"isInline",Property,Excellent,false
+outlook,Office.DecryptedMessageAttachment,"name",Property,Good,false
+outlook,Office.DecryptedMessageAttachment,"path",Property,Excellent,false
+outlook,Office.DecryptedMessageBody,N/A,Interface,Good,false
+outlook,Office.DecryptedMessageBody,"coercionType",Property,Great,false
+outlook,Office.DecryptedMessageBody,"content",Property,Great,false
 outlook,Office.DelayDeliveryTime,N/A,Interface,Unknown,false
 outlook,Office.DelayDeliveryTime,"getAsync(options, callback)",Method,Poor,false
 outlook,Office.DelayDeliveryTime,"getAsync(callback)",Method,Poor,true
@@ -9794,6 +9804,11 @@ outlook,Office.MessageCompose,"sendAsync(options, callback)",Method,Poor,true
 outlook,Office.MessageCompose,"sendAsync(callback)",Method,Poor,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,N/A,Interface,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,"allowEvent",Property,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,"attachments",Property,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,"contextData",Property,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,"emailBody",Property,Excellent,false
 outlook,Office.MessageRead,N/A,Interface,Unknown,true
 outlook,Office.MessageRead,"attachments",Property,Fine,true
 outlook,Office.MessageRead,"body",Property,Great,true
@@ -16059,7 +16074,7 @@ word,Word.Pane,"load(propertyNamesAndPaths)",Method,Excellent,false
 word,Word.Pane,"toJSON()",Method,Excellent,false
 word,Word.Pane,"track()",Method,Excellent,false
 word,Word.Pane,"untrack()",Method,Excellent,false
-word,Word.PaneCollection,N/A,Class,Unknown,false
+word,Word.PaneCollection,N/A,Class,Unknown,true
 word,Word.PaneCollection,"context",Property,Excellent,false
 word,Word.PaneCollection,"items",Property,Poor,false
 word,Word.PaneCollection,"getFirst()",Method,Great,false
@@ -18958,7 +18973,7 @@ word,Word.Window,"untrack()",Method,Excellent,false
 word,Word.WindowCloseOptions,N/A,Interface,Unknown,false
 word,Word.WindowCloseOptions,"routeDocument",Property,Excellent,false
 word,Word.WindowCloseOptions,"saveChanges",Property,Excellent,false
-word,Word.WindowCollection,N/A,Class,Unknown,false
+word,Word.WindowCollection,N/A,Class,Unknown,true
 word,Word.WindowCollection,"context",Property,Excellent,false
 word,Word.WindowCollection,"items",Property,Poor,false
 word,Word.WindowCollection,"getFirst()",Method,Great,false
