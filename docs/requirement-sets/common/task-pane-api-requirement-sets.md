@@ -1,7 +1,7 @@
 ---
 title: Task Pane API requirement sets
 description: Learn more about the Task Pane API requirement sets and the platforms it supports.
-ms.date: 09/25/2025
+ms.date: 10/10/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
