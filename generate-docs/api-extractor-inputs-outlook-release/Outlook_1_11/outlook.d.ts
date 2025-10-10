@@ -3884,7 +3884,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `contentId` property is only supported in Outlook on the web and the new Outlook on Windows.
+         * - The `contentId` property is only supported in Outlook on the web and Outlook on Windows (new and classic (preview)).
+         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
+         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
          *
          * - Starting November 15, 2025, changes to how inline images are represented in the HTML body of Outlook emails in
          * Outlook on the web and the new Outlook on Windows will begin rolling out to production users.
