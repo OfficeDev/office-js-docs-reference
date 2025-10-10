@@ -114,7 +114,7 @@ properties:
     fullName: font
     summary: >-
       Gets the text format of the body. Use this to get and set font name, size,
-      color and other properties.
+      color, and other properties.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

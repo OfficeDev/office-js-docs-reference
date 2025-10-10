@@ -97,6 +97,10 @@ items:
             uid: outlook!Office.Contact:interface
           - name: CustomProperties
             uid: outlook!Office.CustomProperties:interface
+          - name: DecryptedMessageAttachment
+            uid: outlook!Office.DecryptedMessageAttachment:interface
+          - name: DecryptedMessageBody
+            uid: outlook!Office.DecryptedMessageBody:interface
           - name: DelayDeliveryTime
             uid: outlook!Office.DelayDeliveryTime:interface
           - name: Diagnostics
@@ -163,6 +167,8 @@ items:
             uid: outlook!Office.MeetingSuggestion:interface
           - name: MessageCompose
             uid: outlook!Office.MessageCompose:interface
+          - name: MessageDecryptEventCompletedOptions
+            uid: outlook!Office.MessageDecryptEventCompletedOptions:interface
           - name: MessageRead
             uid: outlook!Office.MessageRead:interface
           - name: NotificationMessageAction
@@ -1104,6 +1110,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.3 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.3-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.2 requirement set
             href: >-

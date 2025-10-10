@@ -3447,7 +3447,7 @@ export declare namespace PowerPoint {
          */
         text?: string;
         /**
-         * Specifies the contents of the table cell as an array of {@link TextRun} objects.
+         * Specifies the contents of the table cell as an array of {@link PowerPoint.TextRun} objects.
                     Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
          *
          * @remarks
@@ -4499,10 +4499,10 @@ export declare namespace PowerPoint {
         /**
          * Exports the slide to its own presentation file, returned as Base64-encoded data.
          *
+         * Note: This method is optimized to export a single slide. Exporting multiple slides can impact performance.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.8]
-         * 
-         * This method is optimized to export a single slide. Exporting multiple slides can impact performance.
          */
         exportAsBase64(): OfficeExtension.ClientResult<string>;
         /**
@@ -5126,7 +5126,7 @@ export declare namespace PowerPoint {
          */
         delete(): void;
         /**
-         * Returns the shape represented by the binding. Will throw an error if the binding isn't of the correct type.
+         * Returns the shape represented by the binding. Throws an error if the binding isn't of the correct type.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]

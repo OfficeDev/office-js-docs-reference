@@ -43,6 +43,7 @@ const NAMESPACE_REPLACEMENTS = {
 };
 
 const SPECIAL_WORD_VERSIONS = [
+    { folder: "word_desktop_1_3", version: 9.10 },
     { folder: "word_desktop_1_2", version: 9.5 },
     { folder: "word_desktop_1_1", version: 8.5 },
     { folder: "word_1_5_hidden_document", version: 5.5 },

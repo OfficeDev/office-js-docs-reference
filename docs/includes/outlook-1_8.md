@@ -25,6 +25,7 @@
 |[AttachmentContent](/javascript/api/outlook/office.attachmentcontent)|[content](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-content-member)|The content of an attachment as a string.|
 ||[format](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-format-member)|The string format to use for an attachment's content.|
 |[AttachmentDetailsCompose](/javascript/api/outlook/office.attachmentdetailscompose)|[attachmentType](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-attachmenttype-member)|Gets a value that indicates the attachment's type.|
+||[contentId](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-contentid-member)|Gets the content identifier of an inline attachment.|
 ||[id](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-id-member)|Gets the index of the attachment.|
 ||[isInline](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-isinline-member)|Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.|
 ||[name](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-name-member)|Gets the name of the attachment.|

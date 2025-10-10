@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlSchemaData
+uid: word!Word.Interfaces.CustomXmlSchemaData:interface
+package: word!
+fullName: Word.Interfaces.CustomXmlSchemaData
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlSchema.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

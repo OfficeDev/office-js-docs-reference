@@ -105,7 +105,7 @@ methods:
     package: powerpoint!
     fullName: getShape()
     summary: >-
-      Returns the shape represented by the binding. Will throw an error if the
+      Returns the shape represented by the binding. Throws an error if the
       binding isn't of the correct type.
     remarks: >-
       \[ [API set: PowerPointApi

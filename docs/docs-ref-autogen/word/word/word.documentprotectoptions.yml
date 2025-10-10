@@ -1,0 +1,84 @@
+### YamlMime:TSType
+name: Word.DocumentProtectOptions
+uid: word!Word.DocumentProtectOptions:interface
+package: word!
+fullName: Word.DocumentProtectOptions
+summary: >-
+  Provides configuration options for the
+  [Document.protect](xref:word!Word.Document:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: enforceStyleLock
+    uid: word!Word.DocumentProtectOptions#enforceStyleLock:member
+    package: word!
+    fullName: enforceStyleLock
+    summary: >-
+      If provided, specifies whether to enforce style lock restrictions. The
+      default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'enforceStyleLock?: boolean;'
+      return:
+        type: boolean
+  - name: noReset
+    uid: word!Word.DocumentProtectOptions#noReset:member
+    package: word!
+    fullName: noReset
+    summary: >-
+      If provided, specifies whether to reset form fields when protecting the
+      document. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'noReset?: boolean;'
+      return:
+        type: boolean
+  - name: password
+    uid: word!Word.DocumentProtectOptions#password:member
+    package: word!
+    fullName: password
+    summary: >-
+      If provided, specifies the password to apply for document protection. The
+      default value is an empty string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'password?: string;'
+      return:
+        type: string
+  - name: useInformationRightsManagement
+    uid: word!Word.DocumentProtectOptions#useInformationRightsManagement:member
+    package: word!
+    fullName: useInformationRightsManagement
+    summary: >-
+      If provided, specifies whether to use Information Rights Management (IRM).
+      The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'useInformationRightsManagement?: boolean;'
+      return:
+        type: boolean

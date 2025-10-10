@@ -138,10 +138,10 @@ properties:
       content: 'label?: string;'
       return:
         type: string
-  - name: progID
-    uid: word!Word.Interfaces.OleFormatData#progID:member
+  - name: progId
+    uid: word!Word.Interfaces.OleFormatData#progId:member
     package: word!
-    fullName: progID
+    fullName: progId
     summary: >-
       Gets the programmatic identifier (`ProgId`<!-- -->) for the specified OLE
       object.
@@ -152,6 +152,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'progID?: string;'
+      content: 'progId?: string;'
       return:
         type: string
