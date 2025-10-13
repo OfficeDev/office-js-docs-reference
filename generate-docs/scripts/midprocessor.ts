@@ -178,6 +178,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/excel/snippets.yaml", yaml.dump(excelSnippets), "excel");
     writeSnippetFileAndClearYamlIfNew("../json/excel_online/snippets.yaml", yaml.dump(excelSnippets), "excel");
+    writeSnippetFileAndClearYamlIfNew("../json/excel_desktop_1_1/snippets.yaml", yaml.dump(excelSnippets), "excel");
     for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
         writeSnippetFileAndClearYamlIfNew(`../json/excel_1_${i}/snippets.yaml`, yaml.dump(excelSnippets), "excel");
     }

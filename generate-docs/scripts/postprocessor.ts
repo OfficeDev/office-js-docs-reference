@@ -42,6 +42,10 @@ const NAMESPACE_REPLACEMENTS = {
     ]
 };
 
+const SPECIAL_EXCEL_VERSIONS = [
+    { folder: "excel_desktop_1_1", version: 20.5 },
+];
+
 const SPECIAL_WORD_VERSIONS = [
     { folder: "word_desktop_1_3", version: 9.10 },
     { folder: "word_desktop_1_2", version: 9.5 },
