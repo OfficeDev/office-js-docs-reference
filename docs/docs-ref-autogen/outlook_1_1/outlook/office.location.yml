@@ -1,37 +1,53 @@
 ### YamlMime:TSType
 name: Office.Location
-uid: 'outlook!Office.Location:interface'
+uid: outlook!Office.Location:interface
 package: outlook!
 fullName: Office.Location
-summary: Provides methods to get and set the location of a meeting in an Outlook add-in.
+summary: >-
+  Provides methods to get and set the location of a meeting in an Outlook
+  add-in.
 remarks: >-
-  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+
+
+  **Important**: The Office.EnhancedLocation API was introduced in Mailbox
+  requirement set 1.8. Use the EnhancedLocation API to better identify and
+  manage appointment locations, especially if you need to determine the location
+  type. For guidance on selecting the right location API for your scenario, see
+  [Get or set the location when composing an appointmnt in
+  Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+  -->.
+
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'getAsync(options, callback)'
-    uid: 'outlook!Office.Location#getAsync:member(1)'
+  - name: getAsync(options, callback)
+    uid: outlook!Office.Location#getAsync:member(1)
     package: outlook!
-    fullName: 'getAsync(options, callback)'
+    fullName: getAsync(options, callback)
     summary: >-
       Gets the location of an appointment.
 
 
-      The `getAsync` method starts an asynchronous call to the Exchange server to get the location of an appointment.
-      The location of the appointment is provided as a string in the `asyncResult.value` property.
+      The `getAsync` method starts an asynchronous call to the Exchange server
+      to get the location of an appointment. The location of the appointment is
+      provided as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -51,7 +67,8 @@ methods:
 
       const userContext = { value : 1 };
 
-      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
+      Office.context.mailbox.item.location.getAsync( { context: userContext},
+      callback);
 
 
       function callback(asyncResult) {
@@ -60,38 +77,46 @@ methods:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
-        void): void;
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
   - name: getAsync(callback)
-    uid: 'outlook!Office.Location#getAsync:member(2)'
+    uid: outlook!Office.Location#getAsync:member(2)
     package: outlook!
     fullName: getAsync(callback)
     summary: >-
       Gets the location of an appointment.
 
 
-      The `getAsync` method starts an asynchronous call to the Exchange server to get the location of an appointment.
-      The location of the appointment is provided as a string in the `asyncResult.value` property.
+      The `getAsync` method starts an asynchronous call to the Exchange server
+      to get the location of an appointment. The location of the appointment is
+      provided as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -122,31 +147,40 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: >-
+        getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void):
+        void;
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setAsync(location, options, callback)'
-    uid: 'outlook!Office.Location#setAsync:member(1)'
+  - name: setAsync(location, options, callback)
+    uid: outlook!Office.Location#setAsync:member(1)
     package: outlook!
-    fullName: 'setAsync(location, options, callback)'
+    fullName: setAsync(location, options, callback)
     summary: >-
       Sets the location of an appointment.
 
 
-      The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment.
-      Setting the location of an appointment overwrites the current location.
+      The `setAsync` method starts an asynchronous call to the Exchange server
+      to set the location of an appointment. Setting the location of an
+      appointment overwrites the current location.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -159,10 +193,16 @@ methods:
       -->**: Compose
 
 
+      **Important**: To ensure that multiple locations resolve correctly in
+      Outlook, separate them with a semicolon and a space. For example,
+      "Conference Room 1; Conference Room 2".
+
+
       **Errors**:
 
 
-      - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
+      - DataExceedsMaximumSize: The location parameter is longer than 255
+      characters.
 
 
       #### Examples
@@ -185,42 +225,52 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(location: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        setAsync(location: string, options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: location
-          description: The location of the appointment. The string is limited to 255 characters.
+          description: >-
+            The location of the appointment. The string is limited to 255
+            characters.
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If setting the location fails, the `asyncResult.error`
-            property will contain an error code.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. If setting the location fails, the
+            `asyncResult.error` property will contain an error code.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
-  - name: 'setAsync(location, callback)'
-    uid: 'outlook!Office.Location#setAsync:member(2)'
+  - name: setAsync(location, callback)
+    uid: outlook!Office.Location#setAsync:member(2)
     package: outlook!
-    fullName: 'setAsync(location, callback)'
+    fullName: setAsync(location, callback)
     summary: >-
       Sets the location of an appointment.
 
 
-      The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment.
-      Setting the location of an appointment overwrites the current location.
+      The `setAsync` method starts an asynchronous call to the Exchange server
+      to set the location of an appointment. Setting the location of an
+      appointment overwrites the current location.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -233,24 +283,38 @@ methods:
       -->**: Compose
 
 
+      **Important**: To ensure that multiple locations resolve correctly in
+      Outlook, separate them with a semicolon and a space. For example,
+      "Conference Room 1; Conference Room 2".
+
+
       **Errors**:
 
 
-      - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
+      - DataExceedsMaximumSize: The location parameter is longer than 255
+      characters.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(location: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(location: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: location
-          description: The location of the appointment. The string is limited to 255 characters.
+          description: >-
+            The location of the appointment. The string is limited to 255
+            characters.
           type: string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. If setting the location fails, the `asyncResult.error`
-            property will contain an error code.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. If setting the location fails, the
+            `asyncResult.error` property will contain an error code.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''

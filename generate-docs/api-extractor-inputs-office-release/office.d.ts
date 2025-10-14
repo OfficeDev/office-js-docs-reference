@@ -606,19 +606,28 @@ export declare namespace Office {
          */
         BindingSelectionChanged,
         /**
-         * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
+         * Occurs when a dialog is closed or when dialog navigation failed.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogEventReceived,
         /**
-         * Triggers when a dialog sends a message via `messageParent`.
+         * Occurs when a dialog sends a message using `Office.context.ui.messageParent`.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogMessageReceived,
         /**
-         * Triggers when a host page sends a message to a child dialog box with `messageChild`.
+         * Occurs when a host page sends a message to a child dialog box with `Dialog.messageChild`.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogParentMessageReceived,
         /**
-         * Triggers when a document-level selection happens in Excel or Word.
+         * Occurs when a document-level selection happens in Excel or Word.
          */
         DocumentSelectionChanged,
         /**
@@ -648,7 +657,7 @@ export declare namespace Office {
          *
          * - Although Outlook on Mac supports the `InsightMessage` notification type, it currently doesn't support the `InfobarClicked` event.
          * To determine when the **Dismiss** action is selected from the notification, implement a handler for the `OnInfoBarDismissClicked` event instead.
-         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch#supported-events | Configure your Outlook add-in for event-based activation}.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events | Activate add-ins with events}.
          *
          * [Api set: Mailbox 1.10]
          */
@@ -680,15 +689,29 @@ export declare namespace Office {
          */
         ItemChanged,
         /**
-         * Triggers when a `customXmlPart` node is deleted.
+         * Occurs in Outlook on the web and the new Outlook on Windows when messages or file attachments in the Outlook client window are
+         * dragged then dropped into the task pane of an add-in.
+         *
+         * To add an event handler for the `DragAndDropEvent` event, use the `addHandlerAsync` method of the `Mailbox` object.
+         * The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs | Office.DragAndDropEventArgs}.
+         *
+         * **Important**: The `DragAndDropEvent` event isn't supported in Outlook on Windows (classic) and on Mac. If the `DragAndDropEvent` handler
+         * runs on these clients, an error occurs ("This event isn't supported on this platform.").
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        DragAndDropEvent,
+        /**
+         * Occurs when a `customXmlPart` node is deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a `customXmlPart` node is inserted.
+         * Occurs when a `customXmlPart` node is inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a `customXmlPart` node is replaced.
+         * Occurs when a `customXmlPart` node is replaced.
          */
         NodeReplaced,
         /**
@@ -703,7 +726,7 @@ export declare namespace Office {
          * - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * - The `OfficeThemeChanged` event isn't supported in add-ins that implement
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
          *
          * [Api set: Mailbox 1.14]
          */
@@ -733,7 +756,7 @@ export declare namespace Office {
          */
         RecurrenceChanged,
         /**
-         * Triggers when a Resource selection happens in Project.
+         * Occurs when a Resource selection happens in Project.
          */
         ResourceSelectionChanged,
         /**
@@ -770,11 +793,11 @@ export declare namespace Office {
          */
         SpamReporting,
         /**
-         * Triggers when a Task selection happens in Project.
+         * Occurs when a Task selection happens in Project.
          */
         TaskSelectionChanged,
         /**
-         * Triggers when a View selection happens in Project.
+         * Occurs when a View selection happens in Project.
          */
         ViewSelectionChanged
     }
@@ -846,7 +869,7 @@ export declare namespace Office {
      * Specifies the Office application in which the add-in is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+     * **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
      */
     enum HostType {
         /**
@@ -918,7 +941,7 @@ export declare namespace Office {
      * Specifies the OS or other platform on which the Office application is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+     * **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
      */
     enum PlatformType {
         /**
@@ -3382,9 +3405,15 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              *
-             * **Important**: The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
+             * **Important**:
+             *
+             * - The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8. Although Outlook on Android and on iOS support up to
              * Mailbox 1.5, the `options` parameter is supported in online-meeting provider and note-logging mobile add-ins. For more information on API support in
              * Outlook on mobile devices, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+             *
+             * - {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Event-based activation} and
+             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
+             * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
              *
              * @param options - Optional. In Outlook, an object that specifies the behavior of an on-send add-in, online-meeting provider add-in, or note-logging mobile add-in
              * when it completes processing an event.
@@ -3405,9 +3434,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
+         * **Important**: 
+         *
+         * - Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and
          * note-logging mobile add-ins. For more information on API support in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} add-ins use a different event object to signal when they've
+         * completed processing an event. For more information, see {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent | Outlook.MailboxEvent}.
          */
         export interface EventCompletedOptions {
             /**
@@ -3618,6 +3653,19 @@ export declare namespace Office {
          * @returns Promise to the access token.
          */
         getAccessToken(options?: AuthOptions): Promise<string>;
+        /**
+         * Gets information about the signed-in user. 
+         * The add-in can pass this information to the Microsoft authentication library (MSAL.js) to get an access token for the current session.
+         *
+         * @remarks
+         *
+         * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+         * 
+         * **Requirement set**: NestedAppAuth 1.1
+         * 
+         * @returns Promise to the AuthContext object.
+         */
+        getAuthContext(): Promise<AuthContext>;
     }
     /**
      * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
@@ -3673,6 +3721,35 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.
          */
         forMSGraphAccess?: boolean;
+    }
+    /**
+     * Represents the user information which can be passed to the Microsoft Authentication Library for JavaScript (MSAL.js).
+     */
+    export interface AuthContext {
+        /**
+         * The unique ID of the account.
+         */
+        userObjectId: string;
+        /**
+         * The full tenant or organizational ID that this account belongs to.
+         */
+        tenantId: string;
+        /**
+         * The user's internet-style login name, based on the Internet standard RFC. Also known as UPN. 
+         */
+        userPrincipalName: string;
+        /**
+         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/72f10e1e-cab8-4950-a8da-7c45339575b0 | Microsoft personal account}.
+         */
+        authorityType: "aad" | "msa" | "other";
+        /**
+         * The URL that indicates a directory that MSAL can request tokens from.
+         */
+        authorityBaseUrl: string;
+        /**
+         * An optional claim that provides a hint about the user account attempting to sign in.
+         */
+        loginHint: string;
     }
     /**
      * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
@@ -4556,7 +4633,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** > **Options** > **Language** in the Office
          * application.
          *
          * **Support details**
@@ -4579,7 +4656,7 @@ export declare namespace Office {
          * Gets information about the environment in which the add-in is running.
          * 
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.
+         * **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5.
          * For all Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
@@ -4592,7 +4669,7 @@ export declare namespace Office {
          *
          * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
          *
-         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** > **Options** > **Language** in the Office
          * application.
          *
          * When using in Outlook, the applicable modes are Compose or Read.
@@ -4621,7 +4698,7 @@ export declare namespace Office {
          * Contains the Office application in which the add-in is running.
          *
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
@@ -4668,7 +4745,7 @@ export declare namespace Office {
          * @remarks
          * **Important**:
          *
-         * - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * - In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
@@ -4752,7 +4829,7 @@ export declare namespace Office {
      * Provides information about the environment in which the add-in is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
+     * **Important**: In Outlook, this object is available starting with Mailbox requirement set 1.5.
      * For all Mailbox requirement sets, you can use the 
      * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
      * property to get similar information.
@@ -5429,6 +5506,8 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
+         * - Access to a user's geolocation isn't supported in Excel, PowerPoint, and Word. It's only supported in Outlook on the web and new Outlook on Windows using the `requestPermissionsAsync` method.
+         *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
          *     In web versions of Excel, PowerPoint, and Word, add-ins can only request access to a user's camera and microphone.
          *     Access to a user's geolocation is blocked.
@@ -5460,7 +5539,7 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
-         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation},
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
@@ -5501,7 +5580,7 @@ export declare namespace Office {
          *
          * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
          *
-         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation},
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
@@ -6792,6 +6871,23 @@ export declare namespace Office {
         name: string;
     }
     /**
+     * Provides options to manage the user interface of an Office Add-in while the add-in is running.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface ExtensionLifeCycle {
+        /**
+         * Gets an object that represents the task pane of an add-in.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         */
+        taskpane: TaskPane;
+    }
+    /**
      * Represents the document file associated with an Office Add-in.
      *
      * @remarks
@@ -7097,7 +7193,7 @@ export declare namespace Office {
      * Provides access to the properties for Office theme colors.
      *
      * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user.
-     * The user sets a theme in an Office application through **File** \> **Account** or **Office Account** \> **Office Theme**.
+     * The user sets a theme in an Office application through **File** > **Account** or **Office Account** > **Office Theme**.
      * The selected theme is then applied across all Office applications. Using Office theme colors is appropriate for mail and
      * task pane add-ins.
      *
@@ -7128,7 +7224,7 @@ export declare namespace Office {
      *    <td><strong>Outlook</strong></td>
      *    <td>Supported</td>
      *    <td>Supported</td>
-     *    <td>Not available</td>
+     *    <td>Supported</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *  </tr>
@@ -7152,7 +7248,7 @@ export declare namespace Office {
      *
      * **Important**: In Outlook, the Office theme API is supported starting in
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
-     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
      */
     export interface OfficeTheme {
         /**
@@ -7176,7 +7272,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `isDarkTheme` property isn't yet supported in Outlook. 
+         * **Important**: The `isDarkTheme` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         isDarkTheme: boolean;
         /**
@@ -7184,9 +7284,21 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Important**: The `themeId` property isn't yet supported in Outlook. 
+         * **Important**: The `themeId` property isn't supported in Outlook. To determine the current theme in Outlook,
+         * use the `body*Color` and `control*Color` properties instead. To automatically detect theme changes, use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1) | addHandlerAsync}
+         * method to create an event handler for the {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OfficeThemeChanged}
+         * event.
          */
         themeId: ThemeId;
+        /**
+         * Gets the Office host native theme.
+         *
+         * @remarks
+         *
+         * **Important**: The `fluentThemeData` property is only supported on the Excel, PowerPoint, and Word desktop clients for Windows.
+         */
+        fluentThemeData?: object;
     }
     /**
      * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
@@ -8089,7 +8201,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -8143,7 +8255,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -8200,7 +8312,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -8299,7 +8411,7 @@ export declare namespace Office {
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
+         * (Open the context menu (right-click or select and hold) then select **Format Cells**, or **Home** > **Format** > **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -8463,6 +8575,37 @@ export declare namespace Office {
          * - If you overwrite or update an existing table, the existing rows are not altered.
          */
         rows: any[][];
+    }
+    /**
+     * Provides methods to manage the task pane of an add-in.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface TaskPane {
+        /**
+         * Sets the width of the task pane of an add-in in pixels.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         *
+         * **Important**: The default width of the task pane of an add-in varies depending on the platform.
+         *
+         * - **Web (Excel)**: 350 px
+         *
+         * - **Web (Word)**: 330 px
+         *
+         * - **Windows**: 51 px
+         *
+         * If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
+         *
+         * @param width - The width of a task pane in pixels. The minimum and maximum constraints vary by platform. In Excel on the web, the width must be between
+         *              350 and 500 px (inclusive). In Word on the web, the width must be between 330 and 500 px (inclusive). In Office on Windows, the width
+         *              must be between 51 px and 50% of the client window.
+         */
+        setWidth(width: number): void;
     }
     /**
      * Represents a bound text selection in the document.
@@ -8717,10 +8860,10 @@ export declare namespace Office {
          *
          * - The URL that's returned points to the location of the JavaScript file that classic Outlook on Windows uses to handle event-based activation
          * and integrated spam reporting. To learn more about these features, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | Activate add-ins with events} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
-         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * - In Outlook on the web, on Mac, and in the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * this API isn't supported in add-ins that implement a task pane. On these clients, the API is only supported in add-ins that implement event-based activation
          * or integrated spam reporting.
          *

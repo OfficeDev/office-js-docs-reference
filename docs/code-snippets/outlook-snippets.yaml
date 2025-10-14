@@ -216,54 +216,41 @@ Office.AttachmentsChangedEventArgs:interface:
             // Perform operations on the attachment that was added.
         }
     }
-Office.AttachmentContent#format:member:
+Office.AttachmentContent:interface:
   - |-
-    const item = Office.context.mailbox.item;
-    const options = {asyncContext: {currentItem: item}};
-    item.getAttachmentsAsync(options, callback);
-
-    function callback(result) {
+    Office.context.mailbox.item.getAttachmentsAsync((result) => {
         if (result.value.length > 0) {
             for (let i = 0 ; i < result.value.length ; i++) {
-                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+                Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
             }
         }
-    }
+    });
 
     function handleAttachmentsCallback(result) {
-        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        // Identify if an attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
         switch (result.value.format) {
             case Office.MailboxEnums.AttachmentContentFormat.Base64:
                 // Handle file attachment.
+                console.log("Attachment is a Base64-encoded string.");
                 break;
             case Office.MailboxEnums.AttachmentContentFormat.Eml:
                 // Handle email item attachment.
+                console.log("Attachment is a message.");
                 break;
             case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
                 // Handle .icalender attachment.
+                console.log("Attachment is a calendar item.");
                 break;
             case Office.MailboxEnums.AttachmentContentFormat.Url:
                 // Handle cloud attachment.
+                console.log("Attachment is a cloud attachment.");
                 break;
             default:
-                // Handle attachment formats that are not supported.
+                // Handle attachment formats that aren't supported.
         }
-    }
-Office.Body#getAsync:member(1):
-  - |-
-    // This example gets the body of the item as plain text.
-    Office.context.mailbox.item.body.getAsync(
-        "text",
-        { asyncContext: "This is passed to the callback" },
-        function callback(result) {
-            // Do something with the result.
-        });
 
-    // The following is an example of the result parameter passed to the callback function.
-    {
-        "value": "TEXT of whole body (including threads below)",
-        "status": "succeeded",
-        "asyncContext": "This is passed to the callback"
+        // Log the content of the attachments as a string.
+        console.log(result.value.content);
     }
 Office.Body#setAsync:member(1):
   - |-
@@ -375,9 +362,9 @@ Office.EnhancedLocationsChangedEventArgs:interface:
         document.addEventListener('DOMContentLoaded', () => {
             // Get a reference to the mailbox and use it to add an event handler.
             const mailbox = Office.context.mailbox;
-            mailbox.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+            mailbox.item.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
                 if (result.status === Office.AsyncResultStatus.Failed) {
-                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    console.error(`Failed to add event handler: ${result.error.message}`);
                     return;
                 }
 

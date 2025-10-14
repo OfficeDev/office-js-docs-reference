@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShadowFormatData
+uid: word!Word.Interfaces.ShadowFormatData:interface
+package: word!
+fullName: Word.Interfaces.ShadowFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `shadowFormat.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

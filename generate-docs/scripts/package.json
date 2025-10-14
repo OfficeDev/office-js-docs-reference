@@ -11,24 +11,23 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@types/fs-extra": "3.0.1",
-    "@types/js-yaml": "3.5.29",
-    "@types/lodash": "4.14.64",
-    "@types/node": "7.0.5",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
-    "colors": "~1.2.1",
-    "del": "2.2.2",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@types/fs-extra": "11.0.4",
+    "@types/js-yaml": "4.0.9",
+    "@types/lodash": "4.17.20",
+    "@types/node": "24.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "colors": "~1.4.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "typescript": "2.3.2"
+    "typescript": "5.9.2"
   },
   "dependencies": {
-    "fs-extra": "3.0.1",
-    "inquirer": "^8.2.0",
+    "fs-extra": "11.3.1",
+    "inquirer": "^12.9.4",
     "isomorphic-fetch": "^3.0.0",
-    "js-yaml": "3.13.1",
+    "js-yaml": "4.1.0",
     "lodash": "^4.17.21"
   }
 }

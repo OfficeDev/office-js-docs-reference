@@ -1,0 +1,156 @@
+### YamlMime:TSEnum
+name: Word.BevelType
+uid: word!Word.BevelType:enum
+package: word!
+fullName: Word.BevelType
+summary: >-
+  Indicates the bevel type of a
+  [Word.ThreeDimensionalFormat](xref:word!Word.ThreeDimensionalFormat:class)
+  object.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: angle
+    uid: word!Word.BevelType.angle:member
+    package: word!
+    summary: >-
+      Represents an angle bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"angle"'
+  - name: artDeco
+    uid: word!Word.BevelType.artDeco:member
+    package: word!
+    summary: >-
+      Represents an art deco bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"artDeco"'
+  - name: circle
+    uid: word!Word.BevelType.circle:member
+    package: word!
+    summary: >-
+      Represents a circle bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"circle"'
+  - name: convex
+    uid: word!Word.BevelType.convex:member
+    package: word!
+    summary: >-
+      Represents a convex bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"convex"'
+  - name: coolSlant
+    uid: word!Word.BevelType.coolSlant:member
+    package: word!
+    summary: >-
+      Represents a cool slant bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"coolSlant"'
+  - name: cross
+    uid: word!Word.BevelType.cross:member
+    package: word!
+    summary: >-
+      Represents a cross bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"cross"'
+  - name: divot
+    uid: word!Word.BevelType.divot:member
+    package: word!
+    summary: >-
+      Represents a divot bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"divot"'
+  - name: hardEdge
+    uid: word!Word.BevelType.hardEdge:member
+    package: word!
+    summary: >-
+      Represents a hard edge bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"hardEdge"'
+  - name: mixed
+    uid: word!Word.BevelType.mixed:member
+    package: word!
+    summary: >-
+      Represents a mixed bevel type.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"mixed"'
+  - name: none
+    uid: word!Word.BevelType.none:member
+    package: word!
+    summary: >-
+      Represents no bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"none"'
+  - name: relaxedInset
+    uid: word!Word.BevelType.relaxedInset:member
+    package: word!
+    summary: >-
+      Represents a relaxed inset bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"relaxedInset"'
+  - name: riblet
+    uid: word!Word.BevelType.riblet:member
+    package: word!
+    summary: >-
+      Represents a riblet bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"riblet"'
+  - name: slope
+    uid: word!Word.BevelType.slope:member
+    package: word!
+    summary: >-
+      Represents a slope bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"slope"'
+  - name: softRound
+    uid: word!Word.BevelType.softRound:member
+    package: word!
+    summary: >-
+      Represents a soft round bevel.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"softRound"'

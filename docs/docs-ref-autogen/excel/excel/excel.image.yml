@@ -1,35 +1,168 @@
 ### YamlMime:TSType
 name: Excel.Image
-uid: 'excel!Excel.Image:class'
+uid: excel!Excel.Image:class
 package: excel!
 fullName: Excel.Image
-summary: 'Represents an image in the worksheet. To get the corresponding `Shape` object, use `Image.shape`<!-- -->.'
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+summary: >-
+  Represents an image in the worksheet. To get the corresponding `Shape` object,
+  use `Image.shape`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: brightness
+    uid: excel!Excel.Image#brightness:member
+    package: excel!
+    fullName: brightness
+    summary: >-
+      Specifies the brightness of the image. The value for this property must be
+      a number from 0.0 (dimmest) to 1.0 (brightest).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'brightness: number;'
+      return:
+        type: number
+  - name: colorType
+    uid: excel!Excel.Image#colorType:member
+    package: excel!
+    fullName: colorType
+    summary: Specifies the type of color transformation applied to the image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        colorType: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale"
+        | "BlackAndWhite" | "Watermark";
+      return:
+        type: >-
+          <xref uid="excel!Excel.PictureColorType:enum" /> | "Mixed" |
+          "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark"
   - name: context
-    uid: 'excel!Excel.Image#context:member'
+    uid: excel!Excel.Image#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
+  - name: contrast
+    uid: excel!Excel.Image#contrast:member
+    package: excel!
+    fullName: contrast
+    summary: >-
+      Specifies the contrast of the image. The value for this property must be a
+      number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contrast: number;'
+      return:
+        type: number
+  - name: cropBottom
+    uid: excel!Excel.Image#cropBottom:member
+    package: excel!
+    fullName: cropBottom
+    summary: >-
+      Specifies the number of points that are cropped off the bottom of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropBottom: number;'
+      return:
+        type: number
+  - name: cropLeft
+    uid: excel!Excel.Image#cropLeft:member
+    package: excel!
+    fullName: cropLeft
+    summary: >-
+      Specifies the number of points that are cropped off the left side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropLeft: number;'
+      return:
+        type: number
+  - name: cropRight
+    uid: excel!Excel.Image#cropRight:member
+    package: excel!
+    fullName: cropRight
+    summary: >-
+      Specifies the number of points that are cropped off the right side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropRight: number;'
+      return:
+        type: number
+  - name: cropTop
+    uid: excel!Excel.Image#cropTop:member
+    package: excel!
+    fullName: cropTop
+    summary: Specifies the number of points that are cropped off the top of the image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropTop: number;'
+      return:
+        type: number
   - name: format
-    uid: 'excel!Excel.Image#format:member'
+    uid: excel!Excel.Image#format:member
     package: excel!
     fullName: format
     summary: Returns the format of the image.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -52,18 +185,26 @@ properties:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";'
+      content: >-
+        readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" |
+        "GIF" | "PNG" | "SVG";
       return:
-        type: '<xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
+        type: >-
+          <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
+          "JPEG" | "GIF" | "PNG" | "SVG"
   - name: id
-    uid: 'excel!Excel.Image#id:member'
+    uid: excel!Excel.Image#id:member
     package: excel!
     fullName: id
     summary: Specifies the shape identifier for the image object.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,26 +212,78 @@ properties:
       return:
         type: string
   - name: shape
-    uid: 'excel!Excel.Image#shape:member'
+    uid: excel!Excel.Image#shape:member
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object associated with the image.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly shape: Excel.Shape;'
       return:
-        type: '<xref uid="excel!Excel.Shape:class" />'
+        type: <xref uid="excel!Excel.Shape:class" />
 methods:
+  - name: incrementBrightness(increment)
+    uid: excel!Excel.Image#incrementBrightness:member(1)
+    package: excel!
+    fullName: incrementBrightness(increment)
+    summary: Increments the brightness of the image by a specified amount.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementBrightness(increment: number): void;'
+      parameters:
+        - id: increment
+          description: >-
+            Specifies how much to change the value of the Brightness property
+            for the picture. A positive value makes the picture brighter; a
+            negative value makes the picture darker.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: incrementContrast(increment)
+    uid: excel!Excel.Image#incrementContrast:member(1)
+    package: excel!
+    fullName: incrementContrast(increment)
+    summary: Increments the contrast of the image by a specified amount.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'incrementContrast(increment: number): void;'
+      parameters:
+        - id: increment
+          description: >-
+            Specifies how much to change the value of the Contrast property for
+            the picture. A positive value increases the contrast; a negative
+            value decreases the contrast.
+          type: number
+      return:
+        type: void
+        description: ''
   - name: load(options)
-    uid: 'excel!Excel.Image#load:member(1)'
+    uid: excel!Excel.Image#load:member(1)
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,37 +291,41 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: '<xref uid="excel!Excel.Interfaces.ImageLoadOptions:interface" />'
+          type: <xref uid="excel!Excel.Interfaces.ImageLoadOptions:interface" />
       return:
-        type: '<xref uid="excel!Excel.Image:class" />'
+        type: <xref uid="excel!Excel.Image:class" />
         description: ''
   - name: load(propertyNames)
-    uid: 'excel!Excel.Image#load:member(2)'
+    uid: excel!Excel.Image#load:member(2)
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Image;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: 'string | string[]'
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
       return:
-        type: '<xref uid="excel!Excel.Image:class" />'
+        type: <xref uid="excel!Excel.Image:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'excel!Excel.Image#load:member(3)'
+    uid: excel!Excel.Image#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,32 +337,88 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
                         expand?: string;
                     }
       return:
-        type: '<xref uid="excel!Excel.Image:class" />'
+        type: <xref uid="excel!Excel.Image:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: excel!Excel.Image#set:member(1)
+    package: excel!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ImageUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="excel!Excel.Interfaces.ImageUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: excel!Excel.Image#set:member(2)
+    package: excel!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Image): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="excel!Excel.Image:class" />
+      return:
+        type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.Image#toJSON:member(1)'
+    uid: excel!Excel.Image#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.Image` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ImageData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.Image` object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.ImageData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.ImageData;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ImageData:interface" />'
+        type: <xref uid="excel!Excel.Interfaces.ImageData:interface" />
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

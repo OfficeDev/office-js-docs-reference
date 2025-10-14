@@ -1,20 +1,26 @@
 ### YamlMime:TSType
 name: Word.Interfaces.ShapeUpdateData
-uid: 'word!Word.Interfaces.ShapeUpdateData:interface'
+uid: word!Word.Interfaces.ShapeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeUpdateData
-summary: 'An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Shape` object, for use in `shape.set({
+  ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: allowOverlap
-    uid: 'word!Word.Interfaces.ShapeUpdateData#allowOverlap:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#allowOverlap:member
     package: word!
     fullName: allowOverlap
     summary: Specifies whether a given shape can overlap other shapes.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +28,16 @@ properties:
       return:
         type: boolean
   - name: altTextDescription
-    uid: 'word!Word.Interfaces.ShapeUpdateData#altTextDescription:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: Specifies a string that represents the alternative text associated with the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Specifies a string that represents the alternative text associated with
+      the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,126 +45,186 @@ properties:
       return:
         type: string
   - name: body
-    uid: 'word!Word.Interfaces.ShapeUpdateData#body:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#body:member
     package: word!
     fullName: body
-    summary: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Represents the `Body` object of the shape. Only applies to text boxes and
+      geometric shapes.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.BodyUpdateData:interface" />
   - name: canvas
-    uid: 'word!Word.Interfaces.ShapeUpdateData#canvas:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#canvas:member
     package: word!
     fullName: canvas
     summary: >-
-      Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be
-      returned if the shape type isn't "Canvas". For further information, see [*OrNullObject methods and
+      Gets the canvas associated with the shape. An object with its
+      `isNullObject` property set to `true` will be returned if the shape type
+      isn't `canvas`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'canvas?: Word.Interfaces.CanvasUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.CanvasUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.CanvasUpdateData:interface" />
   - name: fill
-    uid: 'word!Word.Interfaces.ShapeUpdateData#fill:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#fill:member
     package: word!
     fullName: fill
     summary: Returns the fill formatting of the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'fill?: Word.Interfaces.ShapeFillUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ShapeFillUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ShapeFillUpdateData:interface" />
   - name: geometricShapeType
-    uid: 'word!Word.Interfaces.ShapeUpdateData#geometricShapeType:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#geometricShapeType:member
     package: word!
     fullName: geometricShapeType
-    summary: The geometric shape type of the shape. It will be null if isn't a geometric shape.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      The geometric shape type of the shape. It will be null if isn't a
+      geometric shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        geometricShapeType?: Word.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
-        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
-        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
-        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
-        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
-        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
-        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
-        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
-        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
-        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
-        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
-        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
-        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
-        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
-        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
-        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
-        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
-        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
-        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
-        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
-        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
-        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
-        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
-        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
-        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
-        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
-        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
-        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
+        geometricShapeType?: Word.GeometricShapeType | "LineInverse" |
+        "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram"
+        | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
+        "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
+        "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24"
+        | "Star32" | "RoundRectangle" | "Round1Rectangle" |
+        "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle"
+        | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" |
+        "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge"
+        | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" |
+        "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" |
+        "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" |
+        "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" |
+        "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" |
+        "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" |
+        "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" |
+        "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" |
+        "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame"
+        | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" |
+        "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+        "AccentCallout1" | "AccentCallout2" | "AccentCallout3" |
+        "BorderCallout1" | "BorderCallout2" | "BorderCallout3" |
+        "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3"
+        | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" |
+        "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" |
+        "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" |
+        "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" |
+        "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" |
+        "FlowChartPreparation" | "FlowChartManualInput" |
+        "FlowChartManualOperation" | "FlowChartConnector" |
+        "FlowChartPunchedCard" | "FlowChartPunchedTape" |
+        "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
+        "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+        "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+        "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
+        "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
+        "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+        "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning"
+        | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+        "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" |
+        "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
+        "ChartStar" | "ChartPlus";
       return:
         type: >-
-          <xref uid="word!Word.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle"
-          | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
-          "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
-          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
-          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
-          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
-          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
-          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
-          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
-          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
-          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
-          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
-          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
-          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
-          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
-          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
-          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
-          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
-          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
-          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
-          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
-          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
-          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
-          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
-          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
-          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
+          <xref uid="word!Word.GeometricShapeType:enum" /> | "LineInverse" |
+          "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
+          "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
+          "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
+          | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle"
+          | "Round2SameRectangle" | "Round2DiagonalRectangle" |
+          "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" |
+          "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" |
+          "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" |
+          "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow"
+          | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" |
+          "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" |
+          "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow"
+          | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" |
+          "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" |
+          "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" |
+          "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+          "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" |
+          "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" |
+          "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1"
+          | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" |
+          "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+          "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" |
+          "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud"
+          | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+          "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" |
+          "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" |
+          "FlowChartInputOutput" | "FlowChartPredefinedProcess" |
+          "FlowChartInternalStorage" | "FlowChartDocument" |
+          "FlowChartMultidocument" | "FlowChartTerminator" |
+          "FlowChartPreparation" | "FlowChartManualInput" |
+          "FlowChartManualOperation" | "FlowChartConnector" |
+          "FlowChartPunchedCard" | "FlowChartPunchedTape" |
+          "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
+          "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+          "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
+          "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
+          "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+          "ActionButtonInformation" | "ActionButtonForwardNext" |
+          "ActionButtonBackPrevious" | "ActionButtonEnd" |
+          "ActionButtonBeginning" | "ActionButtonReturn" |
+          "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" |
+          "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" |
+          "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" |
+          "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
           "ChartPlus"
   - name: height
-    uid: 'word!Word.Interfaces.ShapeUpdateData#height:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#height:member
     package: word!
     fullName: height
-    summary: 'The height, in points, of the shape.'
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: The height, in points, of the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,13 +232,17 @@ properties:
       return:
         type: number
   - name: heightRelative
-    uid: 'word!Word.Interfaces.ShapeUpdateData#heightRelative:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#heightRelative:member
     package: word!
     fullName: heightRelative
     summary: >-
       The percentage of shape height to vertical relative size, see
-      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an
+      inline or child shape, it can't be set.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,14 +250,19 @@ properties:
       return:
         type: number
   - name: left
-    uid: 'word!Word.Interfaces.ShapeUpdateData#left:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#left:member
     package: word!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the horizontal relative position, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline shape, it
-      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The distance, in points, from the left side of the shape to the horizontal
+      relative position, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->. For an inline shape, it will return 0 and can't be set. For a child
+      shape in a canvas or group, it's relative to the top left corner.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,14 +270,18 @@ properties:
       return:
         type: number
   - name: leftRelative
-    uid: 'word!Word.Interfaces.ShapeUpdateData#leftRelative:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#leftRelative:member
     package: word!
     fullName: leftRelative
     summary: >-
-      The relative left position as a percentage from the left side of the shape to the horizontal relative position,
-      see [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline or
-      child shape, it will return 0 and can't be set.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The relative left position as a percentage from the left side of the shape
+      to the horizontal relative position, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->. For an inline or child shape, it will return 0 and can't be set.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,11 +289,14 @@ properties:
       return:
         type: number
   - name: lockAspectRatio
-    uid: 'word!Word.Interfaces.ShapeUpdateData#lockAspectRatio:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#lockAspectRatio:member
     package: word!
     fullName: lockAspectRatio
     summary: Specifies if the aspect ratio of this shape is locked.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,11 +304,14 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'word!Word.Interfaces.ShapeUpdateData#name:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#name:member
     package: word!
     fullName: name
     summary: The name of the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,107 +319,146 @@ properties:
       return:
         type: string
   - name: parentCanvas
-    uid: 'word!Word.Interfaces.ShapeUpdateData#parentCanvas:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#parentCanvas:member
     package: word!
     fullName: parentCanvas
-    summary: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets the top-level parent canvas shape of this child shape. It will be
+      null if it isn't a child shape of a canvas.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentCanvas?: Word.Interfaces.ShapeUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />
   - name: parentGroup
-    uid: 'word!Word.Interfaces.ShapeUpdateData#parentGroup:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#parentGroup:member
     package: word!
     fullName: parentGroup
-    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets the top-level parent group shape of this child shape. It will be null
+      if it isn't a child shape of a group.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentGroup?: Word.Interfaces.ShapeUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />
   - name: relativeHorizontalPosition
-    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member
     package: word!
     fullName: relativeHorizontalPosition
     summary: >-
-      The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The relative horizontal position of the shape. For an inline shape, it
+      can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" |
-        "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin"
+        | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
+        "InsideMargin" | "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
-          "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
+          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" |
+          "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
+          "InsideMargin" | "OutsideMargin"
   - name: relativeHorizontalSize
-    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member
     package: word!
     fullName: relativeHorizontalSize
     summary: >-
-      The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The relative horizontal size of the shape. For an inline or child shape,
+      it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
-        "OutsideMargin";
-      return:
-        type: >-
-          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
-          | "OutsideMargin"
-  - name: relativeVerticalPosition
-    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member'
-    package: word!
-    fullName: relativeVerticalPosition
-    summary: >-
-      The relative vertical position of the shape. For an inline shape, it can't be set. For details, see
-      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" |
+        relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" |
         "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" |
           "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
-  - name: relativeVerticalSize
-    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member'
+  - name: relativeVerticalPosition
+    uid: word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member
     package: word!
-    fullName: relativeVerticalSize
+    fullName: relativeVerticalPosition
     summary: >-
-      The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The relative vertical position of the shape. For an inline shape, it can't
+      be set. For details, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeVerticalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
-        "OutsideMargin";
+        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" |
+        "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
+        "InsideMargin" | "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
-          | "OutsideMargin"
+          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" |
+          "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
+          "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalSize
+    uid: word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member
+    package: word!
+    fullName: relativeVerticalSize
+    summary: >-
+      The relative vertical size of the shape. For an inline or child shape, it
+      can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalSize?: Word.RelativeSize | "Margin" | "Page" |
+        "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" |
+          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
   - name: rotation
-    uid: 'word!Word.Interfaces.ShapeUpdateData#rotation:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#rotation:member
     package: word!
     fullName: rotation
-    summary: 'Specifies the rotation, in degrees, of the shape. Not applicable to Canvas shape.'
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Specifies the rotation, in degrees, of the shape. Not applicable to Canvas
+      shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,54 +466,70 @@ properties:
       return:
         type: number
   - name: shapeGroup
-    uid: 'word!Word.Interfaces.ShapeUpdateData#shapeGroup:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#shapeGroup:member
     package: word!
     fullName: shapeGroup
     summary: >-
-      Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be
-      returned if the shape type isn't "GroupShape". For further information, see [*OrNullObject methods and
+      Gets the shape group associated with the shape. An object with its
+      `isNullObject` property set to `true` will be returned if the shape type
+      isn't `groupShape`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shapeGroup?: Word.Interfaces.ShapeGroupUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ShapeGroupUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ShapeGroupUpdateData:interface" />
   - name: textFrame
-    uid: 'word!Word.Interfaces.ShapeUpdateData#textFrame:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#textFrame:member
     package: word!
     fullName: textFrame
-    summary: Gets the text frame object of the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the `TextFrame` object of the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'textFrame?: Word.Interfaces.TextFrameUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.TextFrameUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.TextFrameUpdateData:interface" />
   - name: textWrap
-    uid: 'word!Word.Interfaces.ShapeUpdateData#textWrap:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#textWrap:member
     package: word!
     fullName: textWrap
     summary: Returns the text wrap formatting of the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'textWrap?: Word.Interfaces.ShapeTextWrapUpdateData;'
       return:
-        type: '<xref uid="word!Word.Interfaces.ShapeTextWrapUpdateData:interface" />'
+        type: <xref uid="word!Word.Interfaces.ShapeTextWrapUpdateData:interface" />
   - name: top
-    uid: 'word!Word.Interfaces.ShapeUpdateData#top:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#top:member
     package: word!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the vertical relative position, see
-      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline shape, it
-      will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The distance, in points, from the top edge of the shape to the vertical
+      relative position (see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
+      -->). For an inline shape, it will return 0 and can't be set. For a child
+      shape in a canvas or group, it's relative to the top left corner.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,14 +537,18 @@ properties:
       return:
         type: number
   - name: topRelative
-    uid: 'word!Word.Interfaces.ShapeUpdateData#topRelative:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#topRelative:member
     package: word!
     fullName: topRelative
     summary: >-
-      The relative top position as a percentage from the top edge of the shape to the vertical relative position, see
-      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline or child
-      shape, it will return 0 and can't be set.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      The relative top position as a percentage from the top edge of the shape
+      to the vertical relative position, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
+      -->. For an inline or child shape, it will return 0 and can't be set.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -407,11 +556,14 @@ properties:
       return:
         type: number
   - name: visible
-    uid: 'word!Word.Interfaces.ShapeUpdateData#visible:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#visible:member
     package: word!
     fullName: visible
     summary: Specifies if the shape is visible. Not applicable to inline shapes.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -419,11 +571,14 @@ properties:
       return:
         type: boolean
   - name: width
-    uid: 'word!Word.Interfaces.ShapeUpdateData#width:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#width:member
     package: word!
     fullName: width
-    summary: 'The width, in points, of the shape.'
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: The width, in points, of the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -431,13 +586,17 @@ properties:
       return:
         type: number
   - name: widthRelative
-    uid: 'word!Word.Interfaces.ShapeUpdateData#widthRelative:member'
+    uid: word!Word.Interfaces.ShapeUpdateData#widthRelative:member
     package: word!
     fullName: widthRelative
     summary: >-
       The percentage of shape width to horizontal relative size, see
-      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an inline or child shape, it can't be set.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an
+      inline or child shape, it can't be set.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

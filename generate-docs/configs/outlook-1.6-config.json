@@ -1,0 +1,27 @@
+{
+    "replacements":  [
+                         {
+                             "find":  "outlook/requirement-set-1.6",
+                             "replace":  "outlook/requirement-set-1.5",
+                             "description":  "Fix requirement set references in outlook_1_6 baseline to match filename"
+                         }
+                     ],
+    "includeStaticFields":  false,
+    "includeEnums": false,
+    "filterUnionAdditions": true,
+    "linkConfigs":  [
+                        {
+                            "pathPattern":  "javascript/api/outlook",
+                            "description":  "Standard URL pattern for Outlook APIs",
+                            "globalFunctionTemplate":  "/javascript/api/outlook/office#{fieldName}",
+                            "interfaceMemberTemplate":  "/javascript/api/outlook/office.{className}#outlook-office-{className}-{fieldName}{suffix}",
+                            "classMemberTemplate":  "/javascript/api/outlook/office.{className}#outlook-office-{className}-{fieldName}{suffix}",
+                            "typeAliasTemplate":  "/javascript/api/outlook/office.{className}",
+                            "name":  "Outlook Standard Pattern",
+                            "classTemplate":  "/javascript/api/outlook/office.{className}",
+                            "interfaceTemplate":  "/javascript/api/outlook/office.{className}",
+                            "enumMemberTemplate":  "/javascript/api/outlook/office.{className}#outlook-office-{className}-{fieldName}",
+                            "enumTemplate":  "/javascript/api/outlook/office.{className}"
+                        }
+                    ]
+}

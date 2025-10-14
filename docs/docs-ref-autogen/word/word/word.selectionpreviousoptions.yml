@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: Word.SelectionPreviousOptions
+uid: word!Word.SelectionPreviousOptions:interface
+package: word!
+fullName: Word.SelectionPreviousOptions
+summary: >-
+  Represents the options for the
+  [Selection.previous](xref:word!Word.Selection:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: word!Word.SelectionPreviousOptions#count:member
+    package: word!
+    fullName: count
+    summary: >-
+      If provided, specifies the number of units by which you want to move. The
+      default value is 1.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'count?: number;'
+      return:
+        type: number
+  - name: unit
+    uid: word!Word.SelectionPreviousOptions#unit:member
+    package: word!
+    fullName: unit
+    summary: >-
+      If provided, specifies the type of unit by which to move the selection.
+      The default value is `character`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
+        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
+        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
+        "Item";
+      return:
+        type: >-
+          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
+          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
+          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
+          "ParagraphFormat" | "Table" | "Item"

@@ -1,20 +1,29 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.HyperlinkUpdateData
-uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface'
+uid: powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkUpdateData
-summary: 'An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `Hyperlink` object, for use in
+  `hyperlink.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: address
-    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData#address:member'
+    uid: powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData#address:member
     package: powerpoint!
     fullName: address
-    summary: Specifies the URL target of the hyperlink.
-    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    summary: >-
+      Specifies the address of the hyperlink, which can be a URL, a file name or
+      file path, or an email address with the `mailto` URI scheme.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -22,11 +31,15 @@ properties:
       return:
         type: string
   - name: screenTip
-    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData#screenTip:member'
+    uid: powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData#screenTip:member
     package: powerpoint!
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
-    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,23 +1,27 @@
 ### YamlMime:TSType
 name: Word.Interfaces.WindowCollectionUpdateData
-uid: 'word!Word.Interfaces.WindowCollectionUpdateData:interface'
+uid: word!Word.Interfaces.WindowCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.WindowCollectionUpdateData
-summary: 'An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `WindowCollection` object, for use in
+  `windowCollection.set({ ... })`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: 'word!Word.Interfaces.WindowCollectionUpdateData#items:member'
+    uid: word!Word.Interfaces.WindowCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.WindowData[];'
       return:
-        type: '<xref uid="word!Word.Interfaces.WindowData:interface" />[]'
+        type: <xref uid="word!Word.Interfaces.WindowData:interface" />[]

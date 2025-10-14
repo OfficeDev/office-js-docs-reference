@@ -4,7 +4,7 @@
 |[EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol)|[type](/javascript/api/excel/excel.emptycellcontrol#excel-excel-emptycellcontrol-type-member)||
 |[MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol)|[type](/javascript/api/excel/excel.mixedcellcontrol#excel-excel-mixedcellcontrol-type-member)||
 |[Note](/javascript/api/excel/excel.note)|[authorName](/javascript/api/excel/excel.note#excel-excel-note-authorname-member)|Gets the author of the note.|
-||[content](/javascript/api/excel/excel.note#excel-excel-note-content-member)|Gets or sets the text of the note.|
+||[content](/javascript/api/excel/excel.note#excel-excel-note-content-member)|Specifies the text of the note.|
 ||[delete()](/javascript/api/excel/excel.note#excel-excel-note-delete-member(1))|Deletes the note.|
 ||[getLocation()](/javascript/api/excel/excel.note#excel-excel-note-getlocation-member(1))|Gets the cell where this note is located.|
 ||[height](/javascript/api/excel/excel.note#excel-excel-note-height-member)|Specifies the height of the note.|
@@ -22,6 +22,7 @@
 ||[select()](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-select-member(1))|Selects the specified range areas in the Excel UI.|
 |[RangeTextRun](/javascript/api/excel/excel.rangetextrun)|[font](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-font-member)|The font attributes (such as font name, font size, and color) applied to this text run.|
 ||[text](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-text-member)|The text of this text run.|
+|[SettableCellProperties](/javascript/api/excel/excel.settablecellproperties)|[textRuns](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-textruns-member)|Represents the `textRuns` property.|
 |[UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol)|[type](/javascript/api/excel/excel.unknowncellcontrol#excel-excel-unknowncellcontrol-type-member)||
 |[Workbook](/javascript/api/excel/excel.workbook)|[notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)|Returns a collection of all the notes objects in the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)|Returns a collection of all the notes objects in the worksheet.|

@@ -1,0 +1,10 @@
+{
+    "inputFolders": [
+        "../docs/docs-ref-autogen"
+    ],
+    "outputFolder": "",
+    "notIncludedPatterns": [
+        "*.interfaces.*",
+        "*_*/**"
+    ]
+}

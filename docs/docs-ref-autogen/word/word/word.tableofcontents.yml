@@ -1,0 +1,466 @@
+### YamlMime:TSType
+name: Word.TableOfContents
+uid: word!Word.TableOfContents:class
+package: word!
+fullName: Word.TableOfContents
+summary: Represents a table of contents in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: additionalHeadingStyles
+    uid: word!Word.TableOfContents#additionalHeadingStyles:member
+    package: word!
+    fullName: additionalHeadingStyles
+    summary: >-
+      Gets the additional styles used for the table of contents. The default
+      "Heading 1" - "Heading 9" styles aren't included in this collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly additionalHeadingStyles: Word.HeadingStyleCollection;'
+      return:
+        type: <xref uid="word!Word.HeadingStyleCollection:class" />
+  - name: areBuiltInHeadingStylesUsed
+    uid: word!Word.TableOfContents#areBuiltInHeadingStylesUsed:member
+    package: word!
+    fullName: areBuiltInHeadingStylesUsed
+    summary: >-
+      Specifies whether built-in heading styles are used for the table of
+      contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areBuiltInHeadingStylesUsed: boolean;'
+      return:
+        type: boolean
+  - name: areFieldsUsed
+    uid: word!Word.TableOfContents#areFieldsUsed:member
+    package: word!
+    fullName: areFieldsUsed
+    summary: >-
+      Specifies whether [Table of Contents Entry (TC)
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      are included in the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areFieldsUsed: boolean;'
+      return:
+        type: boolean
+  - name: areHyperlinksUsedOnWeb
+    uid: word!Word.TableOfContents#areHyperlinksUsedOnWeb:member
+    package: word!
+    fullName: areHyperlinksUsedOnWeb
+    summary: >-
+      Specifies whether entries in the table of contents should be formatted as
+      hyperlinks when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areHyperlinksUsedOnWeb: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersHiddenOnWeb
+    uid: word!Word.TableOfContents#arePageNumbersHiddenOnWeb:member
+    package: word!
+    fullName: arePageNumbersHiddenOnWeb
+    summary: >-
+      Specifies whether the page numbers in the table of contents should be
+      hidden when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersHiddenOnWeb: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersIncluded
+    uid: word!Word.TableOfContents#arePageNumbersIncluded:member
+    package: word!
+    fullName: arePageNumbersIncluded
+    summary: Specifies whether page numbers are included in the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersIncluded: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersRightAligned
+    uid: word!Word.TableOfContents#arePageNumbersRightAligned:member
+    package: word!
+    fullName: arePageNumbersRightAligned
+    summary: >-
+      Specifies whether page numbers are aligned with the right margin in the
+      table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersRightAligned: boolean;'
+      return:
+        type: boolean
+  - name: context
+    uid: word!Word.TableOfContents#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: lowerHeadingLevel
+    uid: word!Word.TableOfContents#lowerHeadingLevel:member
+    package: word!
+    fullName: lowerHeadingLevel
+    summary: >-
+      Specifies the ending heading level for the table of contents. Must be a
+      value from 1 to 9 and greater than `upperHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lowerHeadingLevel: number;'
+      return:
+        type: number
+  - name: range
+    uid: word!Word.TableOfContents#range:member
+    package: word!
+    fullName: range
+    summary: Gets the portion of a document that is this table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly range: Word.Range;'
+      return:
+        type: <xref uid="word!Word.Range:class" />
+  - name: tabLeader
+    uid: word!Word.TableOfContents#tabLeader:member
+    package: word!
+    fullName: tabLeader
+    summary: >-
+      Specifies the character between entries and their page numbers in the
+      table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        tabLeader: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
+      return:
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"
+  - name: tableId
+    uid: word!Word.TableOfContents#tableId:member
+    package: word!
+    fullName: tableId
+    summary: >-
+      Specifies a one-letter identifier from [TC
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      that's used for the table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableId: string;'
+      return:
+        type: string
+  - name: upperHeadingLevel
+    uid: word!Word.TableOfContents#upperHeadingLevel:member
+    package: word!
+    fullName: upperHeadingLevel
+    summary: >-
+      Specifies the starting heading level for the table of contents. Must be a
+      value from 1 to 9 and smaller than `lowerHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'upperHeadingLevel: number;'
+      return:
+        type: number
+methods:
+  - name: delete()
+    uid: word!Word.TableOfContents#delete:member(1)
+    package: word!
+    fullName: delete()
+    summary: Deletes this table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.TableOfContents#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.TableOfContentsLoadOptions):
+        Word.TableOfContents;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.TableOfContentsLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.TableOfContents:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.TableOfContents#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.TableOfContents;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.TableOfContents:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.TableOfContents#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.TableOfContents;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.TableOfContents:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.TableOfContents#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.TableOfContentsUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.TableOfContentsUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.TableOfContents#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.TableOfContents): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.TableOfContents:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.TableOfContents#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.TableOfContents`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.TableOfContentsData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TableOfContentsData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TableOfContentsData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.TableOfContents#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.TableOfContents;'
+      return:
+        type: <xref uid="word!Word.TableOfContents:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.TableOfContents#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TableOfContents;'
+      return:
+        type: <xref uid="word!Word.TableOfContents:class" />
+        description: ''
+  - name: updatePageNumbers()
+    uid: word!Word.TableOfContents#updatePageNumbers:member(1)
+    package: word!
+    fullName: updatePageNumbers()
+    summary: Updates the entire table of contents.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'updatePageNumbers(): void;'
+      return:
+        type: void
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

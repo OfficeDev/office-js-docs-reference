@@ -1,22 +1,28 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ShapeFontData
-uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
+uid: excel!Excel.Interfaces.ShapeFontData:interface
 package: excel!
 fullName: Excel.Interfaces.ShapeFontData
-summary: An interface describing the data returned by calling `shapeFont.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `shapeFont.toJSON()`<!--
+  -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: bold
-    uid: 'excel!Excel.Interfaces.ShapeFontData#bold:member'
+    uid: excel!Excel.Interfaces.ShapeFontData#bold:member
     package: excel!
     fullName: bold
     summary: >-
-      Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text
-      fragments.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the bold status of font. Returns `null` if the `TextRange`
+      includes both bold and non-bold text fragments.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,13 +30,17 @@ properties:
       return:
         type: boolean
   - name: color
-    uid: 'excel!Excel.Interfaces.ShapeFontData#color:member'
+    uid: excel!Excel.Interfaces.ShapeFontData#color:member
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
-      `TextRange` includes text fragments with different colors.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      HTML color code representation of the text color (e.g., "\#FF0000"
+      represents red). Returns `null` if the `TextRange` includes text fragments
+      with different colors.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,13 +48,16 @@ properties:
       return:
         type: string
   - name: italic
-    uid: 'excel!Excel.Interfaces.ShapeFontData#italic:member'
+    uid: excel!Excel.Interfaces.ShapeFontData#italic:member
     package: excel!
     fullName: italic
     summary: >-
-      Represents the italic status of font. Returns `null` if the `TextRange` includes both italic and non-italic text
-      fragments.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents the italic status of font. Returns `null` if the `TextRange`
+      includes both italic and non-italic text fragments.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,13 +65,17 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: 'excel!Excel.Interfaces.ShapeFontData#name:member'
+    uid: excel!Excel.Interfaces.ShapeFontData#name:member
     package: excel!
     fullName: name
     summary: >-
-      Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
-      corresponding font name; otherwise it is the Latin font name.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents font name (e.g., "Calibri"). If the text is a Complex Script or
+      East Asian language, this is the corresponding font name; otherwise it is
+      the Latin font name.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,36 +83,124 @@ properties:
       return:
         type: string
   - name: size
-    uid: 'excel!Excel.Interfaces.ShapeFontData#size:member'
+    uid: excel!Excel.Interfaces.ShapeFontData#size:member
     package: excel!
     fullName: size
     summary: >-
-      Represents font size in points (e.g., 11). Returns `null` if the `TextRange` includes text fragments with
-      different font sizes.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Represents font size in points (e.g., 11). Returns `null` if the
+      `TextRange` includes text fragments with different font sizes.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'size?: number;'
       return:
         type: number
+  - name: strikethrough
+    uid: excel!Excel.Interfaces.ShapeFontData#strikethrough:member
+    package: excel!
+    fullName: strikethrough
+    summary: >-
+      Specifies the strikethrough status of font. A `null` value indicates that
+      the entire range doesn't have a uniform strikethrough setting.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type: boolean
+  - name: subscript
+    uid: excel!Excel.Interfaces.ShapeFontData#subscript:member
+    package: excel!
+    fullName: subscript
+    summary: >-
+      Specifies the subscript status of font. Returns `true` if all the fonts of
+      the range are subscript. Returns `false` if all the fonts of the range are
+      superscript or normal (neither superscript, nor subscript). Returns `null`
+      otherwise.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type: boolean
+  - name: superscript
+    uid: excel!Excel.Interfaces.ShapeFontData#superscript:member
+    package: excel!
+    fullName: superscript
+    summary: >-
+      Specifies the superscript status of font. Returns `true` if all the fonts
+      of the range are superscript. Returns `false` if all the fonts of the
+      range are subscript or normal (neither superscript, nor subscript).
+      Returns `null` otherwise.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type: boolean
+  - name: tintAndShade
+    uid: excel!Excel.Interfaces.ShapeFontData#tintAndShade:member
+    package: excel!
+    fullName: tintAndShade
+    summary: >-
+      Specifies a double that lightens or darkens a color for the range font.
+      The value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. A `null` value indicates that the entire range doesn't
+      have a uniform font `tintAndShade` setting.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type: number
   - name: underline
-    uid: 'excel!Excel.Interfaces.ShapeFontData#underline:member'
+    uid: excel!Excel.Interfaces.ShapeFontData#underline:member
     package: excel!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different
-      underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+      Type of underline applied to the font. Returns `null` if the `TextRange`
+      includes text fragments with different underline styles. See
+      `Excel.ShapeFontUnderlineStyle` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" |
-        "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" |
+        underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double"
+        | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong"
+        | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" |
         "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
       return:
         type: >-
-          <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
-          "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
-          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble"
+          <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" /> | "None" |
+          "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" |
+          "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" |
+          "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" |
+          "WavyHeavy" | "WavyDouble"

@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.PageSetupUpdateData
+uid: powerpoint!PowerPoint.Interfaces.PageSetupUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.PageSetupUpdateData
+summary: >-
+  An interface for updating data on the `PageSetup` object, for use in
+  `pageSetup.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: slideHeight
+    uid: powerpoint!PowerPoint.Interfaces.PageSetupUpdateData#slideHeight:member
+    package: powerpoint!
+    fullName: slideHeight
+    summary: Specifies the height of the slides in the presentation, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'slideHeight?: number;'
+      return:
+        type: number
+  - name: slideWidth
+    uid: powerpoint!PowerPoint.Interfaces.PageSetupUpdateData#slideWidth:member
+    package: powerpoint!
+    fullName: slideWidth
+    summary: Specifies the width of the slides in the presentation, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'slideWidth?: number;'
+      return:
+        type: number

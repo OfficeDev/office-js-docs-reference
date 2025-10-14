@@ -8,7 +8,6 @@
 ||[resolved](/javascript/api/excel/excel.comment#excel-excel-comment-resolved-member)|The comment thread status.|
 ||[richContent](/javascript/api/excel/excel.comment#excel-excel-comment-richcontent-member)|Gets the rich comment content (e.g., mentions in comments).|
 ||[updateMentions(contentWithMentions: Excel.CommentRichContent)](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))|Updates the comment content with a specially formatted string and a list of mentions.|
-|[CommentCollection](/javascript/api/excel/excel.commentcollection)|[add(cellAddress: Range \| string, content: CommentRichContent \| string, contentType?: Excel.ContentType)](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))|Creates a new comment with the given content on the given cell.|
 |[CommentMention](/javascript/api/excel/excel.commentmention)|[email](/javascript/api/excel/excel.commentmention#excel-excel-commentmention-email-member)|The email address of the entity that is mentioned in a comment.|
 ||[id](/javascript/api/excel/excel.commentmention#excel-excel-commentmention-id-member)|The ID of the entity.|
 ||[name](/javascript/api/excel/excel.commentmention#excel-excel-commentmention-name-member)|The name of the entity that is mentioned in a comment.|
@@ -16,7 +15,6 @@
 ||[resolved](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-resolved-member)|The comment reply status.|
 ||[richContent](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-richcontent-member)|The rich comment content (e.g., mentions in comments).|
 ||[updateMentions(contentWithMentions: Excel.CommentRichContent)](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))|Updates the comment content with a specially formatted string and a list of mentions.|
-|[CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection)|[add(content: CommentRichContent \| string, contentType?: Excel.ContentType)](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))|Creates a comment reply for a comment.|
 |[CommentRichContent](/javascript/api/excel/excel.commentrichcontent)|[mentions](/javascript/api/excel/excel.commentrichcontent#excel-excel-commentrichcontent-mentions-member)|An array containing all the entities (e.g., people) mentioned within the comment.|
 ||[richContent](/javascript/api/excel/excel.commentrichcontent#excel-excel-commentrichcontent-richcontent-member)|Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1).|
 |[CultureInfo](/javascript/api/excel/excel.cultureinfo)|[name](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-name-member)|Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us").|

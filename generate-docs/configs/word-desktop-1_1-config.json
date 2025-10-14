@@ -1,0 +1,53 @@
+{
+    "replacements":  [
+                         {
+                             "find":  "@param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.",
+                             "replace":  "",
+                             "description":  "Remove importedStylesConflictBehavior parameter documentation when removing WordApiDesktop 1.1"
+                         },
+                         {
+                             "find":  "Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.",
+                             "replace":  "",
+                             "description":  "Remove WordApiDesktop 1.1 note when removing WordApiDesktop 1.1"
+                         },
+                         {
+                             "find":  "/,\\s*importedStylesConflictBehavior\\?:\\s*Word\\.ImportedStylesConflictBehavior[\\w\\W]*?importedStylesConflictBehavior\\?:\\s*\"Ignore\"\\s*\\|\\s*\"Overwrite\"\\s*\\|\\s*\"CreateNew\"\\):\\s*OfficeExtension\\.ClientResult\u003cstring\\[\\]\u003e;/gm",
+                             "replace":  "): OfficeExtension.ClientResult\u003cstring[]\u003e;",
+                             "isRegex":  true,
+                             "description":  "Remove importedStylesConflictBehavior parameter from method signature when removing WordApiDesktop 1.1"
+                         }
+                     ],
+    "excludedFieldPatterns":  [
+                                  "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+                              ],
+    "excludedFieldNames":  [
+                               "load",
+                               "set",
+                               "toJSON",
+                               "context",
+                               "track",
+                               "untrack"
+                           ],
+    "excludedClassPatterns":  [
+                                  "LoadOptions$",
+                                  "Data$"
+                              ],
+    "includeStaticFields":  false,
+    "includeEnums": false,
+    "filterUnionAdditions": true,
+    "linkConfigs":  [
+                        {
+                            "pathPattern":  "javascript/api/word",
+                            "description":  "Standard URL pattern for Word APIs",
+                            "globalFunctionTemplate":  "/javascript/api/word/word#{fieldName}",
+                            "interfaceMemberTemplate":  "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}{suffix}",
+                            "classMemberTemplate":  "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}{suffix}",
+                            "typeAliasTemplate":  "/javascript/api/word/word.{className}",
+                            "name":  "Word Standard Pattern",
+                            "classTemplate":  "/javascript/api/word/word.{className}",
+                            "interfaceTemplate":  "/javascript/api/word/word.{className}",
+                            "enumMemberTemplate":  "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}",
+                            "enumTemplate":  "/javascript/api/word/word.{className}"
+                        }
+                    ]
+}

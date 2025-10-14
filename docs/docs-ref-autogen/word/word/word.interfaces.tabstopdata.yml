@@ -1,0 +1,86 @@
+### YamlMime:TSType
+name: Word.Interfaces.TabStopData
+uid: word!Word.Interfaces.TabStopData:interface
+package: word!
+fullName: Word.Interfaces.TabStopData
+summary: >-
+  An interface describing the data returned by calling `tabStop.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: word!Word.Interfaces.TabStopData#alignment:member
+    package: word!
+    fullName: alignment
+    summary: >-
+      Gets a `TabAlignment` value that represents the alignment for the tab
+      stop.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        alignment?: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal"
+        | "Bar" | "List";
+      return:
+        type: >-
+          <xref uid="word!Word.TabAlignment:enum" /> | "Left" | "Center" |
+          "Right" | "Decimal" | "Bar" | "List"
+  - name: customTab
+    uid: word!Word.Interfaces.TabStopData#customTab:member
+    package: word!
+    fullName: customTab
+    summary: Gets whether this tab stop is a custom tab stop.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'customTab?: boolean;'
+      return:
+        type: boolean
+  - name: leader
+    uid: word!Word.Interfaces.TabStopData#leader:member
+    package: word!
+    fullName: leader
+    summary: >-
+      Gets a `TabLeader` value that represents the leader for this `TabStop`
+      object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        leader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
+      return:
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"
+  - name: position
+    uid: word!Word.Interfaces.TabStopData#position:member
+    package: word!
+    fullName: position
+    summary: Gets the position of the tab stop relative to the left margin.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'position?: number;'
+      return:
+        type: number

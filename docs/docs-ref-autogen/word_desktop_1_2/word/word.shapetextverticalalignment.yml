@@ -1,34 +1,43 @@
 ### YamlMime:TSEnum
 name: Word.ShapeTextVerticalAlignment
-uid: 'word!Word.ShapeTextVerticalAlignment:enum'
+uid: word!Word.ShapeTextVerticalAlignment:enum
 package: word!
 fullName: Word.ShapeTextVerticalAlignment
 summary: Specifies the vertical alignment for the text frame in a shape.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: bottom
-    uid: 'word!Word.ShapeTextVerticalAlignment.bottom:member'
+    uid: word!Word.ShapeTextVerticalAlignment.bottom:member
     package: word!
-    summary: |-
+    summary: >-
       Anchor the text at the bottom of the bounding rectangle.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
   - name: middle
-    uid: 'word!Word.ShapeTextVerticalAlignment.middle:member'
+    uid: word!Word.ShapeTextVerticalAlignment.middle:member
     package: word!
-    summary: |-
+    summary: >-
       Anchor the text at the middle of the bounding rectangle.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Middle"'
   - name: top
-    uid: 'word!Word.ShapeTextVerticalAlignment.top:member'
+    uid: word!Word.ShapeTextVerticalAlignment.top:member
     package: word!
-    summary: |-
+    summary: >-
       Anchor the text at the top of the bounding rectangle.
 
-      * \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

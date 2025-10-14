@@ -1,7 +1,7 @@
 ---
 title: Device Permission Service requirement sets
 description: Learn more about the Device Permission Service API requirement sets and the platforms it supports.
-ms.date: 10/22/2024
+ms.date: 06/17/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -19,7 +19,9 @@ Office Add-ins run across multiple versions of Office. The following table lists
 | DevicePermissionService 1.1 | Chromium-based browsers* | [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) | Not supported | Not supported | Not supported |
 
 > [!NOTE]
-> \* DevicePermissionService 1.1 is supported in Office on the web running in Chromium-based browsers, such as Microsoft Edge and Google Chrome.
+>
+> - \* DevicePermissionService 1.1 is supported in Office on the web running in Chromium-based browsers, such as Microsoft Edge and Google Chrome.
+> - Access to a user's geolocation is only supported in Outlook on the web and new Outlook on Windows.
 
 ## Office Common API requirement sets
 

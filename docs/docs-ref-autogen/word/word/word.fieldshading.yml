@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.FieldShading
+uid: word!Word.FieldShading:enum
+package: word!
+fullName: Word.FieldShading
+summary: Specifies the field shading options in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: always
+    uid: word!Word.FieldShading.always:member
+    package: word!
+    summary: >-
+      Always shade fields.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Always"'
+  - name: never
+    uid: word!Word.FieldShading.never:member
+    package: word!
+    summary: >-
+      Never shade fields.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Never"'
+  - name: whenSelected
+    uid: word!Word.FieldShading.whenSelected:member
+    package: word!
+    summary: >-
+      Shade fields when selected.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WhenSelected"'

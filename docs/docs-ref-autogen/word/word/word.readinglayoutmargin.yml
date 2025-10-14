@@ -1,0 +1,44 @@
+### YamlMime:TSEnum
+name: Word.ReadingLayoutMargin
+uid: word!Word.ReadingLayoutMargin:enum
+package: word!
+fullName: Word.ReadingLayoutMargin
+summary: Specifies the margin options in reading layout view in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: word!Word.ReadingLayoutMargin.automatic:member
+    package: word!
+    summary: >-
+      Microsoft Word determines automatically whether to show or hide the
+      margins based on the available space.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Automatic"'
+  - name: full
+    uid: word!Word.ReadingLayoutMargin.full:member
+    package: word!
+    summary: >-
+      Shows margins.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Full"'
+  - name: suppress
+    uid: word!Word.ReadingLayoutMargin.suppress:member
+    package: word!
+    summary: >-
+      Hides margins.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Suppress"'

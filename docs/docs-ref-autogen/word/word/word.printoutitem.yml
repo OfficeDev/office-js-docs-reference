@@ -1,0 +1,103 @@
+### YamlMime:TSEnum
+name: Word.PrintOutItem
+uid: word!Word.PrintOutItem:enum
+package: word!
+fullName: Word.PrintOutItem
+summary: Specifies the type of item to print from a document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: autoTextEntries
+    uid: word!Word.PrintOutItem.autoTextEntries:member
+    package: word!
+    summary: >-
+      Represents printing the AutoText entries.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AutoTextEntries"'
+  - name: comments
+    uid: word!Word.PrintOutItem.comments:member
+    package: word!
+    summary: >-
+      Represents printing the comments.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Comments"'
+  - name: documentContent
+    uid: word!Word.PrintOutItem.documentContent:member
+    package: word!
+    summary: >-
+      Represents printing the document content.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DocumentContent"'
+  - name: documentWithMarkup
+    uid: word!Word.PrintOutItem.documentWithMarkup:member
+    package: word!
+    summary: >-
+      Represents printing the document with markup.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DocumentWithMarkup"'
+  - name: envelope
+    uid: word!Word.PrintOutItem.envelope:member
+    package: word!
+    summary: >-
+      Represents printing the envelope.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Envelope"'
+  - name: keyAssignments
+    uid: word!Word.PrintOutItem.keyAssignments:member
+    package: word!
+    summary: >-
+      Represents printing the key assignments.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"KeyAssignments"'
+  - name: markup
+    uid: word!Word.PrintOutItem.markup:member
+    package: word!
+    summary: >-
+      Represents printing the markup.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Markup"'
+  - name: properties
+    uid: word!Word.PrintOutItem.properties:member
+    package: word!
+    summary: >-
+      Represents printing the document properties.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Properties"'
+  - name: styles
+    uid: word!Word.PrintOutItem.styles:member
+    package: word!
+    summary: >-
+      Represents printing the styles.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Styles"'

@@ -112,7 +112,7 @@ tryCatch(async () => {
     console.log("\ncreate file: excel.d.ts (preview)");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-excel/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other"),
+        handleCommonImports(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other"),
         "excel",
         forceRebuild
     );
@@ -120,7 +120,7 @@ tryCatch(async () => {
     console.log("\ncreate file: excel.d.ts (release)");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true),
+        handleCommonImports(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true),
         "excel",
         forceRebuild
     );
@@ -128,7 +128,7 @@ tryCatch(async () => {
     console.log("create file: onenote.d.ts");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-onenote/onenote.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other"),
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs"), "Other"),
         "onenote",
         forceRebuild
     );
@@ -152,15 +152,15 @@ tryCatch(async () => {
     console.log("create file: powerpoint.d.ts (preview)");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other"),
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other"),
         "powerpoint",
         forceRebuild
     );
 
     console.log("create file: powerpoint.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_7/powerpoint.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_9/powerpoint.d.ts',
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other", true),
         "powerpoint",
         forceRebuild
     );
@@ -168,7 +168,7 @@ tryCatch(async () => {
     console.log("create file: visio.d.ts");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-visio/visio.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other"),
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs"), "Other"),
         "visio",
         forceRebuild
     );
@@ -176,7 +176,7 @@ tryCatch(async () => {
     console.log("create file: word.d.ts (preview)");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-word/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"))), "Other"),
+        handleCommonImports(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs")), "Other"),
         "word",
         forceRebuild
     );
@@ -184,7 +184,7 @@ tryCatch(async () => {
     console.log("\ncreate file: word.d.ts (release)");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-word-release/word_online/word-init.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
+        handleCommonImports(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other", true),
         "word",
         forceRebuild
     );
@@ -282,38 +282,14 @@ function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook"
     }
 }
 
-function handleLiteralParameterOverloads(dtsString: string): string {
-    // rename parameters for string literal overloads
-    const matches = dtsString.match(/([a-zA-Z]+)(\??:)([\n]?([ |]*\"[\w]*\"[|,\n]*)+?)([ ]*[\),])/g);
-    let matchIndex = 0;
-    if (matches) {
-        matches.forEach((match) => {
-            let parameterName = match.substring(0, match.indexOf(":"));
-            matchIndex = dtsString.indexOf(match, matchIndex);
-            parameterName = parameterName.indexOf("?") >= 0 ? parameterName.substring(0, parameterName.length - 1) : parameterName;
-            const parameterString = `@param ${parameterName} `;
-            const index = dtsString.lastIndexOf(parameterString, matchIndex);
-            if (index < 0) {
-                // Only warn if this wasn't found in a comment.
-                if (dtsString.substring(dtsString.lastIndexOf("*", matchIndex), matchIndex + match.length).match(/([\*]+)/g).length == 0) {
-                    console.warn("Missing @param for literal parameter: " + match);
-                }
-            } else {
-                dtsString = dtsString.substring(0, index)
-                + "@param " + parameterName + "String "
-                + dtsString.substring(index + parameterString.length);
-                matchIndex += match.length;
-            }
-        });
-    }
-    return dtsString.replace(/([a-zA-Z]+)(\??:)([\n]?([ |]*\"[\w]*\"[|,\n]*)+?)([ ]*[\),])/g, "$1String$2$3$5").replace(/([\*]+.+ .+)String:/g, "$1:");
-}
-
 function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, keyword: string, forceNew: boolean) {
     const jsonRoot = "../json";
     const yamlRoot = "../yaml";
     
-    let existingDts = fsx.readFileSync(dtsFilePath).toString();
+    let existingDts = "";
+    if (fsx.existsSync(dtsFilePath)) {
+        existingDts = fsx.readFileSync(dtsFilePath).toString();
+    }
     if (existingDts !== dtsContent || forceNew) {
         fsx.writeFileSync(dtsFilePath, dtsContent);
         

@@ -1,11 +1,14 @@
 ### YamlMime:TSType
 name: Word.GetTextOptions
-uid: 'word!Word.GetTextOptions:interface'
+uid: word!Word.GetTextOptions:interface
 package: word!
 fullName: Word.GetTextOptions
-summary: Specifies the options to be included in a getText operation.
+summary: >-
+  Specifies the options to be included in a
+  [Paragraph.getText](xref:word!Word.Paragraph:class) operation.
 remarks: >-
-  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -30,18 +33,22 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: includeHiddenText
-    uid: 'word!Word.GetTextOptions#includeHiddenText:member'
+    uid: word!Word.GetTextOptions#includeHiddenText:member
     package: word!
     fullName: includeHiddenText
     summary: >-
-      Specifies a value that indicates whether to include hidden text in the result of the GetText method. The default
-      value is False.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      If provided, specifies whether to include hidden text in the result of the
+      `Paragraph.getText` method. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,13 +56,17 @@ properties:
       return:
         type: boolean
   - name: includeTextMarkedAsDeleted
-    uid: 'word!Word.GetTextOptions#includeTextMarkedAsDeleted:member'
+    uid: word!Word.GetTextOptions#includeTextMarkedAsDeleted:member
     package: word!
     fullName: includeTextMarkedAsDeleted
     summary: >-
-      Specifies a value that indicates whether to include text marked as deleted in the result of the GetText method.
-      The default value is False.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      If provided, specifies whether to include text marked as deleted in the
+      result of the `Paragraph.getText` method. The default value is `false`<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

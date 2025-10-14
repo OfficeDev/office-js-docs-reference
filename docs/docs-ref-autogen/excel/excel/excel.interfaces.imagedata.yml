@@ -1,32 +1,169 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ImageData
-uid: 'excel!Excel.Interfaces.ImageData:interface'
+uid: excel!Excel.Interfaces.ImageData:interface
 package: excel!
 fullName: Excel.Interfaces.ImageData
 summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: brightness
+    uid: excel!Excel.Interfaces.ImageData#brightness:member
+    package: excel!
+    fullName: brightness
+    summary: >-
+      Specifies the brightness of the image. The value for this property must be
+      a number from 0.0 (dimmest) to 1.0 (brightest).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'brightness?: number;'
+      return:
+        type: number
+  - name: colorType
+    uid: excel!Excel.Interfaces.ImageData#colorType:member
+    package: excel!
+    fullName: colorType
+    summary: Specifies the type of color transformation applied to the image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale"
+        | "BlackAndWhite" | "Watermark";
+      return:
+        type: >-
+          <xref uid="excel!Excel.PictureColorType:enum" /> | "Mixed" |
+          "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark"
+  - name: contrast
+    uid: excel!Excel.Interfaces.ImageData#contrast:member
+    package: excel!
+    fullName: contrast
+    summary: >-
+      Specifies the contrast of the image. The value for this property must be a
+      number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contrast?: number;'
+      return:
+        type: number
+  - name: cropBottom
+    uid: excel!Excel.Interfaces.ImageData#cropBottom:member
+    package: excel!
+    fullName: cropBottom
+    summary: >-
+      Specifies the number of points that are cropped off the bottom of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropBottom?: number;'
+      return:
+        type: number
+  - name: cropLeft
+    uid: excel!Excel.Interfaces.ImageData#cropLeft:member
+    package: excel!
+    fullName: cropLeft
+    summary: >-
+      Specifies the number of points that are cropped off the left side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropLeft?: number;'
+      return:
+        type: number
+  - name: cropRight
+    uid: excel!Excel.Interfaces.ImageData#cropRight:member
+    package: excel!
+    fullName: cropRight
+    summary: >-
+      Specifies the number of points that are cropped off the right side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropRight?: number;'
+      return:
+        type: number
+  - name: cropTop
+    uid: excel!Excel.Interfaces.ImageData#cropTop:member
+    package: excel!
+    fullName: cropTop
+    summary: Specifies the number of points that are cropped off the top of the image.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cropTop?: number;'
+      return:
+        type: number
   - name: format
-    uid: 'excel!Excel.Interfaces.ImageData#format:member'
+    uid: excel!Excel.Interfaces.ImageData#format:member
     package: excel!
     fullName: format
     summary: Returns the format of the image.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";'
+      content: >-
+        format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" |
+        "PNG" | "SVG";
       return:
-        type: '<xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
+        type: >-
+          <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
+          "JPEG" | "GIF" | "PNG" | "SVG"
   - name: id
-    uid: 'excel!Excel.Interfaces.ImageData#id:member'
+    uid: excel!Excel.Interfaces.ImageData#id:member
     package: excel!
     fullName: id
     summary: Specifies the shape identifier for the image object.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,0 +1,29 @@
+### YamlMime:TSType
+name: Word.Interfaces.ReviewerData
+uid: word!Word.Interfaces.ReviewerData:interface
+package: word!
+fullName: Word.Interfaces.ReviewerData
+summary: >-
+  An interface describing the data returned by calling `reviewer.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isVisible
+    uid: word!Word.Interfaces.ReviewerData#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies if the `Reviewer` object is visible.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,288 @@
+### YamlMime:TSType
+name: Word.TabStop
+uid: word!Word.TabStop:class
+package: word!
+fullName: Word.TabStop
+summary: Represents a tab stop in a Word document.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: alignment
+    uid: word!Word.TabStop#alignment:member
+    package: word!
+    fullName: alignment
+    summary: >-
+      Gets a `TabAlignment` value that represents the alignment for the tab
+      stop.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly alignment: Word.TabAlignment | "Left" | "Center" | "Right" |
+        "Decimal" | "Bar" | "List";
+      return:
+        type: >-
+          <xref uid="word!Word.TabAlignment:enum" /> | "Left" | "Center" |
+          "Right" | "Decimal" | "Bar" | "List"
+  - name: context
+    uid: word!Word.TabStop#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: customTab
+    uid: word!Word.TabStop#customTab:member
+    package: word!
+    fullName: customTab
+    summary: Gets whether this tab stop is a custom tab stop.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly customTab: boolean;'
+      return:
+        type: boolean
+  - name: leader
+    uid: word!Word.TabStop#leader:member
+    package: word!
+    fullName: leader
+    summary: >-
+      Gets a `TabLeader` value that represents the leader for this `TabStop`
+      object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly leader: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines"
+        | "Heavy" | "MiddleDot";
+      return:
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"
+  - name: next
+    uid: word!Word.TabStop#next:member
+    package: word!
+    fullName: next
+    summary: Gets the next tab stop in the collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly next: Word.TabStop;'
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+  - name: position
+    uid: word!Word.TabStop#position:member
+    package: word!
+    fullName: position
+    summary: Gets the position of the tab stop relative to the left margin.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly position: number;'
+      return:
+        type: number
+  - name: previous
+    uid: word!Word.TabStop#previous:member
+    package: word!
+    fullName: previous
+    summary: Gets the previous tab stop in the collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly previous: Word.TabStop;'
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+methods:
+  - name: clear()
+    uid: word!Word.TabStop#clear:member(1)
+    package: word!
+    fullName: clear()
+    summary: Removes this custom tab stop.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.TabStop#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.TabStopLoadOptions): Word.TabStop;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.TabStopLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.TabStop#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.TabStop;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.TabStop#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.TabStop;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.TabStop#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.TabStop` object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.TabStopData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TabStopData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TabStopData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.TabStop#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.TabStop;'
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.TabStop#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TabStop;'
+      return:
+        type: <xref uid="word!Word.TabStop:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

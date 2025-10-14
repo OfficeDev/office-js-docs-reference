@@ -42,6 +42,36 @@ export declare namespace Office {
              */
             Item = "item"
         }
+        /**
+         * Specifies the portion of a message's body displayed for replies to a conversation thread with more than one message.
+         *
+         * @remarks
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This enum is only supported in Outlook on the web and new Outlook on Windows. On these platforms, users can organize their messages as
+         * conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         *
+         * The `BodyMode` enum supports the following message organization settings.
+         *
+         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
+         *
+         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         *
+         * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
+         */
+        enum BodyMode {
+            /**
+             * The entire body of a message, including previous messages from the same conversation thread.
+             */
+            FullBody = 0,
+            /**
+             * The body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
+             * If messages are organized by conversation, it specifies only the current body of the reply. Conversely, if messages are organized as individual
+             * messages, it specifies the entire body of a message, including previous messages from the same conversation thread.
+             */
+            HostConfig = 1
+        }
         
         
         
@@ -410,9 +440,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: Location;
         
@@ -1183,9 +1219,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: string;
         /**
@@ -1576,6 +1618,9 @@ export declare namespace Office {
      * @remarks
      * [Api set: Mailbox 1.1]
      *
+     * To learn how to get or set the body of a mail item, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/insert-data-in-the-body | Get or set the body of a message or appointment in Outlook}.
+     *
      * **Known issue with HTML table border colors**
      *
      * Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a cell's borders may not reflect
@@ -1665,6 +1710,9 @@ export declare namespace Office {
          *
          * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
+         * - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -1712,6 +1760,9 @@ export declare namespace Office {
          *
          * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
+         * - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -1749,6 +1800,9 @@ export declare namespace Office {
          * - SVG files aren't supported. Use JPG or PNG files instead.
          *
          * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+         *
+         * - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -1788,6 +1842,9 @@ export declare namespace Office {
          * - SVG files aren't supported. Use JPG or PNG files instead.
          *
          * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+         *
+         * - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -1969,6 +2026,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**: The `remove` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
          * @param name - The `name` of the property to be removed.
          */
         remove(name: string): void;
@@ -2037,6 +2097,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The `set` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * @param name - The name of the property to be set.
          * @param value - The value of the property to be set.
@@ -2120,6 +2183,11 @@ export declare namespace Office {
          */
         OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";
     }
+    
+    
+    
+    
+    
     /**
      * Provides the email properties of the sender or specified recipients of an email message or appointment.
      *
@@ -2411,6 +2479,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: The Office.EnhancedLocation API was introduced in Mailbox requirement set 1.8. Use the EnhancedLocation API to better identify and manage
+     * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface Location {
         /**
@@ -2462,6 +2534,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
+         *
          * **Errors**:
          *
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
@@ -2485,6 +2560,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
          *
          * **Errors**:
          *
@@ -2755,8 +2833,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -2887,8 +2966,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -2938,8 +3018,9 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
+         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
          * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
@@ -3792,14 +3873,6 @@ export declare namespace Office {
          *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
-         *     <td>IPM.Note.SMIME</td>
-         *     <td>Encrypted messages that can also be signed</td>
-         *   </tr>
-         *   <tr>
-         *     <td>IPM.Note.SMIME.MultipartSigned</td>
-         *     <td>Clear-signed messages</td>
-         *   </tr>
-         *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
          *     <td>Meeting requests</td>
          *   </tr>
@@ -4269,18 +4342,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
-         * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
-         * supported. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't
+         * supported when a user replies from the the reply field at the bottom of a message.
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
+         *
+         * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4304,18 +4381,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
-         * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
-         * supported. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't
+         * supported when a user replies from the the reply field at the bottom of a message.
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
+         *
+         * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4372,6 +4453,8 @@ export declare namespace Office {
          * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
          * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
          *
+         * In Outlook on Android and on iOS, only the `getAsync` method is supported when a user replies from the reply field at the bottom of a message.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -4421,6 +4504,8 @@ export declare namespace Office {
          * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
          * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
          *
+         * In Outlook on Android and on iOS, only the `getAsync` method is supported when a user replies from the reply field at the bottom of a message.
+         *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of
          *                 {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
@@ -4438,18 +4523,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
-         * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
+         * If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
-         * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
-         * supported. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't
+         * supported when a user replies from the the reply field at the bottom of a message.
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
+         *
+         * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4476,18 +4565,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
+         * **Important**:
+         *
+         * With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
-         * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
+         * If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
-         * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
-         * supported. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't
+         * supported when a user replies from the the reply field at the bottom of a message.
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
+         *
+         * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4743,9 +4836,14 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * **Important**:
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *
@@ -4771,9 +4869,14 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * **Important**:
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+         * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
          * **Errors**:
          *

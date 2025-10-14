@@ -1,0 +1,211 @@
+### YamlMime:TSType
+name: Word.ReviewerCollection
+uid: word!Word.ReviewerCollection:class
+package: word!
+fullName: Word.ReviewerCollection
+summary: >-
+  A collection of [Word.Reviewer](xref:word!Word.Reviewer:class) objects that
+  represents the reviewers of one or more documents. The `ReviewerCollection`
+  object contains the names of all reviewers who have reviewed documents opened
+  or edited on a computer.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.ReviewerCollection#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: items
+    uid: word!Word.ReviewerCollection#items:member
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.Reviewer[];'
+      return:
+        type: <xref uid="word!Word.Reviewer:class" />[]
+methods:
+  - name: getItem(index)
+    uid: word!Word.ReviewerCollection#getItem:member(1)
+    package: word!
+    fullName: getItem(index)
+    summary: >-
+      Returns a `Reviewer` object that represents the specified item in the
+      collection.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItem(index: number): Word.Reviewer;'
+      parameters:
+        - id: index
+          description: The location of the item to retrieve.
+          type: number
+      return:
+        type: <xref uid="word!Word.Reviewer:class" />
+        description: ''
+  - name: load(options)
+    uid: word!Word.ReviewerCollection#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ReviewerCollectionLoadOptions &
+        Word.Interfaces.CollectionLoadOptions): Word.ReviewerCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.ReviewerCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.ReviewerCollection:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.ReviewerCollection#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ReviewerCollection;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.ReviewerCollection:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.ReviewerCollection#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Word.ReviewerCollection;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+      return:
+        type: <xref uid="word!Word.ReviewerCollection:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.ReviewerCollection#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.ReviewerCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Word.Interfaces.ReviewerCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's
+      items.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ReviewerCollectionData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ReviewerCollectionData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.ReviewerCollection#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ReviewerCollection;'
+      return:
+        type: <xref uid="word!Word.ReviewerCollection:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.ReviewerCollection#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ReviewerCollection;'
+      return:
+        type: <xref uid="word!Word.ReviewerCollection:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

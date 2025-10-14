@@ -1,44 +1,23 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Application](/javascript/api/excel/excel.application)|[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
+|[Application](/javascript/api/excel/excel.application)|[activeWindow](/javascript/api/excel/excel.application#excel-excel-application-activewindow-member)|Returns a `window` object that represents the active window (the window on top).|
+||[checkSpelling(word: string, options?: Excel.CheckSpellingOptions)](/javascript/api/excel/excel.application#excel-excel-application-checkspelling-member(1))|Checks the spelling of a single word.|
+||[enterEditingMode()](/javascript/api/excel/excel.application#excel-excel-application-entereditingmode-member(1))|Enters editing mode for the selected range in the active worksheet.|
+||[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
+||[union(firstRange: Range \| RangeAreas, secondRange: Range \| RangeAreas, ...additionalRanges: (Range \| RangeAreas)[])](/javascript/api/excel/excel.application#excel-excel-application-union-member(1))|Returns a `RangeAreas` object that represents the union of two or more `Range` or `RangeAreas` objects.|
+||[windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)|Returns all the Excel windows.|
 |[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The Base64-encoded string.|
 ||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the Base64-encoded image.|
-|[BasicCardLayout](/javascript/api/excel/excel.basiccardlayout)|[layout](/javascript/api/excel/excel.basiccardlayout#excel-excel-basiccardlayout-layout-member)|Represents the type of this layout.|
-|[BasicCompactLayout](/javascript/api/excel/excel.basiccompactlayout)|[icon](/javascript/api/excel/excel.basiccompactlayout#excel-excel-basiccompactlayout-icon-member)|Specifies the name of the icon which is used to open the card.|
-|[BasicViewLayouts](/javascript/api/excel/excel.basicviewlayouts)|[card](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-card-member)|Represents the layout of this value and its properties in card view.|
-||[compact](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-compact-member)|Represents the layout used when there is limited space to represent the value.|
-|[BlockedErrorCellValue](/javascript/api/excel/excel.blockederrorcellvalue)|[errorSubType](/javascript/api/excel/excel.blockederrorcellvalue#excel-excel-blockederrorcellvalue-errorsubtype-member)|Represents the type of `BlockedErrorCellValue`.|
-|[BooleanCellValue](/javascript/api/excel/excel.booleancellvalue)|[layouts](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-layouts-member)|Represents layout information for views of this boolean value.|
-||[properties](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-properties-member)|Represents additional properties of this boolean value.|
-||[provider](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-provider-member)|Represents information that describes the service that provided the data in this `BooleanCellValue`.|
-||[referencedValues](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-referencedvalues-member)|Represents the cell values which are referenced within `BooleanCellValue.properties`.|
-||[type](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-type-member)|Represents the type of this cell value.|
-|[BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-errorsubtype-member)|Represents the type of `BusyErrorCellValue`.|
-|[CalcErrorCellValue](/javascript/api/excel/excel.calcerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)|Represents the type of `CalcErrorCellValue`.|
-|[CardLayoutTwoColumnSection](/javascript/api/excel/excel.cardlayouttwocolumnsection)|[layout](/javascript/api/excel/excel.cardlayouttwocolumnsection#excel-excel-cardlayouttwocolumnsection-layout-member)|Represents the type of layout for this section.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
-|[ChartDataLabel](/javascript/api/excel/excel.chartdatalabel)|[geometricShapeType](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-geometricshapetype-member)|Gets or sets the geometric shape type of the data label.|
-||[getSubstring(start: number, length?: number)](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-getsubstring-member(1))|Returns a substring of the data label.|
-||[getTailAnchor()](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-gettailanchor-member(1))|Returns the tail anchor of the data label which is shown as a sticky callout.|
-||[setHeight(height: number)](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-setheight-member(1))|Sets the height of the data label in points.|
-||[setWidth(width: number)](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-setwidth-member(1))|Sets the width of the data label in points.|
-||[showAsStickyCallout](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-showasstickycallout-member)|Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point.|
-|[ChartDataLabelAnchor](/javascript/api/excel/excel.chartdatalabelanchor)|[left](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-left-member)|Represents the distance, in points, from the anchor to the left edge of the chart data label.|
-||[top](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-top-member)|Represents the distance, in points, from the anchor to the top edge of the chart data label.|
-|[ChartDataLabels](/javascript/api/excel/excel.chartdatalabels)|[geometricShapeType](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-geometricshapetype-member)|Gets or sets the geometric shape type of the data labels.|
-||[leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)|Gets an object that represents the leader lines of the data labels.|
-||[showAsStickyCallout](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-showasstickycallout-member)|Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point.|
-||[showLeaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-showleaderlines-member)|Gets or sets a value that indicates whether leader lines are displayed for the data labels.|
-|[ChartLeaderLines](/javascript/api/excel/excel.chartleaderlines)|[format](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-format-member)|Represents the formatting of leader lines of data labels in a series.|
-|[ChartLeaderLinesFormat](/javascript/api/excel/excel.chartleaderlinesformat)|[line](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-line-member)|Gets an object that represents the line formatting of chart leader lines.|
+|[CheckSpellingOptions](/javascript/api/excel/excel.checkspellingoptions)|[customDictionary](/javascript/api/excel/excel.checkspellingoptions#excel-excel-checkspellingoptions-customdictionary-member)|Optional.|
+||[ignoreUppercase](/javascript/api/excel/excel.checkspellingoptions#excel-excel-checkspellingoptions-ignoreuppercase-member)|Optional.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
 |[CommentReply](/javascript/api/excel/excel.commentreply)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))|Assigns the task attached to the comment to the given user as the sole assignee.|
 ||[getTask()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))|Gets the task associated with this comment reply's thread.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))|Gets the task associated with this comment reply's thread.|
-|[ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue)|[errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#excel-excel-connecterrorcellvalue-errorsubtype-member)|Represents the type of `ConnectErrorCellValue`.|
 |[DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo)|[shortDateTimePattern](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-shortdatetimepattern-member)|Gets the format string for a short date and time value.|
 |[DocumentTask](/javascript/api/excel/excel.documenttask)|[assign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))|Adds the given user to the list of assignees attached to the task.|
 ||[assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)|Returns a collection of assignees of the task.|
@@ -51,7 +30,7 @@
 ||[id](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-id-member)|Gets the ID of the task.|
 ||[percentComplete](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-percentcomplete-member)|Specifies the completion percentage of the task.|
 ||[priority](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-priority-member)|Specifies the priority of the task.|
-||[startAndDueDateTime](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-startandduedatetime-member)|Gets or sets the date and time the task should start and is due.|
+||[startAndDueDateTime](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-startandduedatetime-member)|Specifies the date and time the task should start and is due.|
 ||[title](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-title-member)|Specifies title of the task.|
 ||[unassign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassign-member(1))|Removes the given user from the list of assignees attached to the task.|
 ||[unassignAll()](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassignall-member(1))|Removes all users from the list of assignees attached to the task.|
@@ -77,12 +56,6 @@
 ||[items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)|Gets the loaded child items in this collection.|
 |[DocumentTaskSchedule](/javascript/api/excel/excel.documenttaskschedule)|[dueDateTime](/javascript/api/excel/excel.documenttaskschedule#excel-excel-documenttaskschedule-duedatetime-member)|Gets the date and time that the task is due.|
 ||[startDateTime](/javascript/api/excel/excel.documenttaskschedule#excel-excel-documenttaskschedule-startdatetime-member)|Gets the date and time that the task should start.|
-|[DoubleCellValue](/javascript/api/excel/excel.doublecellvalue)|[layouts](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-layouts-member)|Represents layout information for views of this double value.|
-||[numberFormat](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-numberformat-member)|Returns the number format string that is used to display this value.|
-||[properties](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-properties-member)|Represents additional properties of this double value.|
-||[provider](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-provider-member)|Represents information that describes the service that provided the data in this `DoubleCellValue`.|
-||[referencedValues](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-referencedvalues-member)|Represents the cell values which are referenced within `DoubleCellValue.properties`.|
-||[type](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-type-member)|Represents the type of this cell value.|
 |[EmailIdentity](/javascript/api/excel/excel.emailidentity)|[displayName](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-displayname-member)|Represents the user's display name.|
 ||[email](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-email-member)|Represents the user's email.|
 ||[id](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-id-member)|Represents the user's unique ID.|
@@ -92,8 +65,7 @@
 ||[firstRowIsHeader](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-firstrowisheader-member)|Represents whether the first row of the array is treated as a header.|
 ||[layout](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-layout-member)|Represents the type of this layout.|
 ||[rowsToReport](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-rowstoreport-member)|Represents the count of rows which the card claims are in the array.|
-|[EntityCardLayout](/javascript/api/excel/excel.entitycardlayout)|[layout](/javascript/api/excel/excel.entitycardlayout#excel-excel-entitycardlayout-layout-member)|Represents the type of this layout.|
-|[ExternalCodeServiceObjectCellValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue)|[Python_str](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_str-member)|Represents the output of str() function when used on this object.|
+|[ExternalCodeServiceObjectCellValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue)|[Python_str](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_str-member)|Represents the output of the `str()` function when used on this object.|
 ||[Python_type](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_type-member)|Represents the full type name of this object.|
 ||[Python_typeName](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-python_typename-member)|Represents the short type name of this object.|
 ||[basicType](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
@@ -102,81 +74,34 @@
 ||[preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)|Represents the preview value shown in the cell.|
 ||[provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-provider-member)|Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.|
 ||[type](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-type-member)|Represents the type of this cell value.|
+|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|[centerFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerfooterpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.|
+||[centerHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerheaderpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.|
+||[leftFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftfooterpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.|
+||[leftHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftheaderpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.|
+||[rightFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightfooterpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.|
+||[rightHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightheaderpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.|
+|[HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture)|[brightness](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-brightness-member)|Specifies the brightness of the picture.|
+||[colorType](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-colortype-member)|Specifies the type of color transformation of the picture.|
+||[contrast](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-contrast-member)|Specifies the contrast of the picture.|
+||[cropBottom](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-cropbottom-member)|Specifies the number of points that are cropped off the bottom of the picture.|
+||[cropLeft](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-cropleft-member)|Specifies the number of points that are cropped off the left side of the picture.|
+||[cropRight](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-cropright-member)|Specifies the number of points that are cropped off the right side of the picture.|
+||[cropTop](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-croptop-member)|Specifies the number of points that are cropped off the top of the picture.|
+||[filename](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-filename-member)|Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.|
+||[height](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-height-member)|Specifies the height of the picture in points.|
+||[lockAspectRatio](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-lockaspectratio-member)|Specifies a value that indicates whether the picture retains its original proportions when resized.|
+||[width](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-width-member)|Specifies the width of the picture in points.|
 |[Identity](/javascript/api/excel/excel.identity)|[displayName](/javascript/api/excel/excel.identity#excel-excel-identity-displayname-member)|Represents the user's display name.|
 ||[id](/javascript/api/excel/excel.identity#excel-excel-identity-id-member)|Represents the user's unique ID.|
-|[JavaScriptCustomFunctionReferenceCellValue](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue)|[basicType](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue#excel-excel-javascriptcustomfunctionreferencecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
-||[basicValue](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue#excel-excel-javascriptcustomfunctionreferencecellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
-||[functionType](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue#excel-excel-javascriptcustomfunctionreferencecellvalue-functiontype-member)|Represents the type of `FunctionCellValue`.|
-||[id](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue#excel-excel-javascriptcustomfunctionreferencecellvalue-id-member)|Represents the ID of the custom function.|
-||[namespace](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue#excel-excel-javascriptcustomfunctionreferencecellvalue-namespace-member)|Represents the namespace used by the custom function.|
-||[type](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue#excel-excel-javascriptcustomfunctionreferencecellvalue-type-member)|Represents the type of this cell value.|
-|[LinkedDataType](/javascript/api/excel/excel.linkeddatatype)|[dataProvider](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-dataprovider-member)|The name of the data provider for the linked data type.|
-||[lastRefreshed](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-lastrefreshed-member)|The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.|
-||[name](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-name-member)|The name of the linked data type.|
-||[periodicRefreshInterval](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-periodicrefreshinterval-member)|The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".|
-||[refreshMode](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-refreshmode-member)|The mechanism by which the data for the linked data type is retrieved.|
-||[requestRefresh()](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-requestrefresh-member(1))|Makes a request to refresh the linked data type.|
-||[requestSetRefreshMode(refreshMode: Excel.LinkedDataTypeRefreshMode)](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-requestsetrefreshmode-member(1))|Makes a request to change the refresh mode for this linked data type.|
-||[serviceId](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-serviceid-member)|The unique ID of the linked data type.|
-||[supportedRefreshModes](/javascript/api/excel/excel.linkeddatatype#excel-excel-linkeddatatype-supportedrefreshmodes-member)|Returns an array with all the refresh modes supported by the linked data type.|
-|[LinkedDataTypeAddedEventArgs](/javascript/api/excel/excel.linkeddatatypeaddedeventargs)|[serviceId](/javascript/api/excel/excel.linkeddatatypeaddedeventargs#excel-excel-linkeddatatypeaddedeventargs-serviceid-member)|The unique ID of the new linked data type.|
-||[source](/javascript/api/excel/excel.linkeddatatypeaddedeventargs#excel-excel-linkeddatatypeaddedeventargs-source-member)|Gets the source of the event.|
-||[type](/javascript/api/excel/excel.linkeddatatypeaddedeventargs#excel-excel-linkeddatatypeaddedeventargs-type-member)|Gets the type of the event.|
-|[LinkedDataTypeCollection](/javascript/api/excel/excel.linkeddatatypecollection)|[getCount()](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getcount-member(1))|Gets the number of linked data types in the collection.|
-||[getItem(key: number)](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getitem-member(1))|Gets a linked data type by service ID.|
-||[getItemAt(index: number)](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getitemat-member(1))|Gets a linked data type by its index in the collection.|
-||[getItemOrNullObject(key: number)](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getitemornullobject-member(1))|Gets a linked data type by ID.|
-||[items](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-items-member)|Gets the loaded child items in this collection.|
-||[requestRefreshAll()](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-requestrefreshall-member(1))|Makes a request to refresh all the linked data types in the collection.|
-|[LinkedEntityDataDomain](/javascript/api/excel/excel.linkedentitydatadomain)|[dataProvider](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-dataprovider-member)|Gets the name of the data provider for the linked entity data domain.|
-||[delete()](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-delete-member(1))|Deletes this object from the `LinkedEntityDataDomainCollection`.|
-||[id](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-id-member)|Gets the ID of the linked entity data domain defined by Office Add-ins.|
-||[lastRefreshed](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-lastrefreshed-member)|Gets the date and time (in the local time zone) since the workbook was opened and the `LinkedEntityCellValue` objects of this linked entity data domain were last refreshed.|
-||[loadFunctionId](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-loadfunctionid-member)|Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.|
-||[name](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-name-member)|Gets the name of the linked entity data domain.|
-||[periodicRefreshInterval](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-periodicrefreshinterval-member)|Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically.|
-||[refresh()](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refresh-member(1))|Refreshes all `LinkedEntityCellValue` objects of this linked entity data domain.|
-||[refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member)|Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.|
-||[serviceId](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-serviceid-member)|Gets the service ID of the linked entity data domain.|
-||[supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)|Gets all the refresh modes supported by the linked entity data domain.|
-|[LinkedEntityDataDomainAddedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainaddedeventargs)|[id](/javascript/api/excel/excel.linkedentitydatadomainaddedeventargs#excel-excel-linkedentitydatadomainaddedeventargs-id-member)|Gets the ID of the linked entity data domain that was just added to the workbook.|
-||[serviceId](/javascript/api/excel/excel.linkedentitydatadomainaddedeventargs#excel-excel-linkedentitydatadomainaddedeventargs-serviceid-member)|Gets the service ID of the linked entity data domain that was just added to the workbook.|
-||[source](/javascript/api/excel/excel.linkedentitydatadomainaddedeventargs#excel-excel-linkedentitydatadomainaddedeventargs-source-member)|Gets the source of the event.|
-||[type](/javascript/api/excel/excel.linkedentitydatadomainaddedeventargs#excel-excel-linkedentitydatadomainaddedeventargs-type-member)|Gets the type of the event.|
-|[LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection)|[add(options: Excel.LinkedEntityDataDomainCreateOptions)](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-add-member(1))|Adds a linked entity data domain object defined by the Office Add-in to the collection.|
-||[getCount()](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getcount-member(1))|Gets the number of linked entity data domains in the collection.|
-||[getItem(id: string)](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitem-member(1))|Gets a linked entity data domain by its `id`.|
-||[getItemAt(index: number)](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemat-member(1))|Gets a linked entity data domain by its index in the collection.|
-||[getItemByName(name: string)](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembyname-member(1))|Gets a linked entity data domain by its `name`.|
-||[getItemByNameOrNullObject(name: string)](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembynameornullobject-member(1))|Gets a linked entity data domain by its `name`.|
-||[getItemOrNullObject(id: string)](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemornullobject-member(1))|Gets a linked entity data domain by its `id`.|
-||[items](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-items-member)|Gets the loaded child items in this collection.|
-||[onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitydatadomainadded-member)|Occurs when a new linked entity data domain is added to the workbook.|
-||[onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshcompleted-member)|Occurs when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.|
-||[onRefreshModeChanged](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshmodechanged-member)|Occurs when the `refreshMode` of a linked entity data domain is changed.|
-||[refreshAll()](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-refreshall-member(1))|Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.|
-|[LinkedEntityDataDomainCreateOptions](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions)|[dataProvider](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-dataprovider-member)|Gets or sets the name of the data provider for the linked entity data domain.|
-||[id](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-id-member)|Gets or sets the ID of the linked entity data domain.|
-||[loadFunctionId](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-loadfunctionid-member)|Gets or sets the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.|
-||[name](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-name-member)|Gets or sets the name of the linked entity data domain.|
-||[periodicRefreshInterval](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-periodicrefreshinterval-member)|Gets or sets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically.|
-||[supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-supportedrefreshmodes-member)|Gets or sets all the refresh modes supported by the linked entity data domain.|
-|[LinkedEntityDataDomainRefreshCompletedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs)|[errors](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs#excel-excel-linkedentitydatadomainrefreshcompletedeventargs-errors-member)|Gets any errors encountered during the request to refresh `LinkedEntityCellValue` objects of the linked entity data domain.|
-||[id](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs#excel-excel-linkedentitydatadomainrefreshcompletedeventargs-id-member)|Gets the ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.|
-||[refreshed](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs#excel-excel-linkedentitydatadomainrefreshcompletedeventargs-refreshed-member)|Returns `true` if the `LinkedEntityCellValue` objects of the linked entity data domain were refreshed successfully, otherwise returns `false`.|
-||[serviceId](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs#excel-excel-linkedentitydatadomainrefreshcompletedeventargs-serviceid-member)|Gets the service ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.|
-||[source](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs#excel-excel-linkedentitydatadomainrefreshcompletedeventargs-source-member)|Gets the source of the event.|
-||[type](/javascript/api/excel/excel.linkedentitydatadomainrefreshcompletedeventargs#excel-excel-linkedentitydatadomainrefreshcompletedeventargs-type-member)|Gets the type of the event.|
-|[LinkedEntityDataDomainRefreshModeChangedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs)|[id](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-id-member)|Gets the ID of the linked entity data domain whose refresh mode was changed.|
-||[refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-refreshmode-member)|Gets the new refresh mode of the linked entity data domain.|
-||[serviceId](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-serviceid-member)|Gets the service ID of the linked entity data domain whose refresh mode was changed.|
-||[source](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-source-member)|Gets the source of the event.|
-||[type](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-type-member)|Gets the type of the event.|
-|[LinkedEntityIdCulture](/javascript/api/excel/excel.linkedentityidculture)|[culture](/javascript/api/excel/excel.linkedentityidculture#excel-excel-linkedentityidculture-culture-member)|Represents the language culture used to create the `LinkedEntityCellValue` object.|
-||[entityId](/javascript/api/excel/excel.linkedentityidculture#excel-excel-linkedentityidculture-entityid-member)|Represents the identifier specific to a service used to create the `LinkedEntityCellValue` object.|
-|[LinkedEntityLoadServiceRequest](/javascript/api/excel/excel.linkedentityloadservicerequest)|[domainId](/javascript/api/excel/excel.linkedentityloadservicerequest#excel-excel-linkedentityloadservicerequest-domainid-member)|Represents the domain specific to the service used to create the `LinkedEntityCellValue` objects.|
-||[entities](/javascript/api/excel/excel.linkedentityloadservicerequest#excel-excel-linkedentityloadservicerequest-entities-member)|Represents the entity IDs and cultures of the `LinkedEntityCellValue` objects to load.|
-|[LinkedEntityLoadServiceResult](/javascript/api/excel/excel.linkedentityloadserviceresult)|[entities](/javascript/api/excel/excel.linkedentityloadserviceresult#excel-excel-linkedentityloadserviceresult-entities-member)|Represents the loaded `LinkedEntityCellValue` objects.|
+|[Image](/javascript/api/excel/excel.image)|[brightness](/javascript/api/excel/excel.image#excel-excel-image-brightness-member)|Specifies the brightness of the image.|
+||[colorType](/javascript/api/excel/excel.image#excel-excel-image-colortype-member)|Specifies the type of color transformation applied to the image.|
+||[contrast](/javascript/api/excel/excel.image#excel-excel-image-contrast-member)|Specifies the contrast of the image.|
+||[cropBottom](/javascript/api/excel/excel.image#excel-excel-image-cropbottom-member)|Specifies the number of points that are cropped off the bottom of the image.|
+||[cropLeft](/javascript/api/excel/excel.image#excel-excel-image-cropleft-member)|Specifies the number of points that are cropped off the left side of the image.|
+||[cropRight](/javascript/api/excel/excel.image#excel-excel-image-cropright-member)|Specifies the number of points that are cropped off the right side of the image.|
+||[cropTop](/javascript/api/excel/excel.image#excel-excel-image-croptop-member)|Specifies the number of points that are cropped off the top of the image.|
+||[incrementBrightness(increment: number)](/javascript/api/excel/excel.image#excel-excel-image-incrementbrightness-member(1))|Increments the brightness of the image by a specified amount.|
+||[incrementContrast(increment: number)](/javascript/api/excel/excel.image#excel-excel-image-incrementcontrast-member(1))|Increments the contrast of the image by a specified amount.|
 |[LocalImage](/javascript/api/excel/excel.localimage)|[getBase64EncodedImageData(cacheUid: string)](/javascript/api/excel/excel.localimage#excel-excel-localimage-getbase64encodedimagedata-member(1))|Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).|
 |[LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue)|[altText](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-alttext-member)|Represents the alternate text used in accessibility scenarios to describe what the image represents.|
 ||[attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)|Represents attribution information to describe the source and license requirements for this image.|
@@ -189,9 +114,16 @@
 |[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)|Represents the type of `NameErrorCellValue`.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)|Represents the type of `NotAvailableErrorCellValue`.|
+|[PageLayout](/javascript/api/excel/excel.pagelayout)|[alignMarginsHeaderFooter](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-alignmarginsheaderfooter-member)|Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.|
+||[printQuality](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printquality-member)|Specifies a two-element array that contains both horizontal and vertical print quality values.|
+|[Pane](/javascript/api/excel/excel.pane)|[index](/javascript/api/excel/excel.pane#excel-excel-pane-index-member)|Returns index of the pane.|
+|[PaneCollection](/javascript/api/excel/excel.panecollection)|[getCount()](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getcount-member(1))|Returns the number of bindings in the collection.|
+||[getItemAt(index: number)](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1))|Gets the Pane in the collection by index.|
+||[items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)|Gets the loaded child items in this collection.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
 ||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
+|[PivotTable](/javascript/api/excel/excel.pivottable)|[autoRefresh](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-autorefresh-member)|Specifies whether the PivotTable auto refreshes when the source data changes.|
 |[PythonErrorCellValue](/javascript/api/excel/excel.pythonerrorcellvalue)|[basicType](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorType](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
@@ -199,32 +131,29 @@
 |[Query](/javascript/api/excel/excel.query)|[delete()](/javascript/api/excel/excel.query#excel-excel-query-delete-member(1))|Deletes the query and associated connection.|
 ||[refresh()](/javascript/api/excel/excel.query#excel-excel-query-refresh-member(1))|Refreshes the query.|
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
-|[Range](/javascript/api/excel/excel.range)|[getDisplayedCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions)](/javascript/api/excel/excel.range#excel-excel-range-getdisplayedcellproperties-member(1))|Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.|
-|[RangeAreas](/javascript/api/excel/excel.rangeareas)|||
-|[RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue)|[errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)|Represents the type of `RefErrorCellValue`.|
-|[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-refreshmode-member)|The linked data type refresh mode.|
-||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-serviceid-member)|The unique ID of the object whose refresh mode was changed.|
-||[source](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-source-member)|Gets the source of the event.|
-||[type](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-type-member)|Gets the type of the event.|
-|[RefreshRequestCompletedEventArgs](/javascript/api/excel/excel.refreshrequestcompletedeventargs)|[refreshed](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-refreshed-member)|Indicates if the request to refresh was successful.|
-||[serviceId](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-serviceid-member)|The unique ID of the object whose refresh request was completed.|
-||[source](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-source-member)|Gets the source of the event.|
-||[type](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-type-member)|Gets the type of the event.|
-||[warnings](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-warnings-member)|An array that contains any warnings generated from the refresh request.|
-|[SettableCellProperties](/javascript/api/excel/excel.settablecellproperties)|[textRuns](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-textruns-member)|Represents the `textRuns` property.|
+|[Range](/javascript/api/excel/excel.range)|[checkSpelling(options?: Excel.CheckSpellingOptions)](/javascript/api/excel/excel.range#excel-excel-range-checkspelling-member(1))|Checks the spelling of words in this range.|
+||[formulaArray](/javascript/api/excel/excel.range#excel-excel-range-formulaarray-member)|Specifies the array formula of a range.|
+||[showDependents(remove?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-showdependents-member(1))|Draws tracer arrows to the direct dependents of the range.|
+||[showPrecedents(remove?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-showprecedents-member(1))|Draws tracer arrows to the direct precedents of the range.|
+||[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
+|[RequestContext](/javascript/api/excel/excel.requestcontext)|[setInvocation(invocation: { invocationId: number isInCFSyncScenario: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
 ||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
-|[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Represents the slicer name used in the formula.|
+|[ShapeFont](/javascript/api/excel/excel.shapefont)|[strikethrough](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-strikethrough-member)|Specifies the strikethrough status of font.|
+||[subscript](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-subscript-member)|Specifies the subscript status of font.|
+||[superscript](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-superscript-member)|Specifies the superscript status of font.|
+||[tintAndShade](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-tintandshade-member)|Specifies a double that lightens or darkens a color for the range font.|
+|[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Specifies the slicer name used in the formula.|
 ||[setStyle(style: string \| SlicerStyle \| BuiltInSlicerStyle)](/javascript/api/excel/excel.slicer#excel-excel-slicer-setstyle-member(1))|Sets the style applied to the slicer.|
 ||[slicerStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-slicerstyle-member)|The style applied to the slicer.|
-|[StringCellValue](/javascript/api/excel/excel.stringcellvalue)|[layouts](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-layouts-member)|Represents layout information for views of this string value.|
-||[properties](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-properties-member)|Represents additional properties of this string value.|
-||[provider](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-provider-member)|Represents information that describes the service that provided the data in this `StringCellValue`.|
-||[referencedValues](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-referencedvalues-member)|Represents the cell values which are referenced within `StringCellValue.properties`.|
-||[type](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-type-member)|Represents the type of this cell value.|
-|[Table](/javascript/api/excel/excel.table)|[clearStyle()](/javascript/api/excel/excel.table#excel-excel-table-clearstyle-member(1))|Changes the table to use the default table style.|
+|[Table](/javascript/api/excel/excel.table)|[altTextDescription](/javascript/api/excel/excel.table#excel-excel-table-alttextdescription-member)|Specifies the alternative text for accessibility.|
+||[altTextTitle](/javascript/api/excel/excel.table#excel-excel-table-alttexttitle-member)|Specifies a summary for the table, such as one used by screen readers.|
+||[clearStyle()](/javascript/api/excel/excel.table#excel-excel-table-clearstyle-member(1))|Changes the table to use the default table style.|
+||[comment](/javascript/api/excel/excel.table#excel-excel-table-comment-member)|Specifies a comment associated with the table.|
+||[isActive](/javascript/api/excel/excel.table#excel-excel-table-isactive-member)|Retrieves whether the table is currently active.|
 ||[onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member)|Occurs when a filter is applied on a specific table.|
 ||[setStyle(style: string \| TableStyle \| BuiltInTableStyle)](/javascript/api/excel/excel.table#excel-excel-table-setstyle-member(1))|Sets the style applied to the table.|
+||[source](/javascript/api/excel/excel.table#excel-excel-table-source-member)|Retrieves the data source type from which the table originates.|
 ||[tableStyle](/javascript/api/excel/excel.table#excel-excel-table-tablestyle-member)|The style applied to the table.|
 |[TableCollection](/javascript/api/excel/excel.tablecollection)|[onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)|Occurs when a filter is applied on any table in a workbook, or a worksheet.|
 |[TableFilteredEventArgs](/javascript/api/excel/excel.tablefilteredeventargs)|[tableId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-tableid-member)|Gets the ID of the table in which the filter is applied.|
@@ -235,18 +164,77 @@
 ||[errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)|Represents the type of `TimeoutErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
-|[ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)|Represents the type of `ValueErrorCellValue`.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
-||[getActiveShape()](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshape-member(1))|Gets the active shape in the workbook.|
-||[getActiveShapeOrNullObject()](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshapeornullobject-member(1))|Gets the active shape in the workbook.|
-||[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|
-||[linkedEntityDataDomains](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedentitydatadomains-member)|Returns a collection of linked entity data domains that are available in the workbook.|
+|[Window](/javascript/api/excel/excel.window)|[activate()](/javascript/api/excel/excel.window#excel-excel-window-activate-member(1))|Activates the window.|
+||[activateNext()](/javascript/api/excel/excel.window#excel-excel-window-activatenext-member(1))|Activates the next window.|
+||[activatePrevious()](/javascript/api/excel/excel.window#excel-excel-window-activateprevious-member(1))|Activates the previous window.|
+||[activeCell](/javascript/api/excel/excel.window#excel-excel-window-activecell-member)|Specifies the active cell in the window.|
+||[activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)|Specifies the active pane in the window.|
+||[activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)|Specifies the active sheet in the window.|
+||[autoFilterDateGroupingEnabled](/javascript/api/excel/excel.window#excel-excel-window-autofilterdategroupingenabled-member)|Specifies whether AutoFilter date grouping is enabled in the window.|
+||[close()](/javascript/api/excel/excel.window#excel-excel-window-close-member(1))|Closes the window.|
+||[enableResize](/javascript/api/excel/excel.window#excel-excel-window-enableresize-member)|Specifies a value indicating whether resizing is enabled for the window.|
+||[freezePanes](/javascript/api/excel/excel.window#excel-excel-window-freezepanes-member)|Specifies a value indicating whether panes are frozen in the window.|
+||[height](/javascript/api/excel/excel.window#excel-excel-window-height-member)|Specifies the height of the window.|
+||[index](/javascript/api/excel/excel.window#excel-excel-window-index-member)|Gets the index of the window.|
+||[isVisible](/javascript/api/excel/excel.window#excel-excel-window-isvisible-member)|Specifies the visibility of the window.|
+||[largeScroll(Down: number, Up: number, ToRight: number, ToLeft: number)](/javascript/api/excel/excel.window#excel-excel-window-largescroll-member(1))|Scrolls the window by a large amount.|
+||[left](/javascript/api/excel/excel.window#excel-excel-window-left-member)|Specifies the left position of the window.|
+||[name](/javascript/api/excel/excel.window#excel-excel-window-name-member)|Specifies the name of the window.|
+||[newWindow()](/javascript/api/excel/excel.window#excel-excel-window-newwindow-member(1))|Open a new window|
+||[panes](/javascript/api/excel/excel.window#excel-excel-window-panes-member)|Gets the panes associated with the window.|
+||[pointsToScreenPixelsX(Points: number)](/javascript/api/excel/excel.window#excel-excel-window-pointstoscreenpixelsx-member(1))|Converts horizontal points to screen pixels.|
+||[pointsToScreenPixelsY(Points: number)](/javascript/api/excel/excel.window#excel-excel-window-pointstoscreenpixelsy-member(1))|Converts vertical points to screen pixels.|
+||[rangeSelection](/javascript/api/excel/excel.window#excel-excel-window-rangeselection-member)|Gets the range selection in the window.|
+||[scrollColumn](/javascript/api/excel/excel.window#excel-excel-window-scrollcolumn-member)|Specifies the scroll column of the window.|
+||[scrollIntoView(Left: number, Top: number, Width: number, Height: number, Start?: boolean)](/javascript/api/excel/excel.window#excel-excel-window-scrollintoview-member(1))|Scrolls the window to bring the specified range into view.|
+||[scrollRow](/javascript/api/excel/excel.window#excel-excel-window-scrollrow-member)|Specifies the scroll row of the window.|
+||[scrollWorkbookTabs(Sheets?: number, Position?: Excel.ScrollWorkbookTabPosition)](/javascript/api/excel/excel.window#excel-excel-window-scrollworkbooktabs-member(1))|Scrolls the workbook tabs.|
+||[showFormulas](/javascript/api/excel/excel.window#excel-excel-window-showformulas-member)|Specifies the display of formulas in the window.|
+||[showGridlines](/javascript/api/excel/excel.window#excel-excel-window-showgridlines-member)|Specifies the display of gridlines in the window.|
+||[showHeadings](/javascript/api/excel/excel.window#excel-excel-window-showheadings-member)|Specifies the display of headings in the window.|
+||[showHorizontalScrollBar](/javascript/api/excel/excel.window#excel-excel-window-showhorizontalscrollbar-member)|Specifies the display of the horizontal scroll bar in the window.|
+||[showOutline](/javascript/api/excel/excel.window#excel-excel-window-showoutline-member)|Specifies the display of the outline in the window.|
+||[showRightToLeft](/javascript/api/excel/excel.window#excel-excel-window-showrighttoleft-member)|Specifies the display of the right-to-left layout in the window.|
+||[showRuler](/javascript/api/excel/excel.window#excel-excel-window-showruler-member)|Specifies the display of the ruler in the window.|
+||[showVerticalScrollBar](/javascript/api/excel/excel.window#excel-excel-window-showverticalscrollbar-member)|Specifies the display of the vertical scroll bar in the window.|
+||[showWhitespace](/javascript/api/excel/excel.window#excel-excel-window-showwhitespace-member)|Specifies the display of whitespace in the window.|
+||[showWorkbookTabs](/javascript/api/excel/excel.window#excel-excel-window-showworkbooktabs-member)|Specifies the display of workbook tabs in the window.|
+||[showZeros](/javascript/api/excel/excel.window#excel-excel-window-showzeros-member)|Specifies the display of zeros in the window.|
+||[smallScroll(Down: number, Up: number, ToRight: number, ToLeft: number)](/javascript/api/excel/excel.window#excel-excel-window-smallscroll-member(1))|Scrolls the window by a small amount.|
+||[split](/javascript/api/excel/excel.window#excel-excel-window-split-member)|Specifies the split state of the window.|
+||[splitColumn](/javascript/api/excel/excel.window#excel-excel-window-splitcolumn-member)|Specifies the split column of the window.|
+||[splitHorizontal](/javascript/api/excel/excel.window#excel-excel-window-splithorizontal-member)|Specifies the horizontal split of the window.|
+||[splitRow](/javascript/api/excel/excel.window#excel-excel-window-splitrow-member)|Specifies the split row of the window.|
+||[splitVertical](/javascript/api/excel/excel.window#excel-excel-window-splitvertical-member)|Specifies the vertical split of the window.|
+||[tabRatio](/javascript/api/excel/excel.window#excel-excel-window-tabratio-member)|Specifies the tab ratio of the window.|
+||[top](/javascript/api/excel/excel.window#excel-excel-window-top-member)|Specifies the top position of the window.|
+||[type](/javascript/api/excel/excel.window#excel-excel-window-type-member)|Specifies the type of the window.|
+||[usableHeight](/javascript/api/excel/excel.window#excel-excel-window-usableheight-member)|Specifies the usable height of the window.|
+||[usableWidth](/javascript/api/excel/excel.window#excel-excel-window-usablewidth-member)|Specifies the usable width of the window.|
+||[view](/javascript/api/excel/excel.window#excel-excel-window-view-member)|Specifies the view of the window.|
+||[visibleRange](/javascript/api/excel/excel.window#excel-excel-window-visiblerange-member)|Gets the visible range of the window.|
+||[width](/javascript/api/excel/excel.window#excel-excel-window-width-member)|Returns or sets an integer value that represents the display size of the window.|
+||[windowNumber](/javascript/api/excel/excel.window#excel-excel-window-windownumber-member)|Specifies the window number.|
+||[windowState](/javascript/api/excel/excel.window#excel-excel-window-windowstate-member)|Returns or sets an integer value that represents the display size of the window.|
+||[zoom](/javascript/api/excel/excel.window#excel-excel-window-zoom-member)|Specifies an integer value that represents the display size of the window.|
+|[WindowCollection](/javascript/api/excel/excel.windowcollection)|[breakSideBySide()](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-breaksidebyside-member(1))|Breaks the side-by-side view of windows.|
+||[compareCurrentSideBySideWith(windowName: string)](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-comparecurrentsidebysidewith-member(1))|Compares the current window side by side with the specified window.|
+||[getCount()](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getcount-member(1))|Gets the number of windows in the collection.|
+||[getItemAt(index: number)](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1))|Gets the Window in the collection by index.|
+||[items](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-items-member)|Gets the loaded child items in this collection.|
+||[resetPositionsSideBySide()](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-resetpositionssidebyside-member(1))|Resets the positions of windows in side-by-side view.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[enterPreviewMode()](/javascript/api/excel/excel.workbook#excel-excel-workbook-enterpreviewmode-member(1))|Enters Scratchpad Preview Mode for the workbook, showing changes suggested by Copilot to the user.|
+||[exitPreviewMode(applyChanges: boolean)](/javascript/api/excel/excel.workbook#excel-excel-workbook-exitpreviewmode-member(1))|Exits Scratchpad Preview Mode for the workbook.|
+||[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
+||[focus()](/javascript/api/excel/excel.workbook#excel-excel-workbook-focus-member(1))|Sets focus on the workbook.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
-|[Worksheet](/javascript/api/excel/excel.worksheet)|[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
-||[showDataTypeIcons](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-showdatatypeicons-member)|Specifies if data type icons are visible on the worksheet.|
+|[Worksheet](/javascript/api/excel/excel.worksheet)|[checkSpelling(options?: Excel.CheckSpellingOptions)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-checkspelling-member(1))|Checks the spelling of words in this worksheet.|
+||[clearArrows()](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-cleararrows-member(1))|Clears the tracer arrows from the worksheet.|
+||[evaluate(name: string)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-evaluate-member(1))|Returns the evaluation result of a formula string.|
+||[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
 ||[tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)|Returns a collection of tasks that are present in the worksheet.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))|Inserts the specified worksheets of a workbook into the current workbook.|
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)|Occurs when any worksheet's filter is applied in the workbook.|

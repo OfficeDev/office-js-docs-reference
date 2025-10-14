@@ -1,41 +1,51 @@
 ### YamlMime:TSType
 name: Excel.ChartFill
-uid: 'excel!Excel.ChartFill:class'
+uid: excel!Excel.ChartFill:class
 package: excel!
 fullName: Excel.ChartFill
 summary: Represents the fill formatting for a chart element.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'excel!Excel.ChartFill#context:member'
+    uid: excel!Excel.ChartFill#context:member
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
       return:
-        type: '<xref uid="excel!Excel.RequestContext:class" />'
+        type: <xref uid="excel!Excel.RequestContext:class" />
 methods:
   - name: clear()
-    uid: 'excel!Excel.ChartFill#clear:member(1)'
+    uid: excel!Excel.ChartFill#clear:member(1)
     package: excel!
     fullName: clear()
     summary: Clears the fill color of a chart element.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Clear the line format of the major gridlines on the value axis of the chart named "Chart1".
+
+      // Clear the line format of the major gridlines on the value axis of the
+      chart named "Chart1".
+
       await Excel.run(async (context) => { 
           const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
           gridlines.format.line.clear();
@@ -43,7 +53,9 @@ methods:
           
           console.log("Chart Major Gridlines Format Cleared");
       });
+
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,25 +64,30 @@ methods:
         type: void
         description: ''
   - name: getSolidColor()
-    uid: 'excel!Excel.ChartFill#getSolidColor:member(1)'
+    uid: excel!Excel.ChartFill#getSolidColor:member(1)
     package: excel!
     fullName: getSolidColor()
     summary: Gets the uniform color fill formatting of a chart element.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSolidColor(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: setSolidColor(color)
-    uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
+    uid: excel!Excel.ChartFill#setSolidColor:member(1)
     package: excel!
     fullName: setSolidColor(color)
     summary: Sets the fill formatting of a chart element to a uniform color.
     remarks: >-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -95,6 +112,7 @@ methods:
       });
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,23 +120,27 @@ methods:
       parameters:
         - id: color
           description: >-
-            HTML color code representing the color of the background, in the form \#RRGGBB (e.g., "FFA500") or as a
-            named HTML color (e.g., "orange").
+            HTML color code representing the color of the background, in the
+            form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
+            "orange").
           type: string
       return:
         type: void
         description: ''
   - name: toJSON()
-    uid: 'excel!Excel.ChartFill#toJSON:member(1)'
+    uid: excel!Excel.ChartFill#toJSON:member(1)
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Excel.ChartFill` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ChartFillData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.ChartFill` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.ChartFillData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,4 +154,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

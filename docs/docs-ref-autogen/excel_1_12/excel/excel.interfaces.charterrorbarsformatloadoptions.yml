@@ -1,22 +1,27 @@
 ### YamlMime:TSType
 name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
-uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+uid: excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
 summary: Encapsulates the format properties for chart error bars.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#$all:member'
+    uid: excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#$all:member
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,14 +29,19 @@ properties:
       return:
         type: boolean
   - name: line
-    uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member'
+    uid: excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member
     package: excel!
     fullName: line
     summary: Represents the chart line formatting.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
-        type: '<xref uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />'
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />

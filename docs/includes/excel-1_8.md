@@ -1,5 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|*global*|[createWorkbook(base64?: string)](/javascript/api/excel/#excel-excel-createworkbook-function(1))|Creates and opens a new workbook.|
 |[BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|[formula1](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula1-member)|Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell).|
 ||[formula2](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula2-member)|With the ternary operators Between and NotBetween, specifies the upper bound operand.|
 ||[operator](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-operator-member)|The operator to use for validating the data.|
@@ -44,7 +45,7 @@
 ||[height](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-height-member)|Returns the height, in points, of the chart data label.|
 ||[horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-horizontalalignment-member)|Represents the horizontal alignment for chart data label.|
 ||[left](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-left-member)|Represents the distance, in points, from the left edge of chart data label to the left edge of chart area.|
-||[numberFormat](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-numberformat-member)|String value that represents the format code for data label.|
+||[numberFormat](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-numberformat-member)|Specifies the format code for data label.|
 ||[text](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-text-member)|String representing the text of the data label on a chart.|
 ||[textOrientation](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-textorientation-member)|Represents the angle to which the text is oriented for the chart data label.|
 ||[top](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-top-member)|Represents the distance, in points, from the top edge of chart data label to the top of chart area.|
@@ -239,7 +240,7 @@
 |[TableChangedEventArgs](/javascript/api/excel/excel.tablechangedeventargs)|[getRange(ctx: Excel.RequestContext)](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1))|Gets the range that represents the changed area of a table on a specific worksheet.|
 ||[getRangeOrNullObject(ctx: Excel.RequestContext)](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrangeornullobject-member(1))|Gets the range that represents the changed area of a table on a specific worksheet.|
 |[Workbook](/javascript/api/excel/excel.workbook)|[readOnly](/javascript/api/excel/excel.workbook#excel-excel-workbook-readonly-member)|Returns `true` if the workbook is open in read-only mode.|
-|[WorkbookCreated](/javascript/api/excel/excel.workbookcreated)|||
+|[WorkbookCreated](/javascript/api/excel/excel.workbookcreated)||The `WorkbookCreated` object is the top level object created by `Application.CreateWorkbook`.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[onCalculated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculated-member)|Occurs when the worksheet is calculated.|
 ||[showGridlines](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-showgridlines-member)|Specifies if gridlines are visible to the user.|
 ||[showHeadings](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-showheadings-member)|Specifies if headings are visible to the user.|

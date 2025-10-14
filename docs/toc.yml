@@ -255,6 +255,12 @@ items:
       - name: ExcelApi online-only requirement set
         href: requirement-sets/excel/excel-api-online-requirement-set.md
         displayName: Excel
+      - name: ExcelApi 1.20 requirement set
+        href: requirement-sets/excel/excel-api-1-20-requirement-set.md
+        displayName: Excel
+      - name: ExcelApi 1.19 requirement set
+        href: requirement-sets/excel/excel-api-1-19-requirement-set.md
+        displayName: Excel
       - name: ExcelApi 1.18 requirement set
         href: requirement-sets/excel/excel-api-1-18-requirement-set.md
         displayName: Excel
@@ -522,6 +528,12 @@ items:
       - name: PowerPoint preview APIs
         href: requirement-sets/powerpoint/powerpoint-preview-apis.md
         displayName: PowerPoint
+      - name: PowerPointApi 1.9 requirement set
+        href: requirement-sets/powerpoint/powerpoint-api-1-9-requirement-set.md
+        displayName: PowerPoint
+      - name: PowerPointApi 1.8 requirement set
+        href: requirement-sets/powerpoint/powerpoint-api-1-8-requirement-set.md
+        displayName: PowerPoint
       - name: PowerPointApi 1.7 requirement set
         href: requirement-sets/powerpoint/powerpoint-api-1-7-requirement-set.md
         displayName: PowerPoint
@@ -554,6 +566,9 @@ items:
         displayName: Word
       - name: WordApi online-only requirement set
         href: requirement-sets/word/word-api-online-requirement-set.md
+        displayName: Word
+      - name: WordApiDesktop 1.3 requirement set
+        href: requirement-sets/word/word-api-desktop-1.3-requirement-set.md
         displayName: Word
       - name: WordApiDesktop 1.2 requirement set
         href: requirement-sets/word/word-api-desktop-1.2-requirement-set.md
@@ -614,3 +629,5 @@ items:
         href: requirement-sets/common/ribbon-api-requirement-sets.md
       - name: Shared Runtime requirement sets
         href: requirement-sets/common/shared-runtime-requirement-sets.md
+      - name: Task Pane API requirement sets
+        href: requirement-sets/common/task-pane-api-requirement-sets.md

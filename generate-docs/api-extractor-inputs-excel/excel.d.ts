@@ -98,20 +98,20 @@ export declare namespace Excel {
         referencedValues?: ReferencedValue[];
     }
     /**
-    * The Base64-encoded type and data of an image.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * The Base64-encoded type and data of an image.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface Base64EncodedImage {
         /**
-        * The file type of the Base64-encoded image.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The file type of the Base64-encoded image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: Base64EncodingType | "BMP" | "GIF" | "ICO" | "JPG" | "PNG" | "TIF" | "WEBP";
         /**
          * The Base64-encoded string.
@@ -220,8 +220,7 @@ export declare namespace Excel {
          */
         displayName?: string;
         /**
-         * Represents the count of rows which the card claims are in the array. 
-         * A card may report fewer rows than actually exist to display a smaller amount of preview data.
+         * Represents the count of rows which the card claims are in the array. A card may report fewer rows than actually exist to display a smaller amount of preview data.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -229,8 +228,7 @@ export declare namespace Excel {
          */
         rowsToReport?: number;
         /**
-         * Represents the count of columns which the card claims are in the array. 
-         * A card may report fewer columns than actually exist to display a smaller amount of preview data.
+         * Represents the count of columns which the card claims are in the array. A card may report fewer columns than actually exist to display a smaller amount of preview data.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -247,36 +245,32 @@ export declare namespace Excel {
         firstRowIsHeader?: boolean;
     }
     /**
-     * Represents the compact layout properties for a value.
+     * The basic compact layout properties.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface BasicCompactLayout {
         /**
          * Specifies the name of the icon which is used to open the card.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         icon?: string | EntityCompactLayoutIcons;
     }
     /**
-     * Represents a card layout used for the boolean, double, and string basic types.
+     * Represents a card layout used for the Boolean, double, and string basic types.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface BasicCardLayout extends CardLayoutStandardProperties {
         /**
          * Represents the type of this layout.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layout?: EntityCardLayoutType.entity | "Entity";
     }
@@ -284,25 +278,22 @@ export declare namespace Excel {
      * Represents layout information for various views of the value and its properties.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface BasicViewLayouts {
         /**
          * Represents the layout of this value and its properties in card view.
-         * If the `BasicCardLayout` object doesn't have a layout property, it's assumed to be "Entity".
+         * If the `BasicCardLayout` object does not have a layout property, it is assumed to be "Entity".
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         card?: BasicCardLayout;
         /**
          * Represents the layout used when there is limited space to represent the value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         compact?: BasicCompactLayout;
     }
@@ -568,7 +559,7 @@ export declare namespace Excel {
         errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense" | "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" | "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" | "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" | "EnvironmentExceedsQuota" | "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" | "EnvironmentExceedsTakerQuotaMonthly" | "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" | "EnvironmentExceedsComputeResourceCountDaily" | "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" | "PythonFunction" | "EnvironmentConnectionExceedQuota" | "UnsupportedEnvironment" | "UnsupportedInCalculationMode";
     }
     /**
-     * Represents the value of a cell containing a boolean.
+     * Represents the value of a cell containing a Boolean.
      *
      * @remarks
      * [Api set: ExcelApi 1.16]
@@ -599,8 +590,7 @@ export declare namespace Excel {
          * Represents additional properties of this boolean value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         properties?: {
             [key: string]: EntityPropertyType;
@@ -609,8 +599,7 @@ export declare namespace Excel {
          * Represents layout information for views of this boolean value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layouts?: BasicViewLayouts;
         /**
@@ -618,16 +607,14 @@ export declare namespace Excel {
          * This information can be used for branding in card view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         provider?: CellValueProviderAttributes;
         /**
          * Represents the cell values which are referenced within `BooleanCellValue.properties`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         referencedValues?: ReferencedValue[];
     }
@@ -772,6 +759,8 @@ export declare namespace Excel {
         /**
          * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
          *
+         * @deprecated Deprecated since ExcelApi 1.19.
+         *
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
@@ -870,7 +859,23 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        unexpectedReturnValue = "UnexpectedReturnValue"
+        unexpectedReturnValue = "UnexpectedReturnValue",
+        /**
+         * An error caused by a cell's formula evaluating to a function or function reference. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        functionInCell = "FunctionInCell",
+        /**
+         * An error caused by a formula generating a request containing images that's too large for an external code service. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        imageExceedsSizeLimit = "ImageExceedsSizeLimit"
     }
     /**
      * Represents the value of a cell containing a #CALC! error.
@@ -915,7 +920,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue";
+        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue" | "FunctionInCell" | "ImageExceedsSizeLimit";
         /**
          * Represents the name of the function causing the error.
          *
@@ -1011,16 +1016,14 @@ export declare namespace Excel {
      * Represents a section of a card that is arranged as two columns in card view.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface CardLayoutTwoColumnSection extends CardLayoutSectionStandardProperties {
         /**
          * Represents the type of layout for this section.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layout: "TwoColumn";
     }
@@ -1078,16 +1081,14 @@ export declare namespace Excel {
      * Types of entity card layouts.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     enum EntityCardLayoutType {
         /**
          * Entity layout of the entity card.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         entity = "Entity",
         /**
@@ -1118,16 +1119,14 @@ export declare namespace Excel {
      * Represents the types of the `FunctionCellValue` object.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     enum FunctionCellValueType {
         /**
-         * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview  | Create custom functions in Excel}.
+         * Reference to a JavaScript custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview | Create custom functions in Excel}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         javaScriptReference = "JavaScriptReference"
     }
@@ -1135,16 +1134,14 @@ export declare namespace Excel {
      * Represents a reference to a JavaScript custom function.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export interface JavaScriptCustomFunctionReferenceCellValue {
         /**
          * Represents the type of this cell value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         type: CellValueType.function | "Function";
         /**
@@ -1153,40 +1150,35 @@ export declare namespace Excel {
          * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         basicValue?: "#VALUE!" | string;
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         basicType?: RangeValueType.error | "Error";
         /**
          * Represents the type of `FunctionCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         functionType: FunctionCellValueType.javaScriptReference | "JavaScriptReference";
         /**
-         * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace  | Manifest reference: Namespace}.
+         * Represents the namespace used by the custom function. For more information, see {@link https://learn.microsoft.com/javascript/api/manifest/namespace | Manifest reference: Namespace}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         namespace: string;
         /**
-         * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id  | Autogenerate JSON metadata for custom functions: ID}.
+         * Represents the ID of the custom function. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         id: string;
     }
@@ -1194,8 +1186,7 @@ export declare namespace Excel {
      * Represents a cell value which can be evaluated as a function.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export type FunctionCellValue = JavaScriptCustomFunctionReferenceCellValue;
     /**
@@ -5160,24 +5151,21 @@ export declare namespace Excel {
          * Represents a `DoubleCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         double = "Double",
         /**
          * Represents a `StringCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         string = "String",
         /**
          * Represents a `BooleanCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         boolean = "Boolean"
     }
@@ -5256,8 +5244,7 @@ export declare namespace Excel {
          * Represents a `FunctionCellValue`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         function = "Function",
         /**
@@ -5872,16 +5859,14 @@ export declare namespace Excel {
          * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         numberFormat?: string;
         /**
          * Represents additional properties of this double value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         properties?: {
             [key: string]: EntityPropertyType;
@@ -5890,8 +5875,7 @@ export declare namespace Excel {
          * Represents layout information for views of this double value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layouts?: BasicViewLayouts;
         /**
@@ -5899,16 +5883,14 @@ export declare namespace Excel {
          * This information can be used for branding in card view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         provider?: CellValueProviderAttributes;
         /**
          * Represents the cell values which are referenced within `DoubleCellValue.properties`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         referencedValues?: ReferencedValue[];
     }
@@ -6001,11 +5983,11 @@ export declare namespace Excel {
          */
         text?: string;
         /**
-        * Represents the properties of this entity and their metadata.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the properties of this entity and their metadata.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties?: {
             [key: string]: EntityPropertyType;
         };
@@ -6314,36 +6296,36 @@ export declare namespace Excel {
          */
         preview?: CellValue;
         /**
-        * Represents the runtime language of this external code service.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the runtime language of this external code service.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         language: "Python";
         /**
-        * Represents the full type name of this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the full type name of this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_type: string;
         /**
-        * Represents the short type name of this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the short type name of this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_typeName: string;
         /**
-        * Represents the output of str() function when used on this object.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the output of the `str()` function when used on this object.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         Python_str: string;
         /**
          * Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.
@@ -6447,12 +6429,16 @@ export declare namespace Excel {
      * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
      * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
      *
+     * @deprecated As of [Api set: ExcelApi 1.19], use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
+     *
      * @remarks
      * [Api set: ExcelApi 1.16]
      */
     export interface FormattedNumberCellValue {
         /**
          * Represents the type of this cell value.
+         *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6461,12 +6447,16 @@ export declare namespace Excel {
         /**
          * Represents the value that would be returned by `Range.values` for a cell with this value.
          *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         *
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
         basicValue: number;
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6477,6 +6467,8 @@ export declare namespace Excel {
          * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
          * Number format strings must conform to Excel guidelines.
          * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+         *
+         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6525,24 +6517,27 @@ export declare namespace Excel {
      * Represents a request to `@linkedEntityLoadService` custom function to load `LinkedEntityCellValue` objects.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityLoadServiceRequest {
         /**
          * Represents the domain specific to the service used to create the `LinkedEntityCellValue` objects.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         domainId: string;
         /**
          * Represents the entity IDs and cultures of the `LinkedEntityCellValue` objects to load.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         entities: LinkedEntityIdCulture[];
     }
@@ -6550,16 +6545,18 @@ export declare namespace Excel {
      * Represents the result of a request to `@linkedEntityLoadService` custom function to load `LinkedEntityCellValue` objects.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityLoadServiceResult {
         /**
          * Represents the loaded `LinkedEntityCellValue` objects. The loaded objects must be returned in the same order as the `entities` property of `LinkedEntityLoadServiceRequest`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         entities: LinkedEntityCellValue[];
     }
@@ -6603,24 +6600,27 @@ export declare namespace Excel {
      * Represents the entity ID and culture for a `LinkedEntityCellValue` object.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityIdCulture {
         /**
          * Represents the identifier specific to a service used to create the `LinkedEntityCellValue` object.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         entityId: string;
         /**
          * Represents the language culture used to create the `LinkedEntityCellValue` object.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         culture: string;
     }
@@ -6669,11 +6669,11 @@ export declare namespace Excel {
          */
         text?: string;
         /**
-        * Represents the properties of this linked entity and their metadata.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the properties of this linked entity and their metadata.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties?: {
             [key: string]: EntityPropertyType;
         };
@@ -6779,7 +6779,7 @@ export declare namespace Excel {
         cachedUid: string;
     }
     /**
-     * Represents types of #N/A! errors.
+     * Represents types of #N/A errors.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6787,7 +6787,7 @@ export declare namespace Excel {
      */
     enum NotAvailableErrorCellValueSubType {
         /**
-         * An unknown type of error. Displays as error type #N/A! in Excel.
+         * An unknown type of error. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6795,7 +6795,7 @@ export declare namespace Excel {
          */
         unknown = "Unknown",
         /**
-         * An error caused by `VLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
+         * An error caused by `VLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6803,7 +6803,7 @@ export declare namespace Excel {
          */
         vlookupValueNotFound = "VlookupValueNotFound",
         /**
-         * An error caused by `HLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
+         * An error caused by `HLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6811,7 +6811,7 @@ export declare namespace Excel {
          */
         hlookupValueNotFound = "HlookupValueNotFound",
         /**
-         * An error caused by an invalid property argument to `STOCKHISTORY`. Displays as error type #N/A! in Excel.
+         * An error caused by an invalid property argument to `STOCKHISTORY`. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6819,7 +6819,7 @@ export declare namespace Excel {
          */
         stockHistoryInvalidProperty = "StockHistoryInvalidProperty",
         /**
-         * An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type #N/A! in Excel.
+         * An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6827,7 +6827,7 @@ export declare namespace Excel {
          */
         stockHistoryNoData = "StockHistoryNoData",
         /**
-         * An error caused by an external code service returning an unknown object. Displays as error type #N/A! in Excel.
+         * An error caused by an external code service returning an unknown object. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6835,7 +6835,7 @@ export declare namespace Excel {
          */
         pythonObjectUnknown = "PythonObjectUnknown",
         /**
-         * No match was found for the pattern in the text provided. Displays as error type #N/A! in Excel.
+         * No match was found for the pattern in the text provided. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6843,7 +6843,7 @@ export declare namespace Excel {
          */
         eRegexMatchNoResult = "ERegexMatchNoResult",
         /**
-         * Occurrence is greater than the total number of matches. Displays as error type #N/A! in Excel.
+         * Occurrence is greater than the total number of matches. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6851,7 +6851,7 @@ export declare namespace Excel {
          */
         eRegexReplaceOccurrenceNoResult = "ERegexReplaceOccurrenceNoResult",
         /**
-         * No capture groups were matched. Displays as error type #N/A! in Excel.
+         * No capture groups were matched. Displays as error type #N/A in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -6860,7 +6860,7 @@ export declare namespace Excel {
         eRegexMatchNoCapture = "ERegexMatchNoCapture"
     }
     /**
-     * Represents the value of a cell containing a #N/A! error.
+     * Represents the value of a cell containing a #N/A error.
      *
      * @remarks
      * [Api set: ExcelApi 1.16]
@@ -6881,7 +6881,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        basicValue?: "#N/A!" | string;
+        basicValue?: "#N/A" | string;
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
          *
@@ -7318,8 +7318,7 @@ export declare namespace Excel {
          * Represents additional properties of this string value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         properties?: {
             [key: string]: EntityPropertyType;
@@ -7328,8 +7327,7 @@ export declare namespace Excel {
          * Represents layout information for views of this string value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         layouts?: BasicViewLayouts;
         /**
@@ -7337,16 +7335,14 @@ export declare namespace Excel {
          * This information can be used for branding in card view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         provider?: CellValueProviderAttributes;
         /**
          * Represents the cell values which are referenced within `StringCellValue.properties`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         referencedValues?: ReferencedValue[];
     }
@@ -8513,7 +8509,8 @@ export declare namespace Excel {
         /**
         * Specifies whether to load on the `textRuns` property.
         *
-        * [Api set: ExcelApi 1.18]  
+        * @remarks
+        * [Api set: ExcelApi 1.18]
         */
         textRuns?: boolean;
     }
@@ -8716,7 +8713,8 @@ export declare namespace Excel {
         /**
         * Represents the `textRuns` property.
         *
-        * [Api set: ExcelApi 1.18]  
+        * @remarks
+        * [Api set: ExcelApi 1.18]
         */
         textRuns?: RangeTextRun[];
     }
@@ -8964,6 +8962,7 @@ export declare namespace Excel {
     /**
      *
      * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
+     * The `extensionHardening` Windows registry key affects the `base64File` param. The file extension defined by the param must match the real file type of the file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
      * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
      * [Api set: ExcelApi 1.8]
@@ -9157,7 +9156,14 @@ export declare namespace Excel {
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
     export class RequestContext extends OfficeExtension.ClientRequestContext {
-        constructor(url?: string | Session);
+        constructor(url?: string | Session, invocation?: {
+            invocationId: number;
+            isInCFSyncScenario: boolean;
+        });
+        setInvocation(invocation: {
+            invocationId: number;
+            isInCFSyncScenario: boolean;
+        }): void;
         readonly workbook: Workbook;
         readonly application: Application;
         /**
@@ -9169,10 +9175,21 @@ export declare namespace Excel {
         /**
          * Determines whether Excel will delay the batch request until the user exits cell edit mode.
          *
-         * When false, if the user is in cell edit when the batch request is processed by the host, the batch will automatically fail.
-         * When true, the batch request will be executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
+         * When `false`, if the user is in cell edit when the batch request is processed by the host, the batch automatically fails.
+         * When `true`, the batch request is executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode then the batch request is delayed until the user exits cell edit mode.
+         * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
+        /**
+         * Determines whether the batch requests should be merged to one undo group.
+         *
+         * When false, each `context.sync()` call creates an undo record.
+         * When true, all `context.sync()` calls in a single `Excel.run` are merged into one `undo` group.
+         * 
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        mergeUndoGroup?: boolean;
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -9399,7 +9416,9 @@ export declare namespace Excel {
          * [Api set: ExcelApiOnline 1.1]
          *
          * @param key - The title of the `AllowEditRange`.
-         * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * @returns The `AllowEditRange` with the title.
+                    If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getItemOrNullObject(key: string): Excel.AllowEditRange;
         /**
@@ -9920,7 +9939,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.LinkedWorkbook;
         /**
-         * Gets information about a linked workbook by its URL. If the workbook does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets information about a linked workbook by its URL.
+                    If the workbook does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10444,7 +10464,7 @@ export declare namespace Excel {
          */
         priority: number;
         /**
-         * Gets or sets the date and time the task should start and is due.
+         * Specifies the date and time the task should start and is due.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -10564,7 +10584,8 @@ export declare namespace Excel {
          * @beta
          *
          * @param key - The ID of the task.
-         * @returns The task with the given ID. If there is no task with the given ID, then this method returns an object with its `isNullObject` property set to `true`.
+         * @returns The task with the given ID.
+                    If there is no task with the given ID, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getItemOrNullObject(key: string): Excel.DocumentTask;
@@ -12672,14 +12693,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.18]
          */
-        checkbox = "Checkbox",
-        /**
-         * Type representing a dropdown control.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dropdown = "Dropdown"
+        checkbox = "Checkbox"
     }
     /**
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
@@ -12713,7 +12727,7 @@ export declare namespace Excel {
      */
     export interface ChangedEventDetail {
         /**
-         * Represents the value after the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the value after the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -12736,7 +12750,7 @@ export declare namespace Excel {
          */
         valueAsJsonBefore: CellValue;
         /**
-         * Represents the value before the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the value before the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -13958,6 +13972,14 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a `window` object that represents the active window (the window on top). Read-only.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activeWindow: Excel.Window;
+        /**
          * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
          *
          * @remarks
@@ -13973,6 +13995,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly iterativeCalculation: Excel.IterativeCalculation;
+        /**
+         * Returns all the Excel windows.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly windows: Excel.WindowCollection;
         /**
          * Returns the Excel calculation engine version used for the last full recalculation.
          *
@@ -14048,9 +14078,29 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationTypeString - Specifies the calculation type to use. See `Excel.CalculationType` for details.
+         * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
-        calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;
+        calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        /**
+         * Checks the spelling of a single word. Returns `true` if the word is spelled correctly, otherwise returns `false`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param word - The word that you want to check.
+         * @param options - Optional. The options for checking spelling.
+         */
+        checkSpelling(word: string, options?: Excel.CheckSpellingOptions): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Enters editing mode for the selected range in the active worksheet.
+                    This method is equivalent to using "F2" when selecting a cell or range in the Excel UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enterEditingMode(): void;
         /**
          * Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
          *
@@ -14067,6 +14117,20 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         suspendScreenUpdatingUntilNextSync(): void;
+        /**
+         * Returns a `RangeAreas` object that represents the union of two or more `Range` or `RangeAreas` objects.
+                    The input `Range` or `RangeAreas` objects must be from the same worksheet.
+                    The maximum number of parameters is 30, including the first two.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param firstRange - The first `Range` or `RangeAreas` object.
+         * @param secondRange - The second `Range` or `RangeAreas` object.
+         * @param additionalRanges - Optional. Additional `Range` or `RangeAreas` objects to include in the union, up to 28 more.
+         */
+        union(firstRange: Range | RangeAreas, secondRange: Range | RangeAreas, ...additionalRanges: (Range | RangeAreas)[]): Excel.RangeAreas;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -14212,19 +14276,10 @@ export declare namespace Excel {
          */
         readonly functions: Excel.Functions;
         /**
-         * Returns a collection of linked data types that are part of the workbook.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly linkedDataTypes: Excel.LinkedDataTypeCollection;
-        /**
          * Returns a collection of linked entity data domains that are available in the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly linkedEntityDataDomains: Excel.LinkedEntityDataDomainCollection;
         /**
@@ -14462,9 +14517,36 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.11]
          *
-         * @param closeBehaviorString - workbook close behavior.
+         * @param closeBehavior - workbook close behavior.
          */
-        close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        close(closeBehavior?: "Save" | "SkipSave"): void;
+        /**
+         * Enters Scratchpad Preview Mode for the workbook, showing changes suggested by Copilot to the user.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enterPreviewMode(): void;
+        /**
+         * Exits Scratchpad Preview Mode for the workbook. This method should be called once the user decides to apply or discard changes suggested by Copilot.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param applyChanges - A Boolean value that specifies whether the user wants to apply the changes proposed by Copilot shown in Preview Mode (`true`), or discard the changes shown in Preview Mode (`false`). The default value is `false`, as accepting changes should be an active and explicit choice by the user.
+         */
+        exitPreviewMode(applyChanges: boolean): void;
+        /**
+         * Sets focus on the workbook. This causes the Excel grid or the currently active object
+                    to receive keyboard events.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        focus(): void;
         /**
          * Gets the currently active cell from the workbook.
          *
@@ -14480,7 +14562,8 @@ export declare namespace Excel {
          */
         getActiveChart(): Excel.Chart;
         /**
-         * Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the currently active chart in the workbook.
+                    If there is no active chart, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -14488,20 +14571,20 @@ export declare namespace Excel {
          */
         getActiveChartOrNullObject(): Excel.Chart;
         /**
-         * Gets the active shape in the workbook. If there is no active shape, an `ItemNotFound` error is thrown.
+         * Gets the active shape in the workbook.
+                    Throws an `ItemNotFound` error if there is no active shape.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getActiveShape(): Excel.Shape;
         /**
-         * Gets the active shape in the workbook. If there is no active shape, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the active shape in the workbook.
+                    If there is no active shape, then this method returns an object with its `isNullObject` property set to `true`.
                     For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getActiveShapeOrNullObject(): Excel.Shape;
         /**
@@ -14512,7 +14595,8 @@ export declare namespace Excel {
          */
         getActiveSlicer(): Excel.Slicer;
         /**
-         * Gets the currently active slicer in the workbook. If there is no active slicer, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the currently active slicer in the workbook.
+                    If there is no active slicer, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -14552,11 +14636,12 @@ export declare namespace Excel {
         getSelectedRanges(): Excel.RangeAreas;
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
-                    
-                     **Note**: This API is currently only supported for Office on Windows, Mac, and the web.
+         * The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
+         * 
+         * This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
@@ -14578,9 +14663,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.11]
          *
-         * @param saveBehaviorString - The save behavior must be "Save" or "Prompt". Default value is "Save".
+         * @param saveBehavior - The save behavior must be "Save" or "Prompt". Default value is "Save".
          */
-        save(saveBehaviorString?: "Save" | "Prompt"): void;
+        save(saveBehavior?: "Save" | "Prompt"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -14889,8 +14974,7 @@ export declare namespace Excel {
          * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         showDataTypeIcons: boolean;
         /**
@@ -14970,6 +15054,24 @@ export declare namespace Excel {
          */
         calculate(markAllDirty: boolean): void;
         /**
+         * Checks the spelling of words in this worksheet. This method opens the Spelling dialog box in the Excel UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. The options for checking spelling.
+         */
+        checkSpelling(options?: Excel.CheckSpellingOptions): void;
+        /**
+         * Clears the tracer arrows from the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clearArrows(): void;
+        /**
          * Copies a worksheet and places it at the specified position.
          *
          * @remarks
@@ -14986,11 +15088,11 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          *
-         * @param positionTypeString - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
+         * @param positionType - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
          * @param relativeTo - The existing worksheet which determines the newly created worksheet's position. This is only needed if `positionType` is "Before" or "After".
          * @returns The newly created worksheet.
          */
-        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        copy(positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
@@ -14998,6 +15100,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        /**
+         * Returns the evaluation result of a formula string. Only formula input is supported. If the formula name is invalid, the `InvalidArgument` error is thrown.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - The name of the formula to run.
+         */
+        evaluate(name: string): OfficeExtension.ClientResult<any>;
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
          *
@@ -15017,7 +15129,8 @@ export declare namespace Excel {
          *
          * @param text - The string to find.
          * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case-sensitive.
-         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, then this method returns an object with its `isNullObject` property set to `true`.
+         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria.
+                    If there are no matches, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
@@ -15041,7 +15154,8 @@ export declare namespace Excel {
          */
         getNext(visibleOnly?: boolean): Excel.Worksheet;
         /**
-         * Gets the worksheet that follows this one. If there are no worksheets following this one, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the worksheet that follows this one.
+                    If there are no worksheets following this one, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -15060,7 +15174,8 @@ export declare namespace Excel {
          */
         getPrevious(visibleOnly?: boolean): Excel.Worksheet;
         /**
-         * Gets the worksheet that precedes this one. If there are no previous worksheets, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the worksheet that precedes this one.
+                    If there are no previous worksheets, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -15075,7 +15190,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
+         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned. The `address` has a limit of 8192 characters. If the address exceeds the character limit, this method returns an `InvalidArgument` error.
          */
         getRange(address?: string): Excel.Range;
         /**
@@ -15109,7 +15224,9 @@ export declare namespace Excel {
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
-         * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
+                    If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -15311,6 +15428,31 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.WorksheetData;
     }
     /**
+     * Represents the options for checking spelling.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CheckSpellingOptions {
+        /**
+         * Optional. A string that indicates the file name of the custom dictionary to be examined if the word isn't found in the main dictionary. If this argument is omitted, Excel's currently specified dictionary is used.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        customDictionary?: string;
+        /**
+         * Optional. Set to `true` to ignore words that are all uppercase. Set to `false` to check words that are all uppercase. If this argument is omitted, Excel's current setting is used.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ignoreUppercase?: boolean;
+    }
+    /**
      * Represents a collection of worksheet objects that are part of the workbook.
      *
      * @remarks
@@ -15357,11 +15499,11 @@ export declare namespace Excel {
          *
          * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
-         * @param positionTypeString - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
+         * @param positionType - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
          * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
          * @returns An array of IDs corresponding to each newly inserted worksheet.
          */
-        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
+        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
         /**
          * Gets the currently active worksheet in the workbook.
          *
@@ -15397,7 +15539,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.Worksheet;
         /**
-         * Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a worksheet object using its name or ID.
+                    If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -16065,6 +16208,14 @@ export declare namespace Excel {
          */
         control: CellControl;
         /**
+         * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formulaArray: string;
+        /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
          * @remarks
@@ -16227,7 +16378,7 @@ export declare namespace Excel {
          */
         readonly valueTypes: Excel.RangeValueType[][];
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -16236,7 +16387,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
          *
          * @remarks
@@ -16245,7 +16396,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
          *
          * @remarks
@@ -16292,9 +16443,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
          *
          * @param destinationRange - The destination range to AutoFill. If the destination range is `null`, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI's range fill handle).
-         * @param autoFillTypeString - The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
+         * @param autoFillType - The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
-        autoFill(destinationRange?: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
+        autoFill(destinationRange?: Range | string, autoFillType?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
         /**
          * Calculates a range of cells on a worksheet.
          *
@@ -16302,6 +16453,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         calculate(): void;
+        /**
+         * Checks the spelling of words in this range. This method opens the Spelling dialog box in the Excel UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. The options for checking spelling.
+         */
+        checkSpelling(options?: Excel.CheckSpellingOptions): void;
         /**
          * Clear range values and formatting, such as fill and border.
          *
@@ -16317,9 +16478,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
+         * @param applyTo - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
         /**
          * Clears the values of the cells in the range, with special consideration given to cells containing controls.
                     If the range contains only blank values and controls set to their default value, then the values and control formatting are removed.
@@ -16367,11 +16528,11 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          *
          * @param sourceRange - The source range or `RangeAreas` to copy from. When the source `RangeAreas` has multiple ranges, their form must be able to be created by removing full rows or columns from a rectangular range.
-         * @param copyTypeString - The type of cell data or formatting to copy over. Default is "All".
+         * @param copyType - The type of cell data or formatting to copy over. Default is "All".
          * @param skipBlanks - True if to skip blank cells in the source range. Default is false.
          * @param transpose - True if to transpose the cells in the destination range. Default is false.
          */
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" | "Link" | "ColumnWidths", skipBlanks?: boolean, transpose?: boolean): void;
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: "All" | "Formulas" | "Values" | "Formats" | "Link" | "ColumnWidths", skipBlanks?: boolean, transpose?: boolean): void;
         /**
          * Deletes the cells associated with the range.
          *
@@ -16387,9 +16548,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param shiftString - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
+         * @param shift - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
          */
-        delete(shiftString: "Up" | "Left"): void;
+        delete(shift: "Up" | "Left"): void;
         /**
          * Finds the given string based on the criteria specified.
                     If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
@@ -16501,7 +16662,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Throws an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -16509,7 +16670,7 @@ export declare namespace Excel {
         getDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no dependents are found.
+                    Throws an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16517,7 +16678,7 @@ export declare namespace Excel {
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
+                    Throws an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -16525,11 +16686,10 @@ export declare namespace Excel {
         getDirectPrecedents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.
-         * Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
+                    Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param cellPropertiesLoadOptions - An object that represents which cell properties to load.
          * @returns A 2D array where each item represents the requested display properties of the corresponding cell.
@@ -16550,7 +16710,7 @@ export declare namespace Excel {
          */
         getEntireRow(): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16560,18 +16720,17 @@ export declare namespace Excel {
          */
         getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
          *
-         * @param directionString - The direction from the active cell.
+         * @param direction - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
          */
-        getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
+        getExtendedRange(direction: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
          * Renders the range as a Base64-encoded PNG image.
-                    **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -16587,7 +16746,8 @@ export declare namespace Excel {
          */
         getIntersection(anotherRange: Range | string): Excel.Range;
         /**
-         * Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the range object that represents the rectangular intersection of the given ranges.
+                    If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -16618,7 +16778,8 @@ export declare namespace Excel {
          */
         getLastRow(): Excel.Range;
         /**
-         * Returns a `RangeAreas` object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, then this method will fail to return the result. If the `RangeAreas` object doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns a `RangeAreas` object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, then this method will fail to return the result.
+                    If the `RangeAreas` object doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -16647,14 +16808,14 @@ export declare namespace Excel {
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified range in the same worksheet or across multiple worksheets.
-         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
+                    Throws an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
          */
         getPrecedents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16664,15 +16825,15 @@ export declare namespace Excel {
          */
         getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
          *
-         * @param directionString - The direction from the active cell.
+         * @param direction - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
          */
-        getRangeEdge(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
+        getRangeEdge(direction: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
          * Gets a `Range` object similar to the current `Range` object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
          *
@@ -16738,10 +16899,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param cellTypeString - The type of cells to include.
-         * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         * @param cellType - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
                     If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
@@ -16762,10 +16923,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param cellTypeString - The type of cells to include.
-         * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         * @param cellType - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell.
          *
@@ -16824,7 +16985,8 @@ export declare namespace Excel {
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
-         * Returns the used range of the given range object. If there are no used cells within the range, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the used range of the given range object.
+                    If there are no used cells within the range, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -16858,12 +17020,12 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.10]
          *
-         * @param groupOptionString - Specifies how the range can be grouped by rows or columns.
+         * @param groupOption - Specifies how the range can be grouped by rows or columns.
          * An `InvalidArgument` error is thrown when the group option differs from the range's
          * `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
          * or `range.isEntireColumn` is true and `groupOption` is "ByRows").
          */
-        group(groupOptionString: "ByRows" | "ByColumns"): void;
+        group(groupOption: "ByRows" | "ByColumns"): void;
         /**
          * Hides the details of the row or column group.
          *
@@ -16879,9 +17041,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.10]
          *
-         * @param groupOptionString - Specifies whether to hide the details of grouped rows or grouped columns.
+         * @param groupOption - Specifies whether to hide the details of grouped rows or grouped columns.
          */
-        hideGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;
+        hideGroupDetails(groupOption: "ByRows" | "ByColumns"): void;
         /**
          * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new `Range` object at the now blank space.
          *
@@ -16897,9 +17059,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param shiftString - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
+         * @param shift - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
          */
-        insert(shiftString: "Down" | "Right"): Excel.Range;
+        insert(shift: "Down" | "Right"): Excel.Range;
         /**
          * Merge the range cells into one region in the worksheet.
          *
@@ -16991,6 +17153,16 @@ export declare namespace Excel {
          */
         showCard(): void;
         /**
+         * Draws tracer arrows to the direct dependents of the range.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param remove - Optional. Set to `true` to remove one level of tracer arrows to direct dependents. Set to `false` to expand one level of tracer arrows. The default value is `false`.
+         */
+        showDependents(remove?: boolean): void;
+        /**
          * Shows the details of the row or column group.
          *
          * @remarks
@@ -17005,9 +17177,39 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.10]
          *
-         * @param groupOptionString - Specifies whether to show the details of grouped rows or grouped columns.
+         * @param groupOption - Specifies whether to show the details of grouped rows or grouped columns.
          */
-        showGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;
+        showGroupDetails(groupOption: "ByRows" | "ByColumns"): void;
+        /**
+         * Draws tracer arrows to the direct precedents of the range.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param remove - Optional. Set to `true` to remove one level of tracer arrows to direct precedents. Set to `false` to expand one level of tracer arrows. The default value is `false`.
+         */
+        showPrecedents(remove?: boolean): void;
+        /**
+         * Sets the marshaling mode of the Python in Excel formula =PY.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param marshalMode - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
+         */
+        togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode): void;
+        /**
+         * Sets the marshaling mode of the Python in Excel formula =PY.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param marshalMode - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
+         */
+        togglePythonMarshalMode(marshalMode?: "PythonObject" | "ExcelValue"): void;
         /**
          * Ungroups columns and rows for an outline.
          *
@@ -17023,9 +17225,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.10]
          *
-         * @param groupOptionString - Specifies how the range can be ungrouped by rows or columns.
+         * @param groupOption - Specifies how the range can be ungrouped by rows or columns.
          */
-        ungroup(groupOptionString: "ByRows" | "ByColumns"): void;
+        ungroup(groupOption: "ByRows" | "ByColumns"): void;
         /**
          * Unmerge the range cells into separate cells.
          *
@@ -17245,9 +17447,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
+         * @param applyTo - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
         /**
          * Clears the values of the cells in the ranges, with special consideration given to cells containing controls.
                     If the ranges contain only blank values and controls set to their default value, then the values and control formatting are removed.
@@ -17295,11 +17497,11 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          *
          * @param sourceRange - The source range or `RangeAreas` to copy from. When the source `RangeAreas` has multiple ranges, their form must able to be created by removing full rows or columns from a rectangular range.
-         * @param copyTypeString - The type of cell data or formatting to copy over. Default is "All".
+         * @param copyType - The type of cell data or formatting to copy over. Default is "All".
          * @param skipBlanks - True if to skip blank cells in the source range or `RangeAreas`. Default is false.
          * @param transpose - True if to transpose the cells in the destination `RangeAreas`. Default is false.
          */
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" | "Link" | "ColumnWidths", skipBlanks?: boolean, transpose?: boolean): void;
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: "All" | "Formulas" | "Values" | "Formats" | "Link" | "ColumnWidths", skipBlanks?: boolean, transpose?: boolean): void;
         /**
          * Returns a `RangeAreas` object that represents the entire columns of the `RangeAreas` (for example, if the current `RangeAreas` represents cells "B4:E11, H2", it returns a `RangeAreas` that represents columns "B:E, H:H").
          *
@@ -17324,7 +17526,8 @@ export declare namespace Excel {
          */
         getIntersection(anotherRange: Range | RangeAreas | string): Excel.RangeAreas;
         /**
-         * Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`. If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`.
+                    If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -17359,12 +17562,13 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param cellTypeString - The type of cells to include.
-         * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         * @param cellType - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
-         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value.
+                    If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -17375,16 +17579,17 @@ export declare namespace Excel {
          */
         getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;
         /**
-         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value.
+                    If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param cellTypeString - The type of cells to include.
-         * @param cellValueTypeString - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         * @param cellType - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Returns a scoped collection of tables that overlap with any range in this `RangeAreas` object.
          *
@@ -17504,7 +17709,8 @@ export declare namespace Excel {
          */
         getRangeAreasBySheet(key: string): Excel.RangeAreas;
         /**
-         * Returns the `RangeAreas` object based on worksheet name or ID in the collection. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the `RangeAreas` object based on worksheet name or ID in the collection.
+                    If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -18136,7 +18342,7 @@ export declare namespace Excel {
          */
         readonly valueTypes: Excel.RangeValueType[][];
         /**
-         * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.3]
@@ -18144,7 +18350,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
          *
          * @remarks
@@ -18153,7 +18359,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
          *
          * @remarks
@@ -18291,7 +18497,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.Setting;
         /**
-         * Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a setting entry via the key.
+                    If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -18450,7 +18657,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.NamedItem;
         /**
-         * Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a `NamedItem` object using its name.
+                    If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -18507,7 +18715,8 @@ export declare namespace Excel {
          */
         readonly worksheet: Excel.Worksheet;
         /**
-         * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the worksheet to which the named item is scoped.
+                    If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -18559,7 +18768,7 @@ export declare namespace Excel {
         readonly value: any;
         /**
          * A JSON representation of the values in this named item.
-                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
          *
          * @remarks
@@ -18568,7 +18777,7 @@ export declare namespace Excel {
         readonly valueAsJson: CellValue | string;
         /**
          * A JSON representation of the values in this named item.
-                    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
          *
          * @remarks
@@ -18605,7 +18814,8 @@ export declare namespace Excel {
          */
         getRange(): Excel.Range;
         /**
-         * Returns the range object that is associated with the name. If the named item's type is not a range, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the range object that is associated with the name.
+                    If the named item's type is not a range, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -18664,7 +18874,7 @@ export declare namespace Excel {
         readonly values: any[][];
         /**
          * A JSON representation of the values in this named item array.
-                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
          *
          * @remarks
@@ -18673,7 +18883,7 @@ export declare namespace Excel {
         readonly valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in this named item array.
-                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
          *
          * @remarks
@@ -18841,10 +19051,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          *
          * @param range - Range to bind the binding to. May be a `Range` object or a string. If string, must contain the full address, including the sheet name
-         * @param bindingTypeString - Type of binding. See `Excel.BindingType`.
+         * @param bindingType - Type of binding. See `Excel.BindingType`.
          * @param id - Name of the binding.
          */
-        add(range: Range | string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        add(range: Range | string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          * Add a new binding based on a named item in the workbook.
                     If the named item references to multiple areas, the `InvalidReference` error will be returned.
@@ -18865,10 +19075,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          *
          * @param name - Name from which to create binding.
-         * @param bindingTypeString - Type of binding. See `Excel.BindingType`.
+         * @param bindingType - Type of binding. See `Excel.BindingType`.
          * @param id - Name of the binding.
          */
-        addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          * Add a new binding based on the current selection.
                     If the selection has multiple areas, the `InvalidReference` error will be returned.
@@ -18887,10 +19097,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.3]
          *
-         * @param bindingTypeString - Type of binding. See `Excel.BindingType`.
+         * @param bindingType - Type of binding. See `Excel.BindingType`.
          * @param id - Name of the binding.
          */
-        addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromSelection(bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          * Gets the number of bindings in the collection.
          *
@@ -18917,7 +19127,8 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Binding;
         /**
-         * Gets a binding object by ID. If the binding object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a binding object by ID.
+                    If the binding object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -18975,7 +19186,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param address - A `Range` object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
-         * @param hasHeaders - A boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
+         * @param hasHeaders - A Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
          */
         add(address: Range | string, hasHeaders: boolean): Excel.Table;
         /**
@@ -19004,7 +19215,8 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Table;
         /**
-         * Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a table by name or ID.
+                    If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19197,6 +19409,30 @@ export declare namespace Excel {
          */
         readonly worksheet: Excel.Worksheet;
         /**
+         * Specifies the alternative text for accessibility.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        altTextDescription: string;
+        /**
+         * Specifies a summary for the table, such as one used by screen readers.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        altTextTitle: string;
+        /**
+         * Specifies a comment associated with the table.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comment: string;
+        /**
          * Specifies if the first column contains special formatting.
          *
          * @remarks
@@ -19217,6 +19453,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly id: string;
+        /**
+         * Retrieves whether the table is currently active.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isActive: boolean;
         /**
          * Returns a numeric ID.
          *
@@ -19268,6 +19512,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         showTotals: boolean;
+        /**
+         * Retrieves the data source type from which the table originates.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly source: Excel.TableSource | "External" | "Range" | "Xml" | "Query" | "Model";
         /**
          * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
          *
@@ -19422,6 +19674,44 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.TableData;
     }
     /**
+     * Specifies the data source type for a table.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TableSource {
+        /**
+         * An external data source.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        external = "External",
+        /**
+         * An Excel range object.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        range = "Range",
+        /**
+         * An XML file.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        xml = "Xml",
+        /**
+         * A Power Query query.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        query = "Query",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        model = "Model"
+    }
+    /**
      * Represents a collection of all the columns that are part of the table.
      *
      * @remarks
@@ -19488,7 +19778,8 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.TableColumn;
         /**
-         * Gets a column object by name or ID. If the column doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a column object by name or ID.
+                    If the column doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19559,7 +19850,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -19568,7 +19859,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this table column.
-                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
          *
          * @remarks
@@ -19577,7 +19868,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this table column.
-                    Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
          *
          * @remarks
@@ -19689,7 +19980,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param valuesString - Optional. A 2D array of unformatted values of the table row.
+         * @param values - Optional. A 2D array of unformatted values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
@@ -19706,7 +19997,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.16]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param valuesString - Optional. A 2D array of cell values of the table row.
+         * @param values - Optional. A 2D array of cell values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         addAsJson(index?: number, values?: CellValue[][], alwaysInsert?: boolean): Excel.TableRow;
@@ -19799,7 +20090,7 @@ export declare namespace Excel {
          */
         readonly index: number;
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -19808,7 +20099,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this table row.
-                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
          *
          * @remarks
@@ -19817,7 +20108,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this table row.
-                    Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
          *
          * @remarks
@@ -20173,7 +20464,7 @@ export declare namespace Excel {
         inCellDropDown: boolean;
         /**
          * Source of the list for data validation
-                    When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, boolean, or date.
+                    When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, Boolean, or date.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -20719,9 +21010,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param indexString - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
+         * @param index - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
          */
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -20911,11 +21202,11 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          *
-         * @param typeString - Represents the type of a chart. See `Excel.ChartType` for details.
+         * @param type - Represents the type of a chart. See `Excel.ChartType` for details.
          * @param sourceData - The `Range` object corresponding to the source data.
-         * @param seriesByString - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
+         * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          * Returns the number of charts in the worksheet.
          *
@@ -20942,7 +21233,8 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Chart;
         /**
-         * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If the chart doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
+                    If the chart doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21222,7 +21514,8 @@ export declare namespace Excel {
          */
         getDataRange(): OfficeExtension.ClientResult<string>;
         /**
-         * Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the data source of the whole chart.
+                    If the data range is empty, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21238,7 +21531,8 @@ export declare namespace Excel {
          */
         getDataTable(): Excel.ChartDataTable;
         /**
-         * Gets the data table on the chart. If the chart doesn't allow a data table, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the data table on the chart.
+                    If the chart doesn't allow a data table, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21266,9 +21560,9 @@ export declare namespace Excel {
          *
          * @param height - Optional. The desired height of the resulting image.
          * @param width - Optional. The desired width of the resulting image.
-         * @param fittingModeString - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
+         * @param fittingMode - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
          */
-        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingMode?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
         /**
          * Resets the source data for the chart.
          *
@@ -21286,9 +21580,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param sourceData - The range object corresponding to the source data.
-         * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
+         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
          */
-        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;
+        setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): void;
         /**
          * Positions the chart relative to cells on the worksheet.
          *
@@ -21927,9 +22221,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.15]
          *
-         * @param dimensionString - The dimension of the axis where the data is from.
+         * @param dimension - The dimension of the axis where the data is from.
          */
-        getDimensionDataSourceString(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string>;
+        getDimensionDataSourceString(dimension: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the data source type of the chart series.
          *
@@ -21945,9 +22239,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.15]
          *
-         * @param dimensionString - The dimension of the axis where the data is from.
+         * @param dimension - The dimension of the axis where the data is from.
          */
-        getDimensionDataSourceType(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
+        getDimensionDataSourceType(dimension: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
         /**
          * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
          *
@@ -21963,9 +22257,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.12]
          *
-         * @param dimensionString - The dimension of the axis where the data is from.
+         * @param dimension - The dimension of the axis where the data is from.
          */
-        getDimensionValues(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
+        getDimensionValues(dimension: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string[]>;
         /**
          * Sets the bubble sizes for a chart series. Only works for bubble charts.
          *
@@ -22349,10 +22643,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          *
-         * @param typeString - Specifies the axis type. See `Excel.ChartAxisType` for details.
-         * @param groupString - Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
+         * @param type - Specifies the axis type. See `Excel.ChartAxisType` for details.
+         * @param group - Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
          */
-        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", groupString?: "Primary" | "Secondary"): Excel.ChartAxis;
+        getItem(type: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -22955,8 +23249,7 @@ export declare namespace Excel {
          * Gets an object that represents the leader lines of the data labels.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly leaderLines: Excel.ChartLeaderLines;
         /**
@@ -22967,12 +23260,11 @@ export declare namespace Excel {
          */
         autoText: boolean;
         /**
-         * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+         * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                     Value is `null` if the data labels are not geometric shapes.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
         /**
@@ -23012,11 +23304,12 @@ export declare namespace Excel {
          */
         separator: string;
         /**
-         * Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
+         * Specifies if the data labels are shown as a callout with the tail anchor attached to the data point.
+                    If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout".
+                    See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly showAsStickyCallout: boolean;
         /**
@@ -23034,11 +23327,10 @@ export declare namespace Excel {
          */
         showCategoryName: boolean;
         /**
-         * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+         * Specifies if leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         showLeaderLines: boolean;
         /**
@@ -23150,23 +23442,24 @@ export declare namespace Excel {
          */
         formula: string;
         /**
-         * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+         * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                     Value is `null` if the data label is not a geometric shape.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
         /**
-         * Returns the height, in points, of the chart data label. Value is `null` if the chart data label is not visible.
+         * Returns the height, in points, of the chart data label.
+                    Value is `null` if the chart data label is not visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
          */
         readonly height: number;
         /**
-         * Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+         * Represents the horizontal alignment for chart data label.
+                    See `Excel.ChartTextHorizontalAlignment` for details.
                     This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
          *
          * @remarks
@@ -23188,14 +23481,15 @@ export declare namespace Excel {
          */
         linkNumberFormat: boolean;
         /**
-         * String value that represents the format code for data label.
+         * Specifies the format code for data label.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
          */
         numberFormat: string;
         /**
-         * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+         * Value that represents the position of the data label.
+                    See `Excel.ChartDataLabelPosition` for details.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -23209,11 +23503,12 @@ export declare namespace Excel {
          */
         separator: string;
         /**
-         * Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
+         * Specifies if the data label is shown as a callout with the tail anchor attached to the data point.
+                    If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout".
+                    See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly showAsStickyCallout: boolean;
         /**
@@ -23266,7 +23561,8 @@ export declare namespace Excel {
          */
         text: string;
         /**
-         * Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+         * Represents the angle to which the text is oriented for the chart data label.
+                    The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -23280,7 +23576,8 @@ export declare namespace Excel {
          */
         top: number;
         /**
-         * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+         * Represents the vertical alignment of chart data label.
+                    See `Excel.ChartTextVerticalAlignment` for details.
                     This property is valid only when `TextOrientation` of data label is 0.
          *
          * @remarks
@@ -23288,7 +23585,8 @@ export declare namespace Excel {
          */
         verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         /**
-         * Returns the width, in points, of the chart data label. Value is `null` if the chart data label is not visible.
+         * Returns the width, in points, of the chart data label.
+                    Value is `null` if the chart data label is not visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -23306,8 +23604,7 @@ export declare namespace Excel {
          * Returns a substring of the data label. The line break character '\n' counts as one character.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param start - The zero-based starting character position of a substring in the data label.
          * @param length - Optional. The number of characters in the substring. If length is omitted, all the characters from start to the end of the data label are retrieved.
@@ -23317,16 +23614,14 @@ export declare namespace Excel {
          * Returns the tail anchor of the data label which is shown as a sticky callout.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         getTailAnchor(): Excel.ChartDataLabelAnchor;
         /**
          * Sets the height of the data label in points.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param height - The height of the data label in points.
          */
@@ -23335,8 +23630,7 @@ export declare namespace Excel {
          * Sets the width of the data label in points.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          *
          * @param width - The width of the data label in points.
          */
@@ -23437,26 +23731,25 @@ export declare namespace Excel {
      * Represents the chart data label anchor.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class ChartDataLabelAnchor extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+         * Specifies the distance, in points, from the anchor to the left edge of the chart data label.
+                    Note that when getting the value, it may differ slightly from the set value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         left: number;
         /**
-         * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+         * Specifies the distance, in points, from the anchor to the top edge of the chart data label.
+                    Note that when getting the value, it may differ slightly from the set value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         top: number;
         /**
@@ -24317,7 +24610,7 @@ export declare namespace Excel {
          */
         position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
         /**
-         * Represents a boolean value that determines if the chart title has a shadow.
+         * Represents a Boolean value that determines if the chart title has a shadow.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -25131,9 +25424,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          *
-         * @param typeString - Specifies the trendline type. The default value is "Linear". See `Excel.ChartTrendline` for details.
+         * @param type - Specifies the trendline type. The default value is "Linear". See `Excel.ChartTrendline` for details.
          */
-        add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
+        add(type?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
         /**
          * Returns the number of trendlines in the collection.
          *
@@ -25603,8 +25896,7 @@ export declare namespace Excel {
      * Gets an object that represents the formatting of chart leader lines.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class ChartLeaderLines extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -25613,8 +25905,7 @@ export declare namespace Excel {
          * Represents the formatting of leader lines of data labels in a series.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly format: Excel.ChartLeaderLinesFormat;
         /**
@@ -25656,8 +25947,7 @@ export declare namespace Excel {
      * Encapsulates the format properties for leader lines.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
      */
     export class ChartLeaderLinesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -25666,8 +25956,7 @@ export declare namespace Excel {
          * Gets an object that represents the line formatting of chart leader lines.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         readonly line: Excel.ChartLineFormat;
         /**
@@ -25736,10 +26025,10 @@ export declare namespace Excel {
          * @param fields - The list of conditions to sort on.
          * @param matchCase - Optional. Whether to have the casing impact string ordering.
          * @param hasHeaders - Optional. Whether the range has a header.
-         * @param orientationString - Optional. Whether the operation is sorting rows or columns.
-         * @param methodString - Optional. The ordering method used for Chinese characters.
+         * @param orientation - Optional. Whether the operation is sorting rows or columns.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", methodString?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: "Rows" | "Columns", method?: "PinYin" | "StrokeCount"): void;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeSort` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -25797,9 +26086,9 @@ export declare namespace Excel {
          *
          * @param fields - The list of conditions to sort on.
          * @param matchCase - Optional. Whether to have the casing impact string ordering.
-         * @param methodString - Optional. The ordering method used for Chinese characters.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, method?: "PinYin" | "StrokeCount"): void;
         /**
          * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
          *
@@ -25969,9 +26258,9 @@ export declare namespace Excel {
          *
          * @param criteria1 - The first criteria string.
          * @param criteria2 - Optional. The second criteria string.
-         * @param operString - Optional. The operator that describes how the two criteria are joined.
+         * @param oper - Optional. The operator that describes how the two criteria are joined.
          */
-        applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;
+        applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" | "Or"): void;
         /**
          * Apply a "Dynamic" filter to the column.
          *
@@ -25987,9 +26276,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteriaString - The dynamic criteria to apply.
+         * @param criteria - The dynamic criteria to apply.
          */
-        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
+        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
         /**
          * Apply a "Font Color" filter to the column for the given color.
          *
@@ -26756,7 +27045,8 @@ export declare namespace Excel {
          */
         getFirst(): Excel.PivotTable;
         /**
-         * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top-to-bottom and left-to-right, such that the top-left table is the first PivotTable in the collection.
+         * Gets the first PivotTable in the collection.
+                    The PivotTables in the collection are sorted top-to-bottom and left-to-right, such that the top-left table is the first PivotTable in the collection.
                     If the collection is empty, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
@@ -26774,7 +27064,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.PivotTable;
         /**
-         * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotTable by name.
+                    If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -26847,7 +27138,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotTable;
         /**
-         * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotTable by name.
+                    If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -27003,6 +27295,14 @@ export declare namespace Excel {
          */
         allowMultipleFiltersPerField: boolean;
         /**
+         * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoRefresh: boolean;
+        /**
          * Specifies if the PivotTable allows values in the data body to be edited by the user.
          *
          * @remarks
@@ -27053,7 +27353,8 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Returns the string representation of the data source for the PivotTable. This method currently supports string representations for table and range objects.
+         * Returns the string representation of the data source for the PivotTable.
+                    This method currently supports string representations for table and range objects.
                     Otherwise, it returns an empty string.
          *
          * @remarks
@@ -27172,7 +27473,8 @@ export declare namespace Excel {
          */
         fillEmptyCells: boolean;
         /**
-         * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
+         * This property indicates the PivotLayoutType of all fields on the PivotTable.
+                    If fields have different states, this will be null.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -27207,7 +27509,8 @@ export declare namespace Excel {
          */
         showRowGrandTotals: boolean;
         /**
-         * This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different states, this will be `null`.
+         * This property indicates the `SubtotalLocationType` of all fields on the PivotTable.
+                    If fields have different states, this will be `null`.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -27232,7 +27535,9 @@ export declare namespace Excel {
          */
         displayBlankLineAfterEachItem(display: boolean): void;
         /**
-         * Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies. The returned cell is the intersection of the given row and column that contains the data from the given hierarchy. This method is the inverse of calling `getPivotItems` and `getDataHierarchy` on a particular cell.
+         * Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.
+                    The returned cell is the intersection of the given row and column that contains the data from the given hierarchy.
+                    This method is the inverse of calling `getPivotItems` and `getDataHierarchy` on a particular cell.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -27292,11 +27597,11 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param axisString - The axis from which to get the PivotItems. Must be either "row" or "column."
+         * @param axis - The axis from which to get the PivotItems. Must be either "row" or "column."
          * @param cell - A single cell within the PivotTable's data body.
          * @returns A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
          */
-        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): Excel.PivotItemCollection;
+        getPivotItems(axis: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): Excel.PivotItemCollection;
         /**
          * Returns the range the PivotTable exists on, excluding the filter area.
          *
@@ -27337,9 +27642,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          *
          * @param cell - A single cell to use get the criteria from for applying the autosort.
-         * @param sortByString - The direction of the sort.
+         * @param sortBy - The direction of the sort.
          */
-        setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" | "Descending"): void;
+        setAutoSortOnCell(cell: Range | string, sortBy: "Ascending" | "Descending"): void;
         /**
          * Sets the style applied to the PivotTable.
          *
@@ -27405,7 +27710,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotHierarchy;
         /**
-         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotHierarchy by name.
+                    If the PivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -27539,7 +27845,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.RowColumnPivotHierarchy;
         /**
-         * Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a RowColumnPivotHierarchy by name.
+                    If the RowColumnPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -27694,7 +28001,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.FilterPivotHierarchy;
         /**
-         * Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a FilterPivotHierarchy by name.
+                    If the FilterPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -27855,7 +28163,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.DataPivotHierarchy;
         /**
-         * Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a DataPivotHierarchy by name.
+                    If the DataPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -28050,7 +28359,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotField;
         /**
-         * Gets a PivotField by name. If the PivotField does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotField by name.
+                    If the PivotField does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -28167,9 +28477,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.12]
          *
-         * @param filterTypeString - The type of filter on the field of which to clear all criteria.
+         * @param filterType - The type of filter on the field of which to clear all criteria.
          */
-        clearFilter(filterTypeString: "Unknown" | "Value" | "Manual" | "Label" | "Date"): void;
+        clearFilter(filterType: "Unknown" | "Value" | "Manual" | "Label" | "Date"): void;
         /**
          * Gets all filters currently applied on the field.
          *
@@ -28194,10 +28504,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.12]
          *
-         * @param filterTypeString - The filter type to check. If no type is provided, this method will check if any filter is applied.
+         * @param filterType - The filter type to check. If no type is provided, this method will check if any filter is applied.
          * @returns True if the field has a filter of type `filterType` applied. If `filterType` is not specified, `true` is returned if the field has any applied filters.
          */
-        isFiltered(filterTypeString?: "Unknown" | "Value" | "Manual" | "Label" | "Date"): OfficeExtension.ClientResult<boolean>;
+        isFiltered(filterType?: "Unknown" | "Value" | "Manual" | "Label" | "Date"): OfficeExtension.ClientResult<boolean>;
         /**
          * Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.
          *
@@ -28229,14 +28539,14 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortByString - Specifies if the sorting is done in ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
          * items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
          * the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
          * you want to sort on, this can be empty.
          */
-        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
+        sortByValues(sortBy: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -28292,7 +28602,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotItem;
         /**
-         * Gets a PivotItem by name. If the PivotItem does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotItem by name.
+                    If the PivotItem does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -28732,7 +29043,7 @@ export declare namespace Excel {
          */
         readonly key: string;
         /**
-         * Gets or sets the value of the custom property.
+         * Specifies the value of the custom property.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -28818,7 +29129,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.WorksheetCustomProperty;
         /**
-         * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a custom property object by its key, which is case-insensitive.
+                    If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -29096,7 +29408,8 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.CustomProperty;
         /**
-         * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a custom property object by its key, which is case-insensitive.
+                    If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -29155,9 +29468,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          *
-         * @param typeString - The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
+         * @param type - The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
          */
-        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
+        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
         /**
          * Clears all conditional formats active on the current specified range.
          *
@@ -29474,7 +29787,8 @@ export declare namespace Excel {
          */
         getRange(): Excel.Range;
         /**
-         * Returns the range to which the conditional format is applied. If the conditional format is applied to multiple ranges, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the range to which the conditional format is applied.
+                    If the conditional format is applied to multiple ranges, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -30805,9 +31119,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          *
-         * @param indexString - Index value of the border object to be retrieved. See `Excel.ConditionalRangeBorderIndex` for details.
+         * @param index - Index value of the border object to be retrieved. See `Excel.ConditionalRangeBorderIndex` for details.
          */
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -30840,6 +31154,73 @@ export declare namespace Excel {
         * Whereas the original `Excel.ConditionalRangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
+    }
+    /**
+     * Manages settings on custom functions.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.20]
+     */
+    export class CustomFunctionManager extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Show or hide custom functions in Excel AutoComplete.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         *
+         * @param customFunctionVisibilityOptions - Specifies which custom functions to show or hide.
+         */
+        static setVisibility(customFunctionVisibilityOptions: Excel.CustomFunctionVisibilityOptions): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomFunctionManager;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CustomFunctionManager;
+        /**
+         * Create a new instance of the `Excel.CustomFunctionManager` object.
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        static newObject(context: OfficeExtension.ClientRequestContext): Excel.CustomFunctionManager;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.CustomFunctionManager` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomFunctionManagerData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.CustomFunctionManagerData;
+    }
+    /**
+     * Represents which custom functions to show or hide in Excel AutoComplete.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.20]
+     */
+    export interface CustomFunctionVisibilityOptions {
+        /**
+         * A list of custom functions to hide from Excel AutoComplete.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        hide?: string[];
+        /**
+         * A list of custom functions to show in Excel AutoComplete.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        show?: string[];
     }
     /**
      * An object encapsulating a style's format and other properties.
@@ -31181,7 +31562,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.TableStyle;
         /**
-         * Gets a `TableStyle` by name. If the table style does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a `TableStyle` by name.
+                    If the table style does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -31345,7 +31727,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotTableStyle;
         /**
-         * Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a `PivotTableStyle` by name.
+                    If the `PivotTableStyle` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -31509,7 +31892,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.SlicerStyle;
         /**
-         * Gets a `SlicerStyle` by name. If the slicer style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a `SlicerStyle` by name.
+                    If the slicer style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -31673,7 +32057,8 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.TimelineStyle;
         /**
-         * Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a `TimelineStyle` by name.
+                    If the timeline style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -31806,6 +32191,14 @@ export declare namespace Excel {
          */
         readonly headersFooters: Excel.HeaderFooterGroup;
         /**
+         * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alignMarginsHeaderFooter: boolean;
+        /**
          * The worksheet's black and white print option.
          *
          * @remarks
@@ -31918,6 +32311,16 @@ export declare namespace Excel {
          */
         printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
         /**
+         * Specifies a two-element array that contains both horizontal and vertical print quality values.
+                    The first element is the horizontal print quality, and the second element is the vertical print quality.
+                    Some printers may not support vertical print quality and the supported values may vary by printer.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printQuality: number[];
+        /**
          * The worksheet's right margin, in points, for use when printing.
          *
          * @remarks
@@ -31955,7 +32358,8 @@ export declare namespace Excel {
          */
         getPrintArea(): Excel.RangeAreas;
         /**
-         * Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the worksheet.
+                    If there is no print area, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -31970,7 +32374,8 @@ export declare namespace Excel {
          */
         getPrintTitleColumns(): Excel.Range;
         /**
-         * Gets the range object representing the title columns. If not set, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the range object representing the title columns.
+                    If not set, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -31985,7 +32390,8 @@ export declare namespace Excel {
          */
         getPrintTitleRows(): Excel.Range;
         /**
-         * Gets the range object representing the title rows. If not set, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the range object representing the title rows.
+                    If not set, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -32017,10 +32423,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param unitString - Measurement unit for the margins provided.
+         * @param unit - Measurement unit for the margins provided.
          * @param marginOptions - Margin values to set. Margins not provided remain unchanged.
          */
-        setPrintMargins(unitString: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions): void;
+        setPrintMargins(unit: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions): void;
         /**
          * Sets the columns that contain the cells to be repeated at the left of each page of the worksheet for printing.
          *
@@ -32153,6 +32559,54 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly centerFooterPicture: Excel.HeaderFooterPicture;
+        /**
+         * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly centerHeaderPicture: Excel.HeaderFooterPicture;
+        /**
+         * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly leftFooterPicture: Excel.HeaderFooterPicture;
+        /**
+         * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly leftHeaderPicture: Excel.HeaderFooterPicture;
+        /**
+         * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rightFooterPicture: Excel.HeaderFooterPicture;
+        /**
+         * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rightHeaderPicture: Excel.HeaderFooterPicture;
+        /**
          * The center footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
          *
@@ -32278,14 +32732,14 @@ export declare namespace Excel {
          */
         state: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
         /**
-         * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+         * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         useSheetMargins: boolean;
         /**
-         * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+         * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -32325,6 +32779,183 @@ export declare namespace Excel {
         * Whereas the original `Excel.HeaderFooterGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterGroupData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.HeaderFooterGroupData;
+    }
+    /**
+     * Represents a picture in the header or footer of a worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class HeaderFooterPicture extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brightness: number;
+        /**
+         * Specifies the type of color transformation of the picture.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        colorType: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
+        /**
+         * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contrast: number;
+        /**
+         * Specifies the number of points that are cropped off the bottom of the picture.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropBottom: number;
+        /**
+         * Specifies the number of points that are cropped off the left side of the picture.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropLeft: number;
+        /**
+         * Specifies the number of points that are cropped off the right side of the picture.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropRight: number;
+        /**
+         * Specifies the number of points that are cropped off the top of the picture.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropTop: number;
+        /**
+         * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        filename: string;
+        /**
+         * Specifies the height of the picture in points.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height: number;
+        /**
+         * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lockAspectRatio: boolean;
+        /**
+         * Specifies the width of the picture in points.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.HeaderFooterPictureUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.HeaderFooterPicture): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.HeaderFooterPictureLoadOptions): Excel.HeaderFooterPicture;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.HeaderFooterPicture;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.HeaderFooterPicture;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.HeaderFooterPicture` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterPictureData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.HeaderFooterPictureData;
+    }
+    /**
+     * Specifies the color transformation of a picture in the header or footer of a worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PictureColorType {
+        /**
+         * Mixed transformation.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Default color transformation.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        automatic = "Automatic",
+        /**
+         * Grayscale transformation.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        grayScale = "GrayScale",
+        /**
+         * Black-and-white transformation.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blackAndWhite = "BlackAndWhite",
+        /**
+         * Watermark transformation.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        watermark = "Watermark"
     }
     /**
      * @remarks
@@ -32659,9 +33290,9 @@ export declare namespace Excel {
          *
          * @param cellAddress - The cell to which the comment is added. This can be a `Range` object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
          * @param content - The comment's content. This can be either a string or `CommentRichContent` object. Strings are used for plain text. `CommentRichContent` objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
-         * @param contentTypeString - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
+         * @param contentType - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
          */
-        add(cellAddress: Range | string, content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"): Excel.Comment;
+        add(cellAddress: Range | string, content: CommentRichContent | string, contentType?: "Plain" | "Mention"): Excel.Comment;
         /**
          * Gets the number of comments in the collection.
          *
@@ -32887,7 +33518,8 @@ export declare namespace Excel {
          */
         getTask(): Excel.DocumentTask;
         /**
-         * Gets the task associated with this comment. If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the task associated with this comment.
+                    If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -32959,9 +33591,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          *
          * @param content - The comment's content. This can be either a string or a `CommentRichContent` object (e.g., for comments with mentions). [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
-         * @param contentTypeString - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
+         * @param contentType - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
          */
-        add(content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"): Excel.CommentReply;
+        add(content: CommentRichContent | string, contentType?: "Plain" | "Mention"): Excel.CommentReply;
         /**
          * Gets the number of comment replies in the collection.
          *
@@ -33142,7 +33774,8 @@ export declare namespace Excel {
          */
         getTask(): Excel.DocumentTask;
         /**
-         * Gets the task associated with this comment reply's thread. If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets the task associated with this comment reply's thread.
+                    If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -33212,9 +33845,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param geometricShapeTypeString - Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
+         * @param geometricShapeType - Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
          */
-        addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"): Excel.Shape;
+        addGeometricShape(geometricShapeType: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"): Excel.Shape;
         /**
          * Groups a subset of shapes in this collection's worksheet. Returns a `Shape` object that represents the new group of shapes.
          *
@@ -33256,9 +33889,9 @@ export declare namespace Excel {
          * @param startTop - The distance, in points, from the start of the line to the top of the worksheet.
          * @param endLeft - The distance, in points, from the end of the line to the left of the worksheet.
          * @param endTop - The distance, in points, from the end of the line to the top of the worksheet.
-         * @param connectorTypeString - Represents the connector type. See `Excel.ConnectorType` for details.
+         * @param connectorType - Represents the connector type. See `Excel.ConnectorType` for details.
          */
-        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorTypeString?: "Straight" | "Elbow" | "Curve"): Excel.Shape;
+        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?: "Straight" | "Elbow" | "Curve"): Excel.Shape;
         /**
          * Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.
          *
@@ -33437,9 +34070,9 @@ export declare namespace Excel {
          */
         readonly connectionSiteCount: number;
         /**
-         * Gets the display name of the shape. A newly created shape has a generated name
-                    that is localized and may not match its `name`. In this scenario, you can use
-                    this API to get the name that is displayed in the UI.
+         * Gets the display name of the shape.
+                    A newly created shape has a generated name that is localized and may not match its `name`.
+                    In this scenario, you can use this API to get the name that is displayed in the UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -33587,9 +34220,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param formatString - Specifies the format of the image.
+         * @param format - Specifies the format of the image.
          */
-        getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"): OfficeExtension.ClientResult<string>;
+        getAsImage(format: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"): OfficeExtension.ClientResult<string>;
         /**
          * Moves the shape horizontally by the specified number of points.
          *
@@ -33636,10 +34269,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          *
          * @param scaleFactor - Specifies the ratio between the height of the shape after you resize it and the current or original height.
-         * @param scaleTypeString - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
-         * @param scaleFromString - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
+         * @param scaleType - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+         * @param scaleFrom - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
          */
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleType: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
         /**
          * Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
          *
@@ -33658,10 +34291,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          *
          * @param scaleFactor - Specifies the ratio between the width of the shape after you resize it and the current or original width.
-         * @param scaleTypeString - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
-         * @param scaleFromString - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
+         * @param scaleType - Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+         * @param scaleFrom - Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
          */
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleType: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
         /**
          * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
          *
@@ -33677,9 +34310,9 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param positionString - Where to move the shape in the z-order stack relative to the other shapes. See `Excel.ShapeZOrder` for details.
+         * @param position - Where to move the shape in the z-order stack relative to the other shapes. See `Excel.ShapeZOrder` for details.
          */
-        setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;
+        setZOrder(position: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -33792,6 +34425,62 @@ export declare namespace Excel {
          */
         readonly shape: Excel.Shape;
         /**
+         * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brightness: number;
+        /**
+         * Specifies the type of color transformation applied to the image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        colorType: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
+        /**
+         * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contrast: number;
+        /**
+         * Specifies the number of points that are cropped off the bottom of the image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropBottom: number;
+        /**
+         * Specifies the number of points that are cropped off the left side of the image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropLeft: number;
+        /**
+         * Specifies the number of points that are cropped off the right side of the image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropRight: number;
+        /**
+         * Specifies the number of points that are cropped off the top of the image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cropTop: number;
+        /**
          * Specifies the shape identifier for the image object.
          *
          * @remarks
@@ -33805,6 +34494,34 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Image): void;
+        /**
+         * Increments the brightness of the image by a specified amount.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param increment - Specifies how much to change the value of the Brightness property for the picture. A positive value makes the picture brighter; a negative value makes the picture darker.
+         */
+        incrementBrightness(increment: number): void;
+        /**
+         * Increments the contrast of the image by a specified amount.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param increment - Specifies how much to change the value of the Contrast property for the picture. A positive value increases the contrast; a negative value decreases the contrast.
+         */
+        incrementContrast(increment: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -34572,6 +35289,45 @@ export declare namespace Excel {
          */
         size: number;
         /**
+         * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        strikethrough: boolean;
+        /**
+         * Specifies the subscript status of font.
+                    Returns `true` if all the fonts of the range are subscript.
+                    Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
+                    Returns `null` otherwise.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subscript: boolean;
+        /**
+         * Specifies the superscript status of font.
+                    Returns `true` if all the fonts of the range are superscript.
+                    Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
+                    Returns `null` otherwise.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        superscript: boolean;
+        /**
+         * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+                    A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tintAndShade: number;
+        /**
          * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
          *
          * @remarks
@@ -34652,7 +35408,7 @@ export declare namespace Excel {
          */
         caption: string;
         /**
-         * Represents the height, in points, of the slicer.
+         * Specifies the height, in points, of the slicer.
                     Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
          *
          * @remarks
@@ -34689,7 +35445,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Represents the slicer name used in the formula.
+         * Specifies the slicer name used in the formula.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -34697,14 +35453,16 @@ export declare namespace Excel {
          */
         nameInFormula: string;
         /**
-         * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
+         * Specifies the sort order of the items in the slicer.
+                    Possible values are: "DataSourceOrder", "Ascending", "Descending".
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
          */
         sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
         /**
-         * Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+         * Constant value that represents the slicer style.
+                    Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -34851,7 +35609,8 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Slicer;
         /**
-         * Gets a slicer using its name or ID. If the slicer doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a slicer using its name or ID.
+                    If the slicer doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -34995,7 +35754,8 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.SlicerItem;
         /**
-         * Gets a slicer item using its key or name. If the slicer item doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         * Gets a slicer item using its key or name.
+                    If the slicer item doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -35029,490 +35789,130 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.SlicerItemCollectionData;
     }
     /**
-     * Represents a linked data type.
-                A linked data type is a data type connected to an online data source.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class LinkedDataType extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * The name of the data provider for the linked data type. This may change when information is retrieved from the service.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly dataProvider: string;
-        /**
-         * The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
-                    Returns `undefined` if the linked data type has not been refreshed.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly lastRefreshed: Date;
-        /**
-         * The name of the linked data type. This may change when information is retrieved from the service.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly name: string;
-        /**
-         * The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly periodicRefreshInterval: number;
-        /**
-         * The mechanism by which the data for the linked data type is retrieved.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
-        /**
-         * The unique ID of the linked data type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly serviceId: number;
-        /**
-         * Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly supportedRefreshModes: Excel.LinkedDataTypeRefreshMode[];
-        /**
-         * Makes a request to refresh the linked data type. If the service is busy or otherwise temporarily inaccessible, the request will not be fulfilled.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        requestRefresh(): void;
-        /**
-         * Makes a request to change the refresh mode for this linked data type.
-                    If the given refresh mode is not supported by this linked data type the mode is left unchanged.
-                    If set to "Periodic", the refresh interval is set to a predetermined value based on the particular linked data type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param refreshMode - The intended mode to which this linked data type is requested to change.
-         */
-        requestSetRefreshMode(refreshMode: Excel.LinkedDataTypeRefreshMode): void;
-        /**
-         * Makes a request to change the refresh mode for this linked data type.
-                    If the given refresh mode is not supported by this linked data type the mode is left unchanged.
-                    If set to "Periodic", the refresh interval is set to a predetermined value based on the particular linked data type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param refreshModeString - The intended mode to which this linked data type is requested to change.
-         */
-        requestSetRefreshMode(refreshModeString: "Unknown" | "Manual" | "OnLoad" | "Periodic"): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.LinkedDataTypeLoadOptions): Excel.LinkedDataType;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.LinkedDataType;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.LinkedDataType;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.LinkedDataType` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.LinkedDataTypeData;
-    }
-    /**
-     * Represents a collection of linked data types.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class LinkedDataTypeCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: Excel.LinkedDataType[];
-        /**
-         * Gets the number of linked data types in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a linked data type by service ID.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param key - The ID of the linked data type.
-         */
-        getItem(key: number): Excel.LinkedDataType;
-        /**
-         * Gets a linked data type by its index in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - The index of the linked data type object in the collection.
-         * @returns The linked data type at the given index.
-         */
-        getItemAt(index: number): Excel.LinkedDataType;
-        /**
-         * Gets a linked data type by ID. If the linked data type doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param key - The service ID of the linked data type.
-         */
-        getItemOrNullObject(key: number): Excel.LinkedDataType;
-        /**
-         * Makes a request to refresh all the linked data types in the collection.
-                    If the service is busy or otherwise temporarily inaccessible, the request will not be fulfilled.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        requestRefreshAll(): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.LinkedDataTypeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.LinkedDataTypeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedDataTypeCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.LinkedDataTypeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Excel.Interfaces.LinkedDataTypeCollectionData;
-    }
-    /**
-     * Representation of a refresh mode.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum LinkedDataTypeRefreshMode {
-        /**
-         * Refresh mode is unknown or unsupported.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        unknown = "Unknown",
-        /**
-         * Manual refresh. Refresh does not get triggered automatically.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        manual = "Manual",
-        /**
-         * Refresh on workbook load only.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        onLoad = "OnLoad",
-        /**
-         * Refresh periodically based on an interval. It will also trigger a refresh on workbook load.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        periodic = "Periodic"
-    }
-    /**
-     * The argument that is passed to the event handler upon completion of refresh request to an external service or link.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface RefreshRequestCompletedEventArgs {
-        /**
-         * Indicates if the request to refresh was successful.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        refreshed: boolean;
-        /**
-         * The unique ID of the object whose refresh request was completed.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        serviceId: number;
-        /**
-         * Gets the source of the event. See `Excel.EventSource` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        source: Excel.EventSource | "Local" | "Remote";
-        /**
-         * Gets the type of the event. See `Excel.EventType` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: "LinkedDataTypeRefreshRequestCompleted";
-        /**
-         * An array that contains any warnings generated from the refresh request.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        warnings?: string[];
-    }
-    /**
-     * Represents information about a newly added linked data type, such as source and ID.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface RefreshModeChangedEventArgs {
-        /**
-         * The linked data type refresh mode.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
-        /**
-         * The unique ID of the object whose refresh mode was changed.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        serviceId: number;
-        /**
-         * Gets the source of the event. See `Excel.EventSource` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        source: Excel.EventSource | "Local" | "Remote";
-        /**
-         * Gets the type of the event. See `Excel.EventType` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: "LinkedDataTypeRefreshModeChanged";
-    }
-    /**
-     * The argument that is passed to the event handler after a new linked data type is added to the workbook.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface LinkedDataTypeAddedEventArgs {
-        /**
-         * The unique ID of the new linked data type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        serviceId: number;
-        /**
-         * Gets the source of the event. See `Excel.EventSource` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        source: Excel.EventSource | "Local" | "Remote";
-        /**
-         * Gets the type of the event. See `Excel.EventType` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: "LinkedDataTypeLinkedDataTypeAdded";
-    }
-    /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
-     * A data domain is linked to a data provider that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
-     * A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
+                A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
+                A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This class isn't supported in Excel on the web.
      */
     export class LinkedEntityDataDomain extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
          * Gets the name of the data provider for the linked entity data domain.
-         * This name can change based on the information from the data provider.
+                    This name can change based on the information provided by the data provider.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly dataProvider: string;
         /**
          * Gets the ID of the linked entity data domain defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly id: string;
         /**
          * Gets the date and time (in the local time zone) since the workbook was opened and the `LinkedEntityCellValue` objects of this linked entity data domain were last refreshed.
-         * Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
+                    Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly lastRefreshed: Date;
         /**
          * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly loadFunctionId: string;
         /**
          * Gets the name of the linked entity data domain.
-         * This name can change based on the information from the data provider.
+                    This name can change based on the information provided by the data provider.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly name: string;
         /**
          * Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically.
-         * The refresh interval only applies if the `refreshMode` is set to "Periodic".
+                    The refresh interval only applies if the `refreshMode` is set to "Periodic".
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly periodicRefreshInterval: number;
         /**
-         * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
-         * If the refresh mode being set isn't supported by this linked entity data domain, then the current refresh mode is not changed.
-         * If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
+         * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+                    If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
+                    If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
          * Gets the service ID of the linked entity data domain.
-         * This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins.
-         * This ID never changes across user sessions.
+                    This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins.
+                    This ID never changes across user sessions.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly serviceId: number;
         /**
          * Gets all the refresh modes supported by the linked entity data domain.
-         * This array can change based on the information provided by the data provider.
+                    This array can change based on the information provided by the data provider.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         readonly supportedRefreshModes: Excel.LinkedEntityDataDomainRefreshMode[];
         /**
          * Deletes this object from the `LinkedEntityDataDomainCollection`.
-         * Once the linked entity data domain is deleted, new `LinkedEntityCellValue` objects of this linked entity data domain can't be created and existing `LinkedEntityCellValue` objects can't be refreshed.
-         * An Office Add-in can only delete linked entity data domains that it created.
+                    Once the linked entity data domain is deleted, new `LinkedEntityCellValue` objects of this linked entity data domain can't be created and existing `LinkedEntityCellValue` objects can't be refreshed.
+                    An Office Add-in can only delete linked entity data domains that it created.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         delete(): void;
         /**
          * Refreshes all `LinkedEntityCellValue` objects of this linked entity data domain.
-         * The refresh request can fail if the data provider is busy or temporarily inaccessible.
+                    The refresh request can fail if the data provider is busy or temporarily inaccessible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         refresh(): void;
         /**
@@ -35546,51 +35946,57 @@ export declare namespace Excel {
      * Provides information about the identity of the linked entity data domain that was just added to the workbook.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainAddedEventArgs {
         /**
          * Gets the ID of the linked entity data domain that was just added to the workbook. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id?: string;
         /**
          * Gets the service ID of the linked entity data domain that was just added to the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         serviceId: number;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainLinkedEntityDataDomainAdded";
     }
     /**
      * Represents a collection of `LinkedEntityDataDomain` objects.
-     * The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
+                The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This class isn't supported in Excel on the web.
      */
     export class LinkedEntityDataDomainCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -35599,11 +36005,12 @@ export declare namespace Excel {
         readonly items: Excel.LinkedEntityDataDomain[];
         /**
          * Adds a linked entity data domain object defined by the Office Add-in to the collection.
-         * Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
+                    Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param options - Options that are used to create the linked entity data domain to be added.
          */
@@ -35612,16 +36019,18 @@ export declare namespace Excel {
          * Gets the number of linked entity data domains in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a linked entity data domain by its `id`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
@@ -35631,8 +36040,9 @@ export declare namespace Excel {
          * Gets a linked entity data domain by its index in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param index - The index of the linked entity data domain in the collection.
          * @returns The linked entity data domain at the given index.
@@ -35642,8 +36052,9 @@ export declare namespace Excel {
          * Gets a linked entity data domain by its `name`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `name`. If there are multiple linked entity data domains with the same `name`, the one defined by this Office Add-in will be returned.
@@ -35651,12 +36062,13 @@ export declare namespace Excel {
         getItemByName(name: string): Excel.LinkedEntityDataDomain;
         /**
          * Gets a linked entity data domain by its `name`.
-         * If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    If the linked entity data domain does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `name`. If there are multiple linked entity data domains with the same `name`, the one defined by this Office Add-in will be returned.
@@ -35664,12 +36076,13 @@ export declare namespace Excel {
         getItemByNameOrNullObject(name: string): Excel.LinkedEntityDataDomain;
         /**
          * Gets a linked entity data domain by its `id`.
-         * If the linked entity data domain does not exist, then this function will return an object with its `isNullObject` property set to `true`.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    If the linked entity data domain does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
@@ -35677,11 +36090,12 @@ export declare namespace Excel {
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
         /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
-         * The refresh request can fail if the data providers are busy or temporarily inaccessible.
+                    The refresh request can fail if the data providers are busy or temporarily inaccessible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This method isn't supported in Excel on the web.
          */
         refreshAll(): void;
         /**
@@ -35706,30 +36120,33 @@ export declare namespace Excel {
          * Occurs when a new linked entity data domain is added to the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This event isn't supported in Excel on the web.
          *
          * @eventproperty
-         * @beta
          */
         readonly onLinkedEntityDataDomainAdded: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainAddedEventArgs>;
         /**
          * Occurs when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This event isn't supported in Excel on the web.
          *
          * @eventproperty
-         * @beta
          */
         readonly onRefreshCompleted: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshCompletedEventArgs>;
         /**
          * Occurs when the `refreshMode` of a linked entity data domain is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This event isn't supported in Excel on the web.
          *
          * @eventproperty
-         * @beta
          */
         readonly onRefreshModeChanged: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs>;
         /**
@@ -35742,65 +36159,72 @@ export declare namespace Excel {
      * Represents options that are used to create the `LinkedEntityDataDomain` object being added to the `LinkedEntityDataDomainCollection`.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainCreateOptions {
         /**
-         * Gets or sets the name of the data provider for the linked entity data domain.
+         * Specifies the name of the data provider for the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         dataProvider: string;
         /**
-         * Gets or sets the ID of the linked entity data domain.
-         * This ID must be unique across all linked entity data domains defined by this Office Add-in.
+         * Specifies the ID of the linked entity data domain.
+                    This ID must be unique across all linked entity data domains defined by this Office Add-in.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id: string;
         /**
-         * Gets or sets the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.
-         * For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+         * Specifies the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         loadFunctionId: string;
         /**
-         * Gets or sets the name of the linked entity data domain.
-         * This name must be unique across all linked entity data domains defined by this Office Add-in.
+         * Specifies the name of the linked entity data domain.
+                    This name must be unique across all linked entity data domains defined by this Office Add-in.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         name: string;
         /**
-         * Gets or sets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The minimum valid value is 300.
-         * This property is required if the `supportedRefreshModes` array contains the value "Periodic".
-         * This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
+         * Specifies the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The minimum valid value is 300.
+                    This property is required if the `supportedRefreshModes` array contains the value "Periodic".
+                    This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         periodicRefreshInterval?: number;
         /**
-         * Gets or sets all the refresh modes supported by the linked entity data domain.
-         * The default value is `["Manual"]`, which is always supported even if not specified.
-         * The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open.
-         * If the refresh mode wasn't saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain.
-         * If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
+         * Specifies all the refresh modes supported by the linked entity data domain.
+                    The default value is `["Manual"]`, which is always supported even if not specified.
+                    The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open.
+                    If the refresh mode was not saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain.
+                    If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
     }
@@ -35808,57 +36232,64 @@ export declare namespace Excel {
      * Provides information about the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainRefreshCompletedEventArgs {
         /**
          * Gets any errors encountered during the request to refresh `LinkedEntityCellValue` objects of the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         errors?: string[];
         /**
          * Gets the ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id?: string;
         /**
          * Returns `true` if the `LinkedEntityCellValue` objects of the linked entity data domain were refreshed successfully, otherwise returns `false`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         refreshed: boolean;
         /**
          * Gets the service ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         serviceId: number;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainRefreshCompleted";
     }
@@ -35866,43 +36297,45 @@ export declare namespace Excel {
      * Represents the refresh mode setting for the `LinkedEntityCellValue` objects of a `LinkedEntityDataDomain`.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This enum isn't supported in Excel on the web.
      */
     enum LinkedEntityDataDomainRefreshMode {
         /**
          * Refresh mode is unknown or unsupported.
-         * 
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         unknown = "Unknown",
         /**
-         * Manual refresh by the user. Refresh is not triggered automatically.
-         * 
+         * Manual refresh by the user.
+                    Refresh is not triggered automatically.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         manual = "Manual",
         /**
          * Refresh on workbook load, applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
-         * Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
-         * 
+                    Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         onLoad = "OnLoad",
         /**
          * Refresh automatically based on the frequency, in seconds, specified by `periodicRefreshInterval`.
-         * For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened.
-         * For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
-         * 
+                    For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened.
+                    For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This field isn't supported in Excel on the web.
          */
         periodic = "Periodic"
     }
@@ -35910,49 +36343,55 @@ export declare namespace Excel {
      * Provides information about the linked entity data domain whose refresh mode was changed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.19]
+     * 
+     * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainRefreshModeChangedEventArgs {
         /**
          * Gets the ID of the linked entity data domain whose refresh mode was changed. This ID is defined by Office Add-ins.
-         * This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+                    This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         id?: string;
         /**
          * Gets the new refresh mode of the linked entity data domain.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         /**
          * Gets the service ID of the linked entity data domain whose refresh mode was changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         serviceId: number;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainRefreshModeChanged";
     }
@@ -37564,6 +38003,29 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         power = "Power"
+    }
+    /**
+     * Specifies what an =PY formula returns, such as an Excel value or a Python object.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PythonMarshalMode {
+        /**
+         * Specifies that the result of an =PY formula should be a reference to an object in the Python service.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pythonObject = "PythonObject",
+        /**
+         * Specifies that the result of an =PY formula should be an Excel value.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        excelValue = "ExcelValue"
     }
     /**
      * Specifies where in the z-order a shape should be moved relative to other shapes.
@@ -40189,24 +40651,6 @@ export declare namespace Excel {
          */
         commentChanged = "CommentChanged",
         /**
-         * `RefreshRequestCompleted` represents the type of event registered on a `LinkedDataType` and occurs when a request to refresh a data source is completed.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted",
-        /**
-         * `RefreshModeChanged` represents the type of event registered on a `LinkedDataType` and occurs when the linked data type refresh mode is changed.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeRefreshModeChanged = "LinkedDataTypeRefreshModeChanged",
-        /**
-         * `LinkedDataTypeAdded` represents the type of event registered on a `LinkedDataType` and occurs when a new linked data type is added to the workbook.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeLinkedDataTypeAdded = "LinkedDataTypeLinkedDataTypeAdded",
-        /**
          * `WorksheetFormulaChanged` represents the type of event registered on a worksheet and occurs when a formula is changed.
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -40283,22 +40727,19 @@ export declare namespace Excel {
         /**
          * LinkedEntityDataDomainAdded represents the type of event registered when a new linked entity data domain is added to the workbook.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         linkedEntityDataDomainLinkedEntityDataDomainAdded = "LinkedEntityDataDomainLinkedEntityDataDomainAdded",
         /**
          * LinkedEntityDataDomainRefreshCompleted represents the type of event registered when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         linkedEntityDataDomainRefreshCompleted = "LinkedEntityDataDomainRefreshCompleted",
         /**
          * LinkedEntityDataDomainRefreshModeChanged represents the type of event registered when the `refreshMode` of a linked entity data domain is changed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         linkedEntityDataDomainRefreshModeChanged = "LinkedEntityDataDomainRefreshModeChanged",
         /**
@@ -40307,7 +40748,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        queryQueryRefreshCompleted = "QueryQueryRefreshCompleted"
+        queryQueryRefreshCompleted = "QueryQueryRefreshCompleted",
+        /**
+         * ExternalCodeServiceDiffResultReceived represents the type of event registered when the diff result is received from the external code service.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        externalCodeServiceDiffResultReceived = "ExternalCodeServiceDiffResultReceived"
     }
     /**
      * @remarks
@@ -42290,7 +42738,14 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
-        visible = "Visible"
+        visible = "Visible",
+        /**
+         * Cells contain formulas which don't have up-to-date results.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dirtyFormulas = "DirtyFormulas"
     }
     /**
      * @remarks
@@ -42298,7 +42753,7 @@ export declare namespace Excel {
      */
     enum SpecialCellValueType {
         /**
-         * Cells that have errors, boolean, numeric, or string values.
+         * Cells that have errors, Boolean, numeric, or string values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -42310,7 +42765,7 @@ export declare namespace Excel {
          */
         errors = "Errors",
         /**
-         * Cells that have errors or boolean values.
+         * Cells that have errors or Boolean values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -42328,13 +42783,13 @@ export declare namespace Excel {
          */
         errorsText = "ErrorsText",
         /**
-         * Cells that have errors, boolean, or numeric values.
+         * Cells that have errors, Boolean, or numeric values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         errorsLogicalNumber = "ErrorsLogicalNumber",
         /**
-         * Cells that have errors, boolean, or string values.
+         * Cells that have errors, Boolean, or string values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -42346,25 +42801,25 @@ export declare namespace Excel {
          */
         errorsNumberText = "ErrorsNumberText",
         /**
-         * Cells that have a boolean value.
+         * Cells that have a Boolean value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logical = "Logical",
         /**
-         * Cells that have a boolean or numeric value.
+         * Cells that have a Boolean or numeric value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logicalNumbers = "LogicalNumbers",
         /**
-         * Cells that have a boolean or string value.
+         * Cells that have a Boolean or string value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logicalText = "LogicalText",
         /**
-         * Cells that have a boolean, numeric, or string value.
+         * Cells that have a Boolean, numeric, or string value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -42963,7 +43418,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets or sets the name of the sheet view.
+         * Specifies the name of the sheet view.
                     The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
          *
          * @remarks
@@ -43182,7 +43637,9 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Note;
         /**
-         * Gets a note by its cell address. If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+         * Gets a note by its cell address.
+                    If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -43232,7 +43689,7 @@ export declare namespace Excel {
          */
         readonly authorName: string;
         /**
-         * Gets or sets the text of the note.
+         * Specifies the text of the note.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -43307,6 +43764,776 @@ export declare namespace Excel {
         * Whereas the original `Excel.Note` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NoteData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.NoteData;
+    }
+    /**
+     * Represents a window in the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Window extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the active cell in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activeCell: Excel.Range;
+        /**
+         * Specifies the active pane in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activePane: Excel.Pane;
+        /**
+         * Specifies the active sheet in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly activeWorksheet: Excel.Worksheet;
+        /**
+         * Gets the panes associated with the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly panes: Excel.PaneCollection;
+        /**
+         * Gets the range selection in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly rangeSelection: Excel.RangeAreas;
+        /**
+         * Gets the visible range of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly visibleRange: Excel.Range;
+        /**
+         * Specifies whether AutoFilter date grouping is enabled in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoFilterDateGroupingEnabled: boolean;
+        /**
+         * Specifies a value indicating whether resizing is enabled for the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly enableResize: boolean;
+        /**
+         * Specifies a value indicating whether panes are frozen in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        freezePanes: boolean;
+        /**
+         * Specifies the height of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height: number;
+        /**
+         * Gets the index of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly index: number;
+        /**
+         * Specifies the visibility of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isVisible: boolean;
+        /**
+         * Specifies the left position of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left: number;
+        /**
+         * Specifies the name of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name: string;
+        /**
+         * Specifies the scroll column of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scrollColumn: number;
+        /**
+         * Specifies the scroll row of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scrollRow: number;
+        /**
+         * Specifies the display of formulas in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showFormulas: boolean;
+        /**
+         * Specifies the display of gridlines in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showGridlines: boolean;
+        /**
+         * Specifies the display of headings in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showHeadings: boolean;
+        /**
+         * Specifies the display of the horizontal scroll bar in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showHorizontalScrollBar: boolean;
+        /**
+         * Specifies the display of the outline in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showOutline: boolean;
+        /**
+         * Specifies the display of the right-to-left layout in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly showRightToLeft: boolean;
+        /**
+         * Specifies the display of the ruler in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showRuler: boolean;
+        /**
+         * Specifies the display of the vertical scroll bar in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showVerticalScrollBar: boolean;
+        /**
+         * Specifies the display of whitespace in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showWhitespace: boolean;
+        /**
+         * Specifies the display of workbook tabs in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showWorkbookTabs: boolean;
+        /**
+         * Specifies the display of zeros in the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showZeros: boolean;
+        /**
+         * Specifies the split state of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        split: boolean;
+        /**
+         * Specifies the split column of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        splitColumn: number;
+        /**
+         * Specifies the horizontal split of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        splitHorizontal: number;
+        /**
+         * Specifies the split row of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        splitRow: number;
+        /**
+         * Specifies the vertical split of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        splitVertical: number;
+        /**
+         * Specifies the tab ratio of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tabRatio: number;
+        /**
+         * Specifies the top position of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top: number;
+        /**
+         * Specifies the type of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";
+        /**
+         * Specifies the usable height of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly usableHeight: number;
+        /**
+         * Specifies the usable width of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly usableWidth: number;
+        /**
+         * Specifies the view of the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        view: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";
+        /**
+         * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width: number;
+        /**
+         * Specifies the window number.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly windowNumber: number;
+        /**
+         * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        windowState: Excel.WindowState | "maximized" | "minimized" | "normal";
+        /**
+         * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        zoom: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.WindowUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Window): void;
+        /**
+         * Activates the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activate(): void;
+        /**
+         * Activates the next window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activateNext(): void;
+        /**
+         * Activates the previous window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        activatePrevious(): void;
+        /**
+         * Closes the window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        close(): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Scrolls the window by a large amount.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeScroll(Down: number, Up: number, ToRight: number, ToLeft: number): void;
+        /**
+         * Open a new window
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        newWindow(): Excel.Window;
+        /**
+         * Converts horizontal points to screen pixels.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pointsToScreenPixelsX(Points: number): OfficeExtension.ClientResult<number>;
+        /**
+         * Converts vertical points to screen pixels.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pointsToScreenPixelsY(Points: number): OfficeExtension.ClientResult<number>;
+        /**
+         * Scrolls the window to bring the specified range into view.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scrollIntoView(Left: number, Top: number, Width: number, Height: number, Start?: boolean): void;
+        /**
+         * Scrolls the workbook tabs.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scrollWorkbookTabs(Sheets?: number, Position?: Excel.ScrollWorkbookTabPosition): void;
+        /**
+         * Scrolls the workbook tabs.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        scrollWorkbookTabs(Sheets?: number, Position?: "First" | "Last"): void;
+        /**
+         * Scrolls the window by a small amount.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smallScroll(Down: number, Up: number, ToRight: number, ToLeft: number): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.WindowLoadOptions): Excel.Window;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Window;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Window;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.Window` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WindowData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.WindowData;
+    }
+    /**
+     * Specifies the display state of a window.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum WindowState {
+        /**
+         * The window is maximized to fill the entire screen.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        maximized = "maximized",
+        /**
+         * The window is minimized and collapsed to the taskbar.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        minimized = "minimized",
+        /**
+         * The window is displayed in normal size and can be moved or resized.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        normal = "normal"
+    }
+    /**
+     * Specifies the view mode of the window.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum WindowView {
+        /**
+         * The window displays the worksheet in normal view for general data entry and editing.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        normalView = "normalView",
+        /**
+         * The window displays the worksheet in Page Break Preview mode to show where pages will break when printed.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pageBreakPreview = "pageBreakPreview",
+        /**
+         * The window displays the worksheet in Page Layout view to show how the worksheet will look when printed.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pageLayoutView = "pageLayoutView"
+    }
+    /**
+     * Specifies the type of window being displayed.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum WindowType {
+        /**
+         * The window displays a chart in its own separate window.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chartAsWindow = "chartAsWindow",
+        /**
+         * The window displays a chart embedded within a worksheet.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chartInPlace = "chartInPlace",
+        /**
+         * The window displays the Office clipboard contents.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clipboard = "clipboard",
+        /**
+         * The window displays a standard Excel workbook.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        workbook = "workbook"
+    }
+    /**
+     * Enum representing the scroll position for workbook tab navigation.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ScrollWorkbookTabPosition {
+        /**
+         * Scrolls the tab menu to show the first worksheet tab.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        first = "First",
+        /**
+         * Scrolls the tab menu to show the last worksheet tab.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        last = "Last"
+    }
+    /**
+     * Represents the collection of all Window objects.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class WindowCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.Window[];
+        /**
+         * Breaks the side-by-side view of windows.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        breakSideBySide(): void;
+        /**
+         * Compares the current window side by side with the specified window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        compareCurrentSideBySideWith(windowName: string): void;
+        /**
+         * Gets the number of windows in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets the Window in the collection by index.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getItemAt(index: number): Excel.Window;
+        /**
+         * Resets the positions of windows in side-by-side view.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetPositionsSideBySide(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.WindowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WindowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.WindowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WindowCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.WindowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WindowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.WindowCollectionData;
+    }
+    /**
+     * Represents a pane, such as a frozen or split pane, in an Excel window.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Pane extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns index of the pane.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly index: number;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.PaneLoadOptions): Excel.Pane;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Pane;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Pane;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.Pane` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PaneData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.PaneData;
+    }
+    /**
+     * Represents the collection of all Pane objects that are part of the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class PaneCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.Pane[];
+        /**
+         * Returns the number of bindings in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets the Pane in the collection by index.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getItemAt(index: number): Excel.Pane;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.PaneCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PaneCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PaneCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PaneCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.PaneCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PaneCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.PaneCollectionData;
     }
     /**
      * An object containing the result of a function-evaluation operation
@@ -46926,7 +48153,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param valuesString - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
          */
         var_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -47005,7 +48232,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param valuesString - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
          * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          * @param guess - Is a number that you guess is close to the result of XIRR.
          */
@@ -47017,7 +48244,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param rate - Is the discount rate to apply to the cash flows.
-         * @param valuesString - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
          * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          */
         xnpv(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -47027,7 +48254,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          *
-         * @param valuesString - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
+         * @param values - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
         xor(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -47186,6 +48413,9 @@ export declare namespace Excel {
         export interface AllowEditRangeCollectionUpdateData {
             items?: Excel.Interfaces.AllowEditRangeData[];
         }
+        /** An interface for updating data on the `Query` object, for use in `query.set({ ... })`. */
+        export interface QueryUpdateData {
+        }
         /** An interface for updating data on the `QueryCollection` object, for use in `queryCollection.set({ ... })`. */
         export interface QueryCollectionUpdateData {
             items?: Excel.Interfaces.QueryData[];
@@ -47224,7 +48454,7 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Gets or sets the date and time the task should start and is due.
+             * Specifies the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -47256,6 +48486,14 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
+            /**
+            * Returns a `window` object that represents the active window (the window on top).
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWindow?: Excel.Interfaces.WindowUpdateData;
             /**
             * Returns the iterative calculation settings.
             In Excel on Windows and Mac, the settings will apply to the Excel Application.
@@ -47400,8 +48638,7 @@ export declare namespace Excel {
              * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -47479,6 +48716,14 @@ export declare namespace Excel {
              */
             control?: CellControl;
             /**
+             * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formulaArray?: string;
+            /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
              * @remarks
@@ -47539,7 +48784,7 @@ export declare namespace Excel {
              */
             style?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -47548,7 +48793,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47557,7 +48802,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -47622,7 +48867,7 @@ export declare namespace Excel {
              */
             numberFormat?: any[][];
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -47630,7 +48875,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47639,7 +48884,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -47715,6 +48960,30 @@ export declare namespace Excel {
             * @beta
             */
             tableStyle?: Excel.Interfaces.TableStyleUpdateData;
+            /**
+             * Specifies the alternative text for accessibility.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: string;
+            /**
+             * Specifies a summary for the table, such as one used by screen readers.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: string;
+            /**
+             * Specifies a comment associated with the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comment?: string;
             /**
              * Specifies if the first column contains special formatting.
              *
@@ -47795,7 +49064,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -47804,7 +49073,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47813,7 +49082,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -47828,7 +49097,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -47837,7 +49106,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47846,7 +49115,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -49127,8 +50396,7 @@ export declare namespace Excel {
             * Gets an object that represents the leader lines of the data labels.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesUpdateData;
             /**
@@ -49139,12 +50407,11 @@ export declare namespace Excel {
              */
             autoText?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data labels are not geometric shapes.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
@@ -49198,11 +50465,10 @@ export declare namespace Excel {
              */
             showCategoryName?: boolean;
             /**
-             * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+             * Specifies if leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showLeaderLines?: boolean;
             /**
@@ -49273,16 +50539,16 @@ export declare namespace Excel {
              */
             formula?: string;
             /**
-             * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data label is not a geometric shape.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
-             * Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+             * Represents the horizontal alignment for chart data label.
+                        See `Excel.ChartTextHorizontalAlignment` for details.
                         This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
              *
              * @remarks
@@ -49304,14 +50570,15 @@ export declare namespace Excel {
              */
             linkNumberFormat?: boolean;
             /**
-             * String value that represents the format code for data label.
+             * Specifies the format code for data label.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
              */
             numberFormat?: string;
             /**
-             * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+             * Value that represents the position of the data label.
+                        See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -49374,7 +50641,8 @@ export declare namespace Excel {
              */
             text?: string;
             /**
-             * Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Represents the angle to which the text is oriented for the chart data label.
+                        The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -49388,7 +50656,8 @@ export declare namespace Excel {
              */
             top?: number;
             /**
-             * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+             * Represents the vertical alignment of chart data label.
+                        See `Excel.ChartTextVerticalAlignment` for details.
                         This property is valid only when `TextOrientation` of data label is 0.
              *
              * @remarks
@@ -49416,19 +50685,19 @@ export declare namespace Excel {
         /** An interface for updating data on the `ChartDataLabelAnchor` object, for use in `chartDataLabelAnchor.set({ ... })`. */
         export interface ChartDataLabelAnchorUpdateData {
             /**
-             * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+             * Specifies the distance, in points, from the anchor to the left edge of the chart data label.
+                        Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             left?: number;
             /**
-             * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+             * Specifies the distance, in points, from the anchor to the top edge of the chart data label.
+                        Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             top?: number;
         }
@@ -49728,7 +50997,7 @@ export declare namespace Excel {
              */
             position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -50262,8 +51531,7 @@ export declare namespace Excel {
             * Represents the formatting of leader lines of data labels in a series.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             format?: Excel.Interfaces.ChartLeaderLinesFormatUpdateData;
         }
@@ -50273,8 +51541,7 @@ export declare namespace Excel {
             * Gets an object that represents the line formatting of chart leader lines.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
@@ -50303,6 +51570,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -50396,7 +51671,8 @@ export declare namespace Excel {
              */
             fillEmptyCells?: boolean;
             /**
-             * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
+             * This property indicates the PivotLayoutType of all fields on the PivotTable.
+                        If fields have different states, this will be null.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -50431,7 +51707,8 @@ export declare namespace Excel {
              */
             showRowGrandTotals?: boolean;
             /**
-             * This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different states, this will be `null`.
+             * This property indicates the `SubtotalLocationType` of all fields on the PivotTable.
+                        If fields have different states, this will be `null`.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -50609,7 +51886,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `WorksheetCustomProperty` object, for use in `worksheetCustomProperty.set({ ... })`. */
         export interface WorksheetCustomPropertyUpdateData {
             /**
-             * Gets or sets the value of the custom property.
+             * Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -51460,6 +52737,14 @@ export declare namespace Excel {
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;
             /**
+             * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignMarginsHeaderFooter?: boolean;
+            /**
              * The worksheet's black and white print option.
              *
              * @remarks
@@ -51572,6 +52857,16 @@ export declare namespace Excel {
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
             /**
+             * Specifies a two-element array that contains both horizontal and vertical print quality values.
+                        The first element is the horizontal print quality, and the second element is the vertical print quality.
+                        Some printers may not support vertical print quality and the supported values may vary by printer.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printQuality?: number[];
+            /**
              * The worksheet's right margin, in points, for use when printing.
              *
              * @remarks
@@ -51596,6 +52891,54 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -51683,19 +53026,110 @@ export declare namespace Excel {
              */
             state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface for updating data on the `HeaderFooterPicture` object, for use in `headerFooterPicture.set({ ... })`. */
+        export interface HeaderFooterPictureUpdateData {
+            /**
+             * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: number;
+            /**
+             * Specifies the type of color transformation of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
+            /**
+             * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contrast?: number;
+            /**
+             * Specifies the number of points that are cropped off the bottom of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropBottom?: number;
+            /**
+             * Specifies the number of points that are cropped off the left side of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropLeft?: number;
+            /**
+             * Specifies the number of points that are cropped off the right side of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropRight?: number;
+            /**
+             * Specifies the number of points that are cropped off the top of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropTop?: number;
+            /**
+             * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            filename?: string;
+            /**
+             * Specifies the height of the picture in points.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lockAspectRatio?: boolean;
+            /**
+             * Specifies the width of the picture in points.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
         }
         /** An interface for updating data on the `PageBreakCollection` object, for use in `pageBreakCollection.set({ ... })`. */
         export interface PageBreakCollectionUpdateData {
@@ -51852,6 +53286,65 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Image` object, for use in `image.set({ ... })`. */
+        export interface ImageUpdateData {
+            /**
+             * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: number;
+            /**
+             * Specifies the type of color transformation applied to the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
+            /**
+             * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contrast?: number;
+            /**
+             * Specifies the number of points that are cropped off the bottom of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropBottom?: number;
+            /**
+             * Specifies the number of points that are cropped off the left side of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropLeft?: number;
+            /**
+             * Specifies the number of points that are cropped off the right side of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropRight?: number;
+            /**
+             * Specifies the number of points that are cropped off the top of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropTop?: number;
         }
         /** An interface for updating data on the `GroupShapeCollection` object, for use in `groupShapeCollection.set({ ... })`. */
         export interface GroupShapeCollectionUpdateData {
@@ -52106,6 +53599,45 @@ export declare namespace Excel {
              */
             size?: number;
             /**
+             * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean;
+            /**
+             * Specifies the subscript status of font.
+                        Returns `true` if all the fonts of the range are subscript.
+                        Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
+                        Returns `null` otherwise.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean;
+            /**
+             * Specifies the superscript status of font.
+                        Returns `true` if all the fonts of the range are superscript.
+                        Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
+                        Returns `null` otherwise.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean;
+            /**
+             * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+                        A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: number;
+            /**
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
              *
              * @remarks
@@ -52138,7 +53670,7 @@ export declare namespace Excel {
              */
             caption?: string;
             /**
-             * Represents the height, in points, of the slicer.
+             * Specifies the height, in points, of the slicer.
                         Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
              *
              * @remarks
@@ -52161,7 +53693,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the slicer name used in the formula.
+             * Specifies the slicer name used in the formula.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52169,14 +53701,16 @@ export declare namespace Excel {
              */
             nameInFormula?: string;
             /**
-             * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
+             * Specifies the sort order of the items in the slicer.
+                        Possible values are: "DataSourceOrder", "Ascending", "Descending".
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
              */
             sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
             /**
-             * Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the slicer style.
+                        Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -52219,20 +53753,17 @@ export declare namespace Excel {
         export interface SlicerItemCollectionUpdateData {
             items?: Excel.Interfaces.SlicerItemData[];
         }
-        /** An interface for updating data on the `LinkedDataTypeCollection` object, for use in `linkedDataTypeCollection.set({ ... })`. */
-        export interface LinkedDataTypeCollectionUpdateData {
-            items?: Excel.Interfaces.LinkedDataTypeData[];
-        }
         /** An interface for updating data on the `LinkedEntityDataDomain` object, for use in `linkedEntityDataDomain.set({ ... })`. */
         export interface LinkedEntityDataDomainUpdateData {
             /**
-             * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
         }
@@ -52243,7 +53774,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `NamedSheetView` object, for use in `namedSheetView.set({ ... })`. */
         export interface NamedSheetViewUpdateData {
             /**
-             * Gets or sets the name of the sheet view.
+             * Specifies the name of the sheet view.
                         The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
              *
              * @remarks
@@ -52262,7 +53793,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `Note` object, for use in `note.set({ ... })`. */
         export interface NoteUpdateData {
             /**
-             * Gets or sets the text of the note.
+             * Specifies the text of the note.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -52289,6 +53820,281 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
+        export interface WindowUpdateData {
+            /**
+            * Specifies the active cell in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeCell?: Excel.Interfaces.RangeUpdateData;
+            /**
+            * Specifies the active sheet in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWorksheet?: Excel.Interfaces.WorksheetUpdateData;
+            /**
+            * Gets the range selection in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rangeSelection?: Excel.Interfaces.RangeAreasUpdateData;
+            /**
+            * Gets the visible range of the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            visibleRange?: Excel.Interfaces.RangeUpdateData;
+            /**
+             * Specifies whether AutoFilter date grouping is enabled in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFilterDateGroupingEnabled?: boolean;
+            /**
+             * Specifies a value indicating whether panes are frozen in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            freezePanes?: boolean;
+            /**
+             * Specifies the height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Specifies the visibility of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the left position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             * Specifies the name of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Specifies the scroll column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollColumn?: number;
+            /**
+             * Specifies the scroll row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollRow?: number;
+            /**
+             * Specifies the display of formulas in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showFormulas?: boolean;
+            /**
+             * Specifies the display of gridlines in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showGridlines?: boolean;
+            /**
+             * Specifies the display of headings in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHeadings?: boolean;
+            /**
+             * Specifies the display of the horizontal scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHorizontalScrollBar?: boolean;
+            /**
+             * Specifies the display of the outline in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showOutline?: boolean;
+            /**
+             * Specifies the display of the ruler in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRuler?: boolean;
+            /**
+             * Specifies the display of the vertical scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showVerticalScrollBar?: boolean;
+            /**
+             * Specifies the display of whitespace in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWhitespace?: boolean;
+            /**
+             * Specifies the display of workbook tabs in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWorkbookTabs?: boolean;
+            /**
+             * Specifies the display of zeros in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showZeros?: boolean;
+            /**
+             * Specifies the split state of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            split?: boolean;
+            /**
+             * Specifies the split column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitColumn?: number;
+            /**
+             * Specifies the horizontal split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitHorizontal?: number;
+            /**
+             * Specifies the split row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitRow?: number;
+            /**
+             * Specifies the vertical split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: number;
+            /**
+             * Specifies the tab ratio of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabRatio?: number;
+            /**
+             * Specifies the top position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             * Specifies the view of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";
+            /**
+             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+            /**
+             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: Excel.WindowState | "maximized" | "minimized" | "normal";
+            /**
+             * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zoom?: number;
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Excel.Interfaces.PaneData[];
         }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
@@ -52562,7 +54368,7 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Gets or sets the date and time the task should start and is due.
+             * Specifies the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52595,6 +54401,14 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
             /**
+            * Returns a `window` object that represents the active window (the window on top). Read-only.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWindow?: Excel.Interfaces.WindowData;
+            /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
             * @remarks
@@ -52610,6 +54424,14 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;
+            /**
+            * Returns the all windows of Excel application.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            windows?: Excel.Interfaces.WindowData[];
             /**
              * Returns the Excel calculation engine version used for the last full recalculation.
              *
@@ -53039,8 +54861,7 @@ export declare namespace Excel {
              * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -53228,6 +55049,14 @@ export declare namespace Excel {
              */
             control?: CellControl;
             /**
+             * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formulaArray?: string;
+            /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
              * @remarks
@@ -53390,7 +55219,7 @@ export declare namespace Excel {
              */
             valueTypes?: Excel.RangeValueType[][];
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -53399,7 +55228,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53408,7 +55237,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -53609,7 +55438,7 @@ export declare namespace Excel {
              */
             valueTypes?: Excel.RangeValueType[][];
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -53617,7 +55446,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53626,7 +55455,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -53717,7 +55546,7 @@ export declare namespace Excel {
             value?: any;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
@@ -53726,7 +55555,7 @@ export declare namespace Excel {
             valueAsJson?: CellValue | string;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
              *
              * @remarks
@@ -53759,7 +55588,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53768,7 +55597,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
              *
              * @remarks
@@ -53844,6 +55673,30 @@ export declare namespace Excel {
             */
             tableStyle?: Excel.Interfaces.TableStyleData;
             /**
+             * Specifies the alternative text for accessibility.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: string;
+            /**
+             * Specifies a summary for the table, such as one used by screen readers.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: string;
+            /**
+             * Specifies a comment associated with the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comment?: string;
+            /**
              * Specifies if the first column contains special formatting.
              *
              * @remarks
@@ -53864,6 +55717,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             id?: string;
+            /**
+             * Retrieves whether the table is currently active.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
             /**
              * Returns a numeric ID.
              *
@@ -53916,6 +55777,14 @@ export declare namespace Excel {
              */
             showTotals?: boolean;
             /**
+             * Retrieves the data source type from which the table originates.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            source?: Excel.TableSource | "External" | "Range" | "Xml" | "Query" | "Model";
+            /**
              * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * @remarks
@@ -53958,7 +55827,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -53967,7 +55836,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53976,7 +55845,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -53998,7 +55867,7 @@ export declare namespace Excel {
              */
             index?: number;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -54007,7 +55876,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -54016,7 +55885,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -55420,8 +57289,7 @@ export declare namespace Excel {
             * Gets an object that represents the leader lines of the data labels.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesData;
             /**
@@ -55432,12 +57300,11 @@ export declare namespace Excel {
              */
             autoText?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data labels are not geometric shapes.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
@@ -55477,11 +57344,12 @@ export declare namespace Excel {
              */
             separator?: string;
             /**
-             * Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
+             * Specifies if the data labels are shown as a callout with the tail anchor attached to the data point.
+                        If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout".
+                        See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -55499,11 +57367,10 @@ export declare namespace Excel {
              */
             showCategoryName?: boolean;
             /**
-             * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+             * Specifies if leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showLeaderLines?: boolean;
             /**
@@ -55574,23 +57441,24 @@ export declare namespace Excel {
              */
             formula?: string;
             /**
-             * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data label is not a geometric shape.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
-             * Returns the height, in points, of the chart data label. Value is `null` if the chart data label is not visible.
+             * Returns the height, in points, of the chart data label.
+                        Value is `null` if the chart data label is not visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
              */
             height?: number;
             /**
-             * Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+             * Represents the horizontal alignment for chart data label.
+                        See `Excel.ChartTextHorizontalAlignment` for details.
                         This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
              *
              * @remarks
@@ -55612,14 +57480,15 @@ export declare namespace Excel {
              */
             linkNumberFormat?: boolean;
             /**
-             * String value that represents the format code for data label.
+             * Specifies the format code for data label.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
              */
             numberFormat?: string;
             /**
-             * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+             * Value that represents the position of the data label.
+                        See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -55633,11 +57502,12 @@ export declare namespace Excel {
              */
             separator?: string;
             /**
-             * Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
+             * Specifies if the data label is shown as a callout with the tail anchor attached to the data point.
+                        If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout".
+                        See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -55690,7 +57560,8 @@ export declare namespace Excel {
              */
             text?: string;
             /**
-             * Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Represents the angle to which the text is oriented for the chart data label.
+                        The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -55704,7 +57575,8 @@ export declare namespace Excel {
              */
             top?: number;
             /**
-             * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+             * Represents the vertical alignment of chart data label.
+                        See `Excel.ChartTextVerticalAlignment` for details.
                         This property is valid only when `TextOrientation` of data label is 0.
              *
              * @remarks
@@ -55712,7 +57584,8 @@ export declare namespace Excel {
              */
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
-             * Returns the width, in points, of the chart data label. Value is `null` if the chart data label is not visible.
+             * Returns the width, in points, of the chart data label.
+                        Value is `null` if the chart data label is not visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -55739,19 +57612,19 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartDataLabelAnchor.toJSON()`. */
         export interface ChartDataLabelAnchorData {
             /**
-             * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+             * Specifies the distance, in points, from the anchor to the left edge of the chart data label.
+                        Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             left?: number;
             /**
-             * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+             * Specifies the distance, in points, from the anchor to the top edge of the chart data label.
+                        Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             top?: number;
         }
@@ -56100,7 +57973,7 @@ export declare namespace Excel {
              */
             position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -56655,8 +58528,7 @@ export declare namespace Excel {
             * Represents the formatting of leader lines of data labels in a series.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             format?: Excel.Interfaces.ChartLeaderLinesFormatData;
         }
@@ -56666,8 +58538,7 @@ export declare namespace Excel {
             * Gets an object that represents the line formatting of chart leader lines.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
@@ -56901,6 +58772,14 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
+            /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -57000,7 +58879,8 @@ export declare namespace Excel {
              */
             fillEmptyCells?: boolean;
             /**
-             * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
+             * This property indicates the PivotLayoutType of all fields on the PivotTable.
+                        If fields have different states, this will be null.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -57035,7 +58915,8 @@ export declare namespace Excel {
              */
             showRowGrandTotals?: boolean;
             /**
-             * This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different states, this will be `null`.
+             * This property indicates the `SubtotalLocationType` of all fields on the PivotTable.
+                        If fields have different states, this will be `null`.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -57290,7 +59171,7 @@ export declare namespace Excel {
              */
             key?: string;
             /**
-             * Gets or sets the value of the custom property.
+             * Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -57956,6 +59837,9 @@ export declare namespace Excel {
         export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
+        /** An interface describing the data returned by calling `customFunctionManager.toJSON()`. */
+        export interface CustomFunctionManagerData {
+        }
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
             /**
@@ -58218,6 +60102,14 @@ export declare namespace Excel {
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupData;
             /**
+             * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignMarginsHeaderFooter?: boolean;
+            /**
              * The worksheet's black and white print option.
              *
              * @remarks
@@ -58330,6 +60222,16 @@ export declare namespace Excel {
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
             /**
+             * Specifies a two-element array that contains both horizontal and vertical print quality values.
+                        The first element is the horizontal print quality, and the second element is the vertical print quality.
+                        Some printers may not support vertical print quality and the supported values may vary by printer.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printQuality?: number[];
+            /**
              * The worksheet's right margin, in points, for use when printing.
              *
              * @remarks
@@ -58354,6 +60256,54 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
         export interface HeaderFooterData {
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureData;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -58441,19 +60391,110 @@ export declare namespace Excel {
              */
             state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface describing the data returned by calling `headerFooterPicture.toJSON()`. */
+        export interface HeaderFooterPictureData {
+            /**
+             * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: number;
+            /**
+             * Specifies the type of color transformation of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
+            /**
+             * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contrast?: number;
+            /**
+             * Specifies the number of points that are cropped off the bottom of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropBottom?: number;
+            /**
+             * Specifies the number of points that are cropped off the left side of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropLeft?: number;
+            /**
+             * Specifies the number of points that are cropped off the right side of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropRight?: number;
+            /**
+             * Specifies the number of points that are cropped off the top of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropTop?: number;
+            /**
+             * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            filename?: string;
+            /**
+             * Specifies the height of the picture in points.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lockAspectRatio?: boolean;
+            /**
+             * Specifies the width of the picture in points.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
         }
         /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
         export interface PageBreakData {
@@ -58673,9 +60714,9 @@ export declare namespace Excel {
              */
             connectionSiteCount?: number;
             /**
-             * Gets the display name of the shape. A newly created shape has a generated name
-                        that is localized and may not match its `name`. In this scenario, you can use
-                        this API to get the name that is displayed in the UI.
+             * Gets the display name of the shape.
+                        A newly created shape has a generated name that is localized and may not match its `name`.
+                        In this scenario, you can use this API to get the name that is displayed in the UI.
              *
              * @remarks
              * [Api set: ExcelApi 1.15]
@@ -58796,6 +60837,62 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `image.toJSON()`. */
         export interface ImageData {
+            /**
+             * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: number;
+            /**
+             * Specifies the type of color transformation applied to the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
+            /**
+             * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contrast?: number;
+            /**
+             * Specifies the number of points that are cropped off the bottom of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropBottom?: number;
+            /**
+             * Specifies the number of points that are cropped off the left side of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropLeft?: number;
+            /**
+             * Specifies the number of points that are cropped off the right side of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropRight?: number;
+            /**
+             * Specifies the number of points that are cropped off the top of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropTop?: number;
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -59130,6 +61227,45 @@ export declare namespace Excel {
              */
             size?: number;
             /**
+             * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean;
+            /**
+             * Specifies the subscript status of font.
+                        Returns `true` if all the fonts of the range are subscript.
+                        Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
+                        Returns `null` otherwise.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean;
+            /**
+             * Specifies the superscript status of font.
+                        Returns `true` if all the fonts of the range are superscript.
+                        Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
+                        Returns `null` otherwise.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean;
+            /**
+             * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+                        A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: number;
+            /**
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
              *
              * @remarks
@@ -59169,7 +61305,7 @@ export declare namespace Excel {
              */
             caption?: string;
             /**
-             * Represents the height, in points, of the slicer.
+             * Specifies the height, in points, of the slicer.
                         Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
              *
              * @remarks
@@ -59206,7 +61342,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the slicer name used in the formula.
+             * Specifies the slicer name used in the formula.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -59214,14 +61350,16 @@ export declare namespace Excel {
              */
             nameInFormula?: string;
             /**
-             * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
+             * Specifies the sort order of the items in the slicer.
+                        Possible values are: "DataSourceOrder", "Ascending", "Descending".
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
              */
             sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
             /**
-             * Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the slicer style.
+                        Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -59285,79 +61423,16 @@ export declare namespace Excel {
         export interface SlicerItemCollectionData {
             items?: Excel.Interfaces.SlicerItemData[];
         }
-        /** An interface describing the data returned by calling `linkedDataType.toJSON()`. */
-        export interface LinkedDataTypeData {
-            /**
-             * The name of the data provider for the linked data type. This may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dataProvider?: string;
-            /**
-             * The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
-                        Returns `undefined` if the linked data type has not been refreshed.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            lastRefreshed?: Date;
-            /**
-             * The name of the linked data type. This may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: string;
-            /**
-             * The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            periodicRefreshInterval?: number;
-            /**
-             * The mechanism by which the data for the linked data type is retrieved.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            refreshMode?: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
-            /**
-             * The unique ID of the linked data type.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            serviceId?: number;
-            /**
-             * Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            supportedRefreshModes?: Excel.LinkedDataTypeRefreshMode[];
-        }
-        /** An interface describing the data returned by calling `linkedDataTypeCollection.toJSON()`. */
-        export interface LinkedDataTypeCollectionData {
-            items?: Excel.Interfaces.LinkedDataTypeData[];
-        }
         /** An interface describing the data returned by calling `linkedEntityDataDomain.toJSON()`. */
         export interface LinkedEntityDataDomainData {
             /**
              * Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             dataProvider?: string;
             /**
@@ -59365,8 +61440,9 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             id?: string;
             /**
@@ -59374,27 +61450,30 @@ export declare namespace Excel {
                         Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             lastRefreshed?: Date;
             /**
              * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             loadFunctionId?: string;
             /**
              * Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             name?: string;
             /**
@@ -59402,18 +61481,20 @@ export declare namespace Excel {
                         The refresh interval only applies if the `refreshMode` is set to "Periodic".
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             periodicRefreshInterval?: number;
             /**
-             * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
             /**
@@ -59422,8 +61503,9 @@ export declare namespace Excel {
                         This ID never changes across user sessions.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             serviceId?: number;
             /**
@@ -59431,8 +61513,9 @@ export declare namespace Excel {
                         This array can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
+             * 
+             * This property isn't supported in Excel on the web.
              */
             supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
         }
@@ -59443,7 +61526,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `namedSheetView.toJSON()`. */
         export interface NamedSheetViewData {
             /**
-             * Gets or sets the name of the sheet view.
+             * Specifies the name of the sheet view.
                         The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
              *
              * @remarks
@@ -59469,7 +61552,7 @@ export declare namespace Excel {
              */
             authorName?: string;
             /**
-             * Gets or sets the text of the note.
+             * Specifies the text of the note.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -59496,6 +61579,364 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             width?: number;
+        }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+            /**
+            * Specifies the active cell in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeCell?: Excel.Interfaces.RangeData;
+            /**
+            * Specifies the active pane in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activePane?: Excel.Interfaces.PaneData;
+            /**
+            * Specifies the active sheet in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWorksheet?: Excel.Interfaces.WorksheetData;
+            /**
+            * Gets the panes associated with the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            panes?: Excel.Interfaces.PaneData[];
+            /**
+            * Gets the range selection in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rangeSelection?: Excel.Interfaces.RangeAreasData;
+            /**
+            * Gets the visible range of the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            visibleRange?: Excel.Interfaces.RangeData;
+            /**
+             * Specifies whether AutoFilter date grouping is enabled in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFilterDateGroupingEnabled?: boolean;
+            /**
+             * Specifies a value indicating whether resizing is enabled for the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableResize?: boolean;
+            /**
+             * Specifies a value indicating whether panes are frozen in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            freezePanes?: boolean;
+            /**
+             * Specifies the height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Gets the index of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: number;
+            /**
+             * Specifies the visibility of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the left position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             * Specifies the name of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Specifies the scroll column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollColumn?: number;
+            /**
+             * Specifies the scroll row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollRow?: number;
+            /**
+             * Specifies the display of formulas in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showFormulas?: boolean;
+            /**
+             * Specifies the display of gridlines in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showGridlines?: boolean;
+            /**
+             * Specifies the display of headings in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHeadings?: boolean;
+            /**
+             * Specifies the display of the horizontal scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHorizontalScrollBar?: boolean;
+            /**
+             * Specifies the display of the outline in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showOutline?: boolean;
+            /**
+             * Specifies the display of the right-to-left layout in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRightToLeft?: boolean;
+            /**
+             * Specifies the display of the ruler in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRuler?: boolean;
+            /**
+             * Specifies the display of the vertical scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showVerticalScrollBar?: boolean;
+            /**
+             * Specifies the display of whitespace in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWhitespace?: boolean;
+            /**
+             * Specifies the display of workbook tabs in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWorkbookTabs?: boolean;
+            /**
+             * Specifies the display of zeros in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showZeros?: boolean;
+            /**
+             * Specifies the split state of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            split?: boolean;
+            /**
+             * Specifies the split column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitColumn?: number;
+            /**
+             * Specifies the horizontal split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitHorizontal?: number;
+            /**
+             * Specifies the split row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitRow?: number;
+            /**
+             * Specifies the vertical split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: number;
+            /**
+             * Specifies the tab ratio of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabRatio?: number;
+            /**
+             * Specifies the top position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             * Specifies the type of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";
+            /**
+             * Specifies the usable height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableHeight?: number;
+            /**
+             * Specifies the usable width of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableWidth?: number;
+            /**
+             * Specifies the view of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";
+            /**
+             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+            /**
+             * Specifies the window number.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowNumber?: number;
+            /**
+             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: Excel.WindowState | "maximized" | "minimized" | "normal";
+            /**
+             * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zoom?: number;
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            /**
+             * Returns index of the pane.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: number;
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Excel.Interfaces.PaneData[];
         }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
@@ -60055,7 +62496,7 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * Gets or sets the date and time the task should start and is due.
+             * Specifies the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -60156,7 +62597,7 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the date and time the task should start and is due.
+             * For EACH ITEM in the collection: Specifies the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -60202,6 +62643,14 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+            * Returns a `window` object that represents the active window (the window on top).
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWindow?: Excel.Interfaces.WindowLoadOptions;
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -60542,8 +62991,7 @@ export declare namespace Excel {
              * Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -60678,8 +63126,7 @@ export declare namespace Excel {
              * For EACH ITEM in the collection: Specifies if data type icons are visible on the worksheet. By default, data type icons are visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showDataTypeIcons?: boolean;
             /**
@@ -60874,6 +63321,14 @@ export declare namespace Excel {
              */
             control?: boolean;
             /**
+             * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formulaArray?: boolean;
+            /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
              * @remarks
@@ -61036,7 +63491,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -61045,7 +63500,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -61054,7 +63509,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -61255,7 +63710,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -61263,7 +63718,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -61272,7 +63727,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -61362,7 +63817,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -61370,7 +63825,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -61379,7 +63834,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -61465,7 +63920,8 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
+            * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped.
+            If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
             For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
@@ -61517,7 +63973,7 @@ export declare namespace Excel {
             value?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
@@ -61526,7 +63982,7 @@ export declare namespace Excel {
             valueAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
              *
              * @remarks
@@ -61567,7 +64023,8 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
-            * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
+            * Returns the worksheet to which the named item is scoped.
+            If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
             For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
@@ -61619,7 +64076,7 @@ export declare namespace Excel {
             value?: boolean;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
@@ -61628,7 +64085,7 @@ export declare namespace Excel {
             valueAsJson?: boolean;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
              *
              * @remarks
@@ -61670,7 +64127,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
              *
              * @remarks
@@ -61679,7 +64136,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
              *
              * @remarks
@@ -61794,6 +64251,30 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
+             * For EACH ITEM in the collection: Specifies the alternative text for accessibility.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a summary for the table, such as one used by screen readers.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a comment associated with the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comment?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
              *
              * @remarks
@@ -61814,6 +64295,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Retrieves whether the table is currently active.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
             /**
              * For EACH ITEM in the collection: Returns a numeric ID.
              *
@@ -61865,6 +64354,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showTotals?: boolean;
+            /**
+             * For EACH ITEM in the collection: Retrieves the data source type from which the table originates.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            source?: boolean;
             /**
              * For EACH ITEM in the collection: Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
@@ -61928,6 +64425,30 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
+             * For EACH ITEM in the collection: Specifies the alternative text for accessibility.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a summary for the table, such as one used by screen readers.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a comment associated with the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comment?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
              *
              * @remarks
@@ -61948,6 +64469,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Retrieves whether the table is currently active.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
             /**
              * For EACH ITEM in the collection: Returns a numeric ID.
              *
@@ -61999,6 +64528,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showTotals?: boolean;
+            /**
+             * For EACH ITEM in the collection: Retrieves the data source type from which the table originates.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            source?: boolean;
             /**
              * For EACH ITEM in the collection: Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
@@ -62063,6 +64600,30 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
+             * Specifies the alternative text for accessibility.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             * Specifies a summary for the table, such as one used by screen readers.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
+             * Specifies a comment associated with the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comment?: boolean;
+            /**
              * Specifies if the first column contains special formatting.
              *
              * @remarks
@@ -62083,6 +64644,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
+            /**
+             * Retrieves whether the table is currently active.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
             /**
              * Returns a numeric ID.
              *
@@ -62135,6 +64704,14 @@ export declare namespace Excel {
              */
             showTotals?: boolean;
             /**
+             * Retrieves the data source type from which the table originates.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            source?: boolean;
+            /**
              * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * @remarks
@@ -62182,7 +64759,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -62191,7 +64768,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -62200,7 +64777,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -62248,7 +64825,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -62257,7 +64834,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -62266,7 +64843,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -62298,7 +64875,7 @@ export declare namespace Excel {
              */
             index?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -62307,7 +64884,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -62316,7 +64893,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -62348,7 +64925,7 @@ export declare namespace Excel {
              */
             index?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -62357,7 +64934,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -62366,7 +64943,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -64565,8 +67142,7 @@ export declare namespace Excel {
             * Gets an object that represents the leader lines of the data labels.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesLoadOptions;
             /**
@@ -64577,12 +67153,11 @@ export declare namespace Excel {
              */
             autoText?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data labels. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data labels are not geometric shapes.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: boolean;
             /**
@@ -64622,11 +67197,12 @@ export declare namespace Excel {
              */
             separator?: boolean;
             /**
-             * Gets a value that indicates whether the data labels are shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
+             * Specifies if the data labels are shown as a callout with the tail anchor attached to the data point.
+                        If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout".
+                        See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -64644,11 +67220,10 @@ export declare namespace Excel {
              */
             showCategoryName?: boolean;
             /**
-             * Gets or sets a value that indicates whether leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
+             * Specifies if leader lines are displayed for the data labels. `true` if leader lines are shown; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showLeaderLines?: boolean;
             /**
@@ -64728,23 +67303,24 @@ export declare namespace Excel {
              */
             formula?: boolean;
             /**
-             * Gets or sets the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
+             * Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details.
                         Value is `null` if the data label is not a geometric shape.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             geometricShapeType?: boolean;
             /**
-             * Returns the height, in points, of the chart data label. Value is `null` if the chart data label is not visible.
+             * Returns the height, in points, of the chart data label.
+                        Value is `null` if the chart data label is not visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
              */
             height?: boolean;
             /**
-             * Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+             * Represents the horizontal alignment for chart data label.
+                        See `Excel.ChartTextHorizontalAlignment` for details.
                         This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
              *
              * @remarks
@@ -64766,14 +67342,15 @@ export declare namespace Excel {
              */
             linkNumberFormat?: boolean;
             /**
-             * String value that represents the format code for data label.
+             * Specifies the format code for data label.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
              */
             numberFormat?: boolean;
             /**
-             * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+             * Value that represents the position of the data label.
+                        See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -64787,11 +67364,12 @@ export declare namespace Excel {
              */
             separator?: boolean;
             /**
-             * Gets a value that indicates whether the data label is shown as a callout with the tail anchor attached to the data point. If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
+             * Specifies if the data label is shown as a callout with the tail anchor attached to the data point.
+                        If `true`, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout".
+                        See {@link Excel.GeometricShapeType | GeometricShapeType} for more details.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             showAsStickyCallout?: boolean;
             /**
@@ -64844,7 +67422,8 @@ export declare namespace Excel {
              */
             text?: boolean;
             /**
-             * Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Represents the angle to which the text is oriented for the chart data label.
+                        The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -64858,7 +67437,8 @@ export declare namespace Excel {
              */
             top?: boolean;
             /**
-             * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+             * Represents the vertical alignment of chart data label.
+                        See `Excel.ChartTextVerticalAlignment` for details.
                         This property is valid only when `TextOrientation` of data label is 0.
              *
              * @remarks
@@ -64866,7 +67446,8 @@ export declare namespace Excel {
              */
             verticalAlignment?: boolean;
             /**
-             * Returns the width, in points, of the chart data label. Value is `null` if the chart data label is not visible.
+             * Returns the width, in points, of the chart data label.
+                        Value is `null` if the chart data label is not visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -64903,8 +67484,7 @@ export declare namespace Excel {
          * Represents the chart data label anchor.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface ChartDataLabelAnchorLoadOptions {
             /**
@@ -64912,19 +67492,19 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+             * Specifies the distance, in points, from the anchor to the left edge of the chart data label.
+                        Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             left?: boolean;
             /**
-             * Represents the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+             * Specifies the distance, in points, from the anchor to the top edge of the chart data label.
+                        Note that when getting the value, it may differ slightly from the set value.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             top?: boolean;
         }
@@ -65415,7 +67995,7 @@ export declare namespace Excel {
              */
             position?: boolean;
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -66170,8 +68750,7 @@ export declare namespace Excel {
          * Gets an object that represents the formatting of chart leader lines.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface ChartLeaderLinesLoadOptions {
             /**
@@ -66182,8 +68761,7 @@ export declare namespace Excel {
             * Represents the formatting of leader lines of data labels in a series.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             format?: Excel.Interfaces.ChartLeaderLinesFormatLoadOptions;
         }
@@ -66191,8 +68769,7 @@ export declare namespace Excel {
          * Encapsulates the format properties for leader lines.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface ChartLeaderLinesFormatLoadOptions {
             /**
@@ -66203,8 +68780,7 @@ export declare namespace Excel {
             * Gets an object that represents the line formatting of chart leader lines.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.19]
             */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
@@ -66528,6 +69104,14 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
+             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -66595,6 +69179,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -66664,6 +69256,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
+            /**
+             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoRefresh?: boolean;
             /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -66773,7 +69373,8 @@ export declare namespace Excel {
              */
             fillEmptyCells?: boolean;
             /**
-             * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
+             * This property indicates the PivotLayoutType of all fields on the PivotTable.
+                        If fields have different states, this will be null.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -66808,7 +69409,8 @@ export declare namespace Excel {
              */
             showRowGrandTotals?: boolean;
             /**
-             * This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different states, this will be `null`.
+             * This property indicates the `SubtotalLocationType` of all fields on the PivotTable.
+                        If fields have different states, this will be `null`.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -67314,7 +69916,7 @@ export declare namespace Excel {
              */
             key?: boolean;
             /**
-             * Gets or sets the value of the custom property.
+             * Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -67340,7 +69942,7 @@ export declare namespace Excel {
              */
             key?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the value of the custom property.
+             * For EACH ITEM in the collection: Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -68946,6 +71548,14 @@ export declare namespace Excel {
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;
             /**
+             * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignMarginsHeaderFooter?: boolean;
+            /**
              * The worksheet's black and white print option.
              *
              * @remarks
@@ -69058,6 +71668,16 @@ export declare namespace Excel {
              */
             printOrder?: boolean;
             /**
+             * Specifies a two-element array that contains both horizontal and vertical print quality values.
+                        The first element is the horizontal print quality, and the second element is the vertical print quality.
+                        Some printers may not support vertical print quality and the supported values may vary by printer.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printQuality?: boolean;
+            /**
              * The worksheet's right margin, in points, for use when printing.
              *
              * @remarks
@@ -69089,6 +71709,54 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
+            /**
+            * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -69183,19 +71851,120 @@ export declare namespace Excel {
              */
             state?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /**
+         * Represents a picture in the header or footer of a worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HeaderFooterPictureLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: boolean;
+            /**
+             * Specifies the type of color transformation of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorType?: boolean;
+            /**
+             * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contrast?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the bottom of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropBottom?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the left side of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropLeft?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the right side of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropRight?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the top of the picture.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropTop?: boolean;
+            /**
+             * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            filename?: boolean;
+            /**
+             * Specifies the height of the picture in points.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lockAspectRatio?: boolean;
+            /**
+             * Specifies the width of the picture in points.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
         }
         /**
          * @remarks
@@ -69325,6 +72094,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formulaArray?: boolean;
             /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -69488,7 +72265,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -69497,7 +72274,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -69506,7 +72283,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -69994,9 +72771,9 @@ export declare namespace Excel {
              */
             connectionSiteCount?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the display name of the shape. A newly created shape has a generated name
-                        that is localized and may not match its `name`. In this scenario, you can use
-                        this API to get the name that is displayed in the UI.
+             * For EACH ITEM in the collection: Gets the display name of the shape.
+                        A newly created shape has a generated name that is localized and may not match its `name`.
+                        In this scenario, you can use this API to get the name that is displayed in the UI.
              *
              * @remarks
              * [Api set: ExcelApi 1.15]
@@ -70195,9 +72972,9 @@ export declare namespace Excel {
              */
             connectionSiteCount?: boolean;
             /**
-             * Gets the display name of the shape. A newly created shape has a generated name
-                        that is localized and may not match its `name`. In this scenario, you can use
-                        this API to get the name that is displayed in the UI.
+             * Gets the display name of the shape.
+                        A newly created shape has a generated name that is localized and may not match its `name`.
+                        In this scenario, you can use this API to get the name that is displayed in the UI.
              *
              * @remarks
              * [Api set: ExcelApi 1.15]
@@ -70351,6 +73128,62 @@ export declare namespace Excel {
             */
             shape?: Excel.Interfaces.ShapeLoadOptions;
             /**
+             * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            brightness?: boolean;
+            /**
+             * Specifies the type of color transformation applied to the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorType?: boolean;
+            /**
+             * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            contrast?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the bottom of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropBottom?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the left side of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropLeft?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the right side of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropRight?: boolean;
+            /**
+             * Specifies the number of points that are cropped off the top of the image.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cropTop?: boolean;
+            /**
              * Specifies the shape identifier for the image object.
              *
              * @remarks
@@ -70480,9 +73313,9 @@ export declare namespace Excel {
              */
             connectionSiteCount?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the display name of the shape. A newly created shape has a generated name
-                        that is localized and may not match its `name`. In this scenario, you can use
-                        this API to get the name that is displayed in the UI.
+             * For EACH ITEM in the collection: Gets the display name of the shape.
+                        A newly created shape has a generated name that is localized and may not match its `name`.
+                        In this scenario, you can use this API to get the name that is displayed in the UI.
              *
              * @remarks
              * [Api set: ExcelApi 1.15]
@@ -70971,6 +73804,45 @@ export declare namespace Excel {
              */
             size?: boolean;
             /**
+             * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean;
+            /**
+             * Specifies the subscript status of font.
+                        Returns `true` if all the fonts of the range are subscript.
+                        Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
+                        Returns `null` otherwise.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean;
+            /**
+             * Specifies the superscript status of font.
+                        Returns `true` if all the fonts of the range are superscript.
+                        Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
+                        Returns `null` otherwise.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean;
+            /**
+             * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+                        A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: boolean;
+            /**
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
              *
              * @remarks
@@ -71012,7 +73884,7 @@ export declare namespace Excel {
              */
             caption?: boolean;
             /**
-             * Represents the height, in points, of the slicer.
+             * Specifies the height, in points, of the slicer.
                         Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
              *
              * @remarks
@@ -71049,7 +73921,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Represents the slicer name used in the formula.
+             * Specifies the slicer name used in the formula.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -71057,14 +73929,16 @@ export declare namespace Excel {
              */
             nameInFormula?: boolean;
             /**
-             * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
+             * Specifies the sort order of the items in the slicer.
+                        Possible values are: "DataSourceOrder", "Ascending", "Descending".
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
              */
             sortBy?: boolean;
             /**
-             * Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the slicer style.
+                        Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -71121,7 +73995,7 @@ export declare namespace Excel {
              */
             caption?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the height, in points, of the slicer.
+             * For EACH ITEM in the collection: Specifies the height, in points, of the slicer.
                         Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
              *
              * @remarks
@@ -71158,7 +74032,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the slicer name used in the formula.
+             * For EACH ITEM in the collection: Specifies the slicer name used in the formula.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -71166,14 +74040,16 @@ export declare namespace Excel {
              */
             nameInFormula?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
+             * For EACH ITEM in the collection: Specifies the sort order of the items in the slicer.
+                        Possible values are: "DataSourceOrder", "Ascending", "Descending".
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
              */
             sortBy?: boolean;
             /**
-             * For EACH ITEM in the collection: Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the slicer style.
+                        Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -71281,154 +74157,12 @@ export declare namespace Excel {
             name?: boolean;
         }
         /**
-         * Represents a linked data type.
-                    A linked data type is a data type connected to an online data source.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface LinkedDataTypeLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * The name of the data provider for the linked data type. This may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dataProvider?: boolean;
-            /**
-             * The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
-                        Returns `undefined` if the linked data type has not been refreshed.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            lastRefreshed?: boolean;
-            /**
-             * The name of the linked data type. This may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: boolean;
-            /**
-             * The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            periodicRefreshInterval?: boolean;
-            /**
-             * The mechanism by which the data for the linked data type is retrieved.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            refreshMode?: boolean;
-            /**
-             * The unique ID of the linked data type.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            serviceId?: boolean;
-            /**
-             * Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            supportedRefreshModes?: boolean;
-        }
-        /**
-         * Represents a collection of linked data types.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface LinkedDataTypeCollectionLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * For EACH ITEM in the collection: The name of the data provider for the linked data type. This may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dataProvider?: boolean;
-            /**
-             * For EACH ITEM in the collection: The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
-                        Returns `undefined` if the linked data type has not been refreshed.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            lastRefreshed?: boolean;
-            /**
-             * For EACH ITEM in the collection: The name of the linked data type. This may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            name?: boolean;
-            /**
-             * For EACH ITEM in the collection: The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            periodicRefreshInterval?: boolean;
-            /**
-             * For EACH ITEM in the collection: The mechanism by which the data for the linked data type is retrieved.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            refreshMode?: boolean;
-            /**
-             * For EACH ITEM in the collection: The unique ID of the linked data type.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            serviceId?: boolean;
-            /**
-             * For EACH ITEM in the collection: Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            supportedRefreshModes?: boolean;
-        }
-        /**
          * Represents a specific category or field of information that shares some common characteristics or attributes.
                     A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
                     A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface LinkedEntityDataDomainLoadOptions {
             /**
@@ -71437,11 +74171,10 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             dataProvider?: boolean;
             /**
@@ -71449,8 +74182,7 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             id?: boolean;
             /**
@@ -71458,27 +74190,24 @@ export declare namespace Excel {
                         Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             lastRefreshed?: boolean;
             /**
              * Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             loadFunctionId?: boolean;
             /**
              * Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             name?: boolean;
             /**
@@ -71486,18 +74215,16 @@ export declare namespace Excel {
                         The refresh interval only applies if the `refreshMode` is set to "Periodic".
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             periodicRefreshInterval?: boolean;
             /**
-             * Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             refreshMode?: boolean;
             /**
@@ -71506,8 +74233,7 @@ export declare namespace Excel {
                         This ID never changes across user sessions.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             serviceId?: boolean;
             /**
@@ -71515,18 +74241,16 @@ export declare namespace Excel {
                         This array can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             supportedRefreshModes?: boolean;
         }
         /**
          * Represents a collection of `LinkedEntityDataDomain` objects.
-                    The collection can contain linked entity data domains such as stocks, geography or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
+                    The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.19]
          */
         export interface LinkedEntityDataDomainCollectionLoadOptions {
             /**
@@ -71535,11 +74259,10 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the data provider for the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             dataProvider?: boolean;
             /**
@@ -71547,8 +74270,7 @@ export declare namespace Excel {
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             id?: boolean;
             /**
@@ -71556,27 +74278,24 @@ export declare namespace Excel {
                         Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             lastRefreshed?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins.
-                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID }.
+                        For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id | Autogenerate JSON metadata for custom functions: ID}.
                         This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             loadFunctionId?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the linked entity data domain.
-                        This name can change based on the information from the data provider.
+                        This name can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             name?: boolean;
             /**
@@ -71584,18 +74303,16 @@ export declare namespace Excel {
                         The refresh interval only applies if the `refreshMode` is set to "Periodic".
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             periodicRefreshInterval?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
+             * For EACH ITEM in the collection: Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed.
                         If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed.
                         If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             refreshMode?: boolean;
             /**
@@ -71604,8 +74321,7 @@ export declare namespace Excel {
                         This ID never changes across user sessions.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             serviceId?: boolean;
             /**
@@ -71613,8 +74329,7 @@ export declare namespace Excel {
                         This array can change based on the information provided by the data provider.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.19]
              */
             supportedRefreshModes?: boolean;
         }
@@ -71631,7 +74346,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets or sets the name of the sheet view.
+             * Specifies the name of the sheet view.
                         The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
              *
              * @remarks
@@ -71651,7 +74366,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the name of the sheet view.
+             * For EACH ITEM in the collection: Specifies the name of the sheet view.
                         The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
              *
              * @remarks
@@ -71678,7 +74393,7 @@ export declare namespace Excel {
              */
             authorName?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the text of the note.
+             * For EACH ITEM in the collection: Specifies the text of the note.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -71725,7 +74440,7 @@ export declare namespace Excel {
              */
             authorName?: boolean;
             /**
-             * Gets or sets the text of the note.
+             * Specifies the text of the note.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -71752,6 +74467,730 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             width?: boolean;
+        }
+        /**
+         * Represents a window in the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface WindowLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Specifies the active cell in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeCell?: Excel.Interfaces.RangeLoadOptions;
+            /**
+            * Specifies the active pane in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activePane?: Excel.Interfaces.PaneLoadOptions;
+            /**
+            * Specifies the active sheet in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWorksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+            * Gets the range selection in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rangeSelection?: Excel.Interfaces.RangeAreasLoadOptions;
+            /**
+            * Gets the visible range of the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            visibleRange?: Excel.Interfaces.RangeLoadOptions;
+            /**
+             * Specifies whether AutoFilter date grouping is enabled in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFilterDateGroupingEnabled?: boolean;
+            /**
+             * Specifies a value indicating whether resizing is enabled for the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableResize?: boolean;
+            /**
+             * Specifies a value indicating whether panes are frozen in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            freezePanes?: boolean;
+            /**
+             * Specifies the height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * Gets the index of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+            /**
+             * Specifies the visibility of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * Specifies the left position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             * Specifies the name of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Specifies the scroll column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollColumn?: boolean;
+            /**
+             * Specifies the scroll row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollRow?: boolean;
+            /**
+             * Specifies the display of formulas in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showFormulas?: boolean;
+            /**
+             * Specifies the display of gridlines in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showGridlines?: boolean;
+            /**
+             * Specifies the display of headings in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHeadings?: boolean;
+            /**
+             * Specifies the display of the horizontal scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHorizontalScrollBar?: boolean;
+            /**
+             * Specifies the display of the outline in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showOutline?: boolean;
+            /**
+             * Specifies the display of the right-to-left layout in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRightToLeft?: boolean;
+            /**
+             * Specifies the display of the ruler in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRuler?: boolean;
+            /**
+             * Specifies the display of the vertical scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showVerticalScrollBar?: boolean;
+            /**
+             * Specifies the display of whitespace in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWhitespace?: boolean;
+            /**
+             * Specifies the display of workbook tabs in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWorkbookTabs?: boolean;
+            /**
+             * Specifies the display of zeros in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showZeros?: boolean;
+            /**
+             * Specifies the split state of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            split?: boolean;
+            /**
+             * Specifies the split column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitColumn?: boolean;
+            /**
+             * Specifies the horizontal split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitHorizontal?: boolean;
+            /**
+             * Specifies the split row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitRow?: boolean;
+            /**
+             * Specifies the vertical split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: boolean;
+            /**
+             * Specifies the tab ratio of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabRatio?: boolean;
+            /**
+             * Specifies the top position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             * Specifies the type of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * Specifies the usable height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableHeight?: boolean;
+            /**
+             * Specifies the usable width of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableWidth?: boolean;
+            /**
+             * Specifies the view of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: boolean;
+            /**
+             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             * Specifies the window number.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowNumber?: boolean;
+            /**
+             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: boolean;
+            /**
+             * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zoom?: boolean;
+        }
+        /**
+         * Represents the collection of all Window objects.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface WindowCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Specifies the active cell in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeCell?: Excel.Interfaces.RangeLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Specifies the active pane in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activePane?: Excel.Interfaces.PaneLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Specifies the active sheet in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            activeWorksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Gets the range selection in the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            rangeSelection?: Excel.Interfaces.RangeAreasLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Gets the visible range of the window.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            visibleRange?: Excel.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies whether AutoFilter date grouping is enabled in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFilterDateGroupingEnabled?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a value indicating whether resizing is enabled for the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableResize?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies a value indicating whether panes are frozen in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            freezePanes?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the index of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the visibility of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isVisible?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the left position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the name of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the scroll column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollColumn?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the scroll row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            scrollRow?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of formulas in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showFormulas?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of gridlines in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showGridlines?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of headings in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHeadings?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of the horizontal scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showHorizontalScrollBar?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of the outline in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showOutline?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of the right-to-left layout in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRightToLeft?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of the ruler in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showRuler?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of the vertical scroll bar in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showVerticalScrollBar?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of whitespace in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWhitespace?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of workbook tabs in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showWorkbookTabs?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the display of zeros in the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showZeros?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the split state of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            split?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the split column of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitColumn?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the horizontal split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitHorizontal?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the split row of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitRow?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the vertical split of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitVertical?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the tab ratio of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabRatio?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the top position of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the type of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the usable height of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableHeight?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the usable width of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usableWidth?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the view of the window.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            view?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the window number.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowNumber?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            windowState?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zoom?: boolean;
+        }
+        /**
+         * Represents a pane, such as a frozen or split pane, in an Excel window.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface PaneLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Returns index of the pane.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
+        }
+        /**
+         * Represents the collection of all Pane objects that are part of the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface PaneCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns index of the pane.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
         }
         /**
          * An object containing the result of a function-evaluation operation

@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: Word.Interfaces.HtmlDivisionUpdateData
+uid: word!Word.Interfaces.HtmlDivisionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.HtmlDivisionUpdateData
+summary: >-
+  An interface for updating data on the `HtmlDivision` object, for use in
+  `htmlDivision.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: leftIndent
+    uid: word!Word.Interfaces.HtmlDivisionUpdateData#leftIndent:member
+    package: word!
+    fullName: leftIndent
+    summary: Specifies the left indent value (in points) for this HTML division.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent?: number;'
+      return:
+        type: number
+  - name: rightIndent
+    uid: word!Word.Interfaces.HtmlDivisionUpdateData#rightIndent:member
+    package: word!
+    fullName: rightIndent
+    summary: Specifies the right indent (in points) for this HTML division.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightIndent?: number;'
+      return:
+        type: number
+  - name: spaceAfter
+    uid: word!Word.Interfaces.HtmlDivisionUpdateData#spaceAfter:member
+    package: word!
+    fullName: spaceAfter
+    summary: Specifies the amount of spacing (in points) after this HTML division.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter?: number;'
+      return:
+        type: number
+  - name: spaceBefore
+    uid: word!Word.Interfaces.HtmlDivisionUpdateData#spaceBefore:member
+    package: word!
+    fullName: spaceBefore
+    summary: Specifies the spacing (in points) before this HTML division.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spaceBefore?: number;'
+      return:
+        type: number

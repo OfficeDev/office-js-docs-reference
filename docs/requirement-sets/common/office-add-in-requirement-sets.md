@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 03/11/2025
+ms.date: 10/10/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -245,6 +245,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+
+---
+
+### TaskPaneApi
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Task Pane API requirement sets](task-pane-api-requirement-sets.md). | <ul><li>TaskPane.setWidth</li></ul> |
 
 ---
 

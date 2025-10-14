@@ -50,3 +50,72 @@ CustomFunctions.ErrorCode:enum:
       // and a #NUM! error in place of the second result.
       return [[firstResult], [secondResult], [thirdResult]];
       };
+CustomFunctions.Invocation:interface:
+  - |- 
+    /**
+    * Return the address of the cell that invoked the custom function. 
+    * @customfunction
+    * @param {number} first First parameter.
+    * @param {number} second Second parameter.
+    * @param {CustomFunctions.Invocation} invocation Invocation object. 
+    * @requiresAddress 
+    */
+    function getAddress(first, second, invocation) {
+      const address = invocation.address;
+      return address;
+    }
+CustomFunctions.Invocation#address:member:
+  - |- 
+    /**
+    * Return the address of the cell that invoked the custom function. 
+    * @customfunction
+    * @param {number} first First parameter.
+    * @param {number} second Second parameter.
+    * @param {CustomFunctions.Invocation} invocation Invocation object. 
+    * @requiresAddress 
+    */
+    function getAddress(first, second, invocation) {
+      const address = invocation.address;
+      return address;
+    }
+CustomFunctions.Invocation#isInValuePreview:member:
+  - |- 
+    /**
+    * Get the listing price for a house on the market for the given address.
+    * @customfunction
+    * @param address The address of the house.
+    * @param invocation Custom function handler.
+    * @returns The price of the house at the address.
+    */
+    function getHousePrice(address: string, invocation: CustomFunctions.Invocation): number {
+      // Check if this call is for formula value preview mode.
+      if (invocation.isInValuePreview) { 
+        // Avoid long-running expensive service calls. 
+        // Return a usable but fake number.
+        return 450000; 
+      } else { 
+        // Make the actual service calls in this block. 
+        const price = callHouseServiceAPI(address);
+        return price; 
+      } 
+    }
+CustomFunctions.Invocation#parameterAddresses:member:
+  - |-
+    /**
+    * Return the addresses of three parameters. 
+    * @customfunction
+    * @param {string} firstParameter First parameter.
+    * @param {string} secondParameter Second parameter.
+    * @param {string} thirdParameter Third parameter.
+    * @param {CustomFunctions.Invocation} invocation Invocation object. 
+    * @returns {string[][]} The addresses of the parameters, as a 2-dimensional array. 
+    * @requiresParameterAddresses
+    */
+    function getParameterAddresses(firstParameter, secondParameter, thirdParameter, invocation) {
+      const addresses = [
+        [invocation.parameterAddresses[0]],
+        [invocation.parameterAddresses[1]],
+        [invocation.parameterAddresses[2]]
+      ];
+      return addresses;
+    }

@@ -1,21 +1,25 @@
 ### YamlMime:TSType
 name: Office.AddinCommands.Event
-uid: 'office!Office.AddinCommands.Event:interface'
+uid: office!Office.AddinCommands.Event:interface
 package: office!
 fullName: Office.AddinCommands.Event
 summary: >-
-  The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows
-  the add-in to identify which button was clicked and to signal the Office application that it has completed its
-  processing.
+  The `Event` object is passed as a parameter to add-in functions invoked by
+  function command buttons. The object allows the add-in to identify which
+  button was clicked and to signal the Office application that it has completed
+  its processing.
 remarks: >-
-  For information on support in Excel, Word, and PowerPoint, see [Add-in commands requirement
-  sets](https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets)<!-- -->.
+  For information on support in Excel, Word, and PowerPoint, see [Add-in
+  commands requirement
+  sets](https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets)<!--
+  -->.
 
 
   The following outlines support information for Outlook.
 
 
-  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[ [API set: Mailbox
+  1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
   **[Minimum permission level
@@ -24,14 +28,15 @@ remarks: >-
 
 
   **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose or Read
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: source
-    uid: 'office!Office.AddinCommands.Event#source:member'
+    uid: office!Office.AddinCommands.Event#source:member
     package: office!
     fullName: source
     summary: Information about the control that triggered calling this function.
@@ -39,7 +44,8 @@ properties:
       The following outlines support information for Outlook.
 
 
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: Mailbox
+      1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission
@@ -177,7 +183,8 @@ properties:
 
       //                                              "size": 16,
 
-      //                                              "file": "https://localhost:3000/assets/blue-icon-16.png"
+      //                                              "file":
+      "https://localhost:3000/assets/blue-icon-16.png"
 
       //                                          },
 
@@ -185,7 +192,8 @@ properties:
 
       //                                              "size": 32,
 
-      //                                              "file": "https://localhost:3000/assets/blue-icon-32.png"
+      //                                              "file":
+      "https://localhost:3000/assets/blue-icon-32.png"
 
       //                                          },
 
@@ -193,7 +201,8 @@ properties:
 
       //                                              "size": 80,
 
-      //                                              "file": "https://localhost:3000/assets/blue-icon-80.png"
+      //                                              "file":
+      "https://localhost:3000/assets/blue-icon-80.png"
 
       //                                          }
 
@@ -203,7 +212,8 @@ properties:
 
       //                                          "title": "Perform an action",
 
-      //                                          "description": "Perform an action when clicked."
+      //                                          "description": "Perform an
+      action when clicked."
 
       //                                      },
 
@@ -266,41 +276,51 @@ properties:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'source:Source;'
+      content: source:Source;
       return:
-        type: '<xref uid="office!Office.AddinCommands.Source:interface" />'
+        type: <xref uid="office!Office.AddinCommands.Source:interface" />
 methods:
   - name: completed(options)
-    uid: 'office!Office.AddinCommands.Event#completed:member(1)'
+    uid: office!Office.AddinCommands.Event#completed:member(1)
     package: office!
     fullName: completed(options)
     summary: >-
-      Indicates that the add-in has completed processing and will automatically be closed.
+      Indicates that the add-in has completed processing and will automatically
+      be closed.
 
 
-      This method must be called at the end of a function which was invoked by the following:
+      This method must be called at the end of a function which was invoked by
+      the following:
 
 
-      - A [function command](https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands) button.
+      - A [function
+      command](https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands)
+      button.
 
 
-      - An [on-send add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins) in Outlook.
+      - An [on-send
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)
+      in Outlook.
 
 
-      - An [online-meeting provider add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting) in
-      Outlook.
+      - An [online-meeting provider
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting)
+      in Outlook.
 
 
-      - A [note-logging add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments) in
-      Outlook on mobile devices.
+      - A [note-logging
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments)
+      in Outlook on mobile devices.
     remarks: >-
       The following outlines support information for Outlook.
 
 
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: Mailbox
+      1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission
@@ -313,11 +333,27 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**: The `options` parameter only applies to Outlook add-ins. It was introduced in Mailbox 1.8.
-      Although Outlook on Android and on iOS support up to Mailbox 1.5, the `options` parameter is supported in
-      online-meeting provider and note-logging mobile add-ins. For more information on API support in Outlook on mobile
-      devices, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **Important**:
+
+
+      - The `options` parameter only applies to Outlook add-ins. It was
+      introduced in Mailbox 1.8. Although Outlook on Android and on iOS support
+      up to Mailbox 1.5, the `options` parameter is supported in online-meeting
+      provider and note-logging mobile add-ins. For more information on API
+      support in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - [Event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)
+      and [integrated
+      spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
+      add-ins use a different event object to signal when they've completed
+      processing an event. For more information, see
+      [Office.MailboxEvent](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent)<!--
+      -->.
 
 
       #### Examples
@@ -329,7 +365,8 @@ methods:
 
       // defined in the FunctionFile referenced from the add-in manifest,
 
-      // and maps to the FunctionName of the action in the associated button control.
+      // and maps to the FunctionName of the action in the associated button
+      control.
 
       function processItem(event) {
           // Do some processing.
@@ -341,7 +378,8 @@ methods:
 
       ```TypeScript
 
-      // In this example, the checkMessage function was registered as an event handler for ItemSend.
+      // In this example, the checkMessage function was registered as an event
+      handler for ItemSend.
 
       function checkMessage(event) {
           // Get the item being sent.
@@ -358,6 +396,7 @@ methods:
       }
 
       ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -365,9 +404,12 @@ methods:
       parameters:
         - id: options
           description: >-
-            Optional. In Outlook, an object that specifies the behavior of an on-send add-in, online-meeting provider
-            add-in, or note-logging mobile add-in when it completes processing an event.
-          type: '<xref uid="office!Office.AddinCommands.EventCompletedOptions:interface" />'
+            Optional. In Outlook, an object that specifies the behavior of an
+            on-send add-in, online-meeting provider add-in, or note-logging
+            mobile add-in when it completes processing an event.
+          type: >-
+            <xref
+            uid="office!Office.AddinCommands.EventCompletedOptions:interface" />
       return:
         type: void
         description: ''

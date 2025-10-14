@@ -1,0 +1,63 @@
+### YamlMime:TSEnum
+name: Word.ReferenceType
+uid: word!Word.ReferenceType:enum
+package: word!
+fullName: Word.ReferenceType
+summary: Specifies the type of reference to insert.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bookmark
+    uid: word!Word.ReferenceType.bookmark:member
+    package: word!
+    summary: >-
+      Refers to a bookmark in the document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bookmark"'
+  - name: endnote
+    uid: word!Word.ReferenceType.endnote:member
+    package: word!
+    summary: >-
+      Refers to an endnote in the document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Endnote"'
+  - name: footnote
+    uid: word!Word.ReferenceType.footnote:member
+    package: word!
+    summary: >-
+      Refers to a footnote in the document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Footnote"'
+  - name: heading
+    uid: word!Word.ReferenceType.heading:member
+    package: word!
+    summary: >-
+      Refers to a heading in the document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Heading"'
+  - name: numberedItem
+    uid: word!Word.ReferenceType.numberedItem:member
+    package: word!
+    summary: >-
+      Refers to a numbered item in the document.
+
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"NumberedItem"'

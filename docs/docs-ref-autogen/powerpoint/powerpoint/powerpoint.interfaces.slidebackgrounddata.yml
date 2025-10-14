@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundData
+uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundData
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackground.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: areBackgroundGraphicsHidden
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundData#areBackgroundGraphicsHidden:member
+    package: powerpoint!
+    fullName: areBackgroundGraphicsHidden
+    summary: >-
+      Specifies whether the slide layout background fill hides or displays
+      background graphic objects from the slide master.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'areBackgroundGraphicsHidden?: boolean;'
+      return:
+        type: boolean
+  - name: isMasterBackgroundFollowed
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundData#isMasterBackgroundFollowed:member
+    package: powerpoint!
+    fullName: isMasterBackgroundFollowed
+    summary: Specifies if the slide background follows the slide master background.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isMasterBackgroundFollowed?: boolean;'
+      return:
+        type: boolean

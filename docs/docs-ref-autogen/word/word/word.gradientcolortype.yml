@@ -1,0 +1,64 @@
+### YamlMime:TSEnum
+name: Word.GradientColorType
+uid: word!Word.GradientColorType:enum
+package: word!
+fullName: Word.GradientColorType
+summary: Specifies the type of gradient used in a shape's fill.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: mixed
+    uid: word!Word.GradientColorType.mixed:member
+    package: word!
+    summary: >-
+      Mixed gradient color type. Used when multiple shapes with different
+      gradient types are selected.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: multiColor
+    uid: word!Word.GradientColorType.multiColor:member
+    package: word!
+    summary: >-
+      Gradient that includes more than two colors, often customized.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"MultiColor"'
+  - name: oneColor
+    uid: word!Word.GradientColorType.oneColor:member
+    package: word!
+    summary: >-
+      Gradient with a single color and varying transparency or brightness.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OneColor"'
+  - name: presetColors
+    uid: word!Word.GradientColorType.presetColors:member
+    package: word!
+    summary: >-
+      Gradient that uses a predefined set of colors.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PresetColors"'
+  - name: twoColors
+    uid: word!Word.GradientColorType.twoColors:member
+    package: word!
+    summary: >-
+      Gradient that blends two distinct colors.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TwoColors"'

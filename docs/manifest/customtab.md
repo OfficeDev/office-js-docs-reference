@@ -1,7 +1,7 @@
 ---
 title: CustomTab element in the manifest file
 description: On the ribbon, you specify which tab and group for their add-in commands.
-ms.date: 01/28/2025
+ms.date: 06/10/2025
 ms.localizationpriority: medium
 ---
 
@@ -134,10 +134,10 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 The following markup example adds the Office Paragraph control group to a custom tab and positions it to appear just after a custom group.
 
 ```xml
-<ExtensionPoint xsi:type="ContosoRibbonTab">
+<ExtensionPoint xsi:type="PrimaryCommandSurface">
   <CustomTab id="Contoso.TabCustom">
     <Group id="Contoso.TabCustom1.group1">
-       <!-- additional markup omitted -->
+       <!-- Additional markup omitted. -->
     </Group>
     <OfficeGroup id="Paragraph" />
     <Label resid="customTabLabel1" />
@@ -148,7 +148,7 @@ The following markup example adds the Office Paragraph control group to a custom
 The following markup example adds the Office Superscript control to a custom group and positions it to appear just after a custom button.
 
 ```xml
-<ExtensionPoint xsi:type="ContosoRibbonTab">
+<ExtensionPoint xsi:type="PrimaryCommandSurface">
   <CustomTab id="Contoso.TabCustom">
     <Group id="Contoso.TabCustom2.group2">
         <Label resid="residCustomTabGroupLabel"/>
@@ -158,10 +158,10 @@ The following markup example adds the Office Superscript control to a custom gro
             <bt:Image size="80" resid="blue-icon-80" />
         </Icon>
         <Control xsi:type="Button" id="Contoso.Button2">
-            <!-- information on the control omitted -->
+            <!-- Information on the control omitted. -->
         </Control>
         <OfficeControl id="Superscript" />
-        <!-- other controls, as needed -->
+        <!-- Other controls, as needed. -->
     </Group>
     <Label resid="customTabLabel1" />
   </CustomTab>

@@ -20,323 +20,995 @@ items:
             uid: ''
             items:
               - name: Alignment
-                uid: 'word!Word.Alignment:enum'
+                uid: word!Word.Alignment:enum
               - name: AnnotationState
-                uid: 'word!Word.AnnotationState:enum'
+                uid: word!Word.AnnotationState:enum
+              - name: ApplyQuickStyleSet
+                uid: word!Word.ApplyQuickStyleSet:enum
+              - name: ArrowheadLength
+                uid: word!Word.ArrowheadLength:enum
+              - name: ArrowheadStyle
+                uid: word!Word.ArrowheadStyle:enum
+              - name: ArrowheadWidth
+                uid: word!Word.ArrowheadWidth:enum
+              - name: AutoFitBehavior
+                uid: word!Word.AutoFitBehavior:enum
+              - name: AutoMacro
+                uid: word!Word.AutoMacro:enum
+              - name: BaselineAlignment
+                uid: word!Word.BaselineAlignment:enum
+              - name: BevelType
+                uid: word!Word.BevelType:enum
               - name: BodyType
-                uid: 'word!Word.BodyType:enum'
+                uid: word!Word.BodyType:enum
+              - name: BorderLineStyle
+                uid: word!Word.BorderLineStyle:enum
               - name: BorderLocation
-                uid: 'word!Word.BorderLocation:enum'
+                uid: word!Word.BorderLocation:enum
               - name: BorderType
-                uid: 'word!Word.BorderType:enum'
+                uid: word!Word.BorderType:enum
               - name: BorderWidth
-                uid: 'word!Word.BorderWidth:enum'
+                uid: word!Word.BorderWidth:enum
               - name: BreakType
-                uid: 'word!Word.BreakType:enum'
+                uid: word!Word.BreakType:enum
+              - name: BuildingBlockType
+                uid: word!Word.BuildingBlockType:enum
               - name: BuiltInStyleName
-                uid: 'word!Word.BuiltInStyleName:enum'
+                uid: word!Word.BuiltInStyleName:enum
+              - name: CalendarType
+                uid: word!Word.CalendarType:enum
+              - name: CalendarTypeBidirectional
+                uid: word!Word.CalendarTypeBidirectional:enum
+              - name: CaptionLabelType
+                uid: word!Word.CaptionLabelType:enum
+              - name: CaptionPosition
+                uid: word!Word.CaptionPosition:enum
               - name: CellPaddingLocation
-                uid: 'word!Word.CellPaddingLocation:enum'
+                uid: word!Word.CellPaddingLocation:enum
               - name: ChangeTrackingMode
-                uid: 'word!Word.ChangeTrackingMode:enum'
+                uid: word!Word.ChangeTrackingMode:enum
               - name: ChangeTrackingState
-                uid: 'word!Word.ChangeTrackingState:enum'
+                uid: word!Word.ChangeTrackingState:enum
               - name: ChangeTrackingVersion
-                uid: 'word!Word.ChangeTrackingVersion:enum'
+                uid: word!Word.ChangeTrackingVersion:enum
+              - name: CharacterCase
+                uid: word!Word.CharacterCase:enum
+              - name: CharacterWidth
+                uid: word!Word.CharacterWidth:enum
+              - name: CheckInVersionType
+                uid: word!Word.CheckInVersionType:enum
               - name: CloseBehavior
-                uid: 'word!Word.CloseBehavior:enum'
+                uid: word!Word.CloseBehavior:enum
+              - name: CoauthoringLockType
+                uid: word!Word.CoauthoringLockType:enum
+              - name: CollapseDirection
+                uid: word!Word.CollapseDirection:enum
+              - name: ColorIndex
+                uid: word!Word.ColorIndex:enum
+              - name: ColorType
+                uid: word!Word.ColorType:enum
+              - name: ColumnWidth
+                uid: word!Word.ColumnWidth:enum
               - name: CommentChangeType
-                uid: 'word!Word.CommentChangeType:enum'
+                uid: word!Word.CommentChangeType:enum
               - name: CompareTarget
-                uid: 'word!Word.CompareTarget:enum'
+                uid: word!Word.CompareTarget:enum
+              - name: CompatibilityMode
+                uid: word!Word.CompatibilityMode:enum
+              - name: ConditionCode
+                uid: word!Word.ConditionCode:enum
               - name: ContentControlAppearance
-                uid: 'word!Word.ContentControlAppearance:enum'
+                uid: word!Word.ContentControlAppearance:enum
+              - name: ContentControlDateStorageFormat
+                uid: word!Word.ContentControlDateStorageFormat:enum
+              - name: ContentControlLevel
+                uid: word!Word.ContentControlLevel:enum
               - name: ContentControlState
-                uid: 'word!Word.ContentControlState:enum'
+                uid: word!Word.ContentControlState:enum
               - name: ContentControlType
-                uid: 'word!Word.ContentControlType:enum'
+                uid: word!Word.ContentControlType:enum
+              - name: Continue
+                uid: word!Word.Continue:enum
               - name: CritiqueColorScheme
-                uid: 'word!Word.CritiqueColorScheme:enum'
+                uid: word!Word.CritiqueColorScheme:enum
+              - name: CustomXmlNodeType
+                uid: word!Word.CustomXmlNodeType:enum
+              - name: CustomXmlValidationErrorType
+                uid: word!Word.CustomXmlValidationErrorType:enum
+              - name: DateLanguage
+                uid: word!Word.DateLanguage:enum
+              - name: DefaultListBehavior
+                uid: word!Word.DefaultListBehavior:enum
+              - name: DefaultTableBehavior
+                uid: word!Word.DefaultTableBehavior:enum
+              - name: DeleteCells
+                uid: word!Word.DeleteCells:enum
+              - name: DocPartInsertType
+                uid: word!Word.DocPartInsertType:enum
+              - name: DocumentEncoding
+                uid: word!Word.DocumentEncoding:enum
+              - name: DocumentKind
+                uid: word!Word.DocumentKind:enum
               - name: DocumentPropertyType
-                uid: 'word!Word.DocumentPropertyType:enum'
+                uid: word!Word.DocumentPropertyType:enum
+              - name: DocumentType
+                uid: word!Word.DocumentType:enum
+              - name: DropPosition
+                uid: word!Word.DropPosition:enum
+              - name: EditorType
+                uid: word!Word.EditorType:enum
+              - name: EmphasisMark
+                uid: word!Word.EmphasisMark:enum
+              - name: EndnoteLocation
+                uid: word!Word.EndnoteLocation:enum
               - name: ErrorCodes
-                uid: 'word!Word.ErrorCodes:enum'
+                uid: word!Word.ErrorCodes:enum
               - name: EventSource
-                uid: 'word!Word.EventSource:enum'
+                uid: word!Word.EventSource:enum
               - name: EventType
-                uid: 'word!Word.EventType:enum'
+                uid: word!Word.EventType:enum
+              - name: ExportCreateBookmarks
+                uid: word!Word.ExportCreateBookmarks:enum
+              - name: ExportFormat
+                uid: word!Word.ExportFormat:enum
+              - name: ExportItem
+                uid: word!Word.ExportItem:enum
+              - name: ExportOptimizeFor
+                uid: word!Word.ExportOptimizeFor:enum
+              - name: ExportRange
+                uid: word!Word.ExportRange:enum
+              - name: ExtrusionColorType
+                uid: word!Word.ExtrusionColorType:enum
+              - name: FarEastLineBreakLanguageId
+                uid: word!Word.FarEastLineBreakLanguageId:enum
+              - name: FarEastLineBreakLevel
+                uid: word!Word.FarEastLineBreakLevel:enum
               - name: FieldKind
-                uid: 'word!Word.FieldKind:enum'
+                uid: word!Word.FieldKind:enum
+              - name: FieldShading
+                uid: word!Word.FieldShading:enum
               - name: FieldType
-                uid: 'word!Word.FieldType:enum'
+                uid: word!Word.FieldType:enum
+              - name: FileSaveFormat
+                uid: word!Word.FileSaveFormat:enum
+              - name: FillType
+                uid: word!Word.FillType:enum
+              - name: FlowDirection
+                uid: word!Word.FlowDirection:enum
+              - name: FontBias
+                uid: word!Word.FontBias:enum
+              - name: FootnoteLocation
+                uid: word!Word.FootnoteLocation:enum
+              - name: FrameSizeRule
+                uid: word!Word.FrameSizeRule:enum
               - name: GeometricShapeType
-                uid: 'word!Word.GeometricShapeType:enum'
+                uid: word!Word.GeometricShapeType:enum
+              - name: GoToDirection
+                uid: word!Word.GoToDirection:enum
+              - name: GoToItem
+                uid: word!Word.GoToItem:enum
+              - name: GradientColorType
+                uid: word!Word.GradientColorType:enum
+              - name: GradientStyle
+                uid: word!Word.GradientStyle:enum
+              - name: GutterPosition
+                uid: word!Word.GutterPosition:enum
+              - name: GutterStyle
+                uid: word!Word.GutterStyle:enum
               - name: HeaderFooterType
-                uid: 'word!Word.HeaderFooterType:enum'
+                uid: word!Word.HeaderFooterType:enum
+              - name: HeadingSeparator
+                uid: word!Word.HeadingSeparator:enum
+              - name: HorizontalInVerticalType
+                uid: word!Word.HorizontalInVerticalType:enum
+              - name: HyperlinkType
+                uid: word!Word.HyperlinkType:enum
               - name: ImageFormat
-                uid: 'word!Word.ImageFormat:enum'
+                uid: word!Word.ImageFormat:enum
+              - name: ImeMode
+                uid: word!Word.ImeMode:enum
               - name: ImportedStylesConflictBehavior
-                uid: 'word!Word.ImportedStylesConflictBehavior:enum'
+                uid: word!Word.ImportedStylesConflictBehavior:enum
+              - name: IndexFilter
+                uid: word!Word.IndexFilter:enum
+              - name: IndexFormat
+                uid: word!Word.IndexFormat:enum
+              - name: IndexSortBy
+                uid: word!Word.IndexSortBy:enum
+              - name: IndexType
+                uid: word!Word.IndexType:enum
               - name: InsertLocation
-                uid: 'word!Word.InsertLocation:enum'
+                uid: word!Word.InsertLocation:enum
+              - name: JustificationMode
+                uid: word!Word.JustificationMode:enum
+              - name: Kana
+                uid: word!Word.Kana:enum
+              - name: LanguageId
+                uid: word!Word.LanguageId:enum
+              - name: LayoutMode
+                uid: word!Word.LayoutMode:enum
+              - name: Ligature
+                uid: word!Word.Ligature:enum
+              - name: LightRigType
+                uid: word!Word.LightRigType:enum
+              - name: LineDashStyle
+                uid: word!Word.LineDashStyle:enum
+              - name: LineEndingType
+                uid: word!Word.LineEndingType:enum
+              - name: LineFormatStyle
+                uid: word!Word.LineFormatStyle:enum
+              - name: LineSpacing
+                uid: word!Word.LineSpacing:enum
+              - name: LineWidth
+                uid: word!Word.LineWidth:enum
+              - name: LinkType
+                uid: word!Word.LinkType:enum
+              - name: ListApplyTo
+                uid: word!Word.ListApplyTo:enum
               - name: ListBuiltInNumberStyle
-                uid: 'word!Word.ListBuiltInNumberStyle:enum'
+                uid: word!Word.ListBuiltInNumberStyle:enum
               - name: ListBullet
-                uid: 'word!Word.ListBullet:enum'
+                uid: word!Word.ListBullet:enum
               - name: ListLevelType
-                uid: 'word!Word.ListLevelType:enum'
+                uid: word!Word.ListLevelType:enum
               - name: ListNumbering
-                uid: 'word!Word.ListNumbering:enum'
+                uid: word!Word.ListNumbering:enum
+              - name: ListTemplateGalleryType
+                uid: word!Word.ListTemplateGalleryType:enum
+              - name: ListType
+                uid: word!Word.ListType:enum
               - name: LocationRelation
-                uid: 'word!Word.LocationRelation:enum'
+                uid: word!Word.LocationRelation:enum
+              - name: MergeTarget
+                uid: word!Word.MergeTarget:enum
+              - name: MovementType
+                uid: word!Word.MovementType:enum
               - name: NoteItemType
-                uid: 'word!Word.NoteItemType:enum'
+                uid: word!Word.NoteItemType:enum
+              - name: NoteNumberStyle
+                uid: word!Word.NoteNumberStyle:enum
+              - name: NumberForm
+                uid: word!Word.NumberForm:enum
+              - name: NumberingRule
+                uid: word!Word.NumberingRule:enum
+              - name: NumberSpacing
+                uid: word!Word.NumberSpacing:enum
+              - name: NumberType
+                uid: word!Word.NumberType:enum
+              - name: OleVerb
+                uid: word!Word.OleVerb:enum
+              - name: OperationUnit
+                uid: word!Word.OperationUnit:enum
               - name: OutlineLevel
-                uid: 'word!Word.OutlineLevel:enum'
+                uid: word!Word.OutlineLevel:enum
+              - name: PageBorderArt
+                uid: word!Word.PageBorderArt:enum
+              - name: PageColor
+                uid: word!Word.PageColor:enum
+              - name: PageMovementType
+                uid: word!Word.PageMovementType:enum
+              - name: PageOrientation
+                uid: word!Word.PageOrientation:enum
+              - name: PageSetupVerticalAlignment
+                uid: word!Word.PageSetupVerticalAlignment:enum
+              - name: PaperSize
+                uid: word!Word.PaperSize:enum
+              - name: PasteDataType
+                uid: word!Word.PasteDataType:enum
+              - name: PasteFormatType
+                uid: word!Word.PasteFormatType:enum
+              - name: PatternType
+                uid: word!Word.PatternType:enum
+              - name: PreferredWidthType
+                uid: word!Word.PreferredWidthType:enum
+              - name: PresetCamera
+                uid: word!Word.PresetCamera:enum
+              - name: PresetExtrusionDirection
+                uid: word!Word.PresetExtrusionDirection:enum
+              - name: PresetGradientType
+                uid: word!Word.PresetGradientType:enum
+              - name: PresetLightingDirection
+                uid: word!Word.PresetLightingDirection:enum
+              - name: PresetLightingSoftness
+                uid: word!Word.PresetLightingSoftness:enum
+              - name: PresetMaterial
+                uid: word!Word.PresetMaterial:enum
+              - name: PresetTexture
+                uid: word!Word.PresetTexture:enum
+              - name: PresetThreeDimensionalFormat
+                uid: word!Word.PresetThreeDimensionalFormat:enum
+              - name: PrintOutItem
+                uid: word!Word.PrintOutItem:enum
+              - name: PrintOutPages
+                uid: word!Word.PrintOutPages:enum
+              - name: PrintOutRange
+                uid: word!Word.PrintOutRange:enum
+              - name: ProtectionType
+                uid: word!Word.ProtectionType:enum
               - name: RangeLocation
-                uid: 'word!Word.RangeLocation:enum'
+                uid: word!Word.RangeLocation:enum
+              - name: ReadingLayoutMargin
+                uid: word!Word.ReadingLayoutMargin:enum
+              - name: ReadingOrder
+                uid: word!Word.ReadingOrder:enum
+              - name: ReferenceKind
+                uid: word!Word.ReferenceKind:enum
+              - name: ReferenceType
+                uid: word!Word.ReferenceType:enum
+              - name: ReflectionType
+                uid: word!Word.ReflectionType:enum
               - name: RelativeHorizontalPosition
-                uid: 'word!Word.RelativeHorizontalPosition:enum'
+                uid: word!Word.RelativeHorizontalPosition:enum
               - name: RelativeSize
-                uid: 'word!Word.RelativeSize:enum'
+                uid: word!Word.RelativeSize:enum
               - name: RelativeVerticalPosition
-                uid: 'word!Word.RelativeVerticalPosition:enum'
+                uid: word!Word.RelativeVerticalPosition:enum
+              - name: RemoveDocInfoType
+                uid: word!Word.RemoveDocInfoType:enum
+              - name: RevisionsBalloonMargin
+                uid: word!Word.RevisionsBalloonMargin:enum
+              - name: RevisionsBalloonWidthType
+                uid: word!Word.RevisionsBalloonWidthType:enum
+              - name: RevisionsMarkup
+                uid: word!Word.RevisionsMarkup:enum
+              - name: RevisionsMode
+                uid: word!Word.RevisionsMode:enum
+              - name: RevisionsView
+                uid: word!Word.RevisionsView:enum
+              - name: RevisionType
+                uid: word!Word.RevisionType:enum
+              - name: RowHeightRule
+                uid: word!Word.RowHeightRule:enum
+              - name: RulerStyle
+                uid: word!Word.RulerStyle:enum
               - name: SaveBehavior
-                uid: 'word!Word.SaveBehavior:enum'
+                uid: word!Word.SaveBehavior:enum
+              - name: SaveConfiguration
+                uid: word!Word.SaveConfiguration:enum
+              - name: ScreenSize
+                uid: word!Word.ScreenSize:enum
+              - name: SectionDirection
+                uid: word!Word.SectionDirection:enum
+              - name: SectionStart
+                uid: word!Word.SectionStart:enum
+              - name: SeekView
+                uid: word!Word.SeekView:enum
               - name: SelectionMode
-                uid: 'word!Word.SelectionMode:enum'
+                uid: word!Word.SelectionMode:enum
+              - name: SelectionType
+                uid: word!Word.SelectionType:enum
               - name: ShadingTextureType
-                uid: 'word!Word.ShadingTextureType:enum'
+                uid: word!Word.ShadingTextureType:enum
+              - name: ShadowStyle
+                uid: word!Word.ShadowStyle:enum
+              - name: ShadowType
+                uid: word!Word.ShadowType:enum
               - name: ShapeAutoSize
-                uid: 'word!Word.ShapeAutoSize:enum'
+                uid: word!Word.ShapeAutoSize:enum
               - name: ShapeFillType
-                uid: 'word!Word.ShapeFillType:enum'
+                uid: word!Word.ShapeFillType:enum
               - name: ShapeScaleFrom
-                uid: 'word!Word.ShapeScaleFrom:enum'
+                uid: word!Word.ShapeScaleFrom:enum
               - name: ShapeScaleType
-                uid: 'word!Word.ShapeScaleType:enum'
+                uid: word!Word.ShapeScaleType:enum
               - name: ShapeTextOrientation
-                uid: 'word!Word.ShapeTextOrientation:enum'
+                uid: word!Word.ShapeTextOrientation:enum
               - name: ShapeTextVerticalAlignment
-                uid: 'word!Word.ShapeTextVerticalAlignment:enum'
+                uid: word!Word.ShapeTextVerticalAlignment:enum
               - name: ShapeTextWrapSide
-                uid: 'word!Word.ShapeTextWrapSide:enum'
+                uid: word!Word.ShapeTextWrapSide:enum
               - name: ShapeTextWrapType
-                uid: 'word!Word.ShapeTextWrapType:enum'
+                uid: word!Word.ShapeTextWrapType:enum
               - name: ShapeType
-                uid: 'word!Word.ShapeType:enum'
+                uid: word!Word.ShapeType:enum
+              - name: ShowSourceDocuments
+                uid: word!Word.ShowSourceDocuments:enum
+              - name: SortFieldType
+                uid: word!Word.SortFieldType:enum
+              - name: SortOrder
+                uid: word!Word.SortOrder:enum
+              - name: SpecialPane
+                uid: word!Word.SpecialPane:enum
+              - name: Statistic
+                uid: word!Word.Statistic:enum
+              - name: StoryType
+                uid: word!Word.StoryType:enum
               - name: StyleType
-                uid: 'word!Word.StyleType:enum'
+                uid: word!Word.StyleType:enum
+              - name: StylisticSet
+                uid: word!Word.StylisticSet:enum
+              - name: TabAlignment
+                uid: word!Word.TabAlignment:enum
+              - name: TabLeader
+                uid: word!Word.TabLeader:enum
+              - name: TableCellInsertionLocation
+                uid: word!Word.TableCellInsertionLocation:enum
+              - name: TableDirection
+                uid: word!Word.TableDirection:enum
+              - name: TableFieldSeparator
+                uid: word!Word.TableFieldSeparator:enum
+              - name: TableFormat
+                uid: word!Word.TableFormat:enum
+              - name: TableFormatType
+                uid: word!Word.TableFormatType:enum
+              - name: TargetBrowser
+                uid: word!Word.TargetBrowser:enum
+              - name: TemplateType
+                uid: word!Word.TemplateType:enum
+              - name: TextboxTightWrap
+                uid: word!Word.TextboxTightWrap:enum
+              - name: TextOrientation
+                uid: word!Word.TextOrientation:enum
+              - name: TextureAlignment
+                uid: word!Word.TextureAlignment:enum
+              - name: TextureType
+                uid: word!Word.TextureType:enum
+              - name: ThemeColorIndex
+                uid: word!Word.ThemeColorIndex:enum
               - name: TrackedChangeType
-                uid: 'word!Word.TrackedChangeType:enum'
+                uid: word!Word.TrackedChangeType:enum
               - name: TrailingCharacter
-                uid: 'word!Word.TrailingCharacter:enum'
+                uid: word!Word.TrailingCharacter:enum
+              - name: TwoLinesInOneType
+                uid: word!Word.TwoLinesInOneType:enum
+              - name: Underline
+                uid: word!Word.Underline:enum
               - name: UnderlineType
-                uid: 'word!Word.UnderlineType:enum'
+                uid: word!Word.UnderlineType:enum
+              - name: UseFormattingFrom
+                uid: word!Word.UseFormattingFrom:enum
               - name: VerticalAlignment
-                uid: 'word!Word.VerticalAlignment:enum'
+                uid: word!Word.VerticalAlignment:enum
+              - name: ViewType
+                uid: word!Word.ViewType:enum
+              - name: WindowState
+                uid: word!Word.WindowState:enum
+              - name: WindowType
+                uid: word!Word.WindowType:enum
+              - name: XmlNodeLevel
+                uid: word!Word.XmlNodeLevel:enum
+              - name: XmlNodeType
+                uid: word!Word.XmlNodeType:enum
+              - name: XmlValidationStatus
+                uid: word!Word.XmlValidationStatus:enum
           - name: Annotation
-            uid: 'word!Word.Annotation:class'
+            uid: word!Word.Annotation:class
           - name: AnnotationClickedEventArgs
-            uid: 'word!Word.AnnotationClickedEventArgs:interface'
+            uid: word!Word.AnnotationClickedEventArgs:interface
           - name: AnnotationCollection
-            uid: 'word!Word.AnnotationCollection:class'
+            uid: word!Word.AnnotationCollection:class
           - name: AnnotationHoveredEventArgs
-            uid: 'word!Word.AnnotationHoveredEventArgs:interface'
+            uid: word!Word.AnnotationHoveredEventArgs:interface
           - name: AnnotationInsertedEventArgs
-            uid: 'word!Word.AnnotationInsertedEventArgs:interface'
+            uid: word!Word.AnnotationInsertedEventArgs:interface
           - name: AnnotationPopupActionEventArgs
-            uid: 'word!Word.AnnotationPopupActionEventArgs:interface'
+            uid: word!Word.AnnotationPopupActionEventArgs:interface
           - name: AnnotationRemovedEventArgs
-            uid: 'word!Word.AnnotationRemovedEventArgs:interface'
+            uid: word!Word.AnnotationRemovedEventArgs:interface
           - name: AnnotationSet
-            uid: 'word!Word.AnnotationSet:interface'
+            uid: word!Word.AnnotationSet:interface
           - name: Application
-            uid: 'word!Word.Application:class'
+            uid: word!Word.Application:class
+          - name: Bibliography
+            uid: word!Word.Bibliography:class
           - name: Body
-            uid: 'word!Word.Body:class'
+            uid: word!Word.Body:class
+          - name: Bookmark
+            uid: word!Word.Bookmark:class
+          - name: BookmarkCollection
+            uid: word!Word.BookmarkCollection:class
           - name: Border
-            uid: 'word!Word.Border:class'
+            uid: word!Word.Border:class
           - name: BorderCollection
-            uid: 'word!Word.BorderCollection:class'
+            uid: word!Word.BorderCollection:class
+          - name: BorderUniversal
+            uid: word!Word.BorderUniversal:class
+          - name: BorderUniversalCollection
+            uid: word!Word.BorderUniversalCollection:class
+          - name: Break
+            uid: word!Word.Break:class
+          - name: BreakCollection
+            uid: word!Word.BreakCollection:class
+          - name: BuildingBlock
+            uid: word!Word.BuildingBlock:class
+          - name: BuildingBlockCategory
+            uid: word!Word.BuildingBlockCategory:class
+          - name: BuildingBlockCategoryCollection
+            uid: word!Word.BuildingBlockCategoryCollection:class
+          - name: BuildingBlockCollection
+            uid: word!Word.BuildingBlockCollection:class
+          - name: BuildingBlockEntryCollection
+            uid: word!Word.BuildingBlockEntryCollection:class
+          - name: BuildingBlockGalleryContentControl
+            uid: word!Word.BuildingBlockGalleryContentControl:class
+          - name: BuildingBlockTypeItem
+            uid: word!Word.BuildingBlockTypeItem:class
+          - name: BuildingBlockTypeItemCollection
+            uid: word!Word.BuildingBlockTypeItemCollection:class
           - name: Canvas
-            uid: 'word!Word.Canvas:class'
+            uid: word!Word.Canvas:class
           - name: CheckboxContentControl
-            uid: 'word!Word.CheckboxContentControl:class'
+            uid: word!Word.CheckboxContentControl:class
+          - name: Coauthor
+            uid: word!Word.Coauthor:class
+          - name: CoauthorCollection
+            uid: word!Word.CoauthorCollection:class
+          - name: Coauthoring
+            uid: word!Word.Coauthoring:class
+          - name: CoauthoringLock
+            uid: word!Word.CoauthoringLock:class
+          - name: CoauthoringLockAddOptions
+            uid: word!Word.CoauthoringLockAddOptions:interface
+          - name: CoauthoringLockCollection
+            uid: word!Word.CoauthoringLockCollection:class
+          - name: CoauthoringUpdate
+            uid: word!Word.CoauthoringUpdate:class
+          - name: CoauthoringUpdateCollection
+            uid: word!Word.CoauthoringUpdateCollection:class
+          - name: ColorFormat
+            uid: word!Word.ColorFormat:class
           - name: ComboBoxContentControl
-            uid: 'word!Word.ComboBoxContentControl:class'
+            uid: word!Word.ComboBoxContentControl:class
           - name: Comment
-            uid: 'word!Word.Comment:class'
+            uid: word!Word.Comment:class
           - name: CommentCollection
-            uid: 'word!Word.CommentCollection:class'
+            uid: word!Word.CommentCollection:class
           - name: CommentContentRange
-            uid: 'word!Word.CommentContentRange:class'
+            uid: word!Word.CommentContentRange:class
           - name: CommentDetail
-            uid: 'word!Word.CommentDetail:interface'
+            uid: word!Word.CommentDetail:interface
           - name: CommentEventArgs
-            uid: 'word!Word.CommentEventArgs:interface'
+            uid: word!Word.CommentEventArgs:interface
           - name: CommentReply
-            uid: 'word!Word.CommentReply:class'
+            uid: word!Word.CommentReply:class
           - name: CommentReplyCollection
-            uid: 'word!Word.CommentReplyCollection:class'
+            uid: word!Word.CommentReplyCollection:class
+          - name: ConditionalStyle
+            uid: word!Word.ConditionalStyle:class
+          - name: Conflict
+            uid: word!Word.Conflict:class
+          - name: ConflictCollection
+            uid: word!Word.ConflictCollection:class
           - name: ContentControl
-            uid: 'word!Word.ContentControl:class'
+            uid: word!Word.ContentControl:class
           - name: ContentControlAddedEventArgs
-            uid: 'word!Word.ContentControlAddedEventArgs:interface'
+            uid: word!Word.ContentControlAddedEventArgs:interface
           - name: ContentControlCollection
-            uid: 'word!Word.ContentControlCollection:class'
+            uid: word!Word.ContentControlCollection:class
           - name: ContentControlDataChangedEventArgs
-            uid: 'word!Word.ContentControlDataChangedEventArgs:interface'
+            uid: word!Word.ContentControlDataChangedEventArgs:interface
           - name: ContentControlDeletedEventArgs
-            uid: 'word!Word.ContentControlDeletedEventArgs:interface'
+            uid: word!Word.ContentControlDeletedEventArgs:interface
           - name: ContentControlEnteredEventArgs
-            uid: 'word!Word.ContentControlEnteredEventArgs:interface'
+            uid: word!Word.ContentControlEnteredEventArgs:interface
           - name: ContentControlExitedEventArgs
-            uid: 'word!Word.ContentControlExitedEventArgs:interface'
+            uid: word!Word.ContentControlExitedEventArgs:interface
           - name: ContentControlListItem
-            uid: 'word!Word.ContentControlListItem:class'
+            uid: word!Word.ContentControlListItem:class
           - name: ContentControlListItemCollection
-            uid: 'word!Word.ContentControlListItemCollection:class'
+            uid: word!Word.ContentControlListItemCollection:class
           - name: ContentControlOptions
-            uid: 'word!Word.ContentControlOptions:interface'
+            uid: word!Word.ContentControlOptions:interface
+          - name: ContentControlPlaceholderOptions
+            uid: word!Word.ContentControlPlaceholderOptions:interface
           - name: ContentControlSelectionChangedEventArgs
-            uid: 'word!Word.ContentControlSelectionChangedEventArgs:interface'
+            uid: word!Word.ContentControlSelectionChangedEventArgs:interface
           - name: Critique
-            uid: 'word!Word.Critique:interface'
+            uid: word!Word.Critique:interface
           - name: CritiqueAnnotation
-            uid: 'word!Word.CritiqueAnnotation:class'
+            uid: word!Word.CritiqueAnnotation:class
           - name: CritiquePopupOptions
-            uid: 'word!Word.CritiquePopupOptions:interface'
+            uid: word!Word.CritiquePopupOptions:interface
           - name: CustomProperty
-            uid: 'word!Word.CustomProperty:class'
+            uid: word!Word.CustomProperty:class
           - name: CustomPropertyCollection
-            uid: 'word!Word.CustomPropertyCollection:class'
+            uid: word!Word.CustomPropertyCollection:class
+          - name: CustomXmlAddNodeOptions
+            uid: word!Word.CustomXmlAddNodeOptions:interface
+          - name: CustomXmlAddSchemaOptions
+            uid: word!Word.CustomXmlAddSchemaOptions:interface
+          - name: CustomXmlAddValidationErrorOptions
+            uid: word!Word.CustomXmlAddValidationErrorOptions:interface
+          - name: CustomXmlAppendChildNodeOptions
+            uid: word!Word.CustomXmlAppendChildNodeOptions:interface
+          - name: CustomXmlInsertNodeBeforeOptions
+            uid: word!Word.CustomXmlInsertNodeBeforeOptions:interface
+          - name: CustomXmlInsertSubtreeBeforeOptions
+            uid: word!Word.CustomXmlInsertSubtreeBeforeOptions:interface
+          - name: CustomXmlNode
+            uid: word!Word.CustomXmlNode:class
+          - name: CustomXmlNodeCollection
+            uid: word!Word.CustomXmlNodeCollection:class
           - name: CustomXmlPart
-            uid: 'word!Word.CustomXmlPart:class'
+            uid: word!Word.CustomXmlPart:class
           - name: CustomXmlPartCollection
-            uid: 'word!Word.CustomXmlPartCollection:class'
+            uid: word!Word.CustomXmlPartCollection:class
           - name: CustomXmlPartScopedCollection
-            uid: 'word!Word.CustomXmlPartScopedCollection:class'
+            uid: word!Word.CustomXmlPartScopedCollection:class
+          - name: CustomXmlPrefixMapping
+            uid: word!Word.CustomXmlPrefixMapping:class
+          - name: CustomXmlPrefixMappingCollection
+            uid: word!Word.CustomXmlPrefixMappingCollection:class
+          - name: CustomXmlReplaceChildNodeOptions
+            uid: word!Word.CustomXmlReplaceChildNodeOptions:interface
+          - name: CustomXmlSchema
+            uid: word!Word.CustomXmlSchema:class
+          - name: CustomXmlSchemaCollection
+            uid: word!Word.CustomXmlSchemaCollection:class
+          - name: CustomXmlValidationError
+            uid: word!Word.CustomXmlValidationError:class
+          - name: CustomXmlValidationErrorCollection
+            uid: word!Word.CustomXmlValidationErrorCollection:class
+          - name: DatePickerContentControl
+            uid: word!Word.DatePickerContentControl:class
           - name: Document
-            uid: 'word!Word.Document:class'
+            uid: word!Word.Document:class
+          - name: DocumentCheckInOptions
+            uid: word!Word.DocumentCheckInOptions:interface
+          - name: DocumentCheckInWithVersionOptions
+            uid: word!Word.DocumentCheckInWithVersionOptions:interface
+          - name: DocumentCheckSpellingOptions
+            uid: word!Word.DocumentCheckSpellingOptions:interface
           - name: DocumentCompareOptions
-            uid: 'word!Word.DocumentCompareOptions:interface'
+            uid: word!Word.DocumentCompareOptions:interface
+          - name: DocumentCountNumberedItemsOptions
+            uid: word!Word.DocumentCountNumberedItemsOptions:interface
           - name: DocumentCreated
-            uid: 'word!Word.DocumentCreated:class'
+            uid: word!Word.DocumentCreated:class
+          - name: DocumentEndReviewOptions
+            uid: word!Word.DocumentEndReviewOptions:interface
+          - name: DocumentExportAsFixedFormat2Options
+            uid: word!Word.DocumentExportAsFixedFormat2Options:interface
+          - name: DocumentExportAsFixedFormat3Options
+            uid: word!Word.DocumentExportAsFixedFormat3Options:interface
+          - name: DocumentExportAsFixedFormatOptions
+            uid: word!Word.DocumentExportAsFixedFormatOptions:interface
+          - name: DocumentFollowHyperlinkOptions
+            uid: word!Word.DocumentFollowHyperlinkOptions:interface
+          - name: DocumentLibraryVersion
+            uid: word!Word.DocumentLibraryVersion:class
+          - name: DocumentLibraryVersionCollection
+            uid: word!Word.DocumentLibraryVersionCollection:class
+          - name: DocumentMergeOptions
+            uid: word!Word.DocumentMergeOptions:interface
+          - name: DocumentPrintOutOptions
+            uid: word!Word.DocumentPrintOutOptions:interface
           - name: DocumentProperties
-            uid: 'word!Word.DocumentProperties:class'
+            uid: word!Word.DocumentProperties:class
+          - name: DocumentProtectOptions
+            uid: word!Word.DocumentProtectOptions:interface
+          - name: DocumentRangeOptions
+            uid: word!Word.DocumentRangeOptions:interface
+          - name: DocumentReplyWithChangesOptions
+            uid: word!Word.DocumentReplyWithChangesOptions:interface
+          - name: DocumentSendFaxOverInternetOptions
+            uid: word!Word.DocumentSendFaxOverInternetOptions:interface
+          - name: DocumentSendForReviewOptions
+            uid: word!Word.DocumentSendForReviewOptions:interface
+          - name: DropCap
+            uid: word!Word.DropCap:class
           - name: DropDownListContentControl
-            uid: 'word!Word.DropDownListContentControl:class'
+            uid: word!Word.DropDownListContentControl:class
+          - name: Editor
+            uid: word!Word.Editor:class
+          - name: EditorCollection
+            uid: word!Word.EditorCollection:class
           - name: Field
-            uid: 'word!Word.Field:class'
+            uid: word!Word.Field:class
           - name: FieldCollection
-            uid: 'word!Word.FieldCollection:class'
+            uid: word!Word.FieldCollection:class
+          - name: FillFormat
+            uid: word!Word.FillFormat:class
           - name: Font
-            uid: 'word!Word.Font:class'
+            uid: word!Word.Font:class
+          - name: FontNameCollection
+            uid: word!Word.FontNameCollection:class
+          - name: Frame
+            uid: word!Word.Frame:class
+          - name: FrameCollection
+            uid: word!Word.FrameCollection:class
           - name: GetTextOptions
-            uid: 'word!Word.GetTextOptions:interface'
+            uid: word!Word.GetTextOptions:interface
+          - name: GlowFormat
+            uid: word!Word.GlowFormat:class
+          - name: GoToOptions
+            uid: word!Word.GoToOptions:interface
+          - name: GroupContentControl
+            uid: word!Word.GroupContentControl:class
+          - name: HeadingStyle
+            uid: word!Word.HeadingStyle:class
+          - name: HeadingStyleCollection
+            uid: word!Word.HeadingStyleCollection:class
+          - name: HtmlDivision
+            uid: word!Word.HtmlDivision:class
+          - name: HtmlDivisionCollection
+            uid: word!Word.HtmlDivisionCollection:class
+          - name: Hyperlink
+            uid: word!Word.Hyperlink:class
+          - name: HyperlinkAddOptions
+            uid: word!Word.HyperlinkAddOptions:interface
+          - name: HyperlinkCollection
+            uid: word!Word.HyperlinkCollection:class
+          - name: Index
+            uid: word!Word.Index:class
+          - name: IndexAddOptions
+            uid: word!Word.IndexAddOptions:interface
+          - name: IndexCollection
+            uid: word!Word.IndexCollection:class
+          - name: IndexMarkAllEntriesOptions
+            uid: word!Word.IndexMarkAllEntriesOptions:interface
+          - name: IndexMarkEntryOptions
+            uid: word!Word.IndexMarkEntryOptions:interface
           - name: InlinePicture
-            uid: 'word!Word.InlinePicture:class'
+            uid: word!Word.InlinePicture:class
           - name: InlinePictureCollection
-            uid: 'word!Word.InlinePictureCollection:class'
+            uid: word!Word.InlinePictureCollection:class
           - name: InsertFileOptions
-            uid: 'word!Word.InsertFileOptions:interface'
+            uid: word!Word.InsertFileOptions:interface
           - name: InsertShapeOptions
-            uid: 'word!Word.InsertShapeOptions:interface'
+            uid: word!Word.InsertShapeOptions:interface
+          - name: LineFormat
+            uid: word!Word.LineFormat:class
+          - name: LineNumbering
+            uid: word!Word.LineNumbering:class
+          - name: LinkFormat
+            uid: word!Word.LinkFormat:class
           - name: List
-            uid: 'word!Word.List:class'
+            uid: word!Word.List:class
           - name: ListCollection
-            uid: 'word!Word.ListCollection:class'
+            uid: word!Word.ListCollection:class
+          - name: ListFormat
+            uid: word!Word.ListFormat:class
+          - name: ListFormatCountNumberedItemsOptions
+            uid: word!Word.ListFormatCountNumberedItemsOptions:interface
           - name: ListItem
-            uid: 'word!Word.ListItem:class'
+            uid: word!Word.ListItem:class
           - name: ListLevel
-            uid: 'word!Word.ListLevel:class'
+            uid: word!Word.ListLevel:class
           - name: ListLevelCollection
-            uid: 'word!Word.ListLevelCollection:class'
+            uid: word!Word.ListLevelCollection:class
           - name: ListTemplate
-            uid: 'word!Word.ListTemplate:class'
+            uid: word!Word.ListTemplate:class
+          - name: ListTemplateApplyOptions
+            uid: word!Word.ListTemplateApplyOptions:interface
+          - name: ListTemplateCollection
+            uid: word!Word.ListTemplateCollection:class
+          - name: ListTemplateCollectionAddOptions
+            uid: word!Word.ListTemplateCollectionAddOptions:interface
+          - name: ListTemplateGallery
+            uid: word!Word.ListTemplateGallery:class
+          - name: ListTemplateGalleryCollection
+            uid: word!Word.ListTemplateGalleryCollection:class
           - name: NoteItem
-            uid: 'word!Word.NoteItem:class'
+            uid: word!Word.NoteItem:class
           - name: NoteItemCollection
-            uid: 'word!Word.NoteItemCollection:class'
+            uid: word!Word.NoteItemCollection:class
+          - name: OleFormat
+            uid: word!Word.OleFormat:class
           - name: Page
-            uid: 'word!Word.Page:class'
+            uid: word!Word.Page:class
           - name: PageCollection
-            uid: 'word!Word.PageCollection:class'
+            uid: word!Word.PageCollection:class
+          - name: PageSetup
+            uid: word!Word.PageSetup:class
           - name: Pane
-            uid: 'word!Word.Pane:class'
+            uid: word!Word.Pane:class
           - name: PaneCollection
-            uid: 'word!Word.PaneCollection:class'
+            uid: word!Word.PaneCollection:class
           - name: Paragraph
-            uid: 'word!Word.Paragraph:class'
+            uid: word!Word.Paragraph:class
           - name: ParagraphAddedEventArgs
-            uid: 'word!Word.ParagraphAddedEventArgs:interface'
+            uid: word!Word.ParagraphAddedEventArgs:interface
           - name: ParagraphChangedEventArgs
-            uid: 'word!Word.ParagraphChangedEventArgs:interface'
+            uid: word!Word.ParagraphChangedEventArgs:interface
           - name: ParagraphCollection
-            uid: 'word!Word.ParagraphCollection:class'
+            uid: word!Word.ParagraphCollection:class
           - name: ParagraphDeletedEventArgs
-            uid: 'word!Word.ParagraphDeletedEventArgs:interface'
+            uid: word!Word.ParagraphDeletedEventArgs:interface
           - name: ParagraphFormat
-            uid: 'word!Word.ParagraphFormat:class'
+            uid: word!Word.ParagraphFormat:class
+          - name: PictureContentControl
+            uid: word!Word.PictureContentControl:class
           - name: Range
-            uid: 'word!Word.Range:class'
+            uid: word!Word.Range:class
           - name: RangeCollection
-            uid: 'word!Word.RangeCollection:class'
+            uid: word!Word.RangeCollection:class
+          - name: RangeScopedCollection
+            uid: word!Word.RangeScopedCollection:class
+          - name: ReadabilityStatistic
+            uid: word!Word.ReadabilityStatistic:class
+          - name: ReadabilityStatisticCollection
+            uid: word!Word.ReadabilityStatisticCollection:class
+          - name: ReflectionFormat
+            uid: word!Word.ReflectionFormat:class
+          - name: RepeatingSectionContentControl
+            uid: word!Word.RepeatingSectionContentControl:class
+          - name: RepeatingSectionItem
+            uid: word!Word.RepeatingSectionItem:class
+          - name: RepeatingSectionItemCollection
+            uid: word!Word.RepeatingSectionItemCollection:class
           - name: RequestContext
-            uid: 'word!Word.RequestContext:class'
+            uid: word!Word.RequestContext:class
+          - name: Reviewer
+            uid: word!Word.Reviewer:class
+          - name: ReviewerCollection
+            uid: word!Word.ReviewerCollection:class
+          - name: Revision
+            uid: word!Word.Revision:class
+          - name: RevisionCollection
+            uid: word!Word.RevisionCollection:class
+          - name: RevisionsFilter
+            uid: word!Word.RevisionsFilter:class
           - name: SearchOptions
-            uid: 'word!Word.SearchOptions:class'
+            uid: word!Word.SearchOptions:class
           - name: Section
-            uid: 'word!Word.Section:class'
+            uid: word!Word.Section:class
           - name: SectionCollection
-            uid: 'word!Word.SectionCollection:class'
+            uid: word!Word.SectionCollection:class
+          - name: Selection
+            uid: word!Word.Selection:class
+          - name: SelectionConvertToTableOptions
+            uid: word!Word.SelectionConvertToTableOptions:interface
+          - name: SelectionDeleteOptions
+            uid: word!Word.SelectionDeleteOptions:interface
+          - name: SelectionGoToOptions
+            uid: word!Word.SelectionGoToOptions:interface
+          - name: SelectionInsertCrossReferenceOptions
+            uid: word!Word.SelectionInsertCrossReferenceOptions:interface
+          - name: SelectionInsertDateTimeOptions
+            uid: word!Word.SelectionInsertDateTimeOptions:interface
+          - name: SelectionInsertFormulaOptions
+            uid: word!Word.SelectionInsertFormulaOptions:interface
+          - name: SelectionInsertSymbolOptions
+            uid: word!Word.SelectionInsertSymbolOptions:interface
+          - name: SelectionMoveLeftRightOptions
+            uid: word!Word.SelectionMoveLeftRightOptions:interface
+          - name: SelectionMoveOptions
+            uid: word!Word.SelectionMoveOptions:interface
+          - name: SelectionMoveStartEndOptions
+            uid: word!Word.SelectionMoveStartEndOptions:interface
+          - name: SelectionMoveUpDownOptions
+            uid: word!Word.SelectionMoveUpDownOptions:interface
+          - name: SelectionNextOptions
+            uid: word!Word.SelectionNextOptions:interface
+          - name: SelectionPreviousOptions
+            uid: word!Word.SelectionPreviousOptions:interface
+          - name: SelectNodesOptions
+            uid: word!Word.SelectNodesOptions:interface
+          - name: SelectSingleNodeOptions
+            uid: word!Word.SelectSingleNodeOptions:interface
           - name: Setting
-            uid: 'word!Word.Setting:class'
+            uid: word!Word.Setting:class
           - name: SettingCollection
-            uid: 'word!Word.SettingCollection:class'
+            uid: word!Word.SettingCollection:class
           - name: Shading
-            uid: 'word!Word.Shading:class'
+            uid: word!Word.Shading:class
+          - name: ShadingUniversal
+            uid: word!Word.ShadingUniversal:class
+          - name: ShadowFormat
+            uid: word!Word.ShadowFormat:class
           - name: Shape
-            uid: 'word!Word.Shape:class'
+            uid: word!Word.Shape:class
           - name: ShapeCollection
-            uid: 'word!Word.ShapeCollection:class'
+            uid: word!Word.ShapeCollection:class
           - name: ShapeFill
-            uid: 'word!Word.ShapeFill:class'
+            uid: word!Word.ShapeFill:class
           - name: ShapeGroup
-            uid: 'word!Word.ShapeGroup:class'
+            uid: word!Word.ShapeGroup:class
           - name: ShapeTextWrap
-            uid: 'word!Word.ShapeTextWrap:class'
+            uid: word!Word.ShapeTextWrap:class
+          - name: Source
+            uid: word!Word.Source:class
+          - name: SourceCollection
+            uid: word!Word.SourceCollection:class
           - name: Style
-            uid: 'word!Word.Style:class'
+            uid: word!Word.Style:class
           - name: StyleCollection
-            uid: 'word!Word.StyleCollection:class'
+            uid: word!Word.StyleCollection:class
           - name: Table
-            uid: 'word!Word.Table:class'
+            uid: word!Word.Table:class
+          - name: TableAutoFormatOptions
+            uid: word!Word.TableAutoFormatOptions:interface
           - name: TableBorder
-            uid: 'word!Word.TableBorder:class'
+            uid: word!Word.TableBorder:class
           - name: TableCell
-            uid: 'word!Word.TableCell:class'
+            uid: word!Word.TableCell:class
           - name: TableCellCollection
-            uid: 'word!Word.TableCellCollection:class'
+            uid: word!Word.TableCellCollection:class
+          - name: TableCellCollectionSplitOptions
+            uid: word!Word.TableCellCollectionSplitOptions:interface
+          - name: TableCellFormulaOptions
+            uid: word!Word.TableCellFormulaOptions:interface
           - name: TableCollection
-            uid: 'word!Word.TableCollection:class'
+            uid: word!Word.TableCollection:class
+          - name: TableColumn
+            uid: word!Word.TableColumn:class
+          - name: TableColumnCollection
+            uid: word!Word.TableColumnCollection:class
+          - name: TableConvertToTextOptions
+            uid: word!Word.TableConvertToTextOptions:interface
+          - name: TableOfAuthorities
+            uid: word!Word.TableOfAuthorities:class
+          - name: TableOfAuthoritiesAddOptions
+            uid: word!Word.TableOfAuthoritiesAddOptions:interface
+          - name: TableOfAuthoritiesCategory
+            uid: word!Word.TableOfAuthoritiesCategory:class
+          - name: TableOfAuthoritiesCategoryCollection
+            uid: word!Word.TableOfAuthoritiesCategoryCollection:class
+          - name: TableOfAuthoritiesCollection
+            uid: word!Word.TableOfAuthoritiesCollection:class
+          - name: TableOfAuthoritiesMarkCitationOptions
+            uid: word!Word.TableOfAuthoritiesMarkCitationOptions:interface
+          - name: TableOfContents
+            uid: word!Word.TableOfContents:class
+          - name: TableOfContentsAddOptions
+            uid: word!Word.TableOfContentsAddOptions:interface
+          - name: TableOfContentsCollection
+            uid: word!Word.TableOfContentsCollection:class
+          - name: TableOfContentsMarkEntryOptions
+            uid: word!Word.TableOfContentsMarkEntryOptions:interface
+          - name: TableOfFigures
+            uid: word!Word.TableOfFigures:class
+          - name: TableOfFiguresAddOptions
+            uid: word!Word.TableOfFiguresAddOptions:interface
+          - name: TableOfFiguresCollection
+            uid: word!Word.TableOfFiguresCollection:class
           - name: TableRow
-            uid: 'word!Word.TableRow:class'
+            uid: word!Word.TableRow:class
           - name: TableRowCollection
-            uid: 'word!Word.TableRowCollection:class'
+            uid: word!Word.TableRowCollection:class
+          - name: TableSortOptions
+            uid: word!Word.TableSortOptions:interface
           - name: TableStyle
-            uid: 'word!Word.TableStyle:class'
+            uid: word!Word.TableStyle:class
+          - name: TabStop
+            uid: word!Word.TabStop:class
+          - name: TabStopAddOptions
+            uid: word!Word.TabStopAddOptions:interface
+          - name: TabStopCollection
+            uid: word!Word.TabStopCollection:class
+          - name: Template
+            uid: word!Word.Template:class
+          - name: TemplateCollection
+            uid: word!Word.TemplateCollection:class
+          - name: TextColumn
+            uid: word!Word.TextColumn:class
+          - name: TextColumnAddOptions
+            uid: word!Word.TextColumnAddOptions:interface
+          - name: TextColumnCollection
+            uid: word!Word.TextColumnCollection:class
           - name: TextFrame
-            uid: 'word!Word.TextFrame:class'
+            uid: word!Word.TextFrame:class
+          - name: ThreeDimensionalFormat
+            uid: word!Word.ThreeDimensionalFormat:class
           - name: TrackedChange
-            uid: 'word!Word.TrackedChange:class'
+            uid: word!Word.TrackedChange:class
           - name: TrackedChangeCollection
-            uid: 'word!Word.TrackedChangeCollection:class'
+            uid: word!Word.TrackedChangeCollection:class
+          - name: View
+            uid: word!Word.View:class
+          - name: WebSettings
+            uid: word!Word.WebSettings:class
           - name: Window
-            uid: 'word!Word.Window:class'
+            uid: word!Word.Window:class
+          - name: WindowCloseOptions
+            uid: word!Word.WindowCloseOptions:interface
           - name: WindowCollection
-            uid: 'word!Word.WindowCollection:class'
+            uid: word!Word.WindowCollection:class
+          - name: WindowPageScrollOptions
+            uid: word!Word.WindowPageScrollOptions:interface
+          - name: WindowScrollOptions
+            uid: word!Word.WindowScrollOptions:interface
+          - name: XmlMapping
+            uid: word!Word.XmlMapping:class
+          - name: XmlNode
+            uid: word!Word.XmlNode:class
+          - name: XmlNodeCollection
+            uid: word!Word.XmlNodeCollection:class
+          - name: XmlNodeSetValidationErrorOptions
+            uid: word!Word.XmlNodeSetValidationErrorOptions:interface
+          - name: XmlSetMappingOptions
+            uid: word!Word.XmlSetMappingOptions:interface
       - name: Common APIs
         uid: office!
         items:
@@ -347,244 +1019,249 @@ items:
                 uid: ''
                 items:
                   - name: ActiveView
-                    uid: 'office!Office.ActiveView:enum'
+                    uid: office!Office.ActiveView:enum
                   - name: AsyncResultStatus
-                    uid: 'office!Office.AsyncResultStatus:enum'
+                    uid: office!Office.AsyncResultStatus:enum
                   - name: BindingType
-                    uid: 'office!Office.BindingType:enum'
+                    uid: office!Office.BindingType:enum
                   - name: CoercionType
-                    uid: 'office!Office.CoercionType:enum'
+                    uid: office!Office.CoercionType:enum
                   - name: CustomXMLNodeType
-                    uid: 'office!Office.CustomXMLNodeType:enum'
+                    uid: office!Office.CustomXMLNodeType:enum
                   - name: DevicePermissionType
-                    uid: 'office!Office.DevicePermissionType:enum'
+                    uid: office!Office.DevicePermissionType:enum
                   - name: DocumentMode
-                    uid: 'office!Office.DocumentMode:enum'
+                    uid: office!Office.DocumentMode:enum
                   - name: EventType
-                    uid: 'office!Office.EventType:enum'
+                    uid: office!Office.EventType:enum
                   - name: FileType
-                    uid: 'office!Office.FileType:enum'
+                    uid: office!Office.FileType:enum
                   - name: FilterType
-                    uid: 'office!Office.FilterType:enum'
+                    uid: office!Office.FilterType:enum
                   - name: GoToType
-                    uid: 'office!Office.GoToType:enum'
+                    uid: office!Office.GoToType:enum
                   - name: HostType
-                    uid: 'office!Office.HostType:enum'
+                    uid: office!Office.HostType:enum
                   - name: Index
-                    uid: 'office!Office.Index:enum'
+                    uid: office!Office.Index:enum
                   - name: InitializationReason
-                    uid: 'office!Office.InitializationReason:enum'
+                    uid: office!Office.InitializationReason:enum
                   - name: PlatformType
-                    uid: 'office!Office.PlatformType:enum'
+                    uid: office!Office.PlatformType:enum
                   - name: ProjectProjectFields
-                    uid: 'office!Office.ProjectProjectFields:enum'
+                    uid: office!Office.ProjectProjectFields:enum
                   - name: ProjectResourceFields
-                    uid: 'office!Office.ProjectResourceFields:enum'
+                    uid: office!Office.ProjectResourceFields:enum
                   - name: ProjectTaskFields
-                    uid: 'office!Office.ProjectTaskFields:enum'
+                    uid: office!Office.ProjectTaskFields:enum
                   - name: ProjectViewTypes
-                    uid: 'office!Office.ProjectViewTypes:enum'
+                    uid: office!Office.ProjectViewTypes:enum
                   - name: SelectionMode
-                    uid: 'office!Office.SelectionMode:enum'
+                    uid: office!Office.SelectionMode:enum
                   - name: StartupBehavior
-                    uid: 'office!Office.StartupBehavior:enum'
+                    uid: office!Office.StartupBehavior:enum
                   - name: Table
-                    uid: 'office!Office.Table:enum'
+                    uid: office!Office.Table:enum
                   - name: ThemeId
-                    uid: 'office!Office.ThemeId:enum'
+                    uid: office!Office.ThemeId:enum
                   - name: ValueFormat
-                    uid: 'office!Office.ValueFormat:enum'
+                    uid: office!Office.ValueFormat:enum
                   - name: VisibilityMode
-                    uid: 'office!Office.VisibilityMode:enum'
+                    uid: office!Office.VisibilityMode:enum
               - name: Actions
-                uid: 'office!Office.Actions:interface'
+                uid: office!Office.Actions:interface
               - name: AddBindingFromNamedItemOptions
-                uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+                uid: office!Office.AddBindingFromNamedItemOptions:interface
               - name: AddBindingFromPromptOptions
-                uid: 'office!Office.AddBindingFromPromptOptions:interface'
+                uid: office!Office.AddBindingFromPromptOptions:interface
               - name: AddBindingFromSelectionOptions
-                uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+                uid: office!Office.AddBindingFromSelectionOptions:interface
               - name: Addin
-                uid: 'office!Office.Addin:interface'
+                uid: office!Office.Addin:interface
               - name: AddinCommands.Event
-                uid: 'office!Office.AddinCommands.Event:interface'
+                uid: office!Office.AddinCommands.Event:interface
               - name: AddinCommands.EventCompletedOptions
-                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+                uid: office!Office.AddinCommands.EventCompletedOptions:interface
               - name: AddinCommands.Source
-                uid: 'office!Office.AddinCommands.Source:interface'
+                uid: office!Office.AddinCommands.Source:interface
               - name: AsyncContextOptions
-                uid: 'office!Office.AsyncContextOptions:interface'
+                uid: office!Office.AsyncContextOptions:interface
               - name: AsyncResult
-                uid: 'office!Office.AsyncResult:interface'
+                uid: office!Office.AsyncResult:interface
               - name: Auth
-                uid: 'office!Office.Auth:interface'
+                uid: office!Office.Auth:interface
               - name: AuthContext
-                uid: 'office!Office.AuthContext:interface'
+                uid: office!Office.AuthContext:interface
               - name: AuthOptions
-                uid: 'office!Office.AuthOptions:interface'
+                uid: office!Office.AuthOptions:interface
               - name: BeforeDocumentCloseNotification
-                uid: 'office!Office.BeforeDocumentCloseNotification:interface'
+                uid: office!Office.BeforeDocumentCloseNotification:interface
               - name: Binding
-                uid: 'office!Office.Binding:interface'
+                uid: office!Office.Binding:interface
               - name: BindingDataChangedEventArgs
-                uid: 'office!Office.BindingDataChangedEventArgs:interface'
+                uid: office!Office.BindingDataChangedEventArgs:interface
               - name: Bindings
-                uid: 'office!Office.Bindings:interface'
+                uid: office!Office.Bindings:interface
               - name: BindingSelectionChangedEventArgs
-                uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+                uid: office!Office.BindingSelectionChangedEventArgs:interface
               - name: Context
-                uid: 'office!Office.Context:interface'
+                uid: office!Office.Context:interface
               - name: ContextInformation
-                uid: 'office!Office.ContextInformation:interface'
+                uid: office!Office.ContextInformation:interface
               - name: ContextMenu
-                uid: 'office!Office.ContextMenu:interface'
+                uid: office!Office.ContextMenu:interface
               - name: ContextMenuControl
-                uid: 'office!Office.ContextMenuControl:interface'
+                uid: office!Office.ContextMenuControl:interface
               - name: ContextMenuUpdaterData
-                uid: 'office!Office.ContextMenuUpdaterData:interface'
+                uid: office!Office.ContextMenuUpdaterData:interface
               - name: Control
-                uid: 'office!Office.Control:interface'
+                uid: office!Office.Control:interface
               - name: CustomXmlNode
-                uid: 'office!Office.CustomXmlNode:interface'
+                uid: office!Office.CustomXmlNode:interface
               - name: CustomXmlPart
-                uid: 'office!Office.CustomXmlPart:interface'
+                uid: office!Office.CustomXmlPart:interface
               - name: CustomXmlParts
-                uid: 'office!Office.CustomXmlParts:interface'
+                uid: office!Office.CustomXmlParts:interface
               - name: CustomXmlPrefixMappings
-                uid: 'office!Office.CustomXmlPrefixMappings:interface'
+                uid: office!Office.CustomXmlPrefixMappings:interface
               - name: DevicePermission
-                uid: 'office!Office.DevicePermission:interface'
+                uid: office!Office.DevicePermission:interface
               - name: Dialog
-                uid: 'office!Office.Dialog:interface'
+                uid: office!Office.Dialog:interface
               - name: DialogMessageOptions
-                uid: 'office!Office.DialogMessageOptions:interface'
+                uid: office!Office.DialogMessageOptions:interface
               - name: DialogOptions
-                uid: 'office!Office.DialogOptions:interface'
+                uid: office!Office.DialogOptions:interface
               - name: DialogParentMessageReceivedEventArgs
-                uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+                uid: office!Office.DialogParentMessageReceivedEventArgs:interface
               - name: Document
-                uid: 'office!Office.Document:interface'
+                uid: office!Office.Document:interface
               - name: DocumentSelectionChangedEventArgs
-                uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
+                uid: office!Office.DocumentSelectionChangedEventArgs:interface
               - name: Error
-                uid: 'office!Office.Error:interface'
+                uid: office!Office.Error:interface
+              - name: ExtensionLifeCycle
+                uid: office!Office.ExtensionLifeCycle:interface
               - name: File
-                uid: 'office!Office.File:interface'
+                uid: office!Office.File:interface
               - name: FileProperties
-                uid: 'office!Office.FileProperties:interface'
+                uid: office!Office.FileProperties:interface
               - name: GetBindingDataOptions
-                uid: 'office!Office.GetBindingDataOptions:interface'
+                uid: office!Office.GetBindingDataOptions:interface
               - name: GetFileOptions
-                uid: 'office!Office.GetFileOptions:interface'
+                uid: office!Office.GetFileOptions:interface
               - name: GetSelectedDataOptions
-                uid: 'office!Office.GetSelectedDataOptions:interface'
+                uid: office!Office.GetSelectedDataOptions:interface
               - name: GoToByIdOptions
-                uid: 'office!Office.GoToByIdOptions:interface'
+                uid: office!Office.GoToByIdOptions:interface
               - name: Group
-                uid: 'office!Office.Group:interface'
+                uid: office!Office.Group:interface
               - name: IPromiseConstructor
-                uid: 'office!Office.IPromiseConstructor:interface'
+                uid: office!Office.IPromiseConstructor:interface
               - name: MatrixBinding
-                uid: 'office!Office.MatrixBinding:interface'
+                uid: office!Office.MatrixBinding:interface
               - name: NodeDeletedEventArgs
-                uid: 'office!Office.NodeDeletedEventArgs:interface'
+                uid: office!Office.NodeDeletedEventArgs:interface
               - name: NodeInsertedEventArgs
-                uid: 'office!Office.NodeInsertedEventArgs:interface'
+                uid: office!Office.NodeInsertedEventArgs:interface
               - name: NodeReplacedEventArgs
-                uid: 'office!Office.NodeReplacedEventArgs:interface'
+                uid: office!Office.NodeReplacedEventArgs:interface
               - name: OfficeTheme
-                uid: 'office!Office.OfficeTheme:interface'
+                uid: office!Office.OfficeTheme:interface
               - name: RangeCoordinates
-                uid: 'office!Office.RangeCoordinates:interface'
+                uid: office!Office.RangeCoordinates:interface
               - name: RangeFormatConfiguration
-                uid: 'office!Office.RangeFormatConfiguration:interface'
+                uid: office!Office.RangeFormatConfiguration:interface
               - name: RemoveHandlerOptions
-                uid: 'office!Office.RemoveHandlerOptions:interface'
+                uid: office!Office.RemoveHandlerOptions:interface
               - name: RequirementSetSupport
-                uid: 'office!Office.RequirementSetSupport:interface'
+                uid: office!Office.RequirementSetSupport:interface
               - name: Ribbon
-                uid: 'office!Office.Ribbon:interface'
+                uid: office!Office.Ribbon:interface
               - name: RibbonUpdaterData
-                uid: 'office!Office.RibbonUpdaterData:interface'
+                uid: office!Office.RibbonUpdaterData:interface
               - name: SaveSettingsOptions
-                uid: 'office!Office.SaveSettingsOptions:interface'
+                uid: office!Office.SaveSettingsOptions:interface
               - name: SetBindingDataOptions
-                uid: 'office!Office.SetBindingDataOptions:interface'
+                uid: office!Office.SetBindingDataOptions:interface
               - name: SetSelectedDataOptions
-                uid: 'office!Office.SetSelectedDataOptions:interface'
+                uid: office!Office.SetSelectedDataOptions:interface
               - name: Settings
-                uid: 'office!Office.Settings:interface'
+                uid: office!Office.Settings:interface
               - name: SettingsChangedEventArgs
-                uid: 'office!Office.SettingsChangedEventArgs:interface'
+                uid: office!Office.SettingsChangedEventArgs:interface
               - name: Slice
-                uid: 'office!Office.Slice:interface'
+                uid: office!Office.Slice:interface
               - name: Tab
-                uid: 'office!Office.Tab:interface'
+                uid: office!Office.Tab:interface
               - name: TableBinding
-                uid: 'office!Office.TableBinding:interface'
+                uid: office!Office.TableBinding:interface
               - name: TableData
-                uid: 'office!Office.TableData:class'
+                uid: office!Office.TableData:class
+              - name: TaskPane
+                uid: office!Office.TaskPane:interface
               - name: TextBinding
-                uid: 'office!Office.TextBinding:interface'
+                uid: office!Office.TextBinding:interface
               - name: UI
-                uid: 'office!Office.UI:interface'
+                uid: office!Office.UI:interface
               - name: Urls
-                uid: 'office!Office.Urls:interface'
+                uid: office!Office.Urls:interface
               - name: VisibilityModeChangedMessage
-                uid: 'office!Office.VisibilityModeChangedMessage:interface'
+                uid: office!Office.VisibilityModeChangedMessage:interface
           - name: OfficeExtension
+            uid: ''
             items:
               - name: ClientObject
-                uid: 'office!OfficeExtension.ClientObject:class'
+                uid: office!OfficeExtension.ClientObject:class
               - name: ClientRequestContext
-                uid: 'office!OfficeExtension.ClientRequestContext:class'
+                uid: office!OfficeExtension.ClientRequestContext:class
               - name: ClientResult
-                uid: 'office!OfficeExtension.ClientResult:class'
+                uid: office!OfficeExtension.ClientResult:class
               - name: DebugInfo
-                uid: 'office!OfficeExtension.DebugInfo:interface'
+                uid: office!OfficeExtension.DebugInfo:interface
               - name: EmbeddedOptions
-                uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+                uid: office!OfficeExtension.EmbeddedOptions:interface
               - name: EmbeddedSession
-                uid: 'office!OfficeExtension.EmbeddedSession:class'
+                uid: office!OfficeExtension.EmbeddedSession:class
               - name: Error
-                uid: 'office!OfficeExtension.Error:class'
+                uid: office!OfficeExtension.Error:class
               - name: ErrorCodes
-                uid: 'office!OfficeExtension.ErrorCodes:class'
+                uid: office!OfficeExtension.ErrorCodes:class
               - name: EventHandlerResult
-                uid: 'office!OfficeExtension.EventHandlerResult:class'
+                uid: office!OfficeExtension.EventHandlerResult:class
               - name: EventHandlers
-                uid: 'office!OfficeExtension.EventHandlers:class'
+                uid: office!OfficeExtension.EventHandlers:class
               - name: EventInfo
-                uid: 'office!OfficeExtension.EventInfo:interface'
+                uid: office!OfficeExtension.EventInfo:interface
               - name: IPromise
-                uid: 'office!OfficeExtension.IPromise:type'
+                uid: office!OfficeExtension.IPromise:type
               - name: LoadOption
-                uid: 'office!OfficeExtension.LoadOption:interface'
+                uid: office!OfficeExtension.LoadOption:interface
               - name: RequestContextDebugInfo
-                uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+                uid: office!OfficeExtension.RequestContextDebugInfo:interface
               - name: RequestUrlAndHeaderInfo
-                uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+                uid: office!OfficeExtension.RequestUrlAndHeaderInfo:interface
               - name: RunOptions
-                uid: 'office!OfficeExtension.RunOptions:interface'
+                uid: office!OfficeExtension.RunOptions:interface
               - name: TrackedObjects
-                uid: 'office!OfficeExtension.TrackedObjects:class'
+                uid: office!OfficeExtension.TrackedObjects:class
               - name: UpdateOptions
-                uid: 'office!OfficeExtension.UpdateOptions:interface'
+                uid: office!OfficeExtension.UpdateOptions:interface
           - name: OfficeRuntime
             uid: office-runtime!
             items:
               - name: ApiInformation
-                uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
+                uid: office-runtime!OfficeRuntime.ApiInformation:interface
               - name: Auth
-                uid: 'office-runtime!OfficeRuntime.Auth:interface'
+                uid: office-runtime!OfficeRuntime.Auth:interface
               - name: AuthOptions
-                uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
+                uid: office-runtime!OfficeRuntime.AuthOptions:interface
               - name: Dialog
-                uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+                uid: office-runtime!OfficeRuntime.Dialog:interface
               - name: DisplayWebDialogOptions
-                uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+                uid: office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface
               - name: Storage
-                uid: 'office-runtime!OfficeRuntime.Storage:interface'
+                uid: office-runtime!OfficeRuntime.Storage:interface
   - name: Add-in only manifest reference
     items:
       - name: Add-in only manifest overview
@@ -816,12 +1493,18 @@ items:
             displayName: Excel
           - name: CustomFunctionsRuntime API requirement sets
             href: ../../requirement-sets/excel/custom-functions-requirement-sets.md
-            displayName: 'Excel, Custom Functions'
+            displayName: Excel, Custom Functions
           - name: Excel preview APIs
             href: ../../requirement-sets/excel/excel-preview-apis.md
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.20 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-20-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.19 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-19-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.18 requirement set
             href: ../../requirement-sets/excel/excel-api-1-18-requirement-set.md
@@ -1153,6 +1836,14 @@ items:
           - name: PowerPoint preview APIs
             href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
             displayName: PowerPoint
+          - name: PowerPointApi 1.9 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-9-requirement-set.md
+            displayName: PowerPoint
+          - name: PowerPointApi 1.8 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-8-requirement-set.md
+            displayName: PowerPoint
           - name: PowerPointApi 1.7 requirement set
             href: >-
               ../../requirement-sets/powerpoint/powerpoint-api-1-7-requirement-set.md
@@ -1191,6 +1882,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.3 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.3-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.2 requirement set
             href: >-
@@ -1256,3 +1951,5 @@ items:
             href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
           - name: Shared Runtime requirement sets
             href: ../../requirement-sets/common/shared-runtime-requirement-sets.md
+          - name: Task Pane API requirement sets
+            href: ../../requirement-sets/common/task-pane-api-requirement-sets.md

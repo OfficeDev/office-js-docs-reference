@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Interfaces.PaneCollectionLoadOptions
+uid: word!Word.Interfaces.PaneCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.PaneCollectionLoadOptions
+summary: Represents the collection of [Word.Pane](xref:word!Word.Pane:class) objects.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.PaneCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: selection
+    uid: word!Word.Interfaces.PaneCollectionLoadOptions#selection:member
+    package: word!
+    fullName: selection
+    summary: >-
+      For EACH ITEM in the collection: Returns a `Selection` object that
+      represents the current selection in the pane.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'selection?: Word.Interfaces.SelectionLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.SelectionLoadOptions:interface" />

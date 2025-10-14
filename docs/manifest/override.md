@@ -198,9 +198,9 @@ The **\<Override\>** element for `RequirementToken` must contain the following c
 ## Override element for `Runtime`
 
 > [!IMPORTANT]
-> Support for this element was introduced in [Mailbox requirement set 1.10](../requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10.md) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
+> Support for this element was introduced with the [event-based activation feature](/office/dev/add-ins/develop/event-based-activation). See [the list of supported events](/office/dev/add-ins/develop/event-based-activation#supported-events) to learn when support was enabled for each event in each Office application.
 
-An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook on Windows requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) and [ReportPhishingCommandSurface extension point (preview)](/javascript/api/manifest/extensionpoint) handlers.
+An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Excel, PowerPoint, and Word on Windows and classic Outlook on Windows require this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) and [ReportPhishingCommandSurface extension point](/javascript/api/manifest/extensionpoint) handlers.
 
 ```xml
 <Runtime resid="WebViewRuntime.Url">
@@ -208,7 +208,7 @@ An **\<Override\>** element expresses a conditional and can be read as an "If ..
 </Runtime>
 ```
 
-**Add-in type:** Mail
+**Add-in type:** Document, Mail, Presentation, Workbook
 
 ### Syntax
 
@@ -244,4 +244,4 @@ An **\<Override\>** element expresses a conditional and can be read as an "If ..
 ### See also
 
 - [Runtime](runtime.md)
-- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)
+- [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation)

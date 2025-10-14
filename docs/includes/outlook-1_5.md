@@ -1,5 +1,18 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[DragAndDropEventArgs](/javascript/api/outlook/office.draganddropeventargs)|[dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-draganddropeventdata-member)|Gets the details about the mouse pointer position within an add-in's task pane and the messages or file attachments being dragged and dropped into the task pane.|
+||[type](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-type-member)|Gets the type of the event.|
+|[DragoverEventData](/javascript/api/outlook/office.dragovereventdata)|[pageX](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-pagex-member)|Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.|
+||[pageY](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-pagey-member)|Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.|
+||[type](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-type-member)|Gets the type of drag-and-drop event.|
+|[DropEventData](/javascript/api/outlook/office.dropeventdata)|[dataTransfer](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-datatransfer-member)|Gets the messages or file attachments being dragged and dropped into an add-in's task pane.|
+||[pageX](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-pagex-member)|Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.|
+||[pageY](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-pagey-member)|Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.|
+||[type](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-type-member)|Gets the type of drag-and-drop event.|
+|[DroppedItemDetails](/javascript/api/outlook/office.droppeditemdetails)|[fileContent](/javascript/api/outlook/office.droppeditemdetails#outlook-office-droppeditemdetails-filecontent-member)|Gets the contents of the file being dragged and dropped.|
+||[name](/javascript/api/outlook/office.droppeditemdetails#outlook-office-droppeditemdetails-name-member)|Gets the name of the file being dragged and dropped.|
+||[type](/javascript/api/outlook/office.droppeditemdetails#outlook-office-droppeditemdetails-type-member)|Gets the type of the file being dragged and dropped.|
+|[DroppedItems](/javascript/api/outlook/office.droppeditems)|[files](/javascript/api/outlook/office.droppeditems#outlook-office-droppeditems-files-member)|Gets an array of the messages or file attachments being dragged and dropped into an add-in's task pane.|
 |[Mailbox](/javascript/api/outlook/office.mailbox)|[addHandlerAsync(eventType: Office.EventType \| string, handler: any, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1))|Adds an event handler for a supported event.|
 ||[addHandlerAsync(eventType: Office.EventType \| string, handler: any, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1))|Adds an event handler for a supported event.|
 ||[getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-getcallbacktokenasync-member(1))|Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).|

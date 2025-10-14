@@ -141,8 +141,8 @@
 ||[firstPage](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-firstpage-member)|The first page header/footer, for all other pages general or even/odd is used.|
 ||[oddPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-oddpages-member)|The header/footer to use for odd pages, even header/footer needs to be specified for even pages.|
 ||[state](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-state-member)|The state by which headers/footers are set.|
-||[useSheetMargins](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-usesheetmargins-member)|Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.|
-||[useSheetScale](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-usesheetscale-member)|Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.|
+||[useSheetMargins](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-usesheetmargins-member)|Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.|
+||[useSheetScale](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-usesheetscale-member)|Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.|
 |[Image](/javascript/api/excel/excel.image)|[format](/javascript/api/excel/excel.image#excel-excel-image-format-member)|Returns the format of the image.|
 ||[id](/javascript/api/excel/excel.image#excel-excel-image-id-member)|Specifies the shape identifier for the image object.|
 ||[shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)|Returns the `Shape` object associated with the image.|
