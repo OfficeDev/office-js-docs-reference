@@ -2029,3 +2029,5 @@ items:
             href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
           - name: Shared Runtime requirement sets
             href: ../../requirement-sets/common/shared-runtime-requirement-sets.md
+          - name: Task Pane API requirement sets
+            href: ../../requirement-sets/common/task-pane-api-requirement-sets.md
