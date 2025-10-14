@@ -178,6 +178,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/excel/snippets.yaml", yaml.dump(excelSnippets), "excel");
     writeSnippetFileAndClearYamlIfNew("../json/excel_online/snippets.yaml", yaml.dump(excelSnippets), "excel");
+    writeSnippetFileAndClearYamlIfNew("../json/excel_desktop_1_1/snippets.yaml", yaml.dump(excelSnippets), "excel");
     for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
         writeSnippetFileAndClearYamlIfNew(`../json/excel_1_${i}/snippets.yaml`, yaml.dump(excelSnippets), "excel");
     }
@@ -256,6 +257,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle ExcelApiDesktop 1.1 case.
+        console.log(`\nStarting ${host}_desktop_1_1...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_1/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_1/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_1`);
     } else if (host === "word") {
         currentRelease = CURRENT_WORD_RELEASE;
         // Handle WordApiOnline corner case.

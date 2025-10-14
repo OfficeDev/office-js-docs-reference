@@ -45,6 +45,8 @@ if [ ! -d "tool-inputs" ]; then
     mkdir tool-inputs
 fi
 
+npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts "Api set: ExcelApiOnline 1.1" configs/excel-online-config.json
+npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts "Api set: ExcelApiDesktop 1.1" configs/excel-desktop-1_1-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts "Api set: ExcelApiOnline 1.1" configs/excel-online-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts "Api set: ExcelApi 1.20" configs/excel-1_20-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts "Api set: ExcelApi 1.19" configs/excel-1_19-config.json
@@ -127,7 +129,8 @@ npx version-remover api-extractor-inputs-word-release/word_1_2/word.d.ts api-ext
 npx version-remover api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts "Api set: WordApi 1.1" configs/word-1_1-config.json
 
 
-npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../docs/includes/excel-preview javascript/api/excel/ configs/excel-preview-config.json
+npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts ../docs/includes/excel-preview javascript/api/excel/ configs/excel-preview-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts ../docs/includes/excel-desktop-1_1 javascript/api/excel/ configs/excel-desktop-1_1-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts ../docs/includes/excel-online javascript/api/excel/ configs/excel-online-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../docs/includes/excel-1_20 javascript/api/excel/ configs/excel-1_20-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../docs/includes/excel-1_19 javascript/api/excel/ configs/excel-1_19-config.json
@@ -210,7 +213,6 @@ if [ ! -d "json/office-release" ]; then
     ../node_modules/.bin/api-extractor run
     popd
 fi
-
 if [ ! -d "json/excel" ]; then
     echo Running API Extractor for Excel preview.
     pushd api-extractor-inputs-excel
@@ -220,6 +222,12 @@ fi
 if [ ! -d "json/excel_online" ]; then
     echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release/excel_online
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/excel_desktop_1_1" ]; then
+    echo Running API Extractor for Excel desktop 1.1.
+    pushd api-extractor-inputs-excel-release/excel_desktop_1_1
     ../../node_modules/.bin/api-extractor run
     popd
 fi
@@ -707,6 +715,9 @@ if [ ! -d "yaml/excel_1_19" ]; then
 fi
 if [ ! -d "yaml/excel_1_20" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_20 --output-folder ./yaml/excel_1_20 --office 2>/dev/null
+fi
+if [ ! -d "yaml/excel_desktop_1_1" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_desktop_1_1 --output-folder ./yaml/excel_desktop_1_1 --office 2>/dev/null
 fi
 if [ ! -d "yaml/excel_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_online --output-folder ./yaml/excel_online --office 2>/dev/null

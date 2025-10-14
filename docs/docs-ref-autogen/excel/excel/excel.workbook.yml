@@ -765,67 +765,18 @@ methods:
       return:
         type: void
         description: ''
-  - name: enterPreviewMode()
-    uid: excel!Excel.Workbook#enterPreviewMode:member(1)
-    package: excel!
-    fullName: enterPreviewMode()
-    summary: >-
-      Enters Scratchpad Preview Mode for the workbook, showing changes suggested
-      by Copilot to the user.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'enterPreviewMode(): void;'
-      return:
-        type: void
-        description: ''
-  - name: exitPreviewMode(applyChanges)
-    uid: excel!Excel.Workbook#exitPreviewMode:member(1)
-    package: excel!
-    fullName: exitPreviewMode(applyChanges)
-    summary: >-
-      Exits Scratchpad Preview Mode for the workbook. This method should be
-      called once the user decides to apply or discard changes suggested by
-      Copilot.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'exitPreviewMode(applyChanges: boolean): void;'
-      parameters:
-        - id: applyChanges
-          description: >-
-            A Boolean value that specifies whether the user wants to apply the
-            changes proposed by Copilot shown in Preview Mode (`true`<!-- -->),
-            or discard the changes shown in Preview Mode (`false`<!-- -->). The
-            default value is `false`<!-- -->, as accepting changes should be an
-            active and explicit choice by the user.
-          type: boolean
-      return:
-        type: void
-        description: ''
   - name: focus()
     uid: excel!Excel.Workbook#focus:member(1)
     package: excel!
     fullName: focus()
     summary: >-
-      Sets focus on the workbook. This causes the Excel grid or the currently
+      Sets focus on the workbook. This will cause the grid or the currently
       active object to receive keyboard events.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'focus(): void;'

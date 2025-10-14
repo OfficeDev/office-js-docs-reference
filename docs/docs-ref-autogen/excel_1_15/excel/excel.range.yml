@@ -1916,8 +1916,7 @@ methods:
     summary: >-
       Returns a range object that includes the current range and up to the edge
       of the range, based on the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the
-      Excel on Windows UI.
+      Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -1982,8 +1981,7 @@ methods:
     summary: >-
       Returns a range object that includes the current range and up to the edge
       of the range, based on the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the
-      Excel on Windows UI.
+      Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -2499,8 +2497,8 @@ methods:
     fullName: getRangeEdge(direction, activeCell)
     summary: >-
       Returns a range object that is the edge cell of the data region that
-      corresponds to the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+      corresponds to the provided direction. This matches the Ctrl+Arrow key
+      behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -2564,8 +2562,8 @@ methods:
     fullName: getRangeEdge(direction, activeCell)
     summary: >-
       Returns a range object that is the edge cell of the data region that
-      corresponds to the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+      corresponds to the provided direction. This matches the Ctrl+Arrow key
+      behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

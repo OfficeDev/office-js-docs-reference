@@ -766,11 +766,10 @@ methods:
       Checks the spelling of words in this worksheet. This method opens the
       Spelling dialog box in the Excel UI.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'checkSpelling(options?: Excel.CheckSpellingOptions): void;'
@@ -787,11 +786,10 @@ methods:
     fullName: clearArrows()
     summary: Clears the tracer arrows from the worksheet.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearArrows(): void;'
@@ -930,11 +928,10 @@ methods:
       supported. If the formula name is invalid, the `InvalidArgument` error is
       thrown.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'evaluate(name: string): OfficeExtension.ClientResult<any>;'

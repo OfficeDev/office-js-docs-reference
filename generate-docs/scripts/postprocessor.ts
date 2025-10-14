@@ -9,7 +9,7 @@ import * as path from "path";
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
 const HOST_VERSION_MAP = [
-    { host: "excel", versions: 21 }, // not including online
+    { host: "excel", versions: 21 }, // not including online or desktop
     { host: "onenote", versions: 1 },
     { host: "outlook", versions: 16 },
     { host: "powerpoint", versions: 10 },
@@ -41,6 +41,10 @@ const NAMESPACE_REPLACEMENTS = {
         { from: /\/office\/dev\/add-ins\/reference\/overview\/visio-javascript-reference-overview/g, to: "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets" }
     ]
 };
+
+const SPECIAL_EXCEL_VERSIONS = [
+    { folder: "excel_desktop_1_1", version: 20.5 },
+];
 
 const SPECIAL_WORD_VERSIONS = [
     { folder: "word_desktop_1_3", version: 9.10 },
@@ -255,6 +259,11 @@ function processSpecialCases(tocWithReleaseCommon: Toc): void {
     // Special cases for Excel and Word Online
     scrubAndWriteToc(path.join(docsDestination, "excel_online"), tocWithReleaseCommon, "excel", 99);
     scrubAndWriteToc(path.join(docsDestination, "word_online"), tocWithReleaseCommon, "word", 99);
+
+    // Special cases for Excel Desktop versions
+    SPECIAL_EXCEL_VERSIONS.forEach(({ folder, version }) => {
+        scrubAndWriteToc(path.join(docsDestination, folder), tocWithReleaseCommon, "excel", version);
+    });
 
     // Special cases for Word Desktop versions
     SPECIAL_WORD_VERSIONS.forEach(({ folder, version }) => {

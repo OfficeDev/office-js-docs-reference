@@ -4799,7 +4799,7 @@ excel,Excel.Pane,"load(options)",Method,Excellent,false
 excel,Excel.Pane,"load(propertyNames)",Method,Excellent,false
 excel,Excel.Pane,"load(propertyNamesAndPaths)",Method,Excellent,false
 excel,Excel.Pane,"toJSON()",Method,Excellent,false
-excel,Excel.PaneCollection,N/A,Class,Good,false
+excel,Excel.PaneCollection,N/A,Class,Fine,false
 excel,Excel.PaneCollection,"context",Property,Excellent,false
 excel,Excel.PaneCollection,"items",Property,Poor,false
 excel,Excel.PaneCollection,"getCount()",Method,Fine,false
@@ -6674,25 +6674,25 @@ excel,Excel.Window,"activeWorksheet",Property,Good,false
 excel,Excel.Window,"autoFilterDateGroupingEnabled",Property,Excellent,false
 excel,Excel.Window,"context",Property,Excellent,false
 excel,Excel.Window,"enableResize",Property,Excellent,false
-excel,Excel.Window,"freezePanes",Property,Excellent,false
+excel,Excel.Window,"freezePanes",Property,Good,false
 excel,Excel.Window,"height",Property,Good,false
 excel,Excel.Window,"index",Property,Poor,false
 excel,Excel.Window,"isVisible",Property,Good,false
-excel,Excel.Window,"left",Property,Good,false
+excel,Excel.Window,"left",Property,Great,false
 excel,Excel.Window,"name",Property,Good,false
-excel,Excel.Window,"panes",Property,Poor,false
+excel,Excel.Window,"panes",Property,Fine,false
 excel,Excel.Window,"rangeSelection",Property,Poor,false
 excel,Excel.Window,"scrollColumn",Property,Good,false
 excel,Excel.Window,"scrollRow",Property,Good,false
-excel,Excel.Window,"showFormulas",Property,Good,false
-excel,Excel.Window,"showGridlines",Property,Good,false
-excel,Excel.Window,"showHeadings",Property,Good,false
+excel,Excel.Window,"showFormulas",Property,Great,false
+excel,Excel.Window,"showGridlines",Property,Great,false
+excel,Excel.Window,"showHeadings",Property,Great,false
 excel,Excel.Window,"showHorizontalScrollBar",Property,Great,false
-excel,Excel.Window,"showOutline",Property,Great,false
-excel,Excel.Window,"showRightToLeft",Property,Great,false
-excel,Excel.Window,"showRuler",Property,Good,false
+excel,Excel.Window,"showOutline",Property,Good,false
+excel,Excel.Window,"showRightToLeft",Property,Good,false
+excel,Excel.Window,"showRuler",Property,Great,false
 excel,Excel.Window,"showVerticalScrollBar",Property,Great,false
-excel,Excel.Window,"showWhitespace",Property,Good,false
+excel,Excel.Window,"showWhitespace",Property,Great,false
 excel,Excel.Window,"showWorkbookTabs",Property,Great,false
 excel,Excel.Window,"showZeros",Property,Good,false
 excel,Excel.Window,"split",Property,Good,false
@@ -6701,21 +6701,21 @@ excel,Excel.Window,"splitHorizontal",Property,Good,false
 excel,Excel.Window,"splitRow",Property,Good,false
 excel,Excel.Window,"splitVertical",Property,Good,false
 excel,Excel.Window,"tabRatio",Property,Good,false
-excel,Excel.Window,"top",Property,Good,false
+excel,Excel.Window,"top",Property,Great,false
 excel,Excel.Window,"type",Property,Good,false
 excel,Excel.Window,"usableHeight",Property,Good,false
 excel,Excel.Window,"usableWidth",Property,Good,false
 excel,Excel.Window,"view",Property,Good,false
 excel,Excel.Window,"visibleRange",Property,Poor,false
-excel,Excel.Window,"width",Property,Excellent,false
-excel,Excel.Window,"windowNumber",Property,Good,false
-excel,Excel.Window,"windowState",Property,Excellent,false
+excel,Excel.Window,"width",Property,Good,false
+excel,Excel.Window,"windowNumber",Property,Poor,false
+excel,Excel.Window,"windowState",Property,Good,false
 excel,Excel.Window,"zoom",Property,Excellent,false
 excel,Excel.Window,"activate()",Method,Poor,false
 excel,Excel.Window,"activateNext()",Method,Poor,false
 excel,Excel.Window,"activatePrevious()",Method,Poor,false
 excel,Excel.Window,"close()",Method,Poor,false
-excel,Excel.Window,"largeScroll(Down, Up, ToRight, ToLeft)",Method,Poor,false
+excel,Excel.Window,"largeScroll(Down, Up, ToRight, ToLeft)",Method,Good,false
 excel,Excel.Window,"load(options)",Method,Excellent,false
 excel,Excel.Window,"load(propertyNames)",Method,Excellent,false
 excel,Excel.Window,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -6727,7 +6727,7 @@ excel,Excel.Window,"scrollWorkbookTabs(Sheets, Position)",Method,Poor,false
 excel,Excel.Window,"scrollWorkbookTabs(Sheets, Position)",Method,Poor,false
 excel,Excel.Window,"set(properties, options)",Method,Good,false
 excel,Excel.Window,"set(properties)",Method,Good,false
-excel,Excel.Window,"smallScroll(Down, Up, ToRight, ToLeft)",Method,Poor,false
+excel,Excel.Window,"smallScroll(Down, Up, ToRight, ToLeft)",Method,Good,false
 excel,Excel.Window,"toJSON()",Method,Excellent,false
 excel,Excel.WindowCollection,N/A,Class,Fine,false
 excel,Excel.WindowCollection,"context",Property,Excellent,false
@@ -6794,8 +6794,6 @@ excel,Excel.Workbook,"usePrecisionAsDisplayed",Property,Excellent,false
 excel,Excel.Workbook,"worksheets",Property,Fine,false
 excel,Excel.Workbook,"close(closeBehavior)",Method,Poor,true
 excel,Excel.Workbook,"close(closeBehavior)",Method,Poor,false
-excel,Excel.Workbook,"enterPreviewMode()",Method,Fine,false
-excel,Excel.Workbook,"exitPreviewMode(applyChanges)",Method,Good,false
 excel,Excel.Workbook,"focus()",Method,Good,false
 excel,Excel.Workbook,"getActiveCell()",Method,Poor,true
 excel,Excel.Workbook,"getActiveChart()",Method,Great,false
