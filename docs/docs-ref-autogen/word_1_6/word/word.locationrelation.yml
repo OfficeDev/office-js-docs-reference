@@ -3,7 +3,7 @@ name: Word.LocationRelation
 uid: word!Word.LocationRelation:enum
 package: word!
 fullName: Word.LocationRelation
-summary: ''
+summary: Represents the relationship of the location of this instance to another range.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -188,7 +188,7 @@ fields:
     uid: word!Word.LocationRelation.unrelated:member
     package: word!
     summary: >-
-      Indicates that this instance and the range are in different sub-documents.
+      Indicates that this instance and the range are in different subdocuments.
 
 
       * \[ [API set: WordApi

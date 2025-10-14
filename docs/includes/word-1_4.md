@@ -1,6 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[fields](/javascript/api/word/word.body#word-word-body-fields-member)|Gets the collection of field objects in the body.|
+|[Body](/javascript/api/word/word.body)|[fields](/javascript/api/word/word.body#word-word-body-fields-member)|Gets the collection of `Field` objects in the body.|
 ||[getComments()](/javascript/api/word/word.body#word-word-body-getcomments-member(1))|Gets comments associated with the body.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.body#word-word-body-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
 |[Comment](/javascript/api/word/word.comment)|[authorEmail](/javascript/api/word/word.comment#word-word-comment-authoremail-member)|Gets the email of the comment's author.|
@@ -17,14 +17,14 @@
 |[CommentCollection](/javascript/api/word/word.commentcollection)|[getFirst()](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirst-member(1))|Gets the first comment in the collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirstornullobject-member(1))|Gets the first comment in the collection.|
 ||[items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)|Gets the loaded child items in this collection.|
-|[CommentContentRange](/javascript/api/word/word.commentcontentrange)|[bold](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-bold-member)|Specifies a value that indicates whether the comment text is bold.|
+|[CommentContentRange](/javascript/api/word/word.commentcontentrange)|[bold](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-bold-member)|Specifies whether the comment text is bold.|
 ||[hyperlink](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-hyperlink-member)|Gets the first hyperlink in the range, or sets a hyperlink on the range.|
 ||[insertText(text: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-inserttext-member(1))|Inserts text into at the specified location.|
 ||[isEmpty](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-isempty-member)|Checks whether the range length is zero.|
-||[italic](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-italic-member)|Specifies a value that indicates whether the comment text is italicized.|
-||[strikeThrough](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-strikethrough-member)|Specifies a value that indicates whether the comment text has a strikethrough.|
+||[italic](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-italic-member)|Specifies whether the comment text is italicized.|
+||[strikeThrough](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-strikethrough-member)|Specifies whether the comment text has a strikethrough.|
 ||[text](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-text-member)|Gets the text of the comment range.|
-||[underline](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-underline-member)|Specifies a value that indicates the comment text's underline type.|
+||[underline](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-underline-member)|Specifies the comment text's underline type.|
 |[CommentReply](/javascript/api/word/word.commentreply)|[authorEmail](/javascript/api/word/word.commentreply#word-word-commentreply-authoremail-member)|Gets the email of the comment reply's author.|
 ||[authorName](/javascript/api/word/word.commentreply#word-word-commentreply-authorname-member)|Gets the name of the comment reply's author.|
 ||[content](/javascript/api/word/word.commentreply#word-word-commentreply-content-member)|Specifies the comment reply's content.|
@@ -36,7 +36,7 @@
 |[CommentReplyCollection](/javascript/api/word/word.commentreplycollection)|[getFirst()](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirst-member(1))|Gets the first comment reply in the collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirstornullobject-member(1))|Gets the first comment reply in the collection.|
 ||[items](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-items-member)|Gets the loaded child items in this collection.|
-|[ContentControl](/javascript/api/word/word.contentcontrol)|[fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)|Gets the collection of field objects in the content control.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)|Gets the collection of `Field` objects in the content control.|
 ||[getComments()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))|Gets comments associated with the content control.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
 |[CustomXmlPart](/javascript/api/word/word.customxmlpart)|[delete()](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-delete-member(1))|Deletes the custom XML part.|
@@ -85,8 +85,8 @@
 ||[items](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-items-member)|Gets the loaded child items in this collection.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[fields](/javascript/api/word/word.paragraph#word-word-paragraph-fields-member)|Gets the collection of fields in the paragraph.|
 ||[getComments()](/javascript/api/word/word.paragraph#word-word-paragraph-getcomments-member(1))|Gets comments associated with the paragraph.|
-||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.paragraph#word-word-paragraph-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
-|[Range](/javascript/api/word/word.range)|[fields](/javascript/api/word/word.range#word-word-range-fields-member)|Gets the collection of field objects in the range.|
+||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.paragraph#word-word-paragraph-getreviewedtext-member(1))|Gets reviewed text based on `ChangeTrackingVersion` selection.|
+|[Range](/javascript/api/word/word.range)|[fields](/javascript/api/word/word.range#word-word-range-fields-member)|Gets the collection of `Field` objects in the range.|
 ||[getBookmarks(includeHidden?: boolean, includeAdjacent?: boolean)](/javascript/api/word/word.range#word-word-range-getbookmarks-member(1))|Gets the names all bookmarks in or overlapping the range.|
 ||[getComments()](/javascript/api/word/word.range#word-word-range-getcomments-member(1))|Gets comments associated with the range.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.range#word-word-range-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
@@ -97,12 +97,12 @@
 ||[value](/javascript/api/word/word.setting#word-word-setting-value-member)|Specifies the value of the setting.|
 |[SettingCollection](/javascript/api/word/word.settingcollection)|[add(key: string, value: any)](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1))|Creates a new setting or sets an existing setting.|
 ||[deleteAll()](/javascript/api/word/word.settingcollection#word-word-settingcollection-deleteall-member(1))|Deletes all settings in this add-in.|
-||[getCount()](/javascript/api/word/word.settingcollection#word-word-settingcollection-getcount-member(1))|Gets the count of settings.|
-||[getItem(key: string)](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitem-member(1))|Gets a setting object by its key, which is case-sensitive.|
-||[getItemOrNullObject(key: string)](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitemornullobject-member(1))|Gets a setting object by its key, which is case-sensitive.|
+||[getCount()](/javascript/api/word/word.settingcollection#word-word-settingcollection-getcount-member(1))|Gets the number of items in the collection.|
+||[getItem(key: string)](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitem-member(1))|Gets a `Setting` object by its key, which is case-sensitive.|
+||[getItemOrNullObject(key: string)](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitemornullobject-member(1))|Gets a `Setting` object by its key, which is case-sensitive.|
 ||[items](/javascript/api/word/word.settingcollection#word-word-settingcollection-items-member)|Gets the loaded child items in this collection.|
-|[Table](/javascript/api/word/word.table)|[fields](/javascript/api/word/word.table#word-word-table-fields-member)|Gets the collection of field objects in the table.|
+|[Table](/javascript/api/word/word.table)|[fields](/javascript/api/word/word.table#word-word-table-fields-member)|Gets the collection of `Field` objects in the table.|
 ||[mergeCells(topRow: number, firstCell: number, bottomRow: number, lastCell: number)](/javascript/api/word/word.table#word-word-table-mergecells-member(1))|Merges the cells bounded inclusively by a first and last cell.|
 |[TableCell](/javascript/api/word/word.tablecell)|[split(rowCount: number, columnCount: number)](/javascript/api/word/word.tablecell#word-word-tablecell-split-member(1))|Splits the cell into the specified number of rows and columns.|
-|[TableRow](/javascript/api/word/word.tablerow)|[fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)|Gets the collection of field objects in the table row.|
+|[TableRow](/javascript/api/word/word.tablerow)|[fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)|Gets the collection of `Field` objects in the table row.|
 ||[merge()](/javascript/api/word/word.tablerow#word-word-tablerow-merge-member(1))|Merges the row into one cell.|

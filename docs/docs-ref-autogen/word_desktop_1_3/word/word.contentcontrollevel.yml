@@ -3,7 +3,7 @@ name: Word.ContentControlLevel
 uid: word!Word.ContentControlLevel:enum
 package: word!
 fullName: Word.ContentControlLevel
-summary: Content control level types.
+summary: Represents the content control level type.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

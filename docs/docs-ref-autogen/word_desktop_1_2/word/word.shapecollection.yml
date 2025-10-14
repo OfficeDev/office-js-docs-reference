@@ -92,7 +92,7 @@ methods:
         Word.ShapeCollection;
       parameters:
         - id: types
-          description: Required. An array of geometric shape subtypes.
+          description: An array of geometric shape subtypes.
           type: <xref uid="word!Word.GeometricShapeType:enum" />[]
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
@@ -114,7 +114,7 @@ methods:
       content: 'getById(id: number): Word.Shape;'
       parameters:
         - id: id
-          description: Required. A shape identifier.
+          description: A shape identifier.
           type: number
       return:
         type: <xref uid="word!Word.Shape:class" />
@@ -140,7 +140,7 @@ methods:
       content: 'getByIdOrNullObject(id: number): Word.Shape;'
       parameters:
         - id: id
-          description: Required. A shape identifier.
+          description: A shape identifier.
           type: number
       return:
         type: <xref uid="word!Word.Shape:class" />
@@ -160,7 +160,7 @@ methods:
       content: 'getByIds(ids: number[]): Word.ShapeCollection;'
       parameters:
         - id: ids
-          description: Required. An array of shape identifiers.
+          description: An array of shape identifiers.
           type: number[]
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
@@ -180,7 +180,7 @@ methods:
       content: 'getByNames(names: string[]): Word.ShapeCollection;'
       parameters:
         - id: names
-          description: Required. An array of shape names.
+          description: An array of shape names.
           type: string[]
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
@@ -226,7 +226,7 @@ methods:
       content: 'getByTypes(types: Word.ShapeType[]): Word.ShapeCollection;'
       parameters:
         - id: types
-          description: Required. An array of shape types.
+          description: An array of shape types.
           type: <xref uid="word!Word.ShapeType:enum" />[]
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
@@ -304,7 +304,7 @@ methods:
     fullName: group()
     summary: >-
       Groups floating shapes in this collection, inline shapes will be skipped.
-      Returns a Shape object that represents the new group of shapes.
+      Returns a `Shape` object that represents the new group of shapes.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

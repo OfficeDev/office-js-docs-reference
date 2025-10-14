@@ -219,15 +219,13 @@ methods:
         boolean): void;
       parameters:
         - id: fileName
-          description: Required. The name of the file.
+          description: The name of the file.
           type: string
         - id: editNow
-          description: Required. `true` to start editing now.
+          description: '`true` to start editing now.'
           type: boolean
         - id: overwrite
-          description: >-
-            Required. `true` to overwrite if there's another file with the same
-            name.
+          description: '`true` to overwrite if there''s another file with the same name.'
           type: boolean
       return:
         type: void

@@ -125,7 +125,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the body. The collection
+      Gets the collection of `InlinePicture` objects in the body. The collection
       doesn't include floating images.
     remarks: >-
       \[ [API set: WordApi
@@ -168,7 +168,7 @@ properties:
     uid: word!Word.Body#lists:member
     package: word!
     fullName: lists
-    summary: Gets the collection of list objects in the body.
+    summary: Gets the collection of `List` objects in the body.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -227,7 +227,7 @@ properties:
     uid: word!Word.Body#paragraphs:member
     package: word!
     fullName: paragraphs
-    summary: Gets the collection of paragraph objects in the body.
+    summary: Gets the collection of `Paragraph` objects in the body.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -561,7 +561,7 @@ properties:
     uid: word!Word.Body#tables:member
     package: word!
     fullName: tables
-    summary: Gets the collection of table objects in the body.
+    summary: Gets the collection of `Table` objects in the body.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -598,7 +598,7 @@ properties:
     uid: word!Word.Body#text:member
     package: word!
     fullName: text
-    summary: Gets the text of the body. Use the insertText method to insert text.
+    summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -643,9 +643,10 @@ properties:
     package: word!
     fullName: type
     summary: >-
-      Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header',
-      'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and
-      ‘NoteItem’ are supported in WordAPIOnline 1.1 and later.
+      Gets the type of the body. The type can be `mainDoc`<!-- -->,
+      `section`<!-- -->, `header`<!-- -->, `footer`<!-- -->, or `tableCell`<!--
+      -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
+      `noteItem` are supported in WordAPI 1.5 and later.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -698,7 +699,7 @@ methods:
     package: word!
     fullName: clear()
     summary: >-
-      Clears the contents of the body object. The user can perform the undo
+      Clears the contents of the `Body` object. The user can perform the undo
       operation on the cleared content.
     remarks: >-
       \[ [API set: WordApi
@@ -748,7 +749,7 @@ methods:
     package: word!
     fullName: getHtml()
     summary: >-
-      Gets an HTML representation of the body object. When rendered in a web
+      Gets an HTML representation of the `Body` object. When rendered in a web
       page or HTML viewer, the formatting will be a close, but not exact, match
       for of the formatting of the document. This method doesn't return the
       exact same HTML for the same document on different platforms (Windows,
@@ -799,7 +800,7 @@ methods:
     uid: word!Word.Body#getOoxml:member(1)
     package: word!
     fullName: getOoxml()
-    summary: Gets the OOXML (Office Open XML) representation of the body object.
+    summary: Gets the OOXML (Office Open XML) representation of the `Body` object.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -862,8 +863,8 @@ methods:
       parameters:
         - id: rangeLocation
           description: >-
-            Optional. The range location must be 'Whole', 'Start', 'End',
-            'After', or 'Content'.
+            Optional. The range location must be `whole`<!-- -->, `start`<!--
+            -->, `end`<!-- -->, `after`<!-- -->, or `content`<!-- -->.
           type: >-
             <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
             uid="word!Word.RangeLocation.start:member" /> | <xref
@@ -922,13 +923,13 @@ methods:
         "Start" | "End"): void;
       parameters:
         - id: breakType
-          description: Required. The break type to add to the body.
+          description: The break type to add to the body.
           type: >-
             <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" |
             "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
             "Line"
         - id: insertLocation
-          description: Required. The value must be 'Start' or 'End'.
+          description: The value must be `start` or `end`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | "Start" | "End"
@@ -939,16 +940,18 @@ methods:
     uid: word!Word.Body#insertContentControl:member(1)
     package: word!
     fullName: insertContentControl(contentControlType)
-    summary: Wraps the Body object with a content control.
+    summary: Wraps the `Body` object with a content control.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
-      `PlainText` support was added in WordApi 1.5. `CheckBox` support was added
-      in WordApi 1.7. `DropDownList` and `ComboBox` support was added in WordApi
-      1.9.
+      `plainText` support was added in WordApi 1.5. `checkBox` support was added
+      in WordApi 1.7. `dropDownList` and `comboBox` support was added in WordApi
+      1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
+      `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
+      WordApiDesktop 1.3.
 
 
       #### Examples
@@ -986,21 +989,36 @@ methods:
         insertContentControl(contentControlType?:
         Word.ContentControlType.richText | Word.ContentControlType.plainText |
         Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList
-        | Word.ContentControlType.comboBox | "RichText" | "PlainText" |
-        "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
+        | Word.ContentControlType.comboBox |
+        Word.ContentControlType.buildingBlockGallery |
+        Word.ContentControlType.datePicker |
+        Word.ContentControlType.repeatingSection |
+        Word.ContentControlType.picture | Word.ContentControlType.group |
+        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
+        "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" |
+        "Group"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText',
-            'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default
-            is 'RichText'.
+            Optional. Content control type to insert. Must be `richText`<!--
+            -->, `plainText`<!-- -->, `checkBox`<!-- -->, `dropDownList`<!--
+            -->, `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->,
+            `datePicker`<!-- -->, `repeatingSection`<!-- -->, `picture`<!-- -->,
+            or `group`<!-- -->. The default is `richText`<!-- -->.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
             uid="word!Word.ContentControlType.checkBox:member" /> | <xref
             uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
-            uid="word!Word.ContentControlType.comboBox:member" /> | "RichText" |
-            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"
+            uid="word!Word.ContentControlType.comboBox:member" /> | <xref
+            uid="word!Word.ContentControlType.buildingBlockGallery:member" /> |
+            <xref uid="word!Word.ContentControlType.datePicker:member" /> |
+            <xref uid="word!Word.ContentControlType.repeatingSection:member" />
+            | <xref uid="word!Word.ContentControlType.picture:member" /> | <xref
+            uid="word!Word.ContentControlType.group:member" /> | "RichText" |
+            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
+            "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" |
+            "Picture" | "Group"
       return:
         type: <xref uid="word!Word.ContentControl:class" />
         description: ''
@@ -1058,10 +1076,12 @@ methods:
         Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1117,10 +1137,12 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: html
-          description: Required. The HTML to be inserted in the document.
+          description: The HTML to be inserted in the document.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1180,10 +1202,10 @@ methods:
         "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The Base64-encoded image to be inserted in the body.
+          description: The Base64-encoded image to be inserted in the body.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Start' or 'End'.
+          description: The value must be `start` or `end`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | "Start" | "End"
@@ -1253,10 +1275,12 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
-          description: Required. The OOXML to be inserted.
+          description: The OOXML to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1312,10 +1336,10 @@ methods:
         Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Start' or 'End'.
+          description: The value must be `start` or `end`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | "Start" | "End"
@@ -1365,13 +1389,13 @@ methods:
         values?: string[][]): Word.Table;
       parameters:
         - id: rowCount
-          description: Required. The number of rows in the table.
+          description: The number of rows in the table.
           type: number
         - id: columnCount
-          description: Required. The number of columns in the table.
+          description: The number of columns in the table.
           type: number
         - id: insertLocation
-          description: Required. The value must be 'Start' or 'End'.
+          description: The value must be `start` or `end`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | "Start" | "End"
@@ -1430,10 +1454,12 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: text
-          description: Required. Text to be inserted.
+          description: Text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1521,8 +1547,8 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the
-      body object. The search results are a collection of range objects.
+      Performs a search with the specified search options on the scope of the
+      `Body` object. The search results are a collection of `Range` objects.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1592,7 +1618,7 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: Required. The search text. Can be a maximum of 255 characters.
+          description: The search text. Can be a maximum of 255 characters.
           type: string
         - id: searchOptions
           description: Optional. Options for the search.
@@ -1652,8 +1678,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -1674,8 +1700,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void

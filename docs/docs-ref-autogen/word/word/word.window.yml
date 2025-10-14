@@ -321,7 +321,7 @@ properties:
     fullName: isEnvelopeVisible
     summary: >-
       Specifies whether the email message header is visible in the document
-      window. The default value is `False`<!-- -->.
+      window. The default value is `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -753,8 +753,8 @@ methods:
       parameters:
         - id: options
           description: >-
-            The options that define whether to save changes before closing and
-            whether to route the document.
+            Optional. The options that define whether to save changes before
+            closing and whether to route the document.
           type: <xref uid="word!Word.WindowCloseOptions:interface" />
       return:
         type: void
@@ -775,9 +775,9 @@ methods:
       parameters:
         - id: options
           description: >-
-            The options for scrolling the window by the specified number of
-            screens. If no options are specified, the window is scrolled down
-            one screen.
+            Optional. The options for scrolling the window by the specified
+            number of screens. If no options are specified, the window is
+            scrolled down one screen.
           type: <xref uid="word!Word.WindowScrollOptions:interface" />
       return:
         type: void
@@ -871,7 +871,7 @@ methods:
       content: 'pageScroll(options?: Word.WindowPageScrollOptions): void;'
       parameters:
         - id: options
-          description: The options for scrolling through the window page by page.
+          description: Optional. The options for scrolling through the window page by page.
           type: <xref uid="word!Word.WindowPageScrollOptions:interface" />
       return:
         type: void
@@ -962,9 +962,9 @@ methods:
       parameters:
         - id: options
           description: >-
-            The options for scrolling the window by the specified number of
-            lines. If no options are specified, the window is scrolled down by
-            one line.
+            Optional. The options for scrolling the window by the specified
+            number of lines. If no options are specified, the window is scrolled
+            down by one line.
           type: <xref uid="word!Word.WindowScrollOptions:interface" />
       return:
         type: void

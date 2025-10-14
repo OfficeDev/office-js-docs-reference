@@ -475,7 +475,7 @@ methods:
       content: 'delete(deleteContents?: boolean): void;'
       parameters:
         - id: deleteContents
-          description: Optional. If true, deletes the contents as well.
+          description: Optional. If `true`<!-- -->, deletes the contents as well.
           type: boolean
       return:
         type: void

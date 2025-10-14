@@ -3,17 +3,16 @@ name: Word.Interfaces.SelectionLoadOptions
 uid: word!Word.Interfaces.SelectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SelectionLoadOptions
-summary: >-
-  Represents a selected range or the insertion point in a Word document.
-
-
-  - Note: [Range](xref:word!Word.Range:class) objects share many of the same
-  methods and properties as `Selection` objects. Using `Range` objects is
-  preferable for manipulating a document when there isn't a reason to physically
-  change the current selection.
+summary: Represents a selected range or the insertion point in a Word document.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  Note: [Range](xref:word!Word.Range:class) objects share many of the same
+  methods and properties as `Selection` objects. Using `Range` objects is
+  preferable for manipulating a document when there isn't a reason to physically
+  change the current selection.
 
 isPreview: true
 isDeprecated: false

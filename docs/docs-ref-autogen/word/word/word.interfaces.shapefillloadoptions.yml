@@ -3,7 +3,9 @@ name: Word.Interfaces.ShapeFillLoadOptions
 uid: word!Word.Interfaces.ShapeFillLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShapeFillLoadOptions
-summary: Represents the fill formatting of a shape object.
+summary: >-
+  Represents the fill formatting of a [Word.Shape](xref:word!Word.Shape:class)
+  object.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

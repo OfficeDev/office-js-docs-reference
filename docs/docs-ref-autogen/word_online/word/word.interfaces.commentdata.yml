@@ -122,8 +122,8 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      Specifies the comment thread's status. Setting to true resolves the
-      comment thread. Getting a value of true means that the comment thread is
+      Specifies the comment thread's status. Setting to `true` resolves the
+      comment thread. Getting a value of `true` means that the comment thread is
       resolved.
     remarks: >-
       \[ [API set: WordApi

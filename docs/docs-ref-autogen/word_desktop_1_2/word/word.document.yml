@@ -4,9 +4,9 @@ uid: word!Word.Document:class
 package: word!
 fullName: Word.Document
 summary: >-
-  The Document object is the top level object. A Document object contains one or
-  more sections, content controls, and the body that contains the contents of
-  the document.
+  The `Document` object is the top level object. A `Document` object contains
+  one or more sections, content controls, and the body that contains the
+  contents of the document.
 remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -120,7 +120,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the main document. The body is the text that
+      Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
       \[ [API set: WordApi
@@ -184,7 +184,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This
+      Gets the collection of `ContentControl` objects in the document. This
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
@@ -268,7 +268,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -283,7 +283,7 @@ properties:
     uid: word!Word.Document#sections:member
     package: word!
     fullName: sections
-    summary: Gets the collection of section objects in the document.
+    summary: Gets the collection of `Section` objects in the document.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -430,12 +430,10 @@ methods:
       content: 'addStyle(name: string, type: Word.StyleType): Word.Style;'
       parameters:
         - id: name
-          description: Required. A string representing the style name.
+          description: A string representing the style name.
           type: string
         - id: type
-          description: >-
-            Required. The style type, including character, list, paragraph, or
-            table.
+          description: The style type, including character, list, paragraph, or table.
           type: <xref uid="word!Word.StyleType:enum" />
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -457,12 +455,10 @@ methods:
         "Table"): Word.Style;
       parameters:
         - id: name
-          description: Required. A string representing the style name.
+          description: A string representing the style name.
           type: string
         - id: type
-          description: >-
-            Required. The style type, including character, list, paragraph, or
-            table.
+          description: The style type, including character, list, paragraph, or table.
           type: '"Character" | "List" | "Paragraph" | "Table"'
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -506,8 +502,8 @@ methods:
       parameters:
         - id: closeBehavior
           description: >-
-            Optional. The close behavior must be 'Save' or 'SkipSave'. Default
-            value is 'Save'.
+            Optional. The close behavior must be `save` or `skipSave`<!-- -->.
+            Default value is `save`<!-- -->.
           type: <xref uid="word!Word.CloseBehavior:enum" />
       return:
         type: void
@@ -531,8 +527,8 @@ methods:
       parameters:
         - id: closeBehavior
           description: >-
-            Optional. The close behavior must be 'Save' or 'SkipSave'. Default
-            value is 'Save'.
+            Optional. The close behavior must be `save` or `skipSave`<!-- -->.
+            Default value is `save`<!-- -->.
           type: '"Save" | "SkipSave"'
       return:
         type: void
@@ -587,8 +583,8 @@ methods:
       parameters:
         - id: filePath
           description: >-
-            Required. The path of the document with which the specified document
-            is compared.
+            The path of the document with which the specified document is
+            compared.
           type: string
         - id: documentCompareOptions
           description: >-
@@ -618,14 +614,14 @@ methods:
       parameters:
         - id: base64File
           description: >-
-            Required. The Base64-encoded content of the document with which the
-            specified document is compared.
+            The Base64-encoded content of the document with which the specified
+            document is compared.
           type: string
         - id: documentCompareOptions
           description: >-
             Optional. The additional options that specify the behavior for
             comparing the documents. Note that the `compareTarget` option isn't
-            allowed to be `CompareTargetSelected` in this API.
+            allowed to be `compareTargetSelected` in this API.
           type: <xref uid="word!Word.DocumentCompareOptions:interface" />
       return:
         type: void
@@ -645,7 +641,7 @@ methods:
       content: 'deleteBookmark(name: string): void;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: void
@@ -689,7 +685,7 @@ methods:
       content: 'getBookmarkRange(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -714,7 +710,7 @@ methods:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -882,9 +878,8 @@ methods:
       parameters:
         - id: id
           description: >-
-            Required. Unique local ID in standard 8-4-4-4-12 GUID format without
-            curly braces. Note that the ID differs across sessions and
-            coauthors.
+            Unique local ID in standard 8-4-4-4-12 GUID format without curly
+            braces. Note that the ID differs across sessions and coauthors.
           type: string
       return:
         type: <xref uid="word!Word.Paragraph:class" />
@@ -942,7 +937,7 @@ methods:
     package: word!
     fullName: getStyles()
     summary: >-
-      Gets a StyleCollection object that represents the whole style set of the
+      Gets a `StyleCollection` object that represents the whole style set of the
       document.
     remarks: >-
       \[ [API set: WordApi
@@ -1025,12 +1020,13 @@ methods:
         OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: stylesJson
-          description: Required. A JSON-formatted string representing the styles.
+          description: A JSON-formatted string representing the styles.
           type: string
         - id: importedStylesConflictBehavior
           description: >-
             Optional. Specifies how to handle any imported styles with the same
-            name as existing styles in the current document.
+            name as existing styles in the current document. The default value
+            is `ignore`<!-- -->.
           type: <xref uid="word!Word.ImportedStylesConflictBehavior:enum" />
       return:
         type: >-
@@ -1059,12 +1055,13 @@ methods:
         OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: stylesJson
-          description: Required. A JSON-formatted string representing the styles.
+          description: A JSON-formatted string representing the styles.
           type: string
         - id: importedStylesConflictBehavior
           description: >-
             Optional. Specifies how to handle any imported styles with the same
-            name as existing styles in the current document.
+            name as existing styles in the current document. The default value
+            is `ignore`<!-- -->.
           type: '"Ignore" | "Overwrite" | "CreateNew"'
       return:
         type: >-
@@ -1129,10 +1126,12 @@ methods:
         insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1320,8 +1319,8 @@ methods:
       parameters:
         - id: saveBehavior
           description: >-
-            Optional. The save behavior must be 'Save' or 'Prompt'. Default
-            value is 'Save'.
+            Optional. The save behavior must be `save` or `prompt`<!-- -->.
+            Default value is `save`<!-- -->.
           type: <xref uid="word!Word.SaveBehavior:enum" />
         - id: fileName
           description: >-
@@ -1351,8 +1350,8 @@ methods:
       parameters:
         - id: saveBehavior
           description: >-
-            Optional. The save behavior must be 'Save' or 'Prompt'. Default
-            value is 'Save'.
+            Optional. The save behavior must be `save` or `prompt`<!-- -->.
+            Default value is `save`<!-- -->.
           type: '"Save" | "Prompt"'
         - id: fileName
           description: >-
@@ -1368,7 +1367,7 @@ methods:
     fullName: search(searchText, searchOptions)
     summary: >-
       Performs a search with the specified search options on the scope of the
-      whole document. The search results are a collection of range objects.
+      whole document. The search results are a collection of `Range` objects.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1388,10 +1387,10 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: ''
+          description: The text to search for.
           type: string
         - id: searchOptions
-          description: ''
+          description: Optional. Options that define how the search is performed.
           type: |-
             <xref uid="word!Word.SearchOptions:class" /> | {
                         ignorePunct?: boolean;

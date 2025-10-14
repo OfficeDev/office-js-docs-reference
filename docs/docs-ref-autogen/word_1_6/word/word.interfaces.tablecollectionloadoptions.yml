@@ -3,7 +3,9 @@ name: Word.Interfaces.TableCollectionLoadOptions
 uid: word!Word.Interfaces.TableCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableCollectionLoadOptions
-summary: Contains the collection of the document's Table objects.
+summary: >-
+  Contains the collection of the document's
+  [Word.Table](xref:word!Word.Table:class) objects.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -34,7 +36,8 @@ properties:
     fullName: alignment
     summary: >-
       For EACH ITEM in the collection: Specifies the alignment of the table
-      against the page column. The value can be 'Left', 'Centered', or 'Right'.
+      against the page column. The value can be `left`<!-- -->, `centered`<!--
+      -->, or `right`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -83,8 +86,8 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Specifies the horizontal alignment of
-      every cell in the table. The value can be 'Left', 'Centered', 'Right', or
-      'Justified'.
+      every cell in the table. The value can be `left`<!-- -->, `centered`<!--
+      -->, `right`<!-- -->, or `justified`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -448,7 +451,8 @@ properties:
     fullName: verticalAlignment
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical alignment of every
-      cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+      cell in the table. The value can be `top`<!-- -->, `center`<!-- -->, or
+      `bottom`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

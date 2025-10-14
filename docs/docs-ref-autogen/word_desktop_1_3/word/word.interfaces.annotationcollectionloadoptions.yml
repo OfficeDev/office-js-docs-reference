@@ -35,7 +35,7 @@ properties:
       word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member
     package: word!
     fullName: critiqueAnnotation
-    summary: 'For EACH ITEM in the collection: Gets the critique annotation object.'
+    summary: 'For EACH ITEM in the collection: Gets the `CritiqueAnnotation` object.'
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -54,7 +54,7 @@ properties:
     fullName: id
     summary: >-
       For EACH ITEM in the collection: Gets the unique identifier, which is
-      meant to be used for easier tracking of Annotation objects.
+      meant to be used for easier tracking of `Annotation` objects.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

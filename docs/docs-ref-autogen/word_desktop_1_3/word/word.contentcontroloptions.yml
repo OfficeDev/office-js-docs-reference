@@ -68,16 +68,20 @@ properties:
     package: word!
     fullName: types
     summary: >-
-      An array of content control types, item must be 'RichText', 'PlainText',
-      'CheckBox', 'DropDownList', or 'ComboBox'.
+      An array of content control types, item must be `richText`<!-- -->,
+      `plainText`<!-- -->, `checkBox`<!-- -->, `dropDownList`<!-- -->,
+      `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
+      `repeatingSection`<!-- -->, `picture`<!-- -->, or `group`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: 'PlainText' support was added in WordApi 1.5. 'CheckBox' support was
-      added in WordApi 1.7. 'DropDownList' and 'ComboBox' support was added in
-      WordApi 1.9.
+      Note: `plainText` support was added in WordApi 1.5. `checkBox` support was
+      added in WordApi 1.7. `dropDownList` and `comboBox` support was added in
+      WordApi 1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!--
+      -->, `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added
+      in WordApiDesktop 1.3.
 
     isPreview: false
     isDeprecated: false

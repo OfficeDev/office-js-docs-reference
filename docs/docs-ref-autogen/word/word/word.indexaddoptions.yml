@@ -19,8 +19,7 @@ properties:
     summary: >-
       If provided, specifies the text between alphabetical groups (entries that
       start with the same letter) in the index. See `HeadingSeparator` for
-      available values. The default value is
-      `Word.HeadingSeparator.blankLine`<!-- -->.
+      available values. The default value is `blankLine`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -209,8 +208,7 @@ properties:
     summary: >-
       If provided, specifies the sorting criteria to be used for the index being
       added. Can be either of the following `IndexSortBy` values: `stroke` or
-      `syllable`<!-- -->. The default value is `Word.IndexSortBy.stroke`<!--
-      -->.
+      `syllable`<!-- -->. The default value is `stroke`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -229,7 +227,7 @@ properties:
       If provided, specifies whether subentries are on the same line (run-in) as
       the main entry or on a separate line (indented) from the main entry. Can
       be either of the following `IndexType` values: `indent` or `runin`<!--
-      -->. The default value is `Word.IndexType.indent`<!-- -->.
+      -->. The default value is `indent`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

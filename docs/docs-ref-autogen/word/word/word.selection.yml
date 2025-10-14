@@ -3,17 +3,16 @@ name: Word.Selection
 uid: word!Word.Selection:class
 package: word!
 fullName: Word.Selection
-summary: >-
-  Represents a selected range or the insertion point in a Word document.
-
-
-  - Note: [Range](xref:word!Word.Range:class) objects share many of the same
-  methods and properties as `Selection` objects. Using `Range` objects is
-  preferable for manipulating a document when there isn't a reason to physically
-  change the current selection.
+summary: Represents a selected range or the insertion point in a Word document.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  Note: [Range](xref:word!Word.Range:class) objects share many of the same
+  methods and properties as `Selection` objects. Using `Range` objects is
+  preferable for manipulating a document when there isn't a reason to physically
+  change the current selection.
 
 isPreview: true
 isDeprecated: false
@@ -1636,7 +1635,7 @@ methods:
       content: 'insertDateTime(options?: Word.SelectionInsertDateTimeOptions): void;'
       parameters:
         - id: options
-          description: Options for inserting the date or time.
+          description: Optional. Options for inserting the date or time.
           type: <xref uid="word!Word.SelectionInsertDateTimeOptions:interface" />
       return:
         type: void
@@ -2333,7 +2332,7 @@ methods:
     uid: word!Word.Selection#nextSubdocument:member(1)
     package: word!
     fullName: nextSubdocument()
-    summary: Moves the selection to the next subDocument.
+    summary: Moves the selection to the next subdocument.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -2360,7 +2359,7 @@ methods:
       content: 'pasteAndFormat(type: Word.PasteFormatType): void;'
       parameters:
         - id: type
-          description: The format paste type for table cells
+          description: The format paste type for table cells.
           type: <xref uid="word!Word.PasteFormatType:enum" />
       return:
         type: void
@@ -2387,7 +2386,7 @@ methods:
         | "UseDestinationStylesRecovery"): void;
       parameters:
         - id: type
-          description: The format paste type for table cells
+          description: The format paste type for table cells.
           type: >-
             "PasteDefault" | "SingleCellText" | "SingleCellTable" |
             "ListContinueNumbering" | "ListRestartNumbering" |
@@ -2499,7 +2498,7 @@ methods:
     uid: word!Word.Selection#previousSubdocument:member(1)
     package: word!
     fullName: previousSubdocument()
-    summary: Moves the selection to the previous subDocument.
+    summary: Moves the selection to the previous subdocument.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

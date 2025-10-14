@@ -3,7 +3,7 @@ name: Word.HeaderFooterType
 uid: word!Word.HeaderFooterType:enum
 package: word!
 fullName: Word.HeaderFooterType
-summary: ''
+summary: Represents the type of header or footer.
 remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

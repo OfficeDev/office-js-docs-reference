@@ -17,8 +17,8 @@ properties:
     package: word!
     fullName: alignment
     summary: >-
-      Specifies the alignment for a paragraph. The value can be 'left',
-      'centered', 'right', or 'justified'.
+      Specifies the alignment for a paragraph. The value can be `left`<!-- -->,
+      `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -88,7 +88,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the paragraph. The
+      Gets the collection of `InlinePicture` objects in the paragraph. The
       collection doesn't include floating images.
     remarks: >-
       \[ [API set: WordApi

@@ -3,7 +3,7 @@ name: Word.Shading
 uid: word!Word.Shading:class
 package: word!
 fullName: Word.Shading
-summary: Represents the shading object.
+summary: Represents the `Shading` object.
 remarks: >-
   \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

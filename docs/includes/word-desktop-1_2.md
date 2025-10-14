@@ -1,17 +1,17 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[shapes](/javascript/api/word/word.body#word-word-body-shapes-member)|Gets the collection of shape objects in the body, including both inline and floating shapes.|
+|[Body](/javascript/api/word/word.body)|[shapes](/javascript/api/word/word.body#word-word-body-shapes-member)|Gets the collection of `Shape` objects in the body, including both inline and floating shapes.|
 |[Canvas](/javascript/api/word/word.canvas)|[id](/javascript/api/word/word.canvas#word-word-canvas-id-member)|Gets an integer that represents the canvas identifier.|
-||[shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)|Gets the Shape object associated with the canvas.|
-||[shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)|Gets the collection of Shape objects.|
+||[shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)|Gets the `Shape` object associated with the canvas.|
+||[shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)|Gets the collection of Word.Shape objects.|
 |[Document](/javascript/api/word/word.document)|[activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)|Gets the active window for the document.|
 ||[compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions)](/javascript/api/word/word.document#word-word-document-comparefrombase64-member(1))|Displays revision marks that indicate where the specified document differs from another document.|
 ||[windows](/javascript/api/word/word.document#word-word-document-windows-member)|Gets the collection of `Word.Window` objects for the document.|
-|[Font](/javascript/api/word/word.font)|[hidden](/javascript/api/word/word.font#word-word-font-hidden-member)|Specifies a value that indicates whether the font is tagged as hidden.|
-|[InsertShapeOptions](/javascript/api/word/word.insertshapeoptions)|[height](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-height-member)|Represents the height of the shape being inserted.|
-||[left](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-left-member)|Represents the left position of the shape being inserted.|
-||[top](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-top-member)|Represents the top position of the shape being inserted.|
-||[width](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-width-member)|Represents the width of the shape being inserted.|
+|[Font](/javascript/api/word/word.font)|[hidden](/javascript/api/word/word.font#word-word-font-hidden-member)|Specifies whether the font is tagged as hidden.|
+|[InsertShapeOptions](/javascript/api/word/word.insertshapeoptions)|[height](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-height-member)|If provided, specifies the height of the shape being inserted.|
+||[left](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-left-member)|If provided, specifies the left position of the shape being inserted.|
+||[top](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-top-member)|If provided, specifies the top position of the shape being inserted.|
+||[width](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-width-member)|If provided, specifies the width of the shape being inserted.|
 |[Page](/javascript/api/word/word.page)|[getNext()](/javascript/api/word/word.page#word-word-page-getnext-member(1))|Gets the next page in the pane.|
 ||[getNextOrNullObject()](/javascript/api/word/word.page#word-word-page-getnextornullobject-member(1))|Gets the next page.|
 ||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| "Whole" \| "Start" \| "End")](/javascript/api/word/word.page#word-word-page-getrange-member(1))|Gets the whole page, or the starting or ending point of the page, as a range.|
@@ -32,16 +32,16 @@
 ||[insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))|Inserts a geometric shape in front of text with its anchor at the beginning of the paragraph.|
 ||[insertPictureFromBase64(base64EncodedImage: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertpicturefrombase64-member(1))|Inserts a floating picture in front of text with its anchor at the beginning of the paragraph.|
 ||[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))|Inserts a floating text box in front of text with its anchor at the beginning of the paragraph.|
-||[shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)|Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes.|
+||[shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)|Gets the collection of `Shape` objects anchored in the paragraph, including both inline and floating shapes.|
 |[Range](/javascript/api/word/word.range)|[insertCanvas(insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1))|Inserts a floating canvas in front of text with its anchor at the beginning of the range.|
 ||[insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1))|Inserts a geometric shape in front of text with its anchor at the beginning of the range.|
 ||[insertPictureFromBase64(base64EncodedImage: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertpicturefrombase64-member(1))|Inserts a floating picture in front of text with its anchor at the beginning of the range.|
 ||[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))|Inserts a floating text box in front of text with its anchor at the beginning of the range.|
 ||[pages](/javascript/api/word/word.range#word-word-range-pages-member)|Gets the collection of pages in the range.|
-||[shapes](/javascript/api/word/word.range#word-word-range-shapes-member)|Gets the collection of shape objects anchored in the range, including both inline and floating shapes.|
+||[shapes](/javascript/api/word/word.range#word-word-range-shapes-member)|Gets the collection of `Shape` objects anchored in the range, including both inline and floating shapes.|
 |[Shape](/javascript/api/word/word.shape)|[allowOverlap](/javascript/api/word/word.shape#word-word-shape-allowoverlap-member)|Specifies whether a given shape can overlap other shapes.|
 ||[altTextDescription](/javascript/api/word/word.shape#word-word-shape-alttextdescription-member)|Specifies a string that represents the alternative text associated with the shape.|
-||[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Represents the body object of the shape.|
+||[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Represents the `Body` object of the shape.|
 ||[canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)|Gets the canvas associated with the shape.|
 ||[delete()](/javascript/api/word/word.shape#word-word-shape-delete-member(1))|Deletes the shape and its content.|
 ||[fill](/javascript/api/word/word.shape#word-word-shape-fill-member)|Returns the fill formatting of the shape.|
@@ -67,7 +67,7 @@
 ||[scaleWidth(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom)](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))|Scales the width of the shape by a specified factor.|
 ||[select(selectMultipleShapes?: boolean)](/javascript/api/word/word.shape#word-word-shape-select-member(1))|Selects the shape.|
 ||[shapeGroup](/javascript/api/word/word.shape#word-word-shape-shapegroup-member)|Gets the shape group associated with the shape.|
-||[textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)|Gets the text frame object of the shape.|
+||[textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)|Gets the `TextFrame` object of the shape.|
 ||[textWrap](/javascript/api/word/word.shape#word-word-shape-textwrap-member)|Returns the text wrap formatting of the shape.|
 ||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|The distance, in points, from the top edge of the shape to the vertical relative position (see Word.RelativeVerticalPosition).|
 ||[topRelative](/javascript/api/word/word.shape#word-word-shape-toprelative-member)|The relative top position as a percentage from the top edge of the shape to the vertical relative position, see Word.RelativeVerticalPosition.|
@@ -86,14 +86,14 @@
 ||[group()](/javascript/api/word/word.shapecollection#word-word-shapecollection-group-member(1))|Groups floating shapes in this collection, inline shapes will be skipped.|
 ||[items](/javascript/api/word/word.shapecollection#word-word-shapecollection-items-member)|Gets the loaded child items in this collection.|
 |[ShapeFill](/javascript/api/word/word.shapefill)|[backgroundColor](/javascript/api/word/word.shapefill#word-word-shapefill-backgroundcolor-member)|Specifies the shape fill background color.|
-||[clear()](/javascript/api/word/word.shapefill#word-word-shapefill-clear-member(1))|Clears the fill formatting of this shape and set it to `Word.ShapeFillType.NoFill`;|
+||[clear()](/javascript/api/word/word.shapefill#word-word-shapefill-clear-member(1))|Clears the fill formatting of this shape and sets it to `Word.ShapeFillType.noFill`.|
 ||[foregroundColor](/javascript/api/word/word.shapefill#word-word-shapefill-foregroundcolor-member)|Specifies the shape fill foreground color.|
 ||[setSolidColor(color: string)](/javascript/api/word/word.shapefill#word-word-shapefill-setsolidcolor-member(1))|Sets the fill formatting of the shape to a uniform color.|
 ||[transparency](/javascript/api/word/word.shapefill#word-word-shapefill-transparency-member)|Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).|
 ||[type](/javascript/api/word/word.shapefill#word-word-shapefill-type-member)|Returns the fill type of the shape.|
 |[ShapeGroup](/javascript/api/word/word.shapegroup)|[id](/javascript/api/word/word.shapegroup#word-word-shapegroup-id-member)|Gets an integer that represents the shape group identifier.|
-||[shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)|Gets the Shape object associated with the group.|
-||[shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member)|Gets the collection of Shape objects.|
+||[shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)|Gets the `Shape` object associated with the group.|
+||[shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member)|Gets the collection of `Shape` objects.|
 ||[ungroup()](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))|Ungroups any grouped shapes in the specified shape group.|
 |[ShapeTextWrap](/javascript/api/word/word.shapetextwrap)|[bottomDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-bottomdistance-member)|Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.|
 ||[leftDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-leftdistance-member)|Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.|
@@ -101,15 +101,15 @@
 ||[side](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-side-member)|Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.|
 ||[topDistance](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-topdistance-member)|Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.|
 ||[type](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-type-member)|Specifies the text wrap type around the shape.|
-|[TextFrame](/javascript/api/word/word.textframe)|[autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)|The automatic sizing settings for the text frame.|
-||[bottomMargin](/javascript/api/word/word.textframe#word-word-textframe-bottommargin-member)|Represents the bottom margin, in points, of the text frame.|
-||[hasText](/javascript/api/word/word.textframe#word-word-textframe-hastext-member)|Specifies if the text frame contains text.|
-||[leftMargin](/javascript/api/word/word.textframe#word-word-textframe-leftmargin-member)|Represents the left margin, in points, of the text frame.|
-||[noTextRotation](/javascript/api/word/word.textframe#word-word-textframe-notextrotation-member)|Returns True if text in the text frame shouldn't rotate when the shape is rotated.|
-||[orientation](/javascript/api/word/word.textframe#word-word-textframe-orientation-member)|Represents the angle to which the text is oriented for the text frame.|
-||[rightMargin](/javascript/api/word/word.textframe#word-word-textframe-rightmargin-member)|Represents the right margin, in points, of the text frame.|
-||[topMargin](/javascript/api/word/word.textframe#word-word-textframe-topmargin-member)|Represents the top margin, in points, of the text frame.|
-||[verticalAlignment](/javascript/api/word/word.textframe#word-word-textframe-verticalalignment-member)|Represents the vertical alignment of the text frame.|
+|[TextFrame](/javascript/api/word/word.textframe)|[autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)|Specifies the automatic sizing settings for the text frame.|
+||[bottomMargin](/javascript/api/word/word.textframe#word-word-textframe-bottommargin-member)|Specifies the bottom margin, in points, of the text frame.|
+||[hasText](/javascript/api/word/word.textframe#word-word-textframe-hastext-member)|Returns `true` if the text frame contains text, otherwise, `false`.|
+||[leftMargin](/javascript/api/word/word.textframe#word-word-textframe-leftmargin-member)|Specifies the left margin, in points, of the text frame.|
+||[noTextRotation](/javascript/api/word/word.textframe#word-word-textframe-notextrotation-member)|Specifies whether the text in the text frame shouldn't rotate when the shape is rotated.|
+||[orientation](/javascript/api/word/word.textframe#word-word-textframe-orientation-member)|Specifies the angle to which the text is oriented for the text frame.|
+||[rightMargin](/javascript/api/word/word.textframe#word-word-textframe-rightmargin-member)|Specifies the right margin, in points, of the text frame.|
+||[topMargin](/javascript/api/word/word.textframe#word-word-textframe-topmargin-member)|Specifies the top margin, in points, of the text frame.|
+||[verticalAlignment](/javascript/api/word/word.textframe#word-word-textframe-verticalalignment-member)|Specifies the vertical alignment of the text frame.|
 ||[wordWrap](/javascript/api/word/word.textframe#word-word-textframe-wordwrap-member)|Determines whether lines break automatically to fit text inside the shape.|
 |[Window](/javascript/api/word/word.window)|[activePane](/javascript/api/word/word.window#word-word-window-activepane-member)|Gets the active pane in the window.|
 ||[panes](/javascript/api/word/word.window#word-word-window-panes-member)|Gets the collection of panes in the window.|

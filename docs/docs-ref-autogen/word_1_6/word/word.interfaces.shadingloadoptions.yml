@@ -3,7 +3,7 @@ name: Word.Interfaces.ShadingLoadOptions
 uid: word!Word.Interfaces.ShadingLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShadingLoadOptions
-summary: Represents the shading object.
+summary: Represents the `Shading` object.
 remarks: >-
   \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
