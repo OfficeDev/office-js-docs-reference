@@ -58,7 +58,7 @@ methods:
       content: 'getItem(index: number): Word.XmlNode;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a `XmlNode` object.
+          description: The location of a `XmlNode` object.
           type: number
       return:
         type: <xref uid="word!Word.XmlNode:class" />
@@ -78,7 +78,7 @@ methods:
       content: 'getItemAt(index: number): Word.XmlNode;'
       parameters:
         - id: index
-          description: The index of the XML node to retrieve.
+          description: The index of the item to retrieve.
           type: number
       return:
         type: <xref uid="word!Word.XmlNode:class" />

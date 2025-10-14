@@ -73,7 +73,7 @@ properties:
     fullName: insideBorderColor
     summary: >-
       Specifies the 24-bit color of the inside borders. Color is specified in
-      ‘\#RRGGBB’ format or by using the color name.
+      '\#RRGGBB' format or by using the color name.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -152,7 +152,7 @@ properties:
     fullName: outsideBorderColor
     summary: >-
       Specifies the 24-bit color of the outside borders. Color is specified in
-      ‘\#RRGGBB’ format or by using the color name.
+      '\#RRGGBB' format or by using the color name.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -409,7 +409,7 @@ methods:
     uid: word!Word.BorderCollection#getItem:member(1)
     package: word!
     fullName: getItem(index)
-    summary: Gets a Border object by its index in the collection.
+    summary: Gets a `Border` object by its index in the collection.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -420,7 +420,7 @@ methods:
       content: 'getItem(index: number): Word.Border;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a Border object.
+          description: The location of a `Border` object.
           type: number
       return:
         type: <xref uid="word!Word.Border:class" />

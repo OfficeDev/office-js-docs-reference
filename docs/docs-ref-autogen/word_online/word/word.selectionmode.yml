@@ -4,7 +4,7 @@ uid: word!Word.SelectionMode:enum
 package: word!
 fullName: Word.SelectionMode
 summary: >-
-  This enum sets where the cursor (insertion point) in the document is after a
+  Represents where the cursor (insertion point) is set in the document after a
   selection.
 remarks: >-
   \[ [API set: WordApi

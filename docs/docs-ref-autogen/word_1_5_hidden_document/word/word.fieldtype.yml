@@ -3,7 +3,7 @@ name: Word.FieldType
 uid: word!Word.FieldType:enum
 package: word!
 fullName: Word.FieldType
-summary: Represents the type of Field.
+summary: Represents the type of [Word.Field](xref:word!Word.Field:class) object.
 remarks: >-
   \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

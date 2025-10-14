@@ -49,8 +49,8 @@
 |[CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection)|[items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)|Gets the loaded child items in this collection.|
 |[CommentDetail](/javascript/api/word/word.commentdetail)|[id](/javascript/api/word/word.commentdetail#word-word-commentdetail-id-member)|Represents the ID of this comment.|
 ||[replyIds](/javascript/api/word/word.commentdetail#word-word-commentdetail-replyids-member)|Represents the IDs of the replies to this comment.|
-|[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the comment changed event is triggered.|
-||[commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)|Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.|
+|[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the `commentChanged` event is raised.|
+||[commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)|Gets the `CommentDetail` array which contains the IDs and reply IDs of the involved comments.|
 ||[source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)|The event type.|
 |[ConditionalStyle](/javascript/api/word/word.conditionalstyle)|[borders](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-borders-member)|Returns a `BorderUniversalCollection` object that represents all the borders for the conditional style.|
@@ -286,7 +286,7 @@
 ||[writePassword](/javascript/api/word/word.document#word-word-document-writepassword-member)|Sets a password for saving changes to the document.|
 ||[xmlAreAdvancedErrorsShown](/javascript/api/word/word.document#word-word-document-xmlareadvancederrorsshown-member)|Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).|
 ||[xmlIsXsltUsedWhenSaving](/javascript/api/word/word.document#word-word-document-xmlisxsltusedwhensaving-member)|Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).|
-||[xmlSaveThroughXSLT](/javascript/api/word/word.document#word-word-document-xmlsavethroughxslt-member)|Specifies the path and file name for the XSLT to apply when saving a document.|
+||[xmlSaveThroughXslt](/javascript/api/word/word.document#word-word-document-xmlsavethroughxslt-member)|Specifies the path and file name for the XSLT to apply when saving a document.|
 |[DocumentCheckInOptions](/javascript/api/word/word.documentcheckinoptions)|[comment](/javascript/api/word/word.documentcheckinoptions#word-word-documentcheckinoptions-comment-member)|If provided, specifies a comment for the check-in operation.|
 ||[makePublic](/javascript/api/word/word.documentcheckinoptions#word-word-documentcheckinoptions-makepublic-member)|If provided, specifies whether to make the document public after check-in.|
 ||[saveChanges](/javascript/api/word/word.documentcheckinoptions#word-word-documentcheckinoptions-savechanges-member)|If provided, specifies whether to save changes before checking in.|
@@ -516,7 +516,7 @@
 ||[open()](/javascript/api/word/word.oleformat#word-word-oleformat-open-member(1))|Opens the `OleFormat` object.|
 ||[progId](/javascript/api/word/word.oleformat#word-word-oleformat-progid-member)|Gets the programmatic identifier (`ProgId`) for the specified OLE object.|
 |[Pane](/javascript/api/word/word.pane)|[selection](/javascript/api/word/word.pane#word-word-pane-selection-member)|Returns a `Selection` object that represents the current selection in the pane.|
-|[PaneCollection](/javascript/api/word/word.panecollection)||Represents the collection of pane.|
+|[PaneCollection](/javascript/api/word/word.panecollection)||Represents the collection of Word.Pane objects.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[closeUp()](/javascript/api/word/word.paragraph#word-word-paragraph-closeup-member(1))|Removes any spacing before the paragraph.|
 ||[indent()](/javascript/api/word/word.paragraph#word-word-paragraph-indent-member(1))|Indents the paragraph by one level.|
 ||[indentCharacterWidth(count: number)](/javascript/api/word/word.paragraph#word-word-paragraph-indentcharacterwidth-member(1))|Indents the paragraph by a specified number of characters.|
@@ -704,7 +704,7 @@
 ||[moveUp(options?: Word.SelectionMoveUpDownOptions)](/javascript/api/word/word.selection#word-word-selection-moveup-member(1))|Moves the selection up.|
 ||[moveWhile(characters: string, count?: number)](/javascript/api/word/word.selection#word-word-selection-movewhile-member(1))|Moves the selection while any of the specified characters are found in the document.|
 ||[nextField()](/javascript/api/word/word.selection#word-word-selection-nextfield-member(1))|Selects the next field.|
-||[nextSubdocument()](/javascript/api/word/word.selection#word-word-selection-nextsubdocument-member(1))|Moves the selection to the next subDocument.|
+||[nextSubdocument()](/javascript/api/word/word.selection#word-word-selection-nextsubdocument-member(1))|Moves the selection to the next subdocument.|
 ||[orientation](/javascript/api/word/word.selection#word-word-selection-orientation-member)|Specifies the orientation of text in the selection.|
 ||[paragraphs](/javascript/api/word/word.selection#word-word-selection-paragraphs-member)|Returns a `ParagraphCollection` object that represents all the paragraphs in the selection.|
 ||[pasteAndFormat(type: Word.PasteFormatType)](/javascript/api/word/word.selection#word-word-selection-pasteandformat-member(1))|Pastes the content from clipboard and formats them as specified.|
@@ -713,7 +713,7 @@
 ||[pasteTableCellsAppendTable()](/javascript/api/word/word.selection#word-word-selection-pastetablecellsappendtable-member(1))|Merges pasted cells into an existing table by inserting the pasted rows between the selected rows.|
 ||[pasteTableCellsAsNestedTable()](/javascript/api/word/word.selection#word-word-selection-pastetablecellsasnestedtable-member(1))|Pastes a cell or group of cells as a nested table into the selection.|
 ||[previousField()](/javascript/api/word/word.selection#word-word-selection-previousfield-member(1))|Selects and returns the previous field.|
-||[previousSubdocument()](/javascript/api/word/word.selection#word-word-selection-previoussubdocument-member(1))|Moves the selection to the previous subDocument.|
+||[previousSubdocument()](/javascript/api/word/word.selection#word-word-selection-previoussubdocument-member(1))|Moves the selection to the previous subdocument.|
 ||[range](/javascript/api/word/word.selection#word-word-selection-range-member)|Returns the `Range` object for the portion of the document contained in the selection.|
 ||[replaceParagraph()](/javascript/api/word/word.selection#word-word-selection-replaceparagraph-member(1))|Replaces the selection with a new paragraph.|
 ||[sections](/javascript/api/word/word.selection#word-word-selection-sections-member)|Returns the `SectionCollection` object in the selection.|
@@ -794,7 +794,7 @@
 |[SelectionPreviousOptions](/javascript/api/word/word.selectionpreviousoptions)|[count](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-count-member)|If provided, specifies the number of units by which you want to move.|
 ||[unit](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-unit-member)|If provided, specifies the type of unit by which to move the selection.|
 |[SourceCollection](/javascript/api/word/word.sourcecollection)|[getItem(index: number)](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-getitem-member(1))|Gets a `Source` by its index in the collection.|
-|[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
+|[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the style.|
 |[TabStop](/javascript/api/word/word.tabstop)|[alignment](/javascript/api/word/word.tabstop#word-word-tabstop-alignment-member)|Gets a `TabAlignment` value that represents the alignment for the tab stop.|
 ||[clear()](/javascript/api/word/word.tabstop#word-word-tabstop-clear-member(1))|Removes this custom tab stop.|
 ||[customTab](/javascript/api/word/word.tabstop#word-word-tabstop-customtab-member)|Gets whether this tab stop is a custom tab stop.|
@@ -848,8 +848,8 @@
 |[TableCellCollectionSplitOptions](/javascript/api/word/word.tablecellcollectionsplitoptions)|[mergeBeforeSplit](/javascript/api/word/word.tablecellcollectionsplitoptions#word-word-tablecellcollectionsplitoptions-mergebeforesplit-member)|If provided, specifies whether to merge the cells with one another before splitting them.|
 ||[numColumns](/javascript/api/word/word.tablecellcollectionsplitoptions#word-word-tablecellcollectionsplitoptions-numcolumns-member)|If provided, specifies the number of columns that the group of cells is to be split into.|
 ||[numRows](/javascript/api/word/word.tablecellcollectionsplitoptions#word-word-tablecellcollectionsplitoptions-numrows-member)|If provided, specifies the number of rows that the group of cells is to be split into.|
-|[TableCellFormulaOptions](/javascript/api/word/word.tablecellformulaoptions)|[formula](/javascript/api/word/word.tablecellformulaoptions#word-word-tablecellformulaoptions-formula-member)|The mathematical formula you want the = (Formula) field to evaluate.|
-||[numFormat](/javascript/api/word/word.tablecellformulaoptions#word-word-tablecellformulaoptions-numformat-member)|A format for the result of the = (Formula) field.|
+|[TableCellFormulaOptions](/javascript/api/word/word.tablecellformulaoptions)|[formula](/javascript/api/word/word.tablecellformulaoptions#word-word-tablecellformulaoptions-formula-member)|If provided, specifies the mathematical formula you want the = (Formula) field to evaluate.|
+||[numFormat](/javascript/api/word/word.tablecellformulaoptions#word-word-tablecellformulaoptions-numformat-member)|If provided, specifies a format for the result of the = (Formula) field.|
 |[TableConvertToTextOptions](/javascript/api/word/word.tableconverttotextoptions)|[nestedTables](/javascript/api/word/word.tableconverttotextoptions#word-word-tableconverttotextoptions-nestedtables-member)|If provided, specifies whether to convert the nested tables to text.|
 ||[separator](/javascript/api/word/word.tableconverttotextoptions#word-word-tableconverttotextoptions-separator-member)|If provided, specifies the character that delimits the converted columns (paragraph marks delimit the converted rows).|
 |[TableOfAuthorities](/javascript/api/word/word.tableofauthorities)|[bookmark](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-bookmark-member)|Specifies the name of the bookmark from which to collect table of authorities entries.|
@@ -1100,7 +1100,7 @@
 ||[windowState](/javascript/api/word/word.window#word-word-window-windowstate-member)|Specifies the state of the document window or task window.|
 |[WindowCloseOptions](/javascript/api/word/word.windowcloseoptions)|[routeDocument](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-routedocument-member)|If provided, specifies whether to route the document to the next recipient.|
 ||[saveChanges](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-savechanges-member)|If provided, specifies the save action for the document.|
-|[WindowCollection](/javascript/api/word/word.windowcollection)||Represents the collection of window objects.|
+|[WindowCollection](/javascript/api/word/word.windowcollection)||Represents the collection of Word.Window objects.|
 |[WindowPageScrollOptions](/javascript/api/word/word.windowpagescrolloptions)|[down](/javascript/api/word/word.windowpagescrolloptions#word-word-windowpagescrolloptions-down-member)|If provided, specifies the number of pages to scroll the window down.|
 ||[up](/javascript/api/word/word.windowpagescrolloptions#word-word-windowpagescrolloptions-up-member)|If provided, specifies the number of pages to scroll the window up.|
 |[WindowScrollOptions](/javascript/api/word/word.windowscrolloptions)|[down](/javascript/api/word/word.windowscrolloptions#word-word-windowscrolloptions-down-member)|If provided, specifies the number of units to scroll the window down.|

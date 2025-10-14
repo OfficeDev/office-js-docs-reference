@@ -3,7 +3,9 @@ name: Word.Break
 uid: word!Word.Break:class
 package: word!
 fullName: Word.Break
-summary: Represents a break in a Word document.
+summary: >-
+  Represents a break in a Word document. This could be a page, column, or
+  section break.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

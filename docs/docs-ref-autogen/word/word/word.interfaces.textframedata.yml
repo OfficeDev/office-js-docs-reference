@@ -17,9 +17,10 @@ properties:
     package: word!
     fullName: autoSizeSetting
     summary: >-
-      The automatic sizing settings for the text frame. A text frame can be set
-      to automatically fit the text to the text frame, to automatically fit the
-      text frame to the text, or not perform any automatic sizing.
+      Specifies the automatic sizing settings for the text frame. A text frame
+      can be set to automatically fit the text to the text frame, to
+      automatically fit the text frame to the text, or not perform any automatic
+      sizing.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -38,7 +39,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameData#bottomMargin:member
     package: word!
     fullName: bottomMargin
-    summary: Represents the bottom margin, in points, of the text frame.
+    summary: Specifies the bottom margin, in points, of the text frame.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -53,7 +54,9 @@ properties:
     uid: word!Word.Interfaces.TextFrameData#hasText:member
     package: word!
     fullName: hasText
-    summary: Specifies if the text frame contains text.
+    summary: >-
+      Returns `true` if the text frame contains text, otherwise, `false`<!--
+      -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -68,7 +71,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameData#leftMargin:member
     package: word!
     fullName: leftMargin
-    summary: Represents the left margin, in points, of the text frame.
+    summary: Specifies the left margin, in points, of the text frame.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -84,8 +87,8 @@ properties:
     package: word!
     fullName: noTextRotation
     summary: >-
-      Returns True if text in the text frame shouldn't rotate when the shape is
-      rotated.
+      Specifies whether the text in the text frame shouldn't rotate when the
+      shape is rotated.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -101,7 +104,7 @@ properties:
     package: word!
     fullName: orientation
     summary: >-
-      Represents the angle to which the text is oriented for the text frame. See
+      Specifies the angle to which the text is oriented for the text frame. See
       `Word.ShapeTextOrientation` for details.
     remarks: >-
       \[ [API set: WordApiDesktop
@@ -123,7 +126,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameData#rightMargin:member
     package: word!
     fullName: rightMargin
-    summary: Represents the right margin, in points, of the text frame.
+    summary: Specifies the right margin, in points, of the text frame.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -138,7 +141,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameData#topMargin:member
     package: word!
     fullName: topMargin
-    summary: Represents the top margin, in points, of the text frame.
+    summary: Specifies the top margin, in points, of the text frame.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -154,7 +157,7 @@ properties:
     package: word!
     fullName: verticalAlignment
     summary: >-
-      Represents the vertical alignment of the text frame. See
+      Specifies the vertical alignment of the text frame. See
       `Word.ShapeTextVerticalAlignment` for details.
     remarks: >-
       \[ [API set: WordApiDesktop

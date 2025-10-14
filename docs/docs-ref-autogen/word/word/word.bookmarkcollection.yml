@@ -82,7 +82,7 @@ methods:
       content: 'getItem(index: number): Word.Bookmark;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a `Bookmark` object.
+          description: The location of a `Bookmark` object.
           type: number
       return:
         type: <xref uid="word!Word.Bookmark:class" />

@@ -59,7 +59,7 @@ methods:
       content: 'getItemAt(index: number): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: index
-          description: The zero-based index of the font name to retrieve.
+          description: The zero-based index of the item to retrieve.
           type: number
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;

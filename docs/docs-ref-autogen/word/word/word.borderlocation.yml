@@ -3,7 +3,7 @@ name: Word.BorderLocation
 uid: word!Word.BorderLocation:enum
 package: word!
 fullName: Word.BorderLocation
-summary: ''
+summary: Represents the location of a [border](xref:word!Word.Border:class)<!-- -->.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -39,6 +39,9 @@ fields:
     uid: word!Word.BorderLocation.all:member
     package: word!
     summary: >-
+      All borders.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"All"'
@@ -46,6 +49,9 @@ fields:
     uid: word!Word.BorderLocation.bottom:member
     package: word!
     summary: >-
+      Bottom border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
@@ -53,6 +59,9 @@ fields:
     uid: word!Word.BorderLocation.inside:member
     package: word!
     summary: >-
+      Inside border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inside"'
@@ -60,6 +69,9 @@ fields:
     uid: word!Word.BorderLocation.insideHorizontal:member
     package: word!
     summary: >-
+      Inside horizontal border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideHorizontal"'
@@ -67,6 +79,9 @@ fields:
     uid: word!Word.BorderLocation.insideVertical:member
     package: word!
     summary: >-
+      Inside vertical border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideVertical"'
@@ -74,6 +89,9 @@ fields:
     uid: word!Word.BorderLocation.left:member
     package: word!
     summary: >-
+      Left border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
@@ -81,6 +99,9 @@ fields:
     uid: word!Word.BorderLocation.outside:member
     package: word!
     summary: >-
+      Outside border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Outside"'
@@ -88,6 +109,9 @@ fields:
     uid: word!Word.BorderLocation.right:member
     package: word!
     summary: >-
+      Right border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'
@@ -95,6 +119,9 @@ fields:
     uid: word!Word.BorderLocation.top:member
     package: word!
     summary: >-
+      Top border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

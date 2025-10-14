@@ -77,9 +77,7 @@ methods:
       content: 'getItem(index: number): Word.CustomXmlNode;'
       parameters:
         - id: index
-          description: >-
-            A number that identifies the index location of a CustomXMLNode
-            object.
+          description: The location of a `CustomXmlNode` object.
           type: number
       return:
         type: <xref uid="word!Word.CustomXmlNode:class" />

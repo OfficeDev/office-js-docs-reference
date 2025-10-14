@@ -50,7 +50,7 @@ properties:
     uid: word!Word.Interfaces.RangeData#inlinePictures:member
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of inline picture objects in the range.
+    summary: Gets the collection of `InlinePicture` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

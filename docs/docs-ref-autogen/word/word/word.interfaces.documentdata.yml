@@ -229,7 +229,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the main document. The body is the text that
+      Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
       \[ [API set: WordApi
@@ -331,7 +331,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This
+      Gets the collection of `ContentControl` objects in the document. This
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
@@ -1640,7 +1640,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1790,7 +1790,7 @@ properties:
     uid: word!Word.Interfaces.DocumentData#sections:member
     package: word!
     fullName: sections
-    summary: Gets the collection of section objects in the document.
+    summary: Gets the collection of `Section` objects in the document.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -2101,10 +2101,10 @@ properties:
       content: 'xmlIsXsltUsedWhenSaving?: boolean;'
       return:
         type: boolean
-  - name: xmlSaveThroughXSLT
-    uid: word!Word.Interfaces.DocumentData#xmlSaveThroughXSLT:member
+  - name: xmlSaveThroughXslt
+    uid: word!Word.Interfaces.DocumentData#xmlSaveThroughXslt:member
     package: word!
-    fullName: xmlSaveThroughXSLT
+    fullName: xmlSaveThroughXslt
     summary: >-
       Specifies the path and file name for the XSLT to apply when saving a
       document.
@@ -2115,6 +2115,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'xmlSaveThroughXSLT?: string;'
+      content: 'xmlSaveThroughXslt?: string;'
       return:
         type: string

@@ -179,7 +179,7 @@ methods:
         - id: defaultListBehavior
           description: >-
             Optional. Specifies the default list behavior. Default is
-            `DefaultListBehavior.word97`<!-- -->.
+            `word97`<!-- -->.
           type: <xref uid="word!Word.DefaultListBehavior:enum" />
       return:
         type: void
@@ -203,7 +203,7 @@ methods:
         - id: defaultListBehavior
           description: >-
             Optional. Specifies the default list behavior. Default is
-            `DefaultListBehavior.word97`<!-- -->.
+            `word97`<!-- -->.
           type: '"Word97" | "Word2000" | "Word2002"'
       return:
         type: void

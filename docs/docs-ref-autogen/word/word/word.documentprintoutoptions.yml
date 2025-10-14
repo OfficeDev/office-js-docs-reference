@@ -123,7 +123,7 @@ properties:
     fullName: item
     summary: >-
       If provided, specifies the item to print. The default value is
-      `PrintOutItem.documentContent`<!-- -->.
+      `documentContent`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -196,8 +196,8 @@ properties:
     package: word!
     fullName: pageType
     summary: >-
-      If provided, specifies the page order. The default value is
-      `PrintOutPages.allPages`<!-- -->.
+      If provided, specifies the page order. The default value is `allPages`<!--
+      -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

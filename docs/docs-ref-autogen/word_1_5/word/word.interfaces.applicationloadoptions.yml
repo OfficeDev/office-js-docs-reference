@@ -3,7 +3,7 @@ name: Word.Interfaces.ApplicationLoadOptions
 uid: word!Word.Interfaces.ApplicationLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ApplicationLoadOptions
-summary: Represents the application object.
+summary: Represents the `Application` object.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

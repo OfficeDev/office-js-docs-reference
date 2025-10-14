@@ -72,7 +72,7 @@ properties:
     uid: word!Word.List#id:member
     package: word!
     fullName: id
-    summary: Gets the list's id.
+    summary: Gets the list's ID.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -88,9 +88,9 @@ properties:
     package: word!
     fullName: levelExistences
     summary: >-
-      Checks whether each of the 9 levels exists in the list. A true value
-      indicates the level exists, which means there is at least one list item at
-      that level.
+      Checks whether each of the 9 levels exists in the list. `true` indicates
+      the level exists, which means there's at least one list item at that
+      level.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -150,8 +150,8 @@ properties:
     package: word!
     fullName: levelTypes
     summary: >-
-      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number',
-      or 'Picture'.
+      Gets all 9 level types in the list. Each type can be `bullet`<!-- -->,
+      `number`<!-- -->, or `picture`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -239,7 +239,7 @@ methods:
       content: 'getLevelFont(level: number): Word.Font;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
       return:
         type: <xref uid="word!Word.Font:class" />
@@ -259,7 +259,7 @@ methods:
       content: 'getLevelParagraphs(level: number): Word.ParagraphCollection;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
       return:
         type: <xref uid="word!Word.ParagraphCollection:class" />
@@ -281,7 +281,7 @@ methods:
       content: 'getLevelPicture(level: number): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -301,7 +301,7 @@ methods:
       content: 'getLevelString(level: number): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -364,10 +364,12 @@ methods:
         | "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Start', 'End', 'Before', or 'After'.
+          description: >-
+            The value must be `start`<!-- -->, `end`<!-- -->, `before`<!-- -->,
+            or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | <xref
@@ -468,12 +470,12 @@ methods:
       content: 'resetLevelFont(level: number, resetFontName?: boolean): void;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: resetFontName
           description: >-
-            Optional. Indicates whether to reset the font name. Default is false
-            that indicates the font name is kept unchanged.
+            Optional. Indicates whether to reset the font name. Default is
+            `false` that indicates the font name remains unchanged.
           type: boolean
       return:
         type: void
@@ -495,12 +497,12 @@ methods:
       content: 'setLevelAlignment(level: number, alignment: Word.Alignment): void;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: alignment
           description: >-
-            Required. The level alignment that must be 'Left', 'Centered', or
-            'Right'.
+            The level alignment that must be `left`<!-- -->, `centered`<!-- -->,
+            or `right`<!-- -->.
           type: <xref uid="word!Word.Alignment:enum" />
       return:
         type: void
@@ -524,12 +526,12 @@ methods:
         | "Centered" | "Right" | "Justified"): void;
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: alignment
           description: >-
-            Required. The level alignment that must be 'Left', 'Centered', or
-            'Right'.
+            The level alignment that must be `left`<!-- -->, `centered`<!-- -->,
+            or `right`<!-- -->.
           type: '"Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
       return:
         type: void
@@ -540,7 +542,7 @@ methods:
     fullName: setLevelBullet(level, listBullet, charCode, fontName)
     summary: >-
       Sets the bullet format at the specified level in the list. If the bullet
-      is 'Custom', the charCode is required.
+      is `custom`<!-- -->, the `charCode` is required.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -598,20 +600,20 @@ methods:
         number, fontName?: string): void;
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: listBullet
-          description: Required. The bullet.
+          description: The bullet.
           type: <xref uid="word!Word.ListBullet:enum" />
         - id: charCode
           description: >-
             Optional. The bullet character's code value. Used only if the bullet
-            is 'Custom'.
+            is `custom`<!-- -->.
           type: number
         - id: fontName
           description: >-
             Optional. The bullet's font name. Used only if the bullet is
-            'Custom'.
+            `custom`<!-- -->.
           type: string
       return:
         type: void
@@ -622,7 +624,7 @@ methods:
     fullName: setLevelBullet(level, listBullet, charCode, fontName)
     summary: >-
       Sets the bullet format at the specified level in the list. If the bullet
-      is 'Custom', the charCode is required.
+      is `custom`<!-- -->, the `charCode` is required.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -636,22 +638,22 @@ methods:
         fontName?: string): void;
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: listBullet
-          description: Required. The bullet.
+          description: The bullet.
           type: >-
             "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" |
             "Checkmark"
         - id: charCode
           description: >-
             Optional. The bullet character's code value. Used only if the bullet
-            is 'Custom'.
+            is `custom`<!-- -->.
           type: number
         - id: fontName
           description: >-
             Optional. The bullet's font name. Used only if the bullet is
-            'Custom'.
+            `custom`<!-- -->.
           type: string
       return:
         type: void
@@ -673,17 +675,15 @@ methods:
         bulletNumberPictureIndent: number): void;
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: textIndent
-          description: >-
-            Required. The text indent in points. It is the same as paragraph
-            left indent.
+          description: The text indent in points. It is the same as paragraph left indent.
           type: number
         - id: bulletNumberPictureIndent
           description: >-
-            Required. The relative indent, in points, of the bullet, number, or
-            picture. It is the same as paragraph first line indent.
+            The relative indent, in points, of the bullet, number, or picture.
+            It is the same as paragraph first line indent.
           type: number
       return:
         type: void
@@ -750,18 +750,18 @@ methods:
         formatString?: Array<string | number>): void;
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: listNumbering
-          description: Required. The ordinal format.
+          description: The ordinal format.
           type: <xref uid="word!Word.ListNumbering:enum" />
         - id: formatString
           description: >-
             Optional. The numbering string format defined as an array of strings
-            and/or integers. Each integer is a level of number type that is
-            higher than or equal to this level. For example, an array of \["(",
-            level - 1, ".", level, ")"\] can define the format of "(2.c)", where
-            2 is the parent's item number and c is this level's item number.
+            or integers. Each integer is a level of number type that is higher
+            than or equal to this level. For example, an array of \["(", level -
+            1, ".", level, ")"\] can define the format of "(2.c)", where 2 is
+            the parent's item number and c is this level's item number.
           type: Array&lt;string | number&gt;
       return:
         type: void
@@ -784,20 +784,20 @@ methods:
         formatString?: Array<string | number>): void;
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: listNumbering
-          description: Required. The ordinal format.
+          description: The ordinal format.
           type: >-
             "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" |
             "LowerLetter"
         - id: formatString
           description: >-
             Optional. The numbering string format defined as an array of strings
-            and/or integers. Each integer is a level of number type that is
-            higher than or equal to this level. For example, an array of \["(",
-            level - 1, ".", level, ")"\] can define the format of "(2.c)", where
-            2 is the parent's item number and c is this level's item number.
+            or integers. Each integer is a level of number type that is higher
+            than or equal to this level. For example, an array of \["(", level -
+            1, ".", level, ")"\] can define the format of "(2.c)", where 2 is
+            the parent's item number and c is this level's item number.
           type: Array&lt;string | number&gt;
       return:
         type: void
@@ -817,7 +817,7 @@ methods:
       content: 'setLevelPicture(level: number, base64EncodedImage?: string): void;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: base64EncodedImage
           description: >-
@@ -844,10 +844,10 @@ methods:
       content: 'setLevelStartingNumber(level: number, startingNumber: number): void;'
       parameters:
         - id: level
-          description: Required. The level in the list.
+          description: The level in the list.
           type: number
         - id: startingNumber
-          description: Required. The number to start with.
+          description: The number to start with.
           type: number
       return:
         type: void

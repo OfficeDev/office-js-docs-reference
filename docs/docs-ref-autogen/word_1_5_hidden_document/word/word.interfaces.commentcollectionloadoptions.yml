@@ -128,8 +128,8 @@ properties:
     fullName: resolved
     summary: >-
       For EACH ITEM in the collection: Specifies the comment thread's status.
-      Setting to true resolves the comment thread. Getting a value of true means
-      that the comment thread is resolved.
+      Setting to `true` resolves the comment thread. Getting a value of `true`
+      means that the comment thread is resolved.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

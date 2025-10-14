@@ -513,7 +513,9 @@ methods:
         void;
       parameters:
         - id: options
-          description: The options for configuring the content control's placeholder text.
+          description: >-
+            Optional. The options for configuring the content control's
+            placeholder text.
           type: <xref uid="word!Word.ContentControlPlaceholderOptions:interface" />
       return:
         type: void

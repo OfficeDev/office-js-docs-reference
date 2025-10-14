@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: alignment
     summary: >-
-      Specifies the alignment for a paragraph. The value can be 'left',
-      'centered', 'right', or 'justified'.
+      Specifies the alignment for a paragraph. The value can be `left`<!-- -->,
+      `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -79,7 +79,7 @@ properties:
     uid: word!Word.Paragraph#contentControls:member
     package: word!
     fullName: contentControls
-    summary: Gets the collection of content control objects in the paragraph.
+    summary: Gets the collection of `ContentControl` objects in the paragraph.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -145,7 +145,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the paragraph. The
+      Gets the collection of `InlinePicture` objects in the paragraph. The
       collection doesn't include floating images.
     remarks: >-
       \[ [API set: WordApi
@@ -493,8 +493,8 @@ methods:
     package: word!
     fullName: clear()
     summary: >-
-      Clears the contents of the paragraph object. The user can perform the undo
-      operation on the cleared content.
+      Clears the contents of the `Paragraph` object. The user can perform the
+      undo operation on the cleared content.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -589,10 +589,10 @@ methods:
     package: word!
     fullName: getHtml()
     summary: >-
-      Gets an HTML representation of the paragraph object. When rendered in a
+      Gets an HTML representation of the `Paragraph` object. When rendered in a
       web page or HTML viewer, the formatting will be a close, but not exact,
-      match for of the formatting of the document. This method doesn't return
-      the exact same HTML for the same document on different platforms (Windows,
+      match for the formatting of the document. This method doesn't return the
+      exact same HTML for the same document on different platforms (Windows,
       Mac, Word on the web, etc.). If you need exact fidelity, or consistency
       across platforms, use `Paragraph.getOoxml()` and convert the returned XML
       to HTML.
@@ -642,7 +642,7 @@ methods:
     uid: word!Word.Paragraph#getOoxml:member(1)
     package: word!
     fullName: getOoxml()
-    summary: Gets the Office Open XML (OOXML) representation of the paragraph object.
+    summary: Gets the Office Open XML (OOXML) representation of the `Paragraph` object.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -754,13 +754,13 @@ methods:
         "Before" | "After"): void;
       parameters:
         - id: breakType
-          description: Required. The break type to add to the document.
+          description: The break type to add to the document.
           type: >-
             <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" |
             "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
             "Line"
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -771,16 +771,18 @@ methods:
     uid: word!Word.Paragraph#insertContentControl:member(1)
     package: word!
     fullName: insertContentControl(contentControlType)
-    summary: Wraps the Paragraph object with a content control.
+    summary: Wraps the `Paragraph` object with a content control.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
-      `PlainText` support was added in WordApi 1.5. `CheckBox` support was added
-      in WordApi 1.7. `DropDownList` and `ComboBox` support was added in WordApi
-      1.9.
+      `plainText` support was added in WordApi 1.5. `checkBox` support was added
+      in WordApi 1.7. `dropDownList` and `comboBox` support was added in WordApi
+      1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
+      `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
+      WordApiDesktop 1.3.
 
 
       #### Examples
@@ -855,21 +857,36 @@ methods:
         insertContentControl(contentControlType?:
         Word.ContentControlType.richText | Word.ContentControlType.plainText |
         Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList
-        | Word.ContentControlType.comboBox | "RichText" | "PlainText" |
-        "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
+        | Word.ContentControlType.comboBox |
+        Word.ContentControlType.buildingBlockGallery |
+        Word.ContentControlType.datePicker |
+        Word.ContentControlType.repeatingSection |
+        Word.ContentControlType.picture | Word.ContentControlType.group |
+        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
+        "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" |
+        "Group"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText',
-            'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default
-            is 'RichText'.
+            Optional. Content control type to insert. Must be `richText`<!--
+            -->, `plainText`<!-- -->, `checkBox`<!-- -->, `dropDownList`<!--
+            -->, `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->,
+            `datePicker`<!-- -->, `repeatingSection`<!-- -->, `picture`<!-- -->,
+            or `group`<!-- -->. The default is `richText`<!-- -->.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
             uid="word!Word.ContentControlType.checkBox:member" /> | <xref
             uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
-            uid="word!Word.ContentControlType.comboBox:member" /> | "RichText" |
-            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"
+            uid="word!Word.ContentControlType.comboBox:member" /> | <xref
+            uid="word!Word.ContentControlType.buildingBlockGallery:member" /> |
+            <xref uid="word!Word.ContentControlType.datePicker:member" /> |
+            <xref uid="word!Word.ContentControlType.repeatingSection:member" />
+            | <xref uid="word!Word.ContentControlType.picture:member" /> | <xref
+            uid="word!Word.ContentControlType.group:member" /> | "RichText" |
+            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
+            "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" |
+            "Picture" | "Group"
       return:
         type: <xref uid="word!Word.ContentControl:class" />
         description: ''
@@ -897,10 +914,12 @@ methods:
         Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -962,10 +981,12 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: html
-          description: Required. The HTML to be inserted in the paragraph.
+          description: The HTML to be inserted in the paragraph.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1029,10 +1050,12 @@ methods:
         Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The Base64-encoded image to be inserted.
+          description: The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1059,10 +1082,12 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
-          description: Required. The OOXML to be inserted in the paragraph.
+          description: The OOXML to be inserted in the paragraph.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1089,10 +1114,10 @@ methods:
         "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -1138,10 +1163,12 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: text
-          description: Required. Text to be inserted.
+          description: Text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1229,8 +1256,9 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the
-      paragraph object. The search results are a collection of range objects.
+      Performs a search with the specified search options on the scope of the
+      `Paragraph` object. The search results are a collection of `Range`
+      objects.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1250,7 +1278,7 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: Required. The search text.
+          description: The search text.
           type: string
         - id: searchOptions
           description: Optional. Options for the search.
@@ -1313,8 +1341,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -1335,8 +1363,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void

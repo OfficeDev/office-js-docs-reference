@@ -3,7 +3,7 @@ name: Word.PaneCollection
 uid: word!Word.PaneCollection:class
 package: word!
 fullName: Word.PaneCollection
-summary: Represents the collection of pane.
+summary: Represents the collection of [Word.Pane](xref:word!Word.Pane:class) objects.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

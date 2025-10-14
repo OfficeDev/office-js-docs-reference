@@ -102,7 +102,7 @@ methods:
       content: 'getById(id: number): Word.List;'
       parameters:
         - id: id
-          description: Required. A list identifier.
+          description: A list identifier.
           type: number
       return:
         type: <xref uid="word!Word.List:class" />
@@ -128,7 +128,7 @@ methods:
       content: 'getByIdOrNullObject(id: number): Word.List;'
       parameters:
         - id: id
-          description: Required. A list identifier.
+          description: A list identifier.
           type: number
       return:
         type: <xref uid="word!Word.List:class" />
@@ -176,7 +176,7 @@ methods:
     uid: word!Word.ListCollection#getItem:member(1)
     package: word!
     fullName: getItem(id)
-    summary: Gets a list object by its ID.
+    summary: Gets a `List` object by its ID.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

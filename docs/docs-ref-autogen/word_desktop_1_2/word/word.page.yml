@@ -266,7 +266,9 @@ methods:
         "End"): Word.Range;
       parameters:
         - id: rangeLocation
-          description: Optional. The range location must be 'Whole', 'Start', or 'End'.
+          description: >-
+            Optional. The range location must be `whole`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->.
           type: >-
             <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
             uid="word!Word.RangeLocation.start:member" /> | <xref
