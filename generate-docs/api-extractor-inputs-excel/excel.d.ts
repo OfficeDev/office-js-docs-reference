@@ -13975,8 +13975,7 @@ export declare namespace Excel {
          * Returns a `window` object that represents the active window (the window on top). Read-only.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly activeWindow: Excel.Window;
         /**
@@ -13996,11 +13995,10 @@ export declare namespace Excel {
          */
         readonly iterativeCalculation: Excel.IterativeCalculation;
         /**
-         * Returns all the Excel windows.
+         * Returns all the open Excel windows.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly windows: Excel.WindowCollection;
         /**
@@ -14085,8 +14083,7 @@ export declare namespace Excel {
          * Checks the spelling of a single word. Returns `true` if the word is spelled correctly, otherwise returns `false`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param word - The word that you want to check.
          * @param options - Optional. The options for checking spelling.
@@ -14097,8 +14094,7 @@ export declare namespace Excel {
                     This method is equivalent to using "F2" when selecting a cell or range in the Excel UI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         enterEditingMode(): void;
         /**
@@ -14123,8 +14119,7 @@ export declare namespace Excel {
                     The maximum number of parameters is 30, including the first two.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param firstRange - The first `Range` or `RangeAreas` object.
          * @param secondRange - The second `Range` or `RangeAreas` object.
@@ -14521,30 +14516,11 @@ export declare namespace Excel {
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
         /**
-         * Enters Scratchpad Preview Mode for the workbook, showing changes suggested by Copilot to the user.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        enterPreviewMode(): void;
-        /**
-         * Exits Scratchpad Preview Mode for the workbook. This method should be called once the user decides to apply or discard changes suggested by Copilot.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param applyChanges - A Boolean value that specifies whether the user wants to apply the changes proposed by Copilot shown in Preview Mode (`true`), or discard the changes shown in Preview Mode (`false`). The default value is `false`, as accepting changes should be an active and explicit choice by the user.
-         */
-        exitPreviewMode(applyChanges: boolean): void;
-        /**
-         * Sets focus on the workbook. This causes the Excel grid or the currently active object
+         * Sets focus on the workbook. This will cause the grid or the currently active object
                     to receive keyboard events.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         focus(): void;
         /**
@@ -15057,8 +15033,7 @@ export declare namespace Excel {
          * Checks the spelling of words in this worksheet. This method opens the Spelling dialog box in the Excel UI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param options - Optional. The options for checking spelling.
          */
@@ -15067,8 +15042,7 @@ export declare namespace Excel {
          * Clears the tracer arrows from the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         clearArrows(): void;
         /**
@@ -15104,8 +15078,7 @@ export declare namespace Excel {
          * Returns the evaluation result of a formula string. Only formula input is supported. If the formula name is invalid, the `InvalidArgument` error is thrown.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param name - The name of the formula to run.
          */
@@ -15431,24 +15404,21 @@ export declare namespace Excel {
      * Represents the options for checking spelling.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     export interface CheckSpellingOptions {
         /**
          * Optional. A string that indicates the file name of the custom dictionary to be examined if the word isn't found in the main dictionary. If this argument is omitted, Excel's currently specified dictionary is used.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         customDictionary?: string;
         /**
          * Optional. Set to `true` to ignore words that are all uppercase. Set to `false` to check words that are all uppercase. If this argument is omitted, Excel's current setting is used.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         ignoreUppercase?: boolean;
     }
@@ -16211,8 +16181,7 @@ export declare namespace Excel {
          * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         formulaArray: string;
         /**
@@ -16457,8 +16426,7 @@ export declare namespace Excel {
          * Checks the spelling of words in this range. This method opens the Spelling dialog box in the Excel UI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param options - Optional. The options for checking spelling.
          */
@@ -16710,7 +16678,7 @@ export declare namespace Excel {
          */
         getEntireRow(): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16720,7 +16688,7 @@ export declare namespace Excel {
          */
         getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16815,7 +16783,7 @@ export declare namespace Excel {
          */
         getPrecedents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -16825,7 +16793,7 @@ export declare namespace Excel {
          */
         getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -17156,8 +17124,7 @@ export declare namespace Excel {
          * Draws tracer arrows to the direct dependents of the range.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param remove - Optional. Set to `true` to remove one level of tracer arrows to direct dependents. Set to `false` to expand one level of tracer arrows. The default value is `false`.
          */
@@ -17184,8 +17151,7 @@ export declare namespace Excel {
          * Draws tracer arrows to the direct precedents of the range.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param remove - Optional. Set to `true` to remove one level of tracer arrows to direct precedents. Set to `false` to expand one level of tracer arrows. The default value is `false`.
          */
@@ -19682,32 +19648,38 @@ export declare namespace Excel {
      */
     enum TableSource {
         /**
-         * An external data source.
+         * External data source (such as Microsoft SharePoint Foundation).
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         external = "External",
         /**
          * An Excel range object.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         range = "Range",
         /**
-         * An XML file.
+         * XML data source.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         xml = "Xml",
         /**
-         * A Power Query query.
+         * Query data source.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         query = "Query",
         /**
+         * Power Pivot model.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         model = "Model"
     }
@@ -32194,8 +32166,7 @@ export declare namespace Excel {
          * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         alignMarginsHeaderFooter: boolean;
         /**
@@ -32316,8 +32287,7 @@ export declare namespace Excel {
                     Some printers may not support vertical print quality and the supported values may vary by printer.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         printQuality: number[];
         /**
@@ -32562,48 +32532,42 @@ export declare namespace Excel {
          * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly centerFooterPicture: Excel.HeaderFooterPicture;
         /**
          * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly centerHeaderPicture: Excel.HeaderFooterPicture;
         /**
          * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly leftFooterPicture: Excel.HeaderFooterPicture;
         /**
          * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly leftHeaderPicture: Excel.HeaderFooterPicture;
         /**
          * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly rightFooterPicture: Excel.HeaderFooterPicture;
         /**
          * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly rightHeaderPicture: Excel.HeaderFooterPicture;
         /**
@@ -32784,8 +32748,7 @@ export declare namespace Excel {
      * Represents a picture in the header or footer of a worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     export class HeaderFooterPicture extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -32794,88 +32757,77 @@ export declare namespace Excel {
          * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         brightness: number;
         /**
          * Specifies the type of color transformation of the picture.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         colorType: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
         /**
          * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         contrast: number;
         /**
          * Specifies the number of points that are cropped off the bottom of the picture.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropBottom: number;
         /**
          * Specifies the number of points that are cropped off the left side of the picture.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropLeft: number;
         /**
          * Specifies the number of points that are cropped off the right side of the picture.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropRight: number;
         /**
          * Specifies the number of points that are cropped off the top of the picture.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropTop: number;
         /**
          * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         filename: string;
         /**
          * Specifies the height of the picture in points.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         height: number;
         /**
          * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         lockAspectRatio: boolean;
         /**
          * Specifies the width of the picture in points.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         width: number;
         /**
@@ -32917,43 +32869,37 @@ export declare namespace Excel {
      * Specifies the color transformation of a picture in the header or footer of a worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     enum PictureColorType {
         /**
          * Mixed transformation.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         mixed = "Mixed",
         /**
          * Default color transformation.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         automatic = "Automatic",
         /**
          * Grayscale transformation.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         grayScale = "GrayScale",
         /**
          * Black-and-white transformation.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         blackAndWhite = "BlackAndWhite",
         /**
          * Watermark transformation.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         watermark = "Watermark"
     }
@@ -34428,56 +34374,49 @@ export declare namespace Excel {
          * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         brightness: number;
         /**
          * Specifies the type of color transformation applied to the image.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         colorType: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
         /**
          * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         contrast: number;
         /**
          * Specifies the number of points that are cropped off the bottom of the image.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropBottom: number;
         /**
          * Specifies the number of points that are cropped off the left side of the image.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropLeft: number;
         /**
          * Specifies the number of points that are cropped off the right side of the image.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropRight: number;
         /**
          * Specifies the number of points that are cropped off the top of the image.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         cropTop: number;
         /**
@@ -34506,8 +34445,7 @@ export declare namespace Excel {
          * Increments the brightness of the image by a specified amount.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param increment - Specifies how much to change the value of the Brightness property for the picture. A positive value makes the picture brighter; a negative value makes the picture darker.
          */
@@ -34516,8 +34454,7 @@ export declare namespace Excel {
          * Increments the contrast of the image by a specified amount.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          *
          * @param increment - Specifies how much to change the value of the Contrast property for the picture. A positive value increases the contrast; a negative value decreases the contrast.
          */
@@ -43769,8 +43706,7 @@ export declare namespace Excel {
      * Represents a window in the workbook.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     export class Window extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -43779,32 +43715,28 @@ export declare namespace Excel {
          * Specifies the active cell in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly activeCell: Excel.Range;
         /**
          * Specifies the active pane in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly activePane: Excel.Pane;
         /**
          * Specifies the active sheet in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly activeWorksheet: Excel.Worksheet;
         /**
-         * Gets the panes associated with the window.
+         * Gets a collection of panes associated with the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly panes: Excel.PaneCollection;
         /**
@@ -43819,296 +43751,259 @@ export declare namespace Excel {
          * Gets the visible range of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly visibleRange: Excel.Range;
         /**
          * Specifies whether AutoFilter date grouping is enabled in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         autoFilterDateGroupingEnabled: boolean;
         /**
-         * Specifies a value indicating whether resizing is enabled for the window.
+         * Specifies whether resizing is enabled for the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly enableResize: boolean;
         /**
-         * Specifies a value indicating whether panes are frozen in the window.
+         * Specifies whether panes are frozen in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         freezePanes: boolean;
         /**
          * Specifies the height of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         height: number;
         /**
          * Gets the index of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly index: number;
         /**
-         * Specifies the visibility of the window.
+         * Specifies whether the window is visible.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         isVisible: boolean;
         /**
-         * Specifies the left position of the window.
+         * Specifies the distance, in points, from the left edge of the computer screen to the left edge of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         left: number;
         /**
          * Specifies the name of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         name: string;
         /**
          * Specifies the scroll column of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         scrollColumn: number;
         /**
          * Specifies the scroll row of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         scrollRow: number;
         /**
-         * Specifies the display of formulas in the window.
+         * Specifies whether formulas are shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showFormulas: boolean;
         /**
-         * Specifies the display of gridlines in the window.
+         * Specifies whether gridlines are shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showGridlines: boolean;
         /**
-         * Specifies the display of headings in the window.
+         * Specifies whether headings are shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showHeadings: boolean;
         /**
-         * Specifies the display of the horizontal scroll bar in the window.
+         * Specifies whether the horizontal scroll bar is shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showHorizontalScrollBar: boolean;
         /**
-         * Specifies the display of the outline in the window.
+         * Specifies whether outline is shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showOutline: boolean;
         /**
-         * Specifies the display of the right-to-left layout in the window.
+         * Gets the right-to-left layout value of the window. True means that the window is using right-to-left layout, false means that the window is using left-to-right layout.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly showRightToLeft: boolean;
         /**
-         * Specifies the display of the ruler in the window.
+         * Specifies whether the ruler is shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showRuler: boolean;
         /**
-         * Specifies the display of the vertical scroll bar in the window.
+         * Specifies whether the vertical scroll bar is shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showVerticalScrollBar: boolean;
         /**
-         * Specifies the display of whitespace in the window.
+         * Specifies whether whitespace is shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showWhitespace: boolean;
         /**
-         * Specifies the display of workbook tabs in the window.
+         * Specifies whether workbook tabs are shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showWorkbookTabs: boolean;
         /**
-         * Specifies the display of zeros in the window.
+         * Specifies whether zeroes are shown in the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         showZeros: boolean;
         /**
          * Specifies the split state of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         split: boolean;
         /**
          * Specifies the split column of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         splitColumn: number;
         /**
          * Specifies the horizontal split of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         splitHorizontal: number;
         /**
          * Specifies the split row of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         splitRow: number;
         /**
          * Specifies the vertical split of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         splitVertical: number;
         /**
          * Specifies the tab ratio of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         tabRatio: number;
         /**
-         * Specifies the top position of the window.
+         * Specifies the distance, in points, from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         top: number;
         /**
          * Specifies the type of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly type: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";
         /**
          * Specifies the usable height of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly usableHeight: number;
         /**
          * Specifies the usable width of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly usableWidth: number;
         /**
          * Specifies the view of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         view: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";
         /**
-         * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+         * Specifies the display width of the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         width: number;
         /**
-         * Specifies the window number.
+         * Gets the window number.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly windowNumber: number;
         /**
-         * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+         * Specifies the window state.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         windowState: Excel.WindowState | "maximized" | "minimized" | "normal";
         /**
          * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         zoom: number;
         /**
@@ -44123,96 +44018,84 @@ export declare namespace Excel {
          * Activates the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         activate(): void;
         /**
          * Activates the next window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         activateNext(): void;
         /**
          * Activates the previous window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         activatePrevious(): void;
         /**
          * Closes the window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         close(): OfficeExtension.ClientResult<boolean>;
         /**
-         * Scrolls the window by a large amount.
+         * Scrolls the window by multiple pages. The `down`, `up`, `toRight`, and `toLeft` parameters correspond to the action of scrolling with Page Down, Page Up, Alt+Page Down, and Alt+Page Up keys on the keyboard.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         largeScroll(Down: number, Up: number, ToRight: number, ToLeft: number): void;
         /**
-         * Open a new window
+         * Opens a new Excel window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         newWindow(): Excel.Window;
         /**
          * Converts horizontal points to screen pixels.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         pointsToScreenPixelsX(Points: number): OfficeExtension.ClientResult<number>;
         /**
          * Converts vertical points to screen pixels.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         pointsToScreenPixelsY(Points: number): OfficeExtension.ClientResult<number>;
         /**
          * Scrolls the window to bring the specified range into view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         scrollIntoView(Left: number, Top: number, Width: number, Height: number, Start?: boolean): void;
         /**
          * Scrolls the workbook tabs.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         scrollWorkbookTabs(Sheets?: number, Position?: Excel.ScrollWorkbookTabPosition): void;
         /**
          * Scrolls the workbook tabs.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         scrollWorkbookTabs(Sheets?: number, Position?: "First" | "Last"): void;
         /**
-         * Scrolls the window by a small amount.
+         * Scrolls the window by a number of rows or columns. The `down`, `up`, `toRight`, and `toLeft` parameters correspond to the action of scrolling with arrow keys on the keyboard.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         smallScroll(Down: number, Up: number, ToRight: number, ToLeft: number): void;
         /**
@@ -44246,29 +44129,25 @@ export declare namespace Excel {
      * Specifies the display state of a window.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     enum WindowState {
         /**
          * The window is maximized to fill the entire screen.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         maximized = "maximized",
         /**
          * The window is minimized and collapsed to the taskbar.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         minimized = "minimized",
         /**
          * The window is displayed in normal size and can be moved or resized.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         normal = "normal"
     }
@@ -44276,29 +44155,25 @@ export declare namespace Excel {
      * Specifies the view mode of the window.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     enum WindowView {
         /**
          * The window displays the worksheet in normal view for general data entry and editing.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         normalView = "normalView",
         /**
          * The window displays the worksheet in Page Break Preview mode to show where pages will break when printed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         pageBreakPreview = "pageBreakPreview",
         /**
          * The window displays the worksheet in Page Layout view to show how the worksheet will look when printed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         pageLayoutView = "pageLayoutView"
     }
@@ -44306,36 +44181,31 @@ export declare namespace Excel {
      * Specifies the type of window being displayed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     enum WindowType {
         /**
          * The window displays a chart in its own separate window.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         chartAsWindow = "chartAsWindow",
         /**
          * The window displays a chart embedded within a worksheet.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         chartInPlace = "chartInPlace",
         /**
          * The window displays the Office clipboard contents.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         clipboard = "clipboard",
         /**
          * The window displays a standard Excel workbook.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         workbook = "workbook"
     }
@@ -44343,31 +44213,27 @@ export declare namespace Excel {
      * Enum representing the scroll position for workbook tab navigation.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     enum ScrollWorkbookTabPosition {
         /**
          * Scrolls the tab menu to show the first worksheet tab.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         first = "First",
         /**
          * Scrolls the tab menu to show the last worksheet tab.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         last = "Last"
     }
     /**
-     * Represents the collection of all Window objects.
+     * Represents a collection of Window objects.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     export class WindowCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -44378,40 +44244,35 @@ export declare namespace Excel {
          * Breaks the side-by-side view of windows.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         breakSideBySide(): void;
         /**
          * Compares the current window side by side with the specified window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         compareCurrentSideBySideWith(windowName: string): void;
         /**
          * Gets the number of windows in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets the Window in the collection by index.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         getItemAt(index: number): Excel.Window;
         /**
          * Resets the positions of windows in side-by-side view.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         resetPositionsSideBySide(): void;
         /**
@@ -44442,8 +44303,7 @@ export declare namespace Excel {
      * Represents a pane, such as a frozen or split pane, in an Excel window.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     export class Pane extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -44452,8 +44312,7 @@ export declare namespace Excel {
          * Returns index of the pane.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         readonly index: number;
         /**
@@ -44484,11 +44343,10 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.PaneData;
     }
     /**
-     * Represents the collection of all Pane objects that are part of the workbook.
+     * Represents a collection of Pane objects.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiDesktop 1.1]
      */
     export class PaneCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -44496,19 +44354,17 @@ export declare namespace Excel {
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Pane[];
         /**
-         * Returns the number of bindings in the collection.
+         * Returns the number of panes in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets the Pane in the collection by index.
+         * Gets the pane in the collection by index.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         getItemAt(index: number): Excel.Pane;
         /**
@@ -48490,8 +48346,7 @@ export declare namespace Excel {
             * Returns a `window` object that represents the active window (the window on top).
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWindow?: Excel.Interfaces.WindowUpdateData;
             /**
@@ -48719,8 +48574,7 @@ export declare namespace Excel {
              * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             formulaArray?: string;
             /**
@@ -52740,8 +52594,7 @@ export declare namespace Excel {
              * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             alignMarginsHeaderFooter?: boolean;
             /**
@@ -52862,8 +52715,7 @@ export declare namespace Excel {
                         Some printers may not support vertical print quality and the supported values may vary by printer.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             printQuality?: number[];
             /**
@@ -52895,48 +52747,42 @@ export declare namespace Excel {
             * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureUpdateData;
             /**
@@ -53046,88 +52892,77 @@ export declare namespace Excel {
              * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             brightness?: number;
             /**
              * Specifies the type of color transformation of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
             /**
              * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             contrast?: number;
             /**
              * Specifies the number of points that are cropped off the bottom of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropBottom?: number;
             /**
              * Specifies the number of points that are cropped off the left side of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropLeft?: number;
             /**
              * Specifies the number of points that are cropped off the right side of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropRight?: number;
             /**
              * Specifies the number of points that are cropped off the top of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropTop?: number;
             /**
              * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             filename?: string;
             /**
              * Specifies the height of the picture in points.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: number;
             /**
              * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              * Specifies the width of the picture in points.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: number;
         }
@@ -53293,56 +53128,49 @@ export declare namespace Excel {
              * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             brightness?: number;
             /**
              * Specifies the type of color transformation applied to the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
             /**
              * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             contrast?: number;
             /**
              * Specifies the number of points that are cropped off the bottom of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropBottom?: number;
             /**
              * Specifies the number of points that are cropped off the left side of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropLeft?: number;
             /**
              * Specifies the number of points that are cropped off the right side of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropRight?: number;
             /**
              * Specifies the number of points that are cropped off the top of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropTop?: number;
         }
@@ -53827,16 +53655,14 @@ export declare namespace Excel {
             * Specifies the active cell in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeUpdateData;
             /**
             * Specifies the active sheet in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWorksheet?: Excel.Interfaces.WorksheetUpdateData;
             /**
@@ -53851,240 +53677,210 @@ export declare namespace Excel {
             * Gets the visible range of the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             visibleRange?: Excel.Interfaces.RangeUpdateData;
             /**
              * Specifies whether AutoFilter date grouping is enabled in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             autoFilterDateGroupingEnabled?: boolean;
             /**
-             * Specifies a value indicating whether panes are frozen in the window.
+             * Specifies whether panes are frozen in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             freezePanes?: boolean;
             /**
              * Specifies the height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: number;
             /**
-             * Specifies the visibility of the window.
+             * Specifies whether the window is visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             isVisible?: boolean;
             /**
-             * Specifies the left position of the window.
+             * Specifies the distance, in points, from the left edge of the computer screen to the left edge of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             left?: number;
             /**
              * Specifies the name of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             name?: string;
             /**
              * Specifies the scroll column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollColumn?: number;
             /**
              * Specifies the scroll row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollRow?: number;
             /**
-             * Specifies the display of formulas in the window.
+             * Specifies whether formulas are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showFormulas?: boolean;
             /**
-             * Specifies the display of gridlines in the window.
+             * Specifies whether gridlines are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showGridlines?: boolean;
             /**
-             * Specifies the display of headings in the window.
+             * Specifies whether headings are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHeadings?: boolean;
             /**
-             * Specifies the display of the horizontal scroll bar in the window.
+             * Specifies whether the horizontal scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHorizontalScrollBar?: boolean;
             /**
-             * Specifies the display of the outline in the window.
+             * Specifies whether outline is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showOutline?: boolean;
             /**
-             * Specifies the display of the ruler in the window.
+             * Specifies whether the ruler is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRuler?: boolean;
             /**
-             * Specifies the display of the vertical scroll bar in the window.
+             * Specifies whether the vertical scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showVerticalScrollBar?: boolean;
             /**
-             * Specifies the display of whitespace in the window.
+             * Specifies whether whitespace is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWhitespace?: boolean;
             /**
-             * Specifies the display of workbook tabs in the window.
+             * Specifies whether workbook tabs are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWorkbookTabs?: boolean;
             /**
-             * Specifies the display of zeros in the window.
+             * Specifies whether zeroes are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showZeros?: boolean;
             /**
              * Specifies the split state of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             split?: boolean;
             /**
              * Specifies the split column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitColumn?: number;
             /**
              * Specifies the horizontal split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitHorizontal?: number;
             /**
              * Specifies the split row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitRow?: number;
             /**
              * Specifies the vertical split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitVertical?: number;
             /**
              * Specifies the tab ratio of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             tabRatio?: number;
             /**
-             * Specifies the top position of the window.
+             * Specifies the distance, in points, from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             top?: number;
             /**
              * Specifies the view of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             view?: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";
             /**
-             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * Specifies the display width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: number;
             /**
-             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * Specifies the window state.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowState?: Excel.WindowState | "maximized" | "minimized" | "normal";
             /**
              * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             zoom?: number;
         }
@@ -54404,8 +54200,7 @@ export declare namespace Excel {
             * Returns a `window` object that represents the active window (the window on top). Read-only.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWindow?: Excel.Interfaces.WindowData;
             /**
@@ -54425,11 +54220,10 @@ export declare namespace Excel {
             */
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;
             /**
-            * Returns the all windows of Excel application.
+            * Returns all the open Excel windows.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             windows?: Excel.Interfaces.WindowData[];
             /**
@@ -55052,8 +54846,7 @@ export declare namespace Excel {
              * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             formulaArray?: string;
             /**
@@ -60105,8 +59898,7 @@ export declare namespace Excel {
              * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             alignMarginsHeaderFooter?: boolean;
             /**
@@ -60227,8 +60019,7 @@ export declare namespace Excel {
                         Some printers may not support vertical print quality and the supported values may vary by printer.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             printQuality?: number[];
             /**
@@ -60260,48 +60051,42 @@ export declare namespace Excel {
             * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureData;
             /**
@@ -60411,88 +60196,77 @@ export declare namespace Excel {
              * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             brightness?: number;
             /**
              * Specifies the type of color transformation of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
             /**
              * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             contrast?: number;
             /**
              * Specifies the number of points that are cropped off the bottom of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropBottom?: number;
             /**
              * Specifies the number of points that are cropped off the left side of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropLeft?: number;
             /**
              * Specifies the number of points that are cropped off the right side of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropRight?: number;
             /**
              * Specifies the number of points that are cropped off the top of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropTop?: number;
             /**
              * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             filename?: string;
             /**
              * Specifies the height of the picture in points.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: number;
             /**
              * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              * Specifies the width of the picture in points.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: number;
         }
@@ -60841,56 +60615,49 @@ export declare namespace Excel {
              * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             brightness?: number;
             /**
              * Specifies the type of color transformation applied to the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";
             /**
              * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             contrast?: number;
             /**
              * Specifies the number of points that are cropped off the bottom of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropBottom?: number;
             /**
              * Specifies the number of points that are cropped off the left side of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropLeft?: number;
             /**
              * Specifies the number of points that are cropped off the right side of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropRight?: number;
             /**
              * Specifies the number of points that are cropped off the top of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropTop?: number;
             /**
@@ -61586,32 +61353,28 @@ export declare namespace Excel {
             * Specifies the active cell in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeData;
             /**
             * Specifies the active pane in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activePane?: Excel.Interfaces.PaneData;
             /**
             * Specifies the active sheet in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWorksheet?: Excel.Interfaces.WorksheetData;
             /**
-            * Gets the panes associated with the window.
+            * Gets a collection of panes associated with the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             panes?: Excel.Interfaces.PaneData[];
             /**
@@ -61626,296 +61389,259 @@ export declare namespace Excel {
             * Gets the visible range of the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             visibleRange?: Excel.Interfaces.RangeData;
             /**
              * Specifies whether AutoFilter date grouping is enabled in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             autoFilterDateGroupingEnabled?: boolean;
             /**
-             * Specifies a value indicating whether resizing is enabled for the window.
+             * Specifies whether resizing is enabled for the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             enableResize?: boolean;
             /**
-             * Specifies a value indicating whether panes are frozen in the window.
+             * Specifies whether panes are frozen in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             freezePanes?: boolean;
             /**
              * Specifies the height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: number;
             /**
              * Gets the index of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             index?: number;
             /**
-             * Specifies the visibility of the window.
+             * Specifies whether the window is visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             isVisible?: boolean;
             /**
-             * Specifies the left position of the window.
+             * Specifies the distance, in points, from the left edge of the computer screen to the left edge of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             left?: number;
             /**
              * Specifies the name of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             name?: string;
             /**
              * Specifies the scroll column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollColumn?: number;
             /**
              * Specifies the scroll row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollRow?: number;
             /**
-             * Specifies the display of formulas in the window.
+             * Specifies whether formulas are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showFormulas?: boolean;
             /**
-             * Specifies the display of gridlines in the window.
+             * Specifies whether gridlines are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showGridlines?: boolean;
             /**
-             * Specifies the display of headings in the window.
+             * Specifies whether headings are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHeadings?: boolean;
             /**
-             * Specifies the display of the horizontal scroll bar in the window.
+             * Specifies whether the horizontal scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHorizontalScrollBar?: boolean;
             /**
-             * Specifies the display of the outline in the window.
+             * Specifies whether outline is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showOutline?: boolean;
             /**
-             * Specifies the display of the right-to-left layout in the window.
+             * Gets the right-to-left layout value of the window. True means that the window is using right-to-left layout, false means that the window is using left-to-right layout.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRightToLeft?: boolean;
             /**
-             * Specifies the display of the ruler in the window.
+             * Specifies whether the ruler is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRuler?: boolean;
             /**
-             * Specifies the display of the vertical scroll bar in the window.
+             * Specifies whether the vertical scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showVerticalScrollBar?: boolean;
             /**
-             * Specifies the display of whitespace in the window.
+             * Specifies whether whitespace is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWhitespace?: boolean;
             /**
-             * Specifies the display of workbook tabs in the window.
+             * Specifies whether workbook tabs are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWorkbookTabs?: boolean;
             /**
-             * Specifies the display of zeros in the window.
+             * Specifies whether zeroes are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showZeros?: boolean;
             /**
              * Specifies the split state of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             split?: boolean;
             /**
              * Specifies the split column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitColumn?: number;
             /**
              * Specifies the horizontal split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitHorizontal?: number;
             /**
              * Specifies the split row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitRow?: number;
             /**
              * Specifies the vertical split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitVertical?: number;
             /**
              * Specifies the tab ratio of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             tabRatio?: number;
             /**
-             * Specifies the top position of the window.
+             * Specifies the distance, in points, from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             top?: number;
             /**
              * Specifies the type of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             type?: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";
             /**
              * Specifies the usable height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             usableHeight?: number;
             /**
              * Specifies the usable width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             usableWidth?: number;
             /**
              * Specifies the view of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             view?: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";
             /**
-             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * Specifies the display width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: number;
             /**
              * Specifies the window number.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowNumber?: number;
             /**
-             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * Specifies the window state.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowState?: Excel.WindowState | "maximized" | "minimized" | "normal";
             /**
              * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             zoom?: number;
         }
@@ -61929,8 +61655,7 @@ export declare namespace Excel {
              * Returns index of the pane.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             index?: number;
         }
@@ -62647,8 +62372,7 @@ export declare namespace Excel {
             * Returns a `window` object that represents the active window (the window on top).
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWindow?: Excel.Interfaces.WindowLoadOptions;
             /**
@@ -63324,8 +63048,7 @@ export declare namespace Excel {
              * Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             formulaArray?: boolean;
             /**
@@ -71551,8 +71274,7 @@ export declare namespace Excel {
              * Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             alignMarginsHeaderFooter?: boolean;
             /**
@@ -71673,8 +71395,7 @@ export declare namespace Excel {
                         Some printers may not support vertical print quality and the supported values may vary by printer.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             printQuality?: boolean;
             /**
@@ -71713,48 +71434,42 @@ export declare namespace Excel {
             * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
             * Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;
             /**
@@ -71869,8 +71584,7 @@ export declare namespace Excel {
          * Represents a picture in the header or footer of a worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         export interface HeaderFooterPictureLoadOptions {
             /**
@@ -71881,88 +71595,77 @@ export declare namespace Excel {
              * Specifies the brightness of the picture. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             brightness?: boolean;
             /**
              * Specifies the type of color transformation of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             colorType?: boolean;
             /**
              * Specifies the contrast of the picture. The value for this property must be a number from 0.0 (least contrast) to 1.0 (most contrast).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             contrast?: boolean;
             /**
              * Specifies the number of points that are cropped off the bottom of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropBottom?: boolean;
             /**
              * Specifies the number of points that are cropped off the left side of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropLeft?: boolean;
             /**
              * Specifies the number of points that are cropped off the right side of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropRight?: boolean;
             /**
              * Specifies the number of points that are cropped off the top of the picture.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropTop?: boolean;
             /**
              * Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             filename?: boolean;
             /**
              * Specifies the height of the picture in points.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: boolean;
             /**
              * Specifies a value that indicates whether the picture retains its original proportions when resized. `true` if it retains its proportions; otherwise, `false`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              * Specifies the width of the picture in points.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: boolean;
         }
@@ -72098,8 +71801,7 @@ export declare namespace Excel {
              * For EACH ITEM in the collection: Specifies the array formula of a range. If the specified range doesn't contain an array formula, this property returns `null`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             formulaArray?: boolean;
             /**
@@ -73131,56 +72833,49 @@ export declare namespace Excel {
              * Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             brightness?: boolean;
             /**
              * Specifies the type of color transformation applied to the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             colorType?: boolean;
             /**
              * Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             contrast?: boolean;
             /**
              * Specifies the number of points that are cropped off the bottom of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropBottom?: boolean;
             /**
              * Specifies the number of points that are cropped off the left side of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropLeft?: boolean;
             /**
              * Specifies the number of points that are cropped off the right side of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropRight?: boolean;
             /**
              * Specifies the number of points that are cropped off the top of the image.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             cropTop?: boolean;
             /**
@@ -74472,8 +74167,7 @@ export declare namespace Excel {
          * Represents a window in the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         export interface WindowLoadOptions {
             /**
@@ -74484,24 +74178,21 @@ export declare namespace Excel {
             * Specifies the active cell in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeLoadOptions;
             /**
             * Specifies the active pane in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activePane?: Excel.Interfaces.PaneLoadOptions;
             /**
             * Specifies the active sheet in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWorksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
@@ -74516,305 +74207,267 @@ export declare namespace Excel {
             * Gets the visible range of the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             visibleRange?: Excel.Interfaces.RangeLoadOptions;
             /**
              * Specifies whether AutoFilter date grouping is enabled in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             autoFilterDateGroupingEnabled?: boolean;
             /**
-             * Specifies a value indicating whether resizing is enabled for the window.
+             * Specifies whether resizing is enabled for the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             enableResize?: boolean;
             /**
-             * Specifies a value indicating whether panes are frozen in the window.
+             * Specifies whether panes are frozen in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             freezePanes?: boolean;
             /**
              * Specifies the height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: boolean;
             /**
              * Gets the index of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             index?: boolean;
             /**
-             * Specifies the visibility of the window.
+             * Specifies whether the window is visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             isVisible?: boolean;
             /**
-             * Specifies the left position of the window.
+             * Specifies the distance, in points, from the left edge of the computer screen to the left edge of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             left?: boolean;
             /**
              * Specifies the name of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             name?: boolean;
             /**
              * Specifies the scroll column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollColumn?: boolean;
             /**
              * Specifies the scroll row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollRow?: boolean;
             /**
-             * Specifies the display of formulas in the window.
+             * Specifies whether formulas are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showFormulas?: boolean;
             /**
-             * Specifies the display of gridlines in the window.
+             * Specifies whether gridlines are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showGridlines?: boolean;
             /**
-             * Specifies the display of headings in the window.
+             * Specifies whether headings are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHeadings?: boolean;
             /**
-             * Specifies the display of the horizontal scroll bar in the window.
+             * Specifies whether the horizontal scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHorizontalScrollBar?: boolean;
             /**
-             * Specifies the display of the outline in the window.
+             * Specifies whether outline is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showOutline?: boolean;
             /**
-             * Specifies the display of the right-to-left layout in the window.
+             * Gets the right-to-left layout value of the window. True means that the window is using right-to-left layout, false means that the window is using left-to-right layout.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRightToLeft?: boolean;
             /**
-             * Specifies the display of the ruler in the window.
+             * Specifies whether the ruler is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRuler?: boolean;
             /**
-             * Specifies the display of the vertical scroll bar in the window.
+             * Specifies whether the vertical scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showVerticalScrollBar?: boolean;
             /**
-             * Specifies the display of whitespace in the window.
+             * Specifies whether whitespace is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWhitespace?: boolean;
             /**
-             * Specifies the display of workbook tabs in the window.
+             * Specifies whether workbook tabs are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWorkbookTabs?: boolean;
             /**
-             * Specifies the display of zeros in the window.
+             * Specifies whether zeroes are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showZeros?: boolean;
             /**
              * Specifies the split state of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             split?: boolean;
             /**
              * Specifies the split column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitColumn?: boolean;
             /**
              * Specifies the horizontal split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitHorizontal?: boolean;
             /**
              * Specifies the split row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitRow?: boolean;
             /**
              * Specifies the vertical split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitVertical?: boolean;
             /**
              * Specifies the tab ratio of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             tabRatio?: boolean;
             /**
-             * Specifies the top position of the window.
+             * Specifies the distance, in points, from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             top?: boolean;
             /**
              * Specifies the type of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             type?: boolean;
             /**
              * Specifies the usable height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             usableHeight?: boolean;
             /**
              * Specifies the usable width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             usableWidth?: boolean;
             /**
              * Specifies the view of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             view?: boolean;
             /**
-             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * Specifies the display width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: boolean;
             /**
              * Specifies the window number.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowNumber?: boolean;
             /**
-             * Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * Specifies the window state.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowState?: boolean;
             /**
              * Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             zoom?: boolean;
         }
         /**
-         * Represents the collection of all Window objects.
+         * Represents a collection of Window objects.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         export interface WindowCollectionLoadOptions {
             /**
@@ -74825,24 +74478,21 @@ export declare namespace Excel {
             * For EACH ITEM in the collection: Specifies the active cell in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeLoadOptions;
             /**
             * For EACH ITEM in the collection: Specifies the active pane in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activePane?: Excel.Interfaces.PaneLoadOptions;
             /**
             * For EACH ITEM in the collection: Specifies the active sheet in the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             activeWorksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
@@ -74857,296 +74507,259 @@ export declare namespace Excel {
             * For EACH ITEM in the collection: Gets the visible range of the window.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiDesktop 1.1]
             */
             visibleRange?: Excel.Interfaces.RangeLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies whether AutoFilter date grouping is enabled in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             autoFilterDateGroupingEnabled?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value indicating whether resizing is enabled for the window.
+             * For EACH ITEM in the collection: Specifies whether resizing is enabled for the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             enableResize?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value indicating whether panes are frozen in the window.
+             * For EACH ITEM in the collection: Specifies whether panes are frozen in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             freezePanes?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             height?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the index of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             index?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the visibility of the window.
+             * For EACH ITEM in the collection: Specifies whether the window is visible.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             isVisible?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the left position of the window.
+             * For EACH ITEM in the collection: Specifies the distance, in points, from the left edge of the computer screen to the left edge of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             left?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the name of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             name?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the scroll column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollColumn?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the scroll row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             scrollRow?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of formulas in the window.
+             * For EACH ITEM in the collection: Specifies whether formulas are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showFormulas?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of gridlines in the window.
+             * For EACH ITEM in the collection: Specifies whether gridlines are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showGridlines?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of headings in the window.
+             * For EACH ITEM in the collection: Specifies whether headings are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHeadings?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of the horizontal scroll bar in the window.
+             * For EACH ITEM in the collection: Specifies whether the horizontal scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showHorizontalScrollBar?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of the outline in the window.
+             * For EACH ITEM in the collection: Specifies whether outline is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showOutline?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of the right-to-left layout in the window.
+             * For EACH ITEM in the collection: Gets the right-to-left layout value of the window. True means that the window is using right-to-left layout, false means that the window is using left-to-right layout.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRightToLeft?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of the ruler in the window.
+             * For EACH ITEM in the collection: Specifies whether the ruler is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showRuler?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of the vertical scroll bar in the window.
+             * For EACH ITEM in the collection: Specifies whether the vertical scroll bar is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showVerticalScrollBar?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of whitespace in the window.
+             * For EACH ITEM in the collection: Specifies whether whitespace is shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWhitespace?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of workbook tabs in the window.
+             * For EACH ITEM in the collection: Specifies whether workbook tabs are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showWorkbookTabs?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display of zeros in the window.
+             * For EACH ITEM in the collection: Specifies whether zeroes are shown in the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             showZeros?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the split state of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             split?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the split column of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitColumn?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the horizontal split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitHorizontal?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the split row of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitRow?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the vertical split of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             splitVertical?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the tab ratio of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             tabRatio?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the top position of the window.
+             * For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             top?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the type of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             type?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the usable height of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             usableHeight?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the usable width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             usableWidth?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the view of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             view?: boolean;
             /**
-             * For EACH ITEM in the collection: Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * For EACH ITEM in the collection: Specifies the display width of the window.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             width?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the window number.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowNumber?: boolean;
             /**
-             * For EACH ITEM in the collection: Returns or sets an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+             * For EACH ITEM in the collection: Specifies the window state.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             windowState?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             zoom?: boolean;
         }
@@ -75154,8 +74767,7 @@ export declare namespace Excel {
          * Represents a pane, such as a frozen or split pane, in an Excel window.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         export interface PaneLoadOptions {
             /**
@@ -75166,17 +74778,15 @@ export declare namespace Excel {
              * Returns index of the pane.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             index?: boolean;
         }
         /**
-         * Represents the collection of all Pane objects that are part of the workbook.
+         * Represents a collection of Pane objects.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiDesktop 1.1]
          */
         export interface PaneCollectionLoadOptions {
             /**
@@ -75187,8 +74797,7 @@ export declare namespace Excel {
              * For EACH ITEM in the collection: Returns index of the pane.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiDesktop 1.1]
              */
             index?: boolean;
         }

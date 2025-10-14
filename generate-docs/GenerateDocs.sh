@@ -46,7 +46,7 @@ if [ ! -d "tool-inputs" ]; then
 fi
 
 npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts "Api set: ExcelApiOnline 1.1" configs/excel-online-config.json
-npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts "Api set: ExcelDesktopApi 1.1" configs/excel-desktop-1_1-config.json
+npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts "Api set: ExcelApiDesktop 1.1" configs/excel-desktop-1_1-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts "Api set: ExcelApiOnline 1.1" configs/excel-online-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts "Api set: ExcelApi 1.20" configs/excel-1_20-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts "Api set: ExcelApi 1.19" configs/excel-1_19-config.json

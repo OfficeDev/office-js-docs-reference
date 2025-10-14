@@ -1,0 +1,72 @@
+### YamlMime:TSTypeAlias
+name: Excel.ErrorCellValue
+uid: excel!Excel.ErrorCellValue:type
+package: excel!
+fullName: Excel.ErrorCellValue
+summary: Represents a cell value which contains an error.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+
+
+  Learn more about the types in this type alias through the following links. 
+
+
+  [Excel.BlockedErrorCellValue](/javascript/api/excel/excel.blockederrorcellvalue),
+  [Excel.BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue),
+  [Excel.CalcErrorCellValue](/javascript/api/excel/excel.calcerrorcellvalue),
+  [Excel.ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue),
+  [Excel.Div0ErrorCellValue](/javascript/api/excel/excel.div0errorcellvalue),
+  [Excel.ExternalErrorCellValue](/javascript/api/excel/excel.externalerrorcellvalue),
+  [Excel.FieldErrorCellValue](/javascript/api/excel/excel.fielderrorcellvalue),
+  [Excel.GettingDataErrorCellValue](/javascript/api/excel/excel.gettingdataerrorcellvalue),
+  [Excel.NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue),
+  [Excel.NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue),
+  [Excel.NullErrorCellValue](/javascript/api/excel/excel.nullerrorcellvalue),
+  [Excel.NumErrorCellValue](/javascript/api/excel/excel.numerrorcellvalue),
+  [Excel.PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue),
+  [Excel.RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue),
+  [Excel.SpillErrorCellValue](/javascript/api/excel/excel.spillerrorcellvalue),
+  [Excel.ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
+
+
+  // This function sets the value of cell A1 to a #BUSY! error using data types.
+
+  await Excel.run(async (context) => {
+    // Retrieve the Sample worksheet and cell A1 on that sheet.
+    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+    const range = sheet.getRange("A1");
+
+    // Get the error data type and set its type to `busy`.
+    const error: Excel.ErrorCellValue = {
+      type: Excel.CellValueType.error,
+      errorType: Excel.ErrorCellValueType.busy
+    };
+
+    // Set cell A1 as the busy error.
+    range.valuesAsJson = [[error]];
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+syntax: >-
+  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue |
+  CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
+  ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
+  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue |
+  NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue |
+  SpillErrorCellValue | ValueErrorCellValue;

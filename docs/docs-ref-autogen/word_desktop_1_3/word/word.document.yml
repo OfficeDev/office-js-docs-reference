@@ -527,6 +527,28 @@ properties:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the document windows.
+        const windows: Word.WindowCollection = context.document.windows;
+        windows.load("windows/items/length");
+
+        await context.sync();
+
+        console.log(`Number of windows for this document: ${windows.items.length}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -480,6 +480,31 @@ properties:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets all the panes in the active document window.
+
+        // Get the active window.
+        const activeWindow: Word.Window = context.document.activeWindow;
+        activeWindow.load("panes/items/length");
+
+        await context.sync();
+
+        const panes: Word.PaneCollection = activeWindow.panes;
+        console.log(`Number of panes in the current document window: ${panes.items.length}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
