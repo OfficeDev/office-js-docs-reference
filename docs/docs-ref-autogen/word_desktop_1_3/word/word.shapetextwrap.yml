@@ -3,7 +3,9 @@ name: Word.ShapeTextWrap
 uid: word!Word.ShapeTextWrap:class
 package: word!
 fullName: Word.ShapeTextWrap
-summary: Represents all the properties for wrapping text around a shape.
+summary: >-
+  Represents all the properties for wrapping text around a
+  [Word.Shape](xref:word!Word.Shape:class)<!-- -->.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

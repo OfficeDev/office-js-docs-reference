@@ -62,7 +62,7 @@ methods:
       content: 'getItem(index: number): Word.Reviewer;'
       parameters:
         - id: index
-          description: The index of the item to retrieve.
+          description: The location of the item to retrieve.
           type: number
       return:
         type: <xref uid="word!Word.Reviewer:class" />

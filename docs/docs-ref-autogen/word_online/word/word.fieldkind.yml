@@ -4,8 +4,8 @@ uid: word!Word.FieldKind:enum
 package: word!
 fullName: Word.FieldKind
 summary: >-
-  Represents the kind of field. Indicates how the field works in relation to
-  updating.
+  Represents the kind of [Word.Field](xref:word!Word.Field:class) object.
+  Indicates how the field works in relation to updating.
 remarks: >-
   \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

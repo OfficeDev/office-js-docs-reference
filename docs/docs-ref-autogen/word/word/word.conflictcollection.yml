@@ -74,7 +74,7 @@ methods:
       content: 'getItem(index: number): Word.Conflict;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a `Conflict` object.
+          description: The location of a `Conflict` object.
           type: number
       return:
         type: <xref uid="word!Word.Conflict:class" />

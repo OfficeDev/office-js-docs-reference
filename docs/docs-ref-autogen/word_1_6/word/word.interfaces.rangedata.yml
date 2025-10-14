@@ -14,7 +14,7 @@ properties:
     uid: word!Word.Interfaces.RangeData#fields:member
     package: word!
     fullName: fields
-    summary: Gets the collection of field objects in the range.
+    summary: Gets the collection of `Field` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -65,7 +65,7 @@ properties:
     uid: word!Word.Interfaces.RangeData#inlinePictures:member
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of inline picture objects in the range.
+    summary: Gets the collection of `InlinePicture` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

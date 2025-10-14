@@ -43,8 +43,8 @@ properties:
     package: word!
     fullName: bold
     summary: >-
-      Specifies a value that indicates whether the font is bold. True if the
-      font is formatted as bold, otherwise, false.
+      Specifies whether the font is bold. `true` if the font is formatted as
+      bold, otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -86,8 +86,8 @@ properties:
     package: word!
     fullName: color
     summary: >-
-      Specifies the color for the specified font. You can provide the value in
-      the '\#RRGGBB' format or the color name.
+      Specifies the color for the font. You can provide the value in the
+      '\#RRGGBB' format or the color name.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -144,9 +144,8 @@ properties:
     package: word!
     fullName: doubleStrikeThrough
     summary: >-
-      Specifies a value that indicates whether the font has a double
-      strikethrough. True if the font is formatted as double strikethrough text,
-      otherwise, false.
+      Specifies whether the font has a double strikethrough. `true` if the font
+      is formatted as double strikethrough text, otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -164,14 +163,14 @@ properties:
     summary: >-
       Specifies the highlight color. To set it, use a value either in the
       '\#RRGGBB' format or the color name. To remove highlight color, set it to
-      null. The returned highlight color can be in the '\#RRGGBB' format, an
-      empty string for mixed highlight colors, or `null` for no highlight color.
-      Note: Only the default highlight colors are available in Office for
-      Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue",
-      "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
-      "LightGray", and "Black". When the add-in runs in Office for Windows
-      Desktop, any other color is converted to the closest color when applied to
-      the font.
+      `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB'
+      format, an empty string for mixed highlight colors, or `null` for no
+      highlight color. Note: Only the default highlight colors are available in
+      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise",
+      "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed",
+      "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
+      for Windows Desktop, any other color is converted to the closest color
+      when applied to the font.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -213,8 +212,8 @@ properties:
     package: word!
     fullName: italic
     summary: >-
-      Specifies a value that indicates whether the font is italicized. True if
-      the font is italicized, otherwise, false.
+      Specifies whether the font is italicized. `true` if the font is
+      italicized, otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -229,7 +228,7 @@ properties:
     uid: word!Word.Font#name:member
     package: word!
     fullName: name
-    summary: Specifies a value that represents the name of the font.
+    summary: Specifies the name of the font.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -270,7 +269,7 @@ properties:
     uid: word!Word.Font#size:member
     package: word!
     fullName: size
-    summary: Specifies a value that represents the font size in points.
+    summary: Specifies the font size in points.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -312,8 +311,8 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: >-
-      Specifies a value that indicates whether the font has a strikethrough.
-      True if the font is formatted as strikethrough text, otherwise, false.
+      Specifies whether the font has a strikethrough. `true` if the font is
+      formatted as strikethrough text, otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -355,8 +354,8 @@ properties:
     package: word!
     fullName: subscript
     summary: >-
-      Specifies a value that indicates whether the font is a subscript. True if
-      the font is formatted as subscript, otherwise, false.
+      Specifies whether the font is a subscript. `true` if the font is formatted
+      as subscript, otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -372,8 +371,8 @@ properties:
     package: word!
     fullName: superscript
     summary: >-
-      Specifies a value that indicates whether the font is a superscript. True
-      if the font is formatted as superscript, otherwise, false.
+      Specifies whether the font is a superscript. `true` if the font is
+      formatted as superscript, otherwise, `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -388,9 +387,7 @@ properties:
     uid: word!Word.Font#underline:member
     package: word!
     fullName: underline
-    summary: >-
-      Specifies a value that indicates the font's underline type. 'None' if the
-      font isn't underlined.
+    summary: Specifies the font's underline type. `none` if the font isn't underlined.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

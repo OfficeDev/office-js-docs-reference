@@ -280,7 +280,10 @@ methods:
         "End"): Word.Range;
       parameters:
         - id: rangeLocation
-          description: ''
+          description: >-
+            Optional. Specifies the part of the tracked change to get the range
+            for. If not specified, the whole range of the tracked change is
+            returned.
           type: >-
             <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
             uid="word!Word.RangeLocation.start:member" /> | <xref

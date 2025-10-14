@@ -12,5 +12,5 @@
 ||[insertText(text: string, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After")](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserttext-member(1))|Inserts text at the specified location.|
 ||[paragraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-paragraph-member)|Gets the parent paragraph that contains the inline image.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-select-member(1))|Selects the inline picture.|
-|[Range](/javascript/api/word/word.range)|[inlinePictures](/javascript/api/word/word.range#word-word-range-inlinepictures-member)|Gets the collection of inline picture objects in the range.|
+|[Range](/javascript/api/word/word.range)|[inlinePictures](/javascript/api/word/word.range#word-word-range-inlinepictures-member)|Gets the collection of `InlinePicture` objects in the range.|
 ||[insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))|Inserts a picture at the specified location.|

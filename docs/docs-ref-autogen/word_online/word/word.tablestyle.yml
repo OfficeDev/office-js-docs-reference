@@ -3,7 +3,7 @@ name: Word.TableStyle
 uid: word!Word.TableStyle:class
 package: word!
 fullName: Word.TableStyle
-summary: Represents the TableStyle object.
+summary: Represents the `TableStyle` object.
 remarks: >-
   \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

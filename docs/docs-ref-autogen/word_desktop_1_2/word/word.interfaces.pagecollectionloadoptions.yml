@@ -3,7 +3,7 @@ name: Word.Interfaces.PageCollectionLoadOptions
 uid: word!Word.Interfaces.PageCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.PageCollectionLoadOptions
-summary: Represents the collection of page.
+summary: Represents the collection of [Word.Page](xref:word!Word.Page:class) objects.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

@@ -59,7 +59,7 @@ methods:
       content: 'getItemAt(index: number): Word.ReadabilityStatistic;'
       parameters:
         - id: index
-          description: The zero-based index of the readability statistic to get.
+          description: The zero-based index of the item to retrieve.
           type: number
       return:
         type: <xref uid="word!Word.ReadabilityStatistic:class" />

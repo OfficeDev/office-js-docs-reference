@@ -65,7 +65,7 @@ properties:
     uid: word!Word.Annotation#critiqueAnnotation:member
     package: word!
     fullName: critiqueAnnotation
-    summary: Gets the critique annotation object.
+    summary: Gets the `CritiqueAnnotation` object.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -112,7 +112,7 @@ properties:
     fullName: id
     summary: >-
       Gets the unique identifier, which is meant to be used for easier tracking
-      of Annotation objects.
+      of `Annotation` objects.
     remarks: >-
       \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

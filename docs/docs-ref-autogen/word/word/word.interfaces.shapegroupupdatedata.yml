@@ -16,7 +16,7 @@ properties:
     uid: word!Word.Interfaces.ShapeGroupUpdateData#shape:member
     package: word!
     fullName: shape
-    summary: Gets the Shape object associated with the group.
+    summary: Gets the `Shape` object associated with the group.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

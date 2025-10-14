@@ -3,7 +3,9 @@ name: Word.Interfaces.BreakLoadOptions
 uid: word!Word.Interfaces.BreakLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BreakLoadOptions
-summary: Represents a break in a Word document.
+summary: >-
+  Represents a break in a Word document. This could be a page, column, or
+  section break.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

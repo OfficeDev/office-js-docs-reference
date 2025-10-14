@@ -4,9 +4,9 @@ uid: word!Word.DocumentCreated:class
 package: word!
 fullName: Word.DocumentCreated
 summary: >-
-  The DocumentCreated object is the top level object created by
-  Application.CreateDocument. A DocumentCreated object is a special Document
-  object.
+  The `DocumentCreated` object is the top level object created by
+  `Application.createDocument`<!-- -->. A `DocumentCreated` object is a special
+  `Document` object.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -56,7 +56,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
+      Gets the `Body` object of the document. The body is the text that excludes
       headers, footers, footnotes, textboxes, etc.
     remarks: >-
       \[ [API set: WordApiHiddenDocument
@@ -73,7 +73,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This
+      Gets the collection of `ContentControl` objects in the document. This
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
@@ -137,7 +137,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
       \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -152,7 +152,7 @@ properties:
     uid: word!Word.DocumentCreated#sections:member
     package: word!
     fullName: sections
-    summary: Gets the collection of section objects in the document.
+    summary: Gets the collection of `Section` objects in the document.
     remarks: >-
       \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -194,12 +194,10 @@ methods:
       content: 'addStyle(name: string, type: Word.StyleType): Word.Style;'
       parameters:
         - id: name
-          description: Required. A string representing the style name.
+          description: A string representing the style name.
           type: string
         - id: type
-          description: >-
-            Required. The style type, including character, list, paragraph, or
-            table.
+          description: The style type, including character, list, paragraph, or table.
           type: <xref uid="word!Word.StyleType:enum" />
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -221,12 +219,10 @@ methods:
         "Table"): Word.Style;
       parameters:
         - id: name
-          description: Required. A string representing the style name.
+          description: A string representing the style name.
           type: string
         - id: type
-          description: >-
-            Required. The style type, including character, list, paragraph, or
-            table.
+          description: The style type, including character, list, paragraph, or table.
           type: '"Character" | "List" | "Paragraph" | "Table"'
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -246,7 +242,7 @@ methods:
       content: 'deleteBookmark(name: string): void;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: void
@@ -268,7 +264,7 @@ methods:
       content: 'getBookmarkRange(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -294,10 +290,10 @@ methods:
       parameters:
         - id: name
           description: >-
-            Required. The case-insensitive bookmark name. Only alphanumeric and
-            underscore characters are supported. It must begin with a letter but
-            if you want to tag the bookmark as hidden, then start the name with
-            an underscore character. Names can't be longer than 40 characters.
+            The case-insensitive bookmark name. Only alphanumeric and underscore
+            characters are supported. It must begin with a letter but if you
+            want to tag the bookmark as hidden, then start the name with an
+            underscore character. Names can't be longer than 40 characters.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -338,7 +334,7 @@ methods:
     package: word!
     fullName: getStyles()
     summary: >-
-      Gets a StyleCollection object that represents the whole style set of the
+      Gets a `StyleCollection` object that represents the whole style set of the
       document.
     remarks: >-
       \[ [API set: WordApiHiddenDocument
@@ -379,10 +375,12 @@ methods:
         insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -527,7 +525,7 @@ methods:
       content: 'save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;'
       parameters:
         - id: saveBehavior
-          description: Optional. DocumentCreated only supports 'Save'.
+          description: Optional. `DocumentCreated` only supports `save`<!-- -->.
           type: <xref uid="word!Word.SaveBehavior:enum" />
         - id: fileName
           description: >-
@@ -556,7 +554,7 @@ methods:
       content: 'save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;'
       parameters:
         - id: saveBehavior
-          description: Optional. DocumentCreated only supports 'Save'.
+          description: Optional. `DocumentCreated` only supports `save`<!-- -->.
           type: '"Save" | "Prompt"'
         - id: fileName
           description: >-

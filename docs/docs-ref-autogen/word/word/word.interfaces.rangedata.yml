@@ -187,7 +187,7 @@ properties:
     uid: word!Word.Interfaces.RangeData#fields:member
     package: word!
     fullName: fields
-    summary: Gets the collection of field objects in the range.
+    summary: Gets the collection of `Field` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -378,7 +378,7 @@ properties:
     uid: word!Word.Interfaces.RangeData#inlinePictures:member
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of inline picture objects in the range.
+    summary: Gets the collection of `InlinePicture` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -909,12 +909,17 @@ properties:
     package: word!
     fullName: shapes
     summary: >-
-      Gets the collection of shape objects anchored in the range, including both
-      inline and floating shapes. Currently, only the following shapes are
+      Gets the collection of `Shape` objects anchored in the range, including
+      both inline and floating shapes. Currently, only the following shapes are
       supported: text boxes, geometric shapes, groups, pictures, and canvases.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: Be aware that with time, additional types of shapes may be
+      supported. Therefore, your add-in should request and handle specific types
+      of shapes.
 
     isPreview: false
     isDeprecated: false

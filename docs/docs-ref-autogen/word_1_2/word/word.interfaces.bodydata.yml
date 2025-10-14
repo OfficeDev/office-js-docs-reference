@@ -47,7 +47,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the body. The collection
+      Gets the collection of `InlinePicture` objects in the body. The collection
       doesn't include floating images.
     remarks: >-
       \[ [API set: WordApi
@@ -63,7 +63,7 @@ properties:
     uid: word!Word.Interfaces.BodyData#paragraphs:member
     package: word!
     fullName: paragraphs
-    summary: Gets the collection of paragraph objects in the body.
+    summary: Gets the collection of `Paragraph` objects in the body.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

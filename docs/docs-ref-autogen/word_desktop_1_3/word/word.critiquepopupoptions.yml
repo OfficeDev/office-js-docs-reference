@@ -80,7 +80,7 @@ properties:
     package: word!
     fullName: brandingTextResourceId
     summary: >-
-      Gets the manifest resource ID of the string to use for branding. This
+      Specifies the manifest resource ID of the string to use for branding. This
       branding text appears next to your add-in icon in the pop-up menu.
     remarks: >-
       \[ [API set: WordApi
@@ -96,7 +96,7 @@ properties:
     uid: word!Word.CritiquePopupOptions#subtitleResourceId:member
     package: word!
     fullName: subtitleResourceId
-    summary: Gets the manifest resource ID of the string to use as the subtitle.
+    summary: Specifies the manifest resource ID of the string to use as the subtitle.
     remarks: >-
       \[ [API set: WordApi
       1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -111,7 +111,7 @@ properties:
     uid: word!Word.CritiquePopupOptions#suggestions:member
     package: word!
     fullName: suggestions
-    summary: Gets the suggestions to display in the critique pop-up menu.
+    summary: Specifies the suggestions to display in the critique pop-up menu.
     remarks: >-
       \[ [API set: WordApi
       1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -126,7 +126,7 @@ properties:
     uid: word!Word.CritiquePopupOptions#titleResourceId:member
     package: word!
     fullName: titleResourceId
-    summary: Gets the manifest resource ID of the string to use as the title.
+    summary: Specifies the manifest resource ID of the string to use as the title.
     remarks: >-
       \[ [API set: WordApi
       1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

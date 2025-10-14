@@ -413,13 +413,13 @@ methods:
                 }, name: string): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -428,7 +428,7 @@ methods:
                         [key: string]: string;
                     }
         - id: name
-          description: Required. Name of the attribute.
+          description: Name of the attribute.
           type: string
       return:
         type: void
@@ -473,13 +473,13 @@ methods:
                 }): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -682,13 +682,13 @@ methods:
                 }, name: string, value: string): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -697,10 +697,10 @@ methods:
                         [key: string]: string;
                     }
         - id: name
-          description: Required. Name of the attribute.
+          description: Name of the attribute.
           type: string
         - id: value
-          description: Required. Value of the attribute.
+          description: Value of the attribute.
           type: string
       return:
         type: void
@@ -825,18 +825,16 @@ methods:
                 }, index?: number): void;
       parameters:
         - id: xpath
-          description: >-
-            Required. Absolute path to the single parent element in XPath
-            notation.
+          description: Absolute path to the single parent element in XPath notation.
           type: string
         - id: xml
-          description: Required. XML content to be inserted.
+          description: XML content to be inserted.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -1069,13 +1067,13 @@ methods:
                 }): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: xpath
-          description: Required. An XPath query.
+          description: An XPath query.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -1245,7 +1243,7 @@ methods:
       content: 'setXml(xml: string): void;'
       parameters:
         - id: xml
-          description: Required. XML content to be set.
+          description: XML content to be set.
           type: string
       return:
         type: void
@@ -1358,13 +1356,13 @@ methods:
                 }, name: string, value: string): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -1373,10 +1371,10 @@ methods:
                         [key: string]: string;
                     }
         - id: name
-          description: Required. Name of the attribute.
+          description: Name of the attribute.
           type: string
         - id: value
-          description: Required. New value of the attribute.
+          description: New value of the attribute.
           type: string
       return:
         type: void
@@ -1421,16 +1419,16 @@ methods:
                 }): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: xml
-          description: Required. New XML content to be stored.
+          description: New XML content to be stored.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".

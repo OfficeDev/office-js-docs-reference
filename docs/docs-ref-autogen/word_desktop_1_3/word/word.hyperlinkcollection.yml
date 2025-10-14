@@ -62,7 +62,7 @@ methods:
         Word.Hyperlink;
       parameters:
         - id: anchor
-          description: Required. The range to which the hyperlink is added.
+          description: The range to which the hyperlink is added.
           type: <xref uid="word!Word.Range:class" />
         - id: options
           description: Optional. The options to further configure the new hyperlink.

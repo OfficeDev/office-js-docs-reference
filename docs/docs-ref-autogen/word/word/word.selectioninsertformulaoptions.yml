@@ -5,7 +5,7 @@ package: word!
 fullName: Word.SelectionInsertFormulaOptions
 summary: >-
   Represents the options for the
-  [Selection.insertFormula](xref:word!Word.Selection:class) method
+  [Selection.insertFormula](xref:word!Word.Selection:class) method.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
