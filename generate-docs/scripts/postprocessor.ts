@@ -9,7 +9,7 @@ import * as path from "path";
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
 const HOST_VERSION_MAP = [
-    { host: "excel", versions: 21 }, // not including online
+    { host: "excel", versions: 21 }, // not including online or desktop
     { host: "onenote", versions: 1 },
     { host: "outlook", versions: 16 },
     { host: "powerpoint", versions: 10 },
