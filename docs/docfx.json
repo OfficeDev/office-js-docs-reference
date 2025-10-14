@@ -1089,6 +1089,14 @@
         "dest": "excel-js-1.19",
         "moniker_range": "excel-js-1.19"
       }, 
+      "excel-js-1.20": {
+        "dest": "excel-js-1.20",
+        "moniker_range": "excel-js-1.20"
+      }, 
+      "excel-js-desktop-1.1": {
+        "dest": "excel-js-desktop-1.1",
+        "moniker_range": "excel-js-desktop-1.1"
+      },
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
