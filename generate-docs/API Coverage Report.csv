@@ -4799,7 +4799,7 @@ excel,Excel.Pane,"load(options)",Method,Excellent,false
 excel,Excel.Pane,"load(propertyNames)",Method,Excellent,false
 excel,Excel.Pane,"load(propertyNamesAndPaths)",Method,Excellent,false
 excel,Excel.Pane,"toJSON()",Method,Excellent,false
-excel,Excel.PaneCollection,N/A,Class,Good,false
+excel,Excel.PaneCollection,N/A,Class,Fine,false
 excel,Excel.PaneCollection,"context",Property,Excellent,false
 excel,Excel.PaneCollection,"items",Property,Poor,false
 excel,Excel.PaneCollection,"getCount()",Method,Fine,false
@@ -6715,7 +6715,7 @@ excel,Excel.Window,"activate()",Method,Poor,false
 excel,Excel.Window,"activateNext()",Method,Poor,false
 excel,Excel.Window,"activatePrevious()",Method,Poor,false
 excel,Excel.Window,"close()",Method,Poor,false
-excel,Excel.Window,"largeScroll(Down, Up, ToRight, ToLeft)",Method,Poor,false
+excel,Excel.Window,"largeScroll(Down, Up, ToRight, ToLeft)",Method,Good,false
 excel,Excel.Window,"load(options)",Method,Excellent,false
 excel,Excel.Window,"load(propertyNames)",Method,Excellent,false
 excel,Excel.Window,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -13034,7 +13034,7 @@ word,Word.CustomProperty,"set(properties)",Method,Good,false
 word,Word.CustomProperty,"toJSON()",Method,Excellent,false
 word,Word.CustomProperty,"track()",Method,Excellent,false
 word,Word.CustomProperty,"untrack()",Method,Excellent,false
-word,Word.CustomPropertyCollection,N/A,Class,Unknown,true
+word,Word.CustomPropertyCollection,N/A,Class,Great,true
 word,Word.CustomPropertyCollection,"context",Property,Excellent,false
 word,Word.CustomPropertyCollection,"items",Property,Poor,true
 word,Word.CustomPropertyCollection,"add(key, value)",Method,Good,true
@@ -18053,7 +18053,7 @@ word,Word.TableCellCollectionSplitOptions,N/A,Interface,Great,false
 word,Word.TableCellCollectionSplitOptions,"mergeBeforeSplit",Property,Excellent,false
 word,Word.TableCellCollectionSplitOptions,"numColumns",Property,Excellent,false
 word,Word.TableCellCollectionSplitOptions,"numRows",Property,Excellent,false
-word,Word.TableCellFormulaOptions,N/A,Interface,Unknown,false
+word,Word.TableCellFormulaOptions,N/A,Interface,Great,false
 word,Word.TableCellFormulaOptions,"formula",Property,Excellent,false
 word,Word.TableCellFormulaOptions,"numFormat",Property,Excellent,false
 word,Word.TableCellInsertionLocation,N/A,Enum,Great,false
