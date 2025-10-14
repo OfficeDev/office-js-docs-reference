@@ -44,15 +44,15 @@ remarks: >-
     const pagesFirstParagraphText = [];
     for (let i = 0; i < pages.items.length; i++) {
       const page = pages.items[i];
-      page.load('index');
+      page.load("index");
       pagesIndexes.push(page);
 
       const paragraphs = page.getRange().paragraphs;
-      paragraphs.load('items/length');
+      paragraphs.load("items/length");
       pagesNumberOfParagraphs.push(paragraphs);
 
       const firstParagraph = paragraphs.getFirst();
-      firstParagraph.load('text');
+      firstParagraph.load("text");
       pagesFirstParagraphText.push(firstParagraph);
     }
 
@@ -115,7 +115,7 @@ properties:
         const pagesIndexes = [];
         for (let i = 0; i < pageCount; i++) {
           const page = pages.items[i];
-          page.load('index');
+          page.load("index");
           pagesIndexes.push(page);
         }
 

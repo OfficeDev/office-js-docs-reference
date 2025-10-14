@@ -120,6 +120,46 @@ properties:
         type: >-
           <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> |
           string
+  - name: contentId
+    uid: outlook!Office.AttachmentDetailsCompose#contentId:member
+    package: outlook!
+    fullName: contentId
+    summary: >-
+      Gets the content identifier of an inline attachment.
+
+
+      **Important**:
+
+
+      - The `contentId` property is only supported in Outlook on the web and
+      Outlook on Windows (new and classic (preview)). To preview the `contentId`
+      property in classic Outlook on Windows, your Outlook client must run
+      Version 2510 (Build 19312.20000) or later and must be on the Beta Channel.
+      For more information, see [Microsoft 365 Insider
+      Program](https://aka.ms/Msft365InsiderProgram)<!-- -->.
+
+
+      - Starting November 15, 2025, changes to how inline images are represented
+      in the HTML body of Outlook emails in Outlook on the web and the new
+      Outlook on Windows will begin rolling out to production users. Previously,
+      the attachment ID of the image appeared in the `src` attribute of the
+      applicable `<img>` element. After the change, the image will be
+      represented by a content ID (`cid`<!-- -->) in the `src` attribute
+      instead. As a result, you'll need to update your add-in's parsing logic if
+      you parse the attachment ID from the HTML editor or get the Base64 value
+      of the image from the URL in the `src` attribute. For more information,
+      see [Changes to inline image representation in Outlook on the web and new
+      Outlook for
+      Windows](https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook)<!--
+      -->.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentId: string;'
+      return:
+        type: string
   - name: id
     uid: outlook!Office.AttachmentDetailsCompose#id:member
     package: outlook!

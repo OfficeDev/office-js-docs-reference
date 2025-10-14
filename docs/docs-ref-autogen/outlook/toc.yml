@@ -97,6 +97,10 @@ items:
             uid: outlook!Office.Contact:interface
           - name: CustomProperties
             uid: outlook!Office.CustomProperties:interface
+          - name: DecryptedMessageAttachment
+            uid: outlook!Office.DecryptedMessageAttachment:interface
+          - name: DecryptedMessageBody
+            uid: outlook!Office.DecryptedMessageBody:interface
           - name: DelayDeliveryTime
             uid: outlook!Office.DelayDeliveryTime:interface
           - name: Diagnostics
@@ -163,6 +167,8 @@ items:
             uid: outlook!Office.MeetingSuggestion:interface
           - name: MessageCompose
             uid: outlook!Office.MessageCompose:interface
+          - name: MessageDecryptEventCompletedOptions
+            uid: outlook!Office.MessageDecryptEventCompletedOptions:interface
           - name: MessageRead
             uid: outlook!Office.MessageRead:interface
           - name: NotificationMessageAction
@@ -366,6 +372,8 @@ items:
                 uid: office!Office.DocumentSelectionChangedEventArgs:interface
               - name: Error
                 uid: office!Office.Error:interface
+              - name: ExtensionLifeCycle
+                uid: office!Office.ExtensionLifeCycle:interface
               - name: File
                 uid: office!Office.File:interface
               - name: FileProperties
@@ -422,6 +430,8 @@ items:
                 uid: office!Office.TableBinding:interface
               - name: TableData
                 uid: office!Office.TableData:class
+              - name: TaskPane
+                uid: office!Office.TaskPane:interface
               - name: TextBinding
                 uid: office!Office.TextBinding:interface
               - name: UI
@@ -1173,3 +1183,5 @@ items:
             href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
           - name: Shared Runtime requirement sets
             href: ../../requirement-sets/common/shared-runtime-requirement-sets.md
+          - name: Task Pane API requirement sets
+            href: ../../requirement-sets/common/task-pane-api-requirement-sets.md

@@ -40,6 +40,7 @@ interfaces:
   - office!Office.Document:interface
   - office!Office.DocumentSelectionChangedEventArgs:interface
   - office!Office.Error:interface
+  - office!Office.ExtensionLifeCycle:interface
   - office!Office.File:interface
   - office!Office.FileProperties:interface
   - office!Office.GetBindingDataOptions:interface
@@ -67,6 +68,7 @@ interfaces:
   - office!Office.Slice:interface
   - office!Office.Tab:interface
   - office!Office.TableBinding:interface
+  - office!Office.TaskPane:interface
   - office!Office.TextBinding:interface
   - office!Office.UI:interface
   - office!Office.Urls:interface

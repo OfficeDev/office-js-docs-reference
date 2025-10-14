@@ -135,7 +135,7 @@ export declare namespace Word {
          */
         readonly fields: Word.FieldCollection;
         /**
-         * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+         * Gets the text format of the body. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]

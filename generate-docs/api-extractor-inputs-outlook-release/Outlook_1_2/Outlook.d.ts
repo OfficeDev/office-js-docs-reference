@@ -440,9 +440,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: Location;
         
@@ -1213,9 +1219,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: string;
         /**
@@ -2467,6 +2479,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: The Office.EnhancedLocation API was introduced in Mailbox requirement set 1.8. Use the EnhancedLocation API to better identify and manage
+     * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface Location {
         /**
@@ -2518,6 +2534,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
+         *
          * **Errors**:
          *
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
@@ -2541,6 +2560,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
          *
          * **Errors**:
          *

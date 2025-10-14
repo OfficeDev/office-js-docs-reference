@@ -1604,6 +1604,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead.
+         * For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         enhancedLocation: EnhancedLocation;
         /**
@@ -1637,9 +1641,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: Location;
         /**
@@ -3138,6 +3148,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead.
+         * For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         enhancedLocation: EnhancedLocation;
         /**
@@ -3206,9 +3220,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: string;
         /**
@@ -4095,6 +4115,26 @@ export declare namespace Office {
          * `Office.MailboxEnums.AttachmentType.File`. The file name extension is returned in the `name` property.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
+        /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `contentId` property is only supported in Outlook on the web and Outlook on Windows (new and classic (preview)).
+         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
+         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
+         *
+         * - Starting November 15, 2025, changes to how inline images are represented in the HTML body of Outlook emails in
+         * Outlook on the web and the new Outlook on Windows will begin rolling out to production users.
+         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
+         * After the change, the image will be represented by a content ID (`cid`) in the `src` attribute instead.
+         * As a result, you'll need to update your add-in's parsing logic if you parse the attachment ID from the HTML editor or
+         * get the Base64 value of the image from the URL in the `src` attribute. For more information, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         */
+        contentId: string;
         /**
          * Gets the index of the attachment.
          */
@@ -5349,6 +5389,164 @@ export declare namespace Office {
         set(name: string, value: string): void;
     }
     /**
+     * Represents an attachment in a decrypted message.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * To learn how to develop an encryption add-in in Outlook, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | Create an encryption Outlook add-in}.
+     *
+     * @beta
+     */
+    export interface DecryptedMessageAttachment {
+        /**
+         * Specifies the type of attachment.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        attachmentType: MailboxEnums.AttachmentType;
+        /**
+         * Specifies the Base64-encoded content of the attachment.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: The `content` property isn't supported by attachments of type `MailboxEnums.AttachmentType.Cloud`. 
+         *
+         * @beta
+         */
+        content: string;
+        /**
+         * Specifies the content identifier of an inline attachment.
+         *
+         * The `contentId` property must be specified if `isInline` is set to `true`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: When images are added to a message as inline attachments, they're automatically assigned a content ID. In the body of a message, the content ID of an inline attachment is
+         * specified in the `src` attribute of the `<img>` element (for example, `<img width=96 height=96 id="Picture_1" src="cid:image001.png@01DC1E6F.FC7C7410">`).
+         * To easily identify and provide these inline attachments during decryption, we recommend saving the content IDs of inline attachments to the message header during encryption.
+         * Call `Office.context.mailbox.item.getAttachmentsAsync` to get the content ID of an inline attachment. Then, call `Office.context.mailbox.item.internetHeaders.setAsync` to save the ID to the header of the message.
+         *
+         * @beta
+         */
+        contentId?: string;
+        /**
+         * If true, specifies that the decrypted attachment appears as an image in the body of the message instead of in the attachment list.
+         * If the `isInline` property isn't specified, its value is set to false.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        isInline?: boolean;
+        /**
+         * Specifies the name of the attachment.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        name: string;
+        /**
+         * Specifies the URL reference path of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
+         * The `path` property must be specified for attachments of type `MailboxEnums.AttachmentType.Cloud`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        path?: string;
+    }
+    /**
+     * Represents the body of a decrypted message.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * To learn how to develop an encryption add-in in Outlook, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | Create an encryption Outlook add-in}.
+     *
+     * @beta
+     */
+    export interface DecryptedMessageBody {
+        /**
+         * Specifies the format of the body of a message.
+         * The body of a message can be formatted as `Office.CoercionType.Html` or `Office.CoercionType.Text`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        coercionType: CommonAPI.CoercionType;
+        /**
+         * Specifies the content displayed in the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        content: string;
+    }
+    /**
      * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
      *
      * @remarks
@@ -5969,6 +6167,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the Office.Location API instead.
+     * For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface EnhancedLocation {
         /**
@@ -6013,9 +6215,6 @@ export declare namespace Office {
         addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
-         * 
-         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
-         * added as appointment locations aren't returned by this method.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -6024,18 +6223,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getAsync` method doesn't return {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | personal contact groups} that
+         * were added to the **Location** field of an appointment.
+         *
+         * - If a location was added using `Office.context.mailbox.item.location.setAsync`, its location type is `Office.MailboxEnums.LocationType.Custom`.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. An array of `Office.LocationDetails` objects representing the locations of the
+         *        appointment is returned in the `asyncResult.value` property.
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
          *
-         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
-         * added as appointment locations aren't returned by this method.
-         * 
          * @remarks
          * [Api set: Mailbox 1.8]
          *
@@ -6043,8 +6247,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getAsync` method doesn't return {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | personal contact groups} that
+         * were added to the **Location** field of an appointment.
+         *
+         * - If a location was added using `Office.context.mailbox.item.location.setAsync`, its location type is `Office.MailboxEnums.LocationType.Custom`.
+         *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. An array of `Office.LocationDetails` objects representing the locations of the
+         *        appointment is returned in the `asyncResult.value` property.
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
@@ -8517,6 +8729,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: The Office.EnhancedLocation API was introduced in Mailbox requirement set 1.8. Use the EnhancedLocation API to better identify and manage
+     * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface Location {
         /**
@@ -8568,6 +8784,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
+         *
          * **Errors**:
          *
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
@@ -8591,6 +8810,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
          *
          * **Errors**:
          *
@@ -9835,8 +10057,9 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
-     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}, the
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}, or
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | decryption} (preview).
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -9858,7 +10081,7 @@ export declare namespace Office {
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
+         * Indicates that the event-based, spam-reporting, or decryption (preview) add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -9873,9 +10096,9 @@ export declare namespace Office {
          *
          * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
+         * @param options - Optional. An object that specifies the behavior of an event-based, spam-reporting, or decryption add-in when it completes processing an event.
          */
-        completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions): void;
+        completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions | MessageDecryptEventCompletedOptions): void;
     }
     /**
      * Represents the categories master list on the mailbox.
@@ -11755,6 +11978,91 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
+     * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | encryption add-in} after it completes processing an
+     * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OnMessageRead} event.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface MessageDecryptEventCompletedOptions {
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
+         * this value indicates if the `OnMessageRead` event should continue to run or be canceled. If the `allowEvent` property is set to `true`, the decrypted contents of the message is displayed.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        allowEvent: boolean;
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
+         * and set its `allowEvent` property to `true`, this property sets the decrypted attachments of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        attachments?: DecryptedMessageAttachment[];
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
+         * and set its `allowEvent` property to `true`, this property specifies any JSON data passed to the add-in for processing.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync`.
+         * If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
+         *
+         * - You can use the `contextData` property to store custom internet headers to decrypt messages in reply and forward scenarios.
+         *
+         * @beta
+         */
+        contextData?: any;
+        /**
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
+         * and set its `allowEvent` property to `true`, this property sets the decrypted contents of the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: If the `emailBody` property isn't specified, an empty body is returned.
+         *
+         * @beta
+         */
+        emailBody?: DecryptedMessageBody;
     }
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
