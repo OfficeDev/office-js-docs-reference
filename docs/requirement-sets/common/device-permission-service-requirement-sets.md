@@ -1,7 +1,7 @@
 ---
 title: Device Permission Service requirement sets
 description: Learn more about the Device Permission Service API requirement sets and the platforms it supports.
-ms.date: 06/17/2025
+ms.date: 10/16/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ With the Device Permissions Service requirement set, your add-in can request acc
 
 Office Add-ins run across multiple versions of Office. The following table lists the Device Permission Service requirement sets, its supported Office client applications, and the minimum builds or versions for those applications, where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iOS | Outlook on Android |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li><li>volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)</li></ul> | Office on Mac | Office on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | DevicePermissionService 1.1 | Chromium-based browsers* | [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) | Not supported | Not supported | Not supported |
 

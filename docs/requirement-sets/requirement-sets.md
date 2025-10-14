@@ -16,7 +16,7 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 > [!NOTE]
 > - The initial Office 2016 release installed via MSI only contains the ExcelApi 1.1, WordApi 1.1, and Common API requirement sets. For more information about the update history of the various Office versions, check out the [See also](#see-also) section. Office Add-ins may not be supported on all services that are members of the [Office Cloud Storage Partner Program](https://developer.microsoft.com/office/cloud-storage-partner-program), which enables integrating Office on the web to work with Office documents as part of their service offering. For more information, please contact the member service.
 >
-> - In the following tables, volume-licensed perpetual versions refer to [Long Term Servicing Channel](/officeupdates/update-history-office-2024) (LTSC) versions of Office.
+> - In the following tables, volume-licensed perpetual versions refer to [Long Term Servicing Channel (LTSC)](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc) versions of Office.
 
 ## Excel
 

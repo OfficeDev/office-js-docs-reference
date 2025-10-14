@@ -1,7 +1,7 @@
 ---
 title: Custom Functions requirement sets
 description: Details about the Custom Functions requirement sets for Excel JavaScript API.
-ms.date: 05/15/2025
+ms.date: 10/16/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [Custom Functions](/office/dev/add-ins/excel/custom-functions-overview) use separate requirement sets from the core Excel JavaScript APIs. The following table lists the Custom Functions requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
+| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | CustomFunctionsRuntime 1.5 | Supported | Version 2504 (Build 18730.20088) | Not supported | Not supported | Version 16.96 (25042933) | Not supported |
 | CustomFunctionsRuntime 1.4 | Supported | Version 2208 (Build 15601.20148) | Not supported | Not supported | Version 16.64 (22081401) | Not supported |

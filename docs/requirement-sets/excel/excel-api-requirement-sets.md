@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement sets
 description: Office Add-in requirement set information for Excel builds.
-ms.date: 09/12/2025
+ms.date: 10/16/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -19,7 +19,7 @@ Excel add-ins run across multiple versions of Office, including Office 2016 or l
 >
 > For information about using preview APIs, see the [Excel JavaScript preview APIs](excel-preview-apis.md) article.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](excel-preview-apis.md)  | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [ExcelApiOnline](excel-api-online-requirement-set.md) | Latest (see [requirement set page](excel-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
