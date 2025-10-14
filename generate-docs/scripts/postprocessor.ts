@@ -260,6 +260,11 @@ function processSpecialCases(tocWithReleaseCommon: Toc): void {
     scrubAndWriteToc(path.join(docsDestination, "excel_online"), tocWithReleaseCommon, "excel", 99);
     scrubAndWriteToc(path.join(docsDestination, "word_online"), tocWithReleaseCommon, "word", 99);
 
+    // Special cases for Excel Desktop versions
+    SPECIAL_EXCEL_VERSIONS.forEach(({ folder, version }) => {
+        scrubAndWriteToc(path.join(docsDestination, folder), tocWithReleaseCommon, "excel", version);
+    });
+
     // Special cases for Word Desktop versions
     SPECIAL_WORD_VERSIONS.forEach(({ folder, version }) => {
         scrubAndWriteToc(path.join(docsDestination, folder), tocWithReleaseCommon, "word", version);

@@ -15,7 +15,7 @@ if [ -e "build-errors.txt" ]; then
     rm build-errors.txt
 fi
 
-exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
+# exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
 
 if [ -d "node_modules" ]; then
     rm -rf "node_modules"
@@ -213,7 +213,6 @@ if [ ! -d "json/office-release" ]; then
     ../node_modules/.bin/api-extractor run
     popd
 fi
-
 if [ ! -d "json/excel" ]; then
     echo Running API Extractor for Excel preview.
     pushd api-extractor-inputs-excel
@@ -223,6 +222,12 @@ fi
 if [ ! -d "json/excel_online" ]; then
     echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release/excel_online
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/excel_desktop_1_1" ]; then
+    echo Running API Extractor for Excel desktop 1.1.
+    pushd api-extractor-inputs-excel-release/excel_desktop_1_1
     ../../node_modules/.bin/api-extractor run
     popd
 fi

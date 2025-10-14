@@ -279,6 +279,14 @@
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
+      "ReferenceTOC": "docs/docs-ref-autogen/excel_1_20/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/excel_desktop_1_1/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
       "ReferenceTOC": "docs/docs-ref-autogen/excel_online/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },

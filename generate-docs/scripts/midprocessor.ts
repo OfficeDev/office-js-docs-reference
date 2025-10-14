@@ -257,6 +257,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle ExcelApiDesktop 1.1 case.
+        console.log(`\nStarting ${host}_desktop_1_1...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_1/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_1/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_1`);
     } else if (host === "word") {
         currentRelease = CURRENT_WORD_RELEASE;
         // Handle WordApiOnline corner case.

@@ -42,8 +42,8 @@ tryCatch(async () => {
         case "DT":
             forceRebuild = false;
         case "DT+":
-            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts";
-            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts";
+            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/0b352bebf8c154b34f83b0d1fe84067b017baf87/types/office-js/index.d.ts";
+            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/0b352bebf8c154b34f83b0d1fe84067b017baf87/types/office-js-preview/index.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
@@ -119,7 +119,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: excel.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
+        '../api-extractor-inputs-excel-release/excel_online/excel-init.d.ts',
         handleCommonImports(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true),
         "excel",
         forceRebuild
