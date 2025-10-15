@@ -45,6 +45,8 @@ if [ ! -d "tool-inputs" ]; then
     mkdir tool-inputs
 fi
 
+npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts "Api set: ExcelApiOnline 1.1" configs/excel-online-config.json
+npx version-remover api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts "Api set: ExcelApiDesktop 1.1" configs/excel-desktop-1_1-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts "Api set: ExcelApiOnline 1.1" configs/excel-online-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts "Api set: ExcelApi 1.20" configs/excel-1_20-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts "Api set: ExcelApi 1.19" configs/excel-1_19-config.json
@@ -93,18 +95,20 @@ npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_3/power
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts "Api set: PowerPointApi 1.2" configs/powerpoint-1_2-config.json
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts "Api set: PowerPointApi 1.1" configs/powerpoint-1_1-config.json
 
-npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop1.d.ts "Api set: WordApiOnline 1.1" configs/word-online-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop2.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop2.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word-desktop3.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word-desktop3.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_online/word-online1.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online1.d.ts api-extractor-inputs-word-release/word_online/word-online2.d.ts "Api set: WordApiDesktop 1.1" configs/word-desktop-1_1-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online2.d.ts api-extractor-inputs-word-release/word_online/word-online3.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online3.d.ts api-extractor-inputs-word-release/word_online/word-online4.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online4.d.ts api-extractor-inputs-word-release/word_online/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word-desktop1.d.ts "Api set: WordApiOnline 1.1" configs/word-online-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word-desktop2.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop2.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word-desktop3.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word-desktop3.d.ts api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts "Api set: WordApiDesktop 1.3" configs/word-1_3_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-init.d.ts api-extractor-inputs-word-release/word_online/word-online1.d.ts "Api set: WordApiDesktop 1.3" configs/word-desktop-1_3-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online1.d.ts api-extractor-inputs-word-release/word_online/word-online2.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online2.d.ts api-extractor-inputs-word-release/word_online/word-online3.d.ts "Api set: WordApiDesktop 1.1" configs/word-desktop-1_1-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online3.d.ts api-extractor-inputs-word-release/word_online/word-online4.d.ts "Api set: WordApiHiddenDocument 1.5" configs/word-1_5_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online4.d.ts api-extractor-inputs-word-release/word_online/word-online5.d.ts "Api set: WordApiHiddenDocument 1.4" configs/word-1_4_hidden_document-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online5.d.ts api-extractor-inputs-word-release/word_online/word.d.ts "Api set: WordApiHiddenDocument 1.3" configs/word-1_3_hidden_document-config.json
 npx version-remover api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts "Api set: WordApiDesktop 1.2" configs/word-desktop-1_2-config.json
 npx version-remover api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts "Api set: WordApi 1.9" configs/word-1_9-config.json
-npx version-remover api-extractor-inputs-word-release/word_online/word-online2.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "Api set: WordApiOnline 1.1" configs/word-online-config.json
+npx version-remover api-extractor-inputs-word-release/word_online/word-online3.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "Api set: WordApiOnline 1.1" configs/word-online-config.json
 npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts "Api set: WordApi 1.9" configs/word-1_9-config.json
 npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts "Api set: WordApi 1.8" configs/word-1_8-config.json
 npx version-remover api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop4.d.ts "Api set: WordApi 1.7" configs/word-1_7-config.json
@@ -125,7 +129,8 @@ npx version-remover api-extractor-inputs-word-release/word_1_2/word.d.ts api-ext
 npx version-remover api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts "Api set: WordApi 1.1" configs/word-1_1-config.json
 
 
-npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../docs/includes/excel-preview javascript/api/excel/ configs/excel-preview-config.json
+npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts ../docs/includes/excel-preview javascript/api/excel/ configs/excel-preview-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts ../docs/includes/excel-desktop-1_1 javascript/api/excel/ configs/excel-desktop-1_1-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts ../docs/includes/excel-online javascript/api/excel/ configs/excel-online-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../docs/includes/excel-1_20 javascript/api/excel/ configs/excel-1_20-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts ../docs/includes/excel-1_19 javascript/api/excel/ configs/excel-1_19-config.json
@@ -178,6 +183,7 @@ npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.
 
 npx whats-new api-extractor-inputs-word/word.d.ts api-extractor-inputs-word-release/word_online/word-init.d.ts ../docs/includes/word-preview javascript/api/word/ configs/word-preview-config.json
 npx whats-new api-extractor-inputs-word-release/word_online/word.d.ts api-extractor-inputs-word-release/word_1_9/word.d.ts ../docs/includes/word-online javascript/api/word/ configs/word-online-config.json
+npx whats-new api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts ../docs/includes/word-desktop-1_3 javascript/api/word/ configs/word-desktop-1_3-config.json
 npx whats-new api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts ../docs/includes/word-desktop-1_2 javascript/api/word/ configs/word-desktop-1_2-config.json
 npx whats-new api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts api-extractor-inputs-word-release/word_1_8/word.d.ts ../docs/includes/word-desktop-1_1 javascript/api/word/ configs/word-desktop-1_1-config.json
 npx whats-new api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts ../docs/includes/word-1_5_hidden_document javascript/api/word/ configs/word-1_5_hidden_document-config.json
@@ -207,7 +213,6 @@ if [ ! -d "json/office-release" ]; then
     ../node_modules/.bin/api-extractor run
     popd
 fi
-
 if [ ! -d "json/excel" ]; then
     echo Running API Extractor for Excel preview.
     pushd api-extractor-inputs-excel
@@ -217,6 +222,12 @@ fi
 if [ ! -d "json/excel_online" ]; then
     echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release/excel_online
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/excel_desktop_1_1" ]; then
+    echo Running API Extractor for Excel desktop 1.1.
+    pushd api-extractor-inputs-excel-release/excel_desktop_1_1
     ../../node_modules/.bin/api-extractor run
     popd
 fi
@@ -525,7 +536,13 @@ if [ ! -d "json/word_online" ]; then
     ../../node_modules/.bin/api-extractor run
     popd
 fi
-if [ ! -d "json/word_desktop_1_1" ]; then
+if [ ! -d "json/word_desktop_1_3" ]; then
+    echo Running API Extractor for Word desktop 1.3.
+    pushd api-extractor-inputs-word-release/word_desktop_1_3
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/word_desktop_1_2" ]; then
     echo Running API Extractor for Word desktop 1.2.
     pushd api-extractor-inputs-word-release/word_desktop_1_2
     ../../node_modules/.bin/api-extractor run
@@ -699,6 +716,9 @@ fi
 if [ ! -d "yaml/excel_1_20" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_20 --output-folder ./yaml/excel_1_20 --office 2>/dev/null
 fi
+if [ ! -d "yaml/excel_desktop_1_1" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_desktop_1_1 --output-folder ./yaml/excel_desktop_1_1 --office 2>/dev/null
+fi
 if [ ! -d "yaml/excel_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_online --output-folder ./yaml/excel_online --office 2>/dev/null
 fi
@@ -830,6 +850,9 @@ if [ ! -d "yaml/word_desktop_1_1" ]; then
 fi
 if [ ! -d "yaml/word_desktop_1_2" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_2 --output-folder ./yaml/word_desktop_1_2 --office 2>/dev/null
+fi
+if [ ! -d "yaml/word_desktop_1_3" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_3 --output-folder ./yaml/word_desktop_1_3 --office 2>/dev/null
 fi
 if [ ! -d "yaml/word_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_online --output-folder ./yaml/word_online --office 2>/dev/null

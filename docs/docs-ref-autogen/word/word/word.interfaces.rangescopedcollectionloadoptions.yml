@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.RangeScopedCollectionLoadOptions
 summary: >-
   Represents a collection of [Word.Range](xref:word!Word.Range:class) objects
-  that represents each character, word or sentence.
+  that represents each character, word, or sentence.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -231,8 +231,8 @@ properties:
       For EACH ITEM in the collection: Specifies the proofing status (spelling
       and grammar checking) of the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -422,8 +422,8 @@ properties:
       For EACH ITEM in the collection: Specifies whether Microsoft Word has
       detected the language of the text in the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -439,8 +439,8 @@ properties:
       For EACH ITEM in the collection: Specifies a `LanguageId` value that
       represents the language for the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -457,8 +457,8 @@ properties:
       For EACH ITEM in the collection: Specifies an East Asian language for the
       range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -475,8 +475,8 @@ properties:
       For EACH ITEM in the collection: Specifies a language for the range that
       isn't classified as an East Asian language.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

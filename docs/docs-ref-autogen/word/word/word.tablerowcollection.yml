@@ -3,7 +3,9 @@ name: Word.TableRowCollection
 uid: word!Word.TableRowCollection:class
 package: word!
 fullName: Word.TableRowCollection
-summary: Contains the collection of the document's TableRow objects.
+summary: >-
+  Contains the collection of the document's
+  [Word.TableRow](xref:word!Word.TableRow:class) objects.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

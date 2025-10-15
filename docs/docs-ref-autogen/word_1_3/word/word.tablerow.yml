@@ -130,7 +130,8 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       Specifies the horizontal alignment of every cell in the row. The value can
-      be 'Left', 'Centered', 'Right', or 'Justified'.
+      be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
+      -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -151,7 +152,7 @@ properties:
     fullName: isHeader
     summary: >-
       Checks whether the row is a header row. To set the number of header rows,
-      use `headerRowCount` on the Table object.
+      use `headerRowCount` on the `Table` object.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -245,7 +246,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Specifies the vertical alignment of the cells in the row. The value can be
-      'Top', 'Center', or 'Bottom'.
+      `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -334,7 +335,7 @@ methods:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       parameters:
         - id: borderLocation
-          description: Required. The border location.
+          description: The border location.
           type: <xref uid="word!Word.BorderLocation:enum" />
       return:
         type: <xref uid="word!Word.TableBorder:class" />
@@ -357,7 +358,7 @@ methods:
         Word.TableBorder;
       parameters:
         - id: borderLocation
-          description: Required. The border location.
+          description: The border location.
           type: >-
             "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
             "InsideVertical" | "Inside" | "Outside" | "All"
@@ -409,8 +410,8 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -433,8 +434,8 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -499,13 +500,13 @@ methods:
       parameters:
         - id: insertLocation
           description: >-
-            Required. Where the new rows should be inserted, relative to the
-            current row. It must be 'Before' or 'After'.
+            Where the new rows should be inserted, relative to the current row.
+            It must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
         - id: rowCount
-          description: Required. Number of rows to add
+          description: Number of rows to add.
           type: number
         - id: values
           description: >-
@@ -595,8 +596,8 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the
-      row. The search results are a collection of range objects.
+      Performs a search with the specified search options on the scope of the
+      row. The search results are a collection of `Range` objects.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -616,7 +617,7 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: Required. The search text.
+          description: The search text.
           type: string
         - id: searchOptions
           description: Optional. Options for the search.
@@ -649,8 +650,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -671,8 +672,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -746,11 +747,11 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
         - id: cellPadding
-          description: Required. The cell padding.
+          description: The cell padding.
           type: number
       return:
         type: void
@@ -773,11 +774,11 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
-          description: Required. The cell padding.
+          description: The cell padding.
           type: number
       return:
         type: void

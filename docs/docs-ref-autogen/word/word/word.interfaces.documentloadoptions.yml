@@ -4,9 +4,9 @@ uid: word!Word.Interfaces.DocumentLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.DocumentLoadOptions
 summary: >-
-  The Document object is the top level object. A Document object contains one or
-  more sections, content controls, and the body that contains the contents of
-  the document.
+  The `Document` object is the top level object. A `Document` object contains
+  one or more sections, content controls, and the body that contains the
+  contents of the document.
 remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -204,10 +204,10 @@ properties:
       Specifies a `Template` object that represents the template attached to the
       document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachedTemplate?: Word.Interfaces.TemplateLoadOptions;'
@@ -219,10 +219,10 @@ properties:
     fullName: autoHyphenation
     summary: Specifies if automatic hyphenation is turned on for the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'autoHyphenation?: boolean;'
@@ -234,10 +234,10 @@ properties:
     fullName: autoSaveOn
     summary: Specifies if the edits in the document are automatically saved.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'autoSaveOn?: boolean;'
@@ -268,10 +268,10 @@ properties:
       Returns a `Bibliography` object that represents the bibliography
       references contained within the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bibliography?: Word.Interfaces.BibliographyLoadOptions;'
@@ -282,7 +282,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the main document. The body is the text that
+      Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
       \[ [API set: WordApi
@@ -383,10 +383,10 @@ properties:
       Specifies the maximum number of consecutive lines that can end with
       hyphens.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'consecutiveHyphensLimit?: boolean;'
@@ -742,10 +742,10 @@ properties:
     fullName: hyphenateCaps
     summary: Specifies whether words in all capital letters can be hyphenated.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hyphenateCaps?: boolean;'
@@ -1243,10 +1243,10 @@ properties:
       Specifies whether Microsoft Word has detected the language of the document
       text.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'languageDetected?: boolean;'
@@ -1318,10 +1318,10 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'pageSetup?: Word.Interfaces.PageSetupLoadOptions;'
@@ -1538,7 +1538,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1769,10 +1769,10 @@ properties:
       content: 'xmlIsXsltUsedWhenSaving?: boolean;'
       return:
         type: boolean
-  - name: xmlSaveThroughXSLT
-    uid: word!Word.Interfaces.DocumentLoadOptions#xmlSaveThroughXSLT:member
+  - name: xmlSaveThroughXslt
+    uid: word!Word.Interfaces.DocumentLoadOptions#xmlSaveThroughXslt:member
     package: word!
-    fullName: xmlSaveThroughXSLT
+    fullName: xmlSaveThroughXslt
     summary: >-
       Specifies the path and file name for the XSLT to apply when saving a
       document.
@@ -1783,6 +1783,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'xmlSaveThroughXSLT?: boolean;'
+      content: 'xmlSaveThroughXslt?: boolean;'
       return:
         type: boolean

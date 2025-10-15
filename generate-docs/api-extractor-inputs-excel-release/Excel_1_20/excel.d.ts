@@ -10038,6 +10038,7 @@ export declare namespace Excel {
     export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
          *
@@ -10054,6 +10055,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly iterativeCalculation: Excel.IterativeCalculation;
+        
         /**
          * Returns the Excel calculation engine version used for the last full recalculation.
          *
@@ -10123,6 +10125,8 @@ export declare namespace Excel {
          * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
         calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        
+        
         /**
          * Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
          *
@@ -10139,6 +10143,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         suspendScreenUpdatingUntilNextSync(): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10481,6 +10486,7 @@ export declare namespace Excel {
          * @param closeBehavior - workbook close behavior.
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
+        
         /**
          * Gets the currently active cell from the workbook.
          *
@@ -10973,6 +10979,8 @@ export declare namespace Excel {
          * @param markAllDirty - True, to mark all as dirty.
          */
         calculate(markAllDirty: boolean): void;
+        
+        
         /**
          * Copies a worksheet and places it at the specified position.
          *
@@ -11002,6 +11010,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
          *
@@ -11309,6 +11318,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
+    
     /**
      * Represents a collection of worksheet objects that are part of the workbook.
      *
@@ -11939,6 +11949,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.18]
          */
         control: CellControl;
+        
         /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
@@ -12177,6 +12188,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         calculate(): void;
+        
         /**
          * Clear range values and formatting, such as fill and border.
          *
@@ -12424,7 +12436,7 @@ export declare namespace Excel {
          */
         getEntireRow(): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12434,7 +12446,7 @@ export declare namespace Excel {
          */
         getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12529,7 +12541,7 @@ export declare namespace Excel {
          */
         getPrecedents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12539,7 +12551,7 @@ export declare namespace Excel {
          */
         getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
         /**
-         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12866,6 +12878,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         showCard(): void;
+        
         /**
          * Shows the details of the row or column group.
          *
@@ -12884,6 +12897,7 @@ export declare namespace Excel {
          * @param groupOption - Specifies whether to show the details of grouped rows or grouped columns.
          */
         showGroupDetails(groupOption: "ByRows" | "ByColumns"): void;
+        
         /**
          * Ungroups columns and rows for an outline.
          *
@@ -27604,6 +27618,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly headersFooters: Excel.HeaderFooterGroup;
+        
         /**
          * The worksheet's black and white print option.
          *
@@ -27716,6 +27731,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+        
         /**
          * The worksheet's right margin, in points, for use when printing.
          *
@@ -27954,6 +27970,12 @@ export declare namespace Excel {
     export class HeaderFooter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
+        
+        
         /**
          * The center footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -28128,6 +28150,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.HeaderFooterGroupData;
     }
+    
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.9]
@@ -29518,6 +29542,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly shape: Excel.Shape;
+        
+        
+        
+        
+        
+        
+        
         /**
          * Specifies the shape identifier for the image object.
          *
@@ -29532,6 +29563,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Image): void;
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -30920,6 +30961,8 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
+         * 
+         * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
@@ -38412,6 +38455,14 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.NoteData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * An object containing the result of a function-evaluation operation
      *
@@ -42294,6 +42345,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
+            
             /**
             * Returns the iterative calculation settings.
             In Excel on Windows and Mac, the settings will apply to the Excel Application.
@@ -42481,6 +42533,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: CellControl;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -46446,6 +46499,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -46558,6 +46612,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -46583,6 +46638,12 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -46683,6 +46744,20 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface for updating data on the `HeaderFooterPicture` object, for use in `headerFooterPicture.set({ ... })`. */
+        export interface HeaderFooterPictureUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `PageBreakCollection` object, for use in `pageBreakCollection.set({ ... })`. */
         export interface PageBreakCollectionUpdateData {
@@ -46839,6 +46914,16 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Image` object, for use in `image.set({ ... })`. */
+        export interface ImageUpdateData {
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `GroupShapeCollection` object, for use in `groupShapeCollection.set({ ... })`. */
         export interface GroupShapeCollectionUpdateData {
@@ -47251,6 +47336,49 @@ export declare namespace Excel {
              */
             width?: number;
         }
+        /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
+        export interface WindowUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Excel.Interfaces.PaneData[];
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             
@@ -47332,6 +47460,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
+            
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -47348,6 +47477,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;
+            
             /**
              * Returns the Excel calculation engine version used for the last full recalculation.
              *
@@ -47898,6 +48028,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: CellControl;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -52871,6 +53002,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupData;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -52983,6 +53115,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -53008,6 +53141,12 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
         export interface HeaderFooterData {
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -53108,6 +53247,20 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface describing the data returned by calling `headerFooterPicture.toJSON()`. */
+        export interface HeaderFooterPictureData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
         export interface PageBreakData {
@@ -53450,6 +53603,13 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `image.toJSON()`. */
         export interface ImageData {
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -54057,6 +54217,62 @@ export declare namespace Excel {
              */
             width?: number;
         }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Excel.Interfaces.PaneData[];
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -54220,6 +54436,7 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -54824,6 +55041,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -62859,6 +63077,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -62971,6 +63190,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: boolean;
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -63003,6 +63223,12 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -63111,6 +63337,7 @@ export declare namespace Excel {
              */
             useSheetScale?: boolean;
         }
+        
         /**
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -63239,6 +63466,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -64264,6 +64492,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             shape?: Excel.Interfaces.ShapeLoadOptions;
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -65479,6 +65714,10 @@ export declare namespace Excel {
              */
             width?: boolean;
         }
+        
+        
+        
+        
         /**
          * An object containing the result of a function-evaluation operation
          *

@@ -129,7 +129,7 @@ methods:
       content: 'getItemAt(index: number): Word.Editor;'
       parameters:
         - id: index
-          description: The index of the object in this collection.
+          description: The index of the item to retrieve.
           type: number
       return:
         type: <xref uid="word!Word.Editor:class" />

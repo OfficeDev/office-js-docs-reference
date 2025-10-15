@@ -37,8 +37,8 @@ properties:
     package: word!
     fullName: borders
     summary: >-
-      Specifies a BorderCollection object that represents all the borders for
-      the specified style.
+      Specifies a `BorderCollection` object that represents all the borders for
+      the style.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -56,8 +56,8 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      Gets a font object that represents the character formatting of the
-      specified style.
+      Gets a `Font` object that represents the character formatting of the
+      style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -73,8 +73,8 @@ properties:
     package: word!
     fullName: listTemplate
     summary: >-
-      Gets a ListTemplate object that represents the list formatting for the
-      specified Style object.
+      Gets a `ListTemplate` object that represents the list formatting for the
+      style.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -91,8 +91,7 @@ properties:
     fullName: nextParagraphStyle
     summary: >-
       Specifies the name of the style to be applied automatically to a new
-      paragraph that is inserted after a paragraph formatted with the specified
-      style.
+      paragraph that is inserted after a paragraph formatted with the style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -112,8 +111,8 @@ properties:
     package: word!
     fullName: paragraphFormat
     summary: >-
-      Gets a ParagraphFormat object that represents the paragraph settings for
-      the specified style.
+      Gets a `ParagraphFormat` object that represents the paragraph settings for
+      the style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -161,8 +160,8 @@ properties:
     package: word!
     fullName: shading
     summary: >-
-      Gets a Shading object that represents the shading for the specified style.
-      Not applicable to List style.
+      Gets a `Shading` object that represents the shading for the style. Not
+      applicable to a style of `List` type.
     remarks: >-
       \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -178,8 +177,8 @@ properties:
     package: word!
     fullName: tableStyle
     summary: >-
-      Gets a TableStyle object representing Style properties that can be applied
-      to a table.
+      Gets a `TableStyle` object representing style properties that can be
+      applied to a table.
     remarks: >-
       \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -195,9 +194,9 @@ properties:
     package: word!
     fullName: unhideWhenUsed
     summary: >-
-      Specifies whether the specified style is made visible as a recommended
-      style in the Styles and in the Styles task pane in Microsoft Word after
-      it's used in the document.
+      Specifies whether the style is made visible as a recommended style in the
+      Styles gallery and in the Styles task pane in Microsoft Word after it's
+      used in the document.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -213,8 +212,8 @@ properties:
     package: word!
     fullName: visibility
     summary: >-
-      Specifies whether the specified style is visible as a recommended style in
-      the Styles gallery and in the Styles task pane.
+      Specifies whether the style is visible as a recommended style in the
+      Styles gallery and in the Styles task pane.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

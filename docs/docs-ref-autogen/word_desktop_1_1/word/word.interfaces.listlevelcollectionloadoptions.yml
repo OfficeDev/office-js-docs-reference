@@ -36,7 +36,8 @@ properties:
     fullName: alignment
     summary: >-
       For EACH ITEM in the collection: Specifies the horizontal alignment of the
-      list level. The value can be 'Left', 'Centered', or 'Right'.
+      list level. The value can be `left`<!-- -->, `centered`<!-- -->, or
+      `right`<!-- -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -52,8 +53,8 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      For EACH ITEM in the collection: Gets a Font object that represents the
-      character formatting of the specified object.
+      For EACH ITEM in the collection: Gets a `Font` object that represents the
+      character formatting of the `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -70,7 +71,7 @@ properties:
     fullName: linkedStyle
     summary: >-
       For EACH ITEM in the collection: Specifies the name of the style that's
-      linked to the specified list level object.
+      linked to the `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -86,8 +87,8 @@ properties:
     package: word!
     fullName: numberFormat
     summary: >-
-      For EACH ITEM in the collection: Specifies the number format for the
-      specified list level.
+      For EACH ITEM in the collection: Specifies the number format for the list
+      level.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -104,7 +105,7 @@ properties:
     fullName: numberPosition
     summary: >-
       For EACH ITEM in the collection: Specifies the position (in points) of the
-      number or bullet for the specified list level object.
+      number or bullet for the `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -120,8 +121,8 @@ properties:
     package: word!
     fullName: numberStyle
     summary: >-
-      For EACH ITEM in the collection: Specifies the number style for the list
-      level object.
+      For EACH ITEM in the collection: Specifies the number style for the
+      `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -138,7 +139,7 @@ properties:
     fullName: resetOnHigher
     summary: >-
       For EACH ITEM in the collection: Specifies the list level that must appear
-      before the specified list level restarts numbering at 1.
+      before it restarts numbering at 1.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -155,7 +156,7 @@ properties:
     fullName: startAt
     summary: >-
       For EACH ITEM in the collection: Specifies the starting number for the
-      specified list level object.
+      `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -172,7 +173,7 @@ properties:
     fullName: tabPosition
     summary: >-
       For EACH ITEM in the collection: Specifies the tab position for the
-      specified list level object.
+      `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -189,7 +190,7 @@ properties:
     fullName: textPosition
     summary: >-
       For EACH ITEM in the collection: Specifies the position (in points) for
-      the second line of wrapping text for the specified list level object.
+      the second line of wrapping text for the `ListLevel` object.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -207,7 +208,7 @@ properties:
     fullName: trailingCharacter
     summary: >-
       For EACH ITEM in the collection: Specifies the character inserted after
-      the number for the specified list level.
+      the number for the list level.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

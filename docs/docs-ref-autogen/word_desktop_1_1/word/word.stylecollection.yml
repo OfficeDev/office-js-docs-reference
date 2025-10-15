@@ -67,7 +67,7 @@ methods:
     uid: word!Word.StyleCollection#getByName:member(1)
     package: word!
     fullName: getByName(name)
-    summary: Get the style object by its name.
+    summary: Get the `Style` object by its name.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -78,7 +78,7 @@ methods:
       content: 'getByName(name: string): Word.Style;'
       parameters:
         - id: name
-          description: Required. The style name.
+          description: The style name.
           type: string
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -139,7 +139,7 @@ methods:
       content: 'getByNameOrNullObject(name: string): Word.Style;'
       parameters:
         - id: name
-          description: Required. The style name.
+          description: The style name.
           type: string
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -148,7 +148,7 @@ methods:
     uid: word!Word.StyleCollection#getCount:member(1)
     package: word!
     fullName: getCount()
-    summary: Gets the number of the styles in the collection.
+    summary: Returns the number of items in the collection.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -186,7 +186,7 @@ methods:
     uid: word!Word.StyleCollection#getItem:member(1)
     package: word!
     fullName: getItem(index)
-    summary: Gets a style object by its index in the collection.
+    summary: Gets a `Style` object by its index in the collection.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -197,7 +197,7 @@ methods:
       content: 'getItem(index: number): Word.Style;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a style object.
+          description: The location of a `Style` object.
           type: number
       return:
         type: <xref uid="word!Word.Style:class" />

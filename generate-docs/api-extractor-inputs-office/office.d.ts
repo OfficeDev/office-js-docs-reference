@@ -6881,6 +6881,23 @@ export declare namespace Office {
         name: string;
     }
     /**
+     * Provides options to manage the user interface of an Office Add-in while the add-in is running.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface ExtensionLifeCycle {
+        /**
+         * Gets an object that represents the task pane of an add-in.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         */
+        taskpane: TaskPane;
+    }
+    /**
      * Represents the document file associated with an Office Add-in.
      *
      * @remarks
@@ -8568,6 +8585,37 @@ export declare namespace Office {
          * - If you overwrite or update an existing table, the existing rows are not altered.
          */
         rows: any[][];
+    }
+    /**
+     * Provides methods to manage the task pane of an add-in.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface TaskPane {
+        /**
+         * Sets the width of the task pane of an add-in in pixels.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         *
+         * **Important**: The default width of the task pane of an add-in varies depending on the platform.
+         *
+         * - **Web (Excel)**: 350 px
+         *
+         * - **Web (Word)**: 330 px
+         *
+         * - **Windows**: 51 px
+         *
+         * If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
+         *
+         * @param width - The width of a task pane in pixels. The minimum and maximum constraints vary by platform. In Excel on the web, the width must be between
+         *              350 and 500 px (inclusive). In Word on the web, the width must be between 330 and 500 px (inclusive). In Office on Windows, the width
+         *              must be between 51 px and 50% of the client window.
+         */
+        setWidth(width: number): void;
     }
     /**
      * Represents a bound text selection in the document.

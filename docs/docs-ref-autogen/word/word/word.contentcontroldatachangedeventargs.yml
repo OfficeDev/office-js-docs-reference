@@ -4,8 +4,8 @@ uid: word!Word.ContentControlDataChangedEventArgs:interface
 package: word!
 fullName: Word.ContentControlDataChangedEventArgs
 summary: >-
-  Provides information about the content control that raised
-  contentControlDataChanged event.
+  Provides information about the content control that raised the
+  `contentControlDataChanged` event.
 remarks: >-
   \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -61,7 +61,7 @@ properties:
     uid: word!Word.ContentControlDataChangedEventArgs#eventType:member
     package: word!
     fullName: eventType
-    summary: The event type. See Word.EventType for details.
+    summary: The event type. See `Word.EventType` for details.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

@@ -107,7 +107,7 @@ methods:
       content: 'getItem(index: number): Word.Index;'
       parameters:
         - id: index
-          description: A number that identifies the index location of an `Index` object.
+          description: The location of an `Index` object.
           type: number
       return:
         type: <xref uid="word!Word.Index:class" />

@@ -257,13 +257,13 @@ methods:
         "Before" | "After"): void;
       parameters:
         - id: breakType
-          description: Required. The break type to add.
+          description: The break type to add.
           type: >-
             <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" |
             "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
             "Line"
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -310,10 +310,10 @@ methods:
         "After"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -337,10 +337,10 @@ methods:
         Word.InsertLocation.after | "Before" | "After"): Word.Range;
       parameters:
         - id: html
-          description: Required. The HTML to be inserted.
+          description: The HTML to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -366,10 +366,12 @@ methods:
         Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The Base64-encoded image to be inserted.
+          description: The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Before', or 'After'.
+          description: >-
+            The value must be `replace`<!-- -->, `before`<!-- -->, or
+            `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.before:member" /> | <xref
@@ -395,10 +397,10 @@ methods:
         Word.InsertLocation.after | "Before" | "After"): Word.Range;
       parameters:
         - id: ooxml
-          description: Required. The OOXML to be inserted.
+          description: The OOXML to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -423,10 +425,10 @@ methods:
         "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -450,10 +452,10 @@ methods:
         Word.InsertLocation.after | "Before" | "After"): Word.Range;
       parameters:
         - id: text
-          description: Required. Text to be inserted.
+          description: Text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -554,8 +556,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -576,8 +578,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void

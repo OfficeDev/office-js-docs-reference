@@ -7605,10 +7605,10 @@ export declare namespace PowerPoint {
         /**
          * Exports the slide to its own presentation file, returned as Base64-encoded data.
          *
+         * Note: This method is optimized to export a single slide. Exporting multiple slides can impact performance.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.8]
-         * 
-         * This method is optimized to export a single slide. Exporting multiple slides can impact performance.
          */
         exportAsBase64(): OfficeExtension.ClientResult<string>;
         /**
@@ -8358,7 +8358,7 @@ export declare namespace PowerPoint {
          */
         delete(): void;
         /**
-         * Returns the shape represented by the binding. Will throw an error if the binding isn't of the correct type.
+         * Returns the shape represented by the binding. Throws an error if the binding isn't of the correct type.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -8938,12 +8938,12 @@ export declare namespace PowerPoint {
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Slide[];
         /**
-         * Adds a new slide at the end of the collection.
+         * Adds a new slide to the collection.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param options - The options that define the theme of the new slide.
+         * @param options - Optional. Options for configuring the properties of the new slide.
          */
         add(options?: PowerPoint.AddSlideOptions): void;
         /**

@@ -65,7 +65,8 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       Specifies the horizontal alignment of every cell in the row. The value can
-      be 'Left', 'Centered', 'Right', or 'Justified'.
+      be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
+      -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -86,7 +87,7 @@ properties:
     fullName: isHeader
     summary: >-
       Checks whether the row is a header row. To set the number of header rows,
-      use `headerRowCount` on the Table object.
+      use `headerRowCount` on the `Table` object.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -165,7 +166,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Specifies the vertical alignment of the cells in the row. The value can be
-      'Top', 'Center', or 'Bottom'.
+      `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

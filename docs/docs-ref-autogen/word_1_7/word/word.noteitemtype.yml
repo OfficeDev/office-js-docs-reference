@@ -3,7 +3,7 @@ name: Word.NoteItemType
 uid: word!Word.NoteItemType:enum
 package: word!
 fullName: Word.NoteItemType
-summary: Note item type
+summary: Note item type.
 remarks: >-
   \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -46,6 +46,9 @@ fields:
     uid: word!Word.NoteItemType.endnote:member
     package: word!
     summary: >-
+      Endnote type.
+
+
       * \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Endnote"'
@@ -53,6 +56,9 @@ fields:
     uid: word!Word.NoteItemType.footnote:member
     package: word!
     summary: >-
+      Footnote type.
+
+
       * \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footnote"'

@@ -1,16 +1,16 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Application](/javascript/api/word/word.application)|[openDocument(filePath: string)](/javascript/api/word/word.application#word-word-application-opendocument-member(1))|Opens a document and displays it in a new tab or window.|
-|[Body](/javascript/api/word/word.body)|[getTrackedChanges()](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the body.|
-|[ContentControl](/javascript/api/word/word.contentcontrol)|[getTrackedChanges()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the content control.|
+|[Body](/javascript/api/word/word.body)|[getTrackedChanges()](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))|Gets the collection of the `TrackedChange` objects in the body.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[getTrackedChanges()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))|Gets the collection of the `TrackedChange` objects in the content control.|
 |[Document](/javascript/api/word/word.document)|[getParagraphByUniqueLocalId(id: string)](/javascript/api/word/word.document#word-word-document-getparagraphbyuniquelocalid-member(1))|Gets the paragraph by its unique local ID.|
 ||[importStylesFromJson(stylesJson: string)](/javascript/api/word/word.document#word-word-document-importstylesfromjson-member(1))|Import styles from a JSON-formatted string.|
 ||[onParagraphAdded](/javascript/api/word/word.document#word-word-document-onparagraphadded-member)|Occurs when the user adds new paragraphs.|
 ||[onParagraphChanged](/javascript/api/word/word.document#word-word-document-onparagraphchanged-member)|Occurs when the user changes paragraphs.|
 ||[onParagraphDeleted](/javascript/api/word/word.document#word-word-document-onparagraphdeleted-member)|Occurs when the user deletes paragraphs.|
-|[InsertFileOptions](/javascript/api/word/word.insertfileoptions)|[importCustomProperties](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomproperties-member)|Represents whether the custom properties from the source document should be imported.|
-||[importCustomXmlParts](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomxmlparts-member)|Represents whether the custom XML parts from the source document should be imported.|
-|[Paragraph](/javascript/api/word/word.paragraph)|[getTrackedChanges()](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the paragraph.|
+|[InsertFileOptions](/javascript/api/word/word.insertfileoptions)|[importCustomProperties](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomproperties-member)|If provided, specifies whether the custom properties from the source document should be imported.|
+||[importCustomXmlParts](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomxmlparts-member)|If provided, specifies whether the custom XML parts from the source document should be imported.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[getTrackedChanges()](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))|Gets the collection of the `TrackedChange` objects in the paragraph.|
 ||[uniqueLocalId](/javascript/api/word/word.paragraph#word-word-paragraph-uniquelocalid-member)|Gets a string that represents the paragraph identifier in the current session.|
 |[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
@@ -21,10 +21,10 @@
 |[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
 ||[uniqueLocalIds](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
-|[Range](/javascript/api/word/word.range)|[getTrackedChanges()](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the range.|
+|[Range](/javascript/api/word/word.range)|[getTrackedChanges()](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))|Gets the collection of the `TrackedChange` objects in the range.|
 |[Shading](/javascript/api/word/word.shading)|[backgroundPatternColor](/javascript/api/word/word.shading#word-word-shading-backgroundpatterncolor-member)|Specifies the color for the background of the object.|
-|[Style](/javascript/api/word/word.style)|[shading](/javascript/api/word/word.style#word-word-style-shading-member)|Gets a Shading object that represents the shading for the specified style.|
-||[tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)|Gets a TableStyle object representing Style properties that can be applied to a table.|
+|[Style](/javascript/api/word/word.style)|[shading](/javascript/api/word/word.style#word-word-style-shading-member)|Gets a `Shading` object that represents the shading for the style.|
+||[tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)|Gets a `TableStyle` object representing style properties that can be applied to a table.|
 |[TableStyle](/javascript/api/word/word.tablestyle)|[bottomCellMargin](/javascript/api/word/word.tablestyle#word-word-tablestyle-bottomcellmargin-member)|Specifies the amount of space to add between the contents and the bottom borders of the cells.|
 ||[cellSpacing](/javascript/api/word/word.tablestyle#word-word-tablestyle-cellspacing-member)|Specifies the spacing (in points) between the cells in a table style.|
 ||[leftCellMargin](/javascript/api/word/word.tablestyle#word-word-tablestyle-leftcellmargin-member)|Specifies the amount of space to add between the contents and the left borders of the cells.|

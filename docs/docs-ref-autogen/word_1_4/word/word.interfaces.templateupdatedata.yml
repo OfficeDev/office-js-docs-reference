@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.TemplateUpdateData
+uid: word!Word.Interfaces.TemplateUpdateData:interface
+package: word!
+fullName: Word.Interfaces.TemplateUpdateData
+summary: >-
+  An interface for updating data on the `Template` object, for use in
+  `template.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

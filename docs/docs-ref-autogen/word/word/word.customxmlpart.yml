@@ -51,10 +51,10 @@ properties:
     fullName: builtIn
     summary: Gets a value that indicates whether the `CustomXmlPart` is built-in.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly builtIn: boolean;'
@@ -83,10 +83,10 @@ properties:
       Gets the root element of a bound region of data in the document. If the
       region is empty, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly documentElement: Word.CustomXmlNode;'
@@ -165,10 +165,10 @@ properties:
       Gets the set of namespace prefix mappings used against the current
       `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly namespaceManager: Word.CustomXmlPrefixMappingCollection;'
@@ -233,10 +233,10 @@ properties:
       Specifies a `CustomXmlSchemaCollection` object representing the set of
       schemas attached to a bound region of data in the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'schemaCollection: Word.CustomXmlSchemaCollection;'
@@ -248,10 +248,10 @@ properties:
     fullName: xml
     summary: Gets the XML representation of the current `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly xml: string;'
@@ -264,10 +264,10 @@ methods:
     fullName: addNode(parent, options)
     summary: Adds a node to the XML tree.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -430,13 +430,13 @@ methods:
                 }, name: string): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -445,7 +445,7 @@ methods:
                         [key: string]: string;
                     }
         - id: name
-          description: Required. Name of the attribute.
+          description: Name of the attribute.
           type: string
       return:
         type: void
@@ -490,13 +490,13 @@ methods:
                 }): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -699,13 +699,13 @@ methods:
                 }, name: string, value: string): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -714,10 +714,10 @@ methods:
                         [key: string]: string;
                     }
         - id: name
-          description: Required. Name of the attribute.
+          description: Name of the attribute.
           type: string
         - id: value
-          description: Required. Value of the attribute.
+          description: Value of the attribute.
           type: string
       return:
         type: void
@@ -842,18 +842,16 @@ methods:
                 }, index?: number): void;
       parameters:
         - id: xpath
-          description: >-
-            Required. Absolute path to the single parent element in XPath
-            notation.
+          description: Absolute path to the single parent element in XPath notation.
           type: string
         - id: xml
-          description: Required. XML content to be inserted.
+          description: XML content to be inserted.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -954,10 +952,10 @@ methods:
     fullName: loadXml(xml)
     summary: Populates the `CustomXmlPart` object from an XML string.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadXml(xml: string): OfficeExtension.ClientResult<boolean>;'
@@ -1086,13 +1084,13 @@ methods:
                 }): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: xpath
-          description: Required. An XPath query.
+          description: An XPath query.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -1113,10 +1111,10 @@ methods:
     fullName: selectNodes(xPath)
     summary: Selects a collection of nodes from a custom XML part.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'selectNodes(xPath: string): Word.CustomXmlNodeCollection;'
@@ -1135,10 +1133,10 @@ methods:
       Selects a single node within a custom XML part matching an XPath
       expression.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'selectSingleNode(xPath: string): Word.CustomXmlNode;'
@@ -1262,7 +1260,7 @@ methods:
       content: 'setXml(xml: string): void;'
       parameters:
         - id: xml
-          description: Required. XML content to be set.
+          description: XML content to be set.
           type: string
       return:
         type: void
@@ -1375,13 +1373,13 @@ methods:
                 }, name: string, value: string): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".
@@ -1390,10 +1388,10 @@ methods:
                         [key: string]: string;
                     }
         - id: name
-          description: Required. Name of the attribute.
+          description: Name of the attribute.
           type: string
         - id: value
-          description: Required. New value of the attribute.
+          description: New value of the attribute.
           type: string
       return:
         type: void
@@ -1438,16 +1436,16 @@ methods:
                 }): void;
       parameters:
         - id: xpath
-          description: Required. Absolute path to the single element in XPath notation.
+          description: Absolute path to the single element in XPath notation.
           type: string
         - id: xml
-          description: Required. New XML content to be stored.
+          description: New XML content to be stored.
           type: string
         - id: namespaceMappings
           description: >-
-            Required. An object whose property values are namespace names and
-            whose property names are aliases for the corresponding namespaces.
-            For example, `{greg:
+            An object whose property values are namespace names and whose
+            property names are aliases for the corresponding namespaces. For
+            example, `{greg:
             "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
             property names (such as "greg") can be any string that doesn't used
             reserved XPath characters, such as the forward slash "/".

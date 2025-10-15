@@ -175,6 +175,57 @@ methods:
       return:
         type: <xref uid="excel!Excel.Image:class" />
         description: ''
+  - name: set(properties, options)
+    uid: excel!Excel.Image#set:member(1)
+    package: excel!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ImageUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="excel!Excel.Interfaces.ImageUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: excel!Excel.Image#set:member(2)
+    package: excel!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Image): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="excel!Excel.Image:class" />
+      return:
+        type: void
+        description: ''
   - name: toJSON()
     uid: excel!Excel.Image#toJSON:member(1)
     package: excel!

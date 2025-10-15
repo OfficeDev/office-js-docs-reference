@@ -1,0 +1,53 @@
+### YamlMime:TSTypeAlias
+name: Excel.CellControl
+uid: excel!Excel.CellControl:type
+package: excel!
+fullName: Excel.CellControl
+summary: Represents an interactable control inside of a cell.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+
+
+  Learn more about the types in this type alias through the following links. 
+
+
+  [Excel.UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol),
+  [Excel.EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol),
+  [Excel.MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol),
+  [Excel.CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+
+  // Add checkboxes to the table.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+    // Get the second column in the table, without the header.
+    const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
+
+    // Change the boolean values to checkboxes.
+    range.control = {
+      type: Excel.CellControlType.checkbox
+    };
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+syntax: >-
+  export type CellControl = UnknownCellControl | EmptyCellControl |
+  MixedCellControl | CheckboxCellControl;

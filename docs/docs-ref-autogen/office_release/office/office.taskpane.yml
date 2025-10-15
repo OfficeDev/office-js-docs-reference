@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: Office.TaskPane
+uid: office!Office.TaskPane:interface
+package: office!
+fullName: Office.TaskPane
+summary: Provides methods to manage the task pane of an add-in.
+remarks: >-
+  **Requirement set**: [TaskPaneAPI
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: setWidth(width)
+    uid: office!Office.TaskPane#setWidth:member(1)
+    package: office!
+    fullName: setWidth(width)
+    summary: Sets the width of the task pane of an add-in in pixels.
+    remarks: >-
+      **Requirement set**: [TaskPaneAPI
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
+
+      **Important**: The default width of the task pane of an add-in varies
+      depending on the platform.
+
+
+      - **Web (Excel)**: 350 px
+
+
+      - **Web (Word)**: 330 px
+
+
+      - **Windows**: 51 px
+
+
+      If you pass a width beyond the minimum and maximum constraints, the task
+      pane isn't resized and no error is shown.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setWidth(width: number): void;'
+      parameters:
+        - id: width
+          description: >-
+            The width of a task pane in pixels. The minimum and maximum
+            constraints vary by platform. In Excel on the web, the width must be
+            between 350 and 500 px (inclusive). In Word on the web, the width
+            must be between 330 and 500 px (inclusive). In Office on Windows,
+            the width must be between 51 px and 50% of the client window.
+          type: number
+      return:
+        type: void
+        description: ''

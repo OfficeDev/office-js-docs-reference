@@ -3,7 +3,7 @@ name: Word.DocumentPropertyType
 uid: word!Word.DocumentPropertyType:enum
 package: word!
 fullName: Word.DocumentPropertyType
-summary: ''
+summary: Represents the document property type.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -36,6 +36,9 @@ fields:
     uid: word!Word.DocumentPropertyType.boolean:member
     package: word!
     summary: >-
+      Represents a Boolean type.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Boolean"'
@@ -43,6 +46,9 @@ fields:
     uid: word!Word.DocumentPropertyType.date:member
     package: word!
     summary: >-
+      Represents a date type.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Date"'
@@ -50,6 +56,9 @@ fields:
     uid: word!Word.DocumentPropertyType.number:member
     package: word!
     summary: >-
+      Represents a number type.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Number"'
@@ -57,6 +66,9 @@ fields:
     uid: word!Word.DocumentPropertyType.string:member
     package: word!
     summary: >-
+      Represents a string type.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"String"'

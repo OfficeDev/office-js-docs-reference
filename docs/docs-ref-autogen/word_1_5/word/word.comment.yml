@@ -256,8 +256,8 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      Specifies the comment thread's status. Setting to true resolves the
-      comment thread. Getting a value of true means that the comment thread is
+      Specifies the comment thread's status. Setting to `true` resolves the
+      comment thread. Getting a value of `true` means that the comment thread is
       resolved.
     remarks: >-
       \[ [API set: WordApi
@@ -517,7 +517,7 @@ methods:
       content: 'reply(replyText: string): Word.CommentReply;'
       parameters:
         - id: replyText
-          description: Required. Reply text.
+          description: Reply text.
           type: string
       return:
         type: <xref uid="word!Word.CommentReply:class" />

@@ -4,8 +4,9 @@ uid: word!Word.Interfaces.ShapeGroupLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShapeGroupLoadOptions
 summary: >-
-  Represents a shape group in the document. To get the corresponding Shape
-  object, use ShapeGroup.shape.
+  Represents a shape group in the document. To get the corresponding
+  [Word.Shape](xref:word!Word.Shape:class) object, use `ShapeGroup.shape`<!--
+  -->.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -49,7 +50,7 @@ properties:
     uid: word!Word.Interfaces.ShapeGroupLoadOptions#shape:member
     package: word!
     fullName: shape
-    summary: Gets the Shape object associated with the group.
+    summary: Gets the `Shape` object associated with the group.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

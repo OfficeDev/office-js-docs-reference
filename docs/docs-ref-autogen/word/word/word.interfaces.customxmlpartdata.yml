@@ -18,10 +18,10 @@ properties:
     fullName: builtIn
     summary: Gets a value that indicates whether the `CustomXmlPart` is built-in.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'builtIn?: boolean;'
@@ -35,10 +35,10 @@ properties:
       Gets the root element of a bound region of data in the document. If the
       region is empty, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'documentElement?: Word.Interfaces.CustomXmlNodeData;'
@@ -86,10 +86,10 @@ properties:
       Gets the set of namespace prefix mappings used against the current
       `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'namespaceManager?: Word.Interfaces.CustomXmlPrefixMappingData[];'
@@ -120,10 +120,10 @@ properties:
       Specifies a `CustomXmlSchemaCollection` object representing the set of
       schemas attached to a bound region of data in the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'schemaCollection?: Word.Interfaces.CustomXmlSchemaData[];'
@@ -135,10 +135,10 @@ properties:
     fullName: xml
     summary: Gets the XML representation of the current `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'xml?: string;'

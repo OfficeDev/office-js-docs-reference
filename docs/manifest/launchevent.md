@@ -1,7 +1,7 @@
 ---
 title: LaunchEvent in the manifest file
 description: The LaunchEvent element configures your add-in to activate based on supported events.
-ms.date: 07/02/2025
+ms.date: 10/09/2025
 ms.localizationpriority: medium
 ---
 
@@ -25,6 +25,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
   <LaunchEvents>
     <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
     <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
+    <LaunchEvent Type="OnMessageRead" FunctionName="onMessageReadHandler" HeaderName="contoso-encrypted"/>
     <LaunchEvent Type="OnMessageReadWithCustomHeader" FunctionName="onMessageReadWithCustomHeaderHandler" HeaderName="contoso-spam-simulation"/>
     <LaunchEvent Type="OnMessageReadWithCustomAttachment" FunctionName="onMessageReadWithCustomAttachmentHandler">
       <MessageAttachments>
@@ -49,7 +50,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 | **Type** | Yes | Specifies a supported event type. For the set of supported types, see the "Event canonical name and add-in only manifest name" column of the table of supported events in [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation#supported-events). |
 | **FunctionName** | Yes | Specifies the name of the JavaScript function to handle the event specified in the `Type` attribute. |
 | **SendMode** | No | Used by the `OnMessageSend` and `OnAppointmentSend` events. Specifies the options available to the user if your add-in stops an item from being sent or if the add-in is unavailable. If the **SendMode** property isn't included, the `SoftBlock` option is set by default. For a list of available send mode options, see [Available send mode options](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options). |
-| **HeaderName** (preview) | No | Specifies the internet header name used to identify a message on which the `OnMessageReadWithCustomHeader` event occurs. The `Type` attribute must be set to `OnMessageReadWithCustomHeader`. |
+| **HeaderName** (preview) | No | Specifies the internet header name used to identify a message on which the `OnMessageRead` or `OnMessageReadWithCustomHeader` event occurs. The `Type` attribute must be set to `OnMessageRead` or `OnMessageReadWithCustomHeader`. |
 
 ## Child elements
 
@@ -65,3 +66,4 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 - [Automatically check for an attachment before a message is sent](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)
 - [Automatically update your signature when switching between Exchange accounts](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events)
 - [Implement event-based activation in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-event-based)
+- [Create an encryption Outlook add-in](/office/dev/add-ins/outlook/encryption-decryption)

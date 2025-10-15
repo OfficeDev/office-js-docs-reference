@@ -78,7 +78,7 @@ fields:
     uid: word!Word.RangeLocation.content:member
     package: word!
     summary: >-
-      The range between 'Start' and 'End'.
+      The range between `start` and `end`<!-- -->.
 
 
       * \[ [API set: WordApi

@@ -4,9 +4,9 @@ uid: word!Word.Document:class
 package: word!
 fullName: Word.Document
 summary: >-
-  The Document object is the top level object. A Document object contains one or
-  more sections, content controls, and the body that contains the contents of
-  the document.
+  The `Document` object is the top level object. A `Document` object contains
+  one or more sections, content controls, and the body that contains the
+  contents of the document.
 remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -48,7 +48,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the main document. The body is the text that
+      Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
       \[ [API set: WordApi
@@ -112,7 +112,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This
+      Gets the collection of `ContentControl` objects in the document. This
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
@@ -196,7 +196,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -211,7 +211,7 @@ properties:
     uid: word!Word.Document#sections:member
     package: word!
     fullName: sections
-    summary: Gets the collection of section objects in the document.
+    summary: Gets the collection of `Section` objects in the document.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -321,12 +321,10 @@ methods:
       content: 'addStyle(name: string, type: Word.StyleType): Word.Style;'
       parameters:
         - id: name
-          description: Required. A string representing the style name.
+          description: A string representing the style name.
           type: string
         - id: type
-          description: >-
-            Required. The style type, including character, list, paragraph, or
-            table.
+          description: The style type, including character, list, paragraph, or table.
           type: <xref uid="word!Word.StyleType:enum" />
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -348,12 +346,10 @@ methods:
         "Table"): Word.Style;
       parameters:
         - id: name
-          description: Required. A string representing the style name.
+          description: A string representing the style name.
           type: string
         - id: type
-          description: >-
-            Required. The style type, including character, list, paragraph, or
-            table.
+          description: The style type, including character, list, paragraph, or table.
           type: '"Character" | "List" | "Paragraph" | "Table"'
       return:
         type: <xref uid="word!Word.Style:class" />
@@ -397,8 +393,8 @@ methods:
       parameters:
         - id: closeBehavior
           description: >-
-            Optional. The close behavior must be 'Save' or 'SkipSave'. Default
-            value is 'Save'.
+            Optional. The close behavior must be `save` or `skipSave`<!-- -->.
+            Default value is `save`<!-- -->.
           type: <xref uid="word!Word.CloseBehavior:enum" />
       return:
         type: void
@@ -422,8 +418,8 @@ methods:
       parameters:
         - id: closeBehavior
           description: >-
-            Optional. The close behavior must be 'Save' or 'SkipSave'. Default
-            value is 'Save'.
+            Optional. The close behavior must be `save` or `skipSave`<!-- -->.
+            Default value is `save`<!-- -->.
           type: '"Save" | "SkipSave"'
       return:
         type: void
@@ -443,7 +439,7 @@ methods:
       content: 'deleteBookmark(name: string): void;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: void
@@ -465,7 +461,7 @@ methods:
       content: 'getBookmarkRange(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -490,7 +486,7 @@ methods:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -672,7 +668,7 @@ methods:
     package: word!
     fullName: getStyles()
     summary: >-
-      Gets a StyleCollection object that represents the whole style set of the
+      Gets a `StyleCollection` object that represents the whole style set of the
       document.
     remarks: >-
       \[ [API set: WordApi
@@ -765,10 +761,12 @@ methods:
         insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Replace', 'Start', or 'End'.
+          description: >-
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -956,8 +954,8 @@ methods:
       parameters:
         - id: saveBehavior
           description: >-
-            Optional. The save behavior must be 'Save' or 'Prompt'. Default
-            value is 'Save'.
+            Optional. The save behavior must be `save` or `prompt`<!-- -->.
+            Default value is `save`<!-- -->.
           type: <xref uid="word!Word.SaveBehavior:enum" />
         - id: fileName
           description: >-
@@ -987,8 +985,8 @@ methods:
       parameters:
         - id: saveBehavior
           description: >-
-            Optional. The save behavior must be 'Save' or 'Prompt'. Default
-            value is 'Save'.
+            Optional. The save behavior must be `save` or `prompt`<!-- -->.
+            Default value is `save`<!-- -->.
           type: '"Save" | "Prompt"'
         - id: fileName
           description: >-

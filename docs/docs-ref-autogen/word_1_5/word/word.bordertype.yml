@@ -3,7 +3,7 @@ name: Word.BorderType
 uid: word!Word.BorderType:enum
 package: word!
 fullName: Word.BorderType
-summary: ''
+summary: The  types.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -40,6 +40,9 @@ fields:
     uid: word!Word.BorderType.dashDotStroked:member
     package: word!
     summary: >-
+      Dash-dot-stroked border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DashDotStroked"'
@@ -47,6 +50,9 @@ fields:
     uid: word!Word.BorderType.dashed:member
     package: word!
     summary: >-
+      Dashed border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dashed"'
@@ -54,6 +60,9 @@ fields:
     uid: word!Word.BorderType.dashedSmall:member
     package: word!
     summary: >-
+      Dashed small border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DashedSmall"'
@@ -61,6 +70,9 @@ fields:
     uid: word!Word.BorderType.dot2Dashed:member
     package: word!
     summary: >-
+      Double dot-dashed border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dot2Dashed"'
@@ -68,6 +80,9 @@ fields:
     uid: word!Word.BorderType.dotDashed:member
     package: word!
     summary: >-
+      Dot-dashed border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DotDashed"'
@@ -75,6 +90,9 @@ fields:
     uid: word!Word.BorderType.dotted:member
     package: word!
     summary: >-
+      Dotted border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dotted"'
@@ -82,6 +100,9 @@ fields:
     uid: word!Word.BorderType.double:member
     package: word!
     summary: >-
+      Double border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Double"'
@@ -89,6 +110,9 @@ fields:
     uid: word!Word.BorderType.doubleWave:member
     package: word!
     summary: >-
+      Double wave border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DoubleWave"'
@@ -96,6 +120,9 @@ fields:
     uid: word!Word.BorderType.mixed:member
     package: word!
     summary: >-
+      Mixed border type.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
@@ -103,6 +130,9 @@ fields:
     uid: word!Word.BorderType.none:member
     package: word!
     summary: >-
+      No border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
@@ -110,6 +140,9 @@ fields:
     uid: word!Word.BorderType.single:member
     package: word!
     summary: >-
+      Single border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Single"'
@@ -117,6 +150,9 @@ fields:
     uid: word!Word.BorderType.thickThinLarge:member
     package: word!
     summary: >-
+      Thick-thin large border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThickThinLarge"'
@@ -124,6 +160,9 @@ fields:
     uid: word!Word.BorderType.thickThinMed:member
     package: word!
     summary: >-
+      Thick-thin medium border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThickThinMed"'
@@ -131,6 +170,9 @@ fields:
     uid: word!Word.BorderType.thickThinSmall:member
     package: word!
     summary: >-
+      Thick-thin small border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThickThinSmall"'
@@ -138,6 +180,9 @@ fields:
     uid: word!Word.BorderType.thinThickLarge:member
     package: word!
     summary: >-
+      Thin-thick large border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThickLarge"'
@@ -145,6 +190,9 @@ fields:
     uid: word!Word.BorderType.thinThickMed:member
     package: word!
     summary: >-
+      Thin-thick medium border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThickMed"'
@@ -152,6 +200,9 @@ fields:
     uid: word!Word.BorderType.thinThickSmall:member
     package: word!
     summary: >-
+      Thin-thick small border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThickSmall"'
@@ -159,6 +210,9 @@ fields:
     uid: word!Word.BorderType.thinThickThinLarge:member
     package: word!
     summary: >-
+      Thin-thick-thin large border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThickThinLarge"'
@@ -166,6 +220,9 @@ fields:
     uid: word!Word.BorderType.thinThickThinMed:member
     package: word!
     summary: >-
+      Thin-thick-thin medium border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThickThinMed"'
@@ -173,6 +230,9 @@ fields:
     uid: word!Word.BorderType.thinThickThinSmall:member
     package: word!
     summary: >-
+      Thin-thick-thin small border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThickThinSmall"'
@@ -180,6 +240,9 @@ fields:
     uid: word!Word.BorderType.threeDEmboss:member
     package: word!
     summary: >-
+      3D Emboss border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThreeDEmboss"'
@@ -187,6 +250,9 @@ fields:
     uid: word!Word.BorderType.threeDEngrave:member
     package: word!
     summary: >-
+      3D Engrave border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThreeDEngrave"'
@@ -194,6 +260,9 @@ fields:
     uid: word!Word.BorderType.triple:member
     package: word!
     summary: >-
+      Triple border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Triple"'
@@ -201,6 +270,9 @@ fields:
     uid: word!Word.BorderType.wave:member
     package: word!
     summary: >-
+      Wave border.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Wave"'

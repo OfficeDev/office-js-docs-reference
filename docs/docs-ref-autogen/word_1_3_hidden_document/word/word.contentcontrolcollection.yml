@@ -114,7 +114,7 @@ methods:
       content: 'getById(id: number): Word.ContentControl;'
       parameters:
         - id: id
-          description: Required. A content control identifier.
+          description: A content control identifier.
           type: number
       return:
         type: <xref uid="word!Word.ContentControl:class" />
@@ -168,7 +168,7 @@ methods:
       content: 'getByIdOrNullObject(id: number): Word.ContentControl;'
       parameters:
         - id: id
-          description: Required. A content control identifier.
+          description: A content control identifier.
           type: number
       return:
         type: <xref uid="word!Word.ContentControl:class" />
@@ -213,7 +213,7 @@ methods:
       content: 'getByTag(tag: string): Word.ContentControlCollection;'
       parameters:
         - id: tag
-          description: Required. A tag set on a content control.
+          description: A tag set on a content control.
           type: string
       return:
         type: <xref uid="word!Word.ContentControlCollection:class" />
@@ -270,7 +270,7 @@ methods:
       content: 'getByTitle(title: string): Word.ContentControlCollection;'
       parameters:
         - id: title
-          description: Required. The title of a content control.
+          description: The title of a content control.
           type: string
       return:
         type: <xref uid="word!Word.ContentControlCollection:class" />
@@ -292,7 +292,7 @@ methods:
         Word.ContentControlCollection;
       parameters:
         - id: types
-          description: Required. An array of content control types.
+          description: An array of content control types.
           type: <xref uid="word!Word.ContentControlType:enum" />[]
       return:
         type: <xref uid="word!Word.ContentControlCollection:class" />

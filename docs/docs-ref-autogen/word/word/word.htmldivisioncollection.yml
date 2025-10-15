@@ -63,7 +63,7 @@ methods:
       content: 'getItemAt(index: number): Word.HtmlDivision;'
       parameters:
         - id: index
-          description: The index of the `HtmlDivision` to retrieve.
+          description: The index of the item to retrieve.
           type: number
       return:
         type: <xref uid="word!Word.HtmlDivision:class" />

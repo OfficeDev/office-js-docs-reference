@@ -3,7 +3,7 @@ name: Word.ComboBoxContentControl
 uid: word!Word.ComboBoxContentControl:class
 package: word!
 fullName: Word.ComboBoxContentControl
-summary: The data specific to content controls of type 'ComboBox'.
+summary: The data specific to content controls of type `comboBox`<!-- -->.
 remarks: >-
   \[ [API set: WordApi
   1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -186,7 +186,7 @@ methods:
         Word.ContentControlListItem;
       parameters:
         - id: displayText
-          description: Required. Display text of the list item.
+          description: Display text of the list item.
           type: string
         - id: value
           description: Optional. Value of the list item.

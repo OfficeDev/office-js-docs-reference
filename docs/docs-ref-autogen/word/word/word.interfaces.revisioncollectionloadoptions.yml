@@ -4,8 +4,8 @@ uid: word!Word.Interfaces.RevisionCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RevisionCollectionLoadOptions
 summary: >-
-  A collection of Revision objects that represent the changes marked with
-  revision marks in a range or document.
+  A collection of [Word.Revision](xref:word!Word.Revision:class) objects that
+  represent the changes marked with revision marks in a range or document.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)

@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.FrameCollectionData
+uid: word!Word.Interfaces.FrameCollectionData:interface
+package: word!
+fullName: Word.Interfaces.FrameCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `frameCollection.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.FrameCollectionData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.FrameData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.FrameData:interface" />[]
