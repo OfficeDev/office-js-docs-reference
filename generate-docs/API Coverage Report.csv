@@ -7099,7 +7099,7 @@ excel,N/A,N/A,Package,Missing,false
 excel,N/A,"Excel.createWorkbook(base64)",Method,Excellent,true
 excel,N/A,"Excel.getDataCommonPostprocess(response, callArgs)",Method,Missing,false
 excel,N/A,"Excel.postprocessBindingDescriptor(response)",Method,Missing,false
-excel,N/A,"Excel.run(batch)",Method,Excellent,false
+excel,N/A,"Excel.run(batch)",Method,Excellent,true
 excel,N/A,"Excel.run(object, batch)",Method,Excellent,false
 excel,N/A,"Excel.run(objects, batch)",Method,Excellent,false
 excel,N/A,"Excel.run(options, batch)",Method,Excellent,false
@@ -8825,7 +8825,7 @@ onenote,OneNote.PointCollection,"load(propertyNamesAndPaths)",Method,Excellent,f
 onenote,OneNote.PointCollection,"toJSON()",Method,Excellent,false
 onenote,OneNote.PointCollection,"track()",Method,Excellent,false
 onenote,OneNote.PointCollection,"untrack()",Method,Excellent,false
-onenote,OneNote.RequestContext,N/A,Class,Missing,false
+onenote,OneNote.RequestContext,N/A,Class,Missing,true
 onenote,OneNote.RequestContext,"application",Property,Missing,false
 onenote,OneNote.RichText,N/A,Class,Fine,false
 onenote,OneNote.RichText,"context",Property,Excellent,false
@@ -8996,7 +8996,7 @@ onenote,OneNote.TableRowCollection,"toJSON()",Method,Excellent,false
 onenote,OneNote.TableRowCollection,"track()",Method,Excellent,false
 onenote,OneNote.TableRowCollection,"untrack()",Method,Excellent,false
 onenote,N/A,N/A,Package,Missing,false
-onenote,N/A,"OneNote.run(batch)",Method,Excellent,false
+onenote,N/A,"OneNote.run(batch)",Method,Excellent,true
 onenote,N/A,"OneNote.run(object, batch)",Method,Excellent,false
 onenote,N/A,"OneNote.run(objects, batch)",Method,Excellent,false
 outlook,Office.Appointment,N/A,Interface,Excellent,false
@@ -11400,7 +11400,7 @@ powerpoint,PowerPoint.ThemeColorScheme,"setThemeColor(color, rgbColor)",Method,G
 powerpoint,PowerPoint.ThemeColorScheme,"toJSON()",Method,Excellent,false
 powerpoint,N/A,N/A,Package,Missing,false
 powerpoint,N/A,"PowerPoint.createPresentation(base64File)",Method,Excellent,true
-powerpoint,N/A,"PowerPoint.run(batch)",Method,Excellent,false
+powerpoint,N/A,"PowerPoint.run(batch)",Method,Excellent,true
 powerpoint,N/A,"PowerPoint.run(object, batch)",Method,Excellent,false
 powerpoint,N/A,"PowerPoint.run(objects, batch)",Method,Excellent,false
 visio,Visio.Application,N/A,Class,Fine,false
@@ -11631,7 +11631,7 @@ visio,Visio.PageView,"toJSON()",Method,Excellent,false
 visio,Visio.Position,N/A,Interface,Fine,false
 visio,Visio.Position,"x",Property,Excellent,false
 visio,Visio.Position,"y",Property,Excellent,false
-visio,Visio.RequestContext,N/A,Class,Excellent,false
+visio,Visio.RequestContext,N/A,Class,Excellent,true
 visio,Visio.RequestContext,"document",Property,Missing,false
 visio,Visio.Selection,N/A,Class,Poor,false
 visio,Visio.Selection,"context",Property,Excellent,false
@@ -11722,7 +11722,7 @@ visio,Visio.ToolBarType,"pageNavigationBar",EnumField,Fine,false
 visio,Visio.ToolBarType,"statusBar",EnumField,Fine,false
 visio,N/A,N/A,Package,Missing,false
 visio,N/A,"Visio.run(batch)",Method,Excellent,false
-visio,N/A,"Visio.run(object, batch)",Method,Excellent,false
+visio,N/A,"Visio.run(object, batch)",Method,Excellent,true
 visio,N/A,"Visio.run(objects, batch)",Method,Excellent,false
 visio,N/A,"Visio.run(contextObject, batch)",Method,Excellent,false
 word,Word.Alignment,N/A,Enum,Poor,true
@@ -19084,6 +19084,6 @@ word,Word.XmlValidationStatus,N/A,Enum,Good,false
 word,Word.XmlValidationStatus,"custom",EnumField,Good,false
 word,Word.XmlValidationStatus,"ok",EnumField,Fine,false
 word,N/A,N/A,Package,Missing,false
-word,N/A,"Word.run(objects, batch)",Method,Excellent,false
+word,N/A,"Word.run(objects, batch)",Method,Excellent,true
 word,N/A,"Word.run(object, batch)",Method,Excellent,false
 word,N/A,"Word.run(batch)",Method,Excellent,false

@@ -1,3 +1,11 @@
+Word.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Word.run(async (context) => {
+        const document = context.document;
+        // Interact with the Word document...
+    });
 Word.Body:class:
   - |-
     // Get the body object and read its font size.
