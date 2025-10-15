@@ -13,6 +13,14 @@ PowerPoint.createPresentation:function(1):
 
     // Read in the file as a data URL so we can parse the base64-encoded string.
     reader.readAsDataURL(myFile.files[0]);
+PowerPoint.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await PowerPoint.run(async (context) => {
+      const presentation = context.presentation;
+      // Interact with the PowerPoint presentation...
+    });
 PowerPoint.RequestContext:class:
   - |-
     // *.run methods automatically create an OfficeExtension.ClientRequestContext

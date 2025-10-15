@@ -594,7 +594,25 @@ functions:
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // *.run methods automatically create an
+          OfficeExtension.ClientRequestContext
+
+          // object to work with the Office file.
+
+          await Excel.run(async (context: Excel.RequestContext) => {
+            const workbook = context.workbook;
+            // Interact with the Excel workbook...
+          });
+
+          ```
   - name: Excel.run(object, batch)
     uid: excel!Excel.run:function(2)
     package: excel!

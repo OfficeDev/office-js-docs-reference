@@ -119,6 +119,14 @@ CustomFunctions.Invocation#parameterAddresses:member:
       ];
       return addresses;
     }
+Excel.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
 Excel.createWorkbook:function(1):
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");
@@ -6375,6 +6383,14 @@ OfficeRuntime.Auth#getAccessToken:member(1):
           }
       }
     }
+OneNote.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await OneNote.run(async (context) => {
+        const notebook = context.application.getActiveNotebook();
+        // Interact with the OneNote notebook...
+    });
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
@@ -7233,6 +7249,14 @@ OneNote.ParagraphCollection#load:member(2):
         console.log(
             "First Paragraph found with id : " + 
             firstParagraph.id + " and type " + firstParagraph.type);
+    });
+OneNote.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await OneNote.run(async (context) => {
+        const notebook = context.application.getActiveNotebook();
+        // Interact with the OneNote notebook...
     });
 OneNote.RichText#load:member(2):
   - |-
@@ -9445,6 +9469,14 @@ PowerPoint.createPresentation:function(1):
 
     // Read in the file as a data URL so we can parse the base64-encoded string.
     reader.readAsDataURL(myFile.files[0]);
+PowerPoint.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await PowerPoint.run(async (context) => {
+      const presentation = context.presentation;
+      // Interact with the PowerPoint presentation...
+    });
 PowerPoint.RequestContext:class:
   - |-
     // *.run methods automatically create an OfficeExtension.ClientRequestContext
@@ -9452,6 +9484,21 @@ PowerPoint.RequestContext:class:
     await PowerPoint.run(async (context) => {
       const presentation = context.presentation;
       // Interact with the PowerPoint presentation...
+    });
+Visio.run:function(2):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    Visio.run(session, function (context) {
+        const activePage = context.document.getActivePage();
+        // Interact with the Visio page... 
+
+        return context.sync();
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Visio.Application#showBorders:member:
   - |-
@@ -9725,6 +9772,21 @@ Visio.PageView#zoom:member:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    Visio.run(session, function (context) {
+        const activePage = context.document.getActivePage();
+        // Interact with the Visio page... 
+
+        return context.sync();
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Visio.SelectionChangedEventArgs:interface:
   - |-
     let eventResult; // Global variable to store the EventHandlerResult returned on attaching handler.
@@ -9923,6 +9985,14 @@ Visio.ShapeView#removeOverlay:member(1):
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+    });
+Word.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Word.run(async (context) => {
+        const document = context.document;
+        // Interact with the Word document...
     });
 Word.Body:class:
   - |-

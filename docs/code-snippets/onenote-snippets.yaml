@@ -1,3 +1,11 @@
+OneNote.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await OneNote.run(async (context) => {
+        const notebook = context.application.getActiveNotebook();
+        // Interact with the OneNote notebook...
+    });
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
@@ -856,6 +864,14 @@ OneNote.ParagraphCollection#load:member(2):
         console.log(
             "First Paragraph found with id : " + 
             firstParagraph.id + " and type " + firstParagraph.type);
+    });
+OneNote.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await OneNote.run(async (context) => {
+        const notebook = context.application.getActiveNotebook();
+        // Interact with the OneNote notebook...
     });
 OneNote.RichText#load:member(2):
   - |-

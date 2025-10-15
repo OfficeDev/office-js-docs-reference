@@ -226,7 +226,25 @@ functions:
             =&gt; <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
         type: <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // *.run methods automatically create an
+          OfficeExtension.ClientRequestContext
+
+          // object to work with the Office file.
+
+          await PowerPoint.run(async (context) => {
+            const presentation = context.presentation;
+            // Interact with the PowerPoint presentation...
+          });
+
+          ```
   - name: PowerPoint.run(object, batch)
     uid: powerpoint!PowerPoint.run:function(2)
     package: powerpoint!
