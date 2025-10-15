@@ -13,7 +13,7 @@ The `ExcelApiDesktop` requirement set is a special requirement set that includes
 When APIs in the `ExcelApiDesktop` requirement set are supported across all platforms, they'll be added to the next released requirement set (`ExcelApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also continue to be tagged in this `ExcelApiDesktop` requirement set. To learn more about platform-specific requirements in general, see [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets).
 
 > [!IMPORTANT]
-> `ExcelApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the ExcelApi 1.8.
+> `ExcelApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the ExcelApi 1.20.
 
 ## Recommended usage
 
