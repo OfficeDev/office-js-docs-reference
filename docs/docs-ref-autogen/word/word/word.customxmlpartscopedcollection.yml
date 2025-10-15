@@ -130,7 +130,7 @@ methods:
       content: 'getItemOrNullObject(id: string): Word.CustomXmlPart;'
       parameters:
         - id: id
-          description: Required. ID of the object to be retrieved.
+          description: ID of the object to be retrieved.
           type: string
       return:
         type: <xref uid="word!Word.CustomXmlPart:class" />

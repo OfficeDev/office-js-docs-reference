@@ -3,19 +3,19 @@
 |[Application](/javascript/api/word/word.application)|[createDocument(base64File?: string)](/javascript/api/word/word.application#word-word-application-createdocument-member(1))|Creates a new document by using an optional Base64-encoded .docx file.|
 |[Body](/javascript/api/word/word.body)|[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.body#word-word-body-getrange-member(1))|Gets the whole body, or the starting or ending point of the body, as a range.|
 ||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", values?: string[][])](/javascript/api/word/word.body#word-word-body-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
-||[lists](/javascript/api/word/word.body#word-word-body-lists-member)|Gets the collection of list objects in the body.|
+||[lists](/javascript/api/word/word.body#word-word-body-lists-member)|Gets the collection of `List` objects in the body.|
 ||[parentBody](/javascript/api/word/word.body#word-word-body-parentbody-member)|Gets the parent body of the body.|
 ||[parentBodyOrNullObject](/javascript/api/word/word.body#word-word-body-parentbodyornullobject-member)|Gets the parent body of the body.|
 ||[parentContentControlOrNullObject](/javascript/api/word/word.body#word-word-body-parentcontentcontrolornullobject-member)|Gets the content control that contains the body.|
 ||[parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member)|Gets the parent section of the body.|
 ||[parentSectionOrNullObject](/javascript/api/word/word.body#word-word-body-parentsectionornullobject-member)|Gets the parent section of the body.|
 ||[styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)|Specifies the built-in style name for the body.|
-||[tables](/javascript/api/word/word.body#word-word-body-tables-member)|Gets the collection of table objects in the body.|
+||[tables](/javascript/api/word/word.body#word-word-body-tables-member)|Gets the collection of `Table` objects in the body.|
 ||[type](/javascript/api/word/word.body#word-word-body-type-member)|Gets the type of the body.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[getRange(rangeLocation?: Word.RangeLocation \| "Whole" \| "Start" \| "End" \| "Before" \| "After" \| "Content")](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))|Gets the whole content control, or the starting or ending point of the content control, as a range.|
-||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettextranges-member(1))|Gets the text ranges in the content control by using punctuation marks and/or other ending marks.|
+||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettextranges-member(1))|Gets the text ranges in the content control by using punctuation marks and other ending marks.|
 ||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| Word.InsertLocation.before \| Word.InsertLocation.after \| "Start" \| "End" \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1))|Inserts a table with the specified number of rows and columns into, or next to, a content control.|
-||[lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)|Gets the collection of list objects in the content control.|
+||[lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)|Gets the collection of `List` objects in the content control.|
 ||[parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)|Gets the parent body of the content control.|
 ||[parentContentControlOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrolornullobject-member)|Gets the content control that contains the content control.|
 ||[parentTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttable-member)|Gets the table that contains the content control.|
@@ -25,7 +25,7 @@
 ||[split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-split-member(1))|Splits the content control into child ranges by using delimiters.|
 ||[styleBuiltIn](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-stylebuiltin-member)|Specifies the built-in style name for the content control.|
 ||[subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member)|Gets the content control subtype.|
-||[tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)|Gets the collection of table objects in the content control.|
+||[tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)|Gets the collection of `Table` objects in the content control.|
 |[ContentControlCollection](/javascript/api/word/word.contentcontrolcollection)|[getByIdOrNullObject(id: number)](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyidornullobject-member(1))|Gets a content control by its identifier.|
 ||[getByTypes(types: Word.ContentControlType[])](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))|Gets the content controls that have the specified types.|
 ||[getFirst()](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getfirst-member(1))|Gets the first content control in this collection.|
@@ -36,8 +36,8 @@
 ||[value](/javascript/api/word/word.customproperty#word-word-customproperty-value-member)|Specifies the value of the custom property.|
 |[CustomPropertyCollection](/javascript/api/word/word.custompropertycollection)|[add(key: string, value: any)](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-add-member(1))|Creates a new or sets an existing custom property.|
 ||[deleteAll()](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-deleteall-member(1))|Deletes all custom properties in this collection.|
-||[getCount()](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getcount-member(1))|Gets the count of custom properties.|
-||[getItem(key: string)](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getitem-member(1))|Gets a custom property object by its key, which is case-insensitive.|
+||[getCount()](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getcount-member(1))|Returns the number of items in the collection.|
+||[getItem(key: string)](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getitem-member(1))|Gets a `CustomProperty` object by its key, which is case-insensitive.|
 ||[getItemOrNullObject(key: string)](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getitemornullobject-member(1))|Gets a custom property object by its key, which is case-insensitive.|
 ||[items](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-items-member)|Gets the loaded child items in this collection.|
 |[Document](/javascript/api/word/word.document)|[properties](/javascript/api/word/word.document#word-word-document-properties-member)|Gets the properties of the document.|
@@ -72,7 +72,7 @@
 ||[getFirstOrNullObject()](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirstornullobject-member(1))|Gets the first inline image in this collection.|
 |[List](/javascript/api/word/word.list)|[getLevelParagraphs(level: number)](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1))|Gets the paragraphs that occur at the specified level in the list.|
 ||[getLevelString(level: number)](/javascript/api/word/word.list#word-word-list-getlevelstring-member(1))|Gets the bullet, number, or picture at the specified level as a string.|
-||[id](/javascript/api/word/word.list#word-word-list-id-member)|Gets the list's id.|
+||[id](/javascript/api/word/word.list#word-word-list-id-member)|Gets the list's ID.|
 ||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| Word.InsertLocation.before \| Word.InsertLocation.after \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.list#word-word-list-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
 ||[levelExistences](/javascript/api/word/word.list#word-word-list-levelexistences-member)|Checks whether each of the 9 levels exists in the list.|
 ||[levelTypes](/javascript/api/word/word.list#word-word-list-leveltypes-member)|Gets all 9 level types in the list.|
@@ -86,7 +86,7 @@
 ||[getByIdOrNullObject(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getbyidornullobject-member(1))|Gets a list by its identifier.|
 ||[getFirst()](/javascript/api/word/word.listcollection#word-word-listcollection-getfirst-member(1))|Gets the first list in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.listcollection#word-word-listcollection-getfirstornullobject-member(1))|Gets the first list in this collection.|
-||[getItem(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))|Gets a list object by its ID.|
+||[getItem(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))|Gets a `List` object by its ID.|
 ||[items](/javascript/api/word/word.listcollection#word-word-listcollection-items-member)|Gets the loaded child items in this collection.|
 |[ListItem](/javascript/api/word/word.listitem)|[getAncestor(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1))|Gets the list item parent, or the closest ancestor if the parent doesn't exist.|
 ||[getAncestorOrNullObject(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestorornullobject-member(1))|Gets the list item parent, or the closest ancestor if the parent doesn't exist.|
@@ -101,7 +101,7 @@
 ||[getPrevious()](/javascript/api/word/word.paragraph#word-word-paragraph-getprevious-member(1))|Gets the previous paragraph.|
 ||[getPreviousOrNullObject()](/javascript/api/word/word.paragraph#word-word-paragraph-getpreviousornullobject-member(1))|Gets the previous paragraph.|
 ||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.paragraph#word-word-paragraph-getrange-member(1))|Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.|
-||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.paragraph#word-word-paragraph-gettextranges-member(1))|Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.|
+||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.paragraph#word-word-paragraph-gettextranges-member(1))|Gets the text ranges in the paragraph by using punctuation marks and other ending marks.|
 ||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[isLastParagraph](/javascript/api/word/word.paragraph#word-word-paragraph-islastparagraph-member)|Indicates the paragraph is the last one inside its parent body.|
 ||[isListItem](/javascript/api/word/word.paragraph#word-word-paragraph-islistitem-member)|Checks whether the paragraph is a list item.|
@@ -127,16 +127,16 @@
 ||[expandTo(range: Word.Range)](/javascript/api/word/word.range#word-word-range-expandto-member(1))|Returns a new range that extends from this range in either direction to cover another range.|
 ||[expandToOrNullObject(range: Word.Range)](/javascript/api/word/word.range#word-word-range-expandtoornullobject-member(1))|Returns a new range that extends from this range in either direction to cover another range.|
 ||[getHyperlinkRanges()](/javascript/api/word/word.range#word-word-range-gethyperlinkranges-member(1))|Gets hyperlink child ranges within the range.|
-||[getNextTextRange(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-getnexttextrange-member(1))|Gets the next text range by using punctuation marks and/or other ending marks.|
-||[getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-getnexttextrangeornullobject-member(1))|Gets the next text range by using punctuation marks and/or other ending marks.|
-||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.range#word-word-range-getrange-member(1))|Clones the range, or gets the starting or ending point of the range as a new range.|
-||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-gettextranges-member(1))|Gets the text child ranges in the range by using punctuation marks and/or other ending marks.|
+||[getNextTextRange(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-getnexttextrange-member(1))|Gets the next text range by using punctuation marks and other ending marks.|
+||[getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-getnexttextrangeornullobject-member(1))|Gets the next text range by using punctuation marks and other ending marks.|
+||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.range#word-word-range-getrange-member(1))|Clones the `Range` object, or gets the starting or ending point of the range as a new range.|
+||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-gettextranges-member(1))|Gets the text child ranges in the range by using punctuation marks and other ending marks.|
 ||[hyperlink](/javascript/api/word/word.range#word-word-range-hyperlink-member)|Gets the first hyperlink in the range, or sets a hyperlink on the range.|
 ||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.range#word-word-range-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[intersectWith(range: Word.Range)](/javascript/api/word/word.range#word-word-range-intersectwith-member(1))|Returns a new range as the intersection of this range with another range.|
 ||[intersectWithOrNullObject(range: Word.Range)](/javascript/api/word/word.range#word-word-range-intersectwithornullobject-member(1))|Returns a new range as the intersection of this range with another range.|
 ||[isEmpty](/javascript/api/word/word.range#word-word-range-isempty-member)|Checks whether the range length is zero.|
-||[lists](/javascript/api/word/word.range#word-word-range-lists-member)|Gets the collection of list objects in the range.|
+||[lists](/javascript/api/word/word.range#word-word-range-lists-member)|Gets the collection of `List` objects in the range.|
 ||[parentBody](/javascript/api/word/word.range#word-word-range-parentbody-member)|Gets the parent body of the range.|
 ||[parentContentControlOrNullObject](/javascript/api/word/word.range#word-word-range-parentcontentcontrolornullobject-member)|Gets the currently supported content control that contains the range.|
 ||[parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member)|Gets the table that contains the range.|
@@ -145,7 +145,7 @@
 ||[parentTableOrNullObject](/javascript/api/word/word.range#word-word-range-parenttableornullobject-member)|Gets the table that contains the range.|
 ||[split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-split-member(1))|Splits the range into child ranges by using delimiters.|
 ||[styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)|Specifies the built-in style name for the range.|
-||[tables](/javascript/api/word/word.range#word-word-range-tables-member)|Gets the collection of table objects in the range.|
+||[tables](/javascript/api/word/word.range#word-word-range-tables-member)|Gets the collection of `Table` objects in the range.|
 |[RangeCollection](/javascript/api/word/word.rangecollection)|[getFirst()](/javascript/api/word/word.rangecollection#word-word-rangecollection-getfirst-member(1))|Gets the first range in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.rangecollection#word-word-rangecollection-getfirstornullobject-member(1))|Gets the first range in this collection.|
 |[RequestContext](/javascript/api/word/word.requestcontext)|[application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)|[Api set: WordApi 1.3] *|
@@ -191,7 +191,7 @@
 ||[parentTableOrNullObject](/javascript/api/word/word.table#word-word-table-parenttableornullobject-member)|Gets the table that contains this table.|
 ||[rowCount](/javascript/api/word/word.table#word-word-table-rowcount-member)|Gets the number of rows in the table.|
 ||[rows](/javascript/api/word/word.table#word-word-table-rows-member)|Gets all of the table rows.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.table#word-word-table-search-member(1))|Performs a search with the specified SearchOptions on the scope of the table object.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.table#word-word-table-search-member(1))|Performs a search with the specified search options on the scope of the `Table` object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.table#word-word-table-select-member(1))|Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.|
 ||[setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number)](/javascript/api/word/word.table#word-word-table-setcellpadding-member(1))|Sets cell padding in points.|
 ||[shadingColor](/javascript/api/word/word.table#word-word-table-shadingcolor-member)|Specifies the shading color.|
@@ -209,7 +209,7 @@
 |[TableBorder](/javascript/api/word/word.tableborder)|[color](/javascript/api/word/word.tableborder#word-word-tableborder-color-member)|Specifies the table border color.|
 ||[type](/javascript/api/word/word.tableborder#word-word-tableborder-type-member)|Specifies the type of the table border.|
 ||[width](/javascript/api/word/word.tableborder#word-word-tableborder-width-member)|Specifies the width, in points, of the table border.|
-|[TableCell](/javascript/api/word/word.tablecell)|[body](/javascript/api/word/word.tablecell#word-word-tablecell-body-member)|Gets the body object of the cell.|
+|[TableCell](/javascript/api/word/word.tablecell)|[body](/javascript/api/word/word.tablecell#word-word-tablecell-body-member)|Gets the `Body` object of the cell.|
 ||[cellIndex](/javascript/api/word/word.tablecell#word-word-tablecell-cellindex-member)|Gets the index of the cell in its row.|
 ||[columnWidth](/javascript/api/word/word.tablecell#word-word-tablecell-columnwidth-member)|Specifies the width of the cell's column in points.|
 ||[deleteColumn()](/javascript/api/word/word.tablecell#word-word-tablecell-deletecolumn-member(1))|Deletes the column containing this cell.|
@@ -250,7 +250,7 @@
 ||[parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)|Gets parent table.|
 ||[preferredHeight](/javascript/api/word/word.tablerow#word-word-tablerow-preferredheight-member)|Specifies the preferred height of the row in points.|
 ||[rowIndex](/javascript/api/word/word.tablerow#word-word-tablerow-rowindex-member)|Gets the index of the row in its parent table.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.tablerow#word-word-tablerow-search-member(1))|Performs a search with the specified SearchOptions on the scope of the row.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.tablerow#word-word-tablerow-search-member(1))|Performs a search with the specified search options on the scope of the row.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.tablerow#word-word-tablerow-select-member(1))|Selects the row and navigates the Word UI to it.|
 ||[setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number)](/javascript/api/word/word.tablerow#word-word-tablerow-setcellpadding-member(1))|Sets cell padding in points.|
 ||[shadingColor](/javascript/api/word/word.tablerow#word-word-tablerow-shadingcolor-member)|Specifies the shading color.|

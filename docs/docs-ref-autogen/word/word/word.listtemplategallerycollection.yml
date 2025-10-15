@@ -104,9 +104,7 @@ methods:
       content: 'getItem(index: number): Word.ListTemplateGallery;'
       parameters:
         - id: index
-          description: >-
-            A number that identifies the index location of a
-            `ListTemplateGallery` object.
+          description: The location of a `ListTemplateGallery` object.
           type: number
       return:
         type: <xref uid="word!Word.ListTemplateGallery:class" />

@@ -1,17 +1,10 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Application](/javascript/api/excel/excel.application)|[activeWindow](/javascript/api/excel/excel.application#excel-excel-application-activewindow-member)|Returns a `window` object that represents the active window (the window on top).|
-||[checkSpelling(word: string, options?: Excel.CheckSpellingOptions)](/javascript/api/excel/excel.application#excel-excel-application-checkspelling-member(1))|Checks the spelling of a single word.|
-||[enterEditingMode()](/javascript/api/excel/excel.application#excel-excel-application-entereditingmode-member(1))|Enters editing mode for the selected range in the active worksheet.|
-||[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
-||[union(firstRange: Range \| RangeAreas, secondRange: Range \| RangeAreas, ...additionalRanges: (Range \| RangeAreas)[])](/javascript/api/excel/excel.application#excel-excel-application-union-member(1))|Returns a `RangeAreas` object that represents the union of two or more `Range` or `RangeAreas` objects.|
-||[windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)|Returns all the Excel windows.|
+|[Application](/javascript/api/excel/excel.application)|[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
 |[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The Base64-encoded string.|
 ||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the Base64-encoded image.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
-|[CheckSpellingOptions](/javascript/api/excel/excel.checkspellingoptions)|[customDictionary](/javascript/api/excel/excel.checkspellingoptions#excel-excel-checkspellingoptions-customdictionary-member)|Optional.|
-||[ignoreUppercase](/javascript/api/excel/excel.checkspellingoptions#excel-excel-checkspellingoptions-ignoreuppercase-member)|Optional.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
@@ -74,34 +67,8 @@
 ||[preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)|Represents the preview value shown in the cell.|
 ||[provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-provider-member)|Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.|
 ||[type](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-type-member)|Represents the type of this cell value.|
-|[HeaderFooter](/javascript/api/excel/excel.headerfooter)|[centerFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerfooterpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.|
-||[centerHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerheaderpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.|
-||[leftFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftfooterpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.|
-||[leftHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftheaderpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.|
-||[rightFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightfooterpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.|
-||[rightHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightheaderpicture-member)|Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.|
-|[HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture)|[brightness](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-brightness-member)|Specifies the brightness of the picture.|
-||[colorType](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-colortype-member)|Specifies the type of color transformation of the picture.|
-||[contrast](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-contrast-member)|Specifies the contrast of the picture.|
-||[cropBottom](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-cropbottom-member)|Specifies the number of points that are cropped off the bottom of the picture.|
-||[cropLeft](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-cropleft-member)|Specifies the number of points that are cropped off the left side of the picture.|
-||[cropRight](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-cropright-member)|Specifies the number of points that are cropped off the right side of the picture.|
-||[cropTop](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-croptop-member)|Specifies the number of points that are cropped off the top of the picture.|
-||[filename](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-filename-member)|Specifies the URL (on the intranet or the web) or path (local or network) to the location where the source object is saved.|
-||[height](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-height-member)|Specifies the height of the picture in points.|
-||[lockAspectRatio](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-lockaspectratio-member)|Specifies a value that indicates whether the picture retains its original proportions when resized.|
-||[width](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-width-member)|Specifies the width of the picture in points.|
 |[Identity](/javascript/api/excel/excel.identity)|[displayName](/javascript/api/excel/excel.identity#excel-excel-identity-displayname-member)|Represents the user's display name.|
 ||[id](/javascript/api/excel/excel.identity#excel-excel-identity-id-member)|Represents the user's unique ID.|
-|[Image](/javascript/api/excel/excel.image)|[brightness](/javascript/api/excel/excel.image#excel-excel-image-brightness-member)|Specifies the brightness of the image.|
-||[colorType](/javascript/api/excel/excel.image#excel-excel-image-colortype-member)|Specifies the type of color transformation applied to the image.|
-||[contrast](/javascript/api/excel/excel.image#excel-excel-image-contrast-member)|Specifies the contrast of the image.|
-||[cropBottom](/javascript/api/excel/excel.image#excel-excel-image-cropbottom-member)|Specifies the number of points that are cropped off the bottom of the image.|
-||[cropLeft](/javascript/api/excel/excel.image#excel-excel-image-cropleft-member)|Specifies the number of points that are cropped off the left side of the image.|
-||[cropRight](/javascript/api/excel/excel.image#excel-excel-image-cropright-member)|Specifies the number of points that are cropped off the right side of the image.|
-||[cropTop](/javascript/api/excel/excel.image#excel-excel-image-croptop-member)|Specifies the number of points that are cropped off the top of the image.|
-||[incrementBrightness(increment: number)](/javascript/api/excel/excel.image#excel-excel-image-incrementbrightness-member(1))|Increments the brightness of the image by a specified amount.|
-||[incrementContrast(increment: number)](/javascript/api/excel/excel.image#excel-excel-image-incrementcontrast-member(1))|Increments the contrast of the image by a specified amount.|
 |[LocalImage](/javascript/api/excel/excel.localimage)|[getBase64EncodedImageData(cacheUid: string)](/javascript/api/excel/excel.localimage#excel-excel-localimage-getbase64encodedimagedata-member(1))|Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).|
 |[LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue)|[altText](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-alttext-member)|Represents the alternate text used in accessibility scenarios to describe what the image represents.|
 ||[attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)|Represents attribution information to describe the source and license requirements for this image.|
@@ -114,12 +81,6 @@
 |[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)|Represents the type of `NameErrorCellValue`.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)|Represents the type of `NotAvailableErrorCellValue`.|
-|[PageLayout](/javascript/api/excel/excel.pagelayout)|[alignMarginsHeaderFooter](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-alignmarginsheaderfooter-member)|Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.|
-||[printQuality](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printquality-member)|Specifies a two-element array that contains both horizontal and vertical print quality values.|
-|[Pane](/javascript/api/excel/excel.pane)|[index](/javascript/api/excel/excel.pane#excel-excel-pane-index-member)|Returns index of the pane.|
-|[PaneCollection](/javascript/api/excel/excel.panecollection)|[getCount()](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getcount-member(1))|Returns the number of bindings in the collection.|
-||[getItemAt(index: number)](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1))|Gets the Pane in the collection by index.|
-||[items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)|Gets the loaded child items in this collection.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
 ||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
@@ -131,11 +92,7 @@
 |[Query](/javascript/api/excel/excel.query)|[delete()](/javascript/api/excel/excel.query#excel-excel-query-delete-member(1))|Deletes the query and associated connection.|
 ||[refresh()](/javascript/api/excel/excel.query#excel-excel-query-refresh-member(1))|Refreshes the query.|
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
-|[Range](/javascript/api/excel/excel.range)|[checkSpelling(options?: Excel.CheckSpellingOptions)](/javascript/api/excel/excel.range#excel-excel-range-checkspelling-member(1))|Checks the spelling of words in this range.|
-||[formulaArray](/javascript/api/excel/excel.range#excel-excel-range-formulaarray-member)|Specifies the array formula of a range.|
-||[showDependents(remove?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-showdependents-member(1))|Draws tracer arrows to the direct dependents of the range.|
-||[showPrecedents(remove?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-showprecedents-member(1))|Draws tracer arrows to the direct precedents of the range.|
-||[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
+|[Range](/javascript/api/excel/excel.range)|[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
 |[RequestContext](/javascript/api/excel/excel.requestcontext)|[setInvocation(invocation: { invocationId: number isInCFSyncScenario: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
 ||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
@@ -164,77 +121,13 @@
 ||[errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)|Represents the type of `TimeoutErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
-|[Window](/javascript/api/excel/excel.window)|[activate()](/javascript/api/excel/excel.window#excel-excel-window-activate-member(1))|Activates the window.|
-||[activateNext()](/javascript/api/excel/excel.window#excel-excel-window-activatenext-member(1))|Activates the next window.|
-||[activatePrevious()](/javascript/api/excel/excel.window#excel-excel-window-activateprevious-member(1))|Activates the previous window.|
-||[activeCell](/javascript/api/excel/excel.window#excel-excel-window-activecell-member)|Specifies the active cell in the window.|
-||[activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)|Specifies the active pane in the window.|
-||[activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)|Specifies the active sheet in the window.|
-||[autoFilterDateGroupingEnabled](/javascript/api/excel/excel.window#excel-excel-window-autofilterdategroupingenabled-member)|Specifies whether AutoFilter date grouping is enabled in the window.|
-||[close()](/javascript/api/excel/excel.window#excel-excel-window-close-member(1))|Closes the window.|
-||[enableResize](/javascript/api/excel/excel.window#excel-excel-window-enableresize-member)|Specifies a value indicating whether resizing is enabled for the window.|
-||[freezePanes](/javascript/api/excel/excel.window#excel-excel-window-freezepanes-member)|Specifies a value indicating whether panes are frozen in the window.|
-||[height](/javascript/api/excel/excel.window#excel-excel-window-height-member)|Specifies the height of the window.|
-||[index](/javascript/api/excel/excel.window#excel-excel-window-index-member)|Gets the index of the window.|
-||[isVisible](/javascript/api/excel/excel.window#excel-excel-window-isvisible-member)|Specifies the visibility of the window.|
-||[largeScroll(Down: number, Up: number, ToRight: number, ToLeft: number)](/javascript/api/excel/excel.window#excel-excel-window-largescroll-member(1))|Scrolls the window by a large amount.|
-||[left](/javascript/api/excel/excel.window#excel-excel-window-left-member)|Specifies the left position of the window.|
-||[name](/javascript/api/excel/excel.window#excel-excel-window-name-member)|Specifies the name of the window.|
-||[newWindow()](/javascript/api/excel/excel.window#excel-excel-window-newwindow-member(1))|Open a new window|
-||[panes](/javascript/api/excel/excel.window#excel-excel-window-panes-member)|Gets the panes associated with the window.|
-||[pointsToScreenPixelsX(Points: number)](/javascript/api/excel/excel.window#excel-excel-window-pointstoscreenpixelsx-member(1))|Converts horizontal points to screen pixels.|
-||[pointsToScreenPixelsY(Points: number)](/javascript/api/excel/excel.window#excel-excel-window-pointstoscreenpixelsy-member(1))|Converts vertical points to screen pixels.|
-||[rangeSelection](/javascript/api/excel/excel.window#excel-excel-window-rangeselection-member)|Gets the range selection in the window.|
-||[scrollColumn](/javascript/api/excel/excel.window#excel-excel-window-scrollcolumn-member)|Specifies the scroll column of the window.|
-||[scrollIntoView(Left: number, Top: number, Width: number, Height: number, Start?: boolean)](/javascript/api/excel/excel.window#excel-excel-window-scrollintoview-member(1))|Scrolls the window to bring the specified range into view.|
-||[scrollRow](/javascript/api/excel/excel.window#excel-excel-window-scrollrow-member)|Specifies the scroll row of the window.|
-||[scrollWorkbookTabs(Sheets?: number, Position?: Excel.ScrollWorkbookTabPosition)](/javascript/api/excel/excel.window#excel-excel-window-scrollworkbooktabs-member(1))|Scrolls the workbook tabs.|
-||[showFormulas](/javascript/api/excel/excel.window#excel-excel-window-showformulas-member)|Specifies the display of formulas in the window.|
-||[showGridlines](/javascript/api/excel/excel.window#excel-excel-window-showgridlines-member)|Specifies the display of gridlines in the window.|
-||[showHeadings](/javascript/api/excel/excel.window#excel-excel-window-showheadings-member)|Specifies the display of headings in the window.|
-||[showHorizontalScrollBar](/javascript/api/excel/excel.window#excel-excel-window-showhorizontalscrollbar-member)|Specifies the display of the horizontal scroll bar in the window.|
-||[showOutline](/javascript/api/excel/excel.window#excel-excel-window-showoutline-member)|Specifies the display of the outline in the window.|
-||[showRightToLeft](/javascript/api/excel/excel.window#excel-excel-window-showrighttoleft-member)|Specifies the display of the right-to-left layout in the window.|
-||[showRuler](/javascript/api/excel/excel.window#excel-excel-window-showruler-member)|Specifies the display of the ruler in the window.|
-||[showVerticalScrollBar](/javascript/api/excel/excel.window#excel-excel-window-showverticalscrollbar-member)|Specifies the display of the vertical scroll bar in the window.|
-||[showWhitespace](/javascript/api/excel/excel.window#excel-excel-window-showwhitespace-member)|Specifies the display of whitespace in the window.|
-||[showWorkbookTabs](/javascript/api/excel/excel.window#excel-excel-window-showworkbooktabs-member)|Specifies the display of workbook tabs in the window.|
-||[showZeros](/javascript/api/excel/excel.window#excel-excel-window-showzeros-member)|Specifies the display of zeros in the window.|
-||[smallScroll(Down: number, Up: number, ToRight: number, ToLeft: number)](/javascript/api/excel/excel.window#excel-excel-window-smallscroll-member(1))|Scrolls the window by a small amount.|
-||[split](/javascript/api/excel/excel.window#excel-excel-window-split-member)|Specifies the split state of the window.|
-||[splitColumn](/javascript/api/excel/excel.window#excel-excel-window-splitcolumn-member)|Specifies the split column of the window.|
-||[splitHorizontal](/javascript/api/excel/excel.window#excel-excel-window-splithorizontal-member)|Specifies the horizontal split of the window.|
-||[splitRow](/javascript/api/excel/excel.window#excel-excel-window-splitrow-member)|Specifies the split row of the window.|
-||[splitVertical](/javascript/api/excel/excel.window#excel-excel-window-splitvertical-member)|Specifies the vertical split of the window.|
-||[tabRatio](/javascript/api/excel/excel.window#excel-excel-window-tabratio-member)|Specifies the tab ratio of the window.|
-||[top](/javascript/api/excel/excel.window#excel-excel-window-top-member)|Specifies the top position of the window.|
-||[type](/javascript/api/excel/excel.window#excel-excel-window-type-member)|Specifies the type of the window.|
-||[usableHeight](/javascript/api/excel/excel.window#excel-excel-window-usableheight-member)|Specifies the usable height of the window.|
-||[usableWidth](/javascript/api/excel/excel.window#excel-excel-window-usablewidth-member)|Specifies the usable width of the window.|
-||[view](/javascript/api/excel/excel.window#excel-excel-window-view-member)|Specifies the view of the window.|
-||[visibleRange](/javascript/api/excel/excel.window#excel-excel-window-visiblerange-member)|Gets the visible range of the window.|
-||[width](/javascript/api/excel/excel.window#excel-excel-window-width-member)|Returns or sets an integer value that represents the display size of the window.|
-||[windowNumber](/javascript/api/excel/excel.window#excel-excel-window-windownumber-member)|Specifies the window number.|
-||[windowState](/javascript/api/excel/excel.window#excel-excel-window-windowstate-member)|Returns or sets an integer value that represents the display size of the window.|
-||[zoom](/javascript/api/excel/excel.window#excel-excel-window-zoom-member)|Specifies an integer value that represents the display size of the window.|
-|[WindowCollection](/javascript/api/excel/excel.windowcollection)|[breakSideBySide()](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-breaksidebyside-member(1))|Breaks the side-by-side view of windows.|
-||[compareCurrentSideBySideWith(windowName: string)](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-comparecurrentsidebysidewith-member(1))|Compares the current window side by side with the specified window.|
-||[getCount()](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getcount-member(1))|Gets the number of windows in the collection.|
-||[getItemAt(index: number)](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1))|Gets the Window in the collection by index.|
-||[items](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-items-member)|Gets the loaded child items in this collection.|
-||[resetPositionsSideBySide()](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-resetpositionssidebyside-member(1))|Resets the positions of windows in side-by-side view.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[enterPreviewMode()](/javascript/api/excel/excel.workbook#excel-excel-workbook-enterpreviewmode-member(1))|Enters Scratchpad Preview Mode for the workbook, showing changes suggested by Copilot to the user.|
-||[exitPreviewMode(applyChanges: boolean)](/javascript/api/excel/excel.workbook#excel-excel-workbook-exitpreviewmode-member(1))|Exits Scratchpad Preview Mode for the workbook.|
-||[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
-||[focus()](/javascript/api/excel/excel.workbook#excel-excel-workbook-focus-member(1))|Sets focus on the workbook.|
+|[Window](/javascript/api/excel/excel.window)|[rangeSelection](/javascript/api/excel/excel.window#excel-excel-window-rangeselection-member)|Gets the range selection in the window.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
-|[Worksheet](/javascript/api/excel/excel.worksheet)|[checkSpelling(options?: Excel.CheckSpellingOptions)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-checkspelling-member(1))|Checks the spelling of words in this worksheet.|
-||[clearArrows()](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-cleararrows-member(1))|Clears the tracer arrows from the worksheet.|
-||[evaluate(name: string)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-evaluate-member(1))|Returns the evaluation result of a formula string.|
-||[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
+|[Worksheet](/javascript/api/excel/excel.worksheet)|[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
 ||[tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)|Returns a collection of tasks that are present in the worksheet.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))|Inserts the specified worksheets of a workbook into the current workbook.|
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)|Occurs when any worksheet's filter is applied in the workbook.|

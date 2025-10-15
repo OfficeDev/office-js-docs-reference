@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.RangeScopedCollectionLoadOptions
 summary: >-
   Represents a collection of [Word.Range](xref:word!Word.Range:class) objects
-  that represents each character, word or sentence.
+  that represents each character, word, or sentence.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

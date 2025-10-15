@@ -78,7 +78,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Represents the body object of the shape. Only applies to text boxes and
+      Represents the `Body` object of the shape. Only applies to text boxes and
       geometric shapes.
     remarks: >-
       \[ [API set: WordApiDesktop
@@ -97,7 +97,8 @@ properties:
     summary: >-
       Gets the canvas associated with the shape. An object with its
       `isNullObject` property set to `true` will be returned if the shape type
-      isn't "Canvas". For further information, see [*OrNullObject methods and
+      isn't `canvas`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -545,8 +546,8 @@ properties:
     summary: >-
       Gets the shape group associated with the shape. An object with its
       `isNullObject` property set to `true` will be returned if the shape type
-      isn't "GroupShape". For further information, see [*OrNullObject methods
-      and
+      isn't `groupShape`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -563,7 +564,7 @@ properties:
     uid: word!Word.Shape#textFrame:member
     package: word!
     fullName: textFrame
-    summary: Gets the text frame object of the shape.
+    summary: Gets the `TextFrame` object of the shape.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -856,9 +857,9 @@ methods:
       parameters:
         - id: distance
           description: >-
-            Required. Specifies how far the shape is to be moved horizontally,
-            in points. Use a positive value to move the shape right. Use a
-            negative value to move the shape left.
+            Specifies how far the shape is to be moved horizontally, in points.
+            Use a positive value to move the shape right. Use a negative value
+            to move the shape left.
           type: number
       return:
         type: void
@@ -879,9 +880,9 @@ methods:
       parameters:
         - id: distance
           description: >-
-            Required. Specifies how far the shape is to be moved vertically, in
-            points. Use a positive value to move the shape up. Use a negative
-            value to move the shape down.
+            Specifies how far the shape is to be moved vertically, in points.
+            Use a positive value to move the shape up. Use a negative value to
+            move the shape down.
           type: number
       return:
         type: void
@@ -1065,7 +1066,7 @@ methods:
         - id: selectMultipleShapes
           description: >-
             Optional. Whether to select multiple floating shapes. The default
-            value is false.
+            value is `false`<!-- -->.
           type: boolean
       return:
         type: void

@@ -254,11 +254,10 @@ properties:
       Specifies the array formula of a range. If the specified range doesn't
       contain an array formula, this property returns `null`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'formulaArray: string;'
@@ -1074,11 +1073,10 @@ methods:
       Checks the spelling of words in this range. This method opens the Spelling
       dialog box in the Excel UI.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'checkSpelling(options?: Excel.CheckSpellingOptions): void;'
@@ -2161,8 +2159,7 @@ methods:
     summary: >-
       Returns a range object that includes the current range and up to the edge
       of the range, based on the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the
-      Excel on Windows UI.
+      Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -2227,8 +2224,7 @@ methods:
     summary: >-
       Returns a range object that includes the current range and up to the edge
       of the range, based on the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Arrow key</kbd> behavior in the
-      Excel on Windows UI.
+      Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -2744,8 +2740,8 @@ methods:
     fullName: getRangeEdge(direction, activeCell)
     summary: >-
       Returns a range object that is the edge cell of the data region that
-      corresponds to the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+      corresponds to the provided direction. This matches the Ctrl+Arrow key
+      behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -2809,8 +2805,8 @@ methods:
     fullName: getRangeEdge(direction, activeCell)
     summary: >-
       Returns a range object that is the edge cell of the data region that
-      corresponds to the provided direction. This matches the
-      <kbd>Ctrl</kbd>+<kbd>Arrow key</kbd> behavior in the Excel on Windows UI.
+      corresponds to the provided direction. This matches the Ctrl+Arrow key
+      behavior in the Excel on Windows UI.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -4281,11 +4277,10 @@ methods:
     fullName: showDependents(remove)
     summary: Draws tracer arrows to the direct dependents of the range.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'showDependents(remove?: boolean): void;'
@@ -4351,11 +4346,10 @@ methods:
     fullName: showPrecedents(remove)
     summary: Draws tracer arrows to the direct precedents of the range.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'showPrecedents(remove?: boolean): void;'

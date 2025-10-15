@@ -482,6 +482,8 @@ export declare namespace Excel {
         
         
         
+        
+        
         /**
          * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
          *
@@ -519,6 +521,9 @@ export declare namespace Excel {
          * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
         calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        
+        
+        
         
         
         /**
@@ -640,6 +645,7 @@ export declare namespace Excel {
         set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Workbook): void;
+        
         
         
         
@@ -806,6 +812,8 @@ export declare namespace Excel {
         
         
         
+        
+        
         /**
          * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
@@ -813,6 +821,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        
         
         
         /**
@@ -893,6 +902,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
+    
     /**
      * Represents a collection of worksheet objects that are part of the workbook.
      *
@@ -1211,6 +1221,7 @@ export declare namespace Excel {
          */
         readonly columnIndex: number;
         
+        
         /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
@@ -1312,6 +1323,7 @@ export declare namespace Excel {
         set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Range): void;
+        
         
         
         
@@ -1581,6 +1593,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         select(): void;
+        
+        
         
         
         
@@ -5965,6 +5979,8 @@ export declare namespace Excel {
     
     
     
+    
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -7497,6 +7513,14 @@ export declare namespace Excel {
          */
         distributed = "Distributed"
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -11421,6 +11445,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
             
+            
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
              *
@@ -11494,6 +11519,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             columnHidden?: boolean;
+            
             
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
@@ -13059,6 +13085,8 @@ export declare namespace Excel {
             
             
             
+            
+            
         }
         /** An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
@@ -13068,9 +13096,29 @@ export declare namespace Excel {
             
             
             
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `HeaderFooterGroup` object, for use in `headerFooterGroup.set({ ... })`. */
         export interface HeaderFooterGroupUpdateData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `HeaderFooterPicture` object, for use in `headerFooterPicture.set({ ... })`. */
+        export interface HeaderFooterPictureUpdateData {
+            
+            
+            
+            
             
             
             
@@ -13121,6 +13169,16 @@ export declare namespace Excel {
             
             
             
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `Image` object, for use in `image.set({ ... })`. */
+        export interface ImageUpdateData {
             
             
             
@@ -13236,6 +13294,49 @@ export declare namespace Excel {
             
             
         }
+        /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
+        export interface WindowUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Excel.Interfaces.PaneData[];
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             
@@ -13273,6 +13374,8 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
+            
+            
             
             
             
@@ -13515,6 +13618,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: number;
+            
             
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
@@ -15451,6 +15555,8 @@ export declare namespace Excel {
             
             
             
+            
+            
         }
         /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
         export interface HeaderFooterData {
@@ -15460,9 +15566,29 @@ export declare namespace Excel {
             
             
             
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `headerFooterGroup.toJSON()`. */
         export interface HeaderFooterGroupData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `headerFooterPicture.toJSON()`. */
+        export interface HeaderFooterPictureData {
+            
+            
+            
+            
             
             
             
@@ -15554,6 +15680,13 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `image.toJSON()`. */
         export interface ImageData {
+            
+            
+            
+            
+            
+            
+            
             
             
         }
@@ -15691,6 +15824,62 @@ export declare namespace Excel {
             
             
         }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Excel.Interfaces.PaneData[];
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -15726,6 +15915,7 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             
             
             
@@ -16030,6 +16220,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            
             
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
@@ -18337,6 +18528,11 @@ export declare namespace Excel {
             
             
         }
+        
+        
+        
+        
+        
         
         
         

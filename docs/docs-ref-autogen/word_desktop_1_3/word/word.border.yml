@@ -3,7 +3,7 @@ name: Word.Border
 uid: word!Word.Border:class
 package: word!
 fullName: Word.Border
-summary: Represents the Border object for text, a paragraph, or a table.
+summary: Represents the `Border` object for text, a paragraph, or a table.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

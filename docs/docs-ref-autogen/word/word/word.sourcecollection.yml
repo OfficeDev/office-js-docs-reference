@@ -76,7 +76,7 @@ methods:
       content: 'getItem(index: number): Word.Source;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a `Source` object.
+          description: The location of a `Source` object.
           type: number
       return:
         type: <xref uid="word!Word.Source:class" />

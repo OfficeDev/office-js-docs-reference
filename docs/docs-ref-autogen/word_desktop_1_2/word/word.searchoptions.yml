@@ -75,9 +75,10 @@ properties:
     package: word!
     fullName: ignorePunct
     summary: >-
-      Specifies a value that indicates whether to ignore all punctuation
-      characters between words. Corresponds to the Ignore punctuation check box
-      in the Find and Replace dialog box.
+      If provided, specifies whether to ignore all punctuation characters
+      between words. The default is `false`<!-- -->. Corresponds to the \_Ignore
+      punctuation characters\_ check box in the **Find and Replace** dialog
+      box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -93,9 +94,9 @@ properties:
     package: word!
     fullName: ignoreSpace
     summary: >-
-      Specifies a value that indicates whether to ignore all whitespace between
-      words. Corresponds to the Ignore whitespace characters check box in the
-      Find and Replace dialog box.
+      If provided, specifies whether to ignore all whitespace between words. The
+      default is `false`<!-- -->. Corresponds to the \_Ignore white-space
+      characters\_ check box in the **Find and Replace** dialog box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -111,9 +112,9 @@ properties:
     package: word!
     fullName: matchCase
     summary: >-
-      Specifies a value that indicates whether to perform a case sensitive
-      search. Corresponds to the Match case check box in the Find and Replace
-      dialog box.
+      If provided, specifies whether to perform a case sensitive search. The
+      default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
+      the **Find and Replace** dialog box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -129,9 +130,9 @@ properties:
     package: word!
     fullName: matchPrefix
     summary: >-
-      Specifies a value that indicates whether to match words that begin with
-      the search string. Corresponds to the Match prefix check box in the Find
-      and Replace dialog box.
+      If provided, specifies whether to match words that begin with the search
+      string. The default is `false`<!-- -->. Corresponds to the \_Match
+      prefix\_ check box in the **Find and Replace** dialog box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -147,9 +148,9 @@ properties:
     package: word!
     fullName: matchSuffix
     summary: >-
-      Specifies a value that indicates whether to match words that end with the
-      search string. Corresponds to the Match suffix check box in the Find and
-      Replace dialog box.
+      If provided, specifies whether to match words that end with the search
+      string. The default is `false`<!-- -->. Corresponds to the \_Match
+      suffix\_ check box in the **Find and Replace** dialog box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -165,9 +166,10 @@ properties:
     package: word!
     fullName: matchWholeWord
     summary: >-
-      Specifies a value that indicates whether to find operation only entire
-      words, not text that is part of a larger word. Corresponds to the Find
-      whole words only check box in the Find and Replace dialog box.
+      If provided, specifies whether to find only entire words, not text that's
+      part of a larger word. The default is `false`<!-- -->. Corresponds to the
+      \_Find whole words only\_ check box in the **Find and Replace** dialog
+      box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -183,9 +185,9 @@ properties:
     package: word!
     fullName: matchWildcards
     summary: >-
-      Specifies a value that indicates whether the search will be performed
-      using special search operators. Corresponds to the Use wildcards check box
-      in the Find and Replace dialog box.
+      If provided, specifies whether the search will be performed using special
+      search operators. The default is `false`<!-- -->. Corresponds to the \_Use
+      wildcards\_ check box in the **Find and Replace** dialog box.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

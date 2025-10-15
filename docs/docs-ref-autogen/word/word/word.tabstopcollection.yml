@@ -139,7 +139,7 @@ methods:
       content: 'getItem(index: number): Word.TabStop;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a `TabStop` object.
+          description: The location of a `TabStop` object.
           type: number
       return:
         type: <xref uid="word!Word.TabStop:class" />

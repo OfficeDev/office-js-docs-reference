@@ -652,12 +652,15 @@ interfaces:
   - excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface
   - excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface
   - excel!Excel.Interfaces.HeaderFooterLoadOptions:interface
+  - excel!Excel.Interfaces.HeaderFooterPictureData:interface
+  - excel!Excel.Interfaces.HeaderFooterPictureUpdateData:interface
   - excel!Excel.Interfaces.HeaderFooterUpdateData:interface
   - excel!Excel.Interfaces.IconSetConditionalFormatData:interface
   - excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface
   - excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface
   - excel!Excel.Interfaces.ImageData:interface
   - excel!Excel.Interfaces.ImageLoadOptions:interface
+  - excel!Excel.Interfaces.ImageUpdateData:interface
   - excel!Excel.Interfaces.IterativeCalculationData:interface
   - excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface
   - excel!Excel.Interfaces.IterativeCalculationUpdateData:interface
@@ -697,6 +700,9 @@ interfaces:
   - excel!Excel.Interfaces.PageLayoutData:interface
   - excel!Excel.Interfaces.PageLayoutLoadOptions:interface
   - excel!Excel.Interfaces.PageLayoutUpdateData:interface
+  - excel!Excel.Interfaces.PaneCollectionData:interface
+  - excel!Excel.Interfaces.PaneCollectionUpdateData:interface
+  - excel!Excel.Interfaces.PaneData:interface
   - excel!Excel.Interfaces.PivotFieldCollectionData:interface
   - excel!Excel.Interfaces.PivotFieldCollectionLoadOptions:interface
   - excel!Excel.Interfaces.PivotFieldCollectionUpdateData:interface
@@ -880,6 +886,10 @@ interfaces:
   - excel!Excel.Interfaces.TopBottomConditionalFormatData:interface
   - excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface
   - excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface
+  - excel!Excel.Interfaces.WindowCollectionData:interface
+  - excel!Excel.Interfaces.WindowCollectionUpdateData:interface
+  - excel!Excel.Interfaces.WindowData:interface
+  - excel!Excel.Interfaces.WindowUpdateData:interface
   - excel!Excel.Interfaces.WorkbookCreatedData:interface
   - excel!Excel.Interfaces.WorkbookData:interface
   - excel!Excel.Interfaces.WorkbookLoadOptions:interface

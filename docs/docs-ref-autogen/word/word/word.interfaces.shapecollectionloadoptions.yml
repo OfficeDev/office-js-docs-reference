@@ -70,8 +70,8 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      For EACH ITEM in the collection: Represents the body object of the shape.
-      Only applies to text boxes and geometric shapes.
+      For EACH ITEM in the collection: Represents the `Body` object of the
+      shape. Only applies to text boxes and geometric shapes.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -89,8 +89,8 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the canvas associated with the
       shape. An object with its `isNullObject` property set to `true` will be
-      returned if the shape type isn't "Canvas". For further information, see
-      [*OrNullObject methods and
+      returned if the shape type isn't `canvas`<!-- -->. For further
+      information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -413,8 +413,8 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the shape group associated with the
       shape. An object with its `isNullObject` property set to `true` will be
-      returned if the shape type isn't "GroupShape". For further information,
-      see [*OrNullObject methods and
+      returned if the shape type isn't `groupShape`<!-- -->. For further
+      information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -431,7 +431,7 @@ properties:
     uid: word!Word.Interfaces.ShapeCollectionLoadOptions#textFrame:member
     package: word!
     fullName: textFrame
-    summary: 'For EACH ITEM in the collection: Gets the text frame object of the shape.'
+    summary: 'For EACH ITEM in the collection: Gets the `TextFrame` object of the shape.'
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

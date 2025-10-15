@@ -1,0 +1,87 @@
+### YamlMime:TSTypeAlias
+name: Excel.EntityPropertyType
+uid: excel!Excel.EntityPropertyType:type
+package: excel!
+fullName: Excel.EntityPropertyType
+summary: Represents the value of a property.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+
+
+  Learn more about the types in this type alias through the following links. 
+
+
+  [Excel.CellValueAndPropertyMetadata](/javascript/api/excel/excel.cellvalueandpropertymetadata),
+  [Excel.CellValue](/javascript/api/excel/excel.cellvalue)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
+
+
+  function makeProductEntity(productID: number, productName: string, product?:
+  any) {
+    const entity: Excel.EntityCellValue = {
+      type: Excel.CellValueType.entity,
+      text: productName,
+      properties: { /* Excel.EntityPropertyType */
+        "Product ID": {
+          type: Excel.CellValueType.string,
+          basicValue: productID.toString() || ""
+        },
+        "Product Name": {
+          type: Excel.CellValueType.string,
+          basicValue: productName || ""
+        },
+        "Quantity Per Unit": {
+          type: Excel.CellValueType.string,
+          basicValue: product.quantityPerUnit || ""
+        },
+        // Add Unit Price as a formatted number.
+        "Unit Price": {
+          type: Excel.CellValueType.formattedNumber,
+          basicValue: product.unitPrice,
+          numberFormat: "$* #,##0.00"
+        }
+      },
+      layouts: { /* Excel.EntityViewLayouts */
+        card: { /* Excel.EntityCardLayout */
+          title: { property: "Product Name" },
+          sections: [ /* Excel.CardLayoutSection */
+            {
+              layout: "List",
+              properties: ["Product ID"]
+            },
+            {
+              layout: "List",
+              title: "Quantity and price",
+              collapsible: true,
+              collapsed: false,
+              properties: ["Quantity Per Unit", "Unit Price"]
+            }
+          ]
+        }
+      },
+      provider: {
+        description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
+        logoSourceAddress: product.sourceAddress, // Source URL of the logo to display.
+        logoTargetAddress: product.targetAddress // Destination URL that the logo navigates to when clicked.
+      }
+    };
+
+    return entity;
+  }
+
+  ```
+
+isPreview: false
+isDeprecated: false
+syntax: export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;

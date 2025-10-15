@@ -3,7 +3,9 @@ name: Word.WindowCollection
 uid: word!Word.WindowCollection:class
 package: word!
 fullName: Word.WindowCollection
-summary: Represents the collection of window objects.
+summary: >-
+  Represents the collection of [Word.Window](xref:word!Word.Window:class)
+  objects.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

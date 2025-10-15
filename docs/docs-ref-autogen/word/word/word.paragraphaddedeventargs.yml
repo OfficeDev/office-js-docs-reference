@@ -4,7 +4,7 @@ uid: word!Word.ParagraphAddedEventArgs:interface
 package: word!
 fullName: Word.ParagraphAddedEventArgs
 summary: >-
-  Provides information about the paragraphs that raised the paragraphAdded
+  Provides information about the paragraphs that raised the `paragraphAdded`
   event.
 remarks: >-
   \[ [API set: WordApi
@@ -64,7 +64,7 @@ properties:
     uid: word!Word.ParagraphAddedEventArgs#type:member
     package: word!
     fullName: type
-    summary: The event type. See Word.EventType for details.
+    summary: The event type. See `Word.EventType` for details.
     remarks: >-
       \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

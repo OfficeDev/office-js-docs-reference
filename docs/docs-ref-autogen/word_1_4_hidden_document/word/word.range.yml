@@ -47,7 +47,7 @@ properties:
     uid: word!Word.Range#contentControls:member
     package: word!
     fullName: contentControls
-    summary: Gets the collection of content control objects in the range.
+    summary: Gets the collection of `ContentControl` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -77,7 +77,7 @@ properties:
     uid: word!Word.Range#fields:member
     package: word!
     fullName: fields
-    summary: Gets the collection of field objects in the range.
+    summary: Gets the collection of `Field` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -128,7 +128,7 @@ properties:
     uid: word!Word.Range#inlinePictures:member
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of inline picture objects in the range.
+    summary: Gets the collection of `InlinePicture` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -158,7 +158,7 @@ properties:
     uid: word!Word.Range#lists:member
     package: word!
     fullName: lists
-    summary: Gets the collection of list objects in the range.
+    summary: Gets the collection of `List` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -173,7 +173,7 @@ properties:
     uid: word!Word.Range#paragraphs:member
     package: word!
     fullName: paragraphs
-    summary: Gets the collection of paragraph objects in the range.
+    summary: Gets the collection of `Paragraph` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -533,7 +533,7 @@ properties:
     uid: word!Word.Range#tables:member
     package: word!
     fullName: tables
-    summary: Gets the collection of table objects in the range.
+    summary: Gets the collection of `Table` objects in the range.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -565,7 +565,7 @@ methods:
     package: word!
     fullName: clear()
     summary: >-
-      Clears the contents of the range object. The user can perform the undo
+      Clears the contents of the `Range` object. The user can perform the undo
       operation on the cleared content.
     remarks: >-
       \[ [API set: WordApi
@@ -652,7 +652,7 @@ methods:
         OfficeExtension.ClientResult<Word.LocationRelation>;
       parameters:
         - id: range
-          description: Required. The range to compare with this range.
+          description: The range to compare with this range.
           type: <xref uid="word!Word.Range:class" />
       return:
         type: >-
@@ -756,7 +756,7 @@ methods:
       content: 'expandTo(range: Word.Range): Word.Range;'
       parameters:
         - id: range
-          description: Required. Another range.
+          description: Another range.
           type: <xref uid="word!Word.Range:class" />
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -783,7 +783,7 @@ methods:
       content: 'expandToOrNullObject(range: Word.Range): Word.Range;'
       parameters:
         - id: range
-          description: Required. Another range.
+          description: Another range.
           type: <xref uid="word!Word.Range:class" />
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -809,12 +809,12 @@ methods:
         - id: includeHidden
           description: >-
             Optional. Indicates whether to include hidden bookmarks. Default is
-            false which indicates that the hidden bookmarks are excluded.
+            `false` which indicates that the hidden bookmarks are excluded.
           type: boolean
         - id: includeAdjacent
           description: >-
             Optional. Indicates whether to include bookmarks that are adjacent
-            to the range. Default is false which indicates that the adjacent
+            to the range. Default is `false` which indicates that the adjacent
             bookmarks are excluded.
           type: boolean
       return:
@@ -861,13 +861,15 @@ methods:
       content: 'getComments(): Word.CommentCollection;'
       return:
         type: <xref uid="word!Word.CommentCollection:class" />
-        description: ''
+        description: >-
+          A `CommentCollection` object that contains all the comments associated
+          with the range.
   - name: getHtml()
     uid: word!Word.Range#getHtml:member(1)
     package: word!
     fullName: getHtml()
     summary: >-
-      Gets an HTML representation of the range object. When rendered in a web
+      Gets an HTML representation of the `Range` object. When rendered in a web
       page or HTML viewer, the formatting will be a close, but not exact, match
       for of the formatting of the document. This method doesn't return the
       exact same HTML for the same document on different platforms (Windows,
@@ -954,7 +956,7 @@ methods:
     package: word!
     fullName: getNextTextRange(endingMarks, trimSpacing)
     summary: >-
-      Gets the next text range by using punctuation marks and/or other ending
+      Gets the next text range by using punctuation marks and other ending
       marks. Throws an `ItemNotFound` error if this text range is the last one.
     remarks: >-
       \[ [API set: WordApi
@@ -968,16 +970,14 @@ methods:
         Word.Range;
       parameters:
         - id: endingMarks
-          description: >-
-            Required. The punctuation marks and/or other ending marks as an
-            array of strings.
+          description: The punctuation marks and other ending marks as an array of strings.
           type: string[]
         - id: trimSpacing
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces,
             tabs, column breaks, and paragraph end marks) from the start and end
-            of the returned range. Default is false which indicates that spacing
-            characters at the start and end of the range are included.
+            of the returned range. Default is `false` which indicates that
+            spacing characters at the start and end of the range are included.
           type: boolean
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -987,7 +987,7 @@ methods:
     package: word!
     fullName: getNextTextRangeOrNullObject(endingMarks, trimSpacing)
     summary: >-
-      Gets the next text range by using punctuation marks and/or other ending
+      Gets the next text range by using punctuation marks and other ending
       marks. If this text range is the last one, then this method will return an
       object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
@@ -1005,16 +1005,14 @@ methods:
         boolean): Word.Range;
       parameters:
         - id: endingMarks
-          description: >-
-            Required. The punctuation marks and/or other ending marks as an
-            array of strings.
+          description: The punctuation marks and other ending marks as an array of strings.
           type: string[]
         - id: trimSpacing
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces,
             tabs, column breaks, and paragraph end marks) from the start and end
-            of the returned range. Default is false which indicates that spacing
-            characters at the start and end of the range are included.
+            of the returned range. Default is `false` which indicates that
+            spacing characters at the start and end of the range are included.
           type: boolean
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -1023,7 +1021,7 @@ methods:
     uid: word!Word.Range#getOoxml:member(1)
     package: word!
     fullName: getOoxml()
-    summary: Gets the OOXML representation of the range object.
+    summary: Gets the OOXML representation of the `Range` object.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1065,8 +1063,8 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: >-
-      Clones the range, or gets the starting or ending point of the range as a
-      new range.
+      Clones the `Range` object, or gets the starting or ending point of the
+      range as a new range.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1104,8 +1102,8 @@ methods:
       parameters:
         - id: rangeLocation
           description: >-
-            Optional. The range location must be 'Whole', 'Start', 'End',
-            'After', or 'Content'.
+            Optional. The range location must be `whole`<!-- -->, `start`<!--
+            -->, `end`<!-- -->, `after`<!-- -->, or `content`<!-- -->.
           type: >-
             <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
             uid="word!Word.RangeLocation.start:member" /> | <xref
@@ -1158,8 +1156,8 @@ methods:
       parameters:
         - id: changeTrackingVersion
           description: >-
-            Optional. The value must be 'Original' or 'Current'. The default is
-            'Current'.
+            Optional. The value must be `original` or `current`<!-- -->. The
+            default is `current`<!-- -->.
           type: <xref uid="word!Word.ChangeTrackingVersion:enum" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -1182,8 +1180,8 @@ methods:
       parameters:
         - id: changeTrackingVersion
           description: >-
-            Optional. The value must be 'Original' or 'Current'. The default is
-            'Current'.
+            Optional. The value must be `original` or `current`<!-- -->. The
+            default is `current`<!-- -->.
           type: '"Original" | "Current"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -1193,7 +1191,7 @@ methods:
     package: word!
     fullName: getTextRanges(endingMarks, trimSpacing)
     summary: >-
-      Gets the text child ranges in the range by using punctuation marks and/or
+      Gets the text child ranges in the range by using punctuation marks and
       other ending marks.
     remarks: >-
       \[ [API set: WordApi
@@ -1245,15 +1243,13 @@ methods:
         Word.RangeCollection;
       parameters:
         - id: endingMarks
-          description: >-
-            Required. The punctuation marks and/or other ending marks as an
-            array of strings.
+          description: The punctuation marks and other ending marks as an array of strings.
           type: string[]
         - id: trimSpacing
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces,
             tabs, column breaks, and paragraph end marks) from the start and end
-            of the ranges returned in the range collection. Default is false
+            of the ranges returned in the range collection. Default is `false`
             which indicates that spacing characters at the start and end of the
             ranges are included in the range collection.
           type: boolean
@@ -1285,10 +1281,10 @@ methods:
       parameters:
         - id: name
           description: >-
-            Required. The case-insensitive bookmark name. Only alphanumeric and
-            underscore characters are supported. It must begin with a letter but
-            if you want to tag the bookmark as hidden, then start the name with
-            an underscore character. Names can't be longer than 40 characters.
+            The case-insensitive bookmark name. Only alphanumeric and underscore
+            characters are supported. It must begin with a letter but if you
+            want to tag the bookmark as hidden, then start the name with an
+            underscore character. Names can't be longer than 40 characters.
           type: string
       return:
         type: void
@@ -1337,13 +1333,13 @@ methods:
         "Before" | "After"): void;
       parameters:
         - id: breakType
-          description: Required. The break type to add.
+          description: The break type to add.
           type: >-
             <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" |
             "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
             "Line"
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -1390,25 +1386,27 @@ methods:
       content: 'insertComment(commentText: string): Word.Comment;'
       parameters:
         - id: commentText
-          description: Required. The comment text to be inserted.
+          description: The comment text to be inserted.
           type: string
       return:
         type: <xref uid="word!Word.Comment:class" />
-        description: comment object
+        description: The `Comment` object that was inserted.
   - name: insertContentControl(contentControlType)
     uid: word!Word.Range#insertContentControl:member(1)
     package: word!
     fullName: insertContentControl(contentControlType)
-    summary: Wraps the Range object with a content control.
+    summary: Wraps the `Range` object with a content control.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
-      `PlainText` support was added in WordApi 1.5. `CheckBox` support was added
-      in WordApi 1.7. `DropDownList` and `ComboBox` support was added in WordApi
-      1.9.
+      `plainText` support was added in WordApi 1.5. `checkBox` support was added
+      in WordApi 1.7. `dropDownList` and `comboBox` support was added in WordApi
+      1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
+      `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
+      WordApiDesktop 1.3.
 
 
       #### Examples
@@ -1458,21 +1456,36 @@ methods:
         insertContentControl(contentControlType?:
         Word.ContentControlType.richText | Word.ContentControlType.plainText |
         Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList
-        | Word.ContentControlType.comboBox | "RichText" | "PlainText" |
-        "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
+        | Word.ContentControlType.comboBox |
+        Word.ContentControlType.buildingBlockGallery |
+        Word.ContentControlType.datePicker |
+        Word.ContentControlType.repeatingSection |
+        Word.ContentControlType.picture | Word.ContentControlType.group |
+        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
+        "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" |
+        "Group"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText',
-            'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default
-            is 'RichText'.
+            Optional. Content control type to insert. Must be `richText`<!--
+            -->, `plainText`<!-- -->, `checkBox`<!-- -->, `dropDownList`<!--
+            -->, `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->,
+            `datePicker`<!-- -->, `repeatingSection`<!-- -->, `picture`<!-- -->,
+            or `group`<!-- -->. The default is `richText`<!-- -->.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
             uid="word!Word.ContentControlType.checkBox:member" /> | <xref
             uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
-            uid="word!Word.ContentControlType.comboBox:member" /> | "RichText" |
-            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"
+            uid="word!Word.ContentControlType.comboBox:member" /> | <xref
+            uid="word!Word.ContentControlType.buildingBlockGallery:member" /> |
+            <xref uid="word!Word.ContentControlType.datePicker:member" /> |
+            <xref uid="word!Word.ContentControlType.repeatingSection:member" />
+            | <xref uid="word!Word.ContentControlType.picture:member" /> | <xref
+            uid="word!Word.ContentControlType.group:member" /> | "RichText" |
+            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
+            "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" |
+            "Picture" | "Group"
       return:
         type: <xref uid="word!Word.ContentControl:class" />
         description: ''
@@ -1526,12 +1539,12 @@ methods:
         Word.Range;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', 'End', 'Before', or
-            'After'.
+            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
+            `before`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
@@ -1580,12 +1593,12 @@ methods:
         | "Start" | "End" | "Before" | "After"): Word.Range;
       parameters:
         - id: html
-          description: Required. The HTML to be inserted.
+          description: The HTML to be inserted.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', 'End', 'Before', or
-            'After'.
+            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
+            `before`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
@@ -1653,12 +1666,12 @@ methods:
         "Before" | "After"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The Base64-encoded image to be inserted.
+          description: The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', 'End', 'Before', or
-            'After'.
+            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
+            `before`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
@@ -1714,12 +1727,12 @@ methods:
         "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
       parameters:
         - id: ooxml
-          description: Required. The OOXML to be inserted.
+          description: The OOXML to be inserted.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', 'End', 'Before', or
-            'After'.
+            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
+            `before`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
@@ -1769,10 +1782,10 @@ methods:
         "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -1797,13 +1810,13 @@ methods:
         "After", values?: string[][]): Word.Table;
       parameters:
         - id: rowCount
-          description: Required. The number of rows in the table.
+          description: The number of rows in the table.
           type: number
         - id: columnCount
-          description: Required. The number of columns in the table.
+          description: The number of columns in the table.
           type: number
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -1857,12 +1870,12 @@ methods:
         | "Start" | "End" | "Before" | "After"): Word.Range;
       parameters:
         - id: text
-          description: Required. Text to be inserted.
+          description: Text to be inserted.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', 'End', 'Before', or
-            'After'.
+            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
+            `before`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"
@@ -1887,7 +1900,7 @@ methods:
       content: 'intersectWith(range: Word.Range): Word.Range;'
       parameters:
         - id: range
-          description: Required. Another range.
+          description: Another range.
           type: <xref uid="word!Word.Range:class" />
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -1914,7 +1927,7 @@ methods:
       content: 'intersectWithOrNullObject(range: Word.Range): Word.Range;'
       parameters:
         - id: range
-          description: Required. Another range.
+          description: Another range.
           type: <xref uid="word!Word.Range:class" />
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -1998,8 +2011,8 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the
-      range object. The search results are a collection of range objects.
+      Performs a search with the specified search options on the scope of the
+      `Range` object. The search results are a collection of `Range` objects.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -2019,7 +2032,7 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: Required. The search text.
+          description: The search text.
           type: string
         - id: searchOptions
           description: Optional. Options for the search.
@@ -2080,8 +2093,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -2102,8 +2115,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -2176,18 +2189,18 @@ methods:
         boolean, trimSpacing?: boolean): Word.RangeCollection;
       parameters:
         - id: delimiters
-          description: Required. The delimiters as an array of strings.
+          description: The delimiters as an array of strings.
           type: string[]
         - id: multiParagraphs
           description: >-
             Optional. Indicates whether a returned child range can cover
-            multiple paragraphs. Default is false which indicates that the
+            multiple paragraphs. Default is `false` which indicates that the
             paragraph boundaries are also used as delimiters.
           type: boolean
         - id: trimDelimiters
           description: >-
             Optional. Indicates whether to trim delimiters from the ranges in
-            the range collection. Default is false which indicates that the
+            the range collection. Default is `false` which indicates that the
             delimiters are included in the ranges returned in the range
             collection.
           type: boolean
@@ -2195,7 +2208,7 @@ methods:
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces,
             tabs, column breaks, and paragraph end marks) from the start and end
-            of the ranges returned in the range collection. Default is false
+            of the ranges returned in the range collection. Default is `false`
             which indicates that spacing characters at the start and end of the
             ranges are included in the range collection.
           type: boolean

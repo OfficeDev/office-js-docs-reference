@@ -35,7 +35,7 @@ properties:
     fullName: applyTo
     summary: >-
       If provided, specifies which part of the list to apply the template to.
-      The default value is `Word.ListApplyTo.wholeList`<!-- -->.
+      The default value is `wholeList`<!-- -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -73,7 +73,7 @@ properties:
     fullName: defaultListBehavior
     summary: >-
       If provided, specifies the default list behavior. The default value is
-      `DefaultListBehavior.word97`<!-- -->.
+      `word97`<!-- -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

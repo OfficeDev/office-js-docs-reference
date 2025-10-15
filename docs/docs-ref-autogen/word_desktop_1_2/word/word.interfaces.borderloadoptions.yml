@@ -3,7 +3,7 @@ name: Word.Interfaces.BorderLoadOptions
 uid: word!Word.Interfaces.BorderLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BorderLoadOptions
-summary: Represents the Border object for text, a paragraph, or a table.
+summary: Represents the `Border` object for text, a paragraph, or a table.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

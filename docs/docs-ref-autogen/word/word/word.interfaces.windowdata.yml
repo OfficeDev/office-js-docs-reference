@@ -184,7 +184,7 @@ properties:
     fullName: isEnvelopeVisible
     summary: >-
       Specifies whether the email message header is visible in the document
-      window. The default value is `False`<!-- -->.
+      window. The default value is `false`<!-- -->.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

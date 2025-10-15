@@ -87,7 +87,7 @@ properties:
     fullName: appearance
     summary: >-
       Specifies the appearance of the content control. The value can be
-      'BoundingBox', 'Tags', or 'Hidden'.
+      `boundingBox`<!-- -->, `tags`<!-- -->, or `hidden`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -108,7 +108,7 @@ properties:
     fullName: cannotDelete
     summary: >-
       Specifies a value that indicates whether the user can delete the content
-      control. Mutually exclusive with removeWhenEdited.
+      control. Mutually exclusive with `removeWhenEdited`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -157,7 +157,7 @@ properties:
     uid: word!Word.ContentControl#contentControls:member
     package: word!
     fullName: contentControls
-    summary: Gets the collection of content control objects in the content control.
+    summary: Gets the collection of `ContentControl` objects in the content control.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -220,7 +220,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the content control. The
+      Gets the collection of `InlinePicture` objects in the content control. The
       collection doesn't include floating images.
     remarks: >-
       \[ [API set: WordApi
@@ -236,7 +236,7 @@ properties:
     uid: word!Word.ContentControl#paragraphs:member
     package: word!
     fullName: paragraphs
-    summary: Gets the collection of paragraph objects in the content control.
+    summary: Gets the collection of `Paragraph` objects in the content control.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -292,7 +292,7 @@ properties:
     fullName: removeWhenEdited
     summary: >-
       Specifies a value that indicates whether the content control is removed
-      after it is edited. Mutually exclusive with cannotDelete.
+      after it's edited. Mutually exclusive with `cannotDelete`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -310,7 +310,7 @@ properties:
     summary: >-
       Specifies the style name for the content control. Use this property for
       custom styles and localized style names. To use the built-in styles that
-      are portable between locales, see the "styleBuiltIn" property.
+      are portable between locales, see the `styleBuiltIn` property.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -406,8 +406,9 @@ properties:
     package: word!
     fullName: type
     summary: >-
-      Gets the content control type. Only rich text, plain text, and checkbox
-      content controls are supported currently.
+      Gets the content control type. Only rich text, plain text, check box,
+      dropdown list, combo box, building block gallery, date picker, repeating
+      section, picture, and group content controls are supported currently.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -489,7 +490,7 @@ methods:
     fullName: delete(keepContent)
     summary: >-
       Deletes the content control and its content. If `keepContent` is set to
-      true, the content isn't deleted.
+      `true`<!-- -->, the content isn't deleted.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -559,9 +560,9 @@ methods:
       parameters:
         - id: keepContent
           description: >-
-            Required. Indicates whether the content should be deleted with the
-            content control. If `keepContent` is set to true, the content isn't
-            deleted.
+            Indicates whether the content should be deleted with the content
+            control. If `keepContent` is set to `true`<!-- -->, the content
+            isn't deleted.
           type: boolean
       return:
         type: void
@@ -571,7 +572,7 @@ methods:
     package: word!
     fullName: getHtml()
     summary: >-
-      Gets an HTML representation of the content control object. When rendered
+      Gets an HTML representation of the `ContentControl` object. When rendered
       in a web page or HTML viewer, the formatting will be a close, but not
       exact, match for of the formatting of the document. This method doesn't
       return the exact same HTML for the same document on different platforms
@@ -629,7 +630,7 @@ methods:
     package: word!
     fullName: getOoxml()
     summary: >-
-      Gets the Office Open XML (OOXML) representation of the content control
+      Gets the Office Open XML (OOXML) representation of the `ContentControl`
       object.
     remarks: >-
       \[ [API set: WordApi
@@ -683,8 +684,8 @@ methods:
     fullName: insertBreak(breakType, insertLocation)
     summary: >-
       Inserts a break at the specified location in the main document. This
-      method cannot be used with 'RichTextTable', 'RichTextTableRow' and
-      'RichTextTableCell' content controls.
+      method cannot be used with `richTextTable`<!-- -->, `richTextTableRow`<!--
+      -->, and `richTextTableCell` content controls.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -736,13 +737,15 @@ methods:
         | "Before" | "After"): void;
       parameters:
         - id: breakType
-          description: Required. Type of break.
+          description: Type of break.
           type: >-
             <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" |
             "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
             "Line"
         - id: insertLocation
-          description: Required. The value must be 'Start', 'End', 'Before', or 'After'.
+          description: >-
+            The value must be `start`<!-- -->, `end`<!-- -->, `before`<!-- -->,
+            or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | <xref
@@ -776,13 +779,13 @@ methods:
         Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The Base64-encoded content of a .docx file.
+          description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace'
-            cannot be used with 'RichTextTable' and 'RichTextTableRow' content
-            controls.
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->. `replace` cannot be used with `richTextTable` and
+            `richTextTableRow` content controls.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -846,13 +849,13 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: html
-          description: Required. The HTML to be inserted in to the content control.
+          description: The HTML to be inserted in to the content control.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace'
-            cannot be used with 'RichTextTable' and 'RichTextTableRow' content
-            controls.
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->. `replace` cannot be used with `richTextTable` and
+            `richTextTableRow` content controls.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -882,15 +885,13 @@ methods:
         Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: >-
-            Required. The Base64-encoded image to be inserted in the content
-            control.
+          description: The Base64-encoded image to be inserted in the content control.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace'
-            cannot be used with 'RichTextTable' and 'RichTextTableRow' content
-            controls.
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->. `replace` cannot be used with `richTextTable` and
+            `richTextTableRow` content controls.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -959,13 +960,13 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
-          description: Required. The OOXML to be inserted in to the content control.
+          description: The OOXML to be inserted in to the content control.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace'
-            cannot be used with 'RichTextTable' and 'RichTextTableRow' content
-            controls.
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->. `replace` cannot be used with `richTextTable` and
+            `richTextTableRow` content controls.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1028,13 +1029,14 @@ methods:
         | "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Start', 'End', 'Before', or 'After'.
-            'Before' and 'After' cannot be used with 'RichTextTable',
-            'RichTextTableRow' and 'RichTextTableCell' content controls.
+            The value must be `start`<!-- -->, `end`<!-- -->, `before`<!-- -->,
+            or `after`<!-- -->. `before` and `after` cannot be used with
+            `richTextTable`<!-- -->, `richTextTableRow`<!-- -->, and
+            `richTextTableCell` content controls.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | <xref
@@ -1102,13 +1104,13 @@ methods:
         "Start" | "End"): Word.Range;
       parameters:
         - id: text
-          description: Required. The text to be inserted in to the content control.
+          description: The text to be inserted in to the content control.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace'
-            cannot be used with 'RichTextTable' and 'RichTextTableRow' content
-            controls.
+            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
+            -->. `replace` cannot be used with `richTextTable` and
+            `richTextTableRow` content controls.
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
             uid="word!Word.InsertLocation.start:member" /> | <xref
@@ -1259,8 +1261,8 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the
-      content control object. The search results are a collection of range
+      Performs a search with the specified search options on the scope of the
+      `ContentControl` object. The search results are a collection of `Range`
       objects.
     remarks: >-
       \[ [API set: WordApi
@@ -1316,7 +1318,7 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: Required. The search text.
+          description: The search text.
           type: string
         - id: searchOptions
           description: Optional. Options for the search.
@@ -1349,8 +1351,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -1371,8 +1373,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void

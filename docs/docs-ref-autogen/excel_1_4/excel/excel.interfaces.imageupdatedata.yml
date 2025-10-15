@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ImageUpdateData
+uid: excel!Excel.Interfaces.ImageUpdateData:interface
+package: excel!
+fullName: Excel.Interfaces.ImageUpdateData
+summary: >-
+  An interface for updating data on the `Image` object, for use in `image.set({
+  ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

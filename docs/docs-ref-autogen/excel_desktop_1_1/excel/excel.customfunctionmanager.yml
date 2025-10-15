@@ -1,0 +1,155 @@
+### YamlMime:TSType
+name: Excel.CustomFunctionManager
+uid: excel!Excel.CustomFunctionManager:class
+package: excel!
+fullName: Excel.CustomFunctionManager
+summary: Manages settings on custom functions.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: excel!Excel.CustomFunctionManager#context:member
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="excel!Excel.RequestContext:class" />
+methods:
+  - name: load(propertyNames)
+    uid: excel!Excel.CustomFunctionManager#load:member(1)
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.CustomFunctionManager;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="excel!Excel.CustomFunctionManager:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: excel!Excel.CustomFunctionManager#load:member(2)
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.CustomFunctionManager;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="excel!Excel.CustomFunctionManager:class" />
+        description: ''
+  - name: newObject(context)
+    uid: excel!Excel.CustomFunctionManager.newObject:member(1)
+    package: excel!
+    fullName: newObject(context)
+    summary: Create a new instance of the `Excel.CustomFunctionManager` object.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static newObject(context: OfficeExtension.ClientRequestContext):
+        Excel.CustomFunctionManager;
+      parameters:
+        - id: context
+          description: ''
+          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+      return:
+        type: <xref uid="excel!Excel.CustomFunctionManager:class" />
+        description: ''
+  - name: setVisibility(customFunctionVisibilityOptions)
+    uid: excel!Excel.CustomFunctionManager.setVisibility:member(1)
+    package: excel!
+    fullName: setVisibility(customFunctionVisibilityOptions)
+    summary: Show or hide custom functions in Excel AutoComplete.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static setVisibility(customFunctionVisibilityOptions:
+        Excel.CustomFunctionVisibilityOptions): void;
+      parameters:
+        - id: customFunctionVisibilityOptions
+          description: Specifies which custom functions to show or hide.
+          type: <xref uid="excel!Excel.CustomFunctionVisibilityOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: excel!Excel.CustomFunctionManager#toJSON:member(1)
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.CustomFunctionManager` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.CustomFunctionManagerData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.CustomFunctionManagerData;'
+      return:
+        type: >-
+          <xref uid="excel!Excel.Interfaces.CustomFunctionManagerData:interface"
+          />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

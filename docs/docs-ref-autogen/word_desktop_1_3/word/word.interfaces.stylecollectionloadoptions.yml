@@ -70,8 +70,8 @@ properties:
     package: word!
     fullName: borders
     summary: >-
-      For EACH ITEM in the collection: Specifies a BorderCollection object that
-      represents all the borders for the specified style.
+      For EACH ITEM in the collection: Specifies a `BorderCollection` object
+      that represents all the borders for the style.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -89,8 +89,8 @@ properties:
     package: word!
     fullName: builtIn
     summary: >-
-      For EACH ITEM in the collection: Gets whether the specified style is a
-      built-in style.
+      For EACH ITEM in the collection: Gets whether the style is a built-in
+      style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -106,8 +106,8 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      For EACH ITEM in the collection: Gets a font object that represents the
-      character formatting of the specified style.
+      For EACH ITEM in the collection: Gets a `Font` object that represents the
+      character formatting of the style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -157,9 +157,9 @@ properties:
     package: word!
     fullName: inUse
     summary: >-
-      For EACH ITEM in the collection: Gets whether the specified style is a
-      built-in style that has been modified or applied in the document or a new
-      style that has been created in the document.
+      For EACH ITEM in the collection: Gets whether the style is a built-in
+      style that has been modified or applied in the document or a new style
+      that has been created in the document.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -209,7 +209,7 @@ properties:
     package: word!
     fullName: linked
     summary: >-
-      For EACH ITEM in the collection: Gets whether a style is a linked style
+      For EACH ITEM in the collection: Gets whether the style is a linked style
       that can be used for both paragraph and character formatting.
     remarks: >-
       \[ [API set: WordApi
@@ -258,8 +258,8 @@ properties:
     package: word!
     fullName: listTemplate
     summary: >-
-      For EACH ITEM in the collection: Gets a ListTemplate object that
-      represents the list formatting for the specified Style object.
+      For EACH ITEM in the collection: Gets a `ListTemplate` object that
+      represents the list formatting for the style.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -292,8 +292,8 @@ properties:
     package: word!
     fullName: nameLocal
     summary: >-
-      For EACH ITEM in the collection: Gets the name of a style in the language
-      of the user.
+      For EACH ITEM in the collection: Gets the name of the style in the
+      language of the user.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -311,7 +311,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the name of the style to be
       applied automatically to a new paragraph that is inserted after a
-      paragraph formatted with the specified style.
+      paragraph formatted with the style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -349,8 +349,8 @@ properties:
     package: word!
     fullName: paragraphFormat
     summary: >-
-      For EACH ITEM in the collection: Gets a ParagraphFormat object that
-      represents the paragraph settings for the specified style.
+      For EACH ITEM in the collection: Gets a `ParagraphFormat` object that
+      represents the paragraph settings for the style.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -400,8 +400,8 @@ properties:
     package: word!
     fullName: shading
     summary: >-
-      For EACH ITEM in the collection: Gets a Shading object that represents the
-      shading for the specified style. Not applicable to List style.
+      For EACH ITEM in the collection: Gets a `Shading` object that represents
+      the shading for the style. Not applicable to a style of `List` type.
     remarks: >-
       \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -417,8 +417,8 @@ properties:
     package: word!
     fullName: tableStyle
     summary: >-
-      For EACH ITEM in the collection: Gets a TableStyle object representing
-      Style properties that can be applied to a table.
+      For EACH ITEM in the collection: Gets a `TableStyle` object representing
+      style properties that can be applied to a table.
     remarks: >-
       \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -449,9 +449,9 @@ properties:
     package: word!
     fullName: unhideWhenUsed
     summary: >-
-      For EACH ITEM in the collection: Specifies whether the specified style is
-      made visible as a recommended style in the Styles and in the Styles task
-      pane in Microsoft Word after it's used in the document.
+      For EACH ITEM in the collection: Specifies whether the style is made
+      visible as a recommended style in the Styles gallery and in the Styles
+      task pane in Microsoft Word after it's used in the document.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -467,9 +467,8 @@ properties:
     package: word!
     fullName: visibility
     summary: >-
-      For EACH ITEM in the collection: Specifies whether the specified style is
-      visible as a recommended style in the Styles gallery and in the Styles
-      task pane.
+      For EACH ITEM in the collection: Specifies whether the style is visible as
+      a recommended style in the Styles gallery and in the Styles task pane.
     remarks: >-
       \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
