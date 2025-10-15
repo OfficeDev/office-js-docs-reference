@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 02/05/2025
+ms.date: 08/05/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -19,16 +19,15 @@ Office Add-ins run across multiple versions of Office. The following table lists
 > [!IMPORTANT]
 >
 > - Currently, the NestedAppAuth 1.1 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
-> - In Outlook, the NestedAppAuth 1.1 requirement set isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
 ## Supported accounts and hosts
 
-NAA supports both Microsoft Accounts and Microsoft Entra ID (work/school) identities. It doesn't support Azure Active Directory B2C for business-to-consumer identity management scenarios. The following table explains the current support by platform. Platforms listed as generally available (GA) are ready for production usage in your add-in.
+NAA supports both Microsoft Accounts (MSA), such as personal outlook.com accounts, and Microsoft Entra ID (work/school) identities. It doesn't support Azure Active Directory B2C for business-to-consumer identity management scenarios. The following table explains the current support by platform. Platforms listed as generally available (GA) are ready for production usage in your add-in.
 
 | Application | Web        | Windows                                              | Mac        | iOS/iPad           | Android        |
 |-------------|------------|------------------------------------------------------|------------|--------------------|----------------|
 | Excel       | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
-| Outlook     | GA         | GA in Current Channel, Monthly Enterprise Channel, Semi-Annual Channel. Preview in Semi-Annual Channel Extended. | GA         | GA (iOS)           | GA             |
+| Outlook     | GA         | GA              | GA         | GA (iOS)           | GA             |
 | PowerPoint  | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 | Word        | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 
