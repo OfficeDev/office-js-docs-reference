@@ -17072,7 +17072,7 @@ word,Word.RulerStyle,"sameWidth",EnumField,Great,false
 word,Word.SaveBehavior,N/A,Enum,Excellent,true
 word,Word.SaveBehavior,"prompt",EnumField,Great,false
 word,Word.SaveBehavior,"save",EnumField,Excellent,false
-word,Word.SaveConfiguration,N/A,Enum,Great,false
+word,Word.SaveConfiguration,N/A,Enum,Great,true
 word,Word.SaveConfiguration,"doNotSaveChanges",EnumField,Great,false
 word,Word.SaveConfiguration,"promptToSaveChanges",EnumField,Great,false
 word,Word.SaveConfiguration,"saveChanges",EnumField,Great,false
@@ -17538,7 +17538,7 @@ word,Word.ShadowType,"type9",EnumField,Fine,false
 word,Word.Shape,N/A,Class,Fine,true
 word,Word.Shape,"allowOverlap",Property,Great,false
 word,Word.Shape,"altTextDescription",Property,Excellent,false
-word,Word.Shape,"body",Property,Good,false
+word,Word.Shape,"body",Property,Good,true
 word,Word.Shape,"canvas",Property,Excellent,false
 word,Word.Shape,"context",Property,Excellent,false
 word,Word.Shape,"fill",Property,Fine,false
@@ -17598,7 +17598,7 @@ word,Word.ShapeCollection,"getByIds(ids)",Method,Fine,false
 word,Word.ShapeCollection,"getByNames(names)",Method,Fine,false
 word,Word.ShapeCollection,"getByTypes(types)",Method,Fine,true
 word,Word.ShapeCollection,"getFirst()",Method,Great,true
-word,Word.ShapeCollection,"getFirstOrNullObject()",Method,Excellent,false
+word,Word.ShapeCollection,"getFirstOrNullObject()",Method,Excellent,true
 word,Word.ShapeCollection,"group()",Method,Great,false
 word,Word.ShapeCollection,"load(options)",Method,Excellent,false
 word,Word.ShapeCollection,"load(propertyNames)",Method,Excellent,false
@@ -18958,7 +18958,7 @@ word,Word.Window,"width",Property,Great,false
 word,Word.Window,"windowNumber",Property,Good,false
 word,Word.Window,"windowState",Property,Great,false
 word,Word.Window,"activate()",Method,Poor,false
-word,Word.Window,"close(options)",Method,Poor,false
+word,Word.Window,"close(options)",Method,Poor,true
 word,Word.Window,"largeScroll(options)",Method,Good,false
 word,Word.Window,"load(options)",Method,Excellent,false
 word,Word.Window,"load(propertyNames)",Method,Excellent,false
@@ -18972,7 +18972,7 @@ word,Word.Window,"toggleRibbon()",Method,Poor,false
 word,Word.Window,"toJSON()",Method,Excellent,false
 word,Word.Window,"track()",Method,Excellent,false
 word,Word.Window,"untrack()",Method,Excellent,false
-word,Word.WindowCloseOptions,N/A,Interface,Good,false
+word,Word.WindowCloseOptions,N/A,Interface,Good,true
 word,Word.WindowCloseOptions,"routeDocument",Property,Excellent,false
 word,Word.WindowCloseOptions,"saveChanges",Property,Excellent,false
 word,Word.WindowCollection,N/A,Class,Good,true
