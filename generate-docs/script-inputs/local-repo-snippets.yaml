@@ -1616,6 +1616,79 @@ Excel.Worksheet#protection:member:
       });
     });
 
+
+Office.initialize:function(1):
+  - |-
+    // You can use the value of the InitializationEnumeration to implement different logic for
+    // when the add-in is first inserted versus when it is already part of the document.
+    // The following example shows some simple logic that uses the value of the reason parameter
+    // to display how the task pane or content add-in was initialized.
+    Office.initialize = function (reason) {
+        // Checks for the DOM to load using the jQuery ready method.
+        $(document).ready(function () {
+        // After the DOM is loaded, code specific to the add-in can run.
+        // Display initialization reason.
+        if (reason == "inserted")
+        write("The add-in was just inserted.");
+
+        if (reason == "documentOpened")
+        write("The add-in is already part of the document.");
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.onReady:function(1):
+  - |-
+    Office.onReady(function(info) {
+        if (info.host === Office.HostType.Excel) {
+            // Do Excel-specific initialization (for example, make add-in task pane's
+            // appearance compatible with Excel "green").
+        }
+        if (info.platform === Office.PlatformType.PC) {
+            // Make minor layout changes in the task pane.
+        }
+        console.log(`Office.js is now ready in ${info.host} on ${info.platform}`);
+    });
+Office.select:function(1):
+  - |-
+    // The following code example uses the select function to retrieve a binding with the id "cities" from
+    // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
+    // dataChanged event of the binding.
+    function addBindingDataChangedEventHandler() {
+        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+        function (eventArgs) {
+            doSomethingWithBinding(eventArgs.binding);
+        });
+    }
+Office.useShortNamespace:function(1):
+  - |-
+    function startUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(true);
+        }
+        else {
+            Office.useShortNamespace(true);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    function stopUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(false);
+        }
+        else {
+            Office.useShortNamespace(false);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.Actions#areShortcutsInUse:member(1):
   - |-
     // Checks if a specific keyboard shortcut is in use.
@@ -4532,29 +4605,6 @@ Office.FileType:enum:
         // Now all the file content is stored in 'fileContent' variable,
         // you can do something with it, such as print, fax...
     }
-Office.initialize:function(1):
-  - |-
-    // You can use the value of the InitializationEnumeration to implement different logic for
-    // when the add-in is first inserted versus when it is already part of the document.
-    // The following example shows some simple logic that uses the value of the reason parameter
-    // to display how the task pane or content add-in was initialized.
-    Office.initialize = function (reason) {
-        // Checks for the DOM to load using the jQuery ready method.
-        $(document).ready(function () {
-        // After the DOM is loaded, code specific to the add-in can run.
-        // Display initialization reason.
-        if (reason == "inserted")
-        write("The add-in was just inserted.");
-
-        if (reason == "documentOpened")
-        write("The add-in is already part of the document.");
-        });
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
 Office.MatrixBinding#columnCount:member:
   - |-
     function showBindingColumnCount() {
@@ -5799,17 +5849,6 @@ Office.RibbonUpdaterData#tabs:member:
         const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
         await Office.ribbon.requestUpdate(ribbonUpdater);
     }
-Office.select:function(1):
-  - |-
-    // The following code example uses the select function to retrieve a binding with the id "cities" from
-    // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
-    // dataChanged event of the binding.
-    function addBindingDataChangedEventHandler() {
-        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
-        function (eventArgs) {
-            doSomethingWithBinding(eventArgs.binding);
-        });
-    }
 Office.Settings#addHandlerAsync:member(2):
   - |-
     function addSelectionChangedEventHandler() {
@@ -6175,32 +6214,6 @@ Office.Urls#javascriptRuntimeUrl:member:
     const url = Office.context.urls.javascriptRuntimeUrl;
     const regex = /=([^&]+)/;
     console.log(`First parameter value: ${url.match(regex)[1]}`);
-Office.useShortNamespace:function(1):
-  - |-
-    function startUsingShortNamespace() {
-        if (typeof Office === 'undefined') {
-            Microsoft.Office.WebExtension.useShortNamespace(true);
-        }
-        else {
-            Office.useShortNamespace(true);
-        }
-        write('Office alias is now ' + typeof Office);
-    }
-
-    function stopUsingShortNamespace() {
-        if (typeof Office === 'undefined') {
-            Microsoft.Office.WebExtension.useShortNamespace(false);
-        }
-        else {
-            Office.useShortNamespace(false);
-        }
-        write('Office alias is now ' + typeof Office);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
 Office.VisibilityMode:enum:
   - |-
     Office.onReady(() => {

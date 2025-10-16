@@ -8257,7 +8257,7 @@ office,OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Excellent,false
 office,N/A,N/A,Package,Missing,false
 office,N/A,"Office.initialize(reason)",Method,Excellent,true
 office,N/A,"Office.isSetSupported(name, minVersion)",Method,Great,false
-office,N/A,"Office.onReady(callback)",Method,Excellent,false
+office,N/A,"Office.onReady(callback)",Method,Excellent,true
 office,N/A,"Office.select(expression, callback)",Method,Excellent,true
 office,N/A,"Office.useShortNamespace(useShortNamespace)",Method,Fine,true
 office-runtime,OfficeRuntime.ApiInformation,N/A,Interface,Good,false
