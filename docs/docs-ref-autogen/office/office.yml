@@ -281,6 +281,25 @@ functions:
         description: >-
           A Promise that contains the application and platform info, once
           initialization is completed.
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          Office.onReady(function(info) {
+              if (info.host === Office.HostType.Excel) {
+                  // Do Excel-specific initialization (for example, make add-in task pane's
+                  // appearance compatible with Excel "green").
+              }
+              if (info.platform === Office.PlatformType.PC) {
+                  // Make minor layout changes in the task pane.
+              }
+              console.log(`Office.js is now ready in ${info.host} on ${info.platform}`);
+          });
+
+          ```
   - name: Office.select(expression, callback)
     uid: office!Office.select:function(1)
     package: office!
