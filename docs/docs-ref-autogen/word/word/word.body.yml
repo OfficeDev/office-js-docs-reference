@@ -549,7 +549,7 @@ properties:
         await context.sync();
 
         if (shapes.items.length > 0) {
-          shapes.items.forEach(function(shape, index) {
+          shapes.items.forEach(function (shape, index) {
             if (shape.type === Word.ShapeType.textBox) {
               console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
             }

@@ -220,7 +220,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls-for-exchange-on-premises-environments/ids-and-urls.yaml
 
 
       // Get the EWS URL and EWS item ID.
@@ -384,7 +384,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls-for-exchange-on-premises-environments/ids-and-urls.yaml
 
 
       // Get the EWS URL and EWS item ID.
@@ -522,7 +522,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls-for-exchange-on-premises-environments/ids-and-urls.yaml
 
 
       // Get the EWS URL and EWS item ID.
@@ -1322,7 +1322,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls-for-exchange-on-premises-environments/user-identity-token.yaml
 
 
       Office.context.mailbox.getUserIdentityTokenAsync((result) => {
@@ -1455,7 +1455,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/get-icaluid-as-attendee.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls-for-exchange-on-premises-environments/get-icaluid-as-attendee.yaml
 
 
       const ewsId = Office.context.mailbox.item.itemId;
