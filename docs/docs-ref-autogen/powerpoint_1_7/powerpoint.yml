@@ -202,7 +202,7 @@ functions:
 
 
           reader.onload = (event) => {
-            // Remove the metadata before the base64-encoded string.
+            // Remove the metadata before the Base64-encoded string.
             const startIndex = reader.result.toString().indexOf("base64,");
             const copyBase64 = reader.result.toString().substr(startIndex + 7);
 
@@ -210,7 +210,7 @@ functions:
           };
 
 
-          // Read in the file as a data URL so we can parse the base64-encoded
+          // Read in the file as a data URL so we can parse the Base64-encoded
           string.
 
           reader.readAsDataURL(myFile.files[0]);
