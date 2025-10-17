@@ -1,3 +1,18 @@
+Visio.run:function(2):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    Visio.run(session, function (context) {
+        const activePage = context.document.getActivePage();
+        // Interact with the Visio page... 
+
+        return context.sync();
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Visio.Application#showBorders:member:
   - |-
     Visio.run(session, function (ctx) {
@@ -264,6 +279,21 @@ Visio.PageView#zoom:member:
         const activePage = ctx.document.getActivePage();
         activePage.view.zoom = 300;
         return ctx.sync();
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Visio.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    Visio.run(session, function (context) {
+        const activePage = context.document.getActivePage();
+        // Interact with the Visio page... 
+
+        return context.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {

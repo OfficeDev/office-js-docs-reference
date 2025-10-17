@@ -186,7 +186,7 @@ functions:
 
 
           reader.onload = (event) => {
-            // Remove the metadata before the base64-encoded string.
+            // Remove the metadata before the Base64-encoded string.
             const startIndex = reader.result.toString().indexOf("base64,");
             const copyBase64 = reader.result.toString().substr(startIndex + 7);
 
@@ -194,7 +194,7 @@ functions:
           };
 
 
-          // Read in the file as a data URL so we can parse the base64-encoded
+          // Read in the file as a data URL so we can parse the Base64-encoded
           string.
 
           reader.readAsDataURL(myFile.files[0]);
@@ -230,7 +230,25 @@ functions:
             =&gt; <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
         type: <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // *.run methods automatically create an
+          OfficeExtension.ClientRequestContext
+
+          // object to work with the Office file.
+
+          await PowerPoint.run(async (context) => {
+            const presentation = context.presentation;
+            // Interact with the PowerPoint presentation...
+          });
+
+          ```
   - name: PowerPoint.run(object, batch)
     uid: powerpoint!PowerPoint.run:function(2)
     package: powerpoint!
