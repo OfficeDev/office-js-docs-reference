@@ -1,7 +1,7 @@
 ---
 title: Image Coercion requirement sets
 description: Support for Image Coercion requirement sets with Office Add-ins across Excel, OneNote, PowerPoint, and Word.
-ms.date: 10/16/2024
+ms.date: 10/17/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---

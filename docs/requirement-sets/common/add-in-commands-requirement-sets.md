@@ -1,7 +1,7 @@
 ---
 title: Add-in commands requirement sets
 description: Overview of Office Add-in commands requirement sets.
-ms.date: 10/16/2025
+ms.date: 10/17/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,7 @@
 ---
 title: Device Permission Service requirement sets
 description: Learn more about the Device Permission Service API requirement sets and the platforms it supports.
-ms.date: 10/16/2025
+ms.date: 10/17/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
