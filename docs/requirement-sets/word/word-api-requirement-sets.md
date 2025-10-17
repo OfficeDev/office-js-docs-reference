@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 09/30/2025
+ms.date: 10/17/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -19,7 +19,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)) |
 | [WordApiOnline 1.1](word-api-online-requirement-set.md) | Latest (see [requirement set page](word-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |

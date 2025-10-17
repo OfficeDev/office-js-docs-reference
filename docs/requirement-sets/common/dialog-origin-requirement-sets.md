@@ -1,7 +1,7 @@
 ---
 title: Dialog Origin requirement sets
 description: Learn more about the Dialog Origin requirement sets.
-ms.date: 04/15/2024
+ms.date: 10/17/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Dialog Origin requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad | Office Online Server |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)</li></ul> | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | DialogOrigin 1.1 | Supported | Supported | Office 2016 | Version 16.52 (21080801) | Version 2.52 | Version 2108 (Build 10377.1000) |
 

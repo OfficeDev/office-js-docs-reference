@@ -1,7 +1,7 @@
 ---
 title: Context Menu API requirement sets
 description: Learn more about the Context Menu API requirement sets and the platforms it supports.
-ms.date: 03/11/2025
+ms.date: 10/17/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ Use the Context Menu API requirement set to configure the availability of custom
 
 `ContextMenuApi 1.1` is supported in **Excel**, **PowerPoint**, and **Word**. The following table lists the minimum builds or versions for these applications, where applicable.
 
-| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iOS | Outlook on Android |
+| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)) | Office on Mac | Office on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | ContextMenuApi 1.1 | Supported | Version 2502 (Build 18526.20144) | Version 2502 (Build 18526.20144) | Not supported | Version 16.94 (25020927) | Not supported | Not supported |
 
