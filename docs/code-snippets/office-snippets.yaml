@@ -4064,6 +4064,11 @@ Office.EventType:enum:
             });
         });
     }
+Office.ExtensionLifeCycle:interface:
+  - |-
+    // Adjust the width of the task pane.
+    const width = 500;
+    Office.extensionLifeCycle.taskpane.setWidth(width);
 Office.File:interface:
   - |-
     // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
@@ -4500,6 +4505,11 @@ Office.TableData#rows:member:
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
     }
+Office.TaskPane:interface:
+  - |-
+    // Adjust the width of the task pane.
+    const width = 500;
+    Office.extensionLifeCycle.taskpane.setWidth(width);
 Office.ThemeId:enum:
   - |-
     // The following example sets the color of a heading based on the current Office theme.
