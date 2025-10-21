@@ -18,7 +18,8 @@
 ||[select()](/javascript/api/word/word.bookmark#word-word-bookmark-select-member(1))|Selects the bookmark.|
 ||[start](/javascript/api/word/word.bookmark#word-word-bookmark-start-member)|Specifies the starting character position of the bookmark.|
 ||[storyType](/javascript/api/word/word.bookmark#word-word-bookmark-storytype-member)|Returns the story type for the bookmark.|
-|[BookmarkCollection](/javascript/api/word/word.bookmarkcollection)|[exists(name: string)](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-exists-member(1))|Determines whether the specified bookmark exists.|
+|[BookmarkCollection](/javascript/api/word/word.bookmarkcollection)|[add(name: string, range: Word.Range)](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-add-member(1))|Returns a `Bookmark` object that represents a bookmark added to a range.|
+||[exists(name: string)](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-exists-member(1))|Determines whether the specified bookmark exists.|
 ||[getItem(index: number)](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-getitem-member(1))|Gets a `Bookmark` object by its index in the collection.|
 ||[items](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-items-member)|Gets the loaded child items in this collection.|
 |[BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection)|[getItem(index: number)](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-getitem-member(1))|Gets a `Border` object by its index in the collection.|

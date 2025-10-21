@@ -6,6 +6,8 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 export declare namespace PowerPoint {
     /**
+     * Represents the PowerPoint application that manages the presentation.
+     *
      * @remarks
      * [Api set: PowerPointApi 1.0]
      */
@@ -25,6 +27,10 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
+                To learn more about the PowerPoint object model,
+                see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
+     *
      * @remarks
      * [Api set: PowerPointApi 1.0]
      */
@@ -56,6 +62,12 @@ export declare namespace PowerPoint {
          */
         readonly tags: PowerPoint.TagCollection;
         
+        /**
+         * Returns the title of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.0]
+         */
         readonly title: string;
         
         
@@ -841,12 +853,12 @@ export declare namespace PowerPoint {
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Slide[];
         /**
-         * Adds a new slide at the end of the collection.
+         * Adds a new slide to the collection.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param options - The options that define the theme of the new slide.
+         * @param options - Optional. Options for configuring the properties of the new slide.
          */
         add(options?: PowerPoint.AddSlideOptions): void;
         /**
@@ -1200,6 +1212,12 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             
+            /**
+             * Returns the title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.0]
+             */
             title?: string;
         }
         /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
@@ -1499,6 +1517,10 @@ export declare namespace PowerPoint {
             items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /**
+         * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
+                    To learn more about the PowerPoint object model,
+                    see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.0]
          */
@@ -1509,6 +1531,12 @@ export declare namespace PowerPoint {
             $all?: boolean;
             
             
+            /**
+             * Returns the title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.0]
+             */
             title?: boolean;
         }
         

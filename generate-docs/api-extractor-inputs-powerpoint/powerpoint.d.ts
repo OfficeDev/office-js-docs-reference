@@ -6,6 +6,8 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 
 export declare namespace PowerPoint {
     /**
+     * Represents the PowerPoint application that manages the presentation.
+     *
      * @remarks
      * [Api set: PowerPointApi 1.0]
      */
@@ -25,6 +27,10 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
+                To learn more about the PowerPoint object model,
+                see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
+     *
      * @remarks
      * [Api set: PowerPointApi 1.0]
      */
@@ -88,6 +94,12 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.5]
          */
         readonly id: string;
+        /**
+         * Returns the title of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.0]
+         */
         readonly title: string;
         /**
          * Returns the selected shapes in the current slide of the presentation.
@@ -2157,8 +2169,8 @@ export declare namespace PowerPoint {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a hyperlink using its zero-based index in the collection. An error is thrown if the index is out of range.
-                    Throws an `InvalidArgument` exception when the index is out of range.
+         * Gets a hyperlink using its zero-based index in the collection.
+                    Throws an `InvalidArgument` exception if the index is out of range.
          *
          * @remarks
          * [Api set: PowerPointApi 1.6]
@@ -7604,8 +7616,8 @@ export declare namespace PowerPoint {
         delete(): void;
         /**
          * Exports the slide to its own presentation file, returned as Base64-encoded data.
-         *
-         * Note: This method is optimized to export a single slide. Exporting multiple slides can impact performance.
+                    
+                    Note: This method is optimized to export a single slide. Exporting multiple slides can impact performance.
          *
          * @remarks
          * [Api set: PowerPointApi 1.8]
@@ -10047,6 +10059,12 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.5]
              */
             id?: string;
+            /**
+             * Returns the title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.0]
+             */
             title?: string;
         }
         /** An interface describing the data returned by calling `adjustments.toJSON()`. */
@@ -11223,6 +11241,10 @@ export declare namespace PowerPoint {
             items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /**
+         * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
+                    To learn more about the PowerPoint object model,
+                    see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.0]
          */
@@ -11253,6 +11275,12 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.5]
              */
             id?: boolean;
+            /**
+             * Returns the title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.0]
+             */
             title?: boolean;
         }
         /**
