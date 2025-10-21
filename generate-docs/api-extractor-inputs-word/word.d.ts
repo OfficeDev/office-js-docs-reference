@@ -47972,6 +47972,18 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Bookmark[];
         /**
+         * Returns a `Bookmark` object that represents a bookmark added to a range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - The name of the bookmark. The name cannot be more than 40 characters or include more than one word. Also, the name must begin with a letter. It can include both numbers and letters, but not spaces. If you need to separate words, use an underscore.
+         * @param range - Optional. The range of text marked by the bookmark. A bookmark can be set to a collapsed range (the insertion point).
+         * @returns A new `Bookmark` object.
+         */
+        add(name: string, range: Word.Range): Word.Bookmark;
+        /**
          * Determines whether the specified bookmark exists.
          *
          * @remarks
