@@ -7422,7 +7422,7 @@ office,Office.EventType,"SettingsChanged",EnumField,Fine,false
 office,Office.EventType,"SpamReporting",EnumField,Great,false
 office,Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 office,Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
-office,Office.ExtensionLifeCycle,N/A,Interface,Good,false
+office,Office.ExtensionLifeCycle,N/A,Interface,Good,true
 office,Office.ExtensionLifeCycle,"taskpane",Property,Good,false
 office,Office.File,N/A,Interface,Fine,true
 office,Office.File,"size",Property,Poor,false
@@ -8146,7 +8146,7 @@ office,Office.TableBinding,"setTableOptionsAsync(tableOptions, callback)",Method
 office,Office.TableData,N/A,Class,Fine,false
 office,Office.TableData,"headers",Property,Poor,true
 office,Office.TableData,"rows",Property,Excellent,true
-office,Office.TaskPane,N/A,Interface,Good,false
+office,Office.TaskPane,N/A,Interface,Good,true
 office,Office.TaskPane,"setWidth(width)",Method,Fine,false
 office,Office.TextBinding,N/A,Interface,Excellent,false
 office,Office.ThemeId,N/A,Enum,Great,true
@@ -10060,7 +10060,7 @@ powerpoint,PowerPoint.Adjustments,"load(propertyNames)",Method,Excellent,false
 powerpoint,PowerPoint.Adjustments,"load(propertyNamesAndPaths)",Method,Excellent,false
 powerpoint,PowerPoint.Adjustments,"set(index, value)",Method,Excellent,false
 powerpoint,PowerPoint.Adjustments,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.Application,N/A,Class,Missing,false
+powerpoint,PowerPoint.Application,N/A,Class,Good,false
 powerpoint,PowerPoint.Application,"context",Property,Excellent,false
 powerpoint,PowerPoint.Application,"newObject(context)",Method,Great,false
 powerpoint,PowerPoint.Application,"toJSON()",Method,Excellent,false
@@ -10566,7 +10566,7 @@ powerpoint,PowerPoint.PlaceholderType,"unsupported",EnumField,Fine,false
 powerpoint,PowerPoint.PlaceholderType,"verticalBody",EnumField,Fine,false
 powerpoint,PowerPoint.PlaceholderType,"verticalContent",EnumField,Fine,false
 powerpoint,PowerPoint.PlaceholderType,"verticalTitle",EnumField,Fine,false
-powerpoint,PowerPoint.Presentation,N/A,Class,Missing,true
+powerpoint,PowerPoint.Presentation,N/A,Class,Good,true
 powerpoint,PowerPoint.Presentation,"bindings",Property,Good,true
 powerpoint,PowerPoint.Presentation,"context",Property,Excellent,false
 powerpoint,PowerPoint.Presentation,"customXmlParts",Property,Good,false
@@ -10576,7 +10576,7 @@ powerpoint,PowerPoint.Presentation,"properties",Property,Poor,false
 powerpoint,PowerPoint.Presentation,"slideMasters",Property,Great,false
 powerpoint,PowerPoint.Presentation,"slides",Property,Good,false
 powerpoint,PowerPoint.Presentation,"tags",Property,Good,false
-powerpoint,PowerPoint.Presentation,"title",Property,Missing,false
+powerpoint,PowerPoint.Presentation,"title",Property,Fine,false
 powerpoint,PowerPoint.Presentation,"getSelectedShapes()",Method,Great,true
 powerpoint,PowerPoint.Presentation,"getSelectedSlides()",Method,Great,true
 powerpoint,PowerPoint.Presentation,"getSelectedTextRange()",Method,Excellent,true
@@ -11942,6 +11942,7 @@ word,Word.Bookmark,"untrack()",Method,Excellent,false
 word,Word.BookmarkCollection,N/A,Class,Great,false
 word,Word.BookmarkCollection,"context",Property,Excellent,false
 word,Word.BookmarkCollection,"items",Property,Poor,false
+word,Word.BookmarkCollection,"add(name, range)",Method,Great,false
 word,Word.BookmarkCollection,"exists(name)",Method,Fine,false
 word,Word.BookmarkCollection,"getItem(index)",Method,Good,false
 word,Word.BookmarkCollection,"load(options)",Method,Excellent,false

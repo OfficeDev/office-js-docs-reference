@@ -6,6 +6,8 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 export declare namespace PowerPoint {
     /**
+     * Represents the PowerPoint application that manages the presentation.
+     *
      * @remarks
      * [Api set: PowerPointApi 1.0]
      */
@@ -25,6 +27,10 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
+                To learn more about the PowerPoint object model,
+                see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
+     *
      * @remarks
      * [Api set: PowerPointApi 1.0]
      */
@@ -38,6 +44,12 @@ export declare namespace PowerPoint {
         
         
         
+        /**
+         * Returns the title of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.0]
+         */
         readonly title: string;
         
         
@@ -353,6 +365,12 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             
+            /**
+             * Returns the title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.0]
+             */
             title?: string;
         }
         /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
@@ -604,6 +622,10 @@ export declare namespace PowerPoint {
             items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /**
+         * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
+                    To learn more about the PowerPoint object model,
+                    see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.0]
          */
@@ -614,6 +636,12 @@ export declare namespace PowerPoint {
             $all?: boolean;
             
             
+            /**
+             * Returns the title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.0]
+             */
             title?: boolean;
         }
         
