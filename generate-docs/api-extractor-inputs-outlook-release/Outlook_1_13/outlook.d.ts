@@ -102,14 +102,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This enum is only supported in Outlook on the web and new Outlook on Windows. On these platforms, users can organize their messages as
-         * conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         * **Important**: This enum is only supported in Outlook on the web, on mobile devices (starting in Version 4.2538.0), and in the new Outlook on Windows.
          *
-         * The `BodyMode` enum supports the following message organization settings.
+         * In Outlook on the web and the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         * The `BodyMode` enum supports the following message organization settings on these clients.
          *
-         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
+         * - Conversations: **Group messages by conversation** \> **All messages from the selected conversation** or
+         * **Show email grouped by conversation** \> **Newest on top**\/**Newest on bottom**
          *
-         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         * - Individual messages: **Do not group messages** \> **Only a single message** or **Show email as individual messages**
          *
          * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
          */
@@ -119,9 +121,11 @@ export declare namespace Office {
              */
             FullBody = 0,
             /**
-             * The body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
-             * If messages are organized by conversation, it specifies only the current body of the reply. Conversely, if messages are organized as individual
+             * In Outlook on the web and the new Outlook on Windows, the body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
+             * If messages are organized by conversation, it specifies the body of the current reply. Conversely, if messages are organized as individual
              * messages, it specifies the entire body of a message, including previous messages from the same conversation thread.
+             *
+             * In Outlook on mobile, specifies the body of the current reply.
              */
             HostConfig = 1
         }
@@ -4165,12 +4169,19 @@ export declare namespace Office {
          * in the `getAsync` call may not always provide reliable formatting. Specify `Office.CoercionType.Html` instead especially if the body contains
          * formatted elements, such as tables, lists, and links.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
-         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * - In Outlook on the web and in the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization** (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
          * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
+         * - In Outlook on mobile devices, the `bodyMode` property is available starting with Version 4.2538.0.
+         *
+         * - In Outlook on mobile devices, specifying `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` returns the body of the current reply.
+         *
+         * - In Outlook on mobile devices, while in quick reply mode (the reply field at the bottom of the message), only the body of the current reply is returned.
+         * This applies even if `bodyMode: CommonAPI.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync` call.
          *
          * - The `bodyMode` option isn't supported on a message that's loaded using the `loadItemByIdAsync` method. For more information, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
@@ -4178,9 +4189,9 @@ export declare namespace Office {
          * @param coercionType - The format for the returned body.
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Any data you want to access in the callback function.
-         *        `bodyMode`: In Outlook on the web and new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is returned.
+         *        `bodyMode`: In Outlook on the web, on mobile devices, and in the new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is returned.
          *        If a value isn't specified, `bodyMode` defaults to `Office.MailboxEnums.BodyMode.FullBody`, which returns the entire body of a message conversation. The `bodyMode` property only
-         *        applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
+         *        applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic) and on Mac.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *        of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
          */
@@ -4205,12 +4216,19 @@ export declare namespace Office {
          * in the `getAsync` call may not always provide reliable formatting. Specify `Office.CoercionType.Html` instead especially if the body contains
          * formatted elements, such as tables, lists, and links.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
-         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * - In Outlook on the web and in the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization** (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
          * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
+         * - In Outlook on mobile devices, the `bodyMode` property is available starting with Version 4.2538.0.
+         *
+         * - In Outlook on mobile devices, specifying `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` returns the body of the current reply.
+         *
+         * - In Outlook on mobile devices, while in quick reply mode (the reply field at the bottom of the message), only the body of the current reply is returned.
+         * This applies even if `bodyMode: CommonAPI.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync` call.
          *
          * @param coercionType - The format for the returned body.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
