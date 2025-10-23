@@ -2539,7 +2539,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
 
       await Word.run(async (context) => {
