@@ -49,14 +49,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This enum is only supported in Outlook on the web and new Outlook on Windows. On these platforms, users can organize their messages as
-         * conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         * **Important**: This enum is only supported in Outlook on the web, on mobile devices (starting in Version 4.2538.0), and in the new Outlook on Windows.
          *
-         * The `BodyMode` enum supports the following message organization settings.
+         * In Outlook on the web and the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         * The `BodyMode` enum supports the following message organization settings on these clients.
          *
-         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
+         * - Conversations: **Group messages by conversation** \> **All messages from the selected conversation** or
+         * **Show email grouped by conversation** \> **Newest on top**\/**Newest on bottom**
          *
-         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         * - Individual messages: **Do not group messages** \> **Only a single message** or **Show email as individual messages**
          *
          * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
          */
@@ -66,9 +68,11 @@ export declare namespace Office {
              */
             FullBody = 0,
             /**
-             * The body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
-             * If messages are organized by conversation, it specifies only the current body of the reply. Conversely, if messages are organized as individual
+             * In Outlook on the web and the new Outlook on Windows, the body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
+             * If messages are organized by conversation, it specifies the body of the current reply. Conversely, if messages are organized as individual
              * messages, it specifies the entire body of a message, including previous messages from the same conversation thread.
+             *
+             * In Outlook on mobile, specifies the body of the current reply.
              */
             HostConfig = 1
         }

@@ -9180,14 +9180,14 @@ outlook,Office.CustomProperties,"remove(name)",Method,Excellent,true
 outlook,Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Excellent,true
 outlook,Office.CustomProperties,"saveAsync(asyncContext)",Method,Excellent,false
 outlook,Office.CustomProperties,"set(name, value)",Method,Excellent,true
-outlook,Office.DecryptedMessageAttachment,N/A,Interface,Poor,false
+outlook,Office.DecryptedMessageAttachment,N/A,Interface,Poor,true
 outlook,Office.DecryptedMessageAttachment,"attachmentType",Property,Good,false
 outlook,Office.DecryptedMessageAttachment,"content",Property,Great,false
 outlook,Office.DecryptedMessageAttachment,"contentId",Property,Excellent,true
 outlook,Office.DecryptedMessageAttachment,"isInline",Property,Excellent,false
 outlook,Office.DecryptedMessageAttachment,"name",Property,Good,false
 outlook,Office.DecryptedMessageAttachment,"path",Property,Excellent,false
-outlook,Office.DecryptedMessageBody,N/A,Interface,Poor,false
+outlook,Office.DecryptedMessageBody,N/A,Interface,Poor,true
 outlook,Office.DecryptedMessageBody,"coercionType",Property,Great,false
 outlook,Office.DecryptedMessageBody,"content",Property,Great,false
 outlook,Office.DelayDeliveryTime,N/A,Interface,Good,false
@@ -9440,7 +9440,7 @@ outlook,Office.MailboxEnums.AttachmentType,"Base64",EnumField,Good,false
 outlook,Office.MailboxEnums.AttachmentType,"Cloud",EnumField,Excellent,false
 outlook,Office.MailboxEnums.AttachmentType,"File",EnumField,Poor,false
 outlook,Office.MailboxEnums.AttachmentType,"Item",EnumField,Poor,false
-outlook,Office.MailboxEnums.BodyMode,N/A,Enum,Great,false
+outlook,Office.MailboxEnums.BodyMode,N/A,Enum,Great,true
 outlook,Office.MailboxEnums.BodyMode,"FullBody",EnumField,Fine,false
 outlook,Office.MailboxEnums.BodyMode,"HostConfig",EnumField,Great,false
 outlook,Office.MailboxEnums.CategoryColor,N/A,Enum,Good,true
@@ -9806,7 +9806,7 @@ outlook,Office.MessageCompose,"sendAsync(options, callback)",Method,Poor,true
 outlook,Office.MessageCompose,"sendAsync(callback)",Method,Poor,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
-outlook,Office.MessageDecryptEventCompletedOptions,N/A,Interface,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,N/A,Interface,Excellent,true
 outlook,Office.MessageDecryptEventCompletedOptions,"allowEvent",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"attachments",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"contextData",Property,Excellent,false
