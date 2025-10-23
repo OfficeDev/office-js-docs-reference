@@ -9164,7 +9164,7 @@ outlook,Office.Categories,"removeAsync(categories, callback)",Method,Poor,false
 outlook,Office.CategoryDetails,N/A,Interface,Fine,true
 outlook,Office.CategoryDetails,"color",Property,Poor,false
 outlook,Office.CategoryDetails,"displayName",Property,Fine,false
-outlook,Office.CoercionTypeOptions,N/A,Interface,Fine,false
+outlook,Office.CoercionTypeOptions,N/A,Interface,Fine,true
 outlook,Office.CoercionTypeOptions,"coercionType",Property,Poor,false
 outlook,Office.Contact,N/A,Interface,Deprecated,true
 outlook,Office.Contact,"addresses",Property,Deprecated,false
