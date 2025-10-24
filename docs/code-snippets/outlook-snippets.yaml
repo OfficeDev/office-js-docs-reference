@@ -309,6 +309,142 @@ Office.Contact:interface:
     111-111-1111
     https://contoso.com/john.smith
     */
+Office.DecryptedMessageAttachment:interface:
+  - |-
+    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
+    function onMessageReadHandler(event) {
+        // Your code to decrypt the contents of a message would appear here.
+        ...
+
+        // Use the results from your decryption process to display the decrypted contents of the message body and attachments.
+        const decryptedBodyContent = "<p>Please find attached the recent report and its supporting documentation.</p>";
+        const decryptedBody = {
+            coercionType: Office.CoercionType.Html,
+            content: decryptedBodyContent
+        };
+
+        // Decrypted content and properties of a file attachment.
+        const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
+        const pdfFileName = "Fabrikam_Report_202509";
+
+        // Decrypted content and properties of a mail item.
+        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
+        const emailFileName = "Fabrikam_Report_202508.eml";
+
+        // Decrypted properties of a cloud attachment.
+        const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
+        const cloudFileName = "weekly_forecast.xlsx";
+
+        // Decrypted content and properties of an inline image.
+        const decryptedImageFile = "iVBORw0KGgoAAAANSUhEUgAA...";
+        const imageFileName = "banner.png";
+        const imageContentId = "image001.png@01DC1DD9.1A4AA300";
+
+        const decryptedAttachments = [
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.File,
+                content: decryptedPdfFile,
+                isInline: false,
+                name: pdfFileName
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.Item,
+                content: decryptedEmailFile,
+                isInline: false,
+                name: emailFileName
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
+                isInline: false,
+                name: cloudFileName,
+                path: cloudFilePath
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.File,
+                content: decryptedImageFile,
+                contentId: imageContentId,
+                isInline: true,
+                name: imageFileName
+            }
+        ];
+
+        event.completed(
+            {
+                allowEvent: true,
+                emailBody: decryptedBody,
+                attachments: decryptedAttachments,
+                contextData: { messageType: "ReplyFromDecryptedMessage" }
+            }
+        );
+    }
+Office.DecryptedMessageBody:interface:
+  - |-
+    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
+    function onMessageReadHandler(event) {
+        // Your code to decrypt the contents of a message would appear here.
+        ...
+
+        // Use the results from your decryption process to display the decrypted contents of the message body and attachments.
+        const decryptedBodyContent = "<p>Please find attached the recent report and its supporting documentation.</p>";
+        const decryptedBody = {
+            coercionType: Office.CoercionType.Html,
+            content: decryptedBodyContent
+        };
+
+        // Decrypted content and properties of a file attachment.
+        const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
+        const pdfFileName = "Fabrikam_Report_202509";
+
+        // Decrypted content and properties of a mail item.
+        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
+        const emailFileName = "Fabrikam_Report_202508.eml";
+
+        // Decrypted properties of a cloud attachment.
+        const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
+        const cloudFileName = "weekly_forecast.xlsx";
+
+        // Decrypted content and properties of an inline image.
+        const decryptedImageFile = "iVBORw0KGgoAAAANSUhEUgAA...";
+        const imageFileName = "banner.png";
+        const imageContentId = "image001.png@01DC1DD9.1A4AA300";
+
+        const decryptedAttachments = [
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.File,
+                content: decryptedPdfFile,
+                isInline: false,
+                name: pdfFileName
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.Item,
+                content: decryptedEmailFile,
+                isInline: false,
+                name: emailFileName
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
+                isInline: false,
+                name: cloudFileName,
+                path: cloudFilePath
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.File,
+                content: decryptedImageFile,
+                contentId: imageContentId,
+                isInline: true,
+                name: imageFileName
+            }
+        ];
+
+        event.completed(
+            {
+                allowEvent: true,
+                emailBody: decryptedBody,
+                attachments: decryptedAttachments,
+                contextData: { messageType: "ReplyFromDecryptedMessage" }
+            }
+        );
+    }
 Office.EmailAddressDetails#appointmentResponse:member:
   - |-
     // The following sample provides the responses from required attendees.
@@ -662,6 +798,21 @@ Office.MailboxEnums.AttachmentStatus:enum:
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.MailboxEnums.BodyMode:enum:
+  - |-
+    // Get the body of the message based on the user's setting for message organization.
+    Office.context.mailbox.item.body.getAsync(
+      Office.CoercionType.Html,
+      { bodyMode: Office.MailboxEnums.BodyMode.HostConfig },
+      (bodyResult) => {
+        if (bodyResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to get body: ${bodyResult.error.message}`);
+          return;
+        }
+
+        const body = bodyResult.value;
+      }
+    );
 Office.MailboxEnums.DelegatePermissions:enum:
   - |-
     Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
@@ -995,6 +1146,74 @@ Office.MessageCompose#setSelectedDataAsync:member(1):
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+Office.MessageDecryptEventCompletedOptions:interface:
+  - |-
+    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
+    function onMessageReadHandler(event) {
+        // Your code to decrypt the contents of a message would appear here.
+        ...
+
+        // Use the results from your decryption process to display the decrypted contents of the message body and attachments.
+        const decryptedBodyContent = "<p>Please find attached the recent report and its supporting documentation.</p>";
+        const decryptedBody = {
+            coercionType: Office.CoercionType.Html,
+            content: decryptedBodyContent
+        };
+
+        // Decrypted content and properties of a file attachment.
+        const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
+        const pdfFileName = "Fabrikam_Report_202509";
+
+        // Decrypted content and properties of a mail item.
+        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
+        const emailFileName = "Fabrikam_Report_202508.eml";
+
+        // Decrypted properties of a cloud attachment.
+        const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
+        const cloudFileName = "weekly_forecast.xlsx";
+
+        // Decrypted content and properties of an inline image.
+        const decryptedImageFile = "iVBORw0KGgoAAAANSUhEUgAA...";
+        const imageFileName = "banner.png";
+        const imageContentId = "image001.png@01DC1DD9.1A4AA300";
+
+        const decryptedAttachments = [
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.File,
+                content: decryptedPdfFile,
+                isInline: false,
+                name: pdfFileName
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.Item,
+                content: decryptedEmailFile,
+                isInline: false,
+                name: emailFileName
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
+                isInline: false,
+                name: cloudFileName,
+                path: cloudFilePath
+            },
+            {
+                attachmentType: Office.MailboxEnums.AttachmentType.File,
+                content: decryptedImageFile,
+                contentId: imageContentId,
+                isInline: true,
+                name: imageFileName
+            }
+        ];
+
+        event.completed(
+            {
+                allowEvent: true,
+                emailBody: decryptedBody,
+                attachments: decryptedAttachments,
+                contextData: { messageType: "ReplyFromDecryptedMessage" }
+            }
+        );
+    }
 Office.MessageRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
