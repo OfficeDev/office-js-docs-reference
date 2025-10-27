@@ -1,14 +1,14 @@
 ---
 title: Excel JavaScript API desktop-only requirement set 1.1
 description: Details about the ExcelApiDesktop 1.1 requirement set.
-ms.date: 10/14/2025
+ms.date: 10/27/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
 
 # Excel JavaScript API desktop-only requirement set 1.1
 
-The `ExcelApiDesktop` requirement set is a special requirement set that includes features that are only available for Excel on Windows, on Mac, and on iPad. APIs in this requirement set are considered to be production APIs for the Excel application on Windows, on Mac, and on iPad. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `ExcelApiDesktop` APIs are considered to be "preview" APIs for other platforms (web) and may not be supported by any of those platforms.
+The `ExcelApiDesktop` requirement set is a special requirement set that includes features that are only available in Excel for Windows and Excel for Mac. APIs in this requirement set are considered to be production APIs for the Excel application on Windows and Mac. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `ExcelApiDesktop` APIs are considered to be "preview" APIs for other platforms (such as web and iPad) and may not be supported by any of those platforms.
 
 When APIs in the `ExcelApiDesktop` requirement set are supported across all platforms, they'll be added to the next released requirement set (`ExcelApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also continue to be tagged in this `ExcelApiDesktop` requirement set. To learn more about platform-specific requirements in general, see [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets).
 
@@ -17,7 +17,7 @@ When APIs in the `ExcelApiDesktop` requirement set are supported across all plat
 
 ## Recommended usage
 
-Because the `ExcelApiDesktop 1.1` APIs are only supported by Excel on Windows, on Mac, and on iPad, your add-in should check if the requirement set is supported before calling these APIs. This avoids any attempt to use desktop-only APIs on an unsupported platform.
+Because the `ExcelApiDesktop 1.1` APIs are only supported by Excel on Windows and Mac, your add-in should check if the requirement set is supported before calling these APIs. This avoids any attempt to use desktop-only APIs on an unsupported platform.
 
 ```js
 if (Office.context.requirements.isSetSupported("ExcelApiDesktop", "1.1")) {
