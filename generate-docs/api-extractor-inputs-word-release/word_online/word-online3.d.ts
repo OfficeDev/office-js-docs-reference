@@ -11389,7 +11389,7 @@ export declare namespace Word {
         after = "After",
     }
     /**
-     * Represents the location of a {@link Word.Border | border}.
+     * Represents the location of a {@link https://learn.microsoft.com/javascript/api/word/word.border | border}.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -11557,7 +11557,7 @@ export declare namespace Word {
         mixed = "Mixed",
     }
     /**
-     * The {@link Word.Border | border} types.
+     * The {@link https://learn.microsoft.com/javascript/api/word/word.border | border} types.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -14257,7 +14257,6 @@ export declare namespace Word {
          */
         createNew = "CreateNew",
     }
-    
     
     
     

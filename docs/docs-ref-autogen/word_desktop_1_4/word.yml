@@ -47,7 +47,6 @@ enums:
   - word!Word.Continue:enum
   - word!Word.CritiqueColorScheme:enum
   - word!Word.CustomXmlNodeType:enum
-  - word!Word.CustomXmlValidationErrorType:enum
   - word!Word.DateLanguage:enum
   - word!Word.DefaultListBehavior:enum
   - word!Word.DeleteCells:enum

@@ -105,8 +105,6 @@ items:
                 uid: word!Word.CritiqueColorScheme:enum
               - name: CustomXmlNodeType
                 uid: word!Word.CustomXmlNodeType:enum
-              - name: CustomXmlValidationErrorType
-                uid: word!Word.CustomXmlValidationErrorType:enum
               - name: DateLanguage
                 uid: word!Word.DateLanguage:enum
               - name: DefaultListBehavior

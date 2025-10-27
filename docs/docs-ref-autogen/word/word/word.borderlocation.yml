@@ -3,7 +3,9 @@ name: Word.BorderLocation
 uid: word!Word.BorderLocation:enum
 package: word!
 fullName: Word.BorderLocation
-summary: Represents the location of a [border](xref:word!Word.Border:class)<!-- -->.
+summary: >-
+  Represents the location of a
+  [border](https://learn.microsoft.com/javascript/api/word/word.border)<!-- -->.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

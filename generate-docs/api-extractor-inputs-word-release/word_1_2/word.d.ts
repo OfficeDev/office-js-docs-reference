@@ -3450,7 +3450,6 @@ export declare namespace Word {
     
     
     
-    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",

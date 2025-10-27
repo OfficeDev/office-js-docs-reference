@@ -12015,7 +12015,7 @@ word,Word.BorderLocation,"left",EnumField,Fine,false
 word,Word.BorderLocation,"outside",EnumField,Fine,false
 word,Word.BorderLocation,"right",EnumField,Fine,false
 word,Word.BorderLocation,"top",EnumField,Fine,false
-word,Word.BorderType,N/A,Enum,Poor,true
+word,Word.BorderType,N/A,Enum,Fine,true
 word,Word.BorderType,"dashDotStroked",EnumField,Fine,false
 word,Word.BorderType,"dashed",EnumField,Fine,false
 word,Word.BorderType,"dashedSmall",EnumField,Fine,false
@@ -14429,7 +14429,7 @@ word,Word.FrameSizeRule,N/A,Enum,Good,false
 word,Word.FrameSizeRule,"atLeast",EnumField,Excellent,false
 word,Word.FrameSizeRule,"auto",EnumField,Fine,false
 word,Word.FrameSizeRule,"exact",EnumField,Excellent,false
-word,Word.GeometricShapeType,N/A,Enum,Great,false
+word,Word.GeometricShapeType,N/A,Enum,Excellent,false
 word,Word.GeometricShapeType,"accentBorderCallout1",EnumField,Fine,false
 word,Word.GeometricShapeType,"accentBorderCallout2",EnumField,Fine,false
 word,Word.GeometricShapeType,"accentBorderCallout3",EnumField,Fine,false

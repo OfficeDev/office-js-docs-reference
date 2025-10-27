@@ -3,7 +3,9 @@ name: Word.BorderType
 uid: word!Word.BorderType:enum
 package: word!
 fullName: Word.BorderType
-summary: The [border](xref:word!Word.Border:class) types.
+summary: >-
+  The [border](https://learn.microsoft.com/javascript/api/word/word.border)
+  types.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
